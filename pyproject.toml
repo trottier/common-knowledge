@@ -1,0 +1,33 @@
+[project]
+name = "common-knowledge"
+version = "0.1.0"
+description = "Build tools for the Common Knowledge offline emergency USB drive"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.scripts]
+ck = "ck.cli:main"
+
+[build-system]
+requires = ["uv_build==0.9.24"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest==9.2.0", "ruff==0.17.3"]
+
+[tool.uv.build-backend]
+module-name = "ck"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-config --strict-markers --import-mode=importlib"
