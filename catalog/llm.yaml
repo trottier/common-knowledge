@@ -1,0 +1,75 @@
+[
+  {
+    "id": "base_model",
+    "family": "llm",
+    "title": "Untuned multilingual base model; select and quantize",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "9_AI_ASSISTANT/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "requires_legal": true
+  },
+  {
+    "id": "llm_runner_windows",
+    "family": "binaries",
+    "title": "Offline laptop model runner for windows",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "9_AI_ASSISTANT/",
+    "profiles": [
+      "sample",
+      "full"
+    ]
+  },
+  {
+    "id": "llm_runner_mac",
+    "family": "binaries",
+    "title": "Offline laptop model runner for mac",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "9_AI_ASSISTANT/",
+    "profiles": [
+      "sample",
+      "full"
+    ]
+  },
+  {
+    "id": "llm_runner_linux",
+    "family": "binaries",
+    "title": "Offline laptop model runner for linux",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "9_AI_ASSISTANT/",
+    "profiles": [
+      "sample",
+      "full"
+    ]
+  }
+]

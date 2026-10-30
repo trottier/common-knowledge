@@ -12,9 +12,10 @@
   {% for font in fonts %}
   @font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }
   {% endfor %}
-  body { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif; }
+  body, code, pre, kbd, samp { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif; }
   {{ css | safe }}
   @page { size: {% if page_format == 'phone' %}90mm 160mm{% else %}Letter{% endif %};
+    font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
     @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
   }
   </style>

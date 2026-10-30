@@ -1,0 +1,302 @@
+[
+  {
+    "id": "phrasebook_en",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for en",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_es",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for es",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_zh_hans",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for zh-Hans",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_zh_hant",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for zh-Hant",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_vi",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for vi",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_tl",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for tl",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_ko",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for ko",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_ar",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for ar",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_ru",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for ru",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_ht",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for ht",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_pt",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for pt",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_fr",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for fr",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_fa",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for fa",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_pl",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for pl",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  },
+  {
+    "id": "phrasebook_hi",
+    "family": "generated",
+    "title": "Wikivoyage phrasebook for hi",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/phrasebooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
+  }
+]

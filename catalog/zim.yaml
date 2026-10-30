@@ -1,0 +1,245 @@
+[
+  {
+    "id": "wikimed_en_nopic",
+    "family": "zim",
+    "title": "English medical Wikipedia without pictures",
+    "url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim",
+    "version": "2026-10",
+    "size_bytes": 1047708415,
+    "sha256": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "Wikipedia contributors; archive packaged by Kiwix",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "5_MEDICAL_REFERENCE/",
+    "profiles": [
+      "full"
+    ],
+    "checksum_source_url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim.meta4"
+  },
+  {
+    "id": "wikem_en_nopic",
+    "family": "zim",
+    "title": "WikEM without pictures",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "5_MEDICAL_REFERENCE/",
+    "profiles": [
+      "sample",
+      "full"
+    ]
+  },
+  {
+    "id": "wikivoyage_en_nopic",
+    "family": "zim",
+    "title": "English Wikivoyage without pictures",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "simplewiki"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/simplewiki/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "simplewiki_en_nopic",
+    "family": "zim",
+    "title": "Simple English Wikipedia without pictures",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "simplewiki"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/simplewiki/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "wikimed_en_maxi",
+    "family": "zim",
+    "title": "English medical Wikipedia with pictures",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "med_lib"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/med_lib/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "medical_other_editions",
+    "family": "zim",
+    "title": "Medical archives in other edition languages; select individual files",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "med_lib"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/med_lib/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "appropedia",
+    "family": "zim",
+    "title": "Appropedia",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "repair"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/repair/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "ifixit",
+    "family": "zim",
+    "title": "iFixit; legal sign-off required",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "repair"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/repair/",
+    "profiles": [
+      "full"
+    ],
+    "requires_legal": true
+  },
+  {
+    "id": "army_publications",
+    "family": "zim",
+    "title": "Army publications; select only distribution statement A items",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "repair"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/repair/",
+    "profiles": [
+      "full"
+    ],
+    "requires_legal": true
+  },
+  {
+    "id": "gutenberg",
+    "family": "zim",
+    "title": "Project Gutenberg subject collections; select individual files",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "morale"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/morale/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "education",
+    "family": "zim",
+    "title": "Open education collections; select individual files",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "school"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/school/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "wikipedia_en_text",
+    "family": "zim",
+    "title": "English Wikipedia text-only hub archive",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "6_DEPTH_AND_SHELF/shelf/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "wikipedia_en_intros",
+    "family": "zim",
+    "title": "English Wikipedia introductions hub archive",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "6_DEPTH_AND_SHELF/shelf/",
+    "profiles": [
+      "full"
+    ]
+  }
+]

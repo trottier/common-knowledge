@@ -1,0 +1,128 @@
+[
+  {
+    "id": "osmand_prebuilt",
+    "family": "maps",
+    "title": "OsmAnd official state maps; verify terms and sizes",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/maps/",
+    "profiles": [
+      "full"
+    ],
+    "requires_legal": true
+  },
+  {
+    "id": "osmand_creator",
+    "family": "binaries",
+    "title": "OsmAnd map creator build input",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "national_atlas",
+    "family": "generated",
+    "title": "National county road atlas",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/atlas/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "protomaps_us",
+      "census_counties",
+      "census_places",
+      "national_directory"
+    ],
+    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+  },
+  {
+    "id": "national_directory",
+    "family": "generated",
+    "title": "National public places directory",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/directory/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "geofabrik_us",
+      "nces_schools",
+      "imls_libraries",
+      "fcc_stations",
+      "noaa_transmitters",
+      "fema_risk",
+      "state_emergency_agencies"
+    ],
+    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+  },
+  {
+    "id": "android_roads_places",
+    "family": "generated",
+    "title": "Generated Android roads-and-places maps",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/maps/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator"
+    ],
+    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+  },
+  {
+    "id": "medical_phone_pdfs",
+    "family": "generated",
+    "title": "Curated medical phone PDFs",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "5_MEDICAL_REFERENCE/pdf/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikimed_en_nopic",
+      "wikem_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+  }
+]

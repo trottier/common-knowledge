@@ -1,0 +1,57 @@
+[
+  {
+    "id": "critical_videos",
+    "family": "video",
+    "title": "Critical federal or Commons videos; select individual files",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "2_VIDEOS/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "howto_videos_1",
+    "family": "video",
+    "title": "Federal or Commons how-to videos, part 1; select individual files",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "howto_1"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/howto_1/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "howto_videos_2",
+    "family": "video",
+    "title": "Federal or Commons how-to videos, part 2; select individual files",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "shelf": "howto_2"
+    },
+    "dest": "6_DEPTH_AND_SHELF/shelf/howto_2/",
+    "profiles": [
+      "full"
+    ]
+  }
+]

@@ -11,7 +11,7 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 ## Current state
 
-Work-order steps 1–4 are implemented: repository structure, licenses, governance,
+Work-order steps 1–5 are implemented: repository structure, licenses, governance,
 a pinned Python 3.12/uv container, shared configuration, strict validation and
 `ck coverage`, and offline phone/print PDF rendering with an RTL fixture.
 All thirteen English sections, the card, tags and variant guide are drafts with

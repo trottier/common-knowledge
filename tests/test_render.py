@@ -34,6 +34,12 @@ def test_pdf_dimensions_links_bookmarks_and_dates(tmp_path, page_format, width, 
     assert any(page.get("/Annots") for page in pdf.pages)
     assert pdf.metadata.creation_date.year == 2000
     assert pdf.trailer["/Root"]["/MarkInfo"]["/Marked"]
+    embedded = {
+        str(font.get_object()["/BaseFont"])
+        for page in pdf.pages
+        for font in page["/Resources"]["/Font"].values()
+    }
+    assert embedded and all("+CK" in name for name in embedded)
 
 
 def test_pdf_reproducible_and_verify_highlighted(tmp_path):
