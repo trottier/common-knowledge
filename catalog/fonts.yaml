@@ -1,0 +1,42 @@
+[
+  {
+    "id": "noto_sans",
+    "family": "fonts",
+    "title": "NotoSans[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 2049096,
+    "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_arabic",
+    "family": "fonts",
+    "title": "NotoSansArabic[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/NotoSansArabic%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 844676,
+    "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  }
+]

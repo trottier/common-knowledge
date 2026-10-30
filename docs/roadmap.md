@@ -7,7 +7,8 @@ of done remain in [AGENTS.md](../AGENTS.md).
    and empty `ck` CLI. No remote or pull request has been configured.
 2. **Implemented locally:** shared configuration, Pydantic models, `ck coverage`
    and invariants. Production capacity remains unconfirmed and fails closed.
-3. Templates, phone and print rendering for one English section, RTL fixture.
+3. **Implemented and tested:** templates, phone and print
+   rendering for one English section, pinned fetched fonts and RTL fixture.
 4. English START, citations, card, tags and variant explanation.
 5. Catalog schema, verified fetcher, candidate VERIFY entries and attributions.
 6. Capacity planner, assembler, dev images, manifests and CI.
