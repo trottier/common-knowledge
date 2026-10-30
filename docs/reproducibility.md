@@ -38,6 +38,24 @@ automatic interpreter downloads. Its dependency installation uses the network;
 checks and package generation then run with `--network=none`. The build backend
 is bundled with uv, so `uv build --offline` can build the scaffold distributions.
 
+System packages now come from the verified Debian and Debian Security snapshot
+endpoints dated `20261028T000000Z` in `config/debian.sources`. APT validates the
+signed index, and the snapshot fixes the package dependency graph. The container
+records all Debian package versions in `/opt/ck-tool-versions.txt`.
+
+The Noto font inputs are recorded by immutable publisher commit, size, license
+proof and computed SHA-256 in `catalog/fonts.yaml`. The bootstrap verifies each
+file before placing it in `/opt/ck-fonts/<sha256>`. No font binaries enter git.
+Publisher HTTPS downloads without published checksums still require human review
+of the pinned hashes before release; the catalog records that pending review.
+
+PDF rendering uses the release epoch or an explicitly supplied development epoch,
+never the current time. Both PDF metadata dates and the PDF identifier derive
+from fixed inputs. The renderer denies network resources and files outside the
+build's asset/font inputs. PDFs are tagged; formal PDF/UA conformance is not
+claimed without validation. Arabic shaping, bookmarks, links, sizes, metadata
+and repeated PDF hashes are covered by container tests.
+
 ## What remains
 
 Pinned tools establish the environment; this step does not establish byte-for-byte

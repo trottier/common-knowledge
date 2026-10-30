@@ -23,6 +23,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     coverage.add_argument("--homes", type=int, default=5)
     coverage.add_argument("--carriers", type=int)
     coverage.add_argument("--json", action="store_true")
+    render = commands.add_parser("render", help="Render a source document to an offline PDF")
+    render.add_argument("--input", type=Path, required=True)
+    render.add_argument("--language", default="en")
+    render.add_argument("--format", choices=["phone", "print"], default="phone")
+    render.add_argument("--output", type=Path, required=True)
+    render.add_argument("--epoch", type=int)
     args = parser.parse_args(argv)
     try:
         if args.command is None:
@@ -33,6 +39,23 @@ def main(argv: Sequence[str] | None = None) -> int:
         config = load_config(args.root)
         if args.command == "validate":
             print("Configuration valid: 8 variants, 12 modules, 15 language editions")
+        elif args.command == "render":
+            from ck.render import render_pdf
+
+            language = next((x for x in config.languages if x.code == args.language), None)
+            if language is None:
+                raise ValueError(f"Unknown language: {args.language}")
+            print(
+                render_pdf(
+                    args.root,
+                    config,
+                    args.root / args.input,
+                    language,
+                    args.format,
+                    args.output,
+                    args.epoch,
+                )
+            )
         elif args.command == "coverage":
             rows = []
             groups = {

@@ -3,6 +3,16 @@ FROM python:3.12.16-slim-bookworm@sha256:e697c81897302a4c4333bade000d98038fbb21e
 
 COPY --from=ghcr.io/astral-sh/uv:0.9.24@sha256:816fdce3387ed2142e37d2e56e1b1b97ccc1ea87731ba199dc8a25c04e4997c5 /uv /uvx /usr/local/bin/
 
+COPY config/debian.sources /etc/apt/sources.list.d/debian.sources
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0 libharfbuzz-bin poppler-utils \
+    && dpkg-query --show > /opt/ck-tool-versions.txt \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY catalog/fonts.yaml tools/bootstrap_fonts.py /tmp/ck-bootstrap/
+RUN python /tmp/ck-bootstrap/bootstrap_fonts.py /tmp/ck-bootstrap/fonts.yaml /opt/ck-fonts
+
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     TZ=UTC \
@@ -10,7 +20,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     LC_ALL=C.UTF-8 \
     UV_LINK_MODE=copy \
     UV_PYTHON_DOWNLOADS=never \
-    UV_NO_PROGRESS=1
+    UV_NO_PROGRESS=1 \
+    CK_FONT_CACHE=/opt/ck-fonts
 
 WORKDIR /workspace
 COPY pyproject.toml uv.lock README.md LICENSE ./
