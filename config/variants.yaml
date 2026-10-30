@@ -1,0 +1,31 @@
+modules:
+  medical:      { category: body,  title: "Medical" }
+  care:         { category: body,  title: "Care for dependents" }
+  water:        { category: body,  title: "Water and sanitation" }
+  food:         { category: body,  title: "Food and cooking" }
+  power:        { category: infra, title: "Power and utilities" }
+  structures:   { category: infra, title: "Structures, fire and search" }
+  comms:        { category: infra, title: "Comms and information" }
+  transport:    { category: infra, title: "Transport and evacuation" }
+  convening:    { category: civic, title: "Convening and liaison" }
+  welfare:      { category: civic, title: "Welfare and reunification" }
+  legal:        { category: civic, title: "Legal, money and recovery" }
+  psychosocial: { category: civic, title: "Psychosocial, kids and morale" }
+shelves:
+  howto_1:    "How-to library, part 1"
+  howto_2:    "How-to library, part 2"
+  laptop_map: "Live laptop map of the U.S."
+  med_lib:    "Expanded medical library"
+  repair:     "Repair and engineering"
+  simplewiki: "Simple English Wikipedia and travel guides"
+  school:     "School lessons for disrupted schooling"
+  morale:     "Public-domain books, music and games"
+variants:
+  1: { modules: [medical, power, convening],     shelf: howto_1 }
+  2: { modules: [care, structures, welfare],     shelf: howto_2 }
+  3: { modules: [water, comms, legal],           shelf: laptop_map }
+  4: { modules: [food, transport, psychosocial], shelf: med_lib }
+  5: { modules: [medical, structures, legal],    shelf: repair }
+  6: { modules: [care, comms, psychosocial],     shelf: simplewiki }
+  7: { modules: [water, transport, convening],   shelf: school }
+  8: { modules: [food, power, welfare],          shelf: morale }

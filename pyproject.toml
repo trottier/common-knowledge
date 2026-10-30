@@ -6,7 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12,<3.13"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
-dependencies = []
+dependencies = [
+    "pydantic==2.14.2",
+    "pyyaml==6.0.3",
+]
 
 [project.scripts]
 ck = "ck.cli:main"

@@ -11,11 +11,11 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 ## Current state
 
-Work-order step 1 is implemented: repository structure, licenses, governance,
-a pinned Python 3.12/uv container, and an empty `ck` CLI with help and version
-flags. There are no emergency instructions, PDFs, catalog entries or drive images
-yet. The package version identifies the development scaffold; v0.1.0 has not been
-released or approved for use.
+Work-order steps 1–2 are implemented: repository structure, licenses, governance,
+a pinned Python 3.12/uv container, shared configuration, strict validation and
+`ck coverage`. There are no emergency instructions, PDFs or drive images yet.
+The package version identifies development work; v0.1.0 has not been released
+or approved for use. Unconfirmed release values remain explicit VERIFY markers.
 
 The complete specification and work order are in [AGENTS.md](AGENTS.md).
 [CLAUDE.md](CLAUDE.md) carries the same instructions.
@@ -34,6 +34,13 @@ make package
 `make check` builds `Dockerfile.build`, then runs Ruff, formatting checks and
 pytest with networking disabled. `make cli` shows CLI help. `make package` writes
 the source archive and wheel to the ignored `dist/` directory.
+
+After `make build-container`, inspect configuration and findability with:
+
+```sh
+docker run --rm --network=none --platform linux/amd64 common-knowledge-build:dev ck validate
+docker run --rm --network=none --platform linux/amd64 common-knowledge-build:dev ck coverage --homes 5
+```
 
 The build platform is Linux x86-64. Docker on an ARM Mac needs x86-64 emulation.
 Dependency installation requires internet access; the installed scaffold CLI does

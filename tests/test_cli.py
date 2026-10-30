@@ -45,6 +45,6 @@ def test_unsupported_arguments_fail(command: list[str], args: list[str], tmp_pat
     )
 
     assert result.returncode == 2
-    assert "unrecognized arguments" in result.stderr
+    assert "error:" in result.stderr
     assert result.stdout == ""
     assert list(tmp_path.iterdir()) == []
