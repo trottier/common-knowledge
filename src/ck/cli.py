@@ -39,6 +39,29 @@ def main(argv: Sequence[str] | None = None) -> int:
     core.add_argument("--output", type=Path, default=Path("build/core"))
     core.add_argument("--epoch", type=int)
     core.add_argument("--languages", nargs="+", default=["en"])
+    core.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
+    plan = commands.add_parser("plan", help="Account for every variant's capacity")
+    plan.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
+    plan.add_argument("--core", type=Path, default=Path("build/core"))
+    plan.add_argument(
+        "--capacity-bytes", type=int, help="Explicit planning assumption; never used for images"
+    )
+    plan.add_argument("--json", action="store_true")
+    for name in ("assemble", "image"):
+        action = commands.add_parser(name, help=f"{name.capitalize()} one variant")
+        action.add_argument("--variant", type=int, required=True, choices=range(1, 9))
+        action.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
+        action.add_argument("--core", type=Path, default=Path("build/core"))
+        action.add_argument("--output", type=Path, required=True)
+        action.add_argument("--cache", type=Path, default=Path("cache"))
+        action.add_argument("--generated", type=Path, default=Path("build/generated"))
+        action.add_argument("--epoch", type=int)
+        action.add_argument("--fetch", action="store_true")
+    verify = commands.add_parser(
+        "verify-image", help="Verify every file against the image manifest"
+    )
+    verify.add_argument("image", type=Path)
+    verify.add_argument("--epoch", type=int)
     args = parser.parse_args(argv)
     try:
         if args.command is None:
@@ -47,6 +70,91 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "plan":
+            from ck.assemble import core_size
+            from ck.catalog import load_catalog
+            from ck.core import verify_core
+            from ck.planner import plan_variants
+
+            metadata = json.loads((args.core / "core-manifest.json").read_text())
+            verify_core(args.root, args.core, metadata["epoch"], args.profile)
+            plans = plan_variants(
+                config,
+                load_catalog(args.root, config),
+                args.profile,
+                core_size(args.core),
+                args.capacity_bytes,
+            )
+            if args.json:
+                print(json.dumps([plan.as_dict() for plan in plans], indent=2))
+            else:
+                print("VARIANT  KNOWN BYTES      USABLE BYTES     STATUS")
+                for plan in plans:
+                    print(
+                        f"{plan.variant:>7}  {plan.known_total_bytes:>15,}  "
+                        f"{plan.usable_bytes:>15,}  {'FITS' if plan.fits else 'BLOCKED'}"
+                    )
+                    for issue in plan.blockers:
+                        print(f"  {issue}")
+                    if not plan.fits:
+                        for item in plan.largest:
+                            print(f"  Large item: {item['id']} — {item['size_bytes']:,} bytes")
+            return 0 if all(plan.fits for plan in plans) else 1
+        if args.command in {"assemble", "image"}:
+            import tempfile
+
+            from ck.assemble import assemble
+            from ck.render import epoch_for
+
+            epoch = epoch_for(config, args.epoch)
+            if args.command == "assemble":
+                print(
+                    assemble(
+                        args.root,
+                        config,
+                        args.core,
+                        args.output,
+                        args.variant,
+                        args.profile,
+                        args.cache,
+                        args.generated,
+                        epoch,
+                        args.fetch,
+                    )
+                )
+            else:
+                from ck.image import build_image
+
+                args.output.mkdir(parents=True, exist_ok=True)
+                with tempfile.TemporaryDirectory(dir=args.output, prefix=".ck-tree-") as temporary:
+                    tree = assemble(
+                        args.root,
+                        config,
+                        args.core,
+                        Path(temporary) / "tree",
+                        args.variant,
+                        args.profile,
+                        args.cache,
+                        args.generated,
+                        epoch,
+                        args.fetch,
+                    )
+                    print(
+                        json.dumps(
+                            build_image(
+                                tree, args.output, config, args.variant, args.profile, epoch
+                            ),
+                            indent=2,
+                        )
+                    )
+            return 0
+        if args.command == "verify-image":
+            from ck.image import verify_image
+            from ck.render import epoch_for
+
+            verify_image(args.image, epoch_for(config, args.epoch))
+            print("Image manifest matches every payload file")
+            return 0
         if args.command == "validate":
             from ck.catalog import load_catalog
 
@@ -77,7 +185,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         elif args.command == "core":
             from ck.core import build_core
 
-            files = build_core(args.root, config, args.output, args.epoch, args.languages)
+            files = build_core(
+                args.root, config, args.output, args.epoch, args.languages, args.profile
+            )
             print(f"Built {len(files)} core PDFs in {args.output}")
         elif args.command == "render":
             from ck.render import render_pdf

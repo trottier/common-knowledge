@@ -430,7 +430,7 @@ It prints a per-variant table and **fails** if any variant overflows, naming the
 ```
 /README.TXT                 # every edition: "Open 1_START"
 /VERIFY.TXT                 # version, variant, verification URL
-/MANIFEST.SHA256            # SHA-256 of every file on the image
+/MANIFEST.SHA256            # SHA-256 of every other file; its own hash is published outside the image
 /1_START/<edition folder in its own script>/   # START or quick start, phone + print
 /2_VIDEOS/                  # imported critical videos (universal)
 /3_MAPS_AND_PLACES/
@@ -458,7 +458,7 @@ File names must be FAT-safe: none of `\ / : * ? " < > |`, path length under 200 
   2. Runs `mkfs.fat -F 32 -n EMERGENCY -i 0C0FFEE0 -C <img> <KiB>`.
   3. Creates directories with `mmd` and copies files one by one in sorted order with `mcopy -m -Q` (`MTOOLS_SKIP_CHECK=1`).
   4. Runs `mattrib +h` on `/BACKUP`.
-  5. Writes the manifest inside the image, and the image SHA-256 outside it.
+  5. Writes the manifest inside the image, covering every other file. Publishes the manifest's own SHA-256 and the image SHA-256 outside the image.
   6. Compresses with `zstd -19` and hashes the result.
   7. Checks the listing with `mdir -/`.
 - **Reproducibility test:** two clean builds of variant 1 in the `sample` profile must produce identical image hashes. Normalize any nondeterminism (PDF IDs, archive timestamps) or document it in `docs/reproducibility.md` with an `xfail` test and an issue link.

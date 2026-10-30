@@ -6,9 +6,20 @@ from pypdf import PdfReader
 
 from ck.config import load_config, read_yaml
 from ck.core import build_core
-from ck.render import content_file
+from ck.render import content_file, render_html
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_variant_guide_uses_the_planners_profile_selection():
+    config = load_config(ROOT)
+    source = ROOT / "content/en/start/11-variants.md"
+    full = render_html(
+        ROOT, config, source, config.languages[0], "phone", 946684800, profile="full"
+    )
+    dev = render_html(ROOT, config, source, config.languages[0], "phone", 946684800, profile="dev")
+    assert "iFixit; legal sign-off required" in full
+    assert "iFixit; legal sign-off required" not in dev
 
 
 def test_all_original_citations_resolve_and_review_status_is_explicit():
