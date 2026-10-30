@@ -21,6 +21,11 @@ Ask neighbors which variant they have when it is safe to meet. [@project_spec]
 {% endfor %}
 
 Shelf: {{ variants.shelves[variant.shelf] }}. [@project_spec]
-{% endfor %}
 
-[[VERIFY: append each shelf's actual catalog contents from the capacity plan at assembly time.]]
+Planned shelf contents for this build:
+{% for title in shelf_contents[number] %}
+- {{ title }}
+{% else %}
+No external shelf files are included in this build profile.
+{% endfor %}
+{% endfor %}

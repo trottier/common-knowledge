@@ -11,11 +11,13 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 ## Current state
 
-Work-order steps 1–5 are implemented: repository structure, licenses, governance,
+Work-order steps 1–6 are implemented: repository structure, licenses, governance,
 a pinned Python 3.12/uv container, shared configuration, strict validation and
 `ck coverage`, and offline phone/print PDF rendering with an RTL fixture.
 All thirteen English sections, the card, tags and variant guide are drafts with
-explicit source, safety-review and device-test markers. There are no drive images yet.
+explicit source, safety-review and device-test markers. A development FAT32 image
+has been built and verified. Full images remain blocked by unconfirmed inputs, measured
+capacity and required human reviews.
 The package version identifies development work; v0.1.0 has not been released
 or approved for use. Unconfirmed release values remain explicit VERIFY markers.
 
@@ -31,11 +33,18 @@ Install Docker with a running Linux container engine. From this directory:
 make check
 make cli
 make package
+make dev
 ```
 
 `make check` builds `Dockerfile.build`, then runs Ruff, formatting checks and
 pytest with networking disabled. `make cli` shows CLI help. `make package` writes
 the source archive and wheel to the ignored `dist/` directory.
+
+`make dev` writes the core PDFs and a verified, compressed development image to
+`build/`. Run `make clean` before rebuilding those outputs. Development images
+contain draft core documents; they do not contain third-party cargo or constitute
+an approved emergency kit. See [docs/images.md](docs/images.md) for capacity,
+manifest and reproducibility details.
 
 After `make build-container`, inspect configuration and findability with:
 

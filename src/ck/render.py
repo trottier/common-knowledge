@@ -93,11 +93,27 @@ def render_html(
     page_format: str,
     epoch: int,
     template: str = "document.html.j2",
+    profile: str = "dev",
 ) -> str:
+    from ck.catalog import Shelf, load_catalog
+    from ck.planner import selected
+
     header, body = content_file(source)
     content_env = Environment(undefined=StrictUndefined, autoescape=False)
+    catalog = load_catalog(root, config)
+    shelf_contents = {
+        number: [
+            item.title
+            for item in sorted(catalog.values(), key=lambda item: item.id)
+            if isinstance(item.placement, Shelf) and selected(item, config, number, profile)
+        ]
+        for number in config.variants.variants
+    }
     body = content_env.from_string(body).render(
-        defaults=config.defaults.model_dump(), variants=config.variants.model_dump()
+        defaults=config.defaults.model_dump(),
+        variants=config.variants.model_dump(),
+        shelf_contents=shelf_contents,
+        build_profile=profile,
     )
     markdown = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = markdown.parse(body)
@@ -163,9 +179,12 @@ def render_pdf(
     output: Path,
     epoch: int | None = None,
     template: str = "document.html.j2",
+    profile: str = "dev",
 ) -> Path:
     timestamp = epoch_for(config, epoch)
-    document = render_html(root, config, source, language, page_format, timestamp, template)
+    document = render_html(
+        root, config, source, language, page_format, timestamp, template, profile
+    )
     output.parent.mkdir(parents=True, exist_ok=True)
     output.with_suffix(".html").write_text(document, encoding="utf-8")
     fonts = font_files(root, language)
