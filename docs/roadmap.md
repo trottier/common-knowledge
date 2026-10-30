@@ -5,7 +5,8 @@ of done remain in [AGENTS.md](../AGENTS.md).
 
 1. **Implemented locally:** scaffold, licenses, governance, pinned build container
    and empty `ck` CLI. No remote or pull request has been configured.
-2. Shared configuration, Pydantic models, `ck coverage` and invariants.
+2. **Implemented locally:** shared configuration, Pydantic models, `ck coverage`
+   and invariants. Production capacity remains unconfirmed and fails closed.
 3. Templates, phone and print rendering for one English section, RTL fixture.
 4. English START, citations, card, tags and variant explanation.
 5. Catalog schema, verified fetcher, candidate VERIFY entries and attributions.

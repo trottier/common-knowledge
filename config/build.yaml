@@ -1,0 +1,10 @@
+version: "0.1.0"
+volume_label: "EMERGENCY"
+volume_id: "0C0FFEE0"
+site_base_url: "[[VERIFY: GitHub Pages URL]]"
+source_date_epoch: "[[VERIFY: set at release]]"
+profiles:
+  dev:    { third_party: none,   image_size_mib: 256 }                # CI on every push
+  sample: { third_party: sample, image_size_mib: 4096 }               # one small state, small archives, tiny model
+  full:   { third_party: all,    capacity_bytes: "[[VERIFY: measured usable bytes of the production 32 GB part]]",
+            reserve_fraction: 0.03 }

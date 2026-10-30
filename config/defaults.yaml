@@ -1,0 +1,27 @@
+rally_point:
+  rule:
+    - written_on_card
+    - nearest_public_elementary_school_main_entrance
+    - nearest_fire_station            # if no school within walking distance
+    - nearest_place_of_worship        # if neither of the above
+meetings:
+  times_local: ["12:00", "18:00"]
+  if_nobody_there: "Leave a dated note and return at the next time."
+convener:
+  rule: "The first adult at the rally point at noon opens the meeting with the one-page script."
+  rotation: "Each meeting ends by choosing the next convener. No one serves two days running."
+  role_fallback: "A role nobody picks falls to whoever holds a drive variant with that module, until someone better steps up."
+radio:
+  service: FRS
+  channel: 3
+  frequency_mhz: 462.6125
+  privacy_code: none
+  listen_window: "First five minutes of every hour"
+mesh:
+  app: bitchat
+  channels: { block: "#block", help: "#help" }
+  formats: { help: "HELP · {address} · {need}", ok: "OK · {address}" }
+  schedule: "Turn on at the top of each hour with the radio window; leave on if power allows."
+block_day:
+  date: "[[VERIFY: national Block Day date, set by publisher]]"
+  time_local: "12:00"
