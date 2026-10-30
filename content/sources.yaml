@@ -1,3 +1,67 @@
 project_spec:
   title: Common Knowledge specification, sections 1 and 9.1
   path: AGENTS.md
+apple_usb:
+  title: Apple — Connect external storage devices to iPhone
+  url: https://support.apple.com/en-ie/guide/iphone/iph95baac91f/ios
+google_usb:
+  title: Google — Use USB storage devices
+  url: https://support.google.com/files/answer/9301516?hl=en
+apple_airdrop:
+  title: Apple — How to use AirDrop on iPhone and iPad
+  url: https://support.apple.com/en-ca/119857
+google_share:
+  title: Google — Use Quick Share on your Android device
+  url: https://support.google.com/android/answer/9286773?hl=en-en
+calling_911:
+  title: National 911 Program — FAQ About Calling 911
+  url: https://www.911.gov/calling-911/frequently-asked-questions/
+fema_utilities:
+  title: FEMA — Are You Ready? Basic Preparedness
+  url: https://www.fema.gov/pdf/areyouready/basic_preparedness.pdf
+  note: "[[VERIFY: obtain and review the full official text; direct fetch returned HTTP 403.]]"
+cdc_generator:
+  title: CDC — Use a Generator Safely
+  url: https://www.cdc.gov/natural-disasters/psa-toolkit/use-a-generator-safely.html
+epa_water:
+  title: EPA — Emergency Disinfection of Drinking Water
+  url: https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
+frs_channels:
+  title: 47 CFR 95.563 — FRS channels
+  url: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B/section-95.563
+fcc_disaster:
+  title: FCC — Tips for Communicating in an Emergency
+  url: https://docs.fcc.gov/public/attachments/DOC-309319A1.pdf
+noaa_radio:
+  title: National Weather Service — NOAA Weather Radio
+  url: https://www.weather.gov/nwr/coverage/station_search.php
+apple_satellite:
+  title: Apple — Connect to a satellite with your iPhone
+  url: https://support.apple.com/en-us/105097
+apple_compass:
+  title: Apple — Use the compass on iPhone
+  url: https://support.apple.com/en-ca/guide/iphone/iph1ac0b663/27/ios/27
+bleeding:
+  title: MedlinePlus Medical Encyclopedia — Bleeding
+  url: https://www.medlineplus.gov/ency/article/000045.htm
+cpr:
+  title: MedlinePlus — CPR
+  url: https://medlineplus.gov/cpr.html
+recovery:
+  title: MedlinePlus Medical Encyclopedia — Unconsciousness, first aid
+  url: https://www.medlineplus.gov/ency/article/000022.htm
+burns:
+  title: MedlinePlus Medical Encyclopedia — Minor burns, aftercare
+  url: https://www.medlineplus.gov/ency/patientinstructions/000662.htm
+heat_illness:
+  title: CDC NIOSH — Heat-related Illnesses
+  url: https://www.cdc.gov/niosh/heat-stress/about/illnesses.html
+hypothermia:
+  title: MedlinePlus Medical Encyclopedia — Hypothermia
+  url: https://medlineplus.gov/ency/article/000038.htm
+oral_rehydration:
+  title: CDC Yellow Book — Travelers’ Diarrhea, oral rehydration therapy
+  url: https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travelers-diarrhea.html
+fda_medicines:
+  title: FDA — Safe Drug Use After a Natural Disaster
+  url: https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster

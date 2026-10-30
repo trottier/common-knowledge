@@ -1,6 +1,7 @@
 """Offline Markdown → HTML → PDF with explicit fonts and deterministic dates."""
 
 import hashlib
+import html
 import os
 import re
 import threading
@@ -91,6 +92,7 @@ def render_html(
     language: Language,
     page_format: str,
     epoch: int,
+    template: str = "document.html.j2",
 ) -> str:
     header, body = content_file(source)
     content_env = Environment(undefined=StrictUndefined, autoescape=False)
@@ -118,9 +120,15 @@ def render_html(
     if missing:
         raise ValueError(f"Unknown citation ids: {', '.join(sorted(missing))}")
     for citation in citations:
-        rendered = rendered.replace(
-            f"[@{citation}]", f'<a href="#source-{citation}">[{citation}]</a>'
-        )
+        target = f"#source-{citation}"
+        if template != "document.html.j2":
+            target = sources[citation].get("url", "")
+        replacement = f"[{citation}]"
+        if target:
+            if not target.startswith(("https://", "#")):
+                raise ValueError(f"Unsafe citation URL for {citation}")
+            replacement = f'<a href="{html.escape(target, quote=True)}">[{citation}]</a>'
+        rendered = rendered.replace(f"[@{citation}]", replacement)
     env = Environment(
         loader=FileSystemLoader(root / "templates"), undefined=StrictUndefined, autoescape=True
     )
@@ -130,7 +138,7 @@ def render_html(
     elif language.status == "stub":
         footer = "[[VERIFY: localized unreviewed machine translation footer]]"
     fonts = font_files(root, language)
-    return env.get_template("document.html.j2").render(
+    return env.get_template(template).render(
         title=header.title,
         language=language,
         body=Markup(rendered),
@@ -142,6 +150,7 @@ def render_html(
         fonts=[path.as_uri() for path in fonts],
         css=(root / "templates/document.css").read_text(),
         draft=header.status != "reviewed",
+        defaults=config.defaults.model_dump(),
     )
 
 
@@ -153,9 +162,10 @@ def render_pdf(
     page_format: str,
     output: Path,
     epoch: int | None = None,
+    template: str = "document.html.j2",
 ) -> Path:
     timestamp = epoch_for(config, epoch)
-    document = render_html(root, config, source, language, page_format, timestamp)
+    document = render_html(root, config, source, language, page_format, timestamp, template)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.with_suffix(".html").write_text(document, encoding="utf-8")
     fonts = font_files(root, language)

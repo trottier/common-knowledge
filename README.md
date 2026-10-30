@@ -11,11 +11,11 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 ## Current state
 
-Work-order steps 1–3 are implemented: repository structure, licenses, governance,
+Work-order steps 1–4 are implemented: repository structure, licenses, governance,
 a pinned Python 3.12/uv container, shared configuration, strict validation and
 `ck coverage`, and offline phone/print PDF rendering with an RTL fixture.
-The first English section is a draft with explicit device-test markers. There
-are no drive images yet.
+All thirteen English sections, the card, tags and variant guide are drafts with
+explicit source, safety-review and device-test markers. There are no drive images yet.
 The package version identifies development work; v0.1.0 has not been released
 or approved for use. Unconfirmed release values remain explicit VERIFY markers.
 

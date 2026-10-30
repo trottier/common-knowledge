@@ -9,7 +9,9 @@ of done remain in [AGENTS.md](../AGENTS.md).
    and invariants. Production capacity remains unconfirmed and fails closed.
 3. **Implemented and tested:** templates, phone and print
    rendering for one English section, pinned fetched fonts and RTL fixture.
-4. English START, citations, card, tags and variant explanation.
+4. **Implemented as drafts:** all thirteen English START sections with citations,
+   card, tags and variant explanation. Unverified safety procedures, QR targets
+   and named human reviews remain explicit blockers; this is not approved content.
 5. Catalog schema, verified fetcher, candidate VERIFY entries and attributions.
 6. Capacity planner, assembler, dev images, manifests and CI.
 7. Spanish full edition, thirteen stubs and fetched fonts.

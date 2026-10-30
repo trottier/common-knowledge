@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ language.code }}" dir="{{ language.dir }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="dcterms.created" content="{{ timestamp }}">
+  <meta name="dcterms.modified" content="{{ timestamp }}">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src file:">
+  <script type="application/json" id="coordination-defaults">{{ defaults | tojson }}</script>
+  <style>
+  {% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
+  @page { size: 5.5in 8.5in; margin: 8mm;
+    @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
+  }
+  body { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
+    font-size: 12pt; line-height: 1.12; color: #111; }
+  h1 { font-size: 16pt; margin: 0 0 2mm; }
+  h2 { font-size: 12pt; margin: 2mm 0 0; }
+  p { margin: 1mm 0; }
+  a { color: inherit; }
+  .front { break-after: page; }
+  .front h2:last-of-type, .front h2:last-of-type + p { display: none; }
+  .draft { border: 1pt solid black; font-weight: bold; }
+  .back h1 { font-size: 66pt; margin-top: 25mm; text-align: center; }
+  .qr { display: flex; justify-content: space-between; margin-top: 3mm; font-size: 8pt; }
+  .qr span { width: 31%; border: 1px solid black; background: #fff096; padding: 2mm; }
+  </style>
+</head>
+<body>
+<section class="front">
+  <h1>{{ title }}</h1>
+  {% if draft %}<p class="draft">DRAFT — not approved for distribution</p>{% endif %}
+  {{ body }}
+  <div class="qr"><span>Videos<br>[[VERIFY: QR URL]]</span><span>State agencies<br>[[VERIFY: QR URL]]</span><span>Verify drive<br>[[VERIFY: QR URL]]</span></div>
+</section>
+<section class="back"><h1>OK</h1><h1>HELP</h1></section>
+</body>
+</html>

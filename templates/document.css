@@ -1,0 +1,21 @@
+@page {
+  margin: 10mm 7mm 14mm;
+  @bottom-right { content: counter(page); font-size: 9pt; }
+}
+* { box-sizing: border-box; }
+body { color: #131313; font-size: 12pt; line-height: 1.35; overflow-wrap: break-word; }
+h1 { font-size: 22pt; line-height: 1.1; }
+h2 { font-size: 16pt; line-height: 1.15; }
+h3 { font-size: 13pt; }
+h1, h2, h3 { break-after: avoid; }
+p, li { orphans: 2; widows: 2; }
+li { margin-block-end: 0.35em; }
+a { color: #123f65; text-decoration: underline; }
+nav { break-after: page; }
+nav ol { padding-inline-start: 1.5em; }
+.draft { border: 2pt solid #222; padding: 0.3em; font-weight: bold; }
+.verify { background: #fff096; color: #111; }
+.sources { break-before: page; }
+.sources p { overflow-wrap: anywhere; }
+table { border-collapse: collapse; width: 100%; }
+td, th { border: 1px solid #333; padding: 0.2em; }

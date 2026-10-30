@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ language.code }}" dir="{{ language.dir }}">
+<head>
+  <meta charset="utf-8"><title>{{ title }}</title>
+  <meta name="dcterms.created" content="{{ timestamp }}">
+  <meta name="dcterms.modified" content="{{ timestamp }}">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src file:">
+  <style>
+  {% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
+  @page { size: Letter; margin: 12mm;
+    @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
+  }
+  body { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
+    font-size: 12pt; line-height: 1.2; }
+  h1 { font-size: 14pt; margin: 0; }
+  h2 { font-size: 24pt; border-top: 1px dashed black; margin: 8mm 0 0; padding-top: 6mm; }
+  p { margin: 2mm 0 8mm; }
+  mark { background: #fff096; }
+  </style>
+</head>
+<body>
+  <h1>{{ title }}{% if draft %} — DRAFT{% endif %}</h1>
+  {{ body }}
+</body>
+</html>
