@@ -8,6 +8,7 @@
   <style>
   {% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
   @page { size: Letter; margin: 12mm;
+    font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
     @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
   }
   body { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;

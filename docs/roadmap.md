@@ -12,7 +12,8 @@ of done remain in [AGENTS.md](../AGENTS.md).
 4. **Implemented as drafts:** all thirteen English START sections with citations,
    card, tags and variant explanation. Unverified safety procedures, QR targets
    and named human reviews remain explicit blockers; this is not approved content.
-5. Catalog schema, verified fetcher, candidate VERIFY entries and attributions.
+5. **Implemented and tested:** catalog schema, verified fetcher, all candidate
+   families as explicit unresolved entries, release gate and attribution generation.
 6. Capacity planner, assembler, dev images, manifests and CI.
 7. Spanish full edition, thirteen stubs and fetched fonts.
 8. National directory pipeline, starting with one small state.

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "geofabrik_us",
+    "family": "geodata",
+    "title": "Geofabrik U.S. OSM extract",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "census_counties",
+    "family": "geodata",
+    "title": "Census cartographic county boundaries",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "census_places",
+    "family": "geodata",
+    "title": "Census places or urban areas for atlas insets",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "nces_schools",
+    "family": "geodata",
+    "title": "NCES EDGE public-school locations",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "imls_libraries",
+    "family": "geodata",
+    "title": "IMLS Public Libraries Survey outlets",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "fcc_stations",
+    "family": "geodata",
+    "title": "FCC broadcast licensing data",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "noaa_transmitters",
+    "family": "geodata",
+    "title": "NWS NOAA Weather Radio transmitter list",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "fema_risk",
+    "family": "geodata",
+    "title": "FEMA National Risk Index county table",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "state_emergency_agencies",
+    "family": "geodata",
+    "title": "Official federal list of state and territory emergency agencies",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "protomaps_us",
+    "family": "geodata",
+    "title": "Protomaps U.S. PMTiles basemap extract",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ]
+  }
+]

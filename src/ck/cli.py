@@ -18,7 +18,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     parser.add_argument("--root", type=Path, default=Path.cwd(), help="Repository root")
     commands = parser.add_subparsers(dest="command")
-    commands.add_parser("validate", help="Validate shared configuration")
+    validate = commands.add_parser("validate", help="Validate configuration and catalog")
+    validate.add_argument("--release", action="store_true")
+    catalog = commands.add_parser("catalog", help="Generate third-party attributions")
+    catalog.add_argument("--output", type=Path, default=Path("THIRD_PARTY.md"))
+    fetch = commands.add_parser("fetch", help="Fetch pinned items into the verified cache")
+    fetch.add_argument("items", nargs="+")
+    fetch.add_argument("--cache", type=Path, default=Path("cache"))
     coverage = commands.add_parser("coverage", help="Show findability of modules and shelves")
     coverage.add_argument("--homes", type=int, default=5)
     coverage.add_argument("--carriers", type=int)
@@ -42,7 +48,32 @@ def main(argv: Sequence[str] | None = None) -> int:
 
         config = load_config(args.root)
         if args.command == "validate":
-            print("Configuration valid: 8 variants, 12 modules, 15 language editions")
+            from ck.catalog import load_catalog
+
+            items = load_catalog(args.root, config)
+            if args.release:
+                from ck.review import require_release_ready
+
+                require_release_ready(args.root)
+            print(
+                f"Configuration valid: 8 variants, 12 modules, 15 language editions; "
+                f"{len(items)} catalog entries (release readiness checked separately)"
+            )
+        elif args.command in {"catalog", "fetch"}:
+            from ck.catalog import attributions, load_catalog
+
+            items = load_catalog(args.root, config)
+            if args.command == "catalog":
+                attributions(items, args.output)
+                print(args.output)
+            else:
+                from ck.fetch import fetch
+
+                unknown = set(args.items) - items.keys()
+                if unknown:
+                    raise ValueError(f"Unknown catalog ids: {sorted(unknown)}")
+                for identifier in args.items:
+                    print(fetch(items[identifier], args.cache))
         elif args.command == "core":
             from ck.core import build_core
 

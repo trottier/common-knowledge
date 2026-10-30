@@ -1,0 +1,151 @@
+[
+  {
+    "id": "kiwix_android",
+    "family": "apk",
+    "title": "Kiwix for Android",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "5_MEDICAL_REFERENCE/android/",
+    "profiles": [
+      "full"
+    ],
+    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
+    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+  },
+  {
+    "id": "bitchat_android",
+    "family": "apk",
+    "title": "bitchat for Android",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "8_MESH_CHAT/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
+    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+  },
+  {
+    "id": "briar_android",
+    "family": "apk",
+    "title": "Briar for Android",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "8_MESH_CHAT/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
+    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+  },
+  {
+    "id": "osmand_android",
+    "family": "apk",
+    "title": "OsmAnd for Android",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/",
+    "profiles": [
+      "full"
+    ],
+    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
+    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+  },
+  {
+    "id": "android_gguf",
+    "family": "apk",
+    "title": "Open-source Android GGUF runner; select app",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "9_AI_ASSISTANT/android/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
+    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+  },
+  {
+    "id": "kiwix_windows",
+    "family": "binaries",
+    "title": "Kiwix desktop for windows",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "7_LAPTOP/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "kiwix_mac",
+    "family": "binaries",
+    "title": "Kiwix desktop for mac",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "7_LAPTOP/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "kiwix_linux",
+    "family": "binaries",
+    "title": "Kiwix desktop for linux",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "7_LAPTOP/",
+    "profiles": [
+      "full"
+    ]
+  }
+]
