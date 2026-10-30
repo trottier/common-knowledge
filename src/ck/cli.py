@@ -29,6 +29,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     render.add_argument("--format", choices=["phone", "print"], default="phone")
     render.add_argument("--output", type=Path, required=True)
     render.add_argument("--epoch", type=int)
+    core = commands.add_parser("core", help="Build START, card, tags and variant guide")
+    core.add_argument("--output", type=Path, default=Path("build/core"))
+    core.add_argument("--epoch", type=int)
+    core.add_argument("--languages", nargs="+", default=["en"])
     args = parser.parse_args(argv)
     try:
         if args.command is None:
@@ -39,6 +43,11 @@ def main(argv: Sequence[str] | None = None) -> int:
         config = load_config(args.root)
         if args.command == "validate":
             print("Configuration valid: 8 variants, 12 modules, 15 language editions")
+        elif args.command == "core":
+            from ck.core import build_core
+
+            files = build_core(args.root, config, args.output, args.epoch, args.languages)
+            print(f"Built {len(files)} core PDFs in {args.output}")
         elif args.command == "render":
             from ck.render import render_pdf
 

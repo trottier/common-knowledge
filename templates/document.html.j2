@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ language.code }}" dir="{{ language.dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src file:; base-uri 'none'; form-action 'none'">
+  <title>{{ title }}</title>
+  <meta name="dcterms.created" content="{{ timestamp }}">
+  <meta name="dcterms.modified" content="{{ timestamp }}">
+  <script type="application/json" id="coordination-defaults">{{ defaults | tojson }}</script>
+  <style>
+  {% for font in fonts %}
+  @font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }
+  {% endfor %}
+  body { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif; }
+  {{ css | safe }}
+  @page { size: {% if page_format == 'phone' %}90mm 160mm{% else %}Letter{% endif %};
+    @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ title }}</h1>
+    {% if draft %}<p class="draft">DRAFT · Not approved for release</p>{% endif %}
+  </header>
+  <nav aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>{% for heading in headings %}
+      <li><a href="#{{ heading.anchor }}">{{ heading.title }}</a></li>
+    {% endfor %}</ol>
+  </nav>
+  <main>{{ body }}</main>
+  {% if sources %}
+  <section class="sources">
+    <h2>Sources</h2>
+    {% for key, source in sources.items() %}
+    <p id="source-{{ key }}">[{{ key }}] {{ source.title }}
+      {% if source.url is defined %}<a href="{{ source.url }}">{{ source.url }}</a>{% endif %}
+    </p>
+    {% endfor %}
+  </section>
+  {% endif %}
+</body>
+</html>
