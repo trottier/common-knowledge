@@ -496,8 +496,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge
 - License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
 - Size: 69194073 bytes
-- SHA-256: `62cd8c0ef0a6edb3eb9f56ef1cbcb433aeed3f16573b91f64b1d88d67e925351`
-- Pipeline: medpdf-v1-17d55c688d6189530bd148bbd00853b217d11a232c02bb363e221b4416a729ec; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic
+- SHA-256: `03cb6a8e38360a0527cdac1c666e2893b4176a42bf5ce162fe83603cb667b5cc`
+- Pipeline: medpdf-v1-2abdee274b6c3ff255ea5c888f364e3d02b53c83bf8995250d8a0f2649da0ca4; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic
 
 ## National county road atlas
 

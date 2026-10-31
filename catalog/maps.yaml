@@ -112,7 +112,7 @@
     "title": "Curated medical phone PDFs",
     "version": "WikiMed 2026-10; development conversion",
     "size_bytes": 69194073,
-    "sha256": "62cd8c0ef0a6edb3eb9f56ef1cbcb433aeed3f16573b91f64b1d88d67e925351",
+    "sha256": "03cb6a8e38360a0527cdac1c666e2893b4176a42bf5ce162fe83603cb667b5cc",
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge",
     "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
@@ -133,7 +133,7 @@
       "noto_sans_tc",
       "wikimed_en_nopic"
     ],
-    "pipeline_version": "medpdf-v1-17d55c688d6189530bd148bbd00853b217d11a232c02bb363e221b4416a729ec",
+    "pipeline_version": "medpdf-v1-2abdee274b6c3ff255ea5c888f364e3d02b53c83bf8995250d8a0f2649da0ca4",
     "review": "[[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]"
   },
   {

@@ -114,5 +114,7 @@ All 150 phone PDFs and their README matched byte-for-byte across two complete
 builds with different worker counts (69,194,073 payload bytes). The first pair's
 audit manifests exposed nondeterministic duplicate-content warning pairs from the
 checker. The audit now records sorted duplicate equivalence groups, retaining all
-errors and the complete set of affected paths. Clean runs with this correction are
-in progress; the earlier payload match alone is not a whole-manifest match.
+errors and the complete set of affected paths. Two clean runs with this correction
+matched the complete generation manifest, including all payload and audit hashes.
+Its SHA-256 is `03cb6a8e38360a0527cdac1c666e2893b4176a42bf5ce162fe83603cb667b5cc`.
+This establishes component reproducibility, not reproducibility of a full drive.
