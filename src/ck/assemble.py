@@ -115,8 +115,6 @@ def _copy_core(root: Path, config: Configuration, core: Path, tree: Path) -> lis
             target.write_text(text, encoding="utf-8")
     if not editions:
         raise ValueError("No rendered language editions found")
-    for name in ("1_START", "4_PHONE_PACK"):
-        shutil.copytree(tree / name, tree / "BACKUP" / name)
     return editions
 
 
@@ -185,6 +183,8 @@ def assemble(
                 relative = dest + filename if dest.endswith("/") else dest
                 safe_path(relative)
                 copy_exact(source, tree / relative, item.sha256)
+        for name in ("1_START", "4_PHONE_PACK"):
+            shutil.copytree(tree / name, tree / "BACKUP" / name)
         attributions(placed, tree / "7_LAPTOP/THIRD_PARTY.txt")
         readme = ["COMMON KNOWLEDGE", f"Version {config.build.version}; variant {number}", ""]
         if profile != "full":

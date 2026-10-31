@@ -7,6 +7,13 @@ from ck.catalog import Collection, Item, Topics
 from ck.config import Configuration
 
 
+def placed_bytes(item: Item) -> int:
+    if not isinstance(item.size_bytes, int):
+        raise ValueError(f"Unmeasured item: {item.id}")
+    copies = 2 if item.dest.startswith(("1_START/", "4_PHONE_PACK/")) else 1
+    return item.size_bytes * copies
+
+
 def selected(item: Item, config: Configuration, number: int, profile: str) -> bool:
     if profile not in item.profiles or config.build.profiles[profile].third_party == "none":
         return False
@@ -93,7 +100,7 @@ def plan_variants(
             elif any(
                 core_bytes
                 + sum(
-                    item.size_bytes
+                    placed_bytes(item)
                     for item in chosen
                     if item.id != "android_roads_places" and isinstance(item.size_bytes, int)
                 )
@@ -125,7 +132,7 @@ def plan_variants(
             if not measured:
                 llm_reason = "Keep the model universal until every placed size is known."
             elif any(
-                core_bytes + sum(item.size_bytes for item in chosen) > usable
+                core_bytes + sum(placed_bytes(item) for item in chosen) > usable
                 for chosen in choices.values()
             ):
                 llm_variants = sorted(config.local_llm.fallback_variants)
@@ -146,7 +153,7 @@ def plan_variants(
             include(item, dependencies)
         problems = [issue for item in dependencies.values() for issue in item.blockers()]
         known = [item for item in chosen if isinstance(item.size_bytes, int)]
-        total = core_bytes + sum(item.size_bytes for item in known)
+        total = core_bytes + sum(placed_bytes(item) for item in known)
         if profile == "full":
             required_map = "osmand_prebuilt" if map_path == "prebuilt" else "android_roads_places"
             for required in ("national_atlas", "national_directory", required_map):
@@ -163,8 +170,8 @@ def plan_variants(
                 total,
                 sorted(item.id for item in chosen),
                 [
-                    {"id": item.id, "size_bytes": item.size_bytes}
-                    for item in sorted(known, key=lambda x: x.size_bytes, reverse=True)[:8]
+                    {"id": item.id, "size_bytes": placed_bytes(item)}
+                    for item in sorted(known, key=placed_bytes, reverse=True)[:8]
                 ],
                 sorted(set(problems)),
                 map_path,

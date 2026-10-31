@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from ck.assemble import assemble, check_manifest, write_manifest
+from ck.assemble import assemble, check_manifest, core_size, write_manifest
 from ck.config import load_config
 from ck.core import verify_core, write_core_manifest
 from ck.drive_safety import executable_allowed, validate_tree
@@ -209,3 +209,44 @@ def test_image_roundtrip_hidden_backup_and_reproducibility(tmp_path):
     assert first["compressed_sha256"] == second["compressed_sha256"]
     attributes = run(["mattrib", "-i", first["image"], "::/BACKUP"], EPOCH).stdout
     assert "H" in attributes.split("::")[0]
+
+
+def test_imported_phone_pack_files_are_backed_up_and_counted_twice(tmp_path, monkeypatch):
+    import hashlib
+
+    from ck.catalog import Item
+
+    core = tmp_path / "core"
+    (core / "en").mkdir(parents=True)
+    (core / "en/01_START_phone.pdf").write_bytes(b"Synthetic core payload, never shipped")
+    write_core_manifest(ROOT, core, EPOCH, ["en"], "sample")
+    payload = b"Synthetic imported document, never shipped"
+    checksum = hashlib.sha256(payload).hexdigest()
+    imported = Item(
+        id="guide",
+        family="docs",
+        title="Synthetic guide",
+        version="fixture",
+        url="https://example.invalid/guide.pdf",
+        size_bytes=len(payload),
+        sha256=checksum,
+        license="CC0-1.0",
+        attribution="Synthetic fixture",
+        license_proof_url="https://example.invalid/license",
+        placement="universal",
+        dest="4_PHONE_PACK/official/Guide.pdf",
+        profiles=["sample"],
+    )
+    monkeypatch.setattr("ck.assemble.load_catalog", lambda *args: {imported.id: imported})
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    (cache / checksum).write_bytes(payload)
+    config = load_config(ROOT)
+    plan = plan_variants(config, {imported.id: imported}, "sample", core_size(core))[0]
+    assert plan.known_total_bytes == core_size(core) + 2 * len(payload)
+    tree = assemble(
+        ROOT, config, core, tmp_path / "tree", 1, "sample", cache, tmp_path / "generated", EPOCH
+    )
+    assert (tree / "4_PHONE_PACK/official/Guide.pdf").read_bytes() == payload
+    assert (tree / "BACKUP/4_PHONE_PACK/official/Guide.pdf").read_bytes() == payload
+    check_manifest(tree)
