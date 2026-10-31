@@ -5,7 +5,7 @@
   <title>{{ title }}</title>
   <meta name="dcterms.created" content="{{ timestamp }}">
   <meta name="dcterms.modified" content="{{ timestamp }}">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src file:">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src file:; img-src data:">
   <script type="application/json" id="coordination-defaults">{{ defaults | tojson }}</script>
   <style>
   {% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
@@ -29,7 +29,9 @@
   .picture svg { display: block; width: 100%; height: 36mm; }
   .picture p { font-size: 12pt; margin-top: 2mm; }
   .qr { display: flex; justify-content: space-between; margin-top: 3mm; font-size: 8pt; }
-  .qr span { width: 31%; border: 1px solid black; background: #fff096; padding: 2mm; }
+  .qr .destination, .qr .unconfirmed { width: 31%; text-align: center; }
+  .qr img { display: block; width: 25mm; height: 25mm; margin: auto; }
+  .qr .unconfirmed { border: 1px solid black; background: #fff096; padding: 2mm; }
   </style>
 </head>
 <body>
@@ -37,7 +39,10 @@
   <h1>{{ title }}</h1>
   {% if draft %}<p class="draft">{{ edition.draft_label }}</p>{% endif %}
   {{ body }}
-  <div class="qr">{% for label in edition.qr_labels %}<span>{{ label }}<br>[[VERIFY: QR URL]]</span>{% endfor %}</div>
+  <div class="qr">{% for link in card_links %}
+    {% if link.url %}<span class="destination"><a href="{{ link.url }}"><img src="{{ link.image }}" alt="{{ link.label }}">{{ link.label }}</a></span>
+    {% else %}<span class="unconfirmed">{{ link.label }}<br>{{ link.unconfirmed }}</span>{% endif %}
+  {% endfor %}</div>
 </section>
 <section class="back">
   <div class="placard"><span>OK</span><span>HELP</span></div>

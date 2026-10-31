@@ -127,6 +127,7 @@ def render_html(
     profile: str = "dev",
     fallback_ids: tuple[str, ...] = (),
 ) -> str:
+    from ck.cardlinks import card_links
     from ck.catalog import Collection, load_catalog
     from ck.locales import display_defaults, edition_for
     from ck.planner import selected
@@ -207,6 +208,9 @@ def render_html(
         css=(root / "templates/document.css").read_text(),
         draft=header.status != "reviewed" or edition.status != "reviewed",
         defaults=config.defaults.model_dump(),
+        card_links=card_links(config.build.site_base_url, edition.qr_labels)
+        if template == "card.html.j2"
+        else [],
     )
 
 

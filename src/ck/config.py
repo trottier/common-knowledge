@@ -169,8 +169,11 @@ class Build(Model):
 
     @model_validator(mode="after")
     def all_profiles(self) -> Self:
+        from ck.cardlinks import site_urls
+
         if set(self.profiles) != {"dev", "sample", "full"}:
             raise ValueError("dev, sample and full profiles are required")
+        site_urls(self.site_base_url)
         return self
 
 

@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Common Knowledge — {% if kind == 'videos' %}videos{% else %}state emergency agencies{% endif %}</title>
+<style>body{font:1rem/1.5 system-ui,sans-serif;max-width:48rem;margin:auto;padding:1rem}a{color:#0645ad}.draft{border:3px solid #975600;padding:1rem}code{overflow-wrap:anywhere}</style>
+</head><body>
+<nav><a href="{{ card_pages[2] }}">Verification</a> · <a href="{{ card_pages[0] }}">Videos</a> · <a href="{{ card_pages[1] }}">State emergency agencies</a></nav>
+{% if draft %}<p class="draft">Development project. No published drive release is listed here.</p>{% endif %}
+{% if kind == 'videos' %}
+<h1>Videos</h1>
+<p>On the drive, open <code>2_VIDEOS</code> for shared videos. Open <code>6_VIDEOS_AND_IN_DEPTH/topics</code> for this variant's topic videos.</p>
+<p>Open the MP4 file in your video player. When the file includes translated tracks, use the player's audio or subtitle menu to choose a language.</p>
+<h2>Publisher source files</h2>
+<p>These links require internet. Source files may use a different format from the drive's MP4 files. The sources below do not certify a published drive release.</p>
+<ul>{% for video in videos %}<li><a href="{{ video.url }}">{{ video.title }}</a> — {{ video.attribution }}</li>{% else %}<li>No verified source download is listed yet.</li>{% endfor %}</ul>
+{% else %}
+<h1>State emergency agencies</h1>
+{% if agency_url %}<p><a href="{{ agency_url }}">Open the federal USAGov list of state emergency agencies.</a> This link requires internet.</p>
+{% else %}<p>The federal directory source is not confirmed yet.</p>{% endif %}
+<p>Without internet, open the drive's <code>3_MAPS_AND_PLACES/directory</code> folder and choose your state or territory.</p>
+<p>A listed agency or public place is not confirmation of an open shelter or an available service during an emergency.</p>
+{% endif %}
+</body></html>

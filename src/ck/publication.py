@@ -292,18 +292,43 @@ def build_site(
         }
         for item in sorted(catalog.values(), key=lambda item: item.id)
     ]
-    document = (
-        Environment(
-            loader=FileSystemLoader(root / "templates"), autoescape=True, undefined=StrictUndefined
-        )
-        .get_template("verification.html.j2")
-        .render(
-            releases=releases,
-            full_builds=full_builds,
-            items=items,
-            draft=not releases and not full_builds,
-        )
+    from ck.cardlinks import PAGES
+
+    environment = Environment(
+        loader=FileSystemLoader(root / "templates"), autoescape=True, undefined=StrictUndefined
+    )
+    document = environment.get_template("verification.html.j2").render(
+        releases=releases,
+        full_builds=full_builds,
+        items=items,
+        draft=not releases and not full_builds,
+        card_pages=PAGES,
     )
     output.mkdir(parents=True)
-    (output / "index.html").write_text(document)
+    (output / PAGES[2]).write_text(document)
+    videos = [
+        item
+        for item in catalog.values()
+        if item.family == "video"
+        and item.url
+        and item.url.startswith("https://")
+        and isinstance(item.size_bytes, int)
+        and "[[VERIFY" not in item.sha256
+        and not item.requires_legal
+        and "[[VERIFY" not in item.license
+    ]
+    agencies = catalog.get("state_emergency_agencies")
+    agency_url = (
+        agencies.url if agencies and agencies.url and agencies.url.startswith("https://") else None
+    )
+    for number, kind in enumerate(("videos", "agencies")):
+        (output / PAGES[number]).write_text(
+            environment.get_template("card-page.html.j2").render(
+                kind=kind,
+                card_pages=PAGES,
+                videos=videos,
+                agency_url=agency_url,
+                draft=not releases and not full_builds,
+            )
+        )
     (output / ".nojekyll").write_text("")
