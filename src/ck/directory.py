@@ -17,7 +17,7 @@ from pydantic import Field, model_validator
 
 from ck.catalog import Item
 from ck.config import Configuration, Model, Text
-from ck.generated import cached_input, generation_manifest
+from ck.generated import generation_manifest
 from ck.render import render_pdf
 
 Category = Literal[
@@ -176,9 +176,10 @@ def schools(path: Path, item: Item):
             book.close()
 
 
-def osm_places(path: Path, item: Item):
+def osm_places(path: Path, item: Item, rejected: list | None = None):
     import osmium
     from shapely import from_wkb
+    from shapely.errors import GEOSException
 
     places = {}
     factory = osmium.geom.WKBFactory()
@@ -202,7 +203,7 @@ def osm_places(path: Path, item: Item):
             places[identifier] = Place(
                 id=identifier,
                 category=category,
-                name=tags.get("name", "[name missing in source]"),
+                name=tags.get("name") or "[name missing in source]",
                 address=address,
                 latitude=float(latitude),
                 longitude=float(longitude),
@@ -217,9 +218,29 @@ def osm_places(path: Path, item: Item):
 
         def area(self, area):
             if osm_category(dict(area.tags)):
-                point = from_wkb(factory.create_multipolygon(area)).representative_point()
                 kind = "w" if area.from_way() else "r"
-                self.add(area, f"osm-{kind}{area.orig_id()}", point.y, point.x)
+                identifier = f"osm-{kind}{area.orig_id()}"
+                try:
+                    geometry = from_wkb(factory.create_multipolygon(area))
+                    if geometry.is_empty or not geometry.is_valid:
+                        raise ValueError("Invalid or empty area geometry")
+                    point = geometry.representative_point()
+                except (RuntimeError, ValueError, GEOSException):
+                    if rejected is None:
+                        raise
+                    tags = dict(area.tags)
+                    rejected.append(
+                        {
+                            "id": identifier,
+                            "source_id": item.id,
+                            "as_of": item.version,
+                            "name": tags.get("name") or "[name missing in source]",
+                            "category": osm_category(tags),
+                            "reason": "Invalid or incomplete OSM area geometry",
+                        }
+                    )
+                    return
+                self.add(area, identifier, point.y, point.x)
 
     with tempfile.TemporaryDirectory(prefix="ck-osm-places-") as temporary:
         filtered = Path(temporary) / "places.osm.pbf"
@@ -307,12 +328,12 @@ def emergency_agencies(path: Path) -> dict[str, str]:
     return parser.agencies
 
 
-def assign_counties(places, boundaries, state_fips: str):
+def assign_counties(places, boundaries, state_fips: str | None):
     from shapely import Point
 
-    boundaries = (
-        boundaries[boundaries.STATEFP == state_fips].sort_values("GEOID").reset_index(drop=True)
-    )
+    if state_fips is not None:
+        boundaries = boundaries[boundaries.STATEFP == state_fips]
+    boundaries = boundaries.sort_values("GEOID").reset_index(drop=True)
     if boundaries.empty:
         raise ValueError(f"No Census counties for state FIPS {state_fips}")
     result = []
@@ -325,7 +346,9 @@ def assign_counties(places, boundaries, state_fips: str):
             place.county, place.county_name = county.GEOID, county.NAMELSAD
             result.append(place)
     # Stable IDs deduplicate repeat extracts, without guessing that nearby places are identical.
-    unique = {place.id: place for place in result}
+    unique = {}
+    for place in result:
+        unique.setdefault(place.id, place)
     return sorted(
         unique.values(),
         key=lambda p: (p.county_name.casefold(), p.category, p.name.casefold(), p.id),
@@ -345,6 +368,8 @@ def build_directory(
     atlas_index: Path | None = None,
     atlas_id: str | None = None,
     seed: bool = False,
+    points: Path | None = None,
+    points_id: str | None = None,
 ) -> dict:
     if output.exists():
         raise ValueError("Directory output must be new")
@@ -354,22 +379,16 @@ def build_directory(
         raise ValueError(
             "Final atlas references need both an index and catalog ID; seeds have neither"
         )
-    ids = [
-        "census_county_analysis",
-        "census_states",
-        "nces_schools",
-        "imls_libraries",
-        osm_id,
-        "noaa_transmitters",
-        "state_emergency_agencies",
-        "fcc_stations",
-        "fcc_locations",
-        "fcc_license_versions",
-        "fcc_service_codes",
-        "fcc_facility_statuses",
-        "fema_risk",
-    ]
-    paths = {identifier: cached_input(items[identifier], cache) for identifier in ids}
+    if bool(points) != bool(points_id):
+        raise ValueError("Prepared national points need both a directory and catalog ID")
+    from ck.national import load_national_points, prepare_data
+
+    prepared = (
+        load_national_points(items[points_id], points, items, epoch)
+        if points
+        else prepare_data(items, cache, [osm_id])
+    )
+    ids = list(prepared.source_ids)
     atlas_complete = False
     if atlas_index:
         from ck.fetch import digest
@@ -394,24 +413,12 @@ def build_directory(
             raise ValueError("Atlas index differs from its pinned source or epoch")
         atlas_complete = atlas_manifest["complete"]
         ids.append(atlas_id)
-    with paths["census_states"].open() as stream:
-        states = {row["STUSAB"]: row["STATE"] for row in csv.DictReader(stream, delimiter="|")}
-    if states.get(state.upper()) != state_fips:
+    if prepared.states.get(state.upper()) != state_fips:
         raise ValueError("State code and FIPS disagree with Census reference data")
-    boundaries = read_boundaries(paths["census_county_analysis"])
-    rejected = []
-    from ck.directory_sources import broadcast_stations, county_profiles
-
-    counties = boundaries[boundaries.STATEFP == state_fips]
-    profiles, missing_profiles = county_profiles(paths["fema_risk"], set(counties.GEOID))
-    records = [
-        *schools(paths["nces_schools"], items["nces_schools"]),
-        *libraries(paths["imls_libraries"], items["imls_libraries"]),
-        *osm_places(paths[osm_id], items[osm_id]),
-        *weather_radio(paths["noaa_transmitters"], items["noaa_transmitters"], rejected),
-        *broadcast_stations(paths, items, None, rejected),
-    ]
-    places = assign_counties(records, boundaries, state_fips)
+    profiles = {code: row for code, row in prepared.profiles.items() if code.startswith(state_fips)}
+    missing_profiles = [code for code in prepared.missing_profiles if code.startswith(state_fips)]
+    rejected = prepared.rejected
+    places = [place for place in prepared.places if place.county.startswith(state_fips)]
     if not places:
         raise ValueError("No public places matched the requested state")
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -432,7 +439,7 @@ def build_directory(
             )
         if atlas_index:
             (stage / "atlas-index.json").write_bytes(atlas_index.read_bytes())
-        agencies = emergency_agencies(paths["state_emergency_agencies"])
+        agencies = prepared.agencies
         present = {
             "nces_schools",
             "imls_libraries",
@@ -445,7 +452,9 @@ def build_directory(
             present.add("state_emergency_agencies")
         missing = sorted(REQUIRED_SOURCES - present)
         missing_references = sorted(place.id for place in places if place.id not in references)
-        source_complete = not (missing or rejected or missing_profiles)
+        # Published missing coordinates/profiles are disclosed source limits,
+        # not missing pipeline work. Never invent locations or risk ratings.
+        source_complete = not missing
         complete = source_complete and (seed or (atlas_complete and not missing_references))
         metadata = {
             "state": state.upper(),
@@ -469,9 +478,14 @@ def build_directory(
             ),
             "license_notice": "OpenStreetMap data: ODbL-1.0. Federal source data: public domain.",
             "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
-            "source_versions": {identifier: items[identifier].version for identifier in ids},
+            "source_versions": {
+                **prepared.source_versions,
+                **{identifier: items[identifier].version for identifier in ids},
+            },
             "places": [place.model_dump(exclude={"tags"}) for place in places],
             "county_profiles": profiles,
+            "omitted_source_records": rejected,
+            "missing_county_profiles": missing_profiles,
         }
         (files / f"{state.upper()}_SOURCE_DATA.json").write_text(
             json.dumps(public_data, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
@@ -498,8 +512,9 @@ def build_directory(
         ]
         if rejected:
             body += [
-                f"[[VERIFY: {len(rejected)} source records lack confirmed geographic references; "
-                "review the build rejection report before publication.]]",
+                "Some source records lack usable geographic references and are omitted. "
+                "This directory is not exhaustive. "
+                "The companion source data lists those omissions.",
                 "",
             ]
         for place in places:
@@ -553,9 +568,9 @@ def build_directory(
             body += [f"Source: fema_risk; as of {plain(items['fema_risk'].version)}.", ""]
         if missing_profiles:
             body += [
-                "[[VERIFY: FEMA has no county profile for Census codes "
+                "This FEMA snapshot publishes no county profile for Census codes "
                 + ", ".join(missing_profiles)
-                + "; review source coverage.]]",
+                + ". No rating is inferred.",
                 "",
             ]
         if state.upper() in agencies:
@@ -600,6 +615,7 @@ def build_directory(
         for relative in (
             "src/ck/directory.py",
             "src/ck/directory_sources.py",
+            "src/ck/national.py",
             "src/ck/generated.py",
             "src/ck/render.py",
             "src/ck/locales.py",

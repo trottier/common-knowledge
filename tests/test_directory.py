@@ -106,6 +106,49 @@ def test_generated_manifest_records_incomplete_status_and_exact_files(tmp_path):
     assert metadata["inputs"] == {"source": "0" * 64}
 
 
+def test_invalid_osm_area_requires_an_explicit_omission_audit(tmp_path, monkeypatch):
+    import subprocess
+
+    import osmium
+
+    from ck.catalog import load_catalog
+
+    xml = tmp_path / "area.osm"
+    xml.write_text("""<osm version="0.6">
+      <node id="1" version="1" lat="1" lon="1"/>
+      <node id="2" version="1" lat="1" lon="2"/>
+      <node id="3" version="1" lat="2" lon="2"/>
+      <way id="4" version="1">
+        <nd ref="1"/><nd ref="2"/><nd ref="3"/><nd ref="1"/>
+        <tag k="amenity" v="hospital"/><tag k="name" v="Synthetic hospital"/>
+      </way>
+    </osm>""")
+    pbf = tmp_path / "area.pbf"
+    subprocess.run(["osmium", "cat", str(xml), "-o", str(pbf)], check=True)
+    item = load_catalog(Path(__file__).resolve().parents[1])["geofabrik_us"]
+    assert [record.id for record in osm_places(pbf, item)] == ["osm-w4"]
+
+    class InvalidAreaFactory:
+        def create_multipolygon(self, area):
+            raise RuntimeError("Synthetic incomplete area")
+
+    monkeypatch.setattr(osmium.geom, "WKBFactory", InvalidAreaFactory)
+    with pytest.raises(RuntimeError, match="Synthetic incomplete"):
+        list(osm_places(pbf, item))
+    rejected = []
+    assert list(osm_places(pbf, item, rejected)) == []
+    assert rejected == [
+        {
+            "id": "osm-w4",
+            "source_id": item.id,
+            "as_of": item.version,
+            "name": "Synthetic hospital",
+            "category": "hospital",
+            "reason": "Invalid or incomplete OSM area geometry",
+        }
+    ]
+
+
 def test_extensionless_checksum_cache_supports_county_zip(tmp_path):
     import zipfile
 

@@ -55,10 +55,18 @@ def main(argv: Sequence[str] | None = None) -> int:
     directory.add_argument("--output", type=Path, required=True)
     directory.add_argument("--atlas-index", type=Path)
     directory.add_argument("--atlas-id")
+    directory.add_argument("--points", type=Path)
+    directory.add_argument("--points-id")
     directory.add_argument(
         "--seed", action="store_true", help="Build atlas points before PDF page references exist"
     )
     directory.add_argument("--epoch", type=int)
+    national = commands.add_parser(
+        "national-points", help="Prepare all national directory points once"
+    )
+    national.add_argument("--cache", type=Path, default=Path("cache"))
+    national.add_argument("--output", type=Path, required=True)
+    national.add_argument("--epoch", type=int)
     android_map = commands.add_parser("android-map", help="Build a roads-and-places OsmAnd map")
     android_map.add_argument("--state", required=True)
     android_map.add_argument("--osm-id", required=True)
@@ -183,6 +191,24 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "national-points":
+            from ck.catalog import load_catalog
+            from ck.national import build_national_points
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_national_points(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "languages-audit":
             from ck.language_audit import audit_languages
 
@@ -458,6 +484,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                         args.atlas_index,
                         args.atlas_id,
                         args.seed,
+                        args.points,
+                        args.points_id,
                     ),
                     indent=2,
                 )

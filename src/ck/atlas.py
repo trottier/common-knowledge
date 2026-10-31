@@ -150,21 +150,34 @@ def atlas_budget(outputs: list[Path], states: list[str], maximum: int) -> dict:
     return {"total_bytes": total, "maximum_bytes": maximum, "states": dict(sorted(sizes.items()))}
 
 
-def directory_points(directory: Path) -> tuple[dict, list[Place]]:
+def directory_points(
+    directory: Path, state: str | None = None, state_fips: str | None = None
+) -> tuple[dict, list[Place]]:
     manifest = json.loads((directory / "generation.json").read_text())
     binding = next(
         (item for item in manifest.get("intermediates", []) if item["path"] == "places.json"), None
     )
     source = directory / "places.json"
-    if binding is None or binding["sha256"] != digest(source):
+    if (
+        source.is_symlink()
+        or not source.is_file()
+        or binding is None
+        or binding["sha256"] != digest(source)
+    ):
         raise ValueError("Directory points are unbound or changed; regenerate the directory")
     data = json.loads(source.read_text())
-    if data.get("purpose") != "atlas-points":
+    if data.get("purpose") == "national-atlas-points":
+        if not state or not state_fips or data["states"].get(state) != state_fips:
+            raise ValueError("National point jurisdiction and Census FIPS disagree")
+        selected = [row for row in data["places"] if row["county"].startswith(state_fips)]
+    elif data.get("purpose") == "atlas-points":
+        selected = data["places"]
+    else:
         raise ValueError(
             "Prepare an atlas point seed with ck directory --seed; "
             "final directories depend on the atlas"
         )
-    return manifest, [Place.model_validate(raw) for raw in data["places"]]
+    return manifest, [Place.model_validate(raw) for raw in selected]
 
 
 def outline(geometry, frame: Frame) -> list[str]:
@@ -248,10 +261,12 @@ def prepare_atlas(
     directory_id: str = "directory_points",
 ) -> Path:
     settings = Settings.model_validate(read_yaml(root / "pipelines/atlas/settings.yaml"))
-    directory_manifest, places = directory_points(directory)
+    directory_manifest, places = directory_points(directory, state, state_fips)
     verified_generated_files(catalog[directory_id], directory, catalog, allow_incomplete=True)
     directory_data = json.loads((directory / "places.json").read_text())
-    if directory_data["state"] != state or directory_data["state_fips"] != state_fips:
+    if directory_data["purpose"] == "atlas-points" and (
+        directory_data["state"] != state or directory_data["state_fips"] != state_fips
+    ):
         raise ValueError("Directory and atlas state disagree")
     if (output / "rendered.json").exists():
         raise ValueError("Atlas already rendered; choose a clean preparation directory")
