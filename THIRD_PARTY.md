@@ -1068,7 +1068,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: © OpenStreetMap contributors; Protomaps basemap produced work
 - License proof: https://docs.protomaps.com/basemaps/downloads
 - Size: 139202898553 bytes
-- SHA-256: `[[VERIFY: compute SHA-256 after checking publisher BLAKE3 of full source]]`
+- SHA-256: `6956cdf4b143984a31e060faaa32848c74a71903135b5a7f8989c218ece8795d`
 - Publisher file: https://build.protomaps.com/20261030.pmtiles
 
 ## Rhode Island bounded Protomaps atlas build input

@@ -75,6 +75,7 @@ class Item(Model):
     source_id: Identifier | None = None
     source_for: Identifier | None = None
     checksum_source_url: Https | Marker | None = None
+    publisher_blake3: Sha256 | Marker | None = None
     review: Text | None = None
     requires_legal: bool = False
     permission_proof_url: Https | Marker | None = None

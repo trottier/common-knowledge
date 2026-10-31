@@ -129,6 +129,41 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     verify.add_argument("image", type=Path)
     verify.add_argument("--epoch", type=int)
+    site = commands.add_parser("site", help="Build the static verification site")
+    site.add_argument("--output", type=Path, required=True)
+    site.add_argument("--manifest", type=Path, action="append", default=[])
+    site.add_argument("--full-manifest", type=Path, action="append", default=[])
+    site.add_argument("--manifest-dir", type=Path, action="append", default=[])
+    site.add_argument("--full-manifest-dir", type=Path, action="append", default=[])
+    site.add_argument("--repository", required=True)
+    lock = commands.add_parser("catalog-lock", help="Write the pinned catalog lock")
+    lock.add_argument("--output", type=Path, required=True)
+    lock.add_argument("--epoch", type=int)
+    release = commands.add_parser("release-assets", help="Prepare gated GitHub release assets")
+    release.add_argument("--core", type=Path, required=True)
+    release.add_argument("--images", type=Path, required=True)
+    release.add_argument("--cache", type=Path, default=Path("cache"))
+    release.add_argument("--output", type=Path, required=True)
+    release.add_argument("--commit", required=True)
+    release.add_argument("--epoch", type=int)
+    sources = commands.add_parser("release-sources", help="Fetch gated GPL corresponding sources")
+    sources.add_argument("--cache", type=Path, default=Path("cache"))
+    sourcecheck = commands.add_parser("verify-input", help="Cross-check a publisher BLAKE3 pin")
+    sourcecheck.add_argument("--item", required=True)
+    sourcecheck.add_argument("--file", type=Path, required=True)
+    sourcecheck.add_argument("--report", type=Path)
+    preflight = commands.add_parser("check-profile", help="Fail on every unresolved profile input")
+    preflight.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    build = commands.add_parser("build-profile", help="Build staged, verified variant images")
+    build.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    build.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
+    build.add_argument("--output", type=Path, required=True)
+    build.add_argument("--cache", type=Path, default=Path("cache"))
+    build.add_argument("--generated", type=Path, default=Path("build/generated"))
+    build.add_argument("--epoch", type=int)
+    build.add_argument("--commit")
+    build.add_argument("--reproduce", action="store_true")
+    build.add_argument("--keep-raw", action="store_true")
     args = parser.parse_args(argv)
     try:
         if args.command is None:
@@ -137,6 +172,75 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command in {"check-profile", "build-profile"}:
+            from ck.build import build_profile, check_profile
+
+            if args.command == "check-profile":
+                print(json.dumps(check_profile(args.root, args.profile), indent=2))
+            else:
+                print(
+                    json.dumps(
+                        build_profile(
+                            args.root,
+                            args.output,
+                            args.cache,
+                            args.generated,
+                            args.profile,
+                            args.variants or sorted(config.variants.variants),
+                            args.epoch,
+                            args.reproduce,
+                            args.keep_raw,
+                            args.commit,
+                        ),
+                        indent=2,
+                    )
+                )
+            return 0
+        if args.command == "release-sources":
+            from ck.publication import release_sources
+
+            release_sources(args.root, args.cache)
+            return 0
+        if args.command in {"site", "catalog-lock", "release-assets"}:
+            from ck.publication import build_site, prepare_release, write_catalog_lock
+            from ck.render import epoch_for
+
+            if args.command == "site":
+                manifests = args.manifest + [
+                    p for folder in args.manifest_dir for p in folder.glob("*.json")
+                ]
+                full_manifests = args.full_manifest + [
+                    p for folder in args.full_manifest_dir for p in folder.glob("*.json")
+                ]
+                build_site(args.root, manifests, args.output, args.repository, full_manifests)
+            elif args.command == "catalog-lock":
+                args.output.parent.mkdir(parents=True, exist_ok=True)
+                write_catalog_lock(args.root, args.output, epoch_for(config, args.epoch))
+            else:
+                prepare_release(
+                    args.root,
+                    args.core,
+                    args.images,
+                    args.cache,
+                    args.output,
+                    epoch_for(config, args.epoch),
+                    args.commit,
+                )
+            print(args.output)
+            return 0
+        if args.command == "verify-input":
+            from ck.catalog import load_catalog
+            from ck.sourcecheck import verify_publisher_input
+
+            result = verify_publisher_input(load_catalog(args.root, config)[args.item], args.file)
+            document = json.dumps(result, sort_keys=True, indent=2) + "\n"
+            if args.report:
+                if args.report.exists():
+                    raise ValueError("Verification report output exists")
+                args.report.parent.mkdir(parents=True, exist_ok=True)
+                args.report.write_text(document)
+            print(document, end="")
+            return 0
         if args.command == "local-llm":
             from ck.catalog import load_catalog
             from ck.llm import build_bundle

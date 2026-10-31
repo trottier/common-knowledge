@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Common Knowledge — verification</title>
+<style>body{font:1rem/1.5 system-ui,sans-serif;max-width:78rem;margin:auto;padding:1rem}
+table{border-collapse:collapse;width:100%}th,td{padding:.6rem;border:1px solid #999;text-align:left;vertical-align:top}
+code{overflow-wrap:anywhere}a{color:#0645ad}.draft{border:3px solid #975600;padding:1rem}
+.scroll{overflow:auto}h2{margin-top:2rem}</style></head><body>
+<h1>Common Knowledge</h1><p>Check a drive or download against the publisher's SHA-256.</p>
+{% if draft %}<p class="draft">Development project. No published release files are listed here.</p>{% endif %}
+<h2>Check a file</h2><p>Use the command for your computer. Replace FILE with the downloaded file's name.
+Compare all 64 characters with the SHA-256 below.</p>
+<p>Linux: <code>sha256sum FILE</code><br>Mac: <code>shasum -a 256 FILE</code><br>
+Windows: <code>certutil -hashfile FILE SHA256</code></p>
+<p>The manifest inside an image covers every other file. Its own hash is published separately.</p>
+{% for release in releases %}<h2>Version {{ release.version }} — {{ release.profile }}</h2>
+<p>Source commit: <code>{{ release.commit }}</code>. Development images contain the core documents;
+full drive images require their own published hashes.</p><div class="scroll"><table>
+<thead><tr><th>File</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody>
+{% for file in release.files %}<tr><td><a href="{{ file.url }}">{{ file.name }}</a></td>
+<td>{{ file.size_bytes }}</td><td><code>{{ file.sha256 }}</code></td></tr>{% endfor %}
+</tbody></table></div>{% endfor %}
+{% for build in full_builds %}<h2>Version {{ build.version }} — full drive images</h2>
+<p>Source commit: <code>{{ build.commit }}</code>. All eight variants matched independent builds.
+Hashes are published here; download hosting is announced separately.</p>
+{% for image in build.images %}<h3>Variant {{ image.variant }}</h3>
+<p><code>{{ image.image }}</code> ({{ image.image_size_bytes }} bytes)<br>
+SHA-256: <code>{{ image.sha256 }}</code></p>
+<p><code>{{ image.compressed }}</code> ({{ image.compressed_size_bytes }} bytes)<br>
+SHA-256: <code>{{ image.compressed_sha256 }}</code></p>
+<p>Manifest <code>{{ image.manifest }}</code><br>SHA-256: <code>{{ image.manifest_sha256 }}</code></p>
+{% endfor %}{% endfor %}
+<h2>Catalog and attribution</h2><p>Unconfirmed candidates remain labeled VERIFY. Their presence here is not permission to redistribute them.</p>
+<div class="scroll"><table><thead><tr><th>Item</th><th>License and proof</th><th>Attribution</th><th>SHA-256</th><th>Review</th></tr></thead><tbody>
+{% for item in items %}<tr><td>{{ item.title }}</td><td>{{ item.license }}{% if item.proof %}<br>
+<a href="{{ item.proof }}">Publisher license evidence</a>{% endif %}</td><td>{{ item.attribution }}</td>
+<td><code>{{ item.sha256 }}</code></td><td>{{ item.review or 'Source pins recorded' }}</td></tr>{% endfor %}</tbody></table></div>
+<p>This page uses no scripts, analytics or tracking services.</p></body></html>
