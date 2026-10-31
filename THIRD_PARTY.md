@@ -95,13 +95,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census cartographic county boundaries
 
 - Catalog id: `census_counties`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 cartographic boundary files
+- License proof: https://meta.geo.census.gov/data/existing/decennial/GEO/CPMB/boundary/2025/19115/shp/cb_2025_us_county_500k.shp.iso.xml
+- Size: 11758981 bytes
+- SHA-256: `aa976c00b181939755d0da757f4c7c2dc0103c3b3b4530fb2a91c2bb62fc777c`
+- Publisher file: https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip
+
+## Census TIGER Line counties for spatial assignment
+
+- Catalog id: `census_county_analysis`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line
+- License proof: [[VERIFY: per-item TIGER Line redistribution statement]]
+- Size: 83989800 bytes
+- SHA-256: `9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip
 
 ## Census places or urban areas for atlas insets
 
@@ -113,6 +124,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Census state FIPS codes and names
+
+- Catalog id: `census_states`
+- Version: Wed, 13 Mar 2013 18:26:28 GMT
+- License: US-PD
+- Attribution: U.S. Census Bureau
+- License proof: [[VERIFY: confirm Census reference-file redistribution statement]]
+- Size: 1485 bytes
+- SHA-256: `bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0`
+- Publisher file: https://www2.census.gov/geo/docs/reference/state.txt
 
 ## Critical federal or Commons videos; select individual files
 
@@ -179,6 +201,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Geofabrik Rhode Island OSM extract
+
+- Catalog id: `geofabrik_ri`
+- Version: 2026-10-29
+- License: ODbL-1.0
+- Attribution: © OpenStreetMap contributors; extract by Geofabrik
+- License proof: https://download.geofabrik.de/north-america/us/rhode-island.html
+- Size: 52514407 bytes
+- SHA-256: `ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162`
+- Publisher file: https://download.geofabrik.de/north-america/us/rhode-island-261029.osm.pbf
 
 ## Geofabrik U.S. OSM extract
 
@@ -271,13 +304,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## IMLS Public Libraries Survey outlets
 
 - Catalog id: `imls_libraries`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: FY2024
+- License: US-PD
+- Attribution: Institute of Museum and Library Services, FY 2024 Public Libraries Survey
+- License proof: https://www.imls.gov/research-evaluation/surveys/public-libraries-survey-pls
+- Size: 3571467 bytes
+- SHA-256: `6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7`
+- Publisher file: https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip
 
 ## Kiwix for Android
 
@@ -403,24 +436,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## NCES EDGE public-school locations
 
 - Catalog id: `nces_schools`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2024-2025
+- License: US-PD
+- Attribution: U.S. Department of Education, NCES EDGE
+- License proof: https://www.ed.gov/about/contact-us/faqs
+- Size: 30448565 bytes
+- SHA-256: `9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288`
+- Publisher file: https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2425.zip
 
 ## NWS NOAA Weather Radio transmitter list
 
 - Catalog id: `noaa_transmitters`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2026-10-30T23:25:27Z
+- License: US-PD
+- Attribution: National Weather Service NOAA Weather Radio station data; public domain
+- License proof: https://www.weather.gov/disclaimer
+- Size: 754907 bytes
+- SHA-256: `e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22`
+- Publisher file: https://www.weather.gov/source/nwr/JS/ccl-data.js
 
 ## NotoSans[wdth,wght].ttf
 
@@ -741,16 +774,16 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## Official federal list of state and territory emergency agencies
+## USAGov state and territory emergency agency links
 
 - Catalog id: `state_emergency_agencies`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: Thu, 29 Oct 2026 13:21:36 GMT
+- License: US-PD
+- Attribution: USAGov, U.S. General Services Administration
+- License proof: https://www.usa.gov/government-copyright
+- Size: 43097 bytes
+- SHA-256: `494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808`
+- Publisher file: https://www.usa.gov/state-emergency-management
 
 ## WikEM without pictures
 

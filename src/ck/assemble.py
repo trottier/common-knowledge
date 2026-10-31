@@ -123,7 +123,9 @@ def _copy_core(root: Path, config: Configuration, core: Path, tree: Path) -> lis
     return editions
 
 
-def _place_generated(item: Item, generated: Path, tree: Path, dest: str) -> None:
+def _place_generated(
+    item: Item, generated: Path, tree: Path, dest: str, catalog: dict[str, Item]
+) -> None:
     directory = generated / item.id
     metadata = json.loads((directory / "generation.json").read_text())
     encoded = json.dumps(metadata, sort_keys=True, separators=(",", ":")).encode()
@@ -131,6 +133,11 @@ def _place_generated(item: Item, generated: Path, tree: Path, dest: str) -> None
         raise ValueError(f"Generated manifest checksum mismatch: {item.id}")
     if metadata["pipeline_version"] != item.pipeline_version:
         raise ValueError(f"Pipeline version mismatch: {item.id}")
+    if metadata.get("complete") is not True:
+        raise ValueError(f"Generated content is incomplete: {item.id}")
+    expected_inputs = {identifier: catalog[identifier].sha256 for identifier in item.inputs}
+    if metadata.get("inputs") != expected_inputs:
+        raise ValueError(f"Generated input pins changed: {item.id}; regenerate the output")
     if sum(entry["size_bytes"] for entry in metadata["files"]) != item.size_bytes:
         raise ValueError(f"Generated size mismatch: {item.id}")
     for entry in metadata["files"]:
@@ -182,7 +189,7 @@ def assemble(
         for item in placed.values():
             dest = destination(item, config, number)
             if item.family == "generated":
-                _place_generated(item, generated, tree, dest)
+                _place_generated(item, generated, tree, dest, items)
             else:
                 source = cache / item.sha256
                 if not source.exists() and not allow_download:

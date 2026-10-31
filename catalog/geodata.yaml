@@ -20,18 +20,20 @@
     "id": "census_counties",
     "family": "geodata",
     "title": "Census cartographic county boundaries",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip",
+    "version": "2025",
+    "size_bytes": 11758981,
+    "sha256": "aa976c00b181939755d0da757f4c7c2dc0103c3b3b4530fb2a91c2bb62fc777c",
+    "license": "US-PD",
+    "attribution": "U.S. Census Bureau, 2025 cartographic boundary files",
+    "license_proof_url": "https://meta.geo.census.gov/data/existing/decennial/GEO/CPMB/boundary/2025/19115/shp/cb_2025_us_county_500k.shp.iso.xml",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human pin review; cartographic boundaries are display-only and must not be used for county assignment or detailed insets]]"
   },
   {
     "id": "census_places",
@@ -54,35 +56,39 @@
     "id": "nces_schools",
     "family": "geodata",
     "title": "NCES EDGE public-school locations",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2425.zip",
+    "version": "2024-2025",
+    "size_bytes": 30448565,
+    "sha256": "9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288",
+    "license": "US-PD",
+    "attribution": "U.S. Department of Education, NCES EDGE",
+    "license_proof_url": "https://www.ed.gov/about/contact-us/faqs",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]"
   },
   {
     "id": "imls_libraries",
     "family": "geodata",
     "title": "IMLS Public Libraries Survey outlets",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+    "version": "FY2024",
+    "size_bytes": 3571467,
+    "sha256": "6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7",
+    "license": "US-PD",
+    "attribution": "Institute of Museum and Library Services, FY 2024 Public Libraries Survey",
+    "license_proof_url": "https://www.imls.gov/research-evaluation/surveys/public-libraries-survey-pls",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]"
   },
   {
     "id": "fcc_stations",
@@ -105,18 +111,20 @@
     "id": "noaa_transmitters",
     "family": "geodata",
     "title": "NWS NOAA Weather Radio transmitter list",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://www.weather.gov/source/nwr/JS/ccl-data.js",
+    "version": "2026-10-30T23:25:27Z",
+    "size_bytes": 754907,
+    "sha256": "e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22",
+    "license": "US-PD",
+    "attribution": "National Weather Service NOAA Weather Radio station data; public domain",
+    "license_proof_url": "https://www.weather.gov/disclaimer",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human pin review and immutable archive availability; strip operational status fields]]"
   },
   {
     "id": "fema_risk",
@@ -138,19 +146,21 @@
   {
     "id": "state_emergency_agencies",
     "family": "geodata",
-    "title": "Official federal list of state and territory emergency agencies",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "USAGov state and territory emergency agency links",
+    "url": "https://www.usa.gov/state-emergency-management",
+    "version": "Thu, 29 Oct 2026 13:21:36 GMT",
+    "size_bytes": 43097,
+    "sha256": "494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808",
+    "license": "US-PD",
+    "attribution": "USAGov, U.S. General Services Administration",
+    "license_proof_url": "https://www.usa.gov/government-copyright",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]"
   },
   {
     "id": "protomaps_us",
@@ -168,5 +178,62 @@
     "profiles": [
       "full"
     ]
+  },
+  {
+    "id": "geofabrik_ri",
+    "url": "https://download.geofabrik.de/north-america/us/rhode-island-261029.osm.pbf",
+    "size_bytes": 52514407,
+    "sha256": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+    "family": "geodata",
+    "title": "Geofabrik Rhode Island OSM extract",
+    "version": "2026-10-29",
+    "license": "ODbL-1.0",
+    "license_proof_url": "https://download.geofabrik.de/north-america/us/rhode-island.html",
+    "attribution": "© OpenStreetMap contributors; extract by Geofabrik",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "sample"
+    ],
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us/rhode-island-261029.osm.pbf.md5",
+    "review": "[[VERIFY: human review of SHA-256; downloaded bytes match publisher MD5]]"
+  },
+  {
+    "id": "census_county_analysis",
+    "family": "geodata",
+    "title": "Census TIGER Line counties for spatial assignment",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
+    "version": "2025",
+    "size_bytes": 83989800,
+    "sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+    "license": "US-PD",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line",
+    "license_proof_url": "[[VERIFY: per-item TIGER Line redistribution statement]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of downloaded archive and computed SHA-256]]"
+  },
+  {
+    "id": "census_states",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "title": "Census state FIPS codes and names",
+    "url": "https://www2.census.gov/geo/docs/reference/state.txt",
+    "version": "Wed, 13 Mar 2013 18:26:28 GMT",
+    "size_bytes": 1485,
+    "sha256": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0",
+    "license": "US-PD",
+    "attribution": "U.S. Census Bureau",
+    "license_proof_url": "[[VERIFY: confirm Census reference-file redistribution statement]]",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]"
   }
 ]

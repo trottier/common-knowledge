@@ -19,7 +19,9 @@ of done remain in [AGENTS.md](../AGENTS.md).
 7. **Implemented:** Spanish full edition, thirteen quick-start stubs, localized
    README lines, machine-translation notices and cataloged fonts for every script.
    Source hashes require retranslation when English instructions or defaults change.
-8. National directory pipeline, starting with one small state.
+8. **In progress:** initial national-source adapters and Rhode Island phone/print
+   directories work. FCC, FEMA hazard summaries, atlas references and nationwide
+   coverage remain; incomplete outputs cannot be assembled into release images.
 9. Road atlas pipeline, starting with one small state.
 10. Android map pipeline and planner-selected build path.
 11. ZIM placement and medical phone PDFs.

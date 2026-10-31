@@ -40,6 +40,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     core.add_argument("--epoch", type=int)
     core.add_argument("--languages", nargs="+", help="Edition codes; defaults to all fifteen")
     core.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
+    directory = commands.add_parser("directory", help="Build a checked public-places directory")
+    directory.add_argument("--state", required=True)
+    directory.add_argument("--state-fips", required=True)
+    directory.add_argument("--osm-id", default="geofabrik_ri")
+    directory.add_argument("--cache", type=Path, default=Path("cache"))
+    directory.add_argument("--output", type=Path, required=True)
+    directory.add_argument("--atlas-index", type=Path)
+    directory.add_argument("--epoch", type=int)
     plan = commands.add_parser("plan", help="Account for every variant's capacity")
     plan.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
     plan.add_argument("--core", type=Path, default=Path("build/core"))
@@ -70,6 +78,29 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "directory":
+            from ck.catalog import load_catalog
+            from ck.directory import build_directory
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_directory(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        args.state,
+                        args.state_fips,
+                        epoch_for(config, args.epoch),
+                        args.osm_id,
+                        args.atlas_index,
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "plan":
             from ck.assemble import core_size
             from ck.catalog import load_catalog
