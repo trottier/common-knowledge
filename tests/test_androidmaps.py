@@ -122,6 +122,55 @@ def test_source_supplement_repairs_restriction_without_changing_download(tmp_pat
     subprocess.run(["osmium", "check-refs", "--check-relations", str(result)], check=True)
 
 
+def test_native_geometry_path_strips_users_and_keeps_metadata_and_turns(tmp_path, monkeypatch):
+    source = tmp_path / "source.osm"
+    source.write_text("""<osm version="0.6">
+      <node id="1" version="3" timestamp="2026-01-01T00:00:00Z" 
+        uid="17" user="PRIVATE-USER" changeset="99" lat="1" lon="1"/>
+      <node id="2" version="3" timestamp="2026-01-01T00:00:00Z" 
+        uid="17" user="PRIVATE-USER" changeset="99" lat="1" lon="1.01"/>
+      <node id="3" version="3" timestamp="2026-01-01T00:00:00Z" 
+        uid="17" user="PRIVATE-USER" changeset="99" lat="1.01" lon="1.01"/>
+      <way id="10" version="3" timestamp="2026-01-01T00:00:00Z" 
+        uid="17" user="PRIVATE-USER" changeset="99">
+        <nd ref="1"/><nd ref="2"/><tag k="highway" v="residential"/></way>
+      <way id="11" version="3" timestamp="2026-01-01T00:00:00Z" 
+        uid="17" user="PRIVATE-USER" changeset="99">
+        <nd ref="2"/><nd ref="3"/><tag k="highway" v="residential"/></way>
+      <relation id="20" version="3" timestamp="2026-01-01T00:00:00Z" 
+        uid="17" user="PRIVATE-USER" changeset="99">
+        <member type="way" ref="10" role="from"/>
+        <member type="node" ref="2" role="via"/><member type="way" ref="11" role="to"/>
+        <tag k="type" v="restriction"/><tag k="restriction" v="no_left_turn"/>
+      </relation></osm>""")
+    calls = []
+
+    def record(kind, tags, policy):
+        calls.append(kind)
+        return filtered_tags(kind, tags, policy)
+
+    monkeypatch.setattr("ck.androidmaps.filtered_tags", record)
+    original = tmp_path / "source.osm.pbf"
+    subprocess.run(["osmium", "cat", str(source), "--output", str(original)], check=True)
+    output = tmp_path / "result.osm.pbf"
+    filter_roads(original, output, settings())
+    assert calls == ["way", "way", "relation"]
+    objects = []
+    for obj in osmium.FileProcessor(str(output)):
+        assert obj.uid == obj.changeset == 0 and obj.user == ""
+        assert obj.version == 3 and obj.timestamp.isoformat() == "2026-01-01T00:00:00+00:00"
+        objects.append((obj.type_str(), obj.id))
+        if obj.is_way():
+            assert [node.ref for node in obj.nodes] == ([1, 2] if obj.id == 10 else [2, 3])
+        if obj.is_relation():
+            assert [(member.type, member.ref, member.role) for member in obj.members] == [
+                ("w", 10, "from"),
+                ("n", 2, "via"),
+                ("w", 11, "to"),
+            ]
+    assert objects == [("n", 1), ("n", 2), ("n", 3), ("w", 10), ("w", 11), ("r", 20)]
+
+
 def test_map_howto_has_one_page_and_machine_translation_footer(tmp_path):
     from pypdf import PdfReader
 
