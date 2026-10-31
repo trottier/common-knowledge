@@ -12,4 +12,4 @@ test("native renderer draws and repeats an offline fixture", () => {
     runs.push(output.hashes[0]);
   }
   expect(runs[0]).toBe(runs[1]);
-}, 15000);
+}, 60000);

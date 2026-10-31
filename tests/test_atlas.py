@@ -14,6 +14,7 @@ from ck.atlas import (
     pipeline_version,
     place_labels,
     region_for,
+    renderer_fingerprint,
     state_basemap,
 )
 from ck.config import load_config
@@ -323,6 +324,7 @@ def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path, mon
         "schema": 1,
         "epoch": 946684800,
         "pipeline_version": pipeline_version(ROOT),
+        "renderer_sha256": renderer_fingerprint(ROOT),
         "pages": [page],
         "county_count": 1,
         "complete": False,
@@ -340,6 +342,7 @@ def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path, mon
     Image.new("RGB", (100, 100), "white").save(raster)
     rendered = {
         "jobs_sha256": digest(jobs_path),
+        "renderer_sha256": jobs["renderer_sha256"],
         "system_tools": "Synthetic fixture\n",
         "files": [{"id": "county", "path": "rasters/county.png", "sha256": digest(raster)}],
     }
@@ -348,6 +351,10 @@ def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path, mon
         compose_atlas(ROOT, config, jobs_path, tmp_path / name)
     first = tmp_path / "first/files/TEST.pdf"
     assert digest(first) == digest(tmp_path / "second/files/TEST.pdf")
+    (tmp_path / "rendered.json").write_text(json.dumps({**rendered, "renderer_sha256": "0" * 64}))
+    with pytest.raises(ValueError, match="renderer code changed"):
+        compose_atlas(ROOT, config, jobs_path, tmp_path / "wrong-renderer")
+    (tmp_path / "rendered.json").write_text(json.dumps(rendered))
     elsewhere = tmp_path / "different-input-directory"
     elsewhere.mkdir()
     for name in ("jobs.json", "rendered.json"):
