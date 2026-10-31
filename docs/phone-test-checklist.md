@@ -13,6 +13,7 @@ USB-A ports, using a USB-C to USB-A adapter. The drive itself has only USB-C.
 - [ ] iPhone Compass coordinates locate a position on an atlas grid.
 - [ ] Android OsmAnd installs from the drive, imports a state and shows offline GPS.
 - [ ] Kiwix opens WikEM on Android and laptops; medical PDFs open on iPhone.
+- [ ] Laptop map opens from the USB HTML file, reads its chosen map, and pans/zooms offline.
 - [ ] bitchat connects two Android phones without networking; Briar shares itself offline.
 - [ ] Video plays in English by default on every device.
 - [ ] iPhone player switches to Spanish audio and subtitles where supplied.

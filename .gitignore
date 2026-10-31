@@ -11,6 +11,8 @@ htmlcov/
 .env
 .env.*
 **/node_modules/
+**/test-results/
+**/playwright-report/
 
 # Fetched cargo and generated output never belong in git.
 /cache/

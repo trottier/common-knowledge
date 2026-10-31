@@ -67,6 +67,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     national.add_argument("--cache", type=Path, default=Path("cache"))
     national.add_argument("--output", type=Path, required=True)
     national.add_argument("--epoch", type=int)
+    laptop_tiles = commands.add_parser(
+        "laptop-tiles", help="Regenerate the laptop collection's narrow offline vector basemap"
+    )
+    laptop_tiles.add_argument("--generated", type=Path, default=Path("build/generated"))
+    laptop_tiles.add_argument("--output", type=Path, required=True)
+    laptop_tiles.add_argument("--epoch", type=int)
+    laptop_viewer = commands.add_parser(
+        "laptop-viewer", help="Package the offline browser map and unchanged SDK files"
+    )
+    laptop_viewer.add_argument("--generated", type=Path, default=Path("build/generated"))
+    laptop_viewer.add_argument("--cache", type=Path, default=Path("cache"))
+    laptop_viewer.add_argument("--output", type=Path, required=True)
+    laptop_viewer.add_argument("--epoch", type=int)
     android_map = commands.add_parser("android-map", help="Build a roads-and-places OsmAnd map")
     android_map.add_argument("--state", required=True)
     android_map.add_argument("--osm-id", required=True)
@@ -237,6 +250,43 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "laptop-viewer":
+            from ck.catalog import load_catalog
+            from ck.laptopviewer import build_viewer
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_viewer(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.generated,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "laptop-tiles":
+            from ck.catalog import load_catalog
+            from ck.laptopmap import build_laptop_tiles
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_laptop_tiles(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.generated,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "national-points":
             from ck.catalog import load_catalog
             from ck.national import build_national_points

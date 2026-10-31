@@ -32,6 +32,7 @@ CMD ["render", "--help"]
 FROM python-base AS build
 
 COPY --from=ghcr.io/astral-sh/uv:0.9.24@sha256:816fdce3387ed2142e37d2e56e1b1b97ccc1ea87731ba199dc8a25c04e4997c5 /uv /uvx /usr/local/bin/
+COPY --from=bun-runtime /usr/local/bin/bun /usr/local/bin/bun
 
 COPY config/debian.sources /etc/apt/sources.list.d/debian.sources
 RUN apt-get update \
@@ -39,6 +40,7 @@ RUN apt-get update \
        libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0 libharfbuzz-bin poppler-utils \
        apksigner zim-tools default-jre-headless dosfstools mtools zstd osmium-tool ffmpeg \
     && dpkg-query --show > /opt/ck-tool-versions.txt \
+    && bun --version >> /opt/ck-tool-versions.txt \
     && rm -rf /var/lib/apt/lists/*
 
 COPY catalog/buildtools.yaml tools/bootstrap_zim.py /tmp/ck-zim-bootstrap/

@@ -1,0 +1,18 @@
+basemap_id: protomaps_us
+dataset_id: ck_roads_places_v1
+archive_filename: 2_US_ROADS.pmtiles
+max_zoom: 12
+max_archive_bytes: 3500000000
+default_view: {longitude: -98.5, latitude: 39.5, zoom: 3}
+view_max_zoom: 16
+worker_count: 2
+fields:
+  roads: [kind, kind_detail, name, "name:en", "name:es", ref, min_zoom, is_bridge, is_tunnel, is_link]
+  places: [kind, kind_detail, name, "name:en", "name:es", min_zoom, population_rank]
+  water: [kind, kind_detail, min_zoom]
+kinds:
+  roads: [highway, major_road, minor_road, path, ferry, rail]
+  places: [country, region, locality, neighbourhood, macrohood, borough]
+  water: [water, ocean, river, canal, lake, bay, strait, fjord]
+excluded_details: [dam, weir, basin, substation, power_plant, water_works, wastewater_plant,
+  pipeline, pumping_station, communication_tower, communications_tower, telecom]

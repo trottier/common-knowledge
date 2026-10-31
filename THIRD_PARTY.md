@@ -2446,6 +2446,402 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `30936feca234addcf7dbc58961750a0efe87023284a4a2f0fe36adeb44daaf91`
 - Publisher file: https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop-2.5.1.tar.gz
 
+## earcut
+
+- Catalog id: `laptop_earcut_3_0_2`
+- Version: 3.0.2
+- License: ISC
+- Attribution: earcut authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/earcut/-/earcut-3.0.2.tgz
+- Size: 12780 bytes
+- SHA-256: `546b92493d021b05b5c3832edbae292ad3686848a3f434697b6338d4d74c8253`
+- Publisher file: https://registry.npmjs.org/earcut/-/earcut-3.0.2.tgz
+
+## fflate
+
+- Catalog id: `laptop_fflate_0_8_2`
+- Version: 0.8.2
+- License: MIT
+- Attribution: fflate authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/fflate/-/fflate-0.8.2.tgz
+- Size: 168507 bytes
+- SHA-256: `61fd5061e2fc8e5e3e3129f7f2fec7bd78a313e1bf4becbf1cc1cc9998d141dc`
+- Publisher file: https://registry.npmjs.org/fflate/-/fflate-0.8.2.tgz
+
+## gl-matrix
+
+- Catalog id: `laptop_gl_matrix_3_4_4`
+- Version: 3.4.4
+- License: MIT
+- Attribution: gl-matrix authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/gl-matrix/-/gl-matrix-3.4.4.tgz
+- Size: 101775 bytes
+- SHA-256: `e08f1f9fc56d91d2aa1392e51cbc3db00d3eb9572dcb352acd9e187fc1a7e63a`
+- Publisher file: https://registry.npmjs.org/gl-matrix/-/gl-matrix-3.4.4.tgz
+
+## json-stringify-pretty-compact
+
+- Catalog id: `laptop_json_stringify_pretty_compact_4_0_0`
+- Version: 4.0.0
+- License: MIT
+- Attribution: json-stringify-pretty-compact authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/json-stringify-pretty-compact/-/json-stringify-pretty-compact-4.0.0.tgz
+- Size: 3406 bytes
+- SHA-256: `f15336163c9de2e2d9b820516be061235f4eed93a0a4d5bc9593700799c25f4f`
+- Publisher file: https://registry.npmjs.org/json-stringify-pretty-compact/-/json-stringify-pretty-compact-4.0.0.tgz
+
+## jsonlint_license
+
+- Catalog id: `laptop_jsonlint_license`
+- Version: 524533a0ddeeff6f29dab38af1644e30ec74d3c5
+- License: MIT
+- Attribution: jsonlint_license authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/mapbox/jsonlint/524533a0ddeeff6f29dab38af1644e30ec74d3c5/LICENSE
+- Size: 1071 bytes
+- SHA-256: `5dcae6b71018b5454d00228bd08ccbcd9801ee27b19959b88ebcb55602604e6d`
+- Publisher file: https://raw.githubusercontent.com/mapbox/jsonlint/524533a0ddeeff6f29dab38af1644e30ec74d3c5/LICENSE
+
+## kdbush
+
+- Catalog id: `laptop_kdbush_4_0_2`
+- Version: 4.0.2
+- License: ISC
+- Attribution: kdbush authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/kdbush/-/kdbush-4.0.2.tgz
+- Size: 7179 bytes
+- SHA-256: `2b1cbfbb969a4aaca7eb0c3c783eaa0f0cdfab3c2be77b42c3bb1f26dc8a77b8`
+- Publisher file: https://registry.npmjs.org/kdbush/-/kdbush-4.0.2.tgz
+
+## Interactive offline laptop road map
+
+- Catalog id: `laptop_map_viewer`
+- Version: 2026-10-30
+- License: ODbL-1.0 AND Apache-2.0 AND BSD-3-Clause AND BSD-2-Clause AND MIT AND ISC
+- Attribution: OpenStreetMap contributors; Protomaps; MapLibre and dependency authors; Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 619545298 bytes
+- SHA-256: `4c1f88d60c8ca692d6e7e70c024825d7f6aa7969574793c8a9548cd35650bf32`
+- Pipeline: laptop-viewer-v1-5bebf19ac3fa10faf4550e5adc409bbd7a5cdcee29ea1f442839a7bceff773c3; inputs: laptop_roads_places, protomaps_us, laptop_maplibre_lock, laptop_pmtiles_lock, laptop_pmtiles_license, laptop_mapbox_jsonlint_lines_primitives_2_0_2, laptop_mapbox_point_geometry_1_1_0, laptop_mapbox_tiny_sdf_2_1_0, laptop_mapbox_unitbezier_0_0_1, laptop_mapbox_vector_tile_2_0_4, laptop_mapbox_whoots_js_3_1_0, laptop_maplibre_geojson_vt_6_1_0, laptop_maplibre_maplibre_gl_style_spec_24_8_1, laptop_maplibre_mlt_1_1_8, laptop_maplibre_vt_pbf_4_3_0, laptop_maplibre_geojson_vt_5_0_4, laptop_types_geojson_7946_0_16, laptop_types_supercluster_7_1_3, laptop_earcut_3_0_2, laptop_gl_matrix_3_4_4, laptop_json_stringify_pretty_compact_4_0_0, laptop_kdbush_4_0_2, laptop_minimist_1_2_8, laptop_murmurhash_js_1_0_0, laptop_pbf_4_0_1, laptop_potpack_2_1_0, laptop_protocol_buffers_schema_3_6_1, laptop_quickselect_3_0_0, laptop_resolve_protobuf_schema_2_1_0, laptop_rw_1_3_3, laptop_supercluster_8_0_1, laptop_tinyqueue_3_0_0, laptop_fflate_0_8_2, laptop_jsonlint_license, laptop_maplibre_gl_sdk, laptop_pmtiles_sdk
+
+## @mapbox/jsonlint-lines-primitives
+
+- Catalog id: `laptop_mapbox_jsonlint_lines_primitives_2_0_2`
+- Version: 2.0.2
+- License: MIT
+- Attribution: @mapbox/jsonlint-lines-primitives authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/mapbox/jsonlint/524533a0ddeeff6f29dab38af1644e30ec74d3c5/LICENSE
+- Size: 19740 bytes
+- SHA-256: `96ce93290857e2bd50880fffd1620305702ad0e2a97a1dca21fa1504b0960540`
+- Publisher file: https://registry.npmjs.org/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.2.tgz
+
+## @mapbox/point-geometry
+
+- Catalog id: `laptop_mapbox_point_geometry_1_1_0`
+- Version: 1.1.0
+- License: ISC
+- Attribution: @mapbox/point-geometry authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-1.1.0.tgz
+- Size: 4300 bytes
+- SHA-256: `9bf202082ba414ef99d82ca466445bfeddff3631922cfa74f9b4ce5caafde038`
+- Publisher file: https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-1.1.0.tgz
+
+## @mapbox/tiny-sdf
+
+- Catalog id: `laptop_mapbox_tiny_sdf_2_1_0`
+- Version: 2.1.0
+- License: BSD-2-Clause
+- Attribution: @mapbox/tiny-sdf authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@mapbox/tiny-sdf/-/tiny-sdf-2.1.0.tgz
+- Size: 4976 bytes
+- SHA-256: `4011baf79e43f74470d254f7e39ec84cb4dbb0ad61bfa5fb43527ee22d6ad7b9`
+- Publisher file: https://registry.npmjs.org/@mapbox/tiny-sdf/-/tiny-sdf-2.1.0.tgz
+
+## @mapbox/unitbezier
+
+- Catalog id: `laptop_mapbox_unitbezier_0_0_1`
+- Version: 0.0.1
+- License: BSD-2-Clause
+- Attribution: @mapbox/unitbezier authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@mapbox/unitbezier/-/unitbezier-0.0.1.tgz
+- Size: 2273 bytes
+- SHA-256: `6eb1a3d9b5caa2a7685ae212e0a65c5e7e353c11ad78f439f2bbb2fc22296016`
+- Publisher file: https://registry.npmjs.org/@mapbox/unitbezier/-/unitbezier-0.0.1.tgz
+
+## @mapbox/vector-tile
+
+- Catalog id: `laptop_mapbox_vector_tile_2_0_4`
+- Version: 2.0.4
+- License: BSD-3-Clause
+- Attribution: @mapbox/vector-tile authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@mapbox/vector-tile/-/vector-tile-2.0.4.tgz
+- Size: 5067 bytes
+- SHA-256: `1211fe2263f9adec48b0936004dd1683929194c309119b04ac84f8da8a0c8582`
+- Publisher file: https://registry.npmjs.org/@mapbox/vector-tile/-/vector-tile-2.0.4.tgz
+
+## @mapbox/whoots-js
+
+- Catalog id: `laptop_mapbox_whoots_js_3_1_0`
+- Version: 3.1.0
+- License: ISC
+- Attribution: @mapbox/whoots-js authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz
+- Size: 3595 bytes
+- SHA-256: `025d7251769c7e74ba754a33fe95927726eaacc7192dd96f76c0b06a1d8ec1fc`
+- Publisher file: https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz
+
+## @maplibre/geojson-vt
+
+- Catalog id: `laptop_maplibre_geojson_vt_5_0_4`
+- Version: 5.0.4
+- License: ISC
+- Attribution: @maplibre/geojson-vt authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@maplibre/geojson-vt/-/geojson-vt-5.0.4.tgz
+- Size: 63266 bytes
+- SHA-256: `09c282ec6dd3d0d2f1211915c55008600bcc1e155360f87947e151dd859db165`
+- Publisher file: https://registry.npmjs.org/@maplibre/geojson-vt/-/geojson-vt-5.0.4.tgz
+
+## @maplibre/geojson-vt
+
+- Catalog id: `laptop_maplibre_geojson_vt_6_1_0`
+- Version: 6.1.0
+- License: ISC
+- Attribution: @maplibre/geojson-vt authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@maplibre/geojson-vt/-/geojson-vt-6.1.0.tgz
+- Size: 110091 bytes
+- SHA-256: `838b70a994d0e43b998a45ff6748352ad7ecc3763d880020b4ab105f8df02a7e`
+- Publisher file: https://registry.npmjs.org/@maplibre/geojson-vt/-/geojson-vt-6.1.0.tgz
+
+## maplibre-gl browser distribution
+
+- Catalog id: `laptop_maplibre_gl_sdk`
+- Version: 5.24.0
+- License: BSD-3-Clause AND BSD-2-Clause AND MIT AND ISC
+- Attribution: maplibre-gl browser distribution authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/maplibre/maplibre-gl-js/fd31bd85967c19446d836236e93021fb10ffe30d/LICENSE.txt
+- Size: 8810495 bytes
+- SHA-256: `5cbf83c328c9d39cb24e3f2cefc9b407d69dd104ba0b41e84c0bfbb31c44e283`
+- Publisher file: https://registry.npmjs.org/maplibre-gl/-/maplibre-gl-5.24.0.tgz
+
+## maplibre_lock
+
+- Catalog id: `laptop_maplibre_lock`
+- Version: fd31bd85967c19446d836236e93021fb10ffe30d
+- License: BSD-3-Clause
+- Attribution: maplibre_lock authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/maplibre/maplibre-gl-js/fd31bd85967c19446d836236e93021fb10ffe30d/LICENSE.txt
+- Size: 593318 bytes
+- SHA-256: `871fcc9cf4d8e0bd6a0bf93ccf3f1191ff4fbb6424b27c86d7d438e9589115ff`
+- Publisher file: https://raw.githubusercontent.com/maplibre/maplibre-gl-js/fd31bd85967c19446d836236e93021fb10ffe30d/package-lock.json
+
+## @maplibre/maplibre-gl-style-spec
+
+- Catalog id: `laptop_maplibre_maplibre_gl_style_spec_24_8_1`
+- Version: 24.8.1
+- License: ISC
+- Attribution: @maplibre/maplibre-gl-style-spec authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@maplibre/maplibre-gl-style-spec/-/maplibre-gl-style-spec-24.8.1.tgz
+- Size: 1327478 bytes
+- SHA-256: `99750d9fcf737f60e7e5dac0f735d12965d6b64cc363f604e784220119a6fbc0`
+- Publisher file: https://registry.npmjs.org/@maplibre/maplibre-gl-style-spec/-/maplibre-gl-style-spec-24.8.1.tgz
+
+## @maplibre/mlt
+
+- Catalog id: `laptop_maplibre_mlt_1_1_8`
+- Version: 1.1.8
+- License: MIT
+- Attribution: @maplibre/mlt authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@maplibre/mlt/-/mlt-1.1.8.tgz
+- Size: 171053 bytes
+- SHA-256: `5e73dafdc0022a37e5f116909b96b01dd5e017e79fecd532c152dac1c3f1490f`
+- Publisher file: https://registry.npmjs.org/@maplibre/mlt/-/mlt-1.1.8.tgz
+
+## @maplibre/vt-pbf
+
+- Catalog id: `laptop_maplibre_vt_pbf_4_3_0`
+- Version: 4.3.0
+- License: MIT
+- Attribution: @maplibre/vt-pbf authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@maplibre/vt-pbf/-/vt-pbf-4.3.0.tgz
+- Size: 8531 bytes
+- SHA-256: `85e6cd954072a4db80409e34ce96ecee9b166961f88c77c59f97a70b8a2aa65e`
+- Publisher file: https://registry.npmjs.org/@maplibre/vt-pbf/-/vt-pbf-4.3.0.tgz
+
+## minimist
+
+- Catalog id: `laptop_minimist_1_2_8`
+- Version: 1.2.8
+- License: MIT
+- Attribution: minimist authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz
+- Size: 15520 bytes
+- SHA-256: `350a76c115b393c19d24654834261e5dc9f0e8cc5e08f3937fa80140f3e4ce83`
+- Publisher file: https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz
+
+## murmurhash-js
+
+- Catalog id: `laptop_murmurhash_js_1_0_0`
+- Version: 1.0.0
+- License: MIT
+- Attribution: murmurhash-js authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/murmurhash-js/-/murmurhash-js-1.0.0.tgz
+- Size: 2544 bytes
+- SHA-256: `0807f0738886929c36e3274e6bf0721efe9ba81d6edbe5ad9ec11ab5cb8ecc12`
+- Publisher file: https://registry.npmjs.org/murmurhash-js/-/murmurhash-js-1.0.0.tgz
+
+## pbf
+
+- Catalog id: `laptop_pbf_4_0_1`
+- Version: 4.0.1
+- License: BSD-3-Clause
+- Attribution: pbf authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/pbf/-/pbf-4.0.1.tgz
+- Size: 15007 bytes
+- SHA-256: `f8fbe1dd8eb0da8c2ddf6edb067d225ccb1bbc73ffc789491aea7f776e8164f3`
+- Publisher file: https://registry.npmjs.org/pbf/-/pbf-4.0.1.tgz
+
+## pmtiles_license
+
+- Catalog id: `laptop_pmtiles_license`
+- Version: 3b10e67edb65c6b04549f74c0279cef8328d859c
+- License: BSD-3-Clause
+- Attribution: pmtiles_license authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/protomaps/PMTiles/3b10e67edb65c6b04549f74c0279cef8328d859c/LICENSE
+- Size: 1713 bytes
+- SHA-256: `0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3`
+- Publisher file: https://raw.githubusercontent.com/protomaps/PMTiles/3b10e67edb65c6b04549f74c0279cef8328d859c/LICENSE
+
+## pmtiles_lock
+
+- Catalog id: `laptop_pmtiles_lock`
+- Version: 3b10e67edb65c6b04549f74c0279cef8328d859c
+- License: BSD-3-Clause
+- Attribution: pmtiles_lock authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/protomaps/PMTiles/3b10e67edb65c6b04549f74c0279cef8328d859c/LICENSE
+- Size: 158922 bytes
+- SHA-256: `bb4207f9ec841ed88ddf864abf17f4c9ff28862ff82fdeab959110b1ffa27ed4`
+- Publisher file: https://raw.githubusercontent.com/protomaps/PMTiles/3b10e67edb65c6b04549f74c0279cef8328d859c/js/package-lock.json
+
+## pmtiles browser distribution
+
+- Catalog id: `laptop_pmtiles_sdk`
+- Version: 4.5.0
+- License: BSD-3-Clause AND MIT
+- Attribution: pmtiles browser distribution authors; see the byte-identical publisher notices.
+- License proof: https://raw.githubusercontent.com/protomaps/PMTiles/3b10e67edb65c6b04549f74c0279cef8328d859c/LICENSE
+- Size: 96124 bytes
+- SHA-256: `23ae7c575578ad24cd579377d69c46550631da219e6f179997ec2cf3b8c937e5`
+- Publisher file: https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz
+
+## potpack
+
+- Catalog id: `laptop_potpack_2_1_0`
+- Version: 2.1.0
+- License: ISC
+- Attribution: potpack authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/potpack/-/potpack-2.1.0.tgz
+- Size: 3079 bytes
+- SHA-256: `dac2dd4009e2fad0862b723423c8333162e8a6f4d87604af1de23fdec490587c`
+- Publisher file: https://registry.npmjs.org/potpack/-/potpack-2.1.0.tgz
+
+## protocol-buffers-schema
+
+- Catalog id: `laptop_protocol_buffers_schema_3_6_1`
+- Version: 3.6.1
+- License: MIT
+- Attribution: protocol-buffers-schema authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/protocol-buffers-schema/-/protocol-buffers-schema-3.6.1.tgz
+- Size: 13572 bytes
+- SHA-256: `907f8fd7d60cc2a96875b128e161b0013bdef8c2523012d3041a0f72f20de852`
+- Publisher file: https://registry.npmjs.org/protocol-buffers-schema/-/protocol-buffers-schema-3.6.1.tgz
+
+## quickselect
+
+- Catalog id: `laptop_quickselect_3_0_0`
+- Version: 3.0.0
+- License: ISC
+- Attribution: quickselect authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/quickselect/-/quickselect-3.0.0.tgz
+- Size: 2206 bytes
+- SHA-256: `2cf90a3c6f9eb7ccb618bc31e362a615f9f46de593b8465176d883e66b5f8c84`
+- Publisher file: https://registry.npmjs.org/quickselect/-/quickselect-3.0.0.tgz
+
+## resolve-protobuf-schema
+
+- Catalog id: `laptop_resolve_protobuf_schema_2_1_0`
+- Version: 2.1.0
+- License: MIT
+- Attribution: resolve-protobuf-schema authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/resolve-protobuf-schema/-/resolve-protobuf-schema-2.1.0.tgz
+- Size: 2269 bytes
+- SHA-256: `3e80010114da31a6f2a09345c62b7b9d67640d816df0f5099cecdeb9342517c5`
+- Publisher file: https://registry.npmjs.org/resolve-protobuf-schema/-/resolve-protobuf-schema-2.1.0.tgz
+
+## Narrow laptop roads and settlements database
+
+- Catalog id: `laptop_roads_places`
+- Version: 2026-10-30
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; Protomaps; MapLibre and dependency authors; Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 618293897 bytes
+- SHA-256: `011b835814fd5b2ffd8a891caa244aed59223c4ce135851995fe1c73118a940c`
+- Pipeline: laptop-tiles-v1-033439a18523db1fa3012819592d31b5b94dbc8e6373649f435428e9cf5ffe96; inputs: protomaps_us
+
+## rw
+
+- Catalog id: `laptop_rw_1_3_3`
+- Version: 1.3.3
+- License: BSD-3-Clause
+- Attribution: rw authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/rw/-/rw-1.3.3.tgz
+- Size: 6737 bytes
+- SHA-256: `2dcde28200167d3774d1f0f2b66942790c762dc37ad211fb1135959e87fb85fb`
+- Publisher file: https://registry.npmjs.org/rw/-/rw-1.3.3.tgz
+
+## supercluster
+
+- Catalog id: `laptop_supercluster_8_0_1`
+- Version: 8.0.1
+- License: ISC
+- Attribution: supercluster authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/supercluster/-/supercluster-8.0.1.tgz
+- Size: 13185 bytes
+- SHA-256: `9cc3a18707e07453270c5e0b1d2ec2419af03f1794b8c8ca7ac4e33d61f78673`
+- Publisher file: https://registry.npmjs.org/supercluster/-/supercluster-8.0.1.tgz
+
+## tinyqueue
+
+- Catalog id: `laptop_tinyqueue_3_0_0`
+- Version: 3.0.0
+- License: ISC
+- Attribution: tinyqueue authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/tinyqueue/-/tinyqueue-3.0.0.tgz
+- Size: 2267 bytes
+- SHA-256: `64d0414e61332c1ee6a2a99a26d42e847d8650d32b2bea232b563e01bbe643ae`
+- Publisher file: https://registry.npmjs.org/tinyqueue/-/tinyqueue-3.0.0.tgz
+
+## @types/geojson
+
+- Catalog id: `laptop_types_geojson_7946_0_16`
+- Version: 7946.0.16
+- License: MIT
+- Attribution: @types/geojson authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz
+- Size: 3385 bytes
+- SHA-256: `5275058028351e9656972a31295f81b61637c641df6cc13766f48a5fdab1b39e`
+- Publisher file: https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz
+
+## @types/supercluster
+
+- Catalog id: `laptop_types_supercluster_7_1_3`
+- Version: 7.1.3
+- License: MIT
+- Attribution: @types/supercluster authors; see the byte-identical publisher notices.
+- License proof: https://registry.npmjs.org/@types/supercluster/-/supercluster-7.1.3.tgz
+- Size: 3294 bytes
+- SHA-256: `1f1e21362bfee9ff4f9917ce2f136f7fc1e7c7d18452954c80a77b55a216819e`
+- Publisher file: https://registry.npmjs.org/@types/supercluster/-/supercluster-7.1.3.tgz
+
 ## llamafile license
 
 - Catalog id: `llamafile_license`
