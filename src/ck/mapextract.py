@@ -23,6 +23,7 @@ from ck.generated import cached_input, generation_manifest, verified_generated_f
 
 class NationalSettings(Model):
     source_inputs: dict[str, Identifier]
+    source_supplements: dict[Identifier, list[Identifier]] = Field(default_factory=dict)
     pacific_states: list[str]
     boundary_padding_degrees: float = Field(gt=0, le=0.01)
     max_heap_mib: int = Field(ge=256)
@@ -33,6 +34,11 @@ class NationalSettings(Model):
 
 def policy(root: Path) -> NationalSettings:
     return NationalSettings.model_validate(read_yaml(root / "pipelines/androidmaps/national.yaml"))
+
+
+def source_inputs(root: Path, items: dict[str, Item], osm_id: str) -> dict[str, str]:
+    identifiers = [osm_id, *policy(root).source_supplements.get(osm_id, [])]
+    return {key: items[key].sha256 for key in identifiers}
 
 
 def recipe_version(root: Path, prefix: str) -> str:
@@ -61,18 +67,20 @@ def build_road_source(
         raise ValueError("Choose a configured national parent OSM source")
     source = cached_input(items[osm_id], cache)
     settings = Settings.model_validate(read_yaml(root / "pipelines/androidmaps/settings.yaml"))
+    inputs = source_inputs(root, items, osm_id)
+    supplements = tuple(cached_input(items[key], cache) for key in inputs if key != osm_id)
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-road-source-") as temporary:
         stage = Path(temporary)
         (stage / "files").mkdir()
-        counts = filter_roads(source, stage / "files/roads_places.osm.pbf", settings)
+        counts = filter_roads(source, stage / "files/roads_places.osm.pbf", settings, supplements)
         if not counts.get("way_tagged"):
             raise ValueError("National road filter produced no tagged ways")
         (stage / "filter.json").write_text(json.dumps(counts, sort_keys=True) + "\n")
         measured = generation_manifest(
             stage,
             recipe_version(root, "android-source-v1"),
-            {osm_id: items[osm_id].sha256},
+            inputs,
             complete=True,
             epoch=epoch,
             intermediates=["filter.json"],
@@ -173,9 +181,7 @@ def build_state_extracts(
     if not states or len(set(states)) != len(states) or not set(states) <= valid_states:
         raise ValueError("Choose distinct confirmed Census jurisdictions")
     for state in states:
-        if manifest["inputs"] != {
-            settings.source_for(state): items[settings.source_for(state)].sha256
-        }:
+        if manifest["inputs"] != source_inputs(root, items, settings.source_for(state)):
             raise ValueError("State and prepared parent OSM source disagree")
     inputs = {
         identifier: items[identifier].sha256

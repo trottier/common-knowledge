@@ -78,7 +78,7 @@ def test_pbf_filter_removes_sensitive_tags_and_preserves_references(tmp_path):
 
     Reader().apply_file(str(target))
     assert result["n1"] == {} and "n2" in result
-    assert result["n3"]["amenity"] == "hospital" and result["n4"] == {}
+    assert result["n3"]["amenity"] == "hospital" and "n4" not in result
     assert result["w10"]["oneway"] == "yes"
     assert counts["way_tagged"] == 1
     assert all(not excluded(tags) for tags in result.values())
@@ -92,6 +92,45 @@ def test_map_creator_archive_cannot_escape_its_directory(tmp_path):
         output.writestr("../../outside.jar", b"Synthetic archive fixture")
     with pytest.raises(ValueError):
         unpack_tool(archive, tmp_path / "tool")
+
+
+def test_point_labels_do_not_pull_foreign_polygons_or_keep_orphaned_private_geometry(tmp_path):
+    source = tmp_path / "source.osm"
+    source.write_text("""<osm version="0.6">
+      <node id="1" lat="1" lon="1"><tag k="place" v="city"/>
+        <tag k="name" v="Synthetic city"/></node>
+      <node id="2" lat="1" lon="2"/><node id="3" lat="2" lon="2"/>
+      <node id="4" lat="2" lon="3"/>
+      <way id="10"><nd ref="2"/><nd ref="3"/>
+        <tag k="highway" v="residential"/><tag k="place" v="island"/></way>
+      <way id="11"><nd ref="3"/><nd ref="4"/><tag k="amenity" v="pharmacy"/>
+        <tag k="telecom" v="exchange"/></way>
+      <relation id="20"><member type="way" ref="999" role="outer"/>
+        <tag k="place" v="island"/><tag k="type" v="multipolygon"/></relation>
+    </osm>""")
+    original = tmp_path / "original.osm.pbf"
+    subprocess.run(["osmium", "cat", str(source), "--output", str(original)], check=True)
+    output = tmp_path / "result.osm.pbf"
+    filter_roads(original, output, settings())
+    found = {(obj.type_str(), obj.id): dict(obj.tags) for obj in osmium.FileProcessor(str(output))}
+    assert set(found) == {("n", 1), ("n", 2), ("n", 3), ("w", 10)}
+    assert found["n", 1] == {"name": "Synthetic city", "place": "city"}
+    assert found["w", 10] == {"highway": "residential"}
+
+
+def test_missing_road_restriction_members_still_fail(tmp_path):
+    source = tmp_path / "source.osm"
+    source.write_text("""<osm version="0.6">
+      <node id="1" lat="1" lon="1"/><node id="2" lat="1" lon="2"/>
+      <way id="10"><nd ref="1"/><nd ref="2"/><tag k="highway" v="residential"/></way>
+      <relation id="20"><member type="way" ref="10" role="from"/>
+        <member type="way" ref="999" role="to"/><member type="node" ref="2" role="via"/>
+        <tag k="type" v="restriction"/><tag k="restriction" v="no_left_turn"/></relation>
+    </osm>""")
+    original = tmp_path / "original.osm.pbf"
+    subprocess.run(["osmium", "cat", str(source), "--output", str(original)], check=True)
+    with pytest.raises(ValueError, match="incomplete references"):
+        filter_roads(original, tmp_path / "result.osm.pbf", settings())
 
 
 def test_source_supplement_repairs_restriction_without_changing_download(tmp_path):

@@ -54,7 +54,9 @@ def filtered_tags(kind: str, tags: dict[str, str], settings: Settings) -> dict[s
     road = kind == "way" and tags.get("highway") in settings.road_values
     road_node = kind == "node" and tags.get("highway") in settings.road_node_values
     restriction = kind == "relation" and tags.get("type") == "restriction"
-    place = tags.get("place") in settings.place_values
+    # Settlement labels use point features. Region/island polygons can pull
+    # incomplete foreign boundary graphs into a roads-and-places extract.
+    place = kind == "node" and tags.get("place") in settings.place_values
     public = all(tags.get(key) not in {"no", "private"} for key in ("access", "public"))
     civic = (
         tags.get("amenity") in {"school", "library"}
@@ -70,6 +72,8 @@ def filtered_tags(kind: str, tags: dict[str, str], settings: Settings) -> dict[s
     if not (road or road_node or place or poi or restriction):
         return {}
     result = {key: value for key, value in tags.items() if key in settings.tags}
+    if not place:
+        result.pop("place", None)
     if not poi:
         result = {
             key: value
@@ -87,6 +91,17 @@ def filtered_tags(kind: str, tags: dict[str, str], settings: Settings) -> dict[s
     # Names in other languages are source data, not generated translations.
     result.update({key: value for key, value in tags.items() if key.startswith("name:")})
     return dict(sorted(result.items()))
+
+
+def selectors(settings: Settings) -> list[str]:
+    return [
+        "n/highway",
+        "w/highway",
+        "n/place=" + ",".join(settings.place_values),
+        "nwr/amenity=" + ",".join(sorted({*AMENITIES, "school", "library"})),
+        "nwr/healthcare=clinic",
+        "r/type=restriction",
+    ]
 
 
 def filter_roads(
@@ -122,11 +137,7 @@ def filter_roads(
                 "-F",
                 "pbf",
                 str(source),
-                "nwr/highway",
-                "nwr/place=" + ",".join(settings.place_values),
-                "nwr/amenity=" + ",".join(sorted({*AMENITIES, "school", "library"})),
-                "nwr/healthcare=clinic",
-                "r/type=restriction",
+                *selectors(settings),
                 "--remove-tags",
                 "--output",
                 str(selected),
@@ -149,7 +160,8 @@ def filter_roads(
             ],
             check=True,
         )
-        with osmium.SimpleWriter(str(output)) as writer:
+        tagged = Path(temporary) / "tagged.osm.pbf"
+        with osmium.SimpleWriter(str(tagged)) as writer:
             objects = (
                 osmium.FileProcessor(str(cleaned))
                 .with_filter(osmium.filter.EmptyTagFilter())
@@ -166,6 +178,20 @@ def filter_roads(
                 if excluded(raw):
                     counts["excluded_tags_removed"] += 1
                 getattr(writer, "add_" + kind)(obj.replace(tags=tags))
+        # Keep untagged geometry only when a retained feature references it.
+        # This removes isolated excluded POIs and their unused geometry.
+        subprocess.run(
+            [
+                "osmium",
+                "tags-filter",
+                str(tagged),
+                *selectors(settings),
+                "--remove-tags",
+                "--output",
+                str(output),
+            ],
+            check=True,
+        )
     check = subprocess.run(
         ["osmium", "check-refs", "--check-relations", str(output)],
         capture_output=True,
