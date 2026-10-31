@@ -89,7 +89,7 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": "universal",
-    "dest": "9_AI_ASSISTANT/android/",
+    "dest": "9_LOCAL_LLM/android/",
     "profiles": [
       "sample",
       "full"
@@ -147,5 +147,25 @@
     "profiles": [
       "full"
     ]
+  },
+  {
+    "id": "vlc_android",
+    "family": "apk",
+    "title": "VLC for Android; optional video language-track player",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "universal",
+    "dest": "2_VIDEOS/android/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
+    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
   }
 ]

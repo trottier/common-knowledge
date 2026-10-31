@@ -25,7 +25,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     fetch = commands.add_parser("fetch", help="Fetch pinned items into the verified cache")
     fetch.add_argument("items", nargs="+")
     fetch.add_argument("--cache", type=Path, default=Path("cache"))
-    coverage = commands.add_parser("coverage", help="Show findability of modules and shelves")
+    coverage = commands.add_parser("coverage", help="Show findability of topics and collections")
     coverage.add_argument("--homes", type=int, default=5)
     coverage.add_argument("--carriers", type=int)
     coverage.add_argument("--json", action="store_true")
@@ -195,7 +195,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
                 require_release_ready(args.root)
             print(
-                f"Configuration valid: 8 variants, 12 modules, 15 language editions; "
+                f"Configuration valid: 8 variants, 12 topics, 15 language editions; "
                 f"{len(items)} catalog entries (release readiness checked separately)"
             )
         elif args.command in {"catalog", "fetch"}:
@@ -241,8 +241,8 @@ def main(argv: Sequence[str] | None = None) -> int:
             rows = []
             groups = {
                 "universal": 8,
-                **{m: 2 for m in config.variants.modules},
-                **{s: 1 for s in config.variants.shelves},
+                **{m: 2 for m in config.variants.topics},
+                **{s: 1 for s in config.variants.collections},
             }
             if args.carriers is not None:
                 groups = {"item": args.carriers}

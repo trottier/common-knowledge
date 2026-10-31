@@ -10,7 +10,7 @@ meetings:
 convener:
   rule: "The first adult at the rally point at noon opens the meeting with the one-page script."
   rotation: "Each meeting ends by choosing the next convener. No one serves two days running."
-  role_fallback: "A role nobody picks falls to whoever holds a drive variant with that module, until someone better steps up."
+  role_fallback: "A role nobody picks falls to whoever holds a drive variant with that topic, until someone better steps up."
 radio:
   service: FRS
   channel: 3
@@ -22,6 +22,3 @@ mesh:
   channels: { block: "#block", help: "#help" }
   formats: { help: "HELP · {address} · {need}", ok: "OK · {address}" }
   schedule: "Turn on at the top of each hour with the radio window; leave on if power allows."
-block_day:
-  date: "[[VERIFY: national Block Day date, set by publisher]]"
-  time_local: "12:00"

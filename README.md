@@ -1,7 +1,8 @@
 # Common Knowledge
 
 Common Knowledge is a proposed read-only emergency USB drive for every U.S.
-household. Every drive carries the same core, with eight randomly distributed
+household. The USB-C drive has a whistle and compass built into its body and
+is attached to a printed card. USB-A-only devices use an adapter. Every drive carries the same core, with eight randomly distributed
 variants adding reference material. The core is designed to open on a phone
 without internet, an app store or advance setup.
 
@@ -73,7 +74,7 @@ JavaScript tooling uses Bun where compatible with the specified rendering stack.
 | `catalog/` | Pinned external sources and license proofs (step 5) |
 | `content/` | Original Markdown and citations |
 | `templates/`, `assets/icons/` | Document templates and original SVG pictograms |
-| `pipelines/` | Atlas, directory, maps, reference, AI and media generation |
+| `pipelines/` | Atlas, directory, maps, reference, local LLM and media generation |
 | `src/ck/` | Python CLI and build package |
 | `tests/` | Automated checks |
 | `docs/` | Project and build documentation |

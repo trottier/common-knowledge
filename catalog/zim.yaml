@@ -47,9 +47,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "simplewiki"
+      "collection": "simplewiki"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/simplewiki/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/",
     "profiles": [
       "full"
     ]
@@ -66,9 +66,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "simplewiki"
+      "collection": "simplewiki"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/simplewiki/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/",
     "profiles": [
       "full"
     ]
@@ -85,9 +85,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "med_lib"
+      "collection": "med_lib"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/med_lib/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/med_lib/",
     "profiles": [
       "full"
     ]
@@ -104,9 +104,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "med_lib"
+      "collection": "med_lib"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/med_lib/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/med_lib/",
     "profiles": [
       "full"
     ]
@@ -123,32 +123,12 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "repair"
+      "collection": "repair"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/repair/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/repair/",
     "profiles": [
       "full"
     ]
-  },
-  {
-    "id": "ifixit",
-    "family": "zim",
-    "title": "iFixit; legal sign-off required",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "shelf": "repair"
-    },
-    "dest": "6_DEPTH_AND_SHELF/shelf/repair/",
-    "profiles": [
-      "full"
-    ],
-    "requires_legal": true
   },
   {
     "id": "army_publications",
@@ -162,9 +142,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "repair"
+      "collection": "repair"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/repair/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/repair/",
     "profiles": [
       "full"
     ],
@@ -182,9 +162,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "morale"
+      "collection": "morale"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/morale/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/",
     "profiles": [
       "full"
     ]
@@ -201,9 +181,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "school"
+      "collection": "school"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/school/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/",
     "profiles": [
       "full"
     ]
@@ -220,7 +200,7 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": "hub_only",
-    "dest": "6_DEPTH_AND_SHELF/shelf/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/",
     "profiles": [
       "full"
     ]
@@ -237,7 +217,7 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": "hub_only",
-    "dest": "6_DEPTH_AND_SHELF/shelf/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/",
     "profiles": [
       "full"
     ]

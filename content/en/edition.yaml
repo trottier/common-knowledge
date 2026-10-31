@@ -12,5 +12,11 @@
     "nearest_public_elementary_school_main_entrance": "Otherwise use the nearest public elementary school's main entrance.",
     "nearest_fire_station": "If no school is within walking distance, use the nearest fire station.",
     "nearest_place_of_worship": "If neither is available, use the nearest place of worship."
-  }
+  },
+  "open_picture_labels": [
+    "iPhone: connect the USB-C drive.",
+    "iPhone: open Files, then the drive.",
+    "Android: connect the USB-C drive.",
+    "Android: open Files, then USB storage."
+  ]
 }

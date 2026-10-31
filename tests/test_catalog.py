@@ -53,6 +53,19 @@ def test_catalog_valid_but_release_fails_closed():
         require_release_ready(ROOT)
 
 
+def test_noncommercial_review_does_not_substitute_for_a_written_license():
+    candidate = item_for().model_copy(
+        update={
+            "license": "CC-BY-NC-SA-3.0",
+            "requires_legal": True,
+            "legal_reviewer": "Synthetic test approval; never shipped",
+            "legal_reviewed_on": "test",
+        }
+    )
+    assert any("written emergency-use license" in issue for issue in candidate.blockers())
+    assert "ifixit" not in load_catalog(ROOT)
+
+
 @pytest.mark.parametrize(
     "path",
     [

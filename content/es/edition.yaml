@@ -17,5 +17,11 @@
     "Videos",
     "Agencias estatales",
     "Verificar unidad"
+  ],
+  "open_picture_labels": [
+    "iPhone: conecte la unidad USB-C.",
+    "iPhone: abra Archivos y luego la unidad.",
+    "Android: conecte la unidad USB-C.",
+    "Android: abra Archivos y luego la unidad USB."
   ]
 }

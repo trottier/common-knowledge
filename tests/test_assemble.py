@@ -6,12 +6,26 @@ import pytest
 from ck.assemble import assemble, check_manifest, write_manifest
 from ck.config import load_config
 from ck.core import verify_core, write_core_manifest
-from ck.drive_safety import validate_tree
+from ck.drive_safety import executable_allowed, validate_tree
 from ck.image import build_image, run
 from ck.planner import plan_variants
 
 ROOT = Path(__file__).resolve().parents[1]
 EPOCH = 946684800
+
+
+@pytest.mark.parametrize(
+    "path,allowed",
+    [
+        ("9_LOCAL_LLM/Start Local LLM - Windows.bat", True),
+        ("9_AI_ASSISTANT/Start AI.bat", False),
+        ("6_VIDEOS_AND_IN_DEPTH/in_depth/repair/laptop/tool.exe", True),
+        ("6_VIDEOS_AND_IN_DEPTH/topics/medical/tool.exe", False),
+        ("2_VIDEOS/android/VLC.apk", True),
+    ],
+)
+def test_revised_executable_layout(path, allowed):
+    assert executable_allowed(path) is allowed
 
 
 def test_planner_fails_on_overflow_and_unconfirmed_capacity():

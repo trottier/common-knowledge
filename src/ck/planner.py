@@ -3,7 +3,7 @@
 import math
 from dataclasses import asdict, dataclass
 
-from ck.catalog import Item, Modules, Shelf
+from ck.catalog import Collection, Item, Topics
 from ck.config import Configuration
 
 
@@ -13,10 +13,10 @@ def selected(item: Item, config: Configuration, number: int, profile: str) -> bo
     variant = config.variants.variants[number]
     if item.placement == "universal":
         return True
-    if isinstance(item.placement, Modules):
-        return bool(set(item.placement.modules) & set(variant.modules))
-    if isinstance(item.placement, Shelf):
-        return item.placement.shelf == variant.shelf
+    if isinstance(item.placement, Topics):
+        return bool(set(item.placement.topics) & set(variant.topics))
+    if isinstance(item.placement, Collection):
+        return item.placement.collection == variant.collection
     return False
 
 

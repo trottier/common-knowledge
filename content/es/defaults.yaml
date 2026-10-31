@@ -16,8 +16,8 @@
       "text": "Cada reunión termina eligiendo a quien dirigirá la siguiente. Nadie ocupa ese puesto dos días seguidos."
     },
     "convener.role_fallback": {
-      "source_sha256": "a79715a0dc7df7d0d7754e6ecfe575b5c2a0f8e045e1598b70d0b1c1117df8dc",
-      "text": "Si nadie elige una función, la asume quien tenga una unidad de la variante con ese módulo, hasta que otra persona más preparada se ofrezca."
+      "source_sha256": "2ed1500c96e758ed2058b34b7dee29b81cb8215f134ab508ed06f4b96cc964cd",
+      "text": "Si nadie elige una función, la asume quien tenga una unidad de la variante con ese tema, hasta que otra persona más preparada se ofrezca."
     },
     "radio.privacy_code": {
       "source_sha256": "140bedbf9c3f6d56a9846d2ba7088798683f4da0c248231336e6a05679e4fdfe",

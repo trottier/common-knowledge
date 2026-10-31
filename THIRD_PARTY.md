@@ -48,13 +48,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## Untuned multilingual base model; select and quantize
+## Gemma 4 E2B; first local LLM candidate, exact GGUF unconfirmed
 
 - Catalog id: `base_model`
 - Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
+- License: Apache-2.0
+- Attribution: Google DeepMind, Gemma 4
+- License proof: https://ai.google.dev/gemma/docs/gemma_4_license
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
@@ -257,42 +257,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## Federal or Commons how-to videos, part 1; select individual files
-
-- Catalog id: `howto_videos_1`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
-## Federal or Commons how-to videos, part 2; select individual files
-
-- Catalog id: `howto_videos_2`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
 ## FEMA incident-command forms; select individual files
 
 - Catalog id: `ics_forms`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
-## iFixit; legal sign-off required
-
-- Catalog id: `ifixit`
 - Version: [[VERIFY: publisher version]]
 - License: [[VERIFY: redistribution license]]
 - Attribution: [[VERIFY: publisher attribution]]
@@ -784,6 +751,149 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 43097 bytes
 - SHA-256: `494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808`
 - Publisher file: https://www.usa.gov/state-emergency-management
+
+## Care for dependents video library; select individual sources
+
+- Catalog id: `topic_videos_care`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Comms and information video library; select individual sources
+
+- Catalog id: `topic_videos_comms`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Convening and liaison video library; select individual sources
+
+- Catalog id: `topic_videos_convening`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Food and cooking video library; select individual sources
+
+- Catalog id: `topic_videos_food`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Legal, money and recovery video library; select individual sources
+
+- Catalog id: `topic_videos_legal`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Medical video library; select individual sources
+
+- Catalog id: `topic_videos_medical`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Power and utilities video library; select individual sources
+
+- Catalog id: `topic_videos_power`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Psychosocial, kids and morale video library; select individual sources
+
+- Catalog id: `topic_videos_psychosocial`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Structures, fire and search video library; select individual sources
+
+- Catalog id: `topic_videos_structures`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Transport and evacuation video library; select individual sources
+
+- Catalog id: `topic_videos_transport`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Water and sanitation video library; select individual sources
+
+- Catalog id: `topic_videos_water`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Welfare and reunification video library; select individual sources
+
+- Catalog id: `topic_videos_welfare`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
+
+## VLC for Android; optional video language-track player
+
+- Catalog id: `vlc_android`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Publisher file: [[VERIFY: exact publisher download URL]]
 
 ## WikEM without pictures
 

@@ -17,18 +17,18 @@ def test_configuration_and_unconfirmed_production_capacity():
         config.build.profiles["full"].usable_bytes()
 
 
-@pytest.mark.parametrize("mutation", ["category", "coverage", "shelf", "unknown", "extra"])
+@pytest.mark.parametrize("mutation", ["category", "coverage", "collection", "unknown", "extra"])
 def test_broken_invariants_rejected(mutation):
     data = deepcopy(load_config(ROOT).model_dump())
     variants = data["variants"]["variants"]
     if mutation == "category":
-        variants[1]["modules"] = ["medical", "care", "convening"]
+        variants[1]["topics"] = ["medical", "care", "convening"]
     elif mutation == "coverage":
-        variants[1]["modules"][0] = "care"
-    elif mutation == "shelf":
-        variants[2]["shelf"] = variants[1]["shelf"]
+        variants[1]["topics"][0] = "care"
+    elif mutation == "collection":
+        variants[2]["collection"] = variants[1]["collection"]
     elif mutation == "unknown":
-        variants[1]["modules"][0] = "missing"
+        variants[1]["topics"][0] = "missing"
     else:
         data["defaults"]["radio"]["telemetry"] = True
     with pytest.raises(ValidationError):

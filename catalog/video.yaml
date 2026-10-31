@@ -17,9 +17,9 @@
     ]
   },
   {
-    "id": "howto_videos_1",
+    "id": "topic_videos_medical",
     "family": "video",
-    "title": "Federal or Commons how-to videos, part 1; select individual files",
+    "title": "Medical video library; select individual sources",
     "url": "[[VERIFY: exact publisher download URL]]",
     "version": "[[VERIFY: publisher version]]",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
@@ -28,17 +28,19 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_1"
+      "topics": [
+        "medical"
+      ]
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_1/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/medical/",
     "profiles": [
       "full"
     ]
   },
   {
-    "id": "howto_videos_2",
+    "id": "topic_videos_care",
     "family": "video",
-    "title": "Federal or Commons how-to videos, part 2; select individual files",
+    "title": "Care for dependents video library; select individual sources",
     "url": "[[VERIFY: exact publisher download URL]]",
     "version": "[[VERIFY: publisher version]]",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
@@ -47,9 +49,221 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_2"
+      "topics": [
+        "care"
+      ]
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_2/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/care/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_water",
+    "family": "video",
+    "title": "Water and sanitation video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "water"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/water/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_food",
+    "family": "video",
+    "title": "Food and cooking video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "food"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/food/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_power",
+    "family": "video",
+    "title": "Power and utilities video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "power"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/power/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_structures",
+    "family": "video",
+    "title": "Structures, fire and search video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "structures"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/structures/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_comms",
+    "family": "video",
+    "title": "Comms and information video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_transport",
+    "family": "video",
+    "title": "Transport and evacuation video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "transport"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/transport/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_convening",
+    "family": "video",
+    "title": "Convening and liaison video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "convening"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/convening/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_welfare",
+    "family": "video",
+    "title": "Welfare and reunification video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "welfare"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/welfare/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_legal",
+    "family": "video",
+    "title": "Legal, money and recovery video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "legal"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/legal/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_psychosocial",
+    "family": "video",
+    "title": "Psychosocial, kids and morale video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "psychosocial"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/psychosocial/",
     "profiles": [
       "full"
     ]

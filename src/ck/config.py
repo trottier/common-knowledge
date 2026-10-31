@@ -80,57 +80,51 @@ class Mesh(Model):
     schedule: Text
 
 
-class BlockDay(Model):
-    date: Text
-    time_local: ClockTime
-
-
 class Defaults(Model):
     rally_point: RallyPoint
     meetings: Meetings
     convener: Convener
     radio: Radio
     mesh: Mesh
-    block_day: BlockDay
 
 
-class Module(Model):
+class Topic(Model):
     category: Literal["body", "infra", "civic"]
     title: Text
 
 
 class Variant(Model):
-    modules: list[Identifier] = Field(min_length=3, max_length=3)
-    shelf: Identifier
+    topics: list[Identifier] = Field(min_length=3, max_length=3)
+    collection: Identifier
 
 
 class Variants(Model):
-    modules: dict[Identifier, Module]
-    shelves: dict[Identifier, Text]
+    topics: dict[Identifier, Topic]
+    collections: dict[Identifier, Text]
     variants: dict[int, Variant]
 
     @model_validator(mode="after")
     def check_coverage(self) -> Self:
         if set(self.variants) != set(range(1, 9)):
             raise ValueError("Exactly variants 1 through 8 are required")
-        if len(self.modules) != 12 or len(self.shelves) != 8:
-            raise ValueError("Exactly 12 modules and 8 shelves are required")
-        module_counts: Counter = Counter()
-        shelf_counts: Counter = Counter()
+        if len(self.topics) != 12 or len(self.collections) != 8:
+            raise ValueError("Exactly 12 topics and 8 collections are required")
+        topic_counts: Counter = Counter()
+        collection_counts: Counter = Counter()
         for number, variant in self.variants.items():
-            if len(set(variant.modules)) != 3 or not set(variant.modules) <= self.modules.keys():
-                raise ValueError(f"Variant {number} has duplicate or unknown modules")
-            categories = Counter(self.modules[m].category for m in variant.modules)
+            if len(set(variant.topics)) != 3 or not set(variant.topics) <= self.topics.keys():
+                raise ValueError(f"Variant {number} has duplicate or unknown topics")
+            categories = Counter(self.topics[m].category for m in variant.topics)
             if categories != Counter(body=1, infra=1, civic=1):
-                raise ValueError(f"Variant {number} must have one module from each category")
-            if variant.shelf not in self.shelves:
-                raise ValueError(f"Variant {number} has an unknown shelf")
-            module_counts.update(variant.modules)
-            shelf_counts.update([variant.shelf])
-        if module_counts != Counter({key: 2 for key in self.modules}):
-            raise ValueError("Each module must appear on exactly two variants")
-        if shelf_counts != Counter({key: 1 for key in self.shelves}):
-            raise ValueError("Each shelf must appear on exactly one variant")
+                raise ValueError(f"Variant {number} must have one topic from each category")
+            if variant.collection not in self.collections:
+                raise ValueError(f"Variant {number} has an unknown collection")
+            topic_counts.update(variant.topics)
+            collection_counts.update([variant.collection])
+        if topic_counts != Counter({key: 2 for key in self.topics}):
+            raise ValueError("Each topic must appear on exactly two variants")
+        if collection_counts != Counter({key: 1 for key in self.collections}):
+            raise ValueError("Each collection must appear on exactly one variant")
         return self
 
 

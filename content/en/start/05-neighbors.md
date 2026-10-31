@@ -41,7 +41,3 @@ Read this proposed script aloud. [@project_spec]
 
 Do not post private health details or name a shelter as open without confirmation.
 [[VERIFY: field-test timing, consent, accessibility and the proposed meeting script.]]
-
-## Block Day
-
-{{ defaults.block_day.date }} at {{ defaults.block_day.time_local }} local time. [@project_spec]

@@ -28,6 +28,10 @@ Open `1_START`, then your language folder. [@google_usb]
 
 ## Laptop
 
+The drive has a USB-C connector.
+For a laptop with only USB-A ports, borrow a USB-C to USB-A adapter from a neighbor.
+Do not force the drive into a USB-A port. [@project_spec]
+
 Open the drive in Finder or your file manager.
 Start with the PDF in `1_START`. Optional programs are in `7_LAPTOP`. [@project_spec]
 

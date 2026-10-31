@@ -62,11 +62,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "water"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -83,11 +83,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "comms"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -104,11 +104,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "comms"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -125,11 +125,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "comms"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -146,9 +146,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_1"
+      "collection": "howto_1"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_1/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_1/",
     "profiles": [
       "full"
     ]
@@ -165,9 +165,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_2"
+      "collection": "howto_2"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_2/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_2/",
     "profiles": [
       "full"
     ]

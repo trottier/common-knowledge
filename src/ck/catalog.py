@@ -34,12 +34,12 @@ def safe_path(value: str) -> PurePosixPath:
     return path
 
 
-class Modules(Model):
-    modules: list[Identifier] = Field(min_length=1)
+class Topics(Model):
+    topics: list[Identifier] = Field(min_length=1)
 
 
-class Shelf(Model):
-    shelf: Identifier
+class Collection(Model):
+    collection: Identifier
 
 
 class Item(Model):
@@ -65,7 +65,7 @@ class Item(Model):
     license: Text
     attribution: Text
     license_proof_url: Https | Marker
-    placement: Literal["universal", "hub_only"] | Modules | Shelf
+    placement: Literal["universal", "hub_only"] | Topics | Collection
     dest: Text
     profiles: list[ProfileName] = Field(min_length=1)
     inputs: list[Identifier] = Field(default_factory=list)
@@ -77,6 +77,7 @@ class Item(Model):
     checksum_source_url: Https | Marker | None = None
     review: Text | None = None
     requires_legal: bool = False
+    permission_proof_url: Https | Marker | None = None
     legal_reviewer: Text | None = None
     legal_reviewed_on: Text | None = None
 
@@ -116,8 +117,14 @@ class Item(Model):
             "CC-BY-NC-SA-3.0",
         }:
             problems.append(f"{self.id}: license needs redistribution review: {self.license}")
+        if "-NC-" in self.license and (
+            not self.permission_proof_url or "[[VERIFY" in self.permission_proof_url
+        ):
+            problems.append(
+                f"{self.id}: noncommercial material requires a written emergency-use license"
+            )
         if "-NC-" in self.license and not self.requires_legal:
-            problems.append(f"{self.id}: noncommercial license requires legal sign-off")
+            problems.append(f"{self.id}: a named human must review the written license grant")
         if self.requires_legal and not (self.legal_reviewer and self.legal_reviewed_on):
             problems.append(f"{self.id}: named legal sign-off is missing")
         if self.family == "apk" and self.signer_cert_sha256 is None:
@@ -151,14 +158,14 @@ def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, I
             if source.source_for != item.id or source.url != item.source_url:
                 raise ValueError(f"{item.id}: source archive is not explicitly tied to this app")
         if config:
-            if isinstance(item.placement, Modules):
-                if not set(item.placement.modules) <= config.variants.modules.keys():
-                    raise ValueError(f"{item.id}: unknown module placement")
+            if isinstance(item.placement, Topics):
+                if not set(item.placement.topics) <= config.variants.topics.keys():
+                    raise ValueError(f"{item.id}: unknown topic placement")
             elif (
-                isinstance(item.placement, Shelf)
-                and item.placement.shelf not in config.variants.shelves
+                isinstance(item.placement, Collection)
+                and item.placement.collection not in config.variants.collections
             ):
-                raise ValueError(f"{item.id}: unknown shelf placement")
+                raise ValueError(f"{item.id}: unknown collection placement")
     # Input graphs must be acyclic, including references that are not yet fetched.
     active, visited = set(), set()
 

@@ -1,9 +1,9 @@
 ---
-title: Tarjeta para el refrigerador
+title: Tarjeta del hogar
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/card.md": "934813b8319d5b6c77da2124e834d20c5b38a2c21d898fa66961e9e80d3d9a35"}
+source_inputs: {"content/en/card.md": "9bb7cce9d5f8c8877bd4465214baf92412c5b0fa50ba42ecd03ae22ff8175554"}
 review_required: [radio, legal]
 ---
 
@@ -24,6 +24,10 @@ review_required: [radio, legal]
 {{ defaults.radio.service }}, canal {{ defaults.radio.channel }} · {{ defaults.radio.frequency_mhz }} MHz · código de privacidad: {{ defaults.radio.privacy_code }}.
 {{ defaults.radio.listen_window }}. [@frs_channels] [@project_spec]
 
+## Abra la reunión
+
+{{ defaults.convener.rule }} [@project_spec]
+
 ## Mensajes por malla
 
 {{ defaults.mesh.app }}: {{ defaults.mesh.channels.block }} · {{ defaults.mesh.channels.help }}. [@project_spec]
@@ -32,9 +36,9 @@ review_required: [radio, legal]
 
 Punto de reunión: ___________________
 
-Contacto del hogar: __________________
-
 Contacto fuera del área: ______________
+
+Medicamentos del hogar: ______________
 
 ## Cartel
 

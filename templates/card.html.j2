@@ -22,7 +22,12 @@
   .front { break-after: page; }
   .front h2:last-of-type, .front h2:last-of-type + p { display: none; }
   .draft { border: 1pt solid black; font-weight: bold; }
-  .back h1 { font-size: 66pt; margin-top: 25mm; text-align: center; }
+  .placard { display: flex; justify-content: space-between; margin: 4mm 0 8mm; }
+  .placard span { font-size: 52pt; font-weight: bold; line-height: 1; }
+  .pictures { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm 5mm; }
+  .picture { border: 1pt solid black; padding: 3mm; break-inside: avoid; }
+  .picture svg { display: block; width: 100%; height: 36mm; }
+  .picture p { font-size: 12pt; margin-top: 2mm; }
   .qr { display: flex; justify-content: space-between; margin-top: 3mm; font-size: 8pt; }
   .qr span { width: 31%; border: 1px solid black; background: #fff096; padding: 2mm; }
   </style>
@@ -34,6 +39,31 @@
   {{ body }}
   <div class="qr">{% for label in edition.qr_labels %}<span>{{ label }}<br>[[VERIFY: QR URL]]</span>{% endfor %}</div>
 </section>
-<section class="back"><h1>OK</h1><h1>HELP</h1></section>
+<section class="back">
+  <div class="placard"><span>OK</span><span>HELP</span></div>
+  <div class="pictures">
+  {% for label in edition.open_picture_labels %}
+    <div class="picture">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" role="img">
+        {% if loop.index in [1, 3] %}
+        <rect x="38" y="3" width="44" height="63" rx="6" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M51 10h18M53 60h14" stroke="black" stroke-width="2"/>
+        <rect x="55" y="66" width="10" height="12" rx="2" fill="white" stroke="black" stroke-width="2"/>
+        <rect x="47" y="78" width="26" height="18" rx="3" fill="white" stroke="black" stroke-width="2"/>
+        <circle cx="61" cy="87" r="5" fill="white" stroke="black" stroke-width="1.5"/>
+        <path d="m61 83 2 7-4-2ZM50 84v6M16 84h16V64m-5 5 5-5 5 5" fill="none" stroke="black" stroke-width="2"/>
+        {% else %}
+        <rect x="30" y="3" width="55" height="88" rx="7" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M49 10h18" stroke="black" stroke-width="3"/>
+        <path d="M40 29h15l5 6h17v29H40Z" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M45 70h25m-10-5 10 5-10 5" fill="none" stroke="black" stroke-width="3"/>
+        <path d="M49 83h18" stroke="black" stroke-width="2"/>
+        {% endif %}
+      </svg>
+      <p>{{ label }}</p>
+    </div>
+  {% endfor %}
+  </div>
+</section>
 </body>
 </html>

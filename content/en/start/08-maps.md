@@ -25,6 +25,6 @@ The optional Android map app and import guide are in `3_MAPS_AND_PLACES/android`
 
 ## Laptop map
 
-The laptop map is on the variant whose shelf lists it.
-Use **Why is my drive different?** to find that variant. [@project_spec]
+The laptop map is on the variant whose in-depth knowledge collection lists it.
+Use **How is my drive different?** to find that variant. [@project_spec]
 [[VERIFY: test the pinned offline map viewer launcher on each laptop operating system.]]

@@ -11,7 +11,7 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote, urlparse
 
-from ck.catalog import Item, Modules, attributions, load_catalog, safe_path
+from ck.catalog import Item, Topics, attributions, load_catalog, safe_path
 from ck.config import Configuration
 from ck.core import verify_core
 from ck.drive_safety import validate_tree
@@ -34,15 +34,13 @@ def core_size(core: Path) -> int:
 
 def destination(item: Item, config: Configuration, number: int) -> str:
     dest = item.dest
-    if "{module}" in dest:
-        if not isinstance(item.placement, Modules):
-            raise ValueError(f"{item.id}: module destination requires module placement")
-        choices = sorted(
-            set(item.placement.modules) & set(config.variants.variants[number].modules)
-        )
+    if "{topic}" in dest:
+        if not isinstance(item.placement, Topics):
+            raise ValueError(f"{item.id}: topic destination requires topic placement")
+        choices = sorted(set(item.placement.topics) & set(config.variants.variants[number].topics))
         if not choices:
-            raise ValueError(f"{item.id}: no matching module")
-        dest = dest.replace("{module}", choices[0])
+            raise ValueError(f"{item.id}: no matching topic")
+        dest = dest.replace("{topic}", choices[0])
     return dest
 
 

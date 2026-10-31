@@ -3,7 +3,7 @@ title: Cómo usar esta unidad
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/01-use.md": "d443594d958122f57e55c51840c9ed904b939efa7548356d053624b92c9bdf7a"}
+source_inputs: {"content/en/start/01-use.md": "0652fb072ba5e9e0ca52333e0f569bb20fdcb1ccb6a5d04a7a9ac7e967e56f60"}
 review_required: []
 ---
 
@@ -28,6 +28,10 @@ Abra `1_START` y la carpeta de su idioma. [@google_usb]
 [[VERIFY: probar los gestores de archivos integrados de Samsung, Motorola y Pixel; confirmar que no se necesita instalar una aplicación.]]
 
 ## Computadora portátil
+
+La unidad tiene un conector USB-C.
+Si la computadora solo tiene puertos USB-A, pida a un vecino un adaptador de USB-C a USB-A.
+No fuerce la unidad para conectarla a un puerto USB-A. [@project_spec]
 
 Abra la unidad en Finder o en el gestor de archivos.
 Empiece por el PDF de `1_START`. Los programas opcionales están en `7_LAPTOP`. [@project_spec]

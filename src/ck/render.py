@@ -110,7 +110,7 @@ def render_html(
     template: str = "document.html.j2",
     profile: str = "dev",
 ) -> str:
-    from ck.catalog import Shelf, load_catalog
+    from ck.catalog import Collection, load_catalog
     from ck.locales import display_defaults, edition_for
     from ck.planner import selected
 
@@ -119,18 +119,18 @@ def render_html(
     edition = edition_for(root, language, config)
     content_env = Environment(undefined=StrictUndefined, autoescape=False)
     catalog = load_catalog(root, config)
-    shelf_contents = {
+    collection_contents = {
         number: [
             item.title
             for item in sorted(catalog.values(), key=lambda item: item.id)
-            if isinstance(item.placement, Shelf) and selected(item, config, number, profile)
+            if isinstance(item.placement, Collection) and selected(item, config, number, profile)
         ]
         for number in config.variants.variants
     }
     body = content_env.from_string(body).render(
         defaults=display_defaults(root, language, config),
         variants=config.variants.model_dump(),
-        shelf_contents=shelf_contents,
+        collection_contents=collection_contents,
         build_profile=profile,
         rally_labels=edition.rally_labels,
         editions={item.code: item.name for item in config.languages},

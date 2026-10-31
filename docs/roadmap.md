@@ -25,10 +25,12 @@ of done remain in [AGENTS.md](../AGENTS.md).
 9. Road atlas pipeline, starting with one small state.
 10. Android map pipeline and planner-selected build path.
 11. ZIM placement and medical phone PDFs.
-12. Experimental base model selection, runners, Android entry and system prompt.
-13. Imported media, documents, phrasebooks and forms.
+12. Experimental base local LLM selection (Gemma 4 E2B first), runners, Android
+    entry and system prompt.
+13. Imported single-file multilingual videos, VLC, documents, phrasebooks and forms.
 14. Sample, reproducibility, release and Pages workflows; build-machine docs.
 
 After step 14, stop and write `docs/release-review.md` with every remaining
-VERIFY marker, legal sign-off and required human content review. Do not describe
+VERIFY marker, written permission still needed, legal sign-off and required human content review.
+Do not describe
 the project as ready until the full definition of done is met.
