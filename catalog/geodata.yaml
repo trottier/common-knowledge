@@ -1469,5 +1469,203 @@
       "full"
     ],
     "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "osm_us_turn_58334086",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 58334086",
+    "url": "https://api.openstreetmap.org/api/0.6/way/58334086/full",
+    "version": "Way 58334086 version 16; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 3820,
+    "sha256": "18b40711c4881d4afa7c9375f25c878d734e151c76107f4e29308f9f03fa5fb6",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_341068168",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 341068168",
+    "url": "https://api.openstreetmap.org/api/0.6/way/341068168/full",
+    "version": "Way 341068168 version 4; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 946,
+    "sha256": "75eba2d930e42b09427d45ecc5119ba13f5aaf209f9e16745ff19b9eed242c3e",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_341068301",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 341068301",
+    "url": "https://api.openstreetmap.org/api/0.6/way/341068301/full",
+    "version": "Way 341068301 version 5; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1433,
+    "sha256": "2bcb0a9023cec83e3d5a6e92ef4ed72f7be9995ab5be9cf929a8c87a4d8c9dba",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_480215402",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 480215402",
+    "url": "https://api.openstreetmap.org/api/0.6/way/480215402/full",
+    "version": "Way 480215402 version 6; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1658,
+    "sha256": "15710ebc4246901acec1bebb67a20d2b278372219b63cc959e97bb3b80ab39bf",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_476630370",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 476630370",
+    "url": "https://api.openstreetmap.org/api/0.6/way/476630370/full",
+    "version": "Way 476630370 version 9; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1231,
+    "sha256": "8cbf5c5e2366e5f1f2f385874bbfc4fc100f81350d15b79b5aaeebc539274354",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1091236145",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1091236145",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1091236145/full",
+    "version": "Way 1091236145 version 3; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1247,
+    "sha256": "a5967d26948b487bf730051f33732332b72499b8c6f73faad2bac3b6dd26640b",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_362038502",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 362038502",
+    "url": "https://api.openstreetmap.org/api/0.6/way/362038502/full",
+    "version": "Way 362038502 version 5; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1559,
+    "sha256": "cd06218e9c3b081e1084173f6fff0900a416e1d6a78efd7c923ea7d2725163eb",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1361183566",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1361183566",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1361183566/full",
+    "version": "Way 1361183566 version 1; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 895,
+    "sha256": "39d2442717c93be6b994a3ef57d9a762ebae386d6cd4c8efd18426f7bf4f4c72",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1253938315",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1253938315",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1253938315/full",
+    "version": "Way 1253938315 version 2; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1196,
+    "sha256": "84403cb751365882be0cfeaa767af0baf96049bc68e72838f89b3ae1b37280b5",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1303990365",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1303990365",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1303990365/full",
+    "version": "Way 1303990365 version 3; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1178,
+    "sha256": "691678d1816da301dea77048908b23b5a78ea681885e24356b4c89e8a0d4ddf7",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1350436146",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1350436146",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1350436146/full",
+    "version": "Way 1350436146 version 1; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1040,
+    "sha256": "7d0dfac50c0078db58c95ad40398c3d7852c89021f8eb6e1c75cf9b93de2ea37",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
   }
 ]

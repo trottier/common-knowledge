@@ -5,8 +5,9 @@ node. `osmium cat` first removes contributor UID, user and changeset metadata
 in a streaming pass. Versions, timestamps, coordinates and member references
 stay intact. Only objects with tags enter the Python policy filter; native
 fallback handling copies untagged reference objects directly to the writer,
-in file order. Exclusion rules, retained tag policy and strict reference
-checks are unchanged.
+in file order. This performance change preserves the prior filter semantics. The later
+[point-label policy](android-point-labels.md) narrows settlement geometry and
+removes orphaned reference objects; it requires new measured output pins.
 
 The primary tool references describe
 [metadata cleaning](https://docs.osmcode.org/osmium/latest/osmium-cat.html)
@@ -23,7 +24,9 @@ relations and 101 excluded-tag removals. This is one observed runtime, not a
 cross-machine speed claim.
 
 The first full Oceania source check found 20 missing way references across
-two island relations. It failed as required; those source gaps are being
-reconciled against primary OSM API data. The policy does not discard incomplete
-relations or accept a failed check. Full parent source generation remains in
-progress and has not been pinned as a complete distributable map set.
+two island polygons. The U.S. check also found incomplete place polygons and
+11 missing road members in border turn restrictions. These checks failed as
+required. The subsequent [point-label policy](android-point-labels.md) and pinned
+road supplements address those distinct causes without weakening reference
+checks. The earlier Rhode Island hash above describes the performance-only
+recipe, not the later filter policy.

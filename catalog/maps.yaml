@@ -466,7 +466,18 @@
     "id": "android_source_us",
     "title": "Prepared roads and public places from the us parent",
     "inputs": [
-      "geofabrik_us"
+      "geofabrik_us",
+      "osm_us_turn_58334086",
+      "osm_us_turn_341068168",
+      "osm_us_turn_341068301",
+      "osm_us_turn_480215402",
+      "osm_us_turn_476630370",
+      "osm_us_turn_1091236145",
+      "osm_us_turn_362038502",
+      "osm_us_turn_1361183566",
+      "osm_us_turn_1253938315",
+      "osm_us_turn_1303990365",
+      "osm_us_turn_1350436146"
     ]
   },
   {

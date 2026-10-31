@@ -13,6 +13,7 @@ from ck.mapextract import (
     extract_roads,
     prepared_state_source,
     recipe_version,
+    source_inputs,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -95,7 +96,7 @@ def test_state_extract_rejects_wrong_parent_and_binds_census_coverage(tmp_path, 
     measured = generation_manifest(
         prepared,
         recipe_version(ROOT, "android-source-v1"),
-        {"geofabrik_us": items["geofabrik_us"].sha256},
+        source_inputs(ROOT, items, "geofabrik_us"),
         complete=True,
         epoch=946684800,
     )
@@ -103,7 +104,7 @@ def test_state_extract_rejects_wrong_parent_and_binds_census_coverage(tmp_path, 
     items[identifier] = items["directory_points"].model_copy(
         update={
             "id": identifier,
-            "inputs": ["geofabrik_us"],
+            "inputs": list(source_inputs(ROOT, items, "geofabrik_us")),
             **measured,
         }
     )

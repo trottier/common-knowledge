@@ -1289,7 +1289,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: measured generated payload bytes]] bytes
 - SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osm_us_turn_58334086, osm_us_turn_341068168, osm_us_turn_341068301, osm_us_turn_480215402, osm_us_turn_476630370, osm_us_turn_1091236145, osm_us_turn_362038502, osm_us_turn_1361183566, osm_us_turn_1253938315, osm_us_turn_1303990365, osm_us_turn_1350436146
 
 ## Appropedia
 
@@ -3215,6 +3215,127 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 1056 bytes
 - SHA-256: `5b9027dcd715c8e174404941b5d597297468eeb8008ead41a9caa1a70059ca98`
 - Publisher file: https://api.openstreetmap.org/api/0.6/way/722137578/full
+
+## OSM missing U.S. border turn-restriction member 1091236145
+
+- Catalog id: `osm_us_turn_1091236145`
+- Version: Way 1091236145 version 3; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1247 bytes
+- SHA-256: `a5967d26948b487bf730051f33732332b72499b8c6f73faad2bac3b6dd26640b`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/1091236145/full
+
+## OSM missing U.S. border turn-restriction member 1253938315
+
+- Catalog id: `osm_us_turn_1253938315`
+- Version: Way 1253938315 version 2; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1196 bytes
+- SHA-256: `84403cb751365882be0cfeaa767af0baf96049bc68e72838f89b3ae1b37280b5`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/1253938315/full
+
+## OSM missing U.S. border turn-restriction member 1303990365
+
+- Catalog id: `osm_us_turn_1303990365`
+- Version: Way 1303990365 version 3; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1178 bytes
+- SHA-256: `691678d1816da301dea77048908b23b5a78ea681885e24356b4c89e8a0d4ddf7`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/1303990365/full
+
+## OSM missing U.S. border turn-restriction member 1350436146
+
+- Catalog id: `osm_us_turn_1350436146`
+- Version: Way 1350436146 version 1; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1040 bytes
+- SHA-256: `7d0dfac50c0078db58c95ad40398c3d7852c89021f8eb6e1c75cf9b93de2ea37`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/1350436146/full
+
+## OSM missing U.S. border turn-restriction member 1361183566
+
+- Catalog id: `osm_us_turn_1361183566`
+- Version: Way 1361183566 version 1; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 895 bytes
+- SHA-256: `39d2442717c93be6b994a3ef57d9a762ebae386d6cd4c8efd18426f7bf4f4c72`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/1361183566/full
+
+## OSM missing U.S. border turn-restriction member 341068168
+
+- Catalog id: `osm_us_turn_341068168`
+- Version: Way 341068168 version 4; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 946 bytes
+- SHA-256: `75eba2d930e42b09427d45ecc5119ba13f5aaf209f9e16745ff19b9eed242c3e`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/341068168/full
+
+## OSM missing U.S. border turn-restriction member 341068301
+
+- Catalog id: `osm_us_turn_341068301`
+- Version: Way 341068301 version 5; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1433 bytes
+- SHA-256: `2bcb0a9023cec83e3d5a6e92ef4ed72f7be9995ab5be9cf929a8c87a4d8c9dba`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/341068301/full
+
+## OSM missing U.S. border turn-restriction member 362038502
+
+- Catalog id: `osm_us_turn_362038502`
+- Version: Way 362038502 version 5; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1559 bytes
+- SHA-256: `cd06218e9c3b081e1084173f6fff0900a416e1d6a78efd7c923ea7d2725163eb`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/362038502/full
+
+## OSM missing U.S. border turn-restriction member 476630370
+
+- Catalog id: `osm_us_turn_476630370`
+- Version: Way 476630370 version 9; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1231 bytes
+- SHA-256: `8cbf5c5e2366e5f1f2f385874bbfc4fc100f81350d15b79b5aaeebc539274354`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/476630370/full
+
+## OSM missing U.S. border turn-restriction member 480215402
+
+- Catalog id: `osm_us_turn_480215402`
+- Version: Way 480215402 version 6; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1658 bytes
+- SHA-256: `15710ebc4246901acec1bebb67a20d2b278372219b63cc959e97bb3b80ab39bf`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/480215402/full
+
+## OSM missing U.S. border turn-restriction member 58334086
+
+- Catalog id: `osm_us_turn_58334086`
+- Version: Way 58334086 version 16; full-node HTTPS snapshot fetched 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 3820 bytes
+- SHA-256: `18b40711c4881d4afa7c9375f25c878d734e151c76107f4e29308f9f03fa5fb6`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/58334086/full
 
 ## OsmAnd for Android
 
