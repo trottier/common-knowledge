@@ -125,6 +125,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## What You Need to Know About Handwashing — normalized CDC ASL video
+
+- Catalog id: `cdc_handwashing_asl`
+- Version: CDC 2020-04-10; development conversion
+- License: US-PD AND CC0-1.0
+- Attribution: Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.
+- License proof: https://stacks.cdc.gov/view/cdc/88655
+- Size: 10813142 bytes
+- SHA-256: `4e1639e2670711ef1839b5eed437a4aa6aaeface1f0b0fc925bdc2ba1212bf92`
+- Pipeline: video-v1-2a21a0c6c9bd19741ea4d8e9d957af643885d00517283c17d9ca977b6240c759; inputs: cdc_handwashing_asl_source, iso639_2
+
+## What You Need to Know About Handwashing — CDC ASL video
+
+- Catalog id: `cdc_handwashing_asl_source`
+- Version: 2020-04-10
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC); ASL video series. No CDC, HHS or U.S. Government endorsement is implied; original available without charge.
+- License proof: https://stacks.cdc.gov/view/cdc/88655
+- Size: 11559997 bytes
+- SHA-256: `7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee`
+- Publisher file: https://stacks.cdc.gov/view/cdc/88655/cdc_88655_DS2.wmv
+
 ## Census cartographic county boundaries
 
 - Catalog id: `census_counties`
@@ -312,16 +334,16 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## FEMA incident-command forms; select individual files
+## National Incident Management System Incident Command System Forms Booklet, FEMA 502-2
 
 - Catalog id: `ics_forms`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: September 2010; publisher v3 booklet
+- License: US-PD
+- Attribution: Federal Emergency Management Agency (FEMA)
+- License proof: https://training.fema.gov/programs/independent-study/isfaq.aspx?lang=en
+- Size: 2994565 bytes
+- SHA-256: `5821306717b7d1e0ff145f52a974773064121d3d01fee24fceacda40f2e3e55f`
+- Publisher file: https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/nims%20ics%20forms%20booklet%20%28v3%29.pdf
 
 ## IMLS Public Libraries Survey outlets
 
@@ -333,6 +355,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 3571467 bytes
 - SHA-256: `6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7`
 - Publisher file: https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip
+
+## Library of Congress ISO 639-2 language codes
+
+- Catalog id: `iso639_2`
+- Version: HTTPS snapshot 2026-10-31
+- License: [[VERIFY: confirm redistribution status of the ISO language-code data]]
+- Attribution: Library of Congress, ISO 639-2 Registration Authority
+- License proof: https://www.loc.gov/standards/iso639-2/
+- Size: 16010 bytes
+- SHA-256: `42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371`
+- Publisher file: https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt
 
 ## Kiwix for Android, universal standalone
 
@@ -554,6 +587,72 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288`
 - Publisher file: https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2425.zip
 
+## 2024–2028 Extra Class Pool and Syllabus, fourth errata, February 4 2026
+
+- Catalog id: `ncvec_extra`
+- Version: 2024–2028 Extra Class Pool and Syllabus, fourth errata, February 4 2026
+- License: US-PD
+- Attribution: National Conference of Volunteer Examiner Coordinators, Question Pool Committee
+- License proof: https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release
+- Size: 952745 bytes
+- SHA-256: `9cc63ae0c1c9ee63a617824555d5b4e73da8c8edb91566f97a66770eb200f517`
+- Publisher file: https://ncvec.org/downloads/2024-2028%20Extra%20Class%20Question%20Pool%20and%20Syllabus%20Public%20Release%20with%204th%20Errata%20Feb%204%202026.pdf
+
+## 2024–2028 Extra Class Pool and Syllabus, fourth errata, February 4 2026 — figures
+
+- Catalog id: `ncvec_extra_diagrams`
+- Version: 2024–2028 Extra Class Pool and Syllabus, fourth errata, February 4 2026
+- License: US-PD
+- Attribution: National Conference of Volunteer Examiner Coordinators, Question Pool Committee
+- License proof: https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release
+- Size: 78505 bytes
+- SHA-256: `591bb4c9fc9a9267e298b3ee23c93ab54ba3813f8ea3730123f9ccda1e4b80f2`
+- Publisher file: https://www.ncvec.org/downloads/Extra_Figures_2024-2028-1.pdf
+
+## 2023–2027 General Class Pool and Syllabus, sixth errata, February 4 2026
+
+- Catalog id: `ncvec_general`
+- Version: 2023–2027 General Class Pool and Syllabus, sixth errata, February 4 2026
+- License: US-PD
+- Attribution: National Conference of Volunteer Examiner Coordinators, Question Pool Committee
+- License proof: https://ncvec.org/index.php/2023-2027-general-question-pool-release
+- Size: 487877 bytes
+- SHA-256: `0627221fe69014b3015e97b44d3552a119ef7370144da8de9d02719c91cfa433`
+- Publisher file: https://ncvec.org/downloads/General%20Class%20Pool%20and%20Syllabus%202023-2027%20Public%20Release%20with%206th%20Errata%20Feb%204%202026.pdf
+
+## 2023–2027 General Class Pool and Syllabus, sixth errata, February 4 2026 — figures
+
+- Catalog id: `ncvec_general_diagrams`
+- Version: 2023–2027 General Class Pool and Syllabus, sixth errata, February 4 2026
+- License: US-PD
+- Attribution: National Conference of Volunteer Examiner Coordinators, Question Pool Committee
+- License proof: https://ncvec.org/index.php/2023-2027-general-question-pool-release
+- Size: 11312 bytes
+- SHA-256: `13b8ed81fc963ec1c24a414c78a288d658e52ff5d89e58c775aff85f17e57c3f`
+- Publisher file: https://www.ncvec.org/downloads/G7-1.pdf
+
+## 2026–2030 Technician Class Pool and Syllabus, February 19 2026
+
+- Catalog id: `ncvec_tech`
+- Version: 2026–2030 Technician Class Pool and Syllabus, February 19 2026
+- License: US-PD
+- Attribution: National Conference of Volunteer Examiner Coordinators, Question Pool Committee
+- License proof: https://ncvec.org/index.php/2026-2030-technician-question-pool
+- Size: 480239 bytes
+- SHA-256: `3618649d64df77f2cf217fa79ef82094fe5d2d41b26d20ce08c46ca1c3d5055a`
+- Publisher file: https://ncvec.org/downloads/2026-2030%20Technician%20Pool%20and%20Syllabus%20Public%20Release%20Feb%2019%202026.pdf
+
+## 2026–2030 Technician Class Pool and Syllabus, February 19 2026 — figures
+
+- Catalog id: `ncvec_tech_diagrams`
+- Version: 2026–2030 Technician Class Pool and Syllabus, February 19 2026
+- License: US-PD
+- Attribution: National Conference of Volunteer Examiner Coordinators, Question Pool Committee
+- License proof: https://ncvec.org/index.php/2026-2030-technician-question-pool
+- Size: 278003 bytes
+- SHA-256: `0b2f636a399100ab42a929328e187cef925d6d50666599ad58aff318cd81147c`
+- Publisher file: https://ncvec.org/downloads/TECH_2026/2026-2030%20Technician%20Pool%203%20Diagrams.pdf
+
 ## NWS NOAA Weather Radio transmitter list
 
 - Catalog id: `noaa_transmitters`
@@ -609,6 +708,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `dc591156f36842d38996c4a7a17fee9bb58e45da3e2cac7a31b7d33de700adb9`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgeorgian/NotoSansGeorgian%5Bwdth%2Cwght%5D.ttf
 
+## NotoSansGurmukhi[wdth,wght].ttf
+
+- Catalog id: `noto_sans_gurmukhi`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgurmukhi/OFL.txt
+- Size: 268608 bytes
+- SHA-256: `1e6f728fa620e566f842d81e220265813faa12771214765d289c98e035adc5f2`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgurmukhi/NotoSansGurmukhi%5Bwdth%2Cwght%5D.ttf
+
 ## NotoSansHebrew[wdth,wght].ttf
 
 - Catalog id: `noto_sans_hebrew`
@@ -663,6 +773,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 1233128 bytes
 - SHA-256: `7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf
+
+## NotoSansTamil[wdth,wght].ttf
+
+- Catalog id: `noto_sans_tamil`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstamil/OFL.txt
+- Size: 340668 bytes
+- SHA-256: `aa3a9b321f4b0bb2c40203ffbde9af89713227866e0e13f76e5b9eeea727cf88`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstamil/NotoSansTamil%5Bwdth%2Cwght%5D.ttf
 
 ## NotoSansTC[wght].ttf
 
@@ -750,7 +871,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: [[VERIFY: per-item publisher license proof]]
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_es_nopic
 
 ## Wikivoyage phrasebook for es
 
@@ -1181,16 +1302,49 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## VLC for Android; optional video language-track player
+## VLC for Android 3.7.1 (arm64-v8a)
 
 - Catalog id: `vlc_android`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 3.7.1; source baeb1edae0678927ebe16d482d979e9c7e75ead6
+- License: GPL-3.0-only
+- Attribution: VideoLAN and VLC for Android contributors; application GPLv2-or-later, combined Android application GPLv3 per upstream README
+- License proof: https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md
+- Size: 47990842 bytes
+- SHA-256: `bea9ea0cdecfd8f461ef305d2afe5d1ac1459cfb9156acce2f615788a486de74`
+- Publisher file: https://get.videolan.org/vlc-android/3.7.1/VLC-Android-3.7.1-arm64-v8a.apk
+
+## VLC for Android 3.7.1 (armeabi-v7a)
+
+- Catalog id: `vlc_android_older`
+- Version: 3.7.1; source baeb1edae0678927ebe16d482d979e9c7e75ead6
+- License: GPL-3.0-only
+- Attribution: VideoLAN and VLC for Android contributors; application GPLv2-or-later, combined Android application GPLv3 per upstream README
+- License proof: https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md
+- Size: 47073346 bytes
+- SHA-256: `a6a7f940e4bd190c9a70f3f0dc97c1c402c10200af20edac7a1d452b24abd8a0`
+- Publisher file: https://get.videolan.org/vlc-android/3.7.1/VLC-Android-3.7.1-armeabi-v7a.apk
+
+## VLC for Android exact application-source archive for armeabi-v7a
+
+- Catalog id: `vlc_android_older_source`
+- Version: baeb1edae0678927ebe16d482d979e9c7e75ead6
+- License: GPL-3.0-only
+- Attribution: VideoLAN and VLC for Android contributors
+- License proof: https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md
+- Size: 8103930 bytes
+- SHA-256: `0ed64811b3f9c978ba40aade4286014b4b6400489f66b86d87d935f415dba394`
+- Publisher file: https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz
+
+## VLC for Android exact application-source archive for arm64-v8a
+
+- Catalog id: `vlc_android_source`
+- Version: baeb1edae0678927ebe16d482d979e9c7e75ead6
+- License: GPL-3.0-only
+- Attribution: VideoLAN and VLC for Android contributors
+- License proof: https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md
+- Size: 8103930 bytes
+- SHA-256: `0ed64811b3f9c978ba40aade4286014b4b6400489f66b86d87d935f415dba394`
+- Publisher file: https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz
 
 ## WikEM without pictures
 
@@ -1261,13 +1415,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## English Wikivoyage without pictures
 
 - Catalog id: `wikivoyage_en_nopic`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2026-09
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; archive packaged by Kiwix
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 272495142 bytes
+- SHA-256: `4305c50550f065d83e70f75fd1d2016a694f5d67aa1e0ef00fdf6bb74fc092ac`
+- Publisher file: https://mirror.download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim
+
+## Wikivoyage, Spanish, no pictures — phrasebook build input
+
+- Catalog id: `wikivoyage_es_nopic`
+- Version: 2026-09
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; archive packaged by Kiwix
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 43135959 bytes
+- SHA-256: `6f39fcea4dcb213c8a42302e548349d0f835330b74c9e7253daa4821611a289c`
+- Publisher file: https://mirror.download.kiwix.org/zim/wikivoyage/wikivoyage_es_all_nopic_2026-09.zim
 
 ## Static ZIM tools build input for Linux amd64
 

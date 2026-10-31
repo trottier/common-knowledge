@@ -40,20 +40,22 @@
     "id": "wikivoyage_en_nopic",
     "family": "zim",
     "title": "English Wikivoyage without pictures",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://mirror.download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim",
+    "version": "2026-09",
+    "size_bytes": 272495142,
+    "sha256": "4305c50550f065d83e70f75fd1d2016a694f5d67aa1e0ef00fdf6bb74fc092ac",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikivoyage contributors; archive packaged by Kiwix",
+    "license_proof_url": "https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft",
     "placement": {
       "collection": "simplewiki"
     },
     "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/",
     "profiles": [
       "full"
-    ]
+    ],
+    "checksum_source_url": "https://download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim.meta4",
+    "review": "[[VERIFY: strict archive-format and offline resource checks, pin review and phrasebook provenance checks]]"
   },
   {
     "id": "simplewiki_en_nopic",
@@ -243,5 +245,24 @@
     ],
     "pipeline_version": "zim-offline-v1-c8cd52a2193ab857c0b1dd9e7bcfcd3cf66935fd221cb1fcc807655dc47e67ca",
     "review": "[[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]"
+  },
+  {
+    "id": "wikivoyage_es_nopic",
+    "family": "zim",
+    "title": "Wikivoyage, Spanish, no pictures \u2014 phrasebook build input",
+    "url": "https://mirror.download.kiwix.org/zim/wikivoyage/wikivoyage_es_all_nopic_2026-09.zim",
+    "version": "2026-09",
+    "size_bytes": 43135959,
+    "sha256": "6f39fcea4dcb213c8a42302e548349d0f835330b74c9e7253daa4821611a289c",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikivoyage contributors; archive packaged by Kiwix",
+    "license_proof_url": "https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft",
+    "placement": "hub_only",
+    "dest": "build/reference-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "checksum_source_url": "https://download.kiwix.org/zim/wikivoyage/wikivoyage_es_all_nopic_2026-09.zim.meta4",
+    "review": "[[VERIFY: archive format, source license and phrasebook provenance checks]]"
   }
 ]

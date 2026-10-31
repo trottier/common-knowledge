@@ -78,6 +78,11 @@ def test_article_rejects_missing_or_mismatched_provenance(html):
         article(html, "CC-BY-SA-4.0")
 
 
+def test_publisher_revision_dates_are_read_from_localized_footers():
+    html = source().replace("Last edited on ", "Esta página se editó por última vez el ")
+    assert article(html, "CC-BY-SA-4.0")["modified"] == "2026-10-01"
+
+
 def test_disambiguation_pages_cannot_enter_the_medical_selection():
     with pytest.raises(ValueError, match="disambiguation"):
         article(

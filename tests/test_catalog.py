@@ -66,6 +66,24 @@ def test_noncommercial_review_does_not_substitute_for_a_written_license():
     assert "ifixit" not in load_catalog(ROOT)
 
 
+def test_combined_licenses_require_every_component_to_be_redistributable():
+    candidate = item_for().model_copy(update={"license": "MIT AND Apache-2.0 AND OFL-1.1"})
+    assert candidate.blockers() == []
+    candidate.license = "MIT AND Unknown"
+    assert any("redistribution review" in issue for issue in candidate.blockers())
+    candidate.license = "MIT AND CC-BY-NC-SA-3.0"
+    assert any("written emergency-use license" in issue for issue in candidate.blockers())
+
+
+def test_unshipped_build_tool_does_not_require_a_shipped_app_source_archive():
+    tool = item_for().model_copy(
+        update={"family": "binaries", "license": "GPL-3.0-only", "placement": "hub_only"}
+    )
+    assert tool.blockers(release=True) == []
+    tool.placement = "universal"
+    assert any("source archive" in issue for issue in tool.blockers(release=True))
+
+
 @pytest.mark.parametrize(
     "path",
     [

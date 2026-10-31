@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import re
 import sys
 import tempfile
 import unicodedata
@@ -42,7 +43,7 @@ class Topics(Model):
 def article(html: str, expected_license: str) -> dict:
     source = BeautifulSoup(html, "html.parser")
     if source.select_one('meta[property="mw:PageProp/disambiguation"]'):
-        raise ValueError("Medical selection resolves to a disambiguation page")
+        raise ValueError("Reference selection resolves to a disambiguation page")
     footer = source.select_one(".zim-footer")
     if footer is None:
         raise ValueError("Article has no publisher source/date/license footer")
@@ -50,7 +51,7 @@ def article(html: str, expected_license: str) -> dict:
         (
             link
             for link in footer.find_all("a", href=True)
-            if link.get("title", "").startswith("Last edited on ")
+            if re.search(r"\d{4}-\d{2}-\d{2}$", link.get("title", ""))
         ),
         None,
     )
@@ -59,7 +60,7 @@ def article(html: str, expected_license: str) -> dict:
     revision = parse_qs(urlparse(origin["href"]).query).get("oldid", [])
     if len(revision) != 1 or not revision[0].isdigit():
         raise ValueError("Article source URL must identify an exact revision")
-    modified = origin["title"].removeprefix("Last edited on ")
+    modified = re.search(r"\d{4}-\d{2}-\d{2}$", origin["title"])[0]
     date.fromisoformat(modified)
     version = {"CC-BY-SA-4.0": "4.0", "CC-BY-SA-3.0": "3.0"}.get(expected_license)
     license_link = next(

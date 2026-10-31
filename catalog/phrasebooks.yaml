@@ -15,7 +15,7 @@
       "full"
     ],
     "inputs": [
-      "wikivoyage_en_nopic"
+      "wikivoyage_es_nopic"
     ],
     "pipeline_version": "[[VERIFY: verify article identifier and pinned phrasebook renderer]]"
   },

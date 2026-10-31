@@ -178,5 +178,45 @@
       "full"
     ],
     "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_gurmukhi",
+    "family": "fonts",
+    "title": "NotoSansGurmukhi[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgurmukhi/NotoSansGurmukhi%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 268608,
+    "sha256": "1e6f728fa620e566f842d81e220265813faa12771214765d289c98e035adc5f2",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgurmukhi/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_tamil",
+    "family": "fonts",
+    "title": "NotoSansTamil[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstamil/NotoSansTamil%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 340668,
+    "sha256": "aa3a9b321f4b0bb2c40203ffbde9af89713227866e0e13f76e5b9eeea727cf88",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstamil/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
   }
 ]

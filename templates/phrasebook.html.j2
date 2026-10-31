@@ -1,0 +1,30 @@
+<!doctype html><html lang="{{ source_language }}"><head><meta charset="utf-8">
+<title>{{ title }} — {{ edition_name }}</title>
+<meta name="dcterms.created" content="{{ timestamp }}"><meta name="dcterms.modified" content="{{ timestamp }}">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src file:">
+<style>
+{% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
+{{ css | safe }}
+body, code, pre, kbd, samp { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif; }
+@page { size: 90mm 160mm; font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
+  @bottom-left { content: 'Draft conversion · {{ modified }}'; font-size: 8pt; }
+}
+pre { white-space: pre-wrap; }
+.omitted-figure { font-style: italic; }
+.source-table { border-top: 2pt solid #555; margin-block: 1em; }
+.source-cell { border-left: 1pt solid #888; padding-left: .3em; margin-bottom: .7em; }
+</style></head><body>
+<h1>{{ title }}</h1><p>{{ edition_name }}</p>
+<p class="draft">DEVELOPMENT CONVERSION — source and language review pending.</p>
+<p>Imported phrasebook. The publisher's explanations remain in {{ source_language_name }}.
+This is not a translation of START. Source figures and audio are unavailable.</p>
+<p>Article last edited: {{ modified }}. Archive: {{ source_version }}.</p>
+<p>Source: <a href="{{ url }}">{{ title }}</a>, Wikivoyage contributors.
+<a href="{{ license_url }}">Creative Commons Attribution-ShareAlike</a>.
+Formatting and offline navigation adapted by Common Knowledge.</p>
+<nav aria-label="Contents"><h2>Contents</h2><ol>
+{% for heading in headings %}<li><a href="#{{ heading.id }}">{{ heading.title }}</a></li>{% endfor %}
+</ol></nav><main>{{ body }}</main>
+<p>Original article and contributors: <a href="{{ url }}">{{ url }}</a>.
+This converted article is available under <a href="{{ license_url }}">{{ license_url }}</a>.</p>
+</body></html>

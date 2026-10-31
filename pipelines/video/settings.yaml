@@ -1,0 +1,7 @@
+width: 480
+height: 854
+fps: 30
+video_bitrate: 600000
+audio_bitrate: 48000
+audio_sample_rate: 48000
+language_codes_id: iso639_2

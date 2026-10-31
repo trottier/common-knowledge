@@ -267,5 +267,47 @@
     "profiles": [
       "full"
     ]
+  },
+  {
+    "id": "cdc_handwashing_asl_source",
+    "family": "video",
+    "title": "What You Need to Know About Handwashing \u2014 CDC ASL video",
+    "url": "https://stacks.cdc.gov/view/cdc/88655/cdc_88655_DS2.wmv",
+    "version": "2020-04-10",
+    "size_bytes": 11559997,
+    "sha256": "7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC); ASL video series. No CDC, HHS or U.S. Government endorsement is implied; original available without charge.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS WMV pin, source content currency, original English audio and normalized playback on phones]]"
+  },
+  {
+    "id": "cdc_handwashing_asl",
+    "family": "generated",
+    "title": "What You Need to Know About Handwashing \u2014 normalized CDC ASL video",
+    "version": "CDC 2020-04-10; development conversion",
+    "size_bytes": 10813142,
+    "sha256": "4e1639e2670711ef1839b5eed437a4aa6aaeface1f0b0fc925bdc2ba1212bf92",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
+    "placement": "universal",
+    "dest": "2_VIDEOS/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "inputs": [
+      "cdc_handwashing_asl_source",
+      "iso639_2"
+    ],
+    "pipeline_version": "video-v1-2a21a0c6c9bd19741ea4d8e9d957af643885d00517283c17d9ca977b6240c759",
+    "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]"
   }
 ]

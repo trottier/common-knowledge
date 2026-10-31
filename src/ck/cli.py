@@ -75,6 +75,17 @@ def main(argv: Sequence[str] | None = None) -> int:
     local_llm.add_argument("--cache", type=Path, default=Path("cache"))
     local_llm.add_argument("--output", type=Path, required=True)
     local_llm.add_argument("--epoch", type=int)
+    video = commands.add_parser(
+        "video", help="Normalize a pinned imported video and subtitle tracks"
+    )
+    video.add_argument("--clip", required=True)
+    video.add_argument("--cache", type=Path, default=Path("cache"))
+    video.add_argument("--output", type=Path, required=True)
+    video.add_argument("--epoch", type=int)
+    phrasebooks = commands.add_parser("phrasebooks", help="Render all fifteen pinned phrasebooks")
+    phrasebooks.add_argument("--cache", type=Path, default=Path("cache"))
+    phrasebooks.add_argument("--output", type=Path, required=True)
+    phrasebooks.add_argument("--epoch", type=int)
     atlas = commands.add_parser("atlas", help="Prepare and compose a checked county road atlas")
     atlas_commands = atlas.add_subparsers(dest="atlas_action", required=True)
     atlas_prepare = atlas_commands.add_parser(
@@ -156,6 +167,46 @@ def main(argv: Sequence[str] | None = None) -> int:
                 json.dumps(
                     build_offline_zim(
                         args.root, item, args.cache, args.output, epoch_for(config, args.epoch)
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "phrasebooks":
+            from ck.catalog import load_catalog
+            from ck.phrasebooks import build_phrasebooks
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_phrasebooks(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "video":
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+            from ck.video import build_video
+
+            config = load_config(args.root)
+            print(
+                json.dumps(
+                    build_video(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        args.clip,
+                        epoch_for(config, args.epoch),
                     ),
                     indent=2,
                 )

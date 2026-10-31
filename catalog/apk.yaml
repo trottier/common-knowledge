@@ -168,26 +168,6 @@
     "review": "[[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]"
   },
   {
-    "id": "vlc_android",
-    "family": "apk",
-    "title": "VLC for Android; optional video language-track player",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "2_VIDEOS/android/",
-    "profiles": [
-      "sample",
-      "full"
-    ],
-    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
-    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
-  },
-  {
     "id": "kiwix_android_source",
     "family": "binaries",
     "title": "Kiwix Android corresponding source candidate",
@@ -288,5 +268,91 @@
     "source_url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/tarball/8932367e9f4a373945993ae0a472c8768d5c0578",
     "checksum_source_url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/releases/tags/v1.22.0",
     "review": "[[VERIFY: review verified APK signer, bundled notices, local import flow and offline operation on a phone with at least 6 GB RAM]]"
+  },
+  {
+    "id": "vlc_android",
+    "family": "apk",
+    "title": "VLC for Android 3.7.1 (arm64-v8a)",
+    "url": "https://get.videolan.org/vlc-android/3.7.1/VLC-Android-3.7.1-arm64-v8a.apk",
+    "version": "3.7.1; source baeb1edae0678927ebe16d482d979e9c7e75ead6",
+    "size_bytes": 47990842,
+    "sha256": "bea9ea0cdecfd8f461ef305d2afe5d1ac1459cfb9156acce2f615788a486de74",
+    "license": "GPL-3.0-only",
+    "attribution": "VideoLAN and VLC for Android contributors; application GPLv2-or-later, combined Android application GPLv3 per upstream README",
+    "license_proof_url": "https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md",
+    "placement": "universal",
+    "dest": "2_VIDEOS/android/VLC.apk",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "c8768d2cea0c4b622e419b4b4715981946821e4ebc035fb41776cad395a7f68e",
+    "source_url": "https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz",
+    "source_id": "vlc_android_source",
+    "checksum_source_url": "https://get.videolan.org/vlc-android/3.7.1/VLC-Android-3.7.1-arm64-v8a.apk.sha256",
+    "review": "[[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]"
+  },
+  {
+    "id": "vlc_android_source",
+    "family": "docs",
+    "title": "VLC for Android exact application-source archive for arm64-v8a",
+    "url": "https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz",
+    "version": "baeb1edae0678927ebe16d482d979e9c7e75ead6",
+    "size_bytes": 8103930,
+    "sha256": "0ed64811b3f9c978ba40aade4286014b4b6400489f66b86d87d935f415dba394",
+    "license": "GPL-3.0-only",
+    "attribution": "VideoLAN and VLC for Android contributors",
+    "license_proof_url": "https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "vlc_android",
+    "review": "[[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]"
+  },
+  {
+    "id": "vlc_android_older",
+    "family": "apk",
+    "title": "VLC for Android 3.7.1 (armeabi-v7a)",
+    "url": "https://get.videolan.org/vlc-android/3.7.1/VLC-Android-3.7.1-armeabi-v7a.apk",
+    "version": "3.7.1; source baeb1edae0678927ebe16d482d979e9c7e75ead6",
+    "size_bytes": 47073346,
+    "sha256": "a6a7f940e4bd190c9a70f3f0dc97c1c402c10200af20edac7a1d452b24abd8a0",
+    "license": "GPL-3.0-only",
+    "attribution": "VideoLAN and VLC for Android contributors; application GPLv2-or-later, combined Android application GPLv3 per upstream README",
+    "license_proof_url": "https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md",
+    "placement": "universal",
+    "dest": "2_VIDEOS/android/VLC_Older_Phones.apk",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "c8768d2cea0c4b622e419b4b4715981946821e4ebc035fb41776cad395a7f68e",
+    "source_url": "https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz",
+    "source_id": "vlc_android_older_source",
+    "checksum_source_url": "https://get.videolan.org/vlc-android/3.7.1/VLC-Android-3.7.1-armeabi-v7a.apk.sha256",
+    "review": "[[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]"
+  },
+  {
+    "id": "vlc_android_older_source",
+    "family": "docs",
+    "title": "VLC for Android exact application-source archive for armeabi-v7a",
+    "url": "https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz",
+    "version": "baeb1edae0678927ebe16d482d979e9c7e75ead6",
+    "size_bytes": 8103930,
+    "sha256": "0ed64811b3f9c978ba40aade4286014b4b6400489f66b86d87d935f415dba394",
+    "license": "GPL-3.0-only",
+    "attribution": "VideoLAN and VLC for Android contributors",
+    "license_proof_url": "https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/README.md",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "vlc_android_older",
+    "review": "[[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]"
   }
 ]

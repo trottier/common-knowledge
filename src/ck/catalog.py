@@ -100,7 +100,8 @@ class Item(Model):
         for key, value in self.model_dump().items():
             if isinstance(value, str) and "[[VERIFY" in value:
                 problems.append(f"{self.id}.{key}: {value}")
-        if self.license not in {
+        licenses = self.license.split(" AND ")
+        if not set(licenses) <= {
             "CC-BY-4.0",
             "CC-BY-SA-4.0",
             "CC-BY-SA-3.0",
@@ -131,7 +132,12 @@ class Item(Model):
             problems.append(f"{self.id}: named legal sign-off is missing")
         if self.family == "apk" and self.signer_cert_sha256 is None:
             problems.append(f"{self.id}: APK signer is missing")
-        if release and self.license.startswith("GPL-") and self.family in {"apk", "binaries"}:
+        if (
+            release
+            and any(license.startswith("GPL-") for license in licenses)
+            and self.family in {"apk", "binaries"}
+            and self.placement != "hub_only"
+        ):
             if not self.source_id:
                 problems.append(f"{self.id}: corresponding source archive catalog entry is missing")
         return problems
