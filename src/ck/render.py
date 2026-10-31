@@ -101,11 +101,11 @@ def epoch_for(config: Configuration, explicit: int | None = None) -> int:
     return epoch
 
 
-def font_files(root: Path, language: Language) -> list[Path]:
+def font_files(root: Path, language: Language, fallback_ids: tuple[str, ...] = ()) -> list[Path]:
     cache = Path(os.environ.get("CK_FONT_CACHE", root / "cache"))
     catalog = {item["id"]: item for item in read_yaml(root / "catalog/fonts.yaml")}
     paths = []
-    for identifier in dict.fromkeys([language.font, "noto_sans"]):
+    for identifier in dict.fromkeys([language.font, "noto_sans", *fallback_ids]):
         if identifier not in catalog:
             raise ValueError(f"Missing font catalog entry: {identifier}")
         item = catalog[identifier]
@@ -125,6 +125,7 @@ def render_html(
     epoch: int,
     template: str = "document.html.j2",
     profile: str = "dev",
+    fallback_ids: tuple[str, ...] = (),
 ) -> str:
     from ck.catalog import Collection, load_catalog
     from ck.locales import display_defaults, edition_for
@@ -186,7 +187,7 @@ def render_html(
         loader=FileSystemLoader(root / "templates"), undefined=StrictUndefined, autoescape=True
     )
     footer = edition.translation_footer
-    fonts = font_files(root, language)
+    fonts = font_files(root, language, fallback_ids)
     return env.get_template(template).render(
         title=header.title,
         language=language,
@@ -215,14 +216,15 @@ def render_pdf(
     epoch: int | None = None,
     template: str = "document.html.j2",
     profile: str = "dev",
+    fallback_ids: tuple[str, ...] = (),
 ) -> Path:
     timestamp = epoch_for(config, epoch)
     document = render_html(
-        root, config, source, language, page_format, timestamp, template, profile
+        root, config, source, language, page_format, timestamp, template, profile, fallback_ids
     )
     output.parent.mkdir(parents=True, exist_ok=True)
     output.with_suffix(".html").write_text(document, encoding="utf-8")
-    fonts = font_files(root, language)
+    fonts = font_files(root, language, fallback_ids)
     fetcher = OfflineFetcher([root / "assets", *[path.parent for path in fonts]])
     identifier = hashlib.sha256(document.encode()).hexdigest().encode("ascii")
     # fontTools consults this environment variable when instantiating variable

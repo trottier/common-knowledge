@@ -78,6 +78,7 @@ The first complete viewport batch contains 4,112 map pages across all 56
 jurisdictions. Its whole-planet-verified basemaps total 10,543,561,690 bytes of
 build inputs, pinned as `protomaps_us`. A Delaware native-render/composition
 check produced its five map pages with county bookmarks and point references.
-This does not establish complete nationwide PDF rendering. A full point-name
-font check also found four names requiring additional Cherokee, Arabic or
-Chinese coverage; fix those before publishing the nationwide PDFs.
+This does not establish complete nationwide PDF rendering. The full point-name
+font check found four names requiring Cherokee, Arabic or Chinese coverage.
+The shared [geographic font policy](geographic-fonts.md) now covers those names
+and fails on unsupported characters. Font-aware national rendering is underway.

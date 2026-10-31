@@ -10,6 +10,7 @@ from pathlib import Path
 from pydantic import Field
 from shapely import Point, box
 
+from ck import geofonts
 from ck.catalog import Item, safe_path
 from ck.config import Configuration, Model, read_yaml
 from ck.directory import Place, read_boundaries
@@ -31,6 +32,7 @@ def pipeline_version(root: Path) -> str:
             "catalog/buildtools.yaml",
             "tools/bootstrap_atlas.py",
             "tools/extract_atlas.py",
+            "pipelines/geodata-fonts.yaml",
         )
     ]
     for directory in ("pipelines/atlas", "src/ck"):
@@ -210,6 +212,7 @@ class _AtlasSources:
     basemaps: dict[str, Path]
     basemap_complete: bool
     raw_basemap: Path | None
+    fonts: list[dict]
 
 
 def _atlas_sources(root, catalog, cache, directory, directory_id, basemap_id, generated, epoch):
@@ -219,6 +222,10 @@ def _atlas_sources(root, catalog, cache, directory, directory_id, basemap_id, ge
     if manifest["source_date_epoch"] != epoch:
         raise ValueError("Atlas point seed and requested epoch disagree")
     _, data = point_seed(directory)
+    fonts = geofonts.font_records(root, catalog, cache)
+    geofonts.require_glyphs(
+        (place["name"] for place in data["places"]), [Path(font["path"]) for font in fonts]
+    )
     basemaps, complete, raw = {}, False, None
     if basemap_id:
         item = catalog[basemap_id]
@@ -236,13 +243,11 @@ def _atlas_sources(root, catalog, cache, directory, directory_id, basemap_id, ge
         manifest,
         data,
         read_boundaries(cached_input(catalog["census_county_analysis"], cache)),
-        {
-            "path": str(cached_input(catalog["noto_sans"], cache).resolve()),
-            "sha256": catalog["noto_sans"].sha256,
-        },
+        {key: fonts[0][key] for key in ("path", "sha256")},
         basemaps,
         complete,
         raw,
+        fonts,
     )
 
 
@@ -559,11 +564,12 @@ def prepare_atlas(
         "county_count": len(counties),
         "basemap": basemap,
         "font": sources.font,
+        "fonts": sources.fonts,
         "insets_configured": places_id is not None,
         "complete": bool(directory_manifest["complete"] and sources.basemap_complete and places_id),
         "inputs": {
             "census_county_analysis": county_item.sha256,
-            "noto_sans": catalog["noto_sans"].sha256,
+            **{font["id"]: font["sha256"] for font in sources.fonts},
             directory_id: hashlib.sha256(
                 json.dumps(directory_manifest, sort_keys=True, separators=(",", ":")).encode()
             ).hexdigest(),
@@ -616,7 +622,7 @@ def collect_atlases(
             identifier: catalog[identifier].sha256
             for identifier in [
                 "census_county_analysis",
-                "noto_sans",
+                *geofonts.font_ids(root),
                 directory_id,
                 basemap_id,
                 f"census_places_{state.lower()}",
@@ -739,6 +745,7 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
     identity = {
         **jobs,
         "font": jobs["font"]["sha256"],
+        "fonts": [{key: font[key] for key in ("id", "sha256")} for font in jobs["fonts"]],
         "basemap": (jobs.get("basemap") or {}).get("sha256"),
     }
     identifier = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest().encode()
@@ -791,8 +798,17 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
                 "number": place["number"],
                 "zoom": page["zoom"],
             }
-    fonts = font_files(root, config.languages[0])
-    if len(fonts) != 1 or digest(fonts[0]) != jobs["font"]["sha256"]:
+    ids = geofonts.font_ids(root)
+    fonts = font_files(root, config.languages[0], tuple(ids))
+    if (
+        [font["id"] for font in jobs["fonts"]] != ids
+        or len(fonts) != len(jobs["fonts"])
+        or any(
+            digest(path) != entry["sha256"]
+            for path, entry in zip(fonts, jobs["fonts"], strict=True)
+        )
+        or digest(fonts[0]) != jobs["font"]["sha256"]
+    ):
         raise ValueError("Atlas font changed; prepare and render again")
     env = Environment(
         loader=FileSystemLoader(root / "templates"), autoescape=True, undefined=StrictUndefined

@@ -218,5 +218,25 @@
       "full"
     ],
     "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_cherokee",
+    "family": "fonts",
+    "title": "Noto Sans Cherokee, variable weight",
+    "url": "https://raw.githubusercontent.com/google/fonts/57b4ebace8a7b5b3cb05bf92d84bb5de27894698/ofl/notosanscherokee/NotoSansCherokee%5Bwght%5D.ttf",
+    "version": "2.001; publisher commit 57b4ebace8a7b5b3cb05bf92d84bb5de27894698",
+    "size_bytes": 224360,
+    "sha256": "865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd",
+    "license": "OFL-1.1",
+    "attribution": "Copyright 2022 The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/57b4ebace8a7b5b3cb05bf92d84bb5de27894698/ofl/notosanscherokee/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete publisher HTTPS font download, parsed version and computed SHA-256 pin]]"
   }
 ]

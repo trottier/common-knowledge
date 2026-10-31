@@ -53,9 +53,6 @@
     ],
     "inputs": [
       "census_county_analysis",
-      "noto_sans",
-      "directory_points",
-      "protomaps_us",
       "census_places_ak",
       "census_places_al",
       "census_places_ar",
@@ -111,7 +108,13 @@
       "census_places_wa",
       "census_places_wi",
       "census_places_wv",
-      "census_places_wy"
+      "census_places_wy",
+      "directory_points",
+      "noto_sans",
+      "noto_sans_arabic",
+      "noto_sans_cherokee",
+      "noto_sans_sc",
+      "protomaps_us"
     ],
     "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
   },

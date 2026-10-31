@@ -2554,7 +2554,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: census_county_analysis, noto_sans, directory_points, protomaps_us, census_places_ak, census_places_al, census_places_ar, census_places_as, census_places_az, census_places_ca, census_places_co, census_places_ct, census_places_dc, census_places_de, census_places_fl, census_places_ga, census_places_gu, census_places_hi, census_places_ia, census_places_id, census_places_il, census_places_in, census_places_ks, census_places_ky, census_places_la, census_places_ma, census_places_md, census_places_me, census_places_mi, census_places_mn, census_places_mo, census_places_mp, census_places_ms, census_places_mt, census_places_nc, census_places_nd, census_places_ne, census_places_nh, census_places_nj, census_places_nm, census_places_nv, census_places_ny, census_places_oh, census_places_ok, census_places_or, census_places_pa, census_places_pr, census_places_ri, census_places_sc, census_places_sd, census_places_tn, census_places_tx, census_places_ut, census_places_va, census_places_vi, census_places_vt, census_places_wa, census_places_wi, census_places_wv, census_places_wy
+- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: census_county_analysis, census_places_ak, census_places_al, census_places_ar, census_places_as, census_places_az, census_places_ca, census_places_co, census_places_ct, census_places_dc, census_places_de, census_places_fl, census_places_ga, census_places_gu, census_places_hi, census_places_ia, census_places_id, census_places_il, census_places_in, census_places_ks, census_places_ky, census_places_la, census_places_ma, census_places_md, census_places_me, census_places_mi, census_places_mn, census_places_mo, census_places_mp, census_places_ms, census_places_mt, census_places_nc, census_places_nd, census_places_ne, census_places_nh, census_places_nj, census_places_nm, census_places_nv, census_places_ny, census_places_oh, census_places_ok, census_places_or, census_places_pa, census_places_pr, census_places_ri, census_places_sc, census_places_sd, census_places_tn, census_places_tx, census_places_ut, census_places_va, census_places_vi, census_places_vt, census_places_wa, census_places_wi, census_places_wv, census_places_wy, directory_points, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc, protomaps_us
 
 ## National public places directory
 
@@ -2676,6 +2676,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 844676 bytes
 - SHA-256: `63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/NotoSansArabic%5Bwdth%2Cwght%5D.ttf
+
+## Noto Sans Cherokee, variable weight
+
+- Catalog id: `noto_sans_cherokee`
+- Version: 2.001; publisher commit 57b4ebace8a7b5b3cb05bf92d84bb5de27894698
+- License: OFL-1.1
+- Attribution: Copyright 2022 The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/57b4ebace8a7b5b3cb05bf92d84bb5de27894698/ofl/notosanscherokee/OFL.txt
+- Size: 224360 bytes
+- SHA-256: `865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/57b4ebace8a7b5b3cb05bf92d84bb5de27894698/ofl/notosanscherokee/NotoSansCherokee%5Bwght%5D.ttf
 
 ## NotoSansDevanagari[wdth,wght].ttf
 

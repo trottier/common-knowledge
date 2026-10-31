@@ -594,6 +594,15 @@ def build_directory(
         ]
         source = stage / "directory.md"
         source.write_text("\n".join(body), encoding="utf-8")
+        fallback_ids = ()
+        if not seed:
+            from ck import geofonts
+            from ck.render import font_files
+
+            fallback_ids = tuple(geofonts.font_ids(root))
+            geofonts.require_glyphs(
+                [source.read_text()], font_files(root, config.languages[0], fallback_ids)
+            )
         for page_format in () if seed else ("phone", "print"):
             render_pdf(
                 root,
@@ -604,6 +613,7 @@ def build_directory(
                 files / f"{state.upper()}_{page_format}.pdf",
                 epoch,
                 template="directory.html.j2",
+                fallback_ids=fallback_ids,
             )
             audit = stage / "audit"
             audit.mkdir(exist_ok=True)
@@ -619,6 +629,8 @@ def build_directory(
             "src/ck/generated.py",
             "src/ck/render.py",
             "src/ck/locales.py",
+            "src/ck/geofonts.py",
+            "pipelines/geodata-fonts.yaml",
             "config/defaults.yaml",
             "config/languages.yaml",
             "content/en/edition.yaml",
@@ -635,7 +647,7 @@ def build_directory(
             ("directory-seed-v1-" if seed else "directory-v1-") + recipe.hexdigest(),
             {
                 **{i: items[i].sha256 for i in ids},
-                **({} if seed else {"noto_sans": items["noto_sans"].sha256}),
+                **{identifier: items[identifier].sha256 for identifier in fallback_ids},
             },
             complete=complete,
             epoch=epoch,

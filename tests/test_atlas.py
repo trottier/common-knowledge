@@ -141,7 +141,9 @@ def test_batch_preparation_reuses_shared_sources_and_keeps_jurisdictions_separat
                 {"GEOID": [state], "NAME": ["Synthetic city"]}, geometry=[geometry], crs=4326
             ),
         )
-    pin("noto_sans", b"Build-only synthetic font placeholder; no PDF is rendered")
+    pin("noto_sans", font_files(ROOT, load_config(ROOT).languages[0])[0].read_bytes())
+    items["noto_sans"].family = "fonts"
+    monkeypatch.setattr("ck.geofonts.font_ids", lambda root: ["noto_sans"])
     points = tmp_path / "points"
     (points / "files").mkdir(parents=True)
     (points / "files/source.txt").write_text("Synthetic source")
@@ -301,7 +303,7 @@ def test_region_covers_all_viewports():
     assert shape(region_for([{"frame": dateline.as_dict()}])).covers(Point(178.5, 51.5))
 
 
-def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path):
+def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path, monkeypatch):
     from PIL import Image
 
     class Settings:
@@ -309,7 +311,11 @@ def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path):
             return SETTINGS
 
     config = load_config(ROOT)
-    font = font_files(ROOT, config.languages[0])[0]
+    from ck.geofonts import font_ids
+
+    ids = font_ids(ROOT)
+    fonts = font_files(ROOT, config.languages[0], tuple(ids))
+    font = fonts[0]
     page = page_data("county", "Synthetic county", "test", box(-72, 41, -71, 42), [], Settings())
     place_labels(page)
     jobs = {
@@ -322,6 +328,10 @@ def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path):
         "complete": False,
         "inputs": {},
         "font": {"sha256": digest(font)},
+        "fonts": [
+            {"id": identifier, "path": str(path), "sha256": digest(path)}
+            for identifier, path in zip(ids, fonts, strict=True)
+        ],
     }
     jobs_path = tmp_path / "jobs.json"
     jobs_path.write_text(json.dumps(jobs))
@@ -343,6 +353,18 @@ def test_atlas_composition_bookmarks_integrity_and_reproducibility(tmp_path):
     for name in ("jobs.json", "rendered.json"):
         shutil.copyfile(tmp_path / name, elsewhere / name)
     shutil.copytree(tmp_path / "rasters", elsewhere / "rasters")
+    moved = json.loads((elsewhere / "jobs.json").read_text())
+    font_cache = elsewhere / "fonts"
+    font_cache.mkdir()
+    for entry in moved["fonts"]:
+        path = font_cache / entry["sha256"]
+        shutil.copyfile(entry["path"], path)
+        entry["path"] = str(path)
+    moved["font"]["path"] = moved["fonts"][0]["path"]
+    (elsewhere / "jobs.json").write_text(json.dumps(moved))
+    moved_rendered = {**rendered, "jobs_sha256": digest(elsewhere / "jobs.json")}
+    (elsewhere / "rendered.json").write_text(json.dumps(moved_rendered))
+    monkeypatch.setenv("CK_FONT_CACHE", str(font_cache))
     compose_atlas(ROOT, config, elsewhere / "jobs.json", tmp_path / "third")
     assert digest(first) == digest(tmp_path / "third/files/TEST.pdf")
     pdf = PdfReader(first)
