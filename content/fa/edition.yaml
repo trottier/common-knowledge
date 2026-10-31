@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "ترجمهٔ ماشینی بازبینی‌نشده.",
+  "contents_label": "فهرست",
+  "sources_label": "منابع",
+  "draft_label": "پیش‌نویس · برای انتشار تأیید نشده",
+  "readme": "1_START/{folder}/01_START_phone.pdf را باز کنید",
+  "rally_labels": {
+    "written_on_card": "به محلی بروید که روی کارت نوشته شده است.",
+    "nearest_public_elementary_school_main_entrance": "در غیر این صورت به ورودی اصلی نزدیک‌ترین دبستان دولتی بروید.",
+    "nearest_fire_station": "اگر مدرسه‌ای در فاصلهٔ قابل پیاده‌روی نیست، به نزدیک‌ترین ایستگاه آتش‌نشانی بروید.",
+    "nearest_place_of_worship": "اگر هیچ‌یک در دسترس نیست، به نزدیک‌ترین محل عبادت بروید."
+  }
+}

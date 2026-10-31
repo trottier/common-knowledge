@@ -1,0 +1,21 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Traducción automática sin revisar.",
+  "contents_label": "Contenido",
+  "sources_label": "Fuentes",
+  "draft_label": "BORRADOR · No aprobado para distribuir",
+  "readme": "Abra 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Vaya al lugar escrito en la tarjeta.",
+    "nearest_public_elementary_school_main_entrance": "Si no hay uno escrito, vaya a la entrada principal de la escuela primaria pública más cercana.",
+    "nearest_fire_station": "Si no hay una escuela a una distancia que pueda recorrer a pie, vaya a la estación de bomberos más cercana.",
+    "nearest_place_of_worship": "Si no hay ninguna de las anteriores, vaya al lugar de culto más cercano."
+  },
+  "qr_labels": [
+    "Videos",
+    "Agencias estatales",
+    "Verificar unidad"
+  ]
+}

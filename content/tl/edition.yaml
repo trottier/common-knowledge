@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Salin ng makina na hindi pa nasusuri.",
+  "contents_label": "Mga nilalaman",
+  "sources_label": "Mga sanggunian",
+  "draft_label": "Burador · Hindi pa inaprubahan",
+  "readme": "Buksan ang 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Pumunta sa lugar na nakasulat sa kard.",
+    "nearest_public_elementary_school_main_entrance": "Kung walang nakasulat, pumunta sa pangunahing pasukan ng pinakamalapit na pampublikong paaralang elementarya.",
+    "nearest_fire_station": "Kung walang paaralang kayang lakarin, pumunta sa pinakamalapit na istasyon ng bumbero.",
+    "nearest_place_of_worship": "Kung wala ang dalawa, pumunta sa pinakamalapit na lugar ng pagsamba."
+  }
+}

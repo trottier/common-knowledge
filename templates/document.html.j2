@@ -16,17 +16,17 @@
   {{ css | safe }}
   @page { size: {% if page_format == 'phone' %}90mm 160mm{% else %}Letter{% endif %};
     font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
-    @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
+    @bottom-center { content: {{ css_footer }}; font-size: 8pt; }
   }
   </style>
 </head>
 <body>
   <header>
     <h1>{{ title }}</h1>
-    {% if draft %}<p class="draft">DRAFT · Not approved for release</p>{% endif %}
+    {% if draft %}<p class="draft">{{ edition.draft_label }}</p>{% endif %}
   </header>
   <nav aria-label="Contents">
-    <h2>Contents</h2>
+    <h2>{{ edition.contents_label }}</h2>
     <ol>{% for heading in headings %}
       <li><a href="#{{ heading.anchor }}">{{ heading.title }}</a></li>
     {% endfor %}</ol>
@@ -34,7 +34,7 @@
   <main>{{ body }}</main>
   {% if sources %}
   <section class="sources">
-    <h2>Sources</h2>
+    <h2>{{ edition.sources_label }}</h2>
     {% for key, source in sources.items() %}
     <p id="source-{{ key }}">[{{ key }}] {{ source.title }}
       {% if source.url is defined %}<a href="{{ source.url }}">{{ source.url }}</a>{% endif %}

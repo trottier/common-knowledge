@@ -11,7 +11,7 @@
   {% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
   @page { size: 5.5in 8.5in; margin: 8mm;
     font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
-    @bottom-center { content: "{{ footer }}"; font-size: 8pt; }
+    @bottom-center { content: {{ css_footer }}; font-size: 8pt; }
   }
   body { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
     font-size: 12pt; line-height: 1.12; color: #111; }
@@ -30,9 +30,9 @@
 <body>
 <section class="front">
   <h1>{{ title }}</h1>
-  {% if draft %}<p class="draft">DRAFT — not approved for distribution</p>{% endif %}
+  {% if draft %}<p class="draft">{{ edition.draft_label }}</p>{% endif %}
   {{ body }}
-  <div class="qr"><span>Videos<br>[[VERIFY: QR URL]]</span><span>State agencies<br>[[VERIFY: QR URL]]</span><span>Verify drive<br>[[VERIFY: QR URL]]</span></div>
+  <div class="qr">{% for label in edition.qr_labels %}<span>{{ label }}<br>[[VERIFY: QR URL]]</span>{% endfor %}</div>
 </section>
 <section class="back"><h1>OK</h1><h1>HELP</h1></section>
 </body>

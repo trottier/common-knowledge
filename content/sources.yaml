@@ -26,6 +26,9 @@ cdc_generator:
 epa_water:
   title: EPA — Emergency Disinfection of Drinking Water
   url: https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
+epa_water_es:
+  title: EPA — Desinfección de agua potable en situaciones de emergencia
+  url: https://espanol.epa.gov/espanol/desinfeccion-de-agua-potable-en-situaciones-de-emergencia
 frs_channels:
   title: 47 CFR 95.563 — FRS channels
   url: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B/section-95.563

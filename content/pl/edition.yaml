@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Niezweryfikowane tłumaczenie maszynowe.",
+  "contents_label": "Spis treści",
+  "sources_label": "Źródła",
+  "draft_label": "Wersja robocza · Niezatwierdzona do publikacji",
+  "readme": "Otwórz 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Idź do miejsca zapisanego na karcie.",
+    "nearest_public_elementary_school_main_entrance": "W przeciwnym razie idź do głównego wejścia najbliższej publicznej szkoły podstawowej.",
+    "nearest_fire_station": "Jeśli nie ma szkoły w zasięgu dojścia pieszo, idź do najbliższej remizy straży pożarnej.",
+    "nearest_place_of_worship": "Jeśli żadne z tych miejsc nie jest dostępne, idź do najbliższego miejsca kultu."
+  }
+}

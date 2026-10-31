@@ -35,7 +35,7 @@ def test_all_original_citations_resolve_and_review_status_is_explicit():
 
 def test_core_layout_and_canonical_defaults(tmp_path):
     config = load_config(ROOT)
-    files = build_core(ROOT, config, tmp_path, 946684800)
+    files = build_core(ROOT, config, tmp_path, 946684800, languages=["en"])
     assert len(files) == 6
     card = tmp_path / "en/02_CARD.pdf"
     assert len(PdfReader(card).pages) == 2

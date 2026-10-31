@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Tradiksyon otomatik ki poko revize.",
+  "contents_label": "Sa ki ladan",
+  "sources_label": "Sous",
+  "draft_label": "Bouyon · Poko apwouve pou distribisyon",
+  "readme": "Louvri 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Ale kote ki ekri sou kat la.",
+    "nearest_public_elementary_school_main_entrance": "Si pa gen kote ekri, ale nan antre prensipal lekòl primè piblik ki pi pre a.",
+    "nearest_fire_station": "Si pa gen lekòl ou ka rive ladan l apye, ale nan estasyon ponpye ki pi pre a.",
+    "nearest_place_of_worship": "Si okenn nan de yo pa disponib, ale nan kote adorasyon ki pi pre a."
+  }
+}

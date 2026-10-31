@@ -11,9 +11,12 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 ## Current state
 
-Work-order steps 1–6 are implemented: repository structure, licenses, governance,
+Work-order steps 1–7 are implemented: repository structure, licenses, governance,
 a pinned Python 3.12/uv container, shared configuration, strict validation and
 `ck coverage`, and offline phone/print PDF rendering with an RTL fixture.
+All fifteen editions have phone and print PDFs. English and Spanish contain the
+full guide, card, tags and variant explanation; the other thirteen are quick starts.
+Spanish and the quick starts carry unreviewed machine-translation notices.
 All thirteen English sections, the card, tags and variant guide are drafts with
 explicit source, safety-review and device-test markers. A development FAT32 image
 has been built and verified. Full images remain blocked by unconfirmed inputs, measured

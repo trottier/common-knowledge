@@ -38,5 +38,85 @@
       "full"
     ],
     "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_devanagari",
+    "family": "fonts",
+    "title": "NotoSansDevanagari[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansdevanagari/NotoSansDevanagari%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 641944,
+    "sha256": "14ec4af41f27482216d1c2229f417ff9b1425e1babb014e57d1d40d03229853e",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansdevanagari/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_sc",
+    "family": "fonts",
+    "title": "NotoSansSC[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 17772300,
+    "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_tc",
+    "family": "fonts",
+    "title": "NotoSansTC[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 11941968,
+    "sha256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstc/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_kr",
+    "family": "fonts",
+    "title": "NotoSansKR[wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 10414588,
+    "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanskr/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
   }
 ]

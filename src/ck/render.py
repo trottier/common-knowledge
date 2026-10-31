@@ -2,6 +2,7 @@
 
 import hashlib
 import html
+import json
 import os
 import re
 import threading
@@ -28,6 +29,7 @@ class Header(Model):
     reviewer: str | None
     reviewed_on: str | None
     review_required: list[str] = Field(default_factory=list)
+    source_inputs: dict[str, str] = Field(default_factory=dict)
 
 
 def content_file(path: Path) -> tuple[Header, str]:
@@ -36,6 +38,19 @@ def content_file(path: Path) -> tuple[Header, str]:
         raise ValueError(f"Missing content front matter: {path}")
     front, body = source[4:].split("\n---\n", 1)
     return Header.model_validate(yaml.safe_load(front)), body
+
+
+def verify_translation_inputs(root: Path, header: Header) -> None:
+    from ck.catalog import safe_path
+
+    for relative, expected in header.source_inputs.items():
+        safe_path(relative)
+        path = (root / relative).resolve()
+        if not path.is_relative_to((root / "content/en").resolve()):
+            raise ValueError("Translation source must be English original content")
+        _, body = content_file(path)
+        if hashlib.sha256(body.encode()).hexdigest() != expected:
+            raise ValueError(f"Retranslate changed source: {relative}")
 
 
 class OfflineFetcher(URLFetcher):
@@ -96,9 +111,12 @@ def render_html(
     profile: str = "dev",
 ) -> str:
     from ck.catalog import Shelf, load_catalog
+    from ck.locales import display_defaults, edition_for
     from ck.planner import selected
 
     header, body = content_file(source)
+    verify_translation_inputs(root, header)
+    edition = edition_for(root, language, config)
     content_env = Environment(undefined=StrictUndefined, autoescape=False)
     catalog = load_catalog(root, config)
     shelf_contents = {
@@ -110,10 +128,12 @@ def render_html(
         for number in config.variants.variants
     }
     body = content_env.from_string(body).render(
-        defaults=config.defaults.model_dump(),
+        defaults=display_defaults(root, language, config),
         variants=config.variants.model_dump(),
         shelf_contents=shelf_contents,
         build_profile=profile,
+        rally_labels=edition.rally_labels,
+        editions={item.code: item.name for item in config.languages},
     )
     markdown = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = markdown.parse(body)
@@ -148,11 +168,7 @@ def render_html(
     env = Environment(
         loader=FileSystemLoader(root / "templates"), undefined=StrictUndefined, autoescape=True
     )
-    footer = ""
-    if language.code == "es":
-        footer = "Traducción automática sin revisar."
-    elif language.status == "stub":
-        footer = "[[VERIFY: localized unreviewed machine translation footer]]"
+    footer = edition.translation_footer
     fonts = font_files(root, language)
     return env.get_template(template).render(
         title=header.title,
@@ -163,9 +179,11 @@ def render_html(
         page_format=page_format,
         timestamp=datetime.fromtimestamp(epoch, UTC).isoformat(),
         footer=footer,
+        css_footer=Markup(json.dumps(footer, ensure_ascii=False)),
+        edition=edition,
         fonts=[path.as_uri() for path in fonts],
         css=(root / "templates/document.css").read_text(),
-        draft=header.status != "reviewed",
+        draft=header.status != "reviewed" or edition.status != "reviewed",
         defaults=config.defaults.model_dump(),
     )
 

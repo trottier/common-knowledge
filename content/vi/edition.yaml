@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Bản dịch máy chưa được kiểm duyệt.",
+  "contents_label": "Mục lục",
+  "sources_label": "Nguồn",
+  "draft_label": "Bản nháp · Chưa được duyệt để phát hành",
+  "readme": "Mở 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Đến nơi ghi trên thẻ.",
+    "nearest_public_elementary_school_main_entrance": "Nếu không có, đến cửa chính của trường tiểu học công lập gần nhất.",
+    "nearest_fire_station": "Nếu không có trường trong khoảng cách đi bộ, đến trạm cứu hỏa gần nhất.",
+    "nearest_place_of_worship": "Nếu cả hai đều không có, đến nơi thờ tự gần nhất."
+  }
+}

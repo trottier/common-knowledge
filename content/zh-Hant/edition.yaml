@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "未經人工審核的機器翻譯。",
+  "contents_label": "目錄",
+  "sources_label": "資料來源",
+  "draft_label": "草稿 · 尚未核准發布",
+  "readme": "開啟 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "先去卡片上寫明的地點。",
+    "nearest_public_elementary_school_main_entrance": "否則，去最近的公立小學正門。",
+    "nearest_fire_station": "如果沒有步行可達的小學，去最近的消防站。",
+    "nearest_place_of_worship": "如果以上兩種地點都沒有，去最近的宗教活動場所。"
+  }
+}
