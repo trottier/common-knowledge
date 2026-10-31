@@ -16,6 +16,17 @@ Inputs currently implemented:
   JSON, never JavaScript execution. Operational status and transmitter power are
   discarded. Frequencies remain the publisher's exact strings.
 - USAGov state emergency agency links, extracted without scripts or page assets.
+- FCC LMS facility, service/status dictionaries, granted license versions and
+  application locations. Import only AM/FM broadcast services. Follow explicit
+  granted-license references when a renewal or assignment lacks coordinates;
+  retain the exact reference filing in each entry. Geographic points must
+  declare EPSG:4326. A granted construction permit supplies geometry only when
+  an explicit granted-license reference points to it; a standalone permit
+  never becomes a station entry. NAD27 degree fields, contact details, tower
+  engineering and non-broadcast telecommunications are not imported.
+- FEMA National Risk Index v1.20 (December 2025) county ratings, using hazard
+  names from the dictionary in the same publisher ZIP. Preserve ratings as
+  published; these are historical relative risk, not warnings or forecasts.
 - TIGER/Line county boundaries for spatial assignment. Cartographic boundary
   files explicitly prohibit precise geographic analysis and are not used for joins.
 
@@ -31,11 +42,20 @@ It never imports general government offices, event shelters or distribution poin
 Names are escaped before Markdown/Jinja processing. Missing addresses are labeled;
 addresses and coordinates are not inferred or geocoded.
 
-The first build is intentionally incomplete: FCC broadcast imports, FEMA county
-hazard summaries and atlas page/grid references still need implementation and
-verified inputs. `generation.json` records `complete: false`; the assembler rejects
-such outputs. `--atlas-index` can supply the atlas's exact place-ID references.
-No development directory is eligible for emergency distribution.
+Builds without every source family, confirmed geographic references, county
+profiles and atlas page/grid references remain explicitly incomplete. The
+assembler rejects `complete: false`. `--atlas-index` supplies the atlas's exact
+place-ID references; its bytes enter the recipe fingerprint and build audit.
+Unlocatable records are reported rather than replaced with guessed coordinates.
+
+The pinned FEMA table has 3,232 county records. Three Census county equivalents
+have no published profile: Swains Island (60040), Rose Island (60030) and
+Northern Islands Municipality (69085). Their source gaps remain visible and
+require review. The Rhode Island FCC snapshot resolves all 54 licensed radio
+facilities to 55 geographic references, including one multi-location filing.
+The national import resolves 25,881 facilities to 25,963 references; 19 facilities
+remain unlocatable under these rules and are listed in the rejection audit.
+All national inputs still require pin review and immutable preservation.
 
 The source catalog also records human pin-review and immutable-mirror blockers.
 Some agencies publish only mutable URLs; checksums prevent accepting changed bytes,

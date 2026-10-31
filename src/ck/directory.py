@@ -246,6 +246,16 @@ def weather_radio(path: Path, item: Item, rejected: list | None = None):
     if not match:
         raise ValueError("NWR station data format changed; review the publisher's schema")
     for row in json.loads(match[1]):
+        # The publisher includes one county-coverage sentinel, not a station.
+        # Its empty coordinates are intentional; never turn it into a POI.
+        if (
+            not row["callsign"]
+            and not row["freq"]
+            and not row["lat"]
+            and not row["lon"]
+            and " ".join(row["sitename"].split()) == "---No NWR Coverage---"
+        ):
+            continue
         # Read only stable station facts. Outages/status and transmitter power
         # are deliberately not copied into any generated record.
         if not row["lat"] or not row["lon"]:
@@ -346,6 +356,12 @@ def build_directory(
         osm_id,
         "noaa_transmitters",
         "state_emergency_agencies",
+        "fcc_stations",
+        "fcc_locations",
+        "fcc_license_versions",
+        "fcc_service_codes",
+        "fcc_facility_statuses",
+        "fema_risk",
     ]
     paths = {identifier: cached_input(items[identifier], cache) for identifier in ids}
     with paths["census_states"].open() as stream:
@@ -354,11 +370,16 @@ def build_directory(
         raise ValueError("State code and FIPS disagree with Census reference data")
     boundaries = read_boundaries(paths["census_county_analysis"])
     rejected = []
+    from ck.directory_sources import broadcast_stations, county_profiles
+
+    counties = boundaries[boundaries.STATEFP == state_fips]
+    profiles, missing_profiles = county_profiles(paths["fema_risk"], set(counties.GEOID))
     records = [
         *schools(paths["nces_schools"], items["nces_schools"]),
         *libraries(paths["imls_libraries"], items["imls_libraries"]),
         *osm_places(paths[osm_id], items[osm_id]),
         *weather_radio(paths["noaa_transmitters"], items["noaa_transmitters"], rejected),
+        *broadcast_stations(paths, items, None, rejected),
     ]
     places = assign_counties(records, boundaries, state_fips)
     if not places:
@@ -371,11 +392,30 @@ def build_directory(
         # The atlas index supplies exact PDF page and grid labels. Until it exists,
         # directory PDFs remain explicitly incomplete and cannot enter a release.
         references = json.loads(atlas_index.read_text()) if atlas_index else {}
+        if not isinstance(references, dict) or any(
+            not isinstance(value, str)
+            or not re.fullmatch(r"page [1-9]\d*, grid [A-Z]+[1-9]\d*, point [1-9]\d*", value)
+            for value in references.values()
+        ):
+            raise ValueError(
+                "Atlas references must contain checked PDF page, grid and point labels"
+            )
+        if atlas_index:
+            (stage / "atlas-index.json").write_bytes(atlas_index.read_bytes())
         agencies = emergency_agencies(paths["state_emergency_agencies"])
-        present = {"nces_schools", "imls_libraries", "osm", "noaa_transmitters"}
+        present = {
+            "nces_schools",
+            "imls_libraries",
+            "osm",
+            "noaa_transmitters",
+            "fcc_stations",
+            "fema_risk",
+        }
         if state.upper() in agencies:
             present.add("state_emergency_agencies")
         missing = sorted(REQUIRED_SOURCES - present)
+        missing_references = sorted(place.id for place in places if place.id not in references)
+        complete = not (missing or rejected or missing_profiles or missing_references)
         metadata = {
             "state": state.upper(),
             "state_fips": state_fips,
@@ -383,18 +423,23 @@ def build_directory(
             "places": [p.model_dump() for p in places],
             "counts": dict(sorted(Counter(p.category for p in places).items())),
             "rejected_records": rejected,
+            "county_profiles": profiles,
+            "missing_county_profiles": missing_profiles,
+            "missing_atlas_references": missing_references,
         }
         (stage / "places.json").write_text(
             json.dumps(metadata, ensure_ascii=False, indent=2) + "\n"
         )
         public_data = {
             "attribution": (
-                "© OpenStreetMap contributors; NCES; IMLS; NWS; USAGov; U.S. Census Bureau"
+                "© OpenStreetMap contributors; NCES; IMLS; NWS; FCC; FEMA; USAGov; "
+                "U.S. Census Bureau"
             ),
             "license_notice": "OpenStreetMap data: ODbL-1.0. Federal source data: public domain.",
             "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
             "source_versions": {identifier: items[identifier].version for identifier in ids},
             "places": [place.model_dump(exclude={"tags"}) for place in places],
+            "county_profiles": profiles,
         }
         (files / f"{state.upper()}_SOURCE_DATA.json").write_text(
             json.dumps(public_data, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
@@ -407,7 +452,7 @@ def build_directory(
             "reviewed_on: null",
             "---",
             "",
-            "DEVELOPMENT DIRECTORY — INCOMPLETE",
+            "PUBLIC PLACES DIRECTORY" if complete else "DEVELOPMENT DIRECTORY — INCOMPLETE",
             "",
             f"Missing source families: {', '.join(missing)}.",
             "",
@@ -417,7 +462,7 @@ def build_directory(
         ]
         if rejected:
             body += [
-                f"[[VERIFY: {len(rejected)} NWR records lack source coordinates; "
+                f"[[VERIFY: {len(rejected)} source records lack confirmed geographic references; "
                 "review the build rejection report before publication.]]",
                 "",
             ]
@@ -451,6 +496,30 @@ def build_directory(
             body += [
                 f"Source {identifier}: {items[identifier].attribution}; "
                 f"{items[identifier].version}.",
+                "",
+            ]
+        body += [
+            "## County hazard profiles",
+            "",
+            "FEMA National Risk Index ratings describe historical relative risk. "
+            "They are not current emergency warnings or forecasts.",
+            "",
+        ]
+        for code, profile in sorted(profiles.items()):
+            body += [
+                f"### {plain(profile['county'])} · {code}",
+                "",
+                f"Overall risk rating: {plain(profile['risk_rating']) or 'Not supplied'}.",
+                "",
+            ]
+            for hazard, rating in sorted(profile["hazards"].items()):
+                body += [f"{plain(hazard)}: {plain(rating) or 'Not supplied'}.", ""]
+            body += [f"Source: fema_risk; as of {plain(items['fema_risk'].version)}.", ""]
+        if missing_profiles:
+            body += [
+                "[[VERIFY: FEMA has no county profile for Census codes "
+                + ", ".join(missing_profiles)
+                + "; review source coverage.]]",
                 "",
             ]
         if state.upper() in agencies:
@@ -491,8 +560,10 @@ def build_directory(
                 audit / f"{state.upper()}_{page_format}.html"
             )
         recipe = hashlib.sha256()
+        recipe.update(b"atlas-index\0" + (atlas_index.read_bytes() if atlas_index else b"none"))
         for relative in (
             "src/ck/directory.py",
+            "src/ck/directory_sources.py",
             "src/ck/generated.py",
             "src/ck/render.py",
             "src/ck/locales.py",
@@ -511,9 +582,9 @@ def build_directory(
             stage,
             "directory-v1-" + recipe.hexdigest(),
             {**{i: items[i].sha256 for i in ids}, "noto_sans": items["noto_sans"].sha256},
-            complete=False,
+            complete=complete,
             epoch=epoch,
-            intermediates=["places.json"],
+            intermediates=["places.json", *(["atlas-index.json"] if atlas_index else [])],
         )
         stage.rename(output)
     return {**measurements, "counts": metadata["counts"], "missing_sources": missing}

@@ -1,7 +1,7 @@
-"""Extract a bounded PMTiles input with the pinned CLI in the atlas container.
+"""Extract bounded PMTiles inputs, verifying one local planet once per batch.
 
-The planet SHA-256 must be confirmed before this derivative can be complete.
-Range downloads alone do not verify the publisher's whole-planet checksum.
+Remote range extracts remain incomplete. Complete derivatives require the exact
+checksum-verified whole input; no network is needed when --source-file is used.
 """
 
 import argparse
@@ -24,9 +24,10 @@ def sha(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True)
-    parser.add_argument("--jobs", type=Path, required=True)
+    parser.add_argument("--jobs", type=Path, nargs="+", required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--source-id", default="protomaps_planet")
+    parser.add_argument("--source-file", type=Path)
     args = parser.parse_args()
     if args.output.exists():
         raise ValueError("Choose a new extraction output directory")
@@ -43,23 +44,53 @@ def main():
     source = catalog[args.source_id]
     if not source["url"].startswith("https://") or "[[VERIFY" in source["url"]:
         raise ValueError("The planet URL must be confirmed")
+    if args.source_file is not None and (
+        args.source_file.is_symlink()
+        or not args.source_file.is_file()
+        or args.source_file.stat().st_size != source["size_bytes"]
+        or sha(args.source_file) != source["sha256"]
+    ):
+        raise ValueError("Local planet differs from its pinned whole-file size or SHA-256")
+    if args.source_file is not None:
+        with args.source_file.open("rb") as stream:
+            if stream.read(8) != b"PMTiles\x03":
+                raise ValueError("Local planet has an unsupported PMTiles header")
+    states = [json.loads(path.read_text())["state"] for path in args.jobs]
+    if len(states) != len(set(states)) or any(
+        not isinstance(state, str) or len(state) != 2 or not state.isascii() or not state.isalpha()
+        for state in states
+    ):
+        raise ValueError("Choose distinct two-letter state extraction jobs")
+    # Validate the whole source once, then extract states without rehashing a
+    # 139 GB planet for every county or state.
+    for jobs_path, state in zip(args.jobs, states, strict=True):
+        extract(
+            args,
+            catalog,
+            source,
+            jobs_path,
+            args.output / state if len(states) > 1 else args.output,
+        )
+
+
+def extract(args, catalog, source, jobs_path: Path, output: Path):
     architecture = {"aarch64": "arm64", "x86_64": "x64"}[platform.machine()]
     tool_id = "pmtiles_" + architecture
-    jobs = json.loads(args.jobs.read_text())
-    region = args.jobs.parent / "region.geojson"
+    jobs = json.loads(jobs_path.read_text())
+    region = jobs_path.parent / "region.geojson"
     if not jobs["pages"] or not region.is_file():
         raise ValueError("Prepare the county viewports before extracting")
     settings = (args.root / "pipelines/atlas/settings.yaml").read_text()
     maxzoom = next(
         int(line.split(":", 1)[1]) for line in settings.splitlines() if line.startswith("maxzoom:")
     )
-    files = args.output / "files"
+    files = output / "files"
     files.mkdir(parents=True)
     target = files / f"{jobs['state']}.pmtiles"
     command = [
         "pmtiles",
         "extract",
-        source["url"],
+        str(args.source_file.resolve()) if args.source_file is not None else source["url"],
         str(target),
         "--region=" + str(region),
         "--maxzoom=" + str(maxzoom),
@@ -67,7 +98,7 @@ def main():
     ]
     subprocess.run(command, check=True)
     subprocess.run(["pmtiles", "verify", str(target)], check=True)
-    (args.output / "region.geojson").write_bytes(region.read_bytes())
+    (output / "region.geojson").write_bytes(region.read_bytes())
     provenance = {
         "source": source,
         "region_sha256": sha(region),
@@ -75,11 +106,15 @@ def main():
         "tool_id": tool_id,
         "tool_sha256": catalog[tool_id]["sha256"],
         "command": [
-            part.replace(str(region), "region.geojson").replace(str(target), target.name)
+            part.replace(str(region), "region.geojson")
+            .replace(str(target), target.name)
+            .replace(str(args.source_file.resolve()), "source.pmtiles")
+            if args.source_file is not None
+            else part.replace(str(region), "region.geojson").replace(str(target), target.name)
             for part in command
         ],
     }
-    (args.output / "source.json").write_bytes(encoded(provenance) + b"\n")
+    (output / "source.json").write_bytes(encoded(provenance) + b"\n")
     metadata = {
         "pipeline_version": "pmtiles-extract-v1-" + sha(Path(__file__)),
         "inputs": {
@@ -87,9 +122,7 @@ def main():
             tool_id: catalog[tool_id]["sha256"],
             **{key: value for key, value in jobs["inputs"].items() if key != "noto_sans"},
         },
-        # This pipeline downloads ranges, so it deliberately cannot certify a
-        # whole-source checksum. A separately verified source is still needed.
-        "complete": False,
+        "complete": args.source_file is not None,
         "source_date_epoch": jobs["epoch"],
         "files": [
             {"path": target.name, "sha256": sha(target), "size_bytes": target.stat().st_size}
@@ -97,14 +130,14 @@ def main():
         "intermediates": [
             {
                 "path": name,
-                "sha256": sha(args.output / name),
-                "size_bytes": (args.output / name).stat().st_size,
+                "sha256": sha(output / name),
+                "size_bytes": (output / name).stat().st_size,
             }
             for name in ("source.json", "region.geojson")
         ],
     }
     payload = encoded(metadata)
-    (args.output / "generation.json").write_bytes(payload + b"\n")
+    (output / "generation.json").write_bytes(payload + b"\n")
     print(
         json.dumps(
             {

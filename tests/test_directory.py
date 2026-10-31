@@ -142,6 +142,31 @@ def test_nwr_import_drops_event_status_and_reports_missing_coordinates(tmp_path)
     assert records[0].details == {"Frequency MHz": "synthetic frequency"}
 
 
+def test_nwr_county_coverage_sentinel_is_not_a_missing_station(tmp_path):
+    from ck.catalog import load_catalog
+
+    item = load_catalog(Path(__file__).resolve().parents[1])["noaa_transmitters"]
+    source = tmp_path / "source.js"
+    source.write_text(
+        "var cclData = "
+        + json.dumps(
+            [
+                {
+                    "callsign": "",
+                    "freq": "",
+                    "lat": "",
+                    "lon": "",
+                    "sitename": "---No  NWR Coverage---",
+                }
+            ]
+        )
+        + ";"
+    )
+    rejected = []
+    assert list(weather_radio(source, item, rejected)) == []
+    assert rejected == []
+
+
 def test_agency_parser_accepts_only_named_state_https_links(tmp_path):
     source = tmp_path / "agencies.html"
     source.write_text(

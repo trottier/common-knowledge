@@ -93,19 +93,21 @@
   {
     "id": "fcc_stations",
     "family": "geodata",
-    "title": "FCC broadcast licensing data",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "FCC LMS facility table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/facility.zip",
+    "version": "LMS 2026-10-31",
+    "size_bytes": 9869171,
+    "sha256": "5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378",
+    "license": "US-PD",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
   },
   {
     "id": "noaa_transmitters",
@@ -129,19 +131,21 @@
   {
     "id": "fema_risk",
     "family": "geodata",
-    "title": "FEMA National Risk Index county table",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "FEMA National Risk Index v1.20 county table and hazard dictionary",
+    "url": "https://www.fema.gov/about/reports-and-data/openfema/nri/v120/NRI_Table_Counties.zip",
+    "version": "1.20 / December 2025",
+    "size_bytes": 24966535,
+    "sha256": "b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072",
+    "license": "US-PD",
+    "attribution": "FEMA National Risk Index; county ratings and hazard dictionary",
+    "license_proof_url": "https://catalog.data.gov/dataset/national-risk-index-nri-data",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
   },
   {
     "id": "state_emergency_agencies",
@@ -189,7 +193,7 @@
     "version": "2026-10-29",
     "license": "ODbL-1.0",
     "license_proof_url": "https://download.geofabrik.de/north-america/us/rhode-island.html",
-    "attribution": "\u00a9 OpenStreetMap contributors; extract by Geofabrik",
+    "attribution": "© OpenStreetMap contributors; extract by Geofabrik",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
@@ -264,7 +268,7 @@
     "sha256": "6956cdf4b143984a31e060faaa32848c74a71903135b5a7f8989c218ece8795d",
     "license": "ODbL-1.0",
     "license_proof_url": "https://docs.protomaps.com/basemaps/downloads",
-    "attribution": "\u00a9 OpenStreetMap contributors; Protomaps basemap produced work",
+    "attribution": "© OpenStreetMap contributors; Protomaps basemap produced work",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
@@ -293,5 +297,81 @@
       "full"
     ],
     "review": "[[VERIFY: review computed HTTPS snapshot pin and preserve the full-node snapshot at an immutable URL]]"
+  },
+  {
+    "id": "fcc_locations",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 30172822,
+    "sha256": "5f3e77ad951caca6b38b939b65b4d5248dff28de2613b2d2826c65158d4d3637",
+    "title": "FCC LMS app_location table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/app_location.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "fcc_service_codes",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 983,
+    "sha256": "347688dc1b76559622ccad04c97686733b697c0ae3f2fe18befca03ed65d8df0",
+    "title": "FCC LMS lkp_service_code table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/lkp_service_code.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "fcc_license_versions",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 63146475,
+    "sha256": "5a650c26f48ab250b64800ebc1f5772915959f3cccbf544fad6c794e935f48c3",
+    "title": "FCC LMS license_filing_version table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/license_filing_version.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "fcc_facility_statuses",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 622,
+    "sha256": "630651fea8a0fa0ea9e7a1582452076f8401b0dbca7ce8b0e0b0c1b1875915af",
+    "title": "FCC LMS lkp_facility_status table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/lkp_facility_status.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
   }
 ]
