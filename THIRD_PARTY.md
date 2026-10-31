@@ -4,17 +4,6 @@ Generated from catalog/; do not edit by hand.
 
 VERIFY entries are candidates and cannot be placed until confirmed.
 
-## Open-source Android GGUF runner; select app
-
-- Catalog id: `android_gguf`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
 ## English and Spanish Android map import instructions
 
 - Catalog id: `android_map_howto`
@@ -95,24 +84,79 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## bitchat for Android
 
 - Catalog id: `bitchat_android`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb
+- License: GPL-3.0-only
+- Attribution: permissionlesstech and bitchat Android contributors
+- License proof: https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md
+- Size: 52013804 bytes
+- SHA-256: `0ae35abafca2d727755372aa7ecc715e17b31b9fc4d7064f1a6941422f75a824`
+- Publisher file: https://github.com/permissionlesstech/bitchat-android/releases/download/v2.2.0/bitchat-android-universal.apk
+
+## bitchat for Android publisher license
+
+- Catalog id: `bitchat_android_license`
+- Version: 2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb
+- License: GPL-3.0-only
+- Attribution: permissionlesstech and bitchat Android contributors
+- License proof: https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md
+- Size: 35149 bytes
+- SHA-256: `3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986`
+- Publisher file: https://raw.githubusercontent.com/permissionlesstech/bitchat-android/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md
+
+## bitchat for Android corresponding source archive
+
+- Catalog id: `bitchat_android_source`
+- Version: 2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb
+- License: GPL-3.0-only
+- Attribution: permissionlesstech and bitchat Android contributors
+- License proof: https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md
+- Size: 16172589 bytes
+- SHA-256: `6105185550707d537f50ad554fb319163f829f7a9dc7a9dfaca404682ba2c918`
+- Publisher file: https://codeload.github.com/permissionlesstech/bitchat-android/tar.gz/20501fdfe0d56c7705c377d4a263b01d8f38eeeb
 
 ## Briar for Android
 
 - Catalog id: `briar_android`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 1.5.24; commit fbfebc4242f09e996a867de7988683628d426534
+- License: GPL-3.0-only
+- Attribution: Briar project contributors
+- License proof: https://code.briarproject.org/briar/briar/-/blob/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt
+- Size: 50686498 bytes
+- SHA-256: `fd01d439040c5964a3c986250cdcd4ff549405194f69ef8b972dc6aefd6f3ff7`
+- Publisher file: https://briarproject.org/fdroid/repo/briar-1.5.24.apk
+
+## Briar for Android publisher license
+
+- Catalog id: `briar_android_license`
+- Version: 1.5.24; commit fbfebc4242f09e996a867de7988683628d426534
+- License: GPL-3.0-only
+- Attribution: Briar project contributors
+- License proof: https://code.briarproject.org/briar/briar/-/blob/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt
+- Size: 33250 bytes
+- SHA-256: `2b5c861d7f3314b44148acb3309a4790346552ee210c2231b2915ec2afe3260f`
+- Publisher file: https://code.briarproject.org/briar/briar/-/raw/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt
+
+## Briar for Android corresponding source archive
+
+- Catalog id: `briar_android_source`
+- Version: 1.5.24; commit fbfebc4242f09e996a867de7988683628d426534
+- License: GPL-3.0-only
+- Attribution: Briar project contributors
+- License proof: https://code.briarproject.org/briar/briar/-/blob/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt
+- Size: 3901337 bytes
+- SHA-256: `23dd229a5710c31321de73e619f59915344a9e9e6bc5f01ac245c3de03777296`
+- Publisher file: https://code.briarproject.org/api/v4/projects/briar%2Fbriar/repository/archive.tar.gz?sha=fbfebc4242f09e996a867de7988683628d426534
+
+## Briar pinned mailbox submodule source
+
+- Catalog id: `briar_mailbox_source`
+- Version: 64147fd1d09764500c77948204c998aa6cfec347
+- License: GPL-3.0-only
+- Attribution: Briar project contributors
+- License proof: https://code.briarproject.org/briar/briar-mailbox/-/blob/64147fd1d09764500c77948204c998aa6cfec347/LICENSE.txt
+- Size: 393541 bytes
+- SHA-256: `b0256dc4d84d90ee58787407633099480f68d69c48886d0194467cf706abd740`
+- Publisher file: https://code.briarproject.org/api/v4/projects/briar%2Fbriar-mailbox/repository/archive.tar.gz?sha=64147fd1d09764500c77948204c998aa6cfec347
 
 ## CDC guides and official translations; confirm per-item rights
 

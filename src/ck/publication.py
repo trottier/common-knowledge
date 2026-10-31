@@ -7,7 +7,6 @@ import tarfile
 import tempfile
 import zipfile
 from pathlib import Path
-from urllib.parse import urlparse
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
@@ -28,7 +27,43 @@ def release_sources(root: Path, cache: Path) -> None:
     items = load_catalog(root, load_config(root))
     for app in items.values():
         if ships_gpl(app):
-            fetch(items[app.source_id], cache)
+            for source in corresponding_sources(items, app):
+                fetch(source, cache)
+
+
+def corresponding_sources(items, app):
+    seen = set()
+
+    def visit(identifier, ancestors):
+        if identifier in ancestors:
+            raise ValueError("Corresponding source dependency cycle")
+        if identifier in seen:
+            return
+        if identifier not in items:
+            raise ValueError("Missing corresponding source dependency")
+        seen.add(identifier)
+        source = items[identifier]
+        yield source
+        for dependency in source.inputs:
+            yield from visit(dependency, ancestors | {identifier})
+
+    yield from visit(app.source_id, set())
+
+
+def source_archive_extension(path: Path) -> str:
+    # GitHub/GitLab archive APIs often end in a commit or query, not an extension.
+    with path.open("rb") as stream:
+        header = stream.read(6)
+    if zipfile.is_zipfile(path):
+        extension = ".zip"
+    elif header.startswith(b"\x1f\x8b"):
+        extension = ".tar.gz"
+    elif header == b"\xfd7zXZ\x00":
+        extension = ".tar.xz"
+    else:
+        raise ValueError("Unsupported corresponding source archive format")
+    check_source_archive(path, extension)
+    return extension
 
 
 def ships_gpl(item) -> bool:
@@ -150,21 +185,13 @@ def prepare_release(
                 continue
             if not app.source_id:
                 raise ValueError(f"Missing corresponding source: {app.id}")
-            source = items[app.source_id]
-            path = cached_input(source, cache)
-            archive_name = urlparse(source.url or "").path
-            extension = next(
-                (
-                    suffix
-                    for suffix in (".tar.gz", ".tar.xz", ".zip")
-                    if archive_name.endswith(suffix)
-                ),
-                None,
-            )
-            if not extension:
-                raise ValueError(f"App source is not a declared source archive: {app.id}")
-            check_source_archive(path, extension)
-            copy(path, "source-" + app.id + extension, "gpl-source")
+            for source in corresponding_sources(items, app):
+                path = cached_input(source, cache)
+                extension = source_archive_extension(path)
+                name = "source-" + app.id
+                if source.id != app.source_id:
+                    name += "-" + source.id
+                copy(path, name + extension, "gpl-source")
         write_catalog_lock(root, stage / "catalog.lock.json", epoch)
         kinds["catalog.lock.json"] = "catalog"
         files = [

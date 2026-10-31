@@ -9,6 +9,31 @@ from ck.publication import build_site, check_source_archive, prepare_release, wr
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def test_archive_api_downloads_are_identified_by_content_and_sources_include_submodules(tmp_path):
+    import io
+    import tarfile
+    from types import SimpleNamespace
+
+    from ck.publication import corresponding_sources, source_archive_extension
+
+    source = tmp_path / ("a" * 64)
+    with tarfile.open(source, "w:gz") as archive:
+        payload = b"Synthetic corresponding source"
+        member = tarfile.TarInfo("project/source.txt")
+        member.size = len(payload)
+        archive.addfile(member, io.BytesIO(payload))
+    assert source_archive_extension(source) == ".tar.gz"
+    items = {
+        "project": SimpleNamespace(id="project", inputs=["submodule"]),
+        "submodule": SimpleNamespace(id="submodule", inputs=[]),
+    }
+    app = SimpleNamespace(source_id="project")
+    assert [item.id for item in corresponding_sources(items, app)] == ["project", "submodule"]
+    items["submodule"].inputs = ["project"]
+    with pytest.raises(ValueError, match="cycle"):
+        list(corresponding_sources(items, app))
+
+
 def test_release_review_reports_every_marker_and_never_changes_sources(tmp_path):
     from ck.fetch import digest
     from ck.review import markers, write_release_review

@@ -25,41 +25,49 @@
     "id": "bitchat_android",
     "family": "apk",
     "title": "bitchat for Android",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://github.com/permissionlesstech/bitchat-android/releases/download/v2.2.0/bitchat-android-universal.apk",
+    "version": "2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb",
+    "size_bytes": 52013804,
+    "sha256": "0ae35abafca2d727755372aa7ecc715e17b31b9fc4d7064f1a6941422f75a824",
+    "license": "GPL-3.0-only",
+    "attribution": "permissionlesstech and bitchat Android contributors",
+    "license_proof_url": "https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md",
     "placement": "universal",
-    "dest": "8_MESH_CHAT/",
+    "dest": "8_MESH_CHAT/bitchat.apk",
     "profiles": [
       "sample",
       "full"
     ],
-    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
-    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+    "signer_cert_sha256": "3b03fa66a5451321100792f5b55a7b4966d5c8dc10c6daa40aa95ea489531bca",
+    "source_url": "https://codeload.github.com/permissionlesstech/bitchat-android/tar.gz/20501fdfe0d56c7705c377d4a263b01d8f38eeeb",
+    "checksum_source_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/v2.2.0",
+    "source_id": "bitchat_android_source",
+    "requires_legal": true,
+    "review": "[[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]"
   },
   {
     "id": "briar_android",
     "family": "apk",
     "title": "Briar for Android",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://briarproject.org/fdroid/repo/briar-1.5.24.apk",
+    "version": "1.5.24; commit fbfebc4242f09e996a867de7988683628d426534",
+    "size_bytes": 50686498,
+    "sha256": "fd01d439040c5964a3c986250cdcd4ff549405194f69ef8b972dc6aefd6f3ff7",
+    "license": "GPL-3.0-only",
+    "attribution": "Briar project contributors",
+    "license_proof_url": "https://code.briarproject.org/briar/briar/-/blob/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt",
     "placement": "universal",
-    "dest": "8_MESH_CHAT/",
+    "dest": "8_MESH_CHAT/Briar.apk",
     "profiles": [
       "sample",
       "full"
     ],
-    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
-    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+    "signer_cert_sha256": "501ddf14a6ecf904fb20285c56a565cb987a867f91572ee33c2d43771cca4e37",
+    "source_url": "https://code.briarproject.org/api/v4/projects/briar%2Fbriar/repository/archive.tar.gz?sha=fbfebc4242f09e996a867de7988683628d426534",
+    "checksum_source_url": "https://briarproject.org/fdroid/repo/index-v1.jar",
+    "source_id": "briar_android_source",
+    "requires_legal": true,
+    "review": "[[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]"
   },
   {
     "id": "osmand_android",
@@ -74,26 +82,6 @@
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": "universal",
     "dest": "3_MAPS_AND_PLACES/android/OsmAnd.apk",
-    "profiles": [
-      "sample",
-      "full"
-    ],
-    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
-    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
-  },
-  {
-    "id": "android_gguf",
-    "family": "apk",
-    "title": "Open-source Android GGUF runner; select app",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "9_LOCAL_LLM/android/",
     "profiles": [
       "sample",
       "full"
@@ -354,5 +342,105 @@
     ],
     "source_for": "vlc_android_older",
     "review": "[[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]"
+  },
+  {
+    "id": "bitchat_android_source",
+    "family": "docs",
+    "title": "bitchat for Android corresponding source archive",
+    "url": "https://codeload.github.com/permissionlesstech/bitchat-android/tar.gz/20501fdfe0d56c7705c377d4a263b01d8f38eeeb",
+    "version": "2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb",
+    "size_bytes": 16172589,
+    "sha256": "6105185550707d537f50ad554fb319163f829f7a9dc7a9dfaca404682ba2c918",
+    "license": "GPL-3.0-only",
+    "attribution": "permissionlesstech and bitchat Android contributors",
+    "license_proof_url": "https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "bitchat_android",
+    "review": "[[VERIFY: review exact release commit and complete corresponding dependency sources]]"
+  },
+  {
+    "id": "briar_android_source",
+    "family": "docs",
+    "title": "Briar for Android corresponding source archive",
+    "url": "https://code.briarproject.org/api/v4/projects/briar%2Fbriar/repository/archive.tar.gz?sha=fbfebc4242f09e996a867de7988683628d426534",
+    "version": "1.5.24; commit fbfebc4242f09e996a867de7988683628d426534",
+    "size_bytes": 3901337,
+    "sha256": "23dd229a5710c31321de73e619f59915344a9e9e6bc5f01ac245c3de03777296",
+    "license": "GPL-3.0-only",
+    "attribution": "Briar project contributors",
+    "license_proof_url": "https://code.briarproject.org/briar/briar/-/blob/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "briar_android",
+    "review": "[[VERIFY: review exact release commit and complete corresponding dependency sources]]",
+    "inputs": [
+      "briar_mailbox_source"
+    ]
+  },
+  {
+    "id": "briar_mailbox_source",
+    "family": "docs",
+    "title": "Briar pinned mailbox submodule source",
+    "url": "https://code.briarproject.org/api/v4/projects/briar%2Fbriar-mailbox/repository/archive.tar.gz?sha=64147fd1d09764500c77948204c998aa6cfec347",
+    "version": "64147fd1d09764500c77948204c998aa6cfec347",
+    "size_bytes": 393541,
+    "sha256": "b0256dc4d84d90ee58787407633099480f68d69c48886d0194467cf706abd740",
+    "license": "GPL-3.0-only",
+    "attribution": "Briar project contributors",
+    "license_proof_url": "https://code.briarproject.org/briar/briar-mailbox/-/blob/64147fd1d09764500c77948204c998aa6cfec347/LICENSE.txt",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human pin and GPL source-closure review of the exact Briar submodule]]"
+  },
+  {
+    "id": "bitchat_android_license",
+    "family": "docs",
+    "title": "bitchat for Android publisher license",
+    "url": "https://raw.githubusercontent.com/permissionlesstech/bitchat-android/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md",
+    "version": "2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb",
+    "size_bytes": 35149,
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "license": "GPL-3.0-only",
+    "attribution": "permissionlesstech and bitchat Android contributors",
+    "license_proof_url": "https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md",
+    "placement": "universal",
+    "dest": "8_MESH_CHAT/LICENSES/bitchat_android.txt",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of verbatim publisher license bytes and source pin]]"
+  },
+  {
+    "id": "briar_android_license",
+    "family": "docs",
+    "title": "Briar for Android publisher license",
+    "url": "https://code.briarproject.org/briar/briar/-/raw/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt",
+    "version": "1.5.24; commit fbfebc4242f09e996a867de7988683628d426534",
+    "size_bytes": 33250,
+    "sha256": "2b5c861d7f3314b44148acb3309a4790346552ee210c2231b2915ec2afe3260f",
+    "license": "GPL-3.0-only",
+    "attribution": "Briar project contributors",
+    "license_proof_url": "https://code.briarproject.org/briar/briar/-/blob/fbfebc4242f09e996a867de7988683628d426534/LICENSE.txt",
+    "placement": "universal",
+    "dest": "8_MESH_CHAT/LICENSES/briar_android.txt",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of verbatim publisher license bytes and source pin]]"
   }
 ]

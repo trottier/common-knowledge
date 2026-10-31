@@ -186,6 +186,27 @@ def assemble(
         for name in ("1_START", "4_PHONE_PACK"):
             shutil.copytree(tree / name, tree / "BACKUP" / name)
         attributions(placed, tree / "7_LAPTOP/THIRD_PARTY.txt")
+        mesh_apps = [
+            item
+            for item in placed.values()
+            if item.family == "apk" and item.dest.startswith("8_MESH_CHAT/")
+        ]
+        if mesh_apps:
+            notice = tree / "8_MESH_CHAT/SOURCE.TXT"
+            notice.parent.mkdir(parents=True, exist_ok=True)
+            notice.write_text(
+                "CORRESPONDING APPLICATION SOURCE\n\n"
+                "Source archives accompany the GitHub release. "
+                "These addresses require internet.\n\n"
+                + "\n\n".join(
+                    f"{item.title}\nVersion: {item.version}\nLicense: {item.license}\n"
+                    f"APK SHA-256: {item.sha256}\nSigner SHA-256: {item.signer_cert_sha256}\n"
+                    f"Source: {item.source_url}\nAttribution: {item.attribution}"
+                    for item in sorted(mesh_apps, key=lambda item: item.id)
+                )
+                + "\n",
+                encoding="utf-8",
+            )
         readme = ["COMMON KNOWLEDGE", f"Version {config.build.version}; variant {number}", ""]
         if profile != "full":
             readme += ["DEVELOPMENT BUILD — NOT APPROVED FOR EMERGENCY DISTRIBUTION", ""]
