@@ -57,3 +57,18 @@ atlas and directory display the statistical-use and trademark notice.
 The language-edition audit uses separate ACS inputs; see
 [language-selection.md](language-selection.md). None of these source checks
 approves clinical content, event-specific locations or emergency distribution.
+
+The first national point import mapped 254,062 places across all 3,235 Census
+county geometries and 56 jurisdictions. The source-omission audit contains 19
+FCC geographic exceptions and two invalid OSM areas. FEMA lacks profiles for
+`60030`, `60040` and `69085` in this snapshot. American Samoa, Guam, the Northern
+Mariana Islands, Puerto Rico and the U.S. Virgin Islands all have mapped places.
+These are measured build results, not claims that any place is open or that the
+directory is exhaustive. See [national-atlas.md](national-atlas.md) for the
+remaining atlas stages.
+
+Two independent national imports match the public payload, bound point
+intermediate and generation manifest byte for byte. Their measured manifest
+pin is recorded in `catalog/maps.yaml`. This establishes reproducibility of
+that point-data recipe; national atlas PDFs, Android maps and full images still
+need their own complete repeated builds.

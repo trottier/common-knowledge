@@ -9,10 +9,12 @@ from shapely import Point, box
 from ck.atlas import (
     atlas_budget,
     compose_atlas,
+    detail_regions,
     page_data,
     pipeline_version,
     place_labels,
     region_for,
+    state_basemap,
 )
 from ck.config import load_config
 from ck.fetch import digest
@@ -21,6 +23,231 @@ from ck.render import font_files
 
 ROOT = Path(__file__).resolve().parents[1]
 SETTINGS = dict(width=1500, height=1800, columns=6, rows=8, padding=0.08, maxzoom=14)
+
+
+def test_batch_basemap_selection_never_uses_another_state():
+    files = {"RI.pmtiles": Path("ri"), "DE.pmtiles": Path("de")}
+    assert state_basemap(files, "DE") == Path("de")
+    with pytest.raises(ValueError, match="exactly one"):
+        state_basemap(files, "AS")
+    with pytest.raises(ValueError, match="exactly one"):
+        state_basemap({**files, "extra/RI.pmtiles": Path("other-ri")}, "RI")
+
+
+@pytest.mark.parametrize("coincident,dateline", [(False, False), (True, False), (False, True)])
+def test_dense_details_keep_every_point_and_handle_coincident_or_dateline_locations(
+    coincident, dateline
+):
+    from shapely import MultiPolygon
+    from shapely.geometry import shape
+
+    from ck.directory import Place
+
+    geometry = (
+        MultiPolygon([box(177, 0, 180, 3), box(-180, 0, -177, 3)]) if dateline else box(0, 0, 3, 3)
+    )
+    places = [
+        Place(
+            id=f"fixture-{index}",
+            category="public_library",
+            name="Synthetic library",
+            address="",
+            latitude=1 if coincident else 0.5 + index / 100,
+            longitude=(179 if index % 2 else -179)
+            if dateline
+            else (1 if coincident else 0.5 + index % 8 / 10),
+            source_id="fixture",
+            as_of="fixture",
+        )
+        for index in range(80)
+    ]
+    parts = list(detail_regions(geometry, places, 25))
+    assert sorted(record.id for _, records in parts for record in records) == sorted(
+        p.id for p in places
+    )
+    for region, records in parts:
+        assert 1 <= len(records) <= 25
+        frame = Frame.fit(region, **SETTINGS)
+        coverage = shape(region_for([{"frame": frame.as_dict()}]))
+        for place in records:
+            assert frame.grid(place.longitude, place.latitude)
+            assert coverage.covers(Point(place.longitude, place.latitude))
+
+
+def test_batch_preparation_reuses_shared_sources_and_keeps_jurisdictions_separate(
+    tmp_path, monkeypatch
+):
+    import hashlib
+    import zipfile
+    from collections import Counter
+
+    import geopandas as gpd
+
+    from ck.atlas import collect_atlases, prepare_atlases, read_boundaries
+    from ck.catalog import Item
+    from ck.directory import Place
+    from ck.generated import generation_manifest
+
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    items = {}
+
+    def pin(identifier, payload):
+        sha = hashlib.sha256(payload).hexdigest()
+        (cache / sha).write_bytes(payload)
+        item = Item(
+            id=identifier,
+            family="geodata",
+            title="Synthetic fixture",
+            url="https://example.invalid/fixture",
+            version="fixture",
+            size_bytes=len(payload),
+            sha256=sha,
+            license="CC0-1.0",
+            attribution="Synthetic fixture",
+            license_proof_url="https://example.invalid/license",
+            placement="hub_only",
+            dest="build/inputs/",
+            profiles=["full"],
+        )
+        items[identifier] = item
+        return item
+
+    def shape_zip(identifier, frame):
+        folder = tmp_path / identifier
+        folder.mkdir()
+        frame.to_file(folder / "fixture.shp")
+        target = folder / "fixture.zip"
+        with zipfile.ZipFile(target, "w") as archive:
+            for path in sorted(folder.glob("fixture.*")):
+                if path != target:
+                    archive.write(path, path.name)
+        return pin(identifier, target.read_bytes())
+
+    counties = gpd.GeoDataFrame(
+        {
+            "STATEFP": ["00", "01"],
+            "GEOID": ["00001", "01001"],
+            "NAMELSAD": ["Synthetic west", "Synthetic east"],
+        },
+        geometry=[box(0, 0, 1, 1), box(2, 0, 3, 1)],
+        crs=4326,
+    )
+    county_item = shape_zip("census_county_analysis", counties)
+    for state, geometry in [("xx", box(0, 0, 1, 1)), ("yy", box(2, 0, 3, 1))]:
+        shape_zip(
+            "census_places_" + state,
+            gpd.GeoDataFrame(
+                {"GEOID": [state], "NAME": ["Synthetic city"]}, geometry=[geometry], crs=4326
+            ),
+        )
+    pin("noto_sans", b"Build-only synthetic font placeholder; no PDF is rendered")
+    points = tmp_path / "points"
+    (points / "files").mkdir(parents=True)
+    (points / "files/source.txt").write_text("Synthetic source")
+    records = [
+        Place(
+            id=state,
+            category="public_library",
+            name="Synthetic library " + state,
+            address="",
+            latitude=0.5,
+            longitude=longitude,
+            source_id="fixture",
+            as_of="fixture",
+            county=county,
+            county_name=county,
+        ).model_dump()
+        for state, longitude, county in [("XX", 0.5, "00001"), ("YY", 2.5, "01001")]
+    ]
+    (points / "places.json").write_text(
+        json.dumps(
+            {
+                "purpose": "national-atlas-points",
+                "states": {"XX": "00", "YY": "01"},
+                "counties": {"00001": "Synthetic west", "01001": "Synthetic east"},
+                "places": records,
+            }
+        )
+    )
+    measured = generation_manifest(
+        points,
+        "fixture",
+        {county_item.id: county_item.sha256},
+        complete=True,
+        epoch=946684800,
+        intermediates=["places.json"],
+    )
+    items["directory_points"] = county_item.model_copy(
+        update={
+            "id": "directory_points",
+            "family": "generated",
+            "url": None,
+            "inputs": [county_item.id],
+            **measured,
+        }
+    )
+    reads = Counter()
+
+    def read_once(path):
+        reads[path.name] += 1
+        return read_boundaries(path)
+
+    monkeypatch.setattr("ck.atlas.read_boundaries", read_once)
+    output = tmp_path / "atlas"
+    jobs = prepare_atlases(ROOT, load_config(ROOT), items, cache, points, output, 946684800)
+    assert set(jobs) == {"XX", "YY"}
+    assert reads[county_item.sha256] == 1
+    for state, path in jobs.items():
+        data = json.loads((output / path).read_text())
+        assert data["county_count"] == 1
+        assert [place["id"] for page in data["pages"] for place in page["places"]] == [state]
+        assert data["complete"] is False  # No basemap was supplied.
+    with pytest.raises(ValueError, match="epoch"):
+        prepare_atlases(
+            ROOT, load_config(ROOT), items, cache, points, tmp_path / "wrong-epoch", 946684802
+        )
+
+    # Synthetic PDFs exercise collection integrity; native maps are tested separately.
+    from pypdf import PdfWriter
+
+    pin("protomaps_us", b"Synthetic basemap placeholder")
+    outputs = []
+    for state, county in [("XX", "Synthetic west"), ("YY", "Synthetic east")]:
+        folder = tmp_path / ("composed-" + state)
+        (folder / "files").mkdir(parents=True)
+        writer = PdfWriter()
+        writer.add_blank_page(width=612, height=792)
+        writer.add_outline_item(county, 0)
+        writer.write(folder / "files" / f"{state}.pdf")
+        (folder / "place-index.json").write_text(json.dumps({state: "page 1, grid A1, point 1"}))
+        generation_manifest(
+            folder,
+            pipeline_version(ROOT),
+            {
+                identifier: items[identifier].sha256
+                for identifier in [
+                    "census_county_analysis",
+                    "noto_sans",
+                    "directory_points",
+                    "protomaps_us",
+                    "census_places_" + state.lower(),
+                ]
+            },
+            complete=True,
+            epoch=946684800,
+            intermediates=["place-index.json"],
+        )
+        outputs.append(folder)
+    collected = tmp_path / "collected"
+    result = collect_atlases(ROOT, items, points, outputs, collected, 946684800)
+    assert result["jurisdictions"] == result["counties"] == result["places"] == 2
+    assert set(json.loads((collected / "place-index.json").read_text())) == {"XX", "YY"}
+    with pytest.raises(ValueError, match="Missing atlas"):
+        collect_atlases(ROOT, items, points, outputs[:1], tmp_path / "missing", 946684800)
+    (outputs[0] / "place-index.json").write_text("{}")
+    with pytest.raises(ValueError, match="index is missing or changed"):
+        collect_atlases(ROOT, items, points, outputs, tmp_path / "changed", 946684800)
 
 
 def test_atlas_uses_bound_point_seeds_without_a_final_directory_cycle(tmp_path):

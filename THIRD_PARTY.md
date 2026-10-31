@@ -235,16 +235,478 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `605f0cda05aadf5dc658f3540681ef6a94ad4c4e6f3658563fe5f4e776563fd8`
 - Publisher file: https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/data/1YRData/acsdt1y2025-b16001.dat
 
-## Census places or urban areas for atlas insets
+## Census 2025 AK places for atlas insets
 
-- Catalog id: `census_places`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Catalog id: `census_places_ak`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2846788 bytes
+- SHA-256: `582c37f2fe680af15d7508e222153d5aa163867f47f2d96fbacd05695b0d985d`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_02_place.zip
+
+## Census 2025 AL places for atlas insets
+
+- Catalog id: `census_places_al`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 5250692 bytes
+- SHA-256: `502d0e2e0266e4e73a00582b5b82252e4484f6cac61c0dbe7df85d9f5a30a144`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_01_place.zip
+
+## Census 2025 AR places for atlas insets
+
+- Catalog id: `census_places_ar`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2444799 bytes
+- SHA-256: `348061c5f3cac0d83394ac7c1cfb0bff9ba891061429aa46d8abbdec83092999`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_05_place.zip
+
+## Census 2025 AS places for atlas insets
+
+- Catalog id: `census_places_as`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 82335 bytes
+- SHA-256: `fc60deea78302bcb968bf28600b77f7a98db2dfe15bee2ff00cf61ea4ffaba24`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_60_place.zip
+
+## Census 2025 AZ places for atlas insets
+
+- Catalog id: `census_places_az`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2821601 bytes
+- SHA-256: `7c52a87725285cd6e6655daf6cf733c37942256bc7e190ac01ddb174a0acd330`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_04_place.zip
+
+## Census 2025 CA places for atlas insets
+
+- Catalog id: `census_places_ca`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 9885068 bytes
+- SHA-256: `2b59dc5d54c69c7a451795401fc2a1c1c68b172f1d912d3486080e04a83e23e8`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip
+
+## Census 2025 CO places for atlas insets
+
+- Catalog id: `census_places_co`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2791333 bytes
+- SHA-256: `e0072e2f1c049e53d598119014e6bc93f82a0a02082b3604d81b0a8c3e8b043c`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_08_place.zip
+
+## Census 2025 CT places for atlas insets
+
+- Catalog id: `census_places_ct`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 886904 bytes
+- SHA-256: `5766992fb77774fd47a2b7868747b6007a5cbbdeaa04e793506aee3faa13d52e`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_09_place.zip
+
+## Census 2025 DC places for atlas insets
+
+- Catalog id: `census_places_dc`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 86364 bytes
+- SHA-256: `1ac8c0230c3e656bf79d9ee3a52f4d48f97626fce5e4f6c7701bca6f948b9623`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_11_place.zip
+
+## Census 2025 DE places for atlas insets
+
+- Catalog id: `census_places_de`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 454114 bytes
+- SHA-256: `638eda256e3785b8653ec776787866e6eda890a9d9bf2653c6fcc6aeba6cebb8`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_10_place.zip
+
+## Census 2025 FL places for atlas insets
+
+- Catalog id: `census_places_fl`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 7068141 bytes
+- SHA-256: `4394a80089284477cf79daefb754afd7e9f90683415d3398376e5c2152960876`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_12_place.zip
+
+## Census 2025 GA places for atlas insets
+
+- Catalog id: `census_places_ga`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 5220272 bytes
+- SHA-256: `85af23730c518c008e6869ce63dfa02d17ae61de601dd204b880ff43f5d31ff5`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_13_place.zip
+
+## Census 2025 GU places for atlas insets
+
+- Catalog id: `census_places_gu`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 267049 bytes
+- SHA-256: `1047ceb9991b1ad0d65ec3e643004f6a3ee25db111dcba71e0a623b80c3eaebb`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_66_place.zip
+
+## Census 2025 HI places for atlas insets
+
+- Catalog id: `census_places_hi`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 758840 bytes
+- SHA-256: `38018cb6a3e66c2f0174056903d0e8c6c2d18fa5c15b0014d059f2bead42f65b`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_15_place.zip
+
+## Census 2025 IA places for atlas insets
+
+- Catalog id: `census_places_ia`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1895750 bytes
+- SHA-256: `b945d74f84c7fd20d1e77cd49522cc1ea542f16652987171b10616f15875ce21`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_19_place.zip
+
+## Census 2025 ID places for atlas insets
+
+- Catalog id: `census_places_id`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1052099 bytes
+- SHA-256: `d0202acb86094eab323a1cd2deef23e12b4fa9e29d8d77bcfabb862235f847d4`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_16_place.zip
+
+## Census 2025 IL places for atlas insets
+
+- Catalog id: `census_places_il`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 6140463 bytes
+- SHA-256: `5c2ce6d7ca6a5045ea46563898c168a6e6b259d7ad116c6f27148ce3a40822b3`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_17_place.zip
+
+## Census 2025 IN places for atlas insets
+
+- Catalog id: `census_places_in`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2425860 bytes
+- SHA-256: `2428563ed4db0a74b2041dec577e4230103329eb2875ac1827076bf477f82201`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_18_place.zip
+
+## Census 2025 KS places for atlas insets
+
+- Catalog id: `census_places_ks`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1675287 bytes
+- SHA-256: `0cdaf30d567ebbb8f75421200a6e3345728313cffd791567cce308fdac047583`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_20_place.zip
+
+## Census 2025 KY places for atlas insets
+
+- Catalog id: `census_places_ky`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2768605 bytes
+- SHA-256: `40d09b3263922786f5970b7e55dfb8e7b1a97c74a62efacab4e070e8738e9e64`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_21_place.zip
+
+## Census 2025 LA places for atlas insets
+
+- Catalog id: `census_places_la`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1948019 bytes
+- SHA-256: `982330b7333d268b26ff60666b3ad4b683b95a1db7cef9053d39bfb580c6dcfd`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_22_place.zip
+
+## Census 2025 MA places for atlas insets
+
+- Catalog id: `census_places_ma`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1191390 bytes
+- SHA-256: `950f7d0a669caf721f770d1cc58883560b1cf84f5d7be845e6e3d05a855c86fa`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_25_place.zip
+
+## Census 2025 MD places for atlas insets
+
+- Catalog id: `census_places_md`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2730658 bytes
+- SHA-256: `e984dd58cc06b01363958221a661e1eef89b3daa328ace515f1daee0da4594cc`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_24_place.zip
+
+## Census 2025 ME places for atlas insets
+
+- Catalog id: `census_places_me`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 682536 bytes
+- SHA-256: `2bc5461577f18dd3e89ac5d314c0ce2fc8def3de3a3f633a35423488a8aa0ce5`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_23_place.zip
+
+## Census 2025 MI places for atlas insets
+
+- Catalog id: `census_places_mi`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1484329 bytes
+- SHA-256: `91cd708b8f9809a50ebed360fe7242969ba357a542481da81d9edc5821d35d3b`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_26_place.zip
+
+## Census 2025 MN places for atlas insets
+
+- Catalog id: `census_places_mn`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2556050 bytes
+- SHA-256: `60d7e34ecbf7bf225b4b29d908acddcd6a9e05c39ae505cdb83791e3dfd81873`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_27_place.zip
+
+## Census 2025 MO places for atlas insets
+
+- Catalog id: `census_places_mo`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 3082129 bytes
+- SHA-256: `7182d92a73ef3167714d66ef192fce374636c549fb1d4e635af9580dc49cddf1`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_29_place.zip
+
+## Census 2025 MP places for atlas insets
+
+- Catalog id: `census_places_mp`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 584280 bytes
+- SHA-256: `78d08e63b4cb00f441a4476af0d6361bc6d784e74919be68a3d54454343bec76`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_69_place.zip
+
+## Census 2025 MS places for atlas insets
+
+- Catalog id: `census_places_ms`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1510851 bytes
+- SHA-256: `08aa0b23ab4d88f3dac2891fd82c2f6a67ea90816c14111c0147de85dae5f3e7`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_28_place.zip
+
+## Census 2025 MT places for atlas insets
+
+- Catalog id: `census_places_mt`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2262510 bytes
+- SHA-256: `2a39433bd9e5a81a683e39ae9bbb914c9ce63c50a92855ddeee8c0ae02b63f74`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_30_place.zip
+
+## Census 2025 NC places for atlas insets
+
+- Catalog id: `census_places_nc`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 8497219 bytes
+- SHA-256: `c6b8dabd4c953bb44dd4201b34eae83dceeb880055e1c4efd00faa43c272ea79`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_37_place.zip
+
+## Census 2025 ND places for atlas insets
+
+- Catalog id: `census_places_nd`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 537253 bytes
+- SHA-256: `bec89e2ff577b0717d31d58c33bcc54b36732822f6de8c32ccfd966f0527cea9`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_38_place.zip
+
+## Census 2025 NE places for atlas insets
+
+- Catalog id: `census_places_ne`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 826250 bytes
+- SHA-256: `aa01fa8c3dafcea27cbe6bd009f38eb774b4c765fd2e5b81701d69a534da16e0`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_31_place.zip
+
+## Census 2025 NH places for atlas insets
+
+- Catalog id: `census_places_nh`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 379207 bytes
+- SHA-256: `e5ccfa3bcca3899566dc5d4831ba3557779f53856bedffde393f824d0bcc44c7`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_33_place.zip
+
+## Census 2025 NJ places for atlas insets
+
+- Catalog id: `census_places_nj`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2939779 bytes
+- SHA-256: `28602a4302564a9eecf8e92f861fad6864d806581ee2ce8bea9997999f3e440e`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_34_place.zip
+
+## Census 2025 NM places for atlas insets
+
+- Catalog id: `census_places_nm`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2368303 bytes
+- SHA-256: `1cbbc3121c3aeb65c2eaa4371d30ceab09a7a6f4f066beee0a9f76077c42348e`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_35_place.zip
+
+## Census 2025 NV places for atlas insets
+
+- Catalog id: `census_places_nv`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 848456 bytes
+- SHA-256: `9842a490c27930be50f19cbc21b0c623f16b6d1d40f2e4cb1b0b2b5c7b2f7d83`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_32_place.zip
+
+## Census 2025 NY places for atlas insets
+
+- Catalog id: `census_places_ny`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 3380697 bytes
+- SHA-256: `4f667ef3a40f1569b58a37052e2464053436bd5e978b34ca333e8185a6a6808d`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_36_place.zip
+
+## Census 2025 OH places for atlas insets
+
+- Catalog id: `census_places_oh`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 4069844 bytes
+- SHA-256: `6c4c280e539dadc21bedda385b1c7a4b3ee24998c774d1b7e0a49e0199b272e9`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_39_place.zip
+
+## Census 2025 OK places for atlas insets
+
+- Catalog id: `census_places_ok`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2971163 bytes
+- SHA-256: `e9d840ae15b4c3e194427987a31f84ed685fe9d82ac8d3349986a99b18e365cb`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_40_place.zip
+
+## Census 2025 OR places for atlas insets
+
+- Catalog id: `census_places_or`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2364412 bytes
+- SHA-256: `d05814de06701cca35df9e160017cd11d5ffe43a2530a8fa7f4b3a521e9e1f0f`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_41_place.zip
+
+## Census 2025 PA places for atlas insets
+
+- Catalog id: `census_places_pa`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 4590506 bytes
+- SHA-256: `b9b8a25b906bc0c338cc4cfea45d8e5de12247a913cbd821b93368c55e2e9dc5`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_42_place.zip
+
+## Census 2025 PR places for atlas insets
+
+- Catalog id: `census_places_pr`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 761319 bytes
+- SHA-256: `32483d1f41d3852de44afb6d91d6d89c4fa7320c6b010b3766855c013df03d47`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_72_place.zip
 
 ## Census 2025 Rhode Island places for atlas insets
 
@@ -256,6 +718,138 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 292174 bytes
 - SHA-256: `520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429`
 - Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_44_place.zip
+
+## Census 2025 SC places for atlas insets
+
+- Catalog id: `census_places_sc`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 5279552 bytes
+- SHA-256: `f1a69f4a169b19ca69d09da21e157dfd6177c0959bec80352b0a7a0165885d68`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_45_place.zip
+
+## Census 2025 SD places for atlas insets
+
+- Catalog id: `census_places_sd`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 817119 bytes
+- SHA-256: `050183397bec5bef01804ccd9f3ba4ec7d3f80edd27603a71160959af4fad0ef`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_46_place.zip
+
+## Census 2025 TN places for atlas insets
+
+- Catalog id: `census_places_tn`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 5051239 bytes
+- SHA-256: `3f6d5ae04e8f1217a7d0be244d3a841345902d9d4def83b0a07d1fc75960cc8e`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_47_place.zip
+
+## Census 2025 TX places for atlas insets
+
+- Catalog id: `census_places_tx`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 9782040 bytes
+- SHA-256: `5a0c4d49641f69028ee9f5c343bf09936ec00a378e5e6393115b106bab935e13`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_48_place.zip
+
+## Census 2025 UT places for atlas insets
+
+- Catalog id: `census_places_ut`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1652963 bytes
+- SHA-256: `3db4d3fc1d9ca4b7c6911b01079558bb13e89703933858247f0bc4ff75d9e3d9`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_49_place.zip
+
+## Census 2025 VA places for atlas insets
+
+- Catalog id: `census_places_va`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 3860419 bytes
+- SHA-256: `b2ce73226f4b3a0f0a60d7116e65f468cd94a739f30c345106ff1e292c57a1f5`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_51_place.zip
+
+## Census 2025 VI places for atlas insets
+
+- Catalog id: `census_places_vi`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 56249 bytes
+- SHA-256: `fa84e8bb32e91802a8268b5d3715e418a3356f7226cc2ce86ebd951593f8f4e4`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_78_place.zip
+
+## Census 2025 VT places for atlas insets
+
+- Catalog id: `census_places_vt`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 596853 bytes
+- SHA-256: `6b932d7ab2aa279cac6e2ec713e0283d71f88661396df1630d85dc8eef5f58f5`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_50_place.zip
+
+## Census 2025 WA places for atlas insets
+
+- Catalog id: `census_places_wa`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 2855604 bytes
+- SHA-256: `b99039759e33cf931175302da80de9bd8d284c384721d52efde34dfbef2b64f5`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_53_place.zip
+
+## Census 2025 WI places for atlas insets
+
+- Catalog id: `census_places_wi`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 3482721 bytes
+- SHA-256: `a48a36cae9450fe11916cb94bbf1054d0ebc6c878e18de7a7e27039ad6fc5763`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_55_place.zip
+
+## Census 2025 WV places for atlas insets
+
+- Catalog id: `census_places_wv`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 1642581 bytes
+- SHA-256: `756188b7c2187c2e7cb43867546e406e3236df360b0baa72b17db4af0fd4ecd2`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_54_place.zip
+
+## Census 2025 WY places for atlas insets
+
+- Catalog id: `census_places_wy`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
+- Size: 904349 bytes
+- SHA-256: `3b077402b1090f9afed9662da7f70d66b791b01f61d8ac4b7032df2293715e96`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_56_place.zip
 
 ## Census state FIPS codes and names
 
@@ -282,13 +876,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## National public-place points for atlas generation
 
 - Catalog id: `directory_points`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned national directory-seed pipeline and measured point set]]; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
+- Version: 2026-10-31; source epoch 1793404800
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 81871671 bytes
+- SHA-256: `77154fd66db5239c8e21ded4597f2ea914def8900b29f48f31b68ce3fc453b23`
+- Pipeline: national-points-v1-d7efb3a096c74882a8304b0af71e557f444975c0c26e9f720c4f7cb03952eab2; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_oceania, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
 
 ## Rhode Island public places directory, phone and print
 
@@ -701,12 +1295,12 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `national_atlas`
 - Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; Protomaps; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: protomaps_us, census_counties, census_places, directory_points
+- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: census_county_analysis, noto_sans, directory_points, protomaps_us, census_places_ak, census_places_al, census_places_ar, census_places_as, census_places_az, census_places_ca, census_places_co, census_places_ct, census_places_dc, census_places_de, census_places_fl, census_places_ga, census_places_gu, census_places_hi, census_places_ia, census_places_id, census_places_il, census_places_in, census_places_ks, census_places_ky, census_places_la, census_places_ma, census_places_md, census_places_me, census_places_mi, census_places_mn, census_places_mo, census_places_mp, census_places_ms, census_places_mt, census_places_nc, census_places_nd, census_places_ne, census_places_nh, census_places_nj, census_places_nm, census_places_nv, census_places_ny, census_places_oh, census_places_ok, census_places_or, census_places_pa, census_places_pr, census_places_ri, census_places_sc, census_places_sd, census_places_tn, census_places_tx, census_places_ut, census_places_va, census_places_vi, census_places_vt, census_places_wa, census_places_wi, census_places_wv, census_places_wy
 
 ## National public places directory
 
@@ -1236,16 +1830,16 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `883d7edd2c8de90aa130444452e7c80177983302a05a5a382440f3f4ffe7617e`
 - Pipeline: pmtiles-extract-v1-3ab704a99a2d2b095bd227e9f295ec662bb09ad3405a8cc32d377089d1c84d22; inputs: census_county_analysis, census_places_ri, directory_seed_ri, pmtiles_x64, protomaps_planet
 
-## Protomaps U.S. PMTiles basemap extract
+## Per-jurisdiction Protomaps basemaps for every national atlas viewport
 
 - Catalog id: `protomaps_us`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
+- Version: 2026-10-30 source planet
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; Protomaps; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Pipeline: [[VERIFY: measure the complete local-planet extraction batch]]; inputs: protomaps_planet, pmtiles_x64, census_county_analysis, directory_points, census_places_ak, census_places_al, census_places_ar, census_places_as, census_places_az, census_places_ca, census_places_co, census_places_ct, census_places_dc, census_places_de, census_places_fl, census_places_ga, census_places_gu, census_places_hi, census_places_ia, census_places_id, census_places_il, census_places_in, census_places_ks, census_places_ky, census_places_la, census_places_ma, census_places_md, census_places_me, census_places_mi, census_places_mn, census_places_mo, census_places_mp, census_places_ms, census_places_mt, census_places_nc, census_places_nd, census_places_ne, census_places_nh, census_places_nj, census_places_nm, census_places_nv, census_places_ny, census_places_oh, census_places_ok, census_places_or, census_places_pa, census_places_pr, census_places_ri, census_places_sc, census_places_sd, census_places_tn, census_places_tx, census_places_ut, census_places_va, census_places_vi, census_places_vt, census_places_wa, census_places_wi, census_places_wv, census_places_wy
 
 ## qwen full license
 

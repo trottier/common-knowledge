@@ -120,6 +120,27 @@ def main(argv: Sequence[str] | None = None) -> int:
     atlas_prepare.add_argument("--basemap-id")
     atlas_prepare.add_argument("--places-id")
     atlas_prepare.add_argument("--epoch", type=int)
+    atlas_all = atlas_commands.add_parser(
+        "prepare-all", help="Prepare all Census jurisdictions from one national point seed"
+    )
+    atlas_all.add_argument("--directory", type=Path, required=True)
+    atlas_all.add_argument("--directory-id", default="directory_points")
+    atlas_all.add_argument("--output", type=Path, required=True)
+    atlas_all.add_argument("--cache", type=Path, default=Path("cache"))
+    atlas_all.add_argument("--generated", type=Path, default=Path("build/generated"))
+    atlas_all.add_argument("--basemap-id")
+    atlas_all.add_argument("--states", nargs="+")
+    atlas_all.add_argument("--epoch", type=int)
+    atlas_collect = atlas_commands.add_parser(
+        "collect",
+        help="Verify all county bookmarks and point references, then collect the national set",
+    )
+    atlas_collect.add_argument("--directory", type=Path, required=True)
+    atlas_collect.add_argument("--directory-id", default="directory_points")
+    atlas_collect.add_argument("--basemap-id", default="protomaps_us")
+    atlas_collect.add_argument("--outputs", type=Path, nargs="+", required=True)
+    atlas_collect.add_argument("--output", type=Path, required=True)
+    atlas_collect.add_argument("--epoch", type=int)
     atlas_compose = atlas_commands.add_parser("compose", help="Compose verified rasters into a PDF")
     atlas_compose.add_argument("--jobs", type=Path, required=True)
     atlas_compose.add_argument("--output", type=Path, required=True)
@@ -427,7 +448,14 @@ def main(argv: Sequence[str] | None = None) -> int:
             )
             return 0
         if args.command == "atlas":
-            from ck.atlas import Settings, atlas_budget, compose_atlas, prepare_atlas
+            from ck.atlas import (
+                Settings,
+                atlas_budget,
+                collect_atlases,
+                compose_atlas,
+                prepare_atlas,
+                prepare_atlases,
+            )
             from ck.catalog import load_catalog
             from ck.config import read_yaml
             from ck.render import epoch_for
@@ -448,6 +476,43 @@ def main(argv: Sequence[str] | None = None) -> int:
                         generated=args.generated,
                         places_id=args.places_id,
                         directory_id=args.directory_id,
+                    )
+                )
+            elif args.atlas_action == "prepare-all":
+                print(
+                    json.dumps(
+                        prepare_atlases(
+                            args.root,
+                            config,
+                            load_catalog(args.root, config),
+                            args.cache,
+                            args.directory,
+                            args.output,
+                            epoch_for(config, args.epoch),
+                            directory_id=args.directory_id,
+                            basemap_id=args.basemap_id,
+                            generated=args.generated,
+                            states=[state.upper() for state in args.states]
+                            if args.states
+                            else None,
+                        ),
+                        indent=2,
+                    )
+                )
+            elif args.atlas_action == "collect":
+                print(
+                    json.dumps(
+                        collect_atlases(
+                            args.root,
+                            load_catalog(args.root, config),
+                            args.directory,
+                            args.outputs,
+                            args.output,
+                            epoch_for(config, args.epoch),
+                            directory_id=args.directory_id,
+                            basemap_id=args.basemap_id,
+                        ),
+                        indent=2,
                     )
                 )
             elif args.atlas_action == "compose":

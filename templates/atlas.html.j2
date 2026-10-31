@@ -31,6 +31,8 @@ p { margin: 2mm 0; }
 <p>Use decimal degrees or degrees, minutes and seconds to find a grid square.
 Directory point numbers refer to the legend after each map.</p>
 <p>A thin line connects a displaced point number to its location dot.</p>
+<p>Dense counties have an overview with location dots and detailed maps with numbered points.
+Several places may share the same source coordinates.</p>
 <p>The distance bar is approximate and refers to the map center.</p>
 <p>Roads may be blocked. Places are not confirmed open. [project_spec]</p>
 <p>Basemap: © OpenStreetMap contributors, Protomaps. County boundaries: U.S. Census Bureau.
@@ -59,9 +61,11 @@ TIGER/Line® is a registered trademark of the U.S. Census Bureau.</p>
 {% for path in page.outline %}<polyline points="{{ path }}" fill="none" stroke="#303030" stroke-width="3"/>{% endfor %}
 {% for place in page.places %}
 <circle cx="{{ place.x }}" cy="{{ place.y }}" r="4" fill="#111"/>
+{% if not page.overview %}
 {% if place.leader %}<path d="M{{ place.x }} {{ place.y }}L{{ place.label_x }} {{ place.label_y - 8 }}" stroke="#333" stroke-width="1"/>{% endif %}
 <text class="number" x="{{ place.label_x }}" y="{{ place.label_y }}" stroke="white" stroke-width="5">{{ place.number }}</text>
 <text class="number" x="{{ place.label_x }}" y="{{ place.label_y }}">{{ place.number }}</text>
+{% endif %}
 {% endfor %}
 <rect x="{{ page.width - 90 }}" y="12" width="75" height="100" fill="white"/>
 <text x="{{ page.width - 52 }}" y="40" text-anchor="middle">N</text>
@@ -71,10 +75,15 @@ TIGER/Line® is a registered trademark of the U.S. Census Bureau.</p>
 <text x="40" y="{{ page.height - 20 }}">about {{ page.scale.km }} km</text>
 </svg></section>
 <section class="legend"><h3>{{ page.title }} · directory points</h3>
+{% if page.overview %}
+<p>Overview dots show sourced locations. Use this county's detail maps and the alphabetical
+index for numbered points and grid references.</p>
+{% else %}
 {% for place in page.places %}
 <p>{{ place.number }}. <strong>{{ place.name }}</strong> · {{ place.category }} · grid {{ place.grid }}<br>
 {{ place.latitude }}, {{ place.longitude }} · source {{ place.source_id }}, {{ place.as_of }}</p>
 {% else %}<p>No sourced directory points on this page.</p>{% endfor %}
+{% endif %}
 </section>
 {% endfor %}
 <section class="index"><h3>Alphabetical place index</h3>

@@ -73,6 +73,12 @@ def test_local_batch_verifies_whole_input_once_and_rejects_tampering(tmp_path, m
         metadata = json.loads((tmp_path / "outputs" / state / "generation.json").read_text())
         assert metadata["complete"] is True
         assert str(tmp_path) not in (tmp_path / "outputs" / state / "source.json").read_text()
+    batch = json.loads((tmp_path / "outputs/generation.json").read_text())
+    assert batch["complete"] is True
+    assert {entry["path"] for entry in batch["files"]} == {"DE.pmtiles", "RI.pmtiles"}
+    assert batch["inputs"] == {"protomaps_planet": catalog[0]["sha256"], "pmtiles_x64": "0" * 64}
+    for entry in batch["files"]:
+        assert real_sha(tmp_path / "outputs/files" / entry["path"]) == entry["sha256"]
     source.write_bytes(source.read_bytes()[:-1] + b"!")
     monkeypatch.setattr(sys, "argv", [*argv[:-1], str(tmp_path / "bad")])
     with pytest.raises(ValueError, match="whole-file"):

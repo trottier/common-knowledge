@@ -3,6 +3,8 @@
 import hashlib
 import json
 import math
+import re
+from dataclasses import dataclass
 from pathlib import Path
 
 from pydantic import Field
@@ -110,9 +112,13 @@ class Settings(Model):
     maxzoom: int = Field(ge=1, le=15)
     inset_min_points: int = Field(ge=1)
     max_total_bytes: int = Field(gt=0)
+    max_points_per_page: int = Field(ge=1, le=500)
+    image_quality: int = Field(ge=1, le=95)
 
     def viewport(self):
-        return self.model_dump(exclude={"inset_min_points", "max_total_bytes"})
+        return self.model_dump(
+            exclude={"inset_min_points", "max_total_bytes", "max_points_per_page", "image_quality"}
+        )
 
 
 def atlas_budget(outputs: list[Path], states: list[str], maximum: int) -> dict:
@@ -150,9 +156,7 @@ def atlas_budget(outputs: list[Path], states: list[str], maximum: int) -> dict:
     return {"total_bytes": total, "maximum_bytes": maximum, "states": dict(sorted(sizes.items()))}
 
 
-def directory_points(
-    directory: Path, state: str | None = None, state_fips: str | None = None
-) -> tuple[dict, list[Place]]:
+def point_seed(directory: Path) -> tuple[dict, dict]:
     manifest = json.loads((directory / "generation.json").read_text())
     binding = next(
         (item for item in manifest.get("intermediates", []) if item["path"] == "places.json"), None
@@ -165,7 +169,10 @@ def directory_points(
         or binding["sha256"] != digest(source)
     ):
         raise ValueError("Directory points are unbound or changed; regenerate the directory")
-    data = json.loads(source.read_text())
+    return manifest, json.loads(source.read_text())
+
+
+def selected_points(data: dict, state: str | None, state_fips: str | None) -> list[Place]:
     if data.get("purpose") == "national-atlas-points":
         if not state or not state_fips or data["states"].get(state) != state_fips:
             raise ValueError("National point jurisdiction and Census FIPS disagree")
@@ -177,7 +184,119 @@ def directory_points(
             "Prepare an atlas point seed with ck directory --seed; "
             "final directories depend on the atlas"
         )
-    return manifest, [Place.model_validate(raw) for raw in selected]
+    return [Place.model_validate(raw) for raw in selected]
+
+
+def directory_points(
+    directory: Path, state: str | None = None, state_fips: str | None = None
+) -> tuple[dict, list[Place]]:
+    manifest, data = point_seed(directory)
+    return manifest, selected_points(data, state, state_fips)
+
+
+def state_basemap(payloads: dict[str, Path], state: str) -> Path:
+    candidates = [path for name, path in payloads.items() if Path(name).name == f"{state}.pmtiles"]
+    if len(candidates) != 1:
+        raise ValueError(f"Expected exactly one generated basemap for {state}")
+    return candidates[0]
+
+
+@dataclass
+class _AtlasSources:
+    point_manifest: dict
+    point_data: dict
+    counties: object
+    font: dict
+    basemaps: dict[str, Path]
+    basemap_complete: bool
+    raw_basemap: Path | None
+
+
+def _atlas_sources(root, catalog, cache, directory, directory_id, basemap_id, generated, epoch):
+    manifest, _ = verified_generated_files(
+        catalog[directory_id], directory, catalog, allow_incomplete=True
+    )
+    if manifest["source_date_epoch"] != epoch:
+        raise ValueError("Atlas point seed and requested epoch disagree")
+    _, data = point_seed(directory)
+    basemaps, complete, raw = {}, False, None
+    if basemap_id:
+        item = catalog[basemap_id]
+        if item.family == "generated":
+            basemap_manifest, basemaps = verified_generated_files(
+                item, generated / item.id, catalog, allow_incomplete=True
+            )
+            if basemap_manifest["source_date_epoch"] != epoch:
+                raise ValueError("Basemap and requested atlas epoch disagree")
+            complete = basemap_manifest["complete"]
+        else:
+            raw = cached_input(item, cache)
+            complete = not item.blockers()
+    return _AtlasSources(
+        manifest,
+        data,
+        read_boundaries(cached_input(catalog["census_county_analysis"], cache)),
+        {
+            "path": str(cached_input(catalog["noto_sans"], cache).resolve()),
+            "sha256": catalog["noto_sans"].sha256,
+        },
+        basemaps,
+        complete,
+        raw,
+    )
+
+
+def prepare_atlases(
+    root: Path,
+    config: Configuration,
+    catalog: dict[str, Item],
+    cache: Path,
+    directory: Path,
+    output: Path,
+    epoch: int,
+    *,
+    directory_id: str = "directory_points",
+    basemap_id: str | None = None,
+    generated: Path = Path("build/generated"),
+    states: list[str] | None = None,
+) -> dict[str, str]:
+    if output.exists():
+        raise ValueError("National atlas preparation output must be new")
+    sources = _atlas_sources(
+        root, catalog, cache, directory, directory_id, basemap_id, generated, epoch
+    )
+    if sources.point_data["purpose"] != "national-atlas-points":
+        raise ValueError("Batch atlas preparation requires national points")
+    jurisdictions = sources.point_data["states"]
+    chosen = sorted(jurisdictions if states is None else states)
+    if not chosen or len(set(chosen)) != len(chosen) or not set(chosen) <= jurisdictions.keys():
+        raise ValueError("Choose distinct Census jurisdictions present in the national points")
+    # Check every requested source before writing the first state job.
+    for state in chosen:
+        cached_input(catalog[f"census_places_{state.lower()}"], cache)
+        if basemap_id and sources.raw_basemap is None:
+            state_basemap(sources.basemaps, state)
+    jobs = {}
+    for state in chosen:
+        job = prepare_atlas(
+            root,
+            config,
+            catalog,
+            cache,
+            directory,
+            output / state,
+            state,
+            jurisdictions[state],
+            epoch,
+            directory_id=directory_id,
+            basemap_id=basemap_id,
+            generated=generated,
+            places_id=f"census_places_{state.lower()}",
+            _sources=sources,
+        )
+        jobs[state] = job.relative_to(output).as_posix()
+    (output / "jobs-index.json").write_text(json.dumps(jobs, sort_keys=True) + "\n")
+    return jobs
 
 
 def outline(geometry, frame: Frame) -> list[str]:
@@ -215,6 +334,7 @@ def page_data(identifier, title, county, geometry, places, settings, *, inset=Fa
         "title": title,
         "county": county,
         "inset": inset,
+        "overview": False,
         "width": frame.width,
         "height": frame.height,
         "center": frame.center,
@@ -226,6 +346,82 @@ def page_data(identifier, title, county, geometry, places, settings, *, inset=Fa
     }
 
 
+def detail_regions(geometry, places: list[Place], maximum: int):
+    """Split dense point sets spatially; coincident records keep their coordinates."""
+    geometry, wraps = shifted_geometry(geometry)
+    if len(places) <= maximum:
+        yield geometry, places
+        return
+    coordinates = {
+        place.id: (
+            place.longitude + (360 if wraps and place.longitude < 0 else 0),
+            place.latitude,
+        )
+        for place in places
+    }
+    west, south, east, north = geometry.bounds
+    spans = [
+        (
+            max(value[0] for value in coordinates.values())
+            - min(value[0] for value in coordinates.values())
+        )
+        * math.cos(math.radians((south + north) / 2)),
+        max(value[1] for value in coordinates.values())
+        - min(value[1] for value in coordinates.values()),
+    ]
+    axis = 0 if spans[0] >= spans[1] else 1
+    ordered = sorted(places, key=lambda place: (coordinates[place.id][axis], place.id))
+    gaps = [
+        index
+        for index in range(1, len(ordered))
+        if coordinates[ordered[index - 1].id][axis] < coordinates[ordered[index].id][axis]
+    ]
+    if not gaps:
+        # All records share a source location. Use repeated views with distinct
+        # legends; never move dots to manufacture geographic separation.
+        for index in range(0, len(ordered), maximum):
+            yield geometry, ordered[index : index + maximum]
+        return
+    middle = min(gaps, key=lambda index: (abs(index - len(ordered) / 2), index))
+    cut = (coordinates[ordered[middle - 1].id][axis] + coordinates[ordered[middle].id][axis]) / 2
+    regions = (
+        [box(west, south, cut, north), box(cut, south, east, north)]
+        if axis == 0
+        else [box(west, south, east, cut), box(west, cut, east, north)]
+    )
+    for region, records in zip(regions, [ordered[:middle], ordered[middle:]], strict=True):
+        child = geometry.intersection(region)
+        if child.geom_type == "GeometryCollection":
+            from shapely.ops import unary_union
+
+            child = unary_union(
+                [part for part in child.geoms if part.geom_type in {"Polygon", "MultiPolygon"}]
+            )
+        if child.is_empty or child.geom_type not in {"Polygon", "MultiPolygon"}:
+            raise ValueError("Dense atlas detail has no usable county geometry")
+        yield from detail_regions(child, records, maximum)
+
+
+def append_detail_pages(pages, identifier, title, county, geometry, places, settings, numbers):
+    for index, (region, records) in enumerate(
+        detail_regions(geometry, places, settings.max_points_per_page), 1
+    ):
+        page = page_data(
+            f"{identifier}_d{index}",
+            f"{title} · detail {index}",
+            county,
+            region,
+            records,
+            settings,
+            inset=True,
+        )
+        if {place["id"] for place in page["places"]} != {place.id for place in records}:
+            raise ValueError("Dense atlas detail lost a source point")
+        for place in page["places"]:
+            place["number"] = numbers[place["id"]]
+        pages.append(page)
+
+
 def region_for(pages: list[dict]) -> dict:
     from shapely.geometry import mapping
     from shapely.ops import unary_union
@@ -235,7 +431,9 @@ def region_for(pages: list[dict]) -> dict:
         frame = Frame(**page["frame"])
         west, north = unproject(frame.west, frame.north)
         east, south = unproject(frame.east, frame.south)
-        if east > 180:
+        if west >= 180:
+            rectangles.append(box(west - 360, south, east - 360, north))
+        elif east > 180:
             rectangles.extend([box(west, south, 180, north), box(-180, south, east - 360, north)])
         elif west < -180:
             rectangles.extend([box(west + 360, south, 180, north), box(-180, south, east, north)])
@@ -259,11 +457,14 @@ def prepare_atlas(
     generated: Path = Path("build/generated"),
     places_id: str | None = None,
     directory_id: str = "directory_points",
+    _sources: _AtlasSources | None = None,
 ) -> Path:
     settings = Settings.model_validate(read_yaml(root / "pipelines/atlas/settings.yaml"))
-    directory_manifest, places = directory_points(directory, state, state_fips)
-    verified_generated_files(catalog[directory_id], directory, catalog, allow_incomplete=True)
-    directory_data = json.loads((directory / "places.json").read_text())
+    sources = _sources or _atlas_sources(
+        root, catalog, cache, directory, directory_id, basemap_id, generated, epoch
+    )
+    directory_manifest, directory_data = sources.point_manifest, sources.point_data
+    places = selected_points(directory_data, state, state_fips)
     if directory_data["purpose"] == "atlas-points" and (
         directory_data["state"] != state or directory_data["state_fips"] != state_fips
     ):
@@ -271,7 +472,7 @@ def prepare_atlas(
     if (output / "rendered.json").exists():
         raise ValueError("Atlas already rendered; choose a clean preparation directory")
     county_item = catalog["census_county_analysis"]
-    counties = read_boundaries(cached_input(county_item, cache))
+    counties = sources.counties
     counties = counties[counties.STATEFP == state_fips].sort_values(["NAMELSAD", "GEOID"])
     if counties.empty:
         raise ValueError("No source counties for this state")
@@ -291,6 +492,18 @@ def prepare_atlas(
         for place in base["places"]:
             place["number"] = numbers[place["id"]]
         pages.append(base)
+        if len(base["places"]) > settings.max_points_per_page:
+            base["overview"] = True
+            append_detail_pages(
+                pages,
+                base["id"],
+                county.NAMELSAD,
+                county.GEOID,
+                county.geometry,
+                county_places,
+                settings,
+                numbers,
+            )
         if cities is not None:
             hits = cities.sindex.query(county.geometry, predicate="intersects")
             for city in cities.iloc[hits].sort_values("GEOID").itertuples():
@@ -315,29 +528,27 @@ def prepare_atlas(
                     continue
                 for place in inset["places"]:
                     place["number"] = numbers[place["id"]]
-                pages.append(inset)
-    source = {
-        "path": str(cached_input(catalog["noto_sans"], cache).resolve()),
-        "sha256": catalog["noto_sans"].sha256,
-    }
-    basemap, basemap_complete = None, False
+                if len(inset["places"]) > settings.max_points_per_page:
+                    identifiers = {place["id"] for place in inset["places"]}
+                    append_detail_pages(
+                        pages,
+                        inset["id"],
+                        city.NAME,
+                        county.GEOID,
+                        geometry,
+                        [place for place in county_places if place.id in identifiers],
+                        settings,
+                        numbers,
+                    )
+                else:
+                    pages.append(inset)
+    basemap = None
     if basemap_id:
-        item = catalog[basemap_id]
-        if item.family == "generated":
-            manifest, payloads = verified_generated_files(
-                item, generated / item.id, catalog, allow_incomplete=True
-            )
-            candidates = [path for name, path in payloads.items() if name.endswith(".pmtiles")]
-            if len(candidates) != 1:
-                raise ValueError("Expected one generated basemap")
-            path = candidates[0]
-            basemap_complete = manifest["complete"]
-        else:
-            path = cached_input(item, cache)
-            basemap_complete = not item.blockers()
+        path = sources.raw_basemap or state_basemap(sources.basemaps, state)
         basemap = {"path": str(path.resolve()), "sha256": digest(path)}
     for page in pages:
-        place_labels(page)
+        if not page["overview"]:
+            place_labels(page)
     data = {
         "schema": 1,
         "state": state,
@@ -347,9 +558,9 @@ def prepare_atlas(
         "pages": pages,
         "county_count": len(counties),
         "basemap": basemap,
-        "font": source,
+        "font": sources.font,
         "insets_configured": places_id is not None,
-        "complete": bool(directory_manifest["complete"] and basemap_complete and places_id),
+        "complete": bool(directory_manifest["complete"] and sources.basemap_complete and places_id),
         "inputs": {
             "census_county_analysis": county_item.sha256,
             "noto_sans": catalog["noto_sans"].sha256,
@@ -368,10 +579,151 @@ def prepare_atlas(
     return target
 
 
+def collect_atlases(
+    root: Path,
+    catalog: dict[str, Item],
+    directory: Path,
+    outputs: list[Path],
+    output: Path,
+    epoch: int,
+    *,
+    directory_id: str = "directory_points",
+    basemap_id: str = "protomaps_us",
+) -> dict:
+    """Publish a measured national set only after county and point coverage close."""
+    import shutil
+    import tempfile
+    from collections import Counter
+
+    from pypdf import PdfReader
+
+    from ck.generated import generation_manifest
+
+    if output.exists():
+        raise ValueError("National atlas collection output must be new")
+    verified_generated_files(catalog[directory_id], directory, catalog)
+    point_manifest, data = point_seed(directory)
+    if data["purpose"] != "national-atlas-points" or point_manifest["source_date_epoch"] != epoch:
+        raise ValueError("National atlas collection needs national points at the same epoch")
+    settings = Settings.model_validate(read_yaml(root / "pipelines/atlas/settings.yaml"))
+    states = data["states"]
+    atlas_budget(outputs, list(states), settings.max_total_bytes)
+    combined, inputs, sources = {}, {}, []
+    for folder in outputs:
+        manifest = json.loads((folder / "generation.json").read_text())
+        state = Path(manifest["files"][0]["path"]).stem
+        expected = {
+            identifier: catalog[identifier].sha256
+            for identifier in [
+                "census_county_analysis",
+                "noto_sans",
+                directory_id,
+                basemap_id,
+                f"census_places_{state.lower()}",
+            ]
+        }
+        if (
+            len(manifest["files"]) != 1
+            or manifest["inputs"] != expected
+            or manifest["pipeline_version"] != pipeline_version(root)
+            or manifest["source_date_epoch"] != epoch
+        ):
+            raise ValueError("State atlas recipe, epoch or source pins changed")
+        candidate = Item(
+            id="atlas_" + state.lower(),
+            family="generated",
+            title="Measured state atlas",
+            version="development",
+            size_bytes=sum(entry["size_bytes"] for entry in manifest["files"]),
+            sha256=hashlib.sha256(
+                json.dumps(manifest, sort_keys=True, separators=(",", ":")).encode()
+            ).hexdigest(),
+            license="ODbL-1.0 AND US-PD",
+            attribution="OpenStreetMap contributors; U.S. Census Bureau",
+            license_proof_url="https://www.openstreetmap.org/copyright",
+            placement="hub_only",
+            dest="build/inputs/",
+            profiles=["full"],
+            inputs=sorted(expected),
+            pipeline_version=manifest["pipeline_version"],
+        )
+        _, payloads = verified_generated_files(candidate, folder, catalog)
+        pdf = payloads[f"{state}.pdf"]
+        expected_counties = Counter(
+            name for code, name in data["counties"].items() if code.startswith(states[state])
+        )
+        reader = PdfReader(pdf)
+        outline = reader.outline
+        if (
+            any(not isinstance(entry, dict) for entry in outline)
+            or Counter(entry["/Title"] for entry in outline) != expected_counties
+        ):
+            raise ValueError(f"Atlas county bookmarks do not match Census: {state}")
+        index_path = folder / "place-index.json"
+        binding = next(
+            (entry for entry in manifest["intermediates"] if entry["path"] == "place-index.json"),
+            None,
+        )
+        if index_path.is_symlink() or binding is None or digest(index_path) != binding["sha256"]:
+            raise ValueError("Atlas place index is missing or changed")
+        references = json.loads(index_path.read_text())
+        expected_places = {
+            place["id"] for place in data["places"] if place["county"].startswith(states[state])
+        }
+        if references.keys() != expected_places or combined.keys() & references.keys():
+            raise ValueError(f"Atlas point coverage is missing, duplicated or unexpected: {state}")
+        for reference in references.values():
+            match = re.fullmatch(
+                r"page ([1-9]\d*), grid ([A-Z])([1-9]\d*), point ([1-9]\d*)", reference
+            )
+            if (
+                match is None
+                or int(match[1]) > len(reader.pages)
+                or ord(match[2]) - ord("A") >= settings.columns
+                or int(match[3]) > settings.rows
+            ):
+                raise ValueError(f"Atlas has an invalid page/grid reference: {state}")
+        combined.update(references)
+        inputs.update(expected)
+        sources.append((state, folder, pdf))
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-atlas-set-") as temporary:
+        stage = Path(temporary)
+        (stage / "files").mkdir()
+        (stage / "states").mkdir()
+        intermediates = ["place-index.json"]
+        for state, folder, pdf in sorted(sources):
+            shutil.copyfile(pdf, stage / "files" / f"{state}.pdf")
+            for name in ("generation.json", "place-index.json"):
+                target = f"states/{state}.{name}"
+                shutil.copyfile(folder / name, stage / target)
+                intermediates.append(target)
+        (stage / "place-index.json").write_text(
+            json.dumps(combined, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n"
+        )
+        result = generation_manifest(
+            stage,
+            "atlas-set-v1-" + pipeline_version(root).removeprefix("atlas-v1-"),
+            inputs,
+            complete=True,
+            epoch=epoch,
+            intermediates=intermediates,
+        )
+        stage.rename(output)
+    return {
+        **result,
+        "jurisdictions": len(states),
+        "counties": len(data["counties"]),
+        "places": len(combined),
+    }
+
+
 def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Path) -> dict:
     from datetime import UTC, datetime
+    from io import BytesIO
 
     from jinja2 import Environment, FileSystemLoader, StrictUndefined
+    from PIL import Image
     from pyproj import Geod
     from weasyprint import HTML
     from weasyprint.urls import URLFetcherResponse
@@ -381,6 +733,7 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
     from ck.render import OfflineFetcher, font_files, pdf_timestamp
 
     jobs = json.loads(jobs_path.read_text())
+    settings = Settings.model_validate(read_yaml(root / "pipelines/atlas/settings.yaml"))
     if jobs["pipeline_version"] != pipeline_version(root):
         raise ValueError("Atlas recipe changed; prepare and render again")
     identity = {
@@ -408,8 +761,18 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
         raster = jobs_path.parent / str(safe_path(entry["path"]))
         if raster.is_symlink() or digest(raster) != entry["sha256"]:
             raise ValueError("Atlas raster checksum mismatch")
-        page["image"] = f"ck-atlas://raster/{page['id']}.png"
-        resources[page["image"]] = raster
+        page["image"] = f"ck-atlas://raster/{page['id']}.jpg"
+        image = BytesIO()
+        with Image.open(raster) as source:
+            source.convert("RGB").save(
+                image,
+                format="JPEG",
+                quality=settings.image_quality,
+                subsampling=0,
+                optimize=False,
+                progressive=False,
+            )
+        resources[page["image"]] = image.getvalue()
         frame = Frame(**page["frame"])
         center_lon, center_lat = frame.center
         end_lon, _ = unproject(frame.west + (frame.east - frame.west) * 0.2, frame.north)
@@ -418,7 +781,7 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
         # The bar measures local east-west distance at the frame's center latitude.
         page["scale"] = {"pixels": frame.width * 0.2, "km": f"{distance / 1000:.2f}"}
         pages.append(page)
-        for place in page["places"]:
+        for place in [] if page["overview"] else page["places"]:
             if place["id"] in references and references[place["id"]]["zoom"] >= page["zoom"]:
                 continue
             references[place["id"]] = {
@@ -450,7 +813,7 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
     class AtlasFetcher(OfflineFetcher):
         def fetch(self, url, headers=None):
             if url in resources:
-                return URLFetcherResponse(url, body=resources[url].read_bytes())
+                return URLFetcherResponse(url, body=resources[url])
             return super().fetch(url, headers)
 
     fetcher = AtlasFetcher([font.parent for font in fonts])

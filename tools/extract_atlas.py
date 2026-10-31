@@ -7,6 +7,7 @@ checksum-verified whole input; no network is needed when --source-file is used.
 import argparse
 import hashlib
 import json
+import os
 import platform
 import subprocess
 from pathlib import Path
@@ -71,6 +72,61 @@ def main():
             jobs_path,
             args.output / state if len(states) > 1 else args.output,
         )
+    if len(states) > 1:
+        print(json.dumps(batch_manifest(args.output, states)))
+
+
+def batch_manifest(output: Path, states: list[str]) -> dict:
+    """Bind every extracted state as one catalog input without duplicating bytes."""
+    inputs, files, intermediates, epochs = {}, [], [], set()
+    complete = True
+    payloads = []
+    for state in sorted(states):
+        folder = output / state
+        metadata = json.loads((folder / "generation.json").read_text())
+        epochs.add(metadata["source_date_epoch"])
+        complete = complete and metadata["complete"] is True
+        for identifier, value in metadata["inputs"].items():
+            if identifier in inputs and inputs[identifier] != value:
+                raise ValueError("Batch extraction has conflicting source pins")
+            inputs[identifier] = value
+        if len(metadata["files"]) != 1 or metadata["files"][0]["path"] != f"{state}.pmtiles":
+            raise ValueError("Batch extraction has an unexpected state payload")
+        entry = metadata["files"][0]
+        payload = folder / "files" / entry["path"]
+        if (
+            payload.is_symlink()
+            or payload.stat().st_size != entry["size_bytes"]
+            or sha(payload) != entry["sha256"]
+        ):
+            raise ValueError("Batch extraction payload changed")
+        files.append(entry)
+        payloads.append(payload)
+        for name in ("generation.json", "source.json", "region.geojson"):
+            path = folder / name
+            intermediates.append(
+                {"path": f"{state}/{name}", "sha256": sha(path), "size_bytes": path.stat().st_size}
+            )
+    if len(epochs) != 1:
+        raise ValueError("Batch extraction epochs disagree")
+    (output / "files").mkdir()
+    for payload in payloads:
+        os.link(payload, output / "files" / payload.name)
+    metadata = {
+        "pipeline_version": "pmtiles-extract-v1-" + sha(Path(__file__)),
+        "inputs": inputs,
+        "complete": complete,
+        "source_date_epoch": epochs.pop(),
+        "files": files,
+        "intermediates": intermediates,
+    }
+    payload = encoded(metadata)
+    (output / "generation.json").write_bytes(payload + b"\n")
+    return {
+        "sha256": hashlib.sha256(payload).hexdigest(),
+        "size_bytes": sum(entry["size_bytes"] for entry in files),
+        "pipeline_version": metadata["pipeline_version"],
+    }
 
 
 def extract(args, catalog, source, jobs_path: Path, output: Path):

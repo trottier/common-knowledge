@@ -36,6 +36,8 @@ def shifted_geometry(geometry):
     from shapely.ops import transform
 
     west, _, east, _ = geometry.bounds
+    if east > 180:
+        return geometry, True
     if east - west <= 180:
         return geometry, False
 
