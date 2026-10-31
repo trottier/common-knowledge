@@ -40,13 +40,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census AS road-source extract
 
 - Catalog id: `android_extract_as`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: 2026-10-29 source; AS/GU/MP batch; epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_oceania, census_county_analysis, census_states
+- Size: 1514386 bytes
+- SHA-256: `7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a`
+- Pipeline: android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: android_source_oceania, census_county_analysis, census_states
 
 ## Census AZ road-source extract
 
@@ -139,13 +139,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census GU road-source extract
 
 - Catalog id: `android_extract_gu`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: 2026-10-29 source; AS/GU/MP batch; epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_oceania, census_county_analysis, census_states
+- Size: 1514386 bytes
+- SHA-256: `7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a`
+- Pipeline: android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: android_source_oceania, census_county_analysis, census_states
 
 ## Census HI road-source extract
 
@@ -304,13 +304,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census MP road-source extract
 
 - Catalog id: `android_extract_mp`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: 2026-10-29 source; AS/GU/MP batch; epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_oceania, census_county_analysis, census_states
+- Size: 1514386 bytes
+- SHA-256: `7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a`
+- Pipeline: android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: android_source_oceania, census_county_analysis, census_states
 
 ## Census MS road-source extract
 
@@ -656,13 +656,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for AS
 
 - Catalog id: `android_map_as`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Oceania 2026-10-29; OsmAnd creator pinned; epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania, osmand_creator, android_extract_as
+- Size: 855212 bytes
+- SHA-256: `e429e4539025b804c9ef6e35f63d32daf15329c0366eb5d6a807e2f9270244db`
+- Pipeline: androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1; inputs: geofabrik_oceania, osmand_creator, android_extract_as
 
 ## OsmAnd roads-and-places map for AZ
 
@@ -755,13 +755,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for GU
 
 - Catalog id: `android_map_gu`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Oceania 2026-10-29; OsmAnd creator pinned; epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania, osmand_creator, android_extract_gu
+- Size: 2653279 bytes
+- SHA-256: `750dc69674ce7db45207b171d1a9e76ce8c2a82241f16326816fdba1d30c73fa`
+- Pipeline: androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1; inputs: geofabrik_oceania, osmand_creator, android_extract_gu
 
 ## OsmAnd roads-and-places map for HI
 
@@ -931,13 +931,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for MP
 
 - Catalog id: `android_map_mp`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Oceania 2026-10-29; OsmAnd creator pinned; epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania, osmand_creator, android_extract_mp
+- Size: 934088 bytes
+- SHA-256: `a385ba0a5d4cd69e9bf17769acbb1e733161cc4b43b033d4be9ffdaee5d3e9ec`
+- Pipeline: androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1; inputs: geofabrik_oceania, osmand_creator, android_extract_mp
 
 ## OsmAnd roads-and-places map for MS
 
@@ -1272,13 +1272,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Prepared roads and public places from the oceania parent
 
 - Catalog id: `android_source_oceania`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Geofabrik 2026-10-29; development epoch 1793404800
 - License: ODbL-1.0
 - Attribution: OpenStreetMap contributors
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania
+- Size: 401963876 bytes
+- SHA-256: `1f5aa36346d4557b83e6fe980fc5b1e420608921b9e5a6750ea66a6eb306aaca`
+- Pipeline: android-source-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: geofabrik_oceania
 
 ## Prepared roads and public places from the us parent
 

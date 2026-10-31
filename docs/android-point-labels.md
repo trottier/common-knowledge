@@ -38,3 +38,21 @@ required; diagnostic files are not placed on drives.
 Tool references: [Osmium tag filtering](https://docs.osmcode.org/osmium/latest/osmium-tags-filter.html),
 [reference checking](https://docs.osmcode.org/osmium/latest/osmium-check-refs.html),
 and the [OpenStreetMap API](https://wiki.openstreetmap.org/wiki/API_v0.6).
+
+The fresh production Oceania parent passed all reference checks and produced a
+401,963,876-byte PBF. Its complete manifest SHA-256 is
+`1f5aa36346d4557b83e6fe980fc5b1e420608921b9e5a6750ea66a6eb306aaca`.
+The AS/GU/MP extract batch also passed reference checks. Original publisher
+OsmAnd creator JARs then produced and inspected all three maps:
+
+| Jurisdiction | OBF bytes | Map, source database and attribution bytes |
+| --- | ---: | ---: |
+| AS | 520,212 | 855,212 |
+| GU | 1,775,528 | 2,653,279 |
+| MP | 631,357 | 934,088 |
+
+Map, routing and POI indexes passed inspection, and creation dates match the
+development epoch. The catalog records these measured generated pins. They do
+not establish complete national coverage, repeated production builds or a
+physical Android import/GPS result. The separate OsmAnd APK artwork/resource
+licensing hold remains in force.
