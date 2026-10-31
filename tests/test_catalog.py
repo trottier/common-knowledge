@@ -75,6 +75,19 @@ def test_combined_licenses_require_every_component_to_be_redistributable():
     assert any("written emergency-use license" in issue for issue in candidate.blockers())
 
 
+def test_osmand_pin_does_not_clear_restricted_assets_or_legal_review():
+    items = load_catalog(ROOT)
+    candidate = items["osmand_android"]
+    assert candidate.source_id == "osmand_android_source"
+    problems = candidate.blockers(release=True)
+    assert any("redistribution review" in issue for issue in problems)
+    assert any("written emergency-use license" in issue for issue in problems)
+    assert any("named legal sign-off" in issue for issue in problems)
+    # A signature and complete download hash cannot authorize restricted assets.
+    with pytest.raises(ValueError, match="unconfirmed"):
+        fetch(candidate, ROOT / "build/test-cache", opener=lambda *a, **k: pytest.fail("network"))
+
+
 def test_unshipped_build_tool_does_not_require_a_shipped_app_source_archive():
     tool = item_for().model_copy(
         update={"family": "binaries", "license": "GPL-3.0-only", "placement": "hub_only"}

@@ -73,21 +73,26 @@
     "id": "osmand_android",
     "family": "apk",
     "title": "OsmAnd for Android",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://download.osmand.net/releases/net.osmand-5.4.11-5411.apk",
+    "version": "5.4.11 (5411); commit 13934d83aabde68e29dc35ede0575db00e2e5d77",
+    "size_bytes": 389255401,
+    "sha256": "04c9272e87dd20bdc0d51240b2d57660673ad21a3376f9fdbaf84dbba6d32004",
+    "license": "GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]",
+    "attribution": "OsmAnd BV and OsmAnd contributors; bundled resource rights require separate review",
+    "license_proof_url": "https://github.com/osmandapp/OsmAnd/blob/13934d83aabde68e29dc35ede0575db00e2e5d77/LICENSE",
     "placement": "universal",
     "dest": "3_MAPS_AND_PLACES/android/OsmAnd.apk",
     "profiles": [
       "sample",
       "full"
     ],
-    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
-    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+    "signer_cert_sha256": "d192f4fffff2fae37f2821e4ca44f4cbe2483e7ffa24a8472043f685dd5bed27",
+    "source_url": "https://codeload.github.com/osmandapp/OsmAnd/tar.gz/13934d83aabde68e29dc35ede0575db00e2e5d77",
+    "source_id": "osmand_android_source",
+    "checksum_source_url": "https://download.osmand.net/releases/",
+    "requires_legal": true,
+    "permission_proof_url": "[[VERIFY: written emergency-use rights for restricted artwork and proprietary resources in this exact APK]]",
+    "review": "[[VERIFY: human review of computed HTTPS hash, publisher-matched signer and exact embedded source commit; close dependency sources and bundled asset permissions before any placement; physical offline map import checks remain]]"
   },
   {
     "id": "kiwix_windows",
@@ -442,5 +447,26 @@
       "full"
     ],
     "review": "[[VERIFY: human review of verbatim publisher license bytes and source pin]]"
+  },
+  {
+    "id": "osmand_android_source",
+    "family": "docs",
+    "title": "OsmAnd 5.4.11 exact application-source archive; mixed asset licenses",
+    "url": "https://codeload.github.com/osmandapp/OsmAnd/tar.gz/13934d83aabde68e29dc35ede0575db00e2e5d77",
+    "version": "13934d83aabde68e29dc35ede0575db00e2e5d77",
+    "size_bytes": 28378920,
+    "sha256": "23485013761c1cae72b3388d44e533d5040b4187891c9ced3d3903c16c69e6bd",
+    "license": "GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]",
+    "attribution": "OsmAnd BV and OsmAnd contributors",
+    "license_proof_url": "https://github.com/osmandapp/OsmAnd/blob/13934d83aabde68e29dc35ede0575db00e2e5d77/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "osmand_android",
+    "requires_legal": true,
+    "review": "[[VERIFY: source archive identifies application provenance; complete native-core and resource dependency sources and exact redistribution rights before release]]"
   }
 ]

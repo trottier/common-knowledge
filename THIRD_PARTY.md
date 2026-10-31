@@ -964,13 +964,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd for Android
 
 - Catalog id: `osmand_android`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 5.4.11 (5411); commit 13934d83aabde68e29dc35ede0575db00e2e5d77
+- License: GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]
+- Attribution: OsmAnd BV and OsmAnd contributors; bundled resource rights require separate review
+- License proof: https://github.com/osmandapp/OsmAnd/blob/13934d83aabde68e29dc35ede0575db00e2e5d77/LICENSE
+- Size: 389255401 bytes
+- SHA-256: `04c9272e87dd20bdc0d51240b2d57660673ad21a3376f9fdbaf84dbba6d32004`
+- Publisher file: https://download.osmand.net/releases/net.osmand-5.4.11-5411.apk
+
+## OsmAnd 5.4.11 exact application-source archive; mixed asset licenses
+
+- Catalog id: `osmand_android_source`
+- Version: 13934d83aabde68e29dc35ede0575db00e2e5d77
+- License: GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]
+- Attribution: OsmAnd BV and OsmAnd contributors
+- License proof: https://github.com/osmandapp/OsmAnd/blob/13934d83aabde68e29dc35ede0575db00e2e5d77/LICENSE
+- Size: 28378920 bytes
+- SHA-256: `23485013761c1cae72b3388d44e533d5040b4187891c9ced3d3903c16c69e6bd`
+- Publisher file: https://codeload.github.com/osmandapp/OsmAnd/tar.gz/13934d83aabde68e29dc35ede0575db00e2e5d77
 
 ## OsmAnd map creator build input
 

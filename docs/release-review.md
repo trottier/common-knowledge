@@ -34,6 +34,8 @@ Catalog items explicitly requiring legal review:
 - `base_model`: Qwen3.5-2B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
 - `bitchat_android`: bitchat for Android; license `GPL-3.0-only`; reviewer: unassigned; review date: unassigned.
 - `briar_android`: Briar for Android; license `GPL-3.0-only`; reviewer: unassigned; review date: unassigned.
+- `osmand_android`: OsmAnd for Android; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
+- `osmand_android_source`: OsmAnd 5.4.11 exact application-source archive; mixed asset licenses; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_prebuilt`: OsmAnd official state maps; verify terms and sizes; license `[[VERIFY: redistribution license]]`; reviewer: unassigned; review date: unassigned.
 - `sample_model`: Qwen3.5-0.8B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
 
@@ -61,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (467)
+## Remaining VERIFY markers (463)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -162,32 +164,28 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/apk.yaml:22` — [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]
 - `catalog/apk.yaml:46` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
 - `catalog/apk.yaml:70` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
-- `catalog/apk.yaml:76` — [[VERIFY: exact publisher download URL]]
-- `catalog/apk.yaml:77` — [[VERIFY: publisher version]]
-- `catalog/apk.yaml:78` — [[VERIFY: exact publisher file size]]
-- `catalog/apk.yaml:79` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/apk.yaml:80` — [[VERIFY: redistribution license]]
-- `catalog/apk.yaml:81` — [[VERIFY: publisher attribution]]
-- `catalog/apk.yaml:82` — [[VERIFY: per-item publisher license proof]]
-- `catalog/apk.yaml:89` — [[VERIFY: publisher signer certificate SHA-256]]
-- `catalog/apk.yaml:90` — [[VERIFY: exact corresponding source archive URL]]
-- `catalog/apk.yaml:112` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
-- `catalog/apk.yaml:134` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
-- `catalog/apk.yaml:156` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
-- `catalog/apk.yaml:176` — [[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]
-- `catalog/apk.yaml:196` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
-- `catalog/apk.yaml:216` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
-- `catalog/apk.yaml:236` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
-- `catalog/apk.yaml:258` — [[VERIFY: review verified APK signer, bundled notices, local import flow and offline operation on a phone with at least 6 GB RAM]]
-- `catalog/apk.yaml:281` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
-- `catalog/apk.yaml:301` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
-- `catalog/apk.yaml:324` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
-- `catalog/apk.yaml:344` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
-- `catalog/apk.yaml:364` — [[VERIFY: review exact release commit and complete corresponding dependency sources]]
-- `catalog/apk.yaml:384` — [[VERIFY: review exact release commit and complete corresponding dependency sources]]
-- `catalog/apk.yaml:406` — [[VERIFY: human pin and GPL source-closure review of the exact Briar submodule]]
-- `catalog/apk.yaml:425` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
-- `catalog/apk.yaml:444` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
+- `catalog/apk.yaml:80` — [[VERIFY: exact bundled proprietary and third-party resource rights]]
+- `catalog/apk.yaml:94` — [[VERIFY: written emergency-use rights for restricted artwork and proprietary resources in this exact APK]]
+- `catalog/apk.yaml:95` — [[VERIFY: human review of computed HTTPS hash, publisher-matched signer and exact embedded source commit; close dependency sources and bundled asset permissions before any placement; physical offline map import checks remain]]
+- `catalog/apk.yaml:117` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
+- `catalog/apk.yaml:139` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
+- `catalog/apk.yaml:161` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
+- `catalog/apk.yaml:181` — [[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]
+- `catalog/apk.yaml:201` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
+- `catalog/apk.yaml:221` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
+- `catalog/apk.yaml:241` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
+- `catalog/apk.yaml:263` — [[VERIFY: review verified APK signer, bundled notices, local import flow and offline operation on a phone with at least 6 GB RAM]]
+- `catalog/apk.yaml:286` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
+- `catalog/apk.yaml:306` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
+- `catalog/apk.yaml:329` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
+- `catalog/apk.yaml:349` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
+- `catalog/apk.yaml:369` — [[VERIFY: review exact release commit and complete corresponding dependency sources]]
+- `catalog/apk.yaml:389` — [[VERIFY: review exact release commit and complete corresponding dependency sources]]
+- `catalog/apk.yaml:411` — [[VERIFY: human pin and GPL source-closure review of the exact Briar submodule]]
+- `catalog/apk.yaml:430` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
+- `catalog/apk.yaml:449` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
+- `catalog/apk.yaml:459` — [[VERIFY: exact bundled proprietary and third-party resource rights]]
+- `catalog/apk.yaml:470` — [[VERIFY: source archive identifies application provenance; complete native-core and resource dependency sources and exact redistribution rights before release]]
 - `catalog/buildtools.yaml:97` — [[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]
 - `catalog/buildtools.yaml:118` — [[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]
 - `catalog/docs.yaml:6` — [[VERIFY: exact publisher download URL]]
