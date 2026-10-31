@@ -105,4 +105,14 @@ A small fixture checks byte-identical rebuilds and strict offline validation.
 
 Title search is retained. The publisher's original full-text index is omitted in
 this regenerated edition; this limitation is written into its placed `SOURCE.TXT`.
-The full archive still needs measured pins, review and physical reader checks.
+The full-archive prototype passed every format check and the entry comparison.
+Its measured payload is 753,161,199 bytes, including `SOURCE.TXT`. The catalog pins
+that generated manifest while repeat full-archive reproducibility, pin review and
+physical reader checks remain open. The original source is a build input only.
+
+All 150 phone PDFs and their README matched byte-for-byte across two complete
+builds with different worker counts (69,194,073 payload bytes). The first pair's
+audit manifests exposed nondeterministic duplicate-content warning pairs from the
+checker. The audit now records sorted duplicate equivalence groups, retaining all
+errors and the complete set of affected paths. Clean runs with this correction are
+in progress; the earlier payload match alone is not a whole-manifest match.

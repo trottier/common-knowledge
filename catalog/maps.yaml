@@ -110,22 +110,31 @@
     "id": "medical_phone_pdfs",
     "family": "generated",
     "title": "Curated medical phone PDFs",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "version": "WikiMed 2026-10; development conversion",
+    "size_bytes": 69194073,
+    "sha256": "62cd8c0ef0a6edb3eb9f56ef1cbcb433aeed3f16573b91f64b1d88d67e925351",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge",
+    "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
     "placement": "universal",
     "dest": "5_MEDICAL_REFERENCE/pdf/",
     "profiles": [
       "full"
     ],
     "inputs": [
-      "wikimed_en_nopic",
-      "wikem_en_nopic"
+      "noto_sans",
+      "noto_sans_arabic",
+      "noto_sans_devanagari",
+      "noto_sans_georgian",
+      "noto_sans_hebrew",
+      "noto_sans_kr",
+      "noto_sans_sc",
+      "noto_sans_symbols2",
+      "noto_sans_tc",
+      "wikimed_en_nopic"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+    "pipeline_version": "medpdf-v1-17d55c688d6189530bd148bbd00853b217d11a232c02bb363e221b4416a729ec",
+    "review": "[[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]"
   },
   {
     "id": "directory_seed_ri",

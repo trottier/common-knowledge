@@ -10,13 +10,13 @@
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikipedia contributors; archive packaged by Kiwix",
     "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
-    "placement": "universal",
-    "dest": "5_MEDICAL_REFERENCE/",
+    "placement": "hub_only",
+    "dest": "build/reference-inputs/",
     "profiles": [
       "full"
     ],
     "checksum_source_url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim.meta4",
-    "review": "[[VERIFY: publisher source has three malformed internal links under zimcheck 3.8.0; use a validated regenerated edition for placement. Earlier external-resource reports from checker 3.1.3 were inactive-metadata false positives]]"
+    "review": "Source input only. Three malformed internal links are repaired during regeneration. Do not place this publisher file on the drive."
   },
   {
     "id": "wikem_en_nopic",
@@ -222,5 +222,26 @@
     "profiles": [
       "full"
     ]
+  },
+  {
+    "id": "wikimed_en_offline",
+    "family": "generated",
+    "title": "WikiMed offline reference edition with repaired links",
+    "version": "WikiMed 2026-10; regenerated edition",
+    "size_bytes": 753161199,
+    "sha256": "ee698d4af6fb2daad16af0d7dc06dd73a09e513588c4f1505362d2951563fd40",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikipedia contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained",
+    "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+    "placement": "universal",
+    "dest": "5_MEDICAL_REFERENCE/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikimed_en_nopic"
+    ],
+    "pipeline_version": "zim-offline-v1-a6023222bc690e25ce13e390a825f15dbd62332dc8809b3563715a285ce52a1a",
+    "review": "[[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]"
   }
 ]

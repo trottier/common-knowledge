@@ -491,13 +491,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Curated medical phone PDFs
 
 - Catalog id: `medical_phone_pdfs`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: wikimed_en_nopic, wikem_en_nopic
+- Version: WikiMed 2026-10; development conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge
+- License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
+- Size: 69194073 bytes
+- SHA-256: `62cd8c0ef0a6edb3eb9f56ef1cbcb433aeed3f16573b91f64b1d88d67e925351`
+- Pipeline: medpdf-v1-17d55c688d6189530bd148bbd00853b217d11a232c02bb363e221b4416a729ec; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic
 
 ## National county road atlas
 
@@ -1136,6 +1136,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 1047708415 bytes
 - SHA-256: `718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625`
 - Publisher file: https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim
+
+## WikiMed offline reference edition with repaired links
+
+- Catalog id: `wikimed_en_offline`
+- Version: WikiMed 2026-10; regenerated edition
+- License: CC-BY-SA-4.0
+- Attribution: Wikipedia contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained
+- License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
+- Size: 753161199 bytes
+- SHA-256: `ee698d4af6fb2daad16af0d7dc06dd73a09e513588c4f1505362d2951563fd40`
+- Pipeline: zim-offline-v1-a6023222bc690e25ce13e390a825f15dbd62332dc8809b3563715a285ce52a1a; inputs: wikimed_en_nopic
 
 ## English Wikipedia introductions hub archive
 
