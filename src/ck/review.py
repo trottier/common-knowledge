@@ -101,7 +101,7 @@ def write_release_review(root: Path, output: Path) -> None:
             "- Follow the publisher's edition-selection policy in docs/language-selection.md "
             "and repeat the pinned ACS order audit before tagging."
             if (root / "docs/language-selection.md").exists()
-            else "- Verify the language ranking against current ACS limited-English-proficiency data."
+            else "- Verify edition order with current ACS limited-English-proficiency data."
         ),
         "- Complete docs/phone-test-checklist.md on at least three phones and two laptop "
         "operating systems, including a USB-A-only laptop with an adapter. Check video "
