@@ -11,10 +11,27 @@ from bs4 import BeautifulSoup
 
 from ck.catalog import Item
 from ck.config import load_config, read_yaml
-from ck.fetch import fetch, verify_zim
+from ck.fetch import canonical_zim_logs, fetch, verify_zim
 from ck.zim2pdf import ReferenceFetcher, Topics, article, ensure_glyphs, render_article
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_duplicate_content_audits_do_not_depend_on_worker_order():
+    def warning(first, second):
+        return {
+            "check": "redundant",
+            "level": "WARNING",
+            "path1": first,
+            "path2": second,
+            "message": first + " and " + second,
+        }
+
+    error = {"check": "checksum", "level": "ERROR", "message": "Synthetic error"}
+    first = [warning("a", "b"), warning("a", "c"), error]
+    second = [error, warning("c", "b"), warning("b", "a")]
+    assert canonical_zim_logs(first) == canonical_zim_logs(second)
+    assert error in canonical_zim_logs(first)
 
 
 def source(body="<p>Fixture quantity: 2.5 mg; 12–18 hours.</p>"):

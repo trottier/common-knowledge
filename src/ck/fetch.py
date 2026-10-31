@@ -25,6 +25,38 @@ ZIM_CHECKS = {
 }
 
 
+def canonical_zim_logs(logs: list[dict]) -> list[dict]:
+    """Represent duplicate-content groups independently of worker race order."""
+    ordinary, groups = [], []
+    for entry in logs:
+        if (
+            entry.get("check") != "redundant"
+            or entry.get("level") != "WARNING"
+            or not isinstance(entry.get("path1"), str)
+            or not isinstance(entry.get("path2"), str)
+        ):
+            ordinary.append(entry)
+            continue
+        paths = {entry["path1"], entry["path2"]}
+        unmerged = []
+        for group in groups:
+            if group & paths:
+                paths |= group
+            else:
+                unmerged.append(group)
+        groups = [*unmerged, paths]
+    ordinary += [
+        {
+            "check": "redundant",
+            "level": "WARNING",
+            "message": "Entries contain identical content",
+            "paths": sorted(group),
+        }
+        for group in groups
+    ]
+    return sorted(ordinary, key=lambda entry: json.dumps(entry, sort_keys=True))
+
+
 def zim_report(path: Path, flags: list[str], required: set[str]) -> dict:
     result = subprocess.run(
         ["zimcheck", *flags, "--json", "--threads", "4", str(path)],
@@ -45,9 +77,7 @@ def zim_report(path: Path, flags: list[str], required: set[str]) -> dict:
     if report.get("status") is True and (errors or result.returncode):
         raise ValueError("ZIM audit returned an inconsistent success report")
     report.pop("file_name", None)
-    report["logs"] = sorted(
-        report.get("logs", []), key=lambda value: json.dumps(value, sort_keys=True)
-    )
+    report["logs"] = canonical_zim_logs(report.get("logs", []))
     return report
 
 
