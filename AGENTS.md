@@ -494,7 +494,7 @@ File names must be FAT-safe: none of `\ / : * ? " < > |`, path length under 200 
 - Every default appears verbatim in the card and START HTML for every edition.
 - All 15 editions exist with folder, quick start and README line; RTL editions render correctly.
 - Every citation id exists; release mode fails on any VERIFY marker.
-- The directory contains no excluded categories; the atlas has one bookmark per county or county-equivalent [[VERIFY: current count]]; grid labels parse.
+- The directory contains no excluded categories; the atlas has one bookmark per county or county-equivalent (3,235 in the pinned 2025 Census snapshot); grid labels parse.
 - Every video has one picture track, English as its first audio track, and audio and subtitle tracks tagged with valid language codes; no text is burned into new renders.
 - File names are FAT-safe; no executables outside allowed folders; no `autorun.inf`.
 - The manifest matches the image; the reproducibility test passes in `sample`.

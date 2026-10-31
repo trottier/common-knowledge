@@ -2548,13 +2548,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## National county road atlas
 
 - Catalog id: `national_atlas`
-- Version: [[VERIFY: publisher version]]
+- Version: 2026-10-31; source epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; Protomaps; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: census_county_analysis, census_places_ak, census_places_al, census_places_ar, census_places_as, census_places_az, census_places_ca, census_places_co, census_places_ct, census_places_dc, census_places_de, census_places_fl, census_places_ga, census_places_gu, census_places_hi, census_places_ia, census_places_id, census_places_il, census_places_in, census_places_ks, census_places_ky, census_places_la, census_places_ma, census_places_md, census_places_me, census_places_mi, census_places_mn, census_places_mo, census_places_mp, census_places_ms, census_places_mt, census_places_nc, census_places_nd, census_places_ne, census_places_nh, census_places_nj, census_places_nm, census_places_nv, census_places_ny, census_places_oh, census_places_ok, census_places_or, census_places_pa, census_places_pr, census_places_ri, census_places_sc, census_places_sd, census_places_tn, census_places_tx, census_places_ut, census_places_va, census_places_vi, census_places_vt, census_places_wa, census_places_wi, census_places_wv, census_places_wy, directory_points, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc, protomaps_us
+- Size: 1880310639 bytes
+- SHA-256: `5d76b2075df66bf6c6008f0d7f432d54a34608df36a77f4a3a4e58d37f185936`
+- Pipeline: atlas-set-v1-c1083bfb76beda769dd1e5faca149cac6b7ee9a59f3779e74e9800d6cf82e5a5; inputs: census_county_analysis, census_places_ak, census_places_al, census_places_ar, census_places_as, census_places_az, census_places_ca, census_places_co, census_places_ct, census_places_dc, census_places_de, census_places_fl, census_places_ga, census_places_gu, census_places_hi, census_places_ia, census_places_id, census_places_il, census_places_in, census_places_ks, census_places_ky, census_places_la, census_places_ma, census_places_md, census_places_me, census_places_mi, census_places_mn, census_places_mo, census_places_mp, census_places_ms, census_places_mt, census_places_nc, census_places_nd, census_places_ne, census_places_nh, census_places_nj, census_places_nm, census_places_nv, census_places_ny, census_places_oh, census_places_ok, census_places_or, census_places_pa, census_places_pr, census_places_ri, census_places_sc, census_places_sd, census_places_tn, census_places_tx, census_places_ut, census_places_va, census_places_vi, census_places_vt, census_places_wa, census_places_wi, census_places_wv, census_places_wy, directory_points, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc, protomaps_us
 
 ## National public places directory
 

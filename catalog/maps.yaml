@@ -40,9 +40,9 @@
     "id": "national_atlas",
     "family": "generated",
     "title": "National county road atlas",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "version": "2026-10-31; source epoch 1793404800",
+    "size_bytes": 1880310639,
+    "sha256": "5d76b2075df66bf6c6008f0d7f432d54a34608df36a77f4a3a4e58d37f185936",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; Protomaps; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -116,7 +116,8 @@
       "noto_sans_sc",
       "protomaps_us"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+    "pipeline_version": "atlas-set-v1-c1083bfb76beda769dd1e5faca149cac6b7ee9a59f3779e74e9800d6cf82e5a5",
+    "review": "[[VERIFY: independent national atlas pin review, repeated clean rendering, final recipe freeze and physical phone checks]]"
   },
   {
     "id": "national_directory",
