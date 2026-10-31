@@ -74,5 +74,47 @@
       "full"
     ],
     "checksum_source_url": "https://api.github.com/repos/protomaps/go-pmtiles/releases/tags/v1.31.2"
+  },
+  {
+    "id": "zim_tools_amd64",
+    "family": "binaries",
+    "title": "Static ZIM tools build input for Linux amd64",
+    "url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-x86_64-musl-3.8.0.tar.gz",
+    "version": "3.8.0",
+    "size_bytes": 74557265,
+    "sha256": "bf5c160ba931eacbcad09dc441524ff109be5c99ae43bc6f58b78af07509bc8e",
+    "license": "GPL-3.0-only",
+    "attribution": "openZIM and zim-tools contributors; build input only",
+    "license_proof_url": "https://github.com/openzim/zim-tools/blob/3.8.0/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-x86_64-musl-3.8.0.tar.gz.md5",
+    "review": "[[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]"
+  },
+  {
+    "id": "zim_tools_arm64",
+    "family": "binaries",
+    "title": "Static ZIM tools build input for Linux arm64",
+    "url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-aarch64-musl-3.8.0.tar.gz",
+    "version": "3.8.0",
+    "size_bytes": 71657859,
+    "sha256": "36061dc23623934512c7843580bd91e4556e411fc63f1baa15aef742a9e33969",
+    "license": "GPL-3.0-only",
+    "attribution": "openZIM and zim-tools contributors; build input only",
+    "license_proof_url": "https://github.com/openzim/zim-tools/blob/3.8.0/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-aarch64-musl-3.8.0.tar.gz.md5",
+    "review": "[[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]"
   }
 ]

@@ -41,6 +41,11 @@ RUN apt-get update \
     && dpkg-query --show > /opt/ck-tool-versions.txt \
     && rm -rf /var/lib/apt/lists/*
 
+COPY catalog/buildtools.yaml tools/bootstrap_zim.py /tmp/ck-zim-bootstrap/
+RUN python /tmp/ck-zim-bootstrap/bootstrap_zim.py \
+      /tmp/ck-zim-bootstrap/buildtools.yaml /usr/local/bin/zimcheck \
+      >> /opt/ck-tool-versions.txt
+
 COPY catalog/fonts.yaml tools/bootstrap_fonts.py /tmp/ck-bootstrap/
 RUN python /tmp/ck-bootstrap/bootstrap_fonts.py /tmp/ck-bootstrap/fonts.yaml /opt/ck-fonts
 

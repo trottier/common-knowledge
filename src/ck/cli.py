@@ -59,6 +59,17 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     android_howto.add_argument("--output", type=Path, required=True)
     android_howto.add_argument("--epoch", type=int)
+    medpdf = commands.add_parser("medpdf", help="Regenerate attributed medical phone PDFs")
+    medpdf.add_argument("--output", type=Path, required=True)
+    medpdf.add_argument("--cache", type=Path, default=Path("cache"))
+    medpdf.add_argument("--epoch", type=int)
+    medpdf.add_argument("--limit", type=int, help="Incomplete development subset only")
+    medpdf.add_argument("--jobs", type=int, default=1)
+    offline_zim = commands.add_parser("offline-zim", help="Regenerate an audited offline ZIM")
+    offline_zim.add_argument("--item", required=True)
+    offline_zim.add_argument("--cache", type=Path, default=Path("cache"))
+    offline_zim.add_argument("--output", type=Path, required=True)
+    offline_zim.add_argument("--epoch", type=int)
     atlas = commands.add_parser("atlas", help="Prepare and compose a checked county road atlas")
     atlas_commands = atlas.add_subparsers(dest="atlas_action", required=True)
     atlas_prepare = atlas_commands.add_parser(
@@ -110,6 +121,42 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "offline-zim":
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+            from ck.zimclean import build_offline_zim
+
+            item = load_catalog(args.root, config)[args.item]
+            print(
+                json.dumps(
+                    build_offline_zim(
+                        args.root, item, args.cache, args.output, epoch_for(config, args.epoch)
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "medpdf":
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+            from ck.zim2pdf import build_medpdf
+
+            print(
+                json.dumps(
+                    build_medpdf(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                        args.limit,
+                        args.jobs,
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "android-howto":
             from ck.androidhowto import build_howto
             from ck.catalog import load_catalog

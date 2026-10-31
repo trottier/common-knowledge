@@ -1,6 +1,7 @@
 """Bounded HTTPS downloads, content-addressed caching and format verification."""
 
 import hashlib
+import json
 import re
 import subprocess
 import tempfile
@@ -9,6 +10,52 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from ck.catalog import Item
+
+
+def verify_zim(path: Path, *, regeneration_only: bool = False) -> dict:
+    """Audit every check; regeneration may remove external embedded resources.
+
+    This exception applies only to source extraction. Shipped ZIMs must pass
+    the complete offline audit through verify_format.
+    """
+    result = subprocess.run(
+        ["zimcheck", "--all", "--json", "--threads", "4", str(path)],
+        capture_output=True,
+        text=True,
+    )
+    if result.stderr.strip():
+        raise ValueError("ZIM checker emitted an unexpected diagnostic: " + result.stderr[-1000:])
+    try:
+        report = json.loads(result.stdout)
+    except (ValueError, TypeError) as error:
+        raise ValueError(f"ZIM audit produced no valid report: {result.stderr[-1000:]}") from error
+    required = {
+        "checksum",
+        "integrity",
+        "empty",
+        "metadata",
+        "favicon",
+        "main_page",
+        "redundant",
+        "url_internal",
+        "url_external",
+        "redirect",
+    }
+    if not required <= set(report.get("checks", [])) or result.returncode not in {0, 1}:
+        raise ValueError("ZIM audit did not complete every required check")
+    errors = [entry for entry in report.get("logs", []) if entry.get("level") == "ERROR"]
+    if report.get("status") is True and (errors or result.returncode):
+        raise ValueError("ZIM audit returned an inconsistent success report")
+    allowed = {"url_external"} if regeneration_only else set()
+    if any(entry.get("check") not in allowed for entry in errors) or (
+        not report.get("status") and not errors
+    ):
+        details = "; ".join(entry.get("message", "") for entry in errors[:5])
+        raise ValueError("ZIM audit failed: " + (details or result.stderr[-1000:]))
+    # Avoid output paths and transient diagnostics in reproducible provenance.
+    report.pop("file_name", None)
+    report["regeneration_only"] = regeneration_only
+    return report
 
 
 def digest(path: Path) -> str:
@@ -25,7 +72,7 @@ class HttpsRedirects(urllib.request.HTTPRedirectHandler):
 
 def verify_format(item: Item, path: Path) -> None:
     if item.family == "zim":
-        subprocess.run(["zimcheck", "--all", str(path)], check=True, capture_output=True, text=True)
+        verify_zim(path)
     elif item.family == "apk":
         result = subprocess.run(
             ["apksigner", "verify", "--print-certs", str(path)],
@@ -48,6 +95,15 @@ def fetch(item: Item, cache: Path, *, opener=None, format_check=verify_format) -
         raise ValueError("Cannot fetch unconfirmed input: " + "; ".join(problems or [item.id]))
     cache.mkdir(parents=True, exist_ok=True)
     target = cache / item.sha256
+    quarantine = cache / "quarantine" / item.sha256
+    if (
+        quarantine.is_file()
+        and quarantine.stat().st_size == item.size_bytes
+        and digest(quarantine) == item.sha256
+    ):
+        format_check(item, quarantine)
+        quarantine.replace(target)
+        return target
     if (
         target.is_file()
         and target.stat().st_size == item.size_bytes
@@ -74,7 +130,15 @@ def fetch(item: Item, cache: Path, *, opener=None, format_check=verify_format) -
                     checksum.update(chunk)
         if size != item.size_bytes or checksum.hexdigest() != item.sha256:
             raise ValueError(f"Download size or checksum mismatch: {item.id}")
-        format_check(item, temporary)
+        try:
+            format_check(item, temporary)
+        except (ValueError, subprocess.CalledProcessError) as error:
+            quarantine.parent.mkdir(parents=True, exist_ok=True)
+            temporary.replace(quarantine)
+            raise ValueError(
+                f"Format verification failed for {item.id}; verified bytes retained "
+                f"at {quarantine}: {error}"
+            ) from error
         temporary.replace(target)
         return target
     finally:

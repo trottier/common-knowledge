@@ -118,5 +118,65 @@
       "full"
     ],
     "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_georgian",
+    "family": "fonts",
+    "title": "NotoSansGeorgian[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgeorgian/NotoSansGeorgian%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 231988,
+    "sha256": "dc591156f36842d38996c4a7a17fee9bb58e45da3e2cac7a31b7d33de700adb9",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgeorgian/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_hebrew",
+    "family": "fonts",
+    "title": "NotoSansHebrew[wdth,wght].ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanshebrew/NotoSansHebrew%5Bwdth%2Cwght%5D.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 112640,
+    "sha256": "7ef36a2c3593758cdb622e1bdef4f84523e92fbc3ccc667438dd80ff54c2de88",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanshebrew/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_symbols2",
+    "family": "fonts",
+    "title": "NotoSansSymbols2-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 1233128,
+    "sha256": "7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors; copyright notices in the linked OFL file",
+    "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssymbols2/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]"
   }
 ]

@@ -38,6 +38,13 @@ def release_blockers(root: Path) -> list[str]:
             tags = ", ".join(header.review_required) or "English content"
             problems.append(f"{path.relative_to(root)}: named human review required ({tags})")
     edition = root / "content/en/edition.yaml"
+    if (root / "catalog/medpdf_topics.yaml").exists():
+        from ck.config import read_yaml
+        from ck.zim2pdf import Topics
+
+        selection = Topics.model_validate(read_yaml(root / "catalog/medpdf_topics.yaml"))
+        if selection.status != "reviewed" or not selection.reviewer or not selection.reviewed_on:
+            problems.append("catalog/medpdf_topics.yaml: named human medical review required")
     if edition.exists():
         from ck.config import read_yaml
 

@@ -334,16 +334,27 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7`
 - Publisher file: https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip
 
-## Kiwix for Android
+## Kiwix for Android, universal standalone
 
 - Catalog id: `kiwix_android`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 3.14.1
+- License: GPL-3.0-or-later
+- Attribution: Kiwix Android contributors
+- License proof: https://github.com/kiwix/kiwix-android/blob/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21/README.md#license
+- Size: 236167297 bytes
+- SHA-256: `353e84ccda154802ed6841ad46c3140b9256c147836578817d5da8321b181ba0`
+- Publisher file: https://github.com/kiwix/kiwix-android/releases/download/v3.14.1/v3.14.1-universal-standalone.apk
+
+## Kiwix Android corresponding source candidate
+
+- Catalog id: `kiwix_android_source`
+- Version: 3.14.1; commit ecd3ca40b53c1e2429f01474bb39e42e07d1ea21
+- License: GPL-3.0-or-later
+- Attribution: Kiwix Android contributors
+- License proof: https://github.com/kiwix/kiwix-android/blob/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21/README.md#license
+- Size: 14930718 bytes
+- SHA-256: `5502c78d153abba596b2ba20326115a62d4083c1bdb8a0db85a2d40e5ff4ac86`
+- Publisher file: https://api.github.com/repos/kiwix/kiwix-android/tarball/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21
 
 ## Kiwix desktop for linux
 
@@ -532,6 +543,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `14ec4af41f27482216d1c2229f417ff9b1425e1babb014e57d1d40d03229853e`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansdevanagari/NotoSansDevanagari%5Bwdth%2Cwght%5D.ttf
 
+## NotoSansGeorgian[wdth,wght].ttf
+
+- Catalog id: `noto_sans_georgian`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgeorgian/OFL.txt
+- Size: 231988 bytes
+- SHA-256: `dc591156f36842d38996c4a7a17fee9bb58e45da3e2cac7a31b7d33de700adb9`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgeorgian/NotoSansGeorgian%5Bwdth%2Cwght%5D.ttf
+
+## NotoSansHebrew[wdth,wght].ttf
+
+- Catalog id: `noto_sans_hebrew`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanshebrew/OFL.txt
+- Size: 112640 bytes
+- SHA-256: `7ef36a2c3593758cdb622e1bdef4f84523e92fbc3ccc667438dd80ff54c2de88`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanshebrew/NotoSansHebrew%5Bwdth%2Cwght%5D.ttf
+
 ## NotoSansKR[wght].ttf
 
 - Catalog id: `noto_sans_kr`
@@ -553,6 +586,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 17772300 bytes
 - SHA-256: `a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf
+
+## NotoSansSymbols2-Regular.ttf
+
+- Catalog id: `noto_sans_symbols2`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssymbols2/OFL.txt
+- Size: 1233128 bytes
+- SHA-256: `7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf
 
 ## NotoSansTC[wght].ttf
 
@@ -1031,9 +1075,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `wikem_en_nopic`
 - Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
+- License: CC-BY-SA-4.0
+- Attribution: WikEM contributors; archive packaged by Kiwix
+- License proof: https://wikem.org/wiki/Creative_Commons
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
@@ -1053,9 +1097,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `wikimed_en_nopic`
 - Version: 2026-10
-- License: [[VERIFY: redistribution license]]
+- License: CC-BY-SA-4.0
 - Attribution: Wikipedia contributors; archive packaged by Kiwix
-- License proof: [[VERIFY: per-item publisher license proof]]
+- License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
 - Size: 1047708415 bytes
 - SHA-256: `718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625`
 - Publisher file: https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim
@@ -1092,3 +1136,25 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Static ZIM tools build input for Linux amd64
+
+- Catalog id: `zim_tools_amd64`
+- Version: 3.8.0
+- License: GPL-3.0-only
+- Attribution: openZIM and zim-tools contributors; build input only
+- License proof: https://github.com/openzim/zim-tools/blob/3.8.0/LICENSE
+- Size: 74557265 bytes
+- SHA-256: `bf5c160ba931eacbcad09dc441524ff109be5c99ae43bc6f58b78af07509bc8e`
+- Publisher file: https://download.openzim.org/release/zim-tools/zim-tools_linux-x86_64-musl-3.8.0.tar.gz
+
+## Static ZIM tools build input for Linux arm64
+
+- Catalog id: `zim_tools_arm64`
+- Version: 3.8.0
+- License: GPL-3.0-only
+- Attribution: openZIM and zim-tools contributors; build input only
+- License proof: https://github.com/openzim/zim-tools/blob/3.8.0/LICENSE
+- Size: 71657859 bytes
+- SHA-256: `36061dc23623934512c7843580bd91e4556e411fc63f1baa15aef742a9e33969`
+- Publisher file: https://download.openzim.org/release/zim-tools/zim-tools_linux-aarch64-musl-3.8.0.tar.gz

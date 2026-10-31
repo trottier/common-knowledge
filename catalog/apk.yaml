@@ -2,21 +2,24 @@
   {
     "id": "kiwix_android",
     "family": "apk",
-    "title": "Kiwix for Android",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "Kiwix for Android, universal standalone",
+    "url": "https://github.com/kiwix/kiwix-android/releases/download/v3.14.1/v3.14.1-universal-standalone.apk",
+    "version": "3.14.1",
+    "size_bytes": 236167297,
+    "sha256": "353e84ccda154802ed6841ad46c3140b9256c147836578817d5da8321b181ba0",
+    "license": "GPL-3.0-or-later",
+    "attribution": "Kiwix Android contributors",
+    "license_proof_url": "https://github.com/kiwix/kiwix-android/blob/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21/README.md#license",
     "placement": "universal",
-    "dest": "5_MEDICAL_REFERENCE/android/",
+    "dest": "5_MEDICAL_REFERENCE/android/Kiwix.apk",
     "profiles": [
       "full"
     ],
-    "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
-    "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+    "signer_cert_sha256": "6dfbfc62e16587a78aa2d9585ae9bb7f6973c2bf84034b7b90101a401409f5aa",
+    "source_url": "https://api.github.com/repos/kiwix/kiwix-android/tarball/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21",
+    "source_id": "kiwix_android_source",
+    "checksum_source_url": "https://api.github.com/repos/kiwix/kiwix-android/releases/tags/v3.14.1",
+    "review": "[[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]"
   },
   {
     "id": "bitchat_android",
@@ -168,5 +171,25 @@
     ],
     "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",
     "source_url": "[[VERIFY: exact corresponding source archive URL]]"
+  },
+  {
+    "id": "kiwix_android_source",
+    "family": "binaries",
+    "title": "Kiwix Android corresponding source candidate",
+    "url": "https://api.github.com/repos/kiwix/kiwix-android/tarball/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21",
+    "version": "3.14.1; commit ecd3ca40b53c1e2429f01474bb39e42e07d1ea21",
+    "size_bytes": 14930718,
+    "sha256": "5502c78d153abba596b2ba20326115a62d4083c1bdb8a0db85a2d40e5ff4ac86",
+    "license": "GPL-3.0-or-later",
+    "attribution": "Kiwix Android contributors",
+    "license_proof_url": "https://github.com/kiwix/kiwix-android/blob/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21/README.md#license",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "kiwix_android",
+    "review": "[[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]"
   }
 ]

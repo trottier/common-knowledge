@@ -7,15 +7,16 @@
     "version": "2026-10",
     "size_bytes": 1047708415,
     "sha256": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625",
-    "license": "[[VERIFY: redistribution license]]",
+    "license": "CC-BY-SA-4.0",
     "attribution": "Wikipedia contributors; archive packaged by Kiwix",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
     "placement": "universal",
     "dest": "5_MEDICAL_REFERENCE/",
     "profiles": [
       "full"
     ],
-    "checksum_source_url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim.meta4"
+    "checksum_source_url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_nopic_2026-10.zim.meta4",
+    "review": "[[VERIFY: placement blocked: zimcheck --all reports two external embedded dependencies; this publisher archive may serve only as a structurally checked input to the offline PDF regeneration pipeline until an offline-clean archive is pinned]]"
   },
   {
     "id": "wikem_en_nopic",
@@ -25,9 +26,9 @@
     "version": "[[VERIFY: publisher version]]",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
     "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "WikEM contributors; archive packaged by Kiwix",
+    "license_proof_url": "https://wikem.org/wiki/Creative_Commons",
     "placement": "universal",
     "dest": "5_MEDICAL_REFERENCE/",
     "profiles": [

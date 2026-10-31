@@ -17,6 +17,19 @@ wheels = [
 ]
 
 [[package]]
+name = "beautifulsoup4"
+version = "4.15.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "soupsieve" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/43/65/318323f98dbee45d42dff61d8f047181bc6f2268a9068cfad035a46be5af/beautifulsoup4-4.15.0.tar.gz", hash = "sha256:288e3ca7d54b06f2ac191970bc275c1939cb46d450b255bf6718b04aa37ab4f7", size = 632571, upload-time = "2026-06-07T16:44:20.453Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/88/c6/92fcd42f1ba33e1184263f25bfabf3d27c383410470f169e4b8163bf9c17/beautifulsoup4-4.15.0-py3-none-any.whl", hash = "sha256:d6f88de62e1d4e38ecb1077eb9724cd0eff29d2a08ca16a401e9b9e93f117cf9", size = 109924, upload-time = "2026-06-07T16:44:21.566Z" },
+]
+
+[[package]]
 name = "brotli"
 version = "1.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -149,8 +162,10 @@ name = "common-knowledge"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "beautifulsoup4" },
     { name = "geopandas" },
     { name = "jinja2" },
+    { name = "libzim" },
     { name = "markdown-it-py" },
     { name = "mdit-py-plugins" },
     { name = "openpyxl" },
@@ -172,8 +187,10 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "beautifulsoup4", specifier = "==4.15.0" },
     { name = "geopandas", specifier = "==1.2.0" },
     { name = "jinja2", specifier = "==3.1.6" },
+    { name = "libzim", specifier = "==4.0.0" },
     { name = "markdown-it-py", specifier = "==4.2.0" },
     { name = "mdit-py-plugins", specifier = "==0.6.1" },
     { name = "openpyxl", specifier = "==3.1.5" },
@@ -285,6 +302,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz", hash = "sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d", size = 245115, upload-time = "2025-03-05T20:05:02.478Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl", hash = "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67", size = 134899, upload-time = "2025-03-05T20:05:00.369Z" },
+]
+
+[[package]]
+name = "libzim"
+version = "4.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/b5/7e127c3eb9d3e00ece2c5ceb6bfdae63eb5cdb17ee9a8e215abf0cf65cb3/libzim-4.0.0.tar.gz", hash = "sha256:62abec6606745c154f76db2fd8215a9cfbb14d7ab98361b50f7dcb30d3dff8d9", size = 69005, upload-time = "2026-10-29T09:07:23.275Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/05/9a/df15ea951f7e2322478c346e18d7d7acac9bc7fe4b595e5fd5f0dadb8b3a/libzim-4.0.0-cp311-abi3-macosx_13_0_arm64.whl", hash = "sha256:18a0d90ff8de69ebebe479ee49c8c26dbf9ffaa353641733c770576443d64261", size = 3327483, upload-time = "2026-10-29T09:05:41.772Z" },
+    { url = "https://files.pythonhosted.org/packages/10/36/28deddebf37ae4d5c7cd4e78e9a9211dae4de197b61a546fdc81777103cb/libzim-4.0.0-cp311-abi3-macosx_13_0_x86_64.whl", hash = "sha256:e69b4806f1c322a521e6f1beb7036a15bfe5608391a56dd52acfa6bcc61f812a", size = 3641801, upload-time = "2026-10-29T09:05:43.518Z" },
+    { url = "https://files.pythonhosted.org/packages/58/61/3cdc92357de38e71ea3ec74befa73240404da0b30ebae9b4fcb2fbf43b08/libzim-4.0.0-cp311-abi3-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:43eb8d7c38e419a2673a09f27060286c2e2fb7b1cfed9e3e7c6e27be8f53327b", size = 10747667, upload-time = "2026-10-29T09:05:45.171Z" },
+    { url = "https://files.pythonhosted.org/packages/83/8e/b850a01d3b5aab2be0b04fa586222caed5aa265906ed9d5e112177c988f3/libzim-4.0.0-cp311-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a5ba6f9e742c59842785f7befbbdd55f4bad9be7803bb87b2ee2cf9643430245", size = 11000592, upload-time = "2026-10-29T09:05:46.952Z" },
+    { url = "https://files.pythonhosted.org/packages/7b/52/0afe081b679c23c015ea10345132c9b5833de7b10c4357a52db0515f8602/libzim-4.0.0-cp311-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:187dda741ce17d285506796fd3a4955d8eb9d65702117a8d823d23bd619bc248", size = 12040247, upload-time = "2026-10-29T09:05:48.974Z" },
+    { url = "https://files.pythonhosted.org/packages/5c/e7/8dd46f71aa7e1dd26716798c2d059822a97305f2033f20d6ac96e8049e24/libzim-4.0.0-cp311-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:86dc69d33216f9e5a30a65bcdc5f61f0b00d8a4b5261e2839e4fc1025c18a047", size = 12324223, upload-time = "2026-10-29T09:05:50.9Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/9e/71b824fcc36826eda9e75360538c8462a4f3a09fb358e059ecda9d24f128/libzim-4.0.0-cp311-abi3-win_amd64.whl", hash = "sha256:90167307e7f559a588b6b535d745cd0b8168a56c803777178803630dcdebc597", size = 16042516, upload-time = "2026-10-29T09:06:53.572Z" },
 ]
 
 [[package]]
@@ -705,6 +737,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
+name = "soupsieve"
+version = "3.0.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/19/63/0b6bae54546aed98d72f12d09df57b19a287f01c84d22047fa2e23772ab9/soupsieve-3.0.4.tar.gz", hash = "sha256:924fab84ae21604c19e175e1f39815eb6fa83ba23836e09e9de180925e5bc4c0", size = 119017, upload-time = "2026-10-22T00:45:26.362Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/66/473f7ca0be0b06e38ee8c85ee2db184e3981bd769fac2e7c19c8a8865211/soupsieve-3.0.4-py3-none-any.whl", hash = "sha256:8412826614f9c632227067d0985aeb9f584bd15efc852955430e097a9fe7afbf", size = 42458, upload-time = "2026-10-22T00:45:24.843Z" },
 ]
 
 [[package]]
