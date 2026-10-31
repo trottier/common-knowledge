@@ -67,7 +67,11 @@ Pin the resulting `national_directory` only after collection. Repeat clean
 builds before publishing release hashes. Source and license pin review,
 accessibility review and physical phone checks remain separate release gates.
 
-The first actual smoke build completed Delaware (609 places; 345 phone pages,
-145 print pages) and Rhode Island (812 places; 454 phone pages, 195 print pages).
-Their total payloads are 1,054,007 and 1,401,384 bytes respectively. The full
-56-jurisdiction build is running; national size/hash pins remain unconfirmed.
+The actual smoke build completed Delaware (609 places; 351 phone pages,
+129 print pages) and Rhode Island (812 places; 465 phone pages, 172 print pages).
+Their payloads are 1,048,997 and 1,389,195 bytes respectively. Place blocks
+render through a restricted Markdown container; imported fields cannot create
+layout containers or script elements. Each final state PDF has one county
+contents list; individual parts retain bookmarks without repeated contents
+pages. All 38 core PDFs match the prior renderer byte for byte. National
+size/hash pins remain unconfirmed until the full set builds and collects.

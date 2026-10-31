@@ -26,12 +26,12 @@
     <h1>{{ title }}</h1>
     {% if draft %}<p class="draft">{{ edition.draft_label }}</p>{% endif %}
   </header>
-  <nav aria-label="Contents">
+  {% block contents %}<nav aria-label="Contents">
     <h2>{{ edition.contents_label }}</h2>
     <ol>{% for heading in headings %}
       <li><a href="#{{ heading.anchor }}">{{ heading.title }}</a></li>
     {% endfor %}</ol>
-  </nav>
+  </nav>{% endblock %}
   <main>{{ body }}</main>
   {% if sources %}
   <section class="sources">

@@ -360,7 +360,7 @@ def plain(value):
     import html
 
     text = html.escape(value).replace("\n", " ")
-    text = re.sub(r"([\\`*_\[\]#<>])", r"\\\1", text)
+    text = re.sub(r"([\\`*_\[\]#<>:])", r"\\\1", text)
     return text.replace("{", "&#123;").replace("}", "&#125;")
 
 
@@ -412,7 +412,7 @@ def directory_text(
             body += [f"### {plain(place.category.replace('_', ' '))}", ""]
             previous_category = place.category
         body += [
-            '<section class="place">',
+            "::: place",
             "",
             f"**{plain(place.name)}**",
             "",
@@ -427,7 +427,7 @@ def directory_text(
         ]
         for label, value in sorted(place.details.items()):
             body += [f"{plain(label)}: {plain(value)}.", ""]
-        body += ["</section>", ""]
+        body += [":::", ""]
     for identifier in ids:
         body += [
             f"Source {identifier}: {items[identifier].attribution}; {items[identifier].version}.",
@@ -518,6 +518,7 @@ def pipeline_version(root: Path, atlas_index: bytes | None = None, *, seed: bool
         "templates/document.html.j2",
         "templates/document.css",
         "templates/directory.html.j2",
+        "templates/directory-part.html.j2",
         "pyproject.toml",
         "uv.lock",
         "Dockerfile.build",

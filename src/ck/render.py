@@ -154,6 +154,10 @@ def render_html(
         local_llm=config.local_llm.model_dump() if config.local_llm else {},
     )
     markdown = MarkdownIt("commonmark", {"html": False}).enable("table")
+    if template in {"directory.html.j2", "directory-part.html.j2"}:
+        from mdit_py_plugins.container import container_plugin
+
+        markdown.use(container_plugin, "place")
     tokens = markdown.parse(body)
     headings = []
     for index, token in enumerate(tokens):

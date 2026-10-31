@@ -259,7 +259,7 @@ def build_state(context: Inputs, state: str, output: Path) -> dict:
                     page_format,
                     target,
                     context.epoch,
-                    template="directory.html.j2",
+                    template="directory-part.html.j2",
                     fallback_ids=fallback,
                 )
                 rendered[page_format].append(
@@ -310,7 +310,7 @@ def build_state(context: Inputs, state: str, output: Path) -> dict:
                 page_format,
                 index_pdf,
                 context.epoch,
-                template="directory.html.j2",
+                template="directory-part.html.j2",
                 fallback_ids=fallback,
             )
             page_counts[page_format], starts[page_format] = join_parts(

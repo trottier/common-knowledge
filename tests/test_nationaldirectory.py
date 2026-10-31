@@ -111,7 +111,37 @@ def test_directory_groups_entries_and_keeps_empty_counties(context):
     )
     assert body.count("## Alpha County") == 1
     assert body.count("### public library") == 1
-    assert body.count('<section class="place">') == 3
+    assert body.count("::: place") == 3
+
+
+def test_directory_layout_markers_cannot_be_injected_by_imported_names(context, tmp_path):
+    from bs4 import BeautifulSoup
+    from ck.render import render_html
+
+    place = context.data.places[0].model_copy(
+        update={
+            "name": '<script>alert("source")</script>{{ defaults }}',
+            "address": "::: place",
+        }
+    )
+    body = directory_text(
+        context.items, "RI", [place], {}, [], {}, context.references, context.ids, True, [], []
+    )
+    source = tmp_path / "imported.md"
+    source.write_text(body)
+    document = render_html(
+        ROOT,
+        context.config,
+        source,
+        context.config.languages[0],
+        "phone",
+        context.epoch,
+        template="directory-part.html.j2",
+    )
+    soup = BeautifulSoup(document, "html.parser")
+    assert len(soup.select("main div.place")) == 1
+    assert not soup.select("main script")
+    assert soup.select_one("main div.place").get_text().count("::: place") == 1
 
 
 def test_bounded_pdfs_reproduce_and_local_contents_survive_merge(context, tmp_path):
@@ -132,6 +162,7 @@ def test_bounded_pdfs_reproduce_and_local_contents_survive_merge(context, tmp_pa
         ):
             assert name in text
         assert "page 1, grid A1, point 1" in text
+        assert '<section class="place">' not in text and ":::" not in text
         for page in reader.pages:
             assert "May help; not confirmed open." in page.extract_text()
         actions = [
@@ -147,6 +178,11 @@ def test_bounded_pdfs_reproduce_and_local_contents_survive_merge(context, tmp_pa
         assert str(reader.metadata.creation_date.year) == "2000"
     audit = json.loads((tmp_path / "a/state.json").read_text())
     assert all(len(part["place_ids"]) <= 2 for part in audit["parts"])
+    for html in (tmp_path / "a/parts").glob("*.html"):
+        document = html.read_text()
+        assert '<nav aria-label="Contents">' not in document
+        if html.name.startswith("44001"):
+            assert '<div class="place">' in document
 
 
 def test_collection_requires_all_places_states_and_bound_audits(context, tmp_path):
