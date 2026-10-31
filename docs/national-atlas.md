@@ -73,3 +73,11 @@ states and a total PDF size above `max_total_bytes`. The resulting national
 Pin the measured set as `national_atlas` only after successful collection.
 Complete input and output checks do not replace legal/source pin review,
 physical phone checks or repeated builds from the final release tag.
+
+The first complete viewport batch contains 4,112 map pages across all 56
+jurisdictions. Its whole-planet-verified basemaps total 10,543,561,690 bytes of
+build inputs, pinned as `protomaps_us`. A Delaware native-render/composition
+check produced its five map pages with county bookmarks and point references.
+This does not establish complete nationwide PDF rendering. A full point-name
+font check also found four names requiring additional Cherokee, Arabic or
+Chinese coverage; fix those before publishing the nationwide PDFs.

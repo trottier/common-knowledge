@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (499)
+## Remaining VERIFY markers (496)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -272,9 +272,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/geodata.yaml:114` — [[VERIFY: human pin review and immutable archive availability; strip operational status fields]]
 - `catalog/geodata.yaml:133` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
 - `catalog/geodata.yaml:152` — [[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]
-- `catalog/geodata.yaml:159` — [[VERIFY: exact publisher file size]]
-- `catalog/geodata.yaml:160` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/geodata.yaml:231` — [[VERIFY: measure the complete local-planet extraction batch]]
 - `catalog/geodata.yaml:232` — [[VERIFY: human review of generated basemap pins after national extraction and final recipe freeze]]
 - `catalog/geodata.yaml:251` — [[VERIFY: human review of SHA-256; downloaded bytes match publisher MD5]]
 - `catalog/geodata.yaml:270` — [[VERIFY: human review of downloaded archive and computed SHA-256]]

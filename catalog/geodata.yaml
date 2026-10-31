@@ -156,8 +156,8 @@
     "family": "generated",
     "title": "Per-jurisdiction Protomaps basemaps for every national atlas viewport",
     "version": "2026-10-30 source planet",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "size_bytes": 10543561690,
+    "sha256": "1c3356889dcc37845889be58ea3cb6ca279a175a792b5ed9d1167d2428c3589e",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; Protomaps; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -228,7 +228,7 @@
       "census_places_wv",
       "census_places_wy"
     ],
-    "pipeline_version": "[[VERIFY: measure the complete local-planet extraction batch]]",
+    "pipeline_version": "pmtiles-extract-v1-7819f14aecb6a5ce9f299f8a737c7fbdc15be4f1cf0a91e8708e9bafb79320a2",
     "review": "[[VERIFY: human review of generated basemap pins after national extraction and final recipe freeze]]"
   },
   {
