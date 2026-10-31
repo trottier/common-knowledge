@@ -66,3 +66,8 @@ the capacity planner. No places or jurisdictions are removed to fit capacity.
 Pin the resulting `national_directory` only after collection. Repeat clean
 builds before publishing release hashes. Source and license pin review,
 accessibility review and physical phone checks remain separate release gates.
+
+The first actual smoke build completed Delaware (609 places; 345 phone pages,
+145 print pages) and Rhode Island (812 places; 454 phone pages, 195 print pages).
+Their total payloads are 1,054,007 and 1,401,384 bytes respectively. The full
+56-jurisdiction build is running; national size/hash pins remain unconfirmed.
