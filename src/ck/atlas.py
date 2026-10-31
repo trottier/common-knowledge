@@ -159,6 +159,11 @@ def directory_points(directory: Path) -> tuple[dict, list[Place]]:
     if binding is None or binding["sha256"] != digest(source):
         raise ValueError("Directory points are unbound or changed; regenerate the directory")
     data = json.loads(source.read_text())
+    if data.get("purpose") != "atlas-points":
+        raise ValueError(
+            "Prepare an atlas point seed with ck directory --seed; "
+            "final directories depend on the atlas"
+        )
     return manifest, [Place.model_validate(raw) for raw in data["places"]]
 
 
@@ -240,7 +245,7 @@ def prepare_atlas(
     basemap_id: str | None = None,
     generated: Path = Path("build/generated"),
     places_id: str | None = None,
-    directory_id: str = "national_directory",
+    directory_id: str = "directory_points",
 ) -> Path:
     settings = Settings.model_validate(read_yaml(root / "pipelines/atlas/settings.yaml"))
     directory_manifest, places = directory_points(directory)

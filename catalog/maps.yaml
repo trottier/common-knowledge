@@ -55,7 +55,7 @@
       "protomaps_us",
       "census_counties",
       "census_places",
-      "national_directory"
+      "directory_points"
     ],
     "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
   },
@@ -75,13 +75,20 @@
       "full"
     ],
     "inputs": [
-      "geofabrik_us",
-      "nces_schools",
-      "imls_libraries",
+      "census_county_analysis",
+      "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
       "fcc_stations",
-      "noaa_transmitters",
       "fema_risk",
-      "state_emergency_agencies"
+      "geofabrik_us",
+      "imls_libraries",
+      "nces_schools",
+      "noaa_transmitters",
+      "state_emergency_agencies",
+      "national_atlas"
     ],
     "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
   },
@@ -140,9 +147,9 @@
     "id": "directory_seed_ri",
     "family": "generated",
     "title": "Rhode Island directory seed for atlas development",
-    "version": "2026-10-30 development sample",
-    "size_bytes": 1723436,
-    "sha256": "6003c57439b24daeab4b078b743976b69db3d9d802ea46f53873a6bfde7b0c95",
+    "version": "0.1.0 / Rhode Island point seed / 2026-10-31",
+    "size_bytes": 326112,
+    "sha256": "b2043610dadc1bd1eeb7dcbb60262f278fea1f13624cd2010c8adcb3b84a438c",
     "license": "ODbL-1.0",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau, NCES, IMLS, NOAA and USAGov; original compilation Common Knowledge",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -154,15 +161,20 @@
     "inputs": [
       "census_county_analysis",
       "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
+      "fcc_stations",
+      "fema_risk",
       "geofabrik_ri",
       "imls_libraries",
       "nces_schools",
       "noaa_transmitters",
-      "noto_sans",
       "state_emergency_agencies"
     ],
-    "pipeline_version": "directory-v1-f84937a35cd65298231f37f99291be51f9b439664827cd871b1ba7d31075ffac",
-    "review": "[[VERIFY: incomplete development sample; FCC and FEMA sources and atlas references remain; review source pins before emergency distribution]]"
+    "pipeline_version": "directory-seed-v1-5afd0c1e1ce920a5632836ccbe6d392f56d45fc0ce5c91cb2d9abaaaed5f819e",
+    "review": "[[VERIFY: human review of source pins and national FCC geographic exceptions; incomplete point seed is build-only]]"
   },
   {
     "id": "protomaps_ri",
@@ -170,7 +182,7 @@
     "title": "Rhode Island bounded Protomaps atlas build input",
     "version": "Protomaps 4.15.2, 2026-10-30, maximum zoom 14",
     "size_bytes": 43538640,
-    "sha256": "095d9580e8046063158ae76fbe90bc28952fe9b4c3dbe0c36b9104a5b0f380ac",
+    "sha256": "883d7edd2c8de90aa130444452e7c80177983302a05a5a382440f3f4ffe7617e",
     "license": "ODbL-1.0",
     "attribution": "OpenStreetMap contributors; Protomaps",
     "license_proof_url": "https://docs.protomaps.com/basemaps/downloads",
@@ -183,19 +195,19 @@
       "census_county_analysis",
       "census_places_ri",
       "directory_seed_ri",
-      "pmtiles_arm64",
+      "pmtiles_x64",
       "protomaps_planet"
     ],
-    "pipeline_version": "pmtiles-extract-v1-420b25067919e68c28ef5b0342ad52604ba8a8c35e584e5a04756bf4a40f47ef",
-    "review": "[[VERIFY: development cutout only; whole publisher planet BLAKE3 and SHA-256, immutable archive and source pins need confirmation]]"
+    "pipeline_version": "pmtiles-extract-v1-3ab704a99a2d2b095bd227e9f295ec662bb09ad3405a8cc32d377089d1c84d22",
+    "review": "[[VERIFY: review the local whole-source verified extraction and preserve the pinned daily planet at an immutable URL]]"
   },
   {
     "id": "atlas_ri",
     "family": "generated",
     "title": "Rhode Island county road atlas development sample",
-    "version": "2026-10-30 development sample",
-    "size_bytes": 8686060,
-    "sha256": "d2524d6dd605b8ec758099e14b792070e8253f981c1d03762a9b07e1b5acdb94",
+    "version": "0.1.0 / Rhode Island / Linux x86-64 / 2026-10-31",
+    "size_bytes": 8720886,
+    "sha256": "22950893ed875d8ceefca48309890a212e5d683c7cb8cd83457caecb91843d7e",
     "license": "ODbL-1.0",
     "attribution": "OpenStreetMap contributors; Protomaps; U.S. Census Bureau; original cartography Common Knowledge",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -211,8 +223,8 @@
       "noto_sans",
       "protomaps_ri"
     ],
-    "pipeline_version": "atlas-v1-9f5bcc93eed8dccba44fa6186d41157c366ceef5920d1e0b6581d39692b4110f",
-    "review": "[[VERIFY: development atlas; directory source gaps, whole basemap verification, source pin review and physical phone checks remain]]"
+    "pipeline_version": "atlas-v1-a4d8f8f107aaf97f24828c0cbea426f131c823fca99fd02f1c497ec4efdefab0",
+    "review": "[[VERIFY: human source-pin review, geographic exception reconciliation and physical phone checks; matching Linux x86-64 atlas builds remain development-only]]"
   },
   {
     "id": "android_roads_places_ri",
@@ -259,5 +271,72 @@
     ],
     "pipeline_version": "android-howto-v1-5fdb70193d391dc1498a3c2714c9b368447880cc85b48a56eabfc8a21a0f65ed",
     "review": "[[VERIFY: resolve the installation and offline GPS checks in the instruction PDFs; pin and phone-test the APK]]"
+  },
+  {
+    "id": "directory_points",
+    "family": "generated",
+    "title": "National public-place points for atlas generation",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": "hub_only",
+    "dest": "build/inputs/directory/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "census_county_analysis",
+      "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
+      "fcc_stations",
+      "fema_risk",
+      "geofabrik_us",
+      "imls_libraries",
+      "nces_schools",
+      "noaa_transmitters",
+      "state_emergency_agencies"
+    ],
+    "pipeline_version": "[[VERIFY: pinned national directory-seed pipeline and measured point set]]"
+  },
+  {
+    "id": "directory_ri",
+    "family": "generated",
+    "title": "Rhode Island public places directory, phone and print",
+    "version": "0.1.0 / Rhode Island / 2026-10-31",
+    "sha256": "bbd0b371e42b015c8d71484a845aad28673d191e103544afa78a44a17565134f",
+    "size_bytes": 1809645,
+    "pipeline_version": "directory-v1-b5709c934c9f4e450f8cc950dc47b147fe909b17bafcb0b55ab0648dd14c5aef",
+    "inputs": [
+      "atlas_ri",
+      "census_county_analysis",
+      "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
+      "fcc_stations",
+      "fema_risk",
+      "geofabrik_ri",
+      "imls_libraries",
+      "nces_schools",
+      "noaa_transmitters",
+      "noto_sans",
+      "state_emergency_agencies"
+    ],
+    "license": "ODbL-1.0",
+    "license_proof_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/directory/",
+    "profiles": [
+      "sample"
+    ],
+    "review": "[[VERIFY: resolve geographic exceptions and human source-pin and physical phone review; directory remains development-only]]"
   }
 ]

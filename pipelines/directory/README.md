@@ -6,6 +6,14 @@ builds phone and print PDFs from checksum-verified cache inputs. Set a developme
 territory code and checks that its FIPS code agrees with the pinned reference.
 Use `--osm-id geofabrik_us` for the national extract once its pin is confirmed.
 
+Build the atlas point seed first with `ck directory --seed`. That build emits
+source data and a bound `places.json`, without directory PDFs or atlas page
+references. Its catalog placement is build-only. The atlas consumes this seed;
+the final directory consumes the atlas's `place-index.json` using both
+`--atlas-index PATH` and `--atlas-id CATALOG_ID`. The index must match the
+catalog-pinned atlas generation manifest and its epoch. This directed data flow
+avoids making the atlas depend on the final directory that it must paginate.
+
 Inputs currently implemented:
 
 - NCES EDGE public-school workbook (2024–25).

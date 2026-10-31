@@ -12,15 +12,16 @@ targets Node's ABI. This preserves the specified native runtime.
 The development sequence, inside the appropriate pinned containers, is:
 
 ```sh
-ck directory --help
+ck directory --seed --state RI --state-fips 44 --output build/directory/RI-seed
 ck atlas prepare --state RI --state-fips 44 \
-  --directory build/directory/RI-seed-v3 --directory-id directory_seed_ri \
+  --directory build/directory/RI-seed --directory-id directory_seed_ri \
   --places-id census_places_ri --output build/atlas/RI --epoch 1793401527
 python3 tools/extract_atlas.py --root . --jobs build/atlas/RI/jobs.json \
+  --source-file cache/6956cdf4b143984a31e060faaa32848c74a71903135b5a7f8989c218ece8795d \
   --output build/generated/protomaps_ri
 # Pin the measured generation manifest, payload size and input IDs in catalog/maps.yaml.
 ck atlas prepare --state RI --state-fips 44 \
-  --directory build/directory/RI-seed-v3 --directory-id directory_seed_ri \
+  --directory build/directory/RI-seed --directory-id directory_seed_ri \
   --places-id census_places_ri --basemap-id protomaps_ri \
   --output build/atlas/RI --epoch 1793401527
 bun run render /absolute/container/path/build/atlas/RI/jobs.json
@@ -34,11 +35,14 @@ disabled except during the explicit fetch and tile extraction stages. Extracted
 tiles, fonts, rasters and PDFs stay in ignored cache/build directories.
 
 The extraction script records its source, region, CLI archive pin and output
-checksum. An HTTP range extraction cannot verify the publisher's whole-planet
-BLAKE3 checksum. The current sample therefore stays incomplete until the whole
-source is independently verified and preserved at an immutable location. The
-directory is also incomplete while FCC/FEMA inputs and review remain outstanding.
-Incomplete artifacts cannot enter assembled images.
+checksum. `--source-file` verifies the complete pinned planet's size and SHA-256
+before extracting without networking. Pass several paths after `--jobs` to
+extract a batch of states, checking the 139 GB source only once; the output then
+contains a folder per state. An HTTP range extraction cannot certify the whole
+source and remains incomplete. The 2026-10-30 planet has been independently
+checked against the publisher's BLAKE3 checksum and its SHA-256 is now pinned.
+Immutable preservation, source-pin review, directory exceptions and nationwide
+coverage remain release gates. Incomplete artifacts cannot enter assembled images.
 
 Full TIGER/Line geometry determines county membership and city insets. Generalized
 cartographic boundaries are not used for spatial analysis. Dateline viewports

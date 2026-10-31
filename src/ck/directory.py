@@ -343,11 +343,17 @@ def build_directory(
     epoch: int,
     osm_id: str = "geofabrik_ri",
     atlas_index: Path | None = None,
+    atlas_id: str | None = None,
+    seed: bool = False,
 ) -> dict:
     if output.exists():
         raise ValueError("Directory output must be new")
     if len(state) != 2 or not state.isascii() or not state.isalpha():
         raise ValueError("State must be a two-letter code")
+    if bool(atlas_index) != bool(atlas_id) or (seed and atlas_index):
+        raise ValueError(
+            "Final atlas references need both an index and catalog ID; seeds have neither"
+        )
     ids = [
         "census_county_analysis",
         "census_states",
@@ -364,6 +370,30 @@ def build_directory(
         "fema_risk",
     ]
     paths = {identifier: cached_input(items[identifier], cache) for identifier in ids}
+    atlas_complete = False
+    if atlas_index:
+        from ck.fetch import digest
+        from ck.generated import verified_generated_files
+
+        atlas_manifest, _ = verified_generated_files(
+            items[atlas_id], atlas_index.parent, items, allow_incomplete=True
+        )
+        index_pin = next(
+            (
+                entry
+                for entry in atlas_manifest["intermediates"]
+                if entry["path"] == "place-index.json"
+            ),
+            None,
+        )
+        if (
+            not index_pin
+            or digest(atlas_index) != index_pin["sha256"]
+            or atlas_manifest["source_date_epoch"] != epoch
+        ):
+            raise ValueError("Atlas index differs from its pinned source or epoch")
+        atlas_complete = atlas_manifest["complete"]
+        ids.append(atlas_id)
     with paths["census_states"].open() as stream:
         states = {row["STUSAB"]: row["STATE"] for row in csv.DictReader(stream, delimiter="|")}
     if states.get(state.upper()) != state_fips:
@@ -415,10 +445,12 @@ def build_directory(
             present.add("state_emergency_agencies")
         missing = sorted(REQUIRED_SOURCES - present)
         missing_references = sorted(place.id for place in places if place.id not in references)
-        complete = not (missing or rejected or missing_profiles or missing_references)
+        source_complete = not (missing or rejected or missing_profiles)
+        complete = source_complete and (seed or (atlas_complete and not missing_references))
         metadata = {
             "state": state.upper(),
             "state_fips": state_fips,
+            "purpose": "atlas-points" if seed else "directory",
             "missing_sources": missing,
             "places": [p.model_dump() for p in places],
             "counts": dict(sorted(Counter(p.category for p in places).items())),
@@ -543,7 +575,7 @@ def build_directory(
         ]
         source = stage / "directory.md"
         source.write_text("\n".join(body), encoding="utf-8")
-        for page_format in ("phone", "print"):
+        for page_format in () if seed else ("phone", "print"):
             render_pdf(
                 root,
                 config,
@@ -580,8 +612,11 @@ def build_directory(
             recipe.update(relative.encode() + b"\0" + (root / relative).read_bytes())
         measurements = generation_manifest(
             stage,
-            "directory-v1-" + recipe.hexdigest(),
-            {**{i: items[i].sha256 for i in ids}, "noto_sans": items["noto_sans"].sha256},
+            ("directory-seed-v1-" if seed else "directory-v1-") + recipe.hexdigest(),
+            {
+                **{i: items[i].sha256 for i in ids},
+                **({} if seed else {"noto_sans": items["noto_sans"].sha256}),
+            },
             complete=complete,
             epoch=epoch,
             intermediates=["places.json", *(["atlas-index.json"] if atlas_index else [])],

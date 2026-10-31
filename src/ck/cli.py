@@ -49,6 +49,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     directory.add_argument("--cache", type=Path, default=Path("cache"))
     directory.add_argument("--output", type=Path, required=True)
     directory.add_argument("--atlas-index", type=Path)
+    directory.add_argument("--atlas-id")
+    directory.add_argument(
+        "--seed", action="store_true", help="Build atlas points before PDF page references exist"
+    )
     directory.add_argument("--epoch", type=int)
     android_map = commands.add_parser("android-map", help="Build a roads-and-places OsmAnd map")
     android_map.add_argument("--state", required=True)
@@ -96,7 +100,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     atlas_prepare.add_argument("--state", required=True)
     atlas_prepare.add_argument("--state-fips", required=True)
     atlas_prepare.add_argument("--directory", type=Path, required=True)
-    atlas_prepare.add_argument("--directory-id", default="national_directory")
+    atlas_prepare.add_argument("--directory-id", default="directory_points")
     atlas_prepare.add_argument("--output", type=Path, required=True)
     atlas_prepare.add_argument("--cache", type=Path, default=Path("cache"))
     atlas_prepare.add_argument("--generated", type=Path, default=Path("build/generated"))
@@ -439,6 +443,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                         epoch_for(config, args.epoch),
                         args.osm_id,
                         args.atlas_index,
+                        args.atlas_id,
+                        args.seed,
                     ),
                     indent=2,
                 )

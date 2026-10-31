@@ -23,6 +23,22 @@ ROOT = Path(__file__).resolve().parents[1]
 SETTINGS = dict(width=1500, height=1800, columns=6, rows=8, padding=0.08, maxzoom=14)
 
 
+def test_atlas_uses_bound_point_seeds_without_a_final_directory_cycle(tmp_path):
+    from ck.atlas import directory_points
+    from ck.fetch import digest
+
+    source = tmp_path / "places.json"
+    source.write_text(json.dumps({"purpose": "atlas-points", "places": []}))
+    manifest = {"intermediates": [{"path": "places.json", "sha256": digest(source)}]}
+    (tmp_path / "generation.json").write_text(json.dumps(manifest))
+    assert directory_points(tmp_path)[1] == []
+    source.write_text(json.dumps({"purpose": "directory", "places": []}))
+    manifest["intermediates"][0]["sha256"] = digest(source)
+    (tmp_path / "generation.json").write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="point seed"):
+        directory_points(tmp_path)
+
+
 def test_dense_and_coincident_labels_keep_locations_and_do_not_overlap():
     page = {
         "width": 1500,

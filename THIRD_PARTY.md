@@ -73,13 +73,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Rhode Island county road atlas development sample
 
 - Catalog id: `atlas_ri`
-- Version: 2026-10-30 development sample
+- Version: 0.1.0 / Rhode Island / Linux x86-64 / 2026-10-31
 - License: ODbL-1.0
 - Attribution: OpenStreetMap contributors; Protomaps; U.S. Census Bureau; original cartography Common Knowledge
 - License proof: https://www.openstreetmap.org/copyright
-- Size: 8686060 bytes
-- SHA-256: `d2524d6dd605b8ec758099e14b792070e8253f981c1d03762a9b07e1b5acdb94`
-- Pipeline: atlas-v1-9f5bcc93eed8dccba44fa6186d41157c366ceef5920d1e0b6581d39692b4110f; inputs: census_county_analysis, census_places_ri, directory_seed_ri, noto_sans, protomaps_ri
+- Size: 8720886 bytes
+- SHA-256: `22950893ed875d8ceefca48309890a212e5d683c7cb8cd83457caecb91843d7e`
+- Pipeline: atlas-v1-a4d8f8f107aaf97f24828c0cbea426f131c823fca99fd02f1c497ec4efdefab0; inputs: census_county_analysis, census_places_ri, directory_seed_ri, noto_sans, protomaps_ri
 
 ## Qwen3.5-2B-Base, Q4_K_M
 
@@ -213,16 +213,38 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## National public-place points for atlas generation
+
+- Catalog id: `directory_points`
+- Version: [[VERIFY: publisher version]]
+- License: [[VERIFY: redistribution license]]
+- Attribution: [[VERIFY: publisher attribution]]
+- License proof: [[VERIFY: per-item publisher license proof]]
+- Size: [[VERIFY: exact publisher file size]] bytes
+- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
+- Pipeline: [[VERIFY: pinned national directory-seed pipeline and measured point set]]; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
+
+## Rhode Island public places directory, phone and print
+
+- Catalog id: `directory_ri`
+- Version: 0.1.0 / Rhode Island / 2026-10-31
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau
+- License proof: https://opendatacommons.org/licenses/odbl/1-0/
+- Size: 1809645 bytes
+- SHA-256: `bbd0b371e42b015c8d71484a845aad28673d191e103544afa78a44a17565134f`
+- Pipeline: directory-v1-b5709c934c9f4e450f8cc950dc47b147fe909b17bafcb0b55ab0648dd14c5aef; inputs: atlas_ri, census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_ri, imls_libraries, nces_schools, noaa_transmitters, noto_sans, state_emergency_agencies
+
 ## Rhode Island directory seed for atlas development
 
 - Catalog id: `directory_seed_ri`
-- Version: 2026-10-30 development sample
+- Version: 0.1.0 / Rhode Island point seed / 2026-10-31
 - License: ODbL-1.0
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau, NCES, IMLS, NOAA and USAGov; original compilation Common Knowledge
 - License proof: https://www.openstreetmap.org/copyright
-- Size: 1723436 bytes
-- SHA-256: `6003c57439b24daeab4b078b743976b69db3d9d802ea46f53873a6bfde7b0c95`
-- Pipeline: directory-v1-f84937a35cd65298231f37f99291be51f9b439664827cd871b1ba7d31075ffac; inputs: census_county_analysis, census_states, geofabrik_ri, imls_libraries, nces_schools, noaa_transmitters, noto_sans, state_emergency_agencies
+- Size: 326112 bytes
+- SHA-256: `b2043610dadc1bd1eeb7dcbb60262f278fea1f13624cd2010c8adcb3b84a438c`
+- Pipeline: directory-seed-v1-5afd0c1e1ce920a5632836ccbe6d392f56d45fc0ce5c91cb2d9abaaaed5f819e; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_ri, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
 
 ## Open education collections; select individual files
 
@@ -246,16 +268,60 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## FCC broadcast licensing data
+## FCC LMS lkp_facility_status table
+
+- Catalog id: `fcc_facility_statuses`
+- Version: LMS 2026-10-31
+- License: US-PD
+- Attribution: Federal Communications Commission, Licensing and Management System
+- License proof: https://catalog.data.gov/dataset/lms-public-database-files
+- Size: 622 bytes
+- SHA-256: `630651fea8a0fa0ea9e7a1582452076f8401b0dbca7ce8b0e0b0c1b1875915af`
+- Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/lkp_facility_status.zip
+
+## FCC LMS license_filing_version table
+
+- Catalog id: `fcc_license_versions`
+- Version: LMS 2026-10-31
+- License: US-PD
+- Attribution: Federal Communications Commission, Licensing and Management System
+- License proof: https://catalog.data.gov/dataset/lms-public-database-files
+- Size: 63146475 bytes
+- SHA-256: `5a650c26f48ab250b64800ebc1f5772915959f3cccbf544fad6c794e935f48c3`
+- Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/license_filing_version.zip
+
+## FCC LMS app_location table
+
+- Catalog id: `fcc_locations`
+- Version: LMS 2026-10-31
+- License: US-PD
+- Attribution: Federal Communications Commission, Licensing and Management System
+- License proof: https://catalog.data.gov/dataset/lms-public-database-files
+- Size: 30172822 bytes
+- SHA-256: `5f3e77ad951caca6b38b939b65b4d5248dff28de2613b2d2826c65158d4d3637`
+- Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/app_location.zip
+
+## FCC LMS lkp_service_code table
+
+- Catalog id: `fcc_service_codes`
+- Version: LMS 2026-10-31
+- License: US-PD
+- Attribution: Federal Communications Commission, Licensing and Management System
+- License proof: https://catalog.data.gov/dataset/lms-public-database-files
+- Size: 983 bytes
+- SHA-256: `347688dc1b76559622ccad04c97686733b697c0ae3f2fe18befca03ed65d8df0`
+- Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/lkp_service_code.zip
+
+## FCC LMS facility table
 
 - Catalog id: `fcc_stations`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: LMS 2026-10-31
+- License: US-PD
+- Attribution: Federal Communications Commission, Licensing and Management System
+- License proof: https://catalog.data.gov/dataset/lms-public-database-files
+- Size: 9869171 bytes
+- SHA-256: `5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378`
+- Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/facility.zip
 
 ## FEMA preparedness guides; select individual files
 
@@ -268,16 +334,16 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## FEMA National Risk Index county table
+## FEMA National Risk Index v1.20 county table and hazard dictionary
 
 - Catalog id: `fema_risk`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 1.20 / December 2025
+- License: US-PD
+- Attribution: FEMA National Risk Index; county ratings and hazard dictionary
+- License proof: https://catalog.data.gov/dataset/national-risk-index-nri-data
+- Size: 24966535 bytes
+- SHA-256: `b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072`
+- Publisher file: https://www.fema.gov/about/reports-and-data/openfema/nri/v120/NRI_Table_Counties.zip
 
 ## Geofabrik Rhode Island OSM extract
 
@@ -563,7 +629,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: [[VERIFY: per-item publisher license proof]]
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: protomaps_us, census_counties, census_places, national_directory
+- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: protomaps_us, census_counties, census_places, directory_points
 
 ## National public places directory
 
@@ -574,7 +640,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: [[VERIFY: per-item publisher license proof]]
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: geofabrik_us, nces_schools, imls_libraries, fcc_stations, noaa_transmitters, fema_risk, state_emergency_agencies
+- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies, national_atlas
 
 ## NCES EDGE public-school locations
 
@@ -1079,8 +1145,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: OpenStreetMap contributors; Protomaps
 - License proof: https://docs.protomaps.com/basemaps/downloads
 - Size: 43538640 bytes
-- SHA-256: `095d9580e8046063158ae76fbe90bc28952fe9b4c3dbe0c36b9104a5b0f380ac`
-- Pipeline: pmtiles-extract-v1-420b25067919e68c28ef5b0342ad52604ba8a8c35e584e5a04756bf4a40f47ef; inputs: census_county_analysis, census_places_ri, directory_seed_ri, pmtiles_arm64, protomaps_planet
+- SHA-256: `883d7edd2c8de90aa130444452e7c80177983302a05a5a382440f3f4ffe7617e`
+- Pipeline: pmtiles-extract-v1-3ab704a99a2d2b095bd227e9f295ec662bb09ad3405a8cc32d377089d1c84d22; inputs: census_county_analysis, census_places_ri, directory_seed_ri, pmtiles_x64, protomaps_planet
 
 ## Protomaps U.S. PMTiles basemap extract
 
