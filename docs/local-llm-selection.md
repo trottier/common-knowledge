@@ -62,5 +62,10 @@ Project code is [Apache-2.0](../LICENSE); original START text is [CC0](../LICENS
 These files do not close the outstanding dependency notice inventory.
 
 Run the browser behavior tests with `bun test pipelines/llm/ui/app.test.js`.
+Two independent full-profile bundle builds at epoch 1793401527 produced identical
+payload hashes and generation manifests: 44,039,478 bytes, manifest SHA-256
+`af99947cc4b7e49a9e9c014b3cb1fd5f680bff42fb0c1bd0baeedb238a4276eb`.
+This checks the bundle, not a complete drive image.
+
 Run `uv run pytest tests/test_llm.py` inside the pinned build container. New browser
 code uses Bun; the atlas retains its documented Node native-module ABI constraint.
