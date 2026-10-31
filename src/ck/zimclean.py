@@ -234,9 +234,12 @@ def build_offline_zim(root: Path, item: Item, cache: Path, output: Path, epoch: 
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-zim-offline-") as temporary:
         stage = Path(temporary)
         (stage / "files").mkdir()
+        filename = (
+            "WikiMed-offline.zim" if item.id == "wikimed_en_nopic" else f"{item.id}-offline.zim"
+        )
         report = regenerate(
             source,
-            stage / "files/WikiMed-offline.zim",
+            stage / "files" / filename,
             epoch,
             f"{item.sha256}:{pipeline}:{epoch}".encode(),
         )

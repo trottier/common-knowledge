@@ -851,170 +851,170 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## Wikivoyage phrasebook for ar
+## Wikivoyage phrasebook for ar: Arabic phrasebook
 
 - Catalog id: `phrasebook_ar`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 222863 bytes
+- SHA-256: `0a6772d290b743ba61727b74e6d533ac48555c3ec965247b8a22a65a8dd2a3ca`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for en
+## Wikivoyage phrasebook for en: Guía de inglés
 
 - Catalog id: `phrasebook_en`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_es_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 176257 bytes
+- SHA-256: `921f35475ded90d85ac54999a775e19f6b5fa03573e9608892fdcec6d504fbf1`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_es_nopic
 
-## Wikivoyage phrasebook for es
+## Wikivoyage phrasebook for es: Spanish phrasebook
 
 - Catalog id: `phrasebook_es`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 340120 bytes
+- SHA-256: `9c76cd8ce68b81b369b4335cdfb8bb76957487331f22c6ee952ea8813e809155`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for fa
+## Wikivoyage phrasebook for fa: Persian phrasebook
 
 - Catalog id: `phrasebook_fa`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 394201 bytes
+- SHA-256: `65f93372e067590da575dac2736b232b16430fe9832fe95bcacb2ec67b84134c`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for fr
+## Wikivoyage phrasebook for fr: French phrasebook
 
 - Catalog id: `phrasebook_fr`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 457460 bytes
+- SHA-256: `fe7f5e837c94db3fc2748662de0f7e8c79c098afa11f757dcbb6b60d3b5f00ae`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for hi
+## Wikivoyage phrasebook for hi: Hindi phrasebook
 
 - Catalog id: `phrasebook_hi`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 491157 bytes
+- SHA-256: `18460701046b83ad9db875c87a8395641408663327b3dea050981e32928b4f1e`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for ht
+## Wikivoyage phrasebook for ht: Haitian Creole phrasebook
 
 - Catalog id: `phrasebook_ht`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 62418 bytes
+- SHA-256: `02559b0c145c1a7106c6e0aa65d28fa5bfc4093e633e08d2c16c32e12a3ecf96`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for ko
+## Wikivoyage phrasebook for ko: Korean phrasebook
 
 - Catalog id: `phrasebook_ko`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 330113 bytes
+- SHA-256: `9738d41a6d543e4e127102c3125039962a44b7d58090279306264e62728b1d25`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for pl
+## Wikivoyage phrasebook for pl: Polish phrasebook
 
 - Catalog id: `phrasebook_pl`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 202312 bytes
+- SHA-256: `620ed987bfc1903792ced9306e3e5eef21b1eaf473f92a6649605cb22eedecfb`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for pt
+## Wikivoyage phrasebook for pt: Portuguese phrasebook
 
 - Catalog id: `phrasebook_pt`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 436108 bytes
+- SHA-256: `a4e31c3ba03f29bfa5a1f6a274b1a3e847d1e75ffe56b63aa2b4474a77bd6d3a`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for ru
+## Wikivoyage phrasebook for ru: Russian phrasebook
 
 - Catalog id: `phrasebook_ru`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 305831 bytes
+- SHA-256: `09c0f41352fbbdc331421fd3754856b3ffb67e2443f5dfd240389f09804b87d4`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for tl
+## Wikivoyage phrasebook for tl: Tagalog phrasebook
 
 - Catalog id: `phrasebook_tl`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 380631 bytes
+- SHA-256: `62cc80e5aff961faa4f94bd5c7e4ce57ff2bf906496a67385cef6478484e29c9`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for vi
+## Wikivoyage phrasebook for vi: Vietnamese phrasebook
 
 - Catalog id: `phrasebook_vi`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 205073 bytes
+- SHA-256: `0f3dcac1bfdcef6b0b80c4d3dc9632811acad4d860b66f7b4782d699cf872adf`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for zh-Hans
+## Wikivoyage phrasebook for zh-Hans: Chinese phrasebook
 
 - Catalog id: `phrasebook_zh_hans`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 594645 bytes
+- SHA-256: `97ef289fd248b1c03920f8fa38aa77e6504f13dc177b5cc21ae8bdcab261c3f3`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
-## Wikivoyage phrasebook for zh-Hant
+## Wikivoyage phrasebook for zh-Hant: Chinese phrasebook
 
 - Catalog id: `phrasebook_zh_hant`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+- Version: Wikivoyage 2026-09; phone conversion
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 595090 bytes
+- SHA-256: `72bbbc97cfc216b0ea6e0828bd44a9e582f9de0a176d5e4e18cc45d0a6ee8048`
+- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
 
 ## PMTiles build CLI for Linux arm64
 
