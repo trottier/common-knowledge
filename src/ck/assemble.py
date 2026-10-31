@@ -1,6 +1,5 @@
 """Build a complete, checked drive tree using exact catalog bytes."""
 
-import hashlib
 import importlib.metadata
 import json
 import os
@@ -123,29 +122,17 @@ def _copy_core(root: Path, config: Configuration, core: Path, tree: Path) -> lis
 
 def _place_generated(
     item: Item, generated: Path, tree: Path, dest: str, catalog: dict[str, Item]
-) -> None:
+) -> str:
+    from ck.generated import verified_generated_files
+
     directory = generated / item.id
-    metadata = json.loads((directory / "generation.json").read_text())
-    encoded = json.dumps(metadata, sort_keys=True, separators=(",", ":")).encode()
-    if hashlib.sha256(encoded).hexdigest() != item.sha256:
-        raise ValueError(f"Generated manifest checksum mismatch: {item.id}")
-    if metadata["pipeline_version"] != item.pipeline_version:
-        raise ValueError(f"Pipeline version mismatch: {item.id}")
-    if metadata.get("complete") is not True:
-        raise ValueError(f"Generated content is incomplete: {item.id}")
-    expected_inputs = {identifier: catalog[identifier].sha256 for identifier in item.inputs}
-    if metadata.get("inputs") != expected_inputs:
-        raise ValueError(f"Generated input pins changed: {item.id}; regenerate the output")
-    if sum(entry["size_bytes"] for entry in metadata["files"]) != item.size_bytes:
-        raise ValueError(f"Generated size mismatch: {item.id}")
+    metadata, payloads = verified_generated_files(item, directory, catalog)
     for entry in metadata["files"]:
         relative = str(safe_path(entry["path"]))
         target = dest + relative if dest.endswith("/") else dest
         safe_path(target)
-        source = directory / "files" / relative
-        if source.stat().st_size != entry["size_bytes"]:
-            raise ValueError(f"Generated file size mismatch: {relative}")
-        copy_exact(source, tree / target, entry["sha256"])
+        copy_exact(payloads[relative], tree / target, entry["sha256"])
+    return metadata.get("tool_versions", "")
 
 
 def assemble(
@@ -184,10 +171,13 @@ def assemble(
         placed = {
             key: item for key, item in items.items() if selected(item, config, number, profile)
         }
+        generated_tools = []
         for item in placed.values():
             dest = destination(item, config, number)
             if item.family == "generated":
-                _place_generated(item, generated, tree, dest, items)
+                tools = _place_generated(item, generated, tree, dest, items)
+                if tools:
+                    generated_tools += [f"Generated item: {item.id}", tools]
             else:
                 source = cache / item.sha256
                 if not source.exists() and not allow_download:
@@ -228,6 +218,9 @@ def assemble(
             "",
             "System tools:",
             tool_versions.read_text(),
+            "",
+            "Generated content tools:",
+            *generated_tools,
         ]
         (tree / "VERIFY.TXT").write_text("\n".join(provenance), encoding="utf-8")
         write_manifest(tree)

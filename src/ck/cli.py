@@ -48,6 +48,27 @@ def main(argv: Sequence[str] | None = None) -> int:
     directory.add_argument("--output", type=Path, required=True)
     directory.add_argument("--atlas-index", type=Path)
     directory.add_argument("--epoch", type=int)
+    atlas = commands.add_parser("atlas", help="Prepare and compose a checked county road atlas")
+    atlas_commands = atlas.add_subparsers(dest="atlas_action", required=True)
+    atlas_prepare = atlas_commands.add_parser(
+        "prepare", help="Prepare viewports and extraction region"
+    )
+    atlas_prepare.add_argument("--state", required=True)
+    atlas_prepare.add_argument("--state-fips", required=True)
+    atlas_prepare.add_argument("--directory", type=Path, required=True)
+    atlas_prepare.add_argument("--directory-id", default="national_directory")
+    atlas_prepare.add_argument("--output", type=Path, required=True)
+    atlas_prepare.add_argument("--cache", type=Path, default=Path("cache"))
+    atlas_prepare.add_argument("--generated", type=Path, default=Path("build/generated"))
+    atlas_prepare.add_argument("--basemap-id")
+    atlas_prepare.add_argument("--places-id")
+    atlas_prepare.add_argument("--epoch", type=int)
+    atlas_compose = atlas_commands.add_parser("compose", help="Compose verified rasters into a PDF")
+    atlas_compose.add_argument("--jobs", type=Path, required=True)
+    atlas_compose.add_argument("--output", type=Path, required=True)
+    atlas_measure = atlas_commands.add_parser("budget", help="Check the total atlas byte budget")
+    atlas_measure.add_argument("--outputs", type=Path, nargs="+", required=True)
+    atlas_measure.add_argument("--states", nargs="+", required=True)
     plan = commands.add_parser("plan", help="Account for every variant's capacity")
     plan.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
     plan.add_argument("--core", type=Path, default=Path("build/core"))
@@ -78,6 +99,44 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "atlas":
+            from ck.atlas import Settings, atlas_budget, compose_atlas, prepare_atlas
+            from ck.catalog import load_catalog
+            from ck.config import read_yaml
+            from ck.render import epoch_for
+
+            if args.atlas_action == "prepare":
+                print(
+                    prepare_atlas(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.directory,
+                        args.output,
+                        args.state.upper(),
+                        args.state_fips,
+                        epoch_for(config, args.epoch),
+                        basemap_id=args.basemap_id,
+                        generated=args.generated,
+                        places_id=args.places_id,
+                        directory_id=args.directory_id,
+                    )
+                )
+            elif args.atlas_action == "compose":
+                print(
+                    json.dumps(compose_atlas(args.root, config, args.jobs, args.output), indent=2)
+                )
+            else:
+                settings = Settings.model_validate(
+                    read_yaml(args.root / "pipelines/atlas/settings.yaml")
+                )
+                print(
+                    json.dumps(
+                        atlas_budget(args.outputs, args.states, settings.max_total_bytes), indent=2
+                    )
+                )
+            return 0
         if args.command == "directory":
             from ck.catalog import load_catalog
             from ck.directory import build_directory

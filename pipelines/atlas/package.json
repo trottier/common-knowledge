@@ -1,0 +1,16 @@
+{
+  "name": "common-knowledge-atlas",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.11",
+  "scripts": {
+    "render": "xvfb-run -a --server-args='-screen 0 1920x2400x24 -nolisten tcp' node render.mjs",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@maplibre/maplibre-gl-native": "6.4.1",
+    "fontnik": "0.7.7",
+    "pmtiles": "4.5.0",
+    "sharp": "0.35.5"
+  }
+}

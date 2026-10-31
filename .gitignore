@@ -10,6 +10,7 @@ htmlcov/
 .DS_Store
 .env
 .env.*
+**/node_modules/
 
 # Fetched cargo and generated output never belong in git.
 /cache/

@@ -1,0 +1,8 @@
+width: 1500
+height: 1800
+columns: 6
+rows: 8
+padding: 0.08
+maxzoom: 14
+inset_min_points: 64
+max_total_bytes: 3500000000

@@ -58,9 +58,20 @@ def plan_variants(
         raise ValueError(f"Measured production capacity is unconfirmed: {capacity}")
     usable = math.floor(capacity * (1 - spec.reserve_fraction))
     plans = []
+
+    def include(item, dependencies):
+        if item.id in dependencies:
+            return
+        dependencies[item.id] = item
+        for identifier in item.inputs:
+            include(items[identifier], dependencies)
+
     for number in sorted(config.variants.variants):
         chosen = [item for item in items.values() if selected(item, config, number, profile)]
-        problems = [issue for item in chosen for issue in item.blockers()]
+        dependencies = {}
+        for item in chosen:
+            include(item, dependencies)
+        problems = [issue for item in dependencies.values() for issue in item.blockers()]
         known = [item for item in chosen if isinstance(item.size_bytes, int)]
         total = core_bytes + sum(item.size_bytes for item in known)
         if profile == "full":

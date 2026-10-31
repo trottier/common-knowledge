@@ -56,12 +56,42 @@ build's asset/font inputs. PDFs are tagged; formal PDF/UA conformance is not
 claimed without validation. Arabic shaping, bookmarks, links, sizes, metadata
 and repeated PDF hashes are covered by container tests.
 
-## What remains
+## Development images and atlas
 
-Pinned tools establish the environment; this step does not establish byte-for-byte
-drive image reproducibility. Image generation, fixed artifact timestamps, PDF
-normalization, manifests and two clean sample builds arrive later in the work
-order. No reproducibility exception or passing image-hash test is claimed here.
+The development assembler now normalizes FAT timestamps, copies in sorted order,
+checks the manifest against files read back from the image, and hashes the raw
+and compressed images. A regression test compares two small development images,
+including Unicode filenames. Two full clean sample-profile builds are still
+required; a passing development fixture does not establish that result.
+
+The atlas uses a separate Ubuntu 24.04 stage with the snapshot in
+`config/ubuntu.sources`. Node 22.23.4 and Bun 1.3.11 are copied from digest-pinned
+publisher images. `catalog/buildtools.yaml` records GitHub's published SHA-256
+digests for the MapLibre Native addon and PMTiles CLI. Bun's lockfile records the
+JavaScript dependency artifacts. Install hooks are disabled; the bootstrap checks
+the native release before installing it. Node is required for the addon's ABI;
+Bun handles dependency installation, scripts and new JavaScript tests.
+
+The native renderer denies network resources. Mesa software rendering and its
+thread count are fixed in the container. Initial Rhode Island renders differed
+by small text-edge values between processes. Priming the pinned font's glyphs
+before tile layout removed the observed differences. The native fixture checks
+both repeated frames and fresh processes. Stable image resource names also keep
+temporary build directories out of PDF object names and identifiers.
+
+Two separate Rhode Island preparation, native-render and composition runs on
+Linux arm64 produced byte-identical PDFs and generation manifests, using epoch
+`1793401527`, five county maps and one city inset. The measured PDF was 8,686,060
+bytes, with SHA-256:
+
+```text
+3aca88ad59790abf371281ccf13997c37b0d6c2bb5290428f199cbbe7cc72ba0
+```
+
+This is development evidence for that pinned sample. National coverage, full
+basemap verification, Linux x86-64 full-image reproducibility and phone usability
+remain unconfirmed. Generated samples retain `complete: false` and cannot enter
+assembled images. Changes to inputs or the pipeline require new measured pins.
 
 The release epoch, production capacity and verification URL remain unset until
 the configuration and release steps. Never substitute the current time for an

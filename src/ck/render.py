@@ -6,6 +6,7 @@ import json
 import os
 import re
 import threading
+from contextlib import contextmanager
 from datetime import UTC, datetime
 from pathlib import Path
 from urllib.parse import unquote, urlparse
@@ -21,6 +22,21 @@ from weasyprint.urls import FatalURLFetchingError, URLFetcher, URLFetcherRespons
 from ck.config import Configuration, Language, Model, read_yaml
 
 _FONT_TIMESTAMP_LOCK = threading.RLock()
+
+
+@contextmanager
+def pdf_timestamp(timestamp: int):
+    """Keep fontTools' variable-font timestamps deterministic across renderers."""
+    with _FONT_TIMESTAMP_LOCK:
+        previous_epoch = os.environ.get("SOURCE_DATE_EPOCH")
+        os.environ["SOURCE_DATE_EPOCH"] = str(timestamp)
+        try:
+            yield
+        finally:
+            if previous_epoch is None:
+                os.environ.pop("SOURCE_DATE_EPOCH", None)
+            else:
+                os.environ["SOURCE_DATE_EPOCH"] = previous_epoch
 
 
 class Header(Model):
@@ -210,18 +226,10 @@ def render_pdf(
     identifier = hashlib.sha256(document.encode()).hexdigest().encode("ascii")
     # fontTools consults this environment variable when instantiating variable
     # fonts. Serialize this short environment override across renderer threads.
-    with _FONT_TIMESTAMP_LOCK:
-        previous_epoch = os.environ.get("SOURCE_DATE_EPOCH")
-        os.environ["SOURCE_DATE_EPOCH"] = str(timestamp)
-        try:
-            HTML(string=document, url_fetcher=fetcher).write_pdf(
-                output,
-                pdf_identifier=identifier,
-                pdf_tags=True,
-            )
-        finally:
-            if previous_epoch is None:
-                os.environ.pop("SOURCE_DATE_EPOCH", None)
-            else:
-                os.environ["SOURCE_DATE_EPOCH"] = previous_epoch
+    with pdf_timestamp(timestamp):
+        HTML(string=document, url_fetcher=fetcher).write_pdf(
+            output,
+            pdf_identifier=identifier,
+            pdf_tags=True,
+        )
     return output

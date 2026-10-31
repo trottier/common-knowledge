@@ -1,14 +1,16 @@
 BUILD_IMAGE := common-knowledge-build:dev
 BUILD_PLATFORM := linux/amd64
+ATLAS_IMAGE := common-knowledge-atlas:dev
 DOCKER_RUN = docker run --rm --network=none --platform $(BUILD_PLATFORM) $(BUILD_IMAGE)
 SOURCE_DATE_EPOCH ?= $(shell git show -s --format=%ct HEAD)
 
-.PHONY: help build-container check lint test cli package dev clean
+.PHONY: help build-container atlas-container atlas-check check lint test cli package dev clean
 
 help:
 	@printf '%s\n' \
 	  'build-container  Build the pinned Python/uv environment (network required)' \
 	  'check            Run lint, format checks and tests in the container' \
+	  'atlas-check      Build and test the pinned native map renderer offline' \
 	  'lint             Run Ruff and check formatting in the container' \
 	  'test             Run pytest in the container' \
 	  'cli              Show ck help in the container' \
@@ -18,6 +20,12 @@ help:
 
 build-container:
 	docker build --platform $(BUILD_PLATFORM) -f Dockerfile.build -t $(BUILD_IMAGE) .
+
+atlas-container:
+	docker build --platform $(BUILD_PLATFORM) --target atlas -f Dockerfile.build -t $(ATLAS_IMAGE) .
+
+atlas-check: atlas-container
+	docker run --rm --network=none --platform $(BUILD_PLATFORM) $(ATLAS_IMAGE) test
 
 check: build-container
 	$(DOCKER_RUN) ruff check .

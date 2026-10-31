@@ -48,6 +48,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## Rhode Island county road atlas development sample
+
+- Catalog id: `atlas_ri`
+- Version: 2026-10-30 development sample
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; Protomaps; U.S. Census Bureau; original cartography Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 8686060 bytes
+- SHA-256: `d2524d6dd605b8ec758099e14b792070e8253f981c1d03762a9b07e1b5acdb94`
+- Pipeline: atlas-v1-9f5bcc93eed8dccba44fa6186d41157c366ceef5920d1e0b6581d39692b4110f; inputs: census_county_analysis, census_places_ri, directory_seed_ri, noto_sans, protomaps_ri
+
 ## Gemma 4 E2B; first local LLM candidate, exact GGUF unconfirmed
 
 - Catalog id: `base_model`
@@ -125,6 +136,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## Census 2025 Rhode Island places for atlas insets
+
+- Catalog id: `census_places_ri`
+- Version: 2025
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2025 TIGER/Line places
+- License proof: [[VERIFY: confirm publisher place-file license proof]]
+- Size: 292174 bytes
+- SHA-256: `520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429`
+- Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_44_place.zip
+
 ## Census state FIPS codes and names
 
 - Catalog id: `census_states`
@@ -146,6 +168,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Rhode Island directory seed for atlas development
+
+- Catalog id: `directory_seed_ri`
+- Version: 2026-10-30 development sample
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau, NCES, IMLS, NOAA and USAGov; original compilation Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1723436 bytes
+- SHA-256: `6003c57439b24daeab4b078b743976b69db3d9d802ea46f53873a6bfde7b0c95`
+- Pipeline: directory-v1-f84937a35cd65298231f37f99291be51f9b439664827cd871b1ba7d31075ffac; inputs: census_county_analysis, census_states, geofabrik_ri, imls_libraries, nces_schools, noaa_transmitters, noto_sans, state_emergency_agencies
 
 ## Open education collections; select individual files
 
@@ -355,6 +388,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## MapLibre Native build addon for Linux arm64
+
+- Catalog id: `maplibre_native_arm64`
+- Version: 6.4.1, Node ABI 127
+- License: BSD-2-Clause
+- Attribution: MapLibre contributors; MapLibre Native build tool, not shipped
+- License proof: https://registry.npmjs.org/@maplibre%2fmaplibre-gl-native/6.4.1
+- Size: 5077677 bytes
+- SHA-256: `82fdf555198711908fb3362316148f38b13f1df054fb381d4ee864c1a9762767`
+- Publisher file: https://github.com/maplibre/maplibre-native/releases/download/node-v6.4.1/node-v127-linux-arm64-Release.tar.gz
+
+## MapLibre Native build addon for Linux x64
+
+- Catalog id: `maplibre_native_x64`
+- Version: 6.4.1, Node ABI 127
+- License: BSD-2-Clause
+- Attribution: MapLibre contributors; MapLibre Native build tool, not shipped
+- License proof: https://registry.npmjs.org/@maplibre%2fmaplibre-gl-native/6.4.1
+- Size: 5079297 bytes
+- SHA-256: `d04c0ddf89387a20a9cff93b57443ce756d34529dd83dc434bde1031b128ee59`
+- Publisher file: https://github.com/maplibre/maplibre-native/releases/download/node-v6.4.1/node-v127-linux-x64-Release.tar.gz
 
 ## Medical archives in other edition languages; select individual files
 
@@ -696,6 +751,50 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Pipeline: [[VERIFY: verify article identifier and pinned phrasebook renderer]]; inputs: wikivoyage_en_nopic
+
+## PMTiles build CLI for Linux arm64
+
+- Catalog id: `pmtiles_arm64`
+- Version: v1.31.2
+- License: BSD-3-Clause
+- Attribution: Protomaps contributors; build tool, not shipped
+- License proof: https://github.com/protomaps/go-pmtiles/blob/v1.31.2/LICENSE
+- Size: 15779781 bytes
+- SHA-256: `f8bd47e7ea866863489cad588fbaf2f31f42e5821f7a03f009b3769f05801cb1`
+- Publisher file: https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_arm64.tar.gz
+
+## PMTiles build CLI for Linux x64
+
+- Catalog id: `pmtiles_x64`
+- Version: v1.31.2
+- License: BSD-3-Clause
+- Attribution: Protomaps contributors; build tool, not shipped
+- License proof: https://github.com/protomaps/go-pmtiles/blob/v1.31.2/LICENSE
+- Size: 17444324 bytes
+- SHA-256: `3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f`
+- Publisher file: https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz
+
+## Protomaps v4 daily planet source for verified extracts
+
+- Catalog id: `protomaps_planet`
+- Version: 4.15.2 / 20261030.pmtiles
+- License: ODbL-1.0
+- Attribution: © OpenStreetMap contributors; Protomaps basemap produced work
+- License proof: https://docs.protomaps.com/basemaps/downloads
+- Size: 139202898553 bytes
+- SHA-256: `[[VERIFY: compute SHA-256 after checking publisher BLAKE3 of full source]]`
+- Publisher file: https://build.protomaps.com/20261030.pmtiles
+
+## Rhode Island bounded Protomaps atlas build input
+
+- Catalog id: `protomaps_ri`
+- Version: Protomaps 4.15.2, 2026-10-30, maximum zoom 14
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; Protomaps
+- License proof: https://docs.protomaps.com/basemaps/downloads
+- Size: 43538640 bytes
+- SHA-256: `095d9580e8046063158ae76fbe90bc28952fe9b4c3dbe0c36b9104a5b0f380ac`
+- Pipeline: pmtiles-extract-v1-420b25067919e68c28ef5b0342ad52604ba8a8c35e584e5a04756bf4a40f47ef; inputs: census_county_analysis, census_places_ri, directory_seed_ri, pmtiles_arm64, protomaps_planet
 
 ## Protomaps U.S. PMTiles basemap extract
 

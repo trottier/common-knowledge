@@ -108,6 +108,8 @@ class Item(Model):
             "OFL-1.1",
             "MIT",
             "Apache-2.0",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
             "GPL-3.0-only",
             "GPL-3.0-or-later",
             "GPL-2.0-only",

@@ -37,6 +37,46 @@ def test_planner_fails_on_overflow_and_unconfirmed_capacity():
         plan_variants(config, {}, "full", 1024)
 
 
+def test_planner_checks_source_pins_without_shipping_build_inputs():
+    from ck.catalog import Item
+
+    common = dict(
+        version="fixture",
+        license="US-PD",
+        attribution="Synthetic test input",
+        license_proof_url="https://example.org/license",
+        profiles=["sample"],
+    )
+    source = Item(
+        id="source",
+        family="geodata",
+        title="Unconfirmed source",
+        url="https://example.org/source",
+        size_bytes=5000,
+        sha256="[[VERIFY: synthetic unconfirmed checksum]]",
+        placement="hub_only",
+        dest="build/input/",
+        **common,
+    )
+    output = Item(
+        id="output",
+        family="generated",
+        title="Derived output",
+        size_bytes=100,
+        sha256="0" * 64,
+        placement="universal",
+        dest="3_MAPS_AND_PLACES/atlas/",
+        inputs=["source"],
+        pipeline_version="fixture",
+        **common,
+    )
+    plans = plan_variants(load_config(ROOT), {"source": source, "output": output}, "sample", 10)
+    assert all(plan.known_total_bytes == 110 and plan.items == ["output"] for plan in plans)
+    assert all(
+        not plan.fits and any("source.sha256" in issue for issue in plan.blockers) for plan in plans
+    )
+
+
 def test_manifest_detects_tampering_and_extra_files(tmp_path):
     (tmp_path / "README.TXT").write_text("Fixture")
     write_manifest(tmp_path)

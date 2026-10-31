@@ -387,6 +387,18 @@ def build_directory(
         (stage / "places.json").write_text(
             json.dumps(metadata, ensure_ascii=False, indent=2) + "\n"
         )
+        public_data = {
+            "attribution": (
+                "© OpenStreetMap contributors; NCES; IMLS; NWS; USAGov; U.S. Census Bureau"
+            ),
+            "license_notice": "OpenStreetMap data: ODbL-1.0. Federal source data: public domain.",
+            "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+            "source_versions": {identifier: items[identifier].version for identifier in ids},
+            "places": [place.model_dump(exclude={"tags"}) for place in places],
+        }
+        (files / f"{state.upper()}_SOURCE_DATA.json").write_text(
+            json.dumps(public_data, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
+        )
         body = [
             "---",
             f"title: {state.upper()} public places",
@@ -450,6 +462,16 @@ def build_directory(
                 agencies[state.upper()],
                 "",
             ]
+        body += [
+            "## Data and license",
+            "",
+            "OpenStreetMap data: © OpenStreetMap contributors, under the Open Database License.",
+            "",
+            "https://opendatacommons.org/licenses/odbl/1-0/",
+            "",
+            f"The companion {state.upper()}_SOURCE_DATA.json provides the public data used here.",
+            "",
+        ]
         source = stage / "directory.md"
         source.write_text("\n".join(body), encoding="utf-8")
         for page_format in ("phone", "print"):
@@ -463,11 +485,20 @@ def build_directory(
                 epoch,
                 template="directory.html.j2",
             )
+            audit = stage / "audit"
+            audit.mkdir(exist_ok=True)
+            (files / f"{state.upper()}_{page_format}.html").rename(
+                audit / f"{state.upper()}_{page_format}.html"
+            )
         recipe = hashlib.sha256()
         for relative in (
             "src/ck/directory.py",
             "src/ck/generated.py",
             "src/ck/render.py",
+            "src/ck/locales.py",
+            "config/defaults.yaml",
+            "config/languages.yaml",
+            "content/en/edition.yaml",
             "templates/document.html.j2",
             "templates/document.css",
             "templates/directory.html.j2",
@@ -479,9 +510,10 @@ def build_directory(
         measurements = generation_manifest(
             stage,
             "directory-v1-" + recipe.hexdigest(),
-            {i: items[i].sha256 for i in ids},
+            {**{i: items[i].sha256 for i in ids}, "noto_sans": items["noto_sans"].sha256},
             complete=False,
             epoch=epoch,
+            intermediates=["places.json"],
         )
         stage.rename(output)
     return {**measurements, "counts": metadata["counts"], "missing_sources": missing}
