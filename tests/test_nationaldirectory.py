@@ -116,6 +116,7 @@ def test_directory_groups_entries_and_keeps_empty_counties(context):
 
 def test_directory_layout_markers_cannot_be_injected_by_imported_names(context, tmp_path):
     from bs4 import BeautifulSoup
+
     from ck.render import render_html
 
     place = context.data.places[0].model_copy(
