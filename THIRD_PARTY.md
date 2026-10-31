@@ -2955,13 +2955,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## National public places directory
 
 - Catalog id: `national_directory`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
+- Version: 2026-10-31; source epoch 1793404800
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies, national_atlas
+- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: directory_points, national_atlas, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc
 
 ## NCES EDGE public-school locations
 

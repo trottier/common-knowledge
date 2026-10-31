@@ -1,0 +1,3 @@
+max_places_per_part: 250
+default_jobs: 2
+index_link_prefix: "https://ck-directory.invalid/county/"

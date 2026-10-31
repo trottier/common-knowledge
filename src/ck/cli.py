@@ -61,6 +61,19 @@ def main(argv: Sequence[str] | None = None) -> int:
         "--seed", action="store_true", help="Build atlas points before PDF page references exist"
     )
     directory.add_argument("--epoch", type=int)
+    for name in ("directory-all", "directory-collect"):
+        batch = commands.add_parser(name, help="Build or collect bounded national directory PDFs")
+        batch.add_argument("--points", type=Path, required=True)
+        batch.add_argument("--points-id", default="directory_points")
+        batch.add_argument("--atlas", type=Path, required=True)
+        batch.add_argument("--atlas-id", default="national_atlas")
+        batch.add_argument("--output", type=Path, required=True)
+        batch.add_argument("--epoch", type=int)
+        if name == "directory-all":
+            batch.add_argument("--states", nargs="+")
+            batch.add_argument("--jobs", type=int)
+        else:
+            batch.add_argument("--outputs", type=Path, nargs="+", required=True)
     national = commands.add_parser(
         "national-points", help="Prepare all national directory points once"
     )
@@ -250,6 +263,28 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command in {"directory-all", "directory-collect"}:
+            from ck.catalog import load_catalog
+            from ck.nationaldirectory import build_all, collect, prepare
+            from ck.render import epoch_for
+
+            context = prepare(
+                args.root,
+                config,
+                load_catalog(args.root, config),
+                args.points,
+                args.atlas,
+                epoch_for(config, args.epoch),
+                args.points_id,
+                args.atlas_id,
+            )
+            result = (
+                build_all(context, args.output, args.states, args.jobs)
+                if args.command == "directory-all"
+                else collect(context, args.outputs, args.output)
+            )
+            print(json.dumps(result, indent=2))
+            return 0
         if args.command == "laptop-viewer":
             from ck.catalog import load_catalog
             from ck.laptopviewer import build_viewer

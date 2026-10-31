@@ -355,6 +355,177 @@ def assign_counties(places, boundaries, state_fips: str | None):
     )
 
 
+def plain(value):
+    """Escape imported names before Markdown and Jinja processing."""
+    import html
+
+    text = html.escape(value).replace("\n", " ")
+    text = re.sub(r"([\\`*_\[\]#<>])", r"\\\1", text)
+    return text.replace("{", "&#123;").replace("}", "&#125;")
+
+
+def directory_text(
+    items,
+    state,
+    places,
+    profiles,
+    missing_profiles,
+    agencies,
+    references,
+    ids,
+    complete,
+    missing,
+    rejected,
+):
+    """One source of directory wording for single-state and bounded national builds."""
+    body = [
+        "---",
+        f"title: {state.upper()} public places",
+        "status: draft",
+        "reviewer: null",
+        "reviewed_on: null",
+        "---",
+        "",
+        "PUBLIC PLACES DIRECTORY" if complete else "DEVELOPMENT DIRECTORY — INCOMPLETE",
+        "",
+        *([f"Missing source families: {', '.join(missing)}.", ""] if missing else []),
+        "May help; not confirmed open. No entry is an event shelter or an assurance of service.",
+        "",
+        "Geographic assignments use Census TIGER/Line® statistical boundaries, "
+        "not legal land descriptions. TIGER/Line® is a registered trademark "
+        "of the U.S. Census Bureau.",
+        "",
+    ]
+    if rejected:
+        body += [
+            "Some source records lack usable geographic references and are omitted. "
+            "This directory is not exhaustive. "
+            "The companion source data lists those omissions.",
+            "",
+        ]
+    previous_county, previous_category = None, None
+    for place in places:
+        if place.county != previous_county:
+            body += [f"## {plain(place.county_name)}", ""]
+            previous_county, previous_category = place.county, None
+        if place.category != previous_category:
+            body += [f"### {plain(place.category.replace('_', ' '))}", ""]
+            previous_category = place.category
+        body += [
+            '<section class="place">',
+            "",
+            f"**{plain(place.name)}**",
+            "",
+            plain(place.address) or "Address not supplied.",
+            "",
+            f"{place.latitude:.6f}, {place.longitude:.6f}",
+            "",
+            f"Atlas: {references.get(place.id, '[[VERIFY: atlas page and grid]]')}",
+            "",
+            f"Source: {place.source_id}; as of {plain(place.as_of)}.",
+            "",
+        ]
+        for label, value in sorted(place.details.items()):
+            body += [f"{plain(label)}: {plain(value)}.", ""]
+        body += ["</section>", ""]
+    for identifier in ids:
+        body += [
+            f"Source {identifier}: {items[identifier].attribution}; {items[identifier].version}.",
+            "",
+        ]
+    body += [
+        "## County hazard profiles",
+        "",
+        "FEMA National Risk Index ratings describe historical relative risk. "
+        "They are not current emergency warnings or forecasts.",
+        "",
+    ]
+    for code, profile in sorted(profiles.items()):
+        body += [
+            f"### {plain(profile['county'])} · {code}",
+            "",
+            f"Overall risk rating: {plain(profile['risk_rating']) or 'Not supplied'}.",
+            "",
+        ]
+        for hazard, rating in sorted(profile["hazards"].items()):
+            body += [f"{plain(hazard)}: {plain(rating) or 'Not supplied'}.", ""]
+        body += [f"Source: fema_risk; as of {plain(items['fema_risk'].version)}.", ""]
+    if missing_profiles:
+        body += [
+            "This FEMA snapshot publishes no county profile for Census codes "
+            + ", ".join(missing_profiles)
+            + ". No rating is inferred.",
+            "",
+        ]
+    if state.upper() in agencies:
+        body += [
+            "## State emergency agency",
+            "",
+            "USAGov lists this agency website. It requires internet to visit:",
+            "",
+            agencies[state.upper()],
+            "",
+        ]
+    body += [
+        "## Data and license",
+        "",
+        "OpenStreetMap data: © OpenStreetMap contributors, under the Open Database License.",
+        "",
+        "https://opendatacommons.org/licenses/odbl/1-0/",
+        "",
+        f"The companion {state.upper()}_SOURCE_DATA.json provides the public data used here.",
+        "",
+    ]
+    return "\n".join(body)
+
+
+def public_source_data(prepared, places, profiles, missing_profiles, items, ids):
+    public_data = {
+        "attribution": (
+            "© OpenStreetMap contributors; NCES; IMLS; NWS; FCC; FEMA; USAGov; U.S. Census Bureau"
+        ),
+        "license_notice": "OpenStreetMap data: ODbL-1.0. Federal source data: public domain.",
+        "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "source_versions": {
+            **prepared.source_versions,
+            **{identifier: items[identifier].version for identifier in ids},
+        },
+        "places": [place.model_dump(exclude={"tags"}) for place in places],
+        "county_profiles": profiles,
+        "omitted_source_records": prepared.rejected,
+        "missing_county_profiles": missing_profiles,
+    }
+    return public_data
+
+
+def pipeline_version(root: Path, atlas_index: bytes | None = None, *, seed: bool = False) -> str:
+    recipe = hashlib.sha256()
+    recipe.update(b"atlas-index\0" + (atlas_index if atlas_index is not None else b"none"))
+    for relative in (
+        "src/ck/directory.py",
+        "src/ck/nationaldirectory.py",
+        "pipelines/directory/settings.yaml",
+        "src/ck/directory_sources.py",
+        "src/ck/national.py",
+        "src/ck/generated.py",
+        "src/ck/render.py",
+        "src/ck/locales.py",
+        "src/ck/geofonts.py",
+        "pipelines/geodata-fonts.yaml",
+        "config/defaults.yaml",
+        "config/languages.yaml",
+        "content/en/edition.yaml",
+        "templates/document.html.j2",
+        "templates/document.css",
+        "templates/directory.html.j2",
+        "pyproject.toml",
+        "uv.lock",
+        "Dockerfile.build",
+    ):
+        recipe.update(relative.encode() + b"\0" + (root / relative).read_bytes())
+    return ("directory-seed-v1-" if seed else "directory-v1-") + recipe.hexdigest()
+
+
 def build_directory(
     root: Path,
     config: Configuration,
@@ -471,129 +642,25 @@ def build_directory(
         (stage / "places.json").write_text(
             json.dumps(metadata, ensure_ascii=False, indent=2) + "\n"
         )
-        public_data = {
-            "attribution": (
-                "© OpenStreetMap contributors; NCES; IMLS; NWS; FCC; FEMA; USAGov; "
-                "U.S. Census Bureau"
-            ),
-            "license_notice": "OpenStreetMap data: ODbL-1.0. Federal source data: public domain.",
-            "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
-            "source_versions": {
-                **prepared.source_versions,
-                **{identifier: items[identifier].version for identifier in ids},
-            },
-            "places": [place.model_dump(exclude={"tags"}) for place in places],
-            "county_profiles": profiles,
-            "omitted_source_records": rejected,
-            "missing_county_profiles": missing_profiles,
-        }
+        public_data = public_source_data(prepared, places, profiles, missing_profiles, items, ids)
         (files / f"{state.upper()}_SOURCE_DATA.json").write_text(
             json.dumps(public_data, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
         )
-        body = [
-            "---",
-            f"title: {state.upper()} public places",
-            "status: draft",
-            "reviewer: null",
-            "reviewed_on: null",
-            "---",
-            "",
-            "PUBLIC PLACES DIRECTORY" if complete else "DEVELOPMENT DIRECTORY — INCOMPLETE",
-            "",
-            f"Missing source families: {', '.join(missing)}.",
-            "",
-            "May help; not confirmed open. "
-            "No entry is an event shelter or an assurance of service.",
-            "",
-            "Geographic assignments use Census TIGER/Line® statistical boundaries, "
-            "not legal land descriptions. TIGER/Line® is a registered trademark "
-            "of the U.S. Census Bureau.",
-            "",
-        ]
-        if rejected:
-            body += [
-                "Some source records lack usable geographic references and are omitted. "
-                "This directory is not exhaustive. "
-                "The companion source data lists those omissions.",
-                "",
-            ]
-        for place in places:
-            # Escape Markdown control characters in imported fields.
-            def plain(value):
-                import html
-                import re
-
-                text = html.escape(value).replace("\n", " ")
-                text = re.sub(r"([\\`*_\[\]#<>])", r"\\\1", text)
-                return text.replace("{", "&#123;").replace("}", "&#125;")
-
-            body += [
-                f"## {plain(place.county_name)} · {place.category}",
-                "",
-                f"**{plain(place.name)}**",
-                "",
-                plain(place.address) or "Address not supplied.",
-                "",
-                f"{place.latitude:.6f}, {place.longitude:.6f}",
-                "",
-                f"Atlas: {references.get(place.id, '[[VERIFY: atlas page and grid]]')}",
-                "",
-                f"Source: {place.source_id}; as of {plain(place.as_of)}.",
-                "",
-            ]
-            for label, value in sorted(place.details.items()):
-                body += [f"{plain(label)}: {plain(value)}.", ""]
-        for identifier in ids:
-            body += [
-                f"Source {identifier}: {items[identifier].attribution}; "
-                f"{items[identifier].version}.",
-                "",
-            ]
-        body += [
-            "## County hazard profiles",
-            "",
-            "FEMA National Risk Index ratings describe historical relative risk. "
-            "They are not current emergency warnings or forecasts.",
-            "",
-        ]
-        for code, profile in sorted(profiles.items()):
-            body += [
-                f"### {plain(profile['county'])} · {code}",
-                "",
-                f"Overall risk rating: {plain(profile['risk_rating']) or 'Not supplied'}.",
-                "",
-            ]
-            for hazard, rating in sorted(profile["hazards"].items()):
-                body += [f"{plain(hazard)}: {plain(rating) or 'Not supplied'}.", ""]
-            body += [f"Source: fema_risk; as of {plain(items['fema_risk'].version)}.", ""]
-        if missing_profiles:
-            body += [
-                "This FEMA snapshot publishes no county profile for Census codes "
-                + ", ".join(missing_profiles)
-                + ". No rating is inferred.",
-                "",
-            ]
-        if state.upper() in agencies:
-            body += [
-                "## State emergency agency",
-                "",
-                "USAGov lists this agency website. It requires internet to visit:",
-                "",
-                agencies[state.upper()],
-                "",
-            ]
-        body += [
-            "## Data and license",
-            "",
-            "OpenStreetMap data: © OpenStreetMap contributors, under the Open Database License.",
-            "",
-            "https://opendatacommons.org/licenses/odbl/1-0/",
-            "",
-            f"The companion {state.upper()}_SOURCE_DATA.json provides the public data used here.",
-            "",
-        ]
+        body = directory_text(
+            items,
+            state,
+            places,
+            profiles,
+            missing_profiles,
+            agencies,
+            references,
+            ids,
+            complete,
+            missing,
+            rejected,
+        )
         source = stage / "directory.md"
-        source.write_text("\n".join(body), encoding="utf-8")
+        source.write_text(body, encoding="utf-8")
         fallback_ids = ()
         if not seed:
             from ck import geofonts
@@ -620,31 +687,9 @@ def build_directory(
             (files / f"{state.upper()}_{page_format}.html").rename(
                 audit / f"{state.upper()}_{page_format}.html"
             )
-        recipe = hashlib.sha256()
-        recipe.update(b"atlas-index\0" + (atlas_index.read_bytes() if atlas_index else b"none"))
-        for relative in (
-            "src/ck/directory.py",
-            "src/ck/directory_sources.py",
-            "src/ck/national.py",
-            "src/ck/generated.py",
-            "src/ck/render.py",
-            "src/ck/locales.py",
-            "src/ck/geofonts.py",
-            "pipelines/geodata-fonts.yaml",
-            "config/defaults.yaml",
-            "config/languages.yaml",
-            "content/en/edition.yaml",
-            "templates/document.html.j2",
-            "templates/document.css",
-            "templates/directory.html.j2",
-            "pyproject.toml",
-            "uv.lock",
-            "Dockerfile.build",
-        ):
-            recipe.update(relative.encode() + b"\0" + (root / relative).read_bytes())
         measurements = generation_manifest(
             stage,
-            ("directory-seed-v1-" if seed else "directory-v1-") + recipe.hexdigest(),
+            pipeline_version(root, atlas_index.read_bytes() if atlas_index else None, seed=seed),
             {
                 **{i: items[i].sha256 for i in ids},
                 **{identifier: items[identifier].sha256 for identifier in fallback_ids},

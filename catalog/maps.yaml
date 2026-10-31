@@ -123,34 +123,27 @@
     "id": "national_directory",
     "family": "generated",
     "title": "National public places directory",
-    "version": "[[VERIFY: publisher version]]",
+    "version": "2026-10-31; source epoch 1793404800",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
     "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "universal",
     "dest": "3_MAPS_AND_PLACES/directory/",
     "profiles": [
       "full"
     ],
     "inputs": [
-      "census_county_analysis",
-      "census_states",
-      "fcc_facility_statuses",
-      "fcc_license_versions",
-      "fcc_locations",
-      "fcc_service_codes",
-      "fcc_stations",
-      "fema_risk",
-      "geofabrik_us",
-      "imls_libraries",
-      "nces_schools",
-      "noaa_transmitters",
-      "state_emergency_agencies",
-      "national_atlas"
+      "directory_points",
+      "national_atlas",
+      "noto_sans",
+      "noto_sans_arabic",
+      "noto_sans_cherokee",
+      "noto_sans_sc"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]",
+    "review": "[[VERIFY: independent review of national directory pins, source omissions, merged-PDF accessibility and physical phone checks; regenerate after final recipe freeze]]"
   },
   {
     "id": "android_roads_places",
