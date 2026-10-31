@@ -20,6 +20,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command")
     validate = commands.add_parser("validate", help="Validate configuration and catalog")
     validate.add_argument("--release", action="store_true")
+    review = commands.add_parser("review-report", help="Inventory every remaining release gate")
+    review.add_argument("--output", type=Path, required=True)
     catalog = commands.add_parser("catalog", help="Generate third-party attributions")
     catalog.add_argument("--output", type=Path, default=Path("THIRD_PARTY.md"))
     fetch = commands.add_parser("fetch", help="Fetch pinned items into the verified cache")
@@ -172,6 +174,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "review-report":
+            from ck.review import write_release_review
+
+            write_release_review(args.root, args.output)
+            print(args.output)
+            return 0
         if args.command in {"check-profile", "build-profile"}:
             from ck.build import build_profile, check_profile
 

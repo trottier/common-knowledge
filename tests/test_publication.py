@@ -9,6 +9,23 @@ from ck.publication import build_site, check_source_archive, prepare_release, wr
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def test_release_review_reports_every_marker_and_never_changes_sources(tmp_path):
+    from ck.fetch import digest
+    from ck.review import markers, write_release_review
+
+    source = ROOT / "content/en/start/09-medical.md"
+    source = next((ROOT / "content/en/start").glob("*medical*")) if not source.exists() else source
+    before = digest(source)
+    output = tmp_path / "review.md"
+    write_release_review(ROOT, output)
+    report = output.read_text()
+    for marker in markers(ROOT):
+        assert marker["marker"] in report
+        assert f"{marker['path']}:{marker['line']}" in report
+    assert "v0.1.0 is incomplete" in report and "named human" in report
+    assert digest(source) == before
+
+
 def test_unreviewed_sources_cannot_create_release_assets(tmp_path):
     output = tmp_path / "release"
     with pytest.raises(ValueError, match="Release blocked"):
