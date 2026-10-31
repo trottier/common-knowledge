@@ -89,3 +89,9 @@ input tiles and is 618,293,897 bytes. Its packaged viewer opened in automated
 Chrome on this Mac with no HTTP requests. This is not a physical USB test or
 a claim of Windows, Linux, Firefox or Safari coverage. Complete those manual
 checks before release, including the USB-A adapter laptop.
+
+Two clean full dataset builds match, including the bound filter audit. Two
+clean viewer builds also match all 40 payloads and their generation manifest;
+each is 619,545,298 bytes. The development profile separately rebuilt its core
+and variant 1 twice, with identical raw image, compressed image and manifest
+hashes. These are development-epoch checks, not final tagged-release hashes.
