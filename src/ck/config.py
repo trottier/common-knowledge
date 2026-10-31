@@ -160,6 +160,7 @@ class Profile(Model):
 
 class Build(Model):
     version: Annotated[str, StringConstraints(pattern=r"^\d+\.\d+\.\d+$")]
+    android_maps: Literal["auto", "roads_places"]
     volume_label: Annotated[str, StringConstraints(pattern=r"^[A-Z0-9_]{1,11}$")]
     volume_id: Annotated[str, StringConstraints(pattern=r"^[0-9A-F]{8}$")]
     site_base_url: Text

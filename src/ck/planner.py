@@ -30,6 +30,8 @@ class VariantPlan:
     items: list[str]
     largest: list[dict]
     blockers: list[str]
+    map_path: str | None = None
+    map_reason: str | None = None
 
     @property
     def fits(self) -> bool:
@@ -66,8 +68,50 @@ def plan_variants(
         for identifier in item.inputs:
             include(items[identifier], dependencies)
 
+    choices = {
+        number: [item for item in items.values() if selected(item, config, number, profile)]
+        for number in sorted(config.variants.variants)
+    }
+    map_path, map_reason = None, None
+    if profile == "full":
+        map_path = "roads_places"
+        map_reason = "Roads-and-places generation is explicitly configured."
+        if config.build.android_maps == "auto":
+            prebuilt = items.get("osmand_prebuilt")
+            dependencies = {}
+            if prebuilt:
+                include(prebuilt, dependencies)
+            ready = (
+                prebuilt is not None
+                and all(prebuilt in chosen for chosen in choices.values())
+                and not any(item.blockers() for item in dependencies.values())
+            )
+            if not ready:
+                map_reason = "Prebuilt maps have unconfirmed inputs or redistribution terms."
+            elif any(
+                core_bytes
+                + sum(
+                    item.size_bytes
+                    for item in chosen
+                    if item.id != "android_roads_places" and isinstance(item.size_bytes, int)
+                )
+                > usable
+                for chosen in choices.values()
+            ):
+                map_reason = (
+                    "Prebuilt maps overflow a variant; switch every variant to roads and places."
+                )
+            else:
+                map_path = "prebuilt"
+                map_reason = "Verified prebuilt maps fit the known capacity of every variant."
+        omitted = "osmand_prebuilt" if map_path == "roads_places" else "android_roads_places"
+        choices = {
+            number: [item for item in chosen if item.id != omitted]
+            for number, chosen in choices.items()
+        }
+
     for number in sorted(config.variants.variants):
-        chosen = [item for item in items.values() if selected(item, config, number, profile)]
+        chosen = choices[number]
         dependencies = {}
         for item in chosen:
             include(item, dependencies)
@@ -75,7 +119,8 @@ def plan_variants(
         known = [item for item in chosen if isinstance(item.size_bytes, int)]
         total = core_bytes + sum(item.size_bytes for item in known)
         if profile == "full":
-            for required in ("national_atlas", "national_directory", "android_roads_places"):
+            required_map = "osmand_prebuilt" if map_path == "prebuilt" else "android_roads_places"
+            for required in ("national_atlas", "national_directory", required_map):
                 if required not in {item.id for item in chosen}:
                     problems.append(f"Required universal item is missing: {required}")
         if total > usable:
@@ -93,6 +138,8 @@ def plan_variants(
                     for item in sorted(known, key=lambda x: x.size_bytes, reverse=True)[:8]
                 ],
                 sorted(set(problems)),
+                map_path,
+                map_reason,
             )
         )
     return plans

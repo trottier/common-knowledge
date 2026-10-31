@@ -90,10 +90,23 @@ bytes, with SHA-256:
 
 This is development evidence for that pinned sample. National coverage, full
 basemap verification, Linux x86-64 full-image reproducibility and phone usability
-remain unconfirmed. Generated samples retain `complete: false` and cannot enter
+remain unconfirmed. The atlas and directory samples retain `complete: false` and cannot enter
 assembled images. Changes to inputs or the pipeline require new measured pins.
+
+The Android roads-and-places sample has also been built twice in separate
+Linux amd64 containers. Both runs produced the same 28,809,801-byte placed payload,
+including the OBF, its filtered OSM source database and attribution. The OBF
+SHA-256 is `e7721846333184fd9b4e6c81300820fed1d847926aa03b314fa35e4f1749511b`.
+Reference integrity and map/routing/POI indexes passed; physical phone tests and
+source-pin review remain outstanding. Its data-completion flag records those
+technical checks, and its catalog review markers continue to block placement.
+
+For interrupted large provisional inputs, `tools/resume_download.py` checks each
+HTTP range, byte count and source ETag before appending a complete chunk. This
+does not certify the input. Verify the publisher checksum and compute SHA-256,
+then submit the measured pin for review before it becomes a release input.
 
 The release epoch, production capacity and verification URL remain unset until
 the configuration and release steps. Never substitute the current time for an
-unset release epoch. Record all tool versions in image `VERIFY.TXT` when the
-assembler is implemented.
+unset release epoch. The assembler records system, Python and generated-content
+tool versions in image `VERIFY.TXT`.

@@ -21,18 +21,20 @@
     "id": "osmand_creator",
     "family": "binaries",
     "title": "OsmAnd map creator build input",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://download.osmand.net/latest-night-build/OsmAndMapCreator-main.zip",
+    "version": "master-snapshot; publisher Last-Modified 2026-10-30T15:59:08Z",
+    "size_bytes": 153195041,
+    "sha256": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+    "license": "GPL-3.0-only",
+    "attribution": "OsmAnd contributors; map creator build input, not shipped",
+    "license_proof_url": "https://github.com/osmandapp/OsmAnd-tools/blob/b601887fc5603bd65f7eafc9d7d32c42c572a342/LICENSE",
     "placement": "hub_only",
     "dest": "build/tools/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: review computed HTTPS-download pin and preserve this nightly archive at an immutable URL before release]]"
   },
   {
     "id": "national_atlas",
@@ -202,5 +204,51 @@
     ],
     "pipeline_version": "atlas-v1-9f5bcc93eed8dccba44fa6186d41157c366ceef5920d1e0b6581d39692b4110f",
     "review": "[[VERIFY: development atlas; directory source gaps, whole basemap verification, source pin review and physical phone checks remain]]"
+  },
+  {
+    "id": "android_roads_places_ri",
+    "family": "generated",
+    "title": "Rhode Island roads-and-places OsmAnd map with source database",
+    "version": "2026-10-30 development sample",
+    "size_bytes": 28809801,
+    "sha256": "5a2d953f5ce0cb086df6d800598906a59a0b43fdd9c5f89eeda2b1c2ae5001dc",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; original pipeline and instructions Common Knowledge",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/maps/",
+    "profiles": [
+      "sample"
+    ],
+    "inputs": [
+      "geofabrik_ri",
+      "osm_ri_turn_restriction",
+      "osmand_creator"
+    ],
+    "pipeline_version": "androidmaps-v1-73a103398667f3244f217c992702b2dfb0db2442553664942646fd8382ccadfd",
+    "review": "[[VERIFY: review source pins and confirm map import, drawing and live offline GPS on the listed Android phones]]"
+  },
+  {
+    "id": "android_map_howto",
+    "family": "generated",
+    "title": "English and Spanish Android map import instructions",
+    "version": "2026-10-30 development sample",
+    "size_bytes": 54850,
+    "sha256": "da0ba33204869653bb27aca8fa3f93d784b15d7bfb46e76dcd3a829c2c3f93a4",
+    "license": "CC0-1.0",
+    "attribution": "Common Knowledge; Noto font inputs listed separately",
+    "license_proof_url": "https://github.com/trottier/common-knowledge/blob/main/LICENSE-CONTENT",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "inputs": [
+      "noto_sans",
+      "osmand_android"
+    ],
+    "pipeline_version": "android-howto-v1-5fdb70193d391dc1498a3c2714c9b368447880cc85b48a56eabfc8a21a0f65ed",
+    "review": "[[VERIFY: resolve the installation and offline GPS checks in the instruction PDFs; pin and phone-test the APK]]"
   }
 ]

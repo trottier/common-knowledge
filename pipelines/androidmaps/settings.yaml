@@ -1,0 +1,69 @@
+# One national filter. Original source extracts remain unchanged in the cache.
+place_values: [state, county, city, town, village, hamlet, suburb, neighbourhood, locality, island]
+sources: { RI: geofabrik_ri }
+supplements: { RI: [osm_ri_turn_restriction] }
+road_values: [motorway, motorway_link, trunk, trunk_link, primary, primary_link,
+  secondary, secondary_link, tertiary, tertiary_link, unclassified, residential,
+  living_street, service, track, path, footway, cycleway, steps, pedestrian, bridleway, road]
+road_node_values: [traffic_signals, stop, give_way, crossing, turning_circle, motorway_junction]
+tags:
+  - highway
+  - type
+  - restriction
+  - restriction:foot
+  - restriction:bicycle
+  - restriction:motorcar
+  - except
+  - place
+  - name
+  - name:en
+  - ref
+  - int_ref
+  - amenity
+  - healthcare
+  - healthcare:speciality
+  - access
+  - foot
+  - bicycle
+  - motor_vehicle
+  - motorcar
+  - vehicle
+  - oneway
+  - junction
+  - bridge
+  - tunnel
+  - layer
+  - maxspeed
+  - maxheight
+  - maxwidth
+  - maxlength
+  - maxweight
+  - maxaxleload
+  - hgv
+  - goods
+  - bus
+  - psv
+  - horse
+  - wheelchair
+  - incline
+  - width
+  - tracktype
+  - sac_scale
+  - trail_visibility
+  - segregated
+  - footway
+  - cycleway
+  - sidewalk
+  - surface
+  - smoothness
+  - lanes
+  - toll
+  - service
+  - ford
+  - barrier
+  - addr:housenumber
+  - addr:street
+  - addr:city
+  - addr:state
+  - addr:postcode
+max_heap_mib: 2048

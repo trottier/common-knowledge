@@ -15,6 +15,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## English and Spanish Android map import instructions
+
+- Catalog id: `android_map_howto`
+- Version: 2026-10-30 development sample
+- License: CC0-1.0
+- Attribution: Common Knowledge; Noto font inputs listed separately
+- License proof: https://github.com/trottier/common-knowledge/blob/main/LICENSE-CONTENT
+- Size: 54850 bytes
+- SHA-256: `da0ba33204869653bb27aca8fa3f93d784b15d7bfb46e76dcd3a829c2c3f93a4`
+- Pipeline: android-howto-v1-5fdb70193d391dc1498a3c2714c9b368447880cc85b48a56eabfc8a21a0f65ed; inputs: noto_sans, osmand_android
+
 ## Generated Android roads-and-places maps
 
 - Catalog id: `android_roads_places`
@@ -25,6 +36,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: geofabrik_us, osmand_creator
+
+## Rhode Island roads-and-places OsmAnd map with source database
+
+- Catalog id: `android_roads_places_ri`
+- Version: 2026-10-30 development sample
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; original pipeline and instructions Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 28809801 bytes
+- SHA-256: `5a2d953f5ce0cb086df6d800598906a59a0b43fdd9c5f89eeda2b1c2ae5001dc`
+- Pipeline: androidmaps-v1-73a103398667f3244f217c992702b2dfb0db2442553664942646fd8382ccadfd; inputs: geofabrik_ri, osm_ri_turn_restriction, osmand_creator
 
 ## Appropedia
 
@@ -554,6 +576,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## OSM source supplement for a missing Rhode Island restriction member
+
+- Catalog id: `osm_ri_turn_restriction`
+- Version: Way 722137578 version 2; node versions pinned in the full XML snapshot
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1056 bytes
+- SHA-256: `5b9027dcd715c8e174404941b5d597297468eeb8008ead41a9caa1a70059ca98`
+- Publisher file: https://api.openstreetmap.org/api/0.6/way/722137578/full
+
 ## OsmAnd for Android
 
 - Catalog id: `osmand_android`
@@ -568,13 +601,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd map creator build input
 
 - Catalog id: `osmand_creator`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: master-snapshot; publisher Last-Modified 2026-10-30T15:59:08Z
+- License: GPL-3.0-only
+- Attribution: OsmAnd contributors; map creator build input, not shipped
+- License proof: https://github.com/osmandapp/OsmAnd-tools/blob/b601887fc5603bd65f7eafc9d7d32c42c572a342/LICENSE
+- Size: 153195041 bytes
+- SHA-256: `451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c`
+- Publisher file: https://download.osmand.net/latest-night-build/OsmAndMapCreator-main.zip
 
 ## OsmAnd official state maps; verify terms and sizes
 

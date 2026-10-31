@@ -273,5 +273,24 @@
     ],
     "checksum_source_url": "https://build-metadata.protomaps.dev/builds.json",
     "review": "[[VERIFY: publisher BLAKE3 b936e54942f13e0d5e3921409b992348a61f33953e4a6609dbef5aeb52c8f917; retain immutable source because daily builds are pruned]]"
+  },
+  {
+    "id": "osm_ri_turn_restriction",
+    "family": "geodata",
+    "title": "OSM source supplement for a missing Rhode Island restriction member",
+    "url": "https://api.openstreetmap.org/api/0.6/way/722137578/full",
+    "version": "Way 722137578 version 2; node versions pinned in the full XML snapshot",
+    "size_bytes": 1056,
+    "sha256": "5b9027dcd715c8e174404941b5d597297468eeb8008ead41a9caa1a70059ca98",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS snapshot pin and preserve the full-node snapshot at an immutable URL]]"
   }
 ]

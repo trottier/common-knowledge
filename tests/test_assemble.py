@@ -77,6 +77,52 @@ def test_planner_checks_source_pins_without_shipping_build_inputs():
     )
 
 
+def test_map_policy_switches_all_variants_before_other_capacity_changes():
+    from ck.catalog import Item, Topics
+
+    def item(identifier, size):
+        return Item(
+            id=identifier,
+            family="docs",
+            title="Synthetic map policy fixture",
+            version="fixture",
+            url="https://example.org/fixture",
+            size_bytes=size,
+            sha256="0" * 64,
+            license="US-PD",
+            attribution="Synthetic fixture",
+            license_proof_url="https://example.org/license",
+            placement="universal",
+            dest="3_MAPS_AND_PLACES/",
+            profiles=["full"],
+        )
+
+    config = load_config(ROOT)
+    items = {
+        key: item(key, size)
+        for key, size in {
+            "national_atlas": 10,
+            "national_directory": 10,
+            "osmand_prebuilt": 500,
+            "android_roads_places": 100,
+        }.items()
+    }
+    plans = plan_variants(config, items, "full", 10, 1000)
+    assert all(plan.map_path == "prebuilt" and plan.fits for plan in plans)
+    depth = item("medical_depth", 500)
+    depth.placement = Topics(topics=["medical"])
+    items[depth.id] = depth
+    plans = plan_variants(config, items, "full", 10, 1000)
+    assert all(plan.map_path == "roads_places" and plan.fits for plan in plans)
+    assert all(
+        "osmand_prebuilt" not in plan.items and "android_roads_places" in plan.items
+        for plan in plans
+    )
+    items["osmand_prebuilt"].license = "[[VERIFY: synthetic unconfirmed terms]]"
+    plans = plan_variants(config, items, "full", 10, 10000)
+    assert all(plan.map_path == "roads_places" and plan.fits for plan in plans)
+
+
 def test_manifest_detects_tampering_and_extra_files(tmp_path):
     (tmp_path / "README.TXT").write_text("Fixture")
     write_manifest(tmp_path)

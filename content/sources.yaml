@@ -1,6 +1,9 @@
 project_spec:
   title: Common Knowledge specification, sections 1 and 9.1
   path: AGENTS.md
+osmand_import:
+  title: OsmAnd — Import and export, and maps and resources
+  url: https://osmand.net/docs/user/personal/import-export/
 apple_usb:
   title: Apple — Connect external storage devices to iPhone
   url: https://support.apple.com/en-ie/guide/iphone/iph95baac91f/ios

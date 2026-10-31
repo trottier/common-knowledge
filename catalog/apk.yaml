@@ -70,8 +70,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": "universal",
-    "dest": "3_MAPS_AND_PLACES/android/",
+    "dest": "3_MAPS_AND_PLACES/android/OsmAnd.apk",
     "profiles": [
+      "sample",
       "full"
     ],
     "signer_cert_sha256": "[[VERIFY: publisher signer certificate SHA-256]]",

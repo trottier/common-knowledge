@@ -15,7 +15,7 @@ from ck.config import Configuration
 from ck.core import verify_core
 from ck.drive_safety import validate_tree
 from ck.fetch import digest, fetch
-from ck.planner import plan_variants, selected
+from ck.planner import plan_variants
 from ck.render import epoch_for
 from ck.review import require_release_ready
 
@@ -168,9 +168,7 @@ def assemble(
         tree = Path(temporary) / "tree"
         tree.mkdir()
         editions = _copy_core(root, config, core, tree)
-        placed = {
-            key: item for key, item in items.items() if selected(item, config, number, profile)
-        }
+        placed = {key: items[key] for key in plan.items}
         generated_tools = []
         for item in placed.values():
             dest = destination(item, config, number)

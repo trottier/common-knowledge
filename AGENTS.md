@@ -222,6 +222,7 @@ Fifteen editions. Ranking must match U.S. Census data on residents with limited 
 
 ```yaml
 version: "0.1.0"
+android_maps: auto              # auto | roads_places; one map strategy for all variants
 volume_label: "EMERGENCY"
 volume_id: "0C0FFEE0"
 site_base_url: "[[VERIFY: GitHub Pages URL]]"

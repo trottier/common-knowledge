@@ -48,6 +48,17 @@ def main(argv: Sequence[str] | None = None) -> int:
     directory.add_argument("--output", type=Path, required=True)
     directory.add_argument("--atlas-index", type=Path)
     directory.add_argument("--epoch", type=int)
+    android_map = commands.add_parser("android-map", help="Build a roads-and-places OsmAnd map")
+    android_map.add_argument("--state", required=True)
+    android_map.add_argument("--osm-id", required=True)
+    android_map.add_argument("--cache", type=Path, default=Path("cache"))
+    android_map.add_argument("--output", type=Path, required=True)
+    android_map.add_argument("--epoch", type=int)
+    android_howto = commands.add_parser(
+        "android-howto", help="Render English/Spanish map instructions"
+    )
+    android_howto.add_argument("--output", type=Path, required=True)
+    android_howto.add_argument("--epoch", type=int)
     atlas = commands.add_parser("atlas", help="Prepare and compose a checked county road atlas")
     atlas_commands = atlas.add_subparsers(dest="atlas_action", required=True)
     atlas_prepare = atlas_commands.add_parser(
@@ -99,6 +110,44 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "android-howto":
+            from ck.androidhowto import build_howto
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_howto(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.output,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "android-map":
+            from ck.androidmaps import build_android_map
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_android_map(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        args.state,
+                        args.osm_id,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "atlas":
             from ck.atlas import Settings, atlas_budget, compose_atlas, prepare_atlas
             from ck.catalog import load_catalog
@@ -186,6 +235,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                     )
                     for issue in plan.blockers:
                         print(f"  {issue}")
+                    if plan.map_path:
+                        print(f"  Android maps: {plan.map_path}. {plan.map_reason}")
                     if not plan.fits:
                         for item in plan.largest:
                             print(f"  Large item: {item['id']} — {item['size_bytes']:,} bytes")
