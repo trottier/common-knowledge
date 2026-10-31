@@ -4,6 +4,776 @@ Generated from catalog/; do not edit by hand.
 
 VERIFY entries are candidates and cannot be placed until confirmed.
 
+## Census AK road-source extract
+
+- Catalog id: `android_extract_ak`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census AL road-source extract
+
+- Catalog id: `android_extract_al`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census AR road-source extract
+
+- Catalog id: `android_extract_ar`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census AS road-source extract
+
+- Catalog id: `android_extract_as`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_oceania, census_county_analysis, census_states
+
+## Census AZ road-source extract
+
+- Catalog id: `android_extract_az`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census CA road-source extract
+
+- Catalog id: `android_extract_ca`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census CO road-source extract
+
+- Catalog id: `android_extract_co`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census CT road-source extract
+
+- Catalog id: `android_extract_ct`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census DC road-source extract
+
+- Catalog id: `android_extract_dc`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census DE road-source extract
+
+- Catalog id: `android_extract_de`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census FL road-source extract
+
+- Catalog id: `android_extract_fl`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census GA road-source extract
+
+- Catalog id: `android_extract_ga`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census GU road-source extract
+
+- Catalog id: `android_extract_gu`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_oceania, census_county_analysis, census_states
+
+## Census HI road-source extract
+
+- Catalog id: `android_extract_hi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census IA road-source extract
+
+- Catalog id: `android_extract_ia`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census ID road-source extract
+
+- Catalog id: `android_extract_id`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census IL road-source extract
+
+- Catalog id: `android_extract_il`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census IN road-source extract
+
+- Catalog id: `android_extract_in`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census KS road-source extract
+
+- Catalog id: `android_extract_ks`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census KY road-source extract
+
+- Catalog id: `android_extract_ky`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census LA road-source extract
+
+- Catalog id: `android_extract_la`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MA road-source extract
+
+- Catalog id: `android_extract_ma`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MD road-source extract
+
+- Catalog id: `android_extract_md`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census ME road-source extract
+
+- Catalog id: `android_extract_me`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MI road-source extract
+
+- Catalog id: `android_extract_mi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MN road-source extract
+
+- Catalog id: `android_extract_mn`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MO road-source extract
+
+- Catalog id: `android_extract_mo`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MP road-source extract
+
+- Catalog id: `android_extract_mp`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_oceania, census_county_analysis, census_states
+
+## Census MS road-source extract
+
+- Catalog id: `android_extract_ms`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census MT road-source extract
+
+- Catalog id: `android_extract_mt`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NC road-source extract
+
+- Catalog id: `android_extract_nc`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census ND road-source extract
+
+- Catalog id: `android_extract_nd`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NE road-source extract
+
+- Catalog id: `android_extract_ne`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NH road-source extract
+
+- Catalog id: `android_extract_nh`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NJ road-source extract
+
+- Catalog id: `android_extract_nj`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NM road-source extract
+
+- Catalog id: `android_extract_nm`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NV road-source extract
+
+- Catalog id: `android_extract_nv`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census NY road-source extract
+
+- Catalog id: `android_extract_ny`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census OH road-source extract
+
+- Catalog id: `android_extract_oh`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census OK road-source extract
+
+- Catalog id: `android_extract_ok`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census OR road-source extract
+
+- Catalog id: `android_extract_or`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census PA road-source extract
+
+- Catalog id: `android_extract_pa`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census PR road-source extract
+
+- Catalog id: `android_extract_pr`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census RI road-source extract
+
+- Catalog id: `android_extract_ri`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census SC road-source extract
+
+- Catalog id: `android_extract_sc`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census SD road-source extract
+
+- Catalog id: `android_extract_sd`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census TN road-source extract
+
+- Catalog id: `android_extract_tn`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census TX road-source extract
+
+- Catalog id: `android_extract_tx`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census UT road-source extract
+
+- Catalog id: `android_extract_ut`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census VA road-source extract
+
+- Catalog id: `android_extract_va`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census VI road-source extract
+
+- Catalog id: `android_extract_vi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census VT road-source extract
+
+- Catalog id: `android_extract_vt`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census WA road-source extract
+
+- Catalog id: `android_extract_wa`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census WI road-source extract
+
+- Catalog id: `android_extract_wi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census WV road-source extract
+
+- Catalog id: `android_extract_wv`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## Census WY road-source extract
+
+- Catalog id: `android_extract_wy`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+
+## OsmAnd roads-and-places map for AK
+
+- Catalog id: `android_map_ak`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ak
+
+## OsmAnd roads-and-places map for AL
+
+- Catalog id: `android_map_al`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_al
+
+## OsmAnd roads-and-places map for AR
+
+- Catalog id: `android_map_ar`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ar
+
+## OsmAnd roads-and-places map for AS
+
+- Catalog id: `android_map_as`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania, osmand_creator, android_extract_as
+
+## OsmAnd roads-and-places map for AZ
+
+- Catalog id: `android_map_az`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_az
+
+## OsmAnd roads-and-places map for CA
+
+- Catalog id: `android_map_ca`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ca
+
+## OsmAnd roads-and-places map for CO
+
+- Catalog id: `android_map_co`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_co
+
+## OsmAnd roads-and-places map for CT
+
+- Catalog id: `android_map_ct`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ct
+
+## OsmAnd roads-and-places map for DC
+
+- Catalog id: `android_map_dc`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_dc
+
+## OsmAnd roads-and-places map for DE
+
+- Catalog id: `android_map_de`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_de
+
+## OsmAnd roads-and-places map for FL
+
+- Catalog id: `android_map_fl`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_fl
+
+## OsmAnd roads-and-places map for GA
+
+- Catalog id: `android_map_ga`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ga
+
+## OsmAnd roads-and-places map for GU
+
+- Catalog id: `android_map_gu`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania, osmand_creator, android_extract_gu
+
+## OsmAnd roads-and-places map for HI
+
+- Catalog id: `android_map_hi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_hi
+
 ## English and Spanish Android map import instructions
 
 - Catalog id: `android_map_howto`
@@ -15,16 +785,478 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `da0ba33204869653bb27aca8fa3f93d784b15d7bfb46e76dcd3a829c2c3f93a4`
 - Pipeline: android-howto-v1-5fdb70193d391dc1498a3c2714c9b368447880cc85b48a56eabfc8a21a0f65ed; inputs: noto_sans, osmand_android
 
+## OsmAnd roads-and-places map for IA
+
+- Catalog id: `android_map_ia`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ia
+
+## OsmAnd roads-and-places map for ID
+
+- Catalog id: `android_map_id`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_id
+
+## OsmAnd roads-and-places map for IL
+
+- Catalog id: `android_map_il`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_il
+
+## OsmAnd roads-and-places map for IN
+
+- Catalog id: `android_map_in`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_in
+
+## OsmAnd roads-and-places map for KS
+
+- Catalog id: `android_map_ks`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ks
+
+## OsmAnd roads-and-places map for KY
+
+- Catalog id: `android_map_ky`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ky
+
+## OsmAnd roads-and-places map for LA
+
+- Catalog id: `android_map_la`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_la
+
+## OsmAnd roads-and-places map for MA
+
+- Catalog id: `android_map_ma`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ma
+
+## OsmAnd roads-and-places map for MD
+
+- Catalog id: `android_map_md`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_md
+
+## OsmAnd roads-and-places map for ME
+
+- Catalog id: `android_map_me`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_me
+
+## OsmAnd roads-and-places map for MI
+
+- Catalog id: `android_map_mi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_mi
+
+## OsmAnd roads-and-places map for MN
+
+- Catalog id: `android_map_mn`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_mn
+
+## OsmAnd roads-and-places map for MO
+
+- Catalog id: `android_map_mo`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_mo
+
+## OsmAnd roads-and-places map for MP
+
+- Catalog id: `android_map_mp`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania, osmand_creator, android_extract_mp
+
+## OsmAnd roads-and-places map for MS
+
+- Catalog id: `android_map_ms`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ms
+
+## OsmAnd roads-and-places map for MT
+
+- Catalog id: `android_map_mt`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_mt
+
+## OsmAnd roads-and-places map for NC
+
+- Catalog id: `android_map_nc`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nc
+
+## OsmAnd roads-and-places map for ND
+
+- Catalog id: `android_map_nd`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nd
+
+## OsmAnd roads-and-places map for NE
+
+- Catalog id: `android_map_ne`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ne
+
+## OsmAnd roads-and-places map for NH
+
+- Catalog id: `android_map_nh`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nh
+
+## OsmAnd roads-and-places map for NJ
+
+- Catalog id: `android_map_nj`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nj
+
+## OsmAnd roads-and-places map for NM
+
+- Catalog id: `android_map_nm`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nm
+
+## OsmAnd roads-and-places map for NV
+
+- Catalog id: `android_map_nv`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nv
+
+## OsmAnd roads-and-places map for NY
+
+- Catalog id: `android_map_ny`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ny
+
+## OsmAnd roads-and-places map for OH
+
+- Catalog id: `android_map_oh`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_oh
+
+## OsmAnd roads-and-places map for OK
+
+- Catalog id: `android_map_ok`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ok
+
+## OsmAnd roads-and-places map for OR
+
+- Catalog id: `android_map_or`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_or
+
+## OsmAnd roads-and-places map for PA
+
+- Catalog id: `android_map_pa`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_pa
+
+## OsmAnd roads-and-places map for PR
+
+- Catalog id: `android_map_pr`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_pr
+
+## OsmAnd roads-and-places map for RI
+
+- Catalog id: `android_map_ri`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ri
+
+## OsmAnd roads-and-places map for SC
+
+- Catalog id: `android_map_sc`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_sc
+
+## OsmAnd roads-and-places map for SD
+
+- Catalog id: `android_map_sd`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_sd
+
+## OsmAnd roads-and-places map for TN
+
+- Catalog id: `android_map_tn`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_tn
+
+## OsmAnd roads-and-places map for TX
+
+- Catalog id: `android_map_tx`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_tx
+
+## OsmAnd roads-and-places map for UT
+
+- Catalog id: `android_map_ut`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ut
+
+## OsmAnd roads-and-places map for VA
+
+- Catalog id: `android_map_va`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_va
+
+## OsmAnd roads-and-places map for VI
+
+- Catalog id: `android_map_vi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_vi
+
+## OsmAnd roads-and-places map for VT
+
+- Catalog id: `android_map_vt`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_vt
+
+## OsmAnd roads-and-places map for WA
+
+- Catalog id: `android_map_wa`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_wa
+
+## OsmAnd roads-and-places map for WI
+
+- Catalog id: `android_map_wi`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_wi
+
+## OsmAnd roads-and-places map for WV
+
+- Catalog id: `android_map_wv`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_wv
+
+## OsmAnd roads-and-places map for WY
+
+- Catalog id: `android_map_wy`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_wy
+
 ## Generated Android roads-and-places maps
 
 - Catalog id: `android_roads_places`
 - Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
+- License: ODbL-1.0 AND US-PD
+- Attribution: OpenStreetMap contributors; U.S. Census Bureau
+- License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: geofabrik_us, osmand_creator
+- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: android_map_ak, android_map_al, android_map_ar, android_map_as, android_map_az, android_map_ca, android_map_co, android_map_ct, android_map_dc, android_map_de, android_map_fl, android_map_ga, android_map_gu, android_map_hi, android_map_ia, android_map_id, android_map_il, android_map_in, android_map_ks, android_map_ky, android_map_la, android_map_ma, android_map_md, android_map_me, android_map_mi, android_map_mn, android_map_mo, android_map_mp, android_map_ms, android_map_mt, android_map_nc, android_map_nd, android_map_ne, android_map_nh, android_map_nj, android_map_nm, android_map_nv, android_map_ny, android_map_oh, android_map_ok, android_map_or, android_map_pa, android_map_pr, android_map_ri, android_map_sc, android_map_sd, android_map_tn, android_map_tx, android_map_ut, android_map_va, android_map_vi, android_map_vt, android_map_wa, android_map_wi, android_map_wv, android_map_wy
 
 ## Rhode Island roads-and-places OsmAnd map with source database
 
@@ -36,6 +1268,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 28809801 bytes
 - SHA-256: `5a2d953f5ce0cb086df6d800598906a59a0b43fdd9c5f89eeda2b1c2ae5001dc`
 - Pipeline: androidmaps-v1-73a103398667f3244f217c992702b2dfb0db2442553664942646fd8382ccadfd; inputs: geofabrik_ri, osm_ri_turn_restriction, osmand_creator
+
+## Prepared roads and public places from the oceania parent
+
+- Catalog id: `android_source_oceania`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_oceania
+
+## Prepared roads and public places from the us parent
+
+- Catalog id: `android_source_us`
+- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: [[VERIFY: measured generated payload bytes]] bytes
+- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us
 
 ## Appropedia
 

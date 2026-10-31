@@ -31,6 +31,23 @@ class Settings(Model):
     max_heap_mib: int = Field(ge=256)
 
 
+def pipeline_version(root: Path) -> str:
+    recipe = hashlib.sha256()
+    for relative in (
+        "src/ck/androidmaps.py",
+        "src/ck/mapextract.py",
+        "src/ck/directory.py",
+        "src/ck/generated.py",
+        "pipelines/androidmaps/settings.yaml",
+        "pipelines/androidmaps/national.yaml",
+        "Dockerfile.build",
+        "uv.lock",
+        "config/debian.sources",
+    ):
+        recipe.update(relative.encode() + b"\0" + (root / relative).read_bytes())
+    return "androidmaps-v1-" + recipe.hexdigest()
+
+
 def filtered_tags(kind: str, tags: dict[str, str], settings: Settings) -> dict[str, str]:
     if excluded(tags):
         return {}
@@ -183,6 +200,8 @@ def build_android_map(
     state: str,
     osm_id: str,
     epoch: int,
+    prepared: Path | None = None,
+    prepared_id: str | None = None,
 ) -> dict:
     if output.exists():
         raise ValueError("Android map output must be new")
@@ -190,11 +209,22 @@ def build_android_map(
         raise ValueError("State must be a two-letter code")
     settings_path = root / "pipelines/androidmaps/settings.yaml"
     settings = Settings.model_validate(read_yaml(settings_path))
-    if settings.sources.get(state.upper()) != osm_id:
-        raise ValueError("State and confirmed OSM source mapping disagree")
-    osm = cached_input(catalog[osm_id], cache)
+    if bool(prepared) != bool(prepared_id):
+        raise ValueError("Prepared state source needs both a directory and catalog ID")
+    state = state.upper()
+    if prepared:
+        from ck.mapextract import policy, prepared_state_source
+
+        osm = prepared_state_source(root, catalog, prepared, prepared_id, state, osm_id, epoch)
+        supplement_ids = []
+        heap_mib = policy(root).max_heap_mib
+    else:
+        if settings.sources.get(state) != osm_id:
+            raise ValueError("State and confirmed OSM source mapping disagree")
+        osm = cached_input(catalog[osm_id], cache)
+        supplement_ids = settings.supplements.get(state, [])
+        heap_mib = settings.max_heap_mib
     tool = cached_input(catalog["osmand_creator"], cache)
-    supplement_ids = settings.supplements.get(state.upper(), [])
     supplements = tuple(cached_input(catalog[key], cache) for key in supplement_ids)
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-android-map-") as temporary:
@@ -214,7 +244,7 @@ def build_android_map(
             "-Duser.timezone=UTC",
             "-Duser.language=en",
             "-Duser.country=US",
-            f"-Xmx{settings.max_heap_mib}m",
+            f"-Xmx{heap_mib}m",
             "-cp",
             str(creator / "OsmAndMapCreator.jar") + ":" + str(creator / "lib/*"),
             "net.osmand.MainUtilities",
@@ -270,24 +300,29 @@ def build_android_map(
                 f"SHA-256: {catalog[key].sha256}\n"
                 for key in supplement_ids
             )
+            + (
+                f"Prepared state source: {prepared_id}\n"
+                f"Prepared manifest SHA-256: {catalog[prepared_id].sha256}\n"
+                "State extraction boundaries: U.S. Census Bureau TIGER/Line; "
+                "statistical boundaries, not legal land descriptions.\n"
+                if prepared_id
+                else ""
+            )
         )
         (stage / "filter.json").write_text(json.dumps(counts, indent=2) + "\n")
         versions = subprocess.run(["java", "-version"], check=True, capture_output=True, text=True)
-        recipe = hashlib.sha256()
-        for relative in (
-            "src/ck/androidmaps.py",
-            "src/ck/directory.py",
-            "src/ck/generated.py",
-            "pipelines/androidmaps/settings.yaml",
-            "Dockerfile.build",
-            "uv.lock",
-            "config/debian.sources",
-        ):
-            recipe.update(relative.encode() + b"\0" + (root / relative).read_bytes())
         measurements = generation_manifest(
             stage,
-            "androidmaps-v1-" + recipe.hexdigest(),
-            {key: catalog[key].sha256 for key in (osm_id, "osmand_creator", *supplement_ids)},
+            pipeline_version(root),
+            {
+                key: catalog[key].sha256
+                for key in (
+                    osm_id,
+                    "osmand_creator",
+                    *supplement_ids,
+                    *([prepared_id] if prepared_id else []),
+                )
+            },
             complete=True,
             epoch=epoch,
             intermediates=["filter.json", "inspection.txt"],

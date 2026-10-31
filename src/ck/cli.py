@@ -73,6 +73,31 @@ def main(argv: Sequence[str] | None = None) -> int:
     android_map.add_argument("--cache", type=Path, default=Path("cache"))
     android_map.add_argument("--output", type=Path, required=True)
     android_map.add_argument("--epoch", type=int)
+    android_map.add_argument("--prepared", type=Path)
+    android_map.add_argument("--prepared-id")
+    android_source = commands.add_parser(
+        "android-source", help="Filter a verified national OSM parent once for state map builds"
+    )
+    android_source.add_argument("--osm-id", required=True)
+    android_source.add_argument("--cache", type=Path, default=Path("cache"))
+    android_source.add_argument("--output", type=Path, required=True)
+    android_source.add_argument("--epoch", type=int)
+    android_extract = commands.add_parser(
+        "android-extract", help="Clip a checked road source to confirmed Census jurisdictions"
+    )
+    android_extract.add_argument("--prepared", type=Path, required=True)
+    android_extract.add_argument("--prepared-id", required=True)
+    android_extract.add_argument("--states", nargs="+", required=True)
+    android_extract.add_argument("--cache", type=Path, default=Path("cache"))
+    android_extract.add_argument("--output", type=Path, required=True)
+    android_extract.add_argument("--epoch", type=int)
+    android_collect = commands.add_parser(
+        "android-collect", help="Collect all checked state maps with their ODbL source databases"
+    )
+    android_collect.add_argument("--outputs", type=Path, nargs="+", required=True)
+    android_collect.add_argument("--cache", type=Path, default=Path("cache"))
+    android_collect.add_argument("--output", type=Path, required=True)
+    android_collect.add_argument("--epoch", type=int)
     android_howto = commands.add_parser(
         "android-howto", help="Render English/Spanish map instructions"
     )
@@ -427,6 +452,65 @@ def main(argv: Sequence[str] | None = None) -> int:
                 )
             )
             return 0
+        if args.command == "android-source":
+            from ck.catalog import load_catalog
+            from ck.mapextract import build_road_source
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_road_source(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        args.osm_id,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "android-extract":
+            from ck.catalog import load_catalog
+            from ck.mapextract import build_state_extracts
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_state_extracts(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.prepared,
+                        args.prepared_id,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                        [state.upper() for state in args.states],
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "android-collect":
+            from ck.catalog import load_catalog
+            from ck.mapextract import collect_android_maps
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    collect_android_maps(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.outputs,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "android-map":
             from ck.androidmaps import build_android_map
             from ck.catalog import load_catalog
@@ -442,6 +526,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                         args.state,
                         args.osm_id,
                         epoch_for(config, args.epoch),
+                        args.prepared,
+                        args.prepared_id,
                     ),
                     indent=2,
                 )

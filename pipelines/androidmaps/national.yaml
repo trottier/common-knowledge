@@ -1,0 +1,6 @@
+# Parent extracts confirmed against the Census territory geometries.
+source_inputs: {us: geofabrik_us, oceania: geofabrik_oceania}
+pacific_states: [AS, GU, MP]
+# Computational boundary padding, measured in coordinate degrees, not ground metres.
+boundary_padding_degrees: 0.001
+max_heap_mib: 6144
