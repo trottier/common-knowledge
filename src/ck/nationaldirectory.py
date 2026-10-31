@@ -175,8 +175,11 @@ def join_parts(
                     }
                 )
                 links[county] += 1
-    if links != Counter({county: 1 for county in targets}):
-        raise ValueError("Directory contents must link to every county exactly once")
+    # A wrapped county name produces one PDF annotation per line. Every
+    # clickable region must target that county; annotation count is not a
+    # count of distinct contents entries.
+    if links.keys() != targets.keys():
+        raise ValueError("Directory contents must link to every county")
     timestamp = datetime.fromtimestamp(epoch, UTC).strftime("D:%Y%m%d%H%M%SZ")
     writer.add_metadata(
         {
@@ -408,8 +411,13 @@ def build_all(
         initargs=(context,),
     ) as pool:
         pending = [pool.submit(_worker, (state, output / state)) for state in selected]
-        for future in as_completed(pending):
-            results.append(future.result())
+        try:
+            for future in as_completed(pending):
+                results.append(future.result())
+        except BaseException:
+            for future in pending:
+                future.cancel()
+            raise
     return {
         "states": sorted(result["state"] for result in results),
         "places": sum(result["places"] for result in results),
@@ -528,6 +536,25 @@ def collect(context: Inputs, outputs: list[Path], output: Path) -> dict:
                 )
             ):
                 raise ValueError("Directory contents page references are invalid")
+            target_pages = {
+                reader.pages[number].indirect_reference.idnum for number in starts.values()
+            }
+            linked_pages = set()
+            for number in range(min(starts.values())):
+                page = reader.pages[number]
+                for reference in page.get("/Annots", []):
+                    action = reference.get_object().get("/A", {})
+                    destination = action.get("/D", [])
+                    if (
+                        action.get("/S") != "/GoTo"
+                        or not isinstance(destination, list)
+                        or not destination
+                        or getattr(destination[0], "idnum", None) not in target_pages
+                    ):
+                        raise ValueError("Directory contents link has an invalid county target")
+                    linked_pages.add(destination[0].idnum)
+            if linked_pages != target_pages:
+                raise ValueError("Directory contents does not link to every county start")
             for page in reader.pages:
                 for reference in page.get("/Annots", []):
                     action = reference.get_object().get("/A", {})

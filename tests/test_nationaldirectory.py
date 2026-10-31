@@ -202,6 +202,48 @@ def test_collection_requires_all_places_states_and_bound_audits(context, tmp_pat
         collect(context, [ri, de], tmp_path / "changed")
 
 
+def test_wrapped_county_links_keep_every_clickable_region_and_validate_targets(context, tmp_path):
+    from pypdf import PdfWriter
+    from pypdf.generic import NameObject
+
+    from ck.generated import generation_manifest
+
+    context.data.counties["44001"] = (
+        "Synthetic County With A Long Name That Wraps Across Several Lines"
+    )
+    ri, de = tmp_path / "RI", tmp_path / "DE"
+    build_state(context, "RI", ri)
+    build_state(context, "DE", de)
+    source = ri / "files/RI_phone.pdf"
+    reader = PdfReader(source)
+    starts = json.loads((ri / "state.json").read_text())["county_start_pages_zero_based"]["phone"]
+    annotations = [
+        ref
+        for page in list(reader.pages)[: min(starts.values())]
+        for ref in page.get("/Annots", [])
+    ]
+    assert len(annotations) > len(starts)
+    collect(context, [ri, de], tmp_path / "valid")
+
+    writer = PdfWriter()
+    writer.append(reader)
+    for number in range(min(starts.values())):
+        writer.pages[number].pop(NameObject("/Annots"), None)
+    with source.open("wb") as stream:
+        writer.write(stream)
+    writer.close()
+    generation_manifest(
+        ri,
+        context.recipe,
+        context.pins,
+        complete=True,
+        epoch=context.epoch,
+        intermediates=["state.json"],
+    )
+    with pytest.raises(ValueError, match="does not link to every county start"):
+        collect(context, [ri, de], tmp_path / "missing-links")
+
+
 def test_preparation_checks_the_bound_atlas_epoch_and_reference_inventory(
     context, tmp_path, monkeypatch
 ):

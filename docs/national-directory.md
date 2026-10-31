@@ -35,8 +35,10 @@ in [geographic-fonts.md](geographic-fonts.md).
 The parts merge into one PDF per format. A front contents list links to each
 county's first page, and the part bookmarks remain available. Temporary
 reserved `.invalid` link targets are replaced with PDF GoTo actions. The
-merger fails on missing or duplicated county links, so these contents links
-never need a server. Metadata dates and PDF IDs are deterministic. The source
+merger fails if a county has no contents link. A name that wraps onto two
+lines produces two clickable PDF regions; both target the same county start.
+Collection verifies every contents-region destination and requires every
+county start to be linked. These links never need a server. Metadata dates and PDF IDs are deterministic. The source
 parts are tagged by WeasyPrint; merged-directory accessibility needs review,
 and the pipeline makes no PDF/UA certification claim.
 
@@ -75,3 +77,11 @@ layout containers or script elements. Each final state PDF has one county
 contents list; individual parts retain bookmarks without repeated contents
 pages. All 38 core PDFs match the prior renderer byte for byte. National
 size/hash pins remain unconfirmed until the full set builds and collects.
+
+A national build exposed wrapped contents names in Alaska and Connecticut.
+The previous annotation-count check rejected those valid multi-line links.
+The regression fixture now renders a long county name, checks that all its
+clickable regions survive, and rejects a PDF whose contents links were removed.
+A failed worker also cancels queued states instead of completing the remaining
+national batch before reporting its error. The revised national build remains
+in progress; the superseded partial batch is not a complete release artifact.
