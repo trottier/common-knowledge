@@ -31,7 +31,7 @@ def test_conversion_preserves_text_and_table_cells_without_active_resources():
       <tr><td rowspan="2">Synthetic</td><td>0.05</td></tr><tr><td>100</td></tr></table>
       <img src="https://example.invalid/track" alt="Figure description">
       <script>bad()</script><iframe src="https://example.invalid/embed"></iframe>
-      <a href="javascript:bad()">Unsafe</a><a href="#note">Footnote</a>""")
+      <a href="javascript:bad()">Unsafe</a><a href="#note">Footnote</a><p id="note">Note</p>""")
     data = article(html, "CC-BY-SA-4.0")
     soup = BeautifulSoup(data["html"], "html.parser")
     assert "2.5 mg; 12–18 hours." in soup.get_text()
@@ -90,15 +90,37 @@ def report(check="url_external"):
 
 
 def test_zim_with_external_dependency_is_input_only(monkeypatch):
+    def run(arguments, **kwargs):
+        data = report()
+        failed = "--all" in arguments or "--url_external" in arguments
+        if not failed:
+            data.update(status=True, logs=[])
+        return SimpleNamespace(stdout=json.dumps(data), stderr="", returncode=int(failed))
+
     monkeypatch.setattr(
         "ck.fetch.subprocess.run",
-        lambda *a, **k: SimpleNamespace(stdout=json.dumps(report()), stderr="", returncode=1),
+        run,
     )
     with pytest.raises(ValueError, match="Fixture failure"):
         verify_zim(Path("fixture.zim"))
     audit = verify_zim(Path("fixture.zim"), regeneration_only=True)
     assert audit["status"] is False and audit["regeneration_only"] is True
     assert "file_name" not in audit
+
+
+def test_repair_allowance_cannot_mask_a_later_structural_failure(monkeypatch):
+    def run(arguments, **kwargs):
+        data = report("url_external" if "--all" in arguments else "checksum")
+        return SimpleNamespace(stdout=json.dumps(data), stderr="", returncode=1)
+
+    monkeypatch.setattr("ck.fetch.subprocess.run", run)
+    with pytest.raises(ValueError, match="structural checks failed"):
+        verify_zim(Path("fixture.zim"), regeneration_only=True, allow_broken_links=True)
+
+
+def test_broken_links_cannot_be_allowed_for_shipped_archives():
+    with pytest.raises(ValueError, match="restricted to regeneration"):
+        verify_zim(Path("fixture.zim"), allow_broken_links=True)
 
 
 @pytest.mark.parametrize("check", ["checksum", "integrity", "url_internal", "redirect"])

@@ -17,14 +17,17 @@ unverified third-party copy.
 
 Every input is checked against its catalog size and SHA-256. `zimcheck --all
 --json` must finish every required check. The downloaded October 2026 WikiMed
-archive matches the publisher's metalink SHA-256 but reports external embedded
-dependencies in `Order_of_Malta_Ambulance_Corps` and `Medical_scribe`. These
-failures block placement of that publisher archive. Its byte-identical input is
+archive matches the publisher's metalink SHA-256, but the current checker reports
+three malformed internal links in `Clavicular_notch`, `Hindered_phenol` and
+`Woodlands_Hospital_(Darlington,_United_Kingdom)`. These failures block placement
+of the publisher archive. Its byte-identical input is
 kept in the ignored `cache/quarantine/<sha256>` directory.
 
-Only the regeneration pipeline may use an archive whose sole audit errors are
-`url_external`. Checksum, integrity, internal links, redirects and all other
-errors still fail. The complete audit is retained in `archive-audits.json` and
+Only regeneration inputs may allow explicitly repairable content-link errors.
+Internal links need a separate allowance; shipped archives always use the strict
+audit. Checksum, integrity, redirect and all other structural errors still fail.
+Structural checks and both link phases run separately so a failing phase cannot
+mask a later error. The complete audit is retained in `archive-audits.json` and
 bound into the generation manifest. This exception never applies to shipped
 ZIMs: fetch and assembly use the strict audit. Failed format checks retain
 checksum-verified downloads in quarantine so retrying does not download them
@@ -35,8 +38,12 @@ older checker cannot validate the newer writer's title-index format reliably.
 Unexpected checker diagnostics fail closed even when the JSON also lists known
 external dependencies.
 
+The old 3.1.3 checker also reported two external resources inside inactive source
+metadata. Direct HTML inspection and the current external-resource audit confirmed
+those were false positives. Those articles are not changed by the archive rebuild.
+
 The pipeline uses [libzim's reader API](https://python-libzim.readthedocs.io/en/latest/api_reference/libzim.reader/)
-and [zimcheck](https://github.com/openzim/zim-tools/tree/3.1.3/src/zimcheck).
+and [zimcheck](https://github.com/openzim/zim-tools/tree/3.8.0/src/zimcheck).
 It follows archive redirects and requires the publisher's per-article revision
 date, revision URL and matching CC BY-SA license notice. Missing provenance
 fails conversion. Original HTML hashes and actual resolved entry paths are
@@ -74,15 +81,17 @@ and release gate independently require named human medical review.
 `kiwix_android` pins the publisher's universal standalone APK, its published
 SHA-256, verified signing certificate and exact source commit. The source archive
 is a candidate corresponding-source bundle. Dependency closure, pin review and
-physical offline-reader checks remain explicit blockers. Desktop reader artifacts
-also need confirmed pins and source bundles before placement.
+physical offline-reader checks remain explicit blockers. Windows, Linux and Mac
+readers also have measured download pins, matched publisher MD5 files and exact
+source candidates. Their dependency-source closure and device tests remain open.
 
 ## Rebuilt archive
 
 `ck offline-zim --item wikimed_en_nopic --output build/zim-offline/wiki --epoch
 <fixed-epoch>` regenerates an archive from the source data. Only entries named
-by the external-dependency audit are adapted. Their external embeds are replaced
-with notices, and the article attribution and revision notices remain. Every
+by the content-link audit are adapted. Broken link targets are removed while
+their visible words remain; external embeds, if found, are replaced with notices.
+Article attribution and revision notices remain. Every
 other user entry's bytes, MIME type, title and redirect target are compared with
 the publisher archive after rebuilding. The publisher file stays untouched.
 

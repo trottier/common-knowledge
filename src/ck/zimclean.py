@@ -19,9 +19,13 @@ from ck.fetch import digest, verify_zim
 from ck.generated import cached_input, generation_manifest
 
 
-def remove_embeds(raw: bytes) -> bytes:
+def remove_embeds(raw: bytes, broken_links: set[str] | None = None) -> bytes:
     document = BeautifulSoup(raw.decode("utf-8"), "html.parser")
     removed = 0
+    for link in document.find_all("a", href=True):
+        if link["href"] in (broken_links or set()):
+            del link["href"]
+            removed += 1
     for element in list(document.find_all(True)):
         if element.attrs is None or element.name == "a":
             continue
@@ -49,7 +53,8 @@ def remove_embeds(raw: bytes) -> bytes:
         )
     note = document.new_tag("p")
     note.string = (
-        "Common Knowledge offline adaptation: external embedded resources were omitted. "
+        "Common Knowledge offline adaptation: external embeds or malformed navigation links "
+        "were omitted; their visible article text is retained. "
         "The original article's attribution and revision notice remain below."
     )
     if document.body is None:
@@ -133,13 +138,20 @@ class ArchiveItem(WriterItem):
 def regenerate(source: Path, output: Path, epoch: int, identity: bytes) -> dict:
     if output.exists() or source.resolve() == output.resolve():
         raise ValueError("Regenerated archive must have a new output path")
-    audit = verify_zim(source, regeneration_only=True)
+    audit = verify_zim(source, regeneration_only=True, allow_broken_links=True)
     failures = {entry["path"] for entry in audit["logs"] if entry["level"] == "ERROR"}
     archive = Archive(source)
-    changed = {
-        path: remove_embeds(bytes(archive.get_entry_by_path(path).get_item().content))
-        for path in sorted(failures)
-    }
+    changed = {}
+    for path in sorted(failures):
+        links = {
+            link
+            for entry in audit["logs"]
+            if entry.get("path") == path and entry["check"] == "url_internal"
+            for link in entry["links"]
+        }
+        changed[path] = remove_embeds(
+            bytes(archive.get_entry_by_path(path).get_item().content), links
+        )
     creator = Creator(output).config_nbworkers(1).config_indexing(False, "eng")
     with creator:
         for key in archive.metadata_keys:

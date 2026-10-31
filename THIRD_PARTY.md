@@ -359,35 +359,68 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Kiwix desktop for linux
 
 - Catalog id: `kiwix_linux`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2.5.1
+- License: GPL-3.0-or-later
+- Attribution: Kiwix and kiwix-desktop contributors
+- License proof: https://github.com/kiwix/kiwix-desktop/blob/690251263462cebd8c4c7d65f8d26cd9e787cc83/README.md#license
+- Size: 168125632 bytes
+- SHA-256: `0319feaf1e920a9244d06f95e8710ce1632f7ac03a8499858cb8f56896051f99`
+- Publisher file: https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop_x86_64_2.5.1.appimage
+
+## Kiwix linux corresponding-source candidate
+
+- Catalog id: `kiwix_linux_source`
+- Version: 2.5.1; commit 690251263462cebd8c4c7d65f8d26cd9e787cc83
+- License: GPL-3.0-or-later
+- Attribution: Kiwix and kiwix-desktop contributors
+- License proof: https://github.com/kiwix/kiwix-desktop/blob/690251263462cebd8c4c7d65f8d26cd9e787cc83/README.md#license
+- Size: 685967 bytes
+- SHA-256: `30936feca234addcf7dbc58961750a0efe87023284a4a2f0fe36adeb44daaf91`
+- Publisher file: https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop-2.5.1.tar.gz
 
 ## Kiwix desktop for mac
 
 - Catalog id: `kiwix_mac`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 3.17.1
+- License: GPL-3.0-or-later
+- Attribution: Kiwix and kiwix-apple contributors
+- License proof: https://github.com/kiwix/kiwix-apple/blob/1dc9c867236f0b915e9e42b46df9fe36e1b35e78/README.md#license
+- Size: 6192645 bytes
+- SHA-256: `b3be3e988070b47dfe5a924432ef2b602cad9439d4cce61f7b9b9962ff200af4`
+- Publisher file: https://mirror.download.kiwix.org/release/kiwix-macos/kiwix-macos_3.17.1.dmg
+
+## Kiwix mac corresponding-source candidate
+
+- Catalog id: `kiwix_mac_source`
+- Version: 3.17.1; commit 1dc9c867236f0b915e9e42b46df9fe36e1b35e78
+- License: GPL-3.0-or-later
+- Attribution: Kiwix and kiwix-apple contributors
+- License proof: https://github.com/kiwix/kiwix-apple/blob/1dc9c867236f0b915e9e42b46df9fe36e1b35e78/README.md#license
+- Size: 621214 bytes
+- SHA-256: `2734f7fabf7e2af6a7f6a906b4aed6d42eca79115ad44824b0845f8a2855fd4c`
+- Publisher file: https://api.github.com/repos/kiwix/kiwix-apple/tarball/1dc9c867236f0b915e9e42b46df9fe36e1b35e78
 
 ## Kiwix desktop for windows
 
 - Catalog id: `kiwix_windows`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2.5.1
+- License: GPL-3.0-or-later
+- Attribution: Kiwix and kiwix-desktop contributors
+- License proof: https://github.com/kiwix/kiwix-desktop/blob/690251263462cebd8c4c7d65f8d26cd9e787cc83/README.md#license
+- Size: 157265310 bytes
+- SHA-256: `56ad5b3a86010c2c74db63a717d087cfbdcdbe71a0d7fca0655f90ef1d80593f`
+- Publisher file: https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.5.1.zip
+
+## Kiwix windows corresponding-source candidate
+
+- Catalog id: `kiwix_windows_source`
+- Version: 2.5.1; commit 690251263462cebd8c4c7d65f8d26cd9e787cc83
+- License: GPL-3.0-or-later
+- Attribution: Kiwix and kiwix-desktop contributors
+- License proof: https://github.com/kiwix/kiwix-desktop/blob/690251263462cebd8c4c7d65f8d26cd9e787cc83/README.md#license
+- Size: 685967 bytes
+- SHA-256: `30936feca234addcf7dbc58961750a0efe87023284a4a2f0fe36adeb44daaf91`
+- Publisher file: https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop-2.5.1.tar.gz
 
 ## Offline laptop model runner for linux
 

@@ -68,6 +68,7 @@ def test_archive_rebuild_is_offline_complete_and_repeatable(tmp_path):
                 "article.html",
                 b"<html><body><p>Original words 2.5.</p>"
                 b'<iframe src="https://example.invalid/embed"></iframe>'
+                b'<a href="./missing">Original label</a>'
                 b'<a href="https://example.invalid/source">Attribution</a></body></html>',
             )
         )
@@ -83,6 +84,7 @@ def test_archive_rebuild_is_offline_complete_and_repeatable(tmp_path):
         text = bytes(rebuilt.get_entry_by_path("article.html").get_item().content)
         assert b"Original words 2.5." in text
         assert b"https://example.invalid/source" in text
+        assert b"Original label" in text and b'href="./missing"' not in text
         assert b"iframe" not in text and b"offline adaptation" in text
         assert rebuilt.get_entry_by_path("alias").is_redirect
         assert "article.html" in list(

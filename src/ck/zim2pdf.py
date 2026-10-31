@@ -10,7 +10,7 @@ from concurrent.futures import ProcessPoolExecutor
 from datetime import UTC, date, datetime
 from importlib.metadata import version
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 from bs4 import BeautifulSoup
 from fontTools.ttLib import TTFont
@@ -179,6 +179,12 @@ def article(html: str, expected_license: str) -> dict:
         if not heading.get("id"):
             heading["id"] = f"ck-heading-{number}"
         headings.append({"id": heading["id"], "title": heading.get_text(" ", strip=True)})
+    identifiers = {element["id"] for element in content.find_all(id=True)}
+    broken_links = 0
+    for link in content.find_all("a", href=True):
+        if link["href"].startswith("#") and unquote(link["href"][1:]) not in identifiers:
+            del link["href"]
+            broken_links += 1
     return {
         "html": str(content),
         "url": origin["href"],
@@ -186,6 +192,7 @@ def article(html: str, expected_license: str) -> dict:
         "license_url": license_link,
         "omitted_media": media_count,
         "headings": headings,
+        "omitted_broken_links": broken_links,
     }
 
 
@@ -279,7 +286,7 @@ def build_medpdf(
             raise ValueError("Medical topics must refer to a cataloged ZIM")
         source_cache = cache if (cache / item.sha256).is_file() else cache / "quarantine"
         path = cached_input(item, source_cache)
-        audits[identifier] = verify_zim(path, regeneration_only=True)
+        audits[identifier] = verify_zim(path, regeneration_only=True, allow_broken_links=True)
         archives[identifier] = Archive(path)
     fonts = {
         f"ck-font:///{identifier}": cached_input(catalog[identifier], cache)
