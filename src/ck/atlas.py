@@ -19,6 +19,20 @@ from ck.generated import cached_input, verified_generated_files
 from ck.geo import Frame, shifted_geometry, unproject
 
 
+def renderer_fingerprint(root: Path) -> str:
+    directory = root / "pipelines/atlas"
+    files = read_yaml(directory / "recipe.json")["files"]
+    if len(files) != len(set(files)) or "recipe.json" not in files:
+        raise ValueError("Invalid renderer recipe")
+    recipe = hashlib.sha256()
+    for name in files:
+        relative = safe_path(name)
+        if len(relative.parts) != 1:
+            raise ValueError("Renderer recipe needs local filenames")
+        recipe.update(name.encode() + b"\0" + (directory / relative).read_bytes())
+    return recipe.hexdigest()
+
+
 def pipeline_version(root: Path) -> str:
     recipe = hashlib.sha256()
     paths = [
@@ -33,15 +47,22 @@ def pipeline_version(root: Path) -> str:
             "tools/bootstrap_atlas.py",
             "tools/extract_atlas.py",
             "pipelines/geodata-fonts.yaml",
+            "pipelines/atlas/settings.yaml",
+            "src/ck/atlas.py",
+            "src/ck/catalog.py",
+            "src/ck/config.py",
+            "src/ck/directory.py",
+            "src/ck/fetch.py",
+            "src/ck/generated.py",
+            "src/ck/geo.py",
+            "src/ck/geofonts.py",
+            "src/ck/render.py",
         )
     ]
-    for directory in ("pipelines/atlas", "src/ck"):
-        paths.extend(
-            path
-            for path in (root / directory).rglob("*")
-            if "node_modules" not in path.parts
-            and path.suffix in {".py", ".mjs", ".yaml", ".json", ".lock"}
-        )
+    paths.extend(
+        root / "pipelines/atlas" / safe_path(name)
+        for name in read_yaml(root / "pipelines/atlas/recipe.json")["files"]
+    )
     for path in sorted(paths):
         recipe.update(path.relative_to(root).as_posix().encode() + b"\0" + path.read_bytes())
     return "atlas-v1-" + recipe.hexdigest()
@@ -560,6 +581,7 @@ def prepare_atlas(
         "state_fips": state_fips,
         "epoch": epoch,
         "pipeline_version": pipeline_version(root),
+        "renderer_sha256": renderer_fingerprint(root),
         "pages": pages,
         "county_count": len(counties),
         "basemap": basemap,
@@ -750,6 +772,10 @@ def compose_atlas(root: Path, config: Configuration, jobs_path: Path, output: Pa
     }
     identifier = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest().encode()
     rendered = json.loads((jobs_path.parent / "rendered.json").read_text())
+    if rendered.get("renderer_sha256") != jobs.get("renderer_sha256") or jobs.get(
+        "renderer_sha256"
+    ) != renderer_fingerprint(root):
+        raise ValueError("Atlas renderer code changed; rebuild, prepare and render again")
     if rendered["jobs_sha256"] != digest(jobs_path):
         raise ValueError("Atlas jobs changed after rendering; prepare and render again")
     if output.exists():

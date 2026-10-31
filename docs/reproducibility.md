@@ -73,10 +73,28 @@ the native release before installing it. Node is required for the addon's ABI;
 Bun handles dependency installation, scripts and new JavaScript tests.
 
 The native renderer denies network resources. Mesa software rendering and its
-thread count are fixed in the container. Initial Rhode Island renders differed
-by small text-edge values between processes. Priming the pinned font's glyphs
-before tile layout removed the observed differences. The native fixture checks
-both repeated frames and fresh processes. Stable image resource names also keep
+thread count, SSE2 CPU baseline and 128-bit software vector width are fixed in
+the container. Initial Rhode Island renders differed by small text-edge values
+between processes. Priming the pinned font's glyphs removed the differences
+observed in that sample, but the first national repeat exposed further tiny
+text-edge differences in Oregon. The old warmup removed its source and layer,
+allowing primed glyph resources to leave the resident cache.
+
+The revised warmup supplies one label per supported character, avoiding shaping
+between adjacent code points. Its world tile remains resident while real map
+views render. A viewport guard prevents the original priming geometry at 0°, 0°
+from entering a published map. Three fresh Oregon runs now match all 47 map
+views, including city and dense-area insets. Their composed PDFs and complete
+generation manifests also match. At epoch `1793404800`, the PDF is 20,976,743
+bytes with SHA-256
+`84e4b9d5b593145baf42d3e462cbc21d99b72734828f97c68dd3082f3d436ab5`.
+This is a state-level repeat result; the full national rerun is still required.
+
+Jobs now bind a hash of the production JavaScript recipe. Both the native
+renderer and PDF composer reject a different code hash. This catches a cached
+container that predates a source change. The render record includes the actual
+runtime settings and installed tool versions. The native fixture checks both
+repeated frames and fresh processes. Stable image resource names also keep
 temporary build directories out of PDF object names and identifiers.
 
 Two separate Rhode Island preparation, native-render and composition runs on
@@ -88,10 +106,12 @@ bytes, with SHA-256:
 3aca88ad59790abf371281ccf13997c37b0d6c2bb5290428f199cbbe7cc72ba0
 ```
 
-This is development evidence for that pinned sample. National coverage, full
-basemap verification, Linux x86-64 full-image reproducibility and phone usability
-remain unconfirmed. The atlas and directory samples retain `complete: false` and cannot enter
-assembled images. Changes to inputs or the pipeline require new measured pins.
+This is development evidence for that older pinned sample. The first complete
+national atlas now covers all 56 Census jurisdictions with verified basemaps;
+see [national-atlas.md](national-atlas.md). The older Rhode Island atlas and
+directory samples retain `complete: false` and cannot enter assembled images.
+National repeated rendering, full-image reproducibility and phone usability
+remain unconfirmed. Changes to inputs or the pipeline require new measured pins.
 
 The Android roads-and-places sample has also been built twice in separate
 Linux amd64 containers. Both runs produced the same 28,809,801-byte placed payload,

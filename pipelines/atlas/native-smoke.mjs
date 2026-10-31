@@ -27,7 +27,7 @@ const map = new native.Map({ ratio: 1, request(request, callback) {
 }});
 const style = { version: 8, glyphs: "ck-font://{fontstack}/{range}.pbf",
   sources: { fixture: { type: "geojson", data: { type: "Feature", properties: {},
-    geometry: { type: "Point", coordinates: [0, 0] } } } },
+    geometry: { type: "Point", coordinates: [-71, 42] } } } },
   layers: [
     { id: "paper", type: "background", paint: { "background-color": "#faf9f4" } },
     { id: "dot", type: "circle", source: "fixture", paint: { "circle-radius": 30,
@@ -42,7 +42,7 @@ try {
   await loadStyleWithGlyphs(map, fontnik, font, style);
   for (let i = 0; i < 2; i++) {
     const pixels = await new Promise((accept, reject) => map.render({ width: 512,
-      height: 512, center: [0, 0], zoom: 3, bearing: 0, pitch: 0 },
+      height: 512, center: [-71, 42], zoom: 3, bearing: 0, pitch: 0 },
     (error, data) => error ? reject(error) : accept(data)));
     if (failures.length) throw new Error(failures.join("; "));
     if (pixels[(256 * 512 + 256) * 4] !== 0) throw new Error("Fixture point was not drawn");

@@ -26,6 +26,7 @@ RUN python3 /tmp/ck-atlas-bootstrap/bootstrap_atlas.py \
     && bun --version >> /opt/ck-atlas-tool-versions.txt
 COPY pipelines/atlas/ ./
 ENV TZ=UTC LANG=C.UTF-8 LC_ALL=C.UTF-8 LIBGL_ALWAYS_SOFTWARE=1 LP_NUM_THREADS=1 UV_THREADPOOL_SIZE=1
+ENV GALLIUM_OVERRIDE_CPU_CAPS=sse2 LP_NATIVE_VECTOR_WIDTH=128
 ENTRYPOINT ["bun", "run"]
 CMD ["render", "--help"]
 

@@ -8,7 +8,8 @@ import { PMTiles } from "pmtiles";
 import sharp from "sharp";
 import { LocalSource, resource } from "./source.mjs";
 import { style } from "./style.mjs";
-import { loadStyleWithGlyphs } from "./glyphs.mjs";
+import { excludesWarmup, loadStyleWithGlyphs } from "./glyphs.mjs";
+import { rendererFingerprint } from "./recipe.mjs";
 
 const require = createRequire(import.meta.url);
 const native = require("@maplibre/maplibre-gl-native");
@@ -28,6 +29,18 @@ if (process.argv.length !== 3 || process.argv[2] === "--help") {
 }
 const jobPath = resolve(process.argv[2]);
 const jobs = JSON.parse(await readFile(jobPath, "utf8"));
+const renderer = rendererFingerprint();
+const runtime = Object.fromEntries(["LP_NUM_THREADS", "UV_THREADPOOL_SIZE", "LIBGL_ALWAYS_SOFTWARE",
+  "GALLIUM_OVERRIDE_CPU_CAPS", "LP_NATIVE_VECTOR_WIDTH"]
+  .map(key => [key, process.env[key] ?? null]));
+if ([runtime.LP_NUM_THREADS, runtime.UV_THREADPOOL_SIZE, runtime.LIBGL_ALWAYS_SOFTWARE]
+  .some(value => value !== "1") || runtime.GALLIUM_OVERRIDE_CPU_CAPS !== "sse2" ||
+  runtime.LP_NATIVE_VECTOR_WIDTH !== "128") {
+  throw new Error("Use the pinned SSE2 software-rendering image with one font/render worker");
+}
+if (jobs.renderer_sha256 !== renderer) {
+  throw new Error("Renderer code differs from the prepared job; rebuild the atlas image and prepare again");
+}
 if (jobs.schema !== 1 || !Array.isArray(jobs.pages) || !jobs.pages.length) {
   throw new Error("Invalid atlas render job");
 }
@@ -71,7 +84,9 @@ try {
         !Number.isInteger(page.height) || page.width < 1 || page.width > 1920 ||
         page.height < 1 || page.height > 2400 || !Number.isFinite(page.zoom) ||
         page.zoom < header.minZoom || page.zoom > header.maxZoom ||
-        !page.center.every(Number.isFinite)) throw new Error("Unsupported atlas viewport");
+        !Array.isArray(page.center) || page.center.length !== 2 ||
+        !page.center.every(Number.isFinite) || Math.abs(page.center[1]) >= 85.051129 ||
+        !excludesWarmup(page)) throw new Error("Unsupported atlas viewport");
     const pixels = await new Promise((accept, reject) => {
       map.render({ width: page.width, height: page.height, center: page.center,
         zoom: page.zoom, bearing: 0, pitch: 0 }, (error, data) => error ? reject(error) : accept(data));
@@ -90,8 +105,11 @@ try {
 }
 await writeFile(join(dirname(jobPath), "rendered.json"), JSON.stringify({
   jobs_sha256: await checksum(jobPath),
+  renderer_sha256: renderer,
+  runtime_environment: runtime,
   node: process.version,
   system_tools: (await readFile("/opt/ck-atlas-tool-versions.txt", "utf8")) +
+    "\nRuntime environment:\n" + JSON.stringify(runtime) +
     "\nJavaScript packages:\n" + Object.entries(packages.dependencies)
       .sort(([a], [b]) => a.localeCompare(b, "en")).map(([name, version]) => `${name}==${version}`).join("\n") + "\n",
   files: outputs,
