@@ -23,10 +23,12 @@ archive checks remain outside the placed payload.
 All fifteen built successfully: 1,802 phone pages, 5,194,279 payload bytes. The
 Hindi article also uses Gurmukhi and Tamil; its required fonts are pinned alongside
 the other scripts in `settings.yaml`. No font file is committed. Conversion-pin,
-language and physical phone reviews remain open. A second clean set is being
-checked for reproducibility.
+language and physical phone reviews remain open. Two independent complete builds
+matched every PDF, provenance audit and generation manifest.
 
 The English source archive has three malformed internal links. It is a regeneration
 input, not a placeable archive. Phrasebook PDFs sanitize their own navigation and
 record that audit. The whole travel archive must pass strict validation after
-regeneration before it can populate the in-depth collection.
+regeneration before it can populate the in-depth collection. The measured rebuilt
+archive passed strict checks and the complete entry comparison (205,100,476 payload
+bytes). Its pin and physical reader reviews remain open.

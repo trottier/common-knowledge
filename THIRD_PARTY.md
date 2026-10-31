@@ -1423,6 +1423,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `4305c50550f065d83e70f75fd1d2016a694f5d67aa1e0ef00fdf6bb74fc092ac`
 - Publisher file: https://mirror.download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim
 
+## Wikivoyage, English, offline reference edition
+
+- Catalog id: `wikivoyage_en_offline`
+- Version: Wikivoyage 2026-09; regenerated edition
+- License: CC-BY-SA-4.0
+- Attribution: Wikivoyage contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained
+- License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
+- Size: 205100476 bytes
+- SHA-256: `f29aaf5fb2234abb1784f42c8f696dd25e24e30fd802b5880dc2d3c678ffed92`
+- Pipeline: zim-offline-v1-2ba7bf014043deddbeb66775898f53b2f0e835d2d07ec21ade476059496a98ef; inputs: wikivoyage_en_nopic
+
 ## Wikivoyage, Spanish, no pictures — phrasebook build input
 
 - Catalog id: `wikivoyage_es_nopic`

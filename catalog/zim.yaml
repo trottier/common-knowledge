@@ -47,15 +47,13 @@
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikivoyage contributors; archive packaged by Kiwix",
     "license_proof_url": "https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft",
-    "placement": {
-      "collection": "simplewiki"
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/",
+    "placement": "hub_only",
+    "dest": "build/reference-inputs/",
     "profiles": [
       "full"
     ],
     "checksum_source_url": "https://download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim.meta4",
-    "review": "[[VERIFY: strict archive-format and offline resource checks, pin review and phrasebook provenance checks]]"
+    "review": "Source input only. Three malformed internal links are repaired during regeneration; this publisher archive is not placed."
   },
   {
     "id": "simplewiki_en_nopic",
@@ -263,6 +261,29 @@
       "full"
     ],
     "checksum_source_url": "https://download.kiwix.org/zim/wikivoyage/wikivoyage_es_all_nopic_2026-09.zim.meta4",
-    "review": "[[VERIFY: archive format, source license and phrasebook provenance checks]]"
+    "review": "Phrasebook build input only; source revision, CC BY-SA 4.0 footer and structural audits are bound to each converted PDF."
+  },
+  {
+    "id": "wikivoyage_en_offline",
+    "family": "generated",
+    "title": "Wikivoyage, English, offline reference edition",
+    "version": "Wikivoyage 2026-09; regenerated edition",
+    "size_bytes": 205100476,
+    "sha256": "f29aaf5fb2234abb1784f42c8f696dd25e24e30fd802b5880dc2d3c678ffed92",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikivoyage contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained",
+    "license_proof_url": "https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft",
+    "placement": {
+      "collection": "simplewiki"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/Wikivoyage/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikivoyage_en_nopic"
+    ],
+    "pipeline_version": "zim-offline-v1-2ba7bf014043deddbeb66775898f53b2f0e835d2d07ec21ade476059496a98ef",
+    "review": "[[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]"
   }
 ]
