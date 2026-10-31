@@ -70,6 +70,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     offline_zim.add_argument("--cache", type=Path, default=Path("cache"))
     offline_zim.add_argument("--output", type=Path, required=True)
     offline_zim.add_argument("--epoch", type=int)
+    local_llm = commands.add_parser("local-llm", help="Build offline local LLM launch materials")
+    local_llm.add_argument("--profile", choices=["sample", "full"], required=True)
+    local_llm.add_argument("--cache", type=Path, default=Path("cache"))
+    local_llm.add_argument("--output", type=Path, required=True)
+    local_llm.add_argument("--epoch", type=int)
     atlas = commands.add_parser("atlas", help="Prepare and compose a checked county road atlas")
     atlas_commands = atlas.add_subparsers(dest="atlas_action", required=True)
     atlas_prepare = atlas_commands.add_parser(
@@ -121,6 +126,26 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "local-llm":
+            from ck.catalog import load_catalog
+            from ck.llm import build_bundle
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_bundle(
+                        args.root,
+                        config,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        args.profile,
+                        epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
         if args.command == "offline-zim":
             from ck.catalog import load_catalog
             from ck.render import epoch_for
@@ -284,6 +309,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                         print(f"  {issue}")
                     if plan.map_path:
                         print(f"  Android maps: {plan.map_path}. {plan.map_reason}")
+                    if plan.llm_variants is not None:
+                        print(f"  Local LLM variants: {plan.llm_variants}. {plan.llm_reason}")
                     if not plan.fits:
                         for item in plan.largest:
                             print(f"  Large item: {item['id']} — {item['size_bytes']:,} bytes")

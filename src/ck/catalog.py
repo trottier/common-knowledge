@@ -168,6 +168,10 @@ def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, I
                 and item.placement.collection not in config.variants.collections
             ):
                 raise ValueError(f"{item.id}: unknown collection placement")
+    if config and config.local_llm:
+        for profile, identifier in config.local_llm.models.items():
+            if identifier not in result or profile not in result[identifier].profiles:
+                raise ValueError(f"Missing local LLM model selection for {profile}: {identifier}")
     # Input graphs must be acyclic, including references that are not yet fetched.
     active, visited = set(), set()
 

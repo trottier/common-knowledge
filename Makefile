@@ -1,16 +1,18 @@
 BUILD_IMAGE := common-knowledge-build:dev
 BUILD_PLATFORM := linux/amd64
 ATLAS_IMAGE := common-knowledge-atlas:dev
+LLM_UI_IMAGE := oven/bun:1.3.11-slim@sha256:478281fdd196871c7e51ba6a820b7803a8ae97042ec86cdbc2e1c6b6626442d9
 DOCKER_RUN = docker run --rm --network=none --platform $(BUILD_PLATFORM) $(BUILD_IMAGE)
 SOURCE_DATE_EPOCH ?= $(shell git show -s --format=%ct HEAD)
 
-.PHONY: help build-container atlas-container atlas-check check lint test cli package dev clean
+.PHONY: help build-container atlas-container atlas-check llm-ui-check check lint test cli package dev clean
 
 help:
 	@printf '%s\n' \
 	  'build-container  Build the pinned Python/uv environment (network required)' \
 	  'check            Run lint, format checks and tests in the container' \
 	  'atlas-check      Build and test the pinned native map renderer offline' \
+	  'llm-ui-check     Test the local LLM browser interface with pinned Bun' \
 	  'lint             Run Ruff and check formatting in the container' \
 	  'test             Run pytest in the container' \
 	  'cli              Show ck help in the container' \
@@ -26,6 +28,10 @@ atlas-container:
 
 atlas-check: atlas-container
 	docker run --rm --network=none --platform $(BUILD_PLATFORM) $(ATLAS_IMAGE) test
+
+llm-ui-check:
+	docker run --rm --network=none --volume "$(CURDIR):/source:ro" \
+	  --workdir /source --entrypoint bun $(LLM_UI_IMAGE) test pipelines/llm/ui/app.test.js
 
 check: build-container
 	$(DOCKER_RUN) ruff check .

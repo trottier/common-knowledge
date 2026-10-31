@@ -68,6 +68,9 @@ hypothermia:
 oral_rehydration:
   title: CDC Yellow Book — Travelers’ Diarrhea, oral rehydration therapy
   url: https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travelers-diarrhea.html
+pocketpal_local:
+  title: PocketPal — local models, chat and Assistant Pals
+  url: https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/README.md
 fda_medicines:
   title: FDA — Safe Drug Use After a Natural Disaster
   url: https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster

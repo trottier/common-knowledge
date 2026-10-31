@@ -32,6 +32,8 @@ class VariantPlan:
     blockers: list[str]
     map_path: str | None = None
     map_reason: str | None = None
+    llm_variants: list[int] | None = None
+    llm_reason: str | None = None
 
     @property
     def fits(self) -> bool:
@@ -110,6 +112,33 @@ def plan_variants(
             for number, chosen in choices.items()
         }
 
+    llm_variants, llm_reason = None, None
+    if profile == "full" and config.local_llm:
+        model_id = config.local_llm.models["full"]
+        model = items.get(model_id)
+        if model and all(model in chosen for chosen in choices.values()):
+            llm_variants = sorted(choices)
+            llm_reason = "The model remains universal."
+            measured = all(
+                isinstance(item.size_bytes, int) for chosen in choices.values() for item in chosen
+            )
+            if not measured:
+                llm_reason = "Keep the model universal until every placed size is known."
+            elif any(
+                core_bytes + sum(item.size_bytes for item in chosen) > usable
+                for chosen in choices.values()
+            ):
+                llm_variants = sorted(config.local_llm.fallback_variants)
+                llm_reason = (
+                    "After map selection, universal placement overflows; use four variants."
+                )
+                choices = {
+                    number: [
+                        item for item in chosen if item.id != model_id or number in llm_variants
+                    ]
+                    for number, chosen in choices.items()
+                }
+
     for number in sorted(config.variants.variants):
         chosen = choices[number]
         dependencies = {}
@@ -140,6 +169,8 @@ def plan_variants(
                 sorted(set(problems)),
                 map_path,
                 map_reason,
+                llm_variants,
+                llm_reason,
             )
         )
     return plans

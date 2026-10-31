@@ -266,5 +266,27 @@
     ],
     "source_for": "kiwix_mac",
     "review": "[[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]"
+  },
+  {
+    "id": "pocketpal_android",
+    "family": "apk",
+    "title": "PocketPal Android, local GGUF reader",
+    "url": "https://github.com/a-ghorbani/pocketpal-ai/releases/download/v1.22.0/app-prod-release.apk",
+    "version": "1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578",
+    "size_bytes": 275953055,
+    "sha256": "e26933e5a94434d94929f65fcc019f1e10b734a5864dcb0b7995ace569b37f6b",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani and PocketPal contributors",
+    "license_proof_url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE",
+    "placement": "universal",
+    "dest": "9_LOCAL_LLM/android/PocketPal.apk",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "f55acacb10155bea116e1dba487cf2bfb8bce2b65439bc62bc2370a6b2239614",
+    "source_url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/tarball/8932367e9f4a373945993ae0a472c8768d5c0578",
+    "checksum_source_url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/releases/tags/v1.22.0",
+    "review": "[[VERIFY: review verified APK signer, bundled notices, local import flow and offline operation on a phone with at least 6 GB RAM]]"
   }
 ]

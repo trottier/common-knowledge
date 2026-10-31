@@ -8,7 +8,7 @@ review_required: [medical]
 
 ## Experimental local LLM
 
-Experimental local LLM. It can be wrong. If it disagrees with a card or video, follow the card. [@project_spec]
+{{ local_llm.warning }} [@project_spec]
 
 The model and launchers are in `9_LOCAL_LLM` when included by the plan.
 Use the launcher for your laptop's operating system.

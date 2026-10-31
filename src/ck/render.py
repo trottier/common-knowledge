@@ -150,6 +150,7 @@ def render_html(
         build_profile=profile,
         rally_labels=edition.rally_labels,
         editions={item.code: item.name for item in config.languages},
+        local_llm=config.local_llm.model_dump() if config.local_llm else {},
     )
     markdown = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = markdown.parse(body)

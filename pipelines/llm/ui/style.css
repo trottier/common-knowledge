@@ -1,0 +1,9 @@
+body { max-width: 42rem; margin: 1rem auto; padding: 0 1rem; font: 1.1rem/1.5 system-ui,sans-serif; color: #151515; background: #fff; }
+header { border-bottom: 2px solid #222; margin-bottom: 1rem; }
+#warning { padding: .7rem; border: 2px solid #8a3900; background: #fff2da; font-weight: bold; }
+textarea { display: block; box-sizing: border-box; width: 100%; font: inherit; }
+button, select { padding: .6rem; font: inherit; margin: .5rem 0; }
+article { border-left: 3px solid #555; padding-left: .8rem; margin-block: 1rem; }
+article p { white-space: pre-wrap; overflow-wrap: anywhere; }
+label { display: block; font-weight: bold; }
+footer { border-top: 1px solid #777; margin-top: 1rem; }

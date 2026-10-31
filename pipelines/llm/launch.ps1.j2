@@ -1,0 +1,38 @@
+$ErrorActionPreference = 'Stop'
+$ckDrive = $PSScriptRoot
+Get-Content -LiteralPath (Join-Path $ckDrive 'WARNING.TXT') -Encoding UTF8
+$ckModel = Join-Path $ckDrive '{{ model_filename }}'
+if (!(Test-Path -LiteralPath $ckModel)) {
+    throw 'The model is not on this drive. Find a neighbor whose drive includes the local LLM.'
+}
+$ckRuntime = Join-Path ([System.IO.Path]::GetTempPath()) ('CommonKnowledge-' + [guid]::NewGuid())
+New-Item -ItemType Directory -Path $ckRuntime | Out-Null
+$ckProcess = $null
+try {
+    $ckRunner = Join-Path $ckRuntime '{{ runner_filename }}'
+    Copy-Item -LiteralPath (Join-Path $ckDrive '{{ runner_filename }}') -Destination $ckRunner
+    $ckOutput = Join-Path $ckRuntime 'output.log'
+    $ckErrors = Join-Path $ckRuntime 'errors.log'
+    $ckUi = Join-Path $ckDrive 'ui'
+    $ckArgs = @('--server', '--gpu', 'disable', '--offline', '--confine-reads',
+        '--no-context-shift', '--no-webui-mcp-proxy', '--chat-template', 'chatml',
+        '--host', '{{ host }}', '--port', '{{ port }}', '--alias', '{{ model_alias }}',
+        '--model', ('"' + $ckModel + '"'), '--path', ('"' + $ckUi + '"'),
+        '--ctx-size', '{{ context_tokens }}', '--parallel', '1', '--threads', '{{ threads }}')
+    $ckProcess = Start-Process -FilePath $ckRunner -ArgumentList $ckArgs -PassThru -NoNewWindow `
+        -RedirectStandardOutput $ckOutput -RedirectStandardError $ckErrors
+    $ckReady = $false
+    for ($ckSecond = 0; $ckSecond -lt {{ startup_timeout_seconds }}; $ckSecond++) {
+        $ckText = (Get-Content -LiteralPath $ckOutput,$ckErrors -ErrorAction SilentlyContinue) -join "`n"
+        if ($ckText.Contains('listening on http://{{ host }}:{{ port }}')) { $ckReady = $true; break }
+        if ($ckProcess.HasExited) { break }
+        Start-Sleep -Seconds 1
+    }
+    if (!$ckReady) { throw ('The local LLM could not start. Keep using START and the printed cards.' + "`n" + $ckText) }
+    Write-Host 'Close this window or press Ctrl+C to stop.'
+    if ($env:CK_NO_BROWSER -ne '1') { Start-Process 'http://{{ host }}:{{ port }}' }
+    Wait-Process -Id $ckProcess.Id
+} finally {
+    if ($ckProcess -and !$ckProcess.HasExited) { Stop-Process -Id $ckProcess.Id -Force }
+    Remove-Item -LiteralPath $ckRuntime -Recurse -Force -ErrorAction SilentlyContinue
+}

@@ -81,16 +81,16 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `d2524d6dd605b8ec758099e14b792070e8253f981c1d03762a9b07e1b5acdb94`
 - Pipeline: atlas-v1-9f5bcc93eed8dccba44fa6186d41157c366ceef5920d1e0b6581d39692b4110f; inputs: census_county_analysis, census_places_ri, directory_seed_ri, noto_sans, protomaps_ri
 
-## Gemma 4 E2B; first local LLM candidate, exact GGUF unconfirmed
+## Qwen3.5-2B-Base, Q4_K_M
 
 - Catalog id: `base_model`
-- Version: [[VERIFY: publisher version]]
+- Version: aad7c886aae2293597680fd68ccd59aae23dc754
 - License: Apache-2.0
-- Attribution: Google DeepMind, Gemma 4
-- License proof: https://ai.google.dev/gemma/docs/gemma_4_license
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Attribution: Qwen Team; GGUF publisher aashish1904
+- License proof: https://huggingface.co/Qwen/Qwen3.5-2B-Base/blob/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE
+- Size: 1270808256 bytes
+- SHA-256: `ab36f9a7b0194ed9a6f80eeb000dac73002bcb14d0397c11c39417b6cd814994`
+- Publisher file: https://huggingface.co/aashish1904/Qwen3.5-2B-Base-GGUF/resolve/aad7c886aae2293597680fd68ccd59aae23dc754/Qwen3.5-2B-Base.Q4_K_M.gguf
 
 ## bitchat for Android
 
@@ -422,38 +422,60 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `30936feca234addcf7dbc58961750a0efe87023284a4a2f0fe36adeb44daaf91`
 - Publisher file: https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop-2.5.1.tar.gz
 
-## Offline laptop model runner for linux
+## llamafile license
 
-- Catalog id: `llm_runner_linux`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Catalog id: `llamafile_license`
+- Version: 017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2
+- License: Apache-2.0
+- Attribution: Mozilla Foundation
+- License proof: https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE
+- Size: 583 bytes
+- SHA-256: `df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f`
+- Publisher file: https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE
 
-## Offline laptop model runner for mac
+## llamafile llama notices
 
-- Catalog id: `llm_runner_mac`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Catalog id: `llamafile_llama_notices`
+- Version: 017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2
+- License: MIT
+- Attribution: The ggml authors, yhirose and Niels Lohmann
+- License proof: https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/llama.cpp.patches/llamafile-files/common/license.cpp
+- Size: 3463 bytes
+- SHA-256: `c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280`
+- Publisher file: https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/llama.cpp.patches/llamafile-files/common/license.cpp
 
-## Offline laptop model runner for windows
+## llamafile portable CPU runner, thin
 
-- Catalog id: `llm_runner_windows`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Catalog id: `llamafile_runner`
+- Version: 0.10.6; commit 017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2
+- License: Apache-2.0
+- Attribution: Mozilla Foundation and llamafile contributors; bundled component notices remain applicable
+- License proof: https://github.com/mozilla-ai/llamafile/blob/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE
+- Size: 43856395 bytes
+- SHA-256: `756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50`
+- Publisher file: https://github.com/mozilla-ai/llamafile/releases/download/0.10.6/llamafile-0.10.6-thin
+
+## Offline local LLM launchers, page, prompts and instructions (full)
+
+- Catalog id: `local_llm_full`
+- Version: 0.1.0 development bundle
+- License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
+- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
+- License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
+- Size: 44039478 bytes
+- SHA-256: `af99947cc4b7e49a9e9c014b3cb1fd5f680bff42fb0c1bd0baeedb238a4276eb`
+- Pipeline: local-llm-v1-b6c955cef07ab1953c0971dc49e2a511f00ca0f56055840c9b91b133c3d85dc9; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
+
+## Offline local LLM launchers, page, prompts and instructions (sample)
+
+- Catalog id: `local_llm_sample`
+- Version: 0.1.0 development bundle
+- License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
+- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
+- License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
+- Size: 44039484 bytes
+- SHA-256: `6ff2470ba0a95f2b988ae3c24b482fbb7c4da15a32b7ac353d16cb89667ca457`
+- Pipeline: local-llm-v1-b6c955cef07ab1953c0971dc49e2a511f00ca0f56055840c9b91b133c3d85dc9; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
 
 ## MapLibre Native build addon for Linux arm64
 
@@ -608,6 +630,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 10414588 bytes
 - SHA-256: `194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf
+
+## noto sans license
+
+- Catalog id: `noto_sans_license`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors
+- License proof: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt
+- Size: 4396 bytes
+- SHA-256: `cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt
 
 ## NotoSansSC[wght].ttf
 
@@ -884,6 +917,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f`
 - Publisher file: https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz
 
+## PocketPal Android, local GGUF reader
+
+- Catalog id: `pocketpal_android`
+- Version: 1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578
+- License: MIT
+- Attribution: Asghar Ghorbani and PocketPal contributors
+- License proof: https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE
+- Size: 275953055 bytes
+- SHA-256: `e26933e5a94434d94929f65fcc019f1e10b734a5864dcb0b7995ace569b37f6b`
+- Publisher file: https://github.com/a-ghorbani/pocketpal-ai/releases/download/v1.22.0/app-prod-release.apk
+
+## pocketpal license
+
+- Catalog id: `pocketpal_license`
+- Version: 8932367e9f4a373945993ae0a472c8768d5c0578
+- License: MIT
+- Attribution: Asghar Ghorbani
+- License proof: https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE
+- Size: 1072 bytes
+- SHA-256: `be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06`
+- Publisher file: https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE
+
 ## Protomaps v4 daily planet source for verified extracts
 
 - Catalog id: `protomaps_planet`
@@ -917,6 +972,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## qwen full license
+
+- Catalog id: `qwen_full_license`
+- Version: b1485b2fa6dfa1287294f269f5fb618e03d52d7c
+- License: Apache-2.0
+- Attribution: Qwen Team
+- License proof: https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE
+- Size: 11343 bytes
+- SHA-256: `50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32`
+- Publisher file: https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE
+
+## qwen sample license
+
+- Catalog id: `qwen_sample_license`
+- Version: dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68
+- License: Apache-2.0
+- Attribution: Qwen Team
+- License proof: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/raw/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE
+- Size: 11343 bytes
+- SHA-256: `50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32`
+- Publisher file: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/raw/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE
+
 ## Current amateur-radio exam question pools; confirm public-domain status
 
 - Catalog id: `radio_question_pools`
@@ -938,6 +1015,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Qwen3.5-0.8B-Base, Q4_K_M
+
+- Catalog id: `sample_model`
+- Version: d98ffedc21f95bcd34909d356dffa47cffcd0066
+- License: Apache-2.0
+- Attribution: Qwen Team; GGUF publisher mradermacher
+- License proof: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE
+- Size: 529297536 bytes
+- SHA-256: `99fe51dc14029f8fb69c9c90a8c59ce733488df22a2de09f4e69203bf1e9fd93`
+- Publisher file: https://huggingface.co/mradermacher/Qwen3.5-0.8B-Base-GGUF/resolve/d98ffedc21f95bcd34909d356dffa47cffcd0066/Qwen3.5-0.8B-Base.Q4_K_M.gguf
 
 ## Simple English Wikipedia without pictures
 

@@ -174,11 +174,40 @@ class Build(Model):
         return self
 
 
+class LocalLLM(Model):
+    host: Literal["127.0.0.1"]
+    port: int = Field(ge=1, le=65535)
+    context_tokens: int = Field(ge=32768)
+    threads: int = Field(ge=1, le=16)
+    startup_timeout_seconds: int = Field(ge=1, le=600)
+    max_output_tokens: int = Field(ge=1, le=4096)
+    max_question_chars: int = Field(ge=1, le=10000)
+    temperature: float = Field(ge=0, le=2)
+    model_filename: Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*$")]
+    runner_filename: Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*$")]
+    model_alias: Annotated[str, StringConstraints(pattern=r"^[a-z][a-z0-9_-]*$")]
+    models: dict[Literal["sample", "full"], Identifier]
+    fallback_variants: list[int] = Field(min_length=4, max_length=4)
+    warning: Text
+    warning_es: Text
+
+    @model_validator(mode="after")
+    def selection(self) -> Self:
+        if len(set(self.fallback_variants)) != 4 or not set(self.fallback_variants) <= set(
+            range(1, 9)
+        ):
+            raise ValueError("The local LLM fallback must name four distinct variants")
+        if set(self.models) != {"sample", "full"}:
+            raise ValueError("Both sample and full model selections are required")
+        return self
+
+
 class Configuration(Model):
     defaults: Defaults
     variants: Variants
     languages: list[Language]
     build: Build
+    local_llm: LocalLLM | None = None
 
     @model_validator(mode="after")
     def editions(self) -> Self:
@@ -198,6 +227,9 @@ def load_config(root: Path) -> Configuration:
         name: read_yaml(root / "config" / f"{name}.yaml")
         for name in ("defaults", "variants", "languages", "build")
     }
+    settings = root / "pipelines/llm/settings.yaml"
+    if settings.exists():
+        data["local_llm"] = read_yaml(settings)
     return Configuration.model_validate(data)
 
 

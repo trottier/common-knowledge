@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Common Knowledge — local LLM</title><link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script></head><body>
+<header><h1>Local LLM</h1><p id="warning" role="note">Loading the warning…</p>
+<p>Read START first. Follow the printed cards.</p></header>
+<label for="language">START language / Idioma de START</label>
+<select id="language"><option value="en">English</option><option value="es">Español</option></select>
+<button id="reset" type="button">New conversation</button>
+<main id="conversation" aria-live="polite"></main>
+<form id="chat"><label for="question">Your question</label>
+<textarea id="question" required rows="4"></textarea>
+<button id="send" type="submit" disabled>Ask</button><button id="cancel" type="button" disabled>Cancel</button></form>
+<p id="status" role="status">Starting…</p>
+<footer>Experimental. Read the START section named in an answer before acting.</footer>
+</body></html>

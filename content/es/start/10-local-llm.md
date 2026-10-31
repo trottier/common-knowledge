@@ -3,13 +3,13 @@ title: El LLM local
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/10-local-llm.md": "a0602a2355e61c6372e6b143b44674ce30d04ccad78b8a039662ebf607280784"}
+source_inputs: {"content/en/start/10-local-llm.md": "ab1aaa0fb742c6d4e57903088bb6785dcc0937d9c6eb3e371fad36853cc050d7"}
 review_required: [medical]
 ---
 
 ## LLM local experimental
 
-LLM local experimental. Puede equivocarse. Si contradice una tarjeta o un video, siga la tarjeta. [@project_spec]
+{{ local_llm.warning_es }} [@project_spec]
 
 El modelo y los iniciadores están en `9_LOCAL_LLM` cuando el plan los incluye.
 Use el iniciador para el sistema operativo de su computadora.

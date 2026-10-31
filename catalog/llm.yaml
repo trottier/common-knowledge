@@ -1,76 +1,237 @@
+# Selection criteria and evidence: docs/local-llm-selection.md.
+# Gemma 4 E2B was considered first, counting effective parameters as clarified.
+# The inspected official Q4 GGUF is instruction-tuned and exceeds 2.5 GB.
+# Pinned untuned Qwen alternates below meet the file and metadata checks.
+# No project tuning or model evaluation claim is made; named reviews remain open.
 [
   {
     "id": "base_model",
     "family": "llm",
-    "title": "Gemma 4 E2B; first local LLM candidate, exact GGUF unconfirmed",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "title": "Qwen3.5-2B-Base, Q4_K_M",
+    "url": "https://huggingface.co/aashish1904/Qwen3.5-2B-Base-GGUF/resolve/aad7c886aae2293597680fd68ccd59aae23dc754/Qwen3.5-2B-Base.Q4_K_M.gguf",
+    "version": "aad7c886aae2293597680fd68ccd59aae23dc754",
+    "size_bytes": 1270808256,
+    "sha256": "ab36f9a7b0194ed9a6f80eeb000dac73002bcb14d0397c11c39417b6cd814994",
     "license": "Apache-2.0",
-    "attribution": "Google DeepMind, Gemma 4",
-    "license_proof_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+    "attribution": "Qwen Team; GGUF publisher aashish1904",
+    "license_proof_url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/blob/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE",
+    "checksum_source_url": "https://huggingface.co/api/models/aashish1904/Qwen3.5-2B-Base-GGUF/revision/aad7c886aae2293597680fd68ccd59aae23dc754?blobs=true",
     "placement": "universal",
-    "dest": "9_LOCAL_LLM/",
+    "dest": "9_LOCAL_LLM/Model.gguf",
+    "profiles": [
+      "full"
+    ],
+    "requires_legal": true,
+    "review": "[[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]"
+  },
+  {
+    "id": "sample_model",
+    "family": "llm",
+    "title": "Qwen3.5-0.8B-Base, Q4_K_M",
+    "url": "https://huggingface.co/mradermacher/Qwen3.5-0.8B-Base-GGUF/resolve/d98ffedc21f95bcd34909d356dffa47cffcd0066/Qwen3.5-0.8B-Base.Q4_K_M.gguf",
+    "version": "d98ffedc21f95bcd34909d356dffa47cffcd0066",
+    "size_bytes": 529297536,
+    "sha256": "99fe51dc14029f8fb69c9c90a8c59ce733488df22a2de09f4e69203bf1e9fd93",
+    "license": "Apache-2.0",
+    "attribution": "Qwen Team; GGUF publisher mradermacher",
+    "license_proof_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE",
+    "checksum_source_url": "https://huggingface.co/api/models/mradermacher/Qwen3.5-0.8B-Base-GGUF/revision/d98ffedc21f95bcd34909d356dffa47cffcd0066?blobs=true",
+    "placement": "universal",
+    "dest": "9_LOCAL_LLM/Model.gguf",
+    "profiles": [
+      "sample"
+    ],
+    "requires_legal": true,
+    "review": "[[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]"
+  },
+  {
+    "id": "llamafile_runner",
+    "family": "binaries",
+    "title": "llamafile portable CPU runner, thin",
+    "url": "https://github.com/mozilla-ai/llamafile/releases/download/0.10.6/llamafile-0.10.6-thin",
+    "version": "0.10.6; commit 017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2",
+    "size_bytes": 43856395,
+    "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+    "license": "Apache-2.0",
+    "attribution": "Mozilla Foundation and llamafile contributors; bundled component notices remain applicable",
+    "license_proof_url": "https://github.com/mozilla-ai/llamafile/blob/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE",
+    "checksum_source_url": "https://api.github.com/repos/mozilla-ai/llamafile/releases/tags/0.10.6",
+    "placement": "hub_only",
+    "dest": "build/llm-runner/",
     "profiles": [
       "sample",
       "full"
     ],
-    "requires_legal": true,
-    "review": "[[VERIFY: confirm an untuned 4-bit GGUF at most 2.5 GB, multilingual coverage, exact bytes and hash; project publisher permits counting effective parameters for Gemma 4 E2B]]"
+    "review": "[[VERIFY: complete runtime third-party notice inventory and Windows, Mac and Linux offline launcher checklist]]"
   },
   {
-    "id": "llm_runner_windows",
-    "family": "binaries",
-    "title": "Offline laptop model runner for windows",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "9_LOCAL_LLM/",
+    "id": "qwen_full_license",
+    "family": "docs",
+    "title": "qwen full license",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE",
+    "size_bytes": 11343,
+    "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "version": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+    "license": "Apache-2.0",
+    "attribution": "Qwen Team",
+    "license_proof_url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
     "profiles": [
       "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]"
   },
   {
-    "id": "llm_runner_mac",
-    "family": "binaries",
-    "title": "Offline laptop model runner for mac",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "9_LOCAL_LLM/",
+    "id": "qwen_sample_license",
+    "family": "docs",
+    "title": "qwen sample license",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/raw/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE",
+    "size_bytes": 11343,
+    "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "version": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "license": "Apache-2.0",
+    "attribution": "Qwen Team",
+    "license_proof_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/raw/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
     "profiles": [
       "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]"
   },
   {
-    "id": "llm_runner_linux",
-    "family": "binaries",
-    "title": "Offline laptop model runner for linux",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "9_LOCAL_LLM/",
+    "id": "llamafile_license",
+    "family": "docs",
+    "title": "llamafile license",
+    "url": "https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE",
+    "size_bytes": 583,
+    "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+    "version": "017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2",
+    "license": "Apache-2.0",
+    "attribution": "Mozilla Foundation",
+    "license_proof_url": "https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
     "profiles": [
       "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]"
+  },
+  {
+    "id": "pocketpal_license",
+    "family": "docs",
+    "title": "pocketpal license",
+    "url": "https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE",
+    "size_bytes": 1072,
+    "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+    "version": "8932367e9f4a373945993ae0a472c8768d5c0578",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani",
+    "license_proof_url": "https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]"
+  },
+  {
+    "id": "noto_sans_license",
+    "family": "docs",
+    "title": "noto sans license",
+    "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt",
+    "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+    "size_bytes": 4396,
+    "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+    "license": "OFL-1.1",
+    "attribution": "The Noto Project Authors",
+    "license_proof_url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS notice-text pin]]"
+  },
+  {
+    "id": "llamafile_llama_notices",
+    "family": "docs",
+    "title": "llamafile llama notices",
+    "url": "https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/llama.cpp.patches/llamafile-files/common/license.cpp",
+    "version": "017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2",
+    "size_bytes": 3463,
+    "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+    "license": "MIT",
+    "attribution": "The ggml authors, yhirose and Niels Lohmann",
+    "license_proof_url": "https://raw.githubusercontent.com/mozilla-ai/llamafile/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/llama.cpp.patches/llamafile-files/common/license.cpp",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS notice-text pin]]"
+  },
+  {
+    "id": "local_llm_full",
+    "family": "generated",
+    "title": "Offline local LLM launchers, page, prompts and instructions (full)",
+    "version": "0.1.0 development bundle",
+    "size_bytes": 44039478,
+    "sha256": "af99947cc4b7e49a9e9c014b3cb1fd5f680bff42fb0c1bd0baeedb238a4276eb",
+    "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
+    "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES",
+    "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
+    "placement": "universal",
+    "dest": "9_LOCAL_LLM/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "base_model",
+      "llamafile_license",
+      "llamafile_llama_notices",
+      "llamafile_runner",
+      "noto_sans",
+      "noto_sans_license",
+      "pocketpal_license",
+      "qwen_full_license"
+    ],
+    "pipeline_version": "local-llm-v1-b6c955cef07ab1953c0971dc49e2a511f00ca0f56055840c9b91b133c3d85dc9",
+    "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
+  },
+  {
+    "id": "local_llm_sample",
+    "family": "generated",
+    "title": "Offline local LLM launchers, page, prompts and instructions (sample)",
+    "version": "0.1.0 development bundle",
+    "size_bytes": 44039484,
+    "sha256": "6ff2470ba0a95f2b988ae3c24b482fbb7c4da15a32b7ac353d16cb89667ca457",
+    "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
+    "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES",
+    "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
+    "placement": "universal",
+    "dest": "9_LOCAL_LLM/",
+    "profiles": [
+      "sample"
+    ],
+    "inputs": [
+      "llamafile_license",
+      "llamafile_llama_notices",
+      "llamafile_runner",
+      "noto_sans",
+      "noto_sans_license",
+      "pocketpal_license",
+      "qwen_sample_license",
+      "sample_model"
+    ],
+    "pipeline_version": "local-llm-v1-b6c955cef07ab1953c0971dc49e2a511f00ca0f56055840c9b91b133c3d85dc9",
+    "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
   }
 ]
