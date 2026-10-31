@@ -133,37 +133,39 @@ def filter_roads(
             ],
             check=True,
         )
+        cleaned = Path(temporary) / "cleaned.osm.pbf"
+        # Strip source users in the streaming native tool before any object can
+        # take the fast reference-geometry path below. Keep versions/timestamps.
+        subprocess.run(
+            [
+                "osmium",
+                "cat",
+                str(selected),
+                "--clean=uid",
+                "--clean=user",
+                "--clean=changeset",
+                "--output",
+                str(cleaned),
+            ],
+            check=True,
+        )
         with osmium.SimpleWriter(str(output)) as writer:
-
-            class Cleaner(osmium.SimpleHandler):
-                def write(self, kind, obj):
-                    raw = dict(obj.tags)
-                    tags = filtered_tags(kind, raw, settings)
-                    if tags:
-                        counts[kind + "_tagged"] += 1
-                    if excluded(raw):
-                        counts["excluded_tags_removed"] += 1
-                    # Keep untagged reference geometry so roads and areas stay
-                    # connected. The generated PBF does not keep source users.
-                    getattr(writer, "add_" + kind)(
-                        obj.replace(
-                            tags=tags,
-                            uid=0,
-                            user="",
-                            changeset=0,
-                        )
-                    )
-
-                def node(self, node):
-                    self.write("node", node)
-
-                def way(self, way):
-                    self.write("way", way)
-
-                def relation(self, relation):
-                    self.write("relation", relation)
-
-            Cleaner().apply_file(str(selected))
+            objects = (
+                osmium.FileProcessor(str(cleaned))
+                .with_filter(osmium.filter.EmptyTagFilter())
+                .handler_for_filtered(writer)
+            )
+            # Empty reference objects pass directly from C++ to the writer,
+            # preserving file order without a Python callback for every node.
+            for obj in objects:
+                kind = {"n": "node", "w": "way", "r": "relation"}[obj.type_str()]
+                raw = dict(obj.tags)
+                tags = filtered_tags(kind, raw, settings)
+                if tags:
+                    counts[kind + "_tagged"] += 1
+                if excluded(raw):
+                    counts["excluded_tags_removed"] += 1
+                getattr(writer, "add_" + kind)(obj.replace(tags=tags))
     check = subprocess.run(
         ["osmium", "check-refs", "--check-relations", str(output)],
         capture_output=True,
