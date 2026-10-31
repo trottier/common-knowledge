@@ -38,7 +38,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     core = commands.add_parser("core", help="Build START, card, tags and variant guide")
     core.add_argument("--output", type=Path, default=Path("build/core"))
     core.add_argument("--epoch", type=int)
-    core.add_argument("--languages", nargs="+", default=["en"])
+    core.add_argument("--languages", nargs="+", help="Edition codes; defaults to all fifteen")
     core.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")
     plan = commands.add_parser("plan", help="Account for every variant's capacity")
     plan.add_argument("--profile", choices=["dev", "sample", "full"], default="dev")

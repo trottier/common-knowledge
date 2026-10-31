@@ -89,7 +89,9 @@ def check_manifest(root: Path) -> None:
             raise ValueError(f"Manifest checksum mismatch: {relative}")
 
 
-def _copy_core(config: Configuration, core: Path, tree: Path) -> list[str]:
+def _copy_core(root: Path, config: Configuration, core: Path, tree: Path) -> list[str]:
+    from ck.locales import edition_for
+
     editions = []
     for language in config.languages:
         source = core / language.code
@@ -97,7 +99,7 @@ def _copy_core(config: Configuration, core: Path, tree: Path) -> list[str]:
             continue
         folder = language.name
         safe_path(f"1_START/{folder}")
-        editions.append(folder)
+        editions.append(edition_for(root, language, config).readme.format(folder=folder))
         for path in sorted(source.glob("*.pdf")):
             start = "START" in path.name or "VARIANTS" in path.name
             if start:
@@ -173,7 +175,7 @@ def assemble(
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-stage-") as temporary:
         tree = Path(temporary) / "tree"
         tree.mkdir()
-        editions = _copy_core(config, core, tree)
+        editions = _copy_core(root, config, core, tree)
         placed = {
             key: item for key, item in items.items() if selected(item, config, number, profile)
         }
@@ -194,7 +196,7 @@ def assemble(
         readme = ["COMMON KNOWLEDGE", f"Version {config.build.version}; variant {number}", ""]
         if profile != "full":
             readme += ["DEVELOPMENT BUILD — NOT APPROVED FOR EMERGENCY DISTRIBUTION", ""]
-        readme += [f"{name}: Open 1_START/{name}/01_START_phone.pdf" for name in editions]
+        readme += editions
         readme += [
             "",
             "Phone PDFs include their fonts. If laptop HTML text is missing, open the PDF.",

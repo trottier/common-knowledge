@@ -16,7 +16,9 @@ of done remain in [AGENTS.md](../AGENTS.md).
    families as explicit unresolved entries, release gate and attribution generation.
 6. **Implemented and tested:** capacity planner, atomic assembler,
    real FAT32 images, manifest readback, normalized filesystem timestamps and CI.
-7. Spanish full edition, thirteen stubs and fetched fonts.
+7. **Implemented:** Spanish full edition, thirteen quick-start stubs, localized
+   README lines, machine-translation notices and cataloged fonts for every script.
+   Source hashes require retranslation when English instructions or defaults change.
 8. National directory pipeline, starting with one small state.
 9. Road atlas pipeline, starting with one small state.
 10. Android map pipeline and planner-selected build path.

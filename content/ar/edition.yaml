@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "ترجمة آلية غير مراجعة.",
+  "contents_label": "المحتويات",
+  "sources_label": "المصادر",
+  "draft_label": "مسودة · غير معتمدة للنشر",
+  "readme": "افتح 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "اذهب إلى المكان المكتوب على البطاقة.",
+    "nearest_public_elementary_school_main_entrance": "وإلا فاذهب إلى المدخل الرئيسي لأقرب مدرسة ابتدائية حكومية.",
+    "nearest_fire_station": "إذا لم توجد مدرسة على مسافة يمكن قطعها مشياً، فاذهب إلى أقرب محطة إطفاء.",
+    "nearest_place_of_worship": "إذا لم يتوفر أي منهما، فاذهب إلى أقرب مكان عبادة."
+  }
+}

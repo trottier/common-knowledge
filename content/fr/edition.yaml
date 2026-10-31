@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Traduction automatique non relue.",
+  "contents_label": "Sommaire",
+  "sources_label": "Sources",
+  "draft_label": "Brouillon · Diffusion non approuvée",
+  "readme": "Ouvrez 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Allez au lieu écrit sur la carte.",
+    "nearest_public_elementary_school_main_entrance": "Sinon, allez à l’entrée principale de l’école primaire publique la plus proche.",
+    "nearest_fire_station": "Si aucune école n’est accessible à pied, allez à la caserne de pompiers la plus proche.",
+    "nearest_place_of_worship": "Si aucun de ces deux lieux n’est disponible, allez au lieu de culte le plus proche."
+  }
+}

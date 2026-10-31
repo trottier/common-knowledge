@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "검토되지 않은 기계 번역입니다.",
+  "contents_label": "목차",
+  "sources_label": "출처",
+  "draft_label": "초안 · 배포 승인 전",
+  "readme": "1_START/{folder}/01_START_phone.pdf 열기",
+  "rally_labels": {
+    "written_on_card": "카드에 적힌 장소로 가세요.",
+    "nearest_public_elementary_school_main_entrance": "적힌 장소가 없으면 가장 가까운 공립 초등학교 정문으로 가세요.",
+    "nearest_fire_station": "걸어서 갈 수 있는 학교가 없으면 가장 가까운 소방서로 가세요.",
+    "nearest_place_of_worship": "둘 다 없으면 가장 가까운 종교 시설로 가세요."
+  }
+}

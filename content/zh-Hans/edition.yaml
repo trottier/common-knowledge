@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "未经人工审核的机器翻译。",
+  "contents_label": "目录",
+  "sources_label": "来源",
+  "draft_label": "草稿 · 尚未批准发布",
+  "readme": "打开 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "先去卡片上写明的地点。",
+    "nearest_public_elementary_school_main_entrance": "否则，去最近的公立小学正门。",
+    "nearest_fire_station": "如果没有步行可达的小学，去最近的消防站。",
+    "nearest_place_of_worship": "如果以上两种地点都没有，去最近的宗教活动场所。"
+  }
+}

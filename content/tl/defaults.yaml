@@ -1,0 +1,19 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translations": {
+    "meetings.if_nobody_there": {
+      "source_sha256": "b35014e92435a4a3105402a8093133e8fdf46a906807ee65c13d31db11f4677f",
+      "text": "Mag-iwan ng sulat na may petsa at bumalik sa susunod na oras ng pagtitipon."
+    },
+    "radio.privacy_code": {
+      "source_sha256": "140bedbf9c3f6d56a9846d2ba7088798683f4da0c248231336e6a05679e4fdfe",
+      "text": "wala"
+    },
+    "radio.listen_window": {
+      "source_sha256": "e01f6996b027707c66a8d1fed8b64d349b753383705f69f8bde8a0fa845f4a2e",
+      "text": "Unang limang minuto ng bawat oras"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translations": {
+    "meetings.if_nobody_there": {
+      "source_sha256": "b35014e92435a4a3105402a8093133e8fdf46a906807ee65c13d31db11f4677f",
+      "text": "Deje una nota con la fecha y vuelva a la siguiente hora de reunión."
+    },
+    "convener.rule": {
+      "source_sha256": "b6729f6f668a5137fbdcd49534d66c83dda0e57ffeb3bfabec382d3b9082feb1",
+      "text": "La primera persona adulta que llegue al punto de encuentro al mediodía abre la reunión con el guion de una página."
+    },
+    "convener.rotation": {
+      "source_sha256": "16f89e45cae6c8310da35d92d1f5449061f371838329edb811b99bc1082f3d21",
+      "text": "Cada reunión termina eligiendo a quien dirigirá la siguiente. Nadie ocupa ese puesto dos días seguidos."
+    },
+    "convener.role_fallback": {
+      "source_sha256": "a79715a0dc7df7d0d7754e6ecfe575b5c2a0f8e045e1598b70d0b1c1117df8dc",
+      "text": "Si nadie elige una función, la asume quien tenga una unidad de la variante con ese módulo, hasta que otra persona más preparada se ofrezca."
+    },
+    "radio.privacy_code": {
+      "source_sha256": "140bedbf9c3f6d56a9846d2ba7088798683f4da0c248231336e6a05679e4fdfe",
+      "text": "ninguno"
+    },
+    "radio.listen_window": {
+      "source_sha256": "e01f6996b027707c66a8d1fed8b64d349b753383705f69f8bde8a0fa845f4a2e",
+      "text": "Los primeros cinco minutos de cada hora"
+    },
+    "mesh.schedule": {
+      "source_sha256": "01894ce0525d160b5da6d5e15c6c7bfe84b49e981fa57d0e6cb0abd638123268",
+      "text": "Enciéndala al empezar cada hora, junto con la escucha de radio; déjela encendida si la batería lo permite."
+    }
+  }
+}

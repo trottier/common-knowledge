@@ -444,6 +444,50 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/NotoSansArabic%5Bwdth%2Cwght%5D.ttf
 
+## NotoSansDevanagari[wdth,wght].ttf
+
+- Catalog id: `noto_sans_devanagari`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansdevanagari/OFL.txt
+- Size: 641944 bytes
+- SHA-256: `14ec4af41f27482216d1c2229f417ff9b1425e1babb014e57d1d40d03229853e`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansdevanagari/NotoSansDevanagari%5Bwdth%2Cwght%5D.ttf
+
+## NotoSansKR[wght].ttf
+
+- Catalog id: `noto_sans_kr`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanskr/OFL.txt
+- Size: 10414588 bytes
+- SHA-256: `194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf
+
+## NotoSansSC[wght].ttf
+
+- Catalog id: `noto_sans_sc`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/OFL.txt
+- Size: 17772300 bytes
+- SHA-256: `a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf
+
+## NotoSansTC[wght].ttf
+
+- Catalog id: `noto_sans_tc`
+- Version: 6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec
+- License: OFL-1.1
+- Attribution: The Noto Project Authors; copyright notices in the linked OFL file
+- License proof: https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstc/OFL.txt
+- Size: 11941968 bytes
+- SHA-256: `864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf
+
 ## NWS weather guides and official translations; select individual files
 
 - Catalog id: `nws_guides`

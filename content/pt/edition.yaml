@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Tradução automática não revisada.",
+  "contents_label": "Sumário",
+  "sources_label": "Fontes",
+  "draft_label": "Rascunho · Não aprovado para distribuição",
+  "readme": "Abra 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Vá ao lugar escrito no cartão.",
+    "nearest_public_elementary_school_main_entrance": "Caso contrário, vá à entrada principal da escola primária pública mais próxima.",
+    "nearest_fire_station": "Se não houver uma escola a uma distância que possa percorrer a pé, vá ao posto de bombeiros mais próximo.",
+    "nearest_place_of_worship": "Se nenhum dos dois estiver disponível, vá ao local de culto mais próximo."
+  }
+}

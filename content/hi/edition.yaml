@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "यह मशीन अनुवाद है। इसकी समीक्षा नहीं हुई है।",
+  "contents_label": "विषय सूची",
+  "sources_label": "स्रोत",
+  "draft_label": "मसौदा · वितरण के लिए स्वीकृत नहीं",
+  "readme": "1_START/{folder}/01_START_phone.pdf खोलें",
+  "rally_labels": {
+    "written_on_card": "कार्ड पर लिखी जगह पर जाएँ।",
+    "nearest_public_elementary_school_main_entrance": "अगर जगह नहीं लिखी है, तो सबसे पास के सरकारी प्राथमिक स्कूल के मुख्य प्रवेश द्वार पर जाएँ।",
+    "nearest_fire_station": "अगर पैदल पहुँचने की दूरी पर स्कूल नहीं है, तो सबसे पास के अग्निशमन केंद्र पर जाएँ।",
+    "nearest_place_of_worship": "अगर दोनों उपलब्ध नहीं हैं, तो सबसे पास के पूजा-स्थल पर जाएँ।"
+  }
+}

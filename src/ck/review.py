@@ -37,6 +37,15 @@ def release_blockers(root: Path) -> list[str]:
         if header.status != "reviewed" or not header.reviewer or not header.reviewed_on:
             tags = ", ".join(header.review_required) or "English content"
             problems.append(f"{path.relative_to(root)}: named human review required ({tags})")
+    edition = root / "content/en/edition.yaml"
+    if edition.exists():
+        from ck.config import read_yaml
+
+        labels = read_yaml(edition)
+        if labels["status"] != "reviewed" or not labels["reviewer"] or not labels["reviewed_on"]:
+            problems.append(
+                "content/en/edition.yaml: named human review of English labels required"
+            )
     return sorted(set(problems))
 
 

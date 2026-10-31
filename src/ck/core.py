@@ -99,6 +99,7 @@ def bundle_sections(sources: list[Path], target: Path) -> None:
         "reviewer": "; ".join(sorted({h.reviewer for h in headers})) if approved else None,
         "reviewed_on": min(h.reviewed_on for h in headers) if approved else None,
         "review_required": sorted({tag for h in headers for tag in h.review_required}),
+        "source_inputs": {key: value for h in headers for key, value in h.source_inputs.items()},
     }
     text = "---\n" + yaml.safe_dump(metadata, allow_unicode=True) + "---\n\n"
     for header, body in zip(headers, bodies, strict=True):
@@ -118,11 +119,12 @@ def build_core(
     if output.exists() and any(output.iterdir()):
         raise ValueError("Core output must be empty; choose a clean build directory")
     files = []
-    unknown = set(languages or ["en"]) - {item.code for item in config.languages}
+    requested = languages if languages is not None else [item.code for item in config.languages]
+    unknown = set(requested) - {item.code for item in config.languages}
     if unknown:
         raise ValueError(f"Unknown requested editions: {sorted(unknown)}")
     for language in config.languages:
-        if language.code not in (languages or ["en"]):
+        if language.code not in requested:
             continue
         destination = output / language.code
         source_dir = root / "content" / language.code
@@ -137,8 +139,12 @@ def build_core(
                 )
             )
         for source_name, target_name, template in (
-            ("card.md", "02_CARD.pdf", "card.html.j2"),
-            ("tags.md", "03_TAGS.pdf", "tags.html.j2"),
+            ()
+            if language.status == "stub"
+            else (
+                ("card.md", "02_CARD.pdf", "card.html.j2"),
+                ("tags.md", "03_TAGS.pdf", "tags.html.j2"),
+            )
         ):
             files.append(
                 render_pdf(

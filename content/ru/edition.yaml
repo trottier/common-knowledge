@@ -1,0 +1,16 @@
+{
+  "status": "machine",
+  "reviewer": null,
+  "reviewed_on": null,
+  "translation_footer": "Машинный перевод без проверки.",
+  "contents_label": "Содержание",
+  "sources_label": "Источники",
+  "draft_label": "Черновик · Не одобрено к выпуску",
+  "readme": "Откройте 1_START/{folder}/01_START_phone.pdf",
+  "rally_labels": {
+    "written_on_card": "Идите в место, указанное на карточке.",
+    "nearest_public_elementary_school_main_entrance": "Если место не указано, идите к главному входу ближайшей государственной начальной школы.",
+    "nearest_fire_station": "Если до школы нельзя дойти пешком, идите к ближайшей пожарной станции.",
+    "nearest_place_of_worship": "Если нет ни того ни другого, идите к ближайшему месту богослужения."
+  }
+}
