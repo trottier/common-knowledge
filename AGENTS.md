@@ -393,6 +393,7 @@ It prints a per-variant table and **fails** if any variant overflows, naming the
   - Open weights under Apache-2.0 or MIT; avoid custom licenses with use restrictions unless legal approves.
   - Strong multilingual coverage of the 15 editions.
   - Four billion parameters or fewer.
+    For Gemma 4 E2B, count effective parameters (project publisher clarification); the separate 2.5 GB file limit still applies.
   - 4-bit GGUF of 2.5 GB or less.
   - Context window of 32K tokens or more.
   - Primary candidate: Gemma 4 E2B (Apache-2.0, built for on-device use; v0.4 plans an emergency fine-tune of it, ideally with Google). Alternates: current Qwen small models (Apache-2.0) and Phi mini models (MIT) [[VERIFY: latest versions, licenses, GGUF files and checksums]].

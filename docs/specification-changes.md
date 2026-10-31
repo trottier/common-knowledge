@@ -33,8 +33,9 @@ source archive remain unconfirmed.
 
 Gemma 4 E2B is the first local LLM candidate. Google's
 [model card](https://huggingface.co/google/gemma-4-E2B) lists Apache-2.0, a 128K context,
-2.3B effective parameters and 5.1B including embeddings. The four-billion parameter
-criterion needs clarification before selecting this candidate. An exact untuned
+2.3B effective parameters and 5.1B including embeddings. The project publisher clarified
+that the four-billion limit counts effective parameters for this candidate.
+The separate file-size limit still applies. An exact untuned
 4-bit GGUF at most 2.5 GB and its checksum have not been confirmed. No evaluation
 or fine-tuning claim is made.
 

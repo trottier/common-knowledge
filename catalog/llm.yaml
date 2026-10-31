@@ -17,7 +17,7 @@
       "full"
     ],
     "requires_legal": true,
-    "review": "[[VERIFY: resolve 5.1B total versus 2.3B effective parameters against the 4B limit; confirm an untuned 4-bit GGUF at most 2.5 GB, multilingual coverage, exact bytes and hash]]"
+    "review": "[[VERIFY: confirm an untuned 4-bit GGUF at most 2.5 GB, multilingual coverage, exact bytes and hash; project publisher permits counting effective parameters for Gemma 4 E2B]]"
   },
   {
     "id": "llm_runner_windows",
