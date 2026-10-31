@@ -228,8 +228,8 @@
     "family": "generated",
     "title": "WikiMed offline reference edition with repaired links",
     "version": "WikiMed 2026-10; regenerated edition",
-    "size_bytes": 753161199,
-    "sha256": "ee698d4af6fb2daad16af0d7dc06dd73a09e513588c4f1505362d2951563fd40",
+    "size_bytes": 753161204,
+    "sha256": "aa2e33ea64593cedebe97ff5a0eaf580d9142101dc4fc7cc0699ffa01fc121ad",
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikipedia contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained",
     "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
@@ -241,7 +241,7 @@
     "inputs": [
       "wikimed_en_nopic"
     ],
-    "pipeline_version": "zim-offline-v1-a6023222bc690e25ce13e390a825f15dbd62332dc8809b3563715a285ce52a1a",
+    "pipeline_version": "zim-offline-v1-c8cd52a2193ab857c0b1dd9e7bcfcd3cf66935fd221cb1fcc807655dc47e67ca",
     "review": "[[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]"
   }
 ]

@@ -1144,9 +1144,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikipedia contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained
 - License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
-- Size: 753161199 bytes
-- SHA-256: `ee698d4af6fb2daad16af0d7dc06dd73a09e513588c4f1505362d2951563fd40`
-- Pipeline: zim-offline-v1-a6023222bc690e25ce13e390a825f15dbd62332dc8809b3563715a285ce52a1a; inputs: wikimed_en_nopic
+- Size: 753161204 bytes
+- SHA-256: `aa2e33ea64593cedebe97ff5a0eaf580d9142101dc4fc7cc0699ffa01fc121ad`
+- Pipeline: zim-offline-v1-c8cd52a2193ab857c0b1dd9e7bcfcd3cf66935fd221cb1fcc807655dc47e67ca; inputs: wikimed_en_nopic
 
 ## English Wikipedia introductions hub archive
 

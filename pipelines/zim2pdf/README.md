@@ -106,7 +106,7 @@ A small fixture checks byte-identical rebuilds and strict offline validation.
 Title search is retained. The publisher's original full-text index is omitted in
 this regenerated edition; this limitation is written into its placed `SOURCE.TXT`.
 The full-archive prototype passed every format check and the entry comparison.
-Its measured payload is 753,161,199 bytes, including `SOURCE.TXT`. The catalog pins
+Its measured payload is 753,161,204 bytes, including `SOURCE.TXT`. The catalog pins
 that generated manifest while repeat full-archive reproducibility, pin review and
 physical reader checks remain open. The original source is a build input only.
 
