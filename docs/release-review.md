@@ -61,7 +61,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (466)
+## Remaining VERIFY markers (467)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -300,6 +300,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/geodata.yaml:377` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
 - `catalog/geodata.yaml:396` — [[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]
 - `catalog/geodata.yaml:415` — [[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]
+- `catalog/geodata.yaml:434` — [[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; clip output to Census territory boundaries]]
 - `catalog/llm.yaml:25` — [[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]
 - `catalog/llm.yaml:45` — [[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]
 - `catalog/llm.yaml:65` — [[VERIFY: complete runtime third-party notice inventory and Windows, Mac and Linux offline launcher checklist]]

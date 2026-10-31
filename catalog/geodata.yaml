@@ -413,5 +413,24 @@
       "full"
     ],
     "review": "[[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]"
+  },
+  {
+    "id": "geofabrik_oceania",
+    "family": "geodata",
+    "title": "Geofabrik Australia/Oceania source for U.S. Pacific territory outputs",
+    "url": "https://download.geofabrik.de/australia-oceania-261029.osm.pbf",
+    "version": "2026-10-29T21:21:26Z / australia-oceania-261029.osm.pbf",
+    "size_bytes": 1578680529,
+    "sha256": "c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; regional extract provided by Geofabrik",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "checksum_source_url": "https://download.geofabrik.de/australia-oceania-261029.osm.pbf.md5",
+    "review": "[[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; clip output to Census territory boundaries]]"
   }
 ]

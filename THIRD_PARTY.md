@@ -411,6 +411,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072`
 - Publisher file: https://www.fema.gov/about/reports-and-data/openfema/nri/v120/NRI_Table_Counties.zip
 
+## Geofabrik Australia/Oceania source for U.S. Pacific territory outputs
+
+- Catalog id: `geofabrik_oceania`
+- Version: 2026-10-29T21:21:26Z / australia-oceania-261029.osm.pbf
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; regional extract provided by Geofabrik
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 1578680529 bytes
+- SHA-256: `c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519`
+- Publisher file: https://download.geofabrik.de/australia-oceania-261029.osm.pbf
+
 ## Geofabrik Rhode Island OSM extract
 
 - Catalog id: `geofabrik_ri`
