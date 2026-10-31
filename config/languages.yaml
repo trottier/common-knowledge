@@ -1,17 +1,18 @@
-# status: full | machine | stub
-- { code: en,      name: "English",          script: Latn, dir: ltr, font: noto_sans,      status: full }
-- { code: es,      name: "Español",          script: Latn, dir: ltr, font: noto_sans,      status: machine }
-- { code: zh-Hans, name: "简体中文",          script: Hans, dir: ltr, font: noto_sans_sc,   status: stub }
-- { code: zh-Hant, name: "繁體中文",          script: Hant, dir: ltr, font: noto_sans_tc,   status: stub }
-- { code: vi,      name: "Tiếng Việt",       script: Latn, dir: ltr, font: noto_sans,      status: stub }
-- { code: tl,      name: "Tagalog",          script: Latn, dir: ltr, font: noto_sans,      status: stub }
-- { code: ko,      name: "한국어",            script: Kore, dir: ltr, font: noto_sans_kr,   status: stub }
-- { code: ar,      name: "العربية",          script: Arab, dir: rtl, font: noto_sans_arabic, status: stub }
-- { code: ru,      name: "Русский",          script: Cyrl, dir: ltr, font: noto_sans,      status: stub }
-- { code: ht,      name: "Kreyòl ayisyen",   script: Latn, dir: ltr, font: noto_sans,      status: stub }
-- { code: pt,      name: "Português",        script: Latn, dir: ltr, font: noto_sans,      status: stub }
-- { code: fr,      name: "Français",         script: Latn, dir: ltr, font: noto_sans,      status: stub }
-- { code: fa,      name: "فارسی",            script: Arab, dir: rtl, font: noto_sans_arabic, status: stub }
-- { code: pl,      name: "Polski",           script: Latn, dir: ltr, font: noto_sans,      status: stub }
-- { code: hi,      name: "हिन्दी",            script: Deva, dir: ltr, font: noto_sans_devanagari, status: stub }
-# [[VERIFY: confirm the list and order against current ACS limited-English-proficiency data]]
+# Publisher retained these 15 editions on 2026-10-31.
+# Ordered by 2025 ACS B16001 LEP point estimates within that selection.
+# Chinese writing systems share one Census group; see docs/language-selection.md.
+- {code: en, name: English, script: Latn, dir: ltr, font: noto_sans, status: full}
+- {code: es, name: Español, script: Latn, dir: ltr, font: noto_sans, status: machine}
+- {code: zh-Hans, name: 简体中文, script: Hans, dir: ltr, font: noto_sans_sc, status: stub}
+- {code: zh-Hant, name: 繁體中文, script: Hant, dir: ltr, font: noto_sans_tc, status: stub}
+- {code: vi, name: Tiếng Việt, script: Latn, dir: ltr, font: noto_sans, status: stub}
+- {code: ko, name: 한국어, script: Kore, dir: ltr, font: noto_sans_kr, status: stub}
+- {code: tl, name: Tagalog, script: Latn, dir: ltr, font: noto_sans, status: stub}
+- {code: ar, name: العربية, script: Arab, dir: rtl, font: noto_sans_arabic, status: stub}
+- {code: ht, name: Kreyòl ayisyen, script: Latn, dir: ltr, font: noto_sans, status: stub}
+- {code: ru, name: Русский, script: Cyrl, dir: ltr, font: noto_sans, status: stub}
+- {code: pt, name: Português, script: Latn, dir: ltr, font: noto_sans, status: stub}
+- {code: fr, name: Français, script: Latn, dir: ltr, font: noto_sans, status: stub}
+- {code: fa, name: فارسی, script: Arab, dir: rtl, font: noto_sans_arabic, status: stub}
+- {code: pl, name: Polski, script: Latn, dir: ltr, font: noto_sans, status: stub}
+- {code: hi, name: हिन्दी, script: Deva, dir: ltr, font: noto_sans_devanagari, status: stub}

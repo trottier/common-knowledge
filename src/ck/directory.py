@@ -491,6 +491,10 @@ def build_directory(
             "May help; not confirmed open. "
             "No entry is an event shelter or an assurance of service.",
             "",
+            "Geographic assignments use Census TIGER/Line® statistical boundaries, "
+            "not legal land descriptions. TIGER/Line® is a registered trademark "
+            "of the U.S. Census Bureau.",
+            "",
         ]
         if rejected:
             body += [

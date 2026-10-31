@@ -22,6 +22,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     validate.add_argument("--release", action="store_true")
     review = commands.add_parser("review-report", help="Inventory every remaining release gate")
     review.add_argument("--output", type=Path, required=True)
+    language_audit = commands.add_parser(
+        "languages-audit", help="Audit edition order against pinned ACS LEP estimates"
+    )
+    language_audit.add_argument("--cache", type=Path, default=Path("cache"))
+    language_audit.add_argument("--output", type=Path, required=True)
     catalog = commands.add_parser("catalog", help="Generate third-party attributions")
     catalog.add_argument("--output", type=Path, default=Path("THIRD_PARTY.md"))
     fetch = commands.add_parser("fetch", help="Fetch pinned items into the verified cache")
@@ -178,6 +183,14 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "languages-audit":
+            from ck.language_audit import audit_languages
+
+            result = audit_languages(args.root, args.cache, args.output)
+            print(
+                json.dumps({"order_matches": result["order_matches"], "output": str(args.output)})
+            )
+            return 0
         if args.command == "review-report":
             from ck.review import write_release_review
 

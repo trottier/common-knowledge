@@ -3,18 +3,20 @@
     "id": "geofabrik_us",
     "family": "geodata",
     "title": "Geofabrik U.S. OSM extract",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://download.geofabrik.de/north-america/us-261029.osm.pbf",
+    "version": "2026-10-29T21:21:26Z / us-261029.osm.pbf",
+    "size_bytes": 12238337062,
+    "sha256": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; U.S. extract provided by Geofabrik",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
       "full"
-    ]
+    ],
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us-261029.osm.pbf.md5",
+    "review": "[[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; Pacific territories require separate source coverage]]"
   },
   {
     "id": "census_counties",
@@ -212,7 +214,7 @@
     "sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
     "license": "US-PD",
     "attribution": "U.S. Census Bureau, 2025 TIGER/Line",
-    "license_proof_url": "[[VERIFY: per-item TIGER Line redistribution statement]]",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
@@ -233,7 +235,7 @@
     "sha256": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0",
     "license": "US-PD",
     "attribution": "U.S. Census Bureau",
-    "license_proof_url": "[[VERIFY: confirm Census reference-file redistribution statement]]",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
     "profiles": [
       "sample",
       "full"
@@ -249,7 +251,7 @@
     "size_bytes": 292174,
     "sha256": "520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429",
     "license": "US-PD",
-    "license_proof_url": "[[VERIFY: confirm publisher place-file license proof]]",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
     "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
     "placement": "hub_only",
     "dest": "build/inputs/",
@@ -373,5 +375,43 @@
       "full"
     ],
     "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "census_lep_2025",
+    "family": "geodata",
+    "title": "ACS 2025 one-year B16001 language and English proficiency estimates",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/data/1YRData/acsdt1y2025-b16001.dat",
+    "version": "2025 ACS 1-year / released 2026-10-29",
+    "size_bytes": 874578,
+    "sha256": "605f0cda05aadf5dc658f3540681ef6a94ad4c4e6f3658563fe5f4e776563fd8",
+    "license": "CC0-1.0",
+    "attribution": "U.S. Census Bureau, 2025 American Community Survey 1-Year Estimates, table B16001",
+    "license_proof_url": "https://api.census.gov/data/2025/acs/acs1.json",
+    "placement": "hub_only",
+    "dest": "build/inputs/languages/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]"
+  },
+  {
+    "id": "census_acs_2025_labels",
+    "family": "geodata",
+    "title": "ACS 2025 one-year table labels and universes",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/documentation/ACS20251YR_Table_Shells.txt",
+    "version": "2025 ACS 1-year / released 2026-10-29",
+    "size_bytes": 7242343,
+    "sha256": "ff33ade0dad19e66d86027604bcef5f41bbfe1a77ac494735a9f36d693491799",
+    "license": "CC0-1.0",
+    "attribution": "U.S. Census Bureau, 2025 American Community Survey 1-Year Estimates, table B16001",
+    "license_proof_url": "https://api.census.gov/data/2025/acs/acs1.json",
+    "placement": "hub_only",
+    "dest": "build/inputs/languages/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]"
   }
 ]

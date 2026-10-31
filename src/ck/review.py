@@ -79,7 +79,7 @@ def write_release_review(root: Path, output: Path) -> None:
         "- FCC geographic exceptions, FEMA county-profile gaps and atlas page/grid closure "
         "require resolution and documented source coverage.",
         "- Topic video libraries, all eight in-depth collections, official translated guides, "
-        "mesh apps and remaining catalog candidates need verified inputs and placement.",
+        "mesh apps and remaining catalog candidates need complete placement and review.",
         "- WikEM's exact current publisher archive remains unresolved. Do not silently "
         "replace the required sample archive with a different collection.",
         "- Complete corresponding GPL source and dependency notices for shipped applications; "
@@ -97,7 +97,12 @@ def write_release_review(root: Path, output: Path) -> None:
         "32 GB answer is a nominal target, not that measurement.",
         "- Confirm release epoch, the verification site's public URL and immutable preservation "
         "of pinned inputs. Choose full-image hosting separately.",
-        "- Verify the language ranking against current ACS limited-English-proficiency data.",
+        (
+            "- Follow the publisher's edition-selection policy in docs/language-selection.md "
+            "and repeat the pinned ACS order audit before tagging."
+            if (root / "docs/language-selection.md").exists()
+            else "- Verify the language ranking against current ACS limited-English-proficiency data."
+        ),
         "- Complete docs/phone-test-checklist.md on at least three phones and two laptop "
         "operating systems, including a USB-A-only laptop with an adapter. Check video "
         "language switching, offline apps, mapping, sharing and local LLM launchers.",

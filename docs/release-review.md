@@ -7,7 +7,7 @@ Regenerate with `ck review-report --output docs/release-review.md` after source 
 
 - National directory, county atlas and Android map coverage remain unfinished. Rhode Island results do not establish nationwide coverage or capacity.
 - FCC geographic exceptions, FEMA county-profile gaps and atlas page/grid closure require resolution and documented source coverage.
-- Topic video libraries, all eight in-depth collections, official translated guides, mesh apps and remaining catalog candidates need verified inputs and placement.
+- Topic video libraries, all eight in-depth collections, official translated guides, mesh apps and remaining catalog candidates need complete placement and review.
 - WikEM's exact current publisher archive remains unresolved. Do not silently replace the required sample archive with a different collection.
 - Complete corresponding GPL source and dependency notices for shipped applications; a top-level repository archive alone does not establish source closure.
 - Freeze the toolchain and regenerate derived inputs before pinning final outputs. Prototype fingerprints do not establish a rebuild from the release tag.
@@ -18,7 +18,7 @@ Regenerate with `ck review-report --output docs/release-review.md` after source 
 
 - Measure the usable capacity of the production USB part in bytes. The publisher's 32 GB answer is a nominal target, not that measurement.
 - Confirm release epoch, the verification site's public URL and immutable preservation of pinned inputs. Choose full-image hosting separately.
-- Verify the language ranking against current ACS limited-English-proficiency data.
+- Follow the publisher's edition-selection policy in docs/language-selection.md and repeat the pinned ACS order audit before tagging.
 - Complete docs/phone-test-checklist.md on at least three phones and two laptop operating systems, including a USB-A-only laptop with an adapter. Check video language switching, offline apps, mapping, sharing and local LLM launchers.
 - English content, clinical protocols, legal/radio text and medical topic selection need named human reviewers. The agent cannot grant these reviews.
 
@@ -61,7 +61,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (474)
+## Remaining VERIFY markers (466)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -159,7 +159,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `config/build.yaml:5` — [[VERIFY: GitHub Pages URL]]
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
-- `config/languages.yaml:17` — [[VERIFY: confirm the list and order against current ACS limited-English-proficiency data]]
 - `catalog/apk.yaml:22` — [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]
 - `catalog/apk.yaml:46` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
 - `catalog/apk.yaml:70` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
@@ -267,47 +266,40 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/fonts.yaml:180` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
 - `catalog/fonts.yaml:200` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
 - `catalog/fonts.yaml:220` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
-- `catalog/geodata.yaml:6` — [[VERIFY: exact publisher download URL]]
-- `catalog/geodata.yaml:7` — [[VERIFY: publisher version]]
-- `catalog/geodata.yaml:8` — [[VERIFY: exact publisher file size]]
-- `catalog/geodata.yaml:9` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/geodata.yaml:10` — [[VERIFY: redistribution license]]
-- `catalog/geodata.yaml:11` — [[VERIFY: publisher attribution]]
-- `catalog/geodata.yaml:12` — [[VERIFY: per-item publisher license proof]]
-- `catalog/geodata.yaml:36` — [[VERIFY: human pin review; cartographic boundaries are display-only and must not be used for county assignment or detailed insets]]
-- `catalog/geodata.yaml:42` — [[VERIFY: exact publisher download URL]]
-- `catalog/geodata.yaml:43` — [[VERIFY: publisher version]]
-- `catalog/geodata.yaml:44` — [[VERIFY: exact publisher file size]]
-- `catalog/geodata.yaml:45` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/geodata.yaml:46` — [[VERIFY: redistribution license]]
-- `catalog/geodata.yaml:47` — [[VERIFY: publisher attribution]]
-- `catalog/geodata.yaml:48` — [[VERIFY: per-item publisher license proof]]
-- `catalog/geodata.yaml:72` — [[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]
-- `catalog/geodata.yaml:91` — [[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]
-- `catalog/geodata.yaml:110` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
-- `catalog/geodata.yaml:129` — [[VERIFY: human pin review and immutable archive availability; strip operational status fields]]
-- `catalog/geodata.yaml:148` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
-- `catalog/geodata.yaml:167` — [[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]
-- `catalog/geodata.yaml:173` — [[VERIFY: exact publisher download URL]]
-- `catalog/geodata.yaml:174` — [[VERIFY: publisher version]]
-- `catalog/geodata.yaml:175` — [[VERIFY: exact publisher file size]]
-- `catalog/geodata.yaml:176` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/geodata.yaml:177` — [[VERIFY: redistribution license]]
-- `catalog/geodata.yaml:178` — [[VERIFY: publisher attribution]]
-- `catalog/geodata.yaml:179` — [[VERIFY: per-item publisher license proof]]
-- `catalog/geodata.yaml:203` — [[VERIFY: human review of SHA-256; downloaded bytes match publisher MD5]]
-- `catalog/geodata.yaml:215` — [[VERIFY: per-item TIGER Line redistribution statement]]
-- `catalog/geodata.yaml:222` — [[VERIFY: human review of downloaded archive and computed SHA-256]]
-- `catalog/geodata.yaml:236` — [[VERIFY: confirm Census reference-file redistribution statement]]
-- `catalog/geodata.yaml:241` — [[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]
-- `catalog/geodata.yaml:252` — [[VERIFY: confirm publisher place-file license proof]]
-- `catalog/geodata.yaml:259` — [[VERIFY: human review of HTTPS download and computed SHA-256]]
-- `catalog/geodata.yaml:279` — [[VERIFY: review the SHA-256 cross-checked against publisher BLAKE3 and preserve this daily snapshot at an immutable URL before release]]
-- `catalog/geodata.yaml:299` — [[VERIFY: review computed HTTPS snapshot pin and preserve the full-node snapshot at an immutable URL]]
-- `catalog/geodata.yaml:318` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
-- `catalog/geodata.yaml:337` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
-- `catalog/geodata.yaml:356` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
-- `catalog/geodata.yaml:375` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:19` — [[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; Pacific territories require separate source coverage]]
+- `catalog/geodata.yaml:38` — [[VERIFY: human pin review; cartographic boundaries are display-only and must not be used for county assignment or detailed insets]]
+- `catalog/geodata.yaml:44` — [[VERIFY: exact publisher download URL]]
+- `catalog/geodata.yaml:45` — [[VERIFY: publisher version]]
+- `catalog/geodata.yaml:46` — [[VERIFY: exact publisher file size]]
+- `catalog/geodata.yaml:47` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
+- `catalog/geodata.yaml:48` — [[VERIFY: redistribution license]]
+- `catalog/geodata.yaml:49` — [[VERIFY: publisher attribution]]
+- `catalog/geodata.yaml:50` — [[VERIFY: per-item publisher license proof]]
+- `catalog/geodata.yaml:74` — [[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]
+- `catalog/geodata.yaml:93` — [[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]
+- `catalog/geodata.yaml:112` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:131` — [[VERIFY: human pin review and immutable archive availability; strip operational status fields]]
+- `catalog/geodata.yaml:150` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:169` — [[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]
+- `catalog/geodata.yaml:175` — [[VERIFY: exact publisher download URL]]
+- `catalog/geodata.yaml:176` — [[VERIFY: publisher version]]
+- `catalog/geodata.yaml:177` — [[VERIFY: exact publisher file size]]
+- `catalog/geodata.yaml:178` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
+- `catalog/geodata.yaml:179` — [[VERIFY: redistribution license]]
+- `catalog/geodata.yaml:180` — [[VERIFY: publisher attribution]]
+- `catalog/geodata.yaml:181` — [[VERIFY: per-item publisher license proof]]
+- `catalog/geodata.yaml:205` — [[VERIFY: human review of SHA-256; downloaded bytes match publisher MD5]]
+- `catalog/geodata.yaml:224` — [[VERIFY: human review of downloaded archive and computed SHA-256]]
+- `catalog/geodata.yaml:243` — [[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]
+- `catalog/geodata.yaml:261` — [[VERIFY: human review of HTTPS download and computed SHA-256]]
+- `catalog/geodata.yaml:281` — [[VERIFY: review the SHA-256 cross-checked against publisher BLAKE3 and preserve this daily snapshot at an immutable URL before release]]
+- `catalog/geodata.yaml:301` — [[VERIFY: review computed HTTPS snapshot pin and preserve the full-node snapshot at an immutable URL]]
+- `catalog/geodata.yaml:320` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:339` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:358` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:377` — [[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]
+- `catalog/geodata.yaml:396` — [[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]
+- `catalog/geodata.yaml:415` — [[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]
 - `catalog/llm.yaml:25` — [[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]
 - `catalog/llm.yaml:45` — [[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]
 - `catalog/llm.yaml:65` — [[VERIFY: complete runtime third-party notice inventory and Windows, Mac and Linux offline launcher checklist]]

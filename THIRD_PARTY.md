@@ -191,6 +191,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee`
 - Publisher file: https://stacks.cdc.gov/view/cdc/88655/cdc_88655_DS2.wmv
 
+## ACS 2025 one-year table labels and universes
+
+- Catalog id: `census_acs_2025_labels`
+- Version: 2025 ACS 1-year / released 2026-10-29
+- License: CC0-1.0
+- Attribution: U.S. Census Bureau, 2025 American Community Survey 1-Year Estimates, table B16001
+- License proof: https://api.census.gov/data/2025/acs/acs1.json
+- Size: 7242343 bytes
+- SHA-256: `ff33ade0dad19e66d86027604bcef5f41bbfe1a77ac494735a9f36d693491799`
+- Publisher file: https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/documentation/ACS20251YR_Table_Shells.txt
+
 ## Census cartographic county boundaries
 
 - Catalog id: `census_counties`
@@ -208,10 +219,21 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Version: 2025
 - License: US-PD
 - Attribution: U.S. Census Bureau, 2025 TIGER/Line
-- License proof: [[VERIFY: per-item TIGER Line redistribution statement]]
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
 - Size: 83989800 bytes
 - SHA-256: `9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763`
 - Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip
+
+## ACS 2025 one-year B16001 language and English proficiency estimates
+
+- Catalog id: `census_lep_2025`
+- Version: 2025 ACS 1-year / released 2026-10-29
+- License: CC0-1.0
+- Attribution: U.S. Census Bureau, 2025 American Community Survey 1-Year Estimates, table B16001
+- License proof: https://api.census.gov/data/2025/acs/acs1.json
+- Size: 874578 bytes
+- SHA-256: `605f0cda05aadf5dc658f3540681ef6a94ad4c4e6f3658563fe5f4e776563fd8`
+- Publisher file: https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/data/1YRData/acsdt1y2025-b16001.dat
 
 ## Census places or urban areas for atlas insets
 
@@ -230,7 +252,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Version: 2025
 - License: US-PD
 - Attribution: U.S. Census Bureau, 2025 TIGER/Line places
-- License proof: [[VERIFY: confirm publisher place-file license proof]]
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
 - Size: 292174 bytes
 - SHA-256: `520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429`
 - Publisher file: https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_44_place.zip
@@ -241,7 +263,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Version: Wed, 13 Mar 2013 18:26:28 GMT
 - License: US-PD
 - Attribution: U.S. Census Bureau
-- License proof: [[VERIFY: confirm Census reference-file redistribution statement]]
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf
 - Size: 1485 bytes
 - SHA-256: `bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0`
 - Publisher file: https://www2.census.gov/geo/docs/reference/state.txt
@@ -403,13 +425,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Geofabrik U.S. OSM extract
 
 - Catalog id: `geofabrik_us`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2026-10-29T21:21:26Z / us-261029.osm.pbf
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; U.S. extract provided by Geofabrik
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 12238337062 bytes
+- SHA-256: `0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e`
+- Publisher file: https://download.geofabrik.de/north-america/us-261029.osm.pbf
 
 ## Project Gutenberg subject collections; select individual files
 
