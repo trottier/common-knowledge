@@ -4,8 +4,8 @@
     "family": "generated",
     "title": "Automobile maintenance references — selected phone PDFs",
     "version": "Draft selection from Wikibooks English 2026-10",
-    "size_bytes": "[[VERIFY: measure complete PDFs with verified source equation rendering]]",
-    "sha256": "[[VERIFY: independently repeat complete equation-preserving PDF generation]]",
+    "size_bytes": 249547,
+    "sha256": "5ded659a2268b95d9589ddbbd97b2f9d945263442046a73fd1b3c7208dda0e30",
     "license": "CC-BY-SA-4.0 AND CC0-1.0",
     "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
     "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
@@ -30,7 +30,7 @@
       "noto_emoji",
       "mathjax_mml_svg"
     ],
-    "pipeline_version": "[[VERIFY: current pinned MathML-to-SVG reference recipe]]",
+    "pipeline_version": "reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67",
     "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
   },
   {
@@ -38,8 +38,8 @@
     "family": "generated",
     "title": "Carpentry and hand-tool references — selected phone PDFs",
     "version": "Draft selection from Wikibooks English 2026-10",
-    "size_bytes": "[[VERIFY: measure complete PDFs with verified source equation rendering]]",
-    "sha256": "[[VERIFY: independently repeat complete equation-preserving PDF generation]]",
+    "size_bytes": 199797,
+    "sha256": "20c1eb14ca235943efa2f53c9f11fc9cb9e0b5013d6b59ee53622dfbd7699b3b",
     "license": "CC-BY-SA-4.0 AND CC0-1.0",
     "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
     "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
@@ -64,7 +64,7 @@
       "noto_emoji",
       "mathjax_mml_svg"
     ],
-    "pipeline_version": "[[VERIFY: current pinned MathML-to-SVG reference recipe]]",
+    "pipeline_version": "reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67",
     "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
   },
   {

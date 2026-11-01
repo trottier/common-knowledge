@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5787)
+## Remaining VERIFY markers (5781)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1049,13 +1049,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/phrasebooks.yaml:429` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/phrasebooks.yaml:462` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/phrasebooks.yaml:495` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
-- `catalog/referencepacks.yaml:7` — [[VERIFY: measure complete PDFs with verified source equation rendering]]
-- `catalog/referencepacks.yaml:8` — [[VERIFY: independently repeat complete equation-preserving PDF generation]]
-- `catalog/referencepacks.yaml:33` — [[VERIFY: current pinned MathML-to-SVG reference recipe]]
 - `catalog/referencepacks.yaml:34` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- `catalog/referencepacks.yaml:41` — [[VERIFY: measure complete PDFs with verified source equation rendering]]
-- `catalog/referencepacks.yaml:42` — [[VERIFY: independently repeat complete equation-preserving PDF generation]]
-- `catalog/referencepacks.yaml:67` — [[VERIFY: current pinned MathML-to-SVG reference recipe]]
 - `catalog/referencepacks.yaml:68` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:102` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:136` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
