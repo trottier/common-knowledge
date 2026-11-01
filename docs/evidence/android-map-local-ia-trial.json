@@ -1,0 +1,488 @@
+{
+  "observed_utc": "2026-11-01T20:12:09.867954+00:00",
+  "trial": {
+    "source_commit": "2b0ca26f1b32a00058f8b18791202ed23d793b71",
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "source_date_epoch": 1793404800,
+    "context": "colima-common-knowledge-batch",
+    "container": "ck-ia-local-88-a",
+    "volume": "ck-ia-local-88-a",
+    "command": [
+      "rtk",
+      "proxy",
+      "docker",
+      "--context",
+      "colima-common-knowledge-batch",
+      "run",
+      "--network=none",
+      "--platform",
+      "linux/amd64",
+      "--cpus=1",
+      "--memory=6g",
+      "--name",
+      "ck-ia-local-88-a",
+      "--label",
+      "ck.owner=local-ia-88",
+      "--label",
+      "ck.pipeline=android-local-trial",
+      "--volume",
+      "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/88-local-ia-trial:/source:ro",
+      "--volume",
+      "/Users/leotrottier/Sites/reseed/common-knowledge/cache:/cache:ro",
+      "--volume",
+      "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build/IA/extract:/prepared:ro",
+      "--mount",
+      "type=volume,source=ck-ia-local-88-a,target=/artifacts,volume-nocopy",
+      "--workdir",
+      "/source",
+      "--env",
+      "PYTHONPATH=/source/src",
+      "--entrypoint",
+      "/workspace/.venv/bin/ck",
+      "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "android-map",
+      "--split",
+      "--state",
+      "IA",
+      "--osm-id",
+      "geofabrik_us",
+      "--prepared",
+      "/prepared",
+      "--prepared-id",
+      "android_extract_ia",
+      "--output",
+      "/artifacts/IA/map-a",
+      "--cache",
+      "/cache",
+      "--epoch",
+      "1793404800"
+    ],
+    "input_checks": [
+      {
+        "id": "android_source_us",
+        "folder": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-source-us",
+        "sha256": "0d4df0c8583c04a53067e55a0e555a30babc3d3869eb103976a359f45b549713",
+        "size_bytes": 4008048363,
+        "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+        "bound_files": [
+          {
+            "path": "files/roads_places.osm.pbf",
+            "size_bytes": 4008048363,
+            "sha256": "d328cc04fbf845eaba2f4028bcd61d25a63601a88ddbf16acb33f65778fac972"
+          },
+          {
+            "path": "filter.json",
+            "size_bytes": 108,
+            "sha256": "48c700683e9b28b1bcd66fd2a78589b0202aa4a77bd8fb72ec5d7ed4ce0282a2"
+          }
+        ],
+        "diagnostic_files_not_claimed_identical": []
+      },
+      {
+        "id": "android_extract_ia",
+        "folder": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build/IA/extract",
+        "sha256": "c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867",
+        "size_bytes": 47811343,
+        "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+        "bound_files": [
+          {
+            "path": "files/IA_roads_places.osm.pbf",
+            "size_bytes": 47811343,
+            "sha256": "42994ef61f142ab687a7b8a081bdf864526375b826dc7c0c976e2d94327c2607"
+          },
+          {
+            "path": "states.json",
+            "size_bytes": 181,
+            "sha256": "b69e43baab0d3c6900e6c3931a5b788eaa6913477f07d3c6deb7401e020f0095"
+          }
+        ],
+        "diagnostic_files_not_claimed_identical": []
+      }
+    ],
+    "before_launch_resources": {
+      "vm_memory_bytes": {
+        "MemTotal": 25147830272,
+        "MemFree": 11843133440,
+        "MemAvailable": 19642281984
+      },
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=11969\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=10959\n",
+      "container_memory_current": "2270744576\n",
+      "container_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    "maps_catalog_sha256": "f8895e2059f29a5e3a568693bc20a0b8fda118f17065618dd57ae6343a64d534",
+    "controller_sha256": "3955629314b974e82a3aafcd1dc23b8d4472bb910e9425b2c631d03baaed6a0b",
+    "verifier_sha256": "b24c2c0037a4ec58c97b0c55ed63980ed7219b7ce8f3ff0b4a8191e6eb3ef963",
+    "complete": true,
+    "started_utc": "2026-11-01T19:44:57.678639+00:00",
+    "actual_container_id": "bf2a9ddc9ed012e466dd12f774117de1b39c74b671d8d494dee1341e6b676318",
+    "actual_mounts": [
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/88-local-ia-trial",
+        "Destination": "/source",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/cache",
+        "Destination": "/cache",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build/IA/extract",
+        "Destination": "/prepared",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "volume",
+        "Name": "ck-ia-local-88-a",
+        "Source": "/var/lib/docker/volumes/ck-ia-local-88-a/_data",
+        "Destination": "/artifacts",
+        "Driver": "local",
+        "Mode": "z",
+        "RW": true,
+        "Propagation": ""
+      }
+    ],
+    "resumption_controller_sha256": "4a545e7c1114161b512009350440a7cdb63e6b5b2bb0e608b3269ff6896b0405",
+    "controller_only_failure_receipt": "controller-startup-failure.json",
+    "monitor_attached_utc": "2026-11-01T19:47:22.947402+00:00",
+    "container_final_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-01T19:44:57.814598659Z",
+      "FinishedAt": "2026-11-01T20:02:03.989896019Z"
+    },
+    "exit_code": 0,
+    "timings": {
+      "preparation_seconds": 3.4848799579922343,
+      "container_execution_seconds": 1026.175298,
+      "volume_verification_seconds": 1.8042403750005178,
+      "export_seconds": 2.0245794160000514,
+      "host_and_baseline_verification_seconds": 0.4520112500031246,
+      "execution_verification_export_seconds": 1030.4561290410038
+    },
+    "result": {
+      "sha256": "404757adf369c48e33c1a589e1194049c2327133a39ce8728ffcb2da9a46080d",
+      "size_bytes": 148543596,
+      "pipeline_version": "android-split-v1-13d6a6219518bf0a7f8e0ab141fb33191ff774e242dbde154260bbdac575f379"
+    },
+    "host_output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/88-local-ia-trial/build/local-ia-a",
+    "exported_tree_files": 18,
+    "local_trials": 1,
+    "host_comparison_repeats": 2,
+    "queue_takeover": false,
+    "human_legal_or_device_approval": false,
+    "finished_utc": "2026-11-01T20:02:08.429534+00:00"
+  },
+  "verified_volume_and_export_tree": {
+    "files": [
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "coverage.json",
+        "sha256": "270554bb674072941c6ef7c602347f79fcf5d448fdc810413f4a4a4c0d5558fd",
+        "size_bytes": 340
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "files/IA_001_roads_places.obf",
+        "sha256": "c4125d63351007a905d1c620f3351f65ec0a64d672830a5350b2c156984f8258",
+        "size_bytes": 48975185
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "files/IA_002_roads_places.obf",
+        "sha256": "81c8570f25a32ae968d5567402e9c64ed6799538fec190f726806ac7aaf4ee5e",
+        "size_bytes": 51773848
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "files/IA_PARTS.txt",
+        "sha256": "ca533e79b8dc1964cf580f147f16e75259220c5204afe315c329158aecb007ed",
+        "size_bytes": 227
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "files/IA_SOURCE.txt",
+        "sha256": "cf28bf3c2a06ee39c8005637c65c856b77cd6f3663fc19be381170ece0845c95",
+        "size_bytes": 575
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "files/data/IA_roads_places.osm.pbf",
+        "sha256": "64955cdc9c2a96b38f1bfe91152aecbd5e9dc97ede4b30ac2796831ad607bf84",
+        "size_bytes": 47793761
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "filter.json",
+        "sha256": "0521065ec04e85b3cfb62fe74ec8fc72332d54d1654c8a84e5387941b22ac4ef",
+        "size_bytes": 69
+      },
+      {
+        "bound_payload_or_intermediate": false,
+        "path": "generation.json",
+        "sha256": "812e209ad2e4f3b5706943d13e053106a648a499be5f8be770d587bd5e2b4369",
+        "size_bytes": 2605
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "inspection.txt",
+        "sha256": "c532894d0f81b0e78167c63f01b6bc9402b6d6c37a596b8d8ac2d1c92c998245",
+        "size_bytes": 1807
+      },
+      {
+        "bound_payload_or_intermediate": false,
+        "path": "inspections/IA_001_roads_places.obf.creator.log",
+        "sha256": "dbc7cc35d5cd6fcb8d4d8fb2382c249b92b895103cdfbd7362740919238ce28a",
+        "size_bytes": 19684
+      },
+      {
+        "bound_payload_or_intermediate": false,
+        "path": "inspections/IA_001_roads_places.obf.stderr.log",
+        "sha256": "60932b96f2d59b5326d781c9a7096060781016756b8abb97b2278fb361309612",
+        "size_bytes": 110
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "inspections/IA_001_roads_places.obf.txt",
+        "sha256": "31d628e4f2b87aadba1d64f50b673aee3059ef64c4c306d0ab541c1a6c6eab51",
+        "size_bytes": 896
+      },
+      {
+        "bound_payload_or_intermediate": false,
+        "path": "inspections/IA_002_roads_places.obf.creator.log",
+        "sha256": "5029917583154750e25377bb75181614e019a34ac9203787740830da441516a4",
+        "size_bytes": 19410
+      },
+      {
+        "bound_payload_or_intermediate": false,
+        "path": "inspections/IA_002_roads_places.obf.stderr.log",
+        "sha256": "62b28b233ab16741d4c23fdc73321b8cda692f4e3e439469bacbf72d1c1d5a6f",
+        "size_bytes": 110
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "inspections/IA_002_roads_places.obf.txt",
+        "sha256": "6d1df31ca88448cf294c80b7601543237feb491ce5bff5b18c0dc3c6048a1914",
+        "size_bytes": 910
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "parts.json",
+        "sha256": "3d543956984e7d76fe0fe25c10156b5036e7b611eca73218aa8f7a5fc82e0e2a",
+        "size_bytes": 1288
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "regions/IA_001_roads_places.osm.pbf",
+        "sha256": "e7f33cc3e2acb80dd57bf0cc95e9874aebe8e73ced4e74f643259f0ba6078569",
+        "size_bytes": 22600372
+      },
+      {
+        "bound_payload_or_intermediate": true,
+        "path": "regions/IA_002_roads_places.osm.pbf",
+        "sha256": "b2273477521aec4650968dae99339d914c02cb1e4d78ee71de8a619c92610798",
+        "size_bytes": 22632171
+      }
+    ],
+    "manifest_bytes_match_host_baseline": true,
+    "manifest_file_sha256": "812e209ad2e4f3b5706943d13e053106a648a499be5f8be770d587bd5e2b4369",
+    "metadata": {
+      "complete": true,
+      "files": [
+        {
+          "path": "IA_001_roads_places.obf",
+          "sha256": "c4125d63351007a905d1c620f3351f65ec0a64d672830a5350b2c156984f8258",
+          "size_bytes": 48975185
+        },
+        {
+          "path": "IA_002_roads_places.obf",
+          "sha256": "81c8570f25a32ae968d5567402e9c64ed6799538fec190f726806ac7aaf4ee5e",
+          "size_bytes": 51773848
+        },
+        {
+          "path": "IA_PARTS.txt",
+          "sha256": "ca533e79b8dc1964cf580f147f16e75259220c5204afe315c329158aecb007ed",
+          "size_bytes": 227
+        },
+        {
+          "path": "IA_SOURCE.txt",
+          "sha256": "cf28bf3c2a06ee39c8005637c65c856b77cd6f3663fc19be381170ece0845c95",
+          "size_bytes": 575
+        },
+        {
+          "path": "data/IA_roads_places.osm.pbf",
+          "sha256": "64955cdc9c2a96b38f1bfe91152aecbd5e9dc97ede4b30ac2796831ad607bf84",
+          "size_bytes": 47793761
+        }
+      ],
+      "inputs": {
+        "android_extract_ia": "c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867",
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c"
+      },
+      "intermediates": [
+        {
+          "path": "parts.json",
+          "sha256": "3d543956984e7d76fe0fe25c10156b5036e7b611eca73218aa8f7a5fc82e0e2a",
+          "size_bytes": 1288
+        },
+        {
+          "path": "coverage.json",
+          "sha256": "270554bb674072941c6ef7c602347f79fcf5d448fdc810413f4a4a4c0d5558fd",
+          "size_bytes": 340
+        },
+        {
+          "path": "filter.json",
+          "sha256": "0521065ec04e85b3cfb62fe74ec8fc72332d54d1654c8a84e5387941b22ac4ef",
+          "size_bytes": 69
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "c532894d0f81b0e78167c63f01b6bc9402b6d6c37a596b8d8ac2d1c92c998245",
+          "size_bytes": 1807
+        },
+        {
+          "path": "regions/IA_001_roads_places.osm.pbf",
+          "sha256": "e7f33cc3e2acb80dd57bf0cc95e9874aebe8e73ced4e74f643259f0ba6078569",
+          "size_bytes": 22600372
+        },
+        {
+          "path": "inspections/IA_001_roads_places.obf.txt",
+          "sha256": "31d628e4f2b87aadba1d64f50b673aee3059ef64c4c306d0ab541c1a6c6eab51",
+          "size_bytes": 896
+        },
+        {
+          "path": "regions/IA_002_roads_places.osm.pbf",
+          "sha256": "b2273477521aec4650968dae99339d914c02cb1e4d78ee71de8a619c92610798",
+          "size_bytes": 22632171
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.txt",
+          "sha256": "6d1df31ca88448cf294c80b7601543237feb491ce5bff5b18c0dc3c6048a1914",
+          "size_bytes": 910
+        }
+      ],
+      "pipeline_version": "android-split-v1-13d6a6219518bf0a7f8e0ab141fb33191ff774e242dbde154260bbdac575f379",
+      "source_date_epoch": 1793404800,
+      "tool_versions": "openjdk version \"17.0.21\" 2026-10-20\nOpenJDK Runtime Environment (build 17.0.21+9-1-deb12u1-Debian)\nOpenJDK 64-Bit Server VM (build 17.0.21+9-1-deb12u1-Debian, mixed mode, sharing)\n\nJVM options: [\"-Djava.awt.headless=true\", \"-Duser.timezone=UTC\", \"-Duser.language=en\", \"-Duser.country=US\", \"-XX:+UnlockExperimentalVMOptions\", \"-XX:hashCode=2\", \"-Xmx3072m\"]\nOsmAnd creator: master-snapshot; publisher Last-Modified 2026-10-30T15:59:08Z"
+    },
+    "metadata_matches_host_baseline": true,
+    "metadata_sha256": "404757adf369c48e33c1a589e1194049c2327133a39ce8728ffcb2da9a46080d"
+  },
+  "resources": {
+    "sample_count": 57,
+    "minimum_vm_available_bytes": 12359888896,
+    "maximum_sampled_trial_bytes": 4362776576,
+    "all_memory_event_counters_zero": true,
+    "first": {
+      "time_utc": "2026-11-01T19:47:22.950955+00:00",
+      "vm_memory_bytes": {
+        "MemTotal": 25147830272,
+        "MemFree": 9418444800,
+        "MemAvailable": 18024771584
+      },
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=11969\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=10959\n",
+      "container_memory_current": "1723805696\n",
+      "container_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    "last": {
+      "time_utc": "2026-11-01T20:01:57.177470+00:00",
+      "vm_memory_bytes": {
+        "MemTotal": 25147830272,
+        "MemFree": 2546671616,
+        "MemAvailable": 12359888896
+      },
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=11969\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=10959\n",
+      "container_memory_current": "4362776576\n",
+      "container_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    "jsonl_sha256": "8a898a555f9aa9b87db5dfb2d84042eae85b65fd04247ec540cefc26c4f25cbc",
+    "separate_peak_observations": [
+      {
+        "memory_peak_bytes": 4526784512,
+        "stage_files": [
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.tmp",
+            "size_bytes": 124821504
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.rtree3",
+            "size_bytes": 16
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/IA_001_roads_places.osm.pbf",
+            "size_bytes": 22600372
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.rtree2",
+            "size_bytes": 16
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.rte",
+            "size_bytes": 16
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/nodes.tmp.odb",
+            "size_bytes": 542146560
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/regions.ocbf",
+            "size_bytes": 7497055
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.poi.odb",
+            "size_bytes": 10485760
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.rtree1",
+            "size_bytes": 16
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.rtree0",
+            "size_bytes": 16
+          },
+          {
+            "path": "/artifacts/IA/.ck-split-map-ebwequur/work/Ia_001_roads_places.obf.rteb",
+            "size_bytes": 16
+          }
+        ],
+        "observed_utc": "2026-11-01T19:50:44.575533+00:00"
+      }
+    ]
+  },
+  "restart_count": 0,
+  "cli_argument_paths_match_host_command": true,
+  "producer_code_or_configuration_changes": false,
+  "local_trials": 1,
+  "host_comparison_repeats": 2,
+  "controller_only_startup_failure": {
+    "complete": false,
+    "error_type": "KeyError",
+    "error": "'Image'",
+    "container": "ck-ia-local-88-a",
+    "volume": "ck-ia-local-88-a",
+    "timings": {
+      "preparation_seconds": 3.4848799579922343
+    },
+    "observed_utc": "2026-11-01T19:44:57.724242+00:00"
+  },
+  "producer_continued_without_restart": true,
+  "national_collection_complete": false,
+  "performance_generalization": false
+}
