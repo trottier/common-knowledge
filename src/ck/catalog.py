@@ -121,9 +121,23 @@ class Item(Model):
             "ODbL-1.0",
             "US-PD",
             "Public-domain-US",
+            "LicenseRef-FEMA-Ready-Reprint",
             "CC-BY-NC-SA-3.0",
         }:
             problems.append(f"{self.id}: license needs redistribution review: {self.license}")
+        if "LicenseRef-FEMA-Ready-Reprint" in licenses:
+            # Ready permits unchanged reproduction, without an endorsement claim.
+            # This is a limited grant, not a public-domain or open-content claim.
+            if (
+                self.family != "docs"
+                or not str(self.url).startswith("https://www.ready.gov/sites/default/files/")
+                or self.license_proof_url != "https://www.ready.gov/publications"
+                or isinstance(self.placement, Collection)
+            ):
+                problems.append(
+                    f"{self.id}: Ready reprint terms apply only to original Ready documents "
+                    "outside in-depth knowledge collections"
+                )
         if "-NC-" in self.license and (
             not self.permission_proof_url or "[[VERIFY" in self.permission_proof_url
         ):
