@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bitchat_androidx_camera_core_audit",
+    "family": "binaries",
+    "title": "androidx.camera:camera-core:1.6.1 original AAR for native-source audit only",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1.aar",
+    "version": "1.6.1",
+    "size_bytes": 1213213,
+    "sha256": "a36f1c323851b51215ba476640e1eb4153882b0c368c0376e9fb905e689df84a",
+    "license": "Apache-2.0 AND BSD-3-Clause",
+    "attribution": "The Android Open Source Project and AndroidX contributors; original AAR bytes retained for audit",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1.aar.sha256",
+    "placement": "hub_only",
+    "dest": "build/dependency-audit/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human publisher pin, complete per-file notices, and exact native corresponding-source review; audit-only AAR is never drive content or a source-archive substitute]]"
+  },
+  {
+    "id": "bitchat_androidx_graphics_path_audit",
+    "family": "binaries",
+    "title": "androidx.graphics:graphics-path:1.0.1 original AAR for native-source audit only",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.aar",
+    "version": "1.0.1",
+    "size_bytes": 39380,
+    "sha256": "8ca4032b6d79b351f0b59ad4b580eddbb9423e1652f7c958830687f1eee2ec03",
+    "license": "Apache-2.0",
+    "attribution": "The Android Open Source Project and AndroidX contributors; original AAR bytes retained for audit",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.aar.sha256",
+    "placement": "hub_only",
+    "dest": "build/dependency-audit/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human publisher pin, complete per-file notices, and exact native corresponding-source review; audit-only AAR is never drive content or a source-archive substitute]]"
+  }
+]

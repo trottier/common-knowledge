@@ -1,0 +1,702 @@
+[
+  {
+    "id": "bitchat_maven_com_google_accompanist_accompanist_permissions_0_37_3",
+    "family": "docs",
+    "title": "com.google.accompanist:accompanist-permissions:0.37.3 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3-sources.jar",
+    "version": "0.37.3",
+    "size_bytes": 9409,
+    "sha256": "d5bb84bb49671e04828e071da2f8be6e07f9265c562064ca64f53aac65e69060",
+    "license": "Apache-2.0",
+    "attribution": "Google",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_auto_value_auto_value_annotations_1_6_3",
+    "family": "docs",
+    "title": "com.google.auto.value:auto-value-annotations:1.6.3 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3-sources.jar",
+    "version": "1.6.3",
+    "size_bytes": 120528,
+    "sha256": "254d55ea959608a833fa07056710488c1f4978875f86f6a106b8d937b29b1170",
+    "license": "Apache-2.0",
+    "attribution": "auto-value-annotations contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/auto/auto-parent/7/auto-parent-7.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_code_findbugs_jsr305_3_0_2",
+    "family": "docs",
+    "title": "com.google.code.findbugs:jsr305:3.0.2 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar",
+    "version": "3.0.2",
+    "size_bytes": 18102,
+    "sha256": "1c9e85e272d0708c6a591dc74828c71603053b48cc75ae83cce56912a2aa063b",
+    "license": "Apache-2.0",
+    "attribution": "jsr305 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_code_gson_gson_2_14_0",
+    "family": "docs",
+    "title": "com.google.code.gson:gson:2.14.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar",
+    "version": "2.14.0",
+    "size_bytes": 213519,
+    "sha256": "a4873f0ef88981cab520c3d7449cd89a68e605f15e9fe46e1aa2c77d5f87eb6f",
+    "license": "Apache-2.0",
+    "attribution": "gson contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_crypto_tink_tink_android_1_23_0",
+    "family": "docs",
+    "title": "com.google.crypto.tink:tink-android:1.23.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0-sources.jar",
+    "version": "1.23.0",
+    "size_bytes": 5010264,
+    "sha256": "32ac8eaa5788ee1d724c97e454c233622ce9c01bbd7b996102a594ccbf8e89ca",
+    "license": "Apache-2.0",
+    "attribution": "tink-android contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_dagger_dagger_2_59",
+    "family": "docs",
+    "title": "com.google.dagger:dagger:2.59 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59-sources.jar",
+    "version": "2.59",
+    "size_bytes": 65921,
+    "sha256": "0766cf4aecd3ffe62b21f47e86d634daa74aff5ca05adea8dcaa20b0e63df521",
+    "license": "Apache-2.0",
+    "attribution": "dagger contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_errorprone_error_prone_annotations_2_48_0",
+    "family": "docs",
+    "title": "com.google.errorprone:error_prone_annotations:2.48.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar",
+    "version": "2.48.0",
+    "size_bytes": 40016,
+    "sha256": "5c1c7b797aa1effa050a06d2d98534a28750f5fa8bcca56d8f49a866ca8bd03f",
+    "license": "Apache-2.0",
+    "attribution": "error_prone_annotations contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_firebase_firebase_annotations_16_0_0",
+    "family": "docs",
+    "title": "com.google.firebase:firebase-annotations:16.0.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0-sources.jar",
+    "version": "16.0.0",
+    "size_bytes": 1554,
+    "sha256": "5c5a74e4eae43e3d8c3debeb68c28b0d29813b4f0801b38705cd4ec13bca0e9b",
+    "license": "Apache-2.0",
+    "attribution": "firebase-annotations contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_firebase_firebase_components_16_1_0",
+    "family": "docs",
+    "title": "com.google.firebase:firebase-components:16.1.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0-sources.jar",
+    "version": "16.1.0",
+    "size_bytes": 34822,
+    "sha256": "cf4a4e6e5257514941194ccd95fb0d17e37bd5a35fa3705fb582de58ab79504d",
+    "license": "Apache-2.0",
+    "attribution": "firebase-components contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_firebase_firebase_encoders_json_17_1_0",
+    "family": "docs",
+    "title": "com.google.firebase:firebase-encoders-json:17.1.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0-sources.jar",
+    "version": "17.1.0",
+    "size_bytes": 4983,
+    "sha256": "9bbe5ee1a7a2a715964fa77208905cecb7c74aa409e38c103657be1c5234fb44",
+    "license": "Apache-2.0",
+    "attribution": "firebase-encoders-json contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_firebase_firebase_encoders_16_1_0",
+    "family": "docs",
+    "title": "com.google.firebase:firebase-encoders:16.1.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0-sources.jar",
+    "version": "16.1.0",
+    "size_bytes": 12762,
+    "sha256": "6d822153d1bf52e435302256d8fa7d30f392bb51a01978721250545a73413072",
+    "license": "Apache-2.0",
+    "attribution": "firebase-encoders contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_guava_listenablefuture_1_0",
+    "family": "docs",
+    "title": "com.google.guava:listenablefuture:1.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar",
+    "version": "1.0",
+    "size_bytes": 4021,
+    "sha256": "3d1bd8d4a39b293612a40e547ec51d9ce34fa638d7adeae83871cdbe2923b161",
+    "license": "Apache-2.0",
+    "attribution": "listenablefuture contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_google_zxing_core_3_5_4",
+    "family": "docs",
+    "title": "com.google.zxing:core:3.5.4 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4-sources.jar",
+    "version": "3.5.4",
+    "size_bytes": 509348,
+    "sha256": "a611e3b63b661aeb2a81b8b4f4bde2daace1e2976adbb37917a674a0019c8fac",
+    "license": "Apache-2.0",
+    "attribution": "core contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/zxing/zxing-parent/3.5.4/zxing-parent-3.5.4.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_squareup_okhttp3_okhttp_android_5_4_0",
+    "family": "docs",
+    "title": "com.squareup.okhttp3:okhttp-android:5.4.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0-sources.jar",
+    "version": "5.4.0",
+    "size_bytes": 404095,
+    "sha256": "d7aca53404544a763b9e0ac356ebf1976f9d313e20734dd738f53ed400dbe378",
+    "license": "Apache-2.0",
+    "attribution": "Square, Inc.",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_squareup_okhttp3_okhttp_5_4_0",
+    "family": "docs",
+    "title": "com.squareup.okhttp3:okhttp:5.4.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0-sources.jar",
+    "version": "5.4.0",
+    "size_bytes": 381368,
+    "sha256": "18d3617897bcafa72609a6f92c88d60754a6c2029d7cc6b36a28b08a13049704",
+    "license": "Apache-2.0",
+    "attribution": "Square, Inc.",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_squareup_okio_okio_jvm_3_17_0",
+    "family": "docs",
+    "title": "com.squareup.okio:okio-jvm:3.17.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0-sources.jar",
+    "version": "3.17.0",
+    "size_bytes": 189759,
+    "sha256": "5603dfecfe4c71b36d6a591616be345fdd9d41a0a63553a3bd883d5ab6ee09a6",
+    "license": "Apache-2.0",
+    "attribution": "Square, Inc.",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_com_squareup_okio_okio_3_17_0",
+    "family": "docs",
+    "title": "com.squareup.okio:okio:3.17.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0-sources.jar",
+    "version": "3.17.0",
+    "size_bytes": 176563,
+    "sha256": "3d7ea54e4974b1cc8ea408305190303cd0101d7f2b5596d1519e83315c377f42",
+    "license": "Apache-2.0",
+    "attribution": "Square, Inc.",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_jakarta_inject_jakarta_inject_api_2_0_1",
+    "family": "docs",
+    "title": "jakarta.inject:jakarta.inject-api:2.0.1 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar",
+    "version": "2.0.1",
+    "size_bytes": 18455,
+    "sha256": "44f4c73fda69f8b7d87136f0f789f042f54e8ff506d40aa126199baf3752d1c9",
+    "license": "Apache-2.0",
+    "attribution": "Antoine Sabot-Durand; Martin Kouba; Tomas Remes; Matej Novotny",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_javax_inject_javax_inject_1",
+    "family": "docs",
+    "title": "javax.inject:javax.inject:1 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar",
+    "version": "1",
+    "size_bytes": 10928,
+    "sha256": "c4b87ee2911c139c3daf498a781967f1eb2e75bc1a8529a2e7b328a15d0e433e",
+    "license": "Apache-2.0",
+    "attribution": "javax.inject contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_no_nordicsemi_android_ble_2_11_0",
+    "family": "docs",
+    "title": "no.nordicsemi.android:ble:2.11.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0-sources.jar",
+    "version": "2.11.0",
+    "size_bytes": 197871,
+    "sha256": "aab33d77e6771f1178d0ef2df7a0daf1717d21e47582fb01d9fdc4e02d839a10",
+    "license": "BSD-3-Clause",
+    "attribution": "Aleksander Nowakowski",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_bouncycastle_bcprov_jdk18on_1_85",
+    "family": "docs",
+    "title": "org.bouncycastle:bcprov-jdk18on:1.85 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85-sources.jar",
+    "version": "1.85",
+    "size_bytes": 5940653,
+    "sha256": "fa5a81c8b91f299712edcf917788f6293482240a46ec6d095ac6512ae257f007",
+    "license": "MIT",
+    "attribution": "The Legion of the Bouncy Castle Inc.",
+    "license_proof_url": "https://www.bouncycastle.org/licence.html",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlin_kotlin_parcelize_runtime_2_4_10",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.10 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10-sources.jar",
+    "version": "2.4.10",
+    "size_bytes": 11162,
+    "sha256": "f98535d3558a8e0b08ed7c993a3559c1b89ad12c335824172485fe05ebb8f606",
+    "license": "Apache-2.0",
+    "attribution": "Kotlin Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_8_22",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22-sources.jar",
+    "version": "1.8.22",
+    "size_bytes": 580,
+    "sha256": "ea10d3e5e6e695d8a5283cbf116321acae6ba42d0bdd3eda50f7c34a26fa25cb",
+    "license": "Apache-2.0",
+    "attribution": "Kotlin Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_8_22",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22-sources.jar",
+    "version": "1.8.22",
+    "size_bytes": 556,
+    "sha256": "40e9a80f6b953d12389623760d438e69914098d0c4d7053f70f90533ec041259",
+    "license": "Apache-2.0",
+    "attribution": "Kotlin Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlin_kotlin_stdlib_2_4_10",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-stdlib:2.4.10 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10-sources.jar",
+    "version": "2.4.10",
+    "size_bytes": 757671,
+    "sha256": "5c4fa84ec945a63453e64bc0141c222ece806a2026c2961fe76b0be483896323",
+    "license": "Apache-2.0",
+    "attribution": "Kotlin Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_atomicfu_jvm_0_28_0",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:atomicfu-jvm:0.28.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0-sources.jar",
+    "version": "0.28.0",
+    "size_bytes": 16476,
+    "sha256": "750bd5f9686abceca5ee6cdcab53d7abc20a2c1bebe462a23dba9932eeb9744c",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_atomicfu_0_28_0",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:atomicfu:0.28.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0-sources.jar",
+    "version": "0.28.0",
+    "size_bytes": 27808,
+    "sha256": "e2f58527f0fc8a61db8678b8c93d49929cd62adff7b95dc3d63c0663818b6272",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_kotlinx_coroutines_android_1_11_0",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0-sources.jar",
+    "version": "1.11.0",
+    "size_bytes": 7779,
+    "sha256": "d2760d65fc99c28d140b345163560926975cfe6ca36386c8964041f86eb2f4b6",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_11_0",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.11.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0-sources.jar",
+    "version": "1.11.0",
+    "size_bytes": 438533,
+    "sha256": "3e0847c0b463965404d5b6fe5d6868000a220b050180dec68501801e9439976a",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_kotlinx_coroutines_core_1_11_0",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0-sources.jar",
+    "version": "1.11.0",
+    "size_bytes": 371185,
+    "sha256": "42b1e26bc792fc3d8ba702ef5bd166adcd6c8350f377f639fb7d2e01b3366e3e",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_kotlinx_serialization_core_jvm_1_7_3",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar",
+    "version": "1.7.3",
+    "size_bytes": 106717,
+    "sha256": "d084ce9bf130919d4b899db09896531440d1e330919187c7932d7fe0fa5257b8",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_kotlinx_kotlinx_serialization_core_1_7_3",
+    "family": "docs",
+    "title": "org.jetbrains.kotlinx:kotlinx-serialization-core:1.7.3 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3-sources.jar",
+    "version": "1.7.3",
+    "size_bytes": 100861,
+    "sha256": "c413c2bee3d8248dbbaeeb60c4176b0d954395affaf6f8961b362c5aa466d7a8",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jetbrains_annotations_23_0_0",
+    "family": "docs",
+    "title": "org.jetbrains:annotations:23.0.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar",
+    "version": "23.0.0",
+    "size_bytes": 37462,
+    "sha256": "ff2309b42f7584520497bb48bc609aca04c9886cf48708f14be83f00423ec144",
+    "license": "Apache-2.0",
+    "attribution": "JetBrains Team",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_jspecify_jspecify_1_0_0",
+    "family": "docs",
+    "title": "org.jspecify:jspecify:1.0.0 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar",
+    "version": "1.0.0",
+    "size_bytes": 11996,
+    "sha256": "adf0898191d55937fb3192ba971826f4f294292c4a960740f3c27310e7b70296",
+    "license": "Apache-2.0",
+    "attribution": "Kevin Bourrillion",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "bitchat_maven_org_nanohttpd_nanohttpd_2_3_1",
+    "family": "docs",
+    "title": "org.nanohttpd:nanohttpd:2.3.1 original publisher source JAR for bitchat dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar",
+    "version": "2.3.1",
+    "size_bytes": 23924,
+    "sha256": "71b57b309dd19ca7bfceb3b0fa97ac9048ab2cb902a2607373633150f1997a67",
+    "license": "BSD-3-Clause",
+    "attribution": "nanohttpd contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd-project/2.3.1/nanohttpd-project-2.3.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, exact binary/source correspondence, and build-script/source-closure review; publisher source JAR contains source files but does not establish complete application corresponding source]]"
+  }
+]

@@ -1361,7 +1361,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `bitchat_android`
 - Version: 2.2.0; commit 20501fdfe0d56c7705c377d4a263b01d8f38eeeb
-- License: GPL-3.0-only
+- License: GPL-3.0-only AND [[VERIFY: exact bundled Google SDK redistribution terms and compatibility]]
 - Attribution: permissionlesstech and bitchat Android contributors
 - License proof: https://github.com/permissionlesstech/bitchat-android/blob/20501fdfe0d56c7705c377d4a263b01d8f38eeeb/LICENSE.md
 - Size: 52013804 bytes
@@ -1390,6 +1390,1579 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `6105185550707d537f50ad554fb319163f829f7a9dc7a9dfaca404682ba2c918`
 - Publisher file: https://codeload.github.com/permissionlesstech/bitchat-android/tar.gz/20501fdfe0d56c7705c377d4a263b01d8f38eeeb
 
+## androidx.activity:activity:1.13.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_activity_activity_1_13_0`
+- Version: 1.13.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/activity/activity/1.13.0/activity-1.13.0.pom
+- Size: 69302 bytes
+- SHA-256: `c7cf1b2e315e08867b10ef4505945d1993d90281445c65b929e81b9420216ce9`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/activity/activity/1.13.0/activity-1.13.0-sources.jar
+
+## androidx.activity:activity-compose:1.13.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_activity_activity_compose_1_13_0`
+- Version: 1.13.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/activity/activity-compose/1.13.0/activity-compose-1.13.0.pom
+- Size: 21308 bytes
+- SHA-256: `968cda8fb2bf4c80f952b442d05657773e6e373507700e621d1092d43b6751c5`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/activity/activity-compose/1.13.0/activity-compose-1.13.0-sources.jar
+
+## androidx.activity:activity-ktx:1.13.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_activity_activity_ktx_1_13_0`
+- Version: 1.13.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/activity/activity-ktx/1.13.0/activity-ktx-1.13.0.pom
+- Size: 4406 bytes
+- SHA-256: `e3201cf6c56fade2fc70e2f70408260992b83ddf0ccf4b69221a98ae26c02d74`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/activity/activity-ktx/1.13.0/activity-ktx-1.13.0-sources.jar
+
+## androidx.annotation:annotation:1.10.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_annotation_annotation_1_10_0`
+- Version: 1.10.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.10.0/annotation-1.10.0.pom
+- Size: 29200 bytes
+- SHA-256: `fdbc7afaa8b82b8270731aa0fbfd6ae80106409033313f192d58e971b377b816`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.10.0/annotation-1.10.0-sources.jar
+
+## androidx.annotation:annotation-experimental:1.4.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_annotation_annotation_experimental_1_4_1`
+- Version: 1.4.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1.pom
+- Size: 5257 bytes
+- SHA-256: `783a221a7c1093ff8932053998a69a24489f7930806a32b55366108146d29c1d`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1-sources.jar
+
+## androidx.annotation:annotation-jvm:1.10.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_annotation_annotation_jvm_1_10_0`
+- Version: 1.10.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-jvm/1.10.0/annotation-jvm-1.10.0.pom
+- Size: 73321 bytes
+- SHA-256: `4f093265c2f99d314a5e161d748100588c49663b098a8a031aa173315c530ef7`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation-jvm/1.10.0/annotation-jvm-1.10.0-sources.jar
+
+## androidx.appcompat:appcompat:1.7.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_appcompat_appcompat_1_7_1`
+- Version: 1.7.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat/1.7.1/appcompat-1.7.1.pom
+- Size: 496096 bytes
+- SHA-256: `d3f8371e7b5b61e36450677af4e911c351c9ec625e9a7fc5b44acbb3fbc3a45d`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat/1.7.1/appcompat-1.7.1-sources.jar
+
+## androidx.appcompat:appcompat-resources:1.7.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_appcompat_appcompat_resources_1_7_1`
+- Version: 1.7.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1.pom
+- Size: 40127 bytes
+- SHA-256: `cacf441fbbec0ebf12b4308bbeeb9a7389387c35a66f13bd2551dc328cf33ead`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1-sources.jar
+
+## androidx.arch.core:core-common:2.2.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_arch_core_core_common_2_2_0`
+- Version: 2.2.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/arch/core/core-common/2.2.0/core-common-2.2.0.pom
+- Size: 5684 bytes
+- SHA-256: `563d430880d847890029234386ef03adb95403c34f3c9dec3a7002e2f4007ae4`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/arch/core/core-common/2.2.0/core-common-2.2.0-sources.jar
+
+## androidx.arch.core:core-runtime:2.2.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_arch_core_core_runtime_2_2_0`
+- Version: 2.2.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/arch/core/core-runtime/2.2.0/core-runtime-2.2.0.pom
+- Size: 4715 bytes
+- SHA-256: `4adaab3a8ab711634d566d2e239e199af8b5ac92c1de85540dc34c7040754e96`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/arch/core/core-runtime/2.2.0/core-runtime-2.2.0-sources.jar
+
+## androidx.autofill:autofill:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_autofill_autofill_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/autofill/autofill/1.0.0/autofill-1.0.0.pom
+- Size: 3715 bytes
+- SHA-256: `05d18219a30b897f96b2eed2480329ce48da34cfba6416ecfde1289674a1f35f`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/autofill/autofill/1.0.0/autofill-1.0.0-sources.jar
+
+## androidx.camera:camera-camera2:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_camera_camera2_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/camera-camera2/1.6.1/camera-camera2-1.6.1.pom
+- Size: 341304 bytes
+- SHA-256: `9a43968bb27ff7a6960932b5dffc190930567d8bb52fff59541d372f7331b803`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/camera-camera2/1.6.1/camera-camera2-1.6.1-sources.jar
+
+## androidx.camera:camera-camera2-pipe:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_camera_camera2_pipe_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/camera-camera2-pipe/1.6.1/camera-camera2-pipe-1.6.1.pom
+- Size: 345672 bytes
+- SHA-256: `61f3bcb5d254d069194381f502b11db7af4befc14db6d1fab36baeb745e30470`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/camera-camera2-pipe/1.6.1/camera-camera2-pipe-1.6.1-sources.jar
+
+## androidx.camera:camera-compose:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_camera_compose_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/camera-compose/1.6.1/camera-compose-1.6.1.pom
+- Size: 10773 bytes
+- SHA-256: `fdeb8997bf6b5b35c930e045adacf41bb34779499d20a2d64bb8ffb3b78fe1e5`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/camera-compose/1.6.1/camera-compose-1.6.1-sources.jar
+
+## androidx.camera:camera-core:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_camera_core_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0 AND BSD-3-Clause
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1.pom
+- Size: 808073 bytes
+- SHA-256: `864e7da58824da3146100100da588dfcb8f69c7a82369502a7873e9c941ae10c`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1-sources.jar
+
+## androidx.camera:camera-lifecycle:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_camera_lifecycle_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/camera-lifecycle/1.6.1/camera-lifecycle-1.6.1.pom
+- Size: 37758 bytes
+- SHA-256: `573cdf43f2584f154b83788ab9683affd6124a61b78f6f7a17339c5e8d8d845c`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/camera-lifecycle/1.6.1/camera-lifecycle-1.6.1-sources.jar
+
+## androidx.camera.featurecombinationquery:featurecombinationquery:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_featurecombinationquery_featurecombinationquery_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/featurecombinationquery/featurecombinationquery/1.6.1/featurecombinationquery-1.6.1.pom
+- Size: 20234 bytes
+- SHA-256: `5aa1c82a6a691a2cb6747f81558ecd5ac580f3aba01f78ca4e01d83756e7c0fa`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/featurecombinationquery/featurecombinationquery/1.6.1/featurecombinationquery-1.6.1-sources.jar
+
+## androidx.camera.viewfinder:viewfinder-compose:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_viewfinder_viewfinder_compose_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/viewfinder/viewfinder-compose/1.6.1/viewfinder-compose-1.6.1.pom
+- Size: 20163 bytes
+- SHA-256: `c65ac62ecb7b50a0800890e8974c4a5f8999017473f0174f09bcba0564a19026`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/viewfinder/viewfinder-compose/1.6.1/viewfinder-compose-1.6.1-sources.jar
+
+## androidx.camera.viewfinder:viewfinder-core:1.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_camera_viewfinder_viewfinder_core_1_6_1`
+- Version: 1.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/viewfinder/viewfinder-core/1.6.1/viewfinder-core-1.6.1.pom
+- Size: 43543 bytes
+- SHA-256: `d8b24eb4746962fa359523b76c39a04690483bf737394a2a00f3158142aeecd0`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/viewfinder/viewfinder-core/1.6.1/viewfinder-core-1.6.1-sources.jar
+
+## androidx.collection:collection:1.5.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_collection_collection_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/collection/collection/1.5.0/collection-1.5.0.pom
+- Size: 286668 bytes
+- SHA-256: `8664c27604f69a439a7c0755c2b6e9f82b6c74c815804f07750fc9a8b5743209`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/collection/collection/1.5.0/collection-1.5.0-sources.jar
+
+## androidx.collection:collection-jvm:1.5.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_collection_collection_jvm_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/collection/collection-jvm/1.5.0/collection-jvm-1.5.0.pom
+- Size: 288386 bytes
+- SHA-256: `bcc6197ec5fb349e86ae3ba6c94b164d3a9ac5a03d9f9c235d7c4eb24e5878b3`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/collection/collection-jvm/1.5.0/collection-jvm-1.5.0-sources.jar
+
+## androidx.collection:collection-ktx:1.5.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_collection_collection_ktx_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/collection/collection-ktx/1.5.0/collection-ktx-1.5.0.pom
+- Size: 4426 bytes
+- SHA-256: `335a9cd93dcb4afab7c4daa34d5d4e24b38443ccef4ae5fffdfd6cf4f718b01e`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/collection/collection-ktx/1.5.0/collection-ktx-1.5.0-sources.jar
+
+## androidx.compose.animation:animation:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_animation_animation_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation/1.11.4/animation-1.11.4.pom
+- Size: 108460 bytes
+- SHA-256: `a75c099ff3e786fd3e0a55a016b32ac5e6cb11638df5e3bcc3a34ff6c2e2edb6`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation/1.11.4/animation-1.11.4-sources.jar
+
+## androidx.compose.animation:animation-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_animation_animation_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation-android/1.11.4/animation-android-1.11.4.pom
+- Size: 108026 bytes
+- SHA-256: `814569f2f33a75bad2cf9b3875c363456e0cba392e8caa8cf02753fc3c360df4`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation-android/1.11.4/animation-android-1.11.4-sources.jar
+
+## androidx.compose.animation:animation-core:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_animation_animation_core_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation-core/1.11.4/animation-core-1.11.4.pom
+- Size: 117555 bytes
+- SHA-256: `6e252b4c7131f08e2bb5bf98c8b8e36c11bfbcfb64b5129960417b23dce4cc2e`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation-core/1.11.4/animation-core-1.11.4-sources.jar
+
+## androidx.compose.animation:animation-core-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_animation_animation_core_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation-core-android/1.11.4/animation-core-android-1.11.4.pom
+- Size: 116050 bytes
+- SHA-256: `7d1eb2b33787112d607cfa85ccaa9d7776130beb2ec01bc958098d15a0fb8304`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/animation/animation-core-android/1.11.4/animation-core-android-1.11.4-sources.jar
+
+## androidx.compose.foundation:foundation:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_foundation_foundation_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation/1.11.4/foundation-1.11.4.pom
+- Size: 1043361 bytes
+- SHA-256: `b6e5e39262334b474b8d615af84f7d135b619fcecef859ac1f5b9c6f1adc2b3d`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation/1.11.4/foundation-1.11.4-sources.jar
+
+## androidx.compose.foundation:foundation-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_foundation_foundation_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation-android/1.11.4/foundation-android-1.11.4.pom
+- Size: 1174976 bytes
+- SHA-256: `e645754b40ff05d4ef9219131b838d642cd9221b8e8315c2ea0e100ee2564b92`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation-android/1.11.4/foundation-android-1.11.4-sources.jar
+
+## androidx.compose.foundation:foundation-layout:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_foundation_foundation_layout_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation-layout/1.11.4/foundation-layout-1.11.4.pom
+- Size: 139262 bytes
+- SHA-256: `4f41924f0b7bc306ce1f2d70188e4d8b76c8ed15ace5694b1177ca41d7a178b2`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation-layout/1.11.4/foundation-layout-1.11.4-sources.jar
+
+## androidx.compose.foundation:foundation-layout-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_foundation_foundation_layout_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation-layout-android/1.11.4/foundation-layout-android-1.11.4.pom
+- Size: 152696 bytes
+- SHA-256: `12a468b3f9be15ec7941ef63cdade939aa0e84d2e766e948a2f61c1f2dc56135`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/foundation/foundation-layout-android/1.11.4/foundation-layout-android-1.11.4-sources.jar
+
+## androidx.compose.material3:material3:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material3_material3_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material3/material3/1.4.0/material3-1.4.0.pom
+- Size: 645216 bytes
+- SHA-256: `08a23a069407ba2a59685f88d676fd38ede207301a0805ee904ed63735f5d0b5`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material3/material3/1.4.0/material3-1.4.0-sources.jar
+
+## androidx.compose.material3:material3-android:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material3_material3_android_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material3/material3-android/1.4.0/material3-android-1.4.0.pom
+- Size: 703105 bytes
+- SHA-256: `3e3209422a382566a780e2c1410edd866e4474498098fdbcf942c690ade1ddaa`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material3/material3-android/1.4.0/material3-android-1.4.0-sources.jar
+
+## androidx.compose.material:material-icons-core:1.7.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material_material_icons_core_1_7_8`
+- Version: 1.7.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-core/1.7.8/material-icons-core-1.7.8.pom
+- Size: 284036 bytes
+- SHA-256: `14db888d2f698178799a4c18a58bb134b3e98063c6748c443b339044e0145432`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-core/1.7.8/material-icons-core-1.7.8-sources.jar
+
+## androidx.compose.material:material-icons-core-android:1.7.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material_material_icons_core_android_1_7_8`
+- Version: 1.7.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-core-android/1.7.8/material-icons-core-android-1.7.8.pom
+- Size: 284036 bytes
+- SHA-256: `14db888d2f698178799a4c18a58bb134b3e98063c6748c443b339044e0145432`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-core-android/1.7.8/material-icons-core-android-1.7.8-sources.jar
+
+## androidx.compose.material:material-icons-extended:1.7.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material_material_icons_extended_1_7_8`
+- Version: 1.7.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-extended/1.7.8/material-icons-extended-1.7.8.pom
+- Size: 12086044 bytes
+- SHA-256: `77b7e782a519a3e074fc91e09d59334ac1b815edd87d2e89c0c9ca7c95678e93`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-extended/1.7.8/material-icons-extended-1.7.8-sources.jar
+
+## androidx.compose.material:material-icons-extended-android:1.7.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material_material_icons_extended_android_1_7_8`
+- Version: 1.7.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-extended-android/1.7.8/material-icons-extended-android-1.7.8.pom
+- Size: 12086044 bytes
+- SHA-256: `77b7e782a519a3e074fc91e09d59334ac1b815edd87d2e89c0c9ca7c95678e93`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-extended-android/1.7.8/material-icons-extended-android-1.7.8-sources.jar
+
+## androidx.compose.material:material-ripple:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material_material_ripple_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-ripple/1.11.4/material-ripple-1.11.4.pom
+- Size: 20384 bytes
+- SHA-256: `69cb3dca99f6460d50adb7ef911998341cfcd88b3f063f157e370d3c242d6cf8`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-ripple/1.11.4/material-ripple-1.11.4-sources.jar
+
+## androidx.compose.material:material-ripple-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_material_material_ripple_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-ripple-android/1.11.4/material-ripple-android-1.11.4.pom
+- Size: 30434 bytes
+- SHA-256: `65b50cad7a19b27d55e319536478069bef9e7b185c55a5363f8660fcef7bab93`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/material/material-ripple-android/1.11.4/material-ripple-android-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime/1.11.4/runtime-1.11.4.pom
+- Size: 592941 bytes
+- SHA-256: `9f05ebfee4a1d9f8236b29f0c498c0b9942f7f7af2645a5a37b7dbea2886b654`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime/1.11.4/runtime-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-android/1.11.4/runtime-android-1.11.4.pom
+- Size: 581147 bytes
+- SHA-256: `211c6dc3f74166fbb5438264408e59b80c55544f201e04625f27d2cbd2dc462a`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-android/1.11.4/runtime-android-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-annotation:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_annotation_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-annotation/1.11.4/runtime-annotation-1.11.4.pom
+- Size: 12735 bytes
+- SHA-256: `272b2b47cf1d938a66fa4c92e73ab8820c91f9c0d07208050aa5986988bc73b9`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-annotation/1.11.4/runtime-annotation-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-annotation-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_annotation_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-annotation-android/1.11.4/runtime-annotation-android-1.11.4.pom
+- Size: 12735 bytes
+- SHA-256: `faddbe6240e43542fcccfb4106f15b36494facbd81dc18e58124c1327dfe4fb1`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-annotation-android/1.11.4/runtime-annotation-android-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-retain:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_retain_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-retain/1.11.4/runtime-retain-1.11.4.pom
+- Size: 32977 bytes
+- SHA-256: `4d3024ab6fb90d74e0a189c397c7badfd9d7688fdc48fe2a16b5a646d688c8e1`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-retain/1.11.4/runtime-retain-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-retain-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_retain_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-retain-android/1.11.4/runtime-retain-android-1.11.4.pom
+- Size: 31633 bytes
+- SHA-256: `6dab377d2582f7a2b7fcea90dda660ef49f6560081b899bb81e0b597cfa01dfc`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-retain-android/1.11.4/runtime-retain-android-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-saveable:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_saveable_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-saveable/1.11.4/runtime-saveable-1.11.4.pom
+- Size: 22187 bytes
+- SHA-256: `2efde23b7ed4dd4927cdb8bea40d288f3df888b81e5c3f66a1387d61cbaba06c`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-saveable/1.11.4/runtime-saveable-1.11.4-sources.jar
+
+## androidx.compose.runtime:runtime-saveable-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_runtime_runtime_saveable_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-saveable-android/1.11.4/runtime-saveable-android-1.11.4.pom
+- Size: 22187 bytes
+- SHA-256: `305dfb9a5cdad3c53ba6297db6f96ca9c0d9f1856f83874ee12cc7fb7d028699`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/runtime/runtime-saveable-android/1.11.4/runtime-saveable-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui/1.11.4/ui-1.11.4.pom
+- Size: 648391 bytes
+- SHA-256: `868f905d7d05a7ce8acc0f9db2beed8ae82b161833635271ad8c830331b00761`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui/1.11.4/ui-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-android/1.11.4/ui-android-1.11.4.pom
+- Size: 1005330 bytes
+- SHA-256: `aafb071a46db33fc841234f58061c5bc543ddaa2c8e56247409cee8e81a7b6d2`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-android/1.11.4/ui-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-geometry:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_geometry_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-geometry/1.11.4/ui-geometry-1.11.4.pom
+- Size: 25602 bytes
+- SHA-256: `696a280163e7da0f454dfb25ab4a5d756865e2380d5e8d57a422f9d2fd9637fa`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-geometry/1.11.4/ui-geometry-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-geometry-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_geometry_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-geometry-android/1.11.4/ui-geometry-android-1.11.4.pom
+- Size: 25602 bytes
+- SHA-256: `8b4ab7f4776d1e1d78fbdde46637bfe51f01e365d13d5253b905bf3f0361b0e0`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-geometry-android/1.11.4/ui-geometry-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-graphics:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_graphics_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-graphics/1.11.4/ui-graphics-1.11.4.pom
+- Size: 228339 bytes
+- SHA-256: `77011948ab054a2e992eb80f30f8369186c31e96eda2e25f02f3ac972e57adf7`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-graphics/1.11.4/ui-graphics-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-graphics-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_graphics_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-graphics-android/1.11.4/ui-graphics-android-1.11.4.pom
+- Size: 278356 bytes
+- SHA-256: `4bea68c9e9b51dcdd99c6ff19d07b202715393985b61548cc7b31e33065e8823`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-graphics-android/1.11.4/ui-graphics-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-text:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_text_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-text/1.11.4/ui-text-1.11.4.pom
+- Size: 208555 bytes
+- SHA-256: `bbb27ce9cfaa9333da15140f7da7bdd0815586896f9c2cfd81928c9620d40a0f`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-text/1.11.4/ui-text-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-text-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_text_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-text-android/1.11.4/ui-text-android-1.11.4.pom
+- Size: 346743 bytes
+- SHA-256: `550fad8823a16fbfc4ef251b2b85f9d335e73a44230478fbf9a52391d7b82131`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-text-android/1.11.4/ui-text-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-tooling-preview:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_tooling_preview_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-tooling-preview/1.11.4/ui-tooling-preview-1.11.4.pom
+- Size: 20747 bytes
+- SHA-256: `e4eb5aacfa164d98c61fac6d2f293cb5938ec77e198b06e7361c4f572b965375`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-tooling-preview/1.11.4/ui-tooling-preview-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-tooling-preview-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_tooling_preview_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-tooling-preview-android/1.11.4/ui-tooling-preview-android-1.11.4.pom
+- Size: 20747 bytes
+- SHA-256: `be1c8f23293372b3fbb5a8d349efcbfb1cd5ab5a55d91e019489b289ad2fb815`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-tooling-preview-android/1.11.4/ui-tooling-preview-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-unit:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_unit_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-unit/1.11.4/ui-unit-1.11.4.pom
+- Size: 37762 bytes
+- SHA-256: `1e408b746d13fbbe73700ebd62437bda43d1c21ecd9e2291b2ae03040d2fc0e1`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-unit/1.11.4/ui-unit-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-unit-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_unit_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-unit-android/1.11.4/ui-unit-android-1.11.4.pom
+- Size: 47157 bytes
+- SHA-256: `c6e2ea6314bfc45e27c5f28fda333afe2ed76748a004eec95f86cbdab099a6ff`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-unit-android/1.11.4/ui-unit-android-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-util:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_util_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-util/1.11.4/ui-util-1.11.4.pom
+- Size: 21106 bytes
+- SHA-256: `3f5ca3d87be272b7b8f63c71f04ca2792dce0dc3860006f9fd002ee9d242331b`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-util/1.11.4/ui-util-1.11.4-sources.jar
+
+## androidx.compose.ui:ui-util-android:1.11.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_compose_ui_ui_util_android_1_11_4`
+- Version: 1.11.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-util-android/1.11.4/ui-util-android-1.11.4.pom
+- Size: 20541 bytes
+- SHA-256: `78ecea99219f527b216dc744c4188735fdf5755055d0313f6ea78dcb8f060390`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/compose/ui/ui-util-android/1.11.4/ui-util-android-1.11.4-sources.jar
+
+## androidx.concurrent:concurrent-futures:1.1.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_concurrent_concurrent_futures_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom
+- Size: 19716 bytes
+- SHA-256: `cc06fb6045a6c066f50e237a3c2126bc88c16d358a57b3612ba633c9f530b0a0`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0-sources.jar
+
+## androidx.concurrent:concurrent-futures-ktx:1.1.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_concurrent_concurrent_futures_ktx_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures-ktx/1.1.0/concurrent-futures-ktx-1.1.0.pom
+- Size: 2322 bytes
+- SHA-256: `1490f45d9a2a3781548eca5231629f378828d685b3b035fb07e29a287e930165`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures-ktx/1.1.0/concurrent-futures-ktx-1.1.0-sources.jar
+
+## androidx.core:core:1.19.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_core_core_1_19_0`
+- Version: 1.19.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/core/core/1.19.0/core-1.19.0.pom
+- Size: 1076958 bytes
+- SHA-256: `dabdcce52939de70764cf967c7844da2222830d6a17ae20eefb41b2051964712`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/core/core/1.19.0/core-1.19.0-sources.jar
+
+## androidx.core:core-backported-fixes:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_core_core_backported_fixes_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/core/core-backported-fixes/1.0.0/core-backported-fixes-1.0.0.pom
+- Size: 13703 bytes
+- SHA-256: `86413b8ce0f8e81674bdfcfb2f3fefaeed7f9e6b92448d5b2b360376123051ba`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/core/core-backported-fixes/1.0.0/core-backported-fixes-1.0.0-sources.jar
+
+## androidx.core:core-ktx:1.19.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_core_core_ktx_1_19_0`
+- Version: 1.19.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/core/core-ktx/1.19.0/core-ktx-1.19.0.pom
+- Size: 4366 bytes
+- SHA-256: `fb591a23600d0c3dd2b8ad3c330bf830ff607fd9e751303173a8180af211e2d5`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/core/core-ktx/1.19.0/core-ktx-1.19.0-sources.jar
+
+## androidx.core:core-viewtree:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_core_core_viewtree_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/core/core-viewtree/1.0.0/core-viewtree-1.0.0.pom
+- Size: 6342 bytes
+- SHA-256: `7026f2086f667720c43d4ca6bc58ab016d122ae0a404ca94e5fef6a7090e0984`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/core/core-viewtree/1.0.0/core-viewtree-1.0.0-sources.jar
+
+## androidx.cursoradapter:cursoradapter:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_cursoradapter_cursoradapter_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0.pom
+- Size: 11882 bytes
+- SHA-256: `99b72a3aec8c9edfd9de20f5913ce4c413bca2f0cf9877b504e26aa03ef50323`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0-sources.jar
+
+## androidx.customview:customview:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_customview_customview_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/customview/customview/1.0.0/customview-1.0.0.pom
+- Size: 29305 bytes
+- SHA-256: `87c910a3c3c5d1e4881ebcc7a8f7fced04fdad6ff1f8e5ff7f100adf62df1787`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/customview/customview/1.0.0/customview-1.0.0-sources.jar
+
+## androidx.customview:customview-poolingcontainer:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_customview_customview_poolingcontainer_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0.pom
+- Size: 2651 bytes
+- SHA-256: `0715571baa86e8f7683fcc1d59fe2881c5e8603af9ff212c82423ae098d34c62`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0-sources.jar
+
+## androidx.documentfile:documentfile:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_documentfile_documentfile_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/documentfile/documentfile/1.0.0/documentfile-1.0.0.pom
+- Size: 10935 bytes
+- SHA-256: `79c2424477565d0500b47c8288fb8e6dd9c8306984e8dbd38d576f013873b410`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/documentfile/documentfile/1.0.0/documentfile-1.0.0-sources.jar
+
+## androidx.drawerlayout:drawerlayout:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_drawerlayout_drawerlayout_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/drawerlayout/drawerlayout/1.0.0/drawerlayout-1.0.0.pom
+- Size: 20020 bytes
+- SHA-256: `3702e90acc99c16d192eada8467aea9595d1c3fff3e2155ffe66e5f31e334513`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/drawerlayout/drawerlayout/1.0.0/drawerlayout-1.0.0-sources.jar
+
+## androidx.dynamicanimation:dynamicanimation:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_dynamicanimation_dynamicanimation_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/dynamicanimation/dynamicanimation/1.0.0/dynamicanimation-1.0.0.pom
+- Size: 23166 bytes
+- SHA-256: `7ddbf0b830e295b8013a41c2c6771416118bcc8d61328a881daae657c1429196`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/dynamicanimation/dynamicanimation/1.0.0/dynamicanimation-1.0.0-sources.jar
+
+## androidx.emoji2:emoji2:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_emoji2_emoji2_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.4.0/emoji2-1.4.0.pom
+- Size: 57705 bytes
+- SHA-256: `5db44eec9cee653ba403f0e88a02ce41ab6301a0b7dd7cb35fc32f9747f2228b`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.4.0/emoji2-1.4.0-sources.jar
+
+## androidx.emoji2:emoji2-views-helper:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_emoji2_emoji2_views_helper_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.4.0/emoji2-views-helper-1.4.0.pom
+- Size: 17591 bytes
+- SHA-256: `7c813c4fc93038ef7d262fd894c48f960f6d914f79d83407106ede1ab55b92a0`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.4.0/emoji2-views-helper-1.4.0-sources.jar
+
+## androidx.exifinterface:exifinterface:1.4.2 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_exifinterface_exifinterface_1_4_2`
+- Version: 1.4.2
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.4.2/exifinterface-1.4.2.pom
+- Size: 73351 bytes
+- SHA-256: `dc69c04f03e72ad38ed43774554e6612dd9ffe7299eacaab62a38df8ac2c7767`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.4.2/exifinterface-1.4.2-sources.jar
+
+## androidx.fragment:fragment:1.5.4 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_fragment_fragment_1_5_4`
+- Version: 1.5.4
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.5.4/fragment-1.5.4.pom
+- Size: 190527 bytes
+- SHA-256: `388140b5e899ea70dceb7de93ebe732b7d534a14ca87014895faf19ef74ac8fe`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.5.4/fragment-1.5.4-sources.jar
+
+## androidx.graphics:graphics-path:1.0.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_graphics_graphics_path_1_0_1`
+- Version: 1.0.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.pom
+- Size: 9908 bytes
+- SHA-256: `9f1b5995b9577a8876525c3411ebb2a49f9ef0e875f6aec3059e807596dc6ca6`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1-sources.jar
+
+## androidx.interpolator:interpolator:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_interpolator_interpolator_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/interpolator/interpolator/1.0.0/interpolator-1.0.0.pom
+- Size: 6655 bytes
+- SHA-256: `fa13ada71fe7bd9461f622f418e7c16a18e85da7708fb505c75229a9b8830345`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/interpolator/interpolator/1.0.0/interpolator-1.0.0-sources.jar
+
+## androidx.legacy:legacy-support-core-utils:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_legacy_legacy_support_core_utils_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-core-utils/1.0.0/legacy-support-core-utils-1.0.0.pom
+- Size: 3201 bytes
+- SHA-256: `dff5a95a7a706957b16edbf5b36c619fc869742bdf18845520d0cf71748c8070`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-core-utils/1.0.0/legacy-support-core-utils-1.0.0-sources.jar
+
+## androidx.lifecycle:lifecycle-common:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_common_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common/2.11.0/lifecycle-common-2.11.0.pom
+- Size: 16917 bytes
+- SHA-256: `d572784d8d298417abed7a7cd3ee238372af767090d2c3b1da5f4b9ab17226fc`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common/2.11.0/lifecycle-common-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-common-java8:2.11.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_common_java8_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common-java8/2.11.0/lifecycle-common-java8-2.11.0.pom
+- Size: 4452 bytes
+- SHA-256: `895e71679cd319db8140664d650af6695b0530f5896be9b8ecccd24cc4f6674f`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common-java8/2.11.0/lifecycle-common-java8-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-common-jvm:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_common_jvm_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common-jvm/2.11.0/lifecycle-common-jvm-2.11.0.pom
+- Size: 33095 bytes
+- SHA-256: `5865f0584cd7b3d5769a46b4d0ad2486a73ca681450997cea45a574dae5865fc`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-common-jvm/2.11.0/lifecycle-common-jvm-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-livedata:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_livedata_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.11.0/lifecycle-livedata-2.11.0.pom
+- Size: 17750 bytes
+- SHA-256: `17b5c634db9da69c4d0d50d4d23ec83961a119aa5eb8ae7fce2d75ca9bbd2e89`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.11.0/lifecycle-livedata-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-livedata-core:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_livedata_core_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.11.0/lifecycle-livedata-core-2.11.0.pom
+- Size: 12361 bytes
+- SHA-256: `2a7e7f5ac6c3716d214cbeb2b6459c3d9de74e4fa169f99c198210626c701cba`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core/2.11.0/lifecycle-livedata-core-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_livedata_core_ktx_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core-ktx/2.11.0/lifecycle-livedata-core-ktx-2.11.0.pom
+- Size: 4472 bytes
+- SHA-256: `20e0447343b348bc66275a8601ee4fc95bd83624620155e6ac7b2f80fe0aeafd`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata-core-ktx/2.11.0/lifecycle-livedata-core-ktx-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-process:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_process_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.11.0/lifecycle-process-2.11.0.pom
+- Size: 9775 bytes
+- SHA-256: `c6b0698468374c6f26b817726d85f32ff8b3a4068d7872a9fe88bf85ed856aa4`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-process/2.11.0/lifecycle-process-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-runtime:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_runtime_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime/2.11.0/lifecycle-runtime-2.11.0.pom
+- Size: 24822 bytes
+- SHA-256: `b7d5ffbea735479b5a2a52a2ffb410a199d846a076b3786bd24acf13d7ecb3dd`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime/2.11.0/lifecycle-runtime-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-runtime-android:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_runtime_android_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-android/2.11.0/lifecycle-runtime-android-2.11.0.pom
+- Size: 27281 bytes
+- SHA-256: `2606b753031b51b71d7a5f36ff6596fd410e886bda4ef3487a7ee2bd2bdfab34`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-android/2.11.0/lifecycle-runtime-android-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-runtime-compose:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_runtime_compose_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-compose/2.11.0/lifecycle-runtime-compose-2.11.0.pom
+- Size: 15732 bytes
+- SHA-256: `9e8e899d788422b2fd8b0d54120900474a7d3e61cfd6b65fb557858c330e5af2`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-compose/2.11.0/lifecycle-runtime-compose-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-runtime-compose-android:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_runtime_compose_android_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-compose-android/2.11.0/lifecycle-runtime-compose-android-2.11.0.pom
+- Size: 15732 bytes
+- SHA-256: `cf5f16f185038e6a7b6df511d383713658a6faa2548ca9fded349506cefc0fb9`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-compose-android/2.11.0/lifecycle-runtime-compose-android-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-runtime-ktx:2.11.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_runtime_ktx_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-ktx/2.11.0/lifecycle-runtime-ktx-2.11.0.pom
+- Size: 4448 bytes
+- SHA-256: `c5df5b7bfa9c6d61ef14047bd9de207db688188c0d5d7b5f5c4ad6613806b1fc`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-ktx/2.11.0/lifecycle-runtime-ktx-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-runtime-ktx-android:2.11.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_runtime_ktx_android_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-ktx-android/2.11.0/lifecycle-runtime-ktx-android-2.11.0.pom
+- Size: 4448 bytes
+- SHA-256: `c5df5b7bfa9c6d61ef14047bd9de207db688188c0d5d7b5f5c4ad6613806b1fc`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-runtime-ktx-android/2.11.0/lifecycle-runtime-ktx-android-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-service:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_service_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-service/2.11.0/lifecycle-service-2.11.0.pom
+- Size: 6861 bytes
+- SHA-256: `410a1cb6445741450582a7a4071537c87912780185eec763911d183b73384584`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-service/2.11.0/lifecycle-service-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel/2.11.0/lifecycle-viewmodel-2.11.0.pom
+- Size: 44524 bytes
+- SHA-256: `b0c4431ead592da05d511993c28556c285242e121fb4a5469c2be15ccbdc4a71`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel/2.11.0/lifecycle-viewmodel-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-android:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_android_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-android/2.11.0/lifecycle-viewmodel-android-2.11.0.pom
+- Size: 45152 bytes
+- SHA-256: `3ba1dccabb890c96053b81817f92065a309ea979e2ef77e4168c4596d966392b`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-android/2.11.0/lifecycle-viewmodel-android-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-compose:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_compose_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-compose/2.11.0/lifecycle-viewmodel-compose-2.11.0.pom
+- Size: 20747 bytes
+- SHA-256: `51f81f7f43f18caac610105972ea21b42448181b148b708304ec4ed8e300897b`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-compose/2.11.0/lifecycle-viewmodel-compose-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-compose-android:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_compose_android_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-compose-android/2.11.0/lifecycle-viewmodel-compose-android-2.11.0.pom
+- Size: 21607 bytes
+- SHA-256: `1197bae93e66a8c55ab6ff29a2c5a6b30a8d64ad563de874c28a2c0054630dce`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-compose-android/2.11.0/lifecycle-viewmodel-compose-android-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-ktx:2.11.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_ktx_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.11.0/lifecycle-viewmodel-ktx-2.11.0.pom
+- Size: 4456 bytes
+- SHA-256: `f15c9fbd9ade832f04d2deed9cdc1732697e63b8c34ffae0ada712197abcc6ec`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.11.0/lifecycle-viewmodel-ktx-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-savedstate:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_savedstate_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.11.0/lifecycle-viewmodel-savedstate-2.11.0.pom
+- Size: 32370 bytes
+- SHA-256: `a26c9358b79501c3d9fb2c0e1aeca78e3da0f93c5d0014e17c6e3432e14970c7`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.11.0/lifecycle-viewmodel-savedstate-2.11.0-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_lifecycle_lifecycle_viewmodel_savedstate_android_2_11_0`
+- Version: 2.11.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate-android/2.11.0/lifecycle-viewmodel-savedstate-android-2.11.0.pom
+- Size: 37740 bytes
+- SHA-256: `9382c25fea183f742ce34ebce119436e36eb911d60c3a999409831a2941f7b14`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-savedstate-android/2.11.0/lifecycle-viewmodel-savedstate-android-2.11.0-sources.jar
+
+## androidx.loader:loader:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_loader_loader_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/loader/loader/1.0.0/loader-1.0.0.pom
+- Size: 25417 bytes
+- SHA-256: `efcbafaac8fc06bd5b162b57ac1e146d11919b79dea2202339470c931cecdc67`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/loader/loader/1.0.0/loader-1.0.0-sources.jar
+
+## androidx.localbroadcastmanager:localbroadcastmanager:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_localbroadcastmanager_localbroadcastmanager_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/localbroadcastmanager/localbroadcastmanager/1.0.0/localbroadcastmanager-1.0.0.pom
+- Size: 4073 bytes
+- SHA-256: `952b8567a76d6484aa96f9712b9dc90f21b83a73e2496daf243e2e1adfb65dd4`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/localbroadcastmanager/localbroadcastmanager/1.0.0/localbroadcastmanager-1.0.0-sources.jar
+
+## androidx.navigation:navigation-common:2.9.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigation_navigation_common_2_9_8`
+- Version: 2.9.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-common/2.9.8/navigation-common-2.9.8.pom
+- Size: 99840 bytes
+- SHA-256: `a734a84e293ffd55c4d46bd77e54b2720a9dc2e85dfbd1816ba0d3e805ed1eef`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-common/2.9.8/navigation-common-2.9.8-sources.jar
+
+## androidx.navigation:navigation-common-android:2.9.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigation_navigation_common_android_2_9_8`
+- Version: 2.9.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-common-android/2.9.8/navigation-common-android-2.9.8.pom
+- Size: 118340 bytes
+- SHA-256: `dd6d0159e6299e706b127fb6d7f1d558fad9c2222e1f9e664f843fdcb87f84f4`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-common-android/2.9.8/navigation-common-android-2.9.8-sources.jar
+
+## androidx.navigation:navigation-compose:2.9.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigation_navigation_compose_2_9_8`
+- Version: 2.9.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-compose/2.9.8/navigation-compose-2.9.8.pom
+- Size: 28866 bytes
+- SHA-256: `05a1bedec5be736fc3f44f3baf568cc9fe9ede88b6eaa4cd0356be6de1bbe9d8`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-compose/2.9.8/navigation-compose-2.9.8-sources.jar
+
+## androidx.navigation:navigation-compose-android:2.9.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigation_navigation_compose_android_2_9_8`
+- Version: 2.9.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-compose-android/2.9.8/navigation-compose-android-2.9.8.pom
+- Size: 28256 bytes
+- SHA-256: `6e28af96ecbaa1fda0b700fcf7d06607ac08eeedf5bfa3d1408a07ec0938bba5`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-compose-android/2.9.8/navigation-compose-android-2.9.8-sources.jar
+
+## androidx.navigation:navigation-runtime:2.9.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigation_navigation_runtime_2_9_8`
+- Version: 2.9.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-runtime/2.9.8/navigation-runtime-2.9.8.pom
+- Size: 44872 bytes
+- SHA-256: `5ce03c41a642eb50bf445a1f6056d3567f31317649b9c6d255f4da37a5e0db07`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-runtime/2.9.8/navigation-runtime-2.9.8-sources.jar
+
+## androidx.navigation:navigation-runtime-android:2.9.8 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigation_navigation_runtime_android_2_9_8`
+- Version: 2.9.8
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-runtime-android/2.9.8/navigation-runtime-android-2.9.8.pom
+- Size: 71040 bytes
+- SHA-256: `e9ca1a514bf324ecf9595ea46ec4348e7ee57758d5c583109196e4dde2ecd64c`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigation/navigation-runtime-android/2.9.8/navigation-runtime-android-2.9.8-sources.jar
+
+## androidx.navigationevent:navigationevent:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigationevent_navigationevent_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent/1.0.0/navigationevent-1.0.0.pom
+- Size: 42622 bytes
+- SHA-256: `1f6049776a270ed61c2556d3f88a83e7f54200b708a3dc03622bbe52b63e4c55`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent/1.0.0/navigationevent-1.0.0-sources.jar
+
+## androidx.navigationevent:navigationevent-android:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigationevent_navigationevent_android_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent-android/1.0.0/navigationevent-android-1.0.0.pom
+- Size: 40676 bytes
+- SHA-256: `1771b427dc8974d4dc07975ddb52b611cd0d5bd8115de6e49a6fa8762e0f13a1`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent-android/1.0.0/navigationevent-android-1.0.0-sources.jar
+
+## androidx.navigationevent:navigationevent-compose:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigationevent_navigationevent_compose_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent-compose/1.0.0/navigationevent-compose-1.0.0.pom
+- Size: 15267 bytes
+- SHA-256: `365be6d205821beae96ee885ea08e80e60d66df93d25cff7d4c6fb4704912585`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent-compose/1.0.0/navigationevent-compose-1.0.0-sources.jar
+
+## androidx.navigationevent:navigationevent-compose-android:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_navigationevent_navigationevent_compose_android_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent-compose-android/1.0.0/navigationevent-compose-android-1.0.0.pom
+- Size: 14442 bytes
+- SHA-256: `0781754e368262504f08e63eabcf580e58cb73f6126c9484f64da6a1e0d1cfcf`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/navigationevent/navigationevent-compose-android/1.0.0/navigationevent-compose-android-1.0.0-sources.jar
+
+## androidx.print:print:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_print_print_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/print/print/1.0.0/print-1.0.0.pom
+- Size: 7099 bytes
+- SHA-256: `659b6e2047484dbae409b9b49c19f9ebd9540bb7ef3610438e2c2b15064fc217`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/print/print/1.0.0/print-1.0.0-sources.jar
+
+## androidx.profileinstaller:profileinstaller:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_profileinstaller_profileinstaller_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/profileinstaller/profileinstaller/1.4.0/profileinstaller-1.4.0.pom
+- Size: 44238 bytes
+- SHA-256: `7b8637080b47188656fd54dab66e9270334242d277d2a8e3c46691c3afa152a0`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/profileinstaller/profileinstaller/1.4.0/profileinstaller-1.4.0-sources.jar
+
+## androidx.resourceinspection:resourceinspection-annotation:1.0.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_resourceinspection_resourceinspection_annotation_1_0_1`
+- Version: 1.0.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.pom
+- Size: 5237 bytes
+- SHA-256: `cdca7861ae17115f8d74f9f197d1a4f8b0217ca035a3990da2e2c1ca1fa7f822`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1-sources.jar
+
+## androidx.room:room-common:2.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_room_room_common_2_6_1`
+- Version: 2.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/room/room-common/2.6.1/room-common-2.6.1.pom
+- Size: 61302 bytes
+- SHA-256: `c25a322bcf9f5740e85d8179796c78b2a85dd5f826b9824fbea6adaa47229dea`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/room/room-common/2.6.1/room-common-2.6.1-sources.jar
+
+## androidx.room:room-ktx:2.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_room_room_ktx_2_6_1`
+- Version: 2.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/room/room-ktx/2.6.1/room-ktx-2.6.1.pom
+- Size: 6915 bytes
+- SHA-256: `3118f596d5c3e70a2f8934db3d9655a71753f8d313dff794ab6b3ee1bf967547`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/room/room-ktx/2.6.1/room-ktx-2.6.1-sources.jar
+
+## androidx.room:room-runtime:2.6.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_room_room_runtime_2_6_1`
+- Version: 2.6.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/room/room-runtime/2.6.1/room-runtime-2.6.1.pom
+- Size: 89897 bytes
+- SHA-256: `22e6a36236755e5603a7488db357b8cb87d6d1e13f67766a38a0326859628444`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/room/room-runtime/2.6.1/room-runtime-2.6.1-sources.jar
+
+## androidx.savedstate:savedstate:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_savedstate_savedstate_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate/1.4.0/savedstate-1.4.0.pom
+- Size: 52666 bytes
+- SHA-256: `02cdc0f1b8f1313ba1e22193910618edc6f7877e542d2d83cbba5d2d68d16dd5`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate/1.4.0/savedstate-1.4.0-sources.jar
+
+## androidx.savedstate:savedstate-android:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_savedstate_savedstate_android_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-android/1.4.0/savedstate-android-1.4.0.pom
+- Size: 57475 bytes
+- SHA-256: `ab5ddfcea3cf8507428183cac36144629aa9a5cd8631afdfbb762e844c8785d9`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-android/1.4.0/savedstate-android-1.4.0-sources.jar
+
+## androidx.savedstate:savedstate-compose:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_savedstate_savedstate_compose_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-compose/1.4.0/savedstate-compose-1.4.0.pom
+- Size: 11485 bytes
+- SHA-256: `da5a94aca4784cdc938b8d00bcd4d2dede2ddb9e9042b1e319f3fc11a59877eb`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-compose/1.4.0/savedstate-compose-1.4.0-sources.jar
+
+## androidx.savedstate:savedstate-compose-android:1.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_savedstate_savedstate_compose_android_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-compose-android/1.4.0/savedstate-compose-android-1.4.0.pom
+- Size: 12207 bytes
+- SHA-256: `02ad6a9ac91857a3bbf67399f03b9e27d91b73152e4f24d02933525f3ae4e4dc`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-compose-android/1.4.0/savedstate-compose-android-1.4.0-sources.jar
+
+## androidx.savedstate:savedstate-ktx:1.4.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_savedstate_savedstate_ktx_1_4_0`
+- Version: 1.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-ktx/1.4.0/savedstate-ktx-1.4.0.pom
+- Size: 4426 bytes
+- SHA-256: `b1e8d78600a68fb3c0029793146ac07ea0335819f813554e85c568caa35cb5e4`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/savedstate/savedstate-ktx/1.4.0/savedstate-ktx-1.4.0-sources.jar
+
+## androidx.security:security-crypto:1.1.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_security_security_crypto_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/security/security-crypto/1.1.0/security-crypto-1.1.0.pom
+- Size: 20042 bytes
+- SHA-256: `2c0084bd86c3eefbdb02c0b5abb77d14e12b93482377a0c881a21722b4926941`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/security/security-crypto/1.1.0/security-crypto-1.1.0-sources.jar
+
+## androidx.sqlite:sqlite:2.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_sqlite_sqlite_2_4_0`
+- Version: 2.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite/2.4.0/sqlite-2.4.0.pom
+- Size: 20824 bytes
+- SHA-256: `a6777c99f104a2d01afcb95137c9de494220cd968f91f3dd04ece79c3e8d8b13`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite/2.4.0/sqlite-2.4.0-sources.jar
+
+## androidx.sqlite:sqlite-framework:2.4.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_sqlite_sqlite_framework_2_4_0`
+- Version: 2.4.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite-framework/2.4.0/sqlite-framework-2.4.0.pom
+- Size: 11350 bytes
+- SHA-256: `3614148d2064b62debd45ef7b14297f5d75bd397c4747cb6d63ebab70903117e`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite-framework/2.4.0/sqlite-framework-2.4.0-sources.jar
+
+## androidx.startup:startup-runtime:1.1.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_startup_startup_runtime_1_1_1`
+- Version: 1.1.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom
+- Size: 6839 bytes
+- SHA-256: `53e03bc065b26b2227b5fdca6776cbfa0d1a69afb8f3c1e96c1743fa54320196`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.1.1/startup-runtime-1.1.1-sources.jar
+
+## androidx.startup:startup-runtime:1.2.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_startup_startup_runtime_1_2_0`
+- Version: 1.2.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.2.0/startup-runtime-1.2.0.pom
+- Size: 11055 bytes
+- SHA-256: `4b0fbeeb2255823f16a70315c64159d41ed6a752d823ff68e0132fd749c36f82`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.2.0/startup-runtime-1.2.0-sources.jar
+
+## androidx.tracing:tracing:1.3.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_tracing_tracing_1_3_0`
+- Version: 1.3.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/tracing/tracing/1.3.0/tracing-1.3.0.pom
+- Size: 4380 bytes
+- SHA-256: `c2a31e6c9b84b121ac339e19108e4dfbc3f90adbe41ea451f6f961cc4a667288`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/tracing/tracing/1.3.0/tracing-1.3.0-sources.jar
+
+## androidx.tracing:tracing-android:1.3.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_tracing_tracing_android_1_3_0`
+- Version: 1.3.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/tracing/tracing-android/1.3.0/tracing-android-1.3.0.pom
+- Size: 10151 bytes
+- SHA-256: `a3a9c1b46707208a024ab3939fc93dd56978f5c0e5928ec808e21df9e139cc5d`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/tracing/tracing-android/1.3.0/tracing-android-1.3.0-sources.jar
+
+## androidx.tracing:tracing-ktx:1.3.0 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_tracing_tracing_ktx_1_3_0`
+- Version: 1.3.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/tracing/tracing-ktx/1.3.0/tracing-ktx-1.3.0.pom
+- Size: 4396 bytes
+- SHA-256: `082d88d1d827c10f686647ac536fc250d8b19250a881f9054cb5dc0dd2759a17`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/tracing/tracing-ktx/1.3.0/tracing-ktx-1.3.0-sources.jar
+
+## androidx.transition:transition:1.6.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_transition_transition_1_6_0`
+- Version: 1.6.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/transition/transition/1.6.0/transition-1.6.0.pom
+- Size: 136384 bytes
+- SHA-256: `d366250918f6b6bc89cdc05d771e88ee057574546cd19210cf52fae6dcaa4cec`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/transition/transition/1.6.0/transition-1.6.0-sources.jar
+
+## androidx.vectordrawable:vectordrawable:1.1.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_vectordrawable_vectordrawable_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0.pom
+- Size: 19475 bytes
+- SHA-256: `a1ae4fccc4ab76a734c10f79adf39262517658a79084bad467c4c6f41c478187`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0-sources.jar
+
+## androidx.vectordrawable:vectordrawable-animated:1.1.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_vectordrawable_vectordrawable_animated_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0.pom
+- Size: 24016 bytes
+- SHA-256: `a3880c595965c55fd1bdee0554b99c66e9c28d3311b7ce6242189fc1f554fcf1`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0-sources.jar
+
+## androidx.versionedparcelable:versionedparcelable:1.1.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_versionedparcelable_versionedparcelable_1_1_1`
+- Version: 1.1.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom
+- Size: 21164 bytes
+- SHA-256: `135016af471acf4cd9583d36ceb779710c6b46812ccaaef7c526d5d60eae6b0b`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1-sources.jar
+
+## androidx.viewpager:viewpager:1.0.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_viewpager_viewpager_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/viewpager/viewpager/1.0.0/viewpager-1.0.0.pom
+- Size: 38376 bytes
+- SHA-256: `d4f9a044ab8c23392b12a3f2930d5fd6b5982421a746f2f2a812e9619431fbfd`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/viewpager/viewpager/1.0.0/viewpager-1.0.0-sources.jar
+
+## androidx.window:window:1.5.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_window_window_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/window/window/1.5.0/window-1.5.0.pom
+- Size: 216286 bytes
+- SHA-256: `37d85fa5e68b3bc28c88b05dc2b0d5d7caf0af3d7692bd0bc0c56a8dc6ca6a33`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/window/window/1.5.0/window-1.5.0-sources.jar
+
+## androidx.window:window-core:1.5.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_window_window_core_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/window/window-core/1.5.0/window-core-1.5.0.pom
+- Size: 13190 bytes
+- SHA-256: `84310e2892f4a174f74607eacbb7342b8bff23197495db4557938aa553aa510e`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/window/window-core/1.5.0/window-core-1.5.0-sources.jar
+
+## androidx.window:window-core-android:1.5.0 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_window_window_core_android_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/window/window-core-android/1.5.0/window-core-android-1.5.0.pom
+- Size: 13190 bytes
+- SHA-256: `df2d830a33d04300574b65d7a87904458a910b879af3d13022def0a627a22df6`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/window/window-core-android/1.5.0/window-core-android-1.5.0-sources.jar
+
+## androidx.work:work-runtime:2.10.1 original publisher source JAR
+
+- Catalog id: `bitchat_androidx_androidx_work_work_runtime_2_10_1`
+- Version: 2.10.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/work/work-runtime/2.10.1/work-runtime-2.10.1.pom
+- Size: 304207 bytes
+- SHA-256: `d2d5128a13ad741c5977538db8a5aafb827544036b28fadf651e951f8ed83456`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/work/work-runtime/2.10.1/work-runtime-2.10.1-sources.jar
+
+## androidx.work:work-runtime-ktx:2.10.1 original publisher source JAR (metadata/notices only)
+
+- Catalog id: `bitchat_androidx_androidx_work_work_runtime_ktx_2_10_1`
+- Version: 2.10.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project
+- License proof: https://dl.google.com/dl/android/maven2/androidx/work/work-runtime-ktx/2.10.1/work-runtime-ktx-2.10.1.pom
+- Size: 4398 bytes
+- SHA-256: `4a5f293a931444d1cb766fb365bfcc2c286cd8ae43fdedad0cdfa2a69362ed15`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/work/work-runtime-ktx/2.10.1/work-runtime-ktx-2.10.1-sources.jar
+
+## androidx.camera:camera-core:1.6.1 original AAR for native-source audit only
+
+- Catalog id: `bitchat_androidx_camera_core_audit`
+- Version: 1.6.1
+- License: Apache-2.0 AND BSD-3-Clause
+- Attribution: The Android Open Source Project and AndroidX contributors; original AAR bytes retained for audit
+- License proof: https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1.pom
+- Size: 1213213 bytes
+- SHA-256: `a36f1c323851b51215ba476640e1eb4153882b0c368c0376e9fb905e689df84a`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/camera/camera-core/1.6.1/camera-core-1.6.1.aar
+
+## androidx.graphics:graphics-path:1.0.1 original AAR for native-source audit only
+
+- Catalog id: `bitchat_androidx_graphics_path_audit`
+- Version: 1.0.1
+- License: Apache-2.0
+- Attribution: The Android Open Source Project and AndroidX contributors; original AAR bytes retained for audit
+- License proof: https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.pom
+- Size: 39380 bytes
+- SHA-256: `8ca4032b6d79b351f0b59ad4b580eddbb9423e1652f7c958830687f1eee2ec03`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/graphics/graphics-path/1.0.1/graphics-path-1.0.1.aar
+
 ## Arti 1.9.0 exact upstream source for bitchat native wrapper
 
 - Catalog id: `bitchat_arti_source`
@@ -1400,6 +2973,413 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 6037679 bytes
 - SHA-256: `02f92b8cbb1e394cfcf034ae441176cddc0935293da92ae886bd1402b3ec9c53`
 - Publisher file: https://gitlab.torproject.org/api/v4/projects/tpo%2Fcore%2Farti/repository/archive.tar.gz?sha=ba421ece1acb47e5c554c2bfa043cc9156451bab
+
+## com.google.mlkit:barcode-scanning:17.3.0 original AAR for embedded-library audit only
+
+- Catalog id: `bitchat_barcode_scanning_audit`
+- Version: 17.3.0
+- License: [[VERIFY: Google ML Kit Terms of Service; open redistribution and GPL compatibility not established]]
+- Attribution: Google LLC; original AAR retained without modification for audit
+- License proof: https://developers.google.com/ml-kit/terms
+- Size: 9898786 bytes
+- SHA-256: `64c5cf48bb94b6c54f2c785c660640a7d167aff6ad72bc2c920706dc4187b79a`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.aar
+
+## com.google.accompanist:accompanist-permissions:0.37.3 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_accompanist_accompanist_permissions_0_37_3`
+- Version: 0.37.3
+- License: Apache-2.0
+- Attribution: Google
+- License proof: https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3.pom
+- Size: 9409 bytes
+- SHA-256: `d5bb84bb49671e04828e071da2f8be6e07f9265c562064ca64f53aac65e69060`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3-sources.jar
+
+## com.google.auto.value:auto-value-annotations:1.6.3 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_auto_value_auto_value_annotations_1_6_3`
+- Version: 1.6.3
+- License: Apache-2.0
+- Attribution: auto-value-annotations contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/auto/auto-parent/7/auto-parent-7.pom
+- Size: 120528 bytes
+- SHA-256: `254d55ea959608a833fa07056710488c1f4978875f86f6a106b8d937b29b1170`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3-sources.jar
+
+## com.google.code.findbugs:jsr305:3.0.2 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_code_findbugs_jsr305_3_0_2`
+- Version: 3.0.2
+- License: Apache-2.0
+- Attribution: jsr305 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+- Size: 18102 bytes
+- SHA-256: `1c9e85e272d0708c6a591dc74828c71603053b48cc75ae83cce56912a2aa063b`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar
+
+## com.google.code.gson:gson:2.14.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_code_gson_gson_2_14_0`
+- Version: 2.14.0
+- License: Apache-2.0
+- Attribution: gson contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0.pom
+- Size: 213519 bytes
+- SHA-256: `a4873f0ef88981cab520c3d7449cd89a68e605f15e9fe46e1aa2c77d5f87eb6f`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar
+
+## com.google.crypto.tink:tink-android:1.23.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_crypto_tink_tink_android_1_23_0`
+- Version: 1.23.0
+- License: Apache-2.0
+- Attribution: tink-android contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0.pom
+- Size: 5010264 bytes
+- SHA-256: `32ac8eaa5788ee1d724c97e454c233622ce9c01bbd7b996102a594ccbf8e89ca`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0-sources.jar
+
+## com.google.dagger:dagger:2.59 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_dagger_dagger_2_59`
+- Version: 2.59
+- License: Apache-2.0
+- Attribution: dagger contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59.pom
+- Size: 65921 bytes
+- SHA-256: `0766cf4aecd3ffe62b21f47e86d634daa74aff5ca05adea8dcaa20b0e63df521`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59-sources.jar
+
+## com.google.errorprone:error_prone_annotations:2.48.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_errorprone_error_prone_annotations_2_48_0`
+- Version: 2.48.0
+- License: Apache-2.0
+- Attribution: error_prone_annotations contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0.pom
+- Size: 40016 bytes
+- SHA-256: `5c1c7b797aa1effa050a06d2d98534a28750f5fa8bcca56d8f49a866ca8bd03f`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar
+
+## com.google.firebase:firebase-annotations:16.0.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_firebase_firebase_annotations_16_0_0`
+- Version: 16.0.0
+- License: Apache-2.0
+- Attribution: firebase-annotations contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0.pom
+- Size: 1554 bytes
+- SHA-256: `5c5a74e4eae43e3d8c3debeb68c28b0d29813b4f0801b38705cd4ec13bca0e9b`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0-sources.jar
+
+## com.google.firebase:firebase-components:16.1.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_firebase_firebase_components_16_1_0`
+- Version: 16.1.0
+- License: Apache-2.0
+- Attribution: firebase-components contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0.pom
+- Size: 34822 bytes
+- SHA-256: `cf4a4e6e5257514941194ccd95fb0d17e37bd5a35fa3705fb582de58ab79504d`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0-sources.jar
+
+## com.google.firebase:firebase-encoders:16.1.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_firebase_firebase_encoders_16_1_0`
+- Version: 16.1.0
+- License: Apache-2.0
+- Attribution: firebase-encoders contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0.pom
+- Size: 12762 bytes
+- SHA-256: `6d822153d1bf52e435302256d8fa7d30f392bb51a01978721250545a73413072`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0-sources.jar
+
+## com.google.firebase:firebase-encoders-json:17.1.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_firebase_firebase_encoders_json_17_1_0`
+- Version: 17.1.0
+- License: Apache-2.0
+- Attribution: firebase-encoders-json contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0.pom
+- Size: 4983 bytes
+- SHA-256: `9bbe5ee1a7a2a715964fa77208905cecb7c74aa409e38c103657be1c5234fb44`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0-sources.jar
+
+## com.google.guava:listenablefuture:1.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_guava_listenablefuture_1_0`
+- Version: 1.0
+- License: Apache-2.0
+- Attribution: listenablefuture contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom
+- Size: 4021 bytes
+- SHA-256: `3d1bd8d4a39b293612a40e547ec51d9ce34fa638d7adeae83871cdbe2923b161`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar
+
+## com.google.zxing:core:3.5.4 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_google_zxing_core_3_5_4`
+- Version: 3.5.4
+- License: Apache-2.0
+- Attribution: core contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/zxing/zxing-parent/3.5.4/zxing-parent-3.5.4.pom
+- Size: 509348 bytes
+- SHA-256: `a611e3b63b661aeb2a81b8b4f4bde2daace1e2976adbb37917a674a0019c8fac`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4-sources.jar
+
+## com.squareup.okhttp3:okhttp:5.4.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_squareup_okhttp3_okhttp_5_4_0`
+- Version: 5.4.0
+- License: Apache-2.0
+- Attribution: Square, Inc.
+- License proof: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0.pom
+- Size: 381368 bytes
+- SHA-256: `18d3617897bcafa72609a6f92c88d60754a6c2029d7cc6b36a28b08a13049704`
+- Publisher file: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0-sources.jar
+
+## com.squareup.okhttp3:okhttp-android:5.4.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_squareup_okhttp3_okhttp_android_5_4_0`
+- Version: 5.4.0
+- License: Apache-2.0
+- Attribution: Square, Inc.
+- License proof: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0.pom
+- Size: 404095 bytes
+- SHA-256: `d7aca53404544a763b9e0ac356ebf1976f9d313e20734dd738f53ed400dbe378`
+- Publisher file: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0-sources.jar
+
+## com.squareup.okio:okio:3.17.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_squareup_okio_okio_3_17_0`
+- Version: 3.17.0
+- License: Apache-2.0
+- Attribution: Square, Inc.
+- License proof: https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0.pom
+- Size: 176563 bytes
+- SHA-256: `3d7ea54e4974b1cc8ea408305190303cd0101d7f2b5596d1519e83315c377f42`
+- Publisher file: https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0-sources.jar
+
+## com.squareup.okio:okio-jvm:3.17.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_com_squareup_okio_okio_jvm_3_17_0`
+- Version: 3.17.0
+- License: Apache-2.0
+- Attribution: Square, Inc.
+- License proof: https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0.pom
+- Size: 189759 bytes
+- SHA-256: `5603dfecfe4c71b36d6a591616be345fdd9d41a0a63553a3bd883d5ab6ee09a6`
+- Publisher file: https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0-sources.jar
+
+## jakarta.inject:jakarta.inject-api:2.0.1 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_jakarta_inject_jakarta_inject_api_2_0_1`
+- Version: 2.0.1
+- License: Apache-2.0
+- Attribution: Antoine Sabot-Durand; Martin Kouba; Tomas Remes; Matej Novotny
+- License proof: https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.pom
+- Size: 18455 bytes
+- SHA-256: `44f4c73fda69f8b7d87136f0f789f042f54e8ff506d40aa126199baf3752d1c9`
+- Publisher file: https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar
+
+## javax.inject:javax.inject:1 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_javax_inject_javax_inject_1`
+- Version: 1
+- License: Apache-2.0
+- Attribution: javax.inject contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+- Size: 10928 bytes
+- SHA-256: `c4b87ee2911c139c3daf498a781967f1eb2e75bc1a8529a2e7b328a15d0e433e`
+- Publisher file: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar
+
+## no.nordicsemi.android:ble:2.11.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_no_nordicsemi_android_ble_2_11_0`
+- Version: 2.11.0
+- License: BSD-3-Clause
+- Attribution: Aleksander Nowakowski
+- License proof: https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0.pom
+- Size: 197871 bytes
+- SHA-256: `aab33d77e6771f1178d0ef2df7a0daf1717d21e47582fb01d9fdc4e02d839a10`
+- Publisher file: https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0-sources.jar
+
+## org.bouncycastle:bcprov-jdk18on:1.85 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_bouncycastle_bcprov_jdk18on_1_85`
+- Version: 1.85
+- License: MIT
+- Attribution: The Legion of the Bouncy Castle Inc.
+- License proof: https://www.bouncycastle.org/licence.html
+- Size: 5940653 bytes
+- SHA-256: `fa5a81c8b91f299712edcf917788f6293482240a46ec6d095ac6512ae257f007`
+- Publisher file: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85-sources.jar
+
+## org.jetbrains:annotations:23.0.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_annotations_23_0_0`
+- Version: 23.0.0
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom
+- Size: 37462 bytes
+- SHA-256: `ff2309b42f7584520497bb48bc609aca04c9886cf48708f14be83f00423ec144`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar
+
+## org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.10 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlin_kotlin_parcelize_runtime_2_4_10`
+- Version: 2.4.10
+- License: Apache-2.0
+- Attribution: Kotlin Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10.pom
+- Size: 11162 bytes
+- SHA-256: `f98535d3558a8e0b08ed7c993a3559c1b89ad12c335824172485fe05ebb8f606`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10-sources.jar
+
+## org.jetbrains.kotlin:kotlin-stdlib:2.4.10 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlin_kotlin_stdlib_2_4_10`
+- Version: 2.4.10
+- License: Apache-2.0
+- Attribution: Kotlin Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10.pom
+- Size: 757671 bytes
+- SHA-256: `5c4fa84ec945a63453e64bc0141c222ece806a2026c2961fe76b0be483896323`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10-sources.jar
+
+## org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_8_22`
+- Version: 1.8.22
+- License: Apache-2.0
+- Attribution: Kotlin Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom
+- Size: 580 bytes
+- SHA-256: `ea10d3e5e6e695d8a5283cbf116321acae6ba42d0bdd3eda50f7c34a26fa25cb`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22-sources.jar
+
+## org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_8_22`
+- Version: 1.8.22
+- License: Apache-2.0
+- Attribution: Kotlin Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom
+- Size: 556 bytes
+- SHA-256: `40e9a80f6b953d12389623760d438e69914098d0c4d7053f70f90533ec041259`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22-sources.jar
+
+## org.jetbrains.kotlinx:atomicfu:0.28.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_atomicfu_0_28_0`
+- Version: 0.28.0
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0.pom
+- Size: 27808 bytes
+- SHA-256: `e2f58527f0fc8a61db8678b8c93d49929cd62adff7b95dc3d63c0663818b6272`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0-sources.jar
+
+## org.jetbrains.kotlinx:atomicfu-jvm:0.28.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_atomicfu_jvm_0_28_0`
+- Version: 0.28.0
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0.pom
+- Size: 16476 bytes
+- SHA-256: `750bd5f9686abceca5ee6cdcab53d7abc20a2c1bebe462a23dba9932eeb9744c`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0-sources.jar
+
+## org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_kotlinx_coroutines_android_1_11_0`
+- Version: 1.11.0
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0.pom
+- Size: 7779 bytes
+- SHA-256: `d2760d65fc99c28d140b345163560926975cfe6ca36386c8964041f86eb2f4b6`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0-sources.jar
+
+## org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_kotlinx_coroutines_core_1_11_0`
+- Version: 1.11.0
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.pom
+- Size: 371185 bytes
+- SHA-256: `42b1e26bc792fc3d8ba702ef5bd166adcd6c8350f377f639fb7d2e01b3366e3e`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0-sources.jar
+
+## org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.11.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_11_0`
+- Version: 1.11.0
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.pom
+- Size: 438533 bytes
+- SHA-256: `3e0847c0b463965404d5b6fe5d6868000a220b050180dec68501801e9439976a`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0-sources.jar
+
+## org.jetbrains.kotlinx:kotlinx-serialization-core:1.7.3 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_kotlinx_serialization_core_1_7_3`
+- Version: 1.7.3
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3.pom
+- Size: 100861 bytes
+- SHA-256: `c413c2bee3d8248dbbaeeb60c4176b0d954395affaf6f8961b362c5aa466d7a8`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3-sources.jar
+
+## org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jetbrains_kotlinx_kotlinx_serialization_core_jvm_1_7_3`
+- Version: 1.7.3
+- License: Apache-2.0
+- Attribution: JetBrains Team
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3.pom
+- Size: 106717 bytes
+- SHA-256: `d084ce9bf130919d4b899db09896531440d1e330919187c7932d7fe0fa5257b8`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar
+
+## org.jspecify:jspecify:1.0.0 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_jspecify_jspecify_1_0_0`
+- Version: 1.0.0
+- License: Apache-2.0
+- Attribution: Kevin Bourrillion
+- License proof: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom
+- Size: 11996 bytes
+- SHA-256: `adf0898191d55937fb3192ba971826f4f294292c4a960740f3c27310e7b70296`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar
+
+## org.nanohttpd:nanohttpd:2.3.1 original publisher source JAR for bitchat dependency review
+
+- Catalog id: `bitchat_maven_org_nanohttpd_nanohttpd_2_3_1`
+- Version: 2.3.1
+- License: BSD-3-Clause
+- Attribution: nanohttpd contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd-project/2.3.1/nanohttpd-project-2.3.1.pom
+- Size: 23924 bytes
+- SHA-256: `71b57b309dd19ca7bfceb3b0fa97ac9048ab2cb902a2607373633150f1997a67`
+- Publisher file: https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar
+
+## com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1 original AAR for embedded-library audit only
+
+- Catalog id: `bitchat_play_services_mlkit_barcode_scanning_audit`
+- Version: 18.3.1
+- License: [[VERIFY: Google ML Kit Terms of Service; open redistribution and GPL compatibility not established]]
+- Attribution: Google LLC; original AAR retained without modification for audit
+- License proof: https://developers.google.com/ml-kit/terms
+- Size: 519271 bytes
+- SHA-256: `f58096b98867417a698db55ddfd7c8ed0383b2117fa8f3692fa701d6132f1462`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.aar
 
 ## adler2 2.0.1 original Rust source archive for bitchat Arti dependency set
 
