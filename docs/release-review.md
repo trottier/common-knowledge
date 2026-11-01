@@ -100,7 +100,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6330)
+## Remaining VERIFY markers (6331)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1646,6 +1646,13 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
     complete current USPS postal directory. Preserve every county relationship,
     leading zeros, blank-code exclusions, and county-vintage checks. This raw
     source is a build input only; prototype use does not approve national pins.]]
+- `catalog/postal.yaml:35` — [[VERIFY: review the computed HTTPS response hash, Census-created geometry
+    classification, API attribution terms, source currency, and map overlay
+    before release. Three January 1, 2020 ZCTAs only; not current USPS delivery
+    boundaries or an exhaustive ZIP directory. This unmodified publisher response
+    is a prototype build input, not selected national cargo. No requested geometry
+    simplification, quantization, or precision reduction; TIGERweb detailed geometry
+    is not a survey or a claim of full TIGER/Line vertex identity.]]
 - `catalog/referencepacks.yaml:34` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:68` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:102` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]

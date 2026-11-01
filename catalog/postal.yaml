@@ -17,3 +17,25 @@
     complete current USPS postal directory. Preserve every county relationship,
     leading zeros, blank-code exclusions, and county-vintage checks. This raw
     source is a build input only; prototype use does not approve national pins.]]
+
+- id: census_zcta_bristol_2020
+  family: geodata
+  title: Census 2020 Bristol County ZCTA geometry, bounded TIGERweb query
+  url: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702806%27%2C%2702809%27%2C%2702885%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson
+  version: January 1, 2020 geography; HTTPS query captured 2026-11-01
+  size_bytes: 16717
+  sha256: 278db2981af844412c7c5668aa11251be0babd8c4a82940d0d916336815725ee
+  license: US-PD
+  attribution: U.S. Census Bureau, Census 2020 TIGERweb ZCTAs 02806, 02809, and 02885
+  license_proof_url: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf
+  placement: hub_only
+  dest: build/postal/
+  profiles: [sample]
+  review: >-
+    [[VERIFY: review the computed HTTPS response hash, Census-created geometry
+    classification, API attribution terms, source currency, and map overlay
+    before release. Three January 1, 2020 ZCTAs only; not current USPS delivery
+    boundaries or an exhaustive ZIP directory. This unmodified publisher response
+    is a prototype build input, not selected national cargo. No requested geometry
+    simplification, quantization, or precision reduction; TIGERweb detailed geometry
+    is not a survey or a claim of full TIGER/Line vertex identity.]]

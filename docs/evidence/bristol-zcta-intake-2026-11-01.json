@@ -1,0 +1,173 @@
+{
+  "source": {
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702806%27%2C%2702809%27%2C%2702885%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson",
+    "size_bytes": 16717,
+    "sha256": "278db2981af844412c7c5668aa11251be0babd8c4a82940d0d916336815725ee"
+  },
+  "geojson_type": "FeatureCollection",
+  "coordinate_order": "longitude, latitude",
+  "output_crs": "EPSG:4326 requested; GeoJSON coordinates",
+  "feature_count": 3,
+  "features": [
+    {
+      "code": "02806",
+      "geometry_type": "Polygon",
+      "valid": true,
+      "rings": 1,
+      "vertices": 158,
+      "bounds_lonlat": [
+        -71.36520700003086,
+        41.679936000002996,
+        -71.28440400016176,
+        41.77619900011074
+      ],
+      "interior_point_lonlat": [
+        -71.3196762,
+        41.7330374
+      ],
+      "interior_point_covered": true,
+      "county_relationships": [
+        "44001"
+      ],
+      "relationship_area_attributes_match": true,
+      "source_area_attributes_m2": {
+        "AREALAND": 21198328,
+        "AREAWATER": 18699186
+      }
+    },
+    {
+      "code": "02809",
+      "geometry_type": "Polygon",
+      "valid": true,
+      "rings": 1,
+      "vertices": 116,
+      "bounds_lonlat": [
+        -71.32897599976975,
+        41.63813700010303,
+        -71.21042900044411,
+        41.71540800012449
+      ],
+      "interior_point_lonlat": [
+        -71.273331,
+        41.6757303
+      ],
+      "interior_point_covered": true,
+      "county_relationships": [
+        "44001"
+      ],
+      "relationship_area_attributes_match": true,
+      "source_area_attributes_m2": {
+        "AREALAND": 25352631,
+        "AREAWATER": 27927497
+      }
+    },
+    {
+      "code": "02885",
+      "geometry_type": "Polygon",
+      "valid": true,
+      "rings": 1,
+      "vertices": 115,
+      "bounds_lonlat": [
+        -71.29403900021752,
+        41.68800900031385,
+        -71.20837099965406,
+        41.76200500013029
+      ],
+      "interior_point_lonlat": [
+        -71.2590267,
+        41.7264036
+      ],
+      "interior_point_covered": true,
+      "county_relationships": [
+        "44001"
+      ],
+      "relationship_area_attributes_match": true,
+      "source_area_attributes_m2": {
+        "AREALAND": 15949813,
+        "AREAWATER": 6732451
+      }
+    }
+  ],
+  "relationship_source_sha256": "3ed41278d637dc249e0323306f68be8a6c234e3090f4de88ef328dee71aeaaaf",
+  "not_current_usps_boundaries": true,
+  "no_claim_of_full_tiger_line_vertex_identity": true,
+  "catalog_held_hub_only": true,
+  "base_commit": "f74ec0ab1ff613486397044b6b47c95136b58981",
+  "query_receipt": {
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702806%27%2C%2702809%27%2C%2702885%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson",
+    "size_bytes": 16717,
+    "sha256": "278db2981af844412c7c5668aa11251be0babd8c4a82940d0d916336815725ee",
+    "retrieved_utc": "2026-11-01T23:40:17.914741+00:00",
+    "headers": {
+      "Content-Type": "application/geo+json;charset=UTF-8",
+      "ETag": "\"1784801285\""
+    }
+  },
+  "publisher_metadata": {
+    "layer-metadata": {
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84?f=pjson",
+      "size_bytes": 7695,
+      "sha256": "9d5a8fb0c0c49f33640695c0d04e5523ef4aecaa2eaba4061eead7ddc055d943",
+      "retrieved_utc": "2026-11-01T23:40:16.783800+00:00",
+      "headers": {
+        "Content-Type": "text/plain;charset=UTF-8",
+        "Content-Length": "7695",
+        "ETag": "\"3f8f709f\""
+      }
+    },
+    "service-metadata": {
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer?f=pjson",
+      "size_bytes": 33947,
+      "sha256": "28b3ec5ccfd4deb8e6fa7a8dc6887b665d39d896275b76656db79ccb9452014f",
+      "retrieved_utc": "2026-11-01T23:40:17.381704+00:00",
+      "headers": {
+        "Content-Type": "text/plain;charset=UTF-8",
+        "ETag": "\"31a0510d\""
+      }
+    },
+    "layer-xml": {
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/metadata",
+      "size_bytes": 712,
+      "sha256": "4c73fd8f5cfe5b545edca41f40398f73c1028083004e5509eba8e8748de13154"
+    }
+  },
+  "rights_basis": {
+    "official_source_credit": "Source: U.S. Census Bureau",
+    "technical_document_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf",
+    "technical_document_size_bytes": 3690200,
+    "technical_document_sha256": "33b68469cc654b3e4470adb8a30017436d1601c02b742b050919241af8884821",
+    "section": "1.2 Citation Information",
+    "classification": "US-PD; independent human review retained",
+    "additional_api_terms_url": "https://www.census.gov/data/developers/about/terms-of-service.html"
+  },
+  "resource_limits": {
+    "container_image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "cpus": 1,
+    "memory_bytes": 2147483648,
+    "memory_swap_bytes": 2147483648,
+    "network": "none",
+    "source_and_cache_read_only": true,
+    "audit_exit_code": 0
+  },
+  "limitations": [
+    "Only three Bristol County ZCTA features were queried; no national source coverage claim.",
+    "2020 statistical polygons, not current USPS delivery boundaries or legal surveys.",
+    "No simplification, geometryPrecision, maxAllowableOffset, or quantizationParameters requested.",
+    "Census describes TIGERweb as detailed; exact equality with full TIGER/Line shapefile vertices was not established.",
+    "Unmodified raw publisher response remains hub-only and held.",
+    "Independent pin, source classification, API attribution, currency, overlay, and physical phone reviews remain."
+  ],
+  "rejected_render_candidate": {
+    "url": "https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip",
+    "size_bytes": 66655314,
+    "sha256": "c69a4ede8aebebfc7ed3a98a9075c6aaa1b75d514a129bc5c662fd806d2f3d17",
+    "zip_crc_check": "passed",
+    "reason": "Embedded per-item metadata says not to display at scales larger than 1:500,000; not selected or cataloged for county rendering."
+  },
+  "validation": {
+    "catalog_schema": "all catalog records loaded with current configuration",
+    "focused_catalog_tests": "26 passed in 22.28s",
+    "ruff_initial_attempt": "failed to create cache on read-only source; source and cache mounts stayed read-only",
+    "ruff_retry": "--no-cache passed; no tracked Python changes"
+  }
+}
