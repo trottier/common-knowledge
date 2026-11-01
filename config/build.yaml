@@ -2,7 +2,7 @@ version: "0.1.0"
 android_maps: auto
 volume_label: "EMERGENCY"
 volume_id: "0C0FFEE0"
-site_base_url: "[[VERIFY: GitHub Pages URL]]"
+site_base_url: "https://trottier.github.io/common-knowledge/"
 source_date_epoch: "[[VERIFY: set at release]]"
 profiles:
   dev:    { third_party: none,   image_size_mib: 256 }                # CI on every push

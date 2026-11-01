@@ -1,0 +1,79 @@
+{
+  "observed_utc": "2026-11-01T18:43:01.682639+00:00",
+  "pages_api_url": "https://api.github.com/repos/trottier/common-knowledge/pages",
+  "pages": {
+    "url": "https://api.github.com/repos/trottier/common-knowledge/pages",
+    "status": null,
+    "cname": null,
+    "custom_404": false,
+    "html_url": "https://trottier.github.io/common-knowledge/",
+    "build_type": "workflow",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "public": true,
+    "protected_domain_state": null,
+    "pending_domain_unverified_at": null,
+    "https_enforced": true
+  },
+  "deployment": {
+    "run_url": "https://github.com/trottier/common-knowledge/actions/runs/41337367987",
+    "head_sha": "a815b06853142d72c5f9f55db3a8c5ebbdb391fd",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success",
+        "completed_at": "2026-11-01T18:39:20Z"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success",
+        "completed_at": "2026-11-01T18:39:32Z"
+      }
+    ]
+  },
+  "http": [
+    {
+      "requested_url": "https://trottier.github.io/common-knowledge/",
+      "final_url": "https://trottier.github.io/common-knowledge/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "size_bytes": 2558251,
+      "sha256": "ceebf063a13fd8212065a2b48e67f19103851753d23fcc039ea8dfaf6b97bd71",
+      "development_notice_present": true
+    },
+    {
+      "requested_url": "https://trottier.github.io/common-knowledge/videos.html",
+      "final_url": "https://trottier.github.io/common-knowledge/videos.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "size_bytes": 1982,
+      "sha256": "fcb737eac18d4c6994d1ae3c198bbfec24a7b8866ebd7d41d290aa16e4c69e6d",
+      "development_notice_present": null
+    },
+    {
+      "requested_url": "https://trottier.github.io/common-knowledge/state-emergency-agencies.html",
+      "final_url": "https://trottier.github.io/common-knowledge/state-emergency-agencies.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "size_bytes": 1223,
+      "sha256": "b7461de1b97d7916421d54f030ab2a36b0a84e51d12203c35e93f4a3f0f3d9ee",
+      "development_notice_present": null
+    },
+    {
+      "requested_url": "https://trottier.github.io/common-knowledge/index.html",
+      "final_url": "https://trottier.github.io/common-knowledge/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "size_bytes": 2558251,
+      "sha256": "ceebf063a13fd8212065a2b48e67f19103851753d23fcc039ea8dfaf6b97bd71",
+      "development_notice_present": true
+    }
+  ],
+  "v0_1_released": false,
+  "full_image_hashes_published": false,
+  "release_approval": false
+}
