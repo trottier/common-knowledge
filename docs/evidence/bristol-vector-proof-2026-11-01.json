@@ -1,0 +1,681 @@
+{
+  "status": "Unreviewed Bristol County development proof; not an integrated sample, release, physical-phone result, or clean reproducibility pair",
+  "source_commit": "8ea18edea9905c7972bd094d1804440b350a28e8",
+  "image_sha256": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "producer": {
+    "version": "county-vector-proof-v1-47a7ce6d611ad121e25fb3f1788380d99e51b13af95e98d077f599c4e4c18984",
+    "source_files": {
+      "Dockerfile.build": "03975c96f75207a08363c413020aa9d66d273e0d07acb08a7fa43f2aad2c0b50",
+      "config/debian.sources": "23df8a5e1b28f06b6a2bc174bea45efaa6817ca10ff5b96efcb58ad887beed1b",
+      "pipelines/androidmaps/settings.yaml": "7f8dd98b60b23b113ff5385b5b26f8aed2f4ca68877bbd25b7c249415cb076dd",
+      "pipelines/atlas/bristol-proof.json": "57cb3ec920833b9c2cedcc3287e578dc9e7a538836fddb820a20d42de7d34567",
+      "pipelines/geodata-fonts.yaml": "d31123ab0bbb39a45f2ea765c6a335fc65c6f8303d9007b00e9c37a3aeb006de",
+      "pyproject.toml": "cea8c0adc7eb365039f322e77e3fe8dd2941d4c8718d5c57458c75c34af1df58",
+      "src/ck/catalog.py": "3d925a65cf9f3dff4649d03a0c66f8e889c66491d54a1d2150785857beca3298",
+      "src/ck/config.py": "f5a16b4f99a7f57012268ae4d8ea79e06e2943953c87aadf961311f88b1acda0",
+      "src/ck/countyproof.py": "308f4d212f35fd300d968d6ec3745a1d044037ea0e786437f0feb3d259ce4fff",
+      "src/ck/directory.py": "bafb2a94ff732329fa3cc257cd1d467a7503bcb5ab445485e6f3e0a470bcfc58",
+      "src/ck/generated.py": "894de7ad2a2a2b1ad1650cafe7d12292f86f11481eab6eee3ba0c1c9b57b529e",
+      "src/ck/geo.py": "7f576aa7cc1edbabb98c790d1befea08555ad0577961beb2c1a193bf3d13840a",
+      "src/ck/geofonts.py": "01287a48491b512196371bb82887b3f6b89e37709abc8fa43a3641dc128a1e70",
+      "src/ck/render.py": "46ede91bc0eecec7c214c5e6eb4e0b001f3a28f8ab02720c31def1e9441cf7f4",
+      "templates/county-proof.html.j2": "7a5e83aa9189199f2c2b8f360b35bfb9b116cd22d5e68a104dea319693d1d872",
+      "tools/prototype_county_map.py": "64346c8555fe615f6eee3e4463c9cc3ce85bd4f3652153d78f2237d001a8d40d",
+      "uv.lock": "be13e16abcc68ef4afd7a239adb075cdfc80986823c8e3d0221cf9878e90c360"
+    }
+  },
+  "development_source_date_epoch": 1793404800,
+  "trial_policy": {
+    "county": "44001",
+    "state": "RI",
+    "county_name": "Bristol County",
+    "epoch": 1793404800,
+    "scale_denominator": 25000,
+    "map_width_mm": 190,
+    "map_height_mm": 230,
+    "overlap_fraction": 0.1,
+    "max_pages": 64,
+    "max_source_ways": 50000,
+    "max_vertices_per_sheet": 500000,
+    "max_water_tiles": 512,
+    "max_decoded_tile_bytes": 16000000,
+    "water_zoom": 14,
+    "expected_zctas": [
+      "02806",
+      "02809",
+      "02885"
+    ],
+    "status": "Unreviewed engineering trial; not a final atlas scale or phone acceptance result",
+    "pdf_max_bytes": 10000000,
+    "pdf_budget_source_sha256": "d2c306ef770f9bf9a7501bea7e1fd0a41ee35540b9822138cb476e3159b433c7",
+    "pdf_budget": {
+      "max_file_mb": 10,
+      "target_phone_coverage": 0.95
+    }
+  },
+  "raw_inputs": {
+    "census_county_analysis": {
+      "sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+      "size_bytes": 83989800,
+      "version": "2025"
+    },
+    "geofabrik_ri": {
+      "sha256": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+      "size_bytes": 52514407,
+      "version": "2026-10-29"
+    },
+    "census_zcta_county_2020": {
+      "sha256": "3ed41278d637dc249e0323306f68be8a6c234e3090f4de88ef328dee71aeaaaf",
+      "size_bytes": 6821287,
+      "version": "2020 Census; publisher Last-Modified 2021-12-09"
+    }
+  },
+  "font_inputs": [
+    {
+      "id": "noto_sans",
+      "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "size_bytes": 2049096,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_arabic",
+      "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+      "size_bytes": 844676,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_sc",
+      "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "size_bytes": 17772300,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_cherokee",
+      "version": "2.001; publisher commit 57b4ebace8a7b5b3cb05bf92d84bb5de27894698",
+      "sha256": "865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd",
+      "size_bytes": 224360,
+      "license": "OFL-1.1"
+    }
+  ],
+  "historical_basemap": {
+    "canonical_manifest_sha256": "883d7edd2c8de90aa130444452e7c80177983302a05a5a382440f3f4ffe7617e",
+    "raw_manifest_sha256": "0ecbbe81118e1d543edf18bcd6869fb61e8643c42939a9181b666f34478297af",
+    "complete": true,
+    "source_date_epoch": 1793404800,
+    "pipeline_version": "pmtiles-extract-v1-3ab704a99a2d2b095bd227e9f295ec662bb09ad3405a8cc32d377089d1c84d22",
+    "payloads": [
+      {
+        "path": "RI.pmtiles",
+        "sha256": "fcc0eeba4cac17df3d63e0bbcd3aee55a0bc9239ff7b62c65c8fe39b0313a1e0",
+        "size_bytes": 43538640
+      }
+    ]
+  },
+  "historical_directory": {
+    "canonical_manifest_sha256": "bbd0b371e42b015c8d71484a845aad28673d191e103544afa78a44a17565134f",
+    "complete": false,
+    "source_payload_sha256": "ecdb22c249a458e59623921b5c8068441e65e3ce1145e4db23119d47a0895dc0",
+    "source_date_epoch": 1793404800,
+    "pipeline_version": "directory-v1-b5709c934c9f4e450f8cc950dc47b147fe909b17bafcb0b55ab0648dd14c5aef",
+    "used_county_poi_ids": [
+      "fcc-57426-1",
+      "osm-w770070215",
+      "osm-n366688283",
+      "osm-w656611363",
+      "osm-n366688352",
+      "osm-n366688613",
+      "osm-w1011470402",
+      "osm-w1231108905",
+      "osm-w379964489",
+      "osm-n6809949467",
+      "osm-w1009763024",
+      "osm-n3902417369",
+      "osm-w656610452",
+      "osm-n366689799",
+      "osm-w311642434",
+      "osm-n357258915",
+      "osm-n357268465",
+      "imls-RI0001-002",
+      "imls-RI0045-002",
+      "imls-RI0002-002",
+      "nces-440003000001",
+      "nces-440003000002",
+      "nces-440006500468",
+      "nces-440006500012",
+      "nces-440003000003",
+      "nces-440003100521",
+      "nces-440006500278",
+      "nces-440006500282",
+      "nces-440006500009",
+      "nces-440003000004",
+      "nces-440003000006",
+      "nces-440006500016",
+      "nces-440003000005"
+    ]
+  },
+  "coordinate_reference_system": "EPSG:32619",
+  "zctas": [
+    "02806",
+    "02809",
+    "02885"
+  ],
+  "geographic_locator": {
+    "bounds": [
+      303111.72491949913,
+      4611742.705637449,
+      316411.72491949913,
+      4627842.705637449
+    ],
+    "sheet_ids": [
+      "R1C1",
+      "R1C2",
+      "R1C3",
+      "R2C1",
+      "R2C2",
+      "R2C3",
+      "R3C1",
+      "R3C2",
+      "R3C3"
+    ],
+    "settlement_labels": [
+      "Barrington",
+      "Warren",
+      "Bristol"
+    ],
+    "poi_markers": false
+  },
+  "water_tiles": {
+    "used": 90,
+    "missing": 0,
+    "zoom": 14
+  },
+  "geometry_and_labels": {
+    "source_way_counts_in_sheet_extent": {
+      "cycleway": 103,
+      "footway": 1051,
+      "motorway": 19,
+      "motorway_link": 15,
+      "path": 568,
+      "pedestrian": 14,
+      "primary": 116,
+      "primary_link": 26,
+      "residential": 1922,
+      "secondary": 38,
+      "secondary_link": 1,
+      "service": 2441,
+      "steps": 18,
+      "tertiary": 115,
+      "tertiary_link": 3,
+      "track": 38,
+      "unclassified": 10
+    },
+    "sheets": [
+      {
+        "id": "R1C1",
+        "page": 2,
+        "neighbors": {
+          "east": "R1C2",
+          "south": "R2C1"
+        },
+        "road_vertices": 15274,
+        "omitted_label_candidates": {
+          "same_name_on_sheet": 147,
+          "segment_too_short": 2112,
+          "collision_or_edge": 47
+        }
+      },
+      {
+        "id": "R1C2",
+        "page": 3,
+        "neighbors": {
+          "east": "R1C3",
+          "south": "R2C2",
+          "west": "R1C1"
+        },
+        "road_vertices": 10274,
+        "omitted_label_candidates": {
+          "same_name_on_sheet": 69,
+          "segment_too_short": 2231,
+          "collision_or_edge": 16
+        }
+      },
+      {
+        "id": "R1C3",
+        "page": 4,
+        "neighbors": {
+          "south": "R2C3",
+          "west": "R1C2"
+        },
+        "road_vertices": 1168,
+        "omitted_label_candidates": {
+          "segment_too_short": 2324,
+          "same_name_on_sheet": 11,
+          "collision_or_edge": 3
+        }
+      },
+      {
+        "id": "R2C1",
+        "page": 5,
+        "neighbors": {
+          "north": "R1C1",
+          "east": "R2C2",
+          "south": "R3C1"
+        },
+        "road_vertices": 1877,
+        "omitted_label_candidates": {
+          "segment_too_short": 2331,
+          "same_name_on_sheet": 3,
+          "collision_or_edge": 5
+        }
+      },
+      {
+        "id": "R2C2",
+        "page": 6,
+        "neighbors": {
+          "north": "R1C2",
+          "east": "R2C3",
+          "south": "R3C2",
+          "west": "R2C1"
+        },
+        "road_vertices": 11809,
+        "omitted_label_candidates": {
+          "same_name_on_sheet": 141,
+          "segment_too_short": 2119,
+          "collision_or_edge": 39
+        }
+      },
+      {
+        "id": "R2C3",
+        "page": 7,
+        "neighbors": {
+          "north": "R1C3",
+          "south": "R3C3",
+          "west": "R2C2"
+        },
+        "road_vertices": 4177,
+        "omitted_label_candidates": {
+          "collision_or_edge": 24,
+          "segment_too_short": 2270,
+          "same_name_on_sheet": 30
+        }
+      },
+      {
+        "id": "R3C1",
+        "page": 8,
+        "neighbors": {
+          "north": "R2C1",
+          "east": "R3C2"
+        },
+        "road_vertices": 432,
+        "omitted_label_candidates": {
+          "segment_too_short": 2340,
+          "same_name_on_sheet": 1
+        }
+      },
+      {
+        "id": "R3C2",
+        "page": 9,
+        "neighbors": {
+          "north": "R2C2",
+          "east": "R3C3",
+          "west": "R3C1"
+        },
+        "road_vertices": 10129,
+        "omitted_label_candidates": {
+          "collision_or_edge": 15,
+          "same_name_on_sheet": 82,
+          "segment_too_short": 2227
+        }
+      },
+      {
+        "id": "R3C3",
+        "page": 10,
+        "neighbors": {
+          "north": "R2C3",
+          "west": "R3C2"
+        },
+        "road_vertices": 8087,
+        "omitted_label_candidates": {
+          "same_name_on_sheet": 37,
+          "segment_too_short": 2288,
+          "collision_or_edge": 6
+        }
+      }
+    ],
+    "placed_road_labels": 178
+  },
+  "build": {
+    "actual_exit": 0,
+    "oom_killed": false,
+    "started_at": "2026-11-01T23:05:50.871566703Z",
+    "finished_at": "2026-11-01T23:08:21.745863793Z",
+    "producer_elapsed_seconds": 143.505689515001,
+    "peak_rss_kib": 1110700,
+    "cgroup": {
+      "memory.peak": "1231007744\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    "resources": {
+      "NanoCpus": 1000000000,
+      "Memory": 2147483648,
+      "MemorySwap": 2147483648,
+      "NetworkMode": "none"
+    }
+  },
+  "horizontal_layout": {
+    "Bristol County 02806,02809,02885.pdf": {
+      "checked_boxes": 63,
+      "outside_page_boxes": 0
+    },
+    "0_OVERVIEW.pdf": {
+      "checked_boxes": 386,
+      "outside_page_boxes": 0
+    }
+  },
+  "pdf_files": [
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Bristol County/0_OVERVIEW.pdf",
+      "sha256": "37adbf4bef49bb1095e40e7e512683f32b602af5af57057c0092812c0274bd70",
+      "size_bytes": 432229
+    },
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County 02806,02809,02885.pdf",
+      "sha256": "043f833a406865f6babb8d03b9b32e736e96d3b7e531b0db90f91fd6abfcbee8",
+      "size_bytes": 799367
+    }
+  ],
+  "pdf_inspection": {
+    "files": [
+      {
+        "name": "0_OVERVIEW.pdf",
+        "bytes": 432229,
+        "pages": 3,
+        "outlines": [
+          {
+            "title": "Bristol County · overview",
+            "page": 1
+          },
+          {
+            "title": "All 33 source places",
+            "page": 2
+          },
+          {
+            "title": "Sources and limits",
+            "page": 3
+          }
+        ],
+        "metadata": {
+          "/Producer": "WeasyPrint 70.0",
+          "/Title": "Bristol County overview and historical places",
+          "/CreationDate": "D:20261031000000+00'00",
+          "/ModDate": "D:20261031000000+00'00"
+        },
+        "page_metrics": [
+          {
+            "page": 1,
+            "images": 0,
+            "path_operators": 72877
+          },
+          {
+            "page": 2,
+            "images": 0,
+            "path_operators": 126
+          },
+          {
+            "page": 3,
+            "images": 0,
+            "path_operators": 84
+          }
+        ],
+        "sheet_checks": []
+      },
+      {
+        "name": "Bristol County 02806,02809,02885.pdf",
+        "bytes": 799367,
+        "pages": 10,
+        "outlines": [
+          {
+            "title": "Bristol County road maps",
+            "page": 1
+          },
+          {
+            "title": "Read the map",
+            "page": 1
+          },
+          {
+            "title": "Bristol County · R1C1",
+            "page": 2
+          },
+          {
+            "title": "Bristol County · R1C2",
+            "page": 3
+          },
+          {
+            "title": "Bristol County · R1C3",
+            "page": 4
+          },
+          {
+            "title": "Bristol County · R2C1",
+            "page": 5
+          },
+          {
+            "title": "Bristol County · R2C2",
+            "page": 6
+          },
+          {
+            "title": "Bristol County · R2C3",
+            "page": 7
+          },
+          {
+            "title": "Bristol County · R3C1",
+            "page": 8
+          },
+          {
+            "title": "Bristol County · R3C2",
+            "page": 9
+          },
+          {
+            "title": "Bristol County · R3C3",
+            "page": 10
+          }
+        ],
+        "metadata": {
+          "/Producer": "WeasyPrint 70.0",
+          "/Title": "Bristol County detailed road maps",
+          "/CreationDate": "D:20261031000000+00'00",
+          "/ModDate": "D:20261031000000+00'00"
+        },
+        "page_metrics": [
+          {
+            "page": 1,
+            "images": 0,
+            "path_operators": 17865
+          },
+          {
+            "page": 2,
+            "images": 0,
+            "path_operators": 26129
+          },
+          {
+            "page": 3,
+            "images": 0,
+            "path_operators": 21009
+          },
+          {
+            "page": 4,
+            "images": 0,
+            "path_operators": 9045
+          },
+          {
+            "page": 5,
+            "images": 0,
+            "path_operators": 9129
+          },
+          {
+            "page": 6,
+            "images": 0,
+            "path_operators": 19607
+          },
+          {
+            "page": 7,
+            "images": 0,
+            "path_operators": 12177
+          },
+          {
+            "page": 8,
+            "images": 0,
+            "path_operators": 7489
+          },
+          {
+            "page": 9,
+            "images": 0,
+            "path_operators": 18364
+          },
+          {
+            "page": 10,
+            "images": 0,
+            "path_operators": 15836
+          }
+        ],
+        "sheet_checks": [
+          {
+            "sheet": "R1C1",
+            "recorded_page": 2,
+            "actual_page": 2,
+            "labels_in_text": 38,
+            "placed_labels": 38
+          },
+          {
+            "sheet": "R1C2",
+            "recorded_page": 3,
+            "actual_page": 3,
+            "labels_in_text": 28,
+            "placed_labels": 28
+          },
+          {
+            "sheet": "R1C3",
+            "recorded_page": 4,
+            "actual_page": 4,
+            "labels_in_text": 6,
+            "placed_labels": 6
+          },
+          {
+            "sheet": "R2C1",
+            "recorded_page": 5,
+            "actual_page": 5,
+            "labels_in_text": 5,
+            "placed_labels": 5
+          },
+          {
+            "sheet": "R2C2",
+            "recorded_page": 6,
+            "actual_page": 6,
+            "labels_in_text": 45,
+            "placed_labels": 45
+          },
+          {
+            "sheet": "R2C3",
+            "recorded_page": 7,
+            "actual_page": 7,
+            "labels_in_text": 20,
+            "placed_labels": 20
+          },
+          {
+            "sheet": "R3C1",
+            "recorded_page": 8,
+            "actual_page": 8,
+            "labels_in_text": 3,
+            "placed_labels": 3
+          },
+          {
+            "sheet": "R3C2",
+            "recorded_page": 9,
+            "actual_page": 9,
+            "labels_in_text": 20,
+            "placed_labels": 20
+          },
+          {
+            "sheet": "R3C3",
+            "recorded_page": 10,
+            "actual_page": 10,
+            "labels_in_text": 13,
+            "placed_labels": 13
+          }
+        ]
+      }
+    ],
+    "renders": [
+      {
+        "file": "0_OVERVIEW.pdf",
+        "page": 1,
+        "width_px": 390,
+        "elapsed_seconds": 0.2936457620016881,
+        "png": "overview-fit390.png"
+      },
+      {
+        "file": "Bristol County 02806,02809,02885.pdf",
+        "page": 1,
+        "width_px": 780,
+        "elapsed_seconds": 0.2385547560006671,
+        "png": "detail-cover-locator780.png"
+      },
+      {
+        "file": "Bristol County 02806,02809,02885.pdf",
+        "page": 6,
+        "width_px": 390,
+        "elapsed_seconds": 0.23371872599818744,
+        "png": "detail-page6-fit390.png"
+      },
+      {
+        "file": "Bristol County 02806,02809,02885.pdf",
+        "page": 6,
+        "width_px": 1170,
+        "elapsed_seconds": 0.5784200779999082,
+        "png": "detail-page6-zoom3.png"
+      }
+    ],
+    "peak_child_rss_kib": 98320,
+    "cgroup_memory_peak": "133873664"
+  },
+  "checks": {
+    "focused_pytest_passed": 8,
+    "focused_pytest_skipped": 0,
+    "authoritative_font_cache": "CK_FONT_CACHE=/cache; font ID and hash read from catalog/fonts.yaml",
+    "ruff": "passed using project configuration",
+    "ruff_format": "passed"
+  },
+  "diagnostic_history": [
+    {
+      "source": "6a611a84998e6e171ab06c90800f158a871cfda5",
+      "output": "build/bristol-vector-a",
+      "finding": "First proof had a table locator without geographic sheet footprints."
+    },
+    {
+      "source": "2b7da788affc35558745871d2c865d5ef990c4c6",
+      "output": "build/bristol-vector-locator-v2",
+      "finding": "Geographic locator added, but Position column visibly clipped. Preserved and not adopted as final proof."
+    },
+    {
+      "source": "8ea18edea9905c7972bd094d1804440b350a28e8",
+      "output": "build/bristol-vector-locator-v3",
+      "finding": "Position removed; bounded Sheet/Page table and actual horizontal-layout guard pass; corrected cover inspected."
+    }
+  ],
+  "retained_limits": [
+    "Only Bristol County demonstrated; no national completeness or new national output pins.",
+    "All 33 historical POIs retained, but dense overview marker labels can overlap.",
+    "Physical phone, USB, pan/zoom interaction, and 95% population coverage not demonstrated.",
+    "No clean A/B repeat: these were diagnostic recipe iterations.",
+    "Historical directory complete:false remains unchanged; source, geographic, rights, and human-review holds remain."
+  ],
+  "local_receipts": [
+    "build/bristol-locator-v3.receipt.json",
+    "build/bristol-locator-v3.log",
+    "build/bristol-vector-locator-v3/prototype.json",
+    "build/bristol-visual-locator-v3/report.json"
+  ],
+  "binaries_committed": false
+}
