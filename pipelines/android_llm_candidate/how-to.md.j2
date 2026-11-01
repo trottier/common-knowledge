@@ -1,0 +1,41 @@
+---
+status: draft
+reviewer:
+reviewed_on:
+---
+
+# Android local LLM — development proposal
+
+{{ settings.warning }}
+
+{{ settings.warning_es }}
+
+This development app needs Android {{ settings.android.minimum_android_version }} or newer and an {{ settings.android.abi }} phone.
+Its model import and memory use still need a physical phone check.
+Use the START PDFs if this app will not install or load the model.
+
+1. Open `android/{{ settings.android.apk_filename }}` on the drive and install it.
+   Do not follow a request to download a model or create an account.
+2. Open the app's Settings and tap **Import GGUF Model**.
+   Select `{{ settings.model_filename }}` from the drive. Wait for its local copy to finish.
+   Stop if the phone has too little free storage.
+3. Tap **Use** beside the imported model if shown.
+   Keep **GPU Acceleration (Vulkan)** {{ "on" if settings.android.gpu_acceleration else "off" }} for this development CPU setup.
+4. Set **Context Size** to {{ settings.context_tokens }}.
+   Set **Max Tokens** to {{ settings.max_output_tokens }}.
+   Set the **Temperature** display to {{ settings.temperature }}.
+   Set **CPU Threads** to {{ settings.threads }} only if the slider offers it.
+5. Under **System Prompt**, choose **Custom**.
+   Copy all of `system-en.txt` or `system-es.txt` from this companion into
+   **Custom System Prompt**. Start a new chat after changing the prompt.
+6. Read START for instructions before acting. These prompts use START section
+   titles when full text does not fit; they do not replace the START PDFs.
+7. Stop and start a new chat if the app reports a full context or a model error.
+   Do not shorten a medical instruction to make it fit.
+
+The app has optional read-aloud controls. Leave them off during the offline
+check: they delegate to the phone's separately installed speech engine.
+
+[[VERIFY: test every step, warning visibility, complete custom-prompt paste,
+actual selected GGUF loading, context overflow, and all-network-off operation
+on a phone with at least 6 GB RAM before publishing this how-to.]]

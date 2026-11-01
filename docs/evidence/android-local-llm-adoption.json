@@ -1,0 +1,129 @@
+{
+  "status": "held development selection; no source, legal, device, or release approval",
+  "research_receipt": "docs/evidence/android-gguf-runner-candidate.json",
+  "android_settings": {
+    "apk_id": "offlinellm_android_candidate",
+    "apk_filename": "OfflineLLM.apk",
+    "app_name": "OfflineLLM",
+    "context_tokens": 16384,
+    "minimum_android_version": 13,
+    "abi": "arm64-v8a",
+    "gpu_acceleration": false
+  },
+  "laptop_context_tokens": 32768,
+  "minimum_native_model_context_tokens": 32768,
+  "model_selection_criterion_changed": false,
+  "source_input_hashes": {
+    "content/en/local-llm.md": "a13ef1b03393f8390774556a205c940b3e81796214abbff6a815e15920bbe7c6"
+  },
+  "source_file_sha256": {
+    "pipelines/llm/settings.yaml": "cf721f65258dce3a039daf89e4dd463a385940ec702751a9b9e0e10a9ade8a10",
+    "src/ck/config.py": "f5a16b4f99a7f57012268ae4d8ea79e06e2943953c87aadf961311f88b1acda0",
+    "src/ck/llm.py": "5fd85a083d01b8fbb123b00c9678d5ad6fb3ad20e285230830c3632a2a0416d1",
+    "src/ck/apkverifier.py": "eb470a1b4274f004f20b558a04c9adc9ac332650c339e44ab223a3fd0b37814f",
+    "src/ck/assemble.py": "94e09a586068b555d501ac045e073fae17deaf8f86722b640c5ec0d3af91a4ad",
+    "src/ck/cli.py": "3cb83d81cf27a9c652214b06b5f093bccf76c199eba082c8586bc66ebb451074",
+    "src/ck/preparation.py": "8382c811dd8a4bf3dc151343c2b01d8de821545f8900ea38a1fc359f7819b090",
+    "content/en/local-llm.md": "4a41384e8cd7403817be3b23cd2be53f068c6172c1fa9bdcaf69834b544dd3ee",
+    "content/es/local-llm.md": "7952d71ddb4812e01d50b5f057bc591d5eda152ac88be21b15fc92ab0b26ed68",
+    "content/sources.yaml": "1a49662f30df7e9b273538eb8a8da5dddb736ac3bb23413d4ffd10f4b52b3a8f"
+  },
+  "actual_normal_cli_verification": {
+    "command": "python -m ck fetch offlinellm_android_candidate --cache build/android-adoption-cache",
+    "container_network": "none",
+    "cpus": 1,
+    "memory": "1GiB",
+    "report_sha256": "d699dc96d8387d469f265680b149b4ab980fc5034153bafbc995208356ea7eae",
+    "report": {
+      "apk_sha256": "bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd",
+      "certificates": [
+        {
+          "label": "V3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647)",
+          "sha256": "fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2"
+        },
+        {
+          "label": "V3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647)",
+          "sha256": "5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6"
+        },
+        {
+          "label": "V3.0 Signer:",
+          "sha256": "98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c"
+        }
+      ],
+      "item_id": "offlinellm_android_candidate",
+      "sdk_range_override": null,
+      "signature_verified": true,
+      "source_completeness_or_release_approval": false,
+      "stderr": "",
+      "stdout": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): false\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v3.2 scheme (APK Signature Scheme v3.2): true\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate DN: CN=Jegly\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-1 digest: 9dd890dd33ec4532c2663ed25006e54f03f14b41\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate MD5 digest: d4e2aa5c7e98324a6f421aab80365406\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key algorithm: EC\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key size (bits): 384\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-256 digest: b1b0e2fde20e6374bf9efcbef594e32c5b82b173fd3fa9411bf11c88551a0a1c\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-1 digest: 44ff7a307e35d8ee62a5223bf1b5f3885aee0c74\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key MD5 digest: 79546cb9dede42d653ee91026deafb7d\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate DN: CN=Jegly\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: 5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-1 digest: f4c074e955ee8f7a64718125d0a10bf615d75e8a\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate MD5 digest: 42bc0762a7b28a7e4d73e394c183827d\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key algorithm: ML-DSA\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key size (bits): n/a\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-256 digest: aa6d6b5b96acfa1e3f52423d2081c5b097d1196503c4f68916f60d567c828bd3\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-1 digest: accbaf0380d920b20d49a71351b1684aed26fae3\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key MD5 digest: 63a9033a769e7921cc0b19d6a6776c2d\nV3.0 Signer: certificate DN: C=AU, L=Earth, O=www.jegly.xyz, OU=github.com/jegly, CN=JEGLY\nV3.0 Signer: certificate SHA-256 digest: 98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c\nV3.0 Signer: certificate SHA-1 digest: cac4215c9fdd0722ad0f0d561db543ed784f9706\nV3.0 Signer: certificate MD5 digest: 668e2cf683cc216a826c8934c0ba280c\nV3.0 Signer: key algorithm: RSA\nV3.0 Signer: key size (bits): 2048\nV3.0 Signer: public key SHA-256 digest: 24bd5f4b81977704457cb3535572c5107e0010dfec5258f7ccad7ab0e8aed3e0\nV3.0 Signer: public key SHA-1 digest: f09c51c0e5009ecbdf067984126236980ea4da0d\nV3.0 Signer: public key MD5 digest: aea0fff87f4568a070536096dc886a31\n",
+      "verifier_archive_sha256": "01af179347cbcd9c208b7f8171f7b21f6dd1d2f85bcd15e88caa51d5d7b86060",
+      "verifier_build_tools_version": "37.0.0",
+      "verifier_jar_sha256": "2defad215d7ff52968a409cde528cdaef7918b115e276b8e3378ca7a178e4180"
+    }
+  },
+  "historical_candidate": {
+    "id": "pocketpal_android",
+    "placement": "hub_only",
+    "source_id": "pocketpal_android_source",
+    "source_inputs_retained": [
+      "pocketpal_llama_rn_package",
+      "pocketpal_react_native_package",
+      "pocketpal_whisper_rn_package",
+      "pocketpal_speech_package",
+      "pocketpal_phonon_package",
+      "pocketpal_onnx_react_native_package",
+      "pocketpal_nitro_modules_package"
+    ]
+  },
+  "pending_bundle_pins": {
+    "local_llm_full": {
+      "size_bytes": "[[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]",
+      "sha256": "[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]",
+      "pipeline_version": "[[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]",
+      "inputs": [
+        "base_model",
+        "llamafile_license",
+        "llamafile_llama_notices",
+        "llamafile_runner",
+        "noto_sans",
+        "noto_sans_license",
+        "offlinellm_android_candidate",
+        "offlinellm_app_license",
+        "offlinellm_native_license",
+        "qwen_full_license"
+      ]
+    },
+    "local_llm_sample": {
+      "size_bytes": "[[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]",
+      "sha256": "[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]",
+      "pipeline_version": "[[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]",
+      "inputs": [
+        "llamafile_license",
+        "llamafile_llama_notices",
+        "llamafile_runner",
+        "noto_sans",
+        "noto_sans_license",
+        "offlinellm_android_candidate",
+        "offlinellm_app_license",
+        "offlinellm_native_license",
+        "qwen_sample_license",
+        "sample_model"
+      ]
+    }
+  },
+  "fresh_bundle_built": false,
+  "frozen_71_or_54_outputs_modified": false,
+  "device_or_traffic_capture_performed": false,
+  "checks": {
+    "targeted_pytest_passed": 91,
+    "scope": [
+      "test_apkverifier.py",
+      "test_llm.py",
+      "test_config.py",
+      "test_catalog.py",
+      "test_citations.py",
+      "test_preparation.py"
+    ]
+  },
+  "laptop_launcher_templates_changed": false
+}

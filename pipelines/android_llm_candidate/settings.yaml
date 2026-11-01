@@ -1,0 +1,2 @@
+# Optional review export of the selected Android settings. No separate defaults.
+baseline_settings: pipelines/llm/settings.yaml

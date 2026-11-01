@@ -17,3 +17,11 @@ models:
 fallback_variants: [1, 3, 5, 7]
 warning: "Experimental local LLM. It can be wrong. If it disagrees with a card or video, follow the card."
 warning_es: "LLM local experimental. Puede equivocarse. Si contradice una tarjeta o un video, siga la tarjeta."
+android:
+  apk_id: offlinellm_android_candidate
+  apk_filename: OfflineLLM.apk
+  app_name: OfflineLLM
+  context_tokens: 16384
+  minimum_android_version: 13
+  abi: arm64-v8a
+  gpu_acceleration: false

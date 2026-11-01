@@ -1,0 +1,9 @@
+archive_id: android_build_tools_37_linux
+jar_id: android_apksigner_37_jar
+jar_member: android-37.0/lib/apksigner.jar
+apk_policies:
+  offlinellm_android_candidate:
+    required_schemes: [v3, v3.2]
+    certificate_roles:
+      V3.2 Hybrid Classical Signer: fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2
+      V3.2 Hybrid PQC Signer: 5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6

@@ -41,10 +41,13 @@ contains the exact section titles, and the page tells the reader to open START
 for instructions. The full English and Spanish START text is available from
 local page links in either mode. Failed or canceled turns are not added to history.
 
-[PocketPal 1.22.0](https://github.com/a-ghorbani/pocketpal-ai/releases/tag/v1.22.0)
-is the Android candidate. The catalog pins its APK size, SHA-256, signer and MIT
-source commit. The English and Spanish PDFs describe local import and copying the
-project system prompt into an Assistant Pal. They retain device-test markers.
+[OfflineLLM 5.1.4](https://github.com/jegly/OfflineLLM/releases/tag/v5.1.4) is the
+held Android development candidate. Its exact APK/source pins, modern hybrid
+verification, local import, custom-prompt controls, and delegated-service limits
+are documented in the [adoption handoff](android-local-llm-adoption.md).
+Android uses a separate 16K section-index prompt; the laptop stays at 32K, and
+the selected models' native-context checks are unchanged. PocketPal and its
+complete historical source graph/evidence remain held and `hub_only`.
 
 Outstanding release gates include named model-license sign-off, conversion provenance
 review, the complete runner and APK dependency notice inventory, Windows/Mac/Linux
@@ -60,7 +63,7 @@ double-click opening, a physical USB drive or answer quality.
 
 The bundle carries the original [llamafile Apache notice](https://github.com/mozilla-ai/llamafile/blob/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/LICENSE),
 the pinned [llama.cpp component notices](https://github.com/mozilla-ai/llamafile/blob/017cdeb4b7217c0fb44cc7b61f44bd8ab2749dd2/llama.cpp.patches/llamafile-files/common/license.cpp),
-the model and PocketPal license texts and the [Noto Sans OFL notice](https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt).
+the model and selected Android app/native license texts and the [Noto Sans OFL notice](https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt).
 Project code is [Apache-2.0](../LICENSE); original START text is [CC0](../LICENSE-CONTENT).
 These files do not close the outstanding dependency notice inventory.
 
@@ -80,6 +83,11 @@ payloads total 44,053,192 bytes. The recipe is
 The model remains a separate file. This establishes packaging reproducibility;
 model quality, physical devices, source completeness, and human reviews remain
 open.
+
+Those repeat results describe the earlier PocketPal-instruction recipe. The
+OfflineLLM selection changes settings, source guides, inputs, and the producer;
+its sample/full catalog pins are explicitly pending fresh measured builds.
+No new bundle or physical-device result is claimed by the adoption patch.
 
 Run `uv run pytest tests/test_llm.py` inside the pinned build container. New browser
 code uses Bun; the atlas retains its documented Node native-module ABI constraint.

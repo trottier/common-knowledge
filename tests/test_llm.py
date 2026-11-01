@@ -7,9 +7,9 @@ import pytest
 from jinja2 import Environment, FileSystemLoader
 from pydantic import ValidationError
 
-from ck.catalog import Collection, Item
+from ck.catalog import Collection, Item, load_catalog
 from ck.config import LocalLLM, load_config
-from ck.llm import model_metadata, settings_for, start_text, system_prompt
+from ck.llm import android_prompt_settings, model_metadata, settings_for, start_text, system_prompt
 from ck.planner import plan_variants
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +41,7 @@ def fixture_item(identifier, size):
         {"fallback_variants": [1, 3, 5, 9]},
         {"runner_filename": "runner$(command).exe"},
         {"context_reserve_tokens": 32768},
+        {"context_tokens": 16384},
     ],
 )
 def test_settings_reject_unsafe_or_ambiguous_launches(change):
@@ -125,6 +126,74 @@ def test_an_oversized_section_index_is_rejected_instead_of_truncated():
     settings = settings_for(ROOT)
     with pytest.raises(ValueError, match="section index exceeds"):
         system_prompt(ROOT, settings, "en", "# " + "Huge title " * 4000)
+
+
+def test_android_context_is_distinct_and_preserves_the_complete_index():
+    laptop = settings_for(ROOT)
+    android = android_prompt_settings(laptop)
+    assert laptop.context_tokens == 32768
+    assert android.context_tokens == laptop.android.context_tokens == 16384
+    assert android.warning == laptop.warning and android.warning_es == laptop.warning_es
+    config = load_config(ROOT)
+    for language in ("en", "es"):
+        source = start_text(ROOT, language, config, 946684800)
+        prompt, grounding = system_prompt(ROOT, android, language, source, section_index_only=True)
+        assert grounding["mode"] == "section_index"
+        assert grounding["start_bytes"] == len(source.encode())
+        assert grounding["prompt_bytes"] == len(prompt.encode())
+        assert grounding["prompt_bytes"] <= grounding["prompt_byte_budget"]
+        assert all(line[2:] in prompt for line in source.splitlines() if line.startswith("# "))
+        assert "NOT supplied" in prompt and "Do not reconstruct missing instructions" in prompt
+        assert (android.warning if language == "en" else android.warning_es) in prompt
+    with pytest.raises(ValidationError):
+        LocalLLM.model_validate({**laptop.model_dump(), "context_tokens": android.context_tokens})
+
+
+def test_development_android_selection_preserves_historical_sources_and_bundle_linkage():
+    items = load_catalog(ROOT)
+    settings = settings_for(ROOT)
+    selected = items[settings.android.apk_id]
+    assert selected.placement == "universal"
+    assert selected.dest == f"9_LOCAL_LLM/android/{settings.android.apk_filename}"
+    assert selected.source_id == "offlinellm_android_candidate_source"
+    assert "[[VERIFY:" in selected.review
+    historical = items["pocketpal_android"]
+    assert historical.placement == "hub_only"
+    assert historical.source_id == "pocketpal_android_source"
+    assert items[historical.source_id].inputs
+    for identifier in ("local_llm_full", "local_llm_sample"):
+        item = items[identifier]
+        assert settings.android.apk_id in item.inputs
+        assert {"offlinellm_app_license", "offlinellm_native_license"} <= set(item.inputs)
+        assert "pocketpal_license" not in item.inputs
+
+
+def test_android_howtos_reference_the_android_prompts_and_exact_controls():
+    from ck.render import render_html
+
+    config = load_config(ROOT)
+    for code in ("en", "es"):
+        edition = next(item for item in config.languages if item.code == code)
+        html = render_html(
+            ROOT, config, ROOT / f"content/{code}/local-llm.md", edition, "phone", 946684800
+        )
+        assert "PocketPal" not in html
+        for label in (
+            "Import GGUF Model",
+            "GPU Acceleration (Vulkan)",
+            "CPU Threads",
+            "Context Size",
+            "Max Tokens",
+            "Custom System Prompt",
+            "New Chat",
+        ):
+            assert label in html
+        assert str(config.local_llm.android.context_tokens) in html
+        assert config.local_llm.android.apk_filename in html
+        assert "android → system-en.txt" in html
+        assert (config.local_llm.warning if code == "en" else config.local_llm.warning_es) in html
+        if code == "es":
+            assert "Traducción automática sin revisar." in html
 
 
 def make_launcher(drive: Path, settings):
