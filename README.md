@@ -21,10 +21,15 @@ thirteen quick starts are unreviewed machine translations.
 
 Measured development work includes a matching pair of 158-article medical PDF
 packs, a complete WikEM archive rebuilt from an offline source bundle, and a
-strictly audited Simple English Wikipedia archive. The corrected national point
+strictly audited Simple English Wikipedia archive. Frozen WikEM, Wikibooks and
+Wikivoyage pairs also match; see [archive checkpoints](docs/archive-freeze.md).
+Forty byte-identical Ready.gov guides cover eleven selected editions under the
+publisher's unchanged-copy terms; see [official guides](docs/official-guides.md).
+The corrected national point
 imports match across 254,873 places and 3,235 counties in 56 jurisdictions.
 Earlier atlas/directory sets used a source snapshot missing Caribbean OSM places;
-corrected descendant PDFs and final map repeats remain in progress. See
+corrected descendant PDFs and final map repeats remain in progress. The five
+territory map pairs match under the repaired converter recipe. See
 [territory coverage](docs/territory-source-coverage.md),
 [reference archives](docs/reference-collections.md), and
 [source preservation](docs/source-bundles.md) for the evidence and its limits.
