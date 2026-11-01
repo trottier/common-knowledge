@@ -1,0 +1,76 @@
+[
+  {
+    "id": "epa_emergency_disinfection_en_2017",
+    "family": "docs",
+    "title": "Emergency Disinfection of Drinking Water",
+    "url": "https://www.epa.gov/sites/default/files/2017-09/documents/emergency_disinfection_of_drinking_water_sept2017.pdf",
+    "version": "EPA 816-F-15-003, September 2017",
+    "size_bytes": 754723,
+    "sha256": "f404083d00decedc267bf4265eda776bb250ccfe18c1f7b19152aa006ff727c5",
+    "license": "[[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]",
+    "attribution": "U.S. Environmental Protection Agency, Office of Water; original file unchanged; no endorsement of Common Knowledge.",
+    "license_proof_url": "[[VERIFY: EPA per-item copyright and embedded-illustration rights proof]]",
+    "placement": "hub_only",
+    "dest": "4_PHONE_PACK/official/en/EPA_Emergency_Disinfection_2017.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]",
+    "requires_legal": true
+  },
+  {
+    "id": "epa_emergency_disinfection_es_2015",
+    "family": "docs",
+    "title": "Desinfección de agua potable en situaciones de emergencia",
+    "url": "https://espanol.epa.gov/sites/default/files/2016-05/documents/spanish_emergency_disinfection_drinking_water_0.pdf",
+    "version": "EPA 816-F-15-003, junio de 2015",
+    "size_bytes": 250968,
+    "sha256": "4db7899c48ae8f3e737ca85bcb797be5c5aca9355ff3a3699a776d74e9ae07d0",
+    "license": "[[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]",
+    "attribution": "U.S. Environmental Protection Agency, Office of Water; original file unchanged; no endorsement of Common Knowledge.",
+    "license_proof_url": "[[VERIFY: EPA per-item copyright and embedded-illustration rights proof]]",
+    "placement": "hub_only",
+    "dest": "4_PHONE_PACK/official/es/EPA_Desinfeccion_Emergencia_2015.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]",
+    "requires_legal": true
+  },
+  {
+    "id": "nws_thunderstorm_safety_en_2018",
+    "family": "docs",
+    "title": "Thunderstorm Safety for You and Your Family",
+    "url": "https://www.weather.gov/media/owlie/ThunderstormSafety-OnePager-11-29-18.pdf",
+    "version": "Publisher file 11-29-18; PDF creation November 29, 2018",
+    "size_bytes": 441317,
+    "sha256": "cd8275c7380f0341f38abc8a681c6441d0ec3bc2905480fbf2c7ec0e29802997",
+    "license": "US-PD",
+    "attribution": "U.S. Department of Commerce, NOAA, National Weather Service; original federal publication, not subject to U.S. copyright; original file unchanged; no endorsement of Common Knowledge.",
+    "license_proof_url": "https://www.weather.gov/owlie/publication_brochures",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/official/en/NWS_Thunderstorm_Safety_2018.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]"
+  },
+  {
+    "id": "nws_weather_radio_quadfold_en_2025",
+    "family": "docs",
+    "title": "NOAA Weather Radio: The Voice of NOAA’s National Weather Service",
+    "url": "https://www.weather.gov/media/nwr/NWR_Brochure_NOAA_PA_94062.pdf",
+    "version": "NOAA/PA 94062, Rev January 2025",
+    "size_bytes": 2674250,
+    "sha256": "f9b8751c2e9e4495c30ba367d3189a0798cf5f6765285065305d92c6317f789e",
+    "license": "US-PD",
+    "attribution": "U.S. Department of Commerce, NOAA, National Weather Service; original federal publication, not subject to U.S. copyright; original file unchanged; no endorsement of Common Knowledge.",
+    "license_proof_url": "https://www.weather.gov/owlie/publication_brochures",
+    "placement": "universal",
+    "dest": "4_PHONE_PACK/official/en/NWS_Weather_Radio_2025.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]"
+  }
+]

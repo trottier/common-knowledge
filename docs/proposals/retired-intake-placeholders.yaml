@@ -161,6 +161,35 @@
         "wikibooks_en_offline"
       ],
       "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    },
+    {
+      "catalog_family": "docs.yaml",
+      "placeholder": {
+        "id": "nws_guides",
+        "family": "docs",
+        "title": "NWS weather guides and official translations; select individual files",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": {
+          "topics": [
+            "comms"
+          ]
+        },
+        "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "nws_thunderstorm_safety_en_2018",
+        "nws_weather_radio_quadfold_en_2025"
+      ],
+      "reason": "Individually measured official NWS guides with item-linked reprint/public-domain terms replace an unknown-size intake group. Independent pin, authorship/credit, source-currency, safety/radio, and physical-readability holds remain on the concrete entries."
     }
   ]
 }
