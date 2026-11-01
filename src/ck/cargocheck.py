@@ -1,8 +1,10 @@
 """Audit a locked Rust source set without granting application release approval."""
 
 import hashlib
+import stat
 import tarfile
 import tomllib
+import zipfile
 from pathlib import Path, PurePosixPath
 
 from ck.catalog import Item, safe_path
@@ -26,6 +28,39 @@ def archive_text(archive: tarfile.TarFile, relative: str) -> bytes:
         raise ValueError(f"Expected one regular source file: {relative}")
     with archive.extractfile(matches[0]) as stream:
         return stream.read()
+
+
+def package_manifests(path: Path):
+    """Inspect local Rust manifests, including ZIPs in mixed-language source graphs."""
+    if zipfile.is_zipfile(path):
+        with zipfile.ZipFile(path) as archive:
+            for member in archive.infolist():
+                name = PurePosixPath(member.filename)
+                if member.is_dir() or name.name != "Cargo.toml":
+                    continue
+                if (
+                    name.is_absolute()
+                    or ".." in name.parts
+                    or stat.S_ISLNK(member.external_attr >> 16)
+                ):
+                    raise ValueError("Unsafe local Cargo manifest")
+                yield (
+                    member.filename,
+                    tomllib.loads(archive.read(member).decode("utf-8")).get("package", {}),
+                )
+    else:
+        with tarfile.open(path) as archive:
+            for member in archive.getmembers():
+                name = PurePosixPath(member.name)
+                if name.name != "Cargo.toml":
+                    continue
+                if name.is_absolute() or ".." in name.parts or not member.isfile():
+                    raise ValueError("Unsafe local Cargo manifest")
+                with archive.extractfile(member) as stream:
+                    yield (
+                        member.name,
+                        tomllib.loads(stream.read().decode("utf-8")).get("package", {}),
+                    )
 
 
 def audit_cargo_sources(
@@ -71,17 +106,12 @@ def audit_cargo_sources(
     for identifier, item in sources.items():
         if item.sha256 in registry_hashes:
             continue
-        with tarfile.open(cached_input(item, cache)) as archive:
-            for member in archive.getmembers():
-                if not member.isfile() or PurePosixPath(member.name).name != "Cargo.toml":
-                    continue
-                with archive.extractfile(member) as stream:
-                    package = tomllib.loads(stream.read().decode("utf-8")).get("package", {})
-                name, version = package.get("name"), package.get("version")
-                if isinstance(name, str) and isinstance(version, str):
-                    local.setdefault((name, version), []).append(
-                        {"source_id": identifier, "path": member.name}
-                    )
+        for path, package in package_manifests(cached_input(item, cache)):
+            name, version = package.get("name"), package.get("version")
+            if isinstance(name, str) and isinstance(version, str):
+                local.setdefault((name, version), []).append(
+                    {"source_id": identifier, "path": path}
+                )
 
     registry_records, local_records = [], []
     for package in packages:

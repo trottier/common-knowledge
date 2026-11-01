@@ -1,6 +1,7 @@
 import hashlib
 import io
 import tarfile
+import zipfile
 
 import pytest
 
@@ -75,6 +76,31 @@ def test_complete_locked_sources_never_grant_application_or_human_approval(tmp_p
     assert {package["name"] for package in result["local_packages"]} == {"local", "wrapper"}
     assert result["complete_application_source_closure"] is False
     assert result["human_license_or_pin_approval"] is False
+
+
+@pytest.mark.parametrize("rust_in_zip", [False, True])
+def test_other_language_zip_sources_do_not_break_cargo_audit(tmp_path, rust_in_zip):
+    items = source_set(tmp_path)
+    data = io.BytesIO()
+    with zipfile.ZipFile(data, mode="w") as archive:
+        archive.writestr("org/example/Source.java", "class Source {}")
+        if rust_in_zip:
+            archive.writestr("crates/local/Cargo.toml", '[package]\nname="local"\nversion="1.0.0"')
+    payload = data.getvalue()
+    sha = hashlib.sha256(payload).hexdigest()
+    (tmp_path / sha).write_bytes(payload)
+    item = items["upstream_source"].model_copy(deep=True)
+    item.id = "zip_source"
+    item.sha256 = sha
+    item.size_bytes = len(payload)
+    items[item.id] = item
+    items["app_source"].inputs.append(item.id)
+    if rust_in_zip:
+        items["app_source"].inputs.remove("upstream_source")
+    result = audit_cargo_sources(items, "app_source", "tools/Cargo.lock", tmp_path)
+    assert len(result["registry_packages"]) == 1
+    assert len(result["local_packages"]) == 2
+    assert result["complete_application_source_closure"] is False
 
 
 @pytest.mark.parametrize(
