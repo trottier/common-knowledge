@@ -383,9 +383,9 @@
     "id": "directory_points",
     "family": "generated",
     "title": "National public-place points for atlas generation",
-    "version": "2026-10-31; source epoch 1793404800",
-    "size_bytes": "[[VERIFY: measured complete points after Caribbean source repair]]",
-    "sha256": "[[VERIFY: complete corrected national point manifest SHA-256]]",
+    "version": "Confirmed territory inputs; development epoch 1793404800",
+    "size_bytes": 82112145,
+    "sha256": "ca9a86fcb9761f7136b37d066e2877e19feff30662f05798c436f25851278a41",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -412,8 +412,8 @@
       "geofabrik_puerto_rico",
       "geofabrik_virgin_islands"
     ],
-    "pipeline_version": "[[VERIFY: territory-aware national point recipe]]",
-    "review": "[[VERIFY: regenerate with separate Puerto Rico and Virgin Islands inputs, require OSM evidence in each jurisdiction, repeat full generation and review geographic exceptions]]"
+    "pipeline_version": "national-points-v1-acd0cc35897d40b2eea81b71af2ba4df8b4ae91b7664bc7806d651213e470c6d",
+    "review": "[[VERIFY: independent source pin and geographic-exception review, complete repeated generation, corrected descendant atlas/directory builds and final source freeze; positive configured OSM evidence exists in all 56 jurisdictions]]"
   },
   {
     "id": "directory_ri",
@@ -2460,9 +2460,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Confirmed territory inputs; development epoch 1793404800",
+    "size_bytes": 45605792,
+    "sha256": "0e2b0d2c3b573efd15813bd06dff2038e0dc8f687a5ea2f9479b5f61f5f72a93",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2471,8 +2471,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "androidmaps-v1-1d6ce563e842aa4ee264bd0e691cbb5cdc74f9891e4fc08349df5273ce18cace",
+    "review": "[[VERIFY: independent map pin review, complete repeated generation, final source freeze and physical Android install/import/GPS checks; nonempty territory source and map/routing/POI indexes pass]]",
     "id": "android_map_pr",
     "title": "OsmAnd roads-and-places map for PR",
     "inputs": [
@@ -2828,9 +2828,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Confirmed territory extract; development epoch 1793404800",
+    "size_bytes": 2714697,
+    "sha256": "265c95fb676b436abe75da3dc7b895dd283a64dfaf73d1ab6fa5d2635b7f4768",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2839,8 +2839,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "androidmaps-v1-1d6ce563e842aa4ee264bd0e691cbb5cdc74f9891e4fc08349df5273ce18cace",
+    "review": "[[VERIFY: independent map pin review, complete repeated generation, final source freeze and physical Android install/import/GPS checks; nonempty territory source and map/routing/POI indexes pass]]",
     "id": "android_map_vi",
     "title": "OsmAnd roads-and-places map for VI",
     "inputs": [

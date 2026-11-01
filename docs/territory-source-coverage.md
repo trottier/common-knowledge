@@ -41,6 +41,13 @@ not claims of complete roads, verified routes or a tested map app.
 
 The old point snapshot and its descendant atlases/directories need regeneration.
 Their measured payloads remain development evidence; successful layout, link and
-repeat checks cannot repair missing source coverage. Corrected national point
-generation, all resulting atlas page/grid references, national maps, independent
-repeat builds and physical checks remain release gates.
+repeat checks cannot repair missing source coverage. The corrected national point import is now complete: 254,873 public places in
+3,235 counties across 56 jurisdictions, with positive configured OSM evidence
+in each jurisdiction. It restores 811 OSM places from the separate Caribbean
+inputs. Its 82,112,145-byte public payload and generation recipe are pinned
+in the catalog. The first corrected Puerto Rico and Virgin Islands map builds
+also pass map, routing, POI and timestamp inspection.
+
+Corrected descendant atlas/directory builds, all resulting page/grid references,
+remaining national maps, independent repeat builds and physical checks remain
+release gates. These measured development outputs do not confer human review.

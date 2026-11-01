@@ -1096,13 +1096,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for PR
 
 - Catalog id: `android_map_pr`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Confirmed territory inputs; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_puerto_rico, osmand_creator, android_extract_pr
+- Size: 45605792 bytes
+- SHA-256: `0e2b0d2c3b573efd15813bd06dff2038e0dc8f687a5ea2f9479b5f61f5f72a93`
+- Pipeline: androidmaps-v1-1d6ce563e842aa4ee264bd0e691cbb5cdc74f9891e4fc08349df5273ce18cace; inputs: geofabrik_puerto_rico, osmand_creator, android_extract_pr
 
 ## OsmAnd roads-and-places map for RI
 
@@ -1184,13 +1184,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for VI
 
 - Catalog id: `android_map_vi`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Confirmed territory extract; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_virgin_islands, osmand_creator, android_extract_vi
+- Size: 2714697 bytes
+- SHA-256: `265c95fb676b436abe75da3dc7b895dd283a64dfaf73d1ab6fa5d2635b7f4768`
+- Pipeline: androidmaps-v1-1d6ce563e842aa4ee264bd0e691cbb5cdc74f9891e4fc08349df5273ce18cace; inputs: geofabrik_virgin_islands, osmand_creator, android_extract_vi
 
 ## OsmAnd roads-and-places map for VT
 
@@ -2152,13 +2152,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## National public-place points for atlas generation
 
 - Catalog id: `directory_points`
-- Version: 2026-10-31; source epoch 1793404800
+- Version: Confirmed territory inputs; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured complete points after Caribbean source repair]] bytes
-- SHA-256: `[[VERIFY: complete corrected national point manifest SHA-256]]`
-- Pipeline: [[VERIFY: territory-aware national point recipe]]; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_oceania, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies, geofabrik_puerto_rico, geofabrik_virgin_islands
+- Size: 82112145 bytes
+- SHA-256: `ca9a86fcb9761f7136b37d066e2877e19feff30662f05798c436f25851278a41`
+- Pipeline: national-points-v1-acd0cc35897d40b2eea81b71af2ba4df8b4ae91b7664bc7806d651213e470c6d; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_oceania, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies, geofabrik_puerto_rico, geofabrik_virgin_islands
 
 ## Rhode Island public places directory, phone and print
 
