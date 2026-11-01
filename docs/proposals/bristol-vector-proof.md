@@ -2,7 +2,7 @@
 
 The bounded county proof now has a geographic locator and nine atlas-scale
 detail sheets in one PDF. It is a development component for the partial
-Version 1 preview, not an integrated sample or release. Original input files,
+Variant 1 preview, not an integrated sample or release. Original input files,
 historical output pins, and the earlier diagnostic outputs remain unchanged.
 
 The final diagnostic producer is source commit
