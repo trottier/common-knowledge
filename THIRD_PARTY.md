@@ -1390,6 +1390,5132 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `6105185550707d537f50ad554fb319163f829f7a9dc7a9dfaca404682ba2c918`
 - Publisher file: https://codeload.github.com/permissionlesstech/bitchat-android/tar.gz/20501fdfe0d56c7705c377d4a263b01d8f38eeeb
 
+## Arti 1.9.0 exact upstream source for bitchat native wrapper
+
+- Catalog id: `bitchat_arti_source`
+- Version: arti-v1.9.0; commit ba421ece1acb47e5c554c2bfa043cc9156451bab
+- License: (MIT OR Apache-2.0) AND LGPL-3.0-only
+- Attribution: The Tor Project, Inc., and Arti contributors; original per-file license notices retained
+- License proof: https://gitlab.torproject.org/api/v4/projects/tpo%2Fcore%2Farti/repository/files/README.md/raw?ref=ba421ece1acb47e5c554c2bfa043cc9156451bab
+- Size: 6037679 bytes
+- SHA-256: `02f92b8cbb1e394cfcf034ae441176cddc0935293da92ae886bd1402b3ec9c53`
+- Publisher file: https://gitlab.torproject.org/api/v4/projects/tpo%2Fcore%2Farti/repository/archive.tar.gz?sha=ba421ece1acb47e5c554c2bfa043cc9156451bab
+
+## adler2 2.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_adler2_2_0_1`
+- Version: 2.0.1
+- License: 0BSD OR MIT OR Apache-2.0
+- Attribution: Jonas Schievink <jonasschievink@gmail.com>; oyvindln <oyvindln@users.noreply.github.com>
+- License proof: https://crates.io/api/v1/crates/adler2/2.0.1
+- Size: 13366 bytes
+- SHA-256: `320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa`
+- Publisher file: https://static.crates.io/crates/adler2/2.0.1/download
+
+## aes 0.8.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_aes_0_8_4`
+- Version: 0.8.4
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/aes/0.8.4
+- Size: 124812 bytes
+- SHA-256: `b169f7a6d4742236a0a00c541b845991d0ac43e546831af1249753ab4c3aa3a0`
+- Publisher file: https://static.crates.io/crates/aes/0.8.4/download
+
+## aho-corasick 1.1.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_aho_corasick_1_1_4`
+- Version: 1.1.4
+- License: Unlicense OR MIT
+- Attribution: Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/aho-corasick/1.1.4
+- Size: 184015 bytes
+- SHA-256: `ddd31a130427c27518df266943a5308ed92d4b226cc639f5a8f1002816174301`
+- Publisher file: https://static.crates.io/crates/aho-corasick/1.1.4/download
+
+## alloca 0.4.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_alloca_0_4_0`
+- Version: 0.4.0
+- License: MIT
+- Attribution: Adel Prokurov <adel.prokurov@gmail.com>; StackOverflowExcept1on
+- License proof: https://crates.io/api/v1/crates/alloca/0.4.0
+- Size: 4257 bytes
+- SHA-256: `e5a7d05ea6aea7e9e64d25b9156ba2fee3fdd659e34e41063cd2fc7cd020d7f4`
+- Publisher file: https://static.crates.io/crates/alloca/0.4.0/download
+
+## amplify 4.9.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_amplify_4_9_0`
+- Version: 4.9.0
+- License: MIT
+- Attribution: Dr. Maxim Orlovsky <orlovsky@ubideco.org>; Martin Habovstiak <martin.habovstiak@gmail.com>
+- License proof: https://crates.io/api/v1/crates/amplify/4.9.0
+- Size: 41410 bytes
+- SHA-256: `3f7fb4ac7c881e54a8e7015e399b6112a2a5bc958b6c89ac510840ff20273b31`
+- Publisher file: https://static.crates.io/crates/amplify/4.9.0/download
+
+## amplify_derive 4.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_amplify_derive_4_0_1`
+- Version: 4.0.1
+- License: Apache-2.0
+- Attribution: Dr. Maxim Orlovsky <orlovsky@ubideco.org>; Elichai Turkel <elichai.turkel@gmail.com>
+- License proof: https://crates.io/api/v1/crates/amplify_derive/4.0.1
+- Size: 39539 bytes
+- SHA-256: `2a6309e6b8d89b36b9f959b7a8fa093583b94922a0f6438a24fb08936de4d428`
+- Publisher file: https://static.crates.io/crates/amplify_derive/4.0.1/download
+
+## amplify_num 0.5.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_amplify_num_0_5_4`
+- Version: 0.5.4
+- License: Apache-2.0
+- Attribution: Dr. Maxim Orlovsky <orlovsky@ubideco.org>; Yudai Kiyofuji <own7000hr@gmail.com>
+- License proof: https://crates.io/api/v1/crates/amplify_num/0.5.4
+- Size: 31562 bytes
+- SHA-256: `afed304556696656d2d71495e1e5f2c4b524a3fb6eb0f2f3778ffc482a40b8a8`
+- Publisher file: https://static.crates.io/crates/amplify_num/0.5.4/download
+
+## amplify_syn 2.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_amplify_syn_2_0_1`
+- Version: 2.0.1
+- License: Apache-2.0
+- Attribution: Dr. Maxim Orlovsky <orlovsky@pandoracore.com>
+- License proof: https://crates.io/api/v1/crates/amplify_syn/2.0.1
+- Size: 19566 bytes
+- SHA-256: `7736fb8d473c0d83098b5bac44df6a561e20470375cd8bcae30516dc889fd62a`
+- Publisher file: https://static.crates.io/crates/amplify_syn/2.0.1/download
+
+## android_system_properties 0.1.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_android_system_properties_0_1_5`
+- Version: 0.1.5
+- License: MIT/Apache-2.0
+- Attribution: Nicolas Silva <nical@fastmail.com>
+- License proof: https://crates.io/api/v1/crates/android_system_properties/0.1.5
+- Size: 5243 bytes
+- SHA-256: `819e7219dbd41043ac279b19830f2efc897156490d7fd6ea916720117ee66311`
+- Publisher file: https://static.crates.io/crates/android_system_properties/0.1.5/download
+
+## anes 0.1.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_anes_0_1_6`
+- Version: 0.1.6
+- License: MIT OR Apache-2.0
+- Attribution: Robert Vojta <rvojta@me.com>
+- License proof: https://crates.io/api/v1/crates/anes/0.1.6
+- Size: 23857 bytes
+- SHA-256: `4b46cbb362ab8752921c97e041f5e366ee6297bd428a31275b9fcf1e380f7299`
+- Publisher file: https://static.crates.io/crates/anes/0.1.6/download
+
+## anstyle 1.0.14 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_anstyle_1_0_14`
+- Version: 1.0.14
+- License: MIT OR Apache-2.0
+- Attribution: Original anstyle package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/anstyle/1.0.14
+- Size: 17787 bytes
+- SHA-256: `940b3a0ca603d1eade50a4846a2afffd5ef57a9feac2c0e2ec2e14f9ead76000`
+- Publisher file: https://static.crates.io/crates/anstyle/1.0.14/download
+
+## anyhow 1.0.104 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_anyhow_1_0_104`
+- Version: 1.0.104
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/anyhow/1.0.104
+- Size: 48819 bytes
+- SHA-256: `330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470`
+- Publisher file: https://static.crates.io/crates/anyhow/1.0.104/download
+
+## arrayvec 0.7.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_arrayvec_0_7_8`
+- Version: 0.7.8
+- License: MIT OR Apache-2.0
+- Attribution: bluss
+- License proof: https://crates.io/api/v1/crates/arrayvec/0.7.8
+- Size: 33260 bytes
+- SHA-256: `d3fb67a6e08acf24fdeccbac2cb6ac4305825bd1f117462e0e6f2f193345ad56`
+- Publisher file: https://static.crates.io/crates/arrayvec/0.7.8/download
+
+## ascii 1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ascii_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0 OR MIT
+- Attribution: Thomas Bahn <thomas@thomas-bahn.net>; Torbjørn Birch Moltu <t.b.moltu@lyse.net>; Simon Sapin <simon.sapin@exyr.org>
+- License proof: https://crates.io/api/v1/crates/ascii/1.1.0
+- Size: 36075 bytes
+- SHA-256: `d92bec98840b8f03a5ff5413de5293bfcd8bf96467cf5452609f939ec6f5de16`
+- Publisher file: https://static.crates.io/crates/ascii/1.1.0/download
+
+## asn1-rs 0.7.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_asn1_rs_0_7_2`
+- Version: 0.7.2
+- License: MIT OR Apache-2.0
+- Attribution: Pierre Chifflier <chifflier@wzdftpd.net>
+- License proof: https://crates.io/api/v1/crates/asn1-rs/0.7.2
+- Size: 93179 bytes
+- SHA-256: `b7f43a50ac4fdca5df8e885c21b835997f0a1cdee65494a6847694a98652d9d8`
+- Publisher file: https://static.crates.io/crates/asn1-rs/0.7.2/download
+
+## asn1-rs-derive 0.6.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_asn1_rs_derive_0_6_0`
+- Version: 0.6.0
+- License: MIT OR Apache-2.0
+- Attribution: Pierre Chifflier <chifflier@wzdftpd.net>
+- License proof: https://crates.io/api/v1/crates/asn1-rs-derive/0.6.0
+- Size: 11337 bytes
+- SHA-256: `3109e49b1e4909e9db6515a30c633684d68cdeaa252f215214cb4fa1a5bfee2c`
+- Publisher file: https://static.crates.io/crates/asn1-rs-derive/0.6.0/download
+
+## asn1-rs-impl 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_asn1_rs_impl_0_2_0`
+- Version: 0.2.0
+- License: MIT/Apache-2.0
+- Attribution: Pierre Chifflier <chifflier@wzdftpd.net>
+- License proof: https://crates.io/api/v1/crates/asn1-rs-impl/0.2.0
+- Size: 2261 bytes
+- SHA-256: `7b18050c2cd6fe86c3a76584ef5e0baf286d038cda203eb6223df2cc413565f7`
+- Publisher file: https://static.crates.io/crates/asn1-rs-impl/0.2.0/download
+
+## assert_matches 1.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_assert_matches_1_5_0`
+- Version: 1.5.0
+- License: MIT/Apache-2.0
+- Attribution: Murarth <murarth@gmail.com>
+- License proof: https://crates.io/api/v1/crates/assert_matches/1.5.0
+- Size: 7761 bytes
+- SHA-256: `9b34d609dfbaf33d6889b2b7106d3ca345eacad44200913df5ba02bfd31d2ba9`
+- Publisher file: https://static.crates.io/crates/assert_matches/1.5.0/download
+
+## async-compression 0.4.42 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_async_compression_0_4_42`
+- Version: 0.4.42
+- License: MIT OR Apache-2.0
+- Attribution: Wim Looman <wim@nemo157.com>; Allen Bui <fairingrey@gmail.com>
+- License proof: https://crates.io/api/v1/crates/async-compression/0.4.42
+- Size: 103805 bytes
+- SHA-256: `e79b3f8a79cccc2898f31920fc69f304859b3bd567490f75ebf51ae1c792a9ac`
+- Publisher file: https://static.crates.io/crates/async-compression/0.4.42/download
+
+## async_executors 0.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_async_executors_0_7_0`
+- Version: 0.7.0
+- License: Unlicense
+- Attribution: Naja Melan <najamelan@autistici.org>
+- License proof: https://crates.io/api/v1/crates/async_executors/0.7.0
+- Size: 36636 bytes
+- SHA-256: `a982d2f86de6137cc05c9db9a915a19886c97911f9790d04f174cede74be01a5`
+- Publisher file: https://static.crates.io/crates/async_executors/0.7.0/download
+
+## async-trait 0.1.91 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_async_trait_0_1_91`
+- Version: 0.1.91
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/async-trait/0.1.91
+- Size: 32108 bytes
+- SHA-256: `ae36dc4177970ef04fde5178d3e2429882def40e57a451f919c098f72baa6cec`
+- Publisher file: https://static.crates.io/crates/async-trait/0.1.91/download
+
+## asynchronous-codec 0.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_asynchronous_codec_0_7_0`
+- Version: 0.7.0
+- License: MIT
+- Attribution: Max Inden <mail@max-inden.de>
+- License proof: https://crates.io/api/v1/crates/asynchronous-codec/0.7.0
+- Size: 14271 bytes
+- SHA-256: `a860072022177f903e59730004fb5dc13db9275b79bb2aef7ba8ce831956c233`
+- Publisher file: https://static.crates.io/crates/asynchronous-codec/0.7.0/download
+
+## atomic 0.5.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_atomic_0_5_3`
+- Version: 0.5.3
+- License: Apache-2.0/MIT
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/atomic/0.5.3
+- Size: 12801 bytes
+- SHA-256: `c59bdb34bc650a32731b31bd8f0829cc15d24a708ee31559e0bb34f2bc320cba`
+- Publisher file: https://static.crates.io/crates/atomic/0.5.3/download
+
+## atomic 0.6.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_atomic_0_6_1`
+- Version: 0.6.1
+- License: Apache-2.0/MIT
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/atomic/0.6.1
+- Size: 15243 bytes
+- SHA-256: `a89cbf775b137e9b968e67227ef7f775587cde3fd31b0d8599dbd0f598a48340`
+- Publisher file: https://static.crates.io/crates/atomic/0.6.1/download
+
+## autocfg 1.5.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_autocfg_1_5_1`
+- Version: 1.5.1
+- License: Apache-2.0 OR MIT
+- Attribution: Josh Stone <cuviper@gmail.com>
+- License proof: https://crates.io/api/v1/crates/autocfg/1.5.1
+- Size: 18911 bytes
+- SHA-256: `f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53`
+- Publisher file: https://static.crates.io/crates/autocfg/1.5.1/download
+
+## base16ct 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_base16ct_0_2_0`
+- Version: 0.2.0
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/base16ct/0.2.0
+- Size: 10240 bytes
+- SHA-256: `4c7f02d4ea65f2c1853089ffd8d2787bdbc63de2f0d29dedbcf8ccdfa0ccd4cf`
+- Publisher file: https://static.crates.io/crates/base16ct/0.2.0/download
+
+## base64 0.22.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_base64_0_22_1`
+- Version: 0.22.1
+- License: MIT OR Apache-2.0
+- Attribution: Marshall Pierce <marshall@mpierce.org>
+- License proof: https://crates.io/api/v1/crates/base64/0.22.1
+- Size: 81597 bytes
+- SHA-256: `72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6`
+- Publisher file: https://static.crates.io/crates/base64/0.22.1/download
+
+## base64ct 1.8.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_base64ct_1_8_3`
+- Version: 1.8.3
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/base64ct/1.8.3
+- Size: 32227 bytes
+- SHA-256: `2af50177e190e07a26ab74f8b1efbfe2ef87da2116221318cb1c2e82baf7de06`
+- Publisher file: https://static.crates.io/crates/base64ct/1.8.3/download
+
+## bincode 2.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bincode_2_0_1`
+- Version: 2.0.1
+- License: MIT
+- Attribution: Ty Overby <ty@pre-alpha.com>; Zoey Riordan <zoey@dos.cafe>; Victor Koenders <bincode@trangar.com>
+- License proof: https://crates.io/api/v1/crates/bincode/2.0.1
+- Size: 70469 bytes
+- SHA-256: `36eaf5d7b090263e8150820482d5d93cd964a81e4019913c972f4edcc6edb740`
+- Publisher file: https://static.crates.io/crates/bincode/2.0.1/download
+
+## bitflags 2.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bitflags_2_13_1`
+- Version: 2.13.1
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/bitflags/2.13.1
+- Size: 51395 bytes
+- SHA-256: `b588b76d00fde79687d7646a9b5bdf3cc0f655e0bbd080335a95d7e96f3587da`
+- Publisher file: https://static.crates.io/crates/bitflags/2.13.1/download
+
+## bitvec 1.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bitvec_1_1_1`
+- Version: 1.1.1
+- License: MIT
+- Attribution: Original bitvec package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/bitvec/1.1.1
+- Size: 225850 bytes
+- SHA-256: `ddcec3d12c579d40898fe0a9a358a803c23e9c52ca3c425707f81c9436211837`
+- Publisher file: https://static.crates.io/crates/bitvec/1.1.1/download
+
+## blanket 0.3.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_blanket_0_3_0`
+- Version: 0.3.0
+- License: MIT
+- Attribution: Martin Larralde <martin.larralde@embl.de>
+- License proof: https://crates.io/api/v1/crates/blanket/0.3.0
+- Size: 15928 bytes
+- SHA-256: `e0b121a9fe0df916e362fb3271088d071159cdf11db0e4182d02152850756eff`
+- Publisher file: https://static.crates.io/crates/blanket/0.3.0/download
+
+## block-buffer 0.10.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_block_buffer_0_10_4`
+- Version: 0.10.4
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/block-buffer/0.10.4
+- Size: 10538 bytes
+- SHA-256: `3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71`
+- Publisher file: https://static.crates.io/crates/block-buffer/0.10.4/download
+
+## bs58 0.5.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bs58_0_5_1`
+- Version: 0.5.1
+- License: MIT/Apache-2.0
+- Attribution: Original bs58 package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/bs58/0.5.1
+- Size: 28483 bytes
+- SHA-256: `bf88ba1141d185c399bee5288d850d63b8369520c1eafc32a0430b5b6c287bf4`
+- Publisher file: https://static.crates.io/crates/bs58/0.5.1/download
+
+## bstr 1.13.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bstr_1_13_0`
+- Version: 1.13.0
+- License: MIT OR Apache-2.0
+- Attribution: Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/bstr/1.13.0
+- Size: 355737 bytes
+- SHA-256: `1f7dc094d718f2e1c1559ad110e27eeaae14a5465d3d56dd6dbd793079fbd530`
+- Publisher file: https://static.crates.io/crates/bstr/1.13.0/download
+
+## bumpalo 3.20.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bumpalo_3_20_3`
+- Version: 3.20.3
+- License: MIT OR Apache-2.0
+- Attribution: Nick Fitzgerald <fitzgen@gmail.com>
+- License proof: https://crates.io/api/v1/crates/bumpalo/3.20.3
+- Size: 98671 bytes
+- SHA-256: `72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649`
+- Publisher file: https://static.crates.io/crates/bumpalo/3.20.3/download
+
+## by_address 1.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_by_address_1_2_1`
+- Version: 1.2.1
+- License: MIT OR Apache-2.0
+- Attribution: Matt Brubeck <mbrubeck@limpet.net>
+- License proof: https://crates.io/api/v1/crates/by_address/1.2.1
+- Size: 8437 bytes
+- SHA-256: `64fa3c856b712db6612c019f14756e64e4bcea13337a6b33b696333a9eaa2d06`
+- Publisher file: https://static.crates.io/crates/by_address/1.2.1/download
+
+## bytemuck 1.25.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bytemuck_1_25_2`
+- Version: 1.25.2
+- License: Zlib OR Apache-2.0 OR MIT
+- Attribution: Lokathor <zefria@gmail.com>
+- License proof: https://crates.io/api/v1/crates/bytemuck/1.25.2
+- Size: 54075 bytes
+- SHA-256: `95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797`
+- Publisher file: https://static.crates.io/crates/bytemuck/1.25.2/download
+
+## byteorder 1.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_byteorder_1_5_0`
+- Version: 1.5.0
+- License: Unlicense OR MIT
+- Attribution: Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/byteorder/1.5.0
+- Size: 23288 bytes
+- SHA-256: `1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b`
+- Publisher file: https://static.crates.io/crates/byteorder/1.5.0/download
+
+## bytes 1.12.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_bytes_1_12_1`
+- Version: 1.12.1
+- License: MIT
+- Attribution: Carl Lerche <me@carllerche.com>; Sean McArthur <sean@seanmonstar.com>
+- License proof: https://crates.io/api/v1/crates/bytes/1.12.1
+- Size: 75667 bytes
+- SHA-256: `fc652a48c352aef3ea3aed32080501cf3ef6ed5da78602a020c991775b0aff04`
+- Publisher file: https://static.crates.io/crates/bytes/1.12.1/download
+
+## cast 0.3.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cast_0_3_0`
+- Version: 0.3.0
+- License: MIT OR Apache-2.0
+- Attribution: Jorge Aparicio <jorge@japaric.io>
+- License proof: https://crates.io/api/v1/crates/cast/0.3.0
+- Size: 11452 bytes
+- SHA-256: `37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5`
+- Publisher file: https://static.crates.io/crates/cast/0.3.0/download
+
+## cc 1.4.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cc_1_4_0`
+- Version: 1.4.0
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/cc/1.4.0
+- Size: 97878 bytes
+- SHA-256: `5add81bb678e6cb321aff7fa0dc7689ad82b112dbc032cea19f91d6b8e3582b9`
+- Publisher file: https://static.crates.io/crates/cc/1.4.0/download
+
+## cesu8 1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cesu8_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0/MIT
+- Attribution: Eric Kidd <git@randomhacks.net>
+- License proof: https://crates.io/api/v1/crates/cesu8/1.1.0
+- Size: 10555 bytes
+- SHA-256: `6d43a04d8753f35258c91f8ec639f792891f748a1edbd759cf1dcea3382ad83c`
+- Publisher file: https://static.crates.io/crates/cesu8/1.1.0/download
+
+## cfg-if 1.0.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cfg_if_1_0_4`
+- Version: 1.0.4
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/cfg-if/1.0.4
+- Size: 9360 bytes
+- SHA-256: `9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801`
+- Publisher file: https://static.crates.io/crates/cfg-if/1.0.4/download
+
+## chrono 0.4.45 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_chrono_0_4_45`
+- Version: 0.4.45
+- License: MIT OR Apache-2.0
+- Attribution: Original chrono package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/chrono/0.4.45
+- Size: 240866 bytes
+- SHA-256: `1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327`
+- Publisher file: https://static.crates.io/crates/chrono/0.4.45/download
+
+## ciborium 0.2.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ciborium_0_2_2`
+- Version: 0.2.2
+- License: Apache-2.0
+- Attribution: Nathaniel McCallum <npmccallum@profian.com>
+- License proof: https://crates.io/api/v1/crates/ciborium/0.2.2
+- Size: 35611 bytes
+- SHA-256: `42e69ffd6f0917f5c029256a24d0161db17cea3997d185db0d35926308770f0e`
+- Publisher file: https://static.crates.io/crates/ciborium/0.2.2/download
+
+## ciborium-io 0.2.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ciborium_io_0_2_2`
+- Version: 0.2.2
+- License: Apache-2.0
+- Attribution: Nathaniel McCallum <npmccallum@profian.com>
+- License proof: https://crates.io/api/v1/crates/ciborium-io/0.2.2
+- Size: 6697 bytes
+- SHA-256: `05afea1e0a06c9be33d539b876f1ce3692f4afea2cb41f740e7743225ed1c757`
+- Publisher file: https://static.crates.io/crates/ciborium-io/0.2.2/download
+
+## ciborium-ll 0.2.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ciborium_ll_0_2_2`
+- Version: 0.2.2
+- License: Apache-2.0
+- Attribution: Nathaniel McCallum <npmccallum@profian.com>
+- License proof: https://crates.io/api/v1/crates/ciborium-ll/0.2.2
+- Size: 14695 bytes
+- SHA-256: `57663b653d948a338bfb3eeba9bb2fd5fcfaecb9e199e87e1eda4d9e8b240fd9`
+- Publisher file: https://static.crates.io/crates/ciborium-ll/0.2.2/download
+
+## cipher 0.4.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cipher_0_4_4`
+- Version: 0.4.4
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/cipher/0.4.4
+- Size: 19073 bytes
+- SHA-256: `773f3b9af64447d2ce9850330c473515014aa235e6a783b02db81ff39e4a3dad`
+- Publisher file: https://static.crates.io/crates/cipher/0.4.4/download
+
+## clap 4.6.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_clap_4_6_4`
+- Version: 4.6.4
+- License: MIT OR Apache-2.0
+- Attribution: Original clap package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/clap/4.6.4
+- Size: 63677 bytes
+- SHA-256: `d91e0c145792ef73a6ad36d27c75ac09f1832222a3c209689d90f534685ee5b7`
+- Publisher file: https://static.crates.io/crates/clap/4.6.4/download
+
+## clap_builder 4.6.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_clap_builder_4_6_2`
+- Version: 4.6.2
+- License: MIT OR Apache-2.0
+- Attribution: Original clap_builder package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/clap_builder/4.6.2
+- Size: 170802 bytes
+- SHA-256: `f09628afdcc538b57f3c6341e9c8e9970f18e4a481690a64974d7023bd33548b`
+- Publisher file: https://static.crates.io/crates/clap_builder/4.6.2/download
+
+## clap_lex 1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_clap_lex_1_1_0`
+- Version: 1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original clap_lex package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/clap_lex/1.1.0
+- Size: 13470 bytes
+- SHA-256: `c8d4a3bb8b1e0c1050499d1815f5ab16d04f0959b233085fb31653fbfc9d98f9`
+- Publisher file: https://static.crates.io/crates/clap_lex/1.1.0/download
+
+## coarsetime 0.1.37 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_coarsetime_0_1_37`
+- Version: 0.1.37
+- License: BSD-2-Clause
+- Attribution: Frank Denis <github@pureftpd.org>
+- License proof: https://crates.io/api/v1/crates/coarsetime/0.1.37
+- Size: 11116 bytes
+- SHA-256: `e58eb270476aa4fc7843849f8a35063e8743b4dbcdf6dd0f8ea0886980c204c2`
+- Publisher file: https://static.crates.io/crates/coarsetime/0.1.37/download
+
+## combine 4.6.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_combine_4_6_7`
+- Version: 4.6.7
+- License: MIT
+- Attribution: Markus Westerlind <marwes91@gmail.com>
+- License proof: https://crates.io/api/v1/crates/combine/4.6.7
+- Size: 134808 bytes
+- SHA-256: `ba5a308b75df32fe02788e748662718f03fde005016435c444eea572398219fd`
+- Publisher file: https://static.crates.io/crates/combine/4.6.7/download
+
+## compression-codecs 0.4.38 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_compression_codecs_0_4_38`
+- Version: 0.4.38
+- License: MIT OR Apache-2.0
+- Attribution: Wim Looman <wim@nemo157.com>; Allen Bui <fairingrey@gmail.com>
+- License proof: https://crates.io/api/v1/crates/compression-codecs/0.4.38
+- Size: 29877 bytes
+- SHA-256: `ce2548391e9c1929c21bf6aa2680af86fe4c1b33e6cea9ac1cfeec0bd11218cf`
+- Publisher file: https://static.crates.io/crates/compression-codecs/0.4.38/download
+
+## compression-core 0.4.32 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_compression_core_0_4_32`
+- Version: 0.4.32
+- License: MIT OR Apache-2.0
+- Attribution: Wim Looman <wim@nemo157.com>; Allen Bui <fairingrey@gmail.com>
+- License proof: https://crates.io/api/v1/crates/compression-core/0.4.32
+- Size: 10083 bytes
+- SHA-256: `cc14f565cf027a105f7a44ccf9e5b424348421a1d8952a8fc9d499d313107789`
+- Publisher file: https://static.crates.io/crates/compression-core/0.4.32/download
+
+## const-oid 0.9.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_const_oid_0_9_6`
+- Version: 0.9.6
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/const-oid/0.9.6
+- Size: 45382 bytes
+- SHA-256: `c2459377285ad874054d797f3ccebf984978aa39129f6eafde5cdc8315b612f8`
+- Publisher file: https://static.crates.io/crates/const-oid/0.9.6/download
+
+## convert_case 0.10.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_convert_case_0_10_0`
+- Version: 0.10.0
+- License: MIT
+- Attribution: rutrum <dave@rutrum.net>
+- License proof: https://crates.io/api/v1/crates/convert_case/0.10.0
+- Size: 24083 bytes
+- SHA-256: `633458d4ef8c78b72454de2d54fd6ab2e60f9e02be22f3c6104cdc8a4e0fceb9`
+- Publisher file: https://static.crates.io/crates/convert_case/0.10.0/download
+
+## cookie-factory 0.3.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cookie_factory_0_3_3`
+- Version: 0.3.3
+- License: MIT
+- Attribution: Geoffroy Couprie <geo.couprie@gmail.com>; Pierre Chifflier <chifflier@wzdftpd.net>
+- License proof: https://crates.io/api/v1/crates/cookie-factory/0.3.3
+- Size: 19084 bytes
+- SHA-256: `9885fa71e26b8ab7855e2ec7cae6e9b380edff76cd052e07c683a0319d51b3a2`
+- Publisher file: https://static.crates.io/crates/cookie-factory/0.3.3/download
+
+## core-foundation 0.10.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_core_foundation_0_10_1`
+- Version: 0.10.1
+- License: MIT OR Apache-2.0
+- Attribution: The Servo Project Developers
+- License proof: https://crates.io/api/v1/crates/core-foundation/0.10.1
+- Size: 28886 bytes
+- SHA-256: `b2a6cd9ae233e7f62ba4e9353e81a88df7fc8a5987b8d445b4d90c879bd156f6`
+- Publisher file: https://static.crates.io/crates/core-foundation/0.10.1/download
+
+## core-foundation-sys 0.8.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_core_foundation_sys_0_8_7`
+- Version: 0.8.7
+- License: MIT OR Apache-2.0
+- Attribution: The Servo Project Developers
+- License proof: https://crates.io/api/v1/crates/core-foundation-sys/0.8.7
+- Size: 37712 bytes
+- SHA-256: `773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b`
+- Publisher file: https://static.crates.io/crates/core-foundation-sys/0.8.7/download
+
+## cpufeatures 0.2.17 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_cpufeatures_0_2_17`
+- Version: 0.2.17
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/cpufeatures/0.2.17
+- Size: 13466 bytes
+- SHA-256: `59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280`
+- Publisher file: https://static.crates.io/crates/cpufeatures/0.2.17/download
+
+## crc32fast 1.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crc32fast_1_5_0`
+- Version: 1.5.0
+- License: MIT OR Apache-2.0
+- Attribution: Sam Rijs <srijs@airpost.net>; Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/crc32fast/1.5.0
+- Size: 40723 bytes
+- SHA-256: `9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511`
+- Publisher file: https://static.crates.io/crates/crc32fast/1.5.0/download
+
+## criterion 0.8.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_criterion_0_8_2`
+- Version: 0.8.2
+- License: Apache-2.0 OR MIT
+- Attribution: Jorge Aparicio <japaricious@gmail.com>; Brook Heisler <brookheisler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/criterion/0.8.2
+- Size: 122924 bytes
+- SHA-256: `950046b2aa2492f9a536f5f4f9a3de7b9e2476e575e05bd6c333371add4d98f3`
+- Publisher file: https://static.crates.io/crates/criterion/0.8.2/download
+
+## criterion-cycles-per-byte 0.8.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_criterion_cycles_per_byte_0_8_0`
+- Version: 0.8.0
+- License: MIT OR Apache-2.0
+- Attribution: The SiO4 Project Developers; Mark Wainwright
+- License proof: https://crates.io/api/v1/crates/criterion-cycles-per-byte/0.8.0
+- Size: 13696 bytes
+- SHA-256: `5396de42a52e9e5d8f67ef0702dae30451f310a9ba1c3094dcf228f0be0e54bc`
+- Publisher file: https://static.crates.io/crates/criterion-cycles-per-byte/0.8.0/download
+
+## criterion-plot 0.8.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_criterion_plot_0_8_2`
+- Version: 0.8.2
+- License: Apache-2.0 OR MIT
+- Attribution: Jorge Aparicio <japaricious@gmail.com>; Brook Heisler <brookheisler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/criterion-plot/0.8.2
+- Size: 24800 bytes
+- SHA-256: `d8d80a2f4f5b554395e47b5d8305bc3d27813bacb73493eb1001e8f76dae29ea`
+- Publisher file: https://static.crates.io/crates/criterion-plot/0.8.2/download
+
+## crossbeam-deque 0.8.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crossbeam_deque_0_8_7`
+- Version: 0.8.7
+- License: MIT OR Apache-2.0
+- Attribution: Original crossbeam-deque package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/crossbeam-deque/0.8.7
+- Size: 24141 bytes
+- SHA-256: `5181e0de7b61eb03a81e347d6dd8797bae9da5146707b51077e2d71a54ec0ceb`
+- Publisher file: https://static.crates.io/crates/crossbeam-deque/0.8.7/download
+
+## crossbeam-epoch 0.9.20 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crossbeam_epoch_0_9_20`
+- Version: 0.9.20
+- License: MIT OR Apache-2.0
+- Attribution: Original crossbeam-epoch package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/crossbeam-epoch/0.9.20
+- Size: 47545 bytes
+- SHA-256: `2d6914041f254d6e9176c01941b21115dcfb7089e55135a35411081bd106ef3f`
+- Publisher file: https://static.crates.io/crates/crossbeam-epoch/0.9.20/download
+
+## crossbeam-queue 0.3.13 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crossbeam_queue_0_3_13`
+- Version: 0.3.13
+- License: MIT OR Apache-2.0
+- Attribution: Original crossbeam-queue package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/crossbeam-queue/0.3.13
+- Size: 18407 bytes
+- SHA-256: `803d13fb3b09d88be9f4dbc29062c66b19bf7170867ceb746d2a8689bf6c7a26`
+- Publisher file: https://static.crates.io/crates/crossbeam-queue/0.3.13/download
+
+## crossbeam-utils 0.8.22 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crossbeam_utils_0_8_22`
+- Version: 0.8.22
+- License: MIT OR Apache-2.0
+- Attribution: Original crossbeam-utils package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/crossbeam-utils/0.8.22
+- Size: 46874 bytes
+- SHA-256: `61803da095bee82a81bb1a452ecc25d3b2f1416d1897eb86430c6159ef717c17`
+- Publisher file: https://static.crates.io/crates/crossbeam-utils/0.8.22/download
+
+## crunchy 0.2.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crunchy_0_2_4`
+- Version: 0.2.4
+- License: MIT
+- Attribution: Eira Fransham <jackefransham@gmail.com>
+- License proof: https://crates.io/api/v1/crates/crunchy/0.2.4
+- Size: 3887 bytes
+- SHA-256: `460fbee9c2c2f33933d720630a6a0bac33ba7053db5344fac858d4b8952d77d5`
+- Publisher file: https://static.crates.io/crates/crunchy/0.2.4/download
+
+## crypto-bigint 0.5.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crypto_bigint_0_5_5`
+- Version: 0.5.5
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/crypto-bigint/0.5.5
+- Size: 83384 bytes
+- SHA-256: `0dc92fb57ca44df6db8059111ab3af99a63d5d0f8375d9972e319a379c6bab76`
+- Publisher file: https://static.crates.io/crates/crypto-bigint/0.5.5/download
+
+## crypto-common 0.1.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_crypto_common_0_1_7`
+- Version: 0.1.7
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/crypto-common/0.1.7
+- Size: 9619 bytes
+- SHA-256: `78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a`
+- Publisher file: https://static.crates.io/crates/crypto-common/0.1.7/download
+
+## ctr 0.9.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ctr_0_9_2`
+- Version: 0.9.2
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/ctr/0.9.2
+- Size: 18344 bytes
+- SHA-256: `0369ee1ad671834580515889b80f2ea915f23b8be8d0daa4bbaf2ac5c7590835`
+- Publisher file: https://static.crates.io/crates/ctr/0.9.2/download
+
+## curve25519-dalek 4.1.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_curve25519_dalek_4_1_3`
+- Version: 4.1.3
+- License: BSD-3-Clause
+- Attribution: Isis Lovecruft <isis@patternsinthevoid.net>; Henry de Valence <hdevalence@hdevalence.ca>
+- License proof: https://crates.io/api/v1/crates/curve25519-dalek/4.1.3
+- Size: 306017 bytes
+- SHA-256: `97fb8b7c4503de7d6ae7b42ab72a5a59857b4c937ec27a3d4539dba95b5ab2be`
+- Publisher file: https://static.crates.io/crates/curve25519-dalek/4.1.3/download
+
+## curve25519-dalek-derive 0.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_curve25519_dalek_derive_0_1_1`
+- Version: 0.1.1
+- License: MIT/Apache-2.0
+- Attribution: Original curve25519-dalek-derive package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/curve25519-dalek-derive/0.1.1
+- Size: 11723 bytes
+- SHA-256: `f46882e17999c6cc590af592290432be3bce0428cb0d5f8b6715e4dc7b383eb3`
+- Publisher file: https://static.crates.io/crates/curve25519-dalek-derive/0.1.1/download
+
+## darling 0.14.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_0_14_4`
+- Version: 0.14.4
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling/0.14.4
+- Size: 25168 bytes
+- SHA-256: `7b750cb3417fd1b327431a470f388520309479ab0bf5e323505daf0290cd3850`
+- Publisher file: https://static.crates.io/crates/darling/0.14.4/download
+
+## darling 0.21.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_0_21_3`
+- Version: 0.21.3
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling/0.21.3
+- Size: 41398 bytes
+- SHA-256: `9cdf337090841a411e2a7f3deb9187445851f91b309c0c0a29e05f74a00a48c0`
+- Publisher file: https://static.crates.io/crates/darling/0.21.3/download
+
+## darling 0.23.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_0_23_0`
+- Version: 0.23.0
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling/0.23.0
+- Size: 43298 bytes
+- SHA-256: `25ae13da2f202d56bd7f91c25fba009e7717a1e4a1cc98a76d844b65ae912e9d`
+- Publisher file: https://static.crates.io/crates/darling/0.23.0/download
+
+## darling_core 0.14.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_core_0_14_4`
+- Version: 0.14.4
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling_core/0.14.4
+- Size: 57485 bytes
+- SHA-256: `109c1ca6e6b7f82cc233a97004ea8ed7ca123a9af07a8230878fcfda9b158bf0`
+- Publisher file: https://static.crates.io/crates/darling_core/0.14.4/download
+
+## darling_core 0.21.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_core_0_21_3`
+- Version: 0.21.3
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling_core/0.21.3
+- Size: 74471 bytes
+- SHA-256: `1247195ecd7e3c85f83c8d2a366e4210d588e802133e1e355180a9870b517ea4`
+- Publisher file: https://static.crates.io/crates/darling_core/0.21.3/download
+
+## darling_core 0.23.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_core_0_23_0`
+- Version: 0.23.0
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling_core/0.23.0
+- Size: 74564 bytes
+- SHA-256: `9865a50f7c335f53564bb694ef660825eb8610e0a53d3e11bf1b0d3df31e03b0`
+- Publisher file: https://static.crates.io/crates/darling_core/0.23.0/download
+
+## darling_macro 0.14.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_macro_0_14_4`
+- Version: 0.14.4
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling_macro/0.14.4
+- Size: 1896 bytes
+- SHA-256: `a4aab4dbc9f7611d8b55048a3a16d2d010c2c8334e46304b40ac1cc14bf3b48e`
+- Publisher file: https://static.crates.io/crates/darling_macro/0.14.4/download
+
+## darling_macro 0.21.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_macro_0_21_3`
+- Version: 0.21.3
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling_macro/0.21.3
+- Size: 2535 bytes
+- SHA-256: `d38308df82d1080de0afee5d069fa14b0326a88c14f15c5ccda35b4a6c414c81`
+- Publisher file: https://static.crates.io/crates/darling_macro/0.21.3/download
+
+## darling_macro 0.23.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_darling_macro_0_23_0`
+- Version: 0.23.0
+- License: MIT
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/darling_macro/0.23.0
+- Size: 2480 bytes
+- SHA-256: `ac3984ec7bd6cfa798e62b4a642426a5be0e68f9401cfc2a01e3fa9ea2fcdb8d`
+- Publisher file: https://static.crates.io/crates/darling_macro/0.23.0/download
+
+## data-encoding 2.11.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_data_encoding_2_11_0`
+- Version: 2.11.0
+- License: MIT
+- Attribution: Julien Cretin <git@ia0.eu>
+- License proof: https://crates.io/api/v1/crates/data-encoding/2.11.0
+- Size: 22677 bytes
+- SHA-256: `a4ae5f15dda3c708c0ade84bfee31ccab44a3da4f88015ed22f63732abe300c8`
+- Publisher file: https://static.crates.io/crates/data-encoding/2.11.0/download
+
+## der 0.7.10 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_der_0_7_10`
+- Version: 0.7.10
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/der/0.7.10
+- Size: 90111 bytes
+- SHA-256: `e7c1832837b905bbfb5101e07cc24c8deddf52f93225eee6ead5f4d63d53ddcb`
+- Publisher file: https://static.crates.io/crates/der/0.7.10/download
+
+## der-parser 10.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_der_parser_10_0_0`
+- Version: 10.0.0
+- License: MIT OR Apache-2.0
+- Attribution: Pierre Chifflier <chifflier@wzdftpd.net>
+- License proof: https://crates.io/api/v1/crates/der-parser/10.0.0
+- Size: 66186 bytes
+- SHA-256: `07da5016415d5a3c4dd39b11ed26f915f52fc4e0dc197d87908bc916e51bc1a6`
+- Publisher file: https://static.crates.io/crates/der-parser/10.0.0/download
+
+## deranged 0.5.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_deranged_0_5_8`
+- Version: 0.5.8
+- License: MIT OR Apache-2.0
+- Attribution: Jacob Pratt <jacob@jhpratt.dev>
+- License proof: https://crates.io/api/v1/crates/deranged/0.5.8
+- Size: 26885 bytes
+- SHA-256: `7cd812cc2bc1d69d4764bd80df88b4317eaef9e773c75226407d9bc0876b211c`
+- Publisher file: https://static.crates.io/crates/deranged/0.5.8/download
+
+## derive_builder_core_fork_arti 0.11.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_builder_core_fork_arti_0_11_2`
+- Version: 0.11.2
+- License: MIT/Apache-2.0
+- Attribution: Ian Jackson <iwj@torproject.org>; Colin Kiegel <kiegel@gmx.de>; Pascal Hertleif <killercup@gmail.com>; Jan-Erik Rediger <janerik@fnordig.de>; Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/derive_builder_core_fork_arti/0.11.2
+- Size: 31064 bytes
+- SHA-256: `24c1b715c79be6328caa9a5e1a387a196ea503740f0722ec3dd8f67a9e72314d`
+- Publisher file: https://static.crates.io/crates/derive_builder_core_fork_arti/0.11.2/download
+
+## derive_builder_fork_arti 0.11.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_builder_fork_arti_0_11_2`
+- Version: 0.11.2
+- License: MIT/Apache-2.0
+- Attribution: Ian Jackson <iwj@torproject.org>; Colin Kiegel <kiegel@gmx.de>; Pascal Hertleif <killercup@gmail.com>; Jan-Erik Rediger <janerik@fnordig.de>; Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/derive_builder_fork_arti/0.11.2
+- Size: 35894 bytes
+- SHA-256: `c3eae24d595f4d0ecc90a9a5a6d11c2bd8dafe2375ec4a1ec63250e5ade7d228`
+- Publisher file: https://static.crates.io/crates/derive_builder_fork_arti/0.11.2/download
+
+## derive_builder_macro_fork_arti 0.11.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_builder_macro_fork_arti_0_11_2`
+- Version: 0.11.2
+- License: MIT/Apache-2.0
+- Attribution: Ian Jackson <iwj@torproject.org>; Colin Kiegel <kiegel@gmx.de>; Pascal Hertleif <killercup@gmail.com>; Jan-Erik Rediger <janerik@fnordig.de>; Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/derive_builder_macro_fork_arti/0.11.2
+- Size: 6446 bytes
+- SHA-256: `69887769a2489cd946bf782eb2b1bb2cb7bc88551440c94a765d4f040c08ebf3`
+- Publisher file: https://static.crates.io/crates/derive_builder_macro_fork_arti/0.11.2/download
+
+## derive-deftly 1.6.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_deftly_1_6_0`
+- Version: 1.6.0
+- License: MIT
+- Attribution: Ian Jackson <ijackson@chiark.greenend.org.uk>; and the contributors to Rust derive-deftly
+- License proof: https://crates.io/api/v1/crates/derive-deftly/1.6.0
+- Size: 100626 bytes
+- SHA-256: `284db66a66f03c3dafbe17360d959eb76b83f77cfe191677e2a7899c0da291f3`
+- Publisher file: https://static.crates.io/crates/derive-deftly/1.6.0/download
+
+## derive-deftly-macros 1.6.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_deftly_macros_1_6_0`
+- Version: 1.6.0
+- License: MIT
+- Attribution: Ian Jackson <ijackson@chiark.greenend.org.uk>; and the contributors to Rust derive-deftly
+- License proof: https://crates.io/api/v1/crates/derive-deftly-macros/1.6.0
+- Size: 115563 bytes
+- SHA-256: `caef6056a5788d05d173cdc3c562ac28ae093828f851f69378b74e4e3d578e41`
+- Publisher file: https://static.crates.io/crates/derive-deftly-macros/1.6.0/download
+
+## derive_more 2.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_more_2_1_1`
+- Version: 2.1.1
+- License: MIT
+- Attribution: Jelte Fennema <github-tech@jeltef.nl>
+- License proof: https://crates.io/api/v1/crates/derive_more/2.1.1
+- Size: 88632 bytes
+- SHA-256: `d751e9e49156b02b44f9c1815bcb94b984cdcc4396ecc32521c739452808b134`
+- Publisher file: https://static.crates.io/crates/derive_more/2.1.1/download
+
+## derive_more-impl 2.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_derive_more_impl_2_1_1`
+- Version: 2.1.1
+- License: MIT
+- Attribution: Jelte Fennema <github-tech@jeltef.nl>
+- License proof: https://crates.io/api/v1/crates/derive_more-impl/2.1.1
+- Size: 99094 bytes
+- SHA-256: `799a97264921d8623a957f6c3b9011f3b5492f557bbb7a5a19b7fa6d06ba8dcb`
+- Publisher file: https://static.crates.io/crates/derive_more-impl/2.1.1/download
+
+## digest 0.10.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_digest_0_10_7`
+- Version: 0.10.7
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/digest/0.10.7
+- Size: 19557 bytes
+- SHA-256: `9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292`
+- Publisher file: https://static.crates.io/crates/digest/0.10.7/download
+
+## directories 6.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_directories_6_0_0`
+- Version: 6.0.0
+- License: MIT OR Apache-2.0
+- Attribution: Simon Ochsenreither <simon@ochsenreither.de>
+- License proof: https://crates.io/api/v1/crates/directories/6.0.0
+- Size: 17842 bytes
+- SHA-256: `16f5094c54661b38d03bd7e50df373292118db60b585c08a411c6d840017fe7d`
+- Publisher file: https://static.crates.io/crates/directories/6.0.0/download
+
+## dirs 6.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_dirs_6_0_0`
+- Version: 6.0.0
+- License: MIT OR Apache-2.0
+- Attribution: Simon Ochsenreither <simon@ochsenreither.de>
+- License proof: https://crates.io/api/v1/crates/dirs/6.0.0
+- Size: 14190 bytes
+- SHA-256: `c3e8aa94d75141228480295a7d0e7feb620b1a5ad9f12bc40be62411e38cce4e`
+- Publisher file: https://static.crates.io/crates/dirs/6.0.0/download
+
+## dirs-sys 0.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_dirs_sys_0_5_0`
+- Version: 0.5.0
+- License: MIT OR Apache-2.0
+- Attribution: Simon Ochsenreither <simon@ochsenreither.de>
+- License proof: https://crates.io/api/v1/crates/dirs-sys/0.5.0
+- Size: 10157 bytes
+- SHA-256: `e01a3366d27ee9890022452ee61b2b63a67e6f13f58900b651ff5665f0bb1fab`
+- Publisher file: https://static.crates.io/crates/dirs-sys/0.5.0/download
+
+## displaydoc 0.2.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_displaydoc_0_2_6`
+- Version: 0.2.6
+- License: MIT OR Apache-2.0
+- Attribution: Jane Lusby <jlusby@yaah.dev>
+- License proof: https://crates.io/api/v1/crates/displaydoc/0.2.6
+- Size: 21191 bytes
+- SHA-256: `1ac70aa55017e108007fbaf5aa0f54b021c98f92ff8af59d42eda9da96e3dd4f`
+- Publisher file: https://static.crates.io/crates/displaydoc/0.2.6/download
+
+## downcast-rs 2.0.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_downcast_rs_2_0_2`
+- Version: 2.0.2
+- License: MIT OR Apache-2.0
+- Attribution: Original downcast-rs package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/downcast-rs/2.0.2
+- Size: 12730 bytes
+- SHA-256: `117240f60069e65410b3ae1bb213295bd828f707b5bec6596a1afc8793ce0cbc`
+- Publisher file: https://static.crates.io/crates/downcast-rs/2.0.2/download
+
+## dyn-clone 1.0.20 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_dyn_clone_1_0_20`
+- Version: 1.0.20
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/dyn-clone/1.0.20
+- Size: 13134 bytes
+- SHA-256: `d0881ea181b1df73ff77ffaaf9c7544ecc11e82fba9b5f27b262a3c73a332555`
+- Publisher file: https://static.crates.io/crates/dyn-clone/1.0.20/download
+
+## ecdsa 0.16.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ecdsa_0_16_9`
+- Version: 0.16.9
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/ecdsa/0.16.9
+- Size: 31406 bytes
+- SHA-256: `ee27f32b5c5292967d2d4a9d7f1e0b0aed2c15daded5a60300e4abb9d8020bca`
+- Publisher file: https://static.crates.io/crates/ecdsa/0.16.9/download
+
+## ed25519 2.2.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ed25519_2_2_3`
+- Version: 2.2.3
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/ed25519/2.2.3
+- Size: 17802 bytes
+- SHA-256: `115531babc129696a58c64a4fef0a8bf9e9698629fb97e9e40767d235cfbcd53`
+- Publisher file: https://static.crates.io/crates/ed25519/2.2.3/download
+
+## ed25519-dalek 2.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ed25519_dalek_2_2_0`
+- Version: 2.2.0
+- License: BSD-3-Clause
+- Attribution: isis lovecruft <isis@patternsinthevoid.net>; Tony Arcieri <bascule@gmail.com>; Michael Rosenberg <michael@mrosenberg.pub>
+- License proof: https://crates.io/api/v1/crates/ed25519-dalek/2.2.0
+- Size: 98034 bytes
+- SHA-256: `70e796c081cee67dc755e1a36a0a172b897fab85fc3f6bc48307991f64e4eca9`
+- Publisher file: https://static.crates.io/crates/ed25519-dalek/2.2.0/download
+
+## educe 0.4.23 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_educe_0_4_23`
+- Version: 0.4.23
+- License: MIT
+- Attribution: Magic Len <len@magiclen.org>
+- License proof: https://crates.io/api/v1/crates/educe/0.4.23
+- Size: 44244 bytes
+- SHA-256: `0f0042ff8246a363dbe77d2ceedb073339e85a804b9a47636c6e016a9a32c05f`
+- Publisher file: https://static.crates.io/crates/educe/0.4.23/download
+
+## either 1.17.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_either_1_17_0`
+- Version: 1.17.0
+- License: MIT OR Apache-2.0
+- Attribution: Original either package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/either/1.17.0
+- Size: 21820 bytes
+- SHA-256: `9e5e8f6c15a24b9a3ee5efec809ccd006d3b30e8b3bb63c39af737c7f87daa1d`
+- Publisher file: https://static.crates.io/crates/either/1.17.0/download
+
+## elliptic-curve 0.13.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_elliptic_curve_0_13_8`
+- Version: 0.13.8
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/elliptic-curve/0.13.8
+- Size: 63198 bytes
+- SHA-256: `b5e6043086bf7973472e0c7dff2142ea0b680d30e18d9cc40f267efbf222bd47`
+- Publisher file: https://static.crates.io/crates/elliptic-curve/0.13.8/download
+
+## enum_dispatch 0.3.13 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_enum_dispatch_0_3_13`
+- Version: 0.3.13
+- License: MIT OR Apache-2.0
+- Attribution: Anton Lazarev <https://antonok.com>
+- License proof: https://crates.io/api/v1/crates/enum_dispatch/0.3.13
+- Size: 29876 bytes
+- SHA-256: `aa18ce2bc66555b3218614519ac839ddb759a7d6720732f979ef8d13be147ecd`
+- Publisher file: https://static.crates.io/crates/enum_dispatch/0.3.13/download
+
+## enum-ordinalize 3.1.15 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_enum_ordinalize_3_1_15`
+- Version: 3.1.15
+- License: MIT
+- Attribution: Magic Len <len@magiclen.org>
+- License proof: https://crates.io/api/v1/crates/enum-ordinalize/3.1.15
+- Size: 5783 bytes
+- SHA-256: `1bf1fa3f06bbff1ea5b1a9c7b14aa992a39657db60a2759457328d7e058f49ee`
+- Publisher file: https://static.crates.io/crates/enum-ordinalize/3.1.15/download
+
+## enumset 1.1.14 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_enumset_1_1_14`
+- Version: 1.1.14
+- License: MIT/Apache-2.0
+- Attribution: Alissa Rao <aura@aura.moe>
+- License proof: https://crates.io/api/v1/crates/enumset/1.1.14
+- Size: 26458 bytes
+- SHA-256: `ccc5801fd11762e24d1e420d01d2ac518f2a2ca4329d4fbb6639f2412b6204e0`
+- Publisher file: https://static.crates.io/crates/enumset/1.1.14/download
+
+## enumset_derive 0.15.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_enumset_derive_0_15_0`
+- Version: 0.15.0
+- License: MIT/Apache-2.0
+- Attribution: Alissa Rao <aura@aura.moe>
+- License proof: https://crates.io/api/v1/crates/enumset_derive/0.15.0
+- Size: 17951 bytes
+- SHA-256: `4bd536557b58c682b217b8fb199afdff47cd3eff260623f19e77074eb073d63a`
+- Publisher file: https://static.crates.io/crates/enumset_derive/0.15.0/download
+
+## equivalent 1.0.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_equivalent_1_0_2`
+- Version: 1.0.2
+- License: Apache-2.0 OR MIT
+- Attribution: Original equivalent package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/equivalent/1.0.2
+- Size: 7419 bytes
+- SHA-256: `877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f`
+- Publisher file: https://static.crates.io/crates/equivalent/1.0.2/download
+
+## errno 0.3.14 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_errno_0_3_14`
+- Version: 0.3.14
+- License: MIT OR Apache-2.0
+- Attribution: Chris Wong <lambda.fairy@gmail.com>; Dan Gohman <dev@sunfishcode.online>
+- License proof: https://crates.io/api/v1/crates/errno/0.3.14
+- Size: 12002 bytes
+- SHA-256: `39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb`
+- Publisher file: https://static.crates.io/crates/errno/0.3.14/download
+
+## event-listener 5.4.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_event_listener_5_4_2`
+- Version: 5.4.2
+- License: Apache-2.0 OR MIT
+- Attribution: Stjepan Glavina <stjepang@gmail.com>; John Nunley <dev@notgull.net>
+- License proof: https://crates.io/api/v1/crates/event-listener/5.4.2
+- Size: 35131 bytes
+- SHA-256: `5a23add41df1562121a9393cb065eab5146a1242410f23a644851e90cfd669d2`
+- Publisher file: https://static.crates.io/crates/event-listener/5.4.2/download
+
+## fallible-iterator 0.3.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fallible_iterator_0_3_0`
+- Version: 0.3.0
+- License: MIT/Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/fallible-iterator/0.3.0
+- Size: 19639 bytes
+- SHA-256: `2acce4a10f12dc2fb14a218589d4f1f62ef011b2d0cc4b3cb1bba8e94da14649`
+- Publisher file: https://static.crates.io/crates/fallible-iterator/0.3.0/download
+
+## fallible-streaming-iterator 0.1.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fallible_streaming_iterator_0_1_9`
+- Version: 0.1.9
+- License: MIT/Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/fallible-streaming-iterator/0.1.9
+- Size: 9249 bytes
+- SHA-256: `7360491ce676a36bf9bb3c56c1aa791658183a54d2744120f27285738d90465a`
+- Publisher file: https://static.crates.io/crates/fallible-streaming-iterator/0.1.9/download
+
+## fastrand 2.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fastrand_2_5_0`
+- Version: 2.5.0
+- License: Apache-2.0 OR MIT
+- Attribution: Stjepan Glavina <stjepang@gmail.com>
+- License proof: https://crates.io/api/v1/crates/fastrand/2.5.0
+- Size: 20782 bytes
+- SHA-256: `da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223`
+- Publisher file: https://static.crates.io/crates/fastrand/2.5.0/download
+
+## ff 0.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ff_0_13_1`
+- Version: 0.13.1
+- License: MIT/Apache-2.0
+- Attribution: Sean Bowe <ewillbefull@gmail.com>; Jack Grigg <thestr4d@gmail.com>
+- License proof: https://crates.io/api/v1/crates/ff/0.13.1
+- Size: 18607 bytes
+- SHA-256: `c0b50bfb653653f9ca9095b427bed08ab8d75a137839d9ad64eb11810d5b6393`
+- Publisher file: https://static.crates.io/crates/ff/0.13.1/download
+
+## fiat-crypto 0.2.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fiat_crypto_0_2_9`
+- Version: 0.2.9
+- License: MIT OR Apache-2.0 OR BSD-1-Clause
+- Attribution: Fiat Crypto library authors <jgross@mit.edu>
+- License proof: https://crates.io/api/v1/crates/fiat-crypto/0.2.9
+- Size: 495390 bytes
+- SHA-256: `28dea519a9695b9977216879a3ebfddf92f1c08c05d984f8996aecd6ecdc811d`
+- Publisher file: https://static.crates.io/crates/fiat-crypto/0.2.9/download
+
+## figment 0.10.19 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_figment_0_10_19`
+- Version: 0.10.19
+- License: MIT OR Apache-2.0
+- Attribution: Sergio Benitez <sb@sergio.bz>
+- License proof: https://crates.io/api/v1/crates/figment/0.10.19
+- Size: 70111 bytes
+- SHA-256: `8cb01cd46b0cf372153850f4c6c272d9cbea2da513e07538405148f95bd789f3`
+- Publisher file: https://static.crates.io/crates/figment/0.10.19/download
+
+## filetime 0.2.29 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_filetime_0_2_29`
+- Version: 0.2.29
+- License: MIT/Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/filetime/0.2.29
+- Size: 16977 bytes
+- SHA-256: `5c287a33c7f0a620c38e641e7f60827713987b3c0f26e8ddc9462cc69cf75759`
+- Publisher file: https://static.crates.io/crates/filetime/0.2.29/download
+
+## find-msvc-tools 0.1.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_find_msvc_tools_0_1_9`
+- Version: 0.1.9
+- License: MIT OR Apache-2.0
+- Attribution: Original find-msvc-tools package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/find-msvc-tools/0.1.9
+- Size: 31493 bytes
+- SHA-256: `5baebc0774151f905a1a2cc41989300b1e6fbb29aff0ceffa1064fdd3088d582`
+- Publisher file: https://static.crates.io/crates/find-msvc-tools/0.1.9/download
+
+## flate2 1.1.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_flate2_1_1_9`
+- Version: 1.1.9
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Josh Triplett <josh@joshtriplett.org>
+- License proof: https://crates.io/api/v1/crates/flate2/1.1.9
+- Size: 82745 bytes
+- SHA-256: `843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c`
+- Publisher file: https://static.crates.io/crates/flate2/1.1.9/download
+
+## fluid-let 1.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fluid_let_1_0_0`
+- Version: 1.0.0
+- License: MIT
+- Attribution: ilammy
+- License proof: https://crates.io/api/v1/crates/fluid-let/1.0.0
+- Size: 9036 bytes
+- SHA-256: `749cff877dc1af878a0b31a41dd221a753634401ea0ef2f87b62d3171522485a`
+- Publisher file: https://static.crates.io/crates/fluid-let/1.0.0/download
+
+## fnv 1.0.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fnv_1_0_7`
+- Version: 1.0.7
+- License: Apache-2.0 / MIT
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/fnv/1.0.7
+- Size: 11266 bytes
+- SHA-256: `3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1`
+- Publisher file: https://static.crates.io/crates/fnv/1.0.7/download
+
+## foldhash 0.1.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_foldhash_0_1_5`
+- Version: 0.1.5
+- License: Zlib
+- Attribution: Orson Peters <orsonpeters@gmail.com>
+- License proof: https://crates.io/api/v1/crates/foldhash/0.1.5
+- Size: 21901 bytes
+- SHA-256: `d9c4f5dac5e15c24eb999c26181a6ca40b39fe946cbe4c263c7209467bc83af2`
+- Publisher file: https://static.crates.io/crates/foldhash/0.1.5/download
+
+## foreign-types 0.3.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_foreign_types_0_3_2`
+- Version: 0.3.2
+- License: MIT/Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/foreign-types/0.3.2
+- Size: 7504 bytes
+- SHA-256: `f6f339eb8adc052cd2ca78910fda869aefa38d22d5cb648e6485e4d3fc06f3b1`
+- Publisher file: https://static.crates.io/crates/foreign-types/0.3.2/download
+
+## foreign-types-shared 0.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_foreign_types_shared_0_1_1`
+- Version: 0.1.1
+- License: MIT/Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/foreign-types-shared/0.1.1
+- Size: 5672 bytes
+- SHA-256: `00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b`
+- Publisher file: https://static.crates.io/crates/foreign-types-shared/0.1.1/download
+
+## fslock 0.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_fslock_0_2_1`
+- Version: 0.2.1
+- License: MIT
+- Attribution: Original fslock package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/fslock/0.2.1
+- Size: 13463 bytes
+- SHA-256: `04412b8935272e3a9bae6f48c7bfff74c2911f60525404edfdd28e49884c3bfb`
+- Publisher file: https://static.crates.io/crates/fslock/0.2.1/download
+
+## funty 2.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_funty_2_0_0`
+- Version: 2.0.0
+- License: MIT
+- Attribution: myrrlyn <self@myrrlyn.dev>
+- License proof: https://crates.io/api/v1/crates/funty/2.0.0
+- Size: 13160 bytes
+- SHA-256: `e6d5a32815ae3f33302d95fdcb2ce17862f8c65363dcfd29360480ba1001fc9c`
+- Publisher file: https://static.crates.io/crates/funty/2.0.0/download
+
+## futures 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures/0.3.33
+- Size: 61764 bytes
+- SHA-256: `a88cf1f829d945f548cf8fec32c61b1f202b6d93b45848602fc02af4b12ad218`
+- Publisher file: https://static.crates.io/crates/futures/0.3.33/download
+
+## futures-channel 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_channel_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-channel package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-channel/0.3.33
+- Size: 33168 bytes
+- SHA-256: `262590f4fe6afeb0bc83be1daa64e52657fe185690a958af7f3ad0e92085c5ae`
+- Publisher file: https://static.crates.io/crates/futures-channel/0.3.33/download
+
+## futures-core 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_core_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-core package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-core/0.3.33
+- Size: 14691 bytes
+- SHA-256: `2cd50c473c80f6d7c3670a752354b8e569b1a7cbfdc0419ec88e5edad85e0dc7`
+- Publisher file: https://static.crates.io/crates/futures-core/0.3.33/download
+
+## futures-executor 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_executor_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-executor package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-executor/0.3.33
+- Size: 18557 bytes
+- SHA-256: `6754879cc9f2c66f88c6e5c35344bb0bdb0708b0352b1201815667c7eabc7458`
+- Publisher file: https://static.crates.io/crates/futures-executor/0.3.33/download
+
+## futures-io 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_io_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-io package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-io/0.3.33
+- Size: 9190 bytes
+- SHA-256: `4577ecaa3c4f96589d473f679a71b596316f6641bc350038b962a5daf0085d7a`
+- Publisher file: https://static.crates.io/crates/futures-io/0.3.33/download
+
+## futures-macro 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_macro_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-macro package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-macro/0.3.33
+- Size: 11928 bytes
+- SHA-256: `2d6d3cde68c518367be28956066ddfef33813991b77a55005a69dae04bf3b10b`
+- Publisher file: https://static.crates.io/crates/futures-macro/0.3.33/download
+
+## futures-rustls 0.26.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_rustls_0_26_0`
+- Version: 0.26.0
+- License: MIT/Apache-2.0
+- Attribution: quininer kel <quininer@live.com>
+- License proof: https://crates.io/api/v1/crates/futures-rustls/0.26.0
+- Size: 22849 bytes
+- SHA-256: `a8f2f12607f92c69b12ed746fabf9ca4f5c482cba46679c1a75b874ed7c26adb`
+- Publisher file: https://static.crates.io/crates/futures-rustls/0.26.0/download
+
+## futures-sink 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_sink_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-sink package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-sink/0.3.33
+- Size: 8108 bytes
+- SHA-256: `e34418ac499d6305c2fb5ad0ed2f6ac998c5f8ca209b4510f7f94242c647e307`
+- Publisher file: https://static.crates.io/crates/futures-sink/0.3.33/download
+
+## futures-task 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_task_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-task package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-task/0.3.33
+- Size: 11381 bytes
+- SHA-256: `b231ed28831efb4a61a08580c4bc233ec56bc009f4cd8f52da2c3cb97df0c109`
+- Publisher file: https://static.crates.io/crates/futures-task/0.3.33/download
+
+## futures-util 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_futures_util_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Original futures-util package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/futures-util/0.3.33
+- Size: 169725 bytes
+- SHA-256: `a77a90a256fce34da66415271e30f94ee91c57b04b8a2c042d9cf3220179deaa`
+- Publisher file: https://static.crates.io/crates/futures-util/0.3.33/download
+
+## generic-array 0.14.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_generic_array_0_14_7`
+- Version: 0.14.7
+- License: MIT
+- Attribution: Bartłomiej Kamiński <fizyk20@gmail.com>; Aaron Trent <novacrazy@gmail.com>
+- License proof: https://crates.io/api/v1/crates/generic-array/0.14.7
+- Size: 15950 bytes
+- SHA-256: `85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a`
+- Publisher file: https://static.crates.io/crates/generic-array/0.14.7/download
+
+## getrandom 0.2.17 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_getrandom_0_2_17`
+- Version: 0.2.17
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers
+- License proof: https://crates.io/api/v1/crates/getrandom/0.2.17
+- Size: 40780 bytes
+- SHA-256: `ff2abc00be7fca6ebc474524697ae276ad847ad0a6b3faa4bcb027e9a4614ad0`
+- Publisher file: https://static.crates.io/crates/getrandom/0.2.17/download
+
+## getrandom 0.3.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_getrandom_0_3_4`
+- Version: 0.3.4
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers
+- License proof: https://crates.io/api/v1/crates/getrandom/0.3.4
+- Size: 50932 bytes
+- SHA-256: `899def5c37c4fd7b2664648c28120ecec138e4d395b459e5ca34f9cce2dd77fd`
+- Publisher file: https://static.crates.io/crates/getrandom/0.3.4/download
+
+## getrandom 0.4.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_getrandom_0_4_3`
+- Version: 0.4.3
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers
+- License proof: https://crates.io/api/v1/crates/getrandom/0.4.3
+- Size: 52437 bytes
+- SHA-256: `300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099`
+- Publisher file: https://static.crates.io/crates/getrandom/0.4.3/download
+
+## getset 0.1.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_getset_0_1_7`
+- Version: 0.1.7
+- License: MIT
+- Attribution: Ana Hobden <ana@hoverbear.org>; John Baublitz <john.m.baublitz@gmail.com
+- License proof: https://crates.io/api/v1/crates/getset/0.1.7
+- Size: 10514 bytes
+- SHA-256: `6cf442baaabe4213ce7d1239afc26c039180b6456da2cededa316ae2c8a77a77`
+- Publisher file: https://static.crates.io/crates/getset/0.1.7/download
+
+## glob-match 0.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_glob_match_0_2_1`
+- Version: 0.2.1
+- License: MIT
+- Attribution: Devon Govett <devongovett@gmail.com>
+- License proof: https://crates.io/api/v1/crates/glob-match/0.2.1
+- Size: 13599 bytes
+- SHA-256: `9985c9503b412198aa4197559e9a318524ebc4519c229bfa05a535828c950b9d`
+- Publisher file: https://static.crates.io/crates/glob-match/0.2.1/download
+
+## group 0.13.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_group_0_13_0`
+- Version: 0.13.0
+- License: MIT/Apache-2.0
+- Attribution: Sean Bowe <ewillbefull@gmail.com>; Jack Grigg <jack@z.cash>
+- License proof: https://crates.io/api/v1/crates/group/0.13.0
+- Size: 16526 bytes
+- SHA-256: `f0f9ef7462f7c099f518d754361858f86d8a07af53ba9af0fe635bbccb151a63`
+- Publisher file: https://static.crates.io/crates/group/0.13.0/download
+
+## half 2.7.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_half_2_7_1`
+- Version: 2.7.1
+- License: MIT OR Apache-2.0
+- Attribution: Kathryn Long <squeeself@gmail.com>
+- License proof: https://crates.io/api/v1/crates/half/2.7.1
+- Size: 61040 bytes
+- SHA-256: `6ea2d84b969582b4b1864a92dc5d27cd2b77b622a8d79306834f1be5ba20d84b`
+- Publisher file: https://static.crates.io/crates/half/2.7.1/download
+
+## hashbrown 0.12.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hashbrown_0_12_3`
+- Version: 0.12.3
+- License: MIT OR Apache-2.0
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/hashbrown/0.12.3
+- Size: 102968 bytes
+- SHA-256: `8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888`
+- Publisher file: https://static.crates.io/crates/hashbrown/0.12.3/download
+
+## hashbrown 0.15.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hashbrown_0_15_5`
+- Version: 0.15.5
+- License: MIT OR Apache-2.0
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/hashbrown/0.15.5
+- Size: 140908 bytes
+- SHA-256: `9229cfe53dfd69f0609a49f65461bd93001ea1ef889cd5529dd176593f5338a1`
+- Publisher file: https://static.crates.io/crates/hashbrown/0.15.5/download
+
+## hashbrown 0.17.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hashbrown_0_17_1`
+- Version: 0.17.1
+- License: MIT OR Apache-2.0
+- Attribution: Original hashbrown package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/hashbrown/0.17.1
+- Size: 155512 bytes
+- SHA-256: `ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a`
+- Publisher file: https://static.crates.io/crates/hashbrown/0.17.1/download
+
+## hashlink 0.10.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hashlink_0_10_0`
+- Version: 0.10.0
+- License: MIT OR Apache-2.0
+- Attribution: kyren <kerriganw@gmail.com>
+- License proof: https://crates.io/api/v1/crates/hashlink/0.10.0
+- Size: 29402 bytes
+- SHA-256: `7382cf6263419f2d8df38c55d7da83da5c18aef87fc7a7fc1fb1e344edfe14c1`
+- Publisher file: https://static.crates.io/crates/hashlink/0.10.0/download
+
+## heck 0.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_heck_0_5_0`
+- Version: 0.5.0
+- License: MIT OR Apache-2.0
+- Attribution: Original heck package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/heck/0.5.0
+- Size: 11517 bytes
+- SHA-256: `2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea`
+- Publisher file: https://static.crates.io/crates/heck/0.5.0/download
+
+## hex 0.4.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hex_0_4_3`
+- Version: 0.4.3
+- License: MIT OR Apache-2.0
+- Attribution: KokaKiwi <kokakiwi@kokakiwi.net>
+- License proof: https://crates.io/api/v1/crates/hex/0.4.3
+- Size: 13299 bytes
+- SHA-256: `7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70`
+- Publisher file: https://static.crates.io/crates/hex/0.4.3/download
+
+## hkdf 0.12.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hkdf_0_12_4`
+- Version: 0.12.4
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/hkdf/0.12.4
+- Size: 171163 bytes
+- SHA-256: `7b5f8eb2ad728638ea2c7d47a21db23b7b58a72ed6a38256b8a1849f15fbbdf7`
+- Publisher file: https://static.crates.io/crates/hkdf/0.12.4/download
+
+## hmac 0.12.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hmac_0_12_1`
+- Version: 0.12.1
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/hmac/0.12.1
+- Size: 42657 bytes
+- SHA-256: `6c49c37c09c17a53d937dfbb742eb3a961d65a994e6bcdcf37e7399d0cc8ab5e`
+- Publisher file: https://static.crates.io/crates/hmac/0.12.1/download
+
+## hostname-validator 1.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_hostname_validator_1_1_1`
+- Version: 1.1.1
+- License: MIT
+- Attribution: Original hostname-validator package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/hostname-validator/1.1.1
+- Size: 2377 bytes
+- SHA-256: `f558a64ac9af88b5ba400d99b579451af0d39c6d360980045b91aac966d705e2`
+- Publisher file: https://static.crates.io/crates/hostname-validator/1.1.1/download
+
+## http 1.4.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_http_1_4_2`
+- Version: 1.4.2
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Carl Lerche <me@carllerche.com>; Sean McArthur <sean@seanmonstar.com>
+- License proof: https://crates.io/api/v1/crates/http/1.4.2
+- Size: 110471 bytes
+- SHA-256: `6970f50e31d6fc17d3fa27329444bfa74e196cf62e95052a3f6fee181dba6425`
+- Publisher file: https://static.crates.io/crates/http/1.4.2/download
+
+## httparse 1.10.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_httparse_1_10_1`
+- Version: 1.10.1
+- License: MIT OR Apache-2.0
+- Attribution: Sean McArthur <sean@seanmonstar.com>
+- License proof: https://crates.io/api/v1/crates/httparse/1.10.1
+- Size: 45190 bytes
+- SHA-256: `6dbf3de79e51f3d586ab4cb9d5c3e2c14aa28ed23d180cf89b4df0454a69cc87`
+- Publisher file: https://static.crates.io/crates/httparse/1.10.1/download
+
+## httpdate 1.0.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_httpdate_1_0_3`
+- Version: 1.0.3
+- License: MIT OR Apache-2.0
+- Attribution: Pyfisch <pyfisch@posteo.org>
+- License proof: https://crates.io/api/v1/crates/httpdate/1.0.3
+- Size: 10639 bytes
+- SHA-256: `df3b46402a9d5adb4c86a0cf463f42e19994e3ee891101b1841f30a545cb49a9`
+- Publisher file: https://static.crates.io/crates/httpdate/1.0.3/download
+
+## humantime 2.4.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_humantime_2_4_0`
+- Version: 2.4.0
+- License: MIT OR Apache-2.0
+- Attribution: Original humantime package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/humantime/2.4.0
+- Size: 23251 bytes
+- SHA-256: `15cdd26707701c53297e2fa6afb323d55fbc1d0810c3aec078ae3ef0424c3c15`
+- Publisher file: https://static.crates.io/crates/humantime/2.4.0/download
+
+## humantime-serde 1.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_humantime_serde_1_1_1`
+- Version: 1.1.1
+- License: MIT OR Apache-2.0
+- Attribution: jean-airoldie <maxence.caron@protonmail.com>
+- License proof: https://crates.io/api/v1/crates/humantime-serde/1.1.1
+- Size: 7886 bytes
+- SHA-256: `57a3db5ea5923d99402c94e9feb261dc5ee9b4efa158b0315f788cf549cc200c`
+- Publisher file: https://static.crates.io/crates/humantime-serde/1.1.1/download
+
+## iana-time-zone 0.1.65 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_iana_time_zone_0_1_65`
+- Version: 0.1.65
+- License: MIT OR Apache-2.0
+- Attribution: Andrew Straw <strawman@astraw.com>; René Kijewski <rene.kijewski@fu-berlin.de>; Ryan Lopopolo <rjl@hyperbo.la>
+- License proof: https://crates.io/api/v1/crates/iana-time-zone/0.1.65
+- Size: 34079 bytes
+- SHA-256: `e31bc9ad994ba00e440a8aa5c9ef0ec67d5cb5e5cb0cc7f8b744a35b389cc470`
+- Publisher file: https://static.crates.io/crates/iana-time-zone/0.1.65/download
+
+## iana-time-zone-haiku 0.1.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_iana_time_zone_haiku_0_1_2`
+- Version: 0.1.2
+- License: MIT OR Apache-2.0
+- Attribution: René Kijewski <crates.io@k6i.de>
+- License proof: https://crates.io/api/v1/crates/iana-time-zone-haiku/0.1.2
+- Size: 7185 bytes
+- SHA-256: `f31827a206f56af32e590ba56d5d2d085f558508192593743f16b2306495269f`
+- Publisher file: https://static.crates.io/crates/iana-time-zone-haiku/0.1.2/download
+
+## ident_case 1.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ident_case_1_0_1`
+- Version: 1.0.1
+- License: MIT/Apache-2.0
+- Attribution: Ted Driggs <ted.driggs@outlook.com>
+- License proof: https://crates.io/api/v1/crates/ident_case/1.0.1
+- Size: 3492 bytes
+- SHA-256: `b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39`
+- Publisher file: https://static.crates.io/crates/ident_case/1.0.1/download
+
+## indexmap 1.9.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_indexmap_1_9_3`
+- Version: 1.9.3
+- License: Apache-2.0 OR MIT
+- Attribution: Original indexmap package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/indexmap/1.9.3
+- Size: 54653 bytes
+- SHA-256: `bd070e393353796e801d209ad339e89596eb4c8d430d18ede6a1cced8fafbd99`
+- Publisher file: https://static.crates.io/crates/indexmap/1.9.3/download
+
+## indexmap 2.14.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_indexmap_2_14_0`
+- Version: 2.14.0
+- License: Apache-2.0 OR MIT
+- Attribution: Original indexmap package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/indexmap/2.14.0
+- Size: 104085 bytes
+- SHA-256: `d466e9454f08e4a911e14806c24e16fba1b4c121d1ea474396f396069cf949d9`
+- Publisher file: https://static.crates.io/crates/indexmap/2.14.0/download
+
+## inotify 0.11.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_inotify_0_11_4`
+- Version: 0.11.4
+- License: ISC
+- Attribution: Original inotify package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/inotify/0.11.4
+- Size: 30209 bytes
+- SHA-256: `153be1941a183ec9ccd095ddbe17a8b8d435ef6c76e9e02451b933c3999af2c8`
+- Publisher file: https://static.crates.io/crates/inotify/0.11.4/download
+
+## inotify-sys 0.1.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_inotify_sys_0_1_8`
+- Version: 0.1.8
+- License: ISC
+- Attribution: Hanno Braun <hb@hannobraun.de>
+- License proof: https://crates.io/api/v1/crates/inotify-sys/0.1.8
+- Size: 8411 bytes
+- SHA-256: `c033f80b2c113cdf91ab7a33faa9cbc014726dcad99880c8609af2a370edf37d`
+- Publisher file: https://static.crates.io/crates/inotify-sys/0.1.8/download
+
+## inout 0.1.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_inout_0_1_4`
+- Version: 0.1.4
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/inout/0.1.4
+- Size: 11280 bytes
+- SHA-256: `879f10e63c20629ecabbb64a8010319738c66a5cd0c29b02d63d272b03751d01`
+- Publisher file: https://static.crates.io/crates/inout/0.1.4/download
+
+## inventory 0.3.24 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_inventory_0_3_24`
+- Version: 0.3.24
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/inventory/0.3.24
+- Size: 16226 bytes
+- SHA-256: `a4f0c30c76f2f4ccee3fe55a2435f691ca00c0e4bd87abe4f4a851b1d4dac39b`
+- Publisher file: https://static.crates.io/crates/inventory/0.3.24/download
+
+## itertools 0.13.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_itertools_0_13_0`
+- Version: 0.13.0
+- License: MIT OR Apache-2.0
+- Attribution: bluss
+- License proof: https://crates.io/api/v1/crates/itertools/0.13.0
+- Size: 146261 bytes
+- SHA-256: `413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186`
+- Publisher file: https://static.crates.io/crates/itertools/0.13.0/download
+
+## itertools 0.14.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_itertools_0_14_0`
+- Version: 0.14.0
+- License: MIT OR Apache-2.0
+- Attribution: bluss
+- License proof: https://crates.io/api/v1/crates/itertools/0.14.0
+- Size: 152715 bytes
+- SHA-256: `2b192c782037fadd9cfa75548310488aabdbf3d2da73885b31bd0abd03351285`
+- Publisher file: https://static.crates.io/crates/itertools/0.14.0/download
+
+## itertools 0.15.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_itertools_0_15_0`
+- Version: 0.15.0
+- License: MIT OR Apache-2.0
+- Attribution: bluss
+- License proof: https://crates.io/api/v1/crates/itertools/0.15.0
+- Size: 164131 bytes
+- SHA-256: `8b4baf93f58d4425749ca49a51c50ebab072c5df6994d08fed93541c331481dc`
+- Publisher file: https://static.crates.io/crates/itertools/0.15.0/download
+
+## itoa 1.0.18 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_itoa_1_0_18`
+- Version: 1.0.18
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/itoa/1.0.18
+- Size: 15935 bytes
+- SHA-256: `8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682`
+- Publisher file: https://static.crates.io/crates/itoa/1.0.18/download
+
+## jni 0.21.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_jni_0_21_1`
+- Version: 0.21.1
+- License: MIT/Apache-2.0
+- Attribution: Josh Chase <josh@prevoty.com>
+- License proof: https://crates.io/api/v1/crates/jni/0.21.1
+- Size: 105028 bytes
+- SHA-256: `1a87aa2bb7d2af34197c04845522473242e1aa17c12f4935d5856491a7fb8c97`
+- Publisher file: https://static.crates.io/crates/jni/0.21.1/download
+
+## jni-sys 0.3.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_jni_sys_0_3_1`
+- Version: 0.3.1
+- License: MIT OR Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/jni-sys/0.3.1
+- Size: 11570 bytes
+- SHA-256: `41a652e1f9b6e0275df1f15b32661cf0d4b78d4d87ddec5e0c3c20f097433258`
+- Publisher file: https://static.crates.io/crates/jni-sys/0.3.1/download
+
+## jni-sys 0.4.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_jni_sys_0_4_1`
+- Version: 0.4.1
+- License: MIT OR Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>; Robert Bragg <robert@sixbynine.org>
+- License proof: https://crates.io/api/v1/crates/jni-sys/0.4.1
+- Size: 13249 bytes
+- SHA-256: `c6377a88cb3910bee9b0fa88d4f42e1d2da8e79915598f65fb0c7ee14c878af2`
+- Publisher file: https://static.crates.io/crates/jni-sys/0.4.1/download
+
+## jni-sys-macros 0.4.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_jni_sys_macros_0_4_1`
+- Version: 0.4.1
+- License: MIT OR Apache-2.0
+- Attribution: Robert Bragg <robert@sixbynine.org>
+- License proof: https://crates.io/api/v1/crates/jni-sys-macros/0.4.1
+- Size: 3301 bytes
+- SHA-256: `38c0b942f458fe50cdac086d2f946512305e5631e720728f2a61aabcd47a6264`
+- Publisher file: https://static.crates.io/crates/jni-sys-macros/0.4.1/download
+
+## jobserver 0.1.35 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_jobserver_0_1_35`
+- Version: 0.1.35
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/jobserver/0.1.35
+- Size: 28890 bytes
+- SHA-256: `1c00acbd29eabad4a2392fa0e921c874934dbbf4194312ad20f04a0ed67a3cb3`
+- Publisher file: https://static.crates.io/crates/jobserver/0.1.35/download
+
+## js-sys 0.3.103 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_js_sys_0_3_103`
+- Version: 0.3.103
+- License: MIT OR Apache-2.0
+- Attribution: The wasm-bindgen Developers
+- License proof: https://crates.io/api/v1/crates/js-sys/0.3.103
+- Size: 108366 bytes
+- SHA-256: `53b44bfcdb3f8d5837a46dae1ca9660a837176eee74a28b229bc626816589102`
+- Publisher file: https://static.crates.io/crates/js-sys/0.3.103/download
+
+## keccak 0.1.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_keccak_0_1_6`
+- Version: 0.1.6
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/keccak/0.1.6
+- Size: 13529 bytes
+- SHA-256: `cb26cec98cce3a3d96cbb7bced3c4b16e3d13f27ec56dbd62cbc8f39cfb9d653`
+- Publisher file: https://static.crates.io/crates/keccak/0.1.6/download
+
+## kqueue 1.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_kqueue_1_2_0`
+- Version: 1.2.0
+- License: MIT
+- Attribution: William Orr <will@worrbase.com>
+- License proof: https://crates.io/api/v1/crates/kqueue/1.2.0
+- Size: 28412 bytes
+- SHA-256: `273c0752728918e0ac4976f2b275b6fefb9ecd400585dec929419f3844cd87b5`
+- Publisher file: https://static.crates.io/crates/kqueue/1.2.0/download
+
+## kqueue-sys 1.1.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_kqueue_sys_1_1_2`
+- Version: 1.1.2
+- License: MIT
+- Attribution: William Orr <will@worrbase.com>; Daniel (dmilith) Dettlaff <dmilith@me.com>
+- License proof: https://crates.io/api/v1/crates/kqueue-sys/1.1.2
+- Size: 8796 bytes
+- SHA-256: `07293a4e297ac234359b510362495713f75ea345d5307140414f20c69ffeb087`
+- Publisher file: https://static.crates.io/crates/kqueue-sys/1.1.2/download
+
+## lazy_static 1.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_lazy_static_1_5_0`
+- Version: 1.5.0
+- License: MIT OR Apache-2.0
+- Attribution: Marvin Löbel <loebel.marvin@gmail.com>
+- License proof: https://crates.io/api/v1/crates/lazy_static/1.5.0
+- Size: 14025 bytes
+- SHA-256: `bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe`
+- Publisher file: https://static.crates.io/crates/lazy_static/1.5.0/download
+
+## libc 0.2.189 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_libc_0_2_189`
+- Version: 0.2.189
+- License: MIT OR Apache-2.0
+- Attribution: Original libc package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/libc/0.2.189
+- Size: 851502 bytes
+- SHA-256: `3eaf3ede3fee6db1a4c2ee091bf8a8b4dccdc6d17f656fb07896ee72867612f2`
+- Publisher file: https://static.crates.io/crates/libc/0.2.189/download
+
+## liblzma 0.4.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_liblzma_0_4_7`
+- Version: 0.4.7
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Portable-Network-Archive Developers
+- License proof: https://crates.io/api/v1/crates/liblzma/0.4.7
+- Size: 38481 bytes
+- SHA-256: `45aec2360b3933207e27908049d8e4df4e476b58180afb1e56b2a4fb72efe4ba`
+- Publisher file: https://static.crates.io/crates/liblzma/0.4.7/download
+
+## liblzma-sys 0.4.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_liblzma_sys_0_4_7`
+- Version: 0.4.7
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Portable-Network-Archive Developers
+- License proof: https://crates.io/api/v1/crates/liblzma-sys/0.4.7
+- Size: 1625409 bytes
+- SHA-256: `a046c7f353ba30f810545151e04f63545833803f5b86ee3ddf1517247fe560a5`
+- Publisher file: https://static.crates.io/crates/liblzma-sys/0.4.7/download
+
+## libm 0.2.16 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_libm_0_2_16`
+- Version: 0.2.16
+- License: MIT
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Amanieu d'Antras <amanieu@gmail.com>; Jorge Aparicio <japaricious@gmail.com>; Trevor Gross <tg@trevorgross.com>
+- License proof: https://crates.io/api/v1/crates/libm/0.2.16
+- Size: 164243 bytes
+- SHA-256: `b6d2cec3eae94f9f509c767b45932f1ada8350c4bdb85af2fcab4a3c14807981`
+- Publisher file: https://static.crates.io/crates/libm/0.2.16/download
+
+## libredox 0.1.18 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_libredox_0_1_18`
+- Version: 0.1.18
+- License: MIT
+- Attribution: 4lDO2 <4lDO2@protonmail.com>
+- License proof: https://crates.io/api/v1/crates/libredox/0.1.18
+- Size: 9737 bytes
+- SHA-256: `c943259e342f1e06ff2da7a83eabdfe7f92ce10262688dbf1895ff0b3e6e4652`
+- Publisher file: https://static.crates.io/crates/libredox/0.1.18/download
+
+## libsqlite3-sys 0.35.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_libsqlite3_sys_0_35_0`
+- Version: 0.35.0
+- License: MIT
+- Attribution: The rusqlite developers
+- License proof: https://crates.io/api/v1/crates/libsqlite3-sys/0.35.0
+- Size: 5200364 bytes
+- SHA-256: `133c182a6a2c87864fe97778797e46c7e999672690dc9fa3ee8e241aa4a9c13f`
+- Publisher file: https://static.crates.io/crates/libsqlite3-sys/0.35.0/download
+
+## linux-raw-sys 0.12.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_linux_raw_sys_0_12_1`
+- Version: 0.12.1
+- License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+- Attribution: Dan Gohman <dev@sunfishcode.online>
+- License proof: https://crates.io/api/v1/crates/linux-raw-sys/0.12.1
+- Size: 3006116 bytes
+- SHA-256: `32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53`
+- Publisher file: https://static.crates.io/crates/linux-raw-sys/0.12.1/download
+
+## lock_api 0.4.14 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_lock_api_0_4_14`
+- Version: 0.4.14
+- License: MIT OR Apache-2.0
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/lock_api/0.4.14
+- Size: 29249 bytes
+- SHA-256: `224399e74b87b5f3557511d98dff8b14089b3dadafcab6bb93eab67d3aace965`
+- Publisher file: https://static.crates.io/crates/lock_api/0.4.14/download
+
+## log 0.4.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_log_0_4_33`
+- Version: 0.4.33
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/log/0.4.33
+- Size: 52997 bytes
+- SHA-256: `0ceec5bc11778974d1bcb055b18002eba7f4b3518b6a0081b3af5f21666da9ad`
+- Publisher file: https://static.crates.io/crates/log/0.4.33/download
+
+## matchers 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_matchers_0_2_0`
+- Version: 0.2.0
+- License: MIT
+- Attribution: Eliza Weisman <eliza@buoyant.io>
+- License proof: https://crates.io/api/v1/crates/matchers/0.2.0
+- Size: 7075 bytes
+- SHA-256: `d1525a2a28c7f4fa0fc98bb91ae755d1e2d1505079e05539e35bc876b5d65ae9`
+- Publisher file: https://static.crates.io/crates/matchers/0.2.0/download
+
+## memchr 2.8.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_memchr_2_8_3`
+- Version: 2.8.3
+- License: Unlicense OR MIT
+- Attribution: Andrew Gallant <jamslam@gmail.com>; bluss
+- License proof: https://crates.io/api/v1/crates/memchr/2.8.3
+- Size: 99165 bytes
+- SHA-256: `cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98`
+- Publisher file: https://static.crates.io/crates/memchr/2.8.3/download
+
+## memmap2 0.9.11 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_memmap2_0_9_11`
+- Version: 0.9.11
+- License: MIT OR Apache-2.0
+- Attribution: Dan Burkert <dan@danburkert.com>; Yevhenii Reizner <razrfalcon@gmail.com>; The Contributors
+- License proof: https://crates.io/api/v1/crates/memmap2/0.9.11
+- Size: 35116 bytes
+- SHA-256: `d1219ed1b7f229ee7104d281dd01d6802fe28bb6e95d292942c4daacdeb798c0`
+- Publisher file: https://static.crates.io/crates/memmap2/0.9.11/download
+
+## merlin 3.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_merlin_3_0_0`
+- Version: 3.0.0
+- License: MIT
+- Attribution: Henry de Valence <hdevalence@hdevalence.ca>
+- License proof: https://crates.io/api/v1/crates/merlin/3.0.0
+- Size: 10964 bytes
+- SHA-256: `58c38e2799fc0978b65dfff8023ec7843e2330bb462f19198840b34b6582397d`
+- Publisher file: https://static.crates.io/crates/merlin/3.0.0/download
+
+## minimal-lexical 0.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_minimal_lexical_0_2_1`
+- Version: 0.2.1
+- License: MIT/Apache-2.0
+- Attribution: Alex Huszagh <ahuszagh@gmail.com>
+- License proof: https://crates.io/api/v1/crates/minimal-lexical/0.2.1
+- Size: 94841 bytes
+- SHA-256: `68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a`
+- Publisher file: https://static.crates.io/crates/minimal-lexical/0.2.1/download
+
+## miniz_oxide 0.8.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_miniz_oxide_0_8_9`
+- Version: 0.8.9
+- License: MIT OR Zlib OR Apache-2.0
+- Attribution: Frommi <daniil.liferenko@gmail.com>; oyvindln <oyvindln@users.noreply.github.com>; Rich Geldreich richgel99@gmail.com
+- License proof: https://crates.io/api/v1/crates/miniz_oxide/0.8.9
+- Size: 67132 bytes
+- SHA-256: `1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316`
+- Publisher file: https://static.crates.io/crates/miniz_oxide/0.8.9/download
+
+## mio 1.2.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_mio_1_2_2`
+- Version: 1.2.2
+- License: MIT
+- Attribution: Carl Lerche <me@carllerche.com>; Thomas de Zeeuw <thomasdezeeuw@gmail.com>; Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/mio/1.2.2
+- Size: 111363 bytes
+- SHA-256: `30d65c71f1ce40ab09135ce117d742b9f8a19ff91a41a8b57ed50bc2de59c427`
+- Publisher file: https://static.crates.io/crates/mio/1.2.2/download
+
+## native-tls 0.2.18 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_native_tls_0_2_18`
+- Version: 0.2.18
+- License: MIT OR Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/native-tls/0.2.18
+- Size: 29967 bytes
+- SHA-256: `465500e14ea162429d264d44189adc38b199b62b1c21eea9f69e4b73cb03bbf2`
+- Publisher file: https://static.crates.io/crates/native-tls/0.2.18/download
+
+## nom 7.1.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_nom_7_1_3`
+- Version: 7.1.3
+- License: MIT
+- Attribution: contact@geoffroycouprie.com
+- License proof: https://crates.io/api/v1/crates/nom/7.1.3
+- Size: 117570 bytes
+- SHA-256: `d273983c5a657a70a3e8f2a01329822f3b8c8172b73826411a55751e404a0a4a`
+- Publisher file: https://static.crates.io/crates/nom/7.1.3/download
+
+## nonany 0.3.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_nonany_0_3_0`
+- Version: 0.3.0
+- License: MIT OR Apache-2.0
+- Attribution: Rick de Water
+- License proof: https://crates.io/api/v1/crates/nonany/0.3.0
+- Size: 13676 bytes
+- SHA-256: `f6b8866ec53810a9a4b3d434a29801e78c707430a9ae11c2db4b8b62bb9675a0`
+- Publisher file: https://static.crates.io/crates/nonany/0.3.0/download
+
+## notify 8.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_notify_8_2_0`
+- Version: 8.2.0
+- License: CC0-1.0
+- Attribution: Félix Saparelli <me@passcod.name>; Daniel Faust <hessijames@gmail.com>; Aron Heinecke <Ox0p54r36@t-online.de>
+- License proof: https://crates.io/api/v1/crates/notify/8.2.0
+- Size: 39067 bytes
+- SHA-256: `4d3d07927151ff8575b7087f245456e549fea62edf0ec4e565a5ee50c8402bc3`
+- Publisher file: https://static.crates.io/crates/notify/8.2.0/download
+
+## notify-types 2.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_notify_types_2_1_0`
+- Version: 2.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Daniel Faust <hessijames@gmail.com>
+- License proof: https://crates.io/api/v1/crates/notify-types/2.1.0
+- Size: 22796 bytes
+- SHA-256: `42b8cfee0e339a0337359f3c88165702ac6e600dc01c0cc9579a92d62b08477a`
+- Publisher file: https://static.crates.io/crates/notify-types/2.1.0/download
+
+## ntapi 0.4.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ntapi_0_4_3`
+- Version: 0.4.3
+- License: Apache-2.0 OR MIT
+- Attribution: MSxDOS <melcodos@gmail.com>
+- License proof: https://crates.io/api/v1/crates/ntapi/0.4.3
+- Size: 127190 bytes
+- SHA-256: `c3b335231dfd352ffb0f8017f3b6027a4917f7df785ea2143d8af2adc66980ae`
+- Publisher file: https://static.crates.io/crates/ntapi/0.4.3/download
+
+## nu-ansi-term 0.50.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_nu_ansi_term_0_50_3`
+- Version: 0.50.3
+- License: MIT
+- Attribution: ogham@bsago.me; Ryan Scheel (Havvy) <ryan.havvy@gmail.com>; Josh Triplett <josh@joshtriplett.org>; The Nushell Project Developers
+- License proof: https://crates.io/api/v1/crates/nu-ansi-term/0.50.3
+- Size: 29597 bytes
+- SHA-256: `7957b9740744892f114936ab4a57b3f487491bbeafaf8083688b16841a4240e5`
+- Publisher file: https://static.crates.io/crates/nu-ansi-term/0.50.3/download
+
+## num-bigint 0.4.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_bigint_0_4_8`
+- Version: 0.4.8
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/num-bigint/0.4.8
+- Size: 109961 bytes
+- SHA-256: `c89e69e7e0f03bea5ef08013795c25018e101932225a656383bd384495ecc367`
+- Publisher file: https://static.crates.io/crates/num-bigint/0.4.8/download
+
+## num-bigint-dig 0.8.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_bigint_dig_0_8_6`
+- Version: 0.8.6
+- License: MIT/Apache-2.0
+- Attribution: dignifiedquire <dignifiedquire@gmail.com>; The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/num-bigint-dig/0.8.6
+- Size: 126196 bytes
+- SHA-256: `e661dda6640fad38e827a6d4a310ff4763082116fe217f279885c97f511bb0b7`
+- Publisher file: https://static.crates.io/crates/num-bigint-dig/0.8.6/download
+
+## num-conv 0.2.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_conv_0_2_2`
+- Version: 0.2.2
+- License: MIT OR Apache-2.0
+- Attribution: Jacob Pratt <jacob@jhpratt.dev>
+- License proof: https://crates.io/api/v1/crates/num-conv/0.2.2
+- Size: 7441 bytes
+- SHA-256: `521739c6d2bac4aa25192232afe6841231376b2b26d4d9fae5ecf8ca5772e441`
+- Publisher file: https://static.crates.io/crates/num-conv/0.2.2/download
+
+## num_enum 0.7.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_enum_0_7_6`
+- Version: 0.7.6
+- License: BSD-3-Clause OR MIT OR Apache-2.0
+- Attribution: Daniel Wagner-Hall <dawagner@gmail.com>; Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>; Vincent Esche <regexident@gmail.com>
+- License proof: https://crates.io/api/v1/crates/num_enum/0.7.6
+- Size: 21741 bytes
+- SHA-256: `5d0bca838442ec211fa11de3a8b0e0e8f3a4522575b5c4c06ed722e005036f26`
+- Publisher file: https://static.crates.io/crates/num_enum/0.7.6/download
+
+## num_enum_derive 0.7.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_enum_derive_0_7_6`
+- Version: 0.7.6
+- License: BSD-3-Clause OR MIT OR Apache-2.0
+- Attribution: Daniel Wagner-Hall <dawagner@gmail.com>; Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>; Vincent Esche <regexident@gmail.com>
+- License proof: https://crates.io/api/v1/crates/num_enum_derive/0.7.6
+- Size: 18789 bytes
+- SHA-256: `680998035259dcfcafe653688bf2aa6d3e2dc05e98be6ab46afb089dc84f1df8`
+- Publisher file: https://static.crates.io/crates/num_enum_derive/0.7.6/download
+
+## num-integer 0.1.46 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_integer_0_1_46`
+- Version: 0.1.46
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/num-integer/0.1.46
+- Size: 22331 bytes
+- SHA-256: `7969661fd2958a5cb096e56c8e1ad0444ac2bbcd0061bd28660485a44879858f`
+- Publisher file: https://static.crates.io/crates/num-integer/0.1.46/download
+
+## num-iter 0.1.46 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_iter_0_1_46`
+- Version: 0.1.46
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/num-iter/0.1.46
+- Size: 10763 bytes
+- SHA-256: `c92800bd69a1eac91786bcfe9da64a897eb72911b8dc3095decbd07429e8048b`
+- Publisher file: https://static.crates.io/crates/num-iter/0.1.46/download
+
+## num-traits 0.2.19 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_num_traits_0_2_19`
+- Version: 0.2.19
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/num-traits/0.2.19
+- Size: 51631 bytes
+- SHA-256: `071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841`
+- Publisher file: https://static.crates.io/crates/num-traits/0.2.19/download
+
+## objc2-core-foundation 0.3.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_objc2_core_foundation_0_3_2`
+- Version: 0.3.2
+- License: Zlib OR Apache-2.0 OR MIT
+- Attribution: Original objc2-core-foundation package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/objc2-core-foundation/0.3.2
+- Size: 180804 bytes
+- SHA-256: `2a180dd8642fa45cdb7dd721cd4c11b1cadd4929ce112ebd8b9f5803cc79d536`
+- Publisher file: https://static.crates.io/crates/objc2-core-foundation/0.3.2/download
+
+## objc2-io-kit 0.3.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_objc2_io_kit_0_3_2`
+- Version: 0.3.2
+- License: Zlib OR Apache-2.0 OR MIT
+- Attribution: Original objc2-io-kit package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/objc2-io-kit/0.3.2
+- Size: 262569 bytes
+- SHA-256: `33fafba39597d6dc1fb709123dfa8289d39406734be322956a69f0931c73bb15`
+- Publisher file: https://static.crates.io/crates/objc2-io-kit/0.3.2/download
+
+## once_cell 1.21.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_once_cell_1_21_4`
+- Version: 1.21.4
+- License: MIT OR Apache-2.0
+- Attribution: Aleksey Kladov <aleksey.kladov@gmail.com>
+- License proof: https://crates.io/api/v1/crates/once_cell/1.21.4
+- Size: 35010 bytes
+- SHA-256: `9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50`
+- Publisher file: https://static.crates.io/crates/once_cell/1.21.4/download
+
+## oorandom 11.1.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_oorandom_11_1_5`
+- Version: 11.1.5
+- License: MIT
+- Attribution: Simon Heath <icefox@dreamquest.io>
+- License proof: https://crates.io/api/v1/crates/oorandom/11.1.5
+- Size: 23750 bytes
+- SHA-256: `d6790f58c7ff633d8771f42965289203411a5e5c68388703c06e14f24770b41e`
+- Publisher file: https://static.crates.io/crates/oorandom/11.1.5/download
+
+## openssl 0.10.81 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_openssl_0_10_81`
+- Version: 0.10.81
+- License: Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/openssl/0.10.81
+- Size: 311187 bytes
+- SHA-256: `77823a27f0babb03091cb9ed9ef80af3b39dbc82f97e8fa530374b7dafd87a45`
+- Publisher file: https://static.crates.io/crates/openssl/0.10.81/download
+
+## openssl-macros 0.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_openssl_macros_0_1_1`
+- Version: 0.1.1
+- License: MIT/Apache-2.0
+- Attribution: Original openssl-macros package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/openssl-macros/0.1.1
+- Size: 5601 bytes
+- SHA-256: `a948666b637a0f465e8564c73e89d4dde00d72d4d473cc972f390fc3dcee7d9c`
+- Publisher file: https://static.crates.io/crates/openssl-macros/0.1.1/download
+
+## openssl-probe 0.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_openssl_probe_0_2_1`
+- Version: 0.2.1
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/openssl-probe/0.2.1
+- Size: 9155 bytes
+- SHA-256: `7c87def4c32ab89d880effc9e097653c8da5d6ef28e6b539d313baaacfbafcbe`
+- Publisher file: https://static.crates.io/crates/openssl-probe/0.2.1/download
+
+## openssl-src 300.6.1+3.6.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_openssl_src_300_6_1_3_6_3`
+- Version: 300.6.1+3.6.3
+- License: MIT/Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/openssl-src/300.6.1+3.6.3
+- Size: 7195821 bytes
+- SHA-256: `46eb8fb9fb3b61ce1c0f8a026c4c1a0714d3a9e138e7fbde78753ce2babc3846`
+- Publisher file: https://static.crates.io/crates/openssl-src/300.6.1+3.6.3/download
+
+## openssl-sys 0.9.117 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_openssl_sys_0_9_117`
+- Version: 0.9.117
+- License: MIT
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/openssl-sys/0.9.117
+- Size: 76045 bytes
+- SHA-256: `b47e7e6bb2c38cd930d25a23b40fa52e068c10e85f3e03a7f5ba5aaca5713695`
+- Publisher file: https://static.crates.io/crates/openssl-sys/0.9.117/download
+
+## option-ext 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_option_ext_0_2_0`
+- Version: 0.2.0
+- License: MPL-2.0
+- Attribution: Simon Ochsenreither <simon@ochsenreither.de>
+- License proof: https://crates.io/api/v1/crates/option-ext/0.2.0
+- Size: 7345 bytes
+- SHA-256: `04744f49eae99ab78e0d5c0b603ab218f515ea8cfe5a456d7629ad883a3b6e7d`
+- Publisher file: https://static.crates.io/crates/option-ext/0.2.0/download
+
+## ordered-float 2.10.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ordered_float_2_10_1`
+- Version: 2.10.1
+- License: MIT
+- Attribution: Jonathan Reem <jonathan.reem@gmail.com>; Matt Brubeck <mbrubeck@limpet.net>
+- License proof: https://crates.io/api/v1/crates/ordered-float/2.10.1
+- Size: 16029 bytes
+- SHA-256: `68f19d67e5a2795c94e73e0bb1cc1a7edeb2e28efd39e2e1c9b7a40c1108b11c`
+- Publisher file: https://static.crates.io/crates/ordered-float/2.10.1/download
+
+## os_str_bytes 6.6.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_os_str_bytes_6_6_1`
+- Version: 6.6.1
+- License: MIT OR Apache-2.0
+- Attribution: dylni
+- License proof: https://crates.io/api/v1/crates/os_str_bytes/6.6.1
+- Size: 27643 bytes
+- SHA-256: `e2355d85b9a3786f481747ced0e0ff2ba35213a1f9bd406ed906554d7af805a1`
+- Publisher file: https://static.crates.io/crates/os_str_bytes/6.6.1/download
+
+## p256 0.13.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_p256_0_13_2`
+- Version: 0.13.2
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/p256/0.13.2
+- Size: 63434 bytes
+- SHA-256: `c9863ad85fa8f4460f9c48cb909d38a0d689dba1f6f6988a5e3e0d31071bcd4b`
+- Publisher file: https://static.crates.io/crates/p256/0.13.2/download
+
+## p384 0.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_p384_0_13_1`
+- Version: 0.13.1
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers; Frank Denis <github@pureftpd.org>
+- License proof: https://crates.io/api/v1/crates/p384/0.13.1
+- Size: 193022 bytes
+- SHA-256: `fe42f1670a52a47d448f14b6a5c61dd78fce51856e68edaa38f7ae3a46b8d6b6`
+- Publisher file: https://static.crates.io/crates/p384/0.13.1/download
+
+## p521 0.13.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_p521_0_13_3`
+- Version: 0.13.3
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/p521/0.13.3
+- Size: 138499 bytes
+- SHA-256: `0fc9e2161f1f215afdfce23677034ae137bbd45016a880c2eb3ba8eb95f085b2`
+- Publisher file: https://static.crates.io/crates/p521/0.13.3/download
+
+## page_size 0.6.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_page_size_0_6_0`
+- Version: 0.6.0
+- License: MIT/Apache-2.0
+- Attribution: Philip Woods <elzairthesorcerer@gmail.com>
+- License proof: https://crates.io/api/v1/crates/page_size/0.6.0
+- Size: 8479 bytes
+- SHA-256: `30d5b2194ed13191c1999ae0704b7839fb18384fa22e49b57eeaa97d79ce40da`
+- Publisher file: https://static.crates.io/crates/page_size/0.6.0/download
+
+## parking 2.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_parking_2_2_1`
+- Version: 2.2.1
+- License: Apache-2.0 OR MIT
+- Attribution: Stjepan Glavina <stjepang@gmail.com>; The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/parking/2.2.1
+- Size: 10685 bytes
+- SHA-256: `f38d5652c16fde515bb1ecef450ab0f6a219d619a7274976324d5e377f7dceba`
+- Publisher file: https://static.crates.io/crates/parking/2.2.1/download
+
+## parking_lot 0.12.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_parking_lot_0_12_5`
+- Version: 0.12.5
+- License: MIT OR Apache-2.0
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/parking_lot/0.12.5
+- Size: 46735 bytes
+- SHA-256: `93857453250e3077bd71ff98b6a65ea6621a19bb0f559a85248955ac12c45a1a`
+- Publisher file: https://static.crates.io/crates/parking_lot/0.12.5/download
+
+## parking_lot_core 0.9.12 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_parking_lot_core_0_9_12`
+- Version: 0.9.12
+- License: MIT OR Apache-2.0
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/parking_lot_core/0.9.12
+- Size: 34110 bytes
+- SHA-256: `2621685985a2ebf1c516881c026032ac7deafcda1a2c9b7850dc81e3dfcb64c1`
+- Publisher file: https://static.crates.io/crates/parking_lot_core/0.9.12/download
+
+## paste 1.0.15 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_paste_1_0_15`
+- Version: 1.0.15
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/paste/1.0.15
+- Size: 18374 bytes
+- SHA-256: `57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a`
+- Publisher file: https://static.crates.io/crates/paste/1.0.15/download
+
+## pem-rfc7468 0.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pem_rfc7468_0_7_0`
+- Version: 0.7.0
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/pem-rfc7468/0.7.0
+- Size: 24159 bytes
+- SHA-256: `88b39c9bfcfc231068454382784bb460aae594343fb030d46e9f50a645418412`
+- Publisher file: https://static.crates.io/crates/pem-rfc7468/0.7.0/download
+
+## phf 0.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_phf_0_13_1`
+- Version: 0.13.1
+- License: MIT
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/phf/0.13.1
+- Size: 24786 bytes
+- SHA-256: `c1562dc717473dbaa4c1f85a36410e03c047b2e7df7f45ee938fbef64ae7fadf`
+- Publisher file: https://static.crates.io/crates/phf/0.13.1/download
+
+## phf_generator 0.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_phf_generator_0_13_1`
+- Version: 0.13.1
+- License: MIT
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/phf_generator/0.13.1
+- Size: 15952 bytes
+- SHA-256: `135ace3a761e564ec88c03a77317a7c6b80bb7f7135ef2544dbe054243b89737`
+- Publisher file: https://static.crates.io/crates/phf_generator/0.13.1/download
+
+## phf_macros 0.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_phf_macros_0_13_1`
+- Version: 0.13.1
+- License: MIT
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/phf_macros/0.13.1
+- Size: 21732 bytes
+- SHA-256: `812f032b54b1e759ccd5f8b6677695d5268c588701effba24601f6932f8269ef`
+- Publisher file: https://static.crates.io/crates/phf_macros/0.13.1/download
+
+## phf_shared 0.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_phf_shared_0_13_1`
+- Version: 0.13.1
+- License: MIT
+- Attribution: Steven Fackler <sfackler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/phf_shared/0.13.1
+- Size: 16141 bytes
+- SHA-256: `e57fef6bc5981e38c2ce2d63bfa546861309f875b8a75f092d1d54ae2d64f266`
+- Publisher file: https://static.crates.io/crates/phf_shared/0.13.1/download
+
+## pin-project 1.1.13 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pin_project_1_1_13`
+- Version: 1.1.13
+- License: Apache-2.0 OR MIT
+- Attribution: Original pin-project package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/pin-project/1.1.13
+- Size: 56345 bytes
+- SHA-256: `2466b2336ed02bcdca6b294417127b90ec92038d1d5c4fbeac971a922e0e0924`
+- Publisher file: https://static.crates.io/crates/pin-project/1.1.13/download
+
+## pin-project-internal 1.1.13 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pin_project_internal_1_1_13`
+- Version: 1.1.13
+- License: Apache-2.0 OR MIT
+- Attribution: Original pin-project-internal package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/pin-project-internal/1.1.13
+- Size: 29331 bytes
+- SHA-256: `c96395f0a926bc13b1c17622aaddda1ecb55d49c8f1bf9777e4d877800a43f8b`
+- Publisher file: https://static.crates.io/crates/pin-project-internal/1.1.13/download
+
+## pin-project-lite 0.2.17 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pin_project_lite_0_2_17`
+- Version: 0.2.17
+- License: Apache-2.0 OR MIT
+- Attribution: Original pin-project-lite package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/pin-project-lite/0.2.17
+- Size: 31034 bytes
+- SHA-256: `a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd`
+- Publisher file: https://static.crates.io/crates/pin-project-lite/0.2.17/download
+
+## pkcs1 0.7.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pkcs1_0_7_5`
+- Version: 0.7.5
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/pkcs1/0.7.5
+- Size: 35790 bytes
+- SHA-256: `c8ffb9f10fa047879315e6625af03c164b16962a5368d724ed16323b68ace47f`
+- Publisher file: https://static.crates.io/crates/pkcs1/0.7.5/download
+
+## pkcs8 0.10.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pkcs8_0_10_2`
+- Version: 0.10.2
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/pkcs8/0.10.2
+- Size: 26360 bytes
+- SHA-256: `f950b2377845cebe5cf8b5165cb3cc1a5e0fa5cfa3e1f7f55707d8fd82e0a7b7`
+- Publisher file: https://static.crates.io/crates/pkcs8/0.10.2/download
+
+## pkg-config 0.3.33 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pkg_config_0_3_33`
+- Version: 0.3.33
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/pkg-config/0.3.33
+- Size: 21590 bytes
+- SHA-256: `19f132c84eca552bf34cab8ec81f1c1dcc229b811638f9d283dceabe58c5569e`
+- Publisher file: https://static.crates.io/crates/pkg-config/0.3.33/download
+
+## plotters 0.3.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_plotters_0_3_7`
+- Version: 0.3.7
+- License: MIT
+- Attribution: Hao Hou <haohou302@gmail.com>
+- License proof: https://crates.io/api/v1/crates/plotters/0.3.7
+- Size: 149031 bytes
+- SHA-256: `5aeb6f403d7a4911efb1e33402027fc44f29b5bf6def3effcc22d7bb75f2b747`
+- Publisher file: https://static.crates.io/crates/plotters/0.3.7/download
+
+## plotters-backend 0.3.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_plotters_backend_0_3_7`
+- Version: 0.3.7
+- License: MIT
+- Attribution: Hao Hou <haohou302@gmail.com>
+- License proof: https://crates.io/api/v1/crates/plotters-backend/0.3.7
+- Size: 13709 bytes
+- SHA-256: `df42e13c12958a16b3f7f4386b9ab1f3e7933914ecea48da7139435263a4172a`
+- Publisher file: https://static.crates.io/crates/plotters-backend/0.3.7/download
+
+## plotters-svg 0.3.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_plotters_svg_0_3_7`
+- Version: 0.3.7
+- License: MIT
+- Attribution: Hao Hou <haohou302@gmail.com>
+- License proof: https://crates.io/api/v1/crates/plotters-svg/0.3.7
+- Size: 6715 bytes
+- SHA-256: `51bae2ac328883f7acdfea3d66a7c35751187f870bc81f94563733a154d7a670`
+- Publisher file: https://static.crates.io/crates/plotters-svg/0.3.7/download
+
+## postage 0.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_postage_0_5_0`
+- Version: 0.5.0
+- License: MIT
+- Attribution: Austin Jones <implAustin@gmail.com>
+- License proof: https://crates.io/api/v1/crates/postage/0.5.0
+- Size: 431521 bytes
+- SHA-256: `af3fb618632874fb76937c2361a7f22afd393c982a2165595407edc75b06d3c1`
+- Publisher file: https://static.crates.io/crates/postage/0.5.0/download
+
+## powerfmt 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_powerfmt_0_2_0`
+- Version: 0.2.0
+- License: MIT OR Apache-2.0
+- Attribution: Jacob Pratt <jacob@jhpratt.dev>
+- License proof: https://crates.io/api/v1/crates/powerfmt/0.2.0
+- Size: 15165 bytes
+- SHA-256: `439ee305def115ba05938db6eb1644ff94165c5ab5e9420d1c1bcedbba909391`
+- Publisher file: https://static.crates.io/crates/powerfmt/0.2.0/download
+
+## ppv-lite86 0.2.21 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ppv_lite86_0_2_21`
+- Version: 0.2.21
+- License: MIT OR Apache-2.0
+- Attribution: The CryptoCorrosion Contributors
+- License proof: https://crates.io/api/v1/crates/ppv-lite86/0.2.21
+- Size: 22522 bytes
+- SHA-256: `85eae3c4ed2f50dcfe72643da4befc30deadb458a9b590d720cde2f2b1e97da9`
+- Publisher file: https://static.crates.io/crates/ppv-lite86/0.2.21/download
+
+## primeorder 0.13.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_primeorder_0_13_6`
+- Version: 0.13.6
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/primeorder/0.13.6
+- Size: 21296 bytes
+- SHA-256: `353e1ca18966c16d9deb1c69278edbc5f194139612772bd9537af60ac231e1e6`
+- Publisher file: https://static.crates.io/crates/primeorder/0.13.6/download
+
+## priority-queue 2.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_priority_queue_2_7_0`
+- Version: 2.7.0
+- License: LGPL-3.0-or-later OR MPL-2.0
+- Attribution: Gianmarco Garrisi <gianmarcogarrisi@tutanota.com>
+- License proof: https://crates.io/api/v1/crates/priority-queue/2.7.0
+- Size: 51641 bytes
+- SHA-256: `93980406f12d9f8140ed5abe7155acb10bb1e69ea55c88960b9c2f117445ef96`
+- Publisher file: https://static.crates.io/crates/priority-queue/2.7.0/download
+
+## proc-macro2 1.0.107 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_proc_macro2_1_0_107`
+- Version: 1.0.107
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>; Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/proc-macro2/1.0.107
+- Size: 59588 bytes
+- SHA-256: `985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9`
+- Publisher file: https://static.crates.io/crates/proc-macro2/1.0.107/download
+
+## proc-macro-crate 3.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_proc_macro_crate_3_5_0`
+- Version: 3.5.0
+- License: MIT OR Apache-2.0
+- Attribution: Bastian Köcher <git@kchr.de>
+- License proof: https://crates.io/api/v1/crates/proc-macro-crate/3.5.0
+- Size: 12709 bytes
+- SHA-256: `e67ba7e9b2b56446f1d419b1d807906278ffa1a658a8a5d8a39dcb1f5a78614f`
+- Publisher file: https://static.crates.io/crates/proc-macro-crate/3.5.0/download
+
+## pwd-grp 1.0.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_pwd_grp_1_0_2`
+- Version: 1.0.2
+- License: MIT
+- Attribution: Ian Jackson <ijackson@chiark.greenend.org.uk>; and the contributors to Rust pwd-grp
+- License proof: https://crates.io/api/v1/crates/pwd-grp/1.0.2
+- Size: 45295 bytes
+- SHA-256: `0e2023f41b5fcb7c30eb5300a5733edfaa9e0e0d502d51b586f65633fd39e40c`
+- Publisher file: https://static.crates.io/crates/pwd-grp/1.0.2/download
+
+## quote 1.0.47 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_quote_1_0_47`
+- Version: 1.0.47
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/quote/1.0.47
+- Size: 31622 bytes
+- SHA-256: `1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001`
+- Publisher file: https://static.crates.io/crates/quote/1.0.47/download
+
+## r-efi 5.3.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_r_efi_5_3_0`
+- Version: 5.3.0
+- License: MIT OR Apache-2.0 OR LGPL-2.1-or-later
+- Attribution: Original r-efi package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/r-efi/5.3.0
+- Size: 64532 bytes
+- SHA-256: `69cdb34c158ceb288df11e18b4bd39de994f6657d83847bdffdbd7f346754b0f`
+- Publisher file: https://static.crates.io/crates/r-efi/5.3.0/download
+
+## r-efi 6.0.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_r_efi_6_0_0`
+- Version: 6.0.0
+- License: MIT OR Apache-2.0 OR LGPL-2.1-or-later
+- Attribution: Original r-efi package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/r-efi/6.0.0
+- Size: 65303 bytes
+- SHA-256: `f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf`
+- Publisher file: https://static.crates.io/crates/r-efi/6.0.0/download
+
+## radium 0.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_radium_0_7_0`
+- Version: 0.7.0
+- License: MIT
+- Attribution: Nika Layzell <nika@thelayzells.com>; myrrlyn <self@myrrlyn.dev>
+- License proof: https://crates.io/api/v1/crates/radium/0.7.0
+- Size: 10906 bytes
+- SHA-256: `dc33ff2d4973d518d823d61aa239014831e521c75da58e3df4840d3f47749d09`
+- Publisher file: https://static.crates.io/crates/radium/0.7.0/download
+
+## rand 0.8.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_0_8_7`
+- Version: 0.8.7
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers; The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/rand/0.8.7
+- Size: 84123 bytes
+- SHA-256: `22f6172bdec972074665ed81ed53b71da00bfc44b65a753cfde883ec4c702a1a`
+- Publisher file: https://static.crates.io/crates/rand/0.8.7/download
+
+## rand 0.9.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_0_9_5`
+- Version: 0.9.5
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers; The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/rand/0.9.5
+- Size: 100216 bytes
+- SHA-256: `b9ef1d0d795eb7d84685bca4f72f3649f064e6641543d3a8c415898726a57b41`
+- Publisher file: https://static.crates.io/crates/rand/0.9.5/download
+
+## rand_chacha 0.3.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_chacha_0_3_1`
+- Version: 0.3.1
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers; The Rust Project Developers; The CryptoCorrosion Contributors
+- License proof: https://crates.io/api/v1/crates/rand_chacha/0.3.1
+- Size: 15251 bytes
+- SHA-256: `e6c10a63a0fa32252be49d21e7709d4d4baf8d231c2dbce1eaa8141b9b127d88`
+- Publisher file: https://static.crates.io/crates/rand_chacha/0.3.1/download
+
+## rand_chacha 0.9.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_chacha_0_9_0`
+- Version: 0.9.0
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers; The Rust Project Developers; The CryptoCorrosion Contributors
+- License proof: https://crates.io/api/v1/crates/rand_chacha/0.9.0
+- Size: 18258 bytes
+- SHA-256: `d3022b5f1df60f26e1ffddd6c66e8aa15de382ae63b3a0c1bfc0e4d3e3f325cb`
+- Publisher file: https://static.crates.io/crates/rand_chacha/0.9.0/download
+
+## rand_core 0.6.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_core_0_6_4`
+- Version: 0.6.4
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers; The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/rand_core/0.6.4
+- Size: 22666 bytes
+- SHA-256: `ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c`
+- Publisher file: https://static.crates.io/crates/rand_core/0.6.4/download
+
+## rand_core 0.9.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_core_0_9_5`
+- Version: 0.9.5
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers; The Rust Project Developers
+- License proof: https://crates.io/api/v1/crates/rand_core/0.9.5
+- Size: 24129 bytes
+- SHA-256: `76afc826de14238e6e8c374ddcc1fa19e374fd8dd986b0d2af0d02377261d83c`
+- Publisher file: https://static.crates.io/crates/rand_core/0.9.5/download
+
+## rand_jitter 0.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rand_jitter_0_5_0`
+- Version: 0.5.0
+- License: MIT OR Apache-2.0
+- Attribution: The Rand Project Developers
+- License proof: https://crates.io/api/v1/crates/rand_jitter/0.5.0
+- Size: 20220 bytes
+- SHA-256: `b16df48f071248e67b8fc5e866d9448d45c08ad8b672baaaf796e2f15e606ff0`
+- Publisher file: https://static.crates.io/crates/rand_jitter/0.5.0/download
+
+## rayon 1.12.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rayon_1_12_0`
+- Version: 1.12.0
+- License: MIT OR Apache-2.0
+- Attribution: Original rayon package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/rayon/1.12.0
+- Size: 183391 bytes
+- SHA-256: `fb39b166781f92d482534ef4b4b1b2568f42613b53e5b6c160e24cfbfa30926d`
+- Publisher file: https://static.crates.io/crates/rayon/1.12.0/download
+
+## rayon-core 1.13.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rayon_core_1_13_0`
+- Version: 1.13.0
+- License: MIT OR Apache-2.0
+- Attribution: Original rayon-core package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/rayon-core/1.13.0
+- Size: 73151 bytes
+- SHA-256: `22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91`
+- Publisher file: https://static.crates.io/crates/rayon-core/1.13.0/download
+
+## rdrand 0.8.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rdrand_0_8_3`
+- Version: 0.8.3
+- License: ISC
+- Attribution: Simonas Kazlauskas <rdrand@kazlauskas.me>
+- License proof: https://crates.io/api/v1/crates/rdrand/0.8.3
+- Size: 8675 bytes
+- SHA-256: `d92195228612ac8eed47adbc2ed0f04e513a4ccb98175b6f2bd04d963b533655`
+- Publisher file: https://static.crates.io/crates/rdrand/0.8.3/download
+
+## redox_syscall 0.5.18 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_redox_syscall_0_5_18`
+- Version: 0.5.18
+- License: MIT
+- Attribution: Jeremy Soller <jackpot51@gmail.com>
+- License proof: https://crates.io/api/v1/crates/redox_syscall/0.5.18
+- Size: 30747 bytes
+- SHA-256: `ed2bf2547551a7053d6fdfafda3f938979645c44812fbfcda098faae3f1a362d`
+- Publisher file: https://static.crates.io/crates/redox_syscall/0.5.18/download
+
+## redox_users 0.5.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_redox_users_0_5_2`
+- Version: 0.5.2
+- License: MIT
+- Attribution: Jose Narvaez <goyox86@gmail.com>; Wesley Hershberger <mggmugginsmc@gmail.com>
+- License proof: https://crates.io/api/v1/crates/redox_users/0.5.2
+- Size: 17280 bytes
+- SHA-256: `a4e608c6638b9c18977b00b475ac1f28d14e84b27d8d42f70e0bf1e3dec127ac`
+- Publisher file: https://static.crates.io/crates/redox_users/0.5.2/download
+
+## ref-cast 1.0.26 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ref_cast_1_0_26`
+- Version: 1.0.26
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/ref-cast/1.0.26
+- Size: 15375 bytes
+- SHA-256: `216e8f773d7923bcba9ceb86a86c93cabb3903a11872fc3f138c49630e50b96d`
+- Publisher file: https://static.crates.io/crates/ref-cast/1.0.26/download
+
+## ref-cast-impl 1.0.26 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ref_cast_impl_1_0_26`
+- Version: 1.0.26
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/ref-cast-impl/1.0.26
+- Size: 10232 bytes
+- SHA-256: `2c9283685feec7d69af75fb0e858d5e7378f33fe4fc699383b2916ab9273e03c`
+- Publisher file: https://static.crates.io/crates/ref-cast-impl/1.0.26/download
+
+## regex 1.13.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_regex_1_13_1`
+- Version: 1.13.1
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers; Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/regex/1.13.1
+- Size: 157118 bytes
+- SHA-256: `f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d`
+- Publisher file: https://static.crates.io/crates/regex/1.13.1/download
+
+## regex-automata 0.4.16 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_regex_automata_0_4_16`
+- Version: 0.4.16
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers; Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/regex-automata/0.4.16
+- Size: 627556 bytes
+- SHA-256: `8fcfdb36bda0c880c5931cdc7a2bcdc8ba4556847b9d912bca70bc94708711ad`
+- Publisher file: https://static.crates.io/crates/regex-automata/0.4.16/download
+
+## regex-syntax 0.8.11 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_regex_syntax_0_8_11`
+- Version: 0.8.11
+- License: MIT OR Apache-2.0
+- Attribution: The Rust Project Developers; Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/regex-syntax/0.8.11
+- Size: 359055 bytes
+- SHA-256: `d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4`
+- Publisher file: https://static.crates.io/crates/regex-syntax/0.8.11/download
+
+## rfc6979 0.4.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rfc6979_0_4_0`
+- Version: 0.4.0
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/rfc6979/0.4.0
+- Size: 9140 bytes
+- SHA-256: `f8dd2a808d456c4a54e300a23e9f5a67e122c3024119acbfd73e3bf664491cb2`
+- Publisher file: https://static.crates.io/crates/rfc6979/0.4.0/download
+
+## ring 0.17.14 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ring_0_17_14`
+- Version: 0.17.14
+- License: Apache-2.0 AND ISC
+- Attribution: Original ring package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/ring/0.17.14
+- Size: 1502610 bytes
+- SHA-256: `a4689e6c2294d81e88dc6261c768b63bc4fcdb852be6d1352498b114f61383b7`
+- Publisher file: https://static.crates.io/crates/ring/0.17.14/download
+
+## rsa 0.9.10 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rsa_0_9_10`
+- Version: 0.9.10
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers; dignifiedquire <dignifiedquire@gmail.com>
+- License proof: https://crates.io/api/v1/crates/rsa/0.9.10
+- Size: 86417 bytes
+- SHA-256: `b8573f03f5883dcaebdfcf4725caa1ecb9c15b2ef50c43a07b816e06799bb12d`
+- Publisher file: https://static.crates.io/crates/rsa/0.9.10/download
+
+## rusqlite 0.37.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rusqlite_0_37_0`
+- Version: 0.37.0
+- License: MIT
+- Attribution: The rusqlite developers
+- License proof: https://crates.io/api/v1/crates/rusqlite/0.37.0
+- Size: 169975 bytes
+- SHA-256: `165ca6e57b20e1351573e3729b958bc62f0e48025386970b6e4d29e7a7e71f3f`
+- Publisher file: https://static.crates.io/crates/rusqlite/0.37.0/download
+
+## rustc_version 0.4.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rustc_version_0_4_1`
+- Version: 0.4.1
+- License: MIT OR Apache-2.0
+- Attribution: Original rustc_version package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/rustc_version/0.4.1
+- Size: 12245 bytes
+- SHA-256: `cfcb3a22ef46e85b45de6ee7e79d063319ebb6594faafcf1c225ea92ab6e9b92`
+- Publisher file: https://static.crates.io/crates/rustc_version/0.4.1/download
+
+## rusticata-macros 4.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rusticata_macros_4_1_0`
+- Version: 4.1.0
+- License: MIT/Apache-2.0
+- Attribution: Pierre Chifflier <chifflier@wzdftpd.net>
+- License proof: https://crates.io/api/v1/crates/rusticata-macros/4.1.0
+- Size: 11746 bytes
+- SHA-256: `faf0c4a6ece9950b9abdb62b1cfcf2a68b3b67a10ba445b3bb85be2a293d0632`
+- Publisher file: https://static.crates.io/crates/rusticata-macros/4.1.0/download
+
+## rustix 1.1.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rustix_1_1_4`
+- Version: 1.1.4
+- License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+- Attribution: Dan Gohman <dev@sunfishcode.online>; Jakub Konka <kubkon@jakubkonka.com>
+- License proof: https://crates.io/api/v1/crates/rustix/1.1.4
+- Size: 425241 bytes
+- SHA-256: `b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190`
+- Publisher file: https://static.crates.io/crates/rustix/1.1.4/download
+
+## rustls 0.23.42 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rustls_0_23_42`
+- Version: 0.23.42
+- License: Apache-2.0 OR ISC OR MIT
+- Attribution: Original rustls package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/rustls/0.23.42
+- Size: 375354 bytes
+- SHA-256: `3c54fcab019b409d04215d3a17cb438fd7fbf192ee61461f20f4fe18704bc138`
+- Publisher file: https://static.crates.io/crates/rustls/0.23.42/download
+
+## rustls-pki-types 1.15.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rustls_pki_types_1_15_1`
+- Version: 1.15.1
+- License: MIT OR Apache-2.0
+- Attribution: Original rustls-pki-types package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/rustls-pki-types/1.15.1
+- Size: 39322 bytes
+- SHA-256: `2f4925028c7eb5d1fcdaf196971378ed9d2c1c4efc7dc5d011256f76c99c0a96`
+- Publisher file: https://static.crates.io/crates/rustls-pki-types/1.15.1/download
+
+## rustls-webpki 0.103.13 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rustls_webpki_0_103_13`
+- Version: 0.103.13
+- License: ISC
+- Attribution: Original rustls-webpki package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/rustls-webpki/0.103.13
+- Size: 87513 bytes
+- SHA-256: `61c429a8649f110dddef65e2a5ad240f747e85f7758a6bccc7e5777bd33f756e`
+- Publisher file: https://static.crates.io/crates/rustls-webpki/0.103.13/download
+
+## rustversion 1.0.23 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_rustversion_1_0_23`
+- Version: 1.0.23
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/rustversion/1.0.23
+- Size: 21013 bytes
+- SHA-256: `cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f`
+- Publisher file: https://static.crates.io/crates/rustversion/1.0.23/download
+
+## same-file 1.0.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_same_file_1_0_6`
+- Version: 1.0.6
+- License: Unlicense/MIT
+- Attribution: Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/same-file/1.0.6
+- Size: 10183 bytes
+- SHA-256: `93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502`
+- Publisher file: https://static.crates.io/crates/same-file/1.0.6/download
+
+## sanitize-filename 0.6.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sanitize_filename_0_6_0`
+- Version: 0.6.0
+- License: MIT
+- Attribution: Jacob Brown <kardeiz@gmail.com>
+- License proof: https://crates.io/api/v1/crates/sanitize-filename/0.6.0
+- Size: 4819 bytes
+- SHA-256: `bc984f4f9ceb736a7bb755c3e3bd17dc56370af2600c9780dcc48c66453da34d`
+- Publisher file: https://static.crates.io/crates/sanitize-filename/0.6.0/download
+
+## saturating-time 0.3.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_saturating_time_0_3_0`
+- Version: 0.3.0
+- License: MIT OR Apache-2.0
+- Attribution: Clara Engler
+- License proof: https://crates.io/api/v1/crates/saturating-time/0.3.0
+- Size: 9974 bytes
+- SHA-256: `b63583a1dd0647d1484228529ab4ecaa874048d2956f117362aa5f5826456230`
+- Publisher file: https://static.crates.io/crates/saturating-time/0.3.0/download
+
+## schannel 0.1.29 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_schannel_0_1_29`
+- Version: 0.1.29
+- License: MIT
+- Attribution: Steven Fackler <sfackler@gmail.com>; Steffen Butzer <steffen.butzer@outlook.com>
+- License proof: https://crates.io/api/v1/crates/schannel/0.1.29
+- Size: 34352 bytes
+- SHA-256: `91c1b7e4904c873ef0710c1f407dde2e6287de2bebc1bbbf7d430bb7cbffd939`
+- Publisher file: https://static.crates.io/crates/schannel/0.1.29/download
+
+## schemars 0.9.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_schemars_0_9_0`
+- Version: 0.9.0
+- License: MIT
+- Attribution: Graham Esau <gesau@hotmail.co.uk>
+- License proof: https://crates.io/api/v1/crates/schemars/0.9.0
+- Size: 80032 bytes
+- SHA-256: `4cd191f9397d57d581cddd31014772520aa448f65ef991055d7f61582c65165f`
+- Publisher file: https://static.crates.io/crates/schemars/0.9.0/download
+
+## schemars 1.2.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_schemars_1_2_2`
+- Version: 1.2.2
+- License: MIT
+- Attribution: Graham Esau <gesau@hotmail.co.uk>
+- License proof: https://crates.io/api/v1/crates/schemars/1.2.2
+- Size: 94320 bytes
+- SHA-256: `687274d293b6cdc6e73e0fee520bf2049650090d7164f87672d212a3c530cf4a`
+- Publisher file: https://static.crates.io/crates/schemars/1.2.2/download
+
+## scopeguard 1.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_scopeguard_1_2_0`
+- Version: 1.2.0
+- License: MIT OR Apache-2.0
+- Attribution: bluss
+- License proof: https://crates.io/api/v1/crates/scopeguard/1.2.0
+- Size: 11619 bytes
+- SHA-256: `94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49`
+- Publisher file: https://static.crates.io/crates/scopeguard/1.2.0/download
+
+## sec1 0.7.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sec1_0_7_3`
+- Version: 0.7.3
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/sec1/0.7.3
+- Size: 17979 bytes
+- SHA-256: `d3e97a565f76233a6003f9f5c54be1d9c5bdfa3eccfb189469f11ec4901c47dc`
+- Publisher file: https://static.crates.io/crates/sec1/0.7.3/download
+
+## security-framework 3.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_security_framework_3_7_0`
+- Version: 3.7.0
+- License: MIT OR Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>; Kornel <kornel@geekhood.net>
+- License proof: https://crates.io/api/v1/crates/security-framework/3.7.0
+- Size: 89115 bytes
+- SHA-256: `b7f4bc775c73d9a02cde8bf7b2ec4c9d12743edf609006c7facc23998404cd1d`
+- Publisher file: https://static.crates.io/crates/security-framework/3.7.0/download
+
+## security-framework-sys 2.17.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_security_framework_sys_2_17_0`
+- Version: 2.17.0
+- License: MIT OR Apache-2.0
+- Attribution: Steven Fackler <sfackler@gmail.com>; Kornel <kornel@geekhood.net>
+- License proof: https://crates.io/api/v1/crates/security-framework-sys/2.17.0
+- Size: 21078 bytes
+- SHA-256: `6ce2691df843ecc5d231c0b14ece2acc3efb62c0a398c7e1d875f3983ce020e3`
+- Publisher file: https://static.crates.io/crates/security-framework-sys/2.17.0/download
+
+## semver 1.0.28 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_semver_1_0_28`
+- Version: 1.0.28
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/semver/1.0.28
+- Size: 33064 bytes
+- SHA-256: `8a7852d02fc848982e0c167ef163aaff9cd91dc640ba85e263cb1ce46fae51cd`
+- Publisher file: https://static.crates.io/crates/semver/1.0.28/download
+
+## serde 1.0.229 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_1_0_229`
+- Version: 1.0.229
+- License: MIT OR Apache-2.0
+- Attribution: Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/serde/1.0.229
+- Size: 83669 bytes
+- SHA-256: `4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba`
+- Publisher file: https://static.crates.io/crates/serde/1.0.229/download
+
+## serde_core 1.0.229 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_core_1_0_229`
+- Version: 1.0.229
+- License: MIT OR Apache-2.0
+- Attribution: Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/serde_core/1.0.229
+- Size: 63100 bytes
+- SHA-256: `67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48`
+- Publisher file: https://static.crates.io/crates/serde_core/1.0.229/download
+
+## serde_derive 1.0.229 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_derive_1_0_229`
+- Version: 1.0.229
+- License: MIT OR Apache-2.0
+- Attribution: Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/serde_derive/1.0.229
+- Size: 59864 bytes
+- SHA-256: `e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348`
+- Publisher file: https://static.crates.io/crates/serde_derive/1.0.229/download
+
+## serde_ignored 0.1.14 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_ignored_0_1_14`
+- Version: 0.1.14
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/serde_ignored/0.1.14
+- Size: 13078 bytes
+- SHA-256: `115dffd5f3853e06e746965a20dcbae6ee747ae30b543d91b0e089668bb07798`
+- Publisher file: https://static.crates.io/crates/serde_ignored/0.1.14/download
+
+## serde_json 1.0.151 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_json_1_0_151`
+- Version: 1.0.151
+- License: MIT OR Apache-2.0
+- Attribution: Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/serde_json/1.0.151
+- Size: 156556 bytes
+- SHA-256: `c841b55ecdae098c80dcae9cf767f6f8a0c2cdb3416bbef72181df4d0fe73f14`
+- Publisher file: https://static.crates.io/crates/serde_json/1.0.151/download
+
+## serde_spanned 0.6.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_spanned_0_6_9`
+- Version: 0.6.9
+- License: MIT OR Apache-2.0
+- Attribution: Original serde_spanned package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/serde_spanned/0.6.9
+- Size: 10210 bytes
+- SHA-256: `bf41e0cfaf7226dca15e8197172c295a782857fcb97fad1808a166870dee75a3`
+- Publisher file: https://static.crates.io/crates/serde_spanned/0.6.9/download
+
+## serde_spanned 1.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_spanned_1_1_1`
+- Version: 1.1.1
+- License: MIT OR Apache-2.0
+- Attribution: Original serde_spanned package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/serde_spanned/1.1.1
+- Size: 11025 bytes
+- SHA-256: `6662b5879511e06e8999a8a235d848113e942c9124f211511b16466ee2995f26`
+- Publisher file: https://static.crates.io/crates/serde_spanned/1.1.1/download
+
+## serde-value 0.7.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_value_0_7_0`
+- Version: 0.7.0
+- License: MIT
+- Attribution: arcnmx
+- License proof: https://crates.io/api/v1/crates/serde-value/0.7.0
+- Size: 10249 bytes
+- SHA-256: `f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c`
+- Publisher file: https://static.crates.io/crates/serde-value/0.7.0/download
+
+## serde_with 3.21.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_with_3_21_0`
+- Version: 3.21.0
+- License: MIT OR Apache-2.0
+- Attribution: Jonas Bushart; Marcin Kaźmierczak
+- License proof: https://crates.io/api/v1/crates/serde_with/3.21.0
+- Size: 205649 bytes
+- SHA-256: `76a5c54c7310e7b8b9577c286d7e399ddd876c3e12b3ed917a8aabc4b96e9e8c`
+- Publisher file: https://static.crates.io/crates/serde_with/3.21.0/download
+
+## serde_with_macros 3.21.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_serde_with_macros_3_21_0`
+- Version: 3.21.0
+- License: MIT OR Apache-2.0
+- Attribution: Jonas Bushart
+- License proof: https://crates.io/api/v1/crates/serde_with_macros/3.21.0
+- Size: 38159 bytes
+- SHA-256: `84d57bc0c8b9a17920c178daa6bb924850d54a9c97ab45194bb8c17ad66bb660`
+- Publisher file: https://static.crates.io/crates/serde_with_macros/3.21.0/download
+
+## sha1 0.10.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sha1_0_10_7`
+- Version: 0.10.7
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/sha1/0.10.7
+- Size: 14582 bytes
+- SHA-256: `a978451301f4db1d02937a4ab3ccce137717b81826e79b7d49ffe3244a13c3b8`
+- Publisher file: https://static.crates.io/crates/sha1/0.10.7/download
+
+## sha2 0.10.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sha2_0_10_9`
+- Version: 0.10.9
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/sha2/0.10.9
+- Size: 29271 bytes
+- SHA-256: `a7507d819769d01a365ab707794a4084392c824f54a7a6a7862f8c3d0892b283`
+- Publisher file: https://static.crates.io/crates/sha2/0.10.9/download
+
+## sha3 0.10.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sha3_0_10_9`
+- Version: 0.10.9
+- License: MIT OR Apache-2.0
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/sha3/0.10.9
+- Size: 859930 bytes
+- SHA-256: `77fd7028345d415a4034cf8777cd4f8ab1851274233b45f84e3d955502d93874`
+- Publisher file: https://static.crates.io/crates/sha3/0.10.9/download
+
+## sharded-slab 0.1.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sharded_slab_0_1_7`
+- Version: 0.1.7
+- License: MIT
+- Attribution: Eliza Weisman <eliza@buoyant.io>
+- License proof: https://crates.io/api/v1/crates/sharded-slab/0.1.7
+- Size: 58227 bytes
+- SHA-256: `f40ca3c46823713e0d4209592e8d6e826aa57e928f09752619fc696c499637f6`
+- Publisher file: https://static.crates.io/crates/sharded-slab/0.1.7/download
+
+## shellexpand 3.1.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_shellexpand_3_1_2`
+- Version: 3.1.2
+- License: MIT/Apache-2.0
+- Attribution: Vladimir Matveev <vmatveev@citrine.cc>; Ian Jackson <iwj@torproject.org>
+- License proof: https://crates.io/api/v1/crates/shellexpand/3.1.2
+- Size: 26161 bytes
+- SHA-256: `32824fab5e16e6c4d86dc1ba84489390419a39f97699852b66480bb87d297ed8`
+- Publisher file: https://static.crates.io/crates/shellexpand/3.1.2/download
+
+## shlex 2.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_shlex_2_0_1`
+- Version: 2.0.1
+- License: MIT OR Apache-2.0
+- Attribution: comex <comexk@gmail.com>; Fenhl <fenhl@fenhl.net>; Adrian Taylor <adetaylor@chromium.org>; Alex Touchet <alextouchet@outlook.com>; Daniel Parks <dp+git@oxidized.org>; Garrett Berg <googberg@gmail.com>
+- License proof: https://crates.io/api/v1/crates/shlex/2.0.1
+- Size: 19332 bytes
+- SHA-256: `f8fadd59c855ef2080decdef8ff161eb6661b86933c9d82e5ba29dc602a55aba`
+- Publisher file: https://static.crates.io/crates/shlex/2.0.1/download
+
+## signal-hook-registry 1.4.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_signal_hook_registry_1_4_8`
+- Version: 1.4.8
+- License: MIT OR Apache-2.0
+- Attribution: Michal 'vorner' Vaner <vorner@vorner.cz>; Masaki Hara <ackie.h.gmai@gmail.com>
+- License proof: https://crates.io/api/v1/crates/signal-hook-registry/1.4.8
+- Size: 21668 bytes
+- SHA-256: `c4db69cba1110affc0e9f7bcd48bbf87b3f4fc7c61fc9155afd4c469eb3d6c1b`
+- Publisher file: https://static.crates.io/crates/signal-hook-registry/1.4.8/download
+
+## signature 2.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_signature_2_2_0`
+- Version: 2.2.0
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/signature/2.2.0
+- Size: 15531 bytes
+- SHA-256: `77549399552de45a898a580c1b41d445bf730df867cc44e6c0233bbc4b8329de`
+- Publisher file: https://static.crates.io/crates/signature/2.2.0/download
+
+## simd-adler32 0.3.10 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_simd_adler32_0_3_10`
+- Version: 0.3.10
+- License: MIT
+- Attribution: Marvin Countryman <me@maar.vin>
+- License proof: https://crates.io/api/v1/crates/simd-adler32/0.3.10
+- Size: 18760 bytes
+- SHA-256: `3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea`
+- Publisher file: https://static.crates.io/crates/simd-adler32/0.3.10/download
+
+## siphasher 1.0.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_siphasher_1_0_3`
+- Version: 1.0.3
+- License: MIT/Apache-2.0
+- Attribution: Frank Denis <github@pureftpd.org>
+- License proof: https://crates.io/api/v1/crates/siphasher/1.0.3
+- Size: 11643 bytes
+- SHA-256: `8ee5873ec9cce0195efcb7a4e9507a04cd49aec9c83d0389df45b1ef7ba2e649`
+- Publisher file: https://static.crates.io/crates/siphasher/1.0.3/download
+
+## slab 0.4.12 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_slab_0_4_12`
+- Version: 0.4.12
+- License: MIT
+- Attribution: Carl Lerche <me@carllerche.com>
+- License proof: https://crates.io/api/v1/crates/slab/0.4.12
+- Size: 19080 bytes
+- SHA-256: `0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5`
+- Publisher file: https://static.crates.io/crates/slab/0.4.12/download
+
+## slotmap 1.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_slotmap_1_1_1`
+- Version: 1.1.1
+- License: Zlib
+- Attribution: Orson Peters <orsonpeters@gmail.com>
+- License proof: https://crates.io/api/v1/crates/slotmap/1.1.1
+- Size: 61862 bytes
+- SHA-256: `bdd58c3c93c3d278ca835519292445cb4b0d4dc59ccfdf7ceadaab3f8aeb4038`
+- Publisher file: https://static.crates.io/crates/slotmap/1.1.1/download
+
+## smallvec 1.15.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_smallvec_1_15_2`
+- Version: 1.15.2
+- License: MIT OR Apache-2.0
+- Attribution: The Servo Project Developers
+- License proof: https://crates.io/api/v1/crates/smallvec/1.15.2
+- Size: 34899 bytes
+- SHA-256: `8ed6a63f02c8539c91a8685a86f4099661ba3da017932f6ebbea6de3f0fa7c90`
+- Publisher file: https://static.crates.io/crates/smallvec/1.15.2/download
+
+## socket2 0.6.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_socket2_0_6_5`
+- Version: 0.6.5
+- License: MIT OR Apache-2.0
+- Attribution: Alex Crichton <alex@alexcrichton.com>; Thomas de Zeeuw <thomasdezeeuw@gmail.com>
+- License proof: https://crates.io/api/v1/crates/socket2/0.6.5
+- Size: 60031 bytes
+- SHA-256: `c3d1e2c7f27f8d4cb10542a02c49005dbd6e93095799d6f3be745fae9f8fedd4`
+- Publisher file: https://static.crates.io/crates/socket2/0.6.5/download
+
+## spin 0.9.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_spin_0_9_9`
+- Version: 0.9.9
+- License: MIT
+- Attribution: Mathijs van de Nes <git@mathijs.vd-nes.nl>; John Ericson <git@JohnEricson.me>; Joshua Barretto <joshua.s.barretto@gmail.com>
+- License proof: https://crates.io/api/v1/crates/spin/0.9.9
+- Size: 39817 bytes
+- SHA-256: `3763264f6b73151db08c50ff20d7d8a0b8796e021cdea7ceedad07b80155fa0e`
+- Publisher file: https://static.crates.io/crates/spin/0.9.9/download
+
+## spki 0.7.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_spki_0_7_3`
+- Version: 0.7.3
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/spki/0.7.3
+- Size: 16409 bytes
+- SHA-256: `d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d`
+- Publisher file: https://static.crates.io/crates/spki/0.7.3/download
+
+## ssh-cipher 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ssh_cipher_0_2_0`
+- Version: 0.2.0
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/ssh-cipher/0.2.0
+- Size: 10843 bytes
+- SHA-256: `caac132742f0d33c3af65bfcde7f6aa8f62f0e991d80db99149eb9d44708784f`
+- Publisher file: https://static.crates.io/crates/ssh-cipher/0.2.0/download
+
+## ssh-encoding 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ssh_encoding_0_2_0`
+- Version: 0.2.0
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/ssh-encoding/0.2.0
+- Size: 13600 bytes
+- SHA-256: `eb9242b9ef4108a78e8cd1a2c98e193ef372437f8c22be363075233321dd4a15`
+- Publisher file: https://static.crates.io/crates/ssh-encoding/0.2.0/download
+
+## ssh-key 0.6.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_ssh_key_0_6_7`
+- Version: 0.6.7
+- License: Apache-2.0 OR MIT
+- Attribution: RustCrypto Developers
+- License proof: https://crates.io/api/v1/crates/ssh-key/0.6.7
+- Size: 112921 bytes
+- SHA-256: `3b86f5297f0f04d08cabaa0f6bff7cb6aec4d9c3b49d87990d63da9d9156a8c3`
+- Publisher file: https://static.crates.io/crates/ssh-key/0.6.7/download
+
+## static_assertions 1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_static_assertions_1_1_0`
+- Version: 1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Nikolai Vazquez
+- License proof: https://crates.io/api/v1/crates/static_assertions/1.1.0
+- Size: 18480 bytes
+- SHA-256: `a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f`
+- Publisher file: https://static.crates.io/crates/static_assertions/1.1.0/download
+
+## strsim 0.10.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_strsim_0_10_0`
+- Version: 0.10.0
+- License: MIT
+- Attribution: Danny Guo <danny@dannyguo.com>
+- License proof: https://crates.io/api/v1/crates/strsim/0.10.0
+- Size: 11355 bytes
+- SHA-256: `73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623`
+- Publisher file: https://static.crates.io/crates/strsim/0.10.0/download
+
+## strsim 0.11.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_strsim_0_11_1`
+- Version: 0.11.1
+- License: MIT
+- Attribution: Danny Guo <danny@dannyguo.com>; maxbachmann <oss@maxbachmann.de>
+- License proof: https://crates.io/api/v1/crates/strsim/0.11.1
+- Size: 14266 bytes
+- SHA-256: `7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f`
+- Publisher file: https://static.crates.io/crates/strsim/0.11.1/download
+
+## strum 0.27.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_strum_0_27_2`
+- Version: 0.27.2
+- License: MIT
+- Attribution: Peter Glotfelty <peter.glotfelty@microsoft.com>
+- License proof: https://crates.io/api/v1/crates/strum/0.27.2
+- Size: 8489 bytes
+- SHA-256: `af23d6f6c1a224baef9d3f61e287d2761385a5b88fdab4eb4c6f11aeb54c4bcf`
+- Publisher file: https://static.crates.io/crates/strum/0.27.2/download
+
+## strum_macros 0.27.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_strum_macros_0_27_2`
+- Version: 0.27.2
+- License: MIT
+- Attribution: Peter Glotfelty <peter.glotfelty@microsoft.com>
+- License proof: https://crates.io/api/v1/crates/strum_macros/0.27.2
+- Size: 30522 bytes
+- SHA-256: `7695ce3845ea4b33927c055a39dc438a45b059f7c1b3d91d38d10355fb8cbca7`
+- Publisher file: https://static.crates.io/crates/strum_macros/0.27.2/download
+
+## subtle 2.6.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_subtle_2_6_1`
+- Version: 2.6.1
+- License: BSD-3-Clause
+- Attribution: Isis Lovecruft <isis@patternsinthevoid.net>; Henry de Valence <hdevalence@hdevalence.ca>
+- License proof: https://crates.io/api/v1/crates/subtle/2.6.1
+- Size: 14562 bytes
+- SHA-256: `13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292`
+- Publisher file: https://static.crates.io/crates/subtle/2.6.1/download
+
+## syn 1.0.109 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_syn_1_0_109`
+- Version: 1.0.109
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/syn/1.0.109
+- Size: 237611 bytes
+- SHA-256: `72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237`
+- Publisher file: https://static.crates.io/crates/syn/1.0.109/download
+
+## syn 2.0.119 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_syn_2_0_119`
+- Version: 2.0.119
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/syn/2.0.119
+- Size: 307407 bytes
+- SHA-256: `872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297`
+- Publisher file: https://static.crates.io/crates/syn/2.0.119/download
+
+## syn 3.0.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_syn_3_0_3`
+- Version: 3.0.3
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/syn/3.0.3
+- Size: 312999 bytes
+- SHA-256: `53e9bae58849f64dfa4f5d5ae372c8341f7305f82a3868709269343628b659a3`
+- Publisher file: https://static.crates.io/crates/syn/3.0.3/download
+
+## sync_wrapper 1.0.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sync_wrapper_1_0_2`
+- Version: 1.0.2
+- License: Apache-2.0
+- Attribution: Actyx AG <developer@actyx.io>
+- License proof: https://crates.io/api/v1/crates/sync_wrapper/1.0.2
+- Size: 6958 bytes
+- SHA-256: `0bf256ce5efdfa370213c1dabab5935a12e49f2c58d15e9eac2870d3b4f27263`
+- Publisher file: https://static.crates.io/crates/sync_wrapper/1.0.2/download
+
+## synstructure 0.13.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_synstructure_0_13_2`
+- Version: 0.13.2
+- License: MIT
+- Attribution: Nika Layzell <nika@thelayzells.com>
+- License proof: https://crates.io/api/v1/crates/synstructure/0.13.2
+- Size: 18950 bytes
+- SHA-256: `728a70f3dbaf5bab7f0c4b1ac8d7ae5ea60a4b5549c8a5914361c99147a709d2`
+- Publisher file: https://static.crates.io/crates/synstructure/0.13.2/download
+
+## sysinfo 0.36.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_sysinfo_0_36_1`
+- Version: 0.36.1
+- License: MIT
+- Attribution: Guillaume Gomez <guillaume1.gomez@gmail.com>
+- License proof: https://crates.io/api/v1/crates/sysinfo/0.36.1
+- Size: 213643 bytes
+- SHA-256: `252800745060e7b9ffb7b2badbd8b31cfa4aa2e61af879d0a3bf2a317c20217d`
+- Publisher file: https://static.crates.io/crates/sysinfo/0.36.1/download
+
+## tap 1.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tap_1_0_1`
+- Version: 1.0.1
+- License: MIT
+- Attribution: Elliott Linder <elliott.darfink@gmail.com>; myrrlyn <self@myrrlyn.dev>
+- License proof: https://crates.io/api/v1/crates/tap/1.0.1
+- Size: 11316 bytes
+- SHA-256: `55937e1799185b12863d447f42597ed69d9928686b8d88a1df17376a097d8369`
+- Publisher file: https://static.crates.io/crates/tap/1.0.1/download
+
+## tempfile 3.27.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tempfile_3_27_0`
+- Version: 3.27.0
+- License: MIT OR Apache-2.0
+- Attribution: Steven Allen <steven@stebalien.com>; The Rust Project Developers; Ashley Mannix <ashleymannix@live.com.au>; Jason White <me@jasonwhite.io>
+- License proof: https://crates.io/api/v1/crates/tempfile/3.27.0
+- Size: 44780 bytes
+- SHA-256: `32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd`
+- Publisher file: https://static.crates.io/crates/tempfile/3.27.0/download
+
+## thiserror 1.0.69 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_thiserror_1_0_69`
+- Version: 1.0.69
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/thiserror/1.0.69
+- Size: 22198 bytes
+- SHA-256: `b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52`
+- Publisher file: https://static.crates.io/crates/thiserror/1.0.69/download
+
+## thiserror 2.0.19 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_thiserror_2_0_19`
+- Version: 2.0.19
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/thiserror/2.0.19
+- Size: 29026 bytes
+- SHA-256: `09a43598840e33d5b0331f38c5e30d13bb11c11210a4b58f0d9b18a5a5eefcd9`
+- Publisher file: https://static.crates.io/crates/thiserror/2.0.19/download
+
+## thiserror-impl 1.0.69 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_thiserror_impl_1_0_69`
+- Version: 1.0.69
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/thiserror-impl/1.0.69
+- Size: 18365 bytes
+- SHA-256: `4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1`
+- Publisher file: https://static.crates.io/crates/thiserror-impl/1.0.69/download
+
+## thiserror-impl 2.0.19 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_thiserror_impl_2_0_19`
+- Version: 2.0.19
+- License: MIT OR Apache-2.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/thiserror-impl/2.0.19
+- Size: 21408 bytes
+- SHA-256: `43cbfe0cf76104d42a574802844187e84a305e531ed54455f11fbde0f10541cd`
+- Publisher file: https://static.crates.io/crates/thiserror-impl/2.0.19/download
+
+## thread_local 1.1.10 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_thread_local_1_1_10`
+- Version: 1.1.10
+- License: MIT OR Apache-2.0
+- Attribution: Amanieu d'Antras <amanieu@gmail.com>
+- License proof: https://crates.io/api/v1/crates/thread_local/1.1.10
+- Size: 16361 bytes
+- SHA-256: `1ad99c4c6d32803332c548b1af0540b357b3f5fc0be8f6c6bfe8b2e6ae784070`
+- Publisher file: https://static.crates.io/crates/thread_local/1.1.10/download
+
+## time 0.3.54 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_time_0_3_54`
+- Version: 0.3.54
+- License: MIT OR Apache-2.0
+- Attribution: Jacob Pratt <open-source@jhpratt.dev>; Time contributors
+- License proof: https://crates.io/api/v1/crates/time/0.3.54
+- Size: 279146 bytes
+- SHA-256: `3e1d5e639ff6bab73cb6885cc7e7b1de96c3f32c68ec55f3952614bec1092244`
+- Publisher file: https://static.crates.io/crates/time/0.3.54/download
+
+## time-core 0.1.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_time_core_0_1_9`
+- Version: 0.1.9
+- License: MIT OR Apache-2.0
+- Attribution: Jacob Pratt <open-source@jhpratt.dev>; Time contributors
+- License proof: https://crates.io/api/v1/crates/time-core/0.1.9
+- Size: 10320 bytes
+- SHA-256: `9e1c906769ad99c88eaa54e728060edef082f8e358ff32030cb7c7d315e81109`
+- Publisher file: https://static.crates.io/crates/time-core/0.1.9/download
+
+## time-macros 0.2.32 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_time_macros_0_2_32`
+- Version: 0.2.32
+- License: MIT OR Apache-2.0
+- Attribution: Jacob Pratt <open-source@jhpratt.dev>; Time contributors
+- License proof: https://crates.io/api/v1/crates/time-macros/0.2.32
+- Size: 33664 bytes
+- SHA-256: `7e689342a48d2ea927c87ea50cabf8594854bf940e9310208848d680d668ed85`
+- Publisher file: https://static.crates.io/crates/time-macros/0.2.32/download
+
+## tinystr 0.8.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tinystr_0_8_3`
+- Version: 0.8.3
+- License: Unicode-3.0
+- Attribution: The ICU4X Project Developers
+- License proof: https://crates.io/api/v1/crates/tinystr/0.8.3
+- Size: 24710 bytes
+- SHA-256: `c8323304221c2a851516f22236c5722a72eaa19749016521d6dff0824447d96d`
+- Publisher file: https://static.crates.io/crates/tinystr/0.8.3/download
+
+## tinytemplate 1.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tinytemplate_1_2_1`
+- Version: 1.2.1
+- License: Apache-2.0 OR MIT
+- Attribution: Brook Heisler <brookheisler@gmail.com>
+- License proof: https://crates.io/api/v1/crates/tinytemplate/1.2.1
+- Size: 26490 bytes
+- SHA-256: `be4d6b5f19ff7664e8c98d03e2139cb510db9b0a60b55f8e8709b689d939b6bc`
+- Publisher file: https://static.crates.io/crates/tinytemplate/1.2.1/download
+
+## tinyvec 1.12.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tinyvec_1_12_0`
+- Version: 1.12.0
+- License: Zlib OR Apache-2.0 OR MIT
+- Attribution: Lokathor <zefria@gmail.com>
+- License proof: https://crates.io/api/v1/crates/tinyvec/1.12.0
+- Size: 56568 bytes
+- SHA-256: `bb4ebadaa0af04fab11ae01eb5f9fdb5f9c5b875506e210e71c07873528baa7f`
+- Publisher file: https://static.crates.io/crates/tinyvec/1.12.0/download
+
+## tinyvec_macros 0.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tinyvec_macros_0_1_1`
+- Version: 0.1.1
+- License: MIT OR Apache-2.0 OR Zlib
+- Attribution: Soveu <marx.tomasz@gmail.com>
+- License proof: https://crates.io/api/v1/crates/tinyvec_macros/0.1.1
+- Size: 5865 bytes
+- SHA-256: `1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20`
+- Publisher file: https://static.crates.io/crates/tinyvec_macros/0.1.1/download
+
+## tokio 1.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tokio_1_53_1`
+- Version: 1.53.1
+- License: MIT
+- Attribution: Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tokio/1.53.1
+- Size: 920101 bytes
+- SHA-256: `202caea871b69668250d242070849eb495be178ed697a3e98aebce5bc81a0bed`
+- Publisher file: https://static.crates.io/crates/tokio/1.53.1/download
+
+## tokio-macros 2.7.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tokio_macros_2_7_1`
+- Version: 2.7.1
+- License: MIT
+- Attribution: Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tokio-macros/2.7.1
+- Size: 15982 bytes
+- SHA-256: `6328af13490e73a9b4694030fafd93f8c8c6a9dede33e821c3fc63eddf8042ba`
+- Publisher file: https://static.crates.io/crates/tokio-macros/2.7.1/download
+
+## tokio-util 0.7.19 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tokio_util_0_7_19`
+- Version: 0.7.19
+- License: MIT
+- Attribution: Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tokio-util/0.7.19
+- Size: 147245 bytes
+- SHA-256: `494815d09bf52b5548659851081238f0ca39ff638363907596da739561c62c52`
+- Publisher file: https://static.crates.io/crates/tokio-util/0.7.19/download
+
+## toml 0.8.23 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_0_8_23`
+- Version: 0.8.23
+- License: MIT OR Apache-2.0
+- Attribution: Original toml package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml/0.8.23
+- Size: 36050 bytes
+- SHA-256: `dc1beb996b9d83529a9e75c17a1686767d148d70663143c7854d8b4a09ced362`
+- Publisher file: https://static.crates.io/crates/toml/0.8.23/download
+
+## toml 0.9.12+spec-1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_0_9_12_spec_1_1_0`
+- Version: 0.9.12+spec-1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original toml package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml/0.9.12+spec-1.1.0
+- Size: 56485 bytes
+- SHA-256: `cf92845e79fc2e2def6a5d828f0801e29a2f8acc037becc5ab08595c7d5e9863`
+- Publisher file: https://static.crates.io/crates/toml/0.9.12+spec-1.1.0/download
+
+## toml_datetime 0.6.11 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_datetime_0_6_11`
+- Version: 0.6.11
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_datetime package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_datetime/0.6.11
+- Size: 16125 bytes
+- SHA-256: `22cddaf88f4fbc13c51aebbf5f8eceb5c7c5a9da2ac40a13519eb5b0a0e8f11c`
+- Publisher file: https://static.crates.io/crates/toml_datetime/0.6.11/download
+
+## toml_datetime 0.7.5+spec-1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_datetime_0_7_5_spec_1_1_0`
+- Version: 0.7.5+spec-1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_datetime package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_datetime/0.7.5+spec-1.1.0
+- Size: 17975 bytes
+- SHA-256: `92e1cfed4a3038bc5a127e35a2d360f145e1f4b971b551a2ba5fd7aedf7e1347`
+- Publisher file: https://static.crates.io/crates/toml_datetime/0.7.5+spec-1.1.0/download
+
+## toml_datetime 1.1.1+spec-1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_datetime_1_1_1_spec_1_1_0`
+- Version: 1.1.1+spec-1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_datetime package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_datetime/1.1.1+spec-1.1.0
+- Size: 17982 bytes
+- SHA-256: `3165f65f62e28e0115a00b2ebdd37eb6f3b641855f9d636d3cd4103767159ad7`
+- Publisher file: https://static.crates.io/crates/toml_datetime/1.1.1+spec-1.1.0/download
+
+## toml_edit 0.22.27 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_edit_0_22_27`
+- Version: 0.22.27
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_edit package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_edit/0.22.27
+- Size: 78602 bytes
+- SHA-256: `41fe8c660ae4257887cf66394862d21dbca4a6ddd26f04a3560410406a2f819a`
+- Publisher file: https://static.crates.io/crates/toml_edit/0.22.27/download
+
+## toml_edit 0.25.13+spec-1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_edit_0_25_13_spec_1_1_0`
+- Version: 0.25.13+spec-1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_edit package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_edit/0.25.13+spec-1.1.0
+- Size: 68589 bytes
+- SHA-256: `6975367e4d2ef766d86af01ffad14b622fecc8d4357a998fbc4deb6e9bacaf9b`
+- Publisher file: https://static.crates.io/crates/toml_edit/0.25.13+spec-1.1.0/download
+
+## toml_parser 1.1.3+spec-1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_parser_1_1_3_spec_1_1_0`
+- Version: 1.1.3+spec-1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_parser package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_parser/1.1.3+spec-1.1.0
+- Size: 35888 bytes
+- SHA-256: `1d38ac1cf9b95face32296c0a3ede1fdc270627c9d9c02a7274dd6d960dc4d56`
+- Publisher file: https://static.crates.io/crates/toml_parser/1.1.3+spec-1.1.0/download
+
+## toml_write 0.1.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_write_0_1_2`
+- Version: 0.1.2
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_write package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_write/0.1.2
+- Size: 15660 bytes
+- SHA-256: `5d99f8c9a7727884afe522e9bd5edbfc91a3312b36a77b5fb8926e4c31a41801`
+- Publisher file: https://static.crates.io/crates/toml_write/0.1.2/download
+
+## toml_writer 1.1.2+spec-1.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_toml_writer_1_1_2_spec_1_1_0`
+- Version: 1.1.2+spec-1.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Original toml_writer package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/toml_writer/1.1.2+spec-1.1.0
+- Size: 18968 bytes
+- SHA-256: `7d56353a2a665ad0f41a421187180aab746c8c325620617ad883a99a1cbe66d2`
+- Publisher file: https://static.crates.io/crates/toml_writer/1.1.2+spec-1.1.0/download
+
+## tracing 0.1.44 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_0_1_44`
+- Version: 0.1.44
+- License: MIT
+- Attribution: Eliza Weisman <eliza@buoyant.io>; Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tracing/0.1.44
+- Size: 463135 bytes
+- SHA-256: `63e71662fa4b2a2c3a26f570f037eb95bb1f85397f3cd8076caed2f026a6d100`
+- Publisher file: https://static.crates.io/crates/tracing/0.1.44/download
+
+## tracing-attributes 0.1.31 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_attributes_0_1_31`
+- Version: 0.1.31
+- License: MIT
+- Attribution: Tokio Contributors <team@tokio.rs>; Eliza Weisman <eliza@buoyant.io>; David Barsky <dbarsky@amazon.com>
+- License proof: https://crates.io/api/v1/crates/tracing-attributes/0.1.31
+- Size: 39733 bytes
+- SHA-256: `7490cfa5ec963746568740651ac6781f701c9c5ea257c58e057f3ba8cf69e8da`
+- Publisher file: https://static.crates.io/crates/tracing-attributes/0.1.31/download
+
+## tracing-core 0.1.36 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_core_0_1_36`
+- Version: 0.1.36
+- License: MIT
+- Attribution: Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tracing-core/0.1.36
+- Size: 63967 bytes
+- SHA-256: `db97caf9d906fbde555dd62fa95ddba9eecfd14cb388e4f491a66d74cd5fb79a`
+- Publisher file: https://static.crates.io/crates/tracing-core/0.1.36/download
+
+## tracing-log 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_log_0_2_0`
+- Version: 0.2.0
+- License: MIT
+- Attribution: Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tracing-log/0.2.0
+- Size: 17561 bytes
+- SHA-256: `ee855f1f400bd0e5c02d150ae5de3840039a3f54b025156404e34c23c03f47c3`
+- Publisher file: https://static.crates.io/crates/tracing-log/0.2.0/download
+
+## tracing-subscriber 0.3.23 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_subscriber_0_3_23`
+- Version: 0.3.23
+- License: MIT
+- Attribution: Eliza Weisman <eliza@buoyant.io>; David Barsky <me@davidbarsky.com>; Tokio Contributors <team@tokio.rs>
+- License proof: https://crates.io/api/v1/crates/tracing-subscriber/0.3.23
+- Size: 213773 bytes
+- SHA-256: `cb7f578e5945fb242538965c2d0b04418d38ec25c79d160cd279bf0731c8d319`
+- Publisher file: https://static.crates.io/crates/tracing-subscriber/0.3.23/download
+
+## tracing-test 0.2.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_test_0_2_6`
+- Version: 0.2.6
+- License: MIT
+- Attribution: Danilo Bargen <mail@dbrgn.ch>
+- License proof: https://crates.io/api/v1/crates/tracing-test/0.2.6
+- Size: 11252 bytes
+- SHA-256: `19a4c448db514d4f24c5ddb9f73f2ee71bfb24c526cf0c570ba142d1119e0051`
+- Publisher file: https://static.crates.io/crates/tracing-test/0.2.6/download
+
+## tracing-test-macro 0.2.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_tracing_test_macro_0_2_6`
+- Version: 0.2.6
+- License: MIT
+- Attribution: Danilo Bargen <mail@dbrgn.ch>
+- License proof: https://crates.io/api/v1/crates/tracing-test-macro/0.2.6
+- Size: 8171 bytes
+- SHA-256: `ad06847b7afb65c7866a36664b75c40b895e318cea4f71299f013fb22965329d`
+- Publisher file: https://static.crates.io/crates/tracing-test-macro/0.2.6/download
+
+## typed-index-collections 3.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_typed_index_collections_3_5_0`
+- Version: 3.5.0
+- License: MIT OR Apache-2.0
+- Attribution: Andrey Zheleznov <zheland.net@gmail.com>
+- License proof: https://crates.io/api/v1/crates/typed-index-collections/3.5.0
+- Size: 53115 bytes
+- SHA-256: `898160f1dfd383b4e92e17f0512a7d62f3c51c44937b23b6ffc3a1614a8eaccd`
+- Publisher file: https://static.crates.io/crates/typed-index-collections/3.5.0/download
+
+## typenum 1.20.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_typenum_1_20_1`
+- Version: 1.20.1
+- License: MIT OR Apache-2.0
+- Attribution: Original typenum package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/typenum/1.20.1
+- Size: 105479 bytes
+- SHA-256: `b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20`
+- Publisher file: https://static.crates.io/crates/typenum/1.20.1/download
+
+## uncased 0.9.10 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_uncased_0_9_10`
+- Version: 0.9.10
+- License: MIT OR Apache-2.0
+- Attribution: Sergio Benitez <sb@sergio.bz>
+- License proof: https://crates.io/api/v1/crates/uncased/0.9.10
+- Size: 10872 bytes
+- SHA-256: `e1b88fcfe09e89d3866a5c11019378088af2d24c3fbd4f0543f96b479ec90697`
+- Publisher file: https://static.crates.io/crates/uncased/0.9.10/download
+
+## unicode-ident 1.0.24 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_unicode_ident_1_0_24`
+- Version: 1.0.24
+- License: (MIT OR Apache-2.0) AND Unicode-3.0
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/unicode-ident/1.0.24
+- Size: 49298 bytes
+- SHA-256: `e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75`
+- Publisher file: https://static.crates.io/crates/unicode-ident/1.0.24/download
+
+## unicode-segmentation 1.13.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_unicode_segmentation_1_13_3`
+- Version: 1.13.3
+- License: MIT OR Apache-2.0
+- Attribution: kwantam <kwantam@gmail.com>; Manish Goregaokar <manishsmail@gmail.com>
+- License proof: https://crates.io/api/v1/crates/unicode-segmentation/1.13.3
+- Size: 112325 bytes
+- SHA-256: `c6f5d3c3b1bf09027a88a6bc961fc00497d651009560b5463668dc81b0fa87a8`
+- Publisher file: https://static.crates.io/crates/unicode-segmentation/1.13.3/download
+
+## unicode-xid 0.2.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_unicode_xid_0_2_6`
+- Version: 0.2.6
+- License: MIT OR Apache-2.0
+- Attribution: erick.tryzelaar <erick.tryzelaar@gmail.com>; kwantam <kwantam@gmail.com>; Manish Goregaokar <manishsmail@gmail.com>
+- License proof: https://crates.io/api/v1/crates/unicode-xid/0.2.6
+- Size: 15744 bytes
+- SHA-256: `ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853`
+- Publisher file: https://static.crates.io/crates/unicode-xid/0.2.6/download
+
+## untrusted 0.9.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_untrusted_0_9_0`
+- Version: 0.9.0
+- License: ISC
+- Attribution: Brian Smith <brian@briansmith.org>
+- License proof: https://crates.io/api/v1/crates/untrusted/0.9.0
+- Size: 14447 bytes
+- SHA-256: `8ecb6da28b8a351d773b68d5825ac39017e680750f980f3a1a85cd8dd28a47c1`
+- Publisher file: https://static.crates.io/crates/untrusted/0.9.0/download
+
+## unty 0.0.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_unty_0_0_4`
+- Version: 0.0.4
+- License: MIT OR Apache-2.0
+- Attribution: Victor Koenders <bincode@trang.ar>
+- License proof: https://crates.io/api/v1/crates/unty/0.0.4
+- Size: 7200 bytes
+- SHA-256: `6d49784317cd0d1ee7ec5c716dd598ec5b4483ea832a2dced265471cc0f690ae`
+- Publisher file: https://static.crates.io/crates/unty/0.0.4/download
+
+## valuable 0.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_valuable_0_1_1`
+- Version: 0.1.1
+- License: MIT
+- Attribution: Original valuable package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/valuable/0.1.1
+- Size: 28679 bytes
+- SHA-256: `ba73ea9cf16a25df0c8caa16c51acb937d5712a8429db78a3ee29d5dcacd3a65`
+- Publisher file: https://static.crates.io/crates/valuable/0.1.1/download
+
+## vcpkg 0.2.15 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_vcpkg_0_2_15`
+- Version: 0.2.15
+- License: MIT/Apache-2.0
+- Attribution: Jim McGrath <jimmc2@gmail.com>
+- License proof: https://crates.io/api/v1/crates/vcpkg/0.2.15
+- Size: 228735 bytes
+- SHA-256: `accd4ea62f7bb7a82fe23066fb0957d48ef677f6eeb8215f372f52e48bb32426`
+- Publisher file: https://static.crates.io/crates/vcpkg/0.2.15/download
+
+## version_check 0.9.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_version_check_0_9_5`
+- Version: 0.9.5
+- License: MIT/Apache-2.0
+- Attribution: Sergio Benitez <sb@sergio.bz>
+- License proof: https://crates.io/api/v1/crates/version_check/0.9.5
+- Size: 15554 bytes
+- SHA-256: `0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a`
+- Publisher file: https://static.crates.io/crates/version_check/0.9.5/download
+
+## visibility 0.1.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_visibility_0_1_1`
+- Version: 0.1.1
+- License: Zlib OR MIT OR Apache-2.0
+- Attribution: Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>
+- License proof: https://crates.io/api/v1/crates/visibility/0.1.1
+- Size: 8119 bytes
+- SHA-256: `d674d135b4a8c1d7e813e2f8d1c9a58308aee4a680323066025e53132218bd91`
+- Publisher file: https://static.crates.io/crates/visibility/0.1.1/download
+
+## void 1.0.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_void_1_0_2`
+- Version: 1.0.2
+- License: MIT
+- Attribution: Jonathan Reem <jonathan.reem@gmail.com>
+- License proof: https://crates.io/api/v1/crates/void/1.0.2
+- Size: 2356 bytes
+- SHA-256: `6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d`
+- Publisher file: https://static.crates.io/crates/void/1.0.2/download
+
+## walkdir 2.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_walkdir_2_5_0`
+- Version: 2.5.0
+- License: Unlicense/MIT
+- Attribution: Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/walkdir/2.5.0
+- Size: 23951 bytes
+- SHA-256: `29790946404f91d9c5d06f9874efddea1dc06c5efe94541a7d6863108e3a5e4b`
+- Publisher file: https://static.crates.io/crates/walkdir/2.5.0/download
+
+## wasi 0.11.1+wasi-snapshot-preview1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasi_0_11_1_wasi_snapshot_preview1`
+- Version: 0.11.1+wasi-snapshot-preview1
+- License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+- Attribution: The Cranelift Project Developers
+- License proof: https://crates.io/api/v1/crates/wasi/0.11.1+wasi-snapshot-preview1
+- Size: 28477 bytes
+- SHA-256: `ccf3ec651a847eb01de73ccad15eb7d99f80485de043efb2f370cd654f4ea44b`
+- Publisher file: https://static.crates.io/crates/wasi/0.11.1+wasi-snapshot-preview1/download
+
+## wasip2 1.0.4+wasi-0.2.12 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasip2_1_0_4_wasi_0_2_12`
+- Version: 1.0.4+wasi-0.2.12
+- License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+- Attribution: Original wasip2 package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/wasip2/1.0.4+wasi-0.2.12
+- Size: 135311 bytes
+- SHA-256: `b67efb37e106e55ce722a510d6b5f9c17f083e5fc79afc2badeb12cc313d9487`
+- Publisher file: https://static.crates.io/crates/wasip2/1.0.4+wasi-0.2.12/download
+
+## wasix 0.13.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasix_0_13_2`
+- Version: 0.13.2
+- License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+- Attribution: The Cranelift Project Developers; john-sharratt
+- License proof: https://crates.io/api/v1/crates/wasix/0.13.2
+- Size: 207107 bytes
+- SHA-256: `ae86f02046da16a333a9129d31451423e1657737ecdafed4193838a5f54c5cfe`
+- Publisher file: https://static.crates.io/crates/wasix/0.13.2/download
+
+## wasm-bindgen 0.2.126 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasm_bindgen_0_2_126`
+- Version: 0.2.126
+- License: MIT OR Apache-2.0
+- Attribution: The wasm-bindgen Developers
+- License proof: https://crates.io/api/v1/crates/wasm-bindgen/0.2.126
+- Size: 67461 bytes
+- SHA-256: `4b067c0c11094aef6b7a801c1e34a26affafdf3d051dba08456b868789aaf9a4`
+- Publisher file: https://static.crates.io/crates/wasm-bindgen/0.2.126/download
+
+## wasm-bindgen-macro 0.2.126 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasm_bindgen_macro_0_2_126`
+- Version: 0.2.126
+- License: MIT OR Apache-2.0
+- Attribution: The wasm-bindgen Developers
+- License proof: https://crates.io/api/v1/crates/wasm-bindgen-macro/0.2.126
+- Size: 9303 bytes
+- SHA-256: `167ce5e579f6bcf889c4f7175a8a5a585de84e8ff93976ce393efa5f2837aab1`
+- Publisher file: https://static.crates.io/crates/wasm-bindgen-macro/0.2.126/download
+
+## wasm-bindgen-macro-support 0.2.126 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasm_bindgen_macro_support_0_2_126`
+- Version: 0.2.126
+- License: MIT OR Apache-2.0
+- Attribution: The wasm-bindgen Developers
+- License proof: https://crates.io/api/v1/crates/wasm-bindgen-macro-support/0.2.126
+- Size: 82688 bytes
+- SHA-256: `f3997c7839262f4ef12cf90b818d6340c18e80f263f1a94bf157d0ec4420380e`
+- Publisher file: https://static.crates.io/crates/wasm-bindgen-macro-support/0.2.126/download
+
+## wasm-bindgen-shared 0.2.126 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wasm_bindgen_shared_0_2_126`
+- Version: 0.2.126
+- License: MIT OR Apache-2.0
+- Attribution: The wasm-bindgen Developers
+- License proof: https://crates.io/api/v1/crates/wasm-bindgen-shared/0.2.126
+- Size: 11287 bytes
+- SHA-256: `dc1b4cb0cc549fcf58d7dfc081778139b3d283a081644e833e84682ad71cea24`
+- Publisher file: https://static.crates.io/crates/wasm-bindgen-shared/0.2.126/download
+
+## weak-table 0.3.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_weak_table_0_3_2`
+- Version: 0.3.2
+- License: MIT
+- Attribution: Jesse A. Tov <jesse.tov@gmail.com>
+- License proof: https://crates.io/api/v1/crates/weak-table/0.3.2
+- Size: 23989 bytes
+- SHA-256: `323f4da9523e9a669e1eaf9c6e763892769b1d38c623913647bfdc1532fe4549`
+- Publisher file: https://static.crates.io/crates/weak-table/0.3.2/download
+
+## web-sys 0.3.103 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_web_sys_0_3_103`
+- Version: 0.3.103
+- License: MIT OR Apache-2.0
+- Attribution: The wasm-bindgen Developers
+- License proof: https://crates.io/api/v1/crates/web-sys/0.3.103
+- Size: 675560 bytes
+- SHA-256: `8622dcb61c0bcc9fffa6938bed81210af2da9a7e4a1a834b2e37a59b6dfb6141`
+- Publisher file: https://static.crates.io/crates/web-sys/0.3.103/download
+
+## winapi 0.3.9 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_winapi_0_3_9`
+- Version: 0.3.9
+- License: MIT/Apache-2.0
+- Attribution: Peter Atashian <retep998@gmail.com>
+- License proof: https://crates.io/api/v1/crates/winapi/0.3.9
+- Size: 1200382 bytes
+- SHA-256: `5c839a674fcd7a98952e593242ea400abe93992746761e38641405d28b00f419`
+- Publisher file: https://static.crates.io/crates/winapi/0.3.9/download
+
+## winapi-i686-pc-windows-gnu 0.4.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_winapi_i686_pc_windows_gnu_0_4_0`
+- Version: 0.4.0
+- License: MIT/Apache-2.0
+- Attribution: Peter Atashian <retep998@gmail.com>
+- License proof: https://crates.io/api/v1/crates/winapi-i686-pc-windows-gnu/0.4.0
+- Size: 2918815 bytes
+- SHA-256: `ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6`
+- Publisher file: https://static.crates.io/crates/winapi-i686-pc-windows-gnu/0.4.0/download
+
+## winapi-util 0.1.11 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_winapi_util_0_1_11`
+- Version: 0.1.11
+- License: Unlicense OR MIT
+- Attribution: Andrew Gallant <jamslam@gmail.com>
+- License proof: https://crates.io/api/v1/crates/winapi-util/0.1.11
+- Size: 13368 bytes
+- SHA-256: `c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22`
+- Publisher file: https://static.crates.io/crates/winapi-util/0.1.11/download
+
+## winapi-x86_64-pc-windows-gnu 0.4.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_winapi_x86_64_pc_windows_gnu_0_4_0`
+- Version: 0.4.0
+- License: MIT/Apache-2.0
+- Attribution: Peter Atashian <retep998@gmail.com>
+- License proof: https://crates.io/api/v1/crates/winapi-x86_64-pc-windows-gnu/0.4.0
+- Size: 2947998 bytes
+- SHA-256: `712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f`
+- Publisher file: https://static.crates.io/crates/winapi-x86_64-pc-windows-gnu/0.4.0/download
+
+## windows 0.61.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_0_61_3`
+- Version: 0.61.3
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows/0.61.3
+- Size: 9372520 bytes
+- SHA-256: `9babd3a767a4c1aef6900409f85f5d53ce2544ccdfaa86dad48c91782c6d6893`
+- Publisher file: https://static.crates.io/crates/windows/0.61.3/download
+
+## windows_aarch64_gnullvm 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_aarch64_gnullvm_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_aarch64_gnullvm/0.42.2
+- Size: 364071 bytes
+- SHA-256: `597a5118570b68bc08d8d59125332c54f1ba9d9adeedeef5b99b02ba2b0698f8`
+- Publisher file: https://static.crates.io/crates/windows_aarch64_gnullvm/0.42.2/download
+
+## windows_aarch64_gnullvm 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_aarch64_gnullvm_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_aarch64_gnullvm/0.52.6
+- Size: 435718 bytes
+- SHA-256: `32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3`
+- Publisher file: https://static.crates.io/crates/windows_aarch64_gnullvm/0.52.6/download
+
+## windows_aarch64_gnullvm 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_aarch64_gnullvm_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_aarch64_gnullvm package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_aarch64_gnullvm/0.53.1
+- Size: 787748 bytes
+- SHA-256: `a9d8416fa8b42f5c947f8482c43e7d89e73a173cead56d044f6a56104a6d1b53`
+- Publisher file: https://static.crates.io/crates/windows_aarch64_gnullvm/0.53.1/download
+
+## windows_aarch64_msvc 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_aarch64_msvc_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_aarch64_msvc/0.42.2
+- Size: 666981 bytes
+- SHA-256: `e08e8864a60f06ef0d0ff4ba04124db8b0fb3be5776a5cd47641e942e58c4d43`
+- Publisher file: https://static.crates.io/crates/windows_aarch64_msvc/0.42.2/download
+
+## windows_aarch64_msvc 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_aarch64_msvc_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_aarch64_msvc/0.52.6
+- Size: 832615 bytes
+- SHA-256: `09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469`
+- Publisher file: https://static.crates.io/crates/windows_aarch64_msvc/0.52.6/download
+
+## windows_aarch64_msvc 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_aarch64_msvc_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_aarch64_msvc package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_aarch64_msvc/0.53.1
+- Size: 838009 bytes
+- SHA-256: `b9d782e804c2f632e395708e99a94275910eb9100b2114651e04744e9b125006`
+- Publisher file: https://static.crates.io/crates/windows_aarch64_msvc/0.53.1/download
+
+## windows-collections 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_collections_0_2_0`
+- Version: 0.2.0
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-collections package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-collections/0.2.0
+- Size: 13579 bytes
+- SHA-256: `3beeceb5e5cfd9eb1d76b381630e82c4241ccd0d27f1a39ed41b2760b255c5e8`
+- Publisher file: https://static.crates.io/crates/windows-collections/0.2.0/download
+
+## windows-core 0.61.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_core_0_61_2`
+- Version: 0.61.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-core/0.61.2
+- Size: 36771 bytes
+- SHA-256: `c0fdd3ddb90610c7638aa2b3a3ab2904fb9e5cdbecc643ddb3647212781c4ae3`
+- Publisher file: https://static.crates.io/crates/windows-core/0.61.2/download
+
+## windows-core 0.62.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_core_0_62_2`
+- Version: 0.62.2
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-core package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-core/0.62.2
+- Size: 36932 bytes
+- SHA-256: `b8e83a14d34d0623b51dce9581199302a221863196a1dde71a7663a4c2be9deb`
+- Publisher file: https://static.crates.io/crates/windows-core/0.62.2/download
+
+## windows-future 0.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_future_0_2_1`
+- Version: 0.2.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-future package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-future/0.2.1
+- Size: 17532 bytes
+- SHA-256: `fc6a41e98427b19fe4b73c550f060b59fa592d7d686537eebf9385621bfbad8e`
+- Publisher file: https://static.crates.io/crates/windows-future/0.2.1/download
+
+## windows_i686_gnu 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_gnu_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_i686_gnu/0.42.2
+- Size: 736236 bytes
+- SHA-256: `c61d927d8da41da96a81f029489353e68739737d3beca43145c8afec9a31a84f`
+- Publisher file: https://static.crates.io/crates/windows_i686_gnu/0.42.2/download
+
+## windows_i686_gnu 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_gnu_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_i686_gnu/0.52.6
+- Size: 880402 bytes
+- SHA-256: `8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b`
+- Publisher file: https://static.crates.io/crates/windows_i686_gnu/0.52.6/download
+
+## windows_i686_gnu 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_gnu_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_i686_gnu package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_i686_gnu/0.53.1
+- Size: 939775 bytes
+- SHA-256: `960e6da069d81e09becb0ca57a65220ddff016ff2d6af6a223cf372a506593a3`
+- Publisher file: https://static.crates.io/crates/windows_i686_gnu/0.53.1/download
+
+## windows_i686_gnullvm 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_gnullvm_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_i686_gnullvm/0.52.6
+- Size: 475940 bytes
+- SHA-256: `0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66`
+- Publisher file: https://static.crates.io/crates/windows_i686_gnullvm/0.52.6/download
+
+## windows_i686_gnullvm 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_gnullvm_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_i686_gnullvm package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_i686_gnullvm/0.53.1
+- Size: 857396 bytes
+- SHA-256: `fa7359d10048f68ab8b09fa71c3daccfb0e9b559aed648a8f95469c27057180c`
+- Publisher file: https://static.crates.io/crates/windows_i686_gnullvm/0.53.1/download
+
+## windows_i686_msvc 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_msvc_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_i686_msvc/0.42.2
+- Size: 724951 bytes
+- SHA-256: `44d840b6ec649f480a41c8d80f9c65108b92d89345dd94027bfe06ac444d1060`
+- Publisher file: https://static.crates.io/crates/windows_i686_msvc/0.42.2/download
+
+## windows_i686_msvc 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_msvc_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_i686_msvc/0.52.6
+- Size: 901163 bytes
+- SHA-256: `240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66`
+- Publisher file: https://static.crates.io/crates/windows_i686_msvc/0.52.6/download
+
+## windows_i686_msvc 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_i686_msvc_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_i686_msvc package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_i686_msvc/0.53.1
+- Size: 907688 bytes
+- SHA-256: `1e7ac75179f18232fe9c285163565a57ef8d3c89254a30685b57d83a38d326c2`
+- Publisher file: https://static.crates.io/crates/windows_i686_msvc/0.53.1/download
+
+## windows-implement 0.60.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_implement_0_60_2`
+- Version: 0.60.2
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-implement package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-implement/0.60.2
+- Size: 15325 bytes
+- SHA-256: `053e2e040ab57b9dc951b72c264860db7eb3b0200ba345b4e4c3b14f67855ddf`
+- Publisher file: https://static.crates.io/crates/windows-implement/0.60.2/download
+
+## windows-interface 0.59.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_interface_0_59_3`
+- Version: 0.59.3
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-interface package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-interface/0.59.3
+- Size: 11809 bytes
+- SHA-256: `3f316c4a2570ba26bbec722032c4099d8c8bc095efccdc15688708623367e358`
+- Publisher file: https://static.crates.io/crates/windows-interface/0.59.3/download
+
+## windows-link 0.1.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_link_0_1_3`
+- Version: 0.1.3
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-link/0.1.3
+- Size: 6154 bytes
+- SHA-256: `5e6ad25900d524eaabdbbb96d20b4311e1e7ae1699af4fb28c17ae66c80d798a`
+- Publisher file: https://static.crates.io/crates/windows-link/0.1.3/download
+
+## windows-link 0.2.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_link_0_2_1`
+- Version: 0.2.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-link package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-link/0.2.1
+- Size: 6133 bytes
+- SHA-256: `f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5`
+- Publisher file: https://static.crates.io/crates/windows-link/0.2.1/download
+
+## windows-numerics 0.2.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_numerics_0_2_0`
+- Version: 0.2.0
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-numerics package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-numerics/0.2.0
+- Size: 9686 bytes
+- SHA-256: `9150af68066c4c5c07ddc0ce30421554771e528bde427614c61038bc2c92c2b1`
+- Publisher file: https://static.crates.io/crates/windows-numerics/0.2.0/download
+
+## windows-result 0.3.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_result_0_3_4`
+- Version: 0.3.4
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-result/0.3.4
+- Size: 13418 bytes
+- SHA-256: `56f42bd332cc6c8eac5af113fc0c1fd6a8fd2aa08a0119358686e5160d0586c6`
+- Publisher file: https://static.crates.io/crates/windows-result/0.3.4/download
+
+## windows-result 0.4.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_result_0_4_1`
+- Version: 0.4.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-result package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-result/0.4.1
+- Size: 13381 bytes
+- SHA-256: `7781fa89eaf60850ac3d2da7af8e5242a5ea78d1a11c49bf2910bb5a73853eb5`
+- Publisher file: https://static.crates.io/crates/windows-result/0.4.1/download
+
+## windows-strings 0.4.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_strings_0_4_2`
+- Version: 0.4.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-strings/0.4.2
+- Size: 13983 bytes
+- SHA-256: `56e6c93f3a0c3b36176cb1327a4958a0353d5d166c2a35cb268ace15e91d3b57`
+- Publisher file: https://static.crates.io/crates/windows-strings/0.4.2/download
+
+## windows-strings 0.5.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_strings_0_5_1`
+- Version: 0.5.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-strings package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-strings/0.5.1
+- Size: 13966 bytes
+- SHA-256: `7837d08f69c77cf6b07689544538e017c1bfcf57e34b4c0ff58e6c2cd3b37091`
+- Publisher file: https://static.crates.io/crates/windows-strings/0.5.1/download
+
+## windows-sys 0.45.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_sys_0_45_0`
+- Version: 0.45.0
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-sys/0.45.0
+- Size: 2568659 bytes
+- SHA-256: `75283be5efb2831d37ea142365f009c02ec203cd29a3ebecbc093d52315b66d0`
+- Publisher file: https://static.crates.io/crates/windows-sys/0.45.0/download
+
+## windows-sys 0.52.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_sys_0_52_0`
+- Version: 0.52.0
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-sys/0.52.0
+- Size: 2576877 bytes
+- SHA-256: `282be5f36a8ce781fad8c8ae18fa3f9beff57ec1b52cb3de0789201425d9a33d`
+- Publisher file: https://static.crates.io/crates/windows-sys/0.52.0/download
+
+## windows-sys 0.60.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_sys_0_60_2`
+- Version: 0.60.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-sys/0.60.2
+- Size: 2518479 bytes
+- SHA-256: `f2f500e4d28234f72040990ec9d39e3a6b950f9f22d3dba18416c35882612bcb`
+- Publisher file: https://static.crates.io/crates/windows-sys/0.60.2/download
+
+## windows-sys 0.61.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_sys_0_61_2`
+- Version: 0.61.2
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-sys package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-sys/0.61.2
+- Size: 2517186 bytes
+- SHA-256: `ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc`
+- Publisher file: https://static.crates.io/crates/windows-sys/0.61.2/download
+
+## windows-targets 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_targets_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-targets/0.42.2
+- Size: 5492 bytes
+- SHA-256: `8e5180c00cd44c9b1c88adb3693291f1cd93605ded80c250a75d472756b4d071`
+- Publisher file: https://static.crates.io/crates/windows-targets/0.42.2/download
+
+## windows-targets 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_targets_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-targets/0.52.6
+- Size: 6403 bytes
+- SHA-256: `9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973`
+- Publisher file: https://static.crates.io/crates/windows-targets/0.52.6/download
+
+## windows-targets 0.53.5 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_targets_0_53_5`
+- Version: 0.53.5
+- License: MIT OR Apache-2.0
+- Attribution: Original windows-targets package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows-targets/0.53.5
+- Size: 7126 bytes
+- SHA-256: `4945f9f551b88e0d65f3db0bc25c33b8acea4d9e41163edf90dcd0b19f9069f3`
+- Publisher file: https://static.crates.io/crates/windows-targets/0.53.5/download
+
+## windows-threading 0.1.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_threading_0_1_0`
+- Version: 0.1.0
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows-threading/0.1.0
+- Size: 9085 bytes
+- SHA-256: `b66463ad2e0ea3bbf808b7f1d371311c80e115c0b71d60efc142cafbcfb057a6`
+- Publisher file: https://static.crates.io/crates/windows-threading/0.1.0/download
+
+## windows_x86_64_gnu 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_gnu_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_gnu/0.42.2
+- Size: 699373 bytes
+- SHA-256: `8de912b8b8feb55c064867cf047dda097f92d51efad5b491dfb98f6bbb70cb36`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_gnu/0.42.2/download
+
+## windows_x86_64_gnu 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_gnu_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_gnu/0.52.6
+- Size: 836363 bytes
+- SHA-256: `147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_gnu/0.52.6/download
+
+## windows_x86_64_gnu 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_gnu_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_x86_64_gnu package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_gnu/0.53.1
+- Size: 903712 bytes
+- SHA-256: `9c3842cdd74a865a8066ab39c8a7a473c0778a3f29370b5fd6b4b9aa7df4a499`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_gnu/0.53.1/download
+
+## windows_x86_64_gnullvm 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_gnullvm_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_gnullvm/0.42.2
+- Size: 364068 bytes
+- SHA-256: `26d41b46a36d453748aedef1486d5c7a85db22e56aff34643984ea85514e94a3`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_gnullvm/0.42.2/download
+
+## windows_x86_64_gnullvm 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_gnullvm_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_gnullvm/0.52.6
+- Size: 435707 bytes
+- SHA-256: `24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_gnullvm/0.52.6/download
+
+## windows_x86_64_gnullvm 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_gnullvm_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_x86_64_gnullvm package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_gnullvm/0.53.1
+- Size: 787739 bytes
+- SHA-256: `0ffa179e2d07eee8ad8f57493436566c7cc30ac536a3379fdf008f47f6bb7ae1`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_gnullvm/0.53.1/download
+
+## windows_x86_64_msvc 0.42.2 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_msvc_0_42_2`
+- Version: 0.42.2
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_msvc/0.42.2
+- Size: 666936 bytes
+- SHA-256: `9aec5da331524158c6d1a4ac0ab1541149c0b9505fde06423b02f5ef0106b9f0`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_msvc/0.42.2/download
+
+## windows_x86_64_msvc 0.52.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_msvc_0_52_6`
+- Version: 0.52.6
+- License: MIT OR Apache-2.0
+- Attribution: Microsoft
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_msvc/0.52.6
+- Size: 832564 bytes
+- SHA-256: `589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_msvc/0.52.6/download
+
+## windows_x86_64_msvc 0.53.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_windows_x86_64_msvc_0_53_1`
+- Version: 0.53.1
+- License: MIT OR Apache-2.0
+- Attribution: Original windows_x86_64_msvc package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/windows_x86_64_msvc/0.53.1
+- Size: 837950 bytes
+- SHA-256: `d6bbff5f0aada427a1e5a6da5f1f98158182f26556f345ac9e04d36d0ebed650`
+- Publisher file: https://static.crates.io/crates/windows_x86_64_msvc/0.53.1/download
+
+## winnow 0.7.15 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_winnow_0_7_15`
+- Version: 0.7.15
+- License: MIT
+- Attribution: Original winnow package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/winnow/0.7.15
+- Size: 187092 bytes
+- SHA-256: `df79d97927682d2fd8adb29682d1140b343be4ac0f08fd68b7765d9c059d3945`
+- Publisher file: https://static.crates.io/crates/winnow/0.7.15/download
+
+## winnow 1.0.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_winnow_1_0_4`
+- Version: 1.0.4
+- License: MIT
+- Attribution: Original winnow package contributors; original copyright and license notices retained in source archive
+- License proof: https://crates.io/api/v1/crates/winnow/1.0.4
+- Size: 188513 bytes
+- SHA-256: `23b97319f7b8343df12cc98938e5c3eb436064524c8d2b4e30a1d3a36eecdf81`
+- Publisher file: https://static.crates.io/crates/winnow/1.0.4/download
+
+## wit-bindgen 0.57.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wit_bindgen_0_57_1`
+- Version: 0.57.1
+- License: Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+- Attribution: Alex Crichton <alex@alexcrichton.com>
+- License proof: https://crates.io/api/v1/crates/wit-bindgen/0.57.1
+- Size: 71227 bytes
+- SHA-256: `1ebf944e87a7c253233ad6766e082e3cd714b5d03812acc24c318f549614536e`
+- Publisher file: https://static.crates.io/crates/wit-bindgen/0.57.1/download
+
+## wyz 0.5.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_wyz_0_5_1`
+- Version: 0.5.1
+- License: MIT
+- Attribution: myrrlyn <self@myrrlyn.dev>
+- License proof: https://crates.io/api/v1/crates/wyz/0.5.1
+- Size: 18790 bytes
+- SHA-256: `05f360fc0b24296329c78fda852a1e9ae82de9cf7b27dae4b7f62f118f77b9ed`
+- Publisher file: https://static.crates.io/crates/wyz/0.5.1/download
+
+## x25519-dalek 2.0.1 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_x25519_dalek_2_0_1`
+- Version: 2.0.1
+- License: BSD-3-Clause
+- Attribution: Isis Lovecruft <isis@patternsinthevoid.net>; DebugSteven <debugsteven@gmail.com>; Henry de Valence <hdevalence@hdevalence.ca>
+- License proof: https://crates.io/api/v1/crates/x25519-dalek/2.0.1
+- Size: 87820 bytes
+- SHA-256: `c7e468321c81fb07fa7f4c636c3972b9100f0346e5b6a9f2bd0603a52f7ed277`
+- Publisher file: https://static.crates.io/crates/x25519-dalek/2.0.1/download
+
+## zerocopy 0.8.55 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zerocopy_0_8_55`
+- Version: 0.8.55
+- License: BSD-2-Clause OR Apache-2.0 OR MIT
+- Attribution: Joshua Liebow-Feeser <joshlf@google.com>; Jack Wrenn <jswrenn@amazon.com>
+- License proof: https://crates.io/api/v1/crates/zerocopy/0.8.55
+- Size: 284957 bytes
+- SHA-256: `b5a105cd7b140f6eeec8acff2ea38135d3cab283ada58540f629fe51e46696eb`
+- Publisher file: https://static.crates.io/crates/zerocopy/0.8.55/download
+
+## zerocopy-derive 0.8.55 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zerocopy_derive_0_8_55`
+- Version: 0.8.55
+- License: BSD-2-Clause OR Apache-2.0 OR MIT
+- Attribution: Joshua Liebow-Feeser <joshlf@google.com>; Jack Wrenn <jswrenn@amazon.com>
+- License proof: https://crates.io/api/v1/crates/zerocopy-derive/0.8.55
+- Size: 103316 bytes
+- SHA-256: `0fe976fb70c78cd64cccfe3a6fc142244e8a77b70959b30faf9d0ac37ee228eb`
+- Publisher file: https://static.crates.io/crates/zerocopy-derive/0.8.55/download
+
+## zerofrom 0.1.8 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zerofrom_0_1_8`
+- Version: 0.1.8
+- License: Unicode-3.0
+- Attribution: The ICU4X Project Developers
+- License proof: https://crates.io/api/v1/crates/zerofrom/0.1.8
+- Size: 6156 bytes
+- SHA-256: `0ec05a11813ea801ff6d75110ad09cd0824ddba17dfe17128ea0d5f68e6c5272`
+- Publisher file: https://static.crates.io/crates/zerofrom/0.1.8/download
+
+## zeroize 1.9.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zeroize_1_9_0`
+- Version: 1.9.0
+- License: Apache-2.0 OR MIT
+- Attribution: The RustCrypto Project Developers
+- License proof: https://crates.io/api/v1/crates/zeroize/1.9.0
+- Size: 24480 bytes
+- SHA-256: `e13c156562582aa81c60cb29407084cdb54c4164760106ab78e6c5b0858cf64e`
+- Publisher file: https://static.crates.io/crates/zeroize/1.9.0/download
+
+## zeroize_derive 1.5.0 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zeroize_derive_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0 OR MIT
+- Attribution: The RustCrypto Project Developers
+- License proof: https://crates.io/api/v1/crates/zeroize_derive/1.5.0
+- Size: 12034 bytes
+- SHA-256: `3c50655cbb0fe3fc43170059e702f1ce5e19b84cec58dc87b037a09935c2f328`
+- Publisher file: https://static.crates.io/crates/zeroize_derive/1.5.0/download
+
+## zerovec 0.11.6 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zerovec_0_11_6`
+- Version: 0.11.6
+- License: Unicode-3.0
+- Attribution: The ICU4X Project Developers
+- License proof: https://crates.io/api/v1/crates/zerovec/0.11.6
+- Size: 128583 bytes
+- SHA-256: `90f911cbc359ab6af17377d242225f4d75119aec87ea711a880987b18cd7b239`
+- Publisher file: https://static.crates.io/crates/zerovec/0.11.6/download
+
+## zmij 1.0.23 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zmij_1_0_23`
+- Version: 1.0.23
+- License: MIT
+- Attribution: David Tolnay <dtolnay@gmail.com>
+- License proof: https://crates.io/api/v1/crates/zmij/1.0.23
+- Size: 28612 bytes
+- SHA-256: `29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b`
+- Publisher file: https://static.crates.io/crates/zmij/1.0.23/download
+
+## zstd 0.13.3 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zstd_0_13_3`
+- Version: 0.13.3
+- License: MIT
+- Attribution: Alexandre Bury <alexandre.bury@gmail.com>
+- License proof: https://crates.io/api/v1/crates/zstd/0.13.3
+- Size: 30514 bytes
+- SHA-256: `e91ee311a569c327171651566e07972200e76fcfe2242a4fa446149a3881c08a`
+- Publisher file: https://static.crates.io/crates/zstd/0.13.3/download
+
+## zstd-safe 7.2.4 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zstd_safe_7_2_4`
+- Version: 7.2.4
+- License: MIT OR Apache-2.0
+- Attribution: Alexandre Bury <alexandre.bury@gmail.com>
+- License proof: https://crates.io/api/v1/crates/zstd-safe/7.2.4
+- Size: 29350 bytes
+- SHA-256: `8f49c4d5f0abb602a93fb8736af2a4f4dd9512e36f7f570d66e65ff867ed3b9d`
+- Publisher file: https://static.crates.io/crates/zstd-safe/7.2.4/download
+
+## zstd-sys 2.0.16+zstd.1.5.7 original Rust source archive for bitchat Arti dependency set
+
+- Catalog id: `bitchat_rust_zstd_sys_2_0_16_zstd_1_5_7`
+- Version: 2.0.16+zstd.1.5.7
+- License: MIT/Apache-2.0
+- Attribution: Alexandre Bury <alexandre.bury@gmail.com>
+- License proof: https://crates.io/api/v1/crates/zstd-sys/2.0.16+zstd.1.5.7
+- Size: 775620 bytes
+- SHA-256: `91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748`
+- Publisher file: https://static.crates.io/crates/zstd-sys/2.0.16+zstd.1.5.7/download
+
 ## Briar for Android
 
 - Catalog id: `briar_android`
