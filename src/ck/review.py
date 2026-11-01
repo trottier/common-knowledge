@@ -4,8 +4,8 @@ import re
 from pathlib import Path
 
 from ck.catalog import load_catalog
-from ck.config import load_config
-from ck.render import content_file
+from ck.config import load_config, read_yaml
+from ck.render import citation_ids, content_file
 
 
 def markers(root: Path) -> list[dict]:
@@ -32,6 +32,14 @@ def release_blockers(root: Path) -> list[str]:
     problems = [f"{item['path']}:{item['line']}: {item['marker']}" for item in markers(root)]
     for item in items.values():
         problems.extend(item.blockers(release=True))
+    source_file = root / "content/sources.yaml"
+    sources = read_yaml(source_file) if source_file.exists() else {}
+    for path in sorted((root / "content").rglob("*.md")):
+        _, body = content_file(path)
+        try:
+            citation_ids(body, sources)
+        except ValueError as error:
+            problems.append(f"{path.relative_to(root)}: citations: {error}")
     for path in sorted((root / "content/en").rglob("*.md")):
         header, _ = content_file(path)
         if header.status != "reviewed" or not header.reviewer or not header.reviewed_on:
@@ -39,15 +47,12 @@ def release_blockers(root: Path) -> list[str]:
             problems.append(f"{path.relative_to(root)}: named human review required ({tags})")
     edition = root / "content/en/edition.yaml"
     if (root / "catalog/medpdf_topics.yaml").exists():
-        from ck.config import read_yaml
         from ck.zim2pdf import Topics
 
         selection = Topics.model_validate(read_yaml(root / "catalog/medpdf_topics.yaml"))
         if selection.status != "reviewed" or not selection.reviewer or not selection.reviewed_on:
             problems.append("catalog/medpdf_topics.yaml: named human medical review required")
     if edition.exists():
-        from ck.config import read_yaml
-
         labels = read_yaml(edition)
         if labels["status"] != "reviewed" or not labels["reviewer"] or not labels["reviewed_on"]:
             problems.append(
@@ -141,9 +146,14 @@ def write_release_review(root: Path, output: Path) -> None:
                 f"review date: {item.legal_reviewed_on or 'unassigned'}."
             )
     lines += ["", "## Named human content reviews", ""]
-    for problem in release_blockers(root):
+    blockers = release_blockers(root)
+    for problem in blockers:
         if "named human" in problem:
             lines.append("- " + problem)
+    citation_problems = [problem for problem in blockers if ": citations: " in problem]
+    if citation_problems:
+        lines += ["", "## Citation problems", ""]
+        lines += ["- " + problem for problem in citation_problems]
     lines += [
         "",
         f"## Remaining VERIFY markers ({len(outstanding)})",

@@ -9,6 +9,9 @@ does not approve content. Release validation must require a named human reviewer
 for medical, legal and radio material, and must reject unresolved markers.
 
 Factual claims use `[@source_id]` references defined in `content/sources.yaml`.
+Write multiple references separately, such as `[@first_source] [@second_source]`.
+Grouped references, empty IDs and unfinished references fail rendering and
+release checks. Every edition is checked, including machine translations.
 Original wording summarizes sources; third-party publications are fetched
 separately, unchanged and only after catalog license verification.
 
