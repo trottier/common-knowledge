@@ -11,6 +11,7 @@ from ck.mapextract import (
     build_state_extracts,
     collect_android_maps,
     extract_roads,
+    policy,
     prepared_state_source,
     recipe_version,
     source_inputs,
@@ -63,6 +64,22 @@ def test_smart_clip_keeps_cross_boundary_ways_and_complete_turn_restrictions(tmp
     extract_roads(source, box(0.5, 0.5, 1.5, 1.5), output, 0.001)
     assert identifiers(output) == {"n1", "n2", "n3", "w10", "w11", "r20"}
     assert digest(source) == original
+
+
+def test_empty_jurisdiction_clip_is_rejected_even_when_references_are_valid(tmp_path):
+    source = road_fixture(tmp_path)
+    # Osmium 1.15 also rejects an empty file while producing extended JSON
+    # (there is no bounding box). Either audit failure must stop the build.
+    with pytest.raises((ValueError, subprocess.CalledProcessError)):
+        extract_roads(source, box(-60, -60, -59, -59), tmp_path / "empty.osm.pbf", 0.001)
+
+
+def test_caribbean_sources_override_the_listed_us_parent():
+    settings = policy(ROOT)
+    assert settings.source_for("PR") == "geofabrik_puerto_rico"
+    assert settings.source_for("VI") == "geofabrik_virgin_islands"
+    assert settings.source_for("RI") == "geofabrik_us"
+    assert settings.source_for("GU") == "geofabrik_oceania"
 
 
 def test_antimeridian_clip_merges_both_sides_and_excludes_unrelated_regions(tmp_path):

@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import tempfile
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -20,6 +21,7 @@ from ck.directory import (
 )
 from ck.directory_sources import broadcast_stations, county_profiles
 from ck.generated import cached_input, generation_manifest, verified_generated_files
+from ck.mapextract import policy
 
 COMMON_INPUTS = [
     "census_county_analysis",
@@ -87,7 +89,8 @@ def build_national_points(
 ) -> dict:
     if output.exists():
         raise ValueError("National point output must be new")
-    data = prepare_data(items, cache, ["geofabrik_us", "geofabrik_oceania"])
+    sources = policy(root)
+    data = prepare_data(items, cache, sorted(set(sources.source_inputs.values())))
     if (
         not data.places
         or not data.counties
@@ -99,6 +102,19 @@ def build_national_points(
         for code, fips in data.states.items()
         if any(county.startswith(fips) for county in data.counties)
     }
+    counts = Counter((place.county[:2], place.source_id) for place in data.places)
+    coverage = {
+        state: {
+            "source_id": sources.source_for(state),
+            "places": counts[fips, sources.source_for(state)],
+        }
+        for state, fips in sorted(jurisdictions.items())
+    }
+    missing = [state for state, entry in coverage.items() if not entry["places"]]
+    if missing:
+        raise ValueError(
+            "No places from the configured OSM source in jurisdictions: " + ", ".join(missing)
+        )
     metadata = {
         "purpose": "national-atlas-points",
         "states": jurisdictions,
@@ -110,6 +126,7 @@ def build_national_points(
         "agencies": data.agencies,
         "source_versions": data.source_versions,
         "source_ids": data.source_ids,
+        "osm_source_coverage": coverage,
     }
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-national-points-") as temporary:
@@ -123,6 +140,7 @@ def build_national_points(
             "USAGov; U.S. Census Bureau",
             "license": "OpenStreetMap data: ODbL-1.0; federal source data: public domain",
             "source_versions": data.source_versions,
+            "osm_source_coverage": coverage,
             "places": [place.model_dump(exclude={"tags"}) for place in data.places],
             "omitted_records": data.rejected,
             "missing_county_profiles": data.missing_profiles,
@@ -137,6 +155,8 @@ def build_national_points(
             "src/ck/directory.py",
             "src/ck/directory_sources.py",
             "src/ck/generated.py",
+            "src/ck/mapextract.py",
+            "pipelines/androidmaps/national.yaml",
             "pyproject.toml",
             "uv.lock",
             "Dockerfile.build",

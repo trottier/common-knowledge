@@ -241,7 +241,7 @@
     "version": "2026-10-29",
     "license": "ODbL-1.0",
     "license_proof_url": "https://download.geofabrik.de/north-america/us/rhode-island.html",
-    "attribution": "© OpenStreetMap contributors; extract by Geofabrik",
+    "attribution": "\u00a9 OpenStreetMap contributors; extract by Geofabrik",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
@@ -317,7 +317,7 @@
     "sha256": "6956cdf4b143984a31e060faaa32848c74a71903135b5a7f8989c218ece8795d",
     "license": "ODbL-1.0",
     "license_proof_url": "https://docs.protomaps.com/basemaps/downloads",
-    "attribution": "© OpenStreetMap contributors; Protomaps basemap produced work",
+    "attribution": "\u00a9 OpenStreetMap contributors; Protomaps basemap produced work",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
@@ -1667,5 +1667,43 @@
       "full"
     ],
     "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "geofabrik_puerto_rico",
+    "url": "https://download.geofabrik.de/north-america/us/puerto-rico-261029.osm.pbf",
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us/puerto-rico-261029.osm.pbf.md5",
+    "size_bytes": 74228024,
+    "sha256": "82c3e21506394d7eb91984363b6f80835f901d90551f2a8c24210352f203621c",
+    "family": "geodata",
+    "title": "Geofabrik Puerto Rico OpenStreetMap extract",
+    "version": "2026-10-29",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; Geofabrik extraction",
+    "license_proof_url": "https://download.geofabrik.de/north-america/us/puerto-rico.html",
+    "placement": "hub_only",
+    "dest": "build/geodata-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed SHA-256 against this HTTPS download and the publisher MD5, territory coverage and final source preservation]]"
+  },
+  {
+    "id": "geofabrik_virgin_islands",
+    "url": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261028.osm.pbf",
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261028.osm.pbf.md5",
+    "size_bytes": 3122136,
+    "sha256": "dc0ff82695dda2d00cb17ec83d25e00f8e004bc83f9ebb13dba504277d1f1ccc",
+    "family": "geodata",
+    "title": "Geofabrik U.S. Virgin Islands OpenStreetMap extract",
+    "version": "2026-10-28",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; Geofabrik extraction",
+    "license_proof_url": "https://download.geofabrik.de/north-america/us/us-virgin-islands.html",
+    "placement": "hub_only",
+    "dest": "build/geodata-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed SHA-256 against this HTTPS download and the publisher MD5, territory coverage and final source preservation]]"
   }
 ]

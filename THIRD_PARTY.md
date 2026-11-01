@@ -469,13 +469,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census PR road-source extract
 
 - Catalog id: `android_extract_pr`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Census 2025 PR from confirmed territory source; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 14957627 bytes
+- SHA-256: `55617737e7037c37a829d0f5d741fdbb938d2bbb97f74413254c13f59756fcdc`
+- Pipeline: android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: android_source_puerto_rico, census_county_analysis, census_states
 
 ## Census RI road-source extract
 
@@ -557,13 +557,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census VI road-source extract
 
 - Catalog id: `android_extract_vi`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Census 2025 VI from confirmed territory source; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 901448 bytes
+- SHA-256: `3e3b7638587eaa66a5910a0d2f759fdd3a3c5f418106ba003cf6968c70cf1305`
+- Pipeline: android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: android_source_virgin_islands, census_county_analysis, census_states
 
 ## Census VT road-source extract
 
@@ -1102,7 +1102,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: measured generated payload bytes]] bytes
 - SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_pr
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_puerto_rico, osmand_creator, android_extract_pr
 
 ## OsmAnd roads-and-places map for RI
 
@@ -1190,7 +1190,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License proof: https://www.openstreetmap.org/copyright
 - Size: [[VERIFY: measured generated payload bytes]] bytes
 - SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_vi
+- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_virgin_islands, osmand_creator, android_extract_vi
 
 ## OsmAnd roads-and-places map for VT
 
@@ -1280,6 +1280,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `1f5aa36346d4557b83e6fe980fc5b1e420608921b9e5a6750ea66a6eb306aaca`
 - Pipeline: android-source-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: geofabrik_oceania
 
+## Prepared roads and public places from PR
+
+- Catalog id: `android_source_puerto_rico`
+- Version: Confirmed territory source; development epoch 1793404800
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 14957608 bytes
+- SHA-256: `da5db23cd3a79b0a1b4aa39d8b63f14e0a8094d6333cd377bf5d64353aa09eb2`
+- Pipeline: android-source-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: geofabrik_puerto_rico
+
 ## Prepared roads and public places from the us parent
 
 - Catalog id: `android_source_us`
@@ -1290,6 +1301,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: measured generated payload bytes]] bytes
 - SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
 - Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osm_us_turn_58334086, osm_us_turn_341068168, osm_us_turn_341068301, osm_us_turn_480215402, osm_us_turn_476630370, osm_us_turn_1091236145, osm_us_turn_362038502, osm_us_turn_1361183566, osm_us_turn_1253938315, osm_us_turn_1303990365, osm_us_turn_1350436146
+
+## Prepared roads and public places from VI
+
+- Catalog id: `android_source_virgin_islands`
+- Version: Confirmed territory source; development epoch 1793404800
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 901429 bytes
+- SHA-256: `a61b4dde324b457d4b50b376c195742ab2ed11ce2010877a13bc7f89072a4a03`
+- Pipeline: android-source-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: geofabrik_virgin_islands
 
 ## Appropedia
 
@@ -2134,9 +2156,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: 81871671 bytes
-- SHA-256: `77154fd66db5239c8e21ded4597f2ea914def8900b29f48f31b68ce3fc453b23`
-- Pipeline: national-points-v1-d7efb3a096c74882a8304b0af71e557f444975c0c26e9f720c4f7cb03952eab2; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_oceania, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
+- Size: [[VERIFY: measured complete points after Caribbean source repair]] bytes
+- SHA-256: `[[VERIFY: complete corrected national point manifest SHA-256]]`
+- Pipeline: [[VERIFY: territory-aware national point recipe]]; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_oceania, geofabrik_us, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies, geofabrik_puerto_rico, geofabrik_virgin_islands
 
 ## Rhode Island public places directory, phone and print
 
@@ -2270,6 +2292,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519`
 - Publisher file: https://download.geofabrik.de/australia-oceania-261029.osm.pbf
 
+## Geofabrik Puerto Rico OpenStreetMap extract
+
+- Catalog id: `geofabrik_puerto_rico`
+- Version: 2026-10-29
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; Geofabrik extraction
+- License proof: https://download.geofabrik.de/north-america/us/puerto-rico.html
+- Size: 74228024 bytes
+- SHA-256: `82c3e21506394d7eb91984363b6f80835f901d90551f2a8c24210352f203621c`
+- Publisher file: https://download.geofabrik.de/north-america/us/puerto-rico-261029.osm.pbf
+
 ## Geofabrik Rhode Island OSM extract
 
 - Catalog id: `geofabrik_ri`
@@ -2291,6 +2324,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 12238337062 bytes
 - SHA-256: `0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e`
 - Publisher file: https://download.geofabrik.de/north-america/us-261029.osm.pbf
+
+## Geofabrik U.S. Virgin Islands OpenStreetMap extract
+
+- Catalog id: `geofabrik_virgin_islands`
+- Version: 2026-10-28
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; Geofabrik extraction
+- License proof: https://download.geofabrik.de/north-america/us/us-virgin-islands.html
+- Size: 3122136 bytes
+- SHA-256: `dc0ff82695dda2d00cb17ec83d25e00f8e004bc83f9ebb13dba504277d1f1ccc`
+- Publisher file: https://download.geofabrik.de/north-america/us/us-virgin-islands-261028.osm.pbf
 
 ## Alice's Adventures in Wonderland
 

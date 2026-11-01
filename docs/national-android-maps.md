@@ -1,8 +1,9 @@
 # National Android map preparation
 
-Full maps use the publisher-verified U.S. parent for the states, D.C., Puerto
-Rico and the U.S. Virgin Islands. American Samoa, Guam and the Northern Mariana
-Islands use the verified Oceania parent. The choice is recorded in
+Full maps use the publisher-verified U.S. parent for the states and D.C.
+Puerto Rico and the U.S. Virgin Islands use their separate dated territory
+extracts. American Samoa, Guam and the Northern Mariana Islands use the verified
+Oceania parent. The choice is recorded in
 `pipelines/androidmaps/national.yaml` and checked against the source pins.
 The existing Rhode Island sample path keeps its dated state extract and pinned
 turn-restriction supplement.
@@ -18,6 +19,10 @@ ck android-source --osm-id geofabrik_us --cache cache \
   --output build/generated/android_source_us --epoch "$SOURCE_DATE_EPOCH"
 ck android-source --osm-id geofabrik_oceania --cache cache \
   --output build/generated/android_source_oceania --epoch "$SOURCE_DATE_EPOCH"
+ck android-source --osm-id geofabrik_puerto_rico --cache cache \
+  --output build/generated/android_source_puerto_rico --epoch "$SOURCE_DATE_EPOCH"
+ck android-source --osm-id geofabrik_virgin_islands --cache cache \
+  --output build/generated/android_source_virgin_islands --epoch "$SOURCE_DATE_EPOCH"
 ```
 
 The existing national roads/public-place allowlist strips excluded tags and
@@ -40,7 +45,9 @@ state codes. Its small configured padding is in coordinate degrees, not a
 claimed distance in metres. Antimeridian extents are extracted on each side
 and merged. Osmium's smart strategy completes ways and retained relations,
 including turn restrictions whose connected road lies beyond a state boundary.
-The result must pass `osmium check-refs --check-relations`.
+The result must pass `osmium check-refs --check-relations` and an extended
+object-count audit. An empty clip must fail even when every reference check
+passes vacuously. Each state mapping records its node, way and relation counts.
 
 See the primary [Osmium extract manual](https://docs.osmcode.org/osmium/latest/osmium-extract.html)
 for strategy and antimeridian behavior. Identifier bitsets make memory depend
@@ -72,5 +79,7 @@ planner; no state can be silently omitted.
 
 These stages implement the build path. National source checks, OBF generation,
 repeat builds and physical installation/import checks remain unfinished.
+See [territory-source-coverage.md](territory-source-coverage.md) for the source
+selection correction and its effect on existing development outputs.
 The official APK also remains on the separate
 [restricted-asset distribution hold](osmand-provenance.md).
