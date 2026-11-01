@@ -1,6 +1,18 @@
 project_spec:
   title: Common Knowledge specification, sections 1 and 9.1
   path: AGENTS.md
+offlinellm_build:
+  title: OfflineLLM 5.1.4 — exact Android build configuration
+  url: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/build.gradle.kts
+offlinellm_settings:
+  title: OfflineLLM 5.1.4 — exact Settings controls
+  url: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ui/screens/SettingsScreen.kt
+offlinellm_import:
+  title: OfflineLLM 5.1.4 — local URI model import
+  url: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ai/ModelManager.kt
+offlinellm_chat:
+  title: OfflineLLM 5.1.4 — New Chat control
+  url: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ui/screens/ChatScreen.kt
 osmand_import:
   title: OsmAnd — Import and export, and maps and resources
   url: https://osmand.net/docs/user/personal/import-export/

@@ -4,6 +4,28 @@ Generated from catalog/; do not edit by hand.
 
 VERIFY entries are candidates and cannot be placed until confirmed.
 
+## Original apksigner JAR copied from pinned Google Build Tools 37
+
+- Catalog id: `android_apksigner_37_jar`
+- Version: 37.0.0; original SDK ZIP member
+- License: Apache-2.0
+- Attribution: The Android Open Source Project; original verifier bytes retained
+- License proof: https://android.googlesource.com/platform/tools/apksig/+/184702d9d18877edf9e5296c4e191cf0aa2b5fbb/LICENSE?format=TEXT
+- Size: 1181416 bytes
+- SHA-256: `2defad215d7ff52968a409cde528cdaef7918b115e276b8e3378ca7a178e4180`
+- Pipeline: original-sdk-zip-member-v1; inputs: android_build_tools_37_linux
+
+## Google Android Build Tools 37, verifier build input only
+
+- Catalog id: `android_build_tools_37_linux`
+- Version: 37.0.0
+- License: LicenseRef-Android-SDK
+- Attribution: Google and Android Open Source Project; original bundled notices retained
+- License proof: https://developer.android.com/studio/terms
+- Size: 66135704 bytes
+- SHA-256: `01af179347cbcd9c208b7f8171f7b21f6dd1d2f85bcd15e88caa51d5d7b86060`
+- Publisher file: https://dl.google.com/android/repository/build-tools_r37_linux.zip
+
 ## Census AK road-source extract
 
 - Catalog id: `android_extract_ak`
@@ -10795,6 +10817,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `1f1e21362bfee9ff4f9917ce2f136f7fc1e7c7d18452954c80a77b55a216819e`
 - Publisher file: https://registry.npmjs.org/@types/supercluster/-/supercluster-7.1.3.tgz
 
+## llama.cpp v0.8.0 original Android example and native sources
+
+- Catalog id: `llama_android_reference_source`
+- Version: v0.8.0; commit 8642541b255bfb5dc39cd351a178be09013a55d6
+- License: MIT
+- Attribution: The ggml authors and llama.cpp contributors; per-file third-party notices remain applicable
+- License proof: https://raw.githubusercontent.com/ggml-org/llama.cpp/8642541b255bfb5dc39cd351a178be09013a55d6/LICENSE
+- Size: 38685236 bytes
+- SHA-256: `1688a167a8edd9499cdd0c19b8bd044f0fa184b466981977bbf2222d884953a4`
+- Publisher file: https://codeload.github.com/ggml-org/llama.cpp/tar.gz/8642541b255bfb5dc39cd351a178be09013a55d6
+
 ## llamafile license
 
 - Catalog id: `llamafile_license`
@@ -10844,22 +10877,22 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Catalog id: `local_llm_full`
 - Version: 0.1.0 development bundle
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
-- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
+- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: 44053192 bytes
-- SHA-256: `f213ebc3e8e2075eb095160c2ff1924e5c25848885c4f6f857583f8ba4eadcc9`
-- Pipeline: local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
+- Size: [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]] bytes
+- SHA-256: `[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]`
+- Pipeline: [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_full_license
 
 ## Offline local LLM launchers, page, prompts and instructions (sample)
 
 - Catalog id: `local_llm_sample`
 - Version: 0.1.0 development bundle
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
-- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
+- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: 44076690 bytes
-- SHA-256: `f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71`
-- Pipeline: local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
+- Size: [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]] bytes
+- SHA-256: `[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]`
+- Pipeline: [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_sample_license, sample_model
 
 ## MapLibre Native build addon for Linux arm64
 
@@ -11190,6 +11223,83 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## OfflineLLM 5.1.4 Android, held development candidate
+
+- Catalog id: `offlinellm_android_candidate`
+- Version: 5.1.4; commit a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760
+- License: Apache-2.0
+- Attribution: JEGLY and OfflineLLM contributors; native and dependency notices remain applicable
+- License proof: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE
+- Size: 51249006 bytes
+- SHA-256: `bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd`
+- Publisher file: https://github.com/jegly/OfflineLLM/releases/download/v5.1.4/OfflineLLM-5.1.4-PQC-signed.apk
+
+## OfflineLLM 5.1.4 original exact-release app source
+
+- Catalog id: `offlinellm_android_candidate_source`
+- Version: a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760
+- License: Apache-2.0
+- Attribution: JEGLY and OfflineLLM contributors
+- License proof: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE
+- Size: 9078480 bytes
+- SHA-256: `c432960243870c77920cf345c6bb31e6d984ba45b7824b6c90da00ee0f01b569`
+- Publisher file: https://codeload.github.com/jegly/OfflineLLM/tar.gz/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760
+
+## OfflineLLM original app license
+
+- Catalog id: `offlinellm_app_license`
+- Version: a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760
+- License: Apache-2.0
+- Attribution: JEGLY and OfflineLLM contributors
+- License proof: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE
+- Size: 14417 bytes
+- SHA-256: `7fc3a8849854559c08327ab09bcbb3f4b26e00b7f43c551d212e4389b80aa3c3`
+- Publisher file: https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE
+
+## OfflineLLM exact llama.cpp submodule source
+
+- Catalog id: `offlinellm_llama_source`
+- Version: 60eeeb6082c1126bb8bc72902c83123cd056811b
+- License: MIT
+- Attribution: The ggml authors and llama.cpp contributors; per-file third-party notices remain applicable
+- License proof: https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/LICENSE
+- Size: 36848644 bytes
+- SHA-256: `3f23290c31f76dbe9ac19e9f35bcd2a1e11a0d5fc5085ecbea56e2538075b87e`
+- Publisher file: https://codeload.github.com/ggml-org/llama.cpp/tar.gz/60eeeb6082c1126bb8bc72902c83123cd056811b
+
+## OfflineLLM native llama.cpp original license
+
+- Catalog id: `offlinellm_native_license`
+- Version: 60eeeb6082c1126bb8bc72902c83123cd056811b
+- License: MIT
+- Attribution: The ggml authors
+- License proof: https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/LICENSE
+- Size: 1078 bytes
+- SHA-256: `94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d`
+- Publisher file: https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/LICENSE
+
+## KhronosGroup/SPIRV-Headers exact source selected by OfflineLLM release CI
+
+- Catalog id: `offlinellm_spirv_headers_source`
+- Version: vulkan-sdk-1.4.363.0; commit 496543121ce6419f23d6fa5d7194ba66c36212d2
+- License: MIT AND CC-BY-4.0
+- Attribution: The Khronos Group and contributors; original per-file notices retained
+- License proof: https://raw.githubusercontent.com/KhronosGroup/SPIRV-Headers/496543121ce6419f23d6fa5d7194ba66c36212d2/LICENSE
+- Size: 594379 bytes
+- SHA-256: `a9bb9c48713245eacf97cc539b6f1d45405a92d8813f8b82e635f0a085ee9898`
+- Publisher file: https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/496543121ce6419f23d6fa5d7194ba66c36212d2
+
+## KhronosGroup/Vulkan-Headers exact source selected by OfflineLLM release CI
+
+- Catalog id: `offlinellm_vulkan_headers_source`
+- Version: v1.4.367; commit 9fbc2a782ee3f8a4db64e7d991e23da75e893f44
+- License: Apache-2.0 AND MIT
+- Attribution: The Khronos Group and contributors; original per-file notices retained
+- License proof: https://raw.githubusercontent.com/KhronosGroup/Vulkan-Headers/9fbc2a782ee3f8a4db64e7d991e23da75e893f44/LICENSE.md
+- Size: 3453909 bytes
+- SHA-256: `48db7ca4b0d1a089e11098da9ceef8164d1efae6db5faa65fe8f1587f548ac08`
+- Publisher file: https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/9fbc2a782ee3f8a4db64e7d991e23da75e893f44
 
 ## OSM source supplement for a missing Rhode Island restriction member
 
@@ -11554,7 +11664,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f`
 - Publisher file: https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz
 
-## PocketPal Android, local GGUF reader
+## PocketPal Android, held historical candidate
 
 - Catalog id: `pocketpal_android`
 - Version: 1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578

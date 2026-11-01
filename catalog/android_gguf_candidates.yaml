@@ -1,0 +1,208 @@
+[
+  {
+    "id": "offlinellm_android_candidate",
+    "family": "apk",
+    "title": "OfflineLLM 5.1.4 Android, held development candidate",
+    "url": "https://github.com/jegly/OfflineLLM/releases/download/v5.1.4/OfflineLLM-5.1.4-PQC-signed.apk",
+    "version": "5.1.4; commit a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "size_bytes": 51249006,
+    "sha256": "bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd",
+    "license": "Apache-2.0",
+    "attribution": "JEGLY and OfflineLLM contributors; native and dependency notices remain applicable",
+    "license_proof_url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE",
+    "placement": "universal",
+    "dest": "9_LOCAL_LLM/android/OfflineLLM.apk",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "signer_cert_sha256": "98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c",
+    "source_url": "https://codeload.github.com/jegly/OfflineLLM/tar.gz/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "source_id": "offlinellm_android_candidate_source",
+    "checksum_source_url": "https://api.github.com/repos/jegly/OfflineLLM/releases/429819952",
+    "review": "[[VERIFY: complete runtime license/notices and source linkage, offline network capture including delegated font/TTS services, exact local GGUF import, CK grounding/warning setup, and physical Qwen3.5 tests on Android 13+ arm64 with at least 6 GB RAM; no model-quality or release approval]]"
+  },
+  {
+    "id": "offlinellm_android_candidate_source",
+    "family": "docs",
+    "title": "OfflineLLM 5.1.4 original exact-release app source",
+    "url": "https://codeload.github.com/jegly/OfflineLLM/tar.gz/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "version": "a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "size_bytes": 9078480,
+    "sha256": "c432960243870c77920cf345c6bb31e6d984ba45b7824b6c90da00ee0f01b569",
+    "license": "Apache-2.0",
+    "attribution": "JEGLY and OfflineLLM contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "source_for": "offlinellm_android_candidate",
+    "inputs": [
+      "offlinellm_llama_source",
+      "offlinellm_vulkan_headers_source",
+      "offlinellm_spirv_headers_source",
+      "bitchat_androidx_androidx_emoji2_emoji2_1_4_0",
+      "bitchat_androidx_androidx_graphics_graphics_path_1_0_1"
+    ],
+    "review": "[[VERIFY: reviewed computed app-source pin; complete runtime Maven sources/notices, exact native binary correspondence and remaining OpenMP/NDK/CMake input closure and delegated font/TTS behavior remain open; known exact submodule, release-log Khronos headers, emoji and graphics source versions are linked]]"
+  },
+  {
+    "id": "offlinellm_llama_source",
+    "family": "docs",
+    "title": "OfflineLLM exact llama.cpp submodule source",
+    "url": "https://codeload.github.com/ggml-org/llama.cpp/tar.gz/60eeeb6082c1126bb8bc72902c83123cd056811b",
+    "version": "60eeeb6082c1126bb8bc72902c83123cd056811b",
+    "size_bytes": 36848644,
+    "sha256": "3f23290c31f76dbe9ac19e9f35bcd2a1e11a0d5fc5085ecbea56e2538075b87e",
+    "license": "MIT",
+    "attribution": "The ggml authors and llama.cpp contributors; per-file third-party notices remain applicable",
+    "license_proof_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: reviewed computed source-archive pin, selected native dependency notices and exact binary correspondence; whole upstream archive includes auxiliary files not selected by the Android native build]]"
+  },
+  {
+    "id": "llama_android_reference_source",
+    "family": "docs",
+    "title": "llama.cpp v0.8.0 original Android example and native sources",
+    "url": "https://codeload.github.com/ggml-org/llama.cpp/tar.gz/8642541b255bfb5dc39cd351a178be09013a55d6",
+    "version": "v0.8.0; commit 8642541b255bfb5dc39cd351a178be09013a55d6",
+    "size_bytes": 38685236,
+    "sha256": "1688a167a8edd9499cdd0c19b8bd044f0fa184b466981977bbf2222d884953a4",
+    "license": "MIT",
+    "attribution": "The ggml authors and llama.cpp contributors; per-file third-party notices remain applicable",
+    "license_proof_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/8642541b255bfb5dc39cd351a178be09013a55d6/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/android-gguf-candidates/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: reviewed computed source-archive pin and complete selected Android dependency notices; reference/build-planning input only, with no APK built or selected]]"
+  },
+  {
+    "id": "offlinellm_app_license",
+    "family": "docs",
+    "title": "OfflineLLM original app license",
+    "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE",
+    "version": "a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "size_bytes": 14417,
+    "sha256": "7fc3a8849854559c08327ab09bcbb3f4b26e00b7f43c551d212e4389b80aa3c3",
+    "license": "Apache-2.0",
+    "attribution": "JEGLY and OfflineLLM contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: reviewed computed original notice-text pin and final notice placement]]"
+  },
+  {
+    "id": "offlinellm_native_license",
+    "family": "docs",
+    "title": "OfflineLLM native llama.cpp original license",
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/LICENSE",
+    "version": "60eeeb6082c1126bb8bc72902c83123cd056811b",
+    "size_bytes": 1078,
+    "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+    "license": "MIT",
+    "attribution": "The ggml authors",
+    "license_proof_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/llm-licenses/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: reviewed computed original notice-text pin and final notice placement]]"
+  },
+  {
+    "id": "android_build_tools_37_linux",
+    "family": "binaries",
+    "title": "Google Android Build Tools 37, verifier build input only",
+    "url": "https://dl.google.com/android/repository/build-tools_r37_linux.zip",
+    "version": "37.0.0",
+    "size_bytes": 66135704,
+    "sha256": "01af179347cbcd9c208b7f8171f7b21f6dd1d2f85bcd15e88caa51d5d7b86060",
+    "license": "LicenseRef-Android-SDK",
+    "attribution": "Google and Android Open Source Project; original bundled notices retained",
+    "license_proof_url": "https://developer.android.com/studio/terms",
+    "placement": "hub_only",
+    "dest": "build/apk-verifier/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://dl.google.com/android/repository/repository2-3.xml",
+    "review": "[[VERIFY: reviewed SHA-256 pin verified against official publisher SHA-1; SDK-only build input must remain outside drive and release payloads; SDK terms and original component notices remain applicable]]"
+  },
+  {
+    "id": "android_apksigner_37_jar",
+    "family": "generated",
+    "title": "Original apksigner JAR copied from pinned Google Build Tools 37",
+    "version": "37.0.0; original SDK ZIP member",
+    "size_bytes": 1181416,
+    "sha256": "2defad215d7ff52968a409cde528cdaef7918b115e276b8e3378ca7a178e4180",
+    "license": "Apache-2.0",
+    "attribution": "The Android Open Source Project; original verifier bytes retained",
+    "license_proof_url": "https://android.googlesource.com/platform/tools/apksig/+/184702d9d18877edf9e5296c4e191cf0aa2b5fbb/LICENSE?format=TEXT",
+    "placement": "hub_only",
+    "dest": "build/apk-verifier/apksigner.jar",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "inputs": [
+      "android_build_tools_37_linux"
+    ],
+    "pipeline_version": "original-sdk-zip-member-v1",
+    "review": "[[VERIFY: original tool-member pin review; build-only verifier, not a drive or release payload; exact tool source correspondence and bundled SDK notices remain recorded separately]]"
+  },
+  {
+    "id": "offlinellm_vulkan_headers_source",
+    "family": "docs",
+    "title": "KhronosGroup/Vulkan-Headers exact source selected by OfflineLLM release CI",
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/9fbc2a782ee3f8a4db64e7d991e23da75e893f44",
+    "version": "v1.4.367; commit 9fbc2a782ee3f8a4db64e7d991e23da75e893f44",
+    "size_bytes": 3453909,
+    "sha256": "48db7ca4b0d1a089e11098da9ceef8164d1efae6db5faa65fe8f1587f548ac08",
+    "license": "Apache-2.0 AND MIT",
+    "attribution": "The Khronos Group and contributors; original per-file notices retained",
+    "license_proof_url": "https://raw.githubusercontent.com/KhronosGroup/Vulkan-Headers/9fbc2a782ee3f8a4db64e7d991e23da75e893f44/LICENSE.md",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: reviewed computed source archive pin and complete per-file notices; publisher release workflow log identifies this tag, but exact compiled native source correspondence and selected CMake/toolchain remain open]]"
+  },
+  {
+    "id": "offlinellm_spirv_headers_source",
+    "family": "docs",
+    "title": "KhronosGroup/SPIRV-Headers exact source selected by OfflineLLM release CI",
+    "url": "https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/496543121ce6419f23d6fa5d7194ba66c36212d2",
+    "version": "vulkan-sdk-1.4.363.0; commit 496543121ce6419f23d6fa5d7194ba66c36212d2",
+    "size_bytes": 594379,
+    "sha256": "a9bb9c48713245eacf97cc539b6f1d45405a92d8813f8b82e635f0a085ee9898",
+    "license": "MIT AND CC-BY-4.0",
+    "attribution": "The Khronos Group and contributors; original per-file notices retained",
+    "license_proof_url": "https://raw.githubusercontent.com/KhronosGroup/SPIRV-Headers/496543121ce6419f23d6fa5d7194ba66c36212d2/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: reviewed computed source archive pin and complete per-file notices; publisher release workflow log identifies this tag, but exact compiled native source correspondence and selected CMake/toolchain remain open]]"
+  }
+]

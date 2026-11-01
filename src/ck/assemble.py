@@ -10,11 +10,12 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote, urlparse
 
+from ck.apkverifier import fetch_catalog_apk
 from ck.catalog import Item, Topics, attributions, load_catalog, safe_path
 from ck.config import Configuration
 from ck.core import verify_core
 from ck.drive_safety import validate_tree
-from ck.fetch import digest, fetch
+from ck.fetch import digest
 from ck.planner import plan_variants
 from ck.render import epoch_for
 from ck.review import require_release_ready
@@ -178,7 +179,20 @@ def assemble(
                 source = cache / item.sha256
                 if not source.exists() and not allow_download:
                     raise ValueError(f"Missing cached item {item.id}; run ck fetch or use --fetch")
-                source = fetch(item, cache)
+                source = fetch_catalog_apk(root, items, item, cache, allow_download=allow_download)
+                apk_audit = cache / "audits" / (item.sha256 + "-apksigner.json")
+                if item.family == "apk" and apk_audit.is_file():
+                    report = json.loads(apk_audit.read_text())
+                    if report.get("apk_sha256") != item.sha256 or not report.get(
+                        "signature_verified"
+                    ):
+                        raise ValueError("APK verification audit differs from its placed input")
+                    generated_tools.append(
+                        f"APK verifier for {item.id}: Google Build Tools "
+                        f"{report['verifier_build_tools_version']}\n"
+                        f"Verifier archive SHA-256: {report['verifier_archive_sha256']}\n"
+                        f"Apksigner JAR SHA-256: {report['verifier_jar_sha256']}"
+                    )
                 filename = unquote(PurePosixPath(urlparse(item.url).path).name)
                 relative = dest + filename if dest.endswith("/") else dest
                 safe_path(relative)
@@ -238,7 +252,7 @@ def assemble(
             "System tools:",
             tool_versions.read_text(),
             "",
-            "Generated content tools:",
+            "Generated content and APK verification tools:",
             *generated_tools,
         ]
         (tree / "VERIFY.TXT").write_text("\n".join(provenance), encoding="utf-8")

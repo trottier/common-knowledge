@@ -38,7 +38,7 @@ Catalog items explicitly requiring legal review:
 - `osmand_android`: OsmAnd for Android; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_android_source`: OsmAnd 5.4.11 exact application-source archive; mixed asset licenses; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_prebuilt`: OsmAnd official state maps; verify terms and sizes; license `[[VERIFY: redistribution license]]`; reviewer: unassigned; review date: unassigned.
-- `pocketpal_android`: PocketPal Android, local GGUF reader; license `MIT AND [[VERIFY: complete bundled native/runtime license inventory and exact Hexagon and Google SDK redistribution terms]]`; reviewer: unassigned; review date: unassigned.
+- `pocketpal_android`: PocketPal Android, held historical candidate; license `MIT AND [[VERIFY: complete bundled native/runtime license inventory and exact Hexagon and Google SDK redistribution terms]]`; reviewer: unassigned; review date: unassigned.
 - `sample_model`: Qwen3.5-0.8B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
 - `usgs_earthquake_drop_cover`: National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On; license `US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]] AND CC0-1.0`; reviewer: unassigned; review date: unassigned.
 - `usgs_earthquake_drop_source`: National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video; license `US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]]`; reviewer: unassigned; review date: unassigned.
@@ -81,14 +81,13 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6347)
+## Remaining VERIFY markers (6361)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
 - `content/en/android-maps.md:18` — [[VERIFY: phone-test installation, location permission, offline GPS, and routes across map parts]]
 - `content/en/local-llm.md:18` — [[VERIFY: check double-click opening and the full offline flow on Windows, Mac and Linux, including a USB-A-only laptop with an adapter]]
-- `content/en/local-llm.md:24` — [[VERIFY: test APK installation and local model import on a phone with at least 6 GB RAM]]
-- `content/en/local-llm.md:30` — [[VERIFY: test the exact model picker and system-prompt flow in the pinned APK with networking off]]
+- `content/en/local-llm.md:36` — [[VERIFY: check installation, exact controls, complete prompt paste, both selected GGUFs, readable text without downloaded fonts or voices, context errors, and offline behavior including delegated emoji-font and speech services on a phone with at least 6 GB RAM. Source, dependency-notice, and physical-device reviews remain open; no zero-traffic or model-quality claim.]]
 - `content/en/start/01-use.md:27` — [[VERIFY: test the built-in Samsung, Motorola and Pixel file managers; confirm no app installation is needed.]]
 - `content/en/start/01-use.md:47` — [[VERIFY: complete offline copying and sharing tests on the required phones; verify Quick Share uses direct nearby transfer without an internet link.]]
 - `content/en/start/01-use.md:51` — [[VERIFY: add tested troubleshooting for unsupported connectors, low power, file permissions and damaged files.]]
@@ -131,8 +130,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/en/tags.md:19` — [[VERIFY: identify the main breaker without opening or touching a damaged panel.]]
 - `content/es/android-maps.md:20` — [[VERIFY: probar instalación, permiso de ubicación, GPS sin conexión y rutas entre partes]]
 - `content/es/local-llm.md:20` — [[VERIFY: probar la apertura con doble clic y el funcionamiento sin conexión en Windows, Mac y Linux, incluida una computadora con solo puertos USB-A y un adaptador]]
-- `content/es/local-llm.md:26` — [[VERIFY: probar la instalación y la importación del modelo local en un teléfono con al menos 6 GB de RAM]]
-- `content/es/local-llm.md:32` — [[VERIFY: probar la selección del modelo y las instrucciones del sistema en el APK fijado con todas las conexiones apagadas]]
+- `content/es/local-llm.md:38` — [[VERIFY: probar la instalación, los controles exactos, la copia completa de instrucciones, ambos GGUF seleccionados, texto legible sin descargar fuentes ni voces, errores de contexto, y funcionamiento sin conexión incluidos los servicios delegados de fuentes de emojis y voz, en un teléfono con al menos 6 GB de RAM. Siguen pendientes las revisiones de fuentes, avisos de dependencias y dispositivos; no se afirma ausencia total de tráfico ni calidad del modelo.]]
 - `content/es/start/01-use.md:28` — [[VERIFY: probar los gestores de archivos integrados de Samsung, Motorola y Pixel; confirmar que no se necesita instalar una aplicación.]]
 - `content/es/start/01-use.md:48` — [[VERIFY: completar pruebas sin internet de copia y envío en los teléfonos requeridos; confirmar transferencia directa con Quick Share.]]
 - `content/es/start/01-use.md:52` — [[VERIFY: añadir soluciones probadas para conectores incompatibles, poca energía, permisos y archivos dañados.]]
@@ -176,6 +174,16 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
 - `config/wikem-scope.yaml:2` — [[VERIFY: review publisher access-denial scope exclusions]]
+- `catalog/android_gguf_candidates.yaml:23` — [[VERIFY: complete runtime license/notices and source linkage, offline network capture including delegated font/TTS services, exact local GGUF import, CK grounding/warning setup, and physical Qwen3.5 tests on Android 13+ arm64 with at least 6 GB RAM; no model-quality or release approval]]
+- `catalog/android_gguf_candidates.yaml:50` — [[VERIFY: reviewed computed app-source pin; complete runtime Maven sources/notices, exact native binary correspondence and remaining OpenMP/NDK/CMake input closure and delegated font/TTS behavior remain open; known exact submodule, release-log Khronos headers, emoji and graphics source versions are linked]]
+- `catalog/android_gguf_candidates.yaml:69` — [[VERIFY: reviewed computed source-archive pin, selected native dependency notices and exact binary correspondence; whole upstream archive includes auxiliary files not selected by the Android native build]]
+- `catalog/android_gguf_candidates.yaml:88` — [[VERIFY: reviewed computed source-archive pin and complete selected Android dependency notices; reference/build-planning input only, with no APK built or selected]]
+- `catalog/android_gguf_candidates.yaml:107` — [[VERIFY: reviewed computed original notice-text pin and final notice placement]]
+- `catalog/android_gguf_candidates.yaml:126` — [[VERIFY: reviewed computed original notice-text pin and final notice placement]]
+- `catalog/android_gguf_candidates.yaml:146` — [[VERIFY: reviewed SHA-256 pin verified against official publisher SHA-1; SDK-only build input must remain outside drive and release payloads; SDK terms and original component notices remain applicable]]
+- `catalog/android_gguf_candidates.yaml:168` — [[VERIFY: original tool-member pin review; build-only verifier, not a drive or release payload; exact tool source correspondence and bundled SDK notices remain recorded separately]]
+- `catalog/android_gguf_candidates.yaml:187` — [[VERIFY: reviewed computed source archive pin and complete per-file notices; publisher release workflow log identifies this tag, but exact compiled native source correspondence and selected CMake/toolchain remain open]]
+- `catalog/android_gguf_candidates.yaml:206` — [[VERIFY: reviewed computed source archive pin and complete per-file notices; publisher release workflow log identifies this tag, but exact compiled native source correspondence and selected CMake/toolchain remain open]]
 - `catalog/apk.yaml:10` — [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]
 - `catalog/apk.yaml:22` — [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]
 - `catalog/apk.yaml:22` — [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
@@ -1120,8 +1128,14 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/llm.yaml:141` — [[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]
 - `catalog/llm.yaml:160` — [[VERIFY: review computed HTTPS notice-text pin]]
 - `catalog/llm.yaml:179` — [[VERIFY: review computed HTTPS notice-text pin]]
-- `catalog/llm.yaml:207` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
-- `catalog/llm.yaml:235` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
+- `catalog/llm.yaml:186` — [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:187` — [[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:208` — [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]
+- `catalog/llm.yaml:209` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
+- `catalog/llm.yaml:216` — [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:217` — [[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:238` — [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]
+- `catalog/llm.yaml:239` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
 - `catalog/maps.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/maps.yaml:7` — [[VERIFY: publisher version]]
 - `catalog/maps.yaml:8` — [[VERIFY: exact publisher file size]]

@@ -177,6 +177,16 @@ class Build(Model):
         return self
 
 
+class AndroidLocalLLM(Model):
+    apk_id: Identifier
+    apk_filename: Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*\.apk$")]
+    app_name: Text
+    context_tokens: int = Field(ge=1, le=16384)
+    minimum_android_version: int = Field(ge=1)
+    abi: Literal["arm64-v8a"]
+    gpu_acceleration: Literal[False]
+
+
 class LocalLLM(Model):
     host: Literal["127.0.0.1"]
     port: int = Field(ge=1, le=65535)
@@ -195,6 +205,7 @@ class LocalLLM(Model):
     fallback_variants: list[int] = Field(min_length=4, max_length=4)
     warning: Text
     warning_es: Text
+    android: AndroidLocalLLM
 
     @model_validator(mode="after")
     def selection(self) -> Self:
@@ -206,7 +217,7 @@ class LocalLLM(Model):
             raise ValueError("Both sample and full model selections are required")
         if (
             self.max_output_tokens + self.context_reserve_tokens + 2 * self.message_reserve_tokens
-            >= self.context_tokens
+            >= min(self.context_tokens, self.android.context_tokens)
         ):
             raise ValueError("Local LLM context reservations leave no room for input")
         return self

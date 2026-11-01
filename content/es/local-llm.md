@@ -4,7 +4,7 @@ status: machine
 reviewer: null
 reviewed_on: null
 source_inputs:
-  content/en/local-llm.md: da11451a858817b6374abd0e49e5d36eb5412aea38fb02651b360b9d0f2f5ee7
+  content/en/local-llm.md: a13ef1b03393f8390774556a205c940b3e81796214abbff6a815e15920bbe7c6
 ---
 
 {{ local_llm.warning_es }} [@project_spec]
@@ -21,14 +21,18 @@ Mantén abierta la ventana del iniciador mientras lo uses. Cierra esa ventana pa
 
 ## Android — opcional
 
-Abre **9_LOCAL_LLM → android → PocketPal.apk**. Sigue las indicaciones del teléfono para instalar. [@project_spec]
+Esta aplicación de desarrollo necesita Android {{ local_llm.android.minimum_android_version }} o posterior y un teléfono {{ local_llm.android.abi }}. Si no se instala o no carga el modelo, usa START y las tarjetas impresas. [@offlinellm_build] [@project_spec]
 
-[[VERIFY: probar la instalación y la importación del modelo local en un teléfono con al menos 6 GB de RAM]]
+1. Abre **9_LOCAL_LLM → android → {{ local_llm.android.apk_filename }}**. Sigue las indicaciones del teléfono para instalar. No descargues un modelo ni crees una cuenta. [@project_spec]
+2. En {{ local_llm.android.app_name }}, abre **Settings → Import GGUF Model**. Selecciona **9_LOCAL_LLM → {{ local_llm.model_filename }}** en la unidad, o una copia en el teléfono. Espera a que termine la copia. Detente si no hay espacio o falla la importación. [@offlinellm_import]
+3. Toca **Use** junto al modelo si aparece. En **Performance**, deja {{ "activado" if local_llm.android.gpu_acceleration else "desactivado" }} **GPU Acceleration (Vulkan)**. Pon **CPU Threads** en {{ local_llm.threads }} si está disponible. Si faltan los controles necesarios, usa START. [@offlinellm_settings] [@project_spec]
+4. En **Sampling Parameters**, pon **Context Size** en {{ local_llm.android.context_tokens }} y **Max Tokens** en {{ local_llm.max_output_tokens }}. Ajusta la pantalla de **Temperature** a {{ "%.2f" | format(local_llm.temperature) }}. [@offlinellm_settings] [@project_spec]
+5. En **System Prompt**, elige **Custom**. Abre **9_LOCAL_LLM → android → system-en.txt** o **system-es.txt**. Copia todo el texto en **Custom System Prompt**. No copies las instrucciones de la computadora desde **ui**. [@offlinellm_settings] [@project_spec]
+6. Vuelve a la página de conversación y toca **New Chat**. Lee START antes de actuar. Las instrucciones de Android solo incluyen los títulos de las secciones de START, no el texto completo. [@offlinellm_chat] [@project_spec]
+7. Inicia una conversación nueva si la aplicación indica que el contexto está lleno o que hay un error del modelo. No acortes instrucciones médicas para que quepan. Si el problema continúa, usa START. [@project_spec]
 
-En PocketPal, abre **Menu → Models → +**. Elige un archivo del almacenamiento local. Selecciona **9_LOCAL_LLM → Model.gguf** en la unidad, o una copia en el teléfono. Carga el modelo. [@pocketpal_local]
+Usa texto. Deja desactivada la lectura en voz alta. Si el texto no funciona sin descargar una fuente o una voz, usa START. [@project_spec]
 
-Abre la página **Chat**. Mantén START a mano. Para usar las instrucciones del proyecto, crea un **Assistant Pal** y copia el texto de **ui → system-en.txt** o **system-es.txt** en sus instrucciones del sistema. [@pocketpal_local]
+{{ local_llm.warning_es }} [@project_spec]
 
-[[VERIFY: probar la selección del modelo y las instrucciones del sistema en el APK fijado con todas las conexiones apagadas]]
-
-Usa el archivo local. No uses descargas de modelos ni herramientas en línea durante una interrupción. Si la aplicación no puede abrirlo, usa START. [@project_spec]
+[[VERIFY: probar la instalación, los controles exactos, la copia completa de instrucciones, ambos GGUF seleccionados, texto legible sin descargar fuentes ni voces, errores de contexto, y funcionamiento sin conexión incluidos los servicios delegados de fuentes de emojis y voz, en un teléfono con al menos 6 GB de RAM. Siguen pendientes las revisiones de fuentes, avisos de dependencias y dispositivos; no se afirma ausencia total de tráfico ni calidad del modelo.]]

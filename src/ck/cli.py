@@ -970,13 +970,13 @@ def main(argv: Sequence[str] | None = None) -> int:
                 attributions(items, args.output)
                 print(args.output)
             else:
-                from ck.fetch import fetch
+                from ck.apkverifier import fetch_catalog_apk
 
                 unknown = set(args.items) - items.keys()
                 if unknown:
                     raise ValueError(f"Unknown catalog ids: {sorted(unknown)}")
                 for identifier in args.items:
-                    print(fetch(items[identifier], args.cache))
+                    print(fetch_catalog_apk(args.root, items, items[identifier], args.cache))
         elif args.command == "core":
             from ck.core import build_core
 
