@@ -50,7 +50,11 @@ class VariantPlan:
         return not self.blockers and self.known_total_bytes <= self.usable_bytes
 
     def as_dict(self):
-        return {**asdict(self), "fits": self.fits}
+        result = {**asdict(self), "fits": self.fits}
+        if not self.llm_variants:
+            result.pop("llm_variants")
+            result.pop("llm_reason")
+        return result
 
 
 def plan_variants(
@@ -122,14 +126,14 @@ def plan_variants(
             for number, chosen in choices.items()
         }
 
-    # Keep existing machine-readable keys while retiring universal/four-drive fallback.
+    # Retain internal future-allocation data; absent features do not enter inventories.
     llm_variants = [
         number for number, chosen in choices.items() if any(item.family == "llm" for item in chosen)
     ]
     llm_reason = (
-        "Offline AI integration is deferred; no AI items are placed."
-        if not config.variants.offline_ai_enabled
-        else "Offline AI placement is limited to the configured future allocation."
+        "Offline AI placement is limited to the configured future allocation."
+        if llm_variants
+        else None
     )
 
     for number in sorted(config.variants.variants):

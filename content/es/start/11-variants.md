@@ -3,7 +3,7 @@ title: ¿En qué se diferencia mi unidad?
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/11-variants.md": "1160cd0ac89421ab97b41e74dafc669ff1039a598df20b209a21885559ea98e1"}
+source_inputs: {"content/en/start/11-variants.md": "5c88417328d99479451ba98e2217c6eb9e4f8c332adcae922e00539c9562f90e"}
 review_required: []
 ---
 
@@ -12,12 +12,12 @@ Los nombres de los temas y las colecciones aparecen como en las carpetas en ingl
 {% for number, variant in variants.variants.items() %}
 ## Variante {{ number }}
 
-Bibliotecas de videos:
+Temas previstos para las bibliotecas de videos:
 {% for topic in variant.topics %}
 - {{ variants.topics[topic].title }}
 {% endfor %}
 
-Conocimientos detallados: {{ variants.collections[variant.collection] }}. [@project_spec]
+Colección prevista de conocimientos detallados: {{ variants.collections[variant.collection] }}. [@project_spec]
 
 Contenido previsto de la colección para esta compilación:
 {% for title in collection_contents[number] %}
@@ -27,14 +27,12 @@ Este perfil de compilación no incluye archivos externos de la colección.
 {% endfor %}
 {% endfor %}
 
-{% if not variants.offline_ai_enabled %}
-La integración de la IA sin conexión está aplazada. Asignación futura: unidades {{ variants.offline_ai | join(' y ') }}. [@project_spec]
-{% endif %}
 
 ## Por qué las unidades difieren
 
 Todas las variantes tienen el mismo plan básico.
-Cada una añade bibliotecas de videos de tres temas y una colección de conocimientos detallados.
+El diseño completo añade bibliotecas de videos de tres temas y una colección de conocimientos detallados.
+Las listas anteriores muestran los archivos externos de las colecciones que selecciona este perfil de compilación.
 Cada tema está en dos variantes.
 Cada colección está en una sola variante. [@project_spec]
 

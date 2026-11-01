@@ -9,12 +9,12 @@ review_required: []
 {% for number, variant in variants.variants.items() %}
 ## Variant {{ number }}
 
-Video libraries:
+Planned video-library topics:
 {% for topic in variant.topics %}
 - {{ variants.topics[topic].title }}
 {% endfor %}
 
-In-depth knowledge: {{ variants.collections[variant.collection] }}. [@project_spec]
+Planned in-depth knowledge: {{ variants.collections[variant.collection] }}. [@project_spec]
 
 Planned collection contents for this build:
 {% for title in collection_contents[number] %}
@@ -24,14 +24,12 @@ No external collection files are included in this build profile.
 {% endfor %}
 {% endfor %}
 
-{% if not variants.offline_ai_enabled %}
-Offline AI integration is deferred. Future allocation: drives {{ variants.offline_ai | join(' and ') }}. [@project_spec]
-{% endif %}
 
 ## Why the drives differ
 
 Every variant has the same core plan.
-Each adds video libraries for three topics and one in-depth knowledge collection.
+The full design adds video libraries for three topics and one in-depth knowledge collection.
+The lists above show which external collection files this build profile selects.
 Each topic is on two variants.
 Each collection is on one variant. [@project_spec]
 

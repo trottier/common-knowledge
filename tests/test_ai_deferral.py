@@ -4,9 +4,10 @@ from pathlib import Path
 
 from ck.catalog import load_catalog
 from ck.config import load_config
+from ck.core import bundle_sections
 from ck.planner import plan_variants
 from ck.preparation import preparation_plan
-from ck.render import render_html
+from ck.render import content_file, render_html, verify_translation_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -30,6 +31,8 @@ def test_current_sample_and_full_variants_have_no_ai_items_or_folders():
     for profile in ("sample", "full"):
         for plan in plan_variants(config, items, profile, 0, 32_000_000_000):
             assert not deferred.intersection(plan.items)
+            assert "llm_variants" not in plan.as_dict()
+            assert "llm_reason" not in plan.as_dict()
             assert not any(
                 items[key].dest.startswith(("9_LOCAL_LLM/", "9_OFFLINE_AI/")) for key in plan.items
             )
@@ -52,26 +55,41 @@ def test_current_sample_and_full_variants_have_no_ai_items_or_folders():
     assert "wikem_en_nopic" in plan["selected"]
 
 
-def test_future_notes_read_configuration_without_launch_or_folder_claims(monkeypatch):
+def test_current_core_omits_future_section_and_absent_feature_notices(monkeypatch, tmp_path):
     # HTML generation needs font URLs, but this text-only check reads no font bytes.
     monkeypatch.setattr("ck.render.font_files", lambda *args: [Path("/synthetic-font")])
     config = load_config(ROOT)
-    for code, conjunction in (("en", " and "), ("es", " y ")):
+    for code in ("en", "es"):
         edition = next(edition for edition in config.languages if edition.code == code)
-        allocation = conjunction.join(map(str, config.variants.offline_ai))
-        for relative in ("start/10-local-llm.md", "start/11-variants.md", "card.md"):
+        source_dir = ROOT / "content" / code
+        bundle = tmp_path / code / "START.md"
+        sections = sorted((source_dir / "start").glob("*.md"))
+        assert len(sections) == 12
+        assert not any(path.name.startswith("10-") for path in sections)
+        bundle_sections(sections, bundle)
+        for source in (bundle, source_dir / "start/11-variants.md", source_dir / "card.md"):
             html = render_html(
                 ROOT,
                 config,
-                ROOT / "content" / code / relative,
+                source,
                 edition,
                 "phone",
                 946684800,
-                template="card.html.j2" if relative == "card.md" else "document.html.j2",
+                template="card.html.j2" if source.name == "card.md" else "document.html.j2",
+                profile="sample",
             )
-            assert allocation in html
-            assert "deferred" in html if code == "en" else "aplazada" in html
-            if relative == "start/10-local-llm.md":
-                assert "9_LOCAL_LLM" not in html and "9_OFFLINE_AI" not in html
-                assert "Model.gguf" not in html and "Start Local LLM" not in html
-                assert "LLM" not in html and "language model" not in html
+            for forbidden in (
+                "Offline AI",
+                "offline AI",
+                "local LLM",
+                "language model",
+                "IA sin conexión",
+                "9_LOCAL_LLM",
+                "9_OFFLINE_AI",
+                "Model.gguf",
+            ):
+                assert forbidden not in html
+        future = source_dir / "future/10-offline-ai.md"
+        assert future.exists()
+        header, _ = content_file(future)
+        verify_translation_inputs(ROOT, header)

@@ -19,11 +19,12 @@ future allocation. Capacity overflow fails normally; there is no universal or
 four-variant fallback. Enabling the flag alone does not activate held catalog
 items or approve their rights, sources, or devices.
 
-English and Spanish START, card, and variant-explanation text now give a short
-future-only note whose drive numbers come from configuration. Spanish retains
-machine status and updated English-body hashes. No reviewer, review date, or
-review requirement is cleared. Current START contains no model-loading or AI
-launcher instructions.
+The v0.1 START omits section 10 entirely. Its English and Spanish source notes
+are preserved under `content/<lang>/future/`, outside the active START folders.
+The card, variant explanation, and public plan inventory omit the absent feature
+rather than advertising a future payload. Spanish retains machine status and
+updated English-body hashes. No reviewer, review date, or review requirement is
+cleared. Future integration must deliberately restore its active instructions.
 
 This change deliberately preserves the older research builders, launcher names,
 and stored outputs. Future integration must implement the final `9_OFFLINE_AI`
