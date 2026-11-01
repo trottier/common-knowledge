@@ -52,6 +52,8 @@ v0.1 assembles **everything that can be built from existing sources** into eight
 
 ## 3. Hard rules
 
+**Drive terminology.** Keep “variant” for a numbered content mix, such as “Variant 1.” Use “other variants” when comparing a person's drive with their neighbors' drives. Where the term may be unfamiliar, explain that every drive has the same core and that other variants carry different extra guides and collections. Use language a seventh-grade reader can follow. Reserve “version” for software releases such as v0.1.
+
 **Never:**
 
 - Invent facts, numbers, doses, frequencies, URLs, versions, sizes, licenses, or checksums. Look them up from the primary source, or write a `[[VERIFY: ...]]` marker (§10).

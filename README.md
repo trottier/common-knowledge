@@ -8,6 +8,10 @@ is attached to a printed card. USB-A-only devices use an adapter. Every drive ca
 variants adding reference material. The core is designed to open on a phone
 without internet, an app store or advance setup.
 
+A variant is a drive with a different mix of extra guides and reference
+collections. Every drive has the same core. Compare the numbers on neighbors'
+drives to find what other variants carry.
+
 ![Universal household card, front and back, with the drive window and print dieline marked](docs/design/card/universal/print_proof_front_back.png)
 
 The universal card fits every drive variant. These are design previews; the kit

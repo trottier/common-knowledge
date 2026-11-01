@@ -913,7 +913,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                         print(f"  {issue}")
                     if plan.map_path:
                         print(f"  Android maps: {plan.map_path}. {plan.map_reason}")
-                    if plan.llm_variants is not None:
+                    if plan.llm_variants:
                         print(f"  Local LLM variants: {plan.llm_variants}. {plan.llm_reason}")
                     if not plan.fits:
                         for item in plan.largest:
