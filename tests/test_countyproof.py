@@ -1,10 +1,14 @@
+import hashlib
+import os
 from pathlib import Path
 
 import pytest
 from shapely import union_all
 from shapely.geometry import Polygon, box, mapping
+from weasyprint import HTML
 
-from ck.countyproof import geometry_path, sheet_plan, svg_locator, svg_map
+from ck.config import read_yaml
+from ck.countyproof import geometry_path, horizontal_layout, sheet_plan, svg_locator, svg_map
 
 
 def policy():
@@ -63,9 +67,17 @@ def test_geographic_locator_names_all_sheet_footprints_without_poi_crowding():
 
 
 def test_vector_svg_contains_escaped_road_text_and_no_raster_map():
-    font = Path("/cache/bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d")
+    root = Path(__file__).resolve().parents[1]
+    item = next(
+        item for item in read_yaml(root / "catalog/fonts.yaml") if item["id"] == "noto_sans"
+    )
+    cache = Path(os.environ.get("CK_FONT_CACHE", root / "cache"))
+    font = cache / item["sha256"]
     if not font.is_file():
+        if "CK_FONT_CACHE" in os.environ:
+            pytest.fail("Authoritative CK_FONT_CACHE lacks its pinned Noto Sans font")
         pytest.skip("Requires the existing pinned font cache")
+    assert hashlib.sha256(font.read_bytes()).hexdigest() == item["sha256"]
     from shapely.geometry import LineString
 
     county = box(300000, 4610000, 304750, 4615750)
@@ -92,3 +104,28 @@ def test_vector_svg_contains_escaped_road_text_and_no_raster_map():
     assert audit["road_source_ids"] == [42]
     assert audit["placed_labels"][0]["name"] == "Test <Road>"
     assert len(audit["coordinate_labels"]) == 4
+
+
+@pytest.mark.parametrize("element", ["table", "svg"])
+def test_actual_horizontal_layout_rejects_off_page_table_or_svg(element):
+    content = '<table style="width:150mm"><tr><td>Sheet</td><td>Page</td></tr></table>'
+    if element == "svg":
+        content = '<svg width="150mm" height="20mm"><rect width="100" height="20"/></svg>'
+    document = HTML(string="<style>@page{size:100mm 100mm;margin:10mm}</style>" + content).render()
+    with pytest.raises(ValueError, match="Horizontal"):
+        horizontal_layout(document)
+
+
+def test_actual_side_by_side_locator_and_two_column_table_fit_page():
+    document = HTML(
+        string="""<style>
+      @page {size:letter;margin:10mm} body {margin:0}
+      .row {display:flex;gap:4mm} svg {width:94mm;height:100mm;flex:none}
+      table {width:88mm;flex:none;table-layout:fixed}
+      </style><div class="row"><svg><rect width="20" height="20"/></svg>
+      <table><tr><th>Sheet</th><th>Page</th></tr>
+      <tr><td>R1C1</td><td>page 2</td></tr></table></div>"""
+    ).render()
+    checked = horizontal_layout(document)
+    assert any(entry["tag"] == "table" for entry in checked)
+    assert any(entry["tag"] == "svg" for entry in checked)
