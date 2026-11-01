@@ -10877,22 +10877,22 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Catalog id: `local_llm_full`
 - Version: 0.1.0 development bundle
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
-- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
+- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: 44053192 bytes
-- SHA-256: `f213ebc3e8e2075eb095160c2ff1924e5c25848885c4f6f857583f8ba4eadcc9`
-- Pipeline: local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
+- Size: [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]] bytes
+- SHA-256: `[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]`
+- Pipeline: [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_full_license
 
 ## Offline local LLM launchers, page, prompts and instructions (sample)
 
 - Catalog id: `local_llm_sample`
 - Version: 0.1.0 development bundle
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
-- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
+- Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: 44076690 bytes
-- SHA-256: `f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71`
-- Pipeline: local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
+- Size: [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]] bytes
+- SHA-256: `[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]`
+- Pipeline: [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_sample_license, sample_model
 
 ## MapLibre Native build addon for Linux arm64
 
@@ -11664,7 +11664,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f`
 - Publisher file: https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz
 
-## PocketPal Android, local GGUF reader
+## PocketPal Android, held historical candidate
 
 - Catalog id: `pocketpal_android`
 - Version: 1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578

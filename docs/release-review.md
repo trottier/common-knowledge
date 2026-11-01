@@ -38,7 +38,7 @@ Catalog items explicitly requiring legal review:
 - `osmand_android`: OsmAnd for Android; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_android_source`: OsmAnd 5.4.11 exact application-source archive; mixed asset licenses; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_prebuilt`: OsmAnd official state maps; verify terms and sizes; license `[[VERIFY: redistribution license]]`; reviewer: unassigned; review date: unassigned.
-- `pocketpal_android`: PocketPal Android, local GGUF reader; license `MIT AND [[VERIFY: complete bundled native/runtime license inventory and exact Hexagon and Google SDK redistribution terms]]`; reviewer: unassigned; review date: unassigned.
+- `pocketpal_android`: PocketPal Android, held historical candidate; license `MIT AND [[VERIFY: complete bundled native/runtime license inventory and exact Hexagon and Google SDK redistribution terms]]`; reviewer: unassigned; review date: unassigned.
 - `sample_model`: Qwen3.5-0.8B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
 - `usgs_earthquake_drop_cover`: National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On; license `US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]] AND CC0-1.0`; reviewer: unassigned; review date: unassigned.
 - `usgs_earthquake_drop_source`: National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video; license `US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]]`; reviewer: unassigned; review date: unassigned.
@@ -81,14 +81,13 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6357)
+## Remaining VERIFY markers (6361)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
 - `content/en/android-maps.md:18` — [[VERIFY: phone-test installation, location permission, offline GPS, and routes across map parts]]
 - `content/en/local-llm.md:18` — [[VERIFY: check double-click opening and the full offline flow on Windows, Mac and Linux, including a USB-A-only laptop with an adapter]]
-- `content/en/local-llm.md:24` — [[VERIFY: test APK installation and local model import on a phone with at least 6 GB RAM]]
-- `content/en/local-llm.md:30` — [[VERIFY: test the exact model picker and system-prompt flow in the pinned APK with networking off]]
+- `content/en/local-llm.md:36` — [[VERIFY: check installation, exact controls, complete prompt paste, both selected GGUFs, readable text without downloaded fonts or voices, context errors, and offline behavior including delegated emoji-font and speech services on a phone with at least 6 GB RAM. Source, dependency-notice, and physical-device reviews remain open; no zero-traffic or model-quality claim.]]
 - `content/en/start/01-use.md:27` — [[VERIFY: test the built-in Samsung, Motorola and Pixel file managers; confirm no app installation is needed.]]
 - `content/en/start/01-use.md:47` — [[VERIFY: complete offline copying and sharing tests on the required phones; verify Quick Share uses direct nearby transfer without an internet link.]]
 - `content/en/start/01-use.md:51` — [[VERIFY: add tested troubleshooting for unsupported connectors, low power, file permissions and damaged files.]]
@@ -131,8 +130,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/en/tags.md:19` — [[VERIFY: identify the main breaker without opening or touching a damaged panel.]]
 - `content/es/android-maps.md:20` — [[VERIFY: probar instalación, permiso de ubicación, GPS sin conexión y rutas entre partes]]
 - `content/es/local-llm.md:20` — [[VERIFY: probar la apertura con doble clic y el funcionamiento sin conexión en Windows, Mac y Linux, incluida una computadora con solo puertos USB-A y un adaptador]]
-- `content/es/local-llm.md:26` — [[VERIFY: probar la instalación y la importación del modelo local en un teléfono con al menos 6 GB de RAM]]
-- `content/es/local-llm.md:32` — [[VERIFY: probar la selección del modelo y las instrucciones del sistema en el APK fijado con todas las conexiones apagadas]]
+- `content/es/local-llm.md:38` — [[VERIFY: probar la instalación, los controles exactos, la copia completa de instrucciones, ambos GGUF seleccionados, texto legible sin descargar fuentes ni voces, errores de contexto, y funcionamiento sin conexión incluidos los servicios delegados de fuentes de emojis y voz, en un teléfono con al menos 6 GB de RAM. Siguen pendientes las revisiones de fuentes, avisos de dependencias y dispositivos; no se afirma ausencia total de tráfico ni calidad del modelo.]]
 - `content/es/start/01-use.md:28` — [[VERIFY: probar los gestores de archivos integrados de Samsung, Motorola y Pixel; confirmar que no se necesita instalar una aplicación.]]
 - `content/es/start/01-use.md:48` — [[VERIFY: completar pruebas sin internet de copia y envío en los teléfonos requeridos; confirmar transferencia directa con Quick Share.]]
 - `content/es/start/01-use.md:52` — [[VERIFY: añadir soluciones probadas para conectores incompatibles, poca energía, permisos y archivos dañados.]]
@@ -1130,8 +1128,14 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/llm.yaml:141` — [[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]
 - `catalog/llm.yaml:160` — [[VERIFY: review computed HTTPS notice-text pin]]
 - `catalog/llm.yaml:179` — [[VERIFY: review computed HTTPS notice-text pin]]
-- `catalog/llm.yaml:207` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
-- `catalog/llm.yaml:235` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
+- `catalog/llm.yaml:186` — [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:187` — [[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:208` — [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]
+- `catalog/llm.yaml:209` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
+- `catalog/llm.yaml:216` — [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:217` — [[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]
+- `catalog/llm.yaml:238` — [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]
+- `catalog/llm.yaml:239` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
 - `catalog/maps.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/maps.yaml:7` — [[VERIFY: publisher version]]
 - `catalog/maps.yaml:8` — [[VERIFY: exact publisher file size]]
