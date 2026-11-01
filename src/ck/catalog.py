@@ -9,6 +9,7 @@ import yaml
 from pydantic import Field, StringConstraints, model_validator
 
 from ck.config import Configuration, Identifier, Marker, Model, Text, UniqueKeyLoader
+from ck.licenses import parse_license_expression
 
 Sha256 = Annotated[str, StringConstraints(pattern=r"^[0-9a-f]{64}$")]
 Https = Annotated[str, StringConstraints(pattern=r"^https://[^\s]+$")]
@@ -103,27 +104,16 @@ class Item(Model):
         for key, value in self.model_dump().items():
             if isinstance(value, str) and "[[VERIFY" in value:
                 problems.append(f"{self.id}.{key}: {value}")
-        licenses = self.license.split(" AND ")
-        if not set(licenses) <= {
-            "CC-BY-4.0",
-            "CC-BY-SA-4.0",
-            "CC-BY-SA-3.0",
-            "CC0-1.0",
-            "OFL-1.1",
-            "MIT",
-            "ISC",
-            "Apache-2.0",
-            "BSD-2-Clause",
-            "BSD-3-Clause",
-            "GPL-3.0-only",
-            "GPL-3.0-or-later",
-            "GPL-2.0-only",
-            "ODbL-1.0",
-            "US-PD",
-            "Public-domain-US",
-            "LicenseRef-FEMA-Ready-Reprint",
-            "CC-BY-NC-SA-3.0",
-        }:
+        try:
+            expression = parse_license_expression(self.license)
+            licenses = expression.identifiers
+            supported = expression.supported
+            requires_source = expression.requires_source
+        except ValueError:
+            licenses = frozenset()
+            supported = False
+            requires_source = False
+        if not supported:
             problems.append(f"{self.id}: license needs redistribution review: {self.license}")
         if "LicenseRef-FEMA-Ready-Reprint" in licenses:
             # Ready permits unchanged reproduction, without an endorsement claim.
@@ -138,13 +128,13 @@ class Item(Model):
                     f"{self.id}: Ready reprint terms apply only to original Ready documents "
                     "outside in-depth knowledge collections"
                 )
-        if "-NC-" in self.license and (
+        if "-NC-" in self.license.upper() and (
             not self.permission_proof_url or "[[VERIFY" in self.permission_proof_url
         ):
             problems.append(
                 f"{self.id}: noncommercial material requires a written emergency-use license"
             )
-        if "-NC-" in self.license and not self.requires_legal:
+        if "-NC-" in self.license.upper() and not self.requires_legal:
             problems.append(f"{self.id}: a named human must review the written license grant")
         if self.requires_legal and not (self.legal_reviewer and self.legal_reviewed_on):
             problems.append(f"{self.id}: named legal sign-off is missing")
@@ -152,7 +142,7 @@ class Item(Model):
             problems.append(f"{self.id}: APK signer is missing")
         if (
             release
-            and any(license.startswith("GPL-") for license in licenses)
+            and requires_source
             and self.family in {"apk", "binaries"}
             and self.placement != "hub_only"
         ):
