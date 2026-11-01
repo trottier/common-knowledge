@@ -8,6 +8,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
+from pydantic import Field
 
 from ck.catalog import Item
 from ck.config import Configuration, LocalLLM, read_yaml
@@ -17,6 +18,18 @@ from ck.render import content_file, render_pdf
 
 def settings_for(root: Path) -> LocalLLM:
     return LocalLLM.model_validate(read_yaml(root / "pipelines/llm/settings.yaml"))
+
+
+class AndroidPromptSettings(LocalLLM):
+    """Android's UI budget; the laptop and model-selection 32K rules stay intact."""
+
+    context_tokens: int = Field(ge=1, le=16384)
+
+
+def android_prompt_settings(settings: LocalLLM) -> AndroidPromptSettings:
+    return AndroidPromptSettings.model_validate(
+        {**settings.model_dump(), "context_tokens": settings.android.context_tokens}
+    )
 
 
 def model_metadata(path: Path, item: Item, context_tokens: int) -> dict:
@@ -78,7 +91,14 @@ def start_text(
     return "\n\n".join(sections)
 
 
-def system_prompt(root: Path, settings: LocalLLM, language: str, source: str) -> tuple[str, dict]:
+def system_prompt(
+    root: Path,
+    settings: LocalLLM,
+    language: str,
+    source: str,
+    *,
+    section_index_only: bool = False,
+) -> tuple[str, dict]:
     if language not in {"en", "es"}:
         raise ValueError("A local LLM bundle needs an English or Spanish START edition")
     template = Environment(
@@ -101,8 +121,8 @@ def system_prompt(root: Path, settings: LocalLLM, language: str, source: str) ->
         - 2 * settings.message_reserve_tokens
         - 1
     )
-    prompt = render(source)
-    mode = "full"
+    prompt = render("" if section_index_only else source)
+    mode = "section_index" if section_index_only else "full"
     if len(prompt.encode()) > budget:
         prompt, mode = render(""), "section_index"
     if len(prompt.encode()) > budget:
@@ -142,6 +162,10 @@ def build_bundle(
     if output.exists():
         raise ValueError("Local LLM bundle output must be new")
     settings = settings_for(root)
+    android_settings = android_prompt_settings(settings)
+    android_app = catalog[settings.android.apk_id]
+    if android_app.dest != f"9_LOCAL_LLM/android/{settings.android.apk_filename}":
+        raise ValueError("Selected Android app destination differs from its instructions")
     if profile not in settings.models:
         raise ValueError("Local LLM bundles are built for sample or full profiles")
     model_id = settings.models[profile]
@@ -151,7 +175,9 @@ def build_bundle(
         "llamafile_runner",
         "llamafile_license",
         license_id,
-        "pocketpal_license",
+        settings.android.apk_id,
+        "offlinellm_app_license",
+        "offlinellm_native_license",
         "noto_sans",
         "noto_sans_license",
         "llamafile_llama_notices",
@@ -174,7 +200,8 @@ def build_bundle(
         for identifier in (
             "llamafile_license",
             license_id,
-            "pocketpal_license",
+            "offlinellm_app_license",
+            "offlinellm_native_license",
             "noto_sans_license",
             "llamafile_llama_notices",
         ):
@@ -199,11 +226,34 @@ def build_bundle(
         for name in ("index.html", "app.js", "style.css"):
             shutil.copyfile(root / "pipelines/llm/ui" / name, ui / name)
         grounding = {}
+        android_grounding = {}
+        android = files / "android"
+        android.mkdir()
         for language in ("en", "es"):
             source = start_text(root, language, config, epoch, profile)
             prompt, grounding[language] = system_prompt(root, settings, language, source)
             (ui / f"start-{language}.txt").write_text(source)
             (ui / f"system-{language}.txt").write_text(prompt)
+            prompt, android_grounding[language] = system_prompt(
+                root, android_settings, language, source, section_index_only=True
+            )
+            (android / f"system-{language}.txt").write_text(prompt)
+        (android / "settings.json").write_text(
+            json.dumps(
+                {
+                    **settings.android.model_dump(),
+                    "grounding": android_grounding,
+                    "warning": settings.warning,
+                    "warning_es": settings.warning_es,
+                    "max_output_tokens": settings.max_output_tokens,
+                    "context_reserve_tokens": settings.context_reserve_tokens,
+                    "message_reserve_tokens": settings.message_reserve_tokens,
+                },
+                sort_keys=True,
+                indent=2,
+            )
+            + "\n"
+        )
         (ui / "settings.json").write_text(
             json.dumps(
                 {
@@ -239,11 +289,17 @@ def build_bundle(
                     epoch,
                 )
                 target.with_suffix(".html").rename(audit / target.with_suffix(".html").name)
+                shutil.copyfile(target, android / target.name)
         (files / "SOURCE.TXT").write_text(
             f"Model: {catalog[model_id].title}\n{catalog[model_id].url}\n"
             f"SHA-256: {catalog[model_id].sha256}\n{catalog[model_id].attribution}\n"
             "Untuned base model; no project tuning or evaluation claim.\n"
-            "The model is placed separately as Model.gguf when included by the plan.\n"
+            f"The model is placed separately as {settings.model_filename} "
+            "when included by the plan.\n"
+            f"Android app: {android_app.title}\n{android_app.url}\n"
+            f"Android APK SHA-256: {android_app.sha256}\n"
+            "Android instructions and prompts are in android/.\n"
+            "Development candidate; source, delegated-service, and device holds remain.\n"
         )
         recipe = hashlib.sha256()
         for directory in (root / "pipelines/llm", root / "content/en", root / "content/es"):
@@ -254,6 +310,7 @@ def build_bundle(
                     )
         for name in (
             "src/ck/llm.py",
+            "src/ck/config.py",
             "src/ck/render.py",
             "src/ck/locales.py",
             "src/ck/generated.py",

@@ -328,6 +328,10 @@ def fetch_build_inputs(root: Path, identifiers: list[str], cache: Path) -> list[
                 audit.write_text(json.dumps(report, sort_keys=True) + "\n")
 
             path = fetch(item, cache, format_check=check)
+        elif item.family == "apk":
+            from ck.apkverifier import fetch_catalog_apk
+
+            path = fetch_catalog_apk(root, items, item, cache)
         else:
             path = fetch(item, cache)
         paths.append(str(path))

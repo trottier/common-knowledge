@@ -9,19 +9,11 @@ import json
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
-from pydantic import Field
 
 from ck.catalog import load_catalog
 from ck.config import LocalLLM, read_yaml
 from ck.generated import verified_generated_files
-from ck.llm import system_prompt
-
-
-class AndroidPromptSettings(LocalLLM):
-    """Explicit proposal contract; the existing laptop's 32K minimum stays intact."""
-
-    context_tokens: int = Field(ge=1, le=16384)
-
+from ck.llm import android_prompt_settings, system_prompt
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--root", type=Path, default=Path.cwd())
@@ -35,14 +27,14 @@ catalog = load_catalog(args.root)
 _, files = verified_generated_files(catalog[args.bundle_id], args.bundle, catalog)
 proposal = read_yaml(args.root / "pipelines/android_llm_candidate/settings.yaml")
 baseline = LocalLLM.model_validate(read_yaml(args.root / proposal["baseline_settings"]))
-settings = AndroidPromptSettings.model_validate(
-    {**baseline.model_dump(), "context_tokens": proposal["context_tokens"]}
-)
+settings = android_prompt_settings(baseline)
 args.output.mkdir(parents=True)
 grounding = {}
 for language in ("en", "es"):
     source = files[f"ui/start-{language}.txt"].read_text()
-    prompt, grounding[language] = system_prompt(args.root, settings, language, source)
+    prompt, grounding[language] = system_prompt(
+        args.root, settings, language, source, section_index_only=True
+    )
     (args.output / f"system-{language}.txt").write_text(prompt)
 environment = Environment(
     loader=FileSystemLoader(args.root / "pipelines/android_llm_candidate"),
@@ -55,7 +47,7 @@ environment = Environment(
 (args.output / "proposal.json").write_text(
     json.dumps(
         {
-            "candidate_apk": proposal["apk_id"],
+            "candidate_apk": settings.android.apk_id,
             "context_tokens": settings.context_tokens,
             "source_bundle_id": args.bundle_id,
             "source_bundle_sha256": catalog[args.bundle_id].sha256,
@@ -68,4 +60,4 @@ environment = Environment(
     )
     + "\n"
 )
-print(json.dumps({"candidate": proposal["apk_id"], "grounding": grounding}))
+print(json.dumps({"candidate": settings.android.apk_id, "grounding": grounding}))

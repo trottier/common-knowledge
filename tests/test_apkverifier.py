@@ -2,12 +2,13 @@
 
 import hashlib
 import io
+import json
 import subprocess
 import zipfile
 
 import pytest
 
-from ck.apkverifier import build_tool_archive, verifier_jar, verify_apk
+from ck.apkverifier import build_tool_archive, fetch_catalog_apk, verifier_jar, verify_apk
 from ck.catalog import Item
 
 
@@ -161,3 +162,73 @@ def test_sdk_bootstrap_is_build_only_and_size_bounded(tmp_path):
             item, tmp_path / "overflow", opener=lambda *args, **kwargs: Response(payload + b"extra")
         )
     assert not list((tmp_path / "overflow").iterdir())
+
+
+def test_selected_apk_fetch_uses_modern_verification_and_an_offline_tool_cache(
+    tmp_path, inputs, monkeypatch
+):
+    item, apk, jar, spec = inputs
+    settings = tmp_path / "pipelines/apk_verifier/settings.yaml"
+    settings.parent.mkdir(parents=True)
+    settings.write_text(json.dumps({**spec, "archive_id": "sdk_tool", "jar_id": "jar"}))
+    payload = io.BytesIO()
+    with zipfile.ZipFile(payload, "w") as bundle:
+        bundle.writestr(spec["jar_member"], jar.read_bytes())
+    archive = fixture_item(payload.getvalue())
+    jar_item = fixture_item(jar.read_bytes()).model_copy(update={"id": "jar"})
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    (cache / archive.sha256).write_bytes(payload.getvalue())
+    (cache / item.sha256).write_bytes(apk.read_bytes())
+    seen = []
+
+    def verified(apk_item, path, verifier, policy):
+        seen.append((apk_item.id, path.read_bytes(), verifier.read_bytes(), policy))
+        return {"signature_verified": True, "sdk_range_override": None}
+
+    monkeypatch.setattr("ck.apkverifier.verify_apk", verified)
+    monkeypatch.setattr(
+        "urllib.request.OpenerDirector.open", lambda *a, **k: pytest.fail("network")
+    )
+    result = fetch_catalog_apk(
+        tmp_path, {archive.id: archive, jar_item.id: jar_item}, item, cache, allow_download=False
+    )
+    assert result.read_bytes() == apk.read_bytes()
+    assert seen[0][:3] == (item.id, apk.read_bytes(), jar.read_bytes())
+    assert seen[0][3]["apk_policies"][item.id]["required_schemes"] == ["v3", "v3.2"]
+    assert json.loads((cache / "audits" / (item.sha256 + "-apksigner.json")).read_text())[
+        "signature_verified"
+    ]
+    (cache / archive.sha256).unlink()
+    with pytest.raises(ValueError, match="Missing cached modern"):
+        fetch_catalog_apk(
+            tmp_path, {archive.id: archive, "jar": jar_item}, item, cache, allow_download=False
+        )
+
+
+def test_license_hold_is_enforced_before_modern_tool_bootstrap(tmp_path, inputs, monkeypatch):
+    item, _, _, spec = inputs
+    settings = tmp_path / "pipelines/apk_verifier/settings.yaml"
+    settings.parent.mkdir(parents=True)
+    settings.write_text(json.dumps(spec))
+    monkeypatch.setattr(
+        "ck.apkverifier.build_tool_archive", lambda *a, **k: pytest.fail("tool fetch")
+    )
+    held = item.model_copy(update={"requires_legal": True})
+    with pytest.raises(ValueError, match="Cannot fetch unconfirmed"):
+        fetch_catalog_apk(tmp_path, {}, held, tmp_path / "cache")
+
+
+def test_selected_app_rename_cannot_fall_back_to_the_older_path_verifier(
+    tmp_path, inputs, monkeypatch
+):
+    item, _, _, _ = inputs
+    verifier_settings = tmp_path / "pipelines/apk_verifier/settings.yaml"
+    verifier_settings.parent.mkdir(parents=True)
+    verifier_settings.write_text(json.dumps({"apk_policies": {}}))
+    selected_settings = tmp_path / "pipelines/llm/settings.yaml"
+    selected_settings.parent.mkdir(parents=True)
+    selected_settings.write_text(json.dumps({"android": {"apk_id": item.id}}))
+    monkeypatch.setattr("ck.fetch.fetch", lambda *a, **k: pytest.fail("old verifier fallback"))
+    with pytest.raises(ValueError, match="lacks its modern verifier policy"):
+        fetch_catalog_apk(tmp_path, {}, item, tmp_path / "cache")

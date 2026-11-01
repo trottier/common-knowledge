@@ -1,6 +1,7 @@
 """Pinned modern APK verification without changing the frozen build container."""
 
 import hashlib
+import json
 import re
 import subprocess
 import tempfile
@@ -140,3 +141,61 @@ def verify_apk(item: Item, path: Path, jar: Path, spec: dict, *, java: str = "ja
         "signature_verified": True,
         "source_completeness_or_release_approval": False,
     }
+
+
+def fetch_catalog_apk(
+    root: Path,
+    catalog: dict[str, Item],
+    item: Item,
+    cache: Path,
+    *,
+    allow_download: bool = True,
+) -> Path:
+    """Apply the pinned modern policy to selected APKs, preserving normal fetching."""
+    from ck.config import read_yaml
+    from ck.fetch import fetch
+
+    if item.family != "apk":
+        return fetch(item, cache)
+    spec = read_yaml(root / "pipelines/apk_verifier/settings.yaml")
+    if item.id not in spec.get("apk_policies", {}):
+        selected_settings = root / "pipelines/llm/settings.yaml"
+        if selected_settings.is_file():
+            selected = read_yaml(selected_settings).get("android", {}).get("apk_id")
+            if selected == item.id:
+                raise ValueError("Selected Android local LLM APK lacks its modern verifier policy")
+        return fetch(item, cache)
+    if any(not problem.startswith(f"{item.id}.review:") for problem in item.blockers()):
+        # Preserve the ordinary license/pin gate before downloading a verifier.
+        return fetch(item, cache)
+    jar_item = catalog[spec["jar_id"]]
+    spec = {**spec, "jar_sha256": jar_item.sha256, "jar_size_bytes": jar_item.size_bytes}
+    archive_item = catalog[spec["archive_id"]]
+    if not allow_download and not (cache / archive_item.sha256).is_file():
+        raise ValueError("Missing cached modern APK verifier; run ck fetch before assembly")
+    if not allow_download:
+        apk_path = cache / item.sha256
+        if (
+            not apk_path.is_file()
+            or apk_path.stat().st_size != item.size_bytes
+            or digest(apk_path) != item.sha256
+        ):
+            raise ValueError("Missing or changed cached APK; run ck fetch before assembly")
+        archive_path = cache / archive_item.sha256
+        if (
+            archive_path.stat().st_size != archive_item.size_bytes
+            or digest(archive_path) != archive_item.sha256
+        ):
+            raise ValueError("Cached modern APK verifier archive changed")
+    archive = build_tool_archive(archive_item, cache)
+    jar = verifier_jar(archive, archive_item, spec, cache / "build-tools/apksigner")
+
+    def check(apk_item: Item, path: Path) -> None:
+        report = verify_apk(apk_item, path, jar, spec)
+        report["verifier_build_tools_version"] = archive_item.version
+        report["verifier_archive_sha256"] = archive_item.sha256
+        audit = cache / "audits" / (apk_item.sha256 + "-apksigner.json")
+        audit.parent.mkdir(parents=True, exist_ok=True)
+        audit.write_text(json.dumps(report, sort_keys=True, indent=2) + "\n")
+
+    return fetch(item, cache, format_check=check)

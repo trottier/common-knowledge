@@ -1,5 +1,9 @@
 # Android local-GGUF runner candidate
 
+This document records the research packet. The subsequent held development
+selection and fresh-build handoff are described in
+[Android local LLM adoption](android-local-llm-adoption.md).
+
 OfflineLLM 5.1.4 is a concrete held development candidate for replacing
 PocketPal. Its original publisher APK matches the release SHA-256, passes modern
 legacy/hybrid signature verification, and declares no INTERNET or network-state

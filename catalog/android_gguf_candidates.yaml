@@ -10,8 +10,8 @@
     "license": "Apache-2.0",
     "attribution": "JEGLY and OfflineLLM contributors; native and dependency notices remain applicable",
     "license_proof_url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE",
-    "placement": "hub_only",
-    "dest": "build/android-gguf-candidates/OfflineLLM.apk",
+    "placement": "universal",
+    "dest": "9_LOCAL_LLM/android/OfflineLLM.apk",
     "profiles": [
       "sample",
       "full"
