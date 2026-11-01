@@ -9,6 +9,7 @@ from functools import lru_cache
 SUPPORTED_LICENSES = frozenset(
     {
         "CC-BY-4.0",
+        "CC-BY-3.0",
         "CC-BY-SA-4.0",
         "CC-BY-SA-3.0",
         "CC0-1.0",

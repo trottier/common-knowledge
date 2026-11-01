@@ -1,0 +1,1760 @@
+{
+  "confirmed_options": {
+    "max_interleave_delta_default_microseconds": 10000000,
+    "max_interleave_delta_zero_accepted": true,
+    "output_bitexact_available": true
+  },
+  "contexts": {
+    "a": "colima-common-knowledge-maps",
+    "b": "colima-common-knowledge"
+  },
+  "cpu_limit": 1,
+  "ffmpeg_full_help_sha256": "d42a9a70ef8e5f9dec24f9113c2a18a476927f2a8e349eaffd3a43fea7842005",
+  "ffmpeg_version": "5.1.9-0+deb12u1",
+  "fresh_normalization": {
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+    "producer_source_sha256": "6133ebd280ef3552793d0663011dfba601c07d629f2cb83ed3a6af2c3867cf40",
+    "rope_all_payload_hashes_pts_dts_durations_and_sizes_equal_to_failed_pair": true,
+    "streams": {
+      "0": {
+        "packet_count": 13236,
+        "packet_rows_sha256": "6f74ea95f097d3e91960c670d874f93e997b47a4ca3ecb698b0bbd1a3474e548",
+        "payload_bytes": 33531108,
+        "type": "video"
+      },
+      "1": {
+        "packet_count": 20685,
+        "packet_rows_sha256": "3760951305694a8ab4d53d3ed861ec592ea9f21e1d524d07e1ef22b1a4b99207",
+        "payload_bytes": 2668946,
+        "type": "audio"
+      },
+      "2": {
+        "packet_count": 86,
+        "packet_rows_sha256": "c0a44238397da88dc4e0f519c404a6500a212c3741c4c6db099963312aee3218",
+        "payload_bytes": 4446,
+        "type": "subtitle"
+      }
+    }
+  },
+  "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "memory_limit": "1 GiB",
+  "network": "disabled",
+  "primary_documentation": "https://ffmpeg.org/ffmpeg-formats.html#Format-Options",
+  "remux_diagnostics": {
+    "a-a-bitexact": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-a-both": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-a-default": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-a-wait_all": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-b-bitexact": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-b-both": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-b-default": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "a-b-wait_all": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-a-bitexact": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-a-both": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-a-default": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-a-wait_all": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-b-bitexact": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-b-both": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "3cd174857f3a8eb3ac91347b506dd8178d5feb65b7ad6015cf40a64492386d88",
+      "size_bytes": 36693202,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-b-default": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    },
+    "b-b-wait_all": {
+      "all_packet_payloads_pts_and_dts_unchanged": true,
+      "faststart": true,
+      "sha256": "b3d2567e36a31d34134cf1f12f74abdf252e1a72b7fc91d159fe019cabdd647a",
+      "size_bytes": 36693239,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 6776832,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "encoder": "Lavc libx264",
+            "handler_name": "VideoHandler",
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/15360"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 21180288,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SoundHandler",
+            "language": "eng",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "time_base": "1/48000"
+        },
+        {
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "disposition": {
+            "attached_pic": 0,
+            "captions": 0,
+            "clean_effects": 0,
+            "comment": 0,
+            "default": 1,
+            "dependent": 0,
+            "descriptions": 0,
+            "dub": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "karaoke": 0,
+            "lyrics": 0,
+            "metadata": 0,
+            "original": 0,
+            "still_image": 0,
+            "timed_thumbnails": 0,
+            "visual_impaired": 0
+          },
+          "duration_ts": 440960000,
+          "tags": {
+            "creation_time": "2026-10-31T00:00:00.000000Z",
+            "handler_name": "SubtitleHandler",
+            "language": "eng"
+          },
+          "time_base": "1/1000000"
+        }
+      ],
+      "terminal_aac_packet_duration": {
+        "after_samples": 536,
+        "before_samples": 551,
+        "reencoded": false,
+        "sample_rate": 48000
+      }
+    }
+  },
+  "remux_interpretation": "All variants canonicalized the two discrepant inputs within and across contexts; these remuxes are diagnostic only, not adopted output. The final AAC packet duration changes by 15 samples in a stream copy. Therefore no remux pass was added.",
+  "source_mount": "read-only",
+  "status": "Bounded development diagnosis; no human rights, safety, or physical-player approval"
+}
