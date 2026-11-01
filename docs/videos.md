@@ -41,6 +41,8 @@ independent caption review, source currency, and physical playback remain open.
 The currently selected CDC handwashing ASL conversion has original English
 audio. It has no publisher-supplied Spanish audio or subtitle track; it cannot
 satisfy the bilingual playback checklist by itself. The checklist remains open.
+Additional [language-source research](video-language-research.md) records
+official language versions that were not combined.
 
 ## Commons topic libraries
 
