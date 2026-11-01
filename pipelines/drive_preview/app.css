@@ -185,7 +185,7 @@ color:#65a5ed}
 .file-copy{min-width:0;
 flex:1}
 .file-name{display:block;
-font-size:14px;
+font-size:16px;
 font-weight:580;
 line-height:1.55;
 overflow-wrap:anywhere;
@@ -297,7 +297,7 @@ justify-content:space-between}
 .explorer{border-radius:14px}
 .drive-header{padding:18px 15px}
 .file-list{padding:0 15px}
-.file-name{font-size:14px}
+.file-name{font-size:16px}
 .folder-heading{padding-left:16px}
 .drive-footer{font-size:8px;
 padding:15px;
@@ -310,3 +310,6 @@ dialog{width:96vw}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}
 }
 
+
+.preview-header>div{min-width:0;flex:1}
+.preview-header p{overflow-wrap:anywhere}
