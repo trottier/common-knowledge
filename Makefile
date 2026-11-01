@@ -7,6 +7,7 @@ SOURCE_DATE_EPOCH ?= $(shell git show -s --format=%ct HEAD)
 SOURCE_COMMIT := $(shell git rev-parse HEAD)
 CACHE_DIR ?= $(CURDIR)/cache
 GENERATED_DIR ?= $(CURDIR)/build/generated
+HOST_PYTHON ?= python3
 REPOSITORY ?= trottier/common-knowledge
 
 .PHONY: help build-container atlas-container atlas-check llm-ui-check laptop-ui-check check lint test cli package dev sample full release-assets site clean
@@ -22,8 +23,8 @@ help:
 	  'test             Run pytest in the container' \
 	  'cli              Show ck help in the container' \
 	  'dev              Build core PDFs and a verified development image of variant 1' \
-	  'sample           Build variants 1 and 3 twice from prepared, verified inputs' \
-	  'full             Build all eight full variants twice from prepared inputs' \
+	  'sample           Fetch/generate pinned inputs, then build variants 1 and 3 twice' \
+	  'full             Fetch/generate pinned inputs, then build all eight full variants twice' \
 	  'release-assets   Gate and package PDFs, eight dev images and GPL sources' \
 	  'site             Build the verification site from published manifests' \
 	  'clean            Remove generated build/ output before a clean rebuild' \
@@ -82,9 +83,13 @@ dev: build-container
 clean:
 	rm -rf -- build
 
-# Inputs are prepared and pinned separately. No target silently drops an item.
-sample: build-container
+# Catalog pins must be reviewed before executing a profile. No item is silently dropped.
+sample: build-container atlas-container
 	mkdir -p build "$(CACHE_DIR)" "$(GENERATED_DIR)"
+	$(HOST_PYTHON) tools/prepare_profile.py --profile sample --root "$(CURDIR)" \
+	  --work "$(CURDIR)/build/sample-inputs" --cache "$(abspath $(CACHE_DIR))" \
+	  --generated "$(abspath $(GENERATED_DIR))" --build-image "$(BUILD_IMAGE)" \
+	  --atlas-image "$(ATLAS_IMAGE)" --epoch $(SOURCE_DATE_EPOCH)
 	docker run --rm --network=none --platform $(BUILD_PLATFORM) \
 	  --env SOURCE_DATE_EPOCH=$(SOURCE_DATE_EPOCH) \
 	  --volume "$(CURDIR)/build:/artifacts" --volume "$(abspath $(CACHE_DIR)):/cache:ro" \
@@ -92,10 +97,14 @@ sample: build-container
 	  $(BUILD_IMAGE) ck build-profile --profile sample --variants 1 3 --reproduce \
 	  --commit $(SOURCE_COMMIT) --cache /cache --generated /generated --output /artifacts/sample
 
-full: build-container
+full: build-container atlas-container
 	test -z "$$(git status --porcelain)"
 	test "$$(git describe --exact-match --tags HEAD)" = "v$$(docker run --rm --network=none --entrypoint /workspace/.venv/bin/python $(BUILD_IMAGE) -c 'from pathlib import Path; from ck.config import load_config; print(load_config(Path.cwd()).build.version)')"
 	mkdir -p build "$(CACHE_DIR)" "$(GENERATED_DIR)"
+	$(HOST_PYTHON) tools/prepare_profile.py --profile full --root "$(CURDIR)" \
+	  --work "$(CURDIR)/build/full-inputs" --cache "$(abspath $(CACHE_DIR))" \
+	  --generated "$(abspath $(GENERATED_DIR))" --build-image "$(BUILD_IMAGE)" \
+	  --atlas-image "$(ATLAS_IMAGE)"
 	docker run --rm --network=none --platform $(BUILD_PLATFORM) \
 	  --volume "$(CURDIR)/build:/artifacts" --volume "$(abspath $(CACHE_DIR)):/cache:ro" \
 	  --volume "$(abspath $(GENERATED_DIR)):/generated:ro" \
