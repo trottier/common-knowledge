@@ -1,0 +1,1429 @@
+{
+  "observed_utc": "2026-11-01T19:03:14.862304+00:00",
+  "audit_script_sha256": "0bed757a4c5d7aa2650c88ddbd1b3cc740f2cbe761f2653df5685c9951b81231",
+  "method": "FontTools best Unicode cmap, excluding .notdef, whitespace, Cc, and Cf",
+  "font_policy_sha256": "d31123ab0bbb39a45f2ea765c6a335fc65c6f8303d9007b00e9c37a3aeb006de",
+  "directory_manifest_file_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f",
+  "fonts": [
+    {
+      "id": "noto_sans",
+      "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+      "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf",
+      "size_bytes": 2049096,
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt",
+      "mapped_codepoints": 3094
+    },
+    {
+      "id": "noto_sans_arabic",
+      "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+      "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/NotoSansArabic%5Bwdth%2Cwght%5D.ttf",
+      "size_bytes": 844676,
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/OFL.txt",
+      "mapped_codepoints": 1561
+    },
+    {
+      "id": "noto_sans_sc",
+      "version": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+      "url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "size_bytes": 17772300,
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/OFL.txt",
+      "mapped_codepoints": 30890
+    },
+    {
+      "id": "noto_sans_cherokee",
+      "version": "2.001; publisher commit 57b4ebace8a7b5b3cb05bf92d84bb5de27894698",
+      "url": "https://raw.githubusercontent.com/google/fonts/57b4ebace8a7b5b3cb05bf92d84bb5de27894698/ofl/notosanscherokee/NotoSansCherokee%5Bwght%5D.ttf",
+      "size_bytes": 224360,
+      "sha256": "865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd",
+      "license_proof_url": "https://github.com/google/fonts/blob/57b4ebace8a7b5b3cb05bf92d84bb5de27894698/ofl/notosanscherokee/OFL.txt",
+      "mapped_codepoints": 511
+    }
+  ],
+  "directory_corpus": {
+    "manifest_sha256": "ca9a86fcb9761f7136b37d066e2877e19feff30662f05798c436f25851278a41",
+    "generation": {
+      "complete": true,
+      "files": [
+        {
+          "path": "NATIONAL_SOURCE_DATA.json",
+          "sha256": "dc493710bd25fee5d2c08fc8b1a3bf9009153c8dd36fc3503b0375f4004a4647",
+          "size_bytes": 82112145
+        }
+      ],
+      "inputs": {
+        "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+        "census_states": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0",
+        "fcc_facility_statuses": "630651fea8a0fa0ea9e7a1582452076f8401b0dbca7ce8b0e0b0c1b1875915af",
+        "fcc_license_versions": "5a650c26f48ab250b64800ebc1f5772915959f3cccbf544fad6c794e935f48c3",
+        "fcc_locations": "5f3e77ad951caca6b38b939b65b4d5248dff28de2613b2d2826c65158d4d3637",
+        "fcc_service_codes": "347688dc1b76559622ccad04c97686733b697c0ae3f2fe18befca03ed65d8df0",
+        "fcc_stations": "5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378",
+        "fema_risk": "b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072",
+        "geofabrik_oceania": "c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519",
+        "geofabrik_puerto_rico": "82c3e21506394d7eb91984363b6f80835f901d90551f2a8c24210352f203621c",
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "geofabrik_virgin_islands": "dc0ff82695dda2d00cb17ec83d25e00f8e004bc83f9ebb13dba504277d1f1ccc",
+        "imls_libraries": "6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7",
+        "nces_schools": "9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288",
+        "noaa_transmitters": "e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22",
+        "state_emergency_agencies": "494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808"
+      },
+      "intermediates": [
+        {
+          "path": "places.json",
+          "sha256": "7d38fd20c6dc35eba7af9c810fef07729a37f6fe5a249910fe45aa97ec6567cf",
+          "size_bytes": 112139611
+        }
+      ],
+      "pipeline_version": "national-points-v1-acd0cc35897d40b2eea81b71af2ba4df8b4ae91b7664bc7806d651213e470c6d",
+      "source_date_epoch": 1793404800
+    },
+    "place_count": 254873,
+    "county_count": 3235,
+    "jurisdiction_count": 56,
+    "scanned_fields": {
+      "name": 254873,
+      "address": 254873,
+      "county_name": 254873,
+      "category": 254873,
+      "as_of": 254873,
+      "detail_strings": 261700
+    },
+    "visible_codepoints": 188,
+    "visible_character_occurrences": 28520592,
+    "uncovered_codepoints": [],
+    "places_requiring_fallback": [
+      {
+        "id": "osm-w1424247992",
+        "source_id": "geofabrik_us",
+        "name": "Tahlequah Fire Station #2",
+        "address": "244 Southridge Road Tahlequah ᏓᎵᏆ OK 74464",
+        "county": "40021",
+        "county_name": "Cherokee County",
+        "additional_codepoints": [
+          5045,
+          5062,
+          5075
+        ]
+      },
+      {
+        "id": "osm-w1209629398",
+        "source_id": "geofabrik_us",
+        "name": "Tahlequah Post Office;ᏓᎵᏇ ᎪᏪᎵ ᏧᏂᏍᏚᎢᏍᏗ",
+        "address": "",
+        "county": "40021",
+        "county_name": "Cherokee County",
+        "additional_codepoints": [
+          5026,
+          5034,
+          5045,
+          5058,
+          5063,
+          5069,
+          5075,
+          5079,
+          5082,
+          5095,
+          5098
+        ]
+      },
+      {
+        "id": "osm-n8813107045",
+        "source_id": "geofabrik_us",
+        "name": "利达快递",
+        "address": "10601 South De Anza Boulevard Cupertino CA 95014-4451",
+        "county": "06085",
+        "county_name": "Santa Clara County",
+        "additional_codepoints": [
+          21033,
+          24555,
+          36798,
+          36882
+        ]
+      },
+      {
+        "id": "osm-w591942914",
+        "source_id": "geofabrik_us",
+        "name": "ᏣᎳᎩ ᎠᏂᏴᏫᏯ ᎦᏂᎦᏙᎢ;Cherokee Indian Hospital",
+        "address": "1 Hospital Road Cherokee  28719",
+        "county": "37173",
+        "county_name": "Swain County",
+        "additional_codepoints": [
+          5024,
+          5026,
+          5030,
+          5033,
+          5043,
+          5058,
+          5081,
+          5091,
+          5099,
+          5103,
+          5108
+        ]
+      },
+      {
+        "id": "osm-n13207413826",
+        "source_id": "geofabrik_us",
+        "name": "CHEROKEE",
+        "address": "671 Tsali Boulevard;ᏣᎵ ᏧᏩᏐᎯᏍᏗ",
+        "county": "37173",
+        "county_name": "Swain County",
+        "additional_codepoints": [
+          5039,
+          5045,
+          5069,
+          5072,
+          5079,
+          5091,
+          5095,
+          5097
+        ]
+      },
+      {
+        "id": "osm-n14133849281",
+        "source_id": "geofabrik_us",
+        "name": "Saad's Pharmacy;صيدلبة سعد",
+        "address": "",
+        "county": "26163",
+        "county_name": "Wayne County",
+        "additional_codepoints": [
+          1576,
+          1577,
+          1583,
+          1587,
+          1589,
+          1593,
+          1604,
+          1610
+        ]
+      }
+    ],
+    "uncovered_places": []
+  },
+  "atlas_jobs": {
+    "jurisdictions": 56,
+    "map_pages": 4115,
+    "visible_codepoints": 181,
+    "uncovered_codepoints": [],
+    "input_hashes": {
+      "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+      "census_places_ak": "582c37f2fe680af15d7508e222153d5aa163867f47f2d96fbacd05695b0d985d",
+      "directory_points": "ca9a86fcb9761f7136b37d066e2877e19feff30662f05798c436f25851278a41",
+      "noto_sans": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "noto_sans_arabic": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+      "noto_sans_cherokee": "865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd",
+      "noto_sans_sc": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "protomaps_us": "7717f589ea25624c72e77152ff8e30832d844cd0e001ce2ae0167609edf56c7f",
+      "census_places_al": "502d0e2e0266e4e73a00582b5b82252e4484f6cac61c0dbe7df85d9f5a30a144",
+      "census_places_ar": "348061c5f3cac0d83394ac7c1cfb0bff9ba891061429aa46d8abbdec83092999",
+      "census_places_as": "fc60deea78302bcb968bf28600b77f7a98db2dfe15bee2ff00cf61ea4ffaba24",
+      "census_places_az": "7c52a87725285cd6e6655daf6cf733c37942256bc7e190ac01ddb174a0acd330",
+      "census_places_ca": "2b59dc5d54c69c7a451795401fc2a1c1c68b172f1d912d3486080e04a83e23e8",
+      "census_places_co": "e0072e2f1c049e53d598119014e6bc93f82a0a02082b3604d81b0a8c3e8b043c",
+      "census_places_ct": "5766992fb77774fd47a2b7868747b6007a5cbbdeaa04e793506aee3faa13d52e",
+      "census_places_dc": "1ac8c0230c3e656bf79d9ee3a52f4d48f97626fce5e4f6c7701bca6f948b9623",
+      "census_places_de": "638eda256e3785b8653ec776787866e6eda890a9d9bf2653c6fcc6aeba6cebb8",
+      "census_places_fl": "4394a80089284477cf79daefb754afd7e9f90683415d3398376e5c2152960876",
+      "census_places_ga": "85af23730c518c008e6869ce63dfa02d17ae61de601dd204b880ff43f5d31ff5",
+      "census_places_gu": "1047ceb9991b1ad0d65ec3e643004f6a3ee25db111dcba71e0a623b80c3eaebb",
+      "census_places_hi": "38018cb6a3e66c2f0174056903d0e8c6c2d18fa5c15b0014d059f2bead42f65b",
+      "census_places_ia": "b945d74f84c7fd20d1e77cd49522cc1ea542f16652987171b10616f15875ce21",
+      "census_places_id": "d0202acb86094eab323a1cd2deef23e12b4fa9e29d8d77bcfabb862235f847d4",
+      "census_places_il": "5c2ce6d7ca6a5045ea46563898c168a6e6b259d7ad116c6f27148ce3a40822b3",
+      "census_places_in": "2428563ed4db0a74b2041dec577e4230103329eb2875ac1827076bf477f82201",
+      "census_places_ks": "0cdaf30d567ebbb8f75421200a6e3345728313cffd791567cce308fdac047583",
+      "census_places_ky": "40d09b3263922786f5970b7e55dfb8e7b1a97c74a62efacab4e070e8738e9e64",
+      "census_places_la": "982330b7333d268b26ff60666b3ad4b683b95a1db7cef9053d39bfb580c6dcfd",
+      "census_places_ma": "950f7d0a669caf721f770d1cc58883560b1cf84f5d7be845e6e3d05a855c86fa",
+      "census_places_md": "e984dd58cc06b01363958221a661e1eef89b3daa328ace515f1daee0da4594cc",
+      "census_places_me": "2bc5461577f18dd3e89ac5d314c0ce2fc8def3de3a3f633a35423488a8aa0ce5",
+      "census_places_mi": "91cd708b8f9809a50ebed360fe7242969ba357a542481da81d9edc5821d35d3b",
+      "census_places_mn": "60d7e34ecbf7bf225b4b29d908acddcd6a9e05c39ae505cdb83791e3dfd81873",
+      "census_places_mo": "7182d92a73ef3167714d66ef192fce374636c549fb1d4e635af9580dc49cddf1",
+      "census_places_mp": "78d08e63b4cb00f441a4476af0d6361bc6d784e74919be68a3d54454343bec76",
+      "census_places_ms": "08aa0b23ab4d88f3dac2891fd82c2f6a67ea90816c14111c0147de85dae5f3e7",
+      "census_places_mt": "2a39433bd9e5a81a683e39ae9bbb914c9ce63c50a92855ddeee8c0ae02b63f74",
+      "census_places_nc": "c6b8dabd4c953bb44dd4201b34eae83dceeb880055e1c4efd00faa43c272ea79",
+      "census_places_nd": "bec89e2ff577b0717d31d58c33bcc54b36732822f6de8c32ccfd966f0527cea9",
+      "census_places_ne": "aa01fa8c3dafcea27cbe6bd009f38eb774b4c765fd2e5b81701d69a534da16e0",
+      "census_places_nh": "e5ccfa3bcca3899566dc5d4831ba3557779f53856bedffde393f824d0bcc44c7",
+      "census_places_nj": "28602a4302564a9eecf8e92f861fad6864d806581ee2ce8bea9997999f3e440e",
+      "census_places_nm": "1cbbc3121c3aeb65c2eaa4371d30ceab09a7a6f4f066beee0a9f76077c42348e",
+      "census_places_nv": "9842a490c27930be50f19cbc21b0c623f16b6d1d40f2e4cb1b0b2b5c7b2f7d83",
+      "census_places_ny": "4f667ef3a40f1569b58a37052e2464053436bd5e978b34ca333e8185a6a6808d",
+      "census_places_oh": "6c4c280e539dadc21bedda385b1c7a4b3ee24998c774d1b7e0a49e0199b272e9",
+      "census_places_ok": "e9d840ae15b4c3e194427987a31f84ed685fe9d82ac8d3349986a99b18e365cb",
+      "census_places_or": "d05814de06701cca35df9e160017cd11d5ffe43a2530a8fa7f4b3a521e9e1f0f",
+      "census_places_pa": "b9b8a25b906bc0c338cc4cfea45d8e5de12247a913cbd821b93368c55e2e9dc5",
+      "census_places_pr": "32483d1f41d3852de44afb6d91d6d89c4fa7320c6b010b3766855c013df03d47",
+      "census_places_ri": "520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429",
+      "census_places_sc": "f1a69f4a169b19ca69d09da21e157dfd6177c0959bec80352b0a7a0165885d68",
+      "census_places_sd": "050183397bec5bef01804ccd9f3ba4ec7d3f80edd27603a71160959af4fad0ef",
+      "census_places_tn": "3f6d5ae04e8f1217a7d0be244d3a841345902d9d4def83b0a07d1fc75960cc8e",
+      "census_places_tx": "5a0c4d49641f69028ee9f5c343bf09936ec00a378e5e6393115b106bab935e13",
+      "census_places_ut": "3db4d3fc1d9ca4b7c6911b01079558bb13e89703933858247f0bc4ff75d9e3d9",
+      "census_places_va": "b2ce73226f4b3a0f0a60d7116e65f468cd94a739f30c345106ff1e292c57a1f5",
+      "census_places_vi": "fa84e8bb32e91802a8268b5d3715e418a3356f7226cc2ce86ebd951593f8f4e4",
+      "census_places_vt": "6b932d7ab2aa279cac6e2ec713e0283d71f88661396df1630d85dc8eef5f58f5",
+      "census_places_wa": "b99039759e33cf931175302da80de9bd8d284c384721d52efde34dfbef2b64f5",
+      "census_places_wi": "a48a36cae9450fe11916cb94bbf1054d0ebc6c878e18de7a7e27039ad6fc5763",
+      "census_places_wv": "756188b7c2187c2e7cb43867546e406e3236df360b0baa72b17db4af0fd4ecd2",
+      "census_places_wy": "3b077402b1090f9afed9662da7f70d66b791b01f61d8ac4b7032df2293715e96"
+    },
+    "files": [
+      {
+        "state": "AK",
+        "jobs_sha256": "4c894a91aefe8585b113fb74d45ee2afa15a0d7d162628e64879ce0e834f9574",
+        "size_bytes": 1147801,
+        "map_pages": 30,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "AL",
+        "jobs_sha256": "0974fd37c4cfb7a5e219e4861dc40d5f7f9039cd938e395f958aaf0adac35efa",
+        "size_bytes": 3859701,
+        "map_pages": 76,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "AR",
+        "jobs_sha256": "d42a4a43ac96dc661f68ee4b35d5e0e4a4d3c9608cfa436fc08781711bc18215",
+        "size_bytes": 3870229,
+        "map_pages": 79,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "AS",
+        "jobs_sha256": "2b1a9ff436d5f366ef79c5f21d72407df44d7bbc435dc4e2eec3485f1ed1d3d9",
+        "size_bytes": 46625,
+        "map_pages": 5,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "AZ",
+        "jobs_sha256": "60187e04929ecf212bac495f57ce95bf19ac251d04024bad5a95a4ddfff30cd1",
+        "size_bytes": 7533152,
+        "map_pages": 58,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "CA",
+        "jobs_sha256": "d259a6944e196d21dda0628cf83915da1b2b8cc67a62d30175e04c11fdda8510",
+        "size_bytes": 28427859,
+        "map_pages": 223,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "CO",
+        "jobs_sha256": "b63f8dbdb47043e76de18a430e17a9863e4c7a72fc292b79a0ec42c0d74ac0bc",
+        "size_bytes": 5294840,
+        "map_pages": 85,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "CT",
+        "jobs_sha256": "24bcf94497ba4fcf2f24701664da86cedcdbc282d44caec32776d1cb46c6b246",
+        "size_bytes": 3409236,
+        "map_pages": 24,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "DC",
+        "jobs_sha256": "03312c7bb59df65046776c30e755b8d8246df2c3c94e1cf59c7b097b6858e3ee",
+        "size_bytes": 615645,
+        "map_pages": 3,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "DE",
+        "jobs_sha256": "dc157eec834a1b8011cfd0f25abd8e2285edf43a16443d0b08b00557d3819b81",
+        "size_bytes": 581192,
+        "map_pages": 5,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "FL",
+        "jobs_sha256": "93aa152b4bde3ffe81f5ad91dc5c29b47fc6ec6add01ede6cf7d80da22bd7dd4",
+        "size_bytes": 12128898,
+        "map_pages": 119,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "GA",
+        "jobs_sha256": "540a70415fd2672d4daf93b2fd0660c4b8e6e8181a461c538de5b90b2eb97678",
+        "size_bytes": 6331192,
+        "map_pages": 171,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "GU",
+        "jobs_sha256": "1f6bb7e09abc2fb435276b4919a3665fc2d7fffecadf1c68a78217515d3082dd",
+        "size_bytes": 63839,
+        "map_pages": 1,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "HI",
+        "jobs_sha256": "fcf2cd48d3dbfcf973f7af6e16e71eeb3d4f2f98f68b05a54ab10ef56602860a",
+        "size_bytes": 933458,
+        "map_pages": 8,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "IA",
+        "jobs_sha256": "df4b433825b73b1a8ae8bf6d909feb15913fd786cd0f10e07bdeb861956fb765",
+        "size_bytes": 3483193,
+        "map_pages": 103,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "ID",
+        "jobs_sha256": "7ef2fc1fb204a047d28564a9947b909dcab7dda9c917620b1ae604552a6dd6b9",
+        "size_bytes": 1873435,
+        "map_pages": 48,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "IL",
+        "jobs_sha256": "87f2d48b14399d37afa2ecd105977cff598ab199f0393ac94b05e9c83572621b",
+        "size_bytes": 9414370,
+        "map_pages": 132,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "IN",
+        "jobs_sha256": "fdd33da9148550b2d9c50bcc7aa0eb28e81b7012986ce6d923ea936159e7d95f",
+        "size_bytes": 3927527,
+        "map_pages": 101,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "KS",
+        "jobs_sha256": "6bcf60a87ee29c653d0841941786368c713dd3d2e5efac48bdaf5b2de3f96090",
+        "size_bytes": 3657623,
+        "map_pages": 114,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "KY",
+        "jobs_sha256": "c67660dd0659a42503dcb9d7b38162740161d42c2fb3e458ef32bfed4fcf6b4f",
+        "size_bytes": 3933198,
+        "map_pages": 123,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "LA",
+        "jobs_sha256": "665eae4d9b8871d819f839c02ea92d5b610135784514f03f1e608bf2ca1ea366",
+        "size_bytes": 3656644,
+        "map_pages": 69,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MA",
+        "jobs_sha256": "efdab5f5a78ed4da3c108c4c8a92db3bc6f5e5f72860bf1b805f1fcb391a9aba",
+        "size_bytes": 6477631,
+        "map_pages": 41,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MD",
+        "jobs_sha256": "734d7d42725544eaefa09f3f7bab4604fa41ffc644c803a96d27eaffcac8a8f3",
+        "size_bytes": 3850489,
+        "map_pages": 34,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "ME",
+        "jobs_sha256": "bb82d8dec58fc501e1a4971bf374e5134363364bf938cc38173c05fe7962a6d7",
+        "size_bytes": 2025351,
+        "map_pages": 21,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MI",
+        "jobs_sha256": "7ad5f0746b35343e19dc770582024c0dca3e5962bbe432a6237547675cdb6cc9",
+        "size_bytes": 7090581,
+        "map_pages": 109,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MN",
+        "jobs_sha256": "6cca021fa67a03469e277e5d251b12671be64a1b996c60bf6bb809d399ebb5fa",
+        "size_bytes": 5538628,
+        "map_pages": 103,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MO",
+        "jobs_sha256": "f1f89a40729cb49755e7372f663cd459c25beaf22851d2c5479527b72a57dc01",
+        "size_bytes": 4528957,
+        "map_pages": 124,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MP",
+        "jobs_sha256": "a1cdaa7fe35b2848fed1c2d96a7e9e3efac47259327da70aa9f6de19863fea98",
+        "size_bytes": 48555,
+        "map_pages": 4,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MS",
+        "jobs_sha256": "f54f7bec3903341e619bd9fdf2c1f3e3d6e5ddb646d022698d50f163e117a5a2",
+        "size_bytes": 2183927,
+        "map_pages": 84,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "MT",
+        "jobs_sha256": "26fc2685e61bc6d23ac288fed7bd2305ec697188bfc2ec33074685c433da9a0f",
+        "size_bytes": 1970705,
+        "map_pages": 58,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NC",
+        "jobs_sha256": "7cbdd1fb179eb67acf569fc21716803e12d9ef3fc42924c1d123b653aef16bd7",
+        "size_bytes": 7108442,
+        "map_pages": 115,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "ND",
+        "jobs_sha256": "fd4c7d1723a5b7484cb700d8dd0038bb3c0ef585bb898d0ccbd496d50971e0c4",
+        "size_bytes": 905898,
+        "map_pages": 54,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NE",
+        "jobs_sha256": "5ae373b1d0de616c8eace36dff70549d0940c47941dbed14ea5ac9f3b9d9a36c",
+        "size_bytes": 2757785,
+        "map_pages": 98,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NH",
+        "jobs_sha256": "3404ac3c5297bce3039da1573a6d24b1e58be265eb1bce27b5ef35b28f28daa9",
+        "size_bytes": 1570251,
+        "map_pages": 16,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NJ",
+        "jobs_sha256": "8f7030328e1bb3707f80f9e501e936239fdf239381fa73ddfb4b432535f1e557",
+        "size_bytes": 6541132,
+        "map_pages": 52,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NM",
+        "jobs_sha256": "a2e593c94d04346fd3c857dfb2362eb3e43d02a4363cd2430ebca774c61afa16",
+        "size_bytes": 2545854,
+        "map_pages": 39,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NV",
+        "jobs_sha256": "ec69e1a72a2b449d7672e106df40609d0d994e6590def149e3d53d7a3c48f5fc",
+        "size_bytes": 2546728,
+        "map_pages": 31,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "NY",
+        "jobs_sha256": "ef24b5ee1d18d9622456e6c3e09e8613e14bcc9fdee9e74a22d1b89f61c0f117",
+        "size_bytes": 13950268,
+        "map_pages": 117,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "OH",
+        "jobs_sha256": "2d334296952047d1d6f22255f270b77428ddd0a10eab3d7fa485cea7b3fca13e",
+        "size_bytes": 7860874,
+        "map_pages": 112,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "OK",
+        "jobs_sha256": "85314abc75d20e2927ad4e272be0d4e61d9bd90ca4a2e6cd67f59bf7fd2bf85d",
+        "size_bytes": 3055683,
+        "map_pages": 84,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "OR",
+        "jobs_sha256": "ccebfd330d2f1f1e0fb3f27ef57eb75f509de90fd2fb6fa0208c7964cb4be48f",
+        "size_bytes": 3793523,
+        "map_pages": 47,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "PA",
+        "jobs_sha256": "951cb57bd666fe4f868bf818426954d67f3340a2edf30e016736971526ffe405",
+        "size_bytes": 9860218,
+        "map_pages": 100,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "PR",
+        "jobs_sha256": "9a1f940b0cd55d295ee7cc1890260bc4d23dd03fc0da5a6c68bdd5f289098a11",
+        "size_bytes": 2242078,
+        "map_pages": 82,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "RI",
+        "jobs_sha256": "5ed0fd8235c375f567ce2e2cba294a517f985ac42645241b57504a5ff08397b6",
+        "size_bytes": 835980,
+        "map_pages": 8,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "SC",
+        "jobs_sha256": "61b9a083fe4a05d2e4833e065c5f4a7a5d7a424f29cee7524fc7ca689f23c65c",
+        "size_bytes": 3826416,
+        "map_pages": 54,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "SD",
+        "jobs_sha256": "e1a523105ebacdef5def6949bbede6a2df5b0c58d1b1bc7c05bbc43bbf99293c",
+        "size_bytes": 1398085,
+        "map_pages": 68,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "TN",
+        "jobs_sha256": "c969e344ced30d9e98d9b9ea887b04ddca71cfb7ce8a5ac19f41e91225b9c947",
+        "size_bytes": 4879531,
+        "map_pages": 109,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "TX",
+        "jobs_sha256": "de911165179a29bf27cac1163843898a97c93de020758affecec32650fa59ef3",
+        "size_bytes": 21583379,
+        "map_pages": 354,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "UT",
+        "jobs_sha256": "e7ee357320b7fd2931b3124d6b3f92fe161852e5b7fe6bdd09f974cd6efbdc1e",
+        "size_bytes": 2684560,
+        "map_pages": 38,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "VA",
+        "jobs_sha256": "29b2293205085b5a94c00a20f8464d2b62e545b6754433b102fcdc6ff6ac6971",
+        "size_bytes": 6293126,
+        "map_pages": 135,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "VI",
+        "jobs_sha256": "fbf5211677114b288d850b2b9e70c335cebe1d2c9e670c53dbc94d6900d4101b",
+        "size_bytes": 61187,
+        "map_pages": 3,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "VT",
+        "jobs_sha256": "a19ff79e5fdb053718885702ecad12eeb0282257af1154b3c53d701f9933526b",
+        "size_bytes": 923956,
+        "map_pages": 14,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "WA",
+        "jobs_sha256": "724d1e556b5f888c30c24b8f9f178e24865d01cd8c75862be7f1bfbb57a7e97e",
+        "size_bytes": 6458124,
+        "map_pages": 68,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "WI",
+        "jobs_sha256": "9bb966402a608f5c142a73f23c966bf5094e4236b6890d92c9a13aa4636b8fef",
+        "size_bytes": 4285024,
+        "map_pages": 82,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "WV",
+        "jobs_sha256": "788222758dc06ca8b7a1349a1745b66b1dcd69444b7ec79685a5d9f4d07a8276",
+        "size_bytes": 2113318,
+        "map_pages": 56,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      },
+      {
+        "state": "WY",
+        "jobs_sha256": "3bc0cbe4300e06eb880401bfbdc01854d9ae12b1381057bdf96cc59179d35fbf",
+        "size_bytes": 842155,
+        "map_pages": 24,
+        "directory_sha256": "681a0b618f32204abe2660807e9980108d207c35ba861c4939f7abb7e339477f"
+      }
+    ]
+  },
+  "fallback_characters": [
+    {
+      "codepoint": "U+0628",
+      "character": "ب",
+      "unicode_name": "ARABIC LETTER BEH",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+0629",
+      "character": "ة",
+      "unicode_name": "ARABIC LETTER TEH MARBUTA",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+062F",
+      "character": "د",
+      "unicode_name": "ARABIC LETTER DAL",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 6,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+0633",
+      "character": "س",
+      "unicode_name": "ARABIC LETTER SEEN",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+0635",
+      "character": "ص",
+      "unicode_name": "ARABIC LETTER SAD",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+0639",
+      "character": "ع",
+      "unicode_name": "ARABIC LETTER AIN",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+0644",
+      "character": "ل",
+      "unicode_name": "ARABIC LETTER LAM",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+064A",
+      "character": "ي",
+      "unicode_name": "ARABIC LETTER YEH",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_arabic"
+      ]
+    },
+    {
+      "codepoint": "U+13A0",
+      "character": "Ꭰ",
+      "unicode_name": "CHEROKEE LETTER A",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13A2",
+      "character": "Ꭲ",
+      "unicode_name": "CHEROKEE LETTER I",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13A6",
+      "character": "Ꭶ",
+      "unicode_name": "CHEROKEE LETTER GA",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13A9",
+      "character": "Ꭹ",
+      "unicode_name": "CHEROKEE LETTER GI",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13AA",
+      "character": "Ꭺ",
+      "unicode_name": "CHEROKEE LETTER GO",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13AF",
+      "character": "Ꭿ",
+      "unicode_name": "CHEROKEE LETTER HI",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 0,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13B3",
+      "character": "Ꮃ",
+      "unicode_name": "CHEROKEE LETTER LA",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13B5",
+      "character": "Ꮅ",
+      "unicode_name": "CHEROKEE LETTER LI",
+      "directory_occurrences": 4,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13C2",
+      "character": "Ꮒ",
+      "unicode_name": "CHEROKEE LETTER NI",
+      "directory_occurrences": 3,
+      "atlas_job_occurrences": 3,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13C6",
+      "character": "Ꮖ",
+      "unicode_name": "CHEROKEE LETTER QUA",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 0,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13C7",
+      "character": "Ꮗ",
+      "unicode_name": "CHEROKEE LETTER QUE",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13CD",
+      "character": "Ꮝ",
+      "unicode_name": "CHEROKEE LETTER S",
+      "directory_occurrences": 3,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13D0",
+      "character": "Ꮠ",
+      "unicode_name": "CHEROKEE LETTER SO",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 0,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13D3",
+      "character": "Ꮣ",
+      "unicode_name": "CHEROKEE LETTER DA",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13D7",
+      "character": "Ꮧ",
+      "unicode_name": "CHEROKEE LETTER DI",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13D9",
+      "character": "Ꮩ",
+      "unicode_name": "CHEROKEE LETTER DO",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13DA",
+      "character": "Ꮪ",
+      "unicode_name": "CHEROKEE LETTER DU",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13E3",
+      "character": "Ꮳ",
+      "unicode_name": "CHEROKEE LETTER TSA",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13E7",
+      "character": "Ꮷ",
+      "unicode_name": "CHEROKEE LETTER TSU",
+      "directory_occurrences": 2,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13E9",
+      "character": "Ꮹ",
+      "unicode_name": "CHEROKEE LETTER WA",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 0,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13EA",
+      "character": "Ꮺ",
+      "unicode_name": "CHEROKEE LETTER WE",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13EB",
+      "character": "Ꮻ",
+      "unicode_name": "CHEROKEE LETTER WI",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13EF",
+      "character": "Ꮿ",
+      "unicode_name": "CHEROKEE LETTER YA",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+13F4",
+      "character": "Ᏼ",
+      "unicode_name": "CHEROKEE LETTER YV",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 1,
+      "supporting_fonts": [
+        "noto_sans_cherokee"
+      ]
+    },
+    {
+      "codepoint": "U+5229",
+      "character": "利",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-5229",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_sc"
+      ]
+    },
+    {
+      "codepoint": "U+5FEB",
+      "character": "快",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-5FEB",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_sc"
+      ]
+    },
+    {
+      "codepoint": "U+8FBE",
+      "character": "达",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-8FBE",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_sc"
+      ]
+    },
+    {
+      "codepoint": "U+9012",
+      "character": "递",
+      "unicode_name": "CJK UNIFIED IDEOGRAPH-9012",
+      "directory_occurrences": 1,
+      "atlas_job_occurrences": 2,
+      "supporting_fonts": [
+        "noto_sans_sc"
+      ]
+    }
+  ],
+  "renderer_logs": {
+    "pattern": "(?:missing|unsupported|failed|could not|cannot|can't|not found|error).{0,100}(?:glyph|font)|(?:glyph|font).{0,100}(?:missing|unsupported|failed|not found|error)",
+    "files": [
+      {
+        "path": "build/corrected-final-logs/atlas-a.log",
+        "observed_bytes": 277,
+        "sha256": "0c95bf9ecef3939f06e1801955e47cca586555b31badad0252c21187d278104b",
+        "may_still_be_appending": false
+      },
+      {
+        "path": "build/corrected-final-logs/atlas-b.log",
+        "observed_bytes": 277,
+        "sha256": "0c95bf9ecef3939f06e1801955e47cca586555b31badad0252c21187d278104b",
+        "may_still_be_appending": false
+      },
+      {
+        "path": "build/corrected-final-logs/directories-a.log",
+        "observed_bytes": 11813,
+        "sha256": "6c470af2d7fe78be324b20396c59e8c6a25074f2d2c167d81c5399d60d1735e2",
+        "may_still_be_appending": true
+      }
+    ],
+    "matching_lines": [],
+    "observed_file_count": 227,
+    "observed_total_bytes": 190509,
+    "all_file_bindings_sha256": "e2a42e4f20ec86a2179df94580787d520b4b86e6a9dd0628b6cf2308273cd8a7",
+    "fixed_atlas_logs": {
+      "file_count": 224,
+      "total_bytes": 178142,
+      "bindings_sha256": "c6c280a3086178241fc669cbe8761e2f4f79dd55863261fbca415478e3056a83",
+      "glob": "build/atlas/corrected-logs/*.log",
+      "binding_hash_method": "SHA-256 of JSON path/observed_bytes/sha256/may_still_be_appending records, sorted by path, keys sorted, separators comma/colon, UTF-8"
+    }
+  },
+  "all_observed_corpus_characters_mapped": true,
+  "native_vector_tile_feature_text_independently_enumerated": false,
+  "shaping_or_physical_readability_approval": false,
+  "maximum_resident_set_bytes": 684249088,
+  "producer_source_commit": "7e83aa3b988754f454f898d86f086c7a46c9a077",
+  "producer_dirty_paths_at_audit": [
+    "catalog/geodata.yaml",
+    "catalog/maps.yaml"
+  ],
+  "code_and_policy": [
+    {
+      "path": "src/ck/geofonts.py",
+      "sha256": "01287a48491b512196371bb82887b3f6b89e37709abc8fa43a3641dc128a1e70"
+    },
+    {
+      "path": "pipelines/geodata-fonts.yaml",
+      "sha256": "d31123ab0bbb39a45f2ea765c6a335fc65c6f8303d9007b00e9c37a3aeb006de"
+    },
+    {
+      "path": "src/ck/atlas.py",
+      "sha256": "7253e8a58b63081f64b77c4f1a1ef7bd5eee60891af2dd035888fe30705728f4"
+    },
+    {
+      "path": "src/ck/nationaldirectory.py",
+      "sha256": "0dc16959a2de784fcc0b62c7d6e5403d70b3ed481224361b510002094c3ad8ee"
+    },
+    {
+      "path": "templates/atlas.html.j2",
+      "sha256": "ad6b2694fef096780cab8dcfe53209252d3abb5f5af15d7d532524919aaccf1b"
+    },
+    {
+      "path": "pipelines/atlas/style.mjs",
+      "sha256": "ecdfb2c2c560f230b80008a89f30b29057b243ae8cae134cf4c98628e27d892a"
+    },
+    {
+      "path": "pipelines/atlas/render.mjs",
+      "sha256": "c6efb2da0e23018651af06d191c1a92b330e3f6e857948a684afb9d8d7d4d675"
+    }
+  ],
+  "audit_container": {
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "cpus": 1,
+    "memory_bytes": 1073741824,
+    "network": "none",
+    "producer_and_cache_mounts": "read-only"
+  },
+  "existing_pdf_samples": {
+    "method": "Inspect completed county-part phone/print PDFs; require source fallback code points in extracted text and embedded FontFile/FontFile2/FontFile3 programs for every used font resource on matching pages",
+    "results": [
+      {
+        "place_id": "osm-w1424247992",
+        "directory_pdf_check": "No completed matching county part at audit time"
+      },
+      {
+        "place_id": "osm-w1209629398",
+        "directory_pdf_check": "No completed matching county part at audit time"
+      },
+      {
+        "place_id": "osm-n8813107045",
+        "mode": "phone",
+        "path": "build/corrected-directories-a/CA/parts/06085-2-phone.pdf",
+        "sha256": "bec67c03eca06751f59468f80d6619ae6cc0d07db5fa38023f1b3200f812458d",
+        "size_bytes": 207905,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 122,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/KVIORL+CK3-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-n8813107045",
+        "mode": "print",
+        "path": "build/corrected-directories-a/CA/parts/06085-2-print.pdf",
+        "sha256": "b07637146134f0d4e33bf4930a2782e353dc51bba9bea64b3b13965923bbea64",
+        "size_bytes": 132246,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 41,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/KVIORL+CK3-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-w591942914",
+        "mode": "phone",
+        "path": "build/corrected-directories-a/NC/parts/37173-1-phone.pdf",
+        "sha256": "6c81756d5ef1a6d67dd8080faa4bf2d3feb1ace0b9e67746497a1e487f475ce9",
+        "size_bytes": 54234,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 10,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/FFWUMT+CK4-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WSHGKB+CK4",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-w591942914",
+        "mode": "print",
+        "path": "build/corrected-directories-a/NC/parts/37173-1-print.pdf",
+        "sha256": "7aad49530d4c525473cb72cef33a9e104270d8f256e3e28541cb61820ea192c4",
+        "size_bytes": 41322,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 4,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/FFWUMT+CK4-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WSHGKB+CK4",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-n13207413826",
+        "mode": "phone",
+        "path": "build/corrected-directories-a/NC/parts/37173-1-phone.pdf",
+        "sha256": "6c81756d5ef1a6d67dd8080faa4bf2d3feb1ace0b9e67746497a1e487f475ce9",
+        "size_bytes": 54234,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 15,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/FFWUMT+CK4-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WSHGKB+CK4",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-n13207413826",
+        "mode": "print",
+        "path": "build/corrected-directories-a/NC/parts/37173-1-print.pdf",
+        "sha256": "7aad49530d4c525473cb72cef33a9e104270d8f256e3e28541cb61820ea192c4",
+        "size_bytes": 41322,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 6,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/FFWUMT+CK4-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WSHGKB+CK4",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-n14133849281",
+        "mode": "phone",
+        "path": "build/corrected-directories-a/MI/parts/26163-2-phone.pdf",
+        "sha256": "9e344239ff0a4665af2040b389659128bf504cf0f0e6aff145c2000d6073d214",
+        "size_bytes": 205760,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 33,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/JOKJPL+CK2-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      },
+      {
+        "place_id": "osm-n14133849281",
+        "mode": "print",
+        "path": "build/corrected-directories-a/MI/parts/26163-2-print.pdf",
+        "sha256": "86e99422e86146d6103461746041b0052c0e0245e9571a2bc4bab6619ed1060a",
+        "size_bytes": 130784,
+        "source_fallback_letters_present": true,
+        "matching_pages": [
+          {
+            "page": 12,
+            "fonts": [
+              {
+                "base_font": "/CLWBQH+CK1-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/WCPKMH+CK1",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              },
+              {
+                "base_font": "/JOKJPL+CK2-Bold",
+                "embedded_font_programs": [
+                  "/FontFile2"
+                ]
+              }
+            ]
+          }
+        ],
+        "correct_shaping_or_physical_readability_claim": false
+      }
+    ],
+    "case_format_observations": 8,
+    "distinct_pdf_files": 6,
+    "still_in_progress_place_ids": [
+      "osm-w1424247992",
+      "osm-w1209629398"
+    ]
+  }
+}
