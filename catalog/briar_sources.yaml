@@ -1,0 +1,882 @@
+[
+  {
+    "id": "briar_dep_androidx_annotation_annotation_1_5_0",
+    "family": "docs",
+    "title": "androidx.annotation:annotation:1.5.0 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.5.0/annotation-1.5.0-sources.jar",
+    "version": "1.5.0",
+    "size_bytes": 60709,
+    "sha256": "321c0d46007a21b02c99b8b690afb9eec200c7fde0f60ab7e056c1d0c3024d42",
+    "license": "Apache-2.0",
+    "attribution": "annotation contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.5.0/annotation-1.5.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.5.0/annotation-1.5.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_constraintlayout_constraintlayout_2_1_4",
+    "family": "docs",
+    "title": "androidx.constraintlayout:constraintlayout:2.1.4 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout/2.1.4/constraintlayout-2.1.4-sources.jar",
+    "version": "2.1.4",
+    "size_bytes": 273907,
+    "sha256": "849b8de0b2a45df75d39cf9e4305d98ea276574c9290abfeafe9349b12275f7e",
+    "license": "Apache-2.0",
+    "attribution": "constraintlayout contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout/2.1.4/constraintlayout-2.1.4.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout/2.1.4/constraintlayout-2.1.4-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_exifinterface_exifinterface_1_3_7",
+    "family": "docs",
+    "title": "androidx.exifinterface:exifinterface:1.3.7 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.3.7/exifinterface-1.3.7-sources.jar",
+    "version": "1.3.7",
+    "size_bytes": 64785,
+    "sha256": "04c0a6d2ff9745ab9946ebcdd2cf35889e05c79e5218e8b59a57a98a2670dc74",
+    "license": "Apache-2.0",
+    "attribution": "exifinterface contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.3.7/exifinterface-1.3.7.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.3.7/exifinterface-1.3.7-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_fragment_fragment_1_6_2",
+    "family": "docs",
+    "title": "androidx.fragment:fragment:1.6.2 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.6.2/fragment-1.6.2-sources.jar",
+    "version": "1.6.2",
+    "size_bytes": 194086,
+    "sha256": "6957c79f099d5ff9d636a5e6f0a4a7bbf18e8ddf6144789c2508a16fe8afc088",
+    "license": "Apache-2.0",
+    "attribution": "fragment contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.6.2/fragment-1.6.2.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.6.2/fragment-1.6.2-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_lifecycle_lifecycle_livedata_2_6_2",
+    "family": "docs",
+    "title": "androidx.lifecycle:lifecycle-livedata:2.6.2 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2-sources.jar",
+    "version": "2.6.2",
+    "size_bytes": 6551,
+    "sha256": "5e55ddad2a4a2cf7c33650059f11274a579db92dd88a04800912d70576227f61",
+    "license": "Apache-2.0",
+    "attribution": "lifecycle-livedata contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_lifecycle_lifecycle_viewmodel_ktx_2_6_2",
+    "family": "docs",
+    "title": "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2-sources.jar",
+    "version": "2.6.2",
+    "size_bytes": 1410,
+    "sha256": "dc9b84fecf2d5c7eade2d86e75a5c407c81209698e001fe822a5ed1896571d67",
+    "license": "Apache-2.0",
+    "attribution": "lifecycle-viewmodel-ktx contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_preference_preference_1_2_1",
+    "family": "docs",
+    "title": "androidx.preference:preference:1.2.1 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/preference/preference/1.2.1/preference-1.2.1-sources.jar",
+    "version": "1.2.1",
+    "size_bytes": 114097,
+    "sha256": "e5c16f4ce8afacb66bbbb34837cc070a5c6a7ca07ae1a8ff9c4c80c8e6edbf1f",
+    "license": "Apache-2.0",
+    "attribution": "preference contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/preference/preference/1.2.1/preference-1.2.1.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/preference/preference/1.2.1/preference-1.2.1-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_androidx_recyclerview_recyclerview_selection_1_1_0",
+    "family": "docs",
+    "title": "androidx.recyclerview:recyclerview-selection:1.1.0 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview-selection/1.1.0/recyclerview-selection-1.1.0-sources.jar",
+    "version": "1.1.0",
+    "size_bytes": 85112,
+    "sha256": "9cb384801e162db47f8f1b3c69fa4a1f4a41be55117aa616dd4be81784ec7d36",
+    "license": "Apache-2.0",
+    "attribution": "recyclerview-selection contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview-selection/1.1.0/recyclerview-selection-1.1.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview-selection/1.1.0/recyclerview-selection-1.1.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_fasterxml_jackson_core_jackson_annotations_2_13_4",
+    "family": "docs",
+    "title": "com.fasterxml.jackson.core:jackson-annotations:2.13.4 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4-sources.jar",
+    "version": "2.13.4",
+    "size_bytes": 80052,
+    "sha256": "f7957cd469e2c80f2a313d57816c9834135a5218e02eaa4d70d1a81fb49ca437",
+    "license": "Apache-2.0",
+    "attribution": "jackson-annotations contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_fasterxml_jackson_core_jackson_databind_2_13_4",
+    "family": "docs",
+    "title": "com.fasterxml.jackson.core:jackson-databind:2.13.4 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4-sources.jar",
+    "version": "2.13.4",
+    "size_bytes": 1148632,
+    "sha256": "c1ab9263cb99f83f25cc6f7c5a1ae08cd9006946493b02e4574cdcb4da793cef",
+    "license": "Apache-2.0",
+    "attribution": "jackson-databind contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_github_bumptech_glide_glide_4_16_0",
+    "family": "docs",
+    "title": "com.github.bumptech.glide:glide:4.16.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/github/bumptech/glide/glide/4.16.0/glide-4.16.0-sources.jar",
+    "version": "4.16.0",
+    "size_bytes": 450450,
+    "sha256": "e2ea6d3e0707682b0109375dbe2a6fe2f7247c89b7519797e94cfb00249213b7",
+    "license": "[[VERIFY: publisher declares Simplified BSD and Apache-2.0; complete per-file license inventory]]",
+    "attribution": "glide contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/github/bumptech/glide/glide/4.16.0/glide-4.16.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/github/bumptech/glide/glide/4.16.0/glide-4.16.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_github_chrisbanes_photoview_2_3_0",
+    "family": "docs",
+    "title": "com.github.chrisbanes:PhotoView:2.3.0 original publisher source JAR for Briar dependency review",
+    "url": "https://jitpack.io/com/github/chrisbanes/PhotoView/2.3.0/PhotoView-2.3.0-sources.jar",
+    "version": "2.3.0",
+    "size_bytes": 16823,
+    "sha256": "e7a35edacabbeafb30c0f377b7a41ed2e4d96d53714096cbfaaf255459aa3426",
+    "license": "Apache-2.0",
+    "attribution": "PhotoView contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://github.com/Baseflow/PhotoView/blob/2.3.0/LICENSE",
+    "checksum_source_url": "https://jitpack.io/com/github/chrisbanes/PhotoView/2.3.0/PhotoView-2.3.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_github_kobakei_materialfabspeeddial_1_2_1",
+    "family": "docs",
+    "title": "com.github.kobakei:MaterialFabSpeedDial:1.2.1 original publisher source JAR for Briar dependency review",
+    "url": "https://jitpack.io/com/github/kobakei/MaterialFabSpeedDial/1.2.1/MaterialFabSpeedDial-1.2.1-sources.jar",
+    "version": "1.2.1",
+    "size_bytes": 8460,
+    "sha256": "4f8f928cbbf11796c43594fa8d0067aba49fe61fd6d47105aed7dde3ef99d36a",
+    "license": "Apache-2.0",
+    "attribution": "MaterialFabSpeedDial contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://github.com/kobakei/MaterialFabSpeedDial/blob/1.2.1/LICENSE",
+    "checksum_source_url": "https://jitpack.io/com/github/kobakei/MaterialFabSpeedDial/1.2.1/MaterialFabSpeedDial-1.2.1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_google_android_material_material_1_9_0",
+    "family": "docs",
+    "title": "com.google.android.material:material:1.9.0 original publisher source JAR for Briar dependency review",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.9.0/material-1.9.0-sources.jar",
+    "version": "1.9.0",
+    "size_bytes": 1115899,
+    "sha256": "9bc70e328bc3b3eccc6d0daee90330b3244b1a17851fcbbf2ef8784c367c7262",
+    "license": "Apache-2.0",
+    "attribution": "material contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.9.0/material-1.9.0.pom",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.9.0/material-1.9.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_google_code_findbugs_jsr305_3_0_2",
+    "family": "docs",
+    "title": "com.google.code.findbugs:jsr305:3.0.2 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar",
+    "version": "3.0.2",
+    "size_bytes": 18102,
+    "sha256": "1c9e85e272d0708c6a591dc74828c71603053b48cc75ae83cce56912a2aa063b",
+    "license": "Apache-2.0",
+    "attribution": "jsr305 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_google_dagger_dagger_2_51_1",
+    "family": "docs",
+    "title": "com.google.dagger:dagger:2.51.1 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.51.1/dagger-2.51.1-sources.jar",
+    "version": "2.51.1",
+    "size_bytes": 61204,
+    "sha256": "77e5cfde38b17973abca3f385bedf337e9f19a260665d5d8c447f34e46865cf6",
+    "license": "Apache-2.0",
+    "attribution": "dagger contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.51.1/dagger-2.51.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.51.1/dagger-2.51.1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_google_zxing_core_3_3_3",
+    "family": "docs",
+    "title": "com.google.zxing:core:3.3.3 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.3.3/core-3.3.3-sources.jar",
+    "version": "3.3.3",
+    "size_bytes": 473966,
+    "sha256": "e646f122c7fe517f4ea2325f181985e20bff215bde566dd886035cb1b33679ac",
+    "license": "Apache-2.0",
+    "attribution": "core contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/google/zxing/zxing-parent/3.3.3/zxing-parent-3.3.3.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.3.3/core-3.3.3-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_h2database_h2_1_4_192",
+    "family": "docs",
+    "title": "com.h2database:h2:1.4.192 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192-sources.jar",
+    "version": "1.4.192",
+    "size_bytes": 1243347,
+    "sha256": "1c986ddca63dc84d796fd7408b79b491660e74c621070f18a41d8f0c79e58742",
+    "license": "MPL-2.0 OR EPL-1.0",
+    "attribution": "h2 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_rometools_rome_1_18_0",
+    "family": "docs",
+    "title": "com.rometools:rome:1.18.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/rometools/rome/1.18.0/rome-1.18.0-sources.jar",
+    "version": "1.18.0",
+    "size_bytes": 219300,
+    "sha256": "e6a07eed2909c3432717a63978d55a41fc030fca9db212795b2f6f1b25796c1c",
+    "license": "Apache-2.0",
+    "attribution": "rome contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/rometools/rome/1.18.0/rome-1.18.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/rometools/rome/1.18.0/rome-1.18.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_squareup_okhttp3_okhttp_4_12_0",
+    "family": "docs",
+    "title": "com.squareup.okhttp3:okhttp:4.12.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar",
+    "version": "4.12.0",
+    "size_bytes": 368316,
+    "sha256": "d91a769a4140e542cddbac4e67fcf279299614e8bfd53bd23b85e60c2861341c",
+    "license": "Apache-2.0",
+    "attribution": "okhttp contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_vanniktech_emoji_google_0_9_0",
+    "family": "docs",
+    "title": "com.vanniktech:emoji-google:0.9.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/vanniktech/emoji-google/0.9.0/emoji-google-0.9.0-release-sources.jar",
+    "version": "0.9.0",
+    "size_bytes": 52586,
+    "sha256": "7c92cf2440b479e6867ebda34c70cbec57c2c5b8376743b8dfee3f258a59355a",
+    "license": "Apache-2.0",
+    "attribution": "emoji-google contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/vanniktech/emoji-google/0.9.0/emoji-google-0.9.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/vanniktech/emoji-google/0.9.0/emoji-google-0.9.0-release-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_com_vanniktech_emoji_0_9_0",
+    "family": "docs",
+    "title": "com.vanniktech:emoji:0.9.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/com/vanniktech/emoji/0.9.0/emoji-0.9.0-release-sources.jar",
+    "version": "0.9.0",
+    "size_bytes": 57666,
+    "sha256": "cc3dca18b51617509e95979d6c2f47e7d7e2674833abd86454173b23e0ab691a",
+    "license": "Apache-2.0",
+    "attribution": "emoji contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/com/vanniktech/emoji/0.9.0/emoji-0.9.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/com/vanniktech/emoji/0.9.0/emoji-0.9.0-release-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_de_hdodenhof_circleimageview_3_1_0",
+    "family": "docs",
+    "title": "de.hdodenhof:circleimageview:3.1.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/de/hdodenhof/circleimageview/3.1.0/circleimageview-3.1.0-sources.jar",
+    "version": "3.1.0",
+    "size_bytes": 4160,
+    "sha256": "cf4dd292f8cd9da1e688363a4f8b7c2cb21d9ca54574ae8fc0b7a2107d4dbc84",
+    "license": "Apache-2.0",
+    "attribution": "circleimageview contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/de/hdodenhof/circleimageview/3.1.0/circleimageview-3.1.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/de/hdodenhof/circleimageview/3.1.0/circleimageview-3.1.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_info_guardianproject_panic_panic_1_0",
+    "family": "docs",
+    "title": "info.guardianproject.panic:panic:1.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/info/guardianproject/panic/panic/1.0/panic-1.0-sources.jar",
+    "version": "1.0",
+    "size_bytes": 8805,
+    "sha256": "cdfd6c740c49feff058f83b84d37b7ec99108c0c4fb53ac0b7af6d150cc74874",
+    "license": "LGPL-2.1-or-later",
+    "attribution": "panic contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/info/guardianproject/panic/panic/1.0/panic-1.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/info/guardianproject/panic/panic/1.0/panic-1.0-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_javax_inject_javax_inject_1",
+    "family": "docs",
+    "title": "javax.inject:javax.inject:1 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar",
+    "version": "1",
+    "size_bytes": 10928,
+    "sha256": "c4b87ee2911c139c3daf498a781967f1eb2e75bc1a8529a2e7b328a15d0e433e",
+    "license": "Apache-2.0",
+    "attribution": "javax.inject contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_net_i2p_crypto_eddsa_0_2_0",
+    "family": "docs",
+    "title": "net.i2p.crypto:eddsa:0.2.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0-sources.jar",
+    "version": "0.2.0",
+    "size_bytes": 52778,
+    "sha256": "d08f5baa9622aaf02216384864fbc84573012e0187dd8708a42ebc3e0a402dd4",
+    "license": "CC0-1.0",
+    "attribution": "eddsa contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_bitlet_weupnp_0_1_4",
+    "family": "docs",
+    "title": "org.bitlet:weupnp:0.1.4 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/bitlet/weupnp/0.1.4/weupnp-0.1.4-sources.jar",
+    "version": "0.1.4",
+    "size_bytes": 26652,
+    "sha256": "954023048656bed6a8fa23764e56eb360ff62eaca7881fa74985fdb38a3b7a94",
+    "license": "LGPL-2.1-or-later",
+    "attribution": "weupnp contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/bitlet/weupnp/0.1.4/weupnp-0.1.4.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/bitlet/weupnp/0.1.4/weupnp-0.1.4-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_bouncycastle_bcprov_jdk15to18_1_82",
+    "family": "docs",
+    "title": "org.bouncycastle:bcprov-jdk15to18:1.82 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.82/bcprov-jdk15to18-1.82-sources.jar",
+    "version": "1.82",
+    "size_bytes": 4756344,
+    "sha256": "49b7c4b925bafc538391952f77f8d5a1d104a22d77e527d51aafe4430cb84151",
+    "license": "MIT",
+    "attribution": "bcprov-jdk15to18 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.82/bcprov-jdk15to18-1.82.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.82/bcprov-jdk15to18-1.82-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_dont_kill_me_lib_0_2_8",
+    "family": "docs",
+    "title": "org.briarproject:dont-kill-me-lib:0.2.8 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/dont-kill-me-lib/0.2.8/dont-kill-me-lib-0.2.8-sources.jar",
+    "version": "0.2.8",
+    "size_bytes": 10915,
+    "sha256": "a882aa49ff14902d854221ee3e19f5b4ffcba8a12291f0c57da086cf0d6cc2b6",
+    "license": "[[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]",
+    "attribution": "dont-kill-me-lib contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/dont-kill-me-lib/0.2.8/dont-kill-me-lib-0.2.8.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/dont-kill-me-lib/0.2.8/dont-kill-me-lib-0.2.8-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_jtorctl_0_5",
+    "family": "docs",
+    "title": "org.briarproject:jtorctl:0.5 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/jtorctl/0.5/jtorctl-0.5-sources.jar",
+    "version": "0.5",
+    "size_bytes": 19651,
+    "sha256": "7b78a86be9a96747cc3379d3c90a756b5223409037b8eb2b402e09ce0e936e9c",
+    "license": "BSD-3-Clause",
+    "attribution": "jtorctl contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/jtorctl/0.5/jtorctl-0.5.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/jtorctl/0.5/jtorctl-0.5-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_null_safety_0_1",
+    "family": "docs",
+    "title": "org.briarproject:null-safety:0.1 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/null-safety/0.1/null-safety-0.1-sources.jar",
+    "version": "0.1",
+    "size_bytes": 3752,
+    "sha256": "4bcecba5c00fab033fdadc0ff343c3659f3fc0b06c839417ae82a60b9461984e",
+    "license": "Apache-2.0",
+    "attribution": "null-safety contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/null-safety/0.1/null-safety-0.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/null-safety/0.1/null-safety-0.1-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_onionwrapper_android_0_1_7",
+    "family": "docs",
+    "title": "org.briarproject:onionwrapper-android:0.1.7 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-android/0.1.7/onionwrapper-android-0.1.7-sources.jar",
+    "version": "0.1.7",
+    "size_bytes": 4937,
+    "sha256": "049ea14bd3329b441a3bd4ae33d67356c8ca70b5eb094e061566f0f17295c194",
+    "license": "[[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]",
+    "attribution": "onionwrapper-android contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-android/0.1.7/onionwrapper-android-0.1.7.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-android/0.1.7/onionwrapper-android-0.1.7-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_onionwrapper_core_0_1_7",
+    "family": "docs",
+    "title": "org.briarproject:onionwrapper-core:0.1.7 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-core/0.1.7/onionwrapper-core-0.1.7-sources.jar",
+    "version": "0.1.7",
+    "size_bytes": 19396,
+    "sha256": "8c2373c4236eed070771bf30ddf37c45fcd63910796f88fbc38c78a5a10b75bd",
+    "license": "[[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]",
+    "attribution": "onionwrapper-core contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-core/0.1.7/onionwrapper-core-0.1.7.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-core/0.1.7/onionwrapper-core-0.1.7-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_socks_socket_0_1",
+    "family": "docs",
+    "title": "org.briarproject:socks-socket:0.1 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/socks-socket/0.1/socks-socket-0.1-sources.jar",
+    "version": "0.1",
+    "size_bytes": 4832,
+    "sha256": "9a814a2f78f9009653229723f3cffdfb0d90a0727727723a7cc9afc16874efa3",
+    "license": "Apache-2.0",
+    "attribution": "socks-socket contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/socks-socket/0.1/socks-socket-0.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/socks-socket/0.1/socks-socket-0.1-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_jdom_jdom2_2_0_6_1",
+    "family": "docs",
+    "title": "org.jdom:jdom2:2.0.6.1 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1-sources.jar",
+    "version": "2.0.6.1",
+    "size_bytes": 488764,
+    "sha256": "45deefd1f842e35f0c1089eeecd057df632230ec6096ccc6fccfc639b95548d4",
+    "license": "[[VERIFY: JDOM source-header license, including binary notices and naming conditions]]",
+    "attribution": "jdom2 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_25",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.25 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25-sources.jar",
+    "version": "1.9.25",
+    "size_bytes": 580,
+    "sha256": "2534c8908432e06de73177509903d405b55f423dd4c2f747e16b92a2162611e6",
+    "license": "Apache-2.0",
+    "attribution": "kotlin-stdlib-jdk7 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: metadata-only source JAR; implementation is in other Kotlin artifacts; complete resolved graph, per-file notices, source pins, and source/build correspondence review]]"
+  },
+  {
+    "id": "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_25",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.25 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25-sources.jar",
+    "version": "1.9.25",
+    "size_bytes": 556,
+    "sha256": "3cb6895054a0985bba591c165503fe4dd63a215af53263b67a071ccdc242bf6e",
+    "license": "Apache-2.0",
+    "attribution": "kotlin-stdlib-jdk8 contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: metadata-only source JAR; implementation is in other Kotlin artifacts; complete resolved graph, per-file notices, source pins, and source/build correspondence review]]"
+  },
+  {
+    "id": "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_1_9_25",
+    "family": "docs",
+    "title": "org.jetbrains.kotlin:kotlin-stdlib:1.9.25 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25-sources.jar",
+    "version": "1.9.25",
+    "size_bytes": 605561,
+    "sha256": "1745faecebad150a45b5ddf63b29577693a27133bb3ef2126704230af8e5ea6a",
+    "license": "Apache-2.0",
+    "attribution": "kotlin-stdlib contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_jsoup_jsoup_1_15_3",
+    "family": "docs",
+    "title": "org.jsoup:jsoup:1.15.3 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3-sources.jar",
+    "version": "1.15.3",
+    "size_bytes": 230852,
+    "sha256": "43947de5c649f3cef70dafe92741e5e09581f607b98113244f4fae3318828262",
+    "license": "MIT",
+    "attribution": "jsoup contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_nanohttpd_nanohttpd_2_3_1",
+    "family": "docs",
+    "title": "org.nanohttpd:nanohttpd:2.3.1 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar",
+    "version": "2.3.1",
+    "size_bytes": 23924,
+    "sha256": "71b57b309dd19ca7bfceb3b0fa97ac9048ab2cb902a2607373633150f1997a67",
+    "license": "BSD-3-Clause",
+    "attribution": "nanohttpd contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd-project/2.3.1/nanohttpd-project-2.3.1.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_whispersystems_curve25519_java_0_5_0",
+    "family": "docs",
+    "title": "org.whispersystems:curve25519-java:0.5.0 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/org/whispersystems/curve25519-java/0.5.0/curve25519-java-0.5.0-sources.jar",
+    "version": "0.5.0",
+    "size_bytes": 88777,
+    "sha256": "6824b9c54c362217cac381a36aa756790aa22c16e2f8d35b1fb6422733a2412b",
+    "license": "[[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]",
+    "attribution": "curve25519-java contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/whispersystems/curve25519-java/0.5.0/curve25519-java-0.5.0.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/whispersystems/curve25519-java/0.5.0/curve25519-java-0.5.0-sources.jar.sha1",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_uk_co_samuelwall_material_tap_target_prompt_3_3_2",
+    "family": "docs",
+    "title": "uk.co.samuelwall:material-tap-target-prompt:3.3.2 original publisher source JAR for Briar dependency review",
+    "url": "https://repo.maven.apache.org/maven2/uk/co/samuelwall/material-tap-target-prompt/3.3.2/material-tap-target-prompt-3.3.2-sources.jar",
+    "version": "3.3.2",
+    "size_bytes": 51284,
+    "sha256": "ee449f7321c9744f673d0dcd4ea3966a60af8b09e9e6628125249645d5e4bd1c",
+    "license": "Apache-2.0",
+    "attribution": "material-tap-target-prompt contributors; original source copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/uk/co/samuelwall/material-tap-target-prompt/3.3.2/material-tap-target-prompt-3.3.2.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/uk/co/samuelwall/material-tap-target-prompt/3.3.2/material-tap-target-prompt-3.3.2-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, complete per-file notices, resolved release dependency graph, exact binary/source correspondence, and build-script/source-closure review; this source JAR does not establish complete application corresponding source]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_tor_android_0_4_9_15_source",
+    "family": "docs",
+    "title": "org.briarproject:tor-android:0.4.9.15 original publisher source bundle",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15-sources.jar",
+    "version": "0.4.9.15",
+    "size_bytes": 71251198,
+    "sha256": "89a45ef2496234eac466d594a5b1d74b9f93f4b84b5c53d4ceb67f3a0346c809",
+    "license": "BSD-3-Clause AND Apache-2.0 AND Zlib AND [[VERIFY: complete Tor bundle per-file license inventory]]",
+    "attribution": "Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: full bundled license and notice inventory, exact production recipe and toolchain source pins, source-to-native reproducibility, and complete application corresponding-source review; POM BSD declaration is not a complete bundle license inventory]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_lyrebird_android_0_6_2_source",
+    "family": "docs",
+    "title": "org.briarproject:lyrebird-android:0.6.2 original publisher source bundle",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2-sources.jar",
+    "version": "0.6.2",
+    "size_bytes": 8105447,
+    "sha256": "b4c370a58da4b4e7e69ad071d92ec2f5dd277f75980be912d02993732e60bd08",
+    "license": "BSD-2-Clause AND BSD-3-Clause AND GPL-3.0-or-later AND [[VERIFY: complete Lyrebird vendored per-file license inventory]]",
+    "attribution": "Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2-sources.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: full bundled license and notice inventory, exact production recipe and toolchain source pins, source-to-native reproducibility, and complete application corresponding-source review; POM BSD declaration is not a complete bundle license inventory]]"
+  }
+]
