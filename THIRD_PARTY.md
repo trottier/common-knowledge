@@ -3245,9 +3245,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge
 - License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
-- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
-- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
-- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic, wikem_en_nopic, mathjax_mml_svg
+- Size: 70054021 bytes
+- SHA-256: `cdff7b842c7580f45454fc19752d7117f1b52b17813938b0911cd2055bb5a375`
+- Pipeline: medpdf-v1-1ce9b2273f78a1ccfde201172e9159e86bfdae1af4943dbbc182a469c31181a4; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic, wikem_en_nopic, mathjax_mml_svg
 
 ## National county road atlas
 

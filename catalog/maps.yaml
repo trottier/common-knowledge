@@ -225,8 +225,8 @@
     "family": "generated",
     "title": "Curated medical phone PDFs",
     "version": "Frozen development recipe; two complete matching builds at epoch 1793404800",
-    "size_bytes": "[[VERIFY: measure complete PDFs with verified source equation rendering]]",
-    "sha256": "[[VERIFY: independently repeat complete equation-preserving PDF generation]]",
+    "size_bytes": 70054021,
+    "sha256": "cdff7b842c7580f45454fc19752d7117f1b52b17813938b0911cd2055bb5a375",
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge",
     "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
@@ -249,7 +249,7 @@
       "wikem_en_nopic",
       "mathjax_mml_svg"
     ],
-    "pipeline_version": "[[VERIFY: current pinned MathML-to-SVG reference recipe]]",
+    "pipeline_version": "medpdf-v1-1ce9b2273f78a1ccfde201172e9159e86bfdae1af4943dbbc182a469c31181a4",
     "review": "[[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]"
   },
   {
