@@ -138,5 +138,45 @@
       "full"
     ],
     "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_13022",
+    "family": "docs",
+    "title": "My Book of Indoor Games",
+    "url": "https://www.gutenberg.org/ebooks/13022.txt.utf-8",
+    "version": "Project Gutenberg #13022; updated 2024-10-28",
+    "size_bytes": 216142,
+    "sha256": "65c0b84bf4384190836deb701dc587753dbdffb371f06a86f93ed29699d01eef",
+    "license": "Public-domain-US",
+    "attribution": "Clarence Squareman; e-text prepared by Clare Boothby, David Newman, William Flis, and the Project Gutenberg Online Distributed Proofreading Team",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/13022",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/games/01_Indoor_Games.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin, embedded Project Gutenberg redistribution terms, historical game suitability and physical text readability; ship complete original bytes and license without changes]]"
+  },
+  {
+    "id": "loc_home_sweet_home_score",
+    "family": "docs",
+    "title": "Home sweet home — piano variations",
+    "url": "https://tile.loc.gov/storage-services/public/music/mussm-sm1875-00750/mussm-sm1875-00750.pdf",
+    "size_bytes": 2923777,
+    "sha256": "5f2872e795e51240a3987162c15112be7a2871c8dec6ce76a202fbd287351ecb",
+    "version": "1875 edition; Library of Congress item 2023822433",
+    "license": "Public-domain-US",
+    "attribution": "D. A. French; Boston: G. D. Russell & Company, 1875. Credit: Library of Congress, Music Division",
+    "license_proof_url": "https://www.loc.gov/item/2023822433/",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/music/01_Home_Sweet_Home_Score.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin, per-item public-domain statement and physical score readability; ship the original Library of Congress PDF byte-identically]]"
   }
 ]

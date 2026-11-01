@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (1082)
+## Remaining VERIFY markers (1084)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -194,6 +194,8 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/books.yaml:100` — [[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]
 - `catalog/books.yaml:120` — [[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]
 - `catalog/books.yaml:140` — [[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]
+- `catalog/books.yaml:160` — [[VERIFY: human review of this HTTPS download pin, embedded Project Gutenberg redistribution terms, historical game suitability and physical text readability; ship complete original bytes and license without changes]]
+- `catalog/books.yaml:180` — [[VERIFY: human review of this HTTPS download pin, per-item public-domain statement and physical score readability; ship the original Library of Congress PDF byte-identically]]
 - `catalog/buildtools.yaml:97` — [[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]
 - `catalog/buildtools.yaml:118` — [[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]
 - `catalog/docs.yaml:6` — [[VERIFY: exact publisher download URL]]
