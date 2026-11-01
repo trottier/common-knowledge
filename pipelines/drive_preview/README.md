@@ -20,7 +20,8 @@ Serve `index.html` at `/`, and `app.css` and `app.js` at `/static/`.
 array. Each entry has a relative POSIX `path`, `name`, `kind` (`directory` or
 `file`), actual `size_bytes` for files, and `hidden`. Parent directories may be
 omitted; they are inferred only from existing descendants. Optional `status`
-and `warnings` appear as a development notice.
+and `warnings` appear as a development notice. The UI displays the internal
+`variant` field as “Version 1,” “Version 2,” and so on; the API field is unchanged.
 
 `GET /files/<component-encoded-path>` serves the original file. The server owns
 root containment, MIME types, download disposition, and media range handling.

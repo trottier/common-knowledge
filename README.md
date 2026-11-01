@@ -1,17 +1,18 @@
 # Common Knowledge
 
-![Orange variant 7 emergency drive with its USB-C plug exposed, built-in whistle, and compass](docs/design/emergency_usb_7_hero_4k_v2.png)
+![Orange Version 7 emergency drive with its USB-C plug exposed, built-in whistle, and compass](docs/design/emergency_usb_7_hero_4k_v2.png)
 
 Common Knowledge is a proposed read-only emergency USB drive for every U.S.
 household. The USB-C drive has a whistle and compass built into its body and
-is attached to a printed card. USB-A-only devices use an adapter. Every drive carries the same core, with eight randomly distributed
-variants adding reference material. The core is designed to open on a phone
-without internet, an app store or advance setup.
+is attached to a printed card. USB-A-only devices use an adapter. Every drive
+carries the same core. Eight numbered versions add different reference material
+and are distributed at random. The core is designed to open on a phone without
+internet, an app store, or advance setup.
 
 ![Universal household card, front and back, with the drive window and print dieline marked](docs/design/card/universal/print_proof_front_back.png)
 
-The universal card fits every drive variant. These are design previews; the kit
-and emergency instructions remain in development. [Print files and more views](#design-previews)
+The universal card fits every version of the drive. These are design previews;
+the kit and emergency instructions remain in development. [Print files and more views](#design-previews)
 are below.
 
 **This repository is the recipe, not the cargo.** Git holds code, original text,
@@ -73,24 +74,24 @@ them. Apps and other programs are download-only. A partial development tree
 must carry an explicit notice, supplied with `--notice`; browsing it does not
 establish physical-phone compatibility or a completed sample build.
 
-The immediate milestone is Variant 1 and Rhode Island, with a fast English
+The immediate milestone is Version 1 and Rhode Island, with a fast English
 document and county-map preview before broader builds. PDF files have a shared,
 provisional 10 MB guardrail. The goal of loading on 95% of phones still needs
 device evidence. See [the explorer](pipelines/drive_preview/README.md).
 
 ## Design previews
 
-![Variant 7 from two angles, followed by all eight numbered drives with different belt colors](docs/design/emergency_usb_7_panels_4k.png)
+![Version 7 from two angles, followed by all eight numbered drives with different belt colors](docs/design/emergency_usb_7_panels_4k.png)
 
 | Design | Files |
 | --- | --- |
 | Universal card | [Front PDF](docs/design/card/universal/front.pdf), [back PDF](docs/design/card/universal/back.pdf), and [300 dpi artwork, print proof, and dieline](docs/design/card/universal/) |
 | Drive-7 card | [Front PDF](docs/design/card/front.pdf), [back PDF](docs/design/card/back.pdf), and [300 dpi artwork, print proof, and dieline](docs/design/card/) |
-| Drive views | [USB-C hero](docs/design/emergency_usb_7_hero_4k_v2.png) and [three-panel variant layout](docs/design/emergency_usb_7_panels_4k.png) |
+| Drive views | [USB-C hero](docs/design/emergency_usb_7_hero_4k_v2.png) and [three-panel comparison with other versions](docs/design/emergency_usb_7_panels_4k.png) |
 | Blueprint | [4K PNG](docs/design/emergency_usb_blueprint_4k.png) and [editable SVG](docs/design/emergency_usb_blueprint_4k.svg) |
 
 Both card editions use the same window and identical `dieline.svg` files. The
-universal edition has no card number; the Drive-7 edition carries that variant's
+universal edition has no card number; the Drive-7 edition carries its version
 number. The PNG hero, panel layout, and blueprint are 3840 × 2160 pixels.
 
 ## Build and check
@@ -134,7 +135,7 @@ JavaScript tooling uses Bun where compatible with the specified rendering stack.
 
 | Path | Purpose |
 | --- | --- |
-| `config/` | Shared defaults, variants, languages and build profiles (step 2) |
+| `config/` | Shared defaults, version assignments, languages, and build profiles (step 2) |
 | `catalog/` | Pinned external sources and license proofs (step 5) |
 | `content/` | Original Markdown and citations |
 | `templates/`, `assets/icons/` | Document templates and original SVG pictograms |
