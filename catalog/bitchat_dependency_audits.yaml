@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bitchat_barcode_scanning_audit",
+    "family": "binaries",
+    "title": "com.google.mlkit:barcode-scanning:17.3.0 original AAR for embedded-library audit only",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.aar",
+    "version": "17.3.0",
+    "size_bytes": 9898786,
+    "sha256": "64c5cf48bb94b6c54f2c785c660640a7d167aff6ad72bc2c920706dc4187b79a",
+    "license": "[[VERIFY: Google ML Kit Terms of Service; open redistribution and GPL compatibility not established]]",
+    "attribution": "Google LLC; original AAR retained without modification for audit",
+    "license_proof_url": "https://developers.google.com/ml-kit/terms",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.aar.sha256",
+    "placement": "hub_only",
+    "dest": "build/dependency-audit/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: named review of Google SDK terms, no-telemetry compliance, and redistribution/source obligations; audit input only, never placed or included in the corresponding-source list]]"
+  },
+  {
+    "id": "bitchat_play_services_mlkit_barcode_scanning_audit",
+    "family": "binaries",
+    "title": "com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1 original AAR for embedded-library audit only",
+    "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.aar",
+    "version": "18.3.1",
+    "size_bytes": 519271,
+    "sha256": "f58096b98867417a698db55ddfd7c8ed0383b2117fa8f3692fa701d6132f1462",
+    "license": "[[VERIFY: Google ML Kit Terms of Service; open redistribution and GPL compatibility not established]]",
+    "attribution": "Google LLC; original AAR retained without modification for audit",
+    "license_proof_url": "https://developers.google.com/ml-kit/terms",
+    "checksum_source_url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.aar.sha256",
+    "placement": "hub_only",
+    "dest": "build/dependency-audit/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: named review of Google SDK terms, no-telemetry compliance, and redistribution/source obligations; audit input only, never placed or included in the corresponding-source list]]"
+  }
+]

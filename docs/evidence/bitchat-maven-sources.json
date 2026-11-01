@@ -1,0 +1,3328 @@
+{
+  "schema_version": 1,
+  "application": "bitchat_android",
+  "application_sha256": "0ae35abafca2d727755372aa7ecc715e17b31b9fc4d7064f1a6941422f75a824",
+  "application_source_sha256": "6105185550707d537f50ad554fb319163f829f7a9dc7a9dfaca404682ba2c918",
+  "app_gradle_lock_sha256": "498685b81335ac32abf09869266aad1a11c77d55c8c8d72030d84f1fded97657",
+  "release_compile_or_runtime_coordinates": 194,
+  "audited_non_androidx_coordinates": 52,
+  "androidx_coordinates_not_in_this_audit": 142,
+  "source_jars": 35,
+  "source_jar_bytes": 15277651,
+  "source_jar_license_declarations": {
+    "Apache-2.0": 32,
+    "BSD-3-Clause": 2,
+    "MIT": 1
+  },
+  "publisher_checksum_algorithms": {
+    "sha1": 16,
+    "sha256": 19
+  },
+  "records": [
+    {
+      "coordinate": "com.google.accompanist:accompanist-permissions:0.37.3",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3.pom",
+        "size_bytes": 2329,
+        "sha256": "6b5cbc23fef22fbe27833bf34c17c30c5c9b3f4e7c5e3e6e498a61ce59f2dfed",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Google"
+        ],
+        "packaging": "aar",
+        "project_url": "https://github.com/google/accompanist/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/google/accompanist/"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3-sources.jar",
+        "size_bytes": 9409,
+        "sha256": "d5bb84bb49671e04828e071da2f8be6e07f9265c562064ca64f53aac65e69060",
+        "source_file_count": 5,
+        "file_count": 11,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "820c28b7ddfc73e88b3da14fe52f237b9ed9ad0e"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/accompanist/accompanist-permissions/0.37.3/accompanist-permissions-0.37.3.pom",
+        "sha256": "6b5cbc23fef22fbe27833bf34c17c30c5c9b3f4e7c5e3e6e498a61ce59f2dfed",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.android.datatransport:transport-api:2.2.1",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/datatransport/transport-api/2.2.1/transport-api-2.2.1.pom",
+        "size_bytes": 932,
+        "sha256": "8118f805b855f18f1d12e5af59e914a7f6206f71bb1d1192a8ab9a8db4107afe",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/datatransport/transport-api/2.2.1/transport-api-2.2.1-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.datatransport:transport-backend-cct:2.3.3",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/datatransport/transport-backend-cct/2.3.3/transport-backend-cct-2.3.3.pom",
+        "size_bytes": 1825,
+        "sha256": "ab4e3c8df8bb695d6466df399f4c2e0da977c04d2fdea8a34ee51281683175b0",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/datatransport/transport-backend-cct/2.3.3/transport-backend-cct-2.3.3-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.datatransport:transport-runtime:2.2.6",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/datatransport/transport-runtime/2.2.6/transport-runtime-2.2.6.pom",
+        "size_bytes": 1357,
+        "sha256": "aff04e2de298277827d2031cc265b5a28a030e54210a9ba3a018aa0859d29589",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/datatransport/transport-runtime/2.2.6/transport-runtime-2.2.6-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-base:18.9.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-base/18.9.0/play-services-base-18.9.0.pom",
+        "size_bytes": 1767,
+        "sha256": "90deac635270f027af44aa3bcc640b2f8935159f686acbcffc76d2217534d82f",
+        "licenses": [
+          {
+            "name": "Android Software Development Kit License",
+            "url": "https://developer.android.com/studio/terms.html"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-base/18.9.0/play-services-base-18.9.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-basement:18.9.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-basement/18.9.0/play-services-basement-18.9.0.pom",
+        "size_bytes": 1336,
+        "sha256": "601ef047167c6c280b8b190942d9e94a0463e891acd9c6ccf532eb298a5efe5b",
+        "licenses": [
+          {
+            "name": "Android Software Development Kit License",
+            "url": "https://developer.android.com/studio/terms.html"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-basement/18.9.0/play-services-basement-18.9.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-location:21.4.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-location/21.4.0/play-services-location-21.4.0.pom",
+        "size_bytes": 2045,
+        "sha256": "3168197ae80bb5076cb6d60c8be8a10988cc8834a77cb4a45acb699c389115c1",
+        "licenses": [
+          {
+            "name": "Android Software Development Kit License",
+            "url": "https://developer.android.com/studio/terms.html"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-location/21.4.0/play-services-location-21.4.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.pom",
+        "size_bytes": 3762,
+        "sha256": "41b5b66bc5f51409c00e627fcc31b5592076b34f57a364bd89a01c0ad9690111",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-tasks:18.4.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tasks/18.4.0/play-services-tasks-18.4.0.pom",
+        "size_bytes": 952,
+        "sha256": "5e2631340ca2a8b85fe4a928fd7f272aa13527c75654b21232c14763c14f0eb3",
+        "licenses": [
+          {
+            "name": "Android Software Development Kit License",
+            "url": "https://developer.android.com/studio/terms.html"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tasks/18.4.0/play-services-tasks-18.4.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.android.odml:image:1.0.0-beta1",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/odml/image/1.0.0-beta1/image-1.0.0-beta1.pom",
+        "size_bytes": 674,
+        "sha256": "795f4793c375eedf4332a0381082981a5ce70b7a0a776221ca24ad9d40cbea1c",
+        "licenses": [
+          {
+            "name": "Android Software Development Kit License",
+            "url": "https://developer.android.com/studio/terms.html"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/android/odml/image/1.0.0-beta1/image-1.0.0-beta1-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.auto.value:auto-value-annotations:1.6.3",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3.pom",
+        "size_bytes": 2574,
+        "sha256": "e1fc780f7ee025e662b3da72723dbe2ac8dac0a2f8920f265315c4e1be3d765c",
+        "licenses": [],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": "com.google.auto.value",
+          "artifactId": "auto-value-parent",
+          "version": "1.6.3"
+        },
+        "scm_url": "http://github.com/google/auto"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3-sources.jar",
+        "size_bytes": 120528,
+        "sha256": "254d55ea959608a833fa07056710488c1f4978875f86f6a106b8d937b29b1170",
+        "source_file_count": 39,
+        "file_count": 54,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/auto/value/auto-value-annotations/1.6.3/auto-value-annotations-1.6.3-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "11c277d47d012b2830b37f3750ff040c1f38883e"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/auto/auto-parent/7/auto-parent-7.pom",
+        "sha256": "a46426fccb5d32705ad9cbbc996f786bd048cc8cbdd21db046500169f15a4356",
+        "licenses": [
+          {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.code.findbugs:jsr305:3.0.2",
+      "configurations": [
+        "androidLintTool",
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath",
+        "unified-test-platform-android-device-provider-ddmlib",
+        "unified-test-platform-android-driver-instrumentation",
+        "unified-test-platform-android-test-plugin",
+        "unified-test-platform-android-test-plugin-host-additional-test-output",
+        "unified-test-platform-android-test-plugin-host-apk-installer",
+        "unified-test-platform-android-test-plugin-host-coverage",
+        "unified-test-platform-android-test-plugin-host-device-info",
+        "unified-test-platform-android-test-plugin-host-emulator-control",
+        "unified-test-platform-android-test-plugin-host-logcat",
+        "unified-test-platform-android-test-plugin-result-listener-gradle",
+        "unified-test-platform-core",
+        "unified-test-platform-gradle-work-action",
+        "unified-test-platform-launcher"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom",
+        "size_bytes": 4286,
+        "sha256": "19889dbdf1b254b2601a5ee645b8147a974644882297684c798afe5d63d78dfe",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": "http://findbugs.sourceforge.net/",
+        "parent": {
+          "groupId": "org.sonatype.oss",
+          "artifactId": "oss-parent",
+          "version": "7"
+        },
+        "scm_url": "https://code.google.com/p/jsr-305/"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar",
+        "size_bytes": 18102,
+        "sha256": "1c9e85e272d0708c6a591dc74828c71603053b48cc75ae83cce56912a2aa063b",
+        "source_file_count": 31,
+        "file_count": 37,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "b19b5927c2c25b6c70f093767041e641ae0b1b35"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom",
+        "sha256": "19889dbdf1b254b2601a5ee645b8147a974644882297684c798afe5d63d78dfe",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.code.gson:gson:2.14.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0.pom",
+        "size_bytes": 22768,
+        "sha256": "1fa0122c0e3733192642861c36be4c6f799a795327a23bdd2922691b6e9ba480",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": "com.google.code.gson",
+          "artifactId": "gson-parent",
+          "version": "2.14.0"
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar",
+        "size_bytes": 213519,
+        "sha256": "a4873f0ef88981cab520c3d7449cd89a68e605f15e9fe46e1aa2c77d5f87eb6f",
+        "source_file_count": 87,
+        "file_count": 107,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "a4873f0ef88981cab520c3d7449cd89a68e605f15e9fe46e1aa2c77d5f87eb6f"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.14.0/gson-2.14.0.pom",
+        "sha256": "1fa0122c0e3733192642861c36be4c6f799a795327a23bdd2922691b6e9ba480",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.crypto.tink:tink-android:1.23.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0.pom",
+        "size_bytes": 4083,
+        "sha256": "a2d27e7207e6a25764859b62924fc7b972f41884ce272cead9b946c15a1f410f",
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          null
+        ],
+        "packaging": "jar",
+        "project_url": "http://github.com/tink-crypto/tink-java",
+        "parent": {
+          "groupId": "org.sonatype.oss",
+          "artifactId": "oss-parent",
+          "version": "7"
+        },
+        "scm_url": "https://github.com/tink-crypto/tink-java.git"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0-sources.jar",
+        "size_bytes": 5010264,
+        "sha256": "32ac8eaa5788ee1d724c97e454c233622ce9c01bbd7b996102a594ccbf8e89ca",
+        "source_file_count": 790,
+        "file_count": 827,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "32ac8eaa5788ee1d724c97e454c233622ce9c01bbd7b996102a594ccbf8e89ca"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/crypto/tink/tink-android/1.23.0/tink-android-1.23.0.pom",
+        "sha256": "a2d27e7207e6a25764859b62924fc7b972f41884ce272cead9b946c15a1f410f",
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.dagger:dagger:2.59",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/dagger/dagger/2.59/dagger-2.59.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59.pom",
+        "size_bytes": 2525,
+        "sha256": "0e47846618c7a1b7a8124fd20623a667643d73cbe0a561bb87056151aa967538",
+        "licenses": [
+          {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          null
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/google/dagger",
+        "parent": {
+          "groupId": "org.sonatype.oss",
+          "artifactId": "oss-parent",
+          "version": "7"
+        },
+        "scm_url": "https://github.com/google/dagger/"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59-sources.jar",
+        "size_bytes": 65921,
+        "sha256": "0766cf4aecd3ffe62b21f47e86d634daa74aff5ca05adea8dcaa20b0e63df521",
+        "source_file_count": 56,
+        "file_count": 62,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "2c33d62b6e149b4f08c7d525b7113f1a0c7a2729"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.59/dagger-2.59.pom",
+        "sha256": "0e47846618c7a1b7a8124fd20623a667643d73cbe0a561bb87056151aa967538",
+        "licenses": [
+          {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.errorprone:error_prone_annotations:2.48.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0.pom",
+        "size_bytes": 4252,
+        "sha256": "189e09ad0489c325e90daaa9d5c8f406330602fa366609bca07cbcdad03ab9da",
+        "licenses": [
+          {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": "com.google.errorprone",
+          "artifactId": "error_prone_parent",
+          "version": "2.48.0"
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar",
+        "size_bytes": 40016,
+        "sha256": "5c1c7b797aa1effa050a06d2d98534a28750f5fa8bcca56d8f49a866ca8bd03f",
+        "source_file_count": 30,
+        "file_count": 42,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "5c1c7b797aa1effa050a06d2d98534a28750f5fa8bcca56d8f49a866ca8bd03f"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.48.0/error_prone_annotations-2.48.0.pom",
+        "sha256": "189e09ad0489c325e90daaa9d5c8f406330602fa366609bca07cbcdad03ab9da",
+        "licenses": [
+          {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.firebase:firebase-annotations:16.0.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0.pom",
+        "size_bytes": 694,
+        "sha256": "82c6d040edcb3c158b5b9865601d2bd742abcbd97cbd98903bde059da8edd087",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0-sources.jar",
+      "source": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0-sources.jar",
+        "size_bytes": 1554,
+        "sha256": "5c5a74e4eae43e3d8c3debeb68c28b0d29813b4f0801b38705cd4ec13bca0e9b",
+        "source_file_count": 1,
+        "file_count": 7,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "5c5a74e4eae43e3d8c3debeb68c28b0d29813b4f0801b38705cd4ec13bca0e9b"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-annotations/16.0.0/firebase-annotations-16.0.0.pom",
+        "sha256": "82c6d040edcb3c158b5b9865601d2bd742abcbd97cbd98903bde059da8edd087",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.firebase:firebase-components:16.1.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0.pom",
+        "size_bytes": 1148,
+        "sha256": "8320c67176d416edcf58b65b2ef491b42faa1360f3cd7bf3d8c2eea4298ae70e",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0-sources.jar",
+      "source": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0-sources.jar",
+        "size_bytes": 34822,
+        "sha256": "cf4a4e6e5257514941194ccd95fb0d17e37bd5a35fa3705fb582de58ab79504d",
+        "source_file_count": 30,
+        "file_count": 39,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "cf4a4e6e5257514941194ccd95fb0d17e37bd5a35fa3705fb582de58ab79504d"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/16.1.0/firebase-components-16.1.0.pom",
+        "sha256": "8320c67176d416edcf58b65b2ef491b42faa1360f3cd7bf3d8c2eea4298ae70e",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.firebase:firebase-encoders-json:17.1.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0.pom",
+        "size_bytes": 1151,
+        "sha256": "c823cbed7a0e75bf30fedbba42ff1c0c8752e3dc16edccf7d0f2e5d6cb69c7a8",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0-sources.jar",
+      "source": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0-sources.jar",
+        "size_bytes": 4983,
+        "sha256": "9bbe5ee1a7a2a715964fa77208905cecb7c74aa409e38c103657be1c5234fb44",
+        "source_file_count": 2,
+        "file_count": 9,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "9bbe5ee1a7a2a715964fa77208905cecb7c74aa409e38c103657be1c5234fb44"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders-json/17.1.0/firebase-encoders-json-17.1.0.pom",
+        "sha256": "c823cbed7a0e75bf30fedbba42ff1c0c8752e3dc16edccf7d0f2e5d6cb69c7a8",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.firebase:firebase-encoders:16.1.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0.pom",
+        "size_bytes": 928,
+        "sha256": "687bd5744fdc54fce404a4403ebbdb847fbf651b9b87293a4a56fc4d8fc68e1c",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0-sources.jar",
+      "source": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0-sources.jar",
+        "size_bytes": 12762,
+        "sha256": "6d822153d1bf52e435302256d8fa7d30f392bb51a01978721250545a73413072",
+        "source_file_count": 12,
+        "file_count": 20,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "6d822153d1bf52e435302256d8fa7d30f392bb51a01978721250545a73413072"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-encoders/16.1.0/firebase-encoders-16.1.0.pom",
+        "sha256": "687bd5744fdc54fce404a4403ebbdb847fbf651b9b87293a4a56fc4d8fc68e1c",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.guava:listenablefuture:1.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+        "size_bytes": 2226,
+        "sha256": "53873caf26bc1ed8a567ea6c939ab2aaa3f47a5e32d5cade95ddf5080d23238a",
+        "licenses": [],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": "com.google.guava",
+          "artifactId": "guava-parent",
+          "version": "26.0-android"
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar",
+        "size_bytes": 4021,
+        "sha256": "3d1bd8d4a39b293612a40e547ec51d9ce34fa638d7adeae83871cdbe2923b161",
+        "source_file_count": 1,
+        "file_count": 8,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "0be1234988ac73d61e52e35a912169b06020caa7"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom",
+        "sha256": "f8698ab46ca996ce889c1afc8ca4f25eb8ac6b034dc898d4583742360016cc04",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.google.mlkit:barcode-scanning-common:17.0.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning-common/17.0.0/barcode-scanning-common-17.0.0.pom",
+        "size_bytes": 1138,
+        "sha256": "f5caf8b670a7f048c13ee637536f21da52b59b4f2218081df320986a6e3ad3b4",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning-common/17.0.0/barcode-scanning-common-17.0.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.mlkit:barcode-scanning:17.3.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.pom",
+        "size_bytes": 1775,
+        "sha256": "e2677ff1bcba978d1fa067709df54aec4fb388b13f973aeacc864f681fa1758c",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.mlkit:common:18.11.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/common/18.11.0/common-18.11.0.pom",
+        "size_bytes": 3051,
+        "sha256": "e50ec6f1d7c77025cdc4853b835ca4e8b1394966c5029543a699baf252aea057",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/common/18.11.0/common-18.11.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.mlkit:vision-common:17.3.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/vision-common/17.3.0/vision-common-17.3.0.pom",
+        "size_bytes": 3288,
+        "sha256": "4e649af84e58d4c824eeabc8522e142fb30be41524b4001b699f3e95bdd366ec",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/vision-common/17.3.0/vision-common-17.3.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.mlkit:vision-interfaces:16.3.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/vision-interfaces/16.3.0/vision-interfaces-16.3.0.pom",
+        "size_bytes": 1138,
+        "sha256": "3422392e93c7f29c30149cc37e39f535ad32705fa6e015d8cae8a8f763e73ff6",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/vision-interfaces/16.3.0/vision-interfaces-16.3.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "com.google.zxing:core:3.5.4",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/zxing/core/3.5.4/core-3.5.4.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4.pom",
+        "size_bytes": 2806,
+        "sha256": "502c7368ae869f15428c020a2432eec9dde7436454f3edd1816e0d4b3d0609bf",
+        "licenses": [],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": "com.google.zxing",
+          "artifactId": "zxing-parent",
+          "version": "3.5.4"
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4-sources.jar",
+        "size_bytes": 509348,
+        "sha256": "a611e3b63b661aeb2a81b8b4f4bde2daace1e2976adbb37917a674a0019c8fac",
+        "source_file_count": 239,
+        "file_count": 280,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/google/zxing/core/3.5.4/core-3.5.4-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "c2a8bf4ac17e71097d187f2d23755e1e6f1861e2"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/google/zxing/zxing-parent/3.5.4/zxing-parent-3.5.4.pom",
+        "sha256": "9133f322d86101c5c478c08ea3d6734dc376423937ddab1aa2a06aae24fc85c9",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.squareup.okhttp3:okhttp-android:5.4.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0.pom",
+        "size_bytes": 2264,
+        "sha256": "d1fe80686be7c3840c0ca98c9dee54b3051e434b21944771a677683633c008f0",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Square, Inc."
+        ],
+        "packaging": "aar",
+        "project_url": "https://square.github.io/okhttp/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/square/okhttp"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0-sources.jar",
+        "size_bytes": 404095,
+        "sha256": "d7aca53404544a763b9e0ac356ebf1976f9d313e20734dd738f53ed400dbe378",
+        "source_file_count": 157,
+        "file_count": 183,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "d7aca53404544a763b9e0ac356ebf1976f9d313e20734dd738f53ed400dbe378"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-android/5.4.0/okhttp-android-5.4.0.pom",
+        "sha256": "d1fe80686be7c3840c0ca98c9dee54b3051e434b21944771a677683633c008f0",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.squareup.okhttp3:okhttp:5.4.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0.pom",
+        "size_bytes": 1856,
+        "sha256": "ebee6842d0b5b700ab7e015fddcc3f1e575d92b31a76f7b62eb9026c3388b88b",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Square, Inc."
+        ],
+        "packaging": "jar",
+        "project_url": "https://square.github.io/okhttp/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/square/okhttp"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0-sources.jar",
+        "size_bytes": 381368,
+        "sha256": "18d3617897bcafa72609a6f92c88d60754a6c2029d7cc6b36a28b08a13049704",
+        "source_file_count": 140,
+        "file_count": 160,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "18d3617897bcafa72609a6f92c88d60754a6c2029d7cc6b36a28b08a13049704"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/5.4.0/okhttp-5.4.0.pom",
+        "sha256": "ebee6842d0b5b700ab7e015fddcc3f1e575d92b31a76f7b62eb9026c3388b88b",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.squareup.okio:okio-jvm:3.17.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0.pom",
+        "size_bytes": 1699,
+        "sha256": "e4e44237a66f4091bc0f5b1d5a2bbe228ac014ab3c0f918cd6fc02ba31999030",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Square, Inc."
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/square/okio/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/square/okio/"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0-sources.jar",
+        "size_bytes": 189759,
+        "sha256": "5603dfecfe4c71b36d6a591616be345fdd9d41a0a63553a3bd883d5ab6ee09a6",
+        "source_file_count": 95,
+        "file_count": 111,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "5603dfecfe4c71b36d6a591616be345fdd9d41a0a63553a3bd883d5ab6ee09a6"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio-jvm/3.17.0/okio-jvm-3.17.0.pom",
+        "sha256": "e4e44237a66f4091bc0f5b1d5a2bbe228ac014ab3c0f918cd6fc02ba31999030",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "com.squareup.okio:okio:3.17.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0.pom",
+        "size_bytes": 1687,
+        "sha256": "15b4831e84f5ca52dd37c1d6e1709a2907e2e9bc2a9c3ea13f282031de0c0135",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Square, Inc."
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/square/okio/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/square/okio/"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0-sources.jar",
+        "size_bytes": 176563,
+        "sha256": "3d7ea54e4974b1cc8ea408305190303cd0101d7f2b5596d1519e83315c377f42",
+        "source_file_count": 95,
+        "file_count": 126,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "3d7ea54e4974b1cc8ea408305190303cd0101d7f2b5596d1519e83315c377f42"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/com/squareup/okio/okio/3.17.0/okio-3.17.0.pom",
+        "sha256": "15b4831e84f5ca52dd37c1d6e1709a2907e2e9bc2a9c3ea13f282031de0c0135",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "jakarta.inject:jakarta.inject-api:2.0.1",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.pom",
+        "size_bytes": 5922,
+        "sha256": "e7fd7232e96307a575b2494c9367d68cf43ec98244aace3ccc23e1773ffa6fda",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Antoine Sabot-Durand",
+          "Martin Kouba",
+          "Tomas Remes",
+          "Matej Novotny"
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/eclipse-ee4j/injection-api",
+        "parent": {
+          "groupId": "org.eclipse.ee4j",
+          "artifactId": "project",
+          "version": "1.0.6"
+        },
+        "scm_url": "https://github.com/eclipse-ee4j/injection-api"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar",
+        "size_bytes": 18455,
+        "sha256": "44f4c73fda69f8b7d87136f0f789f042f54e8ff506d40aa126199baf3752d1c9",
+        "source_file_count": 8,
+        "file_count": 19,
+        "notice_files": [
+          "META-INF/LICENSE.txt",
+          "META-INF/NOTICE.md"
+        ],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "569d6c5f18d6ff83c82152d1870cf0faf830c594"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.pom",
+        "sha256": "e7fd7232e96307a575b2494c9367d68cf43ec98244aace3ccc23e1773ffa6fda",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "javax.inject:javax.inject:1",
+      "configurations": [
+        "androidLintTool",
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath",
+        "unified-test-platform-android-device-provider-ddmlib",
+        "unified-test-platform-android-driver-instrumentation",
+        "unified-test-platform-android-test-plugin-host-additional-test-output",
+        "unified-test-platform-android-test-plugin-host-apk-installer",
+        "unified-test-platform-android-test-plugin-host-coverage",
+        "unified-test-platform-android-test-plugin-host-device-info",
+        "unified-test-platform-android-test-plugin-host-emulator-control",
+        "unified-test-platform-android-test-plugin-host-logcat",
+        "unified-test-platform-android-test-plugin-result-listener-gradle",
+        "unified-test-platform-core",
+        "unified-test-platform-gradle-work-action"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/javax/inject/javax.inject/1/javax.inject-1.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom",
+        "size_bytes": 612,
+        "sha256": "943e12b100627804638fa285805a0ab788a680266531e650921ebfe4621a8bfa",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": "http://code.google.com/p/atinject/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "http://code.google.com/p/atinject/source/checkout"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar",
+        "size_bytes": 10928,
+        "sha256": "c4b87ee2911c139c3daf498a781967f1eb2e75bc1a8529a2e7b328a15d0e433e",
+        "source_file_count": 7,
+        "file_count": 9,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "a00123f261762a7c5e0ec916a2c7c8298d29c400"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom",
+        "sha256": "943e12b100627804638fa285805a0ab788a680266531e650921ebfe4621a8bfa",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "no.nordicsemi.android:ble:2.11.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0.pom",
+        "size_bytes": 2012,
+        "sha256": "e1ee63ac8bb8e80745d9582922fb50d5f1d3f1ffcbc00a0a9b4c4d2a53b3908f",
+        "licenses": [
+          {
+            "name": "The BSD 3-Clause License",
+            "url": "http://opensource.org/licenses/BSD-3-Clause"
+          }
+        ],
+        "developers": [
+          "Aleksander Nowakowski"
+        ],
+        "packaging": "aar",
+        "project_url": "https://github.com/NordicSemiconductor/Android-BLE-Library",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/NordicSemiconductor/Android-BLE-Library"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0-sources.jar",
+        "size_bytes": 197871,
+        "sha256": "aab33d77e6771f1178d0ef2df7a0daf1717d21e47582fb01d9fdc4e02d839a10",
+        "source_file_count": 89,
+        "file_count": 104,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "aab33d77e6771f1178d0ef2df7a0daf1717d21e47582fb01d9fdc4e02d839a10"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/no/nordicsemi/android/ble/2.11.0/ble-2.11.0.pom",
+        "sha256": "e1ee63ac8bb8e80745d9582922fb50d5f1d3f1ffcbc00a0a9b4c4d2a53b3908f",
+        "licenses": [
+          {
+            "name": "The BSD 3-Clause License",
+            "url": "http://opensource.org/licenses/BSD-3-Clause"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.bouncycastle:bcprov-jdk18on:1.85",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85.pom",
+        "size_bytes": 1160,
+        "sha256": "a48e978d6b24c183c4832f5c49d71c1f84156b99c6fa9a410aafb373a254be7c",
+        "licenses": [
+          {
+            "name": "Bouncy Castle Licence",
+            "url": "https://www.bouncycastle.org/licence.html"
+          }
+        ],
+        "developers": [
+          "The Legion of the Bouncy Castle Inc."
+        ],
+        "packaging": "jar",
+        "project_url": "https://www.bouncycastle.org/download/bouncy-castle-java/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/bcgit/bc-java"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85-sources.jar",
+        "size_bytes": 5940653,
+        "sha256": "fa5a81c8b91f299712edcf917788f6293482240a46ec6d095ac6512ae257f007",
+        "source_file_count": 3136,
+        "file_count": 3413,
+        "notice_files": [
+          "org/bouncycastle/LICENSE.java",
+          "META-INF/LICENSE.md"
+        ],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "fa5a81c8b91f299712edcf917788f6293482240a46ec6d095ac6512ae257f007"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85.pom",
+        "sha256": "a48e978d6b24c183c4832f5c49d71c1f84156b99c6fa9a410aafb373a254be7c",
+        "licenses": [
+          {
+            "name": "Bouncy Castle Licence",
+            "url": "https://www.bouncycastle.org/licence.html"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.10",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugRuntimeClasspathCopy",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath",
+        "releaseRuntimeClasspathCopy"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10.pom",
+        "size_bytes": 1383,
+        "sha256": "224b4de3596a78947e0d0622c46d63b88dc01a8d159f265add9afbd4014e48e6",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Kotlin Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://kotlinlang.org/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/JetBrains/kotlin"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10-sources.jar",
+        "size_bytes": 11162,
+        "sha256": "f98535d3558a8e0b08ed7c993a3559c1b89ad12c335824172485fe05ebb8f606",
+        "source_file_count": 16,
+        "file_count": 22,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "a0231449674cf1c4a2fc6f1e8d2f7d01d2dd9a0e"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/2.4.10/kotlin-parcelize-runtime-2.4.10.pom",
+        "sha256": "224b4de3596a78947e0d0622c46d63b88dc01a8d159f265add9afbd4014e48e6",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-stdlib-common:2.4.10",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/2.4.10/kotlin-stdlib-common-2.4.10.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/2.4.10/kotlin-stdlib-common-2.4.10.pom",
+        "size_bytes": 1821,
+        "sha256": "006e9d6e7b2afa77cae70e16d80935c9e6aabf5aff594382957ae0715f2d3687",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Kotlin Team"
+        ],
+        "packaging": "pom",
+        "project_url": "https://kotlinlang.org/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/JetBrains/kotlin"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/2.4.10/kotlin-stdlib-common-2.4.10-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom",
+        "size_bytes": 1389,
+        "sha256": "4f958aa993d5984f8f5ebed4146562a5f3a9f695b6049c9f287381379cadab33",
+        "licenses": [
+          {
+            "name": "The Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Kotlin Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://kotlinlang.org/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/JetBrains/kotlin"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22-sources.jar",
+        "size_bytes": 580,
+        "sha256": "ea10d3e5e6e695d8a5283cbf116321acae6ba42d0bdd3eda50f7c34a26fa25cb",
+        "source_file_count": 1,
+        "file_count": 3,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "3641d7cb7650db9fe93a5361b1b88cbcefdb01e0"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.pom",
+        "sha256": "4f958aa993d5984f8f5ebed4146562a5f3a9f695b6049c9f287381379cadab33",
+        "licenses": [
+          {
+            "name": "The Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom",
+        "size_bytes": 1581,
+        "sha256": "928f2187217476313cb816d48070bc7654aa3b9a5ae81d3fc5f8c279cc8f8d9e",
+        "licenses": [
+          {
+            "name": "The Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Kotlin Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://kotlinlang.org/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/JetBrains/kotlin"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22-sources.jar",
+        "size_bytes": 556,
+        "sha256": "40e9a80f6b953d12389623760d438e69914098d0c4d7053f70f90533ec041259",
+        "source_file_count": 1,
+        "file_count": 3,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "20739e7aae2a2bfb66c4081b233ffea7b947cf77"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.pom",
+        "sha256": "928f2187217476313cb816d48070bc7654aa3b9a5ae81d3fc5f8c279cc8f8d9e",
+        "licenses": [
+          {
+            "name": "The Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-stdlib:2.4.10",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugRuntimeClasspathCopy",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "kotlinBuildToolsApiClasspath",
+        "kotlinCompilerClasspath",
+        "kotlinCompilerPluginClasspathDebug",
+        "kotlinCompilerPluginClasspathDebugAndroidTest",
+        "kotlinCompilerPluginClasspathDebugUnitTest",
+        "kotlinCompilerPluginClasspathRelease",
+        "kotlinCompilerPluginClasspathReleaseAndroidTest",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath",
+        "releaseRuntimeClasspathCopy"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10.pom",
+        "size_bytes": 2301,
+        "sha256": "9f81f25e96b919153392ded53bd33216e76624909cfd080a3edb278d44fc34f0",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Kotlin Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://kotlinlang.org/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/JetBrains/kotlin"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10-sources.jar",
+        "size_bytes": 757671,
+        "sha256": "5c4fa84ec945a63453e64bc0141c222ece806a2026c2961fe76b0be483896323",
+        "source_file_count": 412,
+        "file_count": 493,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "52f5e97c76ad95737dd21d37f3814117ae76495c"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.4.10/kotlin-stdlib-2.4.10.pom",
+        "sha256": "9f81f25e96b919153392ded53bd33216e76624909cfd080a3edb278d44fc34f0",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:atomicfu-jvm:0.28.0",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0.pom",
+        "size_bytes": 1611,
+        "sha256": "dd7fad5d5d4b21ca9db0788750b0997ba1db6882ded86e5212f5c83fc51facec",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/Kotlin/kotlinx.atomicfu",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.atomicfu"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0-sources.jar",
+        "size_bytes": 16476,
+        "sha256": "750bd5f9686abceca5ee6cdcab53d7abc20a2c1bebe462a23dba9932eeb9744c",
+        "source_file_count": 14,
+        "file_count": 28,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "4c21df6fc8ca1dc58dfed05b1e979ad38b9ca3bf"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.28.0/atomicfu-jvm-0.28.0.pom",
+        "sha256": "dd7fad5d5d4b21ca9db0788750b0997ba1db6882ded86e5212f5c83fc51facec",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:atomicfu:0.28.0",
+      "configurations": [
+        "debugAndroidTestLintChecksClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0.pom",
+        "size_bytes": 1636,
+        "sha256": "c9ba01ef3e6899d42cf070d59ba39d572fc5863bf296c729a99722c0647df6ca",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "pom",
+        "project_url": "https://github.com/Kotlin/kotlinx.atomicfu",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.atomicfu"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0-sources.jar",
+        "size_bytes": 27808,
+        "sha256": "e2f58527f0fc8a61db8678b8c93d49929cd62adff7b95dc3d63c0663818b6272",
+        "source_file_count": 27,
+        "file_count": 61,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "7f0c51e2520fde0a90ee975da7d4e451dbf2e11f"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu/0.28.0/atomicfu-0.28.0.pom",
+        "sha256": "c9ba01ef3e6899d42cf070d59ba39d572fc5863bf296c729a99722c0647df6ca",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0.pom",
+        "size_bytes": 2194,
+        "sha256": "224567420d3e0ed5fef40f789fded45dfd51b162319e28d77d3c9a8dec4821b8",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.coroutines"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0-sources.jar",
+        "size_bytes": 7779,
+        "sha256": "d2760d65fc99c28d140b345163560926975cfe6ca36386c8964041f86eb2f4b6",
+        "source_file_count": 3,
+        "file_count": 17,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "d2760d65fc99c28d140b345163560926975cfe6ca36386c8964041f86eb2f4b6"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.11.0/kotlinx-coroutines-android-1.11.0.pom",
+        "sha256": "224567420d3e0ed5fef40f789fded45dfd51b162319e28d77d3c9a8dec4821b8",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.11.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.11.0/kotlinx-coroutines-bom-1.11.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.11.0/kotlinx-coroutines-bom-1.11.0.pom",
+        "size_bytes": 4279,
+        "sha256": "f65860bce58a2bfadf05fdc516d38333421f0e387fef87e24449c0394c80d254",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "pom",
+        "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.coroutines"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.11.0/kotlinx-coroutines-bom-1.11.0-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.11.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.pom",
+        "size_bytes": 2168,
+        "sha256": "dd54b97aa3fab91fc24f5df2916c22be9429a339d2f45b7ff092332f6c19dc39",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.coroutines"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0-sources.jar",
+        "size_bytes": 438533,
+        "sha256": "3e0847c0b463965404d5b6fe5d6868000a220b050180dec68501801e9439976a",
+        "source_file_count": 170,
+        "file_count": 196,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "3e0847c0b463965404d5b6fe5d6868000a220b050180dec68501801e9439976a"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.11.0/kotlinx-coroutines-core-jvm-1.11.0.pom",
+        "sha256": "dd54b97aa3fab91fc24f5df2916c22be9429a339d2f45b7ff092332f6c19dc39",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.pom",
+        "size_bytes": 2030,
+        "sha256": "41b6e78c1b0d11bc99de795390df9e4ece64dc113f482d6e308f1b7a421c1d30",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "pom",
+        "project_url": "https://github.com/Kotlin/kotlinx.coroutines",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.coroutines"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0-sources.jar",
+        "size_bytes": 371185,
+        "sha256": "42b1e26bc792fc3d8ba702ef5bd166adcd6c8350f377f639fb7d2e01b3366e3e",
+        "source_file_count": 163,
+        "file_count": 190,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "42b1e26bc792fc3d8ba702ef5bd166adcd6c8350f377f639fb7d2e01b3366e3e"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.11.0/kotlinx-coroutines-core-1.11.0.pom",
+        "sha256": "41b6e78c1b0d11bc99de795390df9e4ece64dc113f482d6e308f1b7a421c1d30",
+        "licenses": [
+          {
+            "name": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-bom:1.7.3",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.7.3/kotlinx-serialization-bom-1.7.3.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.7.3/kotlinx-serialization-bom-1.7.3.pom",
+        "size_bytes": 4037,
+        "sha256": "4226a491c5b59ce909f73b65aa98944191c8dcac3825637c6be1069e6b589a46",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "pom",
+        "project_url": "https://github.com/Kotlin/kotlinx.serialization",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.serialization"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.7.3/kotlinx-serialization-bom-1.7.3-sources.jar",
+      "source_status": 404
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3.pom",
+        "size_bytes": 2044,
+        "sha256": "734f5f749208dd0bef3d98caa594cf9222afdf0fee5b6843347a8fe64e240427",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/Kotlin/kotlinx.serialization",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.serialization"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar",
+        "size_bytes": 106717,
+        "sha256": "d084ce9bf130919d4b899db09896531440d1e330919187c7932d7fe0fa5257b8",
+        "source_file_count": 52,
+        "file_count": 66,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "d084ce9bf130919d4b899db09896531440d1e330919187c7932d7fe0fa5257b8"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.7.3/kotlinx-serialization-core-jvm-1.7.3.pom",
+        "sha256": "734f5f749208dd0bef3d98caa594cf9222afdf0fee5b6843347a8fe64e240427",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core:1.7.3",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3.pom",
+        "size_bytes": 2086,
+        "sha256": "31d111776b9af777ca167103f2d61fbeeaa32dae6dd6635906b76d8278ba5730",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "pom",
+        "project_url": "https://github.com/Kotlin/kotlinx.serialization",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/Kotlin/kotlinx.serialization"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3-sources.jar",
+        "size_bytes": 100861,
+        "sha256": "c413c2bee3d8248dbbaeeb60c4176b0d954395affaf6f8961b362c5aa466d7a8",
+        "source_file_count": 50,
+        "file_count": 64,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "c413c2bee3d8248dbbaeeb60c4176b0d954395affaf6f8961b362c5aa466d7a8"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-core/1.7.3/kotlinx-serialization-core-1.7.3.pom",
+        "sha256": "31d111776b9af777ca167103f2d61fbeeaa32dae6dd6635906b76d8278ba5730",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jetbrains:annotations:23.0.0",
+      "configurations": [
+        "androidLintTool",
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath",
+        "unified-test-platform-android-device-provider-ddmlib",
+        "unified-test-platform-android-driver-instrumentation",
+        "unified-test-platform-android-test-plugin",
+        "unified-test-platform-android-test-plugin-host-additional-test-output",
+        "unified-test-platform-android-test-plugin-host-apk-installer",
+        "unified-test-platform-android-test-plugin-host-coverage",
+        "unified-test-platform-android-test-plugin-host-device-info",
+        "unified-test-platform-android-test-plugin-host-emulator-control",
+        "unified-test-platform-android-test-plugin-host-logcat",
+        "unified-test-platform-android-test-plugin-result-listener-gradle",
+        "unified-test-platform-core",
+        "unified-test-platform-gradle-work-action",
+        "unified-test-platform-launcher"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom",
+        "size_bytes": 1354,
+        "sha256": "c9490f655132328df2cfbcfdf743f53fc3916d6c1d10437175a6ca6e3a67771c",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "JetBrains Team"
+        ],
+        "packaging": "jar",
+        "project_url": "https://github.com/JetBrains/java-annotations",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/JetBrains/java-annotations"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar",
+        "size_bytes": 37462,
+        "sha256": "ff2309b42f7584520497bb48bc609aca04c9886cf48708f14be83f00423ec144",
+        "source_file_count": 30,
+        "file_count": 40,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "ca5088d615accaabd2aa956b10b236a4e75cfccb"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom",
+        "sha256": "c9490f655132328df2cfbcfdf743f53fc3916d6c1d10437175a6ca6e3a67771c",
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.jspecify:jspecify:1.0.0",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugAndroidTestRuntimeClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseAndroidTestRuntimeClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+        "size_bytes": 1511,
+        "sha256": "cdab929a3b95211f43d2090c5e2d0dfe8465960e378bc32b35841dab324433a6",
+        "licenses": [
+          {
+            "name": "The Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "developers": [
+          "Kevin Bourrillion"
+        ],
+        "packaging": "jar",
+        "project_url": "http://jspecify.org/",
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": "https://github.com/jspecify/jspecify/"
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar",
+        "size_bytes": 11996,
+        "sha256": "adf0898191d55937fb3192ba971826f4f294292c4a960740f3c27310e7b70296",
+        "source_file_count": 5,
+        "file_count": 10,
+        "notice_files": [],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar.sha256",
+            "algorithm": "sha256",
+            "value": "adf0898191d55937fb3192ba971826f4f294292c4a960740f3c27310e7b70296"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+        "sha256": "cdab929a3b95211f43d2090c5e2d0dfe8465960e378bc32b35841dab324433a6",
+        "licenses": [
+          {
+            "name": "The Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ]
+      }
+    },
+    {
+      "coordinate": "org.nanohttpd:nanohttpd:2.3.1",
+      "configurations": [
+        "debugAndroidTestCompileClasspath",
+        "debugAndroidTestLintChecksClasspath",
+        "debugCompileClasspath",
+        "debugLintChecksClasspath",
+        "debugRuntimeClasspath",
+        "debugUnitTestCompileClasspath",
+        "debugUnitTestLintChecksClasspath",
+        "debugUnitTestRuntimeClasspath",
+        "releaseAndroidTestCompileClasspath",
+        "releaseCompileClasspath",
+        "releaseLintChecksClasspath",
+        "releaseRuntimeClasspath"
+      ],
+      "pom_attempts": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1.pom",
+          "status": 404
+        }
+      ],
+      "pom": {
+        "url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1.pom",
+        "size_bytes": 915,
+        "sha256": "567769c8e846fa98d24e656ac54f2a992226fa21086979f29b6ea44cdb8d91e3",
+        "licenses": [],
+        "developers": [],
+        "packaging": "jar",
+        "project_url": null,
+        "parent": {
+          "groupId": "org.nanohttpd",
+          "artifactId": "nanohttpd-project",
+          "version": "2.3.1"
+        },
+        "scm_url": null
+      },
+      "source_attempt_url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar",
+      "source": {
+        "url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar",
+        "size_bytes": 23924,
+        "sha256": "71b57b309dd19ca7bfceb3b0fa97ac9048ab2cb902a2607373633150f1997a67",
+        "source_file_count": 2,
+        "file_count": 12,
+        "notice_files": [
+          "LICENSE.txt"
+        ],
+        "publisher_checksums": [
+          {
+            "url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar.sha1",
+            "algorithm": "sha1",
+            "value": "c820129da77c30b2e4ea1cea619d7f589a17bcdd"
+          }
+        ]
+      },
+      "source_status": 200,
+      "license_declaration": {
+        "url": "https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd-project/2.3.1/nanohttpd-project-2.3.1.pom",
+        "sha256": "ffb0c18ab02eeae0dc3f32b989a92e9292c0a41a57e4fb4a7371cef22899ba88",
+        "licenses": [
+          {
+            "name": "The BSD 3-Clause License",
+            "url": "http://opensource.org/licenses/BSD-3-Clause"
+          }
+        ]
+      }
+    }
+  ],
+  "native_artifact_bindings": [
+    {
+      "coordinate": "com.google.mlkit:barcode-scanning:17.3.0",
+      "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.aar",
+      "sha256": "64c5cf48bb94b6c54f2c785c660640a7d167aff6ad72bc2c920706dc4187b79a",
+      "size_bytes": 9898786,
+      "native_libraries": [
+        {
+          "aar_path": "jni/arm64-v8a/libbarhopper_v3.so",
+          "sha256": "ec09597e9eb3aee0eb55ae3366da0d4ba416f5aa35a1af0b3811f50ff46743a1",
+          "apk_path": "lib/arm64-v8a/libbarhopper_v3.so",
+          "matches_apk": true
+        },
+        {
+          "aar_path": "jni/armeabi-v7a/libbarhopper_v3.so",
+          "sha256": "b3c162c69e4906b816227ae116bfd8b9ff19cfdd58a3de0c9a9b110e030063e9",
+          "apk_path": "lib/armeabi-v7a/libbarhopper_v3.so",
+          "matches_apk": true
+        },
+        {
+          "aar_path": "jni/x86/libbarhopper_v3.so",
+          "sha256": "212dad60137637d3cbaf1ba5fd9d2c0e163c67731ed3a86ecb5d9f8bb9a60c3b",
+          "apk_path": "lib/x86/libbarhopper_v3.so",
+          "matches_apk": true
+        },
+        {
+          "aar_path": "jni/x86_64/libbarhopper_v3.so",
+          "sha256": "6c5deea87d962af008fd48c3229db13ab68eef2e9feeccb2df5b33a920c0579a",
+          "apk_path": "lib/x86_64/libbarhopper_v3.so",
+          "matches_apk": true
+        }
+      ],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.pom",
+        "size_bytes": 1775,
+        "sha256": "e2677ff1bcba978d1fa067709df54aec4fb388b13f973aeacc864f681fa1758c",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "publisher_checksums": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/mlkit/barcode-scanning/17.3.0/barcode-scanning-17.3.0.aar.sha256",
+          "algorithm": "sha256",
+          "value": "64c5cf48bb94b6c54f2c785c660640a7d167aff6ad72bc2c920706dc4187b79a"
+        }
+      ]
+    },
+    {
+      "coordinate": "com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1",
+      "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.aar",
+      "sha256": "f58096b98867417a698db55ddfd7c8ed0383b2117fa8f3692fa701d6132f1462",
+      "size_bytes": 519271,
+      "native_libraries": [],
+      "pom": {
+        "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.pom",
+        "size_bytes": 3762,
+        "sha256": "41b5b66bc5f51409c00e627fcc31b5592076b34f57a364bd89a01c0ad9690111",
+        "licenses": [
+          {
+            "name": "ML Kit Terms of Service",
+            "url": "https://developers.google.com/ml-kit/terms"
+          }
+        ],
+        "developers": [],
+        "packaging": "aar",
+        "project_url": null,
+        "parent": {
+          "groupId": null,
+          "artifactId": null,
+          "version": null
+        },
+        "scm_url": null
+      },
+      "publisher_checksums": [
+        {
+          "url": "https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-mlkit-barcode-scanning/18.3.1/play-services-mlkit-barcode-scanning-18.3.1.aar.sha256",
+          "algorithm": "sha256",
+          "value": "f58096b98867417a698db55ddfd7c8ed0383b2117fa8f3692fa701d6132f1462"
+        }
+      ]
+    }
+  ],
+  "audit_catalog_ids": [
+    "bitchat_barcode_scanning_audit",
+    "bitchat_play_services_mlkit_barcode_scanning_audit"
+  ],
+  "complete_application_source_closure": false,
+  "runtime_traffic_measured": false,
+  "legal_or_human_pin_approval": false,
+  "all_catalog_payloads_rehashed_and_zip_checked": 37
+}
