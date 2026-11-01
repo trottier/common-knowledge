@@ -15,6 +15,7 @@ from ck.catalog import Item
 from ck.config import Configuration, Identifier, Model, Text, read_yaml
 from ck.fetch import verify_zim
 from ck.generated import cached_input, generation_manifest
+from ck.reference_math import MathRenderer, math_source_id
 from ck.zim2pdf import article, ensure_glyphs, font_glyphs, render_article
 
 
@@ -64,9 +65,13 @@ def build_phrasebooks(
     for name in (
         "src/ck/phrasebooks.py",
         "src/ck/zim2pdf.py",
+        "src/ck/reference_math.py",
         "src/ck/generated.py",
         "src/ck/fetch.py",
         "templates/phrasebook.html.j2",
+        "templates/source-math.css",
+        "pipelines/math/render.mjs",
+        "pipelines/math/settings.yaml",
         "templates/document.css",
         "pipelines/phrasebooks/selection.yaml",
         "pipelines/phrasebooks/settings.yaml",
@@ -79,7 +84,10 @@ def build_phrasebooks(
     pipeline = "phrasebooks-v1-" + recipe.hexdigest()
     results = {}
     output.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-phrasebooks-") as temporary:
+    with (
+        tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-phrasebooks-") as temporary,
+        MathRenderer(root, catalog, cache) as math_renderer,
+    ):
         stage = Path(temporary)
         for number, edition in enumerate(config.languages, 1):
             chosen = selection[edition.code]
@@ -87,7 +95,7 @@ def build_phrasebooks(
             if entry.mimetype != "text/html":
                 raise ValueError("Phrasebook selection did not resolve to HTML")
             raw = bytes(entry.content)
-            data = article(raw.decode("utf-8"), catalog[chosen.source].license)
+            data = article(raw.decode("utf-8"), catalog[chosen.source].license, math_renderer)
             ensure_glyphs(BeautifulSoup(data["html"], "html.parser").get_text(), covered)
             directory = stage / edition.code
             files = directory / "files"
@@ -106,6 +114,9 @@ def build_phrasebooks(
             )
             filename = f"{number:02d}_{edition.code}_phrasebook.pdf"
             pages = render_article((document, files / filename, fonts, epoch))
+            (files / f"00_{edition.code}_Equation_Renderer_LICENSE.TXT").write_text(
+                math_renderer.notice
+            )
             (directory / "article.html").write_text(document)
             audit = {key: value for key, value in data.items() if key != "html"}
             audit.update(
@@ -121,7 +132,7 @@ def build_phrasebooks(
             (directory / "audit.json").write_text(
                 json.dumps(audit, sort_keys=True, indent=2) + "\n"
             )
-            inputs = font_ids | {chosen.source}
+            inputs = font_ids | {chosen.source, math_source_id(root)}
             results[edition.code] = generation_manifest(
                 directory,
                 pipeline,
@@ -129,7 +140,8 @@ def build_phrasebooks(
                 complete=True,
                 epoch=epoch,
                 intermediates=["audit.json"],
-                tool_versions=Path("/opt/ck-tool-versions.txt").read_text(),
+                tool_versions=Path("/opt/ck-tool-versions.txt").read_text()
+                + math_renderer.versions,
             )
             print(f"Rendered phrasebook {edition.code}: {pages} pages", flush=True)
         stage.rename(output)
