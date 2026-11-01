@@ -32,6 +32,10 @@ td, th { padding: 1.3mm; text-align: left; border-bottom: 0.2mm solid #ccc; }
 a { color: #23548a; }
 .map-title { height: 12mm; }
 .page-meta { font-size: 7pt; line-height: 1.1; }
+.locator-row { display: flex; gap: 4mm; align-items: flex-start; }
+.locator { width: 94mm; flex: none; }
+.locator svg { width: 94mm; height: auto; }
+.locator-table { flex: 1; }
 </style>
 </head>
 <body>
@@ -41,14 +45,18 @@ a { color: #23548a; }
   <p>Rhode Island · Census 2020 ZIP areas {{ zctas | join(', ') }}</p>
   <p>Zoom and pan each map. Trial scale 1:{{ '{:,}'.format(policy.scale_denominator) }};
   the county stays in one PDF.</p>
-  <p>Find a sheet in the locator. At its edge, continue on the named sheet and page.</p>
-  <table>
+  <p>Find your town on the locator. Open its blue sheet label below.
+  At the map edge, continue on the named sheet and page.</p>
+  <div class="locator-row">
+  <div class="locator">{{ locator_svg }}</div>
+  <table class="locator-table">
     <tr><th>Sheet</th><th>Page</th><th>Position</th></tr>
     {% for page in pages %}
     <tr><td><a href="#{{ page.id }}">{{ page.id }}</a></td><td>page {{ page.page }}</td>
     <td>row {{ page.row + 1 }}, column {{ page.column + 1 }}</td></tr>
     {% endfor %}
   </table>
+  </div>
   <h3>Read the map</h3>
   <p>Orange: main roads. Gray: other roads. Dashed: paths, tracks, or private access.
   A map line is not permission or confirmation that a route is open.</p>
