@@ -1,0 +1,235 @@
+{
+  "state": "IA",
+  "complete": true,
+  "independent_conversions": 2,
+  "source_commit": "2b0ca26f1b32a00058f8b18791202ed23d793b71",
+  "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "context": "colima-common-knowledge-batch",
+  "cpu_limit_per_container": 1,
+  "memory_bytes_per_container": 6442450944,
+  "source_date_epoch": 1793404800,
+  "sha256": "404757adf369c48e33c1a589e1194049c2327133a39ce8728ffcb2da9a46080d",
+  "size_bytes": 148543596,
+  "pipeline_version": "android-split-v1-13d6a6219518bf0a7f8e0ab141fb33191ff774e242dbde154260bbdac575f379",
+  "inputs": {
+    "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+    "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+    "android_extract_ia": "c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867"
+  },
+  "parts": 2,
+  "prepared_extract": {
+    "sha256": "c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867",
+    "size_bytes": 47811343,
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "inputs": {
+      "android_source_us": "0d4df0c8583c04a53067e55a0e555a30babc3d3869eb103976a359f45b549713",
+      "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+      "census_states": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0"
+    },
+    "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build/IA/extract",
+    "bound_files": [
+      {
+        "path": "files/IA_roads_places.osm.pbf",
+        "size_bytes": 47811343,
+        "sha256": "42994ef61f142ab687a7b8a081bdf864526375b826dc7c0c976e2d94327c2607"
+      },
+      {
+        "path": "states.json",
+        "size_bytes": 181,
+        "sha256": "b69e43baab0d3c6900e6c3931a5b788eaa6913477f07d3c6deb7401e020f0095"
+      }
+    ],
+    "diagnostic_files_not_claimed_identical": []
+  },
+  "repeats": [
+    {
+      "repeat": "a",
+      "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build/IA/map-a",
+      "bound_files": [
+        {
+          "path": "files/IA_001_roads_places.obf",
+          "size_bytes": 48975185,
+          "sha256": "c4125d63351007a905d1c620f3351f65ec0a64d672830a5350b2c156984f8258"
+        },
+        {
+          "path": "files/IA_002_roads_places.obf",
+          "size_bytes": 51773848,
+          "sha256": "81c8570f25a32ae968d5567402e9c64ed6799538fec190f726806ac7aaf4ee5e"
+        },
+        {
+          "path": "files/IA_PARTS.txt",
+          "size_bytes": 227,
+          "sha256": "ca533e79b8dc1964cf580f147f16e75259220c5204afe315c329158aecb007ed"
+        },
+        {
+          "path": "files/IA_SOURCE.txt",
+          "size_bytes": 575,
+          "sha256": "cf28bf3c2a06ee39c8005637c65c856b77cd6f3663fc19be381170ece0845c95"
+        },
+        {
+          "path": "files/data/IA_roads_places.osm.pbf",
+          "size_bytes": 47793761,
+          "sha256": "64955cdc9c2a96b38f1bfe91152aecbd5e9dc97ede4b30ac2796831ad607bf84"
+        },
+        {
+          "path": "parts.json",
+          "size_bytes": 1288,
+          "sha256": "3d543956984e7d76fe0fe25c10156b5036e7b611eca73218aa8f7a5fc82e0e2a"
+        },
+        {
+          "path": "coverage.json",
+          "size_bytes": 340,
+          "sha256": "270554bb674072941c6ef7c602347f79fcf5d448fdc810413f4a4a4c0d5558fd"
+        },
+        {
+          "path": "filter.json",
+          "size_bytes": 69,
+          "sha256": "0521065ec04e85b3cfb62fe74ec8fc72332d54d1654c8a84e5387941b22ac4ef"
+        },
+        {
+          "path": "inspection.txt",
+          "size_bytes": 1807,
+          "sha256": "c532894d0f81b0e78167c63f01b6bc9402b6d6c37a596b8d8ac2d1c92c998245"
+        },
+        {
+          "path": "regions/IA_001_roads_places.osm.pbf",
+          "size_bytes": 22600372,
+          "sha256": "e7f33cc3e2acb80dd57bf0cc95e9874aebe8e73ced4e74f643259f0ba6078569"
+        },
+        {
+          "path": "inspections/IA_001_roads_places.obf.txt",
+          "size_bytes": 896,
+          "sha256": "31d628e4f2b87aadba1d64f50b673aee3059ef64c4c306d0ab541c1a6c6eab51"
+        },
+        {
+          "path": "regions/IA_002_roads_places.osm.pbf",
+          "size_bytes": 22632171,
+          "sha256": "b2273477521aec4650968dae99339d914c02cb1e4d78ee71de8a619c92610798"
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.txt",
+          "size_bytes": 910,
+          "sha256": "6d1df31ca88448cf294c80b7601543237feb491ce5bff5b18c0dc3c6048a1914"
+        }
+      ],
+      "diagnostic_files_not_claimed_identical": [
+        {
+          "path": "inspections/IA_001_roads_places.obf.creator.log",
+          "size_bytes": 18616,
+          "sha256": "37423dcf2a5cc9d0a8ef2b3e332a3f50170b3fb7da40fa583552e0bfb5be821f"
+        },
+        {
+          "path": "inspections/IA_001_roads_places.obf.stderr.log",
+          "size_bytes": 110,
+          "sha256": "d04338423e96943f76b4fc160eb064d1f19bd7ecf2b2f404f0523b4d21706084"
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.creator.log",
+          "size_bytes": 18925,
+          "sha256": "dfbccdea9de137257c742c347943a7c737813a493e3ce2de9003ac4ed7d860b1"
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.stderr.log",
+          "size_bytes": 110,
+          "sha256": "8f20dfc34bdad14969a963e724455fab56421a2a1e2d0d55775d3c8c9ade2005"
+        }
+      ]
+    },
+    {
+      "repeat": "b",
+      "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build/IA/map-b",
+      "bound_files": [
+        {
+          "path": "files/IA_001_roads_places.obf",
+          "size_bytes": 48975185,
+          "sha256": "c4125d63351007a905d1c620f3351f65ec0a64d672830a5350b2c156984f8258"
+        },
+        {
+          "path": "files/IA_002_roads_places.obf",
+          "size_bytes": 51773848,
+          "sha256": "81c8570f25a32ae968d5567402e9c64ed6799538fec190f726806ac7aaf4ee5e"
+        },
+        {
+          "path": "files/IA_PARTS.txt",
+          "size_bytes": 227,
+          "sha256": "ca533e79b8dc1964cf580f147f16e75259220c5204afe315c329158aecb007ed"
+        },
+        {
+          "path": "files/IA_SOURCE.txt",
+          "size_bytes": 575,
+          "sha256": "cf28bf3c2a06ee39c8005637c65c856b77cd6f3663fc19be381170ece0845c95"
+        },
+        {
+          "path": "files/data/IA_roads_places.osm.pbf",
+          "size_bytes": 47793761,
+          "sha256": "64955cdc9c2a96b38f1bfe91152aecbd5e9dc97ede4b30ac2796831ad607bf84"
+        },
+        {
+          "path": "parts.json",
+          "size_bytes": 1288,
+          "sha256": "3d543956984e7d76fe0fe25c10156b5036e7b611eca73218aa8f7a5fc82e0e2a"
+        },
+        {
+          "path": "coverage.json",
+          "size_bytes": 340,
+          "sha256": "270554bb674072941c6ef7c602347f79fcf5d448fdc810413f4a4a4c0d5558fd"
+        },
+        {
+          "path": "filter.json",
+          "size_bytes": 69,
+          "sha256": "0521065ec04e85b3cfb62fe74ec8fc72332d54d1654c8a84e5387941b22ac4ef"
+        },
+        {
+          "path": "inspection.txt",
+          "size_bytes": 1807,
+          "sha256": "c532894d0f81b0e78167c63f01b6bc9402b6d6c37a596b8d8ac2d1c92c998245"
+        },
+        {
+          "path": "regions/IA_001_roads_places.osm.pbf",
+          "size_bytes": 22600372,
+          "sha256": "e7f33cc3e2acb80dd57bf0cc95e9874aebe8e73ced4e74f643259f0ba6078569"
+        },
+        {
+          "path": "inspections/IA_001_roads_places.obf.txt",
+          "size_bytes": 896,
+          "sha256": "31d628e4f2b87aadba1d64f50b673aee3059ef64c4c306d0ab541c1a6c6eab51"
+        },
+        {
+          "path": "regions/IA_002_roads_places.osm.pbf",
+          "size_bytes": 22632171,
+          "sha256": "b2273477521aec4650968dae99339d914c02cb1e4d78ee71de8a619c92610798"
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.txt",
+          "size_bytes": 910,
+          "sha256": "6d1df31ca88448cf294c80b7601543237feb491ce5bff5b18c0dc3c6048a1914"
+        }
+      ],
+      "diagnostic_files_not_claimed_identical": [
+        {
+          "path": "inspections/IA_001_roads_places.obf.creator.log",
+          "size_bytes": 18809,
+          "sha256": "9a504262efa5796c0c434aca1f8985b4a647ce313cfbd84499718277d412f780"
+        },
+        {
+          "path": "inspections/IA_001_roads_places.obf.stderr.log",
+          "size_bytes": 110,
+          "sha256": "c6d42220c8626e1c63cd0eea9aef30ab83f07fbc0a0d3e28202b88961aa2c07a"
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.creator.log",
+          "size_bytes": 18930,
+          "sha256": "f9ac5786633126516c0958a1d91d6655df015e6f3d36a772d2d310d761644fa0"
+        },
+        {
+          "path": "inspections/IA_002_roads_places.obf.stderr.log",
+          "size_bytes": 110,
+          "sha256": "dadb72d2f7610b40d0d0043b9fc60d0a355db21edeeb7e028d5e9790bd0daa8d"
+        }
+      ]
+    }
+  ],
+  "matched_utc": "2026-11-01T19:22:23.891667+00:00",
+  "national_collection_complete": false,
+  "rights_or_device_approval": false
+}
