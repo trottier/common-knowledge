@@ -18,6 +18,10 @@ function reset() {
   messages = [];
   byId('conversation').replaceChildren();
   byId('warning').textContent = byId('language').value === 'es' ? settings.warning_es : settings.warning;
+  const language = byId('language').value;
+  byId('grounding').textContent = settings.grounding[language].notice;
+  byId('start-source').href = `start-${language}.txt`;
+  byId('start-source').textContent = language === 'es' ? 'Leer el texto de START' : 'Read START text';
 }
 
 async function ask(event) {
@@ -33,19 +37,25 @@ async function ask(event) {
   byId('cancel').disabled = false;
   byId('language').disabled = true;
   byId('reset').disabled = true;
-  byId('status').textContent = 'Reading the local START text…';
+  byId('status').textContent = 'Reading the local instructions…';
   try {
     const source = await fetch(`system-${byId('language').value}.txt`, {
       cache: 'no-store', signal: controller.signal,
     });
-    if (!source.ok) throw new Error('The local START text could not be opened.');
+    if (!source.ok) throw new Error('The local instructions could not be opened.');
     const system = await source.text();
     const pending = [...messages, { role: 'user', content: question }];
+    const request = [{ role: 'system', content: system }, ...pending];
+    const inputBytes = request.reduce((total, message) =>
+      total + new TextEncoder().encode(message.content).length, 0);
+    if (inputBytes + request.length * settings.message_reserve_tokens + settings.max_output_tokens + settings.context_reserve_tokens > settings.context_tokens) {
+      throw new Error('This conversation is too long. Start a new conversation or shorten the question.');
+    }
     byId('status').textContent = 'Working locally…';
     const response = await fetch('/v1/chat/completions', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       signal: controller.signal, credentials: 'omit', cache: 'no-store',
-      body: JSON.stringify({ model: settings.model, messages: [{ role: 'system', content: system }, ...pending],
+      body: JSON.stringify({ model: settings.model, messages: request,
         stream: false, max_tokens: settings.max_output_tokens, temperature: settings.temperature }),
     });
     if (!response.ok) throw new Error('The answer could not be generated. Start a new conversation if it is too long.');

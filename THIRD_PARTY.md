@@ -3179,9 +3179,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
 - Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: 44039478 bytes
-- SHA-256: `af99947cc4b7e49a9e9c014b3cb1fd5f680bff42fb0c1bd0baeedb238a4276eb`
-- Pipeline: local-llm-v1-b6c955cef07ab1953c0971dc49e2a511f00ca0f56055840c9b91b133c3d85dc9; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
+- Size: 44053192 bytes
+- SHA-256: `7d884919272b976ee5fd78eb4702a2715da89f27a49422c6d6874462be3d48ef`
+- Pipeline: local-llm-v1-4a2707af6e3265b282f9408ffbef47c80a293cd15d095aecd6e62927289fbeec; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
 
 ## Offline local LLM launchers, page, prompts and instructions (sample)
 
@@ -3190,9 +3190,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
 - Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: 44039484 bytes
-- SHA-256: `6ff2470ba0a95f2b988ae3c24b482fbb7c4da15a32b7ac353d16cb89667ca457`
-- Pipeline: local-llm-v1-b6c955cef07ab1953c0971dc49e2a511f00ca0f56055840c9b91b133c3d85dc9; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
+- Size: 44076690 bytes
+- SHA-256: `25f7453a4dd06ec38d1a60a06091f55ed9eed0d46cda11bd13123ef36510c26c`
+- Pipeline: local-llm-v1-4a2707af6e3265b282f9408ffbef47c80a293cd15d095aecd6e62927289fbeec; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
 
 ## MapLibre Native build addon for Linux arm64
 

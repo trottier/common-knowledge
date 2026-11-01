@@ -181,6 +181,8 @@ class LocalLLM(Model):
     host: Literal["127.0.0.1"]
     port: int = Field(ge=1, le=65535)
     context_tokens: int = Field(ge=32768)
+    context_reserve_tokens: int = Field(ge=1)
+    message_reserve_tokens: int = Field(ge=1)
     threads: int = Field(ge=1, le=16)
     startup_timeout_seconds: int = Field(ge=1, le=600)
     max_output_tokens: int = Field(ge=1, le=4096)
@@ -202,6 +204,11 @@ class LocalLLM(Model):
             raise ValueError("The local LLM fallback must name four distinct variants")
         if set(self.models) != {"sample", "full"}:
             raise ValueError("Both sample and full model selections are required")
+        if (
+            self.max_output_tokens + self.context_reserve_tokens + 2 * self.message_reserve_tokens
+            >= self.context_tokens
+        ):
+            raise ValueError("Local LLM context reservations leave no room for input")
         return self
 
 

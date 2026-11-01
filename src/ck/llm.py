@@ -78,6 +78,58 @@ def start_text(
     return "\n\n".join(sections)
 
 
+def system_prompt(root: Path, settings: LocalLLM, language: str, source: str) -> tuple[str, dict]:
+    if language not in {"en", "es"}:
+        raise ValueError("A local LLM bundle needs an English or Spanish START edition")
+    template = Environment(
+        loader=FileSystemLoader(root / "pipelines/llm"), autoescape=False, undefined=StrictUndefined
+    ).get_template("system_prompt.md")
+    titles = [line[2:] for line in source.splitlines() if line.startswith("# ")]
+
+    def render(text):
+        return template.render(
+            warning=settings.warning if language == "en" else settings.warning_es,
+            language_name="English" if language == "en" else "Español",
+            start_text=text,
+            section_titles=titles,
+        )
+
+    budget = (
+        settings.context_tokens
+        - settings.max_output_tokens
+        - settings.context_reserve_tokens
+        - 2 * settings.message_reserve_tokens
+        - 1
+    )
+    prompt = render(source)
+    mode = "full"
+    if len(prompt.encode()) > budget:
+        prompt, mode = render(""), "section_index"
+    if len(prompt.encode()) > budget:
+        raise ValueError("START section index exceeds the conservative context budget")
+    notices = {
+        "full": {
+            "en": "The local LLM is supplied the full START text. Read START before acting.",
+            "es": "El LLM local recibe el texto completo de START. Lea START antes de actuar.",
+        },
+        "section_index": {
+            "en": (
+                "The local LLM is supplied only START section titles. Read START for instructions."
+            ),
+            "es": (
+                "El LLM local recibe solo los títulos de START. Lea START para las instrucciones."
+            ),
+        },
+    }
+    return prompt, {
+        "mode": mode,
+        "notice": notices[mode][language],
+        "start_bytes": len(source.encode()),
+        "prompt_bytes": len(prompt.encode()),
+        "prompt_byte_budget": budget,
+    }
+
+
 def build_bundle(
     root: Path,
     config: Configuration,
@@ -146,16 +198,11 @@ def build_bundle(
             (files / name).write_text('#!/bin/sh\nexec /bin/sh "$(dirname "$0")/launch.sh"\n')
         for name in ("index.html", "app.js", "style.css"):
             shutil.copyfile(root / "pipelines/llm/ui" / name, ui / name)
+        grounding = {}
         for language in ("en", "es"):
             source = start_text(root, language, config, epoch, profile)
-            prompt = templates.get_template("system_prompt.md").render(
-                warning=settings.warning if language == "en" else settings.warning_es,
-                language_name="English" if language == "en" else "Español",
-                start_text=source,
-            )
-            # A UTF-8 byte budget bounds byte-fallback tokenization conservatively.
-            if len(prompt.encode()) > settings.context_tokens - 4096:
-                raise ValueError("START prompt exceeds the conservative context budget")
+            prompt, grounding[language] = system_prompt(root, settings, language, source)
+            (ui / f"start-{language}.txt").write_text(source)
             (ui / f"system-{language}.txt").write_text(prompt)
         (ui / "settings.json").write_text(
             json.dumps(
@@ -166,6 +213,10 @@ def build_bundle(
                     "max_output_tokens": settings.max_output_tokens,
                     "max_question_chars": settings.max_question_chars,
                     "temperature": settings.temperature,
+                    "grounding": grounding,
+                    "context_tokens": settings.context_tokens,
+                    "context_reserve_tokens": settings.context_reserve_tokens,
+                    "message_reserve_tokens": settings.message_reserve_tokens,
                 }
             )
             + "\n"
