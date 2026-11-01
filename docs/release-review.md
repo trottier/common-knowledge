@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5767)
+## Remaining VERIFY markers (5764)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -440,9 +440,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:153` — [[VERIFY: exact publisher file size]]
 - `catalog/maps.yaml:154` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
 - `catalog/maps.yaml:221` — [[VERIFY: pinned pipeline implementation and output sizes]]
-- `catalog/maps.yaml:228` — [[VERIFY: measure complete PDFs with verified source equation rendering]]
-- `catalog/maps.yaml:229` — [[VERIFY: independently repeat complete equation-preserving PDF generation]]
-- `catalog/maps.yaml:252` — [[VERIFY: current pinned MathML-to-SVG reference recipe]]
 - `catalog/maps.yaml:253` — [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - `catalog/maps.yaml:286` — [[VERIFY: human review of source pins and national FCC geographic exceptions; incomplete point seed is build-only]]
 - `catalog/maps.yaml:311` — [[VERIFY: review the local whole-source verified extraction and preserve the pinned daily planet at an immutable URL]]

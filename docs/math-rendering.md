@@ -30,8 +30,9 @@ the drive.
 
 Preflight covered 36 equations across the 29 selected book articles and 29
 equations across five emergency-reference articles: sterilization, altitude
-sickness, ectopic pregnancy, hypoxia and pulse oximetry. Full PDF regeneration,
-independent repeats, visual comparison and named clinical review remain required.
+sickness, ectopic pregnancy, hypoxia and pulse oximetry. The development repeats
+below check complete PDF generation; source-to-PDF comparison and named clinical
+review remain required.
 Vector output supports zoom; physical-device legibility is not established by
 these automated checks. Earlier PDF generation pins are not reused for this
 recipe.
@@ -39,9 +40,14 @@ recipe.
 The 15 phrasebooks and four selected reference packs have now completed matching
 independent development builds with the equation renderer. Every recorded
 payload and intermediate hash was checked in both builds and the canonical
-copy: 19 generated items, containing 67 placed files per copy. The complete
-158-article medical repeat is still running. These measurements do not replace
-the named reviews or final release regeneration.
+copy: 19 generated items, containing 67 placed files per copy.
+
+The complete 158-article medical pack also matches in two independent builds at
+development epoch 1793404800: 70,054,021 placed bytes, canonical generation
+SHA-256 `cdff7b842c7580f45454fc19752d7117f1b52b17813938b0911cd2055bb5a375`,
+recipe `medpdf-v1-1ce9b2273f78a1ccfde201172e9159e86bfdae1af4943dbbc182a469c31181a4`.
+These measurements do not replace named clinical reviews, physical-device
+checks or final release regeneration.
 
 Implementation references: [MathJax direct module usage](https://docs.mathjax.org/en/v3.2/server/direct.html),
 [MathML Core](https://www.w3.org/TR/mathml-core/), and the
