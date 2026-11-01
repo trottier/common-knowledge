@@ -6,6 +6,9 @@ reviewed_on: null
 review_required: []
 ---
 
+A variant is a drive with a different mix of extra content.
+Use the lists below to compare your drive with other variants. [@project_spec]
+
 {% for number, variant in variants.variants.items() %}
 ## Variant {{ number }}
 

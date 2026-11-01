@@ -47,12 +47,23 @@ def test_all_editions_have_phone_print_fonts_and_localized_readme(editions, tmp_
 
 def test_spanish_full_edition_and_every_page_notice(editions):
     output, _ = editions
-    assert len(list((ROOT / "content/es/start").glob("*.md"))) == 13
     assert len(PdfReader(output / "es/02_CARD.pdf").pages) == 2
     assert len(PdfReader(output / "es/03_TAGS.pdf").pages) == 1
     for path in (output / "es").glob("*.pdf"):
         for page in PdfReader(path).pages:
             assert "Traducciónautomáticasinrevisar." in "".join(page.extract_text().split())
+
+
+def test_spanish_active_sections_match_english_without_the_future_section():
+    sections = {
+        code: {path.name for path in (ROOT / "content" / code / "start").glob("*.md")}
+        for code in ("en", "es")
+    }
+    assert sections["es"] == sections["en"]
+    assert len(sections["en"]) == 12
+    assert not any(name.startswith("10-") for name in sections["en"])
+    for code in sections:
+        assert (ROOT / "content" / code / "future/10-offline-ai.md").is_file()
 
 
 def test_translation_rejects_changed_coordination_default():

@@ -3,9 +3,12 @@ title: ¿En qué se diferencia mi unidad?
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/11-variants.md": "5c88417328d99479451ba98e2217c6eb9e4f8c332adcae922e00539c9562f90e"}
+source_inputs: {"content/en/start/11-variants.md": "a4c4d264ef02758b0833d3b3a8c83219305e649c490aacddc479a685477097c6"}
 review_required: []
 ---
+
+Una variante es una unidad con una combinación diferente de contenido adicional.
+Use las listas siguientes para comparar su unidad con otras variantes. [@project_spec]
 
 Los nombres de los temas y las colecciones aparecen como en las carpetas en inglés.
 

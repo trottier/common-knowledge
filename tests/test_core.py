@@ -21,6 +21,8 @@ def test_variant_guide_uses_the_planners_profile_selection():
     assert "Appropedia" in full
     assert "Appropedia" not in dev
     assert "iFixit" not in full
+    assert "A variant is a drive with a different mix of extra content." in full
+    assert "compare your drive with other variants" in full
 
 
 def test_all_original_citations_resolve_and_review_status_is_explicit():
