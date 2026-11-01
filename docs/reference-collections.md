@@ -27,6 +27,14 @@ describe the text licenses and attribution requirements. Non-text media require
 their own license checks. The absence of photographs in a `nopic` archive does
 not itself certify all retained resources. The catalog keeps that check explicit.
 
+The Simple English input's source audit found malformed navigation in five
+articles and missing stylesheet/illustration dependencies on the publisher's
+`Voxeaa` error page. That error page says the article was deleted between listing
+and retrieval. Regeneration retains that visible notice and its fallback text;
+it does not replace it with an invented article or claim to restore the deleted
+page. Only the audited unavailable resources and malformed link targets are
+removed. The complete output still needs its own strict audit and repeat build.
+
 ## Other candidate collections
 
 Current PhET downloads are excluded under the publisher's current terms; see
@@ -47,3 +55,11 @@ publisher metadata and the embedded ebook license checked. Complete original
 texts and their license notices must remain available alongside any reformatted
 edition. No selection is made from the large literature archives solely on the
 basis of an approximate size or a collection-wide public-domain claim.
+
+
+The first Wikibooks regeneration exposed five additional dangling favicon links
+in article paths containing repeated slashes. Audited internal `link` resources,
+including icons, now follow the same omission rule as audited stylesheets and
+embedded images. Valid local resources and publisher article text are retained.
+The initial output was rejected by strict `zimcheck`; it was not catalog-pinned
+or admitted to assembly. A complete rebuilt archive must pass before measurement.
