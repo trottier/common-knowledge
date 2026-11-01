@@ -32,6 +32,18 @@ def main(argv: Sequence[str] | None = None) -> int:
     fetch = commands.add_parser("fetch", help="Fetch pinned items into the verified cache")
     fetch.add_argument("items", nargs="+")
     fetch.add_argument("--cache", type=Path, default=Path("cache"))
+    for operation in ("source-pack", "source-restore"):
+        bundle = commands.add_parser(
+            operation, help="Preserve or restore exact catalog source bytes"
+        )
+        bundle.add_argument("items", nargs="+")
+        bundle.add_argument("--cache", type=Path, default=Path("cache"))
+        if operation == "source-pack":
+            bundle.add_argument("--output", type=Path, required=True)
+            bundle.add_argument("--epoch", type=int)
+        else:
+            bundle.add_argument("--bundle", type=Path, required=True)
+            bundle.add_argument("--sha256", required=True)
     coverage = commands.add_parser("coverage", help="Show findability of topics and collections")
     coverage.add_argument("--homes", type=int, default=5)
     coverage.add_argument("--carriers", type=int)
@@ -268,6 +280,21 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command in {"source-pack", "source-restore"}:
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+            from ck.sourcebundle import pack_sources, restore_sources
+
+            items = load_catalog(args.root, config)
+            result = (
+                pack_sources(
+                    items, args.items, args.cache, args.output, epoch_for(config, args.epoch)
+                )
+                if args.command == "source-pack"
+                else restore_sources(items, args.items, args.bundle, args.cache, args.sha256)
+            )
+            print(json.dumps(result, indent=2))
+            return 0
         if args.command in {"directory-all", "directory-collect"}:
             from ck.catalog import load_catalog
             from ck.nationaldirectory import build_all, collect, prepare
