@@ -3824,13 +3824,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Simple English Wikipedia, no pictures — offline reference edition
 
 - Catalog id: `simplewiki_en_offline`
-- Version: 2026-09; regenerated edition
+- Version: Kiwix 2026-09; regenerated at development epoch 1793404800
 - License: CC-BY-SA-4.0
 - Attribution: Simple English Wikipedia contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained
 - License proof: https://simple.wikipedia.org/wiki/Wikipedia:Copyrights
-- Size: [[VERIFY: measured complete regenerated archive payload]] bytes
-- SHA-256: `[[VERIFY: complete generated manifest SHA-256]]`
-- Pipeline: [[VERIFY: pinned regeneration recipe]]; inputs: simplewiki_en_nopic
+- Size: 790886776 bytes
+- SHA-256: `31f0f5d140b4be3e9d1a1ef36af4458bf9d2a3540bd96298b452ee8b9576f6c0`
+- Pipeline: zim-offline-v1-4fb0484a3aebba54b9aecdc78c6df34a76049b88e1b53e2073ced4bf7e96eaeb; inputs: simplewiki_en_nopic
 
 ## USAGov state and territory emergency agency links
 

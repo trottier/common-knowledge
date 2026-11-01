@@ -63,3 +63,11 @@ including icons, now follow the same omission rule as audited stylesheets and
 embedded images. Valid local resources and publisher article text are retained.
 The initial output was rejected by strict `zimcheck`; it was not catalog-pinned
 or admitted to assembly. A complete rebuilt archive must pass before measurement.
+
+
+The first complete repaired Simple English Wikipedia archive passes strict
+`zimcheck` with all 405,521 publisher entries retained. The placed archive and
+source notice total 790,886,776 bytes; the generation manifest is pinned in the
+catalog at development epoch 1793404800. This is a measured checkpoint from the
+recorded recipe. A repeated build with the final producer, nontext-license
+review and physical Kiwix checks remain open.
