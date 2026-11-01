@@ -3,8 +3,15 @@
 import math
 from dataclasses import asdict, dataclass
 
-from ck.catalog import Item, Modules, Shelf
+from ck.catalog import Collection, Item, Topics
 from ck.config import Configuration
+
+
+def placed_bytes(item: Item) -> int:
+    if not isinstance(item.size_bytes, int):
+        raise ValueError(f"Unmeasured item: {item.id}")
+    copies = 2 if item.dest.startswith(("1_START/", "4_PHONE_PACK/")) else 1
+    return item.size_bytes * copies
 
 
 def selected(item: Item, config: Configuration, number: int, profile: str) -> bool:
@@ -13,10 +20,10 @@ def selected(item: Item, config: Configuration, number: int, profile: str) -> bo
     variant = config.variants.variants[number]
     if item.placement == "universal":
         return True
-    if isinstance(item.placement, Modules):
-        return bool(set(item.placement.modules) & set(variant.modules))
-    if isinstance(item.placement, Shelf):
-        return item.placement.shelf == variant.shelf
+    if isinstance(item.placement, Topics):
+        return bool(set(item.placement.topics) & set(variant.topics))
+    if isinstance(item.placement, Collection):
+        return item.placement.collection == variant.collection
     return False
 
 
@@ -30,6 +37,10 @@ class VariantPlan:
     items: list[str]
     largest: list[dict]
     blockers: list[str]
+    map_path: str | None = None
+    map_reason: str | None = None
+    llm_variants: list[int] | None = None
+    llm_reason: str | None = None
 
     @property
     def fits(self) -> bool:
@@ -58,13 +69,94 @@ def plan_variants(
         raise ValueError(f"Measured production capacity is unconfirmed: {capacity}")
     usable = math.floor(capacity * (1 - spec.reserve_fraction))
     plans = []
+
+    def include(item, dependencies):
+        if item.id in dependencies:
+            return
+        dependencies[item.id] = item
+        for identifier in item.inputs:
+            include(items[identifier], dependencies)
+
+    choices = {
+        number: [item for item in items.values() if selected(item, config, number, profile)]
+        for number in sorted(config.variants.variants)
+    }
+    map_path, map_reason = None, None
+    if profile == "full":
+        map_path = "roads_places"
+        map_reason = "Roads-and-places generation is explicitly configured."
+        if config.build.android_maps == "auto":
+            prebuilt = items.get("osmand_prebuilt")
+            dependencies = {}
+            if prebuilt:
+                include(prebuilt, dependencies)
+            ready = (
+                prebuilt is not None
+                and all(prebuilt in chosen for chosen in choices.values())
+                and not any(item.blockers() for item in dependencies.values())
+            )
+            if not ready:
+                map_reason = "Prebuilt maps have unconfirmed inputs or redistribution terms."
+            elif any(
+                core_bytes
+                + sum(
+                    placed_bytes(item)
+                    for item in chosen
+                    if item.id != "android_roads_places" and isinstance(item.size_bytes, int)
+                )
+                > usable
+                for chosen in choices.values()
+            ):
+                map_reason = (
+                    "Prebuilt maps overflow a variant; switch every variant to roads and places."
+                )
+            else:
+                map_path = "prebuilt"
+                map_reason = "Verified prebuilt maps fit the known capacity of every variant."
+        omitted = "osmand_prebuilt" if map_path == "roads_places" else "android_roads_places"
+        choices = {
+            number: [item for item in chosen if item.id != omitted]
+            for number, chosen in choices.items()
+        }
+
+    llm_variants, llm_reason = None, None
+    if profile == "full" and config.local_llm:
+        model_id = config.local_llm.models["full"]
+        model = items.get(model_id)
+        if model and all(model in chosen for chosen in choices.values()):
+            llm_variants = sorted(choices)
+            llm_reason = "The model remains universal."
+            measured = all(
+                isinstance(item.size_bytes, int) for chosen in choices.values() for item in chosen
+            )
+            if not measured:
+                llm_reason = "Keep the model universal until every placed size is known."
+            elif any(
+                core_bytes + sum(placed_bytes(item) for item in chosen) > usable
+                for chosen in choices.values()
+            ):
+                llm_variants = sorted(config.local_llm.fallback_variants)
+                llm_reason = (
+                    "After map selection, universal placement overflows; use four variants."
+                )
+                choices = {
+                    number: [
+                        item for item in chosen if item.id != model_id or number in llm_variants
+                    ]
+                    for number, chosen in choices.items()
+                }
+
     for number in sorted(config.variants.variants):
-        chosen = [item for item in items.values() if selected(item, config, number, profile)]
-        problems = [issue for item in chosen for issue in item.blockers()]
+        chosen = choices[number]
+        dependencies = {}
+        for item in chosen:
+            include(item, dependencies)
+        problems = [issue for item in dependencies.values() for issue in item.blockers()]
         known = [item for item in chosen if isinstance(item.size_bytes, int)]
-        total = core_bytes + sum(item.size_bytes for item in known)
+        total = core_bytes + sum(placed_bytes(item) for item in known)
         if profile == "full":
-            for required in ("national_atlas", "national_directory", "android_roads_places"):
+            required_map = "osmand_prebuilt" if map_path == "prebuilt" else "android_roads_places"
+            for required in ("national_atlas", "national_directory", required_map):
                 if required not in {item.id for item in chosen}:
                     problems.append(f"Required universal item is missing: {required}")
         if total > usable:
@@ -78,10 +170,14 @@ def plan_variants(
                 total,
                 sorted(item.id for item in chosen),
                 [
-                    {"id": item.id, "size_bytes": item.size_bytes}
-                    for item in sorted(known, key=lambda x: x.size_bytes, reverse=True)[:8]
+                    {"id": item.id, "size_bytes": placed_bytes(item)}
+                    for item in sorted(known, key=placed_bytes, reverse=True)[:8]
                 ],
                 sorted(set(problems)),
+                map_path,
+                map_reason,
+                llm_variants,
+                llm_reason,
             )
         )
     return plans

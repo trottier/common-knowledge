@@ -19,14 +19,37 @@ of done remain in [AGENTS.md](../AGENTS.md).
 7. **Implemented:** Spanish full edition, thirteen quick-start stubs, localized
    README lines, machine-translation notices and cataloged fonts for every script.
    Source hashes require retranslation when English instructions or defaults change.
-8. National directory pipeline, starting with one small state.
-9. Road atlas pipeline, starting with one small state.
-10. Android map pipeline and planner-selected build path.
-11. ZIM placement and medical phone PDFs.
-12. Experimental base model selection, runners, Android entry and system prompt.
-13. Imported media, documents, phrasebooks and forms.
-14. Sample, reproducibility, release and Pages workflows; build-machine docs.
+8. **Implemented; corrected derivatives in progress:** national source adapters,
+   exclusions, county assignment, source dates and bounded phone/print directories.
+   Corrected point imports match across 254,873 places and 56 jurisdictions.
+   The earlier full directory used a snapshot missing Caribbean OSM places;
+   corrected atlas-linked PDFs and final repeats remain required.
+9. **Implemented; final generation in progress:** native atlas jobs, gridded PDFs,
+   all-county collection, font checks and renderer attestation. The first complete
+   set and ongoing repeats are development evidence from the older point corpus.
+10. **Implemented; national conversions in progress:** shared state-source policy,
+    filtered source extraction, map/routing/POI inspection and ODbL source copies.
+    A Guam ordering mismatch stopped the run; recorded JVM settings fix the
+    observed case. Larger-state repeats, app rights and physical GPS tests remain.
+11. **Implemented; frozen archive repeats in progress:** strict ZIM regeneration,
+    a complete WikEM snapshot, source-bundle restoration and 158 medical phone
+    PDFs. A complete Simple English archive passes audit. Reader tests, retained
+    media-license review and named clinical review remain gates.
+12. **Implemented as experimental:** candidate notes, pinned untuned base-model
+    alternatives, laptop launchers, Android entry, system prompt and local browser
+    UI. No tuning or model-quality evaluation is claimed. License sign-off and
+    remaining physical platform checks are open.
+13. **Partly populated:** video normalization and language-track checks, VLC pins,
+    fifteen phrasebooks, incident forms, exam pools and initial morale material.
+    A real bilingual video, remaining topic video libraries and in-depth
+    collections, official translated guides, app rights and GPL source closure
+    still need completion. Restricted materials remain excluded.
+14. **Implemented; release validation pending:** dev CI, sample/release/Pages
+    workflows, input-generation orchestration and build-machine documentation.
+    Sample/full execution, two clean matching full builds, published hashes and
+    the physical checklist are still required.
 
 After step 14, stop and write `docs/release-review.md` with every remaining
-VERIFY marker, legal sign-off and required human content review. Do not describe
+VERIFY marker, written permission still needed, legal sign-off and required human content review.
+Do not describe
 the project as ready until the full definition of done is met.

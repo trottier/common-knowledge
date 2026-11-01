@@ -1,4 +1,4 @@
-modules:
+topics:
   medical:      { category: body,  title: "Medical" }
   care:         { category: body,  title: "Care for dependents" }
   water:        { category: body,  title: "Water and sanitation" }
@@ -11,21 +11,21 @@ modules:
   welfare:      { category: civic, title: "Welfare and reunification" }
   legal:        { category: civic, title: "Legal, money and recovery" }
   psychosocial: { category: civic, title: "Psychosocial, kids and morale" }
-shelves:
+collections:   # in-depth knowledge, one per variant
   howto_1:    "How-to library, part 1"
   howto_2:    "How-to library, part 2"
-  laptop_map: "Live laptop map of the U.S."
-  med_lib:    "Expanded medical library"
+  laptop_map: "Interactive map for laptops"
+  med_lib:    "Medical library"
   repair:     "Repair and engineering"
   simplewiki: "Simple English Wikipedia and travel guides"
   school:     "School lessons for disrupted schooling"
   morale:     "Public-domain books, music and games"
 variants:
-  1: { modules: [medical, power, convening],     shelf: howto_1 }
-  2: { modules: [care, structures, welfare],     shelf: howto_2 }
-  3: { modules: [water, comms, legal],           shelf: laptop_map }
-  4: { modules: [food, transport, psychosocial], shelf: med_lib }
-  5: { modules: [medical, structures, legal],    shelf: repair }
-  6: { modules: [care, comms, psychosocial],     shelf: simplewiki }
-  7: { modules: [water, transport, convening],   shelf: school }
-  8: { modules: [food, power, welfare],          shelf: morale }
+  1: { topics: [medical, power, convening],     collection: howto_1 }
+  2: { topics: [care, structures, welfare],     collection: howto_2 }
+  3: { topics: [water, comms, legal],           collection: laptop_map }
+  4: { topics: [food, transport, psychosocial], collection: med_lib }
+  5: { topics: [medical, structures, legal],    collection: repair }
+  6: { topics: [care, comms, psychosocial],     collection: simplewiki }
+  7: { topics: [water, transport, convening],   collection: school }
+  8: { topics: [food, power, welfare],          collection: morale }

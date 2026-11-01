@@ -1,0 +1,112 @@
+{
+  "build_container_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "commit": "622bddb1af0929e3c560dc99f3359182a2e64306",
+  "core_manifest_sha256": "57f5c41c3cf66843cd6e042419e4b56019abd6275bec707f87fc8d713000d80a",
+  "images": [
+    {
+      "compressed": "common-knowledge-0.1.0-variant-1-dev.img.zst",
+      "compressed_sha256": "2014ea4f9c26b2db9210cad7e6d6967b528ec2cfd184de44a0be41e3c0b9d179",
+      "compressed_size_bytes": 1109237,
+      "image": "common-knowledge-0.1.0-variant-1-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-1-dev.MANIFEST.SHA256",
+      "manifest_sha256": "c8bea77876caeb4ae8f95f0d247d7a27888ffe5d0c69ab291974bb2942e8f51f",
+      "sha256": "0257b88e1ce13fa90d8ab2a958c4e23e2d647bd9f2deb85973cb08356f334c2a",
+      "variant": 1
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-2-dev.img.zst",
+      "compressed_sha256": "b1523b20efe5647183c23c2123569766c02f88af41f92cd4667fe71757362c83",
+      "compressed_size_bytes": 1109240,
+      "image": "common-knowledge-0.1.0-variant-2-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-2-dev.MANIFEST.SHA256",
+      "manifest_sha256": "d15fc140249e9bf85828210dd1fc12b606a0ffc687009eacfb4b511897476687",
+      "sha256": "2e69967b2b2a614c3589255811d2237d3f8eea3529c133fba5c75391332ab151",
+      "variant": 2
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-3-dev.img.zst",
+      "compressed_sha256": "08ca80b74af5a56b4c9939fc84bdbc8a2bf62491e6b76c50425537d71b338cdb",
+      "compressed_size_bytes": 1109240,
+      "image": "common-knowledge-0.1.0-variant-3-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-3-dev.MANIFEST.SHA256",
+      "manifest_sha256": "a375c64ebcfb1664be660527bde470a8ea79ed55d4609e056755c7bd1c6a1dc0",
+      "sha256": "4119136abfacc2627476322689ec7451cd1549fa2480e490bac4fa54b4324a0c",
+      "variant": 3
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-4-dev.img.zst",
+      "compressed_sha256": "5e0987e1e0eda613dc3b60bd9088fcef50de6db184e8891c8ec3303b4ee2620b",
+      "compressed_size_bytes": 1109240,
+      "image": "common-knowledge-0.1.0-variant-4-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-4-dev.MANIFEST.SHA256",
+      "manifest_sha256": "20e6019529e56ee3e143930c8c35779aa2c02aefe401919427b2fd2146b4cb65",
+      "sha256": "c02f07e082f00fb4aa4c6e22c62da7b60a06f894f4ba425c0d00cc7b749b63c8",
+      "variant": 4
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-5-dev.img.zst",
+      "compressed_sha256": "67cefa6dff82114d3e8c93a11472db4b601d2b784097e759c477710c3199e924",
+      "compressed_size_bytes": 1109238,
+      "image": "common-knowledge-0.1.0-variant-5-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-5-dev.MANIFEST.SHA256",
+      "manifest_sha256": "a765b6807058300c22fc8e79586a3b9bc14af68e495e30a6fe86790112ec9b13",
+      "sha256": "3991fea78c10a743aaff3a14cdd837e726ffa8d797d819a6122abb1e8f7b45c6",
+      "variant": 5
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-6-dev.img.zst",
+      "compressed_sha256": "3c0412d79c2289ba663a7e8a3f7c38c7f65e8aa8f52f7aceb4e96e0ee9d2741f",
+      "compressed_size_bytes": 1109240,
+      "image": "common-knowledge-0.1.0-variant-6-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-6-dev.MANIFEST.SHA256",
+      "manifest_sha256": "70d27b1e9b82a57cc95e94316d1e3370c682d23d46b172a05e401c7950242b2d",
+      "sha256": "17f589b502be65971480506288a1911baf32871ffd83e8a9635c22513f989369",
+      "variant": 6
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-7-dev.img.zst",
+      "compressed_sha256": "ac4d5876e0550e2673328d973a702951d9a5c3d6d4986dfedadf6d4f46723e03",
+      "compressed_size_bytes": 1109238,
+      "image": "common-knowledge-0.1.0-variant-7-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-7-dev.MANIFEST.SHA256",
+      "manifest_sha256": "e14287d626b1e670751cd3213eb627d83bb14d5a20e5fb4f23a1d0eb49d19051",
+      "sha256": "cdda585d7c8fa5656418fd8e626f03af674a7906aae2e76c8661cf20aad98e96",
+      "variant": 7
+    },
+    {
+      "compressed": "common-knowledge-0.1.0-variant-8-dev.img.zst",
+      "compressed_sha256": "258eca46e254791bd22307cdb4a073a6f072a8a5288b0021017c0b97d62515f0",
+      "compressed_size_bytes": 1109237,
+      "image": "common-knowledge-0.1.0-variant-8-dev.img",
+      "image_size_bytes": 268435456,
+      "manifest": "common-knowledge-0.1.0-variant-8-dev.MANIFEST.SHA256",
+      "manifest_sha256": "a97ff34b75a6146113b7bc80250be8057aafccc8fd58e28101beb318719d9194",
+      "sha256": "31abd555f0f1c3df59159db59f87cd46533c58956550491bf660ec7a8334fcbb",
+      "variant": 8
+    }
+  ],
+  "pdf_count_per_core_build": 38,
+  "profile": "dev",
+  "raw_images_retained": false,
+  "reproduced": true,
+  "scope": "Development profile only; no third-party cargo; not a sample/full or release approval",
+  "source_date_epoch": 1793404800,
+  "variants": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "version": "0.1.0"
+}

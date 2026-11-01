@@ -1,0 +1,17 @@
+data_id: census_lep_2025
+labels_id: census_acs_2025_labels
+language_variables:
+  es: B16001_005
+  zh-Hans: B16001_077
+  zh-Hant: B16001_077
+  vi: B16001_089
+  tl: B16001_101
+  ko: B16001_083
+  ar: B16001_107
+  ru: B16001_029
+  ht: B16001_011
+  pt: B16001_017
+  fr: B16001_008
+  fa: B16001_044
+  pl: B16001_032
+  hi: B16001_050

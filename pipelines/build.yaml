@@ -1,0 +1,5 @@
+medical_pdf_jobs: 1
+sample:
+  state: RI
+  state_fips: "44"
+  osm_id: geofabrik_ri

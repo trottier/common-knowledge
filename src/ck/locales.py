@@ -25,6 +25,7 @@ class Edition(Model):
         min_length=3,
         max_length=3,
     )
+    open_picture_labels: list[Text] = Field(default_factory=list)
 
 
 def edition_for(root: Path, language: Language, config: Configuration) -> Edition:
@@ -33,6 +34,8 @@ def edition_for(root: Path, language: Language, config: Configuration) -> Editio
         raise ValueError(f"Missing unreviewed-translation footer: {language.code}")
     if set(edition.rally_labels) != set(config.defaults.rally_point.rule):
         raise ValueError(f"Rally labels do not match the canonical rules: {language.code}")
+    if language.status != "stub" and len(edition.open_picture_labels) != 4:
+        raise ValueError(f"Full card needs four how-to-open pictures: {language.code}")
     if any(character in edition.translation_footer for character in "<>\r\n"):
         raise ValueError("Translation footer must be plain single-line text")
     return edition

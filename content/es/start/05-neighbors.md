@@ -3,7 +3,7 @@ title: Reunirse con los vecinos
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/05-neighbors.md": "ef2d717902cf184e10c504ec52d1fd59c876a1c804edbc324d42eb8564522c9e"}
+source_inputs: {"content/en/start/05-neighbors.md": "383c9184c671a5b2b25d4bdae0b98471953151546fa39f1df716a6a55337a001"}
 review_required: []
 ---
 
@@ -42,7 +42,3 @@ Lean en voz alta este guion propuesto. [@project_spec]
 
 No publiquen datos médicos privados ni digan que un refugio está abierto sin confirmarlo.
 [[VERIFY: probar duración, consentimiento, accesibilidad y el guion propuesto.]]
-
-## Día nacional del barrio
-
-{{ defaults.block_day.date }}, a las {{ defaults.block_day.time_local }}, hora local. [@project_spec]

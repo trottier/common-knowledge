@@ -1,7 +1,8 @@
 # Common Knowledge
 
 Common Knowledge is a proposed read-only emergency USB drive for every U.S.
-household. Every drive carries the same core, with eight randomly distributed
+household. The USB-C drive has a whistle and compass built into its body and
+is attached to a printed card. USB-A-only devices use an adapter. Every drive carries the same core, with eight randomly distributed
 variants adding reference material. The core is designed to open on a phone
 without internet, an app store or advance setup.
 
@@ -11,24 +12,40 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 ## Current state
 
-Work-order steps 1–7 are implemented: repository structure, licenses, governance,
-a pinned Python 3.12/uv container, shared configuration, strict validation and
-`ck coverage`, and offline phone/print PDF rendering with an RTL fixture.
-All fifteen editions have phone and print PDFs. English and Spanish contain the
-full guide, card, tags and variant explanation; the other thirteen are quick starts.
-Spanish and the quick starts carry unreviewed machine-translation notices.
-All thirteen English sections, the card, tags and variant guide are drafts with
-explicit source, safety-review and device-test markers. A development FAT32 image
-has been built and verified. Full images remain blocked by unconfirmed inputs, measured
-capacity and required human reviews.
-The package version identifies development work; v0.1.0 has not been released
-or approved for use. Unconfirmed release values remain explicit VERIFY markers.
+The repository includes shared configuration, all fifteen document editions,
+source verification, capacity planning, FAT32 assembly, and pipelines for the
+atlas, public places, Android maps, reference archives, medical PDFs, local LLM,
+imported media and library collections. CI checks the development image, native
+atlas renderer and browser interfaces. English is a draft; Spanish and the
+thirteen quick starts are unreviewed machine translations.
+
+Measured development work includes a matching pair of 158-article medical PDF
+packs, a complete WikEM archive rebuilt from an offline source bundle, and a
+strictly audited Simple English Wikipedia archive. Frozen WikEM, Wikibooks and
+Wikivoyage pairs also match; see [archive checkpoints](docs/archive-freeze.md).
+Forty byte-identical Ready.gov guides cover eleven selected editions under the
+publisher's unchanged-copy terms; see [official guides](docs/official-guides.md).
+The corrected national point
+imports match across 254,873 places and 3,235 counties in 56 jurisdictions.
+Earlier atlas/directory sets used a source snapshot missing Caribbean OSM places;
+corrected descendant PDFs and final map repeats remain in progress. The five
+territory map pairs match under the repaired converter recipe. See
+[territory coverage](docs/territory-source-coverage.md),
+[reference archives](docs/reference-collections.md), and
+[source preservation](docs/source-bundles.md) for the evidence and its limits.
+
+**v0.1.0 is incomplete and has not been released or approved for use.** Full
+images remain blocked by unfinished catalog/library coverage, confirmed input
+and asset rights, measured usable capacity, named human content review and
+physical device tests. The sample/full commands now include input-generation orchestration; full-profile
+execution and final image reproducibility still need validation. The version identifies development work. Unconfirmed
+values remain explicit VERIFY markers, and releases fail while any remain.
 
 The complete specification and work order are in [AGENTS.md](AGENTS.md).
 [CLAUDE.md](CLAUDE.md) carries the same instructions.
 [docs/roadmap.md](docs/roadmap.md) tracks the remaining steps.
 
-## Run the scaffold
+## Build and check
 
 Install Docker with a running Linux container engine. From this directory:
 
@@ -73,11 +90,11 @@ JavaScript tooling uses Bun where compatible with the specified rendering stack.
 | `catalog/` | Pinned external sources and license proofs (step 5) |
 | `content/` | Original Markdown and citations |
 | `templates/`, `assets/icons/` | Document templates and original SVG pictograms |
-| `pipelines/` | Atlas, directory, maps, reference, AI and media generation |
+| `pipelines/` | Atlas, directory, maps, reference, local LLM and media generation |
 | `src/ck/` | Python CLI and build package |
 | `tests/` | Automated checks |
 | `docs/` | Project and build documentation |
-| `.github/workflows/` | CI and publishing workflows in later steps |
+| `.github/workflows/` | Development, sample, release and verification-site workflows |
 | `site/` | Generated verification site; ignored by git |
 
 ## Contribute and license

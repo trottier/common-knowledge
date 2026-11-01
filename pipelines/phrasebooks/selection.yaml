@@ -1,0 +1,17 @@
+# Titles come from the publishers' phrasebook indexes. Archive lookup and
+# source revision/license checks must succeed before any PDF is accepted.
+en: {source: wikivoyage_es_nopic, title: "Guía de inglés", source_language: es}
+es: {source: wikivoyage_en_nopic, title: "Spanish phrasebook", source_language: en}
+zh-Hans: {source: wikivoyage_en_nopic, title: "Chinese phrasebook", source_language: en}
+zh-Hant: {source: wikivoyage_en_nopic, title: "Chinese phrasebook", source_language: en}
+vi: {source: wikivoyage_en_nopic, title: "Vietnamese phrasebook", source_language: en}
+tl: {source: wikivoyage_en_nopic, title: "Tagalog phrasebook", source_language: en}
+ko: {source: wikivoyage_en_nopic, title: "Korean phrasebook", source_language: en}
+ar: {source: wikivoyage_en_nopic, title: "Arabic phrasebook", source_language: en}
+ru: {source: wikivoyage_en_nopic, title: "Russian phrasebook", source_language: en}
+ht: {source: wikivoyage_en_nopic, title: "Haitian Creole phrasebook", source_language: en}
+pt: {source: wikivoyage_en_nopic, title: "Portuguese phrasebook", source_language: en}
+fr: {source: wikivoyage_en_nopic, title: "French phrasebook", source_language: en}
+fa: {source: wikivoyage_en_nopic, title: "Persian phrasebook", source_language: en}
+pl: {source: wikivoyage_en_nopic, title: "Polish phrasebook", source_language: en}
+hi: {source: wikivoyage_en_nopic, title: "Hindi phrasebook", source_language: en}

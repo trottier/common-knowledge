@@ -1,6 +1,5 @@
 """Build a complete, checked drive tree using exact catalog bytes."""
 
-import hashlib
 import importlib.metadata
 import json
 import os
@@ -11,12 +10,12 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote, urlparse
 
-from ck.catalog import Item, Modules, attributions, load_catalog, safe_path
+from ck.catalog import Item, Topics, attributions, load_catalog, safe_path
 from ck.config import Configuration
 from ck.core import verify_core
 from ck.drive_safety import validate_tree
 from ck.fetch import digest, fetch
-from ck.planner import plan_variants, selected
+from ck.planner import plan_variants
 from ck.render import epoch_for
 from ck.review import require_release_ready
 
@@ -34,15 +33,13 @@ def core_size(core: Path) -> int:
 
 def destination(item: Item, config: Configuration, number: int) -> str:
     dest = item.dest
-    if "{module}" in dest:
-        if not isinstance(item.placement, Modules):
-            raise ValueError(f"{item.id}: module destination requires module placement")
-        choices = sorted(
-            set(item.placement.modules) & set(config.variants.variants[number].modules)
-        )
+    if "{topic}" in dest:
+        if not isinstance(item.placement, Topics):
+            raise ValueError(f"{item.id}: topic destination requires topic placement")
+        choices = sorted(set(item.placement.topics) & set(config.variants.variants[number].topics))
         if not choices:
-            raise ValueError(f"{item.id}: no matching module")
-        dest = dest.replace("{module}", choices[0])
+            raise ValueError(f"{item.id}: no matching topic")
+        dest = dest.replace("{topic}", choices[0])
     return dest
 
 
@@ -118,29 +115,22 @@ def _copy_core(root: Path, config: Configuration, core: Path, tree: Path) -> lis
             target.write_text(text, encoding="utf-8")
     if not editions:
         raise ValueError("No rendered language editions found")
-    for name in ("1_START", "4_PHONE_PACK"):
-        shutil.copytree(tree / name, tree / "BACKUP" / name)
     return editions
 
 
-def _place_generated(item: Item, generated: Path, tree: Path, dest: str) -> None:
+def _place_generated(
+    item: Item, generated: Path, tree: Path, dest: str, catalog: dict[str, Item]
+) -> str:
+    from ck.generated import verified_generated_files
+
     directory = generated / item.id
-    metadata = json.loads((directory / "generation.json").read_text())
-    encoded = json.dumps(metadata, sort_keys=True, separators=(",", ":")).encode()
-    if hashlib.sha256(encoded).hexdigest() != item.sha256:
-        raise ValueError(f"Generated manifest checksum mismatch: {item.id}")
-    if metadata["pipeline_version"] != item.pipeline_version:
-        raise ValueError(f"Pipeline version mismatch: {item.id}")
-    if sum(entry["size_bytes"] for entry in metadata["files"]) != item.size_bytes:
-        raise ValueError(f"Generated size mismatch: {item.id}")
+    metadata, payloads = verified_generated_files(item, directory, catalog)
     for entry in metadata["files"]:
         relative = str(safe_path(entry["path"]))
         target = dest + relative if dest.endswith("/") else dest
         safe_path(target)
-        source = directory / "files" / relative
-        if source.stat().st_size != entry["size_bytes"]:
-            raise ValueError(f"Generated file size mismatch: {relative}")
-        copy_exact(source, tree / target, entry["sha256"])
+        copy_exact(payloads[relative], tree / target, entry["sha256"])
+    return metadata.get("tool_versions", "")
 
 
 def assemble(
@@ -176,13 +166,14 @@ def assemble(
         tree = Path(temporary) / "tree"
         tree.mkdir()
         editions = _copy_core(root, config, core, tree)
-        placed = {
-            key: item for key, item in items.items() if selected(item, config, number, profile)
-        }
+        placed = {key: items[key] for key in plan.items}
+        generated_tools = []
         for item in placed.values():
             dest = destination(item, config, number)
             if item.family == "generated":
-                _place_generated(item, generated, tree, dest)
+                tools = _place_generated(item, generated, tree, dest, items)
+                if tools:
+                    generated_tools += [f"Generated item: {item.id}", tools]
             else:
                 source = cache / item.sha256
                 if not source.exists() and not allow_download:
@@ -192,7 +183,30 @@ def assemble(
                 relative = dest + filename if dest.endswith("/") else dest
                 safe_path(relative)
                 copy_exact(source, tree / relative, item.sha256)
+        for name in ("1_START", "4_PHONE_PACK"):
+            shutil.copytree(tree / name, tree / "BACKUP" / name)
         attributions(placed, tree / "7_LAPTOP/THIRD_PARTY.txt")
+        mesh_apps = [
+            item
+            for item in placed.values()
+            if item.family == "apk" and item.dest.startswith("8_MESH_CHAT/")
+        ]
+        if mesh_apps:
+            notice = tree / "8_MESH_CHAT/SOURCE.TXT"
+            notice.parent.mkdir(parents=True, exist_ok=True)
+            notice.write_text(
+                "CORRESPONDING APPLICATION SOURCE\n\n"
+                "Source archives accompany the GitHub release. "
+                "These addresses require internet.\n\n"
+                + "\n\n".join(
+                    f"{item.title}\nVersion: {item.version}\nLicense: {item.license}\n"
+                    f"APK SHA-256: {item.sha256}\nSigner SHA-256: {item.signer_cert_sha256}\n"
+                    f"Source: {item.source_url}\nAttribution: {item.attribution}"
+                    for item in sorted(mesh_apps, key=lambda item: item.id)
+                )
+                + "\n",
+                encoding="utf-8",
+            )
         readme = ["COMMON KNOWLEDGE", f"Version {config.build.version}; variant {number}", ""]
         if profile != "full":
             readme += ["DEVELOPMENT BUILD — NOT APPROVED FOR EMERGENCY DISTRIBUTION", ""]
@@ -223,6 +237,9 @@ def assemble(
             "",
             "System tools:",
             tool_versions.read_text(),
+            "",
+            "Generated content tools:",
+            *generated_tools,
         ]
         (tree / "VERIFY.TXT").write_text("\n".join(provenance), encoding="utf-8")
         write_manifest(tree)

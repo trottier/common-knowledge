@@ -3,170 +3,1707 @@
     "id": "geofabrik_us",
     "family": "geodata",
     "title": "Geofabrik U.S. OSM extract",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://download.geofabrik.de/north-america/us-261029.osm.pbf",
+    "version": "2026-10-29T21:21:26Z / us-261029.osm.pbf",
+    "size_bytes": 12238337062,
+    "sha256": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; U.S. extract provided by Geofabrik",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
       "full"
-    ]
+    ],
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us-261029.osm.pbf.md5",
+    "review": "[[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; Pacific territories require separate source coverage]]"
   },
   {
     "id": "census_counties",
     "family": "geodata",
     "title": "Census cartographic county boundaries",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip",
+    "version": "2025",
+    "size_bytes": 11758981,
+    "sha256": "aa976c00b181939755d0da757f4c7c2dc0103c3b3b4530fb2a91c2bb62fc777c",
+    "license": "US-PD",
+    "attribution": "U.S. Census Bureau, 2025 cartographic boundary files",
+    "license_proof_url": "https://meta.geo.census.gov/data/existing/decennial/GEO/CPMB/boundary/2025/19115/shp/cb_2025_us_county_500k.shp.iso.xml",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
-  },
-  {
-    "id": "census_places",
-    "family": "geodata",
-    "title": "Census places or urban areas for atlas insets",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "hub_only",
-    "dest": "build/inputs/",
-    "profiles": [
-      "full"
-    ]
+    ],
+    "review": "[[VERIFY: human pin review; cartographic boundaries are display-only and must not be used for county assignment or detailed insets]]"
   },
   {
     "id": "nces_schools",
     "family": "geodata",
     "title": "NCES EDGE public-school locations",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2425.zip",
+    "version": "2024-2025",
+    "size_bytes": 30448565,
+    "sha256": "9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288",
+    "license": "US-PD",
+    "attribution": "U.S. Department of Education, NCES EDGE",
+    "license_proof_url": "https://www.ed.gov/about/contact-us/faqs",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]"
   },
   {
     "id": "imls_libraries",
     "family": "geodata",
     "title": "IMLS Public Libraries Survey outlets",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://www.imls.gov/sites/default/files/2026-06/pls_fy2024_csv.zip",
+    "version": "FY2024",
+    "size_bytes": 3571467,
+    "sha256": "6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7",
+    "license": "US-PD",
+    "attribution": "Institute of Museum and Library Services, FY 2024 Public Libraries Survey",
+    "license_proof_url": "https://www.imls.gov/research-evaluation/surveys/public-libraries-survey-pls",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]"
   },
   {
     "id": "fcc_stations",
     "family": "geodata",
-    "title": "FCC broadcast licensing data",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "FCC LMS facility table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/facility.zip",
+    "version": "LMS 2026-10-31",
+    "size_bytes": 9869171,
+    "sha256": "5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378",
+    "license": "US-PD",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
   },
   {
     "id": "noaa_transmitters",
     "family": "geodata",
     "title": "NWS NOAA Weather Radio transmitter list",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://www.weather.gov/source/nwr/JS/ccl-data.js",
+    "version": "2026-10-30T23:25:27Z",
+    "size_bytes": 754907,
+    "sha256": "e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22",
+    "license": "US-PD",
+    "attribution": "National Weather Service NOAA Weather Radio station data; public domain",
+    "license_proof_url": "https://www.weather.gov/disclaimer",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human pin review and immutable archive availability; strip operational status fields]]"
   },
   {
     "id": "fema_risk",
     "family": "geodata",
-    "title": "FEMA National Risk Index county table",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "FEMA National Risk Index v1.20 county table and hazard dictionary",
+    "url": "https://www.fema.gov/about/reports-and-data/openfema/nri/v120/NRI_Table_Counties.zip",
+    "version": "1.20 / December 2025",
+    "size_bytes": 24966535,
+    "sha256": "b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072",
+    "license": "US-PD",
+    "attribution": "FEMA National Risk Index; county ratings and hazard dictionary",
+    "license_proof_url": "https://catalog.data.gov/dataset/national-risk-index-nri-data",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
   },
   {
     "id": "state_emergency_agencies",
     "family": "geodata",
-    "title": "Official federal list of state and territory emergency agencies",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "title": "USAGov state and territory emergency agency links",
+    "url": "https://www.usa.gov/state-emergency-management",
+    "version": "Thu, 29 Oct 2026 13:21:36 GMT",
+    "size_bytes": 43097,
+    "sha256": "494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808",
+    "license": "US-PD",
+    "attribution": "USAGov, U.S. General Services Administration",
+    "license_proof_url": "https://www.usa.gov/government-copyright",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]"
   },
   {
     "id": "protomaps_us",
-    "family": "geodata",
-    "title": "Protomaps U.S. PMTiles basemap extract",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "family": "generated",
+    "title": "Per-jurisdiction Protomaps basemaps for every national atlas viewport",
+    "version": "2026-10-30 source planet",
+    "size_bytes": 10543561690,
+    "sha256": "1c3356889dcc37845889be58ea3cb6ca279a175a792b5ed9d1167d2428c3589e",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; Protomaps; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "hub_only",
     "dest": "build/inputs/",
     "profiles": [
       "full"
-    ]
+    ],
+    "inputs": [
+      "protomaps_planet",
+      "pmtiles_x64",
+      "census_county_analysis",
+      "directory_points",
+      "census_places_ak",
+      "census_places_al",
+      "census_places_ar",
+      "census_places_as",
+      "census_places_az",
+      "census_places_ca",
+      "census_places_co",
+      "census_places_ct",
+      "census_places_dc",
+      "census_places_de",
+      "census_places_fl",
+      "census_places_ga",
+      "census_places_gu",
+      "census_places_hi",
+      "census_places_ia",
+      "census_places_id",
+      "census_places_il",
+      "census_places_in",
+      "census_places_ks",
+      "census_places_ky",
+      "census_places_la",
+      "census_places_ma",
+      "census_places_md",
+      "census_places_me",
+      "census_places_mi",
+      "census_places_mn",
+      "census_places_mo",
+      "census_places_mp",
+      "census_places_ms",
+      "census_places_mt",
+      "census_places_nc",
+      "census_places_nd",
+      "census_places_ne",
+      "census_places_nh",
+      "census_places_nj",
+      "census_places_nm",
+      "census_places_nv",
+      "census_places_ny",
+      "census_places_oh",
+      "census_places_ok",
+      "census_places_or",
+      "census_places_pa",
+      "census_places_pr",
+      "census_places_ri",
+      "census_places_sc",
+      "census_places_sd",
+      "census_places_tn",
+      "census_places_tx",
+      "census_places_ut",
+      "census_places_va",
+      "census_places_vi",
+      "census_places_vt",
+      "census_places_wa",
+      "census_places_wi",
+      "census_places_wv",
+      "census_places_wy"
+    ],
+    "pipeline_version": "pmtiles-extract-v1-7819f14aecb6a5ce9f299f8a737c7fbdc15be4f1cf0a91e8708e9bafb79320a2",
+    "review": "[[VERIFY: human review of generated basemap pins after national extraction and final recipe freeze]]"
+  },
+  {
+    "id": "geofabrik_ri",
+    "url": "https://download.geofabrik.de/north-america/us/rhode-island-261029.osm.pbf",
+    "size_bytes": 52514407,
+    "sha256": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+    "family": "geodata",
+    "title": "Geofabrik Rhode Island OSM extract",
+    "version": "2026-10-29",
+    "license": "ODbL-1.0",
+    "license_proof_url": "https://download.geofabrik.de/north-america/us/rhode-island.html",
+    "attribution": "\u00a9 OpenStreetMap contributors; extract by Geofabrik",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "sample"
+    ],
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us/rhode-island-261029.osm.pbf.md5",
+    "review": "[[VERIFY: human review of SHA-256; downloaded bytes match publisher MD5]]"
+  },
+  {
+    "id": "census_county_analysis",
+    "family": "geodata",
+    "title": "Census TIGER Line counties for spatial assignment",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
+    "version": "2025",
+    "size_bytes": 83989800,
+    "sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+    "license": "US-PD",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of downloaded archive and computed SHA-256]]"
+  },
+  {
+    "id": "census_states",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "title": "Census state FIPS codes and names",
+    "url": "https://www2.census.gov/geo/docs/reference/state.txt",
+    "version": "Wed, 13 Mar 2013 18:26:28 GMT",
+    "size_bytes": 1485,
+    "sha256": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0",
+    "license": "US-PD",
+    "attribution": "U.S. Census Bureau",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of parsed records, SHA-256 pin and immutable archive availability]]"
+  },
+  {
+    "id": "census_places_ri",
+    "family": "geodata",
+    "title": "Census 2025 Rhode Island places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_44_place.zip",
+    "version": "2025",
+    "size_bytes": 292174,
+    "sha256": "520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of HTTPS download and computed SHA-256]]"
+  },
+  {
+    "id": "protomaps_planet",
+    "family": "geodata",
+    "title": "Protomaps v4 daily planet source for verified extracts",
+    "url": "https://build.protomaps.com/20261030.pmtiles",
+    "version": "4.15.2 / 20261030.pmtiles",
+    "size_bytes": 139202898553,
+    "sha256": "6956cdf4b143984a31e060faaa32848c74a71903135b5a7f8989c218ece8795d",
+    "license": "ODbL-1.0",
+    "license_proof_url": "https://docs.protomaps.com/basemaps/downloads",
+    "attribution": "\u00a9 OpenStreetMap contributors; Protomaps basemap produced work",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://build-metadata.protomaps.dev/builds.json",
+    "review": "[[VERIFY: review the SHA-256 cross-checked against publisher BLAKE3 and preserve this daily snapshot at an immutable URL before release]]",
+    "publisher_blake3": "b936e54942f13e0d5e3921409b992348a61f33953e4a6609dbef5aeb52c8f917"
+  },
+  {
+    "id": "osm_ri_turn_restriction",
+    "family": "geodata",
+    "title": "OSM source supplement for a missing Rhode Island restriction member",
+    "url": "https://api.openstreetmap.org/api/0.6/way/722137578/full",
+    "version": "Way 722137578 version 2; node versions pinned in the full XML snapshot",
+    "size_bytes": 1056,
+    "sha256": "5b9027dcd715c8e174404941b5d597297468eeb8008ead41a9caa1a70059ca98",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS snapshot pin and preserve the full-node snapshot at an immutable URL]]"
+  },
+  {
+    "id": "fcc_locations",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 30172822,
+    "sha256": "5f3e77ad951caca6b38b939b65b4d5248dff28de2613b2d2826c65158d4d3637",
+    "title": "FCC LMS app_location table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/app_location.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "fcc_service_codes",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 983,
+    "sha256": "347688dc1b76559622ccad04c97686733b697c0ae3f2fe18befca03ed65d8df0",
+    "title": "FCC LMS lkp_service_code table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/lkp_service_code.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "fcc_license_versions",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 63146475,
+    "sha256": "5a650c26f48ab250b64800ebc1f5772915959f3cccbf544fad6c794e935f48c3",
+    "title": "FCC LMS license_filing_version table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/license_filing_version.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "fcc_facility_statuses",
+    "family": "geodata",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "size_bytes": 622,
+    "sha256": "630651fea8a0fa0ea9e7a1582452076f8401b0dbca7ce8b0e0b0c1b1875915af",
+    "title": "FCC LMS lkp_facility_status table",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/lkp_facility_status.zip",
+    "version": "LMS 2026-10-31",
+    "attribution": "Federal Communications Commission, Licensing and Management System",
+    "license_proof_url": "https://catalog.data.gov/dataset/lms-public-database-files",
+    "license": "US-PD",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher snapshot, ZIP contents and computed SHA-256; preserve mutable inputs at an immutable URL]]"
+  },
+  {
+    "id": "census_lep_2025",
+    "family": "geodata",
+    "title": "ACS 2025 one-year B16001 language and English proficiency estimates",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/data/1YRData/acsdt1y2025-b16001.dat",
+    "version": "2025 ACS 1-year / released 2026-10-29",
+    "size_bytes": 874578,
+    "sha256": "605f0cda05aadf5dc658f3540681ef6a94ad4c4e6f3658563fe5f4e776563fd8",
+    "license": "CC0-1.0",
+    "attribution": "U.S. Census Bureau, 2025 American Community Survey 1-Year Estimates, table B16001",
+    "license_proof_url": "https://api.census.gov/data/2025/acs/acs1.json",
+    "placement": "hub_only",
+    "dest": "build/inputs/languages/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]"
+  },
+  {
+    "id": "census_acs_2025_labels",
+    "family": "geodata",
+    "title": "ACS 2025 one-year table labels and universes",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2025/table-based-SF/documentation/ACS20251YR_Table_Shells.txt",
+    "version": "2025 ACS 1-year / released 2026-10-29",
+    "size_bytes": 7242343,
+    "sha256": "ff33ade0dad19e66d86027604bcef5f41bbfe1a77ac494735a9f36d693491799",
+    "license": "CC0-1.0",
+    "attribution": "U.S. Census Bureau, 2025 American Community Survey 1-Year Estimates, table B16001",
+    "license_proof_url": "https://api.census.gov/data/2025/acs/acs1.json",
+    "placement": "hub_only",
+    "dest": "build/inputs/languages/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human review of publisher data, computed SHA-256 and edition-selection policy; combined categories cannot establish a complete individual-language ranking]]"
+  },
+  {
+    "id": "geofabrik_oceania",
+    "family": "geodata",
+    "title": "Geofabrik Australia/Oceania source for U.S. Pacific territory outputs",
+    "url": "https://download.geofabrik.de/australia-oceania-261029.osm.pbf",
+    "version": "2026-10-29T21:21:26Z / australia-oceania-261029.osm.pbf",
+    "size_bytes": 1578680529,
+    "sha256": "c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; regional extract provided by Geofabrik",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "checksum_source_url": "https://download.geofabrik.de/australia-oceania-261029.osm.pbf.md5",
+    "review": "[[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; clip output to Census territory boundaries]]"
+  },
+  {
+    "id": "census_places_al",
+    "family": "geodata",
+    "title": "Census 2025 AL places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_01_place.zip",
+    "version": "2025",
+    "size_bytes": 5250692,
+    "sha256": "502d0e2e0266e4e73a00582b5b82252e4484f6cac61c0dbe7df85d9f5a30a144",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ak",
+    "family": "geodata",
+    "title": "Census 2025 AK places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_02_place.zip",
+    "version": "2025",
+    "size_bytes": 2846788,
+    "sha256": "582c37f2fe680af15d7508e222153d5aa163867f47f2d96fbacd05695b0d985d",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_az",
+    "family": "geodata",
+    "title": "Census 2025 AZ places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_04_place.zip",
+    "version": "2025",
+    "size_bytes": 2821601,
+    "sha256": "7c52a87725285cd6e6655daf6cf733c37942256bc7e190ac01ddb174a0acd330",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ar",
+    "family": "geodata",
+    "title": "Census 2025 AR places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_05_place.zip",
+    "version": "2025",
+    "size_bytes": 2444799,
+    "sha256": "348061c5f3cac0d83394ac7c1cfb0bff9ba891061429aa46d8abbdec83092999",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ca",
+    "family": "geodata",
+    "title": "Census 2025 CA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip",
+    "version": "2025",
+    "size_bytes": 9885068,
+    "sha256": "2b59dc5d54c69c7a451795401fc2a1c1c68b172f1d912d3486080e04a83e23e8",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_co",
+    "family": "geodata",
+    "title": "Census 2025 CO places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_08_place.zip",
+    "version": "2025",
+    "size_bytes": 2791333,
+    "sha256": "e0072e2f1c049e53d598119014e6bc93f82a0a02082b3604d81b0a8c3e8b043c",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ct",
+    "family": "geodata",
+    "title": "Census 2025 CT places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_09_place.zip",
+    "version": "2025",
+    "size_bytes": 886904,
+    "sha256": "5766992fb77774fd47a2b7868747b6007a5cbbdeaa04e793506aee3faa13d52e",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_de",
+    "family": "geodata",
+    "title": "Census 2025 DE places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_10_place.zip",
+    "version": "2025",
+    "size_bytes": 454114,
+    "sha256": "638eda256e3785b8653ec776787866e6eda890a9d9bf2653c6fcc6aeba6cebb8",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_dc",
+    "family": "geodata",
+    "title": "Census 2025 DC places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_11_place.zip",
+    "version": "2025",
+    "size_bytes": 86364,
+    "sha256": "1ac8c0230c3e656bf79d9ee3a52f4d48f97626fce5e4f6c7701bca6f948b9623",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_fl",
+    "family": "geodata",
+    "title": "Census 2025 FL places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_12_place.zip",
+    "version": "2025",
+    "size_bytes": 7068141,
+    "sha256": "4394a80089284477cf79daefb754afd7e9f90683415d3398376e5c2152960876",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ga",
+    "family": "geodata",
+    "title": "Census 2025 GA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_13_place.zip",
+    "version": "2025",
+    "size_bytes": 5220272,
+    "sha256": "85af23730c518c008e6869ce63dfa02d17ae61de601dd204b880ff43f5d31ff5",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_hi",
+    "family": "geodata",
+    "title": "Census 2025 HI places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_15_place.zip",
+    "version": "2025",
+    "size_bytes": 758840,
+    "sha256": "38018cb6a3e66c2f0174056903d0e8c6c2d18fa5c15b0014d059f2bead42f65b",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_id",
+    "family": "geodata",
+    "title": "Census 2025 ID places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_16_place.zip",
+    "version": "2025",
+    "size_bytes": 1052099,
+    "sha256": "d0202acb86094eab323a1cd2deef23e12b4fa9e29d8d77bcfabb862235f847d4",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_il",
+    "family": "geodata",
+    "title": "Census 2025 IL places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_17_place.zip",
+    "version": "2025",
+    "size_bytes": 6140463,
+    "sha256": "5c2ce6d7ca6a5045ea46563898c168a6e6b259d7ad116c6f27148ce3a40822b3",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_in",
+    "family": "geodata",
+    "title": "Census 2025 IN places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_18_place.zip",
+    "version": "2025",
+    "size_bytes": 2425860,
+    "sha256": "2428563ed4db0a74b2041dec577e4230103329eb2875ac1827076bf477f82201",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ia",
+    "family": "geodata",
+    "title": "Census 2025 IA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_19_place.zip",
+    "version": "2025",
+    "size_bytes": 1895750,
+    "sha256": "b945d74f84c7fd20d1e77cd49522cc1ea542f16652987171b10616f15875ce21",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ks",
+    "family": "geodata",
+    "title": "Census 2025 KS places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_20_place.zip",
+    "version": "2025",
+    "size_bytes": 1675287,
+    "sha256": "0cdaf30d567ebbb8f75421200a6e3345728313cffd791567cce308fdac047583",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ky",
+    "family": "geodata",
+    "title": "Census 2025 KY places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_21_place.zip",
+    "version": "2025",
+    "size_bytes": 2768605,
+    "sha256": "40d09b3263922786f5970b7e55dfb8e7b1a97c74a62efacab4e070e8738e9e64",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_la",
+    "family": "geodata",
+    "title": "Census 2025 LA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_22_place.zip",
+    "version": "2025",
+    "size_bytes": 1948019,
+    "sha256": "982330b7333d268b26ff60666b3ad4b683b95a1db7cef9053d39bfb580c6dcfd",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_me",
+    "family": "geodata",
+    "title": "Census 2025 ME places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_23_place.zip",
+    "version": "2025",
+    "size_bytes": 682536,
+    "sha256": "2bc5461577f18dd3e89ac5d314c0ce2fc8def3de3a3f633a35423488a8aa0ce5",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_md",
+    "family": "geodata",
+    "title": "Census 2025 MD places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_24_place.zip",
+    "version": "2025",
+    "size_bytes": 2730658,
+    "sha256": "e984dd58cc06b01363958221a661e1eef89b3daa328ace515f1daee0da4594cc",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ma",
+    "family": "geodata",
+    "title": "Census 2025 MA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_25_place.zip",
+    "version": "2025",
+    "size_bytes": 1191390,
+    "sha256": "950f7d0a669caf721f770d1cc58883560b1cf84f5d7be845e6e3d05a855c86fa",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_mi",
+    "family": "geodata",
+    "title": "Census 2025 MI places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_26_place.zip",
+    "version": "2025",
+    "size_bytes": 1484329,
+    "sha256": "91cd708b8f9809a50ebed360fe7242969ba357a542481da81d9edc5821d35d3b",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_mn",
+    "family": "geodata",
+    "title": "Census 2025 MN places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_27_place.zip",
+    "version": "2025",
+    "size_bytes": 2556050,
+    "sha256": "60d7e34ecbf7bf225b4b29d908acddcd6a9e05c39ae505cdb83791e3dfd81873",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ms",
+    "family": "geodata",
+    "title": "Census 2025 MS places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_28_place.zip",
+    "version": "2025",
+    "size_bytes": 1510851,
+    "sha256": "08aa0b23ab4d88f3dac2891fd82c2f6a67ea90816c14111c0147de85dae5f3e7",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_mo",
+    "family": "geodata",
+    "title": "Census 2025 MO places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_29_place.zip",
+    "version": "2025",
+    "size_bytes": 3082129,
+    "sha256": "7182d92a73ef3167714d66ef192fce374636c549fb1d4e635af9580dc49cddf1",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_mt",
+    "family": "geodata",
+    "title": "Census 2025 MT places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_30_place.zip",
+    "version": "2025",
+    "size_bytes": 2262510,
+    "sha256": "2a39433bd9e5a81a683e39ae9bbb914c9ce63c50a92855ddeee8c0ae02b63f74",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ne",
+    "family": "geodata",
+    "title": "Census 2025 NE places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_31_place.zip",
+    "version": "2025",
+    "size_bytes": 826250,
+    "sha256": "aa01fa8c3dafcea27cbe6bd009f38eb774b4c765fd2e5b81701d69a534da16e0",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_nv",
+    "family": "geodata",
+    "title": "Census 2025 NV places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_32_place.zip",
+    "version": "2025",
+    "size_bytes": 848456,
+    "sha256": "9842a490c27930be50f19cbc21b0c623f16b6d1d40f2e4cb1b0b2b5c7b2f7d83",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_nh",
+    "family": "geodata",
+    "title": "Census 2025 NH places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_33_place.zip",
+    "version": "2025",
+    "size_bytes": 379207,
+    "sha256": "e5ccfa3bcca3899566dc5d4831ba3557779f53856bedffde393f824d0bcc44c7",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_nj",
+    "family": "geodata",
+    "title": "Census 2025 NJ places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_34_place.zip",
+    "version": "2025",
+    "size_bytes": 2939779,
+    "sha256": "28602a4302564a9eecf8e92f861fad6864d806581ee2ce8bea9997999f3e440e",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_nm",
+    "family": "geodata",
+    "title": "Census 2025 NM places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_35_place.zip",
+    "version": "2025",
+    "size_bytes": 2368303,
+    "sha256": "1cbbc3121c3aeb65c2eaa4371d30ceab09a7a6f4f066beee0a9f76077c42348e",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ny",
+    "family": "geodata",
+    "title": "Census 2025 NY places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_36_place.zip",
+    "version": "2025",
+    "size_bytes": 3380697,
+    "sha256": "4f667ef3a40f1569b58a37052e2464053436bd5e978b34ca333e8185a6a6808d",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_nc",
+    "family": "geodata",
+    "title": "Census 2025 NC places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_37_place.zip",
+    "version": "2025",
+    "size_bytes": 8497219,
+    "sha256": "c6b8dabd4c953bb44dd4201b34eae83dceeb880055e1c4efd00faa43c272ea79",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_nd",
+    "family": "geodata",
+    "title": "Census 2025 ND places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_38_place.zip",
+    "version": "2025",
+    "size_bytes": 537253,
+    "sha256": "bec89e2ff577b0717d31d58c33bcc54b36732822f6de8c32ccfd966f0527cea9",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_oh",
+    "family": "geodata",
+    "title": "Census 2025 OH places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_39_place.zip",
+    "version": "2025",
+    "size_bytes": 4069844,
+    "sha256": "6c4c280e539dadc21bedda385b1c7a4b3ee24998c774d1b7e0a49e0199b272e9",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ok",
+    "family": "geodata",
+    "title": "Census 2025 OK places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_40_place.zip",
+    "version": "2025",
+    "size_bytes": 2971163,
+    "sha256": "e9d840ae15b4c3e194427987a31f84ed685fe9d82ac8d3349986a99b18e365cb",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_or",
+    "family": "geodata",
+    "title": "Census 2025 OR places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_41_place.zip",
+    "version": "2025",
+    "size_bytes": 2364412,
+    "sha256": "d05814de06701cca35df9e160017cd11d5ffe43a2530a8fa7f4b3a521e9e1f0f",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_pa",
+    "family": "geodata",
+    "title": "Census 2025 PA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_42_place.zip",
+    "version": "2025",
+    "size_bytes": 4590506,
+    "sha256": "b9b8a25b906bc0c338cc4cfea45d8e5de12247a913cbd821b93368c55e2e9dc5",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_sc",
+    "family": "geodata",
+    "title": "Census 2025 SC places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_45_place.zip",
+    "version": "2025",
+    "size_bytes": 5279552,
+    "sha256": "f1a69f4a169b19ca69d09da21e157dfd6177c0959bec80352b0a7a0165885d68",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_sd",
+    "family": "geodata",
+    "title": "Census 2025 SD places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_46_place.zip",
+    "version": "2025",
+    "size_bytes": 817119,
+    "sha256": "050183397bec5bef01804ccd9f3ba4ec7d3f80edd27603a71160959af4fad0ef",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_tn",
+    "family": "geodata",
+    "title": "Census 2025 TN places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_47_place.zip",
+    "version": "2025",
+    "size_bytes": 5051239,
+    "sha256": "3f6d5ae04e8f1217a7d0be244d3a841345902d9d4def83b0a07d1fc75960cc8e",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_tx",
+    "family": "geodata",
+    "title": "Census 2025 TX places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_48_place.zip",
+    "version": "2025",
+    "size_bytes": 9782040,
+    "sha256": "5a0c4d49641f69028ee9f5c343bf09936ec00a378e5e6393115b106bab935e13",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_ut",
+    "family": "geodata",
+    "title": "Census 2025 UT places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_49_place.zip",
+    "version": "2025",
+    "size_bytes": 1652963,
+    "sha256": "3db4d3fc1d9ca4b7c6911b01079558bb13e89703933858247f0bc4ff75d9e3d9",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_vt",
+    "family": "geodata",
+    "title": "Census 2025 VT places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_50_place.zip",
+    "version": "2025",
+    "size_bytes": 596853,
+    "sha256": "6b932d7ab2aa279cac6e2ec713e0283d71f88661396df1630d85dc8eef5f58f5",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_va",
+    "family": "geodata",
+    "title": "Census 2025 VA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_51_place.zip",
+    "version": "2025",
+    "size_bytes": 3860419,
+    "sha256": "b2ce73226f4b3a0f0a60d7116e65f468cd94a739f30c345106ff1e292c57a1f5",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_wa",
+    "family": "geodata",
+    "title": "Census 2025 WA places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_53_place.zip",
+    "version": "2025",
+    "size_bytes": 2855604,
+    "sha256": "b99039759e33cf931175302da80de9bd8d284c384721d52efde34dfbef2b64f5",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_wv",
+    "family": "geodata",
+    "title": "Census 2025 WV places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_54_place.zip",
+    "version": "2025",
+    "size_bytes": 1642581,
+    "sha256": "756188b7c2187c2e7cb43867546e406e3236df360b0baa72b17db4af0fd4ecd2",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_wi",
+    "family": "geodata",
+    "title": "Census 2025 WI places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_55_place.zip",
+    "version": "2025",
+    "size_bytes": 3482721,
+    "sha256": "a48a36cae9450fe11916cb94bbf1054d0ebc6c878e18de7a7e27039ad6fc5763",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_wy",
+    "family": "geodata",
+    "title": "Census 2025 WY places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_56_place.zip",
+    "version": "2025",
+    "size_bytes": 904349,
+    "sha256": "3b077402b1090f9afed9662da7f70d66b791b01f61d8ac4b7032df2293715e96",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_as",
+    "family": "geodata",
+    "title": "Census 2025 AS places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_60_place.zip",
+    "version": "2025",
+    "size_bytes": 82335,
+    "sha256": "fc60deea78302bcb968bf28600b77f7a98db2dfe15bee2ff00cf61ea4ffaba24",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_gu",
+    "family": "geodata",
+    "title": "Census 2025 GU places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_66_place.zip",
+    "version": "2025",
+    "size_bytes": 267049,
+    "sha256": "1047ceb9991b1ad0d65ec3e643004f6a3ee25db111dcba71e0a623b80c3eaebb",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_mp",
+    "family": "geodata",
+    "title": "Census 2025 MP places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_69_place.zip",
+    "version": "2025",
+    "size_bytes": 584280,
+    "sha256": "78d08e63b4cb00f441a4476af0d6361bc6d784e74919be68a3d54454343bec76",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_pr",
+    "family": "geodata",
+    "title": "Census 2025 PR places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_72_place.zip",
+    "version": "2025",
+    "size_bytes": 761319,
+    "sha256": "32483d1f41d3852de44afb6d91d6d89c4fa7320c6b010b3766855c013df03d47",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "census_places_vi",
+    "family": "geodata",
+    "title": "Census 2025 VI places for atlas insets",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_78_place.zip",
+    "version": "2025",
+    "size_bytes": 56249,
+    "sha256": "fa84e8bb32e91802a8268b5d3715e418a3356f7226cc2ce86ebd951593f8f4e4",
+    "license": "US-PD",
+    "license_proof_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+    "attribution": "U.S. Census Bureau, 2025 TIGER/Line places",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of complete HTTPS download, ZIP contents and computed SHA-256 pin]]"
+  },
+  {
+    "id": "osm_us_turn_58334086",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 58334086",
+    "url": "https://api.openstreetmap.org/api/0.6/way/58334086/full",
+    "version": "Way 58334086 version 16; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 3820,
+    "sha256": "18b40711c4881d4afa7c9375f25c878d734e151c76107f4e29308f9f03fa5fb6",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_341068168",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 341068168",
+    "url": "https://api.openstreetmap.org/api/0.6/way/341068168/full",
+    "version": "Way 341068168 version 4; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 946,
+    "sha256": "75eba2d930e42b09427d45ecc5119ba13f5aaf209f9e16745ff19b9eed242c3e",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_341068301",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 341068301",
+    "url": "https://api.openstreetmap.org/api/0.6/way/341068301/full",
+    "version": "Way 341068301 version 5; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1433,
+    "sha256": "2bcb0a9023cec83e3d5a6e92ef4ed72f7be9995ab5be9cf929a8c87a4d8c9dba",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_480215402",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 480215402",
+    "url": "https://api.openstreetmap.org/api/0.6/way/480215402/full",
+    "version": "Way 480215402 version 6; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1658,
+    "sha256": "15710ebc4246901acec1bebb67a20d2b278372219b63cc959e97bb3b80ab39bf",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_476630370",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 476630370",
+    "url": "https://api.openstreetmap.org/api/0.6/way/476630370/full",
+    "version": "Way 476630370 version 9; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1231,
+    "sha256": "8cbf5c5e2366e5f1f2f385874bbfc4fc100f81350d15b79b5aaeebc539274354",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1091236145",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1091236145",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1091236145/full",
+    "version": "Way 1091236145 version 3; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1247,
+    "sha256": "a5967d26948b487bf730051f33732332b72499b8c6f73faad2bac3b6dd26640b",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_362038502",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 362038502",
+    "url": "https://api.openstreetmap.org/api/0.6/way/362038502/full",
+    "version": "Way 362038502 version 5; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1559,
+    "sha256": "cd06218e9c3b081e1084173f6fff0900a416e1d6a78efd7c923ea7d2725163eb",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1361183566",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1361183566",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1361183566/full",
+    "version": "Way 1361183566 version 1; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 895,
+    "sha256": "39d2442717c93be6b994a3ef57d9a762ebae386d6cd4c8efd18426f7bf4f4c72",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1253938315",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1253938315",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1253938315/full",
+    "version": "Way 1253938315 version 2; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1196,
+    "sha256": "84403cb751365882be0cfeaa767af0baf96049bc68e72838f89b3ae1b37280b5",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1303990365",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1303990365",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1303990365/full",
+    "version": "Way 1303990365 version 3; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1178,
+    "sha256": "691678d1816da301dea77048908b23b5a78ea681885e24356b4c89e8a0d4ddf7",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "osm_us_turn_1350436146",
+    "family": "geodata",
+    "title": "OSM missing U.S. border turn-restriction member 1350436146",
+    "url": "https://api.openstreetmap.org/api/0.6/way/1350436146/full",
+    "version": "Way 1350436146 version 1; full-node HTTPS snapshot fetched 2026-10-31",
+    "size_bytes": 1040,
+    "sha256": "7d0dfac50c0078db58c95ad40398c3d7852c89021f8eb6e1c75cf9b93de2ea37",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/geodata/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]"
+  },
+  {
+    "id": "geofabrik_puerto_rico",
+    "url": "https://download.geofabrik.de/north-america/us/puerto-rico-261029.osm.pbf",
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us/puerto-rico-261029.osm.pbf.md5",
+    "size_bytes": 74228024,
+    "sha256": "82c3e21506394d7eb91984363b6f80835f901d90551f2a8c24210352f203621c",
+    "family": "geodata",
+    "title": "Geofabrik Puerto Rico OpenStreetMap extract",
+    "version": "2026-10-29",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; Geofabrik extraction",
+    "license_proof_url": "https://download.geofabrik.de/north-america/us/puerto-rico.html",
+    "placement": "hub_only",
+    "dest": "build/geodata-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed SHA-256 against this HTTPS download and the publisher MD5, territory coverage and final source preservation]]"
+  },
+  {
+    "id": "geofabrik_virgin_islands",
+    "url": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261028.osm.pbf",
+    "checksum_source_url": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261028.osm.pbf.md5",
+    "size_bytes": 3122136,
+    "sha256": "dc0ff82695dda2d00cb17ec83d25e00f8e004bc83f9ebb13dba504277d1f1ccc",
+    "family": "geodata",
+    "title": "Geofabrik U.S. Virgin Islands OpenStreetMap extract",
+    "version": "2026-10-28",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; Geofabrik extraction",
+    "license_proof_url": "https://download.geofabrik.de/north-america/us/us-virgin-islands.html",
+    "placement": "hub_only",
+    "dest": "build/geodata-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review computed SHA-256 against this HTTPS download and the publisher MD5, territory coverage and final source preservation]]"
   }
 ]

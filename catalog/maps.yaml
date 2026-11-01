@@ -21,67 +21,129 @@
     "id": "osmand_creator",
     "family": "binaries",
     "title": "OsmAnd map creator build input",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "url": "https://download.osmand.net/latest-night-build/OsmAndMapCreator-main.zip",
+    "version": "master-snapshot; publisher Last-Modified 2026-10-30T15:59:08Z",
+    "size_bytes": 153195041,
+    "sha256": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+    "license": "GPL-3.0-only",
+    "attribution": "OsmAnd contributors; map creator build input, not shipped",
+    "license_proof_url": "https://github.com/osmandapp/OsmAnd-tools/blob/b601887fc5603bd65f7eafc9d7d32c42c572a342/LICENSE",
     "placement": "hub_only",
     "dest": "build/tools/",
     "profiles": [
+      "sample",
       "full"
-    ]
+    ],
+    "review": "[[VERIFY: review computed HTTPS-download pin and preserve this nightly archive at an immutable URL before release]]"
   },
   {
     "id": "national_atlas",
     "family": "generated",
     "title": "National county road atlas",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "version": "2026-10-31; source epoch 1793404800",
+    "size_bytes": 1880310639,
+    "sha256": "5d76b2075df66bf6c6008f0d7f432d54a34608df36a77f4a3a4e58d37f185936",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; Protomaps; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "universal",
     "dest": "3_MAPS_AND_PLACES/atlas/",
     "profiles": [
       "full"
     ],
     "inputs": [
-      "protomaps_us",
-      "census_counties",
-      "census_places",
-      "national_directory"
+      "census_county_analysis",
+      "census_places_ak",
+      "census_places_al",
+      "census_places_ar",
+      "census_places_as",
+      "census_places_az",
+      "census_places_ca",
+      "census_places_co",
+      "census_places_ct",
+      "census_places_dc",
+      "census_places_de",
+      "census_places_fl",
+      "census_places_ga",
+      "census_places_gu",
+      "census_places_hi",
+      "census_places_ia",
+      "census_places_id",
+      "census_places_il",
+      "census_places_in",
+      "census_places_ks",
+      "census_places_ky",
+      "census_places_la",
+      "census_places_ma",
+      "census_places_md",
+      "census_places_me",
+      "census_places_mi",
+      "census_places_mn",
+      "census_places_mo",
+      "census_places_mp",
+      "census_places_ms",
+      "census_places_mt",
+      "census_places_nc",
+      "census_places_nd",
+      "census_places_ne",
+      "census_places_nh",
+      "census_places_nj",
+      "census_places_nm",
+      "census_places_nv",
+      "census_places_ny",
+      "census_places_oh",
+      "census_places_ok",
+      "census_places_or",
+      "census_places_pa",
+      "census_places_pr",
+      "census_places_ri",
+      "census_places_sc",
+      "census_places_sd",
+      "census_places_tn",
+      "census_places_tx",
+      "census_places_ut",
+      "census_places_va",
+      "census_places_vi",
+      "census_places_vt",
+      "census_places_wa",
+      "census_places_wi",
+      "census_places_wv",
+      "census_places_wy",
+      "directory_points",
+      "noto_sans",
+      "noto_sans_arabic",
+      "noto_sans_cherokee",
+      "noto_sans_sc",
+      "protomaps_us"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+    "pipeline_version": "atlas-set-v1-c1083bfb76beda769dd1e5faca149cac6b7ee9a59f3779e74e9800d6cf82e5a5",
+    "review": "[[VERIFY: independent national atlas pin review, repeated clean rendering, final recipe freeze and physical phone checks]]"
   },
   {
     "id": "national_directory",
     "family": "generated",
     "title": "National public places directory",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "version": "2025 Census jurisdictions; measured development epoch 1793404800",
+    "size_bytes": 518354901,
+    "sha256": "323f9e38162fd641ce174145dd01433008c0d9ea2073ddc194acde72d787cb5c",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "universal",
     "dest": "3_MAPS_AND_PLACES/directory/",
     "profiles": [
       "full"
     ],
     "inputs": [
-      "geofabrik_us",
-      "nces_schools",
-      "imls_libraries",
-      "fcc_stations",
-      "noaa_transmitters",
-      "fema_risk",
-      "state_emergency_agencies"
+      "directory_points",
+      "national_atlas",
+      "noto_sans",
+      "noto_sans_arabic",
+      "noto_sans_cherokee",
+      "noto_sans_sc"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+    "pipeline_version": "directory-set-v1-a5e7f5fde475d986805228f1489c370f74fc4f0e8c4909122122b561f611513a",
+    "review": "[[VERIFY: correct absent Puerto Rico and Virgin Islands OSM coverage, regenerate points and atlas references, repeat the complete directory with frozen release inputs, and complete human geographic and physical phone reviews; this measured development corpus has 56 jurisdictions, 3235 counties and 254062 places]]"
   },
   {
     "id": "android_roads_places",
@@ -90,17 +152,71 @@
     "version": "[[VERIFY: publisher version]]",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
     "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
     "placement": "universal",
     "dest": "3_MAPS_AND_PLACES/android/maps/",
     "profiles": [
       "full"
     ],
     "inputs": [
-      "geofabrik_us",
-      "osmand_creator"
+      "android_map_ak",
+      "android_map_al",
+      "android_map_ar",
+      "android_map_as",
+      "android_map_az",
+      "android_map_ca",
+      "android_map_co",
+      "android_map_ct",
+      "android_map_dc",
+      "android_map_de",
+      "android_map_fl",
+      "android_map_ga",
+      "android_map_gu",
+      "android_map_hi",
+      "android_map_ia",
+      "android_map_id",
+      "android_map_il",
+      "android_map_in",
+      "android_map_ks",
+      "android_map_ky",
+      "android_map_la",
+      "android_map_ma",
+      "android_map_md",
+      "android_map_me",
+      "android_map_mi",
+      "android_map_mn",
+      "android_map_mo",
+      "android_map_mp",
+      "android_map_ms",
+      "android_map_mt",
+      "android_map_nc",
+      "android_map_nd",
+      "android_map_ne",
+      "android_map_nh",
+      "android_map_nj",
+      "android_map_nm",
+      "android_map_nv",
+      "android_map_ny",
+      "android_map_oh",
+      "android_map_ok",
+      "android_map_or",
+      "android_map_pa",
+      "android_map_pr",
+      "android_map_ri",
+      "android_map_sc",
+      "android_map_sd",
+      "android_map_tn",
+      "android_map_tx",
+      "android_map_ut",
+      "android_map_va",
+      "android_map_vi",
+      "android_map_vt",
+      "android_map_wa",
+      "android_map_wi",
+      "android_map_wv",
+      "android_map_wy"
     ],
     "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
   },
@@ -108,21 +224,2903 @@
     "id": "medical_phone_pdfs",
     "family": "generated",
     "title": "Curated medical phone PDFs",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "version": "Frozen development recipe; two complete matching builds at epoch 1793404800",
+    "size_bytes": 70054021,
+    "sha256": "cdff7b842c7580f45454fc19752d7117f1b52b17813938b0911cd2055bb5a375",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge",
+    "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
     "placement": "universal",
     "dest": "5_MEDICAL_REFERENCE/pdf/",
     "profiles": [
       "full"
     ],
     "inputs": [
+      "noto_sans",
+      "noto_sans_arabic",
+      "noto_sans_devanagari",
+      "noto_sans_georgian",
+      "noto_sans_hebrew",
+      "noto_sans_kr",
+      "noto_sans_sc",
+      "noto_sans_symbols2",
+      "noto_sans_tc",
       "wikimed_en_nopic",
-      "wikem_en_nopic"
+      "wikem_en_nopic",
+      "mathjax_mml_svg"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]"
+    "pipeline_version": "medpdf-v1-1ce9b2273f78a1ccfde201172e9159e86bfdae1af4943dbbc182a469c31181a4",
+    "review": "[[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]"
+  },
+  {
+    "id": "directory_seed_ri",
+    "family": "generated",
+    "title": "Rhode Island directory seed for atlas development",
+    "version": "0.1.0 / Rhode Island point seed / 2026-10-31",
+    "size_bytes": 326112,
+    "sha256": "b2043610dadc1bd1eeb7dcbb60262f278fea1f13624cd2010c8adcb3b84a438c",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau, NCES, IMLS, NOAA and USAGov; original compilation Common Knowledge",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/directory-seed/",
+    "profiles": [
+      "sample"
+    ],
+    "inputs": [
+      "census_county_analysis",
+      "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
+      "fcc_stations",
+      "fema_risk",
+      "geofabrik_ri",
+      "imls_libraries",
+      "nces_schools",
+      "noaa_transmitters",
+      "state_emergency_agencies"
+    ],
+    "pipeline_version": "directory-seed-v1-5afd0c1e1ce920a5632836ccbe6d392f56d45fc0ce5c91cb2d9abaaaed5f819e",
+    "review": "[[VERIFY: human review of source pins and national FCC geographic exceptions; incomplete point seed is build-only]]"
+  },
+  {
+    "id": "protomaps_ri",
+    "family": "generated",
+    "title": "Rhode Island bounded Protomaps atlas build input",
+    "version": "Protomaps 4.15.2, 2026-10-30, maximum zoom 14",
+    "size_bytes": 43538640,
+    "sha256": "883d7edd2c8de90aa130444452e7c80177983302a05a5a382440f3f4ffe7617e",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; Protomaps",
+    "license_proof_url": "https://docs.protomaps.com/basemaps/downloads",
+    "placement": "hub_only",
+    "dest": "build/atlas-input/",
+    "profiles": [
+      "sample"
+    ],
+    "inputs": [
+      "census_county_analysis",
+      "census_places_ri",
+      "directory_seed_ri",
+      "pmtiles_x64",
+      "protomaps_planet"
+    ],
+    "pipeline_version": "pmtiles-extract-v1-3ab704a99a2d2b095bd227e9f295ec662bb09ad3405a8cc32d377089d1c84d22",
+    "review": "[[VERIFY: review the local whole-source verified extraction and preserve the pinned daily planet at an immutable URL]]"
+  },
+  {
+    "id": "atlas_ri",
+    "family": "generated",
+    "title": "Rhode Island county road atlas development sample",
+    "version": "0.1.0 / Rhode Island / Linux x86-64 / 2026-10-31",
+    "size_bytes": 8720886,
+    "sha256": "22950893ed875d8ceefca48309890a212e5d683c7cb8cd83457caecb91843d7e",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; Protomaps; U.S. Census Bureau; original cartography Common Knowledge",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/atlas/",
+    "profiles": [
+      "sample"
+    ],
+    "inputs": [
+      "census_county_analysis",
+      "census_places_ri",
+      "directory_seed_ri",
+      "noto_sans",
+      "protomaps_ri"
+    ],
+    "pipeline_version": "atlas-v1-a4d8f8f107aaf97f24828c0cbea426f131c823fca99fd02f1c497ec4efdefab0",
+    "review": "[[VERIFY: human source-pin review, geographic exception reconciliation and physical phone checks; matching Linux x86-64 atlas builds remain development-only]]"
+  },
+  {
+    "id": "android_roads_places_ri",
+    "family": "generated",
+    "title": "Rhode Island roads-and-places OsmAnd map with source database",
+    "version": "2026-10-30 development sample",
+    "size_bytes": 28809801,
+    "sha256": "5a2d953f5ce0cb086df6d800598906a59a0b43fdd9c5f89eeda2b1c2ae5001dc",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors; original pipeline and instructions Common Knowledge",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/maps/",
+    "profiles": [
+      "sample"
+    ],
+    "inputs": [
+      "geofabrik_ri",
+      "osm_ri_turn_restriction",
+      "osmand_creator"
+    ],
+    "pipeline_version": "androidmaps-v1-73a103398667f3244f217c992702b2dfb0db2442553664942646fd8382ccadfd",
+    "review": "[[VERIFY: review source pins and confirm map import, drawing and live offline GPS on the listed Android phones]]"
+  },
+  {
+    "id": "android_map_howto",
+    "family": "generated",
+    "title": "English and Spanish Android map import instructions",
+    "version": "2026-10-30 development sample",
+    "size_bytes": 54850,
+    "sha256": "da0ba33204869653bb27aca8fa3f93d784b15d7bfb46e76dcd3a829c2c3f93a4",
+    "license": "CC0-1.0",
+    "attribution": "Common Knowledge; Noto font inputs listed separately",
+    "license_proof_url": "https://github.com/trottier/common-knowledge/blob/main/LICENSE-CONTENT",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/android/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "inputs": [
+      "noto_sans",
+      "osmand_android"
+    ],
+    "pipeline_version": "android-howto-v1-5fdb70193d391dc1498a3c2714c9b368447880cc85b48a56eabfc8a21a0f65ed",
+    "review": "[[VERIFY: resolve the installation and offline GPS checks in the instruction PDFs; pin and phone-test the APK]]"
+  },
+  {
+    "id": "directory_points",
+    "family": "generated",
+    "title": "National public-place points for atlas generation",
+    "version": "Confirmed territory inputs; development epoch 1793404800",
+    "size_bytes": 82112145,
+    "sha256": "ca9a86fcb9761f7136b37d066e2877e19feff30662f05798c436f25851278a41",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/directory/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "census_county_analysis",
+      "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
+      "fcc_stations",
+      "fema_risk",
+      "geofabrik_oceania",
+      "geofabrik_us",
+      "imls_libraries",
+      "nces_schools",
+      "noaa_transmitters",
+      "state_emergency_agencies",
+      "geofabrik_puerto_rico",
+      "geofabrik_virgin_islands"
+    ],
+    "pipeline_version": "national-points-v1-acd0cc35897d40b2eea81b71af2ba4df8b4ae91b7664bc7806d651213e470c6d",
+    "review": "[[VERIFY: independent source pin and geographic-exception review, corrected descendant atlas/directory builds and final source freeze; two complete imports match and positive configured OSM evidence exists in all 56 jurisdictions]]"
+  },
+  {
+    "id": "directory_ri",
+    "family": "generated",
+    "title": "Rhode Island public places directory, phone and print",
+    "version": "0.1.0 / Rhode Island / 2026-10-31",
+    "sha256": "bbd0b371e42b015c8d71484a845aad28673d191e103544afa78a44a17565134f",
+    "size_bytes": 1809645,
+    "pipeline_version": "directory-v1-b5709c934c9f4e450f8cc950dc47b147fe909b17bafcb0b55ab0648dd14c5aef",
+    "inputs": [
+      "atlas_ri",
+      "census_county_analysis",
+      "census_states",
+      "fcc_facility_statuses",
+      "fcc_license_versions",
+      "fcc_locations",
+      "fcc_service_codes",
+      "fcc_stations",
+      "fema_risk",
+      "geofabrik_ri",
+      "imls_libraries",
+      "nces_schools",
+      "noaa_transmitters",
+      "noto_sans",
+      "state_emergency_agencies"
+    ],
+    "license": "ODbL-1.0",
+    "license_proof_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
+    "placement": "universal",
+    "dest": "3_MAPS_AND_PLACES/directory/",
+    "profiles": [
+      "sample"
+    ],
+    "review": "[[VERIFY: resolve geographic exceptions and human source-pin and physical phone review; directory remains development-only]]"
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 4008048363,
+    "sha256": "0d4df0c8583c04a53067e55a0e555a30babc3d3869eb103976a359f45b549713",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_source_us",
+    "title": "Prepared roads and public places from the us parent",
+    "inputs": [
+      "geofabrik_us",
+      "osm_us_turn_58334086",
+      "osm_us_turn_341068168",
+      "osm_us_turn_341068301",
+      "osm_us_turn_480215402",
+      "osm_us_turn_476630370",
+      "osm_us_turn_1091236145",
+      "osm_us_turn_362038502",
+      "osm_us_turn_1361183566",
+      "osm_us_turn_1253938315",
+      "osm_us_turn_1303990365",
+      "osm_us_turn_1350436146"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 401963876,
+    "sha256": "396f98ed31c680497002fc4f5d5a570f46c5977c94ce393e25939518d7cb4e2f",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_source_oceania",
+    "title": "Prepared roads and public places from the oceania parent",
+    "inputs": [
+      "geofabrik_oceania"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ak",
+    "title": "Census AK road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ak",
+    "title": "OsmAnd roads-and-places map for AK",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ak"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_al",
+    "title": "Census AL road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_al",
+    "title": "OsmAnd roads-and-places map for AL",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_al"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ar",
+    "title": "Census AR road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ar",
+    "title": "OsmAnd roads-and-places map for AR",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ar"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 335072,
+    "sha256": "0822962f014498d449029d7e035c5e070f38468340d1e533ce22ce7a495a8998",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_as",
+    "title": "Census AS road-source extract",
+    "inputs": [
+      "android_source_oceania",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 855212,
+    "sha256": "03dac20bfc37aa5bf80f08b5f522a8d9ee73c5db39f603fbb3d02f1b36366bc5",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_as",
+    "title": "OsmAnd roads-and-places map for AS",
+    "inputs": [
+      "geofabrik_oceania",
+      "osmand_creator",
+      "android_extract_as"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_az",
+    "title": "Census AZ road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_az",
+    "title": "OsmAnd roads-and-places map for AZ",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_az"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ca",
+    "title": "Census CA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ca",
+    "title": "OsmAnd roads-and-places map for CA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ca"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_co",
+    "title": "Census CO road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_co",
+    "title": "OsmAnd roads-and-places map for CO",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_co"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 40670703,
+    "sha256": "0528660d71a86741609d73334322d1a0a4f2e8dd633fd73120ac8d37681cf2b6",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_ct",
+    "title": "Census CT road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 120105930,
+    "sha256": "d85b4235a08ec64d6fc10725e59e9665f99bdf14ca119e95ebbf4807c1ae765a",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_ct",
+    "title": "OsmAnd roads-and-places map for CT",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ct"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 4394898,
+    "sha256": "ba31e6461f121c1a294288f0f352f81e0224f9294bfbc1a9816c6002b6f7f136",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_dc",
+    "title": "Census DC road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 15678758,
+    "sha256": "4c0602920daab57bb427fe42ddff086bce6be69463e73d2efbc1f9973a9cc642",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_dc",
+    "title": "OsmAnd roads-and-places map for DC",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_dc"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 8786160,
+    "sha256": "f018e816a3c82427e3f7d86da31a38f3df212974f6ee2e7f378f1472c4ca5a65",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_de",
+    "title": "Census DE road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 28603733,
+    "sha256": "c5439b8e292c97fe79a908f70cb79af5d2b9f93470b4bc998eba8686e40e7846",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_de",
+    "title": "OsmAnd roads-and-places map for DE",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_de"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_fl",
+    "title": "Census FL road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_fl",
+    "title": "OsmAnd roads-and-places map for FL",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_fl"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ga",
+    "title": "Census GA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ga",
+    "title": "OsmAnd roads-and-places map for GA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ga"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 877258,
+    "sha256": "4e9fced3b4321557d376a63f3dbbf254761b3323e420606f7ae2c375a063be6e",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_gu",
+    "title": "Census GU road-source extract",
+    "inputs": [
+      "android_source_oceania",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 2653279,
+    "sha256": "6b126f3cb9e74d7023cfb30756ac76e237f4945b4c08d04f2c40f9f085cd60d8",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_gu",
+    "title": "OsmAnd roads-and-places map for GU",
+    "inputs": [
+      "geofabrik_oceania",
+      "osmand_creator",
+      "android_extract_gu"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_hi",
+    "title": "Census HI road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_hi",
+    "title": "OsmAnd roads-and-places map for HI",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_hi"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ia",
+    "title": "Census IA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ia",
+    "title": "OsmAnd roads-and-places map for IA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ia"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_id",
+    "title": "Census ID road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_id",
+    "title": "OsmAnd roads-and-places map for ID",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_id"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_il",
+    "title": "Census IL road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_il",
+    "title": "OsmAnd roads-and-places map for IL",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_il"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_in",
+    "title": "Census IN road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_in",
+    "title": "OsmAnd roads-and-places map for IN",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_in"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ks",
+    "title": "Census KS road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ks",
+    "title": "OsmAnd roads-and-places map for KS",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ks"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ky",
+    "title": "Census KY road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ky",
+    "title": "OsmAnd roads-and-places map for KY",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ky"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_la",
+    "title": "Census LA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_la",
+    "title": "OsmAnd roads-and-places map for LA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_la"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ma",
+    "title": "Census MA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ma",
+    "title": "OsmAnd roads-and-places map for MA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ma"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_md",
+    "title": "Census MD road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_md",
+    "title": "OsmAnd roads-and-places map for MD",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_md"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_me",
+    "title": "Census ME road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_me",
+    "title": "OsmAnd roads-and-places map for ME",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_me"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_mi",
+    "title": "Census MI road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_mi",
+    "title": "OsmAnd roads-and-places map for MI",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_mi"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_mn",
+    "title": "Census MN road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_mn",
+    "title": "OsmAnd roads-and-places map for MN",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_mn"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_mo",
+    "title": "Census MO road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_mo",
+    "title": "OsmAnd roads-and-places map for MO",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_mo"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 302056,
+    "sha256": "0d2a429f989953c243ac28468ac2f6865f2b7a7f9b9b411136ae61f4fcc29fc3",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_mp",
+    "title": "Census MP road-source extract",
+    "inputs": [
+      "android_source_oceania",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 934088,
+    "sha256": "46d3a13c6a912b3cf7080d72b820ec6143badd43c730724f45fc06d51010727a",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_mp",
+    "title": "OsmAnd roads-and-places map for MP",
+    "inputs": [
+      "geofabrik_oceania",
+      "osmand_creator",
+      "android_extract_mp"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ms",
+    "title": "Census MS road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ms",
+    "title": "OsmAnd roads-and-places map for MS",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ms"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_mt",
+    "title": "Census MT road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_mt",
+    "title": "OsmAnd roads-and-places map for MT",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_mt"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_nc",
+    "title": "Census NC road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_nc",
+    "title": "OsmAnd roads-and-places map for NC",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_nc"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_nd",
+    "title": "Census ND road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_nd",
+    "title": "OsmAnd roads-and-places map for ND",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_nd"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ne",
+    "title": "Census NE road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ne",
+    "title": "OsmAnd roads-and-places map for NE",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ne"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_nh",
+    "title": "Census NH road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_nh",
+    "title": "OsmAnd roads-and-places map for NH",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_nh"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 58328058,
+    "sha256": "bf4d027e68a125876bcc4f3a2bad2bf94720ef83d92bb9bc2a541cfc0964a75d",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_nj",
+    "title": "Census NJ road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_nj",
+    "title": "OsmAnd roads-and-places map for NJ",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_nj"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_nm",
+    "title": "Census NM road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_nm",
+    "title": "OsmAnd roads-and-places map for NM",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_nm"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_nv",
+    "title": "Census NV road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_nv",
+    "title": "OsmAnd roads-and-places map for NV",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_nv"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ny",
+    "title": "Census NY road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ny",
+    "title": "OsmAnd roads-and-places map for NY",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ny"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_oh",
+    "title": "Census OH road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_oh",
+    "title": "OsmAnd roads-and-places map for OH",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_oh"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ok",
+    "title": "Census OK road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ok",
+    "title": "OsmAnd roads-and-places map for OK",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ok"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_or",
+    "title": "Census OR road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_or",
+    "title": "OsmAnd roads-and-places map for OR",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_or"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_pa",
+    "title": "Census PA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_pa",
+    "title": "OsmAnd roads-and-places map for PA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_pa"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 14957627,
+    "sha256": "0335feebdcb105abb11c96725cc8c04504487c67bb02dea24ed96018f9545f64",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_pr",
+    "title": "Census PR road-source extract",
+    "inputs": [
+      "android_source_puerto_rico",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 45605792,
+    "sha256": "cfeef529b62e63f77afa684f1898e2396a82ceb76489eccc5675b3bedb17caf4",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_pr",
+    "title": "OsmAnd roads-and-places map for PR",
+    "inputs": [
+      "geofabrik_puerto_rico",
+      "osmand_creator",
+      "android_extract_pr"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 9609370,
+    "sha256": "c6d61a22c8b043d1eae1fa08b05f4e75b43594f4e6ca8cd0c781a46f0cb2fadd",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_ri",
+    "title": "Census RI road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 28513484,
+    "sha256": "fac6aa5e6b0eeea5e1a2d2b689d74bff7b6ef9fb9ff3af6011e1113f38ed760c",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_ri",
+    "title": "OsmAnd roads-and-places map for RI",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ri"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_sc",
+    "title": "Census SC road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_sc",
+    "title": "OsmAnd roads-and-places map for SC",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_sc"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_sd",
+    "title": "Census SD road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_sd",
+    "title": "OsmAnd roads-and-places map for SD",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_sd"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_tn",
+    "title": "Census TN road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_tn",
+    "title": "OsmAnd roads-and-places map for TN",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_tn"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_tx",
+    "title": "Census TX road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_tx",
+    "title": "OsmAnd roads-and-places map for TX",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_tx"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_ut",
+    "title": "Census UT road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_ut",
+    "title": "OsmAnd roads-and-places map for UT",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_ut"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_va",
+    "title": "Census VA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_va",
+    "title": "OsmAnd roads-and-places map for VA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_va"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 901448,
+    "sha256": "3fa26b7dd17a7463b7f8b4c4220f3b567d6d53fdf8aaf9f1ef9ac3dc2cacac87",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_extract_vi",
+    "title": "Census VI road-source extract",
+    "inputs": [
+      "android_source_virgin_islands",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 2714697,
+    "sha256": "cc9741ef40419960d8fb42ca63e4d84a8527c0b755464c8cdea7fb9b68956a5c",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
+    "id": "android_map_vi",
+    "title": "OsmAnd roads-and-places map for VI",
+    "inputs": [
+      "geofabrik_virgin_islands",
+      "osmand_creator",
+      "android_extract_vi"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_vt",
+    "title": "Census VT road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_vt",
+    "title": "OsmAnd roads-and-places map for VT",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_vt"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_wa",
+    "title": "Census WA road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_wa",
+    "title": "OsmAnd roads-and-places map for WA",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_wa"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_wi",
+    "title": "Census WI road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_wi",
+    "title": "OsmAnd roads-and-places map for WI",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_wi"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_wv",
+    "title": "Census WV road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_wv",
+    "title": "OsmAnd roads-and-places map for WV",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_wv"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_extract_wy",
+    "title": "Census WY road-source extract",
+    "inputs": [
+      "android_source_us",
+      "census_county_analysis",
+      "census_states"
+    ]
+  },
+  {
+    "family": "generated",
+    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
+    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
+    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "license": "ODbL-1.0 AND US-PD",
+    "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
+    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "id": "android_map_wy",
+    "title": "OsmAnd roads-and-places map for WY",
+    "inputs": [
+      "geofabrik_us",
+      "osmand_creator",
+      "android_extract_wy"
+    ]
+  },
+  {
+    "id": "android_source_puerto_rico",
+    "family": "generated",
+    "title": "Prepared roads and public places from PR",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 14957608,
+    "sha256": "45f32534206dc6fb9f761d668b158849dabe07dc01c478467ebec1abc16b9f6e",
+    "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "geofabrik_puerto_rico"
+    ],
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]"
+  },
+  {
+    "id": "android_source_virgin_islands",
+    "family": "generated",
+    "title": "Prepared roads and public places from VI",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 901429,
+    "sha256": "79ef0d8c8a30ca303f7e89e16bf50f2641b8a8d3d716818eeeecd53989ce61b1",
+    "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "geofabrik_virgin_islands"
+    ],
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]"
   }
 ]

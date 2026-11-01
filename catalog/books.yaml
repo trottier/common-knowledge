@@ -1,0 +1,182 @@
+[
+  {
+    "id": "gutenberg_11",
+    "family": "docs",
+    "title": "Alice's Adventures in Wonderland",
+    "url": "https://www.gutenberg.org/ebooks/11.txt.utf-8",
+    "version": "Project Gutenberg #11; updated 2025-06-26",
+    "size_bytes": 174311,
+    "sha256": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+    "license": "Public-domain-US",
+    "attribution": "Carroll, Lewis, 1832-1898; Project Gutenberg production credits: Arthur DiBianca and David Widger",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/11",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/01_Alice_in_Wonderland.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_21",
+    "family": "docs",
+    "title": "Three hundred Aesop’s fables Translated by George Fyler Townsend",
+    "url": "https://www.gutenberg.org/ebooks/21.txt.utf-8",
+    "version": "Project Gutenberg #21; updated 2025-10-15",
+    "size_bytes": 272338,
+    "sha256": "48f2d310226e175250988747ba4c81ff832a218b83c141b38c6dc047a25c1958",
+    "license": "Public-domain-US",
+    "attribution": "Aesop, 621? BCE-565? BCE; Townsend, George Fyler, 1814-1900; Project Gutenberg production credits: David Widger",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/21",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/02_Aesops_Fables.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_46",
+    "family": "docs",
+    "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+    "url": "https://www.gutenberg.org/ebooks/46.txt.utf-8",
+    "version": "Project Gutenberg #46; updated 2021-11-13",
+    "size_bytes": 182250,
+    "sha256": "8c36b93723d454982df045ec0efdf2664e5a48e6b5e2f670e883575f75ad0cc8",
+    "license": "Public-domain-US",
+    "attribution": "Dickens, Charles, 1812-1870; Project Gutenberg production credits: Jose Menendez and David Widger",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/46",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/03_A_Christmas_Carol.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_74",
+    "family": "docs",
+    "title": "The Adventures of Tom Sawyer, Complete",
+    "url": "https://www.gutenberg.org/ebooks/74.txt.utf-8",
+    "version": "Project Gutenberg #74; updated 2025-05-10",
+    "size_bytes": 434357,
+    "sha256": "74d77384b123a6360db9ab58463cff8b38df8525fbdc6000c81ee388e1f3cf10",
+    "license": "Public-domain-US",
+    "attribution": "Twain, Mark, 1835-1910; Project Gutenberg production credits: David Widger",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/74",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/04_Tom_Sawyer.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_1342",
+    "family": "docs",
+    "title": "Pride and Prejudice",
+    "url": "https://www.gutenberg.org/ebooks/1342.txt.utf-8",
+    "version": "Project Gutenberg #1342; updated 2026-09-29",
+    "size_bytes": 772386,
+    "sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+    "license": "Public-domain-US",
+    "attribution": "Austen, Jane, 1775-1817; Project Gutenberg production credits: Chuck Greif and the Online Distributed Proofreading Team at www.pgdp.net (This file was produced from images available at The Internet Archive)",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/1342",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/05_Pride_and_Prejudice.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_1661",
+    "family": "docs",
+    "title": "The Adventures of Sherlock Holmes",
+    "url": "https://www.gutenberg.org/ebooks/1661.txt.utf-8",
+    "version": "Project Gutenberg #1661; updated 2023-10-10",
+    "size_bytes": 607606,
+    "sha256": "922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0",
+    "license": "Public-domain-US",
+    "attribution": "Doyle, Arthur Conan, 1859-1930; Project Gutenberg production credits: an anonymous Project Gutenberg volunteer and Jose Menendez",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/1661",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/06_Sherlock_Holmes.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_2000",
+    "family": "docs",
+    "title": "Don Quijote",
+    "url": "https://www.gutenberg.org/ebooks/2000.txt.utf-8",
+    "version": "Project Gutenberg #2000; updated 2021-01-17",
+    "size_bytes": 2225803,
+    "sha256": "534f41d59f7142163fa0964076ac6351845c006ea6433778be637fac6d5b04d7",
+    "license": "Public-domain-US",
+    "attribution": "Cervantes Saavedra, Miguel de, 1547-1616; Project Gutenberg production credits: an anonymous Project Gutenberg volunteer and Joaquin Cuenca Abela",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/2000",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/books/07_Don_Quijote.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin and embedded Project Gutenberg redistribution terms; ship the complete original UTF-8 text and license without changes, with no charge for copies]]"
+  },
+  {
+    "id": "gutenberg_13022",
+    "family": "docs",
+    "title": "My Book of Indoor Games",
+    "url": "https://www.gutenberg.org/ebooks/13022.txt.utf-8",
+    "version": "Project Gutenberg #13022; updated 2024-10-28",
+    "size_bytes": 216142,
+    "sha256": "65c0b84bf4384190836deb701dc587753dbdffb371f06a86f93ed29699d01eef",
+    "license": "Public-domain-US",
+    "attribution": "Clarence Squareman; e-text prepared by Clare Boothby, David Newman, William Flis, and the Project Gutenberg Online Distributed Proofreading Team",
+    "license_proof_url": "https://www.gutenberg.org/ebooks/13022",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/games/01_Indoor_Games.txt",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin, embedded Project Gutenberg redistribution terms, historical game suitability and physical text readability; ship complete original bytes and license without changes]]"
+  },
+  {
+    "id": "loc_home_sweet_home_score",
+    "family": "docs",
+    "title": "Home sweet home — piano variations",
+    "url": "https://tile.loc.gov/storage-services/public/music/mussm-sm1875-00750/mussm-sm1875-00750.pdf",
+    "size_bytes": 2923777,
+    "sha256": "5f2872e795e51240a3987162c15112be7a2871c8dec6ce76a202fbd287351ecb",
+    "version": "1875 edition; Library of Congress item 2023822433",
+    "license": "Public-domain-US",
+    "attribution": "D. A. French; Boston: G. D. Russell & Company, 1875. Credit: Library of Congress, Music Division",
+    "license_proof_url": "https://www.loc.gov/item/2023822433/",
+    "placement": {
+      "collection": "morale"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/music/01_Home_Sweet_Home_Score.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human review of this HTTPS download pin, per-item public-domain statement and physical score readability; ship the original Library of Congress PDF byte-identically]]"
+  }
+]

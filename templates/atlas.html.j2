@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>{{ state }} road atlas</title>
+<meta name="dcterms.created" content="{{ timestamp }}">
+<meta name="dcterms.modified" content="{{ timestamp }}">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src ck-atlas:; font-src file:">
+<style>
+{% for font in fonts %}@font-face { font-family: 'CK{{ loop.index }}'; src: url('{{ font }}'); }{% endfor %}
+body, svg text { font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif; }
+@page { size: Letter; margin: 12mm 10mm 14mm;
+  font-family: {% for font in fonts %}'CK{{ loop.index }}', {% endfor %}sans-serif;
+  @bottom-left { content: '© OpenStreetMap contributors · ODbL; U.S. Census Bureau'; font-size: 8pt; }
+  @bottom-right { content: counter(page); font-size: 9pt; }
+}
+body { font-size: 12pt; }
+h1 { font-size: 20pt; bookmark-level: none; }
+h2 { font-size: 16pt; bookmark-level: 1; margin: 0 0 3mm; }
+h3 { font-size: 13pt; bookmark-level: none; }
+.inset h2 { bookmark-level: none; }
+.map, .legend, .index { break-before: page; }
+.map svg { width: 190mm; height: 232mm; }
+.grid { fill: none; stroke: #666; stroke-width: 1; stroke-dasharray: 5 5; }
+svg text { font-size: 19px; fill: #111; }
+.number { font-size: 20px; font-weight: bold; }
+.coordinate { font-size: 18px; }
+.index a::after { content: ' · page ' target-counter(attr(href), page); }
+.draft { border: 2pt solid black; padding: 2mm; font-weight: bold; }
+p { margin: 2mm 0; }
+</style></head><body>
+<h1>{{ state }} road atlas</h1>
+{% if draft %}<p class="draft">DEVELOPMENT ATLAS — INCOMPLETE; NOT APPROVED FOR EMERGENCY DISTRIBUTION</p>{% endif %}
+<p>Use decimal degrees or degrees, minutes and seconds to find a grid square.
+Directory point numbers refer to the legend after each map.</p>
+<p>A thin line connects a displaced point number to its location dot.</p>
+<p>Dense counties have an overview with location dots and detailed maps with numbered points.
+Several places may share the same source coordinates.</p>
+<p>The distance bar is approximate and refers to the map center.</p>
+<p>Roads may be blocked. Places are not confirmed open. [project_spec]</p>
+<p>Basemap: © OpenStreetMap contributors, Protomaps. County boundaries: U.S. Census Bureau.
+Build sources and versions are pinned in the catalog.</p>
+<p>County outlines use Census TIGER/Line® data for statistical purposes, not legal land descriptions.
+TIGER/Line® is a registered trademark of the U.S. Census Bureau.</p>
+<p>OpenStreetMap data is available under the Open Database License:
+<a href="https://opendatacommons.org/licenses/odbl/1-0/">https://opendatacommons.org/licenses/odbl/1-0/</a>.</p>
+{% for page in pages %}
+<section class="map{% if page.inset %} inset{% endif %}">
+<h2 id="{{ page.id }}">{{ page.title }}{% if page.inset %} — inset{% endif %}</h2>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-205 -90 {{ page.width + 410 }} {{ page.height + 150 }}" role="img" aria-label="{{ page.title }} road map with coordinate grid">
+<image href="{{ page.image }}" width="{{ page.width }}" height="{{ page.height }}"/>
+{% for line in page.labels.vertical %}
+<path class="grid" d="M{{ line.pixel }} 0V{{ page.height }}"/>
+<text class="coordinate" x="{{ line.pixel }}" y="-55" text-anchor="middle">{{ line.decimal }}</text>
+<text class="coordinate" x="{{ line.pixel }}" y="-30" text-anchor="middle">{{ line.dms }}</text>
+{% endfor %}
+{% for line in page.labels.horizontal %}
+<path class="grid" d="M0 {{ line.pixel }}H{{ page.width }}"/>
+<text class="coordinate" x="-10" y="{{ line.pixel - 10 }}" text-anchor="end">{{ line.decimal }}</text>
+<text class="coordinate" x="-10" y="{{ line.pixel + 15 }}" text-anchor="end">{{ line.dms }}</text>
+{% endfor %}
+{% for column in range(page.frame.columns) %}<text x="{{ (column + 0.5) * page.width / page.frame.columns }}" y="-5" text-anchor="middle">{{ 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[column] }}</text>{% endfor %}
+{% for row in range(page.frame.rows) %}<text x="5" y="{{ (row + 0.5) * page.height / page.frame.rows }}">{{ row + 1 }}</text>{% endfor %}
+{% for path in page.outline %}<polyline points="{{ path }}" fill="none" stroke="#303030" stroke-width="3"/>{% endfor %}
+{% for place in page.places %}
+<circle cx="{{ place.x }}" cy="{{ place.y }}" r="4" fill="#111"/>
+{% if not page.overview %}
+{% if place.leader %}<path d="M{{ place.x }} {{ place.y }}L{{ place.label_x }} {{ place.label_y - 8 }}" stroke="#333" stroke-width="1"/>{% endif %}
+<text class="number" x="{{ place.label_x }}" y="{{ place.label_y }}" stroke="white" stroke-width="5">{{ place.number }}</text>
+<text class="number" x="{{ place.label_x }}" y="{{ place.label_y }}">{{ place.number }}</text>
+{% endif %}
+{% endfor %}
+<rect x="{{ page.width - 90 }}" y="12" width="75" height="100" fill="white"/>
+<text x="{{ page.width - 52 }}" y="40" text-anchor="middle">N</text>
+<path d="M{{ page.width - 52 }} 100V50m-12 16 12-16 12 16" fill="none" stroke="black" stroke-width="4"/>
+<rect x="20" y="{{ page.height - 80 }}" width="{{ page.scale.pixels + 50 }}" height="65" fill="white"/>
+<path d="M40 {{ page.height - 45 }}h{{ page.scale.pixels }}m0-7v14M40 {{ page.height - 52 }}v14" stroke="black" stroke-width="3"/>
+<text x="40" y="{{ page.height - 20 }}">about {{ page.scale.km }} km</text>
+</svg></section>
+<section class="legend"><h3>{{ page.title }} · directory points</h3>
+{% if page.overview %}
+<p>Overview dots show sourced locations. Use this county's detail maps and the alphabetical
+index for numbered points and grid references.</p>
+{% else %}
+{% for place in page.places %}
+<p>{{ place.number }}. <strong>{{ place.name }}</strong> · {{ place.category }} · grid {{ place.grid }}<br>
+{{ place.latitude }}, {{ place.longitude }} · source {{ place.source_id }}, {{ place.as_of }}</p>
+{% else %}<p>No sourced directory points on this page.</p>{% endfor %}
+{% endif %}
+</section>
+{% endfor %}
+<section class="index"><h3>Alphabetical place index</h3>
+{% for identifier, place in index %}<p><a href="#{{ place.anchor }}">{{ place.name }} · {{ place.grid }} · point {{ place.number }}</a></p>{% endfor %}
+</section></body></html>

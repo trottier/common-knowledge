@@ -1,12 +1,14 @@
 """Catalog validation, explicit readiness checks and attribution generation."""
 
 import re
+from functools import lru_cache
 from pathlib import Path, PurePosixPath
 from typing import Annotated, Literal, Self
 
+import yaml
 from pydantic import Field, StringConstraints, model_validator
 
-from ck.config import Configuration, Identifier, Marker, Model, Text, read_yaml
+from ck.config import Configuration, Identifier, Marker, Model, Text, UniqueKeyLoader
 
 Sha256 = Annotated[str, StringConstraints(pattern=r"^[0-9a-f]{64}$")]
 Https = Annotated[str, StringConstraints(pattern=r"^https://[^\s]+$")]
@@ -34,12 +36,12 @@ def safe_path(value: str) -> PurePosixPath:
     return path
 
 
-class Modules(Model):
-    modules: list[Identifier] = Field(min_length=1)
+class Topics(Model):
+    topics: list[Identifier] = Field(min_length=1)
 
 
-class Shelf(Model):
-    shelf: Identifier
+class Collection(Model):
+    collection: Identifier
 
 
 class Item(Model):
@@ -65,7 +67,7 @@ class Item(Model):
     license: Text
     attribution: Text
     license_proof_url: Https | Marker
-    placement: Literal["universal", "hub_only"] | Modules | Shelf
+    placement: Literal["universal", "hub_only"] | Topics | Collection
     dest: Text
     profiles: list[ProfileName] = Field(min_length=1)
     inputs: list[Identifier] = Field(default_factory=list)
@@ -75,8 +77,10 @@ class Item(Model):
     source_id: Identifier | None = None
     source_for: Identifier | None = None
     checksum_source_url: Https | Marker | None = None
+    publisher_blake3: Sha256 | Marker | None = None
     review: Text | None = None
     requires_legal: bool = False
+    permission_proof_url: Https | Marker | None = None
     legal_reviewer: Text | None = None
     legal_reviewed_on: Text | None = None
 
@@ -99,33 +103,73 @@ class Item(Model):
         for key, value in self.model_dump().items():
             if isinstance(value, str) and "[[VERIFY" in value:
                 problems.append(f"{self.id}.{key}: {value}")
-        if self.license not in {
+        licenses = self.license.split(" AND ")
+        if not set(licenses) <= {
             "CC-BY-4.0",
             "CC-BY-SA-4.0",
             "CC-BY-SA-3.0",
             "CC0-1.0",
             "OFL-1.1",
             "MIT",
+            "ISC",
             "Apache-2.0",
+            "BSD-2-Clause",
+            "BSD-3-Clause",
             "GPL-3.0-only",
             "GPL-3.0-or-later",
             "GPL-2.0-only",
             "ODbL-1.0",
             "US-PD",
             "Public-domain-US",
+            "LicenseRef-FEMA-Ready-Reprint",
             "CC-BY-NC-SA-3.0",
         }:
             problems.append(f"{self.id}: license needs redistribution review: {self.license}")
+        if "LicenseRef-FEMA-Ready-Reprint" in licenses:
+            # Ready permits unchanged reproduction, without an endorsement claim.
+            # This is a limited grant, not a public-domain or open-content claim.
+            if (
+                self.family != "docs"
+                or not str(self.url).startswith("https://www.ready.gov/sites/default/files/")
+                or self.license_proof_url != "https://www.ready.gov/publications"
+                or isinstance(self.placement, Collection)
+            ):
+                problems.append(
+                    f"{self.id}: Ready reprint terms apply only to original Ready documents "
+                    "outside in-depth knowledge collections"
+                )
+        if "-NC-" in self.license and (
+            not self.permission_proof_url or "[[VERIFY" in self.permission_proof_url
+        ):
+            problems.append(
+                f"{self.id}: noncommercial material requires a written emergency-use license"
+            )
         if "-NC-" in self.license and not self.requires_legal:
-            problems.append(f"{self.id}: noncommercial license requires legal sign-off")
+            problems.append(f"{self.id}: a named human must review the written license grant")
         if self.requires_legal and not (self.legal_reviewer and self.legal_reviewed_on):
             problems.append(f"{self.id}: named legal sign-off is missing")
         if self.family == "apk" and self.signer_cert_sha256 is None:
             problems.append(f"{self.id}: APK signer is missing")
-        if release and self.license.startswith("GPL-") and self.family in {"apk", "binaries"}:
+        if (
+            release
+            and any(license.startswith("GPL-") for license in licenses)
+            and self.family in {"apk", "binaries"}
+            and self.placement != "hub_only"
+        ):
             if not self.source_id:
                 problems.append(f"{self.id}: corresponding source archive catalog entry is missing")
         return problems
+
+
+@lru_cache(maxsize=32)
+def _parse_family(source: bytes) -> tuple[Item, ...]:
+    try:
+        data = yaml.load(source.decode("utf-8"), Loader=UniqueKeyLoader)
+    except (yaml.YAMLError, TypeError) as error:
+        raise ValueError(f"Invalid catalog YAML: {error}") from error
+    if not isinstance(data, list):
+        raise ValueError("Catalog family must be a list")
+    return tuple(Item.model_validate(raw) for raw in data)
 
 
 def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, Item]:
@@ -133,11 +177,10 @@ def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, I
     for path in sorted((root / "catalog").glob("*.yaml")):
         if path.name == "medpdf_topics.yaml":
             continue
-        data = read_yaml(path)
-        if not isinstance(data, list):
-            raise ValueError(f"Catalog family must be a list: {path}")
-        for raw in data:
-            item = Item.model_validate(raw)
+        # Key by actual bytes, not mtimes. Return independent models so a
+        # caller's proposed pin updates cannot mutate the parsed cache.
+        for parsed in _parse_family(path.read_bytes()):
+            item = parsed.model_copy(deep=True)
             if item.id in result:
                 raise ValueError(f"Duplicate catalog id: {item.id}")
             result[item.id] = item
@@ -151,14 +194,18 @@ def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, I
             if source.source_for != item.id or source.url != item.source_url:
                 raise ValueError(f"{item.id}: source archive is not explicitly tied to this app")
         if config:
-            if isinstance(item.placement, Modules):
-                if not set(item.placement.modules) <= config.variants.modules.keys():
-                    raise ValueError(f"{item.id}: unknown module placement")
+            if isinstance(item.placement, Topics):
+                if not set(item.placement.topics) <= config.variants.topics.keys():
+                    raise ValueError(f"{item.id}: unknown topic placement")
             elif (
-                isinstance(item.placement, Shelf)
-                and item.placement.shelf not in config.variants.shelves
+                isinstance(item.placement, Collection)
+                and item.placement.collection not in config.variants.collections
             ):
-                raise ValueError(f"{item.id}: unknown shelf placement")
+                raise ValueError(f"{item.id}: unknown collection placement")
+    if config and config.local_llm:
+        for profile, identifier in config.local_llm.models.items():
+            if identifier not in result or profile not in result[identifier].profiles:
+                raise ValueError(f"Missing local LLM model selection for {profile}: {identifier}")
     # Input graphs must be acyclic, including references that are not yet fetched.
     active, visited = set(), set()
 

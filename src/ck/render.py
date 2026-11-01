@@ -6,6 +6,7 @@ import json
 import os
 import re
 import threading
+from contextlib import contextmanager
 from datetime import UTC, datetime
 from pathlib import Path
 from urllib.parse import unquote, urlparse
@@ -23,6 +24,21 @@ from ck.config import Configuration, Language, Model, read_yaml
 _FONT_TIMESTAMP_LOCK = threading.RLock()
 
 
+@contextmanager
+def pdf_timestamp(timestamp: int):
+    """Keep fontTools' variable-font timestamps deterministic across renderers."""
+    with _FONT_TIMESTAMP_LOCK:
+        previous_epoch = os.environ.get("SOURCE_DATE_EPOCH")
+        os.environ["SOURCE_DATE_EPOCH"] = str(timestamp)
+        try:
+            yield
+        finally:
+            if previous_epoch is None:
+                os.environ.pop("SOURCE_DATE_EPOCH", None)
+            else:
+                os.environ["SOURCE_DATE_EPOCH"] = previous_epoch
+
+
 class Header(Model):
     title: str = Field(min_length=1)
     status: str = Field(pattern="^(draft|reviewed|machine)$")
@@ -38,6 +54,17 @@ def content_file(path: Path) -> tuple[Header, str]:
         raise ValueError(f"Missing content front matter: {path}")
     front, body = source[4:].split("\n---\n", 1)
     return Header.model_validate(yaml.safe_load(front)), body
+
+
+def citation_ids(body: str, sources: dict) -> list[str]:
+    pattern = r"\[@([a-z0-9_]+)\]"
+    if "[@" in re.sub(pattern, "", body):
+        raise ValueError("Malformed citation; use one [@source_id] reference per source")
+    citations = sorted(set(re.findall(pattern, body)))
+    missing = set(citations) - sources.keys()
+    if missing:
+        raise ValueError(f"Unknown citation ids: {', '.join(sorted(missing))}")
+    return citations
 
 
 def verify_translation_inputs(root: Path, header: Header) -> None:
@@ -85,11 +112,11 @@ def epoch_for(config: Configuration, explicit: int | None = None) -> int:
     return epoch
 
 
-def font_files(root: Path, language: Language) -> list[Path]:
+def font_files(root: Path, language: Language, fallback_ids: tuple[str, ...] = ()) -> list[Path]:
     cache = Path(os.environ.get("CK_FONT_CACHE", root / "cache"))
     catalog = {item["id"]: item for item in read_yaml(root / "catalog/fonts.yaml")}
     paths = []
-    for identifier in dict.fromkeys([language.font, "noto_sans"]):
+    for identifier in dict.fromkeys([language.font, "noto_sans", *fallback_ids]):
         if identifier not in catalog:
             raise ValueError(f"Missing font catalog entry: {identifier}")
         item = catalog[identifier]
@@ -109,8 +136,10 @@ def render_html(
     epoch: int,
     template: str = "document.html.j2",
     profile: str = "dev",
+    fallback_ids: tuple[str, ...] = (),
 ) -> str:
-    from ck.catalog import Shelf, load_catalog
+    from ck.cardlinks import card_links
+    from ck.catalog import Collection, load_catalog
     from ck.locales import display_defaults, edition_for
     from ck.planner import selected
 
@@ -119,23 +148,28 @@ def render_html(
     edition = edition_for(root, language, config)
     content_env = Environment(undefined=StrictUndefined, autoescape=False)
     catalog = load_catalog(root, config)
-    shelf_contents = {
+    collection_contents = {
         number: [
             item.title
             for item in sorted(catalog.values(), key=lambda item: item.id)
-            if isinstance(item.placement, Shelf) and selected(item, config, number, profile)
+            if isinstance(item.placement, Collection) and selected(item, config, number, profile)
         ]
         for number in config.variants.variants
     }
     body = content_env.from_string(body).render(
         defaults=display_defaults(root, language, config),
         variants=config.variants.model_dump(),
-        shelf_contents=shelf_contents,
+        collection_contents=collection_contents,
         build_profile=profile,
         rally_labels=edition.rally_labels,
         editions={item.code: item.name for item in config.languages},
+        local_llm=config.local_llm.model_dump() if config.local_llm else {},
     )
     markdown = MarkdownIt("commonmark", {"html": False}).enable("table")
+    if template in {"directory.html.j2", "directory-part.html.j2"}:
+        from mdit_py_plugins.container import container_plugin
+
+        markdown.use(container_plugin, "place")
     tokens = markdown.parse(body)
     headings = []
     for index, token in enumerate(tokens):
@@ -151,10 +185,7 @@ def render_html(
     )
     source_file = root / "content/sources.yaml"
     sources = read_yaml(source_file) if source_file.exists() else {}
-    citations = sorted(set(re.findall(r"\[@([a-z0-9_]+)\]", body)))
-    missing = set(citations) - sources.keys()
-    if missing:
-        raise ValueError(f"Unknown citation ids: {', '.join(sorted(missing))}")
+    citations = citation_ids(body, sources)
     for citation in citations:
         target = f"#source-{citation}"
         if template != "document.html.j2":
@@ -169,7 +200,7 @@ def render_html(
         loader=FileSystemLoader(root / "templates"), undefined=StrictUndefined, autoescape=True
     )
     footer = edition.translation_footer
-    fonts = font_files(root, language)
+    fonts = font_files(root, language, fallback_ids)
     return env.get_template(template).render(
         title=header.title,
         language=language,
@@ -185,6 +216,9 @@ def render_html(
         css=(root / "templates/document.css").read_text(),
         draft=header.status != "reviewed" or edition.status != "reviewed",
         defaults=config.defaults.model_dump(),
+        card_links=card_links(config.build.site_base_url, edition.qr_labels)
+        if template == "card.html.j2"
+        else [],
     )
 
 
@@ -198,30 +232,23 @@ def render_pdf(
     epoch: int | None = None,
     template: str = "document.html.j2",
     profile: str = "dev",
+    fallback_ids: tuple[str, ...] = (),
 ) -> Path:
     timestamp = epoch_for(config, epoch)
     document = render_html(
-        root, config, source, language, page_format, timestamp, template, profile
+        root, config, source, language, page_format, timestamp, template, profile, fallback_ids
     )
     output.parent.mkdir(parents=True, exist_ok=True)
     output.with_suffix(".html").write_text(document, encoding="utf-8")
-    fonts = font_files(root, language)
+    fonts = font_files(root, language, fallback_ids)
     fetcher = OfflineFetcher([root / "assets", *[path.parent for path in fonts]])
     identifier = hashlib.sha256(document.encode()).hexdigest().encode("ascii")
     # fontTools consults this environment variable when instantiating variable
     # fonts. Serialize this short environment override across renderer threads.
-    with _FONT_TIMESTAMP_LOCK:
-        previous_epoch = os.environ.get("SOURCE_DATE_EPOCH")
-        os.environ["SOURCE_DATE_EPOCH"] = str(timestamp)
-        try:
-            HTML(string=document, url_fetcher=fetcher).write_pdf(
-                output,
-                pdf_identifier=identifier,
-                pdf_tags=True,
-            )
-        finally:
-            if previous_epoch is None:
-                os.environ.pop("SOURCE_DATE_EPOCH", None)
-            else:
-                os.environ["SOURCE_DATE_EPOCH"] = previous_epoch
+    with pdf_timestamp(timestamp):
+        HTML(string=document, url_fetcher=fetcher).write_pdf(
+            output,
+            pdf_identifier=identifier,
+            pdf_tags=True,
+        )
     return output

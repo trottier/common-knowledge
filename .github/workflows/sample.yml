@@ -1,0 +1,45 @@
+name: Sample images
+on:
+  schedule:
+    - cron: '23 9 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sample-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: make build-container
+      - name: Reject missing pins, licenses and source reviews before scheduling a large build
+        run: docker run --rm --network=none common-knowledge-build:dev ck check-profile --profile sample
+  images:
+    needs: preflight
+    runs-on: [self-hosted, linux, x64, common-knowledge]
+    timeout-minutes: 360
+    env:
+      CACHE_DIR: ${{ vars.CK_DATA_ROOT || '/var/lib/common-knowledge' }}/cache
+      GENERATED_DIR: ${{ github.workspace }}/build/generated
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Build variants 1 and 3 twice from fresh document and filesystem trees
+        run: make sample
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: common-knowledge-sample
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+          path: |
+            build/sample/build-manifest.json
+            build/sample/images/*.img.zst
+            build/sample/images/*.sha256
+            build/sample/images/*.MANIFEST.SHA256

@@ -12,7 +12,7 @@ from ck.render import content_file, epoch_for, render_pdf
 
 def recipe_fingerprint(root: Path, epoch: int, languages: list[str], profile: str) -> str:
     checksum = hashlib.sha256()
-    for directory in ("content", "templates", "config", "catalog", "src/ck"):
+    for directory in ("content", "templates", "config", "catalog", "src/ck", "pipelines/llm"):
         for path in sorted((root / directory).rglob("*")):
             if path.is_file() and path.suffix in {
                 ".md",

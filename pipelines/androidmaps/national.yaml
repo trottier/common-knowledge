@@ -1,0 +1,13 @@
+# Parent extracts confirmed against the Census territory geometries.
+source_inputs:
+  us: geofabrik_us
+  oceania: geofabrik_oceania
+  puerto_rico: geofabrik_puerto_rico
+  virgin_islands: geofabrik_virgin_islands
+state_sources: {PR: geofabrik_puerto_rico, VI: geofabrik_virgin_islands}
+source_supplements:
+  geofabrik_us: [osm_us_turn_58334086, osm_us_turn_341068168, osm_us_turn_341068301, osm_us_turn_480215402, osm_us_turn_476630370, osm_us_turn_1091236145, osm_us_turn_362038502, osm_us_turn_1361183566, osm_us_turn_1253938315, osm_us_turn_1303990365, osm_us_turn_1350436146]
+pacific_states: [AS, GU, MP]
+# Computational boundary padding, measured in coordinate degrees, not ground metres.
+boundary_padding_degrees: 0.001
+max_heap_mib: 6144

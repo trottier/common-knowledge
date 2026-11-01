@@ -1,0 +1,15 @@
+# Each selected clip names only pinned catalog inputs. No network URLs here.
+handwashing_asl:
+  source_id: cdc_handwashing_asl_source
+  filename: 01_What_You_Need_to_Know_About_Handwashing.mp4
+  audio_languages: [en]
+  subtitles: []
+earthquake_drop_cover:
+  source_id: usgs_earthquake_drop_source
+  filename: 02_Drop_Cover_and_Hold_On.mp4
+  audio_languages: [en]
+  subtitles:
+    - language: en
+      source_id: usgs_earthquake_drop_caption_en
+      stream: 0
+      time_offset_seconds: -1652.417

@@ -62,11 +62,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "water"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -83,32 +83,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "comms"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "ics_forms",
-    "family": "docs",
-    "title": "FEMA incident-command forms; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "modules": [
-        "comms"
-      ]
-    },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -125,11 +104,11 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "modules": [
+      "topics": [
         "comms"
       ]
     },
-    "dest": "6_DEPTH_AND_SHELF/modules/{module}/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
     "profiles": [
       "full"
     ]
@@ -146,9 +125,9 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_1"
+      "collection": "howto_1"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_1/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_1/",
     "profiles": [
       "full"
     ]
@@ -165,11 +144,191 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_2"
+      "collection": "howto_2"
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_2/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_2/",
     "profiles": [
       "full"
     ]
+  },
+  {
+    "id": "iso639_2",
+    "family": "docs",
+    "title": "Library of Congress ISO 639-2 language codes",
+    "url": "https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt",
+    "version": "HTTPS snapshot 2026-10-31",
+    "size_bytes": 16010,
+    "sha256": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371",
+    "license": "[[VERIFY: confirm redistribution status of the ISO language-code data]]",
+    "attribution": "Library of Congress, ISO 639-2 Registration Authority",
+    "license_proof_url": "https://www.loc.gov/standards/iso639-2/",
+    "placement": "hub_only",
+    "dest": "build/video/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS input pin]]"
+  },
+  {
+    "id": "ncvec_tech",
+    "family": "docs",
+    "title": "2026\u20132030 Technician Class Pool and Syllabus, February 19 2026",
+    "url": "https://ncvec.org/downloads/2026-2030%20Technician%20Pool%20and%20Syllabus%20Public%20Release%20Feb%2019%202026.pdf",
+    "version": "2026\u20132030 Technician Class Pool and Syllabus, February 19 2026",
+    "size_bytes": 480239,
+    "sha256": "3618649d64df77f2cf217fa79ef82094fe5d2d41b26d20ce08c46ca1c3d5055a",
+    "license": "US-PD",
+    "attribution": "National Conference of Volunteer Examiner Coordinators, Question Pool Committee",
+    "license_proof_url": "https://ncvec.org/index.php/2026-2030-technician-question-pool",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NCVEC_tech.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]"
+  },
+  {
+    "id": "ncvec_general",
+    "family": "docs",
+    "title": "2023\u20132027 General Class Pool and Syllabus, sixth errata, February 4 2026",
+    "url": "https://ncvec.org/downloads/General%20Class%20Pool%20and%20Syllabus%202023-2027%20Public%20Release%20with%206th%20Errata%20Feb%204%202026.pdf",
+    "version": "2023\u20132027 General Class Pool and Syllabus, sixth errata, February 4 2026",
+    "size_bytes": 487877,
+    "sha256": "0627221fe69014b3015e97b44d3552a119ef7370144da8de9d02719c91cfa433",
+    "license": "US-PD",
+    "attribution": "National Conference of Volunteer Examiner Coordinators, Question Pool Committee",
+    "license_proof_url": "https://ncvec.org/index.php/2023-2027-general-question-pool-release",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NCVEC_general.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]"
+  },
+  {
+    "id": "ncvec_extra",
+    "family": "docs",
+    "title": "2024\u20132028 Extra Class Pool and Syllabus, fourth errata, February 4 2026",
+    "url": "https://ncvec.org/downloads/2024-2028%20Extra%20Class%20Question%20Pool%20and%20Syllabus%20Public%20Release%20with%204th%20Errata%20Feb%204%202026.pdf",
+    "version": "2024\u20132028 Extra Class Pool and Syllabus, fourth errata, February 4 2026",
+    "size_bytes": 952745,
+    "sha256": "9cc63ae0c1c9ee63a617824555d5b4e73da8c8edb91566f97a66770eb200f517",
+    "license": "US-PD",
+    "attribution": "National Conference of Volunteer Examiner Coordinators, Question Pool Committee",
+    "license_proof_url": "https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NCVEC_extra.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]"
+  },
+  {
+    "id": "ics_forms",
+    "family": "docs",
+    "title": "National Incident Management System Incident Command System Forms Booklet, FEMA 502-2",
+    "url": "https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/nims%20ics%20forms%20booklet%20%28v3%29.pdf",
+    "version": "September 2010; publisher v3 booklet",
+    "size_bytes": 2994565,
+    "sha256": "5821306717b7d1e0ff145f52a974773064121d3d01fee24fceacda40f2e3e55f",
+    "license": "US-PD",
+    "attribution": "Federal Emergency Management Agency (FEMA)",
+    "license_proof_url": "https://training.fema.gov/programs/independent-study/isfaq.aspx?lang=en",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NIMS_ICS_Forms_Booklet_v3.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS pin, per-item federal authorship and current fillable-form revisions]]"
+  },
+  {
+    "id": "ncvec_tech_diagrams",
+    "family": "docs",
+    "title": "2026\u20132030 Technician Class Pool and Syllabus, February 19 2026 \u2014 figures",
+    "url": "https://ncvec.org/downloads/TECH_2026/2026-2030%20Technician%20Pool%203%20Diagrams.pdf",
+    "version": "2026\u20132030 Technician Class Pool and Syllabus, February 19 2026",
+    "size_bytes": 278003,
+    "sha256": "0b2f636a399100ab42a929328e187cef925d6d50666599ad58aff318cd81147c",
+    "license": "US-PD",
+    "attribution": "National Conference of Volunteer Examiner Coordinators, Question Pool Committee",
+    "license_proof_url": "https://ncvec.org/index.php/2026-2030-technician-question-pool",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NCVEC_tech_diagrams.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]"
+  },
+  {
+    "id": "ncvec_general_diagrams",
+    "family": "docs",
+    "title": "2023\u20132027 General Class Pool and Syllabus, sixth errata, February 4 2026 \u2014 figures",
+    "url": "https://www.ncvec.org/downloads/G7-1.pdf",
+    "version": "2023\u20132027 General Class Pool and Syllabus, sixth errata, February 4 2026",
+    "size_bytes": 11312,
+    "sha256": "13b8ed81fc963ec1c24a414c78a288d658e52ff5d89e58c775aff85f17e57c3f",
+    "license": "US-PD",
+    "attribution": "National Conference of Volunteer Examiner Coordinators, Question Pool Committee",
+    "license_proof_url": "https://ncvec.org/index.php/2023-2027-general-question-pool-release",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NCVEC_general_diagrams.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]"
+  },
+  {
+    "id": "ncvec_extra_diagrams",
+    "family": "docs",
+    "title": "2024\u20132028 Extra Class Pool and Syllabus, fourth errata, February 4 2026 \u2014 figures",
+    "url": "https://www.ncvec.org/downloads/Extra_Figures_2024-2028-1.pdf",
+    "version": "2024\u20132028 Extra Class Pool and Syllabus, fourth errata, February 4 2026",
+    "size_bytes": 78505,
+    "sha256": "591bb4c9fc9a9267e298b3ee23c93ab54ba3813f8ea3730123f9ccda1e4b80f2",
+    "license": "US-PD",
+    "attribution": "National Conference of Volunteer Examiner Coordinators, Question Pool Committee",
+    "license_proof_url": "https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/NCVEC_extra_diagrams.pdf",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]"
   }
 ]

@@ -1,0 +1,14 @@
+:root { color-scheme: light; font: 16px/1.4 system-ui, sans-serif; color: #18251e; background: #faf9f4; }
+body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+header, fieldset, footer { padding: .6rem 1rem; }
+h1 { font-size: 1.5rem; margin: 0; }
+p { margin: .35rem 0; }
+fieldset { margin: 0; border: 0; border-top: 1px solid #c7cec7; }
+fieldset, form { display: flex; flex-wrap: wrap; align-items: end; gap: .5rem; }
+label { display: inline-flex; flex-direction: column; }
+input, select, button { font: inherit; padding: .35rem; max-width: 12rem; }
+.open input { max-width: 30rem; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #bb650b; outline-offset: 2px; }
+#map { flex: 1; min-height: 55vh; }
+footer { font-size: .8rem; border-top: 1px solid #c7cec7; }

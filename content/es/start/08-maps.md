@@ -3,7 +3,7 @@ title: Mapas y lugares
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/08-maps.md": "c2d2579963197100da6db606f7811c6d87bc9b720ec7aa29e4dddf028e5fc8bd"}
+source_inputs: {"content/en/start/08-maps.md": "fd2bbf304093d989fd792879e32d93931299e5148c1f4cde025fc9c62d4e74df"}
 review_required: []
 ---
 
@@ -26,6 +26,6 @@ La aplicación opcional y la guía de importación están en `3_MAPS_AND_PLACES/
 
 ## Mapa de computadora portátil
 
-El mapa está en la variante cuyo estante lo incluye.
-Consulte **¿Por qué es diferente mi unidad?** para encontrar esa variante. [@project_spec]
+El mapa está en la variante cuya colección de conocimientos detallados lo incluye.
+Consulte **¿En qué se diferencia mi unidad?** para encontrar esa variante. [@project_spec]
 [[VERIFY: probar el visor y su iniciador en cada sistema operativo de computadora.]]

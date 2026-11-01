@@ -80,57 +80,51 @@ class Mesh(Model):
     schedule: Text
 
 
-class BlockDay(Model):
-    date: Text
-    time_local: ClockTime
-
-
 class Defaults(Model):
     rally_point: RallyPoint
     meetings: Meetings
     convener: Convener
     radio: Radio
     mesh: Mesh
-    block_day: BlockDay
 
 
-class Module(Model):
+class Topic(Model):
     category: Literal["body", "infra", "civic"]
     title: Text
 
 
 class Variant(Model):
-    modules: list[Identifier] = Field(min_length=3, max_length=3)
-    shelf: Identifier
+    topics: list[Identifier] = Field(min_length=3, max_length=3)
+    collection: Identifier
 
 
 class Variants(Model):
-    modules: dict[Identifier, Module]
-    shelves: dict[Identifier, Text]
+    topics: dict[Identifier, Topic]
+    collections: dict[Identifier, Text]
     variants: dict[int, Variant]
 
     @model_validator(mode="after")
     def check_coverage(self) -> Self:
         if set(self.variants) != set(range(1, 9)):
             raise ValueError("Exactly variants 1 through 8 are required")
-        if len(self.modules) != 12 or len(self.shelves) != 8:
-            raise ValueError("Exactly 12 modules and 8 shelves are required")
-        module_counts: Counter = Counter()
-        shelf_counts: Counter = Counter()
+        if len(self.topics) != 12 or len(self.collections) != 8:
+            raise ValueError("Exactly 12 topics and 8 collections are required")
+        topic_counts: Counter = Counter()
+        collection_counts: Counter = Counter()
         for number, variant in self.variants.items():
-            if len(set(variant.modules)) != 3 or not set(variant.modules) <= self.modules.keys():
-                raise ValueError(f"Variant {number} has duplicate or unknown modules")
-            categories = Counter(self.modules[m].category for m in variant.modules)
+            if len(set(variant.topics)) != 3 or not set(variant.topics) <= self.topics.keys():
+                raise ValueError(f"Variant {number} has duplicate or unknown topics")
+            categories = Counter(self.topics[m].category for m in variant.topics)
             if categories != Counter(body=1, infra=1, civic=1):
-                raise ValueError(f"Variant {number} must have one module from each category")
-            if variant.shelf not in self.shelves:
-                raise ValueError(f"Variant {number} has an unknown shelf")
-            module_counts.update(variant.modules)
-            shelf_counts.update([variant.shelf])
-        if module_counts != Counter({key: 2 for key in self.modules}):
-            raise ValueError("Each module must appear on exactly two variants")
-        if shelf_counts != Counter({key: 1 for key in self.shelves}):
-            raise ValueError("Each shelf must appear on exactly one variant")
+                raise ValueError(f"Variant {number} must have one topic from each category")
+            if variant.collection not in self.collections:
+                raise ValueError(f"Variant {number} has an unknown collection")
+            topic_counts.update(variant.topics)
+            collection_counts.update([variant.collection])
+        if topic_counts != Counter({key: 2 for key in self.topics}):
+            raise ValueError("Each topic must appear on exactly two variants")
+        if collection_counts != Counter({key: 1 for key in self.collections}):
+            raise ValueError("Each collection must appear on exactly one variant")
         return self
 
 
@@ -166,6 +160,7 @@ class Profile(Model):
 
 class Build(Model):
     version: Annotated[str, StringConstraints(pattern=r"^\d+\.\d+\.\d+$")]
+    android_maps: Literal["auto", "roads_places"]
     volume_label: Annotated[str, StringConstraints(pattern=r"^[A-Z0-9_]{1,11}$")]
     volume_id: Annotated[str, StringConstraints(pattern=r"^[0-9A-F]{8}$")]
     site_base_url: Text
@@ -174,8 +169,46 @@ class Build(Model):
 
     @model_validator(mode="after")
     def all_profiles(self) -> Self:
+        from ck.cardlinks import site_urls
+
         if set(self.profiles) != {"dev", "sample", "full"}:
             raise ValueError("dev, sample and full profiles are required")
+        site_urls(self.site_base_url)
+        return self
+
+
+class LocalLLM(Model):
+    host: Literal["127.0.0.1"]
+    port: int = Field(ge=1, le=65535)
+    context_tokens: int = Field(ge=32768)
+    context_reserve_tokens: int = Field(ge=1)
+    message_reserve_tokens: int = Field(ge=1)
+    threads: int = Field(ge=1, le=16)
+    startup_timeout_seconds: int = Field(ge=1, le=600)
+    max_output_tokens: int = Field(ge=1, le=4096)
+    max_question_chars: int = Field(ge=1, le=10000)
+    temperature: float = Field(ge=0, le=2)
+    model_filename: Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*$")]
+    runner_filename: Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*$")]
+    model_alias: Annotated[str, StringConstraints(pattern=r"^[a-z][a-z0-9_-]*$")]
+    models: dict[Literal["sample", "full"], Identifier]
+    fallback_variants: list[int] = Field(min_length=4, max_length=4)
+    warning: Text
+    warning_es: Text
+
+    @model_validator(mode="after")
+    def selection(self) -> Self:
+        if len(set(self.fallback_variants)) != 4 or not set(self.fallback_variants) <= set(
+            range(1, 9)
+        ):
+            raise ValueError("The local LLM fallback must name four distinct variants")
+        if set(self.models) != {"sample", "full"}:
+            raise ValueError("Both sample and full model selections are required")
+        if (
+            self.max_output_tokens + self.context_reserve_tokens + 2 * self.message_reserve_tokens
+            >= self.context_tokens
+        ):
+            raise ValueError("Local LLM context reservations leave no room for input")
         return self
 
 
@@ -184,6 +217,7 @@ class Configuration(Model):
     variants: Variants
     languages: list[Language]
     build: Build
+    local_llm: LocalLLM | None = None
 
     @model_validator(mode="after")
     def editions(self) -> Self:
@@ -203,6 +237,9 @@ def load_config(root: Path) -> Configuration:
         name: read_yaml(root / "config" / f"{name}.yaml")
         for name in ("defaults", "variants", "languages", "build")
     }
+    settings = root / "pipelines/llm/settings.yaml"
+    if settings.exists():
+        data["local_llm"] = read_yaml(settings)
     return Configuration.model_validate(data)
 
 

@@ -1,0 +1,19 @@
+host: 127.0.0.1
+port: 8080
+context_tokens: 32768
+context_reserve_tokens: 4096
+message_reserve_tokens: 128
+threads: 4
+startup_timeout_seconds: 180
+max_output_tokens: 512
+max_question_chars: 2000
+temperature: 0.2
+model_filename: Model.gguf
+runner_filename: llamafile.exe
+model_alias: common-knowledge-local
+models:
+  sample: sample_model
+  full: base_model
+fallback_variants: [1, 3, 5, 7]
+warning: "Experimental local LLM. It can be wrong. If it disagrees with a card or video, follow the card."
+warning_es: "LLM local experimental. Puede equivocarse. Si contradice una tarjeta o un video, siga la tarjeta."

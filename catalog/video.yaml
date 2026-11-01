@@ -17,9 +17,9 @@
     ]
   },
   {
-    "id": "howto_videos_1",
+    "id": "topic_videos_medical",
     "family": "video",
-    "title": "Federal or Commons how-to videos, part 1; select individual files",
+    "title": "Medical video library; select individual sources",
     "url": "[[VERIFY: exact publisher download URL]]",
     "version": "[[VERIFY: publisher version]]",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
@@ -28,17 +28,19 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_1"
+      "topics": [
+        "medical"
+      ]
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_1/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/medical/",
     "profiles": [
       "full"
     ]
   },
   {
-    "id": "howto_videos_2",
+    "id": "topic_videos_care",
     "family": "video",
-    "title": "Federal or Commons how-to videos, part 2; select individual files",
+    "title": "Care for dependents video library; select individual sources",
     "url": "[[VERIFY: exact publisher download URL]]",
     "version": "[[VERIFY: publisher version]]",
     "size_bytes": "[[VERIFY: exact publisher file size]]",
@@ -47,11 +49,328 @@
     "attribution": "[[VERIFY: publisher attribution]]",
     "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
     "placement": {
-      "shelf": "howto_2"
+      "topics": [
+        "care"
+      ]
     },
-    "dest": "6_DEPTH_AND_SHELF/shelf/howto_2/",
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/care/",
     "profiles": [
       "full"
     ]
+  },
+  {
+    "id": "topic_videos_water",
+    "family": "video",
+    "title": "Water and sanitation video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "water"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/water/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_food",
+    "family": "video",
+    "title": "Food and cooking video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "food"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/food/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_power",
+    "family": "video",
+    "title": "Power and utilities video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "power"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/power/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_structures",
+    "family": "video",
+    "title": "Structures, fire and search video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "structures"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/structures/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_comms",
+    "family": "video",
+    "title": "Comms and information video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "comms"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/comms/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_transport",
+    "family": "video",
+    "title": "Transport and evacuation video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "transport"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/transport/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_convening",
+    "family": "video",
+    "title": "Convening and liaison video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "convening"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/convening/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_welfare",
+    "family": "video",
+    "title": "Welfare and reunification video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "welfare"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/welfare/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_legal",
+    "family": "video",
+    "title": "Legal, money and recovery video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "legal"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/legal/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "topic_videos_psychosocial",
+    "family": "video",
+    "title": "Psychosocial, kids and morale video library; select individual sources",
+    "url": "[[VERIFY: exact publisher download URL]]",
+    "version": "[[VERIFY: publisher version]]",
+    "size_bytes": "[[VERIFY: exact publisher file size]]",
+    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "license": "[[VERIFY: redistribution license]]",
+    "attribution": "[[VERIFY: publisher attribution]]",
+    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+    "placement": {
+      "topics": [
+        "psychosocial"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/psychosocial/",
+    "profiles": [
+      "full"
+    ]
+  },
+  {
+    "id": "cdc_handwashing_asl_source",
+    "family": "video",
+    "title": "What You Need to Know About Handwashing — CDC ASL video",
+    "url": "https://stacks.cdc.gov/view/cdc/88655/cdc_88655_DS2.wmv",
+    "version": "2020-04-10",
+    "size_bytes": 11559997,
+    "sha256": "7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC); ASL video series. No CDC, HHS or U.S. Government endorsement is implied; original available without charge.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: review computed HTTPS WMV pin, source content currency, original English audio and normalized playback on phones]]"
+  },
+  {
+    "id": "cdc_handwashing_asl",
+    "family": "generated",
+    "title": "What You Need to Know About Handwashing — normalized CDC ASL video",
+    "version": "CDC 2020-04-10; development conversion",
+    "size_bytes": 10813142,
+    "sha256": "dda2d060c97ef12bc92d4c95adda6090e36d5a0c8bfe2bfda67105bb4c069ba8",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
+    "placement": "universal",
+    "dest": "2_VIDEOS/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "inputs": [
+      "cdc_handwashing_asl_source",
+      "iso639_2"
+    ],
+    "pipeline_version": "video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b",
+    "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]"
+  },
+  {
+    "id": "usgs_earthquake_drop_source",
+    "family": "video",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video",
+    "version": "USGS 2023-09-20; downloaded 2026-10-31",
+    "url": "https://usgs-ocapsv2-public-input-media.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/Preparedness%20-Earthquakes%20-%20Part%205%20%281%29.mp4",
+    "size_bytes": 118084421,
+    "sha256": "66a95053e9cf83c36d9046c93051ac119cb8f33a9c2e0cfbc06da785205cac69",
+    "license": "US-PD",
+    "attribution": "Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.",
+    "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]"
+  },
+  {
+    "id": "usgs_earthquake_drop_caption_en",
+    "family": "docs",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — original English captions",
+    "version": "USGS 2023-09-20; downloaded 2026-10-31",
+    "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/captions/Preparedness%20-Earthquakes%20-%20Part%205.mp4_.vtt",
+    "size_bytes": 1884,
+    "sha256": "345d59915b83cbc72f64c3b8eb329f14ee7aa49ce0f8ec1716ca9729e145ac19",
+    "license": "US-PD",
+    "attribution": "Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.",
+    "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]"
+  },
+  {
+    "id": "usgs_earthquake_drop_cover",
+    "family": "generated",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On",
+    "version": "USGS 2023-09-20; development normalization with inferred caption timeline shift",
+    "size_bytes": 4023964,
+    "sha256": "1e80a8c6aad80f307d49f99ddcdb23ea7336b6b1d75b5505dd9657fb9e613049",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "Peter Pearsall, U.S. Geological Survey, Communications and Publishing. Format conversion and source notice: Common Knowledge. No agency endorsement is implied. Original English audio and publisher English captions are retained; no text overlay added.",
+    "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
+    "placement": {
+      "topics": [
+        "structures"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/structures/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "usgs_earthquake_drop_source",
+      "usgs_earthquake_drop_caption_en",
+      "iso639_2"
+    ],
+    "pipeline_version": "video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b",
+    "review": "[[VERIFY: human source-currency, computed-pin, caption synchronization and physical playback review; English audio/subtitle tracks only, no Spanish publisher track is supplied]]"
   }
 ]

@@ -18,8 +18,9 @@ def test_variant_guide_uses_the_planners_profile_selection():
         ROOT, config, source, config.languages[0], "phone", 946684800, profile="full"
     )
     dev = render_html(ROOT, config, source, config.languages[0], "phone", 946684800, profile="dev")
-    assert "iFixit; legal sign-off required" in full
-    assert "iFixit; legal sign-off required" not in dev
+    assert "Appropedia" in full
+    assert "Appropedia" not in dev
+    assert "iFixit" not in full
 
 
 def test_all_original_citations_resolve_and_review_status_is_explicit():
@@ -47,5 +48,10 @@ def test_core_layout_and_canonical_defaults(tmp_path):
     card_html = card.with_suffix(".html").read_text()
     assert 'href="#source-' not in card_html
     assert 'href="https://www.ecfr.gov/' in card_html
+    front = card_html.split('<section class="front">')[1].split('<section class="back">')[0]
+    assert config.defaults.convener.rule in front
+    assert "Household medications:" in front
+    assert "Household contact:" not in front
+    assert card_html.count("<svg ") == 4
     outline = PdfReader(tmp_path / "en/01_START_phone.pdf").outline
     assert outline

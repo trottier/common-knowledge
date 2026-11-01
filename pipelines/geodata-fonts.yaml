@@ -1,0 +1,2 @@
+# Font coverage required by the pinned national public-place names.
+fonts: [noto_sans, noto_sans_arabic, noto_sans_sc, noto_sans_cherokee]

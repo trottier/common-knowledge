@@ -1,0 +1,51 @@
+#!/bin/sh
+set -eu
+ck_drive=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cat "$ck_drive/WARNING.TXT"
+if [ ! -f "$ck_drive/{{ model_filename }}" ]; then
+  printf '\nThe model is not on this drive. Find a neighbor whose drive includes the local LLM.\n'
+  exit 1
+fi
+ck_runtime=$(mktemp -d "${TMPDIR:-/tmp}/common-knowledge-llm.XXXXXXXX")
+ck_child=
+ck_cleanup() {
+  trap - EXIT INT TERM
+  if [ -n "$ck_child" ]; then
+    kill "$ck_child" 2>/dev/null || :
+    wait "$ck_child" 2>/dev/null || :
+  fi
+  rm -rf "$ck_runtime"
+}
+trap ck_cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+cp "$ck_drive/{{ runner_filename }}" "$ck_runtime/{{ runner_filename }}"
+chmod u+x "$ck_runtime/{{ runner_filename }}"
+/bin/sh "$ck_runtime/{{ runner_filename }}" \
+  --server --gpu disable --offline --confine-reads --no-context-shift \
+  --no-webui-mcp-proxy --chat-template chatml \
+  --host {{ host }} --port {{ port }} --alias {{ model_alias }} \
+  --model "$ck_drive/{{ model_filename }}" --path "$ck_drive/ui" \
+  --ctx-size {{ context_tokens }} --parallel 1 --threads {{ threads }} \
+  >"$ck_runtime/server.log" 2>&1 &
+ck_child=$!
+ck_seconds=0
+while ! grep -Fq 'listening on http://{{ host }}:{{ port }}' "$ck_runtime/server.log"; do
+  if ! kill -0 "$ck_child" 2>/dev/null || [ "$ck_seconds" -ge {{ startup_timeout_seconds }} ]; then
+    cat "$ck_runtime/server.log"
+    printf '\nThe local LLM could not start. Keep using START and the printed cards.\n'
+    exit 1
+  fi
+  sleep 1
+  ck_seconds=$((ck_seconds + 1))
+done
+printf '\nOpen http://{{ host }}:{{ port }}\nClose this window or press Ctrl+C to stop.\n'
+if [ "${CK_NO_BROWSER:-0}" != 1 ]; then
+  case $(uname -s) in
+    Darwin) open 'http://{{ host }}:{{ port }}' || : ;;
+    *) if command -v xdg-open >/dev/null 2>&1; then
+         xdg-open 'http://{{ host }}:{{ port }}' >/dev/null 2>&1 || :
+       fi ;;
+  esac
+fi
+wait "$ck_child"

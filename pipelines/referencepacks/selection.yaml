@@ -1,0 +1,61 @@
+reference_howto_1:
+  title: "Automobile maintenance references"
+  source: wikibooks_en_nopic
+  collection: howto_1
+  status: draft
+  reviewer: null
+  reviewed_on: null
+  paths:
+    - Automobile_Repair
+    - Automobile_Repair/Before_You_Repair
+    - Automobile_Repair/Battery_Checking
+    - Automobile_Repair/Checking_the_oil_level
+    - Automobile_Repair/Flat_tire
+    - Automobile_Repair/Diagnostics
+reference_howto_2:
+  title: "Carpentry and hand-tool references"
+  source: wikibooks_en_nopic
+  collection: howto_2
+  status: draft
+  reviewer: null
+  reviewed_on: null
+  paths:
+    - Carpentry
+    - Carpentry/Hand_Tools
+    - Carpentry/Hand_Tools/Marking_Tools
+    - Carpentry/Hand_Tools/Planes
+    - Carpentry/Hand_Tools/Saws
+    - Carpentry/Fasteners/Nails
+    - Carpentry/Cabinetry/Joints
+reference_repair:
+  title: "Electronics background references"
+  source: wikibooks_en_nopic
+  collection: repair
+  status: draft
+  reviewer: null
+  reviewed_on: null
+  paths:
+    - Electronics
+    - Electronics/Basic_Concepts
+    - Electronics/AC_Voltage_and_Current
+    - Electronics/Batteries
+    - Electronics/Batteries/Care
+    - Electronics/Analog_Circuits
+    - Electronics/Amplifiers
+    - Electronics/Analog_to_Digital_Converters
+    - Electronics/Basic_gates
+reference_med_lib:
+  title: "Human physiology background references"
+  source: wikibooks_en_nopic
+  collection: med_lib
+  status: draft
+  reviewer: null
+  reviewed_on: null
+  paths:
+    - Human_Physiology
+    - Human_Physiology/Physiology_Introduction
+    - Human_Physiology/Homeostasis
+    - Human_Physiology/Cell_physiology
+    - Human_Physiology/Blood_physiology
+    - Human_Physiology/Nutrition
+    - Human_Physiology/Genetics_and_inheritance

@@ -1,0 +1,3 @@
+{
+  "files": ["recipe.json", "recipe.mjs", "render.mjs", "source.mjs", "style.mjs", "glyphs.mjs", "package.json", "bun.lock"]
+}

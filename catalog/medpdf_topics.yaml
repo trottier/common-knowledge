@@ -1,0 +1,797 @@
+{
+  "status": "draft",
+  "reviewer": null,
+  "reviewed_on": null,
+  "topics": [
+    {
+      "id": "cardiopulmonary_resuscitation",
+      "source": "wikimed_en_nopic",
+      "title": "Cardiopulmonary resuscitation"
+    },
+    {
+      "id": "bleeding",
+      "source": "wikimed_en_nopic",
+      "title": "Bleeding"
+    },
+    {
+      "id": "tourniquet",
+      "source": "wikimed_en_nopic",
+      "title": "Tourniquet"
+    },
+    {
+      "id": "shock_circulatory",
+      "source": "wikimed_en_nopic",
+      "title": "Shock (circulatory)"
+    },
+    {
+      "id": "recovery_position",
+      "source": "wikimed_en_nopic",
+      "title": "Recovery position"
+    },
+    {
+      "id": "burn",
+      "source": "wikimed_en_nopic",
+      "title": "Burn"
+    },
+    {
+      "id": "heat_stroke",
+      "source": "wikimed_en_nopic",
+      "title": "Heat stroke"
+    },
+    {
+      "id": "heat_exhaustion",
+      "source": "wikimed_en_nopic",
+      "title": "Heat exhaustion"
+    },
+    {
+      "id": "hypothermia",
+      "source": "wikimed_en_nopic",
+      "title": "Hypothermia"
+    },
+    {
+      "id": "frostbite",
+      "source": "wikimed_en_nopic",
+      "title": "Frostbite"
+    },
+    {
+      "id": "dehydration",
+      "source": "wikimed_en_nopic",
+      "title": "Dehydration"
+    },
+    {
+      "id": "oral_rehydration_therapy",
+      "source": "wikimed_en_nopic",
+      "title": "Oral rehydration therapy"
+    },
+    {
+      "id": "diarrhea",
+      "source": "wikimed_en_nopic",
+      "title": "Diarrhea"
+    },
+    {
+      "id": "vomiting",
+      "source": "wikimed_en_nopic",
+      "title": "Vomiting"
+    },
+    {
+      "id": "foodborne_illness",
+      "source": "wikimed_en_nopic",
+      "title": "Foodborne illness"
+    },
+    {
+      "id": "choking",
+      "source": "wikimed_en_nopic",
+      "title": "Choking"
+    },
+    {
+      "id": "drowning",
+      "source": "wikimed_en_nopic",
+      "title": "Drowning"
+    },
+    {
+      "id": "anaphylaxis",
+      "source": "wikimed_en_nopic",
+      "title": "Anaphylaxis"
+    },
+    {
+      "id": "asthma",
+      "source": "wikimed_en_nopic",
+      "title": "Asthma"
+    },
+    {
+      "id": "heart_attack",
+      "source": "wikimed_en_nopic",
+      "title": "Heart attack"
+    },
+    {
+      "id": "stroke",
+      "source": "wikimed_en_nopic",
+      "title": "Stroke"
+    },
+    {
+      "id": "seizure",
+      "source": "wikimed_en_nopic",
+      "title": "Seizure"
+    },
+    {
+      "id": "status_epilepticus",
+      "source": "wikimed_en_nopic",
+      "title": "Status epilepticus"
+    },
+    {
+      "id": "hypoglycemia",
+      "source": "wikimed_en_nopic",
+      "title": "Hypoglycemia"
+    },
+    {
+      "id": "hyperglycemia",
+      "source": "wikimed_en_nopic",
+      "title": "Hyperglycemia"
+    },
+    {
+      "id": "diabetic_ketoacidosis",
+      "source": "wikimed_en_nopic",
+      "title": "Diabetic ketoacidosis"
+    },
+    {
+      "id": "diabetes_mellitus",
+      "source": "wikimed_en_nopic",
+      "title": "Diabetes mellitus"
+    },
+    {
+      "id": "insulin",
+      "source": "wikimed_en_nopic",
+      "title": "Insulin"
+    },
+    {
+      "id": "chest_pain",
+      "source": "wikimed_en_nopic",
+      "title": "Chest pain"
+    },
+    {
+      "id": "shortness_of_breath",
+      "source": "wikimed_en_nopic",
+      "title": "Shortness of breath"
+    },
+    {
+      "id": "abdominal_pain",
+      "source": "wikimed_en_nopic",
+      "title": "Abdominal pain"
+    },
+    {
+      "id": "fever",
+      "source": "wikimed_en_nopic",
+      "title": "Fever"
+    },
+    {
+      "id": "headache",
+      "source": "wikimed_en_nopic",
+      "title": "Headache"
+    },
+    {
+      "id": "altered_level_of_consciousness",
+      "source": "wikimed_en_nopic",
+      "title": "Altered level of consciousness"
+    },
+    {
+      "id": "syncope",
+      "source": "wikimed_en_nopic",
+      "title": "Syncope (medicine)"
+    },
+    {
+      "id": "poisoning",
+      "source": "wikimed_en_nopic",
+      "title": "Poisoning"
+    },
+    {
+      "id": "carbon_monoxide_poisoning",
+      "source": "wikimed_en_nopic",
+      "title": "Carbon monoxide poisoning"
+    },
+    {
+      "id": "alcohol_intoxication",
+      "source": "wikimed_en_nopic",
+      "title": "Alcohol intoxication"
+    },
+    {
+      "id": "opioid_overdose",
+      "source": "wikimed_en_nopic",
+      "title": "Opioid overdose"
+    },
+    {
+      "id": "naloxone",
+      "source": "wikimed_en_nopic",
+      "title": "Naloxone"
+    },
+    {
+      "id": "snakebite",
+      "source": "wikimed_en_nopic",
+      "title": "Snakebite"
+    },
+    {
+      "id": "spider_bite",
+      "source": "wikimed_en_nopic",
+      "title": "Spider bite"
+    },
+    {
+      "id": "tick_bite",
+      "source": "wikimed_en_nopic",
+      "title": "Tick bite"
+    },
+    {
+      "id": "rabies",
+      "source": "wikimed_en_nopic",
+      "title": "Rabies"
+    },
+    {
+      "id": "tetanus",
+      "source": "wikimed_en_nopic",
+      "title": "Tetanus"
+    },
+    {
+      "id": "wound",
+      "source": "wikimed_en_nopic",
+      "title": "Wound"
+    },
+    {
+      "id": "sterilization",
+      "source": "wikimed_en_nopic",
+      "title": "Sterilization (microbiology)"
+    },
+    {
+      "id": "puncture_wound",
+      "source": "wikimed_en_nopic",
+      "title": "Puncture wound"
+    },
+    {
+      "id": "crush_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Crush injury"
+    },
+    {
+      "id": "compartment_syndrome",
+      "source": "wikimed_en_nopic",
+      "title": "Compartment syndrome"
+    },
+    {
+      "id": "rhabdomyolysis",
+      "source": "wikimed_en_nopic",
+      "title": "Rhabdomyolysis"
+    },
+    {
+      "id": "bone_fracture",
+      "source": "wikimed_en_nopic",
+      "title": "Bone fracture"
+    },
+    {
+      "id": "sprain",
+      "source": "wikimed_en_nopic",
+      "title": "Sprain"
+    },
+    {
+      "id": "splint_medicine",
+      "source": "wikimed_en_nopic",
+      "title": "Splint (medicine)"
+    },
+    {
+      "id": "head_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Head injury"
+    },
+    {
+      "id": "concussion",
+      "source": "wikimed_en_nopic",
+      "title": "Concussion"
+    },
+    {
+      "id": "traumatic_brain_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Traumatic brain injury"
+    },
+    {
+      "id": "spinal_cord_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Spinal cord injury"
+    },
+    {
+      "id": "chest_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Chest injury"
+    },
+    {
+      "id": "pneumothorax",
+      "source": "wikimed_en_nopic",
+      "title": "Pneumothorax"
+    },
+    {
+      "id": "abdominal_trauma",
+      "source": "wikimed_en_nopic",
+      "title": "Abdominal trauma"
+    },
+    {
+      "id": "pelvic_fracture",
+      "source": "wikimed_en_nopic",
+      "title": "Pelvic fracture"
+    },
+    {
+      "id": "eye_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Eye injury"
+    },
+    {
+      "id": "chemical_burn",
+      "source": "wikimed_en_nopic",
+      "title": "Chemical burn"
+    },
+    {
+      "id": "electrical_injury",
+      "source": "wikimed_en_nopic",
+      "title": "Electrical injury"
+    },
+    {
+      "id": "radiation_sickness",
+      "source": "wikimed_en_nopic",
+      "title": "Radiation sickness"
+    },
+    {
+      "id": "altitude_sickness",
+      "source": "wikimed_en_nopic",
+      "title": "Altitude sickness"
+    },
+    {
+      "id": "motion_sickness",
+      "source": "wikimed_en_nopic",
+      "title": "Motion sickness"
+    },
+    {
+      "id": "infection",
+      "source": "wikimed_en_nopic",
+      "title": "Infection"
+    },
+    {
+      "id": "sepsis",
+      "source": "wikimed_en_nopic",
+      "title": "Sepsis"
+    },
+    {
+      "id": "cellulitis",
+      "source": "wikimed_en_nopic",
+      "title": "Cellulitis"
+    },
+    {
+      "id": "abscess",
+      "source": "wikimed_en_nopic",
+      "title": "Abscess"
+    },
+    {
+      "id": "pneumonia",
+      "source": "wikimed_en_nopic",
+      "title": "Pneumonia"
+    },
+    {
+      "id": "influenza",
+      "source": "wikimed_en_nopic",
+      "title": "Influenza"
+    },
+    {
+      "id": "covid_19",
+      "source": "wikimed_en_nopic",
+      "title": "COVID-19"
+    },
+    {
+      "id": "tuberculosis",
+      "source": "wikimed_en_nopic",
+      "title": "Tuberculosis"
+    },
+    {
+      "id": "meningitis",
+      "source": "wikimed_en_nopic",
+      "title": "Meningitis"
+    },
+    {
+      "id": "urinary_tract_infection",
+      "source": "wikimed_en_nopic",
+      "title": "Urinary tract infection"
+    },
+    {
+      "id": "kidney_stone",
+      "source": "wikimed_en_nopic",
+      "title": "Kidney stone"
+    },
+    {
+      "id": "appendicitis",
+      "source": "wikimed_en_nopic",
+      "title": "Appendicitis"
+    },
+    {
+      "id": "gastroenteritis",
+      "source": "wikimed_en_nopic",
+      "title": "Gastroenteritis"
+    },
+    {
+      "id": "cholera",
+      "source": "wikimed_en_nopic",
+      "title": "Cholera"
+    },
+    {
+      "id": "dysentery",
+      "source": "wikimed_en_nopic",
+      "title": "Dysentery"
+    },
+    {
+      "id": "hepatitis_a",
+      "source": "wikimed_en_nopic",
+      "title": "Hepatitis A"
+    },
+    {
+      "id": "typhoid_fever",
+      "source": "wikimed_en_nopic",
+      "title": "Typhoid fever"
+    },
+    {
+      "id": "measles",
+      "source": "wikimed_en_nopic",
+      "title": "Measles"
+    },
+    {
+      "id": "chickenpox",
+      "source": "wikimed_en_nopic",
+      "title": "Chickenpox"
+    },
+    {
+      "id": "scabies",
+      "source": "wikimed_en_nopic",
+      "title": "Scabies"
+    },
+    {
+      "id": "pediculosis",
+      "source": "wikimed_en_nopic",
+      "title": "Pediculosis"
+    },
+    {
+      "id": "conjunctivitis",
+      "source": "wikimed_en_nopic",
+      "title": "Conjunctivitis"
+    },
+    {
+      "id": "otitis_media",
+      "source": "wikimed_en_nopic",
+      "title": "Otitis media"
+    },
+    {
+      "id": "otitis_externa",
+      "source": "wikimed_en_nopic",
+      "title": "Otitis externa"
+    },
+    {
+      "id": "dental_abscess",
+      "source": "wikimed_en_nopic",
+      "title": "Dental abscess"
+    },
+    {
+      "id": "toothache",
+      "source": "wikimed_en_nopic",
+      "title": "Toothache"
+    },
+    {
+      "id": "nosebleed",
+      "source": "wikimed_en_nopic",
+      "title": "Nosebleed"
+    },
+    {
+      "id": "sore_throat",
+      "source": "wikimed_en_nopic",
+      "title": "Sore throat"
+    },
+    {
+      "id": "allergic_rhinitis",
+      "source": "wikimed_en_nopic",
+      "title": "Allergic rhinitis"
+    },
+    {
+      "id": "urticaria",
+      "source": "wikimed_en_nopic",
+      "title": "Urticaria"
+    },
+    {
+      "id": "contact_dermatitis",
+      "source": "wikimed_en_nopic",
+      "title": "Contact dermatitis"
+    },
+    {
+      "id": "sunburn",
+      "source": "wikimed_en_nopic",
+      "title": "Sunburn"
+    },
+    {
+      "id": "blister",
+      "source": "wikimed_en_nopic",
+      "title": "Blister"
+    },
+    {
+      "id": "pressure_ulcer",
+      "source": "wikimed_en_nopic",
+      "title": "Pressure ulcer"
+    },
+    {
+      "id": "diaper_dermatitis",
+      "source": "wikimed_en_nopic",
+      "title": "Diaper dermatitis"
+    },
+    {
+      "id": "trench_foot",
+      "source": "wikimed_en_nopic",
+      "title": "Trench foot"
+    },
+    {
+      "id": "malnutrition",
+      "source": "wikimed_en_nopic",
+      "title": "Malnutrition"
+    },
+    {
+      "id": "breastfeeding",
+      "source": "wikimed_en_nopic",
+      "title": "Breastfeeding"
+    },
+    {
+      "id": "infant_formula",
+      "source": "wikimed_en_nopic",
+      "title": "Infant formula"
+    },
+    {
+      "id": "childbirth",
+      "source": "wikimed_en_nopic",
+      "title": "Childbirth"
+    },
+    {
+      "id": "postpartum_bleeding",
+      "source": "wikimed_en_nopic",
+      "title": "Postpartum bleeding"
+    },
+    {
+      "id": "pre_eclampsia",
+      "source": "wikimed_en_nopic",
+      "title": "Pre-eclampsia"
+    },
+    {
+      "id": "ectopic_pregnancy",
+      "source": "wikimed_en_nopic",
+      "title": "Ectopic pregnancy"
+    },
+    {
+      "id": "miscarriage",
+      "source": "wikimed_en_nopic",
+      "title": "Miscarriage"
+    },
+    {
+      "id": "neonatal_resuscitation",
+      "source": "wikimed_en_nopic",
+      "title": "Neonatal resuscitation"
+    },
+    {
+      "id": "child_abuse",
+      "source": "wikimed_en_nopic",
+      "title": "Child abuse"
+    },
+    {
+      "id": "domestic_violence",
+      "source": "wikimed_en_nopic",
+      "title": "Domestic violence"
+    },
+    {
+      "id": "psychological_trauma",
+      "source": "wikimed_en_nopic",
+      "title": "Psychological trauma"
+    },
+    {
+      "id": "acute_stress_disorder",
+      "source": "wikimed_en_nopic",
+      "title": "Acute stress disorder"
+    },
+    {
+      "id": "post_traumatic_stress_disorder",
+      "source": "wikimed_en_nopic",
+      "title": "Post-traumatic stress disorder"
+    },
+    {
+      "id": "suicide_prevention",
+      "source": "wikimed_en_nopic",
+      "title": "Suicide prevention"
+    },
+    {
+      "id": "panic_attack",
+      "source": "wikimed_en_nopic",
+      "title": "Panic attack"
+    },
+    {
+      "id": "psychosis",
+      "source": "wikimed_en_nopic",
+      "title": "Psychosis"
+    },
+    {
+      "id": "delirium",
+      "source": "wikimed_en_nopic",
+      "title": "Delirium"
+    },
+    {
+      "id": "dementia",
+      "source": "wikimed_en_nopic",
+      "title": "Dementia"
+    },
+    {
+      "id": "epilepsy",
+      "source": "wikimed_en_nopic",
+      "title": "Epilepsy"
+    },
+    {
+      "id": "hypertension",
+      "source": "wikimed_en_nopic",
+      "title": "Hypertension"
+    },
+    {
+      "id": "heart_failure",
+      "source": "wikimed_en_nopic",
+      "title": "Heart failure"
+    },
+    {
+      "id": "chronic_obstructive_pulmonary_disease",
+      "source": "wikimed_en_nopic",
+      "title": "Chronic obstructive pulmonary disease"
+    },
+    {
+      "id": "oxygen_therapy",
+      "source": "wikimed_en_nopic",
+      "title": "Oxygen therapy"
+    },
+    {
+      "id": "renal_failure",
+      "source": "wikimed_en_nopic",
+      "title": "Renal failure"
+    },
+    {
+      "id": "pain_management",
+      "source": "wikimed_en_nopic",
+      "title": "Pain management"
+    },
+    {
+      "id": "palliative_care",
+      "source": "wikimed_en_nopic",
+      "title": "Palliative care"
+    },
+    {
+      "id": "triage",
+      "source": "wikimed_en_nopic",
+      "title": "Triage"
+    },
+    {
+      "id": "first_aid",
+      "source": "wikimed_en_nopic",
+      "title": "First aid"
+    },
+    {
+      "id": "emergency_medical_services",
+      "source": "wikimed_en_nopic",
+      "title": "Emergency medical services"
+    },
+    {
+      "id": "basic_life_support",
+      "source": "wikimed_en_nopic",
+      "title": "Basic life support"
+    },
+    {
+      "id": "automated_external_defibrillator",
+      "source": "wikimed_en_nopic",
+      "title": "Automated external defibrillator"
+    },
+    {
+      "id": "infection_prevention_and_control",
+      "source": "wikimed_en_nopic",
+      "title": "Infection prevention and control"
+    },
+    {
+      "id": "hand_washing",
+      "source": "wikimed_en_nopic",
+      "title": "Hand washing"
+    },
+    {
+      "id": "sanitation",
+      "source": "wikimed_en_nopic",
+      "title": "Sanitation"
+    },
+    {
+      "id": "menstrual_hygiene_management",
+      "source": "wikimed_en_nopic",
+      "title": "Menstrual hygiene management"
+    },
+    {
+      "id": "urinary_catheterization",
+      "source": "wikimed_en_nopic",
+      "title": "Urinary catheterization"
+    },
+    {
+      "id": "colostomy",
+      "source": "wikimed_en_nopic",
+      "title": "Colostomy"
+    },
+    {
+      "id": "stoma_medicine",
+      "source": "wikimed_en_nopic",
+      "title": "Stoma (medicine)"
+    },
+    {
+      "id": "hypoxia_medicine",
+      "source": "wikimed_en_nopic",
+      "title": "Hypoxia (medicine)"
+    },
+    {
+      "id": "hyponatremia",
+      "source": "wikimed_en_nopic",
+      "title": "Hyponatremia"
+    },
+    {
+      "id": "hypernatremia",
+      "source": "wikimed_en_nopic",
+      "title": "Hypernatremia"
+    },
+    {
+      "id": "hypokalemia",
+      "source": "wikimed_en_nopic",
+      "title": "Hypokalemia"
+    },
+    {
+      "id": "hyperkalemia",
+      "source": "wikimed_en_nopic",
+      "title": "Hyperkalemia"
+    },
+    {
+      "id": "pulse_oximetry",
+      "source": "wikimed_en_nopic",
+      "title": "Pulse oximetry"
+    },
+    {
+      "id": "vital_signs",
+      "source": "wikimed_en_nopic",
+      "title": "Vital signs"
+    },
+    {
+      "id": "wikem_burns",
+      "source": "wikem_en_nopic",
+      "title": "Burns"
+    },
+    {
+      "id": "wikem_heat_stroke",
+      "source": "wikem_en_nopic",
+      "title": "Heat stroke"
+    },
+    {
+      "id": "wikem_anaphylaxis",
+      "source": "wikem_en_nopic",
+      "title": "Anaphylaxis"
+    },
+    {
+      "id": "wikem_epistaxis",
+      "source": "wikem_en_nopic",
+      "title": "Epistaxis"
+    },
+    {
+      "id": "wikem_laceration_repair",
+      "source": "wikem_en_nopic",
+      "title": "Laceration repair"
+    },
+    {
+      "id": "wikem_dehydration",
+      "source": "wikem_en_nopic",
+      "title": "Dehydration"
+    },
+    {
+      "id": "wikem_seizure",
+      "source": "wikem_en_nopic",
+      "title": "Seizure"
+    },
+    {
+      "id": "wikem_accidental_hypothermia",
+      "source": "wikem_en_nopic",
+      "title": "Accidental hypothermia"
+    }
+  ]
+}

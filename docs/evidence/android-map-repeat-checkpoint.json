@@ -1,0 +1,65 @@
+[
+  {
+    "state": "AS",
+    "size_bytes": 855212,
+    "obf_bytes": 520212,
+    "sha256": "03dac20bfc37aa5bf80f08b5f522a8d9ee73c5db39f603fbb3d02f1b36366bc5",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "CT",
+    "size_bytes": 120105930,
+    "obf_bytes": 79570289,
+    "sha256": "d85b4235a08ec64d6fc10725e59e9665f99bdf14ca119e95ebbf4807c1ae765a",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "DC",
+    "size_bytes": 15678758,
+    "obf_bytes": 11299984,
+    "sha256": "4c0602920daab57bb427fe42ddff086bce6be69463e73d2efbc1f9973a9cc642",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "DE",
+    "size_bytes": 28603733,
+    "obf_bytes": 19820130,
+    "sha256": "c5439b8e292c97fe79a908f70cb79af5d2b9f93470b4bc998eba8686e40e7846",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "GU",
+    "size_bytes": 2653279,
+    "obf_bytes": 1775528,
+    "sha256": "6b126f3cb9e74d7023cfb30756ac76e237f4945b4c08d04f2c40f9f085cd60d8",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "MP",
+    "size_bytes": 934088,
+    "obf_bytes": 631357,
+    "sha256": "46d3a13c6a912b3cf7080d72b820ec6143badd43c730724f45fc06d51010727a",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "PR",
+    "size_bytes": 45605792,
+    "obf_bytes": 30670180,
+    "sha256": "cfeef529b62e63f77afa684f1898e2396a82ceb76489eccc5675b3bedb17caf4",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "RI",
+    "size_bytes": 28513484,
+    "obf_bytes": 18911104,
+    "sha256": "fac6aa5e6b0eeea5e1a2d2b689d74bff7b6ef9fb9ff3af6011e1113f38ed760c",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  },
+  {
+    "state": "VI",
+    "size_bytes": 2714697,
+    "obf_bytes": 1812747,
+    "sha256": "cc9741ef40419960d8fb42ca63e4d84a8527c0b755464c8cdea7fb9b68956a5c",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410"
+  }
+]

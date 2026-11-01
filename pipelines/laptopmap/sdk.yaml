@@ -1,0 +1,234 @@
+{
+  "data_id": "laptop_roads_places",
+  "basemap_id": "protomaps_us",
+  "archives": [
+    {
+      "id": "laptop_mapbox_jsonlint_lines_primitives_2_0_2",
+      "files": [],
+      "notices": []
+    },
+    {
+      "id": "laptop_mapbox_point_geometry_1_1_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_mapbox_tiny_sdf_2_1_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "laptop_mapbox_unitbezier_0_0_1",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_mapbox_vector_tile_2_0_4",
+      "files": [],
+      "notices": [
+        "package/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "laptop_mapbox_whoots_js_3_1_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE.md"
+      ]
+    },
+    {
+      "id": "laptop_maplibre_geojson_vt_6_1_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_maplibre_maplibre_gl_style_spec_24_8_1",
+      "files": [],
+      "notices": [
+        "package/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "laptop_maplibre_mlt_1_1_8",
+      "files": [],
+      "notices": [
+        "package/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "laptop_maplibre_vt_pbf_4_3_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_maplibre_geojson_vt_5_0_4",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_types_geojson_7946_0_16",
+      "files": [],
+      "notices": [
+        "geojson/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_types_supercluster_7_1_3",
+      "files": [],
+      "notices": [
+        "supercluster/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_earcut_3_0_2",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_gl_matrix_3_4_4",
+      "files": [],
+      "notices": [
+        "package/LICENSE.md"
+      ]
+    },
+    {
+      "id": "laptop_json_stringify_pretty_compact_4_0_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_kdbush_4_0_2",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_minimist_1_2_8",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_murmurhash_js_1_0_0",
+      "files": [],
+      "notices": [
+        "package/README.md"
+      ]
+    },
+    {
+      "id": "laptop_pbf_4_0_1",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_potpack_2_1_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_protocol_buffers_schema_3_6_1",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_quickselect_3_0_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_resolve_protobuf_schema_2_1_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_rw_1_3_3",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_supercluster_8_0_1",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_tinyqueue_3_0_0",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_fflate_0_8_2",
+      "files": [],
+      "notices": [
+        "package/LICENSE"
+      ]
+    },
+    {
+      "id": "laptop_maplibre_gl_sdk",
+      "files": [
+        {
+          "member": "package/dist/maplibre-gl.js",
+          "dest": "vendor/maplibre-gl.js"
+        },
+        {
+          "member": "package/dist/maplibre-gl.css",
+          "dest": "vendor/maplibre-gl.css"
+        }
+      ],
+      "notices": [
+        "package/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "laptop_pmtiles_sdk",
+      "files": [
+        {
+          "member": "package/dist/pmtiles.js",
+          "dest": "vendor/pmtiles.js"
+        }
+      ],
+      "notices": []
+    }
+  ],
+  "extra_notices": [
+    "laptop_pmtiles_license",
+    "laptop_jsonlint_license"
+  ],
+  "lock_ids": [
+    "laptop_maplibre_lock",
+    "laptop_pmtiles_lock"
+  ]
+}

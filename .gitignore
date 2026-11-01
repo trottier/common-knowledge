@@ -10,6 +10,9 @@ htmlcov/
 .DS_Store
 .env
 .env.*
+**/node_modules/
+**/test-results/
+**/playwright-report/
 
 # Fetched cargo and generated output never belong in git.
 /cache/
@@ -31,3 +34,4 @@ htmlcov/
 *.mp4
 *.mp3
 *.pdf
+.worktrees/

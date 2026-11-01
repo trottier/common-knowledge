@@ -21,12 +21,12 @@ Do not press on an injured eye or pull out an embedded object. [@bleeding]
 If the person does not respond and is not breathing normally, call 911 and get an AED.
 Put both hands in the center of the chest.
 Push hard at 100–120 compressions per minute, about 2 inches deep.
-Let the chest rise fully between pushes. Follow the AED's voice prompts. [@cpr]
+Let the chest rise fully between pushes. Follow the AED's voice prompts. [@cpr] [@cpr_adult]
 
 Do not use this adult-only summary for a child or a drowning emergency.
 [[VERIFY: clinician must supply those breathing-rescue protocols and exact CPR stop conditions.]]
 
-**If 911 does not answer:** continue CPR while another person tries to find help and an AED. [@cpr]
+**If 911 does not answer:** continue CPR while another person tries to find help and an AED. [@cpr] [@cpr_adult]
 [[VERIFY: clinician must approve the no-response branch.]]
 
 ## Recovery position
@@ -50,13 +50,19 @@ Seek care for a large or deep burn or a burn on the face, hands or genitals. [@b
 
 ## Heat illness
 
-Confusion or loss of consciousness in the heat can mean heat stroke.
-Call 911 and begin cooling the person.
-Move them out of the heat, remove outer clothing and wet their skin.
-Do not give a drink to someone who cannot safely swallow. [@heat_illness]
+Confusion or collapse in heat may mean heat stroke, even with heavy sweating.
+Call 911.
+Move to shade, remove outer clothes, and cool with water and moving air.
+Stay with the person. [@heat_illness]
+Do not give drinks to someone who is not fully alert. [@recovery]
 
-**If 911 does not answer:** keep cooling and ask someone else to seek help.
-[[VERIFY: clinician must approve cooling methods, heat-exhaustion care and the no-response branch.]]
+Heavy sweating, thirst, dizziness or weakness may mean heat exhaustion.
+Rest in a cool place.
+Offer frequent small water sips to someone awake and able to swallow.
+Seek medical care. [@heat_illness]
+
+**If 911 does not answer:** keep cooling; send another person to seek help.
+[[VERIFY: clinician must approve the cooling methods, swallowing precautions, heat-exhaustion care and no-response branch.]]
 
 ## Hypothermia
 

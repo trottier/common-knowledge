@@ -1,6 +1,9 @@
 project_spec:
   title: Common Knowledge specification, sections 1 and 9.1
   path: AGENTS.md
+osmand_import:
+  title: OsmAnd — Import and export, and maps and resources
+  url: https://osmand.net/docs/user/personal/import-export/
 apple_usb:
   title: Apple — Connect external storage devices to iPhone
   url: https://support.apple.com/en-ie/guide/iphone/iph95baac91f/ios
@@ -17,12 +20,25 @@ calling_911:
   title: National 911 Program — FAQ About Calling 911
   url: https://www.911.gov/calling-911/frequently-asked-questions/
 fema_utilities:
-  title: FEMA — Are You Ready? Basic Preparedness
-  url: https://www.fema.gov/pdf/areyouready/basic_preparedness.pdf
-  note: "[[VERIFY: obtain and review the full official text; direct fetch returned HTTP 403.]]"
+  title: Ready.gov — Safety Skills, Know How to Shut Off Utilities
+  url: https://www.ready.gov/safety-skills
+  note: "Full publisher page retrieved for drafting; page states last updated March 20, 2026. Named utility-safety review remains required."
+fema_ready_guide:
+  title: FEMA — Are You Ready? Guide, Inside Your Home
+  url: https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide.pdf
+  note: "PDF page 31, printed page 27. Exact original PDF is catalog item ready_are_you_ready_en."
 cdc_generator:
   title: CDC — Use a Generator Safely
   url: https://www.cdc.gov/natural-disasters/psa-toolkit/use-a-generator-safely.html
+cdc_co_basics:
+  title: CDC — Carbon Monoxide Poisoning Basics
+  url: https://www.cdc.gov/carbon-monoxide/about/
+cpsc_generator_alert:
+  title: CPSC — Portable Generator Hazards, publication 5123/102021
+  url: https://www.cpsc.gov/s3fs-public/5123_SafetyAlert_PortableGenerators_102021.pdf?Versi=
+cpsc_post_storm:
+  title: CPSC — Generator, Carbon Monoxide and Fire Hazards Ahead of Hurricane Season
+  url: https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Warns-of-Generator-Carbon-Monoxide-and-Fire-Hazards-Ahead-of-Hurricane-Season
 epa_water:
   title: EPA — Emergency Disinfection of Drinking Water
   url: https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
@@ -65,6 +81,20 @@ hypothermia:
 oral_rehydration:
   title: CDC Yellow Book — Travelers’ Diarrhea, oral rehydration therapy
   url: https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travelers-diarrhea.html
+pocketpal_local:
+  title: PocketPal — local models, chat and Assistant Pals
+  url: https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/README.md
 fda_medicines:
   title: FDA — Safe Drug Use After a Natural Disaster
   url: https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster
+
+cdc_water_sources:
+  title: CDC — How to Find Clean Water in an Emergency
+  url: https://www.cdc.gov/water-emergency/about/how-to-find-clean-water-in-an-emergency.html
+cdc_water_advisories:
+  title: CDC — Drinking Water Advisories, An Overview
+  url: https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html
+
+cpr_adult:
+  title: MedlinePlus Medical Encyclopedia — CPR, adult and child after onset of puberty
+  url: https://medlineplus.gov/ency/article/000013.htm

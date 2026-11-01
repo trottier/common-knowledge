@@ -1,0 +1,140 @@
+[
+  {
+    "id": "maplibre_native_arm64",
+    "family": "binaries",
+    "title": "MapLibre Native build addon for Linux arm64",
+    "url": "https://github.com/maplibre/maplibre-native/releases/download/node-v6.4.1/node-v127-linux-arm64-Release.tar.gz",
+    "version": "6.4.1, Node ABI 127",
+    "size_bytes": 5077677,
+    "sha256": "82fdf555198711908fb3362316148f38b13f1df054fb381d4ee864c1a9762767",
+    "license": "BSD-2-Clause",
+    "attribution": "MapLibre contributors; MapLibre Native build tool, not shipped",
+    "license_proof_url": "https://registry.npmjs.org/@maplibre%2fmaplibre-gl-native/6.4.1",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://api.github.com/repos/maplibre/maplibre-native/releases/tags/node-v6.4.1"
+  },
+  {
+    "id": "maplibre_native_x64",
+    "family": "binaries",
+    "title": "MapLibre Native build addon for Linux x64",
+    "url": "https://github.com/maplibre/maplibre-native/releases/download/node-v6.4.1/node-v127-linux-x64-Release.tar.gz",
+    "version": "6.4.1, Node ABI 127",
+    "size_bytes": 5079297,
+    "sha256": "d04c0ddf89387a20a9cff93b57443ce756d34529dd83dc434bde1031b128ee59",
+    "license": "BSD-2-Clause",
+    "attribution": "MapLibre contributors; MapLibre Native build tool, not shipped",
+    "license_proof_url": "https://registry.npmjs.org/@maplibre%2fmaplibre-gl-native/6.4.1",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://api.github.com/repos/maplibre/maplibre-native/releases/tags/node-v6.4.1"
+  },
+  {
+    "id": "pmtiles_arm64",
+    "family": "binaries",
+    "title": "PMTiles build CLI for Linux arm64",
+    "url": "https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_arm64.tar.gz",
+    "version": "v1.31.2",
+    "size_bytes": 15779781,
+    "sha256": "f8bd47e7ea866863489cad588fbaf2f31f42e5821f7a03f009b3769f05801cb1",
+    "license": "BSD-3-Clause",
+    "attribution": "Protomaps contributors; build tool, not shipped",
+    "license_proof_url": "https://github.com/protomaps/go-pmtiles/blob/v1.31.2/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://api.github.com/repos/protomaps/go-pmtiles/releases/tags/v1.31.2"
+  },
+  {
+    "id": "pmtiles_x64",
+    "family": "binaries",
+    "title": "PMTiles build CLI for Linux x64",
+    "url": "https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz",
+    "version": "v1.31.2",
+    "size_bytes": 17444324,
+    "sha256": "3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f",
+    "license": "BSD-3-Clause",
+    "attribution": "Protomaps contributors; build tool, not shipped",
+    "license_proof_url": "https://github.com/protomaps/go-pmtiles/blob/v1.31.2/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://api.github.com/repos/protomaps/go-pmtiles/releases/tags/v1.31.2"
+  },
+  {
+    "id": "zim_tools_amd64",
+    "family": "binaries",
+    "title": "Static ZIM tools build input for Linux amd64",
+    "url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-x86_64-musl-3.8.0.tar.gz",
+    "version": "3.8.0",
+    "size_bytes": 74557265,
+    "sha256": "bf5c160ba931eacbcad09dc441524ff109be5c99ae43bc6f58b78af07509bc8e",
+    "license": "GPL-3.0-only",
+    "attribution": "openZIM and zim-tools contributors; build input only",
+    "license_proof_url": "https://github.com/openzim/zim-tools/blob/3.8.0/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-x86_64-musl-3.8.0.tar.gz.md5",
+    "review": "[[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]"
+  },
+  {
+    "id": "zim_tools_arm64",
+    "family": "binaries",
+    "title": "Static ZIM tools build input for Linux arm64",
+    "url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-aarch64-musl-3.8.0.tar.gz",
+    "version": "3.8.0",
+    "size_bytes": 71657859,
+    "sha256": "36061dc23623934512c7843580bd91e4556e411fc63f1baa15aef742a9e33969",
+    "license": "GPL-3.0-only",
+    "attribution": "openZIM and zim-tools contributors; build input only",
+    "license_proof_url": "https://github.com/openzim/zim-tools/blob/3.8.0/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/tools/",
+    "profiles": [
+      "dev",
+      "sample",
+      "full"
+    ],
+    "checksum_source_url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-aarch64-musl-3.8.0.tar.gz.md5",
+    "review": "[[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]"
+  },
+  {
+    "id": "mathjax_mml_svg",
+    "family": "binaries",
+    "title": "MathJax full — pinned MathML to SVG build tool",
+    "url": "https://registry.npmjs.org/mathjax-full/-/mathjax-full-3.2.2.tgz",
+    "version": "3.2.2",
+    "size_bytes": 8530863,
+    "sha256": "d8f080d2e4bdfb75284aac34d5eff155002eca47798b1d4e4bde31453e653f87",
+    "license": "Apache-2.0",
+    "attribution": "MathJax Consortium and contributors. MathJax is used only during reference PDF generation; original package license and notices are retained in the build input.",
+    "license_proof_url": "https://registry.npmjs.org/mathjax-full/3.2.2",
+    "checksum_source_url": "https://registry.npmjs.org/mathjax-full/3.2.2",
+    "placement": "hub_only",
+    "dest": "build/mathjax/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: independent package pin, Apache license/font-data notice and generated equation rendering review; publisher SHA-512 integrity matched]]"
+  }
+]

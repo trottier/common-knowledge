@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; worker-src blob:; img-src data: blob:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Common Knowledge · Laptop map</title>
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/maplibre-gl.js" defer></script>
+  <script src="vendor/pmtiles.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Laptop map</h1>
+    <p>Choose <strong>{{ archive_filename }}</strong> in this folder. Drag to move. Use + and − to zoom.</p>
+    <label class="open">Open map file <input id="file" type="file" accept=".pmtiles"></label>
+    <p id="status" role="status">The atlas PDFs are in 3_MAPS_AND_PLACES on the drive.</p>
+  </header>
+  <fieldset id="controls" disabled>
+    <legend>Find a place</legend>
+    <label>State or territory <select id="region"><option value="">Choose…</option></select></label>
+    <button id="home" type="button">U.S. overview</button>
+    <form id="locate">
+      <label>Latitude <input id="latitude" type="text" inputmode="decimal" placeholder="Decimal degrees"></label>
+      <label>Longitude <input id="longitude" type="text" inputmode="decimal" placeholder="West is negative"></label>
+      <button>Go to coordinates</button>
+    </form>
+  </fieldset>
+  <main id="map" aria-label="Interactive road map"></main>
+  <footer>
+    <p>Center: <output id="position">—</output> · © OpenStreetMap contributors · Protomaps · ODbL 1.0</p>
+    <p>Map software: MapLibre GL JS and PMTiles. Notices and licenses are in LICENSES and SOURCE.TXT.</p>
+  </footer>
+  <script type="application/json" id="settings">{{ settings_json | safe }}</script>
+</body>
+</html>
