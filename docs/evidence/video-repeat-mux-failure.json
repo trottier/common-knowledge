@@ -1,0 +1,530 @@
+{
+  "cache_mount": "read-only",
+  "clips": {
+    "be_prepared": {
+      "different_artifacts": [],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "07ed9e2b240ec62d6654300c78973e87ac000114f8dfe7627af863e070892cf6",
+            "size_bytes": 9376
+          },
+          "files/07_Be_Prepared.mp4": {
+            "sha256": "d8301ae51e9aa3f2a368433ea754acb3d7a9b1ce58a0ef33f048114884e32d6b",
+            "size_bytes": 2699947
+          },
+          "files/07_Be_Prepared_SOURCE.TXT": {
+            "sha256": "55e781a8cabb2ca4e995a21b0294162a15eb9d0c9466c8ca87ce380edac9e356",
+            "size_bytes": 1207
+          },
+          "generation.json": {
+            "sha256": "027d4cf137c8471d2b7334cd84496d1aa4d80113f41c149ea5f856e07b287e5b",
+            "size_bytes": 11541
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "07ed9e2b240ec62d6654300c78973e87ac000114f8dfe7627af863e070892cf6",
+            "size_bytes": 9376
+          },
+          "files/07_Be_Prepared.mp4": {
+            "sha256": "d8301ae51e9aa3f2a368433ea754acb3d7a9b1ce58a0ef33f048114884e32d6b",
+            "size_bytes": 2699947
+          },
+          "files/07_Be_Prepared_SOURCE.TXT": {
+            "sha256": "55e781a8cabb2ca4e995a21b0294162a15eb9d0c9466c8ca87ce380edac9e356",
+            "size_bytes": 1207
+          },
+          "generation.json": {
+            "sha256": "027d4cf137c8471d2b7334cd84496d1aa4d80113f41c149ea5f856e07b287e5b",
+            "size_bytes": 11541
+          }
+        }
+      }
+    },
+    "evacuation_route": {
+      "different_artifacts": [],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "9bf450d5dad91e1313516824bc30184b7b661fb3f69299731fd3f6b6741908bf",
+            "size_bytes": 9119
+          },
+          "files/08_Learn_Your_Evacuation_Route.mp4": {
+            "sha256": "2280936d4756749b70927b0ec9ab3f32e93d203a3a66f52087aade83bfb430fe",
+            "size_bytes": 3416242
+          },
+          "files/08_Learn_Your_Evacuation_Route_SOURCE.TXT": {
+            "sha256": "157b29496cff7a95459a5623b43005bee3c1874bc64b5384093f4e285b2c1567",
+            "size_bytes": 1309
+          },
+          "generation.json": {
+            "sha256": "5deda2c70f7d1ca24fe0c71b04fcbcd913f00a6eef2dce4f9f5e65e097f4ee2b",
+            "size_bytes": 11583
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "9bf450d5dad91e1313516824bc30184b7b661fb3f69299731fd3f6b6741908bf",
+            "size_bytes": 9119
+          },
+          "files/08_Learn_Your_Evacuation_Route.mp4": {
+            "sha256": "2280936d4756749b70927b0ec9ab3f32e93d203a3a66f52087aade83bfb430fe",
+            "size_bytes": 3416242
+          },
+          "files/08_Learn_Your_Evacuation_Route_SOURCE.TXT": {
+            "sha256": "157b29496cff7a95459a5623b43005bee3c1874bc64b5384093f4e285b2c1567",
+            "size_bytes": 1309
+          },
+          "generation.json": {
+            "sha256": "5deda2c70f7d1ca24fe0c71b04fcbcd913f00a6eef2dce4f9f5e65e097f4ee2b",
+            "size_bytes": 11583
+          }
+        }
+      }
+    },
+    "handwashing_asl": {
+      "different_artifacts": [],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "d71c8a229922533a59b3214226febc15c8447fc7a3f1d52dcf7455ab53e18af6",
+            "size_bytes": 7094
+          },
+          "files/01_What_You_Need_to_Know_About_Handwashing.mp4": {
+            "sha256": "80e61ceb1e03e7400360f8168c50108747217fe7c0a784bbef3262d36fbcf2db",
+            "size_bytes": 10812445
+          },
+          "files/01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT": {
+            "sha256": "8ee9f2323bc6d676f409fe8c728362b9edd56727312b39fd595a6ea3955ffd09",
+            "size_bytes": 697
+          },
+          "generation.json": {
+            "sha256": "c4ee61c783592bd445d0c1ef209b289227ffa2e21bd3de0d6eca0b10d91e5106",
+            "size_bytes": 11503
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "d71c8a229922533a59b3214226febc15c8447fc7a3f1d52dcf7455ab53e18af6",
+            "size_bytes": 7094
+          },
+          "files/01_What_You_Need_to_Know_About_Handwashing.mp4": {
+            "sha256": "80e61ceb1e03e7400360f8168c50108747217fe7c0a784bbef3262d36fbcf2db",
+            "size_bytes": 10812445
+          },
+          "files/01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT": {
+            "sha256": "8ee9f2323bc6d676f409fe8c728362b9edd56727312b39fd595a6ea3955ffd09",
+            "size_bytes": 697
+          },
+          "generation.json": {
+            "sha256": "c4ee61c783592bd445d0c1ef209b289227ffa2e21bd3de0d6eca0b10d91e5106",
+            "size_bytes": 11503
+          }
+        }
+      }
+    },
+    "rope_middle": {
+      "different_artifacts": [
+        "audit.json",
+        "generation.json",
+        "files/03_Tying_Off_Onto_the_Middle_of_a_Rope.mp4"
+      ],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "99d3d8d12f581e11de88b82b02b629992fed409993d36dd11a0453f57ceb0dfd",
+            "size_bytes": 8574
+          },
+          "files/03_Tying_Off_Onto_the_Middle_of_a_Rope.mp4": {
+            "sha256": "bfc5831e36539ee56738691816a983a0922fc07a55692702f58e1d1b4326d125",
+            "size_bytes": 36677786
+          },
+          "files/03_Tying_Off_Onto_the_Middle_of_a_Rope_SOURCE.TXT": {
+            "sha256": "5727d5a54e81565057c33e889d270828fd7f2a59ce79f1bc11546bc91e681fc0",
+            "size_bytes": 1241
+          },
+          "generation.json": {
+            "sha256": "48d1ab594059882896bd2674e84044024dd89d718c681a4964745cf84f858d34",
+            "size_bytes": 11596
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "6603b250d3906521d4cedb73abe9b61757815913fcc28b938c6b96917d8abfae",
+            "size_bytes": 8574
+          },
+          "files/03_Tying_Off_Onto_the_Middle_of_a_Rope.mp4": {
+            "sha256": "996efbe4c863c6944eafe32b9d82d544bdbac21fe36f50b652581660d889a084",
+            "size_bytes": 36677050
+          },
+          "files/03_Tying_Off_Onto_the_Middle_of_a_Rope_SOURCE.TXT": {
+            "sha256": "5727d5a54e81565057c33e889d270828fd7f2a59ce79f1bc11546bc91e681fc0",
+            "size_bytes": 1241
+          },
+          "generation.json": {
+            "sha256": "fac5afc6472b8cf0da7577f5a5e9f277ef5cc0b5b417051c82f617f0b4fa3008",
+            "size_bytes": 11596
+          }
+        }
+      }
+    },
+    "sfgov_handwash": {
+      "different_artifacts": [],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "1fb515dac8c2896d1e0606c12f325e9cec53bc79574f9f0d56ca82fabc15d6a2",
+            "size_bytes": 6673
+          },
+          "files/05_Hand_Washing.mp4": {
+            "sha256": "6b594cfe3b0ffaf6a45acd42eda1d61425b207d88fbe86d250605820c8e5900a",
+            "size_bytes": 4400332
+          },
+          "files/05_Hand_Washing_SOURCE.TXT": {
+            "sha256": "f08d16c01bc63396996a32d459ff19028f4644a7f1ee1f9e0f0572b2dd43a3bd",
+            "size_bytes": 650
+          },
+          "generation.json": {
+            "sha256": "3d3fd3a31f0eb0e7796b7526ce71a478250235fdfe63e06b68d03485325ded68",
+            "size_bytes": 11451
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "1fb515dac8c2896d1e0606c12f325e9cec53bc79574f9f0d56ca82fabc15d6a2",
+            "size_bytes": 6673
+          },
+          "files/05_Hand_Washing.mp4": {
+            "sha256": "6b594cfe3b0ffaf6a45acd42eda1d61425b207d88fbe86d250605820c8e5900a",
+            "size_bytes": 4400332
+          },
+          "files/05_Hand_Washing_SOURCE.TXT": {
+            "sha256": "f08d16c01bc63396996a32d459ff19028f4644a7f1ee1f9e0f0572b2dd43a3bd",
+            "size_bytes": 650
+          },
+          "generation.json": {
+            "sha256": "3d3fd3a31f0eb0e7796b7526ce71a478250235fdfe63e06b68d03485325ded68",
+            "size_bytes": 11451
+          }
+        }
+      }
+    },
+    "simple_sketchbook": {
+      "different_artifacts": [],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "000be34e4142a7ee976db8b0cde479ec28e30ad7f4136e1e85234f88b3922e15",
+            "size_bytes": 6687
+          },
+          "files/04_How_to_Make_a_Simple_Sketch_Book.mp4": {
+            "sha256": "63405ced11982a090fc58806e83a5dd06c5c54837b3c0787a30c040896020eaa",
+            "size_bytes": 14398970
+          },
+          "files/04_How_to_Make_a_Simple_Sketch_Book_SOURCE.TXT": {
+            "sha256": "7b96015ef389c98f46f55153e3b40cea58029cf40230ee4829fa9d142b40d2ea",
+            "size_bytes": 662
+          },
+          "generation.json": {
+            "sha256": "d2121716e79b4f4829c76aa773055f685cb4470d86e9bc961beebf89ba79907f",
+            "size_bytes": 11495
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "000be34e4142a7ee976db8b0cde479ec28e30ad7f4136e1e85234f88b3922e15",
+            "size_bytes": 6687
+          },
+          "files/04_How_to_Make_a_Simple_Sketch_Book.mp4": {
+            "sha256": "63405ced11982a090fc58806e83a5dd06c5c54837b3c0787a30c040896020eaa",
+            "size_bytes": 14398970
+          },
+          "files/04_How_to_Make_a_Simple_Sketch_Book_SOURCE.TXT": {
+            "sha256": "7b96015ef389c98f46f55153e3b40cea58029cf40230ee4829fa9d142b40d2ea",
+            "size_bytes": 662
+          },
+          "generation.json": {
+            "sha256": "d2121716e79b4f4829c76aa773055f685cb4470d86e9bc961beebf89ba79907f",
+            "size_bytes": 11495
+          }
+        }
+      }
+    },
+    "summer_grilling": {
+      "different_artifacts": [],
+      "runs": {
+        "a": {
+          "audit.json": {
+            "sha256": "2f75a1eefa74446cbed86eda2513dc503b961d09d257db083cbb18f9efd7c475",
+            "size_bytes": 9122
+          },
+          "files/06_Summer_Grilling_Safety.mp4": {
+            "sha256": "659e5932ad5db95a54479456c6ab0b808e29a4e8a5d5077d9267e452c68b6dc5",
+            "size_bytes": 4910962
+          },
+          "files/06_Summer_Grilling_Safety_SOURCE.TXT": {
+            "sha256": "06466dfb9891e5fbf6443cc5c8fab34a612a9ab535da35151c7146201d6c66b7",
+            "size_bytes": 1144
+          },
+          "generation.json": {
+            "sha256": "ba34df315e68be79deac15d786b8f42665f7d81ea83fd800fa2d267636315a59",
+            "size_bytes": 11571
+          }
+        },
+        "b": {
+          "audit.json": {
+            "sha256": "2f75a1eefa74446cbed86eda2513dc503b961d09d257db083cbb18f9efd7c475",
+            "size_bytes": 9122
+          },
+          "files/06_Summer_Grilling_Safety.mp4": {
+            "sha256": "659e5932ad5db95a54479456c6ab0b808e29a4e8a5d5077d9267e452c68b6dc5",
+            "size_bytes": 4910962
+          },
+          "files/06_Summer_Grilling_Safety_SOURCE.TXT": {
+            "sha256": "06466dfb9891e5fbf6443cc5c8fab34a612a9ab535da35151c7146201d6c66b7",
+            "size_bytes": 1144
+          },
+          "generation.json": {
+            "sha256": "ba34df315e68be79deac15d786b8f42665f7d81ea83fd800fa2d267636315a59",
+            "size_bytes": 11571
+          }
+        }
+      }
+    }
+  },
+  "container_image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "contexts": {
+    "a": "colima-common-knowledge-maps",
+    "b": "colima-common-knowledge"
+  },
+  "cpu_limit": 1,
+  "diagnostic_evidence": "video-mux-diagnostic.json",
+  "investigation": {
+    "inference": "Identical compressed media and packet timestamps with differing stsc/stco tables localize the mismatch to MP4 interleave/chunk layout. This does not establish a successful reproducible producer.",
+    "next_step": "Test explicit output bitexact and max_interleave_delta=0, then rebuild from a newly frozen producer; never relabel these outputs.",
+    "primary_documentation": "https://ffmpeg.org/ffmpeg-formats.html#Format-Options"
+  },
+  "memory_limit": "1 GiB",
+  "network": "disabled",
+  "pipeline_version": "video-v1-af21c26628ee980990c46d04c9c647bd3d4dea4c17e563ba383ab0bcdeb49fd1",
+  "producer_source_sha256": "fe675b009fe588b31485e05a3ac89439b2b5a999ed896eaaca512cd150a7ad18",
+  "rope_atom_differences": {
+    "/mdat[0]": {
+      "a": {
+        "sha256": "1fd42815fb062acaecd73b1b2ffc19fd1fa050dd13723b125b129df755de6bfc",
+        "size_bytes": 36204510
+      },
+      "b": {
+        "sha256": "cb1a4d47fbb71770ca802457d9c66f9b7235e24a8d314f10c38684e1330d7a1b",
+        "size_bytes": 36204510
+      }
+    },
+    "/moov[0]": {
+      "a": {
+        "sha256": "1d081ed12ca96b134b1b063118510d2789cc53cbe91a32867851b851500e2906",
+        "size_bytes": 473236
+      },
+      "b": {
+        "sha256": "9a079df169b737d13de0fe79b546bb63b9f498ff3b4c44c6101458025568c65d",
+        "size_bytes": 472500
+      }
+    },
+    "/moov[0]/trak[0]": {
+      "a": {
+        "sha256": "3e9e917bde56b361d284b0cadbfcab73f186a2a90d67de69908172dc11c6192e",
+        "size_bytes": 211522
+      },
+      "b": {
+        "sha256": "4edcfb8ae41573ece6049cddc1fe772278c7778ebedcdf02ea7ff18fa2312140",
+        "size_bytes": 211154
+      }
+    },
+    "/moov[0]/trak[0]/mdia[0]": {
+      "a": {
+        "sha256": "39a0eb307dfc8d4475148573bf7ec4fee18fcbc689b99459f49b27dffea0cc1e",
+        "size_bytes": 211386
+      },
+      "b": {
+        "sha256": "47904ab7de204d758e49b3b11ffd3e49596b290d68cd389537a5b01f8dc88595",
+        "size_bytes": 211018
+      }
+    },
+    "/moov[0]/trak[0]/mdia[0]/minf[0]": {
+      "a": {
+        "sha256": "78562853943f0204410a532d8161a868d5b9ecfae57bd652ab6ac36420e1d8e5",
+        "size_bytes": 211301
+      },
+      "b": {
+        "sha256": "f5e46bc5327a009faeb7fe4398351dd68ee3fc6478c910c54a5d356c9c85d4bf",
+        "size_bytes": 210933
+      }
+    },
+    "/moov[0]/trak[0]/mdia[0]/minf[0]/stbl[0]": {
+      "a": {
+        "sha256": "bfcd4fc6c2d08617cea5cd26b936c271d5478d4d4d436f26789548ecda1adf96",
+        "size_bytes": 211237
+      },
+      "b": {
+        "sha256": "8f46ad71be7207a9e705b44d28cfb325e678a4f76678965e170e2b6867befcbf",
+        "size_bytes": 210869
+      }
+    },
+    "/moov[0]/trak[0]/mdia[0]/minf[0]/stbl[0]/stco[0]": {
+      "a": {
+        "sha256": "e1d3d555e306954a5ec07641416fa708ae57aeceb16ceef8d57a37578a6ab7fd",
+        "size_bytes": 49488
+      },
+      "b": {
+        "sha256": "e9e55db2acba32f760e3a677480b22fd6ef7e2ee87106b9476adb61b658542b9",
+        "size_bytes": 49348
+      }
+    },
+    "/moov[0]/trak[0]/mdia[0]/minf[0]/stbl[0]/stsc[0]": {
+      "a": {
+        "sha256": "5f42e6e2c35462cfb4fb5d443092a9b5f3f31df9624d2de27f28ae42ad6f7802",
+        "size_bytes": 3316
+      },
+      "b": {
+        "sha256": "ba89d4a1785a524e85e6666179bd4ed62c03f5b38cd8c279869183241b193a3c",
+        "size_bytes": 3088
+      }
+    },
+    "/moov[0]/trak[1]": {
+      "a": {
+        "sha256": "68e4b4bf76800065350111e23071f5bc120abae6d5ca5b565846edd812e76ec5",
+        "size_bytes": 259545
+      },
+      "b": {
+        "sha256": "e54155163a1da3ae9874f997a4b5057396fc8691437e17b42d6960bf7230f3ea",
+        "size_bytes": 259177
+      }
+    },
+    "/moov[0]/trak[1]/mdia[0]": {
+      "a": {
+        "sha256": "52180b9fd9756542b47dbf4160c63afddaebcf2c36659c5295aa88a0696a7dcb",
+        "size_bytes": 259369
+      },
+      "b": {
+        "sha256": "5eb8da57f2243a64fde8d40d258274c54ac96b5d528327c42afe70057456d8f5",
+        "size_bytes": 259001
+      }
+    },
+    "/moov[0]/trak[1]/mdia[0]/minf[0]": {
+      "a": {
+        "sha256": "ef99defb30c1cade0903649f87ac7f6b2952308b82c15c4650a4b9dfdaa4d97b",
+        "size_bytes": 259284
+      },
+      "b": {
+        "sha256": "d46b745b32b556a431f8308de11d5267c95b6d0e5395382595f6bf78a115e803",
+        "size_bytes": 258916
+      }
+    },
+    "/moov[0]/trak[1]/mdia[0]/minf[0]/stbl[0]": {
+      "a": {
+        "sha256": "dd4c4e62a01c03204bf99f60edb281bd9c7ab1c86206e53a72cb0a38e301cd59",
+        "size_bytes": 259224
+      },
+      "b": {
+        "sha256": "59af70db0506e191bb0312f420f111646f55fdd18fba704f89f28852efb5cc2c",
+        "size_bytes": 258856
+      }
+    },
+    "/moov[0]/trak[1]/mdia[0]/minf[0]/stbl[0]/stco[0]": {
+      "a": {
+        "sha256": "ce65f441e725db081f96ce35fcfa78fa278e81b42f67ba199761ffcf777b04de",
+        "size_bytes": 49576
+      },
+      "b": {
+        "sha256": "98211de605c9408c08d8e434540ba553303d3f64bad36863d85b5a8faa090c96",
+        "size_bytes": 49436
+      }
+    },
+    "/moov[0]/trak[1]/mdia[0]/minf[0]/stbl[0]/stsc[0]": {
+      "a": {
+        "sha256": "813d446a3d12f1e4617eb65e978ea42fa1585cd200afa515f3e65d695312ffd4",
+        "size_bytes": 126652
+      },
+      "b": {
+        "sha256": "07adc7864d55e51439ac9a80af03c77bbc8b0aebb78d7596eb191375590f5540",
+        "size_bytes": 126424
+      }
+    },
+    "/moov[0]/trak[2]": {
+      "a": {
+        "sha256": "c767e415ab5dbe9dfe5016d64b1a2988f7ffddc94eac63e662f218801b26eb58",
+        "size_bytes": 1955
+      },
+      "b": {
+        "sha256": "8bb8d12fd47acac4201a465662c639dfb6298cab26a4592a182257500e900f5e",
+        "size_bytes": 1955
+      }
+    },
+    "/moov[0]/trak[2]/mdia[0]": {
+      "a": {
+        "sha256": "26e0eb7f5abde4ad4ad9ce517f108f2ffb295977fbb59798993a62c9173cc0ab",
+        "size_bytes": 1796
+      },
+      "b": {
+        "sha256": "a11895e0202eb700387c307970c4294609cbef6b97de937b8712c4f0d10438c5",
+        "size_bytes": 1796
+      }
+    },
+    "/moov[0]/trak[2]/mdia[0]/minf[0]": {
+      "a": {
+        "sha256": "058b46c006906f4ed325fa5cb5bc651f1e2fb1e58b848d243a6c1b7abf3962b6",
+        "size_bytes": 1708
+      },
+      "b": {
+        "sha256": "ad2e6f1ae5b9b5da6b9b82daa556fdcb4bf50473817a30cd54a86d7af23641fd",
+        "size_bytes": 1708
+      }
+    },
+    "/moov[0]/trak[2]/mdia[0]/minf[0]/stbl[0]": {
+      "a": {
+        "sha256": "ad4f7816647c95a4988b9e170de8fa403d03e45b61f8b973e59e324484eb3a7f",
+        "size_bytes": 1652
+      },
+      "b": {
+        "sha256": "16ec304e8a5b9252424384ddb234ae8b3c326b3fe02ca9ce90274db5a5f9361a",
+        "size_bytes": 1652
+      }
+    },
+    "/moov[0]/trak[2]/mdia[0]/minf[0]/stbl[0]/stco[0]": {
+      "a": {
+        "sha256": "a4b01341e5569b5329a048e2f056419a0c8064f5bfe2cac9ce6ef3ea63f7db82",
+        "size_bytes": 220
+      },
+      "b": {
+        "sha256": "aa9fde10df0d19b299f05b9b94bd0e93bcfeab7c327dcd9b5d3b3cce933f385c",
+        "size_bytes": 220
+      }
+    }
+  },
+  "rope_packet_comparison": {
+    "0": {
+      "all_payload_hashes_and_pts_dts_durations_sizes_equal": true,
+      "packet_count": 13236,
+      "packet_rows_sha256": "6f74ea95f097d3e91960c670d874f93e997b47a4ca3ecb698b0bbd1a3474e548",
+      "payload_bytes": 33531108,
+      "type": "video"
+    },
+    "1": {
+      "all_payload_hashes_and_pts_dts_durations_sizes_equal": true,
+      "packet_count": 20685,
+      "packet_rows_sha256": "3760951305694a8ab4d53d3ed861ec592ea9f21e1d524d07e1ef22b1a4b99207",
+      "payload_bytes": 2668946,
+      "type": "audio"
+    },
+    "2": {
+      "all_payload_hashes_and_pts_dts_durations_sizes_equal": true,
+      "packet_count": 86,
+      "packet_rows_sha256": "c0a44238397da88dc4e0f519c404a6500a212c3741c4c6db099963312aee3218",
+      "payload_bytes": 4446,
+      "type": "subtitle"
+    }
+  },
+  "source_date_epoch": 1793404800,
+  "source_mount": "read-only",
+  "status": "Failed cross-context development repeat; historical only, never treated as matching current output"
+}

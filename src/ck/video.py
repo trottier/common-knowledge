@@ -3,6 +3,7 @@
 import hashlib
 import json
 import math
+import re
 import struct
 import subprocess
 import tempfile
@@ -57,6 +58,31 @@ class VideoSettings(Model):
     audio_bitrate: int = Field(gt=0)
     audio_sample_rate: int = Field(gt=0)
     language_codes_id: Identifier
+
+
+def video_rights_allowed(item: Item) -> bool:
+    """Recognize intake providers; per-item rights and human review still apply.
+
+    DVIDS' official embed pages publish this particular CDN and path shape.
+    Its public-domain statement has exceptions, so the catalog proof must name
+    the specific video page rather than the provider's general copyright page.
+    """
+    source = urlparse(item.url or "")
+    proof = urlparse(item.license_proof_url)
+    host, proof_host = source.hostname or "", proof.hostname or ""
+    federal = host.endswith(".gov") or proof_host.endswith(".gov")
+    commons = host == "upload.wikimedia.org" and proof_host == "commons.wikimedia.org"
+    dvids = (
+        source.netloc == "d34w7g4gy10iej.cloudfront.net"
+        and proof.netloc == "www.dvidshub.net"
+        and not any((source.query, source.fragment, proof.query, proof.fragment))
+        and re.fullmatch(r"/video/[0-9]{4}/(DOD_[0-9]+)/\1\.mp4", source.path) is not None
+        and re.fullmatch(r"/video/[0-9]+/[a-z0-9-]+", proof.path) is not None
+    )
+    return ((federal or dvids) and item.license == "US-PD") or (
+        commons
+        and item.license in {"CC0-1.0", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-SA-3.0"}
+    )
 
 
 def language_codes(path: Path, config: Configuration) -> dict[str, str]:
@@ -381,6 +407,12 @@ def normalize(
         "+bitexact",
         "-c:s",
         "mov_text",
+        # Sparse captions must not trigger timing-dependent queue flushes.
+        # These are output format options; the earlier fflags apply to input.
+        "-fflags",
+        "+bitexact",
+        "-max_interleave_delta",
+        "0",
         "-movflags",
         "+faststart",
         "-metadata",
@@ -436,14 +468,7 @@ def build_video(
     clips = read_yaml(root / "pipelines/video/clips.yaml")
     clip = Clip.model_validate(clips[identifier])
     item = catalog[clip.source_id]
-    host = urlparse(item.url or "").hostname or ""
-    proof_host = urlparse(item.license_proof_url).hostname or ""
-    federal = host.endswith(".gov") or proof_host.endswith(".gov")
-    commons = host == "upload.wikimedia.org" and proof_host == "commons.wikimedia.org"
-    if not (
-        (federal and item.license == "US-PD")
-        or (commons and item.license in {"CC0-1.0", "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-SA-3.0"})
-    ):
+    if not video_rights_allowed(item):
         raise ValueError("Video needs confirmed per-item federal or Commons redistribution rights")
     inputs = {
         clip.source_id,
@@ -455,6 +480,7 @@ def build_video(
         if caption.license not in {
             "US-PD",
             "CC0-1.0",
+            "CC-BY-3.0",
             "CC-BY-4.0",
             "CC-BY-SA-4.0",
             "CC-BY-SA-3.0",

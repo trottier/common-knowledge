@@ -1,0 +1,172 @@
+{
+  "checked_on": "2026-11-01",
+  "status": "Research only; not selected or active full-profile cargo; see docs/video-topic-intake.md for reasons",
+  "artifacts": [
+    {
+      "file": "sfgov_handwash_es.webm",
+      "size_bytes": 5883226,
+      "sha256": "174d92614fb8cd2dba743fe28a2829e0cf39befd1571b53393a2ed87d9c5b0ec",
+      "duration_seconds": "59.423000",
+      "stream_tags": [
+        {},
+        {
+          "language": "eng"
+        }
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_SPANISH.webm"
+    },
+    {
+      "file": "commons_pasta.ogv",
+      "size_bytes": 4421911,
+      "sha256": "4c1dd7f9563fcea85c3e5d7f05339ef39b3a8880003965a0edadc2391f468e09",
+      "duration_seconds": "59.178685",
+      "stream_tags": [
+        {
+          "encoder": "Lavc57.22.100 libtheora",
+          "TITLE": "Pasta",
+          "LICENSE": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "DATE": "2017-05-06",
+          "LOCATION": "https://archive.org/details/Pasta_201705"
+        },
+        {
+          "encoder": "Lavc57.22.100 libvorbis",
+          "TITLE": "Pasta",
+          "LICENSE": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "DATE": "2017-05-06",
+          "LOCATION": "https://archive.org/details/Pasta_201705"
+        }
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/How_to_make_pasta_sauce.ogv"
+    },
+    {
+      "file": "commons_macaroni.webm",
+      "size_bytes": 8233110,
+      "sha256": "0bee3770db488b425983ecf095ecdd860090f38c21e0a996396b6aacf90aba73",
+      "duration_seconds": "83.369000",
+      "stream_tags": [
+        {},
+        {}
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/How_To_Make_Macaroni_and_Cheese.webm"
+    },
+    {
+      "file": "cfa_radiant.webm",
+      "size_bytes": 37477260,
+      "sha256": "bf5f0dc84f0b71cea0c65bf4bb3a7a570fc129526b141f1de0128d98c05e7106",
+      "duration_seconds": "146.968000",
+      "stream_tags": [
+        {
+          "HANDLER_NAME": "ISO Media file produced by Google Inc. Created on: 11/10/2023.",
+          "VENDOR_ID": "[0][0][0][0]",
+          "ENCODER": "Lavc60.31.102 libvpx-vp9",
+          "DURATION": "00:02:26.940000000"
+        },
+        {
+          "language": "eng",
+          "HANDLER_NAME": "ISO Media file produced by Google Inc. Created on: 11/10/2023.",
+          "VENDOR_ID": "[0][0][0][0]",
+          "ENCODER": "Lavc60.31.102 libopus",
+          "DURATION": "00:02:26.968000000"
+        }
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Description_of_radiant_heat_of_bushfires_by_the_Country_Fire_Authority%2C_Victoria%2C_Australia.webm"
+    },
+    {
+      "file": "fema_evac_es.mp4",
+      "size_bytes": 15151045,
+      "sha256": "80e9ecb43e9b31edccdcdaf2bccce494f0f28cd2635e38ec617cca71fd38325e",
+      "duration_seconds": "41.856000",
+      "stream_tags": [
+        {
+          "creation_time": "2022-09-27T19:32:28.000000Z",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Elemental H.264"
+        },
+        {
+          "creation_time": "2022-09-27T19:32:28.000000Z",
+          "language": "eng",
+          "handler_name": "ETI ISO Audio Media Handler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      ],
+      "url": "https://d34w7g4gy10iej.cloudfront.net/video/2209/DOD_109241054/DOD_109241054.mp4"
+    },
+    {
+      "file": "army_co.mp4",
+      "size_bytes": 13729064,
+      "sha256": "917384b18b3576224c9d986e8b8dcf9ce01c89ed3893822cf886eec014f52b2f",
+      "duration_seconds": "29.077333",
+      "stream_tags": [
+        {
+          "creation_time": "2026-02-26T15:08:10.000000Z",
+          "language": "und",
+          "handler_name": "ETI ISO Video Media Handler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Elemental H.264"
+        },
+        {
+          "creation_time": "2026-02-26T15:08:10.000000Z",
+          "language": "eng",
+          "handler_name": "ETI ISO Audio Media Handler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      ],
+      "url": "https://d34w7g4gy10iej.cloudfront.net/video/2602/DOD_111544821/DOD_111544821.mp4"
+    },
+    {
+      "file": "af_co.vtt",
+      "size_bytes": 2033,
+      "sha256": "a848f41a2b589e861bd588eeb19bcf3b7259ec87c7008ec6d6a665bba9e981ad",
+      "url": "https://www.dvidshub.net/video/closedcaption/id/819983"
+    },
+    {
+      "file": "cdc_food_gear.original.mp4",
+      "size_bytes": 10692442,
+      "sha256": "0ce8cb7d259701aeebde746c7dd1b5a8f8f3a37081f857cdcf86ff3a59f555e6",
+      "duration_seconds": "123.434667",
+      "stream_tags": [
+        {
+          "creation_time": "2016-08-31T18:34:34.000000Z",
+          "language": "eng",
+          "handler_name": "\u001fMainconcept Video Media Handler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "AVC Coding"
+        },
+        {
+          "creation_time": "2016-08-31T18:34:34.000000Z",
+          "language": "eng",
+          "handler_name": "#Mainconcept MP4 Sound Media Handler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      ],
+      "url": "https://www.cdc.gov/foodsafety/video/foodsafety_2016_video_500kps.mp4"
+    },
+    {
+      "file": "cdc_food_steps.original.mp4",
+      "size_bytes": 1138104,
+      "sha256": "e3a365355d1b7b940d4d6d527b6863b0448841b3d255c1c10435ae74a0489111",
+      "duration_seconds": "29.984000",
+      "stream_tags": [
+        {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        },
+        {
+          "language": "eng",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      ],
+      "url": "https://www.cdc.gov/wcms/video/low-res/foodsafety/2017/48884888CDC-Summer-Vacation-Social_Media-VIDEO.mp4"
+    }
+  ],
+  "co_statistic_check": {
+    "publisher_caption_url": "https://www.dvidshub.net/video/closedcaption/id/997402",
+    "comparison_url": "https://www.cdc.gov/carbon-monoxide/about/index.html",
+    "checked_on": "2026-11-01",
+    "finding": "The Army caption calls over100000 hospitalizations; the CDC page distinguishes over100000 emergency-department visits from over14000 hospitalizations. Clip not selected."
+  }
+}

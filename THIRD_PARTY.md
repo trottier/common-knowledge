@@ -9086,9 +9086,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: US-PD AND CC0-1.0
 - Attribution: Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.
 - License proof: https://stacks.cdc.gov/view/cdc/88655
-- Size: 10813142 bytes
-- SHA-256: `1d9c9d612ae82fecceee8631c2fcb024d9ddf443b5648d33bf7f567319b16341`
-- Pipeline: video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a; inputs: cdc_handwashing_asl_source, iso639_2
+- Size: 10813105 bytes
+- SHA-256: `ee6a3834141810c6da1fca55d45dc1bbdfefa72bb83dcdf18d14b6a32910a2e5`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: cdc_handwashing_asl_source, iso639_2
 
 ## What You Need to Know About Handwashing — CDC ASL video
 
@@ -9944,9 +9944,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Tying off onto the middle of a rope, Slashme; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.
 - License proof: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm
-- Size: 36679027 bytes
-- SHA-256: `9e766ee2fbb4631a38512da6ad232f39369a619630be24f898810d521bca72e2`
-- Pipeline: video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a; inputs: commons_rope_middle_source, iso639_2, commons_rope_middle_caption_en
+- Size: 36694698 bytes
+- SHA-256: `7ec8bb44974d2a79bc29de8348bb1b1fbba24ac15004cf18972ef079d0d4709c`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: commons_rope_middle_source, iso639_2, commons_rope_middle_caption_en
 
 ## Tying off onto the middle of a rope — author English subtitles
 
@@ -9970,6 +9970,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `94fa9fff509b1d7c535309e57118a1c60ba52ab43baed63253c32d3a724d028f`
 - Publisher file: https://upload.wikimedia.org/wikipedia/commons/c/c3/Tying_off_onto_the_middle_of_a_rope.webm
 
+## Hand Washing — San Francisco Department of Public Health — normalized video
+
+- Catalog id: `commons_sfgov_handwash`
+- Version: SFGovTV 2020-03-03; Commons upload 2020-03-30T22:37:14Z; development conversion
+- License: CC-BY-3.0 AND CC0-1.0
+- Attribution: Hand Washing, San Francisco Government Television / San Francisco Department of Public Health. CC BY 3.0: https://creativecommons.org/licenses/by/3.0/. No creator or government endorsement is implied. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.
+- License proof: https://commons.wikimedia.org/wiki/File:20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_ENGLISH.webm
+- Size: 4400945 bytes
+- SHA-256: `69ec74095901e1643f004cee9f96e64337d0b2bcc676ca12e5e6fb7a857bbce9`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: commons_sfgov_handwash_source, iso639_2
+
+## Hand Washing — San Francisco Department of Public Health — publisher original
+
+- Catalog id: `commons_sfgov_handwash_source`
+- Version: SFGovTV 2020-03-03; Commons upload 2020-03-30T22:37:14Z
+- License: CC-BY-3.0
+- Attribution: Hand Washing, San Francisco Government Television / San Francisco Department of Public Health. CC BY 3.0: https://creativecommons.org/licenses/by/3.0/. No creator or government endorsement is implied.
+- License proof: https://commons.wikimedia.org/wiki/File:20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_ENGLISH.webm
+- Size: 5796072 bytes
+- SHA-256: `1cf47a3b13b1cdb068e7f1c284d6dbe8b7980cdd95b8ce83afcd29d94a3ae9ec`
+- Publisher file: https://upload.wikimedia.org/wikipedia/commons/5/57/20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_ENGLISH.webm
+
 ## How to make a simple sketch book — normalized video
 
 - Catalog id: `commons_simple_sketchbook`
@@ -9977,9 +9999,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: How to make a simple sketch book, Barry neeson; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.
 - License proof: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm
-- Size: 14399632 bytes
-- SHA-256: `2a6a311743c62d3d880f03c0bf6f56e31aad264489b7b99b92563ddc3f754885`
-- Pipeline: video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a; inputs: commons_simple_sketchbook_source, iso639_2
+- Size: 14399595 bytes
+- SHA-256: `8faffed4af5e4991d1d4ad752cb66f314fb1c5c7492e29a5f0bc032e5fcfb42c`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: commons_simple_sketchbook_source, iso639_2
 
 ## How to make a simple sketch book — Commons original
 
@@ -9991,17 +10013,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 221639196 bytes
 - SHA-256: `7ce4727f2fb2b56e74bd7d0a3200fd9374844c2ab92ab86a1f65024f05724323`
 - Publisher file: https://upload.wikimedia.org/wikipedia/commons/a/ae/How_to_make_a_simple_sketch_book.webm
-
-## Critical federal or Commons videos; select individual files
-
-- Catalog id: `critical_videos`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
 
 ## National public-place points for atlas generation
 
@@ -10123,6 +10134,72 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 9869171 bytes
 - SHA-256: `5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378`
 - Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/facility.zip
+
+## FEMA PSA — Be Prepared — normalized video
+
+- Catalog id: `fema_be_prepared`
+- Version: 2022-09-27; VIRIN 220901-D-YR596-560; DOD_109241059; development conversion
+- License: US-PD AND CC0-1.0
+- Attribution: FEMA PSA: Be Prepared, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.
+- License proof: https://www.dvidshub.net/video/858801/fema-psa-prepared
+- Size: 2701117 bytes
+- SHA-256: `4e6a9cdf69f55fa80d64ae23a837bf262f54c273c8838b174f94844557d6bab1`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: fema_be_prepared_source, iso639_2, fema_be_prepared_caption_en
+
+## FEMA PSA — Be Prepared — publisher English captions
+
+- Catalog id: `fema_be_prepared_caption_en`
+- Version: 2022-09-27; VIRIN 220901-D-YR596-560; DOD_109241059
+- License: US-PD
+- Attribution: FEMA PSA: Be Prepared, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+- License proof: https://www.dvidshub.net/video/858801/fema-psa-prepared
+- Size: 806 bytes
+- SHA-256: `1ee0a43e53de792c5ff708bf170ffb1258760256b16da44a2c235ba5b87f29be`
+- Publisher file: https://www.dvidshub.net/video/closedcaption/id/858801
+
+## FEMA PSA — Be Prepared — publisher original
+
+- Catalog id: `fema_be_prepared_source`
+- Version: 2022-09-27; VIRIN 220901-D-YR596-560; DOD_109241059
+- License: US-PD
+- Attribution: FEMA PSA: Be Prepared, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+- License proof: https://www.dvidshub.net/video/858801/fema-psa-prepared
+- Size: 10810878 bytes
+- SHA-256: `09f41117d8f1f3cd188c2bdcaeb0ca2eab89d9421fef86500f943a40207bb0e3`
+- Publisher file: https://d34w7g4gy10iej.cloudfront.net/video/2209/DOD_109241059/DOD_109241059.mp4
+
+## Learn Your Evacuation Route — FEMA PSA — normalized video
+
+- Catalog id: `fema_evacuation_route`
+- Version: 2022-09-27; VIRIN 220901-D-YR596-890; DOD_109241062; development conversion
+- License: US-PD AND CC0-1.0
+- Attribution: Learn Your Evacuation Route: FEMA PSA, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.
+- License proof: https://www.dvidshub.net/video/858804/learn-your-evacuation-route-fema-psa
+- Size: 3417514 bytes
+- SHA-256: `b7184349229d7cbc5cf92f96f13597229d9d41e93b42fe54082b840d3cf016b0`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: fema_evacuation_route_source, iso639_2, fema_evacuation_route_caption_en
+
+## Learn Your Evacuation Route — FEMA PSA — publisher English captions
+
+- Catalog id: `fema_evacuation_route_caption_en`
+- Version: 2022-09-27; VIRIN 220901-D-YR596-890; DOD_109241062
+- License: US-PD
+- Attribution: Learn Your Evacuation Route: FEMA PSA, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+- License proof: https://www.dvidshub.net/video/858804/learn-your-evacuation-route-fema-psa
+- Size: 860 bytes
+- SHA-256: `f7ddc439e7ffdb211b5658bd194d1721e3cd7c7a6284355d2e43b2b7c0629a12`
+- Publisher file: https://www.dvidshub.net/video/closedcaption/id/858804
+
+## Learn Your Evacuation Route — FEMA PSA — publisher original
+
+- Catalog id: `fema_evacuation_route_source`
+- Version: 2022-09-27; VIRIN 220901-D-YR596-890; DOD_109241062
+- License: US-PD
+- Attribution: Learn Your Evacuation Route: FEMA PSA, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+- License proof: https://www.dvidshub.net/video/858804/learn-your-evacuation-route-fema-psa
+- Size: 13201365 bytes
+- SHA-256: `015ccbde41c923b2d641c57343984dfd94c610027a980978823c59ed73662f8b`
+- Publisher file: https://d34w7g4gy10iej.cloudfront.net/video/2209/DOD_109241062/DOD_109241062.mp4
 
 ## FEMA National Risk Index v1.20 county table and hazard dictionary
 
@@ -10992,6 +11069,39 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 518354901 bytes
 - SHA-256: `323f9e38162fd641ce174145dd01433008c0d9ea2073ddc194acde72d787cb5c`
 - Pipeline: directory-set-v1-a5e7f5fde475d986805228f1489c370f74fc4f0e8c4909122122b561f611513a; inputs: directory_points, national_atlas, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc
+
+## Summer Grilling Safety 2026 — normalized video
+
+- Catalog id: `navy_summer_grilling`
+- Version: 2026-07-17; VIRIN 260717-N-VG692-1000; DOD_111845489; development conversion
+- License: US-PD AND CC0-1.0
+- Attribution: Summer Grilling Safety 2026, U.S. Navy / AFN Misawa; Mass Communication Specialist Seaman John Paul Cavada. Original available free from DVIDS. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.
+- License proof: https://www.dvidshub.net/video/1015054/summer-grilling-safety-2026
+- Size: 4912069 bytes
+- SHA-256: `1656639eaae8bf8a29e9f86ce68d84d04699ee861ac744385ff9b4608a6db3d9`
+- Pipeline: video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5; inputs: navy_summer_grilling_source, iso639_2, navy_summer_grilling_caption_en
+
+## Summer Grilling Safety 2026 — publisher English captions
+
+- Catalog id: `navy_summer_grilling_caption_en`
+- Version: 2026-07-17; VIRIN 260717-N-VG692-1000; DOD_111845489
+- License: US-PD
+- Attribution: Summer Grilling Safety 2026, U.S. Navy / AFN Misawa; Mass Communication Specialist Seaman John Paul Cavada. Original available free from DVIDS. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+- License proof: https://www.dvidshub.net/video/1015054/summer-grilling-safety-2026
+- Size: 1431 bytes
+- SHA-256: `8884eabce0bc52f246950dc4144c80082c8f60f6449c4e35e2e564f953f4fac2`
+- Publisher file: https://www.dvidshub.net/video/closedcaption/id/1015054
+
+## Summer Grilling Safety 2026 — publisher original
+
+- Catalog id: `navy_summer_grilling_source`
+- Version: 2026-07-17; VIRIN 260717-N-VG692-1000; DOD_111845489
+- License: US-PD
+- Attribution: Summer Grilling Safety 2026, U.S. Navy / AFN Misawa; Mass Communication Specialist Seaman John Paul Cavada. Original available free from DVIDS. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.
+- License proof: https://www.dvidshub.net/video/1015054/summer-grilling-safety-2026
+- Size: 57122558 bytes
+- SHA-256: `e7f96013d184dd75eb8537acfc571c37c9dfee78fd87991f6490a040fdbc35f6`
+- Publisher file: https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111845489/DOD_111845489.mp4
 
 ## NCES EDGE public-school locations
 
@@ -12478,28 +12588,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## Convening and liaison video library; select individual sources
-
-- Catalog id: `topic_videos_convening`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
-## Food and cooking video library; select individual sources
-
-- Catalog id: `topic_videos_food`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
 ## Legal, money and recovery video library; select individual sources
 
 - Catalog id: `topic_videos_legal`
@@ -12533,42 +12621,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
-## Psychosocial, kids and morale video library; select individual sources
-
-- Catalog id: `topic_videos_psychosocial`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
 ## Structures, fire and search video library; select individual sources
 
 - Catalog id: `topic_videos_structures`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
-## Transport and evacuation video library; select individual sources
-
-- Catalog id: `topic_videos_transport`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
-## Water and sanitation video library; select individual sources
-
-- Catalog id: `topic_videos_water`
 - Version: [[VERIFY: publisher version]]
 - License: [[VERIFY: redistribution license]]
 - Attribution: [[VERIFY: publisher attribution]]

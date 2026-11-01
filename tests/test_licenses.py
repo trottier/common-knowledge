@@ -31,6 +31,8 @@ def fixture_item(**updates):
     ("value", "supported"),
     [
         ("MIT", True),
+        ("CC-BY-3.0 AND CC0-1.0", True),
+        ("CC-BY-3.0 AND CC-BY-ND-3.0", False),
         ("mit OR apache-2.0", True),
         ("MIT/Apache-2.0", True),
         ("Apache-2.0 / MIT", True),

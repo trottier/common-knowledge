@@ -1,5 +1,9 @@
 # Imported video and captions
 
+The [initial topic intake](video-topic-intake.md) records four additional
+development selections, exact publisher provenance, rejected candidates, and
+the libraries that still need clips. All human review gates remain open.
+
 Each clip declares all original audio and embedded subtitle streams. Optional
 external subtitle inputs name catalog entries. The normalizer orders languages
 from `languages.yaml`, writes one picture track with separate `mov_text` subtitle
@@ -77,9 +81,10 @@ No new captions, narration, burned-in text, or MP3 files are generated.
 
 ## Other source research
 
-The preferred water, food, and power topics remain unfilled. These attempts did
-not establish eligible downloadable originals, so no speculative catalog entries
-were added:
+Earlier research left the water, food, and power topics unfilled. The
+[new intake](video-topic-intake.md) adds water and food clips; power still needs
+a selection. These earlier attempts did not establish eligible downloadable
+originals, so no speculative catalog entries were added:
 
 - CDC's [Keep Foods Separate Commons description](https://commons.wikimedia.org/wiki/File:Keep_Foods_Separate.webm)
   links a CDC-hosted MP4. An initial urllib request returned HTTP 403, but a
@@ -102,26 +107,57 @@ selected as replacements.
 ## Repeated development normalization
 
 Two separate network-disabled Linux containers per clip used the same verified,
-read-only input cache and epoch 1793404800. Each MP4, source notice, audit, and
-complete generation manifest matched byte for byte. The
+read-only source tree and cache, epoch 1793404800, one CPU, and a one-GiB memory
+limit. All seven eligible clips used the same frozen recipe. Every MP4, source
+notice, audit, and complete generation manifest matched byte for byte. The
 [repeat evidence](evidence/video-repeat.json) records the pinned container image,
 input hashes, full generation metadata, track summaries, and subtitle timings.
 Placed bytes include the MP4 and its source notice.
 
+An earlier repeat set used the producer before a formatting-only change. It is
+retained as [historical evidence](evidence/video-repeat-preformat.json), with
+the preformat and subsequent formatted source hashes and an AST-equivalence
+check. The current
+measurements below were rebuilt twice from the final formatted source; earlier
+results were not relabeled with the new recipe fingerprint.
+
+The following cross-context attempt exposed different MP4 chunk tables in the
+rope clip despite identical compressed packets and timestamps. Its
+[failed-repeat evidence](evidence/video-repeat-mux-failure.json) remains explicit.
+The final producer sets output format `bitexact` and `max_interleave_delta=0`,
+so sparse subtitles do not trigger timeout-driven interleave flushes.
+[FFmpeg documents these output options](https://ffmpeg.org/ffmpeg-formats.html#Format-Options);
+the pinned 5.1.9 help and [bounded mux diagnostics](evidence/video-mux-diagnostic.json)
+confirmed their availability.
+The table below comes from fresh normalizations of that final producer, not
+from remuxing or relabeling a prior artifact.
+
 | Clip | Placed bytes | Canonical generation SHA-256 |
 | --- | ---: | --- |
-| rope_middle | 36,679,027 | 9e766ee2fbb4631a38512da6ad232f39369a619630be24f898810d521bca72e2 |
-| simple_sketchbook | 14,399,632 | 2a6a311743c62d3d880f03c0bf6f56e31aad264489b7b99b92563ddc3f754885 |
-| handwashing_asl | 10,813,142 | 1d9c9d612ae82fecceee8631c2fcb024d9ddf443b5648d33bf7f567319b16341 |
+| sfgov_handwash | 4,400,945 | `69ec74095901e1643f004cee9f96e64337d0b2bcc676ca12e5e6fb7a857bbce9` |
+| summer_grilling | 4,912,069 | `1656639eaae8bf8a29e9f86ce68d84d04699ee861ac744385ff9b4608a6db3d9` |
+| be_prepared | 2,701,117 | `4e6a9cdf69f55fa80d64ae23a837bf262f54c273c8838b174f94844557d6bab1` |
+| evacuation_route | 3,417,514 | `b7184349229d7cbc5cf92f96f13597229d9d41e93b42fe54082b840d3cf016b0` |
+| rope_middle | 36,694,698 | `7ec8bb44974d2a79bc29de8348bb1b1fbba24ac15004cf18972ef079d0d4709c` |
+| simple_sketchbook | 14,399,595 | `8faffed4af5e4991d1d4ad752cb66f314fb1c5c7492e29a5f0bc032e5fcfb42c` |
+| handwashing_asl | 10,813,105 | `ee6a3834141810c6da1fca55d45dc1bbdfefa72bb83dcdf18d14b6a32910a2e5` |
 
-The catalog hashes canonical generation JSON, without its trailing newline.
-The evidence also records the literal generation-file hash. All three clips use
-H.264 Main picture at 480×854 and 30 fps, with original-content English mono AAC
-as the default audio track. The rope clip retains 49 separate English subtitle
-cues; the other two clips have no subtitle track. The shared recipe changed,
-so the existing CDC clip also received a new generation pin.
+The catalog hashes canonical generation JSON. The evidence also records the
+literal generation-file hash. All seven clips use H.264 Main picture at 480×854
+and 30 fps, with the original English audio content converted to mono AAC as
+the first and default audio track. English subtitles remain separate: 49 cues
+for the rope clip, 23 for grilling, 13 for preparedness, and 14 for evacuation.
+The other clips have no subtitle track. No Spanish track was invented, and no
+new text was burned into the picture.
+
+The shared recipe changed, so all three previous eligible clips received new
+generation pins alongside the four additions. The obsolete critical-video,
+water, food, convening, transport, and psychosocial umbrella placeholders were
+removed in favor of these real entries. Seven topic libraries still need clips;
+the [intake notes](video-topic-intake.md) describe their exact scope and gaps.
 
 These measurements establish bounded conversion reproducibility. Source rights,
-content suitability, independent pin review, caption synchronization, and
-physical-player review remain unapproved. The USGS rights-held historical clip
-was not rerendered or represented as current eligible output.
+content suitability, independent pin review, caption accuracy and synchronization,
+and physical-player review remain unapproved. The USGS clip with an unresolved
+Envato component license was not rerendered or represented as current eligible
+output.

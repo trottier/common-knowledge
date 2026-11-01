@@ -1,22 +1,5 @@
 [
   {
-    "id": "critical_videos",
-    "family": "video",
-    "title": "Critical federal or Commons videos; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "2_VIDEOS/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "topic_videos_medical",
     "family": "video",
     "title": "Medical video library; select individual sources",
@@ -54,48 +37,6 @@
       ]
     },
     "dest": "6_VIDEOS_AND_IN_DEPTH/topics/care/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "topic_videos_water",
-    "family": "video",
-    "title": "Water and sanitation video library; select individual sources",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "water"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/water/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "topic_videos_food",
-    "family": "video",
-    "title": "Food and cooking video library; select individual sources",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "food"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/food/",
     "profiles": [
       "full"
     ]
@@ -164,48 +105,6 @@
     ]
   },
   {
-    "id": "topic_videos_transport",
-    "family": "video",
-    "title": "Transport and evacuation video library; select individual sources",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "transport"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/transport/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "topic_videos_convening",
-    "family": "video",
-    "title": "Convening and liaison video library; select individual sources",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "convening"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/convening/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "topic_videos_welfare",
     "family": "video",
     "title": "Welfare and reunification video library; select individual sources",
@@ -248,27 +147,6 @@
     ]
   },
   {
-    "id": "topic_videos_psychosocial",
-    "family": "video",
-    "title": "Psychosocial, kids and morale video library; select individual sources",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "psychosocial"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/psychosocial/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "cdc_handwashing_asl_source",
     "family": "video",
     "title": "What You Need to Know About Handwashing — CDC ASL video",
@@ -292,8 +170,8 @@
     "family": "generated",
     "title": "What You Need to Know About Handwashing — normalized CDC ASL video",
     "version": "CDC 2020-04-10; development conversion",
-    "size_bytes": 10813142,
-    "sha256": "1d9c9d612ae82fecceee8631c2fcb024d9ddf443b5648d33bf7f567319b16341",
+    "size_bytes": 10813105,
+    "sha256": "ee6a3834141810c6da1fca55d45dc1bbdfefa72bb83dcdf18d14b6a32910a2e5",
     "license": "US-PD AND CC0-1.0",
     "attribution": "Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.",
     "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
@@ -307,7 +185,7 @@
       "cdc_handwashing_asl_source",
       "iso639_2"
     ],
-    "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
     "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]"
   },
   {
@@ -398,8 +276,8 @@
     "family": "generated",
     "title": "Tying off onto the middle of a rope — normalized video",
     "version": "Commons 2021-03-20T21:49:18Z; development normalization",
-    "size_bytes": 36679027,
-    "sha256": "9e766ee2fbb4631a38512da6ad232f39369a619630be24f898810d521bca72e2",
+    "size_bytes": 36694698,
+    "sha256": "7ec8bb44974d2a79bc29de8348bb1b1fbba24ac15004cf18972ef079d0d4709c",
     "license": "CC-BY-SA-4.0 AND CC0-1.0",
     "attribution": "Tying off onto the middle of a rope, Slashme; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.",
     "license_proof_url": "https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm",
@@ -417,7 +295,7 @@
       "iso639_2",
       "commons_rope_middle_caption_en"
     ],
-    "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
     "review": "[[VERIFY: human source, conversion, and knot and load-securing suitability; no approval for climbing, rescue, or towing; caption synchronization, pin, and phone playback; English only, author English subtitles retained; no Spanish track supplied]]"
   },
   {
@@ -443,8 +321,8 @@
     "family": "generated",
     "title": "How to make a simple sketch book — normalized video",
     "version": "Commons 2020-04-03T12:02:00Z; development normalization",
-    "size_bytes": 14399632,
-    "sha256": "2a6a311743c62d3d880f03c0bf6f56e31aad264489b7b99b92563ddc3f754885",
+    "size_bytes": 14399595,
+    "sha256": "8faffed4af5e4991d1d4ad752cb66f314fb1c5c7492e29a5f0bc032e5fcfb42c",
     "license": "CC-BY-SA-4.0 AND CC0-1.0",
     "attribution": "How to make a simple sketch book, Barry neeson; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.",
     "license_proof_url": "https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm",
@@ -461,7 +339,7 @@
       "commons_simple_sketchbook_source",
       "iso639_2"
     ],
-    "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
     "review": "[[VERIFY: human source, conversion, and age and supervision suitability for scissors, thumbtack, and paper-clip wire; pin and phone playback; English only, no Spanish audio or captions supplied]]"
   },
   {
@@ -481,5 +359,238 @@
       "full"
     ],
     "review": "[[VERIFY: independent raw revision pin, caption rights, and complete caption synchronization review]]"
+  },
+  {
+    "id": "commons_sfgov_handwash_source",
+    "family": "video",
+    "title": "Hand Washing — San Francisco Department of Public Health — publisher original",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_ENGLISH.webm",
+    "version": "SFGovTV 2020-03-03; Commons upload 2020-03-30T22:37:14Z",
+    "size_bytes": 5796072,
+    "sha256": "1cf47a3b13b1cdb068e7f1c284d6dbe8b7980cdd95b8ce83afcd29d94a3ae9ec",
+    "license": "CC-BY-3.0",
+    "attribution": "Hand Washing, San Francisco Government Television / San Francisco Department of Public Health. CC BY 3.0: https://creativecommons.org/licenses/by/3.0/. No creator or government endorsement is implied.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/File:20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_ENGLISH.webm",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human handwashing and sanitizer guidance review, full component-rights and computed source-pin review, regional branding suitability, and physical phone playback; English audio only, no publisher captions supplied]]"
+  },
+  {
+    "id": "commons_sfgov_handwash",
+    "family": "generated",
+    "title": "Hand Washing — San Francisco Department of Public Health — normalized video",
+    "version": "SFGovTV 2020-03-03; Commons upload 2020-03-30T22:37:14Z; development conversion",
+    "size_bytes": 4400945,
+    "sha256": "69ec74095901e1643f004cee9f96e64337d0b2bcc676ca12e5e6fb7a857bbce9",
+    "license": "CC-BY-3.0 AND CC0-1.0",
+    "attribution": "Hand Washing, San Francisco Government Television / San Francisco Department of Public Health. CC BY 3.0: https://creativecommons.org/licenses/by/3.0/. No creator or government endorsement is implied. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/File:20200303_-_SFGovTV_-_SFDPH_WASH_HANDS_ENGLISH.webm",
+    "placement": {
+      "topics": [
+        "water"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/water/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "commons_sfgov_handwash_source",
+      "iso639_2"
+    ],
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+    "review": "[[VERIFY: human handwashing and sanitizer guidance review, full component-rights and computed source-pin review, regional branding suitability, and physical phone playback; English audio only, no publisher captions supplied; normalized pin review; no Spanish audio track supplied]]"
+  },
+  {
+    "id": "navy_summer_grilling_source",
+    "family": "video",
+    "title": "Summer Grilling Safety 2026 — publisher original",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111845489/DOD_111845489.mp4",
+    "version": "2026-07-17; VIRIN 260717-N-VG692-1000; DOD_111845489",
+    "size_bytes": 57122558,
+    "sha256": "e7f96013d184dd75eb8537acfc571c37c9dfee78fd87991f6490a040fdbc35f6",
+    "license": "US-PD",
+    "attribution": "Summer Grilling Safety 2026, U.S. Navy / AFN Misawa; Mass Communication Specialist Seaman John Paul Cavada. Original available free from DVIDS. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+    "license_proof_url": "https://www.dvidshub.net/video/1015054/summer-grilling-safety-2026",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human gas-grill, leak-response, fire, and food safety review, including unavailable-help fallback; per-item component-rights and computed source-pin review; publisher captions contain transcription errors and need full synchronization and accuracy review; physical phone playback]]"
+  },
+  {
+    "id": "navy_summer_grilling_caption_en",
+    "family": "docs",
+    "title": "Summer Grilling Safety 2026 — publisher English captions",
+    "url": "https://www.dvidshub.net/video/closedcaption/id/1015054",
+    "version": "2026-07-17; VIRIN 260717-N-VG692-1000; DOD_111845489",
+    "size_bytes": 1431,
+    "sha256": "8884eabce0bc52f246950dc4144c80082c8f60f6449c4e35e2e564f953f4fac2",
+    "license": "US-PD",
+    "attribution": "Summer Grilling Safety 2026, U.S. Navy / AFN Misawa; Mass Communication Specialist Seaman John Paul Cavada. Original available free from DVIDS. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+    "license_proof_url": "https://www.dvidshub.net/video/1015054/summer-grilling-safety-2026",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent publisher-caption pin, component rights, transcription accuracy, and full synchronization review; original cue text and timing retained]]"
+  },
+  {
+    "id": "navy_summer_grilling",
+    "family": "generated",
+    "title": "Summer Grilling Safety 2026 — normalized video",
+    "version": "2026-07-17; VIRIN 260717-N-VG692-1000; DOD_111845489; development conversion",
+    "size_bytes": 4912069,
+    "sha256": "1656639eaae8bf8a29e9f86ce68d84d04699ee861ac744385ff9b4608a6db3d9",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "Summer Grilling Safety 2026, U.S. Navy / AFN Misawa; Mass Communication Specialist Seaman John Paul Cavada. Original available free from DVIDS. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.",
+    "license_proof_url": "https://www.dvidshub.net/video/1015054/summer-grilling-safety-2026",
+    "placement": {
+      "topics": [
+        "food"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/food/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "navy_summer_grilling_source",
+      "iso639_2",
+      "navy_summer_grilling_caption_en"
+    ],
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+    "review": "[[VERIFY: human gas-grill, leak-response, fire, and food safety review, including unavailable-help fallback; per-item component-rights and computed source-pin review; publisher captions contain transcription errors and need full synchronization and accuracy review; physical phone playback; normalized pin review; no Spanish audio track supplied]]"
+  },
+  {
+    "id": "fema_be_prepared_source",
+    "family": "video",
+    "title": "FEMA PSA — Be Prepared — publisher original",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2209/DOD_109241059/DOD_109241059.mp4",
+    "version": "2022-09-27; VIRIN 220901-D-YR596-560; DOD_109241059",
+    "size_bytes": 10810878,
+    "sha256": "09f41117d8f1f3cd188c2bdcaeb0ca2eab89d9421fef86500f943a40207bb0e3",
+    "license": "US-PD",
+    "attribution": "FEMA PSA: Be Prepared, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+    "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human preparedness, alert-availability, and national-default compatibility review; this optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback]]"
+  },
+  {
+    "id": "fema_be_prepared_caption_en",
+    "family": "docs",
+    "title": "FEMA PSA — Be Prepared — publisher English captions",
+    "url": "https://www.dvidshub.net/video/closedcaption/id/858801",
+    "version": "2022-09-27; VIRIN 220901-D-YR596-560; DOD_109241059",
+    "size_bytes": 806,
+    "sha256": "1ee0a43e53de792c5ff708bf170ffb1258760256b16da44a2c235ba5b87f29be",
+    "license": "US-PD",
+    "attribution": "FEMA PSA: Be Prepared, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+    "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent publisher-caption pin, component rights, transcription accuracy, and full synchronization review; original cue text and timing retained]]"
+  },
+  {
+    "id": "fema_be_prepared",
+    "family": "generated",
+    "title": "FEMA PSA — Be Prepared — normalized video",
+    "version": "2022-09-27; VIRIN 220901-D-YR596-560; DOD_109241059; development conversion",
+    "size_bytes": 2701117,
+    "sha256": "4e6a9cdf69f55fa80d64ae23a837bf262f54c273c8838b174f94844557d6bab1",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "FEMA PSA: Be Prepared, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.",
+    "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared",
+    "placement": {
+      "topics": [
+        "convening"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/convening/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "fema_be_prepared_source",
+      "iso639_2",
+      "fema_be_prepared_caption_en"
+    ],
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+    "review": "[[VERIFY: human preparedness, alert-availability, and national-default compatibility review; this optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback; normalized pin review; no Spanish audio track supplied]]"
+  },
+  {
+    "id": "fema_evacuation_route_source",
+    "family": "video",
+    "title": "Learn Your Evacuation Route — FEMA PSA — publisher original",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2209/DOD_109241062/DOD_109241062.mp4",
+    "version": "2022-09-27; VIRIN 220901-D-YR596-890; DOD_109241062",
+    "size_bytes": 13201365,
+    "sha256": "015ccbde41c923b2d641c57343984dfd94c610027a980978823c59ed73662f8b",
+    "license": "US-PD",
+    "attribution": "Learn Your Evacuation Route: FEMA PSA, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+    "license_proof_url": "https://www.dvidshub.net/video/858804/learn-your-evacuation-route-fema-psa",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: human evacuation, shelter-choice, accessibility, and no-help fallback review; optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback]]"
+  },
+  {
+    "id": "fema_evacuation_route_caption_en",
+    "family": "docs",
+    "title": "Learn Your Evacuation Route — FEMA PSA — publisher English captions",
+    "url": "https://www.dvidshub.net/video/closedcaption/id/858804",
+    "version": "2022-09-27; VIRIN 220901-D-YR596-890; DOD_109241062",
+    "size_bytes": 860,
+    "sha256": "f7ddc439e7ffdb211b5658bd194d1721e3cd7c7a6284355d2e43b2b7c0629a12",
+    "license": "US-PD",
+    "attribution": "Learn Your Evacuation Route: FEMA PSA, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+    "license_proof_url": "https://www.dvidshub.net/video/858804/learn-your-evacuation-route-fema-psa",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent publisher-caption pin, component rights, transcription accuracy, and full synchronization review; original cue text and timing retained]]"
+  },
+  {
+    "id": "fema_evacuation_route",
+    "family": "generated",
+    "title": "Learn Your Evacuation Route — FEMA PSA — normalized video",
+    "version": "2022-09-27; VIRIN 220901-D-YR596-890; DOD_109241062; development conversion",
+    "size_bytes": 3417514,
+    "sha256": "b7184349229d7cbc5cf92f96f13597229d9d41e93b42fe54082b840d3cf016b0",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "Learn Your Evacuation Route: FEMA PSA, Federal Emergency Management Agency; Christine Gonsalves, DVIDS. Original available free from DVIDS. No FEMA, DHS, U.S. Government, or creator endorsement is implied. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. Format conversion and source note: Common Knowledge; original English audio and publisher picture retained, no added text overlay.",
+    "license_proof_url": "https://www.dvidshub.net/video/858804/learn-your-evacuation-route-fema-psa",
+    "placement": {
+      "topics": [
+        "transport"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/transport/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "fema_evacuation_route_source",
+      "iso639_2",
+      "fema_evacuation_route_caption_en"
+    ],
+    "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+    "review": "[[VERIFY: human evacuation, shelter-choice, accessibility, and no-help fallback review; optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback; normalized pin review; no Spanish audio track supplied]]"
   }
 ]
