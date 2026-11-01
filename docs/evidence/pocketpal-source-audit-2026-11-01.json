@@ -1,0 +1,2272 @@
+{
+  "format": "ck-pocketpal-source-audit-v1",
+  "observed_on": "2026-11-01",
+  "baseline_commit": "87fd27a",
+  "scope": "Static original-artifact, manifest, source, ELF, and license inspection. No app execution, native compilation, network-traffic observation, or human approval.",
+  "selected_apk": {
+    "url": "https://github.com/a-ghorbani/pocketpal-ai/releases/download/v1.22.0/app-prod-release.apk",
+    "version": "1.22.0",
+    "size_bytes": 275953055,
+    "sha256": "e26933e5a94434d94929f65fcc019f1e10b734a5864dcb0b7995ace569b37f6b",
+    "publisher_release_digest_matches": true,
+    "apksigner_verified": true,
+    "signer_cert_sha256": "f55acacb10155bea116e1dba487cf2bfb8bce2b65439bc62bc2370a6b2239614",
+    "verifier_image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "embedded_source_metadata": "generate_error_reason: NO_SUPPORTED_VCS_FOUND",
+    "embedded_agp_version": "9.2.1",
+    "source_revision_from_publisher_release_tag": "8932367e9f4a373945993ae0a472c8768d5c0578"
+  },
+  "artifacts": [
+    {
+      "id": "hermes_android_aar",
+      "url": "https://repo.maven.apache.org/maven2/com/facebook/hermes/hermes-android/250829098.0.17/hermes-android-250829098.0.17-release.aar",
+      "size_bytes": 81347431,
+      "sha256": "6fb440b29aadb5925bed1109338da61623c54c3508020bb2cecebcaaa80e53b8",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "hermes_android_module",
+      "url": "https://repo.maven.apache.org/maven2/com/facebook/hermes/hermes-android/250829098.0.17/hermes-android-250829098.0.17.module",
+      "size_bytes": 10125,
+      "sha256": "0bec2fe2f8fa684155e13d9c65c9c32cc7c617725c373f243a765afc66ec16bd"
+    },
+    {
+      "id": "hermes_android_sources",
+      "url": "https://repo.maven.apache.org/maven2/com/facebook/hermes/hermes-android/250829098.0.17/hermes-android-250829098.0.17-release-sources.jar",
+      "size_bytes": 65536,
+      "sha256": "6c77ab8fc1f597ece4ece48000dddfdba9ca9f5d3e2483d5b3875c58902b7613",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "hermes_license_raw",
+      "url": "https://raw.githubusercontent.com/meta/hermes/3477757eb2475555cf8d8df24bfb1deb0613880d/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "id": "hermes_pom",
+      "url": "https://repo.maven.apache.org/maven2/com/facebook/hermes/hermes-android/250829098.0.17/hermes-android-250829098.0.17.pom",
+      "size_bytes": 2214,
+      "sha256": "5a50a1c21d921099ce03be7223b0d6d0c9903a5556f2880a03b372342aa47a2f"
+    },
+    {
+      "id": "hermes_source",
+      "url": "https://codeload.github.com/meta/hermes/tar.gz/3477757eb2475555cf8d8df24bfb1deb0613880d",
+      "size_bytes": 22316553,
+      "sha256": "6fdf2874c8a2d1c814fb59a88e00c87251bb970cd9d140f470ec7eac7d0e9a75"
+    },
+    {
+      "id": "hermes_tag",
+      "url": "https://api.github.com/repos/facebook/hermes/git/ref/tags/hermes-v250829098.0.17",
+      "size_bytes": 383,
+      "sha256": "91f69379dbac4241b8621ab2f6a4d717fe6d8c7dc9e920901642815fe5db9fad"
+    },
+    {
+      "id": "llama_binding_source",
+      "url": "https://codeload.github.com/mybigday/llama.rn/tar.gz/27783c86cea93ac534fba303d9be5cf335d2e945",
+      "size_bytes": 6777359,
+      "sha256": "38276df3bf3d1a0ad8740ffe39ce512efca1af874f37aa81e1ea65be7beaf359"
+    },
+    {
+      "id": "llama_license_raw",
+      "url": "https://raw.githubusercontent.com/mybigday/llama.rn/27783c86cea93ac534fba303d9be5cf335d2e945/LICENSE",
+      "size_bytes": 1069,
+      "sha256": "b22eff2c123a71b45b110a2933dd8a4360e119d38dbb8fd2dcf3a85627712883"
+    },
+    {
+      "id": "llama_rn_npm_metadata",
+      "url": "https://registry.npmjs.org/llama.rn/0.13.0-rc.9",
+      "size_bytes": 5406,
+      "sha256": "fa00a24320794748129b3f24d3d7e063c1cc669c0731c2dc6b5fefee0a8942af"
+    },
+    {
+      "id": "llama_rn_package",
+      "name": "llama.rn",
+      "version": "0.13.0-rc.9",
+      "url": "https://registry.npmjs.org/llama.rn/-/llama.rn-0.13.0-rc.9.tgz",
+      "size_bytes": 9838966,
+      "sha256": "b3b7a767b77d2b7fb5bc0ba516cabc8ff06923f429eb293d00ceb8f33ccba167",
+      "publisher_sha1": "ae107a6f742b8ac61c726975cdcf7e4e59ac35d3",
+      "publisher_integrity": "sha512-8Cix1aJ/ntDhLEvtHRKBl5ZY1pdjK8LbiseMG7vxGZCd3q3rXWls6wVtWVLdykq8shtfe52emqzHKGXpjPiYBA==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": "27783c86cea93ac534fba303d9be5cf335d2e945",
+      "declared_license": "MIT"
+    },
+    {
+      "id": "nitro_license_raw",
+      "url": "https://raw.githubusercontent.com/mrousavy/nitro/605017127c16f9d502f527097ffed77439d8ce6c/LICENSE",
+      "size_bytes": 1068,
+      "sha256": "833ee7046f3908173364391ad4a2028560029503faf3a29e8acb77506dfe52ea"
+    },
+    {
+      "id": "nitro_modules_npm_metadata",
+      "url": "https://registry.npmjs.org/react-native-nitro-modules/0.37.1",
+      "size_bytes": 3413,
+      "sha256": "f2939837f6636df4b984b599cf55e84ce7e47fee16c99b5ff5145ee96dd1ba4b"
+    },
+    {
+      "id": "nitro_modules_package",
+      "name": "react-native-nitro-modules",
+      "version": "0.37.1",
+      "url": "https://registry.npmjs.org/react-native-nitro-modules/-/react-native-nitro-modules-0.37.1.tgz",
+      "size_bytes": 135632,
+      "sha256": "00f5a2a6d8150251384948faf87d2bbb29044a18bd8ba888f37436063740700a",
+      "publisher_sha1": "368bda3038ebe796b219d98e0a364f9166e2cc7c",
+      "publisher_integrity": "sha512-KpW6EQVQ/bfegpCGxN9Be+ndvsfj56t4IESEvCASu9gWpJa/NDfHpIeIwCOvZQ3eXmLEj6YD4wCLqcC1FJPr2w==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": "605017127c16f9d502f527097ffed77439d8ce6c",
+      "declared_license": "MIT"
+    },
+    {
+      "id": "onnx_aar_sha1",
+      "url": "https://repo.maven.apache.org/maven2/com/microsoft/onnxruntime/onnxruntime-android/1.24.3/onnxruntime-android-1.24.3.aar.sha1",
+      "size_bytes": 40,
+      "sha256": "4bfe72383bf5a8358ff18605a5158a2e34a8143a5cf977c75688c329b1386257"
+    },
+    {
+      "id": "onnx_android_aar",
+      "url": "https://repo.maven.apache.org/maven2/com/microsoft/onnxruntime/onnxruntime-android/1.24.3/onnxruntime-android-1.24.3.aar",
+      "size_bytes": 40948335,
+      "sha256": "67397e4a970e75617f765d2015ceaf911917e1d822276cfb5792744e8085cbce",
+      "publisher_digest_matches": null
+    },
+    {
+      "id": "onnx_android_pom",
+      "url": "https://repo.maven.apache.org/maven2/com/microsoft/onnxruntime/onnxruntime-android/1.24.3/onnxruntime-android-1.24.3.pom",
+      "size_bytes": 1520,
+      "sha256": "79072b3dbfd42e4b3e391a6dc8fb3ecea15a3b6760653499a4487b22071b9212"
+    },
+    {
+      "id": "onnx_deps_raw",
+      "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/cmake/deps.txt",
+      "size_bytes": 6999,
+      "sha256": "0ef6f9d7d8945b56b759ae29108ecc61d8ee7242e282cfc6ceae4be72ddee15d"
+    },
+    {
+      "id": "onnx_license_raw",
+      "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/LICENSE",
+      "size_bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "id": "onnx_notices_raw",
+      "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/ThirdPartyNotices.txt",
+      "size_bytes": 325054,
+      "sha256": "0e07b95f3a8d6230037707c5c4a2b554d12c4cb67369669ac255635528ffcee2"
+    },
+    {
+      "id": "onnx_react_native_npm_metadata",
+      "url": "https://registry.npmjs.org/onnxruntime-react-native/1.24.3",
+      "size_bytes": 3457,
+      "sha256": "3826b5001149c6f8909127a786474150caf2b89e473d5601c29ad6b545ea9c71"
+    },
+    {
+      "id": "onnx_react_native_package",
+      "name": "onnxruntime-react-native",
+      "version": "1.24.3",
+      "url": "https://registry.npmjs.org/onnxruntime-react-native/-/onnxruntime-react-native-1.24.3.tgz",
+      "size_bytes": 25852,
+      "sha256": "5737f76ac945f62e1416702f67c2bc536c50cab18d36d2125a6913a5a0425571",
+      "publisher_sha1": "732890f94dcbea8b52b86c1ee8be49f4fc4445a3",
+      "publisher_integrity": "sha512-vMxFcnO1YDtT6auv719Zk0Zj/EXujqeEzSjTe5W7A915qaRrM4pRfXlI4ye/ExOwcTan7NYVZ/wpLX+YBU2aWQ==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": null,
+      "declared_license": "MIT"
+    },
+    {
+      "id": "onnx_source",
+      "url": "https://codeload.github.com/microsoft/onnxruntime/tar.gz/3a728b75062256951b6e19ce718907cf1a1d4cf0",
+      "size_bytes": 283649098,
+      "sha256": "2afd2ff42ec2381937e095f0ab9929bb535db10e42f4004f5022c136beabbdd2",
+      "revision": "3a728b75062256951b6e19ce718907cf1a1d4cf0"
+    },
+    {
+      "id": "onnx_tag",
+      "url": "https://api.github.com/repos/microsoft/onnxruntime/git/ref/tags/v1.24.3",
+      "size_bytes": 353,
+      "sha256": "a7161f54e7d681ce946e8443c27365a2e7b3530c8abc1b7f57fd011a131e0e58"
+    },
+    {
+      "id": "phonon_binary_release",
+      "url": "https://api.github.com/repos/a-ghorbani/react-native-speech/releases/tags/phonon-bin-v0.4.0-r2",
+      "size_bytes": 10724,
+      "sha256": "cd38ea2b941b4dfbfb35483c72f92074aa6dc00f9f60e8f9156beca06def07ac"
+    },
+    {
+      "id": "phonon_buildinfo-android",
+      "url": "https://github.com/a-ghorbani/react-native-speech/releases/download/phonon-bin-v0.4.0-r2/BUILDINFO-android.json",
+      "size_bytes": 1146,
+      "sha256": "b58ee63e05c25933933a67e9fdf6cd35dde6abca666079f5a30ca2f8601e49b1",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "phonon_phonon-android-0",
+      "url": "https://github.com/a-ghorbani/react-native-speech/releases/download/phonon-bin-v0.4.0-r2/phonon-android-0.4.0-r2.zip",
+      "size_bytes": 5263613,
+      "sha256": "005be447b7ff6e4cd8201dc9cedc163bc5d8769f3d3ea2ef8461a14a921ebbf9",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "phonon_producer_source",
+      "url": "https://codeload.github.com/a-ghorbani/react-native-speech/tar.gz/f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861",
+      "size_bytes": 2424483,
+      "sha256": "64792b068e0de6e3fc5cc2f57179de0845506cf8bcd46ef420b33765c327ba38"
+    },
+    {
+      "id": "phonon_producer_tag",
+      "url": "https://api.github.com/repos/a-ghorbani/react-native-speech/git/ref/tags/phonon-bin-v0.4.0-r2",
+      "size_bytes": 408,
+      "sha256": "db53b3be04bf511dfabfa3d0a0e9ab94198923ce8fdaa517022337825f3abfa9"
+    },
+    {
+      "id": "phonon_sha256sums",
+      "url": "https://github.com/a-ghorbani/react-native-speech/releases/download/phonon-bin-v0.4.0-r2/SHA256SUMS",
+      "size_bytes": 196,
+      "sha256": "64fb3bf1a51b4da96e4d6b275fb2ed1eceb952759708a712446ae9e91d108b02",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "phonon_upstream_source",
+      "url": "https://codeload.github.com/gradium-ai/xn-ptts/tar.gz/f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa",
+      "size_bytes": 616707,
+      "sha256": "fc99775ae12cbd49e3aa7de279b4bff342dd6ac2776feb415ed70db53068fd27",
+      "publisher_digest_matches": null
+    },
+    {
+      "id": "phonon_wrapper_license_raw",
+      "url": "https://raw.githubusercontent.com/a-ghorbani/react-native-speech/72660c2faa9c0f4347e06392a488a46f00b3f6fd/packages/react-native-speech-phonon/LICENSE",
+      "size_bytes": 1110,
+      "sha256": "f376971cac056614cda4d85ef9256aef7b56674181fc1e195c52016d1621196f"
+    },
+    {
+      "id": "pocketpal_license_raw",
+      "url": "https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE",
+      "size_bytes": 1072,
+      "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06"
+    },
+    {
+      "id": "pocketpal_release",
+      "url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/releases/tags/v1.22.0",
+      "size_bytes": 4550,
+      "sha256": "88f61d8a6a42fb34e996063bdfdd234c4c5240a9c8beedc269369f27fc89ff1b"
+    },
+    {
+      "id": "pocketpal_source",
+      "url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/tarball/8932367e9f4a373945993ae0a472c8768d5c0578",
+      "size_bytes": 19390389,
+      "sha256": "be4beb242e17fba27ffa04da6a96d97870abce3b86430b60bb49f8fafc7b1a51"
+    },
+    {
+      "id": "pocketpal_tag",
+      "url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/git/ref/tags/v1.22.0",
+      "size_bytes": 351,
+      "sha256": "5bad61bd6c2b3c5fdaa151504a640f5af5093eb6f3d2287fadf7bc09c5a9695a"
+    },
+    {
+      "id": "react_android_aar",
+      "url": "https://repo1.maven.org/maven2/com/facebook/react/react-android/0.87.1/react-android-0.87.1-release.aar",
+      "size_bytes": 168714849,
+      "sha256": "741849961df078890946c28aaeec6519a11e440940572d85126e6ea1539613a4",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "react_android_module",
+      "url": "https://repo.maven.apache.org/maven2/com/facebook/react/react-android/0.87.1/react-android-0.87.1.module",
+      "size_bytes": 28911,
+      "sha256": "079e9cdc3e02fa760c3c0359750d7de1923f065e3c910e7e82165c836c72ea8a"
+    },
+    {
+      "id": "react_android_sources",
+      "url": "https://repo.maven.apache.org/maven2/com/facebook/react/react-android/0.87.1/react-android-0.87.1-release-sources.jar",
+      "size_bytes": 1200663,
+      "sha256": "5f028b17c53ed24eba240444e337643bba7da1d229fe069d43587c8b2a2ab556",
+      "publisher_digest_matches": true
+    },
+    {
+      "id": "react_native_license_raw",
+      "url": "https://raw.githubusercontent.com/react/react-native/a59eff64fa907ed6e919fafe6cbd26d1d54c2de3/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "id": "react_native_npm_metadata",
+      "url": "https://registry.npmjs.org/react-native/0.87.1",
+      "size_bytes": 4729,
+      "sha256": "3c2153f7c8f56a7377cf9c4fbd55b3c9fe4675d84950f2c43bb1274a69279818"
+    },
+    {
+      "id": "react_native_package",
+      "name": "react-native",
+      "version": "0.87.1",
+      "url": "https://registry.npmjs.org/react-native/-/react-native-0.87.1.tgz",
+      "size_bytes": 4028338,
+      "sha256": "f686b91e4c59ba8010be1b4abfde0adc24f7f5aea95a6a28cf4d4ad2cc494bd8",
+      "publisher_sha1": "493036a52fb741e0462aee8911653d998e8bc8db",
+      "publisher_integrity": "sha512-DJKG6ANoD7BtrE4z9DewiSD7/RxCX73lK5Pu49aUr85P3333Dm2roTiP0rRjQNDZdVizHSOmstWfwF/o9EjCRA==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": "a59eff64fa907ed6e919fafe6cbd26d1d54c2de3",
+      "declared_license": "MIT"
+    },
+    {
+      "id": "speech_license_raw",
+      "url": "https://raw.githubusercontent.com/a-ghorbani/react-native-speech/e3b59f5d40c4b9438bcf5bff0c59d97e9ed12355/LICENSE",
+      "size_bytes": 1110,
+      "sha256": "f376971cac056614cda4d85ef9256aef7b56674181fc1e195c52016d1621196f"
+    },
+    {
+      "id": "speech_npm_metadata",
+      "url": "https://registry.npmjs.org/%40pocketpalai%2Freact-native-speech/2.8.2",
+      "size_bytes": 5419,
+      "sha256": "7774e153f74011e4c91fd182b612f40b89a958a1f277e96786b0958206f08ea7"
+    },
+    {
+      "id": "speech_package",
+      "name": "@pocketpalai/react-native-speech",
+      "version": "2.8.2",
+      "url": "https://registry.npmjs.org/@pocketpalai/react-native-speech/-/react-native-speech-2.8.2.tgz",
+      "size_bytes": 374797,
+      "sha256": "1a7b4417b0d23cbd6bfc097a33fbd0bf52da94331fcfde121862839d36d8d2d9",
+      "publisher_sha1": "8642eaed63bbf31b677ef8af107cea46d6d2baa9",
+      "publisher_integrity": "sha512-0LS1oxvvN8tST5sWWka/wU+hfwaSRgqE3BDhq3rLRVJEFpD9PCrgOzUy3jVEQNmSZEwbR5wOQD3utMfELh2zLA==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": "e3b59f5d40c4b9438bcf5bff0c59d97e9ed12355",
+      "declared_license": "MIT"
+    },
+    {
+      "id": "speech_phonon_npm_metadata",
+      "url": "https://registry.npmjs.org/%40pocketpalai%2Freact-native-speech-phonon/0.1.3",
+      "size_bytes": 3901,
+      "sha256": "4c491080f110987701b66a0f2722d119ae0f2794df5c89855e9523b649b38c66"
+    },
+    {
+      "id": "speech_phonon_package",
+      "name": "@pocketpalai/react-native-speech-phonon",
+      "version": "0.1.3",
+      "url": "https://registry.npmjs.org/@pocketpalai/react-native-speech-phonon/-/react-native-speech-phonon-0.1.3.tgz",
+      "size_bytes": 125167,
+      "sha256": "b061874980f06e1f85b51ac2ffbd48162c5158229be3377db7690190a02cc83c",
+      "publisher_sha1": "cd9daa9cf8024e8fc3ca5bd0b2b79d4d4c74735c",
+      "publisher_integrity": "sha512-WaC3HDBY7dPfGziRP8HROe+qFNEbpXl6+a+z4PaKrXhKw/KCSqvfH+M3+jYg2mUqNqX3oRNCPH4al5vBTg7WxA==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": "72660c2faa9c0f4347e06392a488a46f00b3f6fd",
+      "declared_license": "MIT"
+    },
+    {
+      "id": "speech_source",
+      "url": "https://codeload.github.com/a-ghorbani/react-native-speech/tar.gz/72660c2faa9c0f4347e06392a488a46f00b3f6fd",
+      "size_bytes": 2424502,
+      "sha256": "6dddd07a7e508e0844664876c87af146fd5a73a84e15bf7441f31b4e03999180"
+    },
+    {
+      "id": "whisper_license_raw",
+      "url": "https://raw.githubusercontent.com/mybigday/whisper.rn/4d750cb7917973c2528a46cd3902dfe4ebbcbe7f/LICENSE",
+      "size_bytes": 1069,
+      "sha256": "b22eff2c123a71b45b110a2933dd8a4360e119d38dbb8fd2dcf3a85627712883"
+    },
+    {
+      "id": "whisper_rn_npm_metadata",
+      "url": "https://registry.npmjs.org/whisper.rn/0.7.4",
+      "size_bytes": 4083,
+      "sha256": "78ae03f85f513ef6d16400e33f34ddbd8745b0e0b10a562c0de46b97c67cde22"
+    },
+    {
+      "id": "whisper_rn_package",
+      "name": "whisper.rn",
+      "version": "0.7.4",
+      "url": "https://registry.npmjs.org/whisper.rn/-/whisper.rn-0.7.4.tgz",
+      "size_bytes": 7297406,
+      "sha256": "268af5c2279fff64db016759b35386177386eca5990b71fd515e9d138dd54f1c",
+      "publisher_sha1": "832252daa65b068744d5e5f5d32fccb7526aa8d8",
+      "publisher_integrity": "sha512-9MyWFoRmUWHDHLhjm4dZgZzxG2fFNuClOPE/Ne5KXlm0vSi4It5oS2xZi9WfPEfUGHcgPMiVviv9t18zC4BSNw==",
+      "lock_integrity_matches": true,
+      "registry_integrity_matches": true,
+      "gitHead": "4d750cb7917973c2528a46cd3902dfe4ebbcbe7f",
+      "declared_license": "MIT"
+    }
+  ],
+  "apk_native_inventory": [
+    {
+      "member": "lib/arm64-v8a/libNitroIap.so",
+      "size_bytes": 3839136,
+      "sha256": "c42d91d78a8f7b1fc08b0d5ccf59f1c1f0dcd58d3e1a10ec54330660378f2132",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libNitroModules.so",
+      "size_bytes": 981120,
+      "sha256": "ee42971d284578f3cdcf1041f9c252d85206fd0eadf4dc9db873508a50516c61",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libVisionCamera.so",
+      "size_bytes": 271688,
+      "sha256": "28abab2bdde4a0c5aef159d4343c9cea8e260a014dfbadc07dfd680bc3832feb",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libappmodules.so",
+      "size_bytes": 2541192,
+      "sha256": "5b0b42c8e0859c3a563e4ec197a70e4c2c0a2cb2baa7bae6270a54c71ab5ecc4",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libc++_shared.so",
+      "size_bytes": 1292904,
+      "sha256": "f4e1e97c1943e60311e47e8b024d78f5b3b7229b3ccc65feb33af83d6025a670",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "size_bytes": 7112,
+      "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libfbjni.so",
+      "size_bytes": 177000,
+      "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libgesturehandler.so",
+      "size_bytes": 38456,
+      "sha256": "b59c7cb3793cc4b3f4bea94c179228e9a3b043ad75c48178e3ab2e66bf683fbc",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libhermestooling.so",
+      "size_bytes": 141432,
+      "sha256": "adb338d636516e779764437e4892f939276a2ba975dfff8031e634001682d856",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libhermesvm.so",
+      "size_bytes": 2477320,
+      "sha256": "bf38be45bf5d6ad8ba961eaf9deda5fa7e032f3ff7d3929ba2a624567093bffa",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "size_bytes": 29592,
+      "sha256": "067d083e0c4de78aac6ae431df298947020990fe3f5ae743b5bd418d0d144b46",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libimagepipeline.so",
+      "size_bytes": 8760,
+      "sha256": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libjsi.so",
+      "size_bytes": 412696,
+      "sha256": "5fdfbabeee20b300fc084bc9bddfa55b7a3e46dafc1464a4309cf0c906f6b0eb",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libnative-filters.so",
+      "size_bytes": 277744,
+      "sha256": "bb82aec5ab2a8ac4e1968f41c6477824f1f3fff90c0eeb2c90cdeb1923d69833",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libnative-imagetranscoder.so",
+      "size_bytes": 585376,
+      "sha256": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libnative_dict.so",
+      "size_bytes": 36672,
+      "sha256": "8ad5a47f02e32e65ed62aafc3489aa7b7874005017328a270f26306ad0666a60",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libonnxruntime.so",
+      "size_bytes": 25831632,
+      "sha256": "5cc388800bdd737e401f716b5e31f3fafab28bf9d2c2bee3f150ed043c368021",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libonnxruntimejsi.so",
+      "size_bytes": 361624,
+      "sha256": "9e833670095dabe07a18154cfbfab4b8099921ffc11fd20b3e29fd167076403a",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libptts_ffi.so",
+      "size_bytes": 7569632,
+      "sha256": "a6107547deb901f2289c3709f9cb78f4ef03b256d35ebad9ab7fd9fb9c1793cb",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreact_codegen_RNCSlider.so",
+      "size_bytes": 235376,
+      "sha256": "85e56ad5f618d012b04a39b2111fded9f214bf10d0c286af0f3f3018aae4a95b",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreact_codegen_RNKC.so",
+      "size_bytes": 146312,
+      "sha256": "676ba54861c24aec914190b3bcc56a1137dd201a05b1a2db920ed0245cb68314",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreact_codegen_rnpicker.so",
+      "size_bytes": 335976,
+      "sha256": "42aba362b054affdea145e74f2a90fa19c7f7e5247edf0102c364b6547233a44",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "size_bytes": 1225480,
+      "sha256": "735846e50b7895103b7562e4d1072103a0356f0849a9c5c3cb93556b65584989",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "size_bytes": 776520,
+      "sha256": "26eb572bb25256ccaa6e8a4ff7fec7116c16ab9689f4a49333fe69b66032e836",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "size_bytes": 152928,
+      "sha256": "6b34f74540dec726c95141dcb092afcc4a818e3b4358e2bc6585c67ae99f8bb7",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreactnative.so",
+      "size_bytes": 6898824,
+      "sha256": "5ba0229fabadf30622a03efef747a86edf0f106a5a56df63ded7b5d8c0a76eaa",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libreanimated.so",
+      "size_bytes": 1666248,
+      "sha256": "64a5f4691ae7a4adaeee15a2373119bb1b27aa8075cf337332d2b68344e1a9ac",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama.so",
+      "size_bytes": 11639776,
+      "sha256": "5cb8ae2e2161fe68ea049ae4916e41560c9aa050a74f5303a3f96a9bbca6cbcf",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_jni.so",
+      "size_bytes": 853176,
+      "sha256": "ec7c86a4c481614f0ea0696239086f91013a08d6f1e075f6504f2ee6c305b6aa",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_jni_v8.so",
+      "size_bytes": 853192,
+      "sha256": "6f9e4ce779d206d60764a6dbf20650c223896b06ac4f3c0b8142a71c0db86fc7",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_jni_v8_2.so",
+      "size_bytes": 846912,
+      "sha256": "b1f62e477c5cca2e32215cc03a60703aa3a958fc964d26b64bf73aafca175cb5",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_jni_v8_2_dotprod.so",
+      "size_bytes": 846944,
+      "sha256": "a1e2b8df153a97608ae4fb43ca54441d918ba8329904c44cb9636691a4fa65db",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_jni_v8_2_dotprod_i8mm.so",
+      "size_bytes": 846944,
+      "sha256": "3ef85c5eb455022ea3d78dcecca2430fff4bd019f6860f7c8ff5446f3ff307f4",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_jni_v8_2_dotprod_i8mm_hexagon_opencl.so",
+      "size_bytes": 847080,
+      "sha256": "f513d046d3445700d00a98e1700a7071c05a7db65933733f6661b6777ed3dc4f",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_v8.so",
+      "size_bytes": 11701632,
+      "sha256": "5932d4cdb71dc2b0f6b13cb8c6191c9e7f0593b12e8796db8500f409d8979306",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_v8_2.so",
+      "size_bytes": 11696520,
+      "sha256": "c943f7459c577287cfa592a04a95649acde40504dfd9829d48cee6157f07d890",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_v8_2_dotprod.so",
+      "size_bytes": 11773112,
+      "sha256": "d858fca376680ce0e62381c016cfef3bfb31785368026bdee8f3ea0454a87d56",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_v8_2_dotprod_i8mm.so",
+      "size_bytes": 11787208,
+      "sha256": "4ed7654529b9e85a46c042da694f21f649298cc327cf925c11cb92c7e88e91fc",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnllama_v8_2_dotprod_i8mm_hexagon_opencl.so",
+      "size_bytes": 15152680,
+      "sha256": "a1676560149e81ba927cdec897f054b58b14af268fd6e7801926b11537ad5ac3",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnscreens.so",
+      "size_bytes": 103928,
+      "sha256": "24690b18ef9dcaec463f5b869e7d3ebaee3453f791cb4970f30192cac388da9a",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnspeech_phonon.so",
+      "size_bytes": 70080,
+      "sha256": "5aede23ece6565e88acb5d4f6e24de981c82181f03016ea6c26fbd7787e12eb4",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnwhisper.so",
+      "size_bytes": 1727776,
+      "sha256": "e9e439dcbdc97dedb7b1f54e4a2fda2cf6d160bf2d4e5dfc3cb65f4028f4eb7f",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnwhisper_v8.so",
+      "size_bytes": 1724584,
+      "sha256": "ffcd40b3165431ad102c6c27cd3d91eaaceae77802e3d91a2fa8b1bfc0a68f70",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnwhisper_v8fp16_va_2.so",
+      "size_bytes": 1718632,
+      "sha256": "7f08a63965edce79e93ff499bc8989acaf180d2e786e3eba099c946d5535915d",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/librnwhisper_v8fp16_va_2_dotprod.so",
+      "size_bytes": 1713032,
+      "sha256": "9c144b09ce1ce911cfe0a5392a7e304a38d8e36917eb5753198bf2a83deb5b0d",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/arm64-v8a/libworklets.so",
+      "size_bytes": 1288240,
+      "sha256": "3304678094e3e933b79e74fc774ba1790e0c73d9ad7e71cfa83f88637750a3e7",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libNitroIap.so",
+      "size_bytes": 3808696,
+      "sha256": "00e183b2db34230b6509063bceb60d93f0e4dc5553169b96232198be3c8ef64e",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libNitroModules.so",
+      "size_bytes": 968560,
+      "sha256": "8f10f7c3cfbfb46242e572f642d65e22fc23ee10330d6413d92877f675ee372c",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libVisionCamera.so",
+      "size_bytes": 263336,
+      "sha256": "da253b1723de3d319461ccce03fee0927011de68fd662870c00135383b1cb5c9",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libappmodules.so",
+      "size_bytes": 2609568,
+      "sha256": "f95dfa5c095d708cdf2b8cf5f91ad12851ccc8c67dc8b9d8b411f2f13c712127",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libc++_shared.so",
+      "size_bytes": 1252080,
+      "sha256": "89082b8baa2de544a155be4f05fd1170e89d1a5bbd198f913cdffa7c2a31f44a",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libdatastore_shared_counter.so",
+      "size_bytes": 6224,
+      "sha256": "fb6c9208988c49ae94943bc3236fa763ba584722e044fa4ea9a12d2941027105",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libfbjni.so",
+      "size_bytes": 172952,
+      "sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libgesturehandler.so",
+      "size_bytes": 35608,
+      "sha256": "69ffa02322460d840409d97b3f0046fa0a590008bffdc6214555caf6f93a3dba",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libhermestooling.so",
+      "size_bytes": 138128,
+      "sha256": "66e1c28d274eceb57e44575c462fdef544cbacec875f8a5d857950a805d34b15",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libhermesvm.so",
+      "size_bytes": 2591976,
+      "sha256": "3c5f7f3740b6511b55f3f8ba43c24eb1b38ab2fb9dc1ca5618287c3ca6221e13",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libimage_processing_util_jni.so",
+      "size_bytes": 46160,
+      "sha256": "352fa6662094b3a3e3ad60893219cb889180c452c74ffab8025720e0bef4c6db",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libimagepipeline.so",
+      "size_bytes": 8464,
+      "sha256": "2e596f4955f65abaa93c891b49eb58b5416581806a04bde0097cc369ae4dbfb3",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libjsi.so",
+      "size_bytes": 418872,
+      "sha256": "47939f14d73c2fe82b4f9ab65349a08aeef1f880ba837f26ad3baf6d5116ac2f",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libnative-filters.so",
+      "size_bytes": 270784,
+      "sha256": "9bbab21c6c696d06b0e1da6347e871152cb7e26e0c111a6aaf8805cfac58762f",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libnative-imagetranscoder.so",
+      "size_bytes": 720432,
+      "sha256": "f6b92ad7f1c30973f40704c46987504757c3d079c7f4ace6efc8b318dd9c22f3",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libnative_dict.so",
+      "size_bytes": 37360,
+      "sha256": "978e44493c728d558d295fb188828be78233d61f158e6264d508b781b7932d6b",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libonnxruntime.so",
+      "size_bytes": 31316520,
+      "sha256": "c9991527a4164cffe85430908369a7a6d27344f2cb584d5fe1a35120e9e9ce90",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libonnxruntimejsi.so",
+      "size_bytes": 351984,
+      "sha256": "a5e7c4e22c64385c75f3948483d857bc4eaf5f441e47b37473b0bdd685dc5f5f",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreact_codegen_RNCSlider.so",
+      "size_bytes": 240464,
+      "sha256": "09d54e7141b7823b74610d73c091398ceed2fd1c56f246e3843cf8f0ae5387b7",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreact_codegen_RNKC.so",
+      "size_bytes": 146584,
+      "sha256": "42411f114e0af9d7a5d9795e085a4ccb6f3ad1f9692e6c5311ffe5f12f41b0f9",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreact_codegen_rnpicker.so",
+      "size_bytes": 341376,
+      "sha256": "c9ecb3069cf821cc6f38bb123662fd9379e589a1fbb1427498b0bd08f214af19",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreact_codegen_rnscreens.so",
+      "size_bytes": 1244368,
+      "sha256": "29d590347f443e16bef9e55edcdbcd723c08f6f773466d0f5daec5be47824e97",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreact_codegen_rnsvg.so",
+      "size_bytes": 868784,
+      "sha256": "e45d4f795732875188736246ba2c4314fba7c9f0d1837606f05a7311dfcb850b",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreact_codegen_safeareacontext.so",
+      "size_bytes": 152904,
+      "sha256": "fde3bb4a40e6f2812f93751e32e14a7622b90c0f2e4049dc1a3bbcf5e132aafd",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreactnative.so",
+      "size_bytes": 7102216,
+      "sha256": "90b50f2fa1319a88a7c6b97d11d6375f7545c8af76649435d5af7753af21757d",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libreanimated.so",
+      "size_bytes": 1719048,
+      "sha256": "40b2c924b9c686b6fcea77e619c01140f7ac1dde2ce5000c7edb3b3b5bf76339",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnllama.so",
+      "size_bytes": 13656200,
+      "sha256": "baf6d07d04bc3362b936e32847751047c70abd1ce4fda2da413ef228410154a8",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnllama_jni.so",
+      "size_bytes": 873872,
+      "sha256": "df36eece535b735496f9e8cee17742dc50bf1f9e36047d2ea8c79d923035c1af",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnllama_jni_x86_64.so",
+      "size_bytes": 873888,
+      "sha256": "b212bfaf8d7991f04e1dcbdb9088a016cf6c39505a8af065282c950e576add33",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnllama_x86_64.so",
+      "size_bytes": 13669688,
+      "sha256": "8215d868678b3052a63af3120dcb8054101de29f66a595e3bb9053e2d87295ee",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnscreens.so",
+      "size_bytes": 100768,
+      "sha256": "d65961d75e04f4baf2987473fd4985e43587632cc91efec3a617005cfe47b06c",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnwhisper.so",
+      "size_bytes": 2070480,
+      "sha256": "1c3d4b3da2dd8b928b3cbaaf96c723f549d2f649302642c655846a9a0c475996",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/librnwhisper_x86_64.so",
+      "size_bytes": 2063120,
+      "sha256": "9cf3e1ab99d62cc7b96620b821b9520ce53bf5eb17565337f36c17dc88300522",
+      "elf_magic": true
+    },
+    {
+      "member": "lib/x86_64/libworklets.so",
+      "size_bytes": 1236856,
+      "sha256": "b41f114966e0cadc049aa2877cd3e462eac03032ba444c02d72c0a0e4c263f5a",
+      "elf_magic": true
+    },
+    {
+      "member": "assets/ggml-hexagon/libggml-htp-v73.so",
+      "size_bytes": 842528,
+      "sha256": "ac3781b4ff9b0e429b4aa9816dcc498711e3bee4356713906d30d902e3be3c32",
+      "elf_magic": true
+    },
+    {
+      "member": "assets/ggml-hexagon/libggml-htp-v75.so",
+      "size_bytes": 838400,
+      "sha256": "bea1d60f0ae153f7bfacb2153ef73431e9db142c83536b0403fa03a2af7bd6dc",
+      "elf_magic": true
+    },
+    {
+      "member": "assets/ggml-hexagon/libggml-htp-v79.so",
+      "size_bytes": 858976,
+      "sha256": "fea132f21c1142d63149066e6cc7b78994b600da12483792f43ef82b0ddd46a0",
+      "elf_magic": true
+    },
+    {
+      "member": "assets/ggml-hexagon/libggml-htp-v81.so",
+      "size_bytes": 871360,
+      "sha256": "0d388af2a2c7d6eb55e87b96be34188cfd7ed7ec68e01ded8f70df8f3b7544f2",
+      "elf_magic": true
+    },
+    {
+      "member": "assets/ggml-hexagon/libggml-htp-v85.so",
+      "size_bytes": 871360,
+      "sha256": "361909a35ccfdeca7f857cbf3ade1e5f1ac21a7f33241cee031fa86ccbc79345",
+      "elf_magic": true
+    }
+  ],
+  "native_publisher_comparisons": [
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/arm64-v8a/libc++_shared.so",
+      "apk_member": "lib/arm64-v8a/libc++_shared.so",
+      "artifact_size_bytes": 1292904,
+      "apk_size_bytes": 1292904,
+      "artifact_sha256": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+      "apk_sha256": "f4e1e97c1943e60311e47e8b024d78f5b3b7229b3ccc65feb33af83d6025a670",
+      "byte_identical": false,
+      "artifact_build_ids": [
+        "6783a7f3a0d9c67c55a74cadc441ed55aaa493da"
+      ],
+      "apk_build_ids": [
+        "ea306390624df9242cca21aeec76a0427683bd72"
+      ],
+      "same_nonempty_build_ids": false
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/arm64-v8a/libfbjni.so",
+      "apk_member": "lib/arm64-v8a/libfbjni.so",
+      "artifact_size_bytes": 177000,
+      "apk_size_bytes": 177000,
+      "artifact_sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+      "apk_sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "e438f6554af1d86b210a05412e96c4251e570157"
+      ],
+      "apk_build_ids": [
+        "e438f6554af1d86b210a05412e96c4251e570157"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/arm64-v8a/libhermestooling.so",
+      "apk_member": "lib/arm64-v8a/libhermestooling.so",
+      "artifact_size_bytes": 141432,
+      "apk_size_bytes": 141432,
+      "artifact_sha256": "adb338d636516e779764437e4892f939276a2ba975dfff8031e634001682d856",
+      "apk_sha256": "adb338d636516e779764437e4892f939276a2ba975dfff8031e634001682d856",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "9f92523baf76dce3a131ed28b3173aa93cbf6700"
+      ],
+      "apk_build_ids": [
+        "9f92523baf76dce3a131ed28b3173aa93cbf6700"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/arm64-v8a/libjsi.so",
+      "apk_member": "lib/arm64-v8a/libjsi.so",
+      "artifact_size_bytes": 412696,
+      "apk_size_bytes": 412696,
+      "artifact_sha256": "5fdfbabeee20b300fc084bc9bddfa55b7a3e46dafc1464a4309cf0c906f6b0eb",
+      "apk_sha256": "5fdfbabeee20b300fc084bc9bddfa55b7a3e46dafc1464a4309cf0c906f6b0eb",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "50e331257803dfe395f913b11f1c55b6717995ce"
+      ],
+      "apk_build_ids": [
+        "50e331257803dfe395f913b11f1c55b6717995ce"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/arm64-v8a/libreactnative.so",
+      "apk_member": "lib/arm64-v8a/libreactnative.so",
+      "artifact_size_bytes": 6898824,
+      "apk_size_bytes": 6898824,
+      "artifact_sha256": "5ba0229fabadf30622a03efef747a86edf0f106a5a56df63ded7b5d8c0a76eaa",
+      "apk_sha256": "5ba0229fabadf30622a03efef747a86edf0f106a5a56df63ded7b5d8c0a76eaa",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "7e70f59e9db250d0eef89a38203b167ad57375a7"
+      ],
+      "apk_build_ids": [
+        "7e70f59e9db250d0eef89a38203b167ad57375a7"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/x86_64/libc++_shared.so",
+      "apk_member": "lib/x86_64/libc++_shared.so",
+      "artifact_size_bytes": 1252080,
+      "apk_size_bytes": 1252080,
+      "artifact_sha256": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f",
+      "apk_sha256": "89082b8baa2de544a155be4f05fd1170e89d1a5bbd198f913cdffa7c2a31f44a",
+      "byte_identical": false,
+      "artifact_build_ids": [
+        "734ab2eaa203afbb89147d313e46146617bd1a2c"
+      ],
+      "apk_build_ids": [
+        "f8979f85460ff1d8dbdd4bd1909e020b4b13c8f3"
+      ],
+      "same_nonempty_build_ids": false
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/x86_64/libfbjni.so",
+      "apk_member": "lib/x86_64/libfbjni.so",
+      "artifact_size_bytes": 172952,
+      "apk_size_bytes": 172952,
+      "artifact_sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "apk_sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "2f4b0da170c8a1af5bf245a5dba7c30a6974f2f2"
+      ],
+      "apk_build_ids": [
+        "2f4b0da170c8a1af5bf245a5dba7c30a6974f2f2"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/x86_64/libhermestooling.so",
+      "apk_member": "lib/x86_64/libhermestooling.so",
+      "artifact_size_bytes": 138128,
+      "apk_size_bytes": 138128,
+      "artifact_sha256": "66e1c28d274eceb57e44575c462fdef544cbacec875f8a5d857950a805d34b15",
+      "apk_sha256": "66e1c28d274eceb57e44575c462fdef544cbacec875f8a5d857950a805d34b15",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "352cabd04bb281ff96dcf6277d82e619e0162461"
+      ],
+      "apk_build_ids": [
+        "352cabd04bb281ff96dcf6277d82e619e0162461"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/x86_64/libjsi.so",
+      "apk_member": "lib/x86_64/libjsi.so",
+      "artifact_size_bytes": 418872,
+      "apk_size_bytes": 418872,
+      "artifact_sha256": "47939f14d73c2fe82b4f9ab65349a08aeef1f880ba837f26ad3baf6d5116ac2f",
+      "apk_sha256": "47939f14d73c2fe82b4f9ab65349a08aeef1f880ba837f26ad3baf6d5116ac2f",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "b3bebbef192e147ee09e173c104c06a54dc7cf93"
+      ],
+      "apk_build_ids": [
+        "b3bebbef192e147ee09e173c104c06a54dc7cf93"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "artifact_member": "jni/x86_64/libreactnative.so",
+      "apk_member": "lib/x86_64/libreactnative.so",
+      "artifact_size_bytes": 7102216,
+      "apk_size_bytes": 7102216,
+      "artifact_sha256": "90b50f2fa1319a88a7c6b97d11d6375f7545c8af76649435d5af7753af21757d",
+      "apk_sha256": "90b50f2fa1319a88a7c6b97d11d6375f7545c8af76649435d5af7753af21757d",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "2ffbdd7921fd3472d109092459848a75b172c205"
+      ],
+      "apk_build_ids": [
+        "2ffbdd7921fd3472d109092459848a75b172c205"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "hermes_android_aar",
+      "artifact_member": "jni/arm64-v8a/libhermesvm.so",
+      "apk_member": "lib/arm64-v8a/libhermesvm.so",
+      "artifact_size_bytes": 2477320,
+      "apk_size_bytes": 2477320,
+      "artifact_sha256": "bf38be45bf5d6ad8ba961eaf9deda5fa7e032f3ff7d3929ba2a624567093bffa",
+      "apk_sha256": "bf38be45bf5d6ad8ba961eaf9deda5fa7e032f3ff7d3929ba2a624567093bffa",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "7a3863f5a9f1dd547fc8ca55f153f75b274986ba"
+      ],
+      "apk_build_ids": [
+        "7a3863f5a9f1dd547fc8ca55f153f75b274986ba"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "hermes_android_aar",
+      "artifact_member": "jni/x86_64/libhermesvm.so",
+      "apk_member": "lib/x86_64/libhermesvm.so",
+      "artifact_size_bytes": 2591976,
+      "apk_size_bytes": 2591976,
+      "artifact_sha256": "3c5f7f3740b6511b55f3f8ba43c24eb1b38ab2fb9dc1ca5618287c3ca6221e13",
+      "apk_sha256": "3c5f7f3740b6511b55f3f8ba43c24eb1b38ab2fb9dc1ca5618287c3ca6221e13",
+      "byte_identical": true,
+      "artifact_build_ids": [
+        "8d927b4d4757e3548fed384ed5666d66ee44c365"
+      ],
+      "apk_build_ids": [
+        "8d927b4d4757e3548fed384ed5666d66ee44c365"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "onnx_android_aar",
+      "artifact_member": "jni/arm64-v8a/libonnxruntime.so",
+      "apk_member": "lib/arm64-v8a/libonnxruntime.so",
+      "artifact_size_bytes": 25831632,
+      "apk_size_bytes": 25831632,
+      "artifact_sha256": "4d2318b3849abb8862133d3068fc7e807ed8b2671cc6d83657fff2fcb9e1caad",
+      "apk_sha256": "5cc388800bdd737e401f716b5e31f3fafab28bf9d2c2bee3f150ed043c368021",
+      "byte_identical": false,
+      "artifact_build_ids": [
+        "d290bcbbf59b09a0fdcd06e7ae0828aaa22e54dc"
+      ],
+      "apk_build_ids": [
+        "d290bcbbf59b09a0fdcd06e7ae0828aaa22e54dc"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "onnx_android_aar",
+      "artifact_member": "jni/x86_64/libonnxruntime.so",
+      "apk_member": "lib/x86_64/libonnxruntime.so",
+      "artifact_size_bytes": 31316520,
+      "apk_size_bytes": 31316520,
+      "artifact_sha256": "2328d9481be5869dd8c4be96eb57b38a0105db17f1fe696a903c02a0988f0bd9",
+      "apk_sha256": "c9991527a4164cffe85430908369a7a6d27344f2cb584d5fe1a35120e9e9ce90",
+      "byte_identical": false,
+      "artifact_build_ids": [
+        "666569f6cd9e4bffc6f86a968f772ecbd9f1c5de"
+      ],
+      "apk_build_ids": [
+        "666569f6cd9e4bffc6f86a968f772ecbd9f1c5de"
+      ],
+      "same_nonempty_build_ids": true
+    },
+    {
+      "artifact_id": "phonon_phonon-android-0",
+      "artifact_member": "jniLibs/arm64-v8a/libptts_ffi.so",
+      "apk_member": "lib/arm64-v8a/libptts_ffi.so",
+      "artifact_size_bytes": 7569640,
+      "apk_size_bytes": 7569632,
+      "artifact_sha256": "b4772c6cdb8ddab1816ecad23f8ff7e0ed24bffee41065aa0e024edafccb8e28",
+      "apk_sha256": "a6107547deb901f2289c3709f9cb78f4ef03b256d35ebad9ab7fd9fb9c1793cb",
+      "byte_identical": false,
+      "artifact_build_ids": [],
+      "apk_build_ids": [],
+      "same_nonempty_build_ids": false
+    }
+  ],
+  "nonidentical_elf_sections": [
+    {
+      "artifact_id": "react_android_aar",
+      "apk_member": "lib/arm64-v8a/libc++_shared.so",
+      "all_allocated_sections_equal": false,
+      "differing_sections": [
+        ".comment",
+        ".note.gnu.build-id"
+      ],
+      "allocated_section_count": 26,
+      "different_byte_count_common_length": 30
+    },
+    {
+      "artifact_id": "react_android_aar",
+      "apk_member": "lib/x86_64/libc++_shared.so",
+      "all_allocated_sections_equal": false,
+      "differing_sections": [
+        ".comment",
+        ".note.gnu.build-id"
+      ],
+      "allocated_section_count": 25,
+      "different_byte_count_common_length": 30
+    },
+    {
+      "artifact_id": "onnx_android_aar",
+      "apk_member": "lib/arm64-v8a/libonnxruntime.so",
+      "all_allocated_sections_equal": true,
+      "differing_sections": [
+        ".shstrtab"
+      ],
+      "allocated_section_count": 27,
+      "different_byte_count_common_length": 347
+    },
+    {
+      "artifact_id": "onnx_android_aar",
+      "apk_member": "lib/x86_64/libonnxruntime.so",
+      "all_allocated_sections_equal": true,
+      "differing_sections": [
+        ".shstrtab"
+      ],
+      "allocated_section_count": 27,
+      "different_byte_count_common_length": 347
+    },
+    {
+      "artifact_id": "phonon_phonon-android-0",
+      "apk_member": "lib/arm64-v8a/libptts_ffi.so",
+      "all_allocated_sections_equal": true,
+      "differing_sections": [
+        ".shstrtab"
+      ],
+      "allocated_section_count": 23,
+      "different_byte_count_common_length": 604
+    }
+  ],
+  "dsp_npm_comparisons": [
+    {
+      "package_member": "package/bin/arm64-v8a/libggml-htp-v73.so",
+      "apk_member": "assets/ggml-hexagon/libggml-htp-v73.so",
+      "size_bytes": 842528,
+      "sha256": "ac3781b4ff9b0e429b4aa9816dcc498711e3bee4356713906d30d902e3be3c32",
+      "byte_identical": true
+    },
+    {
+      "package_member": "package/bin/arm64-v8a/libggml-htp-v75.so",
+      "apk_member": "assets/ggml-hexagon/libggml-htp-v75.so",
+      "size_bytes": 838400,
+      "sha256": "bea1d60f0ae153f7bfacb2153ef73431e9db142c83536b0403fa03a2af7bd6dc",
+      "byte_identical": true
+    },
+    {
+      "package_member": "package/bin/arm64-v8a/libggml-htp-v79.so",
+      "apk_member": "assets/ggml-hexagon/libggml-htp-v79.so",
+      "size_bytes": 858976,
+      "sha256": "fea132f21c1142d63149066e6cc7b78994b600da12483792f43ef82b0ddd46a0",
+      "byte_identical": true
+    },
+    {
+      "package_member": "package/bin/arm64-v8a/libggml-htp-v81.so",
+      "apk_member": "assets/ggml-hexagon/libggml-htp-v81.so",
+      "size_bytes": 871360,
+      "sha256": "0d388af2a2c7d6eb55e87b96be34188cfd7ed7ec68e01ded8f70df8f3b7544f2",
+      "byte_identical": true
+    },
+    {
+      "package_member": "package/bin/arm64-v8a/libggml-htp-v85.so",
+      "apk_member": "assets/ggml-hexagon/libggml-htp-v85.so",
+      "size_bytes": 871360,
+      "sha256": "361909a35ccfdeca7f857cbf3ade1e5f1ac21a7f33241cee031fa86ccbc79345",
+      "byte_identical": true
+    }
+  ],
+  "defined_native_patch_symbols": [
+    {
+      "apk_member": "lib/arm64-v8a/librnllama.so",
+      "build_ids": [
+        "ac2b6e3458cfa9595ad5f0778acd293532ff3509"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_jni.so",
+      "build_ids": [
+        "89cde8c2720a1d31718e9f8922fdbc4b721c39c2"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_jni_v8.so",
+      "build_ids": [
+        "2cc85bedf18b18cab819d4918a8e1556a1c0d90e"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_jni_v8_2.so",
+      "build_ids": [
+        "f7c1c273963155d1a88a6ee6b0248fab5f5a9fc8"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_jni_v8_2_dotprod.so",
+      "build_ids": [
+        "c5b79b83a89d3a05f8fec9fbfa25a27c209efbcf"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_jni_v8_2_dotprod_i8mm.so",
+      "build_ids": [
+        "23b7543d7239f2375e95512288f076c99f357bec"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_jni_v8_2_dotprod_i8mm_hexagon_opencl.so",
+      "build_ids": [
+        "05c84ab77a25e4b9f3f40f622132d4df2cf2a44f"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_v8.so",
+      "build_ids": [
+        "6082a87e6b2c93a6f984130672e938fa0e71e0a0"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_v8_2.so",
+      "build_ids": [
+        "7b93416aa403077dad5be276ec5001916d6af6ff"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_v8_2_dotprod.so",
+      "build_ids": [
+        "df0b8131251f04d0a1d91ac1795690f741150bff"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_v8_2_dotprod_i8mm.so",
+      "build_ids": [
+        "3f15f0243be2e22902faecdf69f2b9c3e69ed761"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/arm64-v8a/librnllama_v8_2_dotprod_i8mm_hexagon_opencl.so",
+      "build_ids": [
+        "5d7fe9fb759f8fdca0d947c834403bfba27d41c2"
+      ],
+      "defined_patch_symbols": [
+        "ggml_backend_is_hexagon",
+        "rnllama_patch_abort_v3",
+        "ggml_backend_hexagon_reg"
+      ]
+    },
+    {
+      "apk_member": "lib/x86_64/librnllama.so",
+      "build_ids": [
+        "243dd4254f319bd7d7ceaaf88ca88e632fe53ee1"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/x86_64/librnllama_jni.so",
+      "build_ids": [
+        "b1b5846d4984fba0fa9a1f59367a3738f4715b1d"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/x86_64/librnllama_jni_x86_64.so",
+      "build_ids": [
+        "2c95917fc9261e1b59381218f91b0dd29f6080c1"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_jsi_patch_ownership_v3"
+      ]
+    },
+    {
+      "apk_member": "lib/x86_64/librnllama_x86_64.so",
+      "build_ids": [
+        "d1c1ec82de00558eaacae107e2d457933824f257"
+      ],
+      "defined_patch_symbols": [
+        "rnllama_patch_abort_v3"
+      ]
+    }
+  ],
+  "apk_bundle_static_evidence": {
+    "member": "assets/index.android.bundle",
+    "size_bytes": 18447916,
+    "sha256": "495f09a439747c81f359d21df55faebb9684e9b3fe865455a2ce2af76ce906e5",
+    "hermes_bytecode_version": 98,
+    "literal_probes": [
+      {
+        "literal": "https://cdn.jsdelivr.net/gh/a-ghorbani/pocketpal-device-rules@main",
+        "byte_offset": 2987746
+      },
+      {
+        "literal": "/api/mobile/pals/",
+        "byte_offset": 2378449
+      },
+      {
+        "literal": "/event",
+        "byte_offset": 3537785
+      },
+      {
+        "literal": "buy_tap",
+        "byte_offset": 4274811
+      },
+      {
+        "literal": "purchase_cancelled",
+        "byte_offset": 3828111
+      },
+      {
+        "literal": "purchase_error",
+        "byte_offset": 2288755
+      },
+      {
+        "literal": "playIntegrity",
+        "byte_offset": 5247074
+      },
+      {
+        "literal": "initializeAppCheck",
+        "byte_offset": 4132711
+      }
+    ],
+    "limitation": "Literal presence corroborates static source paths, not executed calls, live configuration, user consent, or measured network traffic."
+  },
+  "apk_manifest_static_evidence": {
+    "method": "Decode Android binary XML string pool and start-element attributes; no app execution",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.RUN_USER_INITIATED_JOBS",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "android.permission.WAKE_LOCK",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.VIBRATE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.FOREGROUND_SERVICE",
+      "com.android.vending.BILLING",
+      "com.pocketpalai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+    ],
+    "relevant_elements": [
+      {
+        "tag": "uses-sdk",
+        "attributes": {
+          "minSdkVersion": 24,
+          "targetSdkVersion": 36
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.INTERNET"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.CAMERA"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.RECORD_AUDIO"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.RUN_USER_INITIATED_JOBS"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.POST_NOTIFICATIONS"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.READ_EXTERNAL_STORAGE",
+          "maxSdkVersion": 28
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+          "maxSdkVersion": 28
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.USE_BIOMETRIC"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.USE_FINGERPRINT"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.WAKE_LOCK"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.ACCESS_NETWORK_STATE"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.VIBRATE"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "android.permission.FOREGROUND_SERVICE"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "com.android.vending.BILLING"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "com.pocketpalai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        }
+      },
+      {
+        "tag": "uses-permission",
+        "attributes": {
+          "name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+        }
+      },
+      {
+        "tag": "provider",
+        "attributes": {
+          "name": "com.reactnativecommunity.webview.RNCWebViewFileProvider",
+          "exported": false,
+          "authorities": "com.pocketpalai.fileprovider",
+          "grantUriPermissions": true
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.firebase.appcheck.debug.FirebaseAppCheckDebugRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.firebase.appcheck.playintegrity.FirebaseAppCheckPlayIntegrityRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "provider",
+        "attributes": {
+          "name": "io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider",
+          "exported": false,
+          "authorities": "com.pocketpalai.reactnativefirebaseappinitprovider",
+          "initOrder": 99
+        }
+      },
+      {
+        "tag": "provider",
+        "attributes": {
+          "name": "androidx.startup.InitializationProvider",
+          "exported": false,
+          "authorities": "com.pocketpalai.androidx-startup"
+        }
+      },
+      {
+        "tag": "provider",
+        "attributes": {
+          "name": "com.google.firebase.provider.FirebaseInitProvider",
+          "exported": false,
+          "authorities": "com.pocketpalai.firebaseinitprovider",
+          "initOrder": 100,
+          "directBootAware": true
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      },
+      {
+        "tag": "meta-data",
+        "attributes": {
+          "name": "com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar",
+          "value": "com.google.firebase.components.ComponentRegistrar"
+        }
+      }
+    ]
+  },
+  "source_policy_file_evidence": [
+    {
+      "path": "src/store/ModelStore.ts",
+      "line_start": 304,
+      "line_end": 306,
+      "finding": "Persistence initialization starts initializeStore",
+      "size_bytes": 133957,
+      "sha256": "200a60ceade3a8c41c171b32354e2f885603b3f380e2b96a13162d946f9ebf38",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/store/ModelStore.ts#L304"
+    },
+    {
+      "path": "src/store/ModelStore.ts",
+      "line_start": 775,
+      "line_end": 820,
+      "finding": "initializeStore invokes upgradeToFetchedRules",
+      "size_bytes": 133957,
+      "sha256": "200a60ceade3a8c41c171b32354e2f885603b3f380e2b96a13162d946f9ebf38",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/store/ModelStore.ts#L775"
+    },
+    {
+      "path": "src/store/ModelStore.ts",
+      "line_start": 991,
+      "line_end": 994,
+      "finding": "upgradeToFetchedRules calls fetchRules",
+      "size_bytes": 133957,
+      "sha256": "200a60ceade3a8c41c171b32354e2f885603b3f380e2b96a13162d946f9ebf38",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/store/ModelStore.ts#L991"
+    },
+    {
+      "path": "src/services/deviceRules/rules.ts",
+      "line_start": 18,
+      "line_end": 27,
+      "finding": "fetchRules performs fetch with network URL",
+      "size_bytes": 1528,
+      "sha256": "c63193dc168544050e6df89dc6406bce1542b5baf61cbc4802195125ffe3b99a",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/services/deviceRules/rules.ts#L18"
+    },
+    {
+      "path": "src/services/deviceRules/rulesUrls.ts",
+      "line_start": 3,
+      "line_end": 10,
+      "finding": "Mutable jsDelivr main rules URL",
+      "size_bytes": 413,
+      "sha256": "4b52543dbf9b878626b870b0dc635b2d0cc1e72fa403fc2c2702bcea0b46b7f1",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/services/deviceRules/rulesUrls.ts#L3"
+    },
+    {
+      "path": "src/services/palshub/palEvents.ts",
+      "line_start": 3,
+      "line_end": 14,
+      "finding": "Purchase-event POST implementation",
+      "size_bytes": 559,
+      "sha256": "bd284885c9b555372c05d40f5c7573cca4a492040cd8ab110b933c0dab475339",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/services/palshub/palEvents.ts#L3"
+    },
+    {
+      "path": "src/store/PurchaseStore.ts",
+      "line_start": 1323,
+      "line_end": 1350,
+      "finding": "Purchase event send call sites",
+      "size_bytes": 50351,
+      "sha256": "9da9a815c070b7891280866ddc3cd9961edcae7fc580c0221bce75b7e8d2d307",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/store/PurchaseStore.ts#L1323"
+    },
+    {
+      "path": "src/store/PurchaseStore.ts",
+      "line_start": 1836,
+      "line_end": 1836,
+      "finding": "Production event dependency uses palEvents",
+      "size_bytes": 50351,
+      "sha256": "9da9a815c070b7891280866ddc3cd9961edcae7fc580c0221bce75b7e8d2d307",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/store/PurchaseStore.ts#L1836"
+    },
+    {
+      "path": "src/screens/BenchmarkScreen/BenchmarkScreen.tsx",
+      "line_start": 260,
+      "line_end": 276,
+      "finding": "Benchmark result sharing consent flow",
+      "size_bytes": 21785,
+      "sha256": "8a767a816da419c35d1cf1a5ded3be642794d9c874d736b69ed9f84f4d2cdeb1",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/screens/BenchmarkScreen/BenchmarkScreen.tsx#L260"
+    },
+    {
+      "path": "src/utils/fb.ts",
+      "line_start": 39,
+      "line_end": 52,
+      "finding": "App Check provider and automatic token refresh once initialized",
+      "size_bytes": 1964,
+      "sha256": "0838d8008bd400e7813cab81bc27100d660267e9dd2aee2e2fdeef2edf512184",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/src/utils/fb.ts#L39"
+    },
+    {
+      "path": "android/app/build.gradle",
+      "line_start": 210,
+      "line_end": 226,
+      "finding": "Android dependency declarations",
+      "size_bytes": 11725,
+      "sha256": "801d09bec8fed5682177f9fc6f21cd333baba2272a4e6fc93ad6d2d35a96a949",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/android/app/build.gradle#L210"
+    },
+    {
+      "path": ".github/actions/setup-hexagon-sdk/action.yml",
+      "line_start": 6,
+      "line_end": 42,
+      "finding": "Third-party Hexagon SDK provenance and content pins",
+      "size_bytes": 8244,
+      "sha256": "c95d12c5a859a4980ff52e5ea44193baacaef564de0f6f603edc3cea160eb811",
+      "url": "https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/.github/actions/setup-hexagon-sdk/action.yml#L6"
+    }
+  ],
+  "package_license_file_inventories": {
+    "llama_rn": [
+      {
+        "path": "package/LICENSE",
+        "size_bytes": 1069,
+        "sha256": "b22eff2c123a71b45b110a2933dd8a4360e119d38dbb8fd2dcf3a85627712883"
+      },
+      {
+        "path": "package/vendor/codec.cpp/LICENSE",
+        "size_bytes": 1078,
+        "sha256": "bec478a021946efee8dc5388abba3beb7c5716e9bc9c7a8a46361efc37d0a5e5"
+      },
+      {
+        "path": "package/vendor/llama.cpp/LICENSE",
+        "size_bytes": 1078,
+        "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+      },
+      {
+        "path": "package/vendor/llama.cpp/vendor/cpp-httplib/LICENSE",
+        "size_bytes": 1075,
+        "sha256": "4b45cbe16d7b71b89ae6127e26e0d90a029198ca5e958ad8e3d0b8bbed364d8b"
+      },
+      {
+        "path": "package/vendor/llama.cpp/vendor/hash/sha256/LICENSE",
+        "size_bytes": 41,
+        "sha256": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25"
+      },
+      {
+        "path": "package/vendor/llama.cpp/vendor/hash/xxhash/LICENSE",
+        "size_bytes": 1389,
+        "sha256": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a"
+      },
+      {
+        "path": "package/vendor/OpenCL-Headers/LICENSE",
+        "size_bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "package/vendor/llama.cpp/cmake/license.cmake",
+        "size_bytes": 1445,
+        "sha256": "083515dff8a9b8696e348c7c616934e53941a7db30e1b3f092576632e9a2d1d4"
+      },
+      {
+        "path": "package/vendor/llama.cpp/vendor/hash/rotate-bits/LICENSE.md",
+        "size_bytes": 1088,
+        "sha256": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55"
+      }
+    ],
+    "react_native": [
+      {
+        "path": "package/LICENSE",
+        "size_bytes": 1088,
+        "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+      }
+    ],
+    "whisper_rn": [
+      {
+        "path": "package/LICENSE",
+        "size_bytes": 1069,
+        "sha256": "b22eff2c123a71b45b110a2933dd8a4360e119d38dbb8fd2dcf3a85627712883"
+      }
+    ],
+    "speech_phonon": [
+      {
+        "path": "package/LICENSE",
+        "size_bytes": 1110,
+        "sha256": "f376971cac056614cda4d85ef9256aef7b56674181fc1e195c52016d1621196f"
+      },
+      {
+        "path": "package/docs/THIRD_PARTY_NOTICES.md",
+        "size_bytes": 111236,
+        "sha256": "36b9efea81b5cbc7aca42bcdbb106bb0d229151e8376cf725babe1be45d8c5f8"
+      }
+    ],
+    "speech": [
+      {
+        "path": "package/LICENSE",
+        "size_bytes": 1110,
+        "sha256": "f376971cac056614cda4d85ef9256aef7b56674181fc1e195c52016d1621196f"
+      }
+    ],
+    "onnx_react_native": [],
+    "nitro_modules": []
+  },
+  "hermes_source_license_file_inventory": [
+    {
+      "path": "LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "benchmarks/imgui-demo/assets/LICENSE",
+      "size_bytes": 702,
+      "sha256": "41dd57e45927ec1f3a8e0540a0c432db0461ec41c3f1d7f889a2607dc54f8751"
+    },
+    {
+      "path": "benchmarks/lib/libgui/LICENSE_sokol",
+      "size_bytes": 897,
+      "sha256": "72f9367756dba68918b8955092c14503934681862eee33cc16495a02f40025ef"
+    },
+    {
+      "path": "benchmarks/lib/libgui/cimgui/LICENSE",
+      "size_bytes": 1081,
+      "sha256": "cf6a4390b1ae5b4dfbc79a4ab33c58852db4f17b3f5c6d9300f278050223884d"
+    },
+    {
+      "path": "benchmarks/lib/libgui/cimgui/imgui/LICENSE.txt",
+      "size_bytes": 1083,
+      "sha256": "71aafd5e1c50cefd44f6975decfe8bbfa620cfded743b3cbb8c80088bdb46ccd"
+    },
+    {
+      "path": "benchmarks/nbody/LICENSE.md",
+      "size_bytes": 1616,
+      "sha256": "108f57d77dfd025c31819de9c25ad19ca855f484bde74b6004209aa2b2fc2853"
+    },
+    {
+      "path": "benchmarks/string-switch/plain/LICENSE",
+      "size_bytes": 1211,
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    },
+    {
+      "path": "doc/icu_license.txt",
+      "size_bytes": 21201,
+      "sha256": "4efd0445de1976f59f435b884312d43dfdd3c21d309ec66d5b755362a81aaa10"
+    },
+    {
+      "path": "external/asmjit/asmjit/LICENSE.md",
+      "size_bytes": 862,
+      "sha256": "c8d30b463d35bd5a14b868bae5d8345a1a77cbc6b4a94669f437c619f2ebef61"
+    },
+    {
+      "path": "external/asmjit/asmjit/db/LICENSE.md",
+      "size_bytes": 1284,
+      "sha256": "1f71050137644be1bc1f932e8f943ae21c5b68948c738bb9d15ff528823aed5a"
+    },
+    {
+      "path": "external/boost/boost_1_86_0/LICENSE_1_0.txt",
+      "size_bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "path": "external/esprima/LICENSE.BSD",
+      "size_bytes": 1303,
+      "sha256": "94bcb9959136723aa4fb36e1a6c4d5c662a2369978cfae344dabfb83ae619e79"
+    },
+    {
+      "path": "external/icu_decls/license.html",
+      "size_bytes": 19995,
+      "sha256": "0f6b1df0f0deedbe33e0a371314e9c32249a0a539c5c2be9609211d6dbe0dc10"
+    },
+    {
+      "path": "external/llvh/LICENSE.txt",
+      "size_bytes": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "external/llvh/include/llvh/Support/LICENSE.TXT",
+      "size_bytes": 284,
+      "sha256": "a012d664e4e01df52a65b2eeafdfb8aeb856fec0e6c372265d01b0109c3f5e2a"
+    },
+    {
+      "path": "external/llvh/utils/unittest/googlemock/LICENSE.txt",
+      "size_bytes": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    {
+      "path": "external/llvh/utils/unittest/googletest/LICENSE.TXT",
+      "size_bytes": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    {
+      "path": "external/zip/UNLICENSE",
+      "size_bytes": 1257,
+      "sha256": "6a872e74952f8f332fc8eec087bf08ada61c4ef5cab5266de3a6dfb3e0ee309e"
+    },
+    {
+      "path": "include/hermes/Regex/LICENSE.TXT",
+      "size_bytes": 3493,
+      "sha256": "c1938c0e9e90639d1e8f5a7f6bebaab83a3642e0ee44295a4c69934686d0bda8"
+    },
+    {
+      "path": "tools/hermes-parser/js/babel-plugin-syntax-hermes-parser/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/hermes-parser/js/flow-api-translator/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/hermes-parser/js/hermes-eslint/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/hermes-parser/js/hermes-eslint/TYPESCRIPT_ESLINT_SCOPE_MANAGER_LICENSE",
+      "size_bytes": 1097,
+      "sha256": "5938d4fe4890c79ad14e02e643c385b25b8b6c7bbb97ab08996034b586512df5"
+    },
+    {
+      "path": "tools/hermes-parser/js/hermes-estree/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/hermes-parser/js/hermes-parser/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/hermes-parser/js/hermes-transform/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/hermes-parser/js/prettier-plugin-hermes-parser/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "tools/secdiff/LICENSE",
+      "size_bytes": 1060,
+      "sha256": "a57656cf5590c4666360c0b8f4e0a9396f50c1ac69233b1ba4f3a2a0b7ae3231"
+    },
+    {
+      "path": "utils/testsuite/external/LICENSE",
+      "size_bytes": 2260,
+      "sha256": "bdc1f14a7c450e39ead0a38f73afd921abb259439ee14e433ba149390bcafc48"
+    }
+  ],
+  "phonon_binary_zip_inventory": [
+    {
+      "path": "BUILDINFO.json",
+      "size_bytes": 1146,
+      "sha256": "b58ee63e05c25933933a67e9fdf6cd35dde6abca666079f5a30ca2f8601e49b1"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size_bytes": 92081,
+      "sha256": "65e55a63c1bc4ad8cdc6607d5f88336dca396b5625eac6459924e4407e373b6c"
+    },
+    {
+      "path": "include/phonon_required_hwcaps.h",
+      "size_bytes": 692,
+      "sha256": "7af90ff1f5c735ffe92406ce48dd836cd4a910c92f52c56478c5513aa5e98ebf"
+    },
+    {
+      "path": "include/ptts.h",
+      "size_bytes": 2219,
+      "sha256": "df199f7a174e2eb935797a12d1f484f9cea097db421cc274c61749e63d7bb3a6"
+    },
+    {
+      "path": "jniLibs/arm64-v8a/libptts_ffi.so",
+      "size_bytes": 7569640,
+      "sha256": "b4772c6cdb8ddab1816ecad23f8ff7e0ed24bffee41065aa0e024edafccb8e28"
+    },
+    {
+      "path": "jniLibs/x86_64/libptts_ffi.so",
+      "size_bytes": 8730248,
+      "sha256": "46d1701aa55a543a75e2f00847611dea66384cece72cc49b06c9a14e6c6f51e5"
+    },
+    {
+      "path": "licenses/xn-ptts-LICENSE-APACHE",
+      "size_bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/xn-ptts-LICENSE-MIT",
+      "size_bytes": 1023,
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    }
+  ],
+  "phonon_source_license_header_comparisons": [
+    {
+      "upstream_member": "xn-ptts-f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/LICENSE-MIT",
+      "publisher_binary_member": "licenses/xn-ptts-LICENSE-MIT",
+      "size_bytes": 1023,
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true
+    },
+    {
+      "upstream_member": "xn-ptts-f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/LICENSE-APACHE",
+      "publisher_binary_member": "licenses/xn-ptts-LICENSE-APACHE",
+      "size_bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "byte_identical": true
+    },
+    {
+      "upstream_member": "xn-ptts-f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/ptts-ffi/include/ptts.h",
+      "publisher_binary_member": "include/ptts.h",
+      "size_bytes": 2219,
+      "sha256": "df199f7a174e2eb935797a12d1f484f9cea097db421cc274c61749e63d7bb3a6",
+      "byte_identical": true
+    },
+    {
+      "upstream_member": "xn-ptts-f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/Cargo.toml",
+      "size_bytes": 1920,
+      "sha256": "ecaede2a0a7c3ca39e919e781e1c383afc1f5c02898e91193e0fdff04e457656"
+    },
+    {
+      "upstream_member": "xn-ptts-f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/Cargo.lock",
+      "size_bytes": 143290,
+      "sha256": "bd49d2c9038a1ae992da46f0824852145fb2221bdaed684225d0e5e456bce61a"
+    },
+    {
+      "upstream_member": "xn-ptts-f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/ptts-ffi/Cargo.toml",
+      "size_bytes": 690,
+      "sha256": "1a664438621c6f5450464cdbbd30b2b66f293f400989fd832b204fc771f4132d"
+    }
+  ],
+  "phonon_recipe_file_hashes": [
+    {
+      "artifact_id": "speech_source",
+      "path": ".github/workflows/phonon-binaries.yml",
+      "size_bytes": 22443,
+      "sha256": "7ac92e01bbe6d7a166e24341647059e5c51e3798f673eed49cc55a14d47e1e3d"
+    },
+    {
+      "artifact_id": "speech_source",
+      "path": "LICENSE",
+      "size_bytes": 1110,
+      "sha256": "f376971cac056614cda4d85ef9256aef7b56674181fc1e195c52016d1621196f"
+    },
+    {
+      "artifact_id": "speech_source",
+      "path": "packages/react-native-speech-phonon/phonon.lock.json",
+      "size_bytes": 754,
+      "sha256": "f90e5e0941df06c7b262c87f69ce84dfaa99c2cb834d06dbcbde236981d9858c"
+    },
+    {
+      "artifact_id": "speech_source",
+      "path": "packages/react-native-speech-phonon/scripts/build-android.sh",
+      "size_bytes": 8224,
+      "sha256": "33db8171c106a4a8da24dfd588b50fe1d9d76e841061e81db0e8c62e6905c8e2"
+    },
+    {
+      "artifact_id": "speech_source",
+      "path": "packages/react-native-speech-phonon/scripts/gen-notices.sh",
+      "size_bytes": 1901,
+      "sha256": "8c5b5695d9a6268cb1be4a2cdc46b1c164ff8a59e1a26d4ed6001ad1b6ea97bf"
+    },
+    {
+      "artifact_id": "phonon_producer_source",
+      "path": ".github/workflows/phonon-binaries.yml",
+      "size_bytes": 22443,
+      "sha256": "7ac92e01bbe6d7a166e24341647059e5c51e3798f673eed49cc55a14d47e1e3d"
+    },
+    {
+      "artifact_id": "phonon_producer_source",
+      "path": "LICENSE",
+      "size_bytes": 1110,
+      "sha256": "f376971cac056614cda4d85ef9256aef7b56674181fc1e195c52016d1621196f"
+    },
+    {
+      "artifact_id": "phonon_producer_source",
+      "path": "packages/react-native-speech-phonon/phonon.lock.json",
+      "size_bytes": 754,
+      "sha256": "ef0de332b880b2ad587c840d42cc09b80bbf6c0ed5b47836c34417fd2c002901"
+    },
+    {
+      "artifact_id": "phonon_producer_source",
+      "path": "packages/react-native-speech-phonon/scripts/build-android.sh",
+      "size_bytes": 8224,
+      "sha256": "33db8171c106a4a8da24dfd588b50fe1d9d76e841061e81db0e8c62e6905c8e2"
+    },
+    {
+      "artifact_id": "phonon_producer_source",
+      "path": "packages/react-native-speech-phonon/scripts/gen-notices.sh",
+      "size_bytes": 1901,
+      "sha256": "8c5b5695d9a6268cb1be4a2cdc46b1c164ff8a59e1a26d4ed6001ad1b6ea97bf"
+    }
+  ],
+  "phonon_buildinfo": {
+    "upstream": {
+      "repo": "gradium-ai/xn-ptts",
+      "tag": "v0.4.0",
+      "commit": "f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa"
+    },
+    "arm64Features": "+dotprod,+fp16",
+    "toolchain": {
+      "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+      "cargoNdk": "cargo-ndk 4.1.2",
+      "ndk": "28.2.13676358",
+      "androidPlatform": 21
+    },
+    "sourceDateEpoch": 1792492521,
+    "rustflags": {
+      "aarch64-linux-android": "-C strip=symbols -C link-arg=-Wl,-z,max-page-size=16384 --remap-path-prefix=<upstream>=/xn-ptts --remap-path-prefix=<cargo-home>=/cargo --remap-path-prefix=<work>=/build -C target-cpu=generic -C target-feature=+dotprod,+fp16",
+      "x86_64-linux-android": "-C strip=symbols -C link-arg=-Wl,-z,max-page-size=16384 --remap-path-prefix=<upstream>=/xn-ptts --remap-path-prefix=<cargo-home>=/cargo --remap-path-prefix=<work>=/build -C target-cpu=x86-64"
+    },
+    "libs": {
+      "arm64-v8a": {
+        "size": 7569640,
+        "sha256": "b4772c6cdb8ddab1816ecad23f8ff7e0ed24bffee41065aa0e024edafccb8e28"
+      },
+      "x86_64": {
+        "size": 8730248,
+        "sha256": "46d1701aa55a543a75e2f00847611dea66384cece72cc49b06c9a14e6c6f51e5"
+      }
+    }
+  },
+  "phonon_lock": {
+    "upstream": {
+      "repo": "gradium-ai/xn-ptts",
+      "tag": "v0.4.0",
+      "commit": "f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa",
+      "coreml": {
+        "asset": "phonon-31m-en-coreml.zip",
+        "sha256": "10f3a99fd39256db44f826267ef21d78cca959b16c0554926344c09fde27b436"
+      }
+    },
+    "arm64Features": "+dotprod,+fp16",
+    "binaries": {
+      "release": "phonon-bin-v0.4.0-r2",
+      "android": {
+        "asset": "phonon-android-0.4.0-r2.zip",
+        "sha256": "005be447b7ff6e4cd8201dc9cedc163bc5d8769f3d3ea2ef8461a14a921ebbf9",
+        "abis": [
+          "arm64-v8a",
+          "x86_64"
+        ]
+      },
+      "ios": {
+        "asset": "phonon-ios-0.4.0-r2.xcframework.zip",
+        "sha256": "ad5b03b8a72e3a84637be9a25a5ba6cecc73c2bbc74e4815ed512ffda705231f"
+      }
+    }
+  },
+  "phonon_upstream_workspace_cargo_lock": {
+    "package_count": 563,
+    "source_kinds": {
+      "registry": 556,
+      "local": 7
+    },
+    "android_runtime_package_count": null,
+    "limitation": "Whole workspace lock includes other targets/frontends; do not treat all packages as linked Android code.",
+    "ffi_ptts_features": [
+      "hf"
+    ],
+    "ptts_default_features": [],
+    "hf_feature_dependencies": [
+      "dep:tokenizers"
+    ],
+    "hub_feature_dependencies": [
+      "dep:hf-hub"
+    ]
+  },
+  "phonon_app_source_notice_match": {
+    "package_notice_path": "package/docs/THIRD_PARTY_NOTICES.md",
+    "app_source_path": "src/assets/licenses/phononThirdPartyNotices.json",
+    "section_count": 65,
+    "concatenated_bytes_match": true,
+    "size_bytes": 111236,
+    "sha256": "36b9efea81b5cbc7aca42bcdbb106bb0d229151e8376cf725babe1be45d8c5f8",
+    "apk_display_or_complete_notice_reconstruction_verified": false
+  },
+  "llama_vendor_pins": {
+    "path": "package/vendor/VERSIONS",
+    "sha256": "0632fac96c9d91d620ad4f7a3015cf1ac3587ff7c08c8808b0cea9afdde7ca8e",
+    "values": {
+      "LLAMA_CPP_REPO": "https://github.com/ggml-org/llama.cpp",
+      "LLAMA_CPP_REF": "v0.8.0",
+      "LLAMA_CPP_COMMIT": "8642541b255bfb5dc39cd351a178be09013a55d6",
+      "CODEC_CPP_REPO": "https://github.com/mybigday/codec.cpp",
+      "CODEC_CPP_REF": "63ade8bf2fa3451f9eca7ebaa39f792cc529438e",
+      "CODEC_CPP_COMMIT": "63ade8bf2fa3451f9eca7ebaa39f792cc529438e",
+      "OPENCL_HEADERS_REPO": "https://github.com/KhronosGroup/OpenCL-Headers",
+      "OPENCL_HEADERS_REF": "0c54eeb2b1571718a04f85eaddd51df594bd3c3e",
+      "OPENCL_HEADERS_COMMIT": "0c54eeb2b1571718a04f85eaddd51df594bd3c3e",
+      "OPENCL_ICD_LOADER_REPO": "https://github.com/KhronosGroup/OpenCL-ICD-Loader",
+      "OPENCL_ICD_LOADER_REF": "02134b05bdff750217bf0c4c11a9b13b63957b04",
+      "OPENCL_ICD_LOADER_COMMIT": "02134b05bdff750217bf0c4c11a9b13b63957b04"
+    }
+  },
+  "shipment_blockers": [
+    "Source initialization fetches mutable external device rules and literal URL occurs in actual APK bundle.",
+    "Purchase-event POST paths and event names occur in source and actual APK bundle; no runtime/consent completeness claim.",
+    "Complete native/SDK/dependency/asset rights and notices, especially external Hexagon and Google SDK terms, remain unreviewed.",
+    "Source/dependency and binary/source correspondence remain incomplete; Phonon native licensing evidence does not approve whole APK."
+  ],
+  "access_notes": [
+    "ReactNative release AAR returned HTTP403 from repo.maven.apache.org; official repo1.maven.org bytes matched module SHA256/size.",
+    "ONNX AAR SHA256 companion returned HTTP404; publisher SHA1 companion matched original bytes; local SHA256 remains a reviewed-pin requirement."
+  ],
+  "onnx_native_publisher_sha1": {
+    "value": "e17cad728482733e3787abaf2a0bbe1b8122ff8a",
+    "matches_original_aar": true,
+    "local_sha256": "67397e4a970e75617f765d2015ceaf911917e1d822276cfb5792744e8085cbce"
+  }
+}
