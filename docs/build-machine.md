@@ -93,6 +93,15 @@ collects all published release manifests and verifies their checksums, including
 when triggered after the Release workflow. Unpublished candidates are labeled
 as development content; a successful site build is not release approval.
 
+The assigned Pages address is
+[trottier.github.io/common-knowledge](https://trottier.github.io/common-knowledge/),
+and `config/build.yaml` uses it for the card's three QR links. The workflow and
+all three linked pages passed deployment and HTTP checks on November 1, 2026;
+see [the deployment receipt](evidence/pages-deployment.json). The site lists
+development catalog entries, with no published release files or full-image
+hashes. The release epoch, measured production capacity, and review gates
+remain open.
+
 
 The profile dispatcher in `tools/prepare_profile.py` needs a host Python
 interpreter (Python 3.12 or newer); all artifact-producing work remains inside

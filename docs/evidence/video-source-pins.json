@@ -1,0 +1,240 @@
+{
+  "rope": {
+    "canonical_url_bytes_verified": true,
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Tying_off_onto_the_middle_of_a_rope.webm",
+    "downloaded_on": "2026-11-01",
+    "embedded_subtitle_streams": 0,
+    "external_subtitles": {
+      "en": {
+        "author": "Slashme",
+        "license": "CC-BY-SA-4.0",
+        "license_proof": "https://commons.wikimedia.org/wiki/TimedText:Tying_off_onto_the_middle_of_a_rope.webm.en.srt",
+        "revision": 544523334,
+        "sha256": "edf38a6d1c1ee4cb84eeeae1bc21872ac09cf3d9b4fa9e128acb1996550d497d",
+        "size_bytes": 5978,
+        "timestamp": "2021-03-20T21:49:32Z",
+        "url": "https://commons.wikimedia.org/w/index.php?title=TimedText:Tying_off_onto_the_middle_of_a_rope.webm.en.srt&oldid=544523334&action=raw"
+      }
+    },
+    "language_evidence": "Coherent English speech throughout local research transcription; not a translation, transcript, or language quality claim.",
+    "lastrevid": 1120719840,
+    "metadata": {
+      "Artist": {
+        "source": "commons-desc-page",
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Slashme\" title=\"User:Slashme\">Slashme</a>"
+      },
+      "Assessments": {
+        "hidden": "",
+        "source": "commons-categories",
+        "value": ""
+      },
+      "AttributionRequired": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": "true"
+      },
+      "Categories": {
+        "hidden": "",
+        "source": "commons-categories",
+        "value": "Knots|Ropework|Self-published work|Uploaded with video2commons|Knot videos"
+      },
+      "CommonsMetadataExtension": {
+        "hidden": "",
+        "source": "extension",
+        "value": 1.2
+      },
+      "Copyrighted": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": "True"
+      },
+      "Credit": {
+        "source": "commons-desc-page",
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+      },
+      "DateTime": {
+        "hidden": "",
+        "source": "mediawiki-metadata",
+        "value": "2021-03-20 21:49:18"
+      },
+      "DateTimeOriginal": {
+        "source": "commons-desc-page",
+        "value": "2021-03-20"
+      },
+      "ImageDescription": {
+        "source": "commons-desc-page",
+        "value": "How to tie a rope securely onto an eye when you don't have access to the ends, using a bowline with a bight. Also demonstrating the trucker's hitch."
+      },
+      "License": {
+        "hidden": "",
+        "source": "commons-templates",
+        "value": "cc-by-sa-4.0"
+      },
+      "LicenseShortName": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": "CC BY-SA 4.0"
+      },
+      "LicenseUrl": {
+        "source": "commons-desc-page",
+        "value": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "ObjectName": {
+        "source": "mediawiki-metadata",
+        "value": "Tying off onto the middle of a rope"
+      },
+      "Restrictions": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": ""
+      },
+      "UsageTerms": {
+        "source": "commons-desc-page",
+        "value": "Creative Commons Attribution-Share Alike 4.0"
+      }
+    },
+    "metadata_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Cinfo&iiprop=url%7Csize%7Csha1%7Ctimestamp%7Cextmetadata&titles=File%3ATying+off+onto+the+middle+of+a+rope.webm",
+    "original_audio_languages": [
+      "en"
+    ],
+    "page": "https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm",
+    "review_status": "unreviewed computed pin; not human approval",
+    "sha1": "e54718eca082307590c7e570e560bc9803219df3",
+    "sha256": "94fa9fff509b1d7c535309e57118a1c60ba52ab43baed63253c32d3a724d028f",
+    "size_bytes": 190825781,
+    "timestamp": "2021-03-20T21:49:18Z"
+  },
+  "sketchbook": {
+    "canonical_url_bytes_verified": true,
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/How_to_make_a_simple_sketch_book.webm",
+    "downloaded_on": "2026-11-01",
+    "embedded_subtitle_streams": 0,
+    "external_subtitles": {},
+    "language_evidence": "Coherent English speech throughout local research transcription; not a translation, transcript, or language quality claim.",
+    "lastrevid": 1236880582,
+    "metadata": {
+      "Artist": {
+        "source": "commons-desc-page",
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Barry_neeson&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Barry neeson (page does not exist)\">Barry neeson</a>"
+      },
+      "Assessments": {
+        "hidden": "",
+        "source": "commons-categories",
+        "value": ""
+      },
+      "AttributionRequired": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": "true"
+      },
+      "Categories": {
+        "hidden": "",
+        "source": "commons-categories",
+        "value": "Crafts|How-tos|Arts and crafts|Self-published work"
+      },
+      "CommonsMetadataExtension": {
+        "hidden": "",
+        "source": "extension",
+        "value": 1.2
+      },
+      "Copyrighted": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": "True"
+      },
+      "Credit": {
+        "source": "commons-desc-page",
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+      },
+      "DateTime": {
+        "hidden": "",
+        "source": "mediawiki-metadata",
+        "value": "2020-04-03 12:02:00"
+      },
+      "DateTimeOriginal": {
+        "source": "commons-desc-page",
+        "value": "2020-04-03"
+      },
+      "ImageDescription": {
+        "source": "commons-desc-page",
+        "value": "A video showing how to make a quick and easy sketch book, using basic art materials.\n<p>Filmed in Glasgow, Scotland, UK.\n</p>\nThis video is part of the Scribbling On Regardless project, providing creative activity for those affected by the COVID-19 lockdown.  Video uploaded here for use on <a class=\"external text\" href=\"https://en.wikibooks.org/wiki/Scribbling_On_Regardless\">WikiBooks</a>."
+      },
+      "License": {
+        "hidden": "",
+        "source": "commons-templates",
+        "value": "cc-by-sa-4.0"
+      },
+      "LicenseShortName": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": "CC BY-SA 4.0"
+      },
+      "LicenseUrl": {
+        "source": "commons-desc-page",
+        "value": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "ObjectName": {
+        "source": "mediawiki-metadata",
+        "value": "How to make a simple sketch book"
+      },
+      "Restrictions": {
+        "hidden": "",
+        "source": "commons-desc-page",
+        "value": ""
+      },
+      "UsageTerms": {
+        "source": "commons-desc-page",
+        "value": "Creative Commons Attribution-Share Alike 4.0"
+      }
+    },
+    "metadata_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Cinfo&iiprop=url%7Csize%7Csha1%7Ctimestamp%7Cextmetadata&titles=File%3AHow+to+make+a+simple+sketch+book.webm",
+    "original_audio_languages": [
+      "en"
+    ],
+    "page": "https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm",
+    "review_status": "unreviewed computed pin; not human approval",
+    "sha1": "1fe5fd7307c53bb0e340d89545a41b91e850f7af",
+    "sha256": "7ce4727f2fb2b56e74bd7d0a3200fd9374844c2ab92ab86a1f65024f05724323",
+    "size_bytes": 221639196,
+    "timestamp": "2020-04-03T12:02:00Z"
+  },
+  "timedtext_search": {
+    "rope": {
+      "result": {
+        "batchcomplete": "",
+        "limits": {
+          "allpages": 500
+        },
+        "query": {
+          "allpages": [
+            {
+              "ns": 102,
+              "pageid": 101974792,
+              "title": "TimedText:Tying off onto the middle of a rope.webm.en.srt"
+            }
+          ]
+        }
+      },
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&list=allpages&apnamespace=102&apprefix=Tying+off+onto+the+middle+of+a+rope.webm.&aplimit=max"
+    },
+    "sketchbook": {
+      "result": {
+        "batchcomplete": "",
+        "limits": {
+          "allpages": 500
+        },
+        "query": {
+          "allpages": []
+        }
+      },
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&list=allpages&apnamespace=102&apprefix=How+to+make+a+simple+sketch+book.webm.&aplimit=max"
+    }
+  },
+  "usgs_rights_hold": {
+    "conclusion": "No downstream redistribution grant established; source and generated video require named legal review.",
+    "fetched_on": "2026-11-01",
+    "html_sha256": "8f7ad16dbdaa7ebf219ce6b866c9bec8696bdd36d3ecaf8a46b2f96ec25d6e9d",
+    "notice": "Additional footage used with permission from Envato Elements.",
+    "page": "https://www.usgs.gov/media/videos/national-preparedness-month-spotlight-earthquakes-part-5"
+  }
+}

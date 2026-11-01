@@ -143,7 +143,8 @@ HTTP range, byte count and source ETag before appending a complete chunk. This
 does not certify the input. Verify the publisher checksum and compute SHA-256,
 then submit the measured pin for review before it becomes a release input.
 
-The release epoch, production capacity and verification URL remain unset until
-the configuration and release steps. Never substitute the current time for an
-unset release epoch. The assembler records system, Python and generated-content
-tool versions in image `VERIFY.TXT`.
+The verification URL is assigned in `config/build.yaml`; its deployment receipt
+is [recorded separately](evidence/pages-deployment.json). The release epoch and
+measured production capacity remain unset. Never substitute the current time
+for an unset release epoch. The assembler records system, Python, and
+generated-content tool versions in image `VERIFY.TXT`.
