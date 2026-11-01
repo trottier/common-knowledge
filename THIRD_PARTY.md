@@ -9937,6 +9937,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0`
 - Publisher file: https://www2.census.gov/geo/docs/reference/state.txt
 
+## Census 2020 ZIP Code Tabulation Area to county geographic relationships
+
+- Catalog id: `census_zcta_county_2020`
+- Version: 2020 Census; publisher Last-Modified 2021-12-09
+- License: US-PD
+- Attribution: U.S. Census Bureau, 2020 ZCTA to county relationship file
+- License proof: https://www2.census.gov/foia/ds_policies/ds027.pdf
+- Size: 6821287 bytes
+- SHA-256: `3ed41278d637dc249e0323306f68be8a6c234e3090f4de88ef328dee71aeaaaf`
+- Publisher file: https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt
+
 ## Tying off onto the middle of a rope — normalized video
 
 - Catalog id: `commons_rope_middle`
