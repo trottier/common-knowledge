@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5781)
+## Remaining VERIFY markers (5778)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1046,9 +1046,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/phrasebooks.yaml:480` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/referencepacks.yaml:32` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:64` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- `catalog/referencepacks.yaml:71` — [[VERIFY: measure complete generated reference pack]]
-- `catalog/referencepacks.yaml:72` — [[VERIFY: pin independently repeated generation manifest]]
-- `catalog/referencepacks.yaml:95` — [[VERIFY: pinned reference-pack recipe]]
 - `catalog/referencepacks.yaml:96` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:103` — [[VERIFY: measure complete generated reference pack]]
 - `catalog/referencepacks.yaml:104` — [[VERIFY: pin independently repeated generation manifest]]

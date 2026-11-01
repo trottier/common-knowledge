@@ -68,8 +68,8 @@
     "family": "generated",
     "title": "Electronics background references — selected phone PDFs",
     "version": "Draft selection from Wikibooks English 2026-10",
-    "size_bytes": "[[VERIFY: measure complete generated reference pack]]",
-    "sha256": "[[VERIFY: pin independently repeated generation manifest]]",
+    "size_bytes": 455499,
+    "sha256": "c94e7cd216290d4f2599ece06a2d4b33e6e1832e3063d4426eac283308b7e866",
     "license": "CC-BY-SA-4.0 AND CC0-1.0",
     "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
     "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
@@ -92,7 +92,7 @@
       "noto_sans_hebrew",
       "noto_sans_symbols2"
     ],
-    "pipeline_version": "[[VERIFY: pinned reference-pack recipe]]",
+    "pipeline_version": "reference-pack-v1-cf1e27b8a83f0100d1c0923057f37c5817395b6734569b65487be8c73d719617",
     "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
   },
   {

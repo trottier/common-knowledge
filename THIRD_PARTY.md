@@ -4444,9 +4444,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete generated reference pack]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
-- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: 455499 bytes
+- SHA-256: `c94e7cd216290d4f2599ece06a2d4b33e6e1832e3063d4426eac283308b7e866`
+- Pipeline: reference-pack-v1-cf1e27b8a83f0100d1c0923057f37c5817395b6734569b65487be8c73d719617; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
 
 ## Qwen3.5-0.8B-Base, Q4_K_M
 
