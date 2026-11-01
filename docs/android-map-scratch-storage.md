@@ -1,10 +1,11 @@
 # Map scratch storage audit
 
-Read-only observations on November 1, 2026, confirm that the frozen split
-producer writes its SQLite scratch databases through the host's shared
-filesystem. A future controller can change the storage backing while retaining
-the same paths, producer, inputs, image, and epoch. Its speed and byte equivalence
-remain unmeasured. The current controllers and jobs were left unchanged.
+A controlled Iowa trial on November 1, 2026, changed the frozen producer's
+scratch storage to a Docker volume. Its complete output matches both earlier
+host builds. The local execution took 1,026.175 seconds; the earlier commands
+took 1,217.805 and 1,286.548 seconds. This single observation establishes byte
+equivalence for that input, with no general speed guarantee. Existing state
+controllers and jobs were left unchanged.
 
 The [observation receipt](evidence/android-map-scratch-observation.json) records
 mounts, SQLite file signatures, active file sizes, six runtime samples, and the
@@ -36,7 +37,8 @@ isolated SQLite benchmarks. The observed container root filesystem had
 60,014,538,752 available bytes; a future trial must check its selected volume's
 backing filesystem and measure actual peak usage.
 
-Use the following sequence for a separately scheduled experiment:
+The controlled trial used the following sequence; future states must preserve
+the same checks:
 
 1. Start from the exact frozen producer commit, image `c9792c3f…`, measured Iowa
    extract, one CPU, 6 GiB, disabled networking, and epoch `1793404800`. Preserve
@@ -57,10 +59,13 @@ Use the following sequence for a separately scheduled experiment:
    after transfer, then compare complete metadata and all hashes with the
    already-matched Iowa host pair. Docker supports copying from stopped
    containers; see [copy semantics](https://docs.docker.com/reference/cli/docker/container/cp/).
-5. Repeat with another fresh volume. Record conversion time, validation time,
-   export time, end-to-end time, peak scratch size, and resource counters.
-   Accept the host result atomically only after both local runs match the host
-   baseline. Retain each original until its export is verified.
+5. Record conversion time, validation time, export time, end-to-end time,
+   peak scratch size, and resource counters. For a new state without existing
+   matched baselines, require two independent fresh-volume builds to match
+   before accepting its pin. For this trial, compare the fresh local result
+   against both existing independent host builds. Retain each original until
+   its export is verified. Further timing trials are needed to establish a
+   repeatable performance effect.
 
 Adoption for future work depends on those measured results and an explicit
 worker handoff. The experiment has separate outputs and must not claim a state
