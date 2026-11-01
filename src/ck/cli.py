@@ -44,6 +44,25 @@ def main(argv: Sequence[str] | None = None) -> int:
         else:
             bundle.add_argument("--bundle", type=Path, required=True)
             bundle.add_argument("--sha256", required=True)
+    preparation = commands.add_parser(
+        "prepare-plan", help="Describe the complete input-generation graph"
+    )
+    preparation.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    preparation.add_argument("--core", type=Path)
+    preparation.add_argument("--epoch", type=int)
+    preparation.add_argument(
+        "--capacity-bytes", type=int, help="Inspection assumption; never execute"
+    )
+    preparation.add_argument("--output", type=Path, required=True)
+    build_inputs = commands.add_parser("fetch-build-inputs", help="Fetch declared pipeline inputs")
+    build_inputs.add_argument("items", nargs="+")
+    build_inputs.add_argument("--cache", type=Path, default=Path("cache"))
+    prepared = commands.add_parser(
+        "verify-prepared", help="Check measured generated input bindings"
+    )
+    prepared.add_argument("items", nargs="+")
+    prepared.add_argument("--generated", type=Path, required=True)
+    prepared.add_argument("--epoch", type=int)
     coverage = commands.add_parser("coverage", help="Show findability of topics and collections")
     coverage.add_argument("--homes", type=int, default=5)
     coverage.add_argument("--carriers", type=int)
@@ -280,6 +299,34 @@ def main(argv: Sequence[str] | None = None) -> int:
         from ck.config import findability, load_config
 
         config = load_config(args.root)
+        if args.command == "prepare-plan":
+            from ck.assemble import core_size
+            from ck.preparation import preparation_plan
+            from ck.render import epoch_for
+
+            plan = preparation_plan(
+                args.root,
+                args.profile,
+                core_size(args.core) if args.core else 0,
+                args.capacity_bytes,
+            )
+            plan["source_date_epoch"] = epoch_for(config, args.epoch)
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(json.dumps(plan, sort_keys=True, indent=2) + "\n")
+            print(args.output)
+            return 0
+        if args.command == "fetch-build-inputs":
+            from ck.preparation import fetch_build_inputs
+
+            for path in fetch_build_inputs(args.root, args.items, args.cache):
+                print(path)
+            return 0
+        if args.command == "verify-prepared":
+            from ck.preparation import verify_prepared
+            from ck.render import epoch_for
+
+            verify_prepared(args.root, args.items, args.generated, epoch_for(config, args.epoch))
+            return 0
         if args.command in {"source-pack", "source-restore"}:
             from ck.catalog import load_catalog
             from ck.render import epoch_for

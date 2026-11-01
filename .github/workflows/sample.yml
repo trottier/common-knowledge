@@ -25,7 +25,7 @@ jobs:
     timeout-minutes: 360
     env:
       CACHE_DIR: ${{ vars.CK_DATA_ROOT || '/var/lib/common-knowledge' }}/cache
-      GENERATED_DIR: ${{ vars.CK_DATA_ROOT || '/var/lib/common-knowledge' }}/generated
+      GENERATED_DIR: ${{ github.workspace }}/build/generated
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:

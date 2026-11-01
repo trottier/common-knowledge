@@ -92,3 +92,12 @@ and reviewed full-build manifests under `verification/`. The Pages workflow
 collects all published release manifests and verifies their checksums, including
 when triggered after the Release workflow. Unpublished candidates are labeled
 as development content; a successful site build is not release approval.
+
+
+The profile dispatcher in `tools/prepare_profile.py` needs a host Python
+interpreter (Python 3.12 or newer); all artifact-producing work remains inside
+pinned containers. `make sample` and `make full` build both image stages and
+prepare their complete dependency graph before image assembly. Use fresh work
+and generated directories for clean runs. `CACHE_DIR` may persist verified raw
+downloads. `HOST_PYTHON` selects the dispatcher interpreter when needed.
+See [input-preparation.md](input-preparation.md) for gates, mounts and receipts.

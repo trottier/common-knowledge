@@ -32,9 +32,8 @@ corrected descendant PDFs and final map repeats remain in progress. See
 **v0.1.0 is incomplete and has not been released or approved for use.** Full
 images remain blocked by unfinished catalog/library coverage, confirmed input
 and asset rights, measured usable capacity, named human content review and
-physical device tests. The sample/full commands currently assemble prepared
-inputs; complete input-generation orchestration and final image reproducibility
-still need validation. The version identifies development work. Unconfirmed
+physical device tests. The sample/full commands now include input-generation orchestration; full-profile
+execution and final image reproducibility still need validation. The version identifies development work. Unconfirmed
 values remain explicit VERIFY markers, and releases fail while any remain.
 
 The complete specification and work order are in [AGENTS.md](AGENTS.md).
