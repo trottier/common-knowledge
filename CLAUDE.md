@@ -15,7 +15,7 @@ Every household gets the same kit: a read-only USB-C drive with a whistle and co
 - **Trusted sender.** An official, sealed, verifiable mailing. Hashes, the verification site, and reproducible builds (§12, §13) are what make the trust checkable.
 - **Universal reach.** Every household gets the same plan; nothing is opt-in.
 - **Common knowledge.** Because the mailing is public and universal, everyone knows everyone else has the same defaults. That is why every default must render identically in every edition (§14).
-- **Complementary versions.** Each drive holds a different part of the library, so neighbors have a practical reason to find each other. The same scheme keeps the cost per drive down.
+- **Complementary variants.** Each drive holds a different part of the library, so neighbors have a practical reason to find each other. The same scheme keeps the cost per drive down.
 
 Design rules that every line of code and content must respect:
 
@@ -23,9 +23,9 @@ Design rules that every line of code and content must respect:
 2. **Phone-first, laptop-capable.** PDF and MP4 are the only formats the core depends on. ZIM archives, map files, apps, and the offline AI are extras.
 3. **Nationally standardized.** One national design. No per-city, per-county, or per-address customization. Stable public places for every state and territory may ship; event-specific facts (which shelters are open, where water is handed out) and sensitive infrastructure never ship.
 4. **Universal defaults replace coordination.** Rally point, meeting times, radio channel, mesh channels, and convener rules come from one config file and render identically everywhere.
-5. **Eight versions, shuffled at random.** Every drive carries the same core. Each version adds video libraries for three of twelve topics plus one in-depth knowledge collection. Each topic appears on exactly two versions; each collection on one.
-6. **Smallest correct release first.** Prove one usable Version 1 sample before expanding nationally or building all eight images. Ship v0.1 from existing sources, then improve the content image; the hardware stays fixed.
-7. **The folders are the interface.** Design and inspect the actual files, names, sort order, and navigation in phone Files apps. A working build pipeline or desktop website does not establish a usable drive. Shared emergency instructions and defaults stay identical; generated inventories and offline-AI availability notices reflect the actual version.
+5. **Eight variants, shuffled at random.** Every drive carries the same core. Each variant adds video libraries for three of twelve topics plus one in-depth knowledge collection. Each topic appears on exactly two variants; each collection on one.
+6. **Smallest correct release first.** Prove one usable Variant 1 sample before expanding nationally or building all eight images. Ship v0.1 from existing sources, then improve the content image; the hardware stays fixed.
+7. **The folders are the interface.** Design and inspect the actual files, names, sort order, and navigation in phone Files apps. A working build pipeline or desktop website does not establish a usable drive. Shared emergency instructions and defaults stay identical; generated inventories and offline-AI availability notices reflect the actual variant.
 
 ## 2. Scope of v0.1
 
@@ -44,15 +44,13 @@ v0.1 assembles **everything that can be built from existing sources** into eight
 - The **eight in-depth knowledge collections**, populated from the catalog.
 - A **capacity planner** that places every item, then an assembler that builds eight reproducible images, plus CI, releases, a verification site, and tests.
 
-**Current milestone:** one integrated, browsable Version 1 `sample` build using Rhode Island, inspected through the local Drive Explorer and then on actual phones. Build the real tree first; complete and inspect its folder UX before national expansion. If selected cargo remains blocked, show an explicitly incomplete inspection preview and its omissions. This is a development milestone, not a claim that all v0.1 release requirements are complete.
+**Current milestone:** one integrated, browsable Variant 1 `sample` build using Rhode Island, inspected through the local Drive Explorer and then on actual phones. Build the real tree first; complete and inspect its folder UX before national expansion. If selected cargo remains blocked, show an explicitly incomplete inspection preview and its omissions. This is a development milestone, not a claim that all v0.1 release requirements are complete.
 
-**Offline AI: v0.2.** The offline AI ships in v0.2, on versions 7 and 8 only (§9.7). The single integration flag is `offline_ai_enabled` in `config/variants.yaml`; do not duplicate it in `build.yaml`. v0.1 builds set `offline_ai_enabled: false` and contain no model, runner, Android AI app, bundle, or AI folder. Preserve existing research, verified outputs, and provenance for v0.2.
+**Offline AI: v0.2.** The offline AI ships in v0.2, on variants 7 and 8 only (§9.7). The single integration flag is `offline_ai_enabled` in `config/variants.yaml`; do not duplicate it in `build.yaml`. v0.1 builds set `offline_ai_enabled: false` and contain no model, runner, Android AI app, bundle, or AI folder. Preserve existing research, verified outputs, and provenance for v0.2.
 
 **Out of scope for v0.1:** shooting original videos, the offline AI (v0.2; tuning in v0.4), the block-board app, human-reviewed translations beyond Spanish, hardware procurement, and mailing.
 
 ## 3. Hard rules
-
-**Drive terminology.** Use “other versions” when comparing drives, “Version 1” for a numbered drive, and “eight versions” for the complete set. This is distinct from software release versions such as v0.1. Keep existing internal `variant`/`variants` identifiers, configuration keys, paths, and CLI flags stable; they are implementation contracts, not reader-facing labels.
 
 **Never:**
 
@@ -74,12 +72,12 @@ v0.1 assembles **everything that can be built from existing sources** into eight
 
 Rules for the current build machine and agent setup live in `AGENTS.local.md`, which is listed in `.gitignore` and never committed. Read it too if it exists; where it conflicts with this file, this file wins.
 
-- **One vertical slice first.** Prepare, assemble, inspect, and test Version 1 with one small state before extending coverage. Accept explicit version selectors throughout preparation and assembly; preserve an all-version mode for the later release. Do not fetch another version's topics or collections for this milestone.
-- **Make progress visible.** Keep a stable local preview folder and a loopback Drive Explorer pointing to the actual built files (§3.2). Report the exact version, profile, source commit, completed components, omissions, and review status. A core-only preview, a component bundle, an integrated sample, and a full production image are distinct deliverables. Never present catalog-only entries or missing files as assembled cargo.
+- **One vertical slice first.** Prepare, assemble, inspect, and test Variant 1 with one small state before extending coverage. Accept explicit variant selectors throughout preparation and assembly; preserve an all-variant mode for the later release. Do not fetch another variant's topics or collections for this milestone.
+- **Make progress visible.** Keep a stable local preview folder and a loopback Drive Explorer pointing to the actual built files (§3.2). Report the exact variant, profile, source commit, completed components, omissions, and review status. A core-only preview, a component bundle, an integrated sample, and a full production image are distinct deliverables. Never present catalog-only entries or missing files as assembled cargo.
 - **Preflight before expensive work.** Resolve the selected input graph, hashes, sizes, applicable rights, source availability, expected completeness, and epoch before starting long conversions. Inventory existing artifacts before rebuilding. Check all selected archive languages for known tool diagnostics before freezing a shared validator.
 - **Freeze, then build.** Freeze producer code, configuration, selected inputs, tool image, and epoch for a repeat pair. Keep active producers in isolated checkouts with read-only source/cache mounts. Commit integration changes elsewhere; never edit a running producer's inputs.
 - **Cache by actual dependency.** Bind each artifact to the source and configuration it actually consumes, selected input pins, tool/environment identity, and producer version. An unrelated catalog addition or review-note edit must not invalidate every map, video, or document. A change to selected attribution or output-affecting code must invalidate the affected artifact. Prove these boundaries with focused tests.
-- **Reuse honestly.** Reuse complete, checksum-verified artifacts under their recorded recipes and source epochs. Retain the source commit and dependency manifest needed to reproduce them. Never give an old artifact a new recipe/hash, change `complete: false` to true, or hide an epoch/input mismatch. Pin one prepared artifact and reuse it across versions rather than regenerating it per version.
+- **Reuse honestly.** Reuse complete, checksum-verified artifacts under their recorded recipes and source epochs. Retain the source commit and dependency manifest needed to reproduce them. Never give an old artifact a new recipe/hash, change `complete: false` to true, or hide an epoch/input mismatch. Pin one prepared artifact and reuse it across variants rather than regenerating it per variant.
 - **Separate technical completeness from human review.** A successfully generated draft can be technically complete while still unreviewed. Rejecting unrelated records in another state must not mark an otherwise complete Rhode Island output incomplete. Missing required local data, broken references, or failed validation must still block technical completeness.
 - **Keep rights and release gates precise.** Development text may retain visible draft/VERIFY markers. This does not waive unknown rights, excluded licenses, missing permissions, corrupt inputs, or unsafe output. Distinguish a documented build-only use grant from permission to redistribute the original input. Never invent a broader license. Named human review, source-release obligations, and publication gates remain in force for release.
 - **Do not hide blockers.** If a complete sample cannot be assembled, produce an explicitly incomplete local inspection preview and an exact blocker inventory. Do not call it a completed sample, publish it as a release, or silently omit selected cargo. Any preview-only behavior must be explicit and must not weaken normal full/release checks.
@@ -95,7 +93,7 @@ Drive Explorer is a development inspection website over a real built folder tree
 - Browse actual folders with breadcrumbs, clear sort order, complete filenames, and file sizes. Phone-size presets must let a reviewer inspect long locality/ZIP filenames without losing their full text; preserve verified ZIP gaps and ranges exactly. Show human-readable sizes and make exact byte counts available.
 - Open PDFs with the browser's native PDF viewer, videos with native playback controls, and text as inert escaped text. Use the actual files, rather than fabricated pages, invented metadata, or screenshots standing in for missing cargo. Unknown formats remain clearly identified files.
 - APKs, installers, launchers, scripts, disk images, and other binaries stay inert in the website. Do not execute them, offer an installation flow, or expose a write/upload action. Browser navigation must not launch bundled applications.
-- Keep the selected version/profile, source provenance, development/review status, missing cargo, and held components visible in the inspection interface. A partial tree must say it is incomplete; holding a file is not permission to silently omit its selected inventory record or weaken normal assembly checks.
+- Keep the selected variant/profile, source provenance, development/review status, missing cargo, and held components visible in the inspection interface. A partial tree must say it is incomplete; holding a file is not permission to silently omit its selected inventory record or weaken normal assembly checks.
 - Phone-size presets exercise layout only. A desktop browser's PDF renderer, available RAM, local disk, and input controls do not reproduce a phone's built-in viewer or USB access. Record physical-device results separately; do not claim handset certification or the phone-coverage target from this preview.
 
 ## 4. Tech stack
@@ -177,7 +175,7 @@ meetings:
 convener:
   rule: "The first adult at the rally point at noon opens the meeting with the one-page script."
   rotation: "Each meeting ends by choosing the next convener. No one serves two days running."
-  role_fallback: "A role nobody picks falls to whoever holds a drive version with that topic, until someone better steps up."
+  role_fallback: "A role nobody picks falls to whoever holds a drive variant with that topic, until someone better steps up."
 radio:
   service: FRS
   channel: 3
@@ -229,7 +227,7 @@ variants:
   8: { topics: [food, power, welfare],          collection: morale }
 ```
 
-Invariants (tested): each topic on exactly two versions; each version has one body, one infrastructure, and one civic topic; collections unique; when `offline_ai_enabled` is true, the offline AI is on exactly the versions listed in `offline_ai`; when false, no version contains AI payloads. `ck coverage` prints findability, where *k* is the number of versions carrying an item and *n* the number of nearby homes: P = 1 − (1 − k/8)^n.
+Invariants (tested): each topic on exactly two variants; each variant has one body, one infrastructure, and one civic topic; collections unique; when `offline_ai_enabled` is true, the offline AI is on exactly the variants listed in `offline_ai`; when false, no variant contains AI payloads. `ck coverage` prints findability, where *k* is the number of variants carrying an item and *n* the number of nearby homes: P = 1 − (1 − k/8)^n.
 
 ### `config/languages.yaml`
 
@@ -327,29 +325,29 @@ Every size and URL below must be confirmed. Sizes marked *Kiwix* come from Kiwix
 | Amateur radio exam question pools | docs | [[VERIFY]] | [[VERIFY: public domain]] | topic: comms |
 | Federal agency-hosted how-to videos; Wikimedia Commons videos | video | [[VERIFY]] | federal or CC | topics (video libraries), or universal if critical |
 | VLC for Android | apk | [[VERIFY]] | GPL-2.0 / LGPL [[VERIFY]] | universal (`2_VIDEOS/android/`), for choosing a video's language track |
-| Gemma 4 E2B, 4-bit GGUF | llm | [[VERIFY]] | Apache-2.0 [[VERIFY: confirm on the model card]] | versions 7 and 8 only (`offline_ai`, §8) |
+| Gemma 4 E2B, 4-bit GGUF | llm | [[VERIFY]] | Apache-2.0 [[VERIFY: confirm on the model card]] | variants 7 and 8 only (`offline_ai`, §8) |
 
-## 8. Capacity planner and version creation
+## 8. Capacity planner and variant creation
 
-`ck plan --profile full` reads the catalog and generated-item size estimates, then for each of the eight versions:
+`ck plan --profile full` reads the catalog and generated-item size estimates, then for each of the eight variants:
 
 1. Adds universal items.
-2. Adds the version's three topics' items (video libraries).
-3. Adds the version's in-depth knowledge collection.
+2. Adds the variant's three topics' items (video libraries).
+3. Adds the variant's in-depth knowledge collection.
 4. Compares the total to `capacity_bytes × (1 − reserve_fraction)`.
 
-It prints a per-version table and **fails** if any version overflows, naming the largest items. Humans resolve overflows by moving items (universal → topics, or collection → hub_only) in the catalog, never by silently dropping content.
+It prints a per-variant table and **fails** if any variant overflows, naming the largest items. Humans resolve overflows by moving items (universal → topics, or collection → hub_only) in the catalog, never by silently dropping content.
 
 **Placement decision rules,** applied in this order:
 
 1. The core (START, card, phone pack, both copies) is always universal.
 2. The atlas and directory are always universal: everyone needs their own area, and mailing is random.
 3. Android map files are universal. If prebuilt files overflow, switch to the roads-and-places build (§9.5) before moving anything else.
-4. The offline AI is off in v0.1 and adds no payload or dependencies. From v0.2 it goes on versions 7 and 8 only (k = 2: within five homes 76% of the time, within ten 94%). Keeping it off most drives lets anyone who does not want it trade for a drive without it; the drive number tells them which they have. Never make it universal without a human decision recorded in the catalog.
+4. The offline AI is off in v0.1 and adds no payload or dependencies. From v0.2 it goes on variants 7 and 8 only (k = 2: within five homes 76% of the time, within ten 94%). Keeping it off most drives lets anyone who does not want it trade for a drive without it; the drive number tells them which they have. Never make it universal without a human decision recorded in the catalog.
 5. Medical references are universal up to about 1.5 GB; the rest goes to `med_lib`.
 6. Everything else fills the in-depth knowledge collections; what does not fit is `hub_only`.
 
-`ck assemble --variant N` then builds each version tree from the plan.
+`ck assemble --variant N` then builds each variant tree from the plan.
 
 ## 9. Pipelines
 
@@ -370,7 +368,7 @@ It prints a per-version table and **fails** if any version overflows, naming the
 - **Card:** half-letter, two-sided, attached to the drive. The front holds the rally rule, meeting times, convener rule, radio channel, mesh channels, write-in blanks (rally point, out-of-area contact, household medications), and three QR codes (videos page, state emergency agencies page, verification page). The back is a large OK/HELP placard and four pictures showing how to open the drive on an iPhone and on an Android phone. The rally-point blank carries the hint "e.g., your building's front entrance" for apartment dwellers. The back also carries one line listing what is on every drive, generated from `variants.yaml` and the plan so it stays accurate, for example: "On every drive: playbooks in 15 languages · how-to videos · maps of every state and territory · medical reference · mesh chat apps. Plus one numbered collection: compare numbers with neighbors." From v0.2 the line adds: "Drives 7 and 8 also include an offline AI assistant; trade with a neighbor if you'd rather not have one."
 - **Tags:** US Letter label sheet: GAS — ¼ TURN — WRENCH HERE; WATER MAIN; MAIN BREAKER; MEDS IN FRIDGE.
 - The card line and every inventory describe what the build actually contains; never mention the offline AI in a build that lacks it.
-- The "How is my drive different?" page is generated from `variants.yaml` and the plan. It first lists what each version holds (its three topics, its in-depth knowledge collection, and, from v0.2, the offline AI on versions 7 and 8), then explains why drives differ: complementary content gives neighbors a reason to find each other and keeps the cost per drive down.
+- The "How is my drive different?" page is generated from `variants.yaml` and the plan. It first lists what each variant holds (its three topics, its in-depth knowledge collection, and, from v0.2, the offline AI on variants 7 and 8), then explains why drives differ: complementary content gives neighbors a reason to find each other and keeps the cost per drive down.
 - PDF metadata dates come from `source_date_epoch` (`dcterms.created`/`dcterms.modified` meta tags). Use tagged or PDF/UA output if the installed WeasyPrint supports it.
 
 **English START sections:**
@@ -384,7 +382,7 @@ It prints a per-version table and **fails** if any version overflows, naming the
 7. Communications: FRS channel 3, the bitchat channels, text rather than call, NOAA Weather Radio, satellite SOS, licensing notes.
 8. Maps: finding yourself on the atlas with the iPhone Compass app (it shows degrees, minutes, seconds), the Android map app, the laptop map.
 9. Medical basics, each with a "no help is coming" branch: bleeding control, hands-only CPR, recovery position, burns, heat illness, hypothermia, oral rehydration, medication continuity.
-10. The offline AI (from v0.2): which drives carry it (7 and 8), what it is, how to start it, and why the printed cards win when they disagree. On other versions this section says only that drives 7 and 8 carry it. v0.1 omits this section.
+10. The offline AI (from v0.2): which drives carry it (7 and 8), what it is, how to start it, and why the printed cards win when they disagree. On other variants this section says only that drives 7 and 8 carry it. v0.1 omits this section.
 11. How is my drive different?
 12. Warnings and use.
 13. Sources.
@@ -440,9 +438,9 @@ It prints a per-version table and **fails** if any version overflows, naming the
 - ZIMs come from the catalog, are verified with `zimcheck`, and land in the placed folder with Kiwix readers alongside.
 - `pipelines/zim2pdf`: reads the article list in `catalog/medpdf_topics.yaml` (start with about 150 high-yield topics from WikEM and WikiMed) using `python-libzim`, renders phone PDFs with CC BY-SA attribution and article dates, and places them in `5_MEDICAL_REFERENCE/pdf/`. These serve iPhones, which cannot install Kiwix offline.
 
-### 9.7 Offline AI (v0.2; versions 7 and 8 only)
+### 9.7 Offline AI (v0.2; variants 7 and 8 only)
 
-**Not part of v0.1. Do not work on or select this integration for the current Version 1 milestone.** Keep existing artifacts and research with their actual historical recipes. The specifications below describe the v0.2 integration, not current sample dependencies.
+**Not part of v0.1. Do not work on or select this integration for the current Variant 1 milestone.** Keep existing artifacts and research with their actual historical recipes. The specifications below describe the v0.2 integration, not current sample dependencies.
 
 - **Model selection criteria,** recorded in `catalog/llm.yaml` with the reasoning:
   - Open weights under Apache-2.0 or MIT; avoid custom licenses with use restrictions unless legal approves.
@@ -532,13 +530,13 @@ File names must be FAT-safe: none of `\ / : * ? " < > |`, path length under 200 
   5. Writes the manifest inside the image, covering every other file. Publish the manifest's own SHA-256 and the image SHA-256 outside the image; do not attempt a circular self-hash.
   6. Compresses with `zstd -19` and hashes the result.
   7. Checks the listing with `mdir -/`.
-- **Reproducibility test:** two clean builds of version 1 in the `sample` profile must produce identical image hashes. Normalize any nondeterminism (PDF IDs, archive timestamps) or document it in `docs/reproducibility.md` with an `xfail` test and an issue link.
+- **Reproducibility test:** two clean builds of variant 1 in the `sample` profile must produce identical image hashes. Normalize any nondeterminism (PDF IDs, archive timestamps) or document it in `docs/reproducibility.md` with an `xfail` test and an issue link.
 - **Build machine for `full`** (`docs/build-machine.md`): the recommended large-build target is Linux x86-64, at least 16 cores, at least 64 GB RAM, at least 1 TB of free SSD, Java 17+, and Node 20+. Smaller machines can build the `sample` profile with bounded jobs; a large machine is not a prerequisite for the sample milestone. Cache downloads by SHA-256 and generated artifacts by their verified input/recipe manifests.
 
 ## 13. CI, releases, and distribution
 
-- **`ci.yml`** (every push and pull request): ruff, pytest, `dev` profile build of all PDFs and version 1, and an RTL rendering test. Upload artifacts.
-- **`sample.yml`** (on demand first; schedule only when the selected sample is stable): prepare one small state's county maps, directory, Android map, WikEM, and selected apps for Version 1. Do not fetch AI dependencies in v0.1. First prove Version 1's browsable tree, phone UX, image, and reproducibility pair; extend to Version 3 and broader CI coverage afterward. Full release checks remain global.
+- **`ci.yml`** (every push and pull request): ruff, pytest, `dev` profile build of all PDFs and variant 1, and an RTL rendering test. Upload artifacts.
+- **`sample.yml`** (on demand first; schedule only when the selected sample is stable): prepare one small state's county maps, directory, Android map, WikEM, and selected apps for Variant 1. Do not fetch AI dependencies in v0.1. First prove Variant 1's browsable tree, phone UX, image, and reproducibility pair; extend to Variant 3 and broader CI coverage afterward. Full release checks remain global.
 - **`release.yml`** (tag `v*`): fail on any VERIFY marker or unreviewed medical, legal, or radio content. Publish to the GitHub Release: the PDFs, `dev`-profile images, the catalog lock, `SHA256SUMS`, and GPL source archives. Each file must be under 2 GB.
 - **Full images** are built from the tagged commit on the build machine with `make full`. They are too large for GitHub Releases. Publish their hashes on the Pages site; hosting (object storage, BitTorrent with web seeds, or both) is a human decision [[VERIFY: hosting choice]]. Because every input is pinned, anyone can rebuild and check the hashes.
 - **`pages.yml`:** the verification site, with every image hash, how to check with `sha256sum`, `shasum -a 256`, or `certutil -hashfile`, the catalog with licenses and attributions, and links to the PDFs.
@@ -546,14 +544,14 @@ File names must be FAT-safe: none of `\ / : * ? " < > |`, path length under 200 
 ## 14. Tests (minimum)
 
 - Config and catalog schemas validate; every catalog item has license, proof URL, SHA-256, size, and placement.
-- Version invariants hold; `ck plan --profile full` fits every version within capacity.
-- In v0.1 builds, no selected graph or assembled version contains AI payloads or an AI folder. From v0.2, `9_OFFLINE_AI/` exists only on versions 7 and 8; card and inventory wording follows configuration and actual placement.
+- Variant invariants hold; `ck plan --profile full` fits every variant within capacity.
+- In v0.1 builds, no selected graph or assembled variant contains AI payloads or an AI folder. From v0.2, `9_OFFLINE_AI/` exists only on variants 7 and 8; card and inventory wording follows configuration and actual placement.
 - Every default appears verbatim in the card and START HTML for every edition.
 - All 15 editions exist with folder, quick start, and README line; RTL editions render correctly.
 - Every citation id exists; release mode fails on any VERIFY marker.
 - The directory contains no excluded categories. The pinned 2025 Census snapshot has 3,235 counties/county-equivalents (the 50 states, DC, Puerto Rico, and the island areas); the national map index covers them all, including counties split across several PDFs. Grid labels and every sheet continuation parse and resolve.
 - Every shipped PDF fits the configured MB budget; map fixtures cover county-wide files, necessary locality splits, ZIP gaps, cross-boundary relationships, unincorporated areas, and FAT-safe leaf names. Phone rendering and navigation results are recorded separately from byte-size checks.
-- A selected-version preparation graph excludes other versions' topics/collections and the offline AI. Verified cache reuse preserves the original recipe, inputs, complete flag, and epoch; unrelated catalog edits do not invalidate unaffected artifacts.
+- A selected-variant preparation graph excludes other variants' topics/collections and the offline AI. Verified cache reuse preserves the original recipe, inputs, complete flag, and epoch; unrelated catalog edits do not invalidate unaffected artifacts.
 - Every video has one picture track, English as its first audio track, and audio and subtitle tracks tagged with valid language codes; no text is burned into new renders.
 - File names are FAT-safe; no executables outside allowed folders; no `autorun.inf`.
 - Drive Explorer lists actual files, preserves full locality/ZIP filenames and sizes at phone widths, previews PDF/video/text without executing binaries, rejects paths outside its preview root, and clearly labels incomplete development trees. Its tests do not count as physical-phone acceptance.
@@ -569,7 +567,7 @@ Devices: an iPhone with USB-C, an iPhone with Lightning plus an adapter, a recen
 - Kiwix opens WikEM on Android and on laptops; the medical PDFs open on iPhone.
 - bitchat connects two Android phones with all networking off; Briar shares itself offline.
 - A video plays in English by default on every device; the iPhone player's menu switches to Spanish audio and subtitles; VLC does the same on Android.
-- From v0.2: on version 7 or 8, the offline AI launcher starts on each laptop OS and answers in English and Spanish; the Android app loads the model on a phone with at least 6 GB of RAM. This does not block the v0.1 Version 1 milestone.
+- From v0.2: on variant 7 or 8, the offline AI launcher starts on each laptop OS and answers in English and Spanish; the Android app loads the model on a phone with at least 6 GB of RAM. This does not block the v0.1 Variant 1 milestone.
 - The phone pack copies to a phone and sends to a second phone by AirDrop or Quick Share.
 
 ## 16. Work order and current milestone
@@ -578,12 +576,12 @@ Devices: an iPhone with USB-C, an iPhone with Lightning plus an adapter, a recen
 
 Current order:
 
-1. Adopt these instructions, preserve earlier explicit publisher decisions, and freeze the Version 1/Rhode Island sample scope with AI disabled.
+1. Adopt these instructions, preserve earlier explicit publisher decisions, and freeze the Variant 1/Rhode Island sample scope with AI disabled.
 2. Settle and inspect the county-first map folder/leaf naming and phone PDF performance contract. Use published atlas conventions and verified postal/locality data; test one complete county, and split a dense area only when measured limits require it. Keep split-navigation fixture coverage without forcing a production split.
 3. Inventory the exact selected sample graph and reuse ready, verified artifacts. Resolve only sample-critical missing inputs, hard rights questions, or technical blockers; preserve an explicit inventory for deferred items.
 4. Build the actual browsable tree and expose it through the loopback Drive Explorer, with phone-size presets, full filenames, file sizes, and native file previews. If the tree is incomplete, show its exact omissions and blockers. Inspect actual files on phones before expanding the renderer or starting a national build.
-5. Build and verify one Version 1 sample image, then repeat cleanly at the frozen recipe/epoch. Compress and publish development artifacts only through the appropriate gates.
-6. Expand the proven pipeline to national coverage, then the remaining versions. The offline AI follows in v0.2; it is not a dependency of Version 1.
+5. Build and verify one Variant 1 sample image, then repeat cleanly at the frozen recipe/epoch. Compress and publish development artifacts only through the appropriate gates.
+6. Expand the proven pipeline to national coverage, then the remaining variants. The offline AI follows in v0.2; it is not a dependency of Variant 1.
 
 Overall implementation roadmap:
 
@@ -598,11 +596,11 @@ Overall implementation roadmap:
 9. Atlas pipeline (one small state first, then all).
 10. Android maps pipeline (Path A or B per the planner).
 11. ZIM placement and the zim2pdf medical PDFs.
-12. v0.2: offline-AI selection notes, launchers, Android app entry, system prompt, and placement on versions 7 and 8 only.
+12. v0.2: offline-AI selection notes, launchers, Android app entry, system prompt, and placement on variants 7 and 8 only.
 13. Imported videos (multi-track audio and subtitles, VLC entry) and documents, phrasebooks, forms.
 14. Sample workflow, reproducibility test, release and Pages workflows, build-machine docs.
 
-Keep `docs/release-review.md` current, listing remaining VERIFY markers, actual rights/permission questions, and sections needing named human review. Do not invent approvals or call a preview a release. Continue automatable work on the current milestone; when genuinely blocked, hand over concrete artifacts and the smallest exact decisions or reviews needed. Offline-AI work belongs to v0.2, not the Version 1 blocker list.
+Keep `docs/release-review.md` current, listing remaining VERIFY markers, actual rights/permission questions, and sections needing named human review. Do not invent approvals or call a preview a release. Continue automatable work on the current milestone; when genuinely blocked, hand over concrete artifacts and the smallest exact decisions or reviews needed. Offline-AI work belongs to v0.2, not the Variant 1 blocker list.
 
 ## 17. Definition of done for v0.1.0
 
@@ -614,7 +612,7 @@ Keep `docs/release-review.md` current, listing remaining VERIFY markers, actual 
 
 ## 18. Roadmap after v0.1 (context only)
 
-- **v0.2:** original vertical how-to videos (the 50 critical clips), narrated and subtitled in all 15 languages, replacing imports where better; the offline AI, an untuned base model, on versions 7 and 8 (§9.7).
+- **v0.2:** original vertical how-to videos (the 50 critical clips), narrated and subtitled in all 15 languages, replacing imports where better; the offline AI, an untuned base model, on variants 7 and 8 (§9.7).
 - **v0.3:** reviewed translations for all editions.
 - **v0.4:** the tuned offline AI: an emergency fine-tune of Gemma 4 E2B, ideally built with Google, grounded in the drive's library, numbers copied from sources, validated against a public clinical and operational benchmark.
 - **Later:** the block-board hotspot app; a hub image with full Wikipedia for libraries.
