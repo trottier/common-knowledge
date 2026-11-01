@@ -2292,16 +2292,82 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e`
 - Publisher file: https://download.geofabrik.de/north-america/us-261029.osm.pbf
 
-## Project Gutenberg subject collections; select individual files
+## Alice's Adventures in Wonderland
 
-- Catalog id: `gutenberg`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Catalog id: `gutenberg_11`
+- Version: Project Gutenberg #11; updated 2025-06-26
+- License: Public-domain-US
+- Attribution: Carroll, Lewis, 1832-1898; Project Gutenberg production credits: Arthur DiBianca and David Widger
+- License proof: https://www.gutenberg.org/ebooks/11
+- Size: 174311 bytes
+- SHA-256: `01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e`
+- Publisher file: https://www.gutenberg.org/ebooks/11.txt.utf-8
+
+## Pride and Prejudice
+
+- Catalog id: `gutenberg_1342`
+- Version: Project Gutenberg #1342; updated 2026-09-29
+- License: Public-domain-US
+- Attribution: Austen, Jane, 1775-1817; Project Gutenberg production credits: Chuck Greif and the Online Distributed Proofreading Team at www.pgdp.net (This file was produced from images available at The Internet Archive)
+- License proof: https://www.gutenberg.org/ebooks/1342
+- Size: 772386 bytes
+- SHA-256: `3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75`
+- Publisher file: https://www.gutenberg.org/ebooks/1342.txt.utf-8
+
+## The Adventures of Sherlock Holmes
+
+- Catalog id: `gutenberg_1661`
+- Version: Project Gutenberg #1661; updated 2023-10-10
+- License: Public-domain-US
+- Attribution: Doyle, Arthur Conan, 1859-1930; Project Gutenberg production credits: an anonymous Project Gutenberg volunteer and Jose Menendez
+- License proof: https://www.gutenberg.org/ebooks/1661
+- Size: 607606 bytes
+- SHA-256: `922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0`
+- Publisher file: https://www.gutenberg.org/ebooks/1661.txt.utf-8
+
+## Don Quijote
+
+- Catalog id: `gutenberg_2000`
+- Version: Project Gutenberg #2000; updated 2021-01-17
+- License: Public-domain-US
+- Attribution: Cervantes Saavedra, Miguel de, 1547-1616; Project Gutenberg production credits: an anonymous Project Gutenberg volunteer and Joaquin Cuenca Abela
+- License proof: https://www.gutenberg.org/ebooks/2000
+- Size: 2225803 bytes
+- SHA-256: `534f41d59f7142163fa0964076ac6351845c006ea6433778be637fac6d5b04d7`
+- Publisher file: https://www.gutenberg.org/ebooks/2000.txt.utf-8
+
+## Three hundred Aesop’s fables Translated by George Fyler Townsend
+
+- Catalog id: `gutenberg_21`
+- Version: Project Gutenberg #21; updated 2025-10-15
+- License: Public-domain-US
+- Attribution: Aesop, 621? BCE-565? BCE; Townsend, George Fyler, 1814-1900; Project Gutenberg production credits: David Widger
+- License proof: https://www.gutenberg.org/ebooks/21
+- Size: 272338 bytes
+- SHA-256: `48f2d310226e175250988747ba4c81ff832a218b83c141b38c6dc047a25c1958`
+- Publisher file: https://www.gutenberg.org/ebooks/21.txt.utf-8
+
+## A Christmas Carol in Prose; Being a Ghost Story of Christmas
+
+- Catalog id: `gutenberg_46`
+- Version: Project Gutenberg #46; updated 2021-11-13
+- License: Public-domain-US
+- Attribution: Dickens, Charles, 1812-1870; Project Gutenberg production credits: Jose Menendez and David Widger
+- License proof: https://www.gutenberg.org/ebooks/46
+- Size: 182250 bytes
+- SHA-256: `8c36b93723d454982df045ec0efdf2664e5a48e6b5e2f670e883575f75ad0cc8`
+- Publisher file: https://www.gutenberg.org/ebooks/46.txt.utf-8
+
+## The Adventures of Tom Sawyer, Complete
+
+- Catalog id: `gutenberg_74`
+- Version: Project Gutenberg #74; updated 2025-05-10
+- License: Public-domain-US
+- Attribution: Twain, Mark, 1835-1910; Project Gutenberg production credits: David Widger
+- License proof: https://www.gutenberg.org/ebooks/74
+- Size: 434357 bytes
+- SHA-256: `74d77384b123a6360db9ab58463cff8b38df8525fbdc6000c81ee388e1f3cf10`
+- Publisher file: https://www.gutenberg.org/ebooks/74.txt.utf-8
 
 ## Redistributable how-to documents; select individual files
 

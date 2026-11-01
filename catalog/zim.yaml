@@ -152,25 +152,6 @@
     "requires_legal": true
   },
   {
-    "id": "gutenberg",
-    "family": "zim",
-    "title": "Project Gutenberg subject collections; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "collection": "morale"
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/morale/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "education",
     "family": "zim",
     "title": "Open education collections; select individual files",
