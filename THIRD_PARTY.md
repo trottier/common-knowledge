@@ -11602,12 +11602,34 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `pocketpal_android`
 - Version: 1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578
-- License: MIT
+- License: MIT AND [[VERIFY: complete bundled native/runtime license inventory and exact Hexagon and Google SDK redistribution terms]]
 - Attribution: Asghar Ghorbani and PocketPal contributors
 - License proof: https://github.com/a-ghorbani/pocketpal-ai/blob/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE
 - Size: 275953055 bytes
 - SHA-256: `e26933e5a94434d94929f65fcc019f1e10b734a5864dcb0b7995ace569b37f6b`
 - Publisher file: https://github.com/a-ghorbani/pocketpal-ai/releases/download/v1.22.0/app-prod-release.apk
+
+## PocketPal 1.22.0 exact app source candidate
+
+- Catalog id: `pocketpal_android_source`
+- Version: 1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578
+- License: MIT
+- Attribution: Asghar Ghorbani and PocketPal contributors
+- License proof: https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE
+- Size: 19390389 bytes
+- SHA-256: `be4beb242e17fba27ffa04da6a96d97870abce3b86430b60bb49f8fafc7b1a51`
+- Publisher file: https://api.github.com/repos/a-ghorbani/pocketpal-ai/tarball/8932367e9f4a373945993ae0a472c8768d5c0578
+
+## Hermes exact Android runtime source candidate
+
+- Catalog id: `pocketpal_hermes_source`
+- Version: 250829098.0.17; commit 3477757eb2475555cf8d8df24bfb1deb0613880d
+- License: MIT
+- Attribution: Meta Platforms, Inc. and Hermes contributors; bundled component authors
+- License proof: https://raw.githubusercontent.com/meta/hermes/3477757eb2475555cf8d8df24bfb1deb0613880d/LICENSE
+- Size: 22316553 bytes
+- SHA-256: `6fdf2874c8a2d1c814fb59a88e00c87251bb970cd9d140f470ec7eac7d0e9a75`
+- Publisher file: https://codeload.github.com/meta/hermes/tar.gz/3477757eb2475555cf8d8df24bfb1deb0613880d
 
 ## pocketpal license
 
@@ -11619,6 +11641,138 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 1072 bytes
 - SHA-256: `be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06`
 - Publisher file: https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE
+
+## llama.rn exact locked package/source candidate
+
+- Catalog id: `pocketpal_llama_rn_package`
+- Version: 0.13.0-rc.9; exact publisher registry tarball
+- License: MIT
+- Attribution: Jhen-Jie Hong and llama.rn contributors
+- License proof: https://raw.githubusercontent.com/mybigday/llama.rn/27783c86cea93ac534fba303d9be5cf335d2e945/LICENSE
+- Size: 9838966 bytes
+- SHA-256: `b3b7a767b77d2b7fb5bc0ba516cabc8ff06923f429eb293d00ceb8f33ccba167`
+- Publisher file: https://registry.npmjs.org/llama.rn/-/llama.rn-0.13.0-rc.9.tgz
+
+## llama.rn exact repository and vendor/build recipes
+
+- Catalog id: `pocketpal_llama_rn_repository`
+- Version: 27783c86cea93ac534fba303d9be5cf335d2e945
+- License: MIT
+- Attribution: Jhen-Jie Hong, ggml authors, Khronos Group, and other bundled component authors
+- License proof: https://raw.githubusercontent.com/mybigday/llama.rn/27783c86cea93ac534fba303d9be5cf335d2e945/LICENSE
+- Size: 6777359 bytes
+- SHA-256: `38276df3bf3d1a0ad8740ffe39ce512efca1af874f37aa81e1ea65be7beaf359`
+- Publisher file: https://codeload.github.com/mybigday/llama.rn/tar.gz/27783c86cea93ac534fba303d9be5cf335d2e945
+
+## react-native-nitro-modules exact locked package/source candidate
+
+- Catalog id: `pocketpal_nitro_modules_package`
+- Version: 0.37.1; exact publisher registry tarball
+- License: MIT
+- Attribution: Marc Rousavy and Nitro contributors
+- License proof: https://raw.githubusercontent.com/mrousavy/nitro/605017127c16f9d502f527097ffed77439d8ce6c/LICENSE
+- Size: 135632 bytes
+- SHA-256: `00f5a2a6d8150251384948faf87d2bbb29044a18bd8ba888f37436063740700a`
+- Publisher file: https://registry.npmjs.org/react-native-nitro-modules/-/react-native-nitro-modules-0.37.1.tgz
+
+## onnxruntime-react-native exact locked package/source candidate
+
+- Catalog id: `pocketpal_onnx_react_native_package`
+- Version: 1.24.3; exact publisher registry tarball
+- License: MIT
+- Attribution: Microsoft Corporation and ONNX Runtime contributors
+- License proof: https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/LICENSE
+- Size: 25852 bytes
+- SHA-256: `5737f76ac945f62e1416702f67c2bc536c50cab18d36d2125a6913a5a0425571`
+- Publisher file: https://registry.npmjs.org/onnxruntime-react-native/-/onnxruntime-react-native-1.24.3.tgz
+
+## ONNX Runtime 1.24.3 exact preferred source candidate
+
+- Catalog id: `pocketpal_onnx_source`
+- Version: 1.24.3; commit 3a728b75062256951b6e19ce718907cf1a1d4cf0
+- License: MIT
+- Attribution: Microsoft Corporation and ONNX Runtime contributors; bundled dependency authors
+- License proof: https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/LICENSE
+- Size: 283649098 bytes
+- SHA-256: `2afd2ff42ec2381937e095f0ab9929bb535db10e42f4004f5022c136beabbdd2`
+- Publisher file: https://codeload.github.com/microsoft/onnxruntime/tar.gz/3a728b75062256951b6e19ce718907cf1a1d4cf0
+
+## @pocketpalai/react-native-speech-phonon exact locked package/source candidate
+
+- Catalog id: `pocketpal_phonon_package`
+- Version: 0.1.3; exact publisher registry tarball
+- License: MIT
+- Attribution: Asghar Ghorbani and react-native-speech contributors
+- License proof: https://raw.githubusercontent.com/a-ghorbani/react-native-speech/72660c2faa9c0f4347e06392a488a46f00b3f6fd/packages/react-native-speech-phonon/LICENSE
+- Size: 125167 bytes
+- SHA-256: `b061874980f06e1f85b51ac2ffbd48162c5158229be3377db7690190a02cc83c`
+- Publisher file: https://registry.npmjs.org/@pocketpalai/react-native-speech-phonon/-/react-native-speech-phonon-0.1.3.tgz
+
+## Phonon native binary producer recipe source
+
+- Catalog id: `pocketpal_phonon_producer_source`
+- Version: phonon-bin-v0.4.0-r2; commit f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861
+- License: MIT
+- Attribution: Asghar Ghorbani and react-native-speech contributors
+- License proof: https://github.com/a-ghorbani/react-native-speech/blob/f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861/LICENSE
+- Size: 2424483 bytes
+- SHA-256: `64792b068e0de6e3fc5cc2f57179de0845506cf8bcd46ef420b33765c327ba38`
+- Publisher file: https://codeload.github.com/a-ghorbani/react-native-speech/tar.gz/f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861
+
+## Phonon native upstream exact preferred source
+
+- Catalog id: `pocketpal_phonon_upstream_source`
+- Version: 0.4.0; commit f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa
+- License: MIT OR Apache-2.0
+- Attribution: Gradium and Phonon contributors; Rust dependency authors
+- License proof: https://github.com/gradium-ai/xn-ptts/blob/f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/Cargo.toml
+- Size: 616707 bytes
+- SHA-256: `fc99775ae12cbd49e3aa7de279b4bff342dd6ac2776feb415ed70db53068fd27`
+- Publisher file: https://codeload.github.com/gradium-ai/xn-ptts/tar.gz/f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa
+
+## react-native exact locked package/source candidate
+
+- Catalog id: `pocketpal_react_native_package`
+- Version: 0.87.1; exact publisher registry tarball
+- License: MIT
+- Attribution: Meta Platforms, Inc. and React Native contributors
+- License proof: https://raw.githubusercontent.com/react/react-native/a59eff64fa907ed6e919fafe6cbd26d1d54c2de3/LICENSE
+- Size: 4028338 bytes
+- SHA-256: `f686b91e4c59ba8010be1b4abfde0adc24f7f5aea95a6a28cf4d4ad2cc494bd8`
+- Publisher file: https://registry.npmjs.org/react-native/-/react-native-0.87.1.tgz
+
+## @pocketpalai/react-native-speech exact locked package/source candidate
+
+- Catalog id: `pocketpal_speech_package`
+- Version: 2.8.2; exact publisher registry tarball
+- License: MIT
+- Attribution: Asghar Ghorbani and react-native-speech contributors
+- License proof: https://raw.githubusercontent.com/a-ghorbani/react-native-speech/e3b59f5d40c4b9438bcf5bff0c59d97e9ed12355/LICENSE
+- Size: 374797 bytes
+- SHA-256: `1a7b4417b0d23cbd6bfc097a33fbd0bf52da94331fcfde121862839d36d8d2d9`
+- Publisher file: https://registry.npmjs.org/@pocketpalai/react-native-speech/-/react-native-speech-2.8.2.tgz
+
+## Speech Phonon package exact repository/build sources
+
+- Catalog id: `pocketpal_speech_repository`
+- Version: 72660c2faa9c0f4347e06392a488a46f00b3f6fd
+- License: MIT
+- Attribution: Asghar Ghorbani and react-native-speech contributors
+- License proof: https://github.com/a-ghorbani/react-native-speech/blob/72660c2faa9c0f4347e06392a488a46f00b3f6fd/LICENSE
+- Size: 2424502 bytes
+- SHA-256: `6dddd07a7e508e0844664876c87af146fd5a73a84e15bf7441f31b4e03999180`
+- Publisher file: https://codeload.github.com/a-ghorbani/react-native-speech/tar.gz/72660c2faa9c0f4347e06392a488a46f00b3f6fd
+
+## whisper.rn exact locked package/source candidate
+
+- Catalog id: `pocketpal_whisper_rn_package`
+- Version: 0.7.4; exact publisher registry tarball
+- License: MIT
+- Attribution: Jhen-Jie Hong and whisper.rn contributors
+- License proof: https://raw.githubusercontent.com/mybigday/whisper.rn/4d750cb7917973c2528a46cd3902dfe4ebbcbe7f/LICENSE
+- Size: 7297406 bytes
+- SHA-256: `268af5c2279fff64db016759b35386177386eca5990b71fd515e9d138dd54f1c`
+- Publisher file: https://registry.npmjs.org/whisper.rn/-/whisper.rn-0.7.4.tgz
 
 ## Protomaps v4 daily planet source for verified extracts
 

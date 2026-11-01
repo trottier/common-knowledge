@@ -1,0 +1,299 @@
+[
+  {
+    "id": "pocketpal_android_source",
+    "family": "docs",
+    "title": "PocketPal 1.22.0 exact app source candidate",
+    "url": "https://api.github.com/repos/a-ghorbani/pocketpal-ai/tarball/8932367e9f4a373945993ae0a472c8768d5c0578",
+    "version": "1.22.0; commit 8932367e9f4a373945993ae0a472c8768d5c0578",
+    "size_bytes": 19390389,
+    "sha256": "be4beb242e17fba27ffa04da6a96d97870abce3b86430b60bb49f8fafc7b1a51",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani and PocketPal contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/a-ghorbani/pocketpal-ai/8932367e9f4a373945993ae0a472c8768d5c0578/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed SHA pin, complete per-file/license/asset inventory, dependency/build inputs, and selected APK source correspondence; source archive alone is not approval]]",
+    "inputs": [
+      "pocketpal_llama_rn_package",
+      "pocketpal_react_native_package",
+      "pocketpal_whisper_rn_package",
+      "pocketpal_speech_package",
+      "pocketpal_phonon_package",
+      "pocketpal_onnx_react_native_package",
+      "pocketpal_nitro_modules_package"
+    ],
+    "source_for": "pocketpal_android"
+  },
+  {
+    "id": "pocketpal_llama_rn_package",
+    "family": "docs",
+    "title": "llama.rn exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/llama.rn/-/llama.rn-0.13.0-rc.9.tgz",
+    "version": "0.13.0-rc.9; exact publisher registry tarball",
+    "size_bytes": 9838966,
+    "sha256": "b3b7a767b77d2b7fb5bc0ba516cabc8ff06923f429eb293d00ceb8f33ccba167",
+    "license": "MIT",
+    "attribution": "Jhen-Jie Hong and llama.rn contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/mybigday/llama.rn/27783c86cea93ac534fba303d9be5cf335d2e945/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "inputs": [
+      "pocketpal_llama_rn_repository"
+    ],
+    "checksum_source_url": "https://registry.npmjs.org/llama.rn/0.13.0-rc.9"
+  },
+  {
+    "id": "pocketpal_react_native_package",
+    "family": "docs",
+    "title": "react-native exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/react-native/-/react-native-0.87.1.tgz",
+    "version": "0.87.1; exact publisher registry tarball",
+    "size_bytes": 4028338,
+    "sha256": "f686b91e4c59ba8010be1b4abfde0adc24f7f5aea95a6a28cf4d4ad2cc494bd8",
+    "license": "MIT",
+    "attribution": "Meta Platforms, Inc. and React Native contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/react/react-native/a59eff64fa907ed6e919fafe6cbd26d1d54c2de3/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "inputs": [
+      "pocketpal_hermes_source"
+    ],
+    "checksum_source_url": "https://registry.npmjs.org/react-native/0.87.1"
+  },
+  {
+    "id": "pocketpal_whisper_rn_package",
+    "family": "docs",
+    "title": "whisper.rn exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/whisper.rn/-/whisper.rn-0.7.4.tgz",
+    "version": "0.7.4; exact publisher registry tarball",
+    "size_bytes": 7297406,
+    "sha256": "268af5c2279fff64db016759b35386177386eca5990b71fd515e9d138dd54f1c",
+    "license": "MIT",
+    "attribution": "Jhen-Jie Hong and whisper.rn contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/mybigday/whisper.rn/4d750cb7917973c2528a46cd3902dfe4ebbcbe7f/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "checksum_source_url": "https://registry.npmjs.org/whisper.rn/0.7.4"
+  },
+  {
+    "id": "pocketpal_speech_package",
+    "family": "docs",
+    "title": "@pocketpalai/react-native-speech exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/@pocketpalai/react-native-speech/-/react-native-speech-2.8.2.tgz",
+    "version": "2.8.2; exact publisher registry tarball",
+    "size_bytes": 374797,
+    "sha256": "1a7b4417b0d23cbd6bfc097a33fbd0bf52da94331fcfde121862839d36d8d2d9",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani and react-native-speech contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/a-ghorbani/react-native-speech/e3b59f5d40c4b9438bcf5bff0c59d97e9ed12355/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "checksum_source_url": "https://registry.npmjs.org/%40pocketpalai%2Freact-native-speech/2.8.2"
+  },
+  {
+    "id": "pocketpal_phonon_package",
+    "family": "docs",
+    "title": "@pocketpalai/react-native-speech-phonon exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/@pocketpalai/react-native-speech-phonon/-/react-native-speech-phonon-0.1.3.tgz",
+    "version": "0.1.3; exact publisher registry tarball",
+    "size_bytes": 125167,
+    "sha256": "b061874980f06e1f85b51ac2ffbd48162c5158229be3377db7690190a02cc83c",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani and react-native-speech contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/a-ghorbani/react-native-speech/72660c2faa9c0f4347e06392a488a46f00b3f6fd/packages/react-native-speech-phonon/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "inputs": [
+      "pocketpal_speech_repository",
+      "pocketpal_phonon_producer_source",
+      "pocketpal_phonon_upstream_source"
+    ],
+    "checksum_source_url": "https://registry.npmjs.org/%40pocketpalai%2Freact-native-speech-phonon/0.1.3"
+  },
+  {
+    "id": "pocketpal_onnx_react_native_package",
+    "family": "docs",
+    "title": "onnxruntime-react-native exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/onnxruntime-react-native/-/onnxruntime-react-native-1.24.3.tgz",
+    "version": "1.24.3; exact publisher registry tarball",
+    "size_bytes": 25852,
+    "sha256": "5737f76ac945f62e1416702f67c2bc536c50cab18d36d2125a6913a5a0425571",
+    "license": "MIT",
+    "attribution": "Microsoft Corporation and ONNX Runtime contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "inputs": [
+      "pocketpal_onnx_source"
+    ],
+    "checksum_source_url": "https://registry.npmjs.org/onnxruntime-react-native/1.24.3"
+  },
+  {
+    "id": "pocketpal_nitro_modules_package",
+    "family": "docs",
+    "title": "react-native-nitro-modules exact locked package/source candidate",
+    "url": "https://registry.npmjs.org/react-native-nitro-modules/-/react-native-nitro-modules-0.37.1.tgz",
+    "version": "0.37.1; exact publisher registry tarball",
+    "size_bytes": 135632,
+    "sha256": "00f5a2a6d8150251384948faf87d2bbb29044a18bd8ba888f37436063740700a",
+    "license": "MIT",
+    "attribution": "Marc Rousavy and Nitro contributors",
+    "license_proof_url": "https://raw.githubusercontent.com/mrousavy/nitro/605017127c16f9d502f527097ffed77439d8ce6c/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source/license pin review; registry SHA-1 and SHA-512 match the app lock; audit all vendored code, native artifacts, generated code, transitive dependencies, and toolchain; no whole-package or APK approval]]",
+    "checksum_source_url": "https://registry.npmjs.org/react-native-nitro-modules/0.37.1"
+  },
+  {
+    "id": "pocketpal_llama_rn_repository",
+    "family": "docs",
+    "title": "llama.rn exact repository and vendor/build recipes",
+    "url": "https://codeload.github.com/mybigday/llama.rn/tar.gz/27783c86cea93ac534fba303d9be5cf335d2e945",
+    "version": "27783c86cea93ac534fba303d9be5cf335d2e945",
+    "size_bytes": 6777359,
+    "sha256": "38276df3bf3d1a0ad8740ffe39ce512efca1af874f37aa81e1ea65be7beaf359",
+    "license": "MIT",
+    "attribution": "Jhen-Jie Hong, ggml authors, Khronos Group, and other bundled component authors",
+    "license_proof_url": "https://raw.githubusercontent.com/mybigday/llama.rn/27783c86cea93ac534fba303d9be5cf335d2e945/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed pin; complete vendor license and SDK/source provenance review; app patches and source rebuild correspondence; MIT wrapper does not clear external Hexagon SDK terms]]"
+  },
+  {
+    "id": "pocketpal_speech_repository",
+    "family": "docs",
+    "title": "Speech Phonon package exact repository/build sources",
+    "url": "https://codeload.github.com/a-ghorbani/react-native-speech/tar.gz/72660c2faa9c0f4347e06392a488a46f00b3f6fd",
+    "version": "72660c2faa9c0f4347e06392a488a46f00b3f6fd",
+    "size_bytes": 2424502,
+    "sha256": "6dddd07a7e508e0844664876c87af146fd5a73a84e15bf7441f31b4e03999180",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani and react-native-speech contributors",
+    "license_proof_url": "https://github.com/a-ghorbani/react-native-speech/blob/72660c2faa9c0f4347e06392a488a46f00b3f6fd/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed SHA pin, complete per-file/license/asset inventory, dependency/build inputs, and selected APK source correspondence; source archive alone is not approval]]"
+  },
+  {
+    "id": "pocketpal_phonon_producer_source",
+    "family": "docs",
+    "title": "Phonon native binary producer recipe source",
+    "url": "https://codeload.github.com/a-ghorbani/react-native-speech/tar.gz/f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861",
+    "version": "phonon-bin-v0.4.0-r2; commit f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861",
+    "size_bytes": 2424483,
+    "sha256": "64792b068e0de6e3fc5cc2f57179de0845506cf8bcd46ef420b33765c327ba38",
+    "license": "MIT",
+    "attribution": "Asghar Ghorbani and react-native-speech contributors",
+    "license_proof_url": "https://github.com/a-ghorbani/react-native-speech/blob/f2fc556d9aa6b92dd617fd11f96f3a51ef9c8861/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed pin and recipe/toolchain/source audit; publisher build metadata is not a Common Knowledge rebuild]]"
+  },
+  {
+    "id": "pocketpal_phonon_upstream_source",
+    "family": "docs",
+    "title": "Phonon native upstream exact preferred source",
+    "url": "https://codeload.github.com/gradium-ai/xn-ptts/tar.gz/f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa",
+    "version": "0.4.0; commit f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa",
+    "size_bytes": 616707,
+    "sha256": "fc99775ae12cbd49e3aa7de279b4bff342dd6ac2776feb415ed70db53068fd27",
+    "license": "MIT OR Apache-2.0",
+    "attribution": "Gradium and Phonon contributors; Rust dependency authors",
+    "license_proof_url": "https://github.com/gradium-ai/xn-ptts/blob/f07d7952db0c6127d5e4bc3f41c82b3304b6b5aa/Cargo.toml",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed pin, target-specific Rust dependency and license closure, runtime source correspondence, and native notice review; actual binary ZIP licenses/header match upstream, not merely wrapper metadata]]"
+  },
+  {
+    "id": "pocketpal_hermes_source",
+    "family": "docs",
+    "title": "Hermes exact Android runtime source candidate",
+    "url": "https://codeload.github.com/meta/hermes/tar.gz/3477757eb2475555cf8d8df24bfb1deb0613880d",
+    "version": "250829098.0.17; commit 3477757eb2475555cf8d8df24bfb1deb0613880d",
+    "size_bytes": 22316553,
+    "sha256": "6fdf2874c8a2d1c814fb59a88e00c87251bb970cd9d140f470ec7eac7d0e9a75",
+    "license": "MIT",
+    "attribution": "Meta Platforms, Inc. and Hermes contributors; bundled component authors",
+    "license_proof_url": "https://raw.githubusercontent.com/meta/hermes/3477757eb2475555cf8d8df24bfb1deb0613880d/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed pin; native/runtime, bundled LLVM/component license and notice inventory, exact build/dependency closure, and binary/source correspondence; Java sources JAR is insufficient]]"
+  },
+  {
+    "id": "pocketpal_onnx_source",
+    "family": "docs",
+    "title": "ONNX Runtime 1.24.3 exact preferred source candidate",
+    "url": "https://codeload.github.com/microsoft/onnxruntime/tar.gz/3a728b75062256951b6e19ce718907cf1a1d4cf0",
+    "version": "1.24.3; commit 3a728b75062256951b6e19ce718907cf1a1d4cf0",
+    "size_bytes": 283649098,
+    "sha256": "2afd2ff42ec2381937e095f0ab9929bb535db10e42f4004f5022c136beabbdd2",
+    "license": "MIT",
+    "attribution": "Microsoft Corporation and ONNX Runtime contributors; bundled dependency authors",
+    "license_proof_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/3a728b75062256951b6e19ce718907cf1a1d4cf0/LICENSE",
+    "placement": "hub_only",
+    "dest": "build/source-archives/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human computed pin; complete dependency, native/runtime, and third-party license/notice inventory; app bridge patch/source correspondence; matching allocated ELF sections do not establish identical files]]"
+  }
+]
