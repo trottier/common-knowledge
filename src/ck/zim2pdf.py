@@ -74,7 +74,13 @@ def article(html: str, expected_license: str) -> dict:
         raise ValueError("Article source URL must identify an exact revision")
     modified = re.search(r"\d{4}-\d{2}-\d{2}$", origin["title"])[0]
     date.fromisoformat(modified)
-    version = {"CC-BY-SA-4.0": "4.0", "CC-BY-SA-3.0": "3.0"}.get(expected_license)
+    components = set(expected_license.split(" AND "))
+    article_licenses = components - {"CC0-1.0"}
+    version = (
+        {"CC-BY-SA-4.0": "4.0", "CC-BY-SA-3.0": "3.0"}.get(next(iter(article_licenses)))
+        if len(article_licenses) == 1
+        else None
+    )
     license_link = next(
         (
             link["href"]

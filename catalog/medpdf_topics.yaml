@@ -752,6 +752,46 @@
       "id": "vital_signs",
       "source": "wikimed_en_nopic",
       "title": "Vital signs"
+    },
+    {
+      "id": "wikem_burns",
+      "source": "wikem_en_nopic",
+      "title": "Burns"
+    },
+    {
+      "id": "wikem_heat_stroke",
+      "source": "wikem_en_nopic",
+      "title": "Heat stroke"
+    },
+    {
+      "id": "wikem_anaphylaxis",
+      "source": "wikem_en_nopic",
+      "title": "Anaphylaxis"
+    },
+    {
+      "id": "wikem_epistaxis",
+      "source": "wikem_en_nopic",
+      "title": "Epistaxis"
+    },
+    {
+      "id": "wikem_laceration_repair",
+      "source": "wikem_en_nopic",
+      "title": "Laceration repair"
+    },
+    {
+      "id": "wikem_dehydration",
+      "source": "wikem_en_nopic",
+      "title": "Dehydration"
+    },
+    {
+      "id": "wikem_seizure",
+      "source": "wikem_en_nopic",
+      "title": "Seizure"
+    },
+    {
+      "id": "wikem_accidental_hypothermia",
+      "source": "wikem_en_nopic",
+      "title": "Accidental hypothermia"
     }
   ]
 }
