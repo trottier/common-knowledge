@@ -9,7 +9,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from pydantic import Field
+from pydantic import Field, model_validator
 from shapely import box
 from shapely.geometry import mapping
 from shapely.ops import unary_union
@@ -25,11 +25,23 @@ class NationalSettings(Model):
     source_inputs: dict[str, Identifier]
     source_supplements: dict[Identifier, list[Identifier]] = Field(default_factory=dict)
     pacific_states: list[str]
+    state_sources: dict[str, Identifier] = Field(default_factory=dict)
     boundary_padding_degrees: float = Field(gt=0, le=0.01)
     max_heap_mib: int = Field(ge=256)
 
     def source_for(self, state: str) -> str:
+        if state in self.state_sources:
+            return self.state_sources[state]
         return self.source_inputs["oceania" if state in self.pacific_states else "us"]
+
+    @model_validator(mode="after")
+    def configured_overrides(self):
+        if any(
+            not re.fullmatch(r"[A-Z]{2}", state) or source not in self.source_inputs.values()
+            for state, source in self.state_sources.items()
+        ):
+            raise ValueError("State source overrides must name a configured parent")
+        return self
 
 
 def policy(root: Path) -> NationalSettings:
@@ -111,7 +123,7 @@ def extraction_regions(geometry, padding: float):
         yield buffered
 
 
-def extract_roads(source: Path, geometry, output: Path, padding: float) -> None:
+def extract_roads(source: Path, geometry, output: Path, padding: float) -> dict:
     """Keep complete ways and all retained relation members, including turn restrictions."""
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-map-extract-") as temporary:
         stage = Path(temporary)
@@ -151,6 +163,18 @@ def extract_roads(source: Path, geometry, output: Path, padding: float) -> None:
                 ["osmium", "merge", *map(str, parts), "--output", str(output)], check=True
             )
     subprocess.run(["osmium", "check-refs", "--check-relations", str(output)], check=True)
+    report = json.loads(
+        subprocess.run(
+            ["osmium", "fileinfo", "--extended", "--json", str(output)],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout
+    )
+    counts = report["data"]["count"]
+    if counts["nodes"] <= 0 or counts["ways"] <= 0:
+        raise ValueError("State extract has no complete ways; check the jurisdiction's source")
+    return {key: counts[key] for key in ("nodes", "ways", "relations")}
 
 
 def build_state_extracts(
@@ -191,9 +215,10 @@ def build_state_extracts(
     with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-state-extracts-") as temporary:
         stage = Path(temporary)
         (stage / "files").mkdir()
+        counts = {}
         for state in sorted(states):
             geometry = unary_union(counties[counties.STATEFP == codes[state]].geometry)
-            extract_roads(
+            counts[state] = extract_roads(
                 payloads["roads_places.osm.pbf"],
                 geometry,
                 stage / "files" / f"{state}_roads_places.osm.pbf",
@@ -207,6 +232,7 @@ def build_state_extracts(
                         state: settings.source_for(state) for state in sorted(states)
                     },
                     "boundary_padding_degrees": settings.boundary_padding_degrees,
+                    "object_counts": counts,
                 },
                 sort_keys=True,
             )

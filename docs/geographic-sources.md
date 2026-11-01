@@ -27,7 +27,9 @@ road/reference audit. Full national orchestration and map measurements remain
 unfinished.
 
 `ck national-points --cache cache --output build/national-points --epoch EPOCH`
-imports the shared federal files and the U.S. and Oceania OSM extracts once.
+imports the shared federal files and the configured U.S., Oceania, Puerto Rico
+and U.S. Virgin Islands OSM extracts once. Parent selection is shared with
+Android maps in `pipelines/androidmaps/national.yaml`.
 It assigns points to Census counties, deduplicates exact source identifiers,
 and writes a bound `places.json` intermediate for all state atlas jobs. Pin
 its measured generation manifest as `directory_points` before using it.
@@ -67,8 +69,12 @@ These are measured build results, not claims that any place is open or that the
 directory is exhaustive. See [national-atlas.md](national-atlas.md) for the
 remaining atlas stages.
 
-Two independent national imports match the public payload, bound point
-intermediate and generation manifest byte for byte. Their measured manifest
-pin is recorded in `catalog/maps.yaml`. This establishes reproducibility of
-that point-data recipe; national atlas PDFs, Android maps and full images still
-need their own complete repeated builds.
+Two independent runs of that first point-data recipe matched the public
+payload, bound point intermediate and generation manifest. Subsequent state
+extraction exposed that Puerto Rico and the Virgin Islands had federal points
+but zero OSM places. That source-selection gap invalidates the earlier corpus
+as a release candidate despite its repeatability. The active point pin is
+unconfirmed until the corrected import passes jurisdiction/source coverage
+checks. See [territory-source-coverage.md](territory-source-coverage.md).
+Descendant atlases, directories, Android maps and full images need corrected
+inputs and their own complete repeated builds.

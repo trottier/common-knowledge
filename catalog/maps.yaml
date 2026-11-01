@@ -384,8 +384,8 @@
     "family": "generated",
     "title": "National public-place points for atlas generation",
     "version": "2026-10-31; source epoch 1793404800",
-    "size_bytes": 81871671,
-    "sha256": "77154fd66db5239c8e21ded4597f2ea914def8900b29f48f31b68ce3fc453b23",
+    "size_bytes": "[[VERIFY: measured complete points after Caribbean source repair]]",
+    "sha256": "[[VERIFY: complete corrected national point manifest SHA-256]]",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -408,10 +408,12 @@
       "imls_libraries",
       "nces_schools",
       "noaa_transmitters",
-      "state_emergency_agencies"
+      "state_emergency_agencies",
+      "geofabrik_puerto_rico",
+      "geofabrik_virgin_islands"
     ],
-    "pipeline_version": "national-points-v1-d7efb3a096c74882a8304b0af71e557f444975c0c26e9f720c4f7cb03952eab2",
-    "review": "[[VERIFY: human review of national point snapshot pin and documented source omissions; preserve source snapshots and regenerate after final recipe freeze]]"
+    "pipeline_version": "[[VERIFY: territory-aware national point recipe]]",
+    "review": "[[VERIFY: regenerate with separate Puerto Rico and Virgin Islands inputs, require OSM evidence in each jurisdiction, repeat full generation and review geographic exceptions]]"
   },
   {
     "id": "directory_ri",
@@ -2435,9 +2437,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Census 2025 PR from confirmed territory source; development epoch 1793404800",
+    "size_bytes": 14957627,
+    "sha256": "55617737e7037c37a829d0f5d741fdbb938d2bbb97f74413254c13f59756fcdc",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2446,12 +2448,12 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "review": "[[VERIFY: independently review nonempty territory extract pins, repeat generation and final source freeze]]",
     "id": "android_extract_pr",
     "title": "Census PR road-source extract",
     "inputs": [
-      "android_source_us",
+      "android_source_puerto_rico",
       "census_county_analysis",
       "census_states"
     ]
@@ -2474,7 +2476,7 @@
     "id": "android_map_pr",
     "title": "OsmAnd roads-and-places map for PR",
     "inputs": [
-      "geofabrik_us",
+      "geofabrik_puerto_rico",
       "osmand_creator",
       "android_extract_pr"
     ]
@@ -2803,9 +2805,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Census 2025 VI from confirmed territory source; development epoch 1793404800",
+    "size_bytes": 901448,
+    "sha256": "3e3b7638587eaa66a5910a0d2f759fdd3a3c5f418106ba003cf6968c70cf1305",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2814,12 +2816,12 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "review": "[[VERIFY: independently review nonempty territory extract pins, repeat generation and final source freeze]]",
     "id": "android_extract_vi",
     "title": "Census VI road-source extract",
     "inputs": [
-      "android_source_us",
+      "android_source_virgin_islands",
       "census_county_analysis",
       "census_states"
     ]
@@ -2842,7 +2844,7 @@
     "id": "android_map_vi",
     "title": "OsmAnd roads-and-places map for VI",
     "inputs": [
-      "geofabrik_us",
+      "geofabrik_virgin_islands",
       "osmand_creator",
       "android_extract_vi"
     ]
@@ -3076,5 +3078,47 @@
       "osmand_creator",
       "android_extract_wy"
     ]
+  },
+  {
+    "id": "android_source_puerto_rico",
+    "family": "generated",
+    "title": "Prepared roads and public places from PR",
+    "version": "Confirmed territory source; development epoch 1793404800",
+    "size_bytes": 14957608,
+    "sha256": "da5db23cd3a79b0a1b4aa39d8b63f14e0a8094d6333cd377bf5d64353aa09eb2",
+    "pipeline_version": "android-source-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "geofabrik_puerto_rico"
+    ],
+    "review": "[[VERIFY: independent source pin review, repeat generation and final toolchain freeze; this territory source is nonempty and reference-complete]]"
+  },
+  {
+    "id": "android_source_virgin_islands",
+    "family": "generated",
+    "title": "Prepared roads and public places from VI",
+    "version": "Confirmed territory source; development epoch 1793404800",
+    "size_bytes": 901429,
+    "sha256": "a61b4dde324b457d4b50b376c195742ab2ed11ce2010877a13bc7f89072a4a03",
+    "pipeline_version": "android-source-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "license": "ODbL-1.0",
+    "attribution": "OpenStreetMap contributors",
+    "license_proof_url": "https://www.openstreetmap.org/copyright",
+    "placement": "hub_only",
+    "dest": "build/inputs/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "geofabrik_virgin_islands"
+    ],
+    "review": "[[VERIFY: independent source pin review, repeat generation and final toolchain freeze; this territory source is nonempty and reference-complete]]"
   }
 ]

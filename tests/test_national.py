@@ -37,7 +37,7 @@ def test_national_snapshot_preserves_omissions_and_rejects_changed_points_or_epo
         address="",
         latitude=1,
         longitude=1,
-        source_id="imls_libraries",
+        source_id="geofabrik_us",
         as_of="fixture",
         county="00001",
         county_name="Synthetic county",
@@ -79,6 +79,7 @@ def test_national_snapshot_preserves_omissions_and_rejects_changed_points_or_epo
     public = json.loads((output / "files/NATIONAL_SOURCE_DATA.json").read_text())
     assert "tags" not in public["places"][0]
     assert public["omitted_records"] == data.rejected
+    assert public["osm_source_coverage"] == {"XX": {"source_id": "geofabrik_us", "places": 1}}
     _, selected = directory_points(output, "XX", "00")
     assert [entry.id for entry in selected] == [place.id]
     with pytest.raises(ValueError, match="jurisdiction"):
@@ -88,3 +89,10 @@ def test_national_snapshot_preserves_omissions_and_rejects_changed_points_or_epo
     (output / "places.json").write_text("{}")
     with pytest.raises(ValueError, match="pinned content"):
         load_national_points(item, output, items, 946684800)
+
+    # A Census/federal-only jurisdiction cannot masquerade as covered by OSM.
+    data.states["VI"] = "78"
+    data.counties["78010"] = "Synthetic territory"
+    with pytest.raises(ValueError, match="configured OSM source.*VI"):
+        build_national_points(ROOT, items, tmp_path, tmp_path / "missing-territory", 946684800)
+    assert not (tmp_path / "missing-territory").exists()
