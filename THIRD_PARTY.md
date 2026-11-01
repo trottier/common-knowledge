@@ -1467,6 +1467,171 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee`
 - Publisher file: https://stacks.cdc.gov/view/cdc/88655/cdc_88655_DS2.wmv
 
+## Listo Calixto se prepara para los incendios forestales y el humo
+
+- Catalog id: `cdc_wrigley_118265`
+- Version: 2022/01/25; CDC Stacks record 118265
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/118265
+- Size: 5035335 bytes
+- SHA-256: `f5eb291bb7fe8d94fd7f571926cacfa767e0fcca4446a2fc840b409fadcb0127`
+- Publisher file: https://stacks.cdc.gov/view/cdc/118265/cdc_118265_DS1.pdf
+
+## Ready Wrigley Prepares for Wildfires & Smoke
+
+- Catalog id: `cdc_wrigley_118266`
+- Version: 2022/01/25; CDC Stacks record 118266
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/118266
+- Size: 5027373 bytes
+- SHA-256: `e40c455908077f99ee19aebfc0d5ea2680fbd97ae7f261a3bbb1dbd972f457a2`
+- Publisher file: https://stacks.cdc.gov/view/cdc/118266/cdc_118266_DS1.pdf
+
+## Listo Calixto se prepara para el calor extremo
+
+- Catalog id: `cdc_wrigley_21846`
+- Version: 2018/10/05; CDC Stacks record 21846
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/21846
+- Size: 1963339 bytes
+- SHA-256: `7bb52629c3a73bb2cba26f910eba696e002931e0515e77a348748beeaff56fa4`
+- Publisher file: https://stacks.cdc.gov/view/cdc/21846/cdc_21846_DS1.pdf
+
+## Ready Wrigley Prepares for Hurricanes
+
+- Catalog id: `cdc_wrigley_22435`
+- Version: 2013/12/19; CDC Stacks record 22435
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/22435
+- Size: 1698707 bytes
+- SHA-256: `d1caf4c95bbb4d0e42be3c641a35c615d539d0e8c794f58326ca1c7887eecf1c`
+- Publisher file: https://stacks.cdc.gov/view/cdc/22435/cdc_22435_DS1.pdf
+
+## Ready Wrigley Prepares for Earthquakes
+
+- Catalog id: `cdc_wrigley_22436`
+- Version: 2013/12/19; CDC Stacks record 22436
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/22436
+- Size: 1674949 bytes
+- SHA-256: `b3c7d8b9ebdd29b88939362eab96e237a2fa3508d23b554b54cf003e7c767e30`
+- Publisher file: https://stacks.cdc.gov/view/cdc/22436/cdc_22436_DS1.pdf
+
+## Listo Calixto se prepara para los huracanes
+
+- Catalog id: `cdc_wrigley_22437`
+- Version: 2013/12/19; CDC Stacks record 22437
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/22437
+- Size: 1709332 bytes
+- SHA-256: `c22cba51135e25942df3a239c7e0f7285a11658b72959efc731b10906037f379`
+- Publisher file: https://stacks.cdc.gov/view/cdc/22437/cdc_22437_DS1.pdf
+
+## Listo Calixto se prepara para los terremotos
+
+- Catalog id: `cdc_wrigley_22438`
+- Version: 2013/12/19; CDC Stacks record 22438
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/22438
+- Size: 1727610 bytes
+- SHA-256: `000a8a2d9665da76942bf04e327bae64db2b1a2ff6480e41a7d75b2af4b07652`
+- Publisher file: https://stacks.cdc.gov/view/cdc/22438/cdc_22438_DS1.pdf
+
+## Ready Wrigley Prepares for Winter Weather
+
+- Catalog id: `cdc_wrigley_22439`
+- Version: 2014/01/10; CDC Stacks record 22439
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/22439
+- Size: 2028186 bytes
+- SHA-256: `1f06cd1aa2cb4c7f5d88230a786201a1fc2a0b630522c64a3583826edca85b2b`
+- Publisher file: https://stacks.cdc.gov/view/cdc/22439/cdc_22439_DS1.pdf
+
+## Listo Calixto se prepara para el invierno
+
+- Catalog id: `cdc_wrigley_24551`
+- Version: 2014/07/11; CDC Stacks record 24551
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/24551
+- Size: 2117752 bytes
+- SHA-256: `e75f82800cb619f336ca12387047c80ec550894a7f07f61220b5df0179a7d65d`
+- Publisher file: https://stacks.cdc.gov/view/cdc/24551/cdc_24551_DS1.pdf
+
+## Ready Wrigley Prepares for Extreme Heat
+
+- Catalog id: `cdc_wrigley_37673`
+- Version: 2015/08/26; CDC Stacks record 37673
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/37673
+- Size: 2100161 bytes
+- SHA-256: `5f4ce9625892babee14e7b54df18a10ca2b39deadfddb92ee16b93a421588825`
+- Publisher file: https://stacks.cdc.gov/view/cdc/37673/cdc_37673_DS1.pdf
+
+## Ready Wrigley Prepares for Tornadoes
+
+- Catalog id: `cdc_wrigley_39605`
+- Version: 2013/07/03; CDC Stacks record 39605
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/39605
+- Size: 1824875 bytes
+- SHA-256: `428857dd9358238d809bf20161f2fe2387d798ec421ae02b06ce617248d8c6ed`
+- Publisher file: https://stacks.cdc.gov/view/cdc/39605/cdc_39605_DS1.pdf
+
+## Listo Calixto Para Los Tornados
+
+- Catalog id: `cdc_wrigley_39608`
+- Version: 2013/07/03; CDC Stacks record 39608
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/39608
+- Size: 1830244 bytes
+- SHA-256: `443ebbe4dd055a88bb53d8f0ef88218fb91a63e050c18024cf6e2874b975bc22`
+- Publisher file: https://stacks.cdc.gov/view/cdc/39608/cdc_39608_DS1.pdf
+
+## Ready Wrigley Prepares for Storm & Flood Recovery
+
+- Catalog id: `cdc_wrigley_48150`
+- Version: 2017/09/13; CDC Stacks record 48150
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/48150
+- Size: 2192788 bytes
+- SHA-256: `f964c3c620a1c1548c05c743bcf03b38c0e7d68d90152f140933580c906b6da0`
+- Publisher file: https://stacks.cdc.gov/view/cdc/48150/cdc_48150_DS1.pdf
+
+## Cómo sobrellevar los efectos emocionales de un desastre
+
+- Catalog id: `cdc_wrigley_58345`
+- Version: 2018/07/19; CDC Stacks record 58345
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/58345
+- Size: 2117830 bytes
+- SHA-256: `e5769356462a4ba2023c4b616f1fdfe977f76420aef3b3f1dfd452f91eb132ff`
+- Publisher file: https://stacks.cdc.gov/view/cdc/58345/cdc_58345_DS1.pdf
+
+## Coping After a Disaster
+
+- Catalog id: `cdc_wrigley_58346`
+- Version: 2018/07/19; CDC Stacks record 58346
+- License: US-PD
+- Attribution: Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.
+- License proof: https://stacks.cdc.gov/view/cdc/58346
+- Size: 1974241 bytes
+- SHA-256: `88b8d50decd75418792e6253f8380166c2707127e69acc0ef16837a18d5b5c56`
+- Publisher file: https://stacks.cdc.gov/view/cdc/58346/cdc_58346_DS1.pdf
+
 ## ACS 2025 one-year table labels and universes
 
 - Catalog id: `census_acs_2025_labels`
