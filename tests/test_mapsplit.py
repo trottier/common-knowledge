@@ -1,6 +1,7 @@
 import hashlib
 import json
 import subprocess
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import pytest
@@ -8,6 +9,7 @@ from shapely import box
 
 from ck.fetch import digest
 from ck.generated import generation_manifest
+from ck.mapchecks import collect_checked_maps, verify_region_subset
 from ck.mapsplit import (
     SplitSettings,
     child_bounds,
@@ -55,6 +57,38 @@ def test_overlap_preserves_cross_boundary_restrictions_and_detects_missing_place
     with pytest.raises(ValueError, match="union differs"):
         verify_union(source, parts[:1], tmp_path)
     assert digest(source) == original
+
+
+def test_region_subset_rejects_changed_overlapping_objects_and_unknown_ids(tmp_path):
+    source = reference_fixture(tmp_path)
+    source_sha256 = digest(source)
+    region = tmp_path / "region.osm.pbf"
+    clip_source(source, [0, 0, 2.5, 4], region, 0.001)
+    assert verify_region_subset(source, region, tmp_path)["all_objects_and_attributes_equal"]
+    original = (tmp_path / "reference.osm").read_text()
+    for number, changed in enumerate(
+        [
+            original.replace('v="pharmacy"', 'v="fire_station"'),
+            original.replace('<node id="99"', '<node id="777"'),
+            original.replace('<node id="1" lat="1" lon="1"/>', ""),
+        ]
+    ):
+        xml = tmp_path / f"changed_{number}.osm"
+        altered = tmp_path / f"changed_{number}.osm.pbf"
+        xml.write_text(changed)
+        subprocess.run(["osmium", "cat", str(xml), "--output", str(altered)], check=True)
+        with pytest.raises(ValueError, match="Regional source"):
+            verify_region_subset(source, altered, tmp_path)
+    assert digest(source) == source_sha256
+
+
+def test_subset_reference_collision_never_deletes_an_existing_file(tmp_path):
+    source = reference_fixture(tmp_path)
+    existing = tmp_path / "original-region.osm.pbf"
+    existing.write_bytes(b"Unrelated existing file")
+    with pytest.raises(ValueError, match="must be new"):
+        verify_region_subset(source, source, tmp_path)
+    assert existing.read_bytes() == b"Unrelated existing file"
 
 
 def test_adaptive_partition_is_bounded_and_repeats_without_changing_source(tmp_path):
@@ -179,9 +213,7 @@ def pin_folder(items, identifier, folder, version):
     items[identifier] = items[identifier].model_copy(update=metadata)
 
 
-def test_mixed_collection_requires_every_part_even_when_a_partial_manifest_is_repinned(
-    tmp_path, monkeypatch
-):
+def mixed_collection_inputs(tmp_path, monkeypatch):
     import geopandas as gpd
 
     from ck.androidmaps import pipeline_version
@@ -204,11 +236,28 @@ def test_mixed_collection_requires_every_part_even_when_a_partial_manifest_is_re
     pin_folder(items, "android_map_ri", legacy, pipeline_version(ROOT))
     split = split_fixture(tmp_path, items)
     pin_folder(items, "android_map_ca", split, split_version(ROOT))
+    return items, legacy, split
+
+
+def test_mixed_collection_requires_every_part_even_when_a_partial_manifest_is_repinned(
+    tmp_path, monkeypatch
+):
+    items, legacy, split = mixed_collection_inputs(tmp_path, monkeypatch)
     with pytest.raises(ValueError, match="Missing Android map jurisdictions: CA"):
         collect_mixed_maps(ROOT, items, tmp_path, [legacy], tmp_path / "missing", EPOCH)
     result = collect_mixed_maps(ROOT, items, tmp_path, [legacy, split], tmp_path / "set", EPOCH)
     assert result["jurisdictions"] == 2
     assert len(list((tmp_path / "set/files").glob("*.obf"))) == 3
+    checked = tmp_path / "checked"
+    strict = collect_checked_maps(ROOT, items, tmp_path, [legacy, split], checked, EPOCH)
+    assert strict["split_jurisdictions"] == 1
+    assert strict["pipeline_version"].startswith("android-set-checked-v1-")
+    proofs = json.loads((checked / "regional-subsets.json").read_text())
+    assert len(proofs["CA"]["regions"]) == 2
+    metadata = json.loads((checked / "generation.json").read_text())
+    assert {"regional-subsets.json", "collection-generation.json"} <= {
+        entry["path"] for entry in metadata["intermediates"]
+    }
     data = json.loads((split / "parts.json").read_text())
     removed = data["parts"].pop()
     (split / "parts.json").write_text(json.dumps(data))
@@ -216,6 +265,37 @@ def test_mixed_collection_requires_every_part_even_when_a_partial_manifest_is_re
     pin_folder(items, "android_map_ca", split, split_version(ROOT))
     with pytest.raises(ValueError, match="union differs"):
         collect_mixed_maps(ROOT, items, tmp_path, [legacy, split], tmp_path / "partial", EPOCH)
+
+
+def test_checked_collection_never_publishes_changed_overlapping_objects(tmp_path, monkeypatch):
+    items, legacy, split = mixed_collection_inputs(tmp_path, monkeypatch)
+    plan = json.loads((split / "parts.json").read_text())
+    part = plan["parts"][1]
+    source = split / part["source_path"]
+    xml = subprocess.run(
+        ["osmium", "cat", str(source), "--output-format=xml"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    tree = ET.fromstring(xml)
+    tree.find("./node[@id='2']").set("lat", "1.0001")
+    modified_xml = tmp_path / "modified.osm"
+    modified_xml.write_bytes(ET.tostring(tree))
+    modified_pbf = tmp_path / "modified.osm.pbf"
+    subprocess.run(["osmium", "cat", str(modified_xml), "--output", str(modified_pbf)], check=True)
+    source.write_bytes(modified_pbf.read_bytes())
+    part.update(source_sha256=digest(source), source_bytes=source.stat().st_size)
+    (split / "parts.json").write_text(json.dumps(plan))
+    pin_folder(items, "android_map_ca", split, split_version(ROOT))
+    # A merge can keep the correct duplicate. Make that ambiguous lower check
+    # deterministic here; the actual per-region reference comparison stays real.
+    coverage = json.loads((split / "coverage.json").read_text())
+    monkeypatch.setattr("ck.mapsplit.verify_union", lambda *args: coverage)
+    output = tmp_path / "must-not-publish"
+    with pytest.raises(ValueError, match="Regional source objects differ"):
+        collect_checked_maps(ROOT, items, tmp_path, [legacy, split], output, EPOCH)
+    assert not output.exists()
 
 
 def test_split_cli_and_preparation_use_only_explicit_prepared_inputs(monkeypatch, capsys):

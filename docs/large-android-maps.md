@@ -18,7 +18,7 @@ passes `osmium check-refs --check-relations`. Before conversion, all final regio
 sources are merged, and `osmium diff --quiet` compares their union against the
 complete state source. That comparison covers every object and attribute, not
 just counts or bounding boxes. A missing road, place, turn-restriction member, or
-changed object fails the build. Empty clips can be omitted only when they contain
+changed union fails the build. Empty clips can be omitted only when they contain
 no objects. The complete filtered source database ships alongside the map parts
 for ODbL compliance.
 
@@ -32,7 +32,15 @@ in an adjacent `.failure` directory; retries retain previous diagnostics.
 The additive collector accepts the frozen single-map recipe and the new split
 recipe together. It checks every payload and intermediate hash, the complete
 part sequence, regional byte bounds, source counts, and the exact source union
-again. It still requires every Census jurisdiction before publishing a national
+again. Before publishing, a separate guard selects every regional object's ID
+from the complete original source with `osmium getid`, then compares that
+reference with the region using `osmium diff`. A merged union alone can hide a
+conflicting duplicate object, because Osmium does not define which conflicting
+copy survives. The per-region comparison rejects altered or extra objects,
+including overlapping duplicates, and rechecks complete object references before
+the temporary collection is published.
+Its receipts and collector recipe are bound in the national generation record.
+It still requires every Census jurisdiction before publishing a national
 set. The original `androidmaps.py`, `mapextract.py`, and their config files are
 unchanged, so existing single-map, national-source, and state-extract fingerprints
 remain valid. A newly measured split pin causes the preparation adapter to pass
@@ -69,4 +77,6 @@ date format has minute precision. Separate parts preserve arbitrary build-epoch
 seconds without rewriting generated headers. See the primary
 [Osmium extraction manual](https://docs.osmcode.org/osmium/latest/osmium-extract.html),
 [object-difference manual](https://docs.osmcode.org/osmium/latest/osmium-diff.html),
+[ID-selection manual](https://docs.osmcode.org/osmium/latest/osmium-getid.html),
+[merge duplicate rules](https://docs.osmcode.org/osmium/latest/osmium-merge.html),
 and [upstream inspector source](https://github.com/osmandapp/OsmAnd-tools/blob/b601887fc5603bd65f7eafc9d7d32c42c572a342/java-tools/OsmAndMapCreatorUtilities/src/main/java/net/osmand/obf/BinaryInspector.java).

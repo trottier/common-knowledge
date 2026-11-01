@@ -706,12 +706,12 @@ def main(argv: Sequence[str] | None = None) -> int:
             return 0
         if args.command == "android-collect":
             from ck.catalog import load_catalog
-            from ck.mapsplit import collect_mixed_maps
+            from ck.mapchecks import collect_checked_maps
             from ck.render import epoch_for
 
             print(
                 json.dumps(
-                    collect_mixed_maps(
+                    collect_checked_maps(
                         args.root,
                         load_catalog(args.root, config),
                         args.cache,

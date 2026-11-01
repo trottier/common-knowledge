@@ -75,12 +75,11 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6386)
+## Remaining VERIFY markers (6384)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
-- `content/en/android-maps.md:11` — [[VERIFY: test the pinned APK installation]]
-- `content/en/android-maps.md:17` — [[VERIFY: test location permission and offline GPS on the listed phones]]
+- `content/en/android-maps.md:18` — [[VERIFY: phone-test installation, location permission, offline GPS, and routes across map parts]]
 - `content/en/local-llm.md:18` — [[VERIFY: check double-click opening and the full offline flow on Windows, Mac and Linux, including a USB-A-only laptop with an adapter]]
 - `content/en/local-llm.md:24` — [[VERIFY: test APK installation and local model import on a phone with at least 6 GB RAM]]
 - `content/en/local-llm.md:30` — [[VERIFY: test the exact model picker and system-prompt flow in the pinned APK with networking off]]
@@ -124,8 +123,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/en/tags.md:11` — [[VERIFY: confirm this tag is appropriate for the identified valve; this is not an instruction to shut off every meter.]]
 - `content/en/tags.md:15` — [[VERIFY: identify the household valve before placing this tag.]]
 - `content/en/tags.md:19` — [[VERIFY: identify the main breaker without opening or touching a damaged panel.]]
-- `content/es/android-maps.md:13` — [[VERIFY: probar la instalación del APK fijado]]
-- `content/es/android-maps.md:19` — [[VERIFY: probar el permiso de ubicación y el GPS sin conexión en los teléfonos indicados]]
+- `content/es/android-maps.md:20` — [[VERIFY: probar instalación, permiso de ubicación, GPS sin conexión y rutas entre partes]]
 - `content/es/local-llm.md:20` — [[VERIFY: probar la apertura con doble clic y el funcionamiento sin conexión en Windows, Mac y Linux, incluida una computadora con solo puertos USB-A y un adaptador]]
 - `content/es/local-llm.md:26` — [[VERIFY: probar la instalación y la importación del modelo local en un teléfono con al menos 6 GB de RAM]]
 - `content/es/local-llm.md:32` — [[VERIFY: probar la selección del modelo y las instrucciones del sistema en el APK fijado con todas las conexiones apagadas]]
