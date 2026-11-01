@@ -3183,6 +3183,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22`
 - Publisher file: https://www.weather.gov/source/nwr/JS/ccl-data.js
 
+## Noto Emoji — monochrome variable font, reference build input
+
+- Catalog id: `noto_emoji`
+- Version: google/fonts commit 8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5
+- License: OFL-1.1
+- Attribution: Copyright 2013 Google LLC. Noto Emoji, licensed under SIL Open Font License 1.1. Subset glyphs are embedded in reference PDFs.
+- License proof: https://raw.githubusercontent.com/google/fonts/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notoemoji/OFL.txt
+- Size: 1982596 bytes
+- SHA-256: `de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551`
+- Publisher file: https://raw.githubusercontent.com/google/fonts/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf
+
 ## NotoSans[wdth,wght].ttf
 
 - Catalog id: `noto_sans`
@@ -4246,9 +4257,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: 237774 bytes
-- SHA-256: `9dfd807496607328b1a7c13ed963445c4c70dc4c5419ff53835dc6fa393fa500`
-- Pipeline: reference-pack-v1-cf1e27b8a83f0100d1c0923057f37c5817395b6734569b65487be8c73d719617; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
+- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
 
 ## Carpentry and hand-tool references — selected phone PDFs
 
@@ -4257,9 +4268,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: 188024 bytes
-- SHA-256: `5ad485a9ea805fed9cf79e35038c52bd905b485f9d5dca2d51258482954bc043`
-- Pipeline: reference-pack-v1-cf1e27b8a83f0100d1c0923057f37c5817395b6734569b65487be8c73d719617; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
+- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
 
 ## Human physiology background references — selected phone PDFs
 
@@ -4268,9 +4279,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete generated reference pack]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
-- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
+- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
 
 ## Electronics background references — selected phone PDFs
 
@@ -4279,9 +4290,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete generated reference pack]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
-- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
+- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
 
 ## Qwen3.5-0.8B-Base, Q4_K_M
 

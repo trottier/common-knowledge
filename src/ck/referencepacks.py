@@ -72,7 +72,7 @@ def build_reference_pack(
         or set(target.license.split(" AND ")) != {catalog[pack.source].license, "CC0-1.0"}
     ):
         raise ValueError("Reference placement or license differs from its source selection")
-    font_ids = read_yaml(root / "pipelines/zim2pdf/settings.yaml")["fonts"]
+    font_ids = read_yaml(root / "pipelines/referencepacks/settings.yaml")["fonts"]
     input_ids = {pack.source, *font_ids}
     if set(target.inputs) != input_ids:
         raise ValueError("Reference catalog inputs differ from the selection and fonts")
@@ -157,7 +157,7 @@ def build_reference_pack(
             "templates/collection-reference.html.j2",
             "templates/document.css",
             "pipelines/referencepacks/selection.yaml",
-            "pipelines/zim2pdf/settings.yaml",
+            "pipelines/referencepacks/settings.yaml",
             "Dockerfile.build",
             "catalog/buildtools.yaml",
             "tools/bootstrap_zim.py",
