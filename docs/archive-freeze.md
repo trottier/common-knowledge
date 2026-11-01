@@ -9,9 +9,10 @@ review statuses remain unchanged.
 | --- | ---: | --- |
 | WikEM, 4,278 articles and 6,641 redirects | 8,601,054 | d735e2f7b9278e5bd0a5d4850a9d07ab2437eb170b6c8b38553f36254951319a |
 | English Wikibooks, 131,815 entries | 3,333,493,444 | 380802c9641775e657d43a696041491a326b899c7bd451c73b7a85f229b9ebc1 |
+| English Wikivoyage, 68,381 entries | 205,100,489 | a684c7adb661985250bdfa4c1dfb47518406a230d279e4a7efc510eeabfab1cd |
 | Medical phone PDFs, 158 articles | 69,972,915 | 7944c1711a987aaab48a8ad78cf14b640b68d91c7871a7e860224ec229fd1f74 |
 
-WikEM and Wikibooks pass strict `zimcheck`. Wikibooks repairs the audited missing
+WikEM, Wikibooks and Wikivoyage pass strict `zimcheck`. Wikibooks repairs the audited missing
 favicon/resources without changing publisher article text or valid local
 resources; source downloads remain byte-identical. The title index is retained;
 the publisher's full-text index is not carried into regenerated archives.
