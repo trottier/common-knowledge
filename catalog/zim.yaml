@@ -4881,7 +4881,7 @@
       "wikimed_en_nopic"
     ],
     "pipeline_version": "zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2",
-    "review": "[[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]"
+    "review": "[[VERIFY: human regenerated archive pin and license review and physical reader checklist; two frozen development builds match; original full-text index is omitted, title search retained]]"
   },
   {
     "id": "wikivoyage_es_nopic",
