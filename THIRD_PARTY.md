@@ -4246,9 +4246,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete generated reference pack]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
-- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: 237774 bytes
+- SHA-256: `9dfd807496607328b1a7c13ed963445c4c70dc4c5419ff53835dc6fa393fa500`
+- Pipeline: reference-pack-v1-cf1e27b8a83f0100d1c0923057f37c5817395b6734569b65487be8c73d719617; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
 
 ## Carpentry and hand-tool references — selected phone PDFs
 
@@ -4257,9 +4257,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete generated reference pack]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
-- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+- Size: 188024 bytes
+- SHA-256: `5ad485a9ea805fed9cf79e35038c52bd905b485f9d5dca2d51258482954bc043`
+- Pipeline: reference-pack-v1-cf1e27b8a83f0100d1c0923057f37c5817395b6734569b65487be8c73d719617; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
 
 ## Human physiology background references — selected phone PDFs
 
