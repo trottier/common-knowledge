@@ -2347,6 +2347,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e`
 - Publisher file: https://www.gutenberg.org/ebooks/11.txt.utf-8
 
+## My Book of Indoor Games
+
+- Catalog id: `gutenberg_13022`
+- Version: Project Gutenberg #13022; updated 2024-10-28
+- License: Public-domain-US
+- Attribution: Clarence Squareman; e-text prepared by Clare Boothby, David Newman, William Flis, and the Project Gutenberg Online Distributed Proofreading Team
+- License proof: https://www.gutenberg.org/ebooks/13022
+- Size: 216142 bytes
+- SHA-256: `65c0b84bf4384190836deb701dc587753dbdffb371f06a86f93ed29699d01eef`
+- Publisher file: https://www.gutenberg.org/ebooks/13022.txt.utf-8
+
 ## Pride and Prejudice
 
 - Catalog id: `gutenberg_1342`
@@ -2984,6 +2995,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 43856395 bytes
 - SHA-256: `756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50`
 - Publisher file: https://github.com/mozilla-ai/llamafile/releases/download/0.10.6/llamafile-0.10.6-thin
+
+## Home sweet home — piano variations
+
+- Catalog id: `loc_home_sweet_home_score`
+- Version: 1875 edition; Library of Congress item 2023822433
+- License: Public-domain-US
+- Attribution: D. A. French; Boston: G. D. Russell & Company, 1875. Credit: Library of Congress, Music Division
+- License proof: https://www.loc.gov/item/2023822433/
+- Size: 2923777 bytes
+- SHA-256: `5f2872e795e51240a3987162c15112be7a2871c8dec6ce76a202fbd287351ecb`
+- Publisher file: https://tile.loc.gov/storage-services/public/music/mussm-sm1875-00750/mussm-sm1875-00750.pdf
 
 ## Offline local LLM launchers, page, prompts and instructions (full)
 
