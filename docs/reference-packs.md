@@ -44,8 +44,11 @@ produced identical PDF payloads and complete generation manifests for:
 | --- | ---: | ---: | --- |
 | Automobile maintenance | 6 | 237,774 | 9dfd807496607328b1a7c13ed963445c4c70dc4c5419ff53835dc6fa393fa500 |
 | Carpentry and hand tools | 7 | 188,024 | 5ad485a9ea805fed9cf79e35038c52bd905b485f9d5dca2d51258482954bc043 |
+| Electronics background | 9 | 455,499 | c94e7cd216290d4f2599ece06a2d4b33e6e1832e3063d4426eac283308b7e866 |
 
 These two selections contain 134 phone pages in total. Two rendered pages were
 visually inspected for layout; this is not a physical phone or technical review.
-The electronics and physiology pairs are still running. These checkpoints do
+The physiology build failed on an unsupported source character; it did not
+publish a partial output. A separate font-fix recipe must be verified before
+that pack is pinned. These checkpoints do
 not clear the source-currency, safety, suitability or final release-epoch gates.
