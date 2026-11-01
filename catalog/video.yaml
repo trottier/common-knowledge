@@ -271,7 +271,7 @@
   {
     "id": "cdc_handwashing_asl_source",
     "family": "video",
-    "title": "What You Need to Know About Handwashing \u2014 CDC ASL video",
+    "title": "What You Need to Know About Handwashing — CDC ASL video",
     "url": "https://stacks.cdc.gov/view/cdc/88655/cdc_88655_DS2.wmv",
     "version": "2020-04-10",
     "size_bytes": 11559997,
@@ -290,10 +290,10 @@
   {
     "id": "cdc_handwashing_asl",
     "family": "generated",
-    "title": "What You Need to Know About Handwashing \u2014 normalized CDC ASL video",
+    "title": "What You Need to Know About Handwashing — normalized CDC ASL video",
     "version": "CDC 2020-04-10; development conversion",
     "size_bytes": 10813142,
-    "sha256": "4e1639e2670711ef1839b5eed437a4aa6aaeface1f0b0fc925bdc2ba1212bf92",
+    "sha256": "dda2d060c97ef12bc92d4c95adda6090e36d5a0c8bfe2bfda67105bb4c069ba8",
     "license": "US-PD AND CC0-1.0",
     "attribution": "Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.",
     "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
@@ -307,13 +307,13 @@
       "cdc_handwashing_asl_source",
       "iso639_2"
     ],
-    "pipeline_version": "video-v1-2a21a0c6c9bd19741ea4d8e9d957af643885d00517283c17d9ca977b6240c759",
+    "pipeline_version": "video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b",
     "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]"
   },
   {
     "id": "usgs_earthquake_drop_source",
     "family": "video",
-    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] \u2014 publisher video",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video",
     "version": "USGS 2023-09-20; downloaded 2026-10-31",
     "url": "https://usgs-ocapsv2-public-input-media.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/Preparedness%20-Earthquakes%20-%20Part%205%20%281%29.mp4",
     "size_bytes": 118084421,
@@ -326,12 +326,12 @@
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independently review this computed HTTPS publisher pin and caption alignment; original VTT uses an editor timeline outside the 50-second video and is not selected for drive placement]]"
+    "review": "[[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]"
   },
   {
     "id": "usgs_earthquake_drop_caption_en",
     "family": "docs",
-    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] \u2014 original English captions",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — original English captions",
     "version": "USGS 2023-09-20; downloaded 2026-10-31",
     "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/captions/Preparedness%20-Earthquakes%20-%20Part%205.mp4_.vtt",
     "size_bytes": 1884,
@@ -344,6 +344,33 @@
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independently review this computed HTTPS publisher pin and caption alignment; original VTT uses an editor timeline outside the 50-second video and is not selected for drive placement]]"
+    "review": "[[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]"
+  },
+  {
+    "id": "usgs_earthquake_drop_cover",
+    "family": "generated",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On",
+    "version": "USGS 2023-09-20; development normalization with inferred caption timeline shift",
+    "size_bytes": 4023964,
+    "sha256": "1e80a8c6aad80f307d49f99ddcdb23ea7336b6b1d75b5505dd9657fb9e613049",
+    "license": "US-PD AND CC0-1.0",
+    "attribution": "Peter Pearsall, U.S. Geological Survey, Communications and Publishing. Format conversion and source notice: Common Knowledge. No agency endorsement is implied. Original English audio and publisher English captions are retained; no text overlay added.",
+    "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
+    "placement": {
+      "topics": [
+        "structures"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/structures/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "usgs_earthquake_drop_source",
+      "usgs_earthquake_drop_caption_en",
+      "iso639_2"
+    ],
+    "pipeline_version": "video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b",
+    "review": "[[VERIFY: human source-currency, computed-pin, caption synchronization and physical playback review; English audio/subtitle tracks only, no Spanish publisher track is supplied]]"
   }
 ]

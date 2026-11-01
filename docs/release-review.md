@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5787)
+## Remaining VERIFY markers (5788)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1153,8 +1153,9 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/video.yaml:260` — [[VERIFY: per-item publisher license proof]]
 - `catalog/video.yaml:288` — [[VERIFY: review computed HTTPS WMV pin, source content currency, original English audio and normalized playback on phones]]
 - `catalog/video.yaml:311` — [[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]
-- `catalog/video.yaml:329` — [[VERIFY: independently review this computed HTTPS publisher pin and caption alignment; original VTT uses an editor timeline outside the 50-second video and is not selected for drive placement]]
-- `catalog/video.yaml:347` — [[VERIFY: independently review this computed HTTPS publisher pin and caption alignment; original VTT uses an editor timeline outside the 50-second video and is not selected for drive placement]]
+- `catalog/video.yaml:329` — [[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]
+- `catalog/video.yaml:347` — [[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]
+- `catalog/video.yaml:374` — [[VERIFY: human source-currency, computed-pin, caption synchronization and physical playback review; English audio/subtitle tracks only, no Spanish publisher track is supplied]]
 - `catalog/wikem.yaml:19` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
 - `catalog/wikem.yaml:38` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
 - `catalog/wikem.yaml:57` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]

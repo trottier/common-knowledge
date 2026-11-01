@@ -1453,8 +1453,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.
 - License proof: https://stacks.cdc.gov/view/cdc/88655
 - Size: 10813142 bytes
-- SHA-256: `4e1639e2670711ef1839b5eed437a4aa6aaeface1f0b0fc925bdc2ba1212bf92`
-- Pipeline: video-v1-2a21a0c6c9bd19741ea4d8e9d957af643885d00517283c17d9ca977b6240c759; inputs: cdc_handwashing_asl_source, iso639_2
+- SHA-256: `dda2d060c97ef12bc92d4c95adda6090e36d5a0c8bfe2bfda67105bb4c069ba8`
+- Pipeline: video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b; inputs: cdc_handwashing_asl_source, iso639_2
 
 ## What You Need to Know About Handwashing — CDC ASL video
 
@@ -4634,6 +4634,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 1884 bytes
 - SHA-256: `345d59915b83cbc72f64c3b8eb329f14ee7aa49ce0f8ec1716ca9729e145ac19`
 - Publisher file: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/captions/Preparedness%20-Earthquakes%20-%20Part%205.mp4_.vtt
+
+## National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On
+
+- Catalog id: `usgs_earthquake_drop_cover`
+- Version: USGS 2023-09-20; development normalization with inferred caption timeline shift
+- License: US-PD AND CC0-1.0
+- Attribution: Peter Pearsall, U.S. Geological Survey, Communications and Publishing. Format conversion and source notice: Common Knowledge. No agency endorsement is implied. Original English audio and publisher English captions are retained; no text overlay added.
+- License proof: https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold
+- Size: 4023964 bytes
+- SHA-256: `1e80a8c6aad80f307d49f99ddcdb23ea7336b6b1d75b5505dd9657fb9e613049`
+- Pipeline: video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b; inputs: usgs_earthquake_drop_source, usgs_earthquake_drop_caption_en, iso639_2
 
 ## National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video
 
