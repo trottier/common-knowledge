@@ -58,7 +58,7 @@
   {
     "id": "simplewiki_en_nopic",
     "family": "zim",
-    "title": "Simple English Wikipedia, no pictures \u2014 publisher build input",
+    "title": "Simple English Wikipedia, no pictures — publisher build input",
     "url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en-simple_all_nopic_2026-09.zim",
     "version": "2026-09",
     "size_bytes": 1094936257,
@@ -247,7 +247,7 @@
   {
     "id": "wikivoyage_es_nopic",
     "family": "zim",
-    "title": "Wikivoyage, Spanish, no pictures \u2014 phrasebook build input",
+    "title": "Wikivoyage, Spanish, no pictures — phrasebook build input",
     "url": "https://mirror.download.kiwix.org/zim/wikivoyage/wikivoyage_es_all_nopic_2026-09.zim",
     "version": "2026-09",
     "size_bytes": 43135959,
@@ -289,10 +289,10 @@
   {
     "id": "simplewiki_en_offline",
     "family": "generated",
-    "title": "Simple English Wikipedia, no pictures \u2014 offline reference edition",
-    "version": "2026-09; regenerated edition",
-    "size_bytes": "[[VERIFY: measured complete regenerated archive payload]]",
-    "sha256": "[[VERIFY: complete generated manifest SHA-256]]",
+    "title": "Simple English Wikipedia, no pictures — offline reference edition",
+    "version": "Kiwix 2026-09; regenerated at development epoch 1793404800",
+    "size_bytes": 790886776,
+    "sha256": "31f0f5d140b4be3e9d1a1ef36af4458bf9d2a3540bd96298b452ee8b9576f6c0",
     "license": "CC-BY-SA-4.0",
     "attribution": "Simple English Wikipedia contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained",
     "license_proof_url": "https://simple.wikipedia.org/wiki/Wikipedia:Copyrights",
@@ -306,13 +306,13 @@
     "inputs": [
       "simplewiki_en_nopic"
     ],
-    "pipeline_version": "[[VERIFY: pinned regeneration recipe]]",
-    "review": "[[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]"
+    "pipeline_version": "zim-offline-v1-4fb0484a3aebba54b9aecdc78c6df34a76049b88e1b53e2073ced4bf7e96eaeb",
+    "review": "[[VERIFY: human pin and retained nontext-license review, full repeated generation with final producer freeze and physical Kiwix checks; first complete strict-audit archive retains title search, with no full-text index]]"
   },
   {
     "id": "wikibooks_en_nopic",
     "family": "zim",
-    "title": "Wikibooks, English, no pictures \u2014 publisher build input",
+    "title": "Wikibooks, English, no pictures — publisher build input",
     "url": "https://download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2026-10.zim",
     "version": "2026-10",
     "size_bytes": 3544612812,
@@ -331,7 +331,7 @@
   {
     "id": "wikibooks_en_offline",
     "family": "generated",
-    "title": "Wikibooks, English, no pictures \u2014 offline reference edition",
+    "title": "Wikibooks, English, no pictures — offline reference edition",
     "version": "2026-10; regenerated edition",
     "size_bytes": "[[VERIFY: measured complete regenerated archive payload]]",
     "sha256": "[[VERIFY: complete generated manifest SHA-256]]",

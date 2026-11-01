@@ -96,3 +96,23 @@ def test_archive_rebuild_is_offline_complete_and_repeatable(tmp_path):
 def test_declared_external_dependency_must_actually_be_removed():
     with pytest.raises(ValueError, match="dependency was not found"):
         remove_embeds(b"<html><body>Original text only</body></html>")
+
+
+def test_missing_embedded_resources_keep_the_publishers_error_and_fallback_text():
+    from bs4 import BeautifulSoup
+
+    raw = (
+        b'<html><head><link rel="stylesheet" href="./missing.css"></head><body>'
+        b'<img src="./missing.svg" alt="Original error illustration">'
+        b"<h1>Page unavailable in the publisher archive.</h1>"
+        b'<object data="./missing.svg">Original fallback text: 2.5.</object>'
+        b"</body></html>"
+    )
+    changed = BeautifulSoup(
+        remove_embeds(raw, {"./missing.css", "./missing.svg"}).decode(), "html.parser"
+    )
+    assert not changed.select("link, img, object, [src], [data]")
+    assert "Page unavailable in the publisher archive." in changed.get_text()
+    assert "Original error illustration" in changed.get_text()
+    assert "Original fallback text: 2.5." in changed.get_text()
+    assert "offline adaptation" in changed.get_text()

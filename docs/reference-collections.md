@@ -27,6 +27,14 @@ describe the text licenses and attribution requirements. Non-text media require
 their own license checks. The absence of photographs in a `nopic` archive does
 not itself certify all retained resources. The catalog keeps that check explicit.
 
+The Simple English input's source audit found malformed navigation in five
+articles and missing stylesheet/illustration dependencies on the publisher's
+`Voxeaa` error page. That error page says the article was deleted between listing
+and retrieval. Regeneration retains that visible notice and its fallback text;
+it does not replace it with an invented article or claim to restore the deleted
+page. Only the audited unavailable resources and malformed link targets are
+removed. The complete output still needs its own strict audit and repeat build.
+
 ## Other candidate collections
 
 Current PhET downloads are excluded under the publisher's current terms; see
@@ -47,3 +55,11 @@ publisher metadata and the embedded ebook license checked. Complete original
 texts and their license notices must remain available alongside any reformatted
 edition. No selection is made from the large literature archives solely on the
 basis of an approximate size or a collection-wide public-domain claim.
+
+
+The first complete repaired Simple English Wikipedia archive passes strict
+`zimcheck` with all 405,521 publisher entries retained. The placed archive and
+source notice total 790,886,776 bytes; the generation manifest is pinned in the
+catalog at development epoch 1793404800. This is a measured checkpoint from the
+recorded recipe. A repeated build with the final producer, nontext-license
+review and physical Kiwix checks remain open.

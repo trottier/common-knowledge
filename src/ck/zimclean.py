@@ -39,12 +39,25 @@ def remove_embeds(raw: bytes, broken_links: set[str] | None = None) -> bytes:
         }:
             values.append(element.get("href", ""))
         if any(
-            str(value).strip().lower().startswith(("https:", "http:", "//")) for value in values
+            str(value).strip() in (broken_links or set())
+            or str(value).strip().lower().startswith(("https:", "http:", "//"))
+            for value in values
         ):
             note = document.new_tag("span")
-            note.string = "[External embedded resource omitted for offline use.]"
-            if element.get("alt"):
-                note.string += " " + element["alt"]
+            note.string = "[Unavailable embedded resource omitted for offline use.]"
+            alternative = " ".join(
+                dict.fromkeys(
+                    str(value)
+                    for value in (
+                        element.get("alt"),
+                        element.get("aria-label"),
+                        element.get_text(" ", strip=True),
+                    )
+                    if value
+                )
+            )
+            if alternative:
+                note.string += " " + alternative
             element.replace_with(note)
             removed += 1
     if not removed:
@@ -53,7 +66,7 @@ def remove_embeds(raw: bytes, broken_links: set[str] | None = None) -> bytes:
         )
     note = document.new_tag("p")
     note.string = (
-        "Common Knowledge offline adaptation: external embeds or malformed navigation links "
+        "Common Knowledge offline adaptation: unavailable embeds or malformed navigation links "
         "were omitted; their visible article text is retained. "
         "The original article's attribution and revision notice remain below."
     )

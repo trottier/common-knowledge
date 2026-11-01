@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (1098)
+## Remaining VERIFY markers (1095)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1156,10 +1156,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/zim.yaml:219` — [[VERIFY: per-item publisher license proof]]
 - `catalog/zim.yaml:245` — [[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]
 - `catalog/zim.yaml:287` — [[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]
-- `catalog/zim.yaml:294` — [[VERIFY: measured complete regenerated archive payload]]
-- `catalog/zim.yaml:295` — [[VERIFY: complete generated manifest SHA-256]]
-- `catalog/zim.yaml:309` — [[VERIFY: pinned regeneration recipe]]
-- `catalog/zim.yaml:310` — [[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]
+- `catalog/zim.yaml:310` — [[VERIFY: human pin and retained nontext-license review, full repeated generation with final producer freeze and physical Kiwix checks; first complete strict-audit archive retains title search, with no full-text index]]
 - `catalog/zim.yaml:329` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]
 - `catalog/zim.yaml:336` — [[VERIFY: measured complete regenerated archive payload]]
 - `catalog/zim.yaml:337` — [[VERIFY: complete generated manifest SHA-256]]
