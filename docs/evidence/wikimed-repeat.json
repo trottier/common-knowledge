@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "item": "wikimed_en_offline",
+  "profile": "development checkpoint",
+  "source_commit": "b271836d585cccacff2289442d5b7d8c8078acc9",
+  "source_date_epoch": 1793404800,
+  "pipeline_version": "zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2",
+  "inputs": {
+    "wikimed_en_nopic": "718fadad40b3491be3fa8f95181a948e4d726f97a79a14e0ef1b90c6b2b03625"
+  },
+  "generation_sha256": "7420c007141a58f2e549c7d2cbe41d9b9356d4dea4e229333db89e133e897355",
+  "size_bytes": 753161276,
+  "files": [
+    {
+      "path": "SOURCE.TXT",
+      "sha256": "bb5225b9d592f568646e838fda17bf06ad04180b0056b1d353063af8f882564a",
+      "size_bytes": 633
+    },
+    {
+      "path": "WikiMed-offline.zim",
+      "sha256": "f4f0f49b4226c26ede0db157f4426207c4142b969e3c6c34f3da01e48ce4dafa",
+      "size_bytes": 753160643
+    }
+  ],
+  "intermediates": [
+    {
+      "path": "audit.json",
+      "sha256": "6ea96748429a1762a4d07fc17120c15c2af7782f0aa56e076518375fe2ea9a91",
+      "size_bytes": 10476
+    }
+  ],
+  "entry_count": 377179,
+  "changed_article_paths": [
+    "Clavicular_notch",
+    "Hindered_phenol",
+    "Woodlands_Hospital_(Darlington,_United_Kingdom)"
+  ],
+  "strict_zimcheck_status": true,
+  "zimcheck_version": "3.8.0",
+  "independent_builds": 2,
+  "matching_canonical_copy": true,
+  "payload_and_intermediate_files_hashed": 9,
+  "release_approved": false
+}
