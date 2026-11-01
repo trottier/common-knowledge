@@ -81,6 +81,8 @@ The immediate milestone is Variant 1 and Rhode Island, with a fast English
 document and county-map preview before broader builds. PDF files have a shared,
 provisional 10 MB guardrail. The goal of loading on 95% of phones still needs
 device evidence. See [the explorer](pipelines/drive_preview/README.md).
+The [county map proof](docs/county-map-proof.md) documents the current folder
+layout, verified ZIP labels, and bounded vector renderer.
 
 ## Design previews
 

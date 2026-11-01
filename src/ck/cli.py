@@ -23,7 +23,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     explore.add_argument("--drive", type=Path, required=True)
     explore.add_argument("--port", type=int, default=8766)
-    explore.add_argument("--label", default="EMERGENCY")
+    explore.add_argument("--label", help="Display label; defaults to the configured volume label")
     explore.add_argument("--notice", default="Development preview; device tests pending.")
     explore.add_argument("--ui-path", type=Path, help="Override the repository explorer assets")
     validate = commands.add_parser("validate", help="Validate configuration and catalog")
@@ -317,6 +317,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             parser.print_help()
             return 0
         if args.command == "explore":
+            from ck.config import read_yaml
             from ck.drive_preview import serve
 
             if not 1 <= args.port <= 65535:
@@ -324,7 +325,11 @@ def main(argv: Sequence[str] | None = None) -> int:
             serve(
                 args.drive,
                 args.ui_path or args.root / "pipelines" / "drive_preview",
-                label=args.label,
+                label=(
+                    args.label
+                    if args.label is not None
+                    else read_yaml(args.root / "config/build.yaml")["volume_label"]
+                ),
                 port=args.port,
                 notice=args.notice,
             )

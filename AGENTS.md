@@ -148,6 +148,7 @@ common-knowledge/
 │   ├── atlas/                # Node renderer + page composer
 │   ├── directory/
 │   ├── androidmaps/
+│   ├── drive_preview/        # development-only explorer over actual built files
 │   ├── zim2pdf/
 │   ├── llm/
 │   └── video/
