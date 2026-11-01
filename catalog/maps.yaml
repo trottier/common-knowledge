@@ -123,9 +123,9 @@
     "id": "national_directory",
     "family": "generated",
     "title": "National public places directory",
-    "version": "2026-10-31; source epoch 1793404800",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+    "version": "2025 Census jurisdictions; measured development epoch 1793404800",
+    "size_bytes": 518354901,
+    "sha256": "323f9e38162fd641ce174145dd01433008c0d9ea2073ddc194acde72d787cb5c",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -142,8 +142,8 @@
       "noto_sans_cherokee",
       "noto_sans_sc"
     ],
-    "pipeline_version": "[[VERIFY: pinned pipeline implementation and output sizes]]",
-    "review": "[[VERIFY: independent review of national directory pins, source omissions, merged-PDF accessibility and physical phone checks; regenerate after final recipe freeze]]"
+    "pipeline_version": "directory-set-v1-a5e7f5fde475d986805228f1489c370f74fc4f0e8c4909122122b561f611513a",
+    "review": "[[VERIFY: correct absent Puerto Rico and Virgin Islands OSM coverage, regenerate points and atlas references, repeat the complete directory with frozen release inputs, and complete human geographic and physical phone reviews; this measured development corpus has 56 jurisdictions, 3235 counties and 254062 places]]"
   },
   {
     "id": "android_roads_places",

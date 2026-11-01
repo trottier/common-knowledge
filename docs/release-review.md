@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (1083)
+## Remaining VERIFY markers (1080)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -417,10 +417,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:12` — [[VERIFY: per-item publisher license proof]]
 - `catalog/maps.yaml:37` — [[VERIFY: review computed HTTPS-download pin and preserve this nightly archive at an immutable URL before release]]
 - `catalog/maps.yaml:120` — [[VERIFY: independent national atlas pin review, repeated clean rendering, final recipe freeze and physical phone checks]]
-- `catalog/maps.yaml:127` — [[VERIFY: exact publisher file size]]
-- `catalog/maps.yaml:128` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/maps.yaml:145` — [[VERIFY: pinned pipeline implementation and output sizes]]
-- `catalog/maps.yaml:146` — [[VERIFY: independent review of national directory pins, source omissions, merged-PDF accessibility and physical phone checks; regenerate after final recipe freeze]]
+- `catalog/maps.yaml:146` — [[VERIFY: correct absent Puerto Rico and Virgin Islands OSM coverage, regenerate points and atlas references, repeat the complete directory with frozen release inputs, and complete human geographic and physical phone reviews; this measured development corpus has 56 jurisdictions, 3235 counties and 254062 places]]
 - `catalog/maps.yaml:152` — [[VERIFY: publisher version]]
 - `catalog/maps.yaml:153` — [[VERIFY: exact publisher file size]]
 - `catalog/maps.yaml:154` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
