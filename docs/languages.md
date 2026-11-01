@@ -3,7 +3,9 @@
 `ck core` builds all fifteen editions by default. `--languages en es` is useful
 for editing. Full images require all editions. English is a draft; Spanish and
 the thirteen quick starts are unreviewed machine translations. No human review
-has been recorded. The Census ranking remains an explicit release blocker.
+has been recorded. The publisher retained the specified selection and approved ordering by Census
+counts within that selection; see `docs/language-selection.md`. Source-pin
+review remains separate from that selection decision.
 
 Each edition has labels, a README line and rally-rule translations in
 `content/<code>/edition.yaml`. Non-English prose defaults in `defaults.yaml`

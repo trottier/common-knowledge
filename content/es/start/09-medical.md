@@ -3,7 +3,7 @@ title: Primeros auxilios básicos
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/09-medical.md": "0654f6ed9b881df2c386a1589359c253ba5ff785b55f9825be708ea330183056"}
+source_inputs: {"content/en/start/09-medical.md": "187b819247e4d802fd45dde3a20e0dbbd351d7cae1c40b74dbffe474cbda1154"}
 review_required: [medical]
 ---
 
@@ -21,13 +21,13 @@ No presione un ojo herido ni retire un objeto incrustado. [@bleeding]
 
 Si la persona no responde y no respira normalmente, llame al 911 y consiga un desfibrilador externo automático (DEA).
 Coloque ambas manos en el centro del pecho.
-Comprima con fuerza, a 100–120 compresiones por minuto, unos 2 pulgadas de profundidad.
-Deje que el pecho suba por completo entre compresiones. Siga la voz del DEA. [@cpr]
+Comprima con fuerza, a 100–120 compresiones por minuto, unas 2 pulgadas de profundidad.
+Deje que el pecho suba por completo entre compresiones. Siga la voz del DEA. [@cpr] [@cpr_adult]
 
 No use este resumen de adultos para un niño o un ahogamiento.
 [[VERIFY: un profesional clínico debe aportar esos protocolos respiratorios y los criterios exactos para detener la RCP.]]
 
-**Si el 911 no responde:** continúe la RCP mientras otra persona busca ayuda y un DEA. [@cpr]
+**Si el 911 no responde:** continúe la RCP mientras otra persona busca ayuda y un DEA. [@cpr] [@cpr_adult]
 [[VERIFY: aprobación clínica de la alternativa sin respuesta.]]
 
 ## Posición de recuperación
@@ -51,13 +51,19 @@ Busque atención para una quemadura grande, profunda o en cara, manos o genitale
 
 ## Enfermedad por calor
 
-La confusión o pérdida de conocimiento con calor puede indicar golpe de calor.
-Llame al 911 y empiece a enfriar a la persona.
-Sáquela del calor, quite la ropa exterior y moje la piel.
-No dé bebida a quien no pueda tragar de forma segura. [@heat_illness]
+La confusión o el colapso con calor puede indicar golpe de calor, incluso con mucho sudor.
+Llame al 911.
+Lleve a la persona a la sombra, quite ropa exterior y enfríela con agua y aire en movimiento.
+Quédese con ella. [@heat_illness]
+No dé bebidas a quien no esté completamente alerta. [@recovery]
 
-**Si el 911 no responde:** siga enfriando y pida a otra persona que busque ayuda.
-[[VERIFY: aprobación clínica de métodos de enfriamiento, agotamiento por calor y alternativa sin respuesta.]]
+Mucho sudor, sed, mareo o debilidad pueden indicar agotamiento por calor.
+Descanse en un lugar fresco.
+Ofrezca sorbos pequeños y frecuentes de agua si está despierta y puede tragar.
+Busque atención médica. [@heat_illness]
+
+**Si el 911 no responde:** siga enfriando; envíe a otra persona a buscar ayuda.
+[[VERIFY: aprobación clínica de enfriamiento, precauciones al tragar, agotamiento por calor y alternativa sin respuesta.]]
 
 ## Hipotermia
 

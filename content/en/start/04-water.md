@@ -10,28 +10,41 @@ review_required: [medical]
 
 Use sealed bottled water first.
 Boiling and bleach do not remove fuel, salt or most chemical contamination.
-Do not treat water with suspected chemical contamination as drinking water. [@epa_water]
+Do not drink water with suspected chemical contamination. [@epa_water]
 
-[[VERIFY: approve hidden-water-source instructions for ice, household pipes and water heaters; include power, scalding and contamination warnings.]]
+Use melted ice only if it was made with safe water and stayed clean.
+Liquid from canned fruits and vegetables is another source.
+Do not drink pool or spa water. [@cdc_water_sources]
+During a water advisory, do not use water or ice from a fridge connected to the water line.
+Follow the advisory's instructions. [@cdc_water_advisories]
 
-## Disinfect clear water
+[[VERIFY: utility and water-safety reviewers must approve safe extraction from household pipes and tap-water heaters, including power isolation, scalding and contamination precautions; do not add an untested valve procedure.]]
+
+## Boil when you can
+
+Let cloudy water settle; filter it through a clean cloth.
+Bring water to a full rolling boil for at least 1 minute.
+Above 5,000 feet, EPA says to boil for 3 minutes.
+Let it cool naturally; keep it in a clean, covered container. [@epa_water]
+
+## Disinfect with bleach when you cannot boil
 
 EPA says: “Only use regular, unscented chlorine bleach products”. [@epa_water]
+Use fresh bleach whose label allows disinfection.
+Read its sodium hypochlorite concentration.
+Use a clean dropper. [@epa_water]
 
-Read the active ingredient on the bottle.
-For one gallon, EPA's table gives:
-
-| Sodium hypochlorite on label | Drops for one gallon |
+| Sodium hypochlorite on label | Drops for one U.S. gallon |
 | --- | --- |
 | 6% | 8 |
 | 8.25% | 6 |
 
-Let cloudy water settle, then filter it through a clean cloth.
-EPA directs doubling the bleach for cloudy, colored or very cold water.
-Mix and wait 30 minutes.
-If there is no slight chlorine smell, repeat the dose and wait 15 more minutes. [@epa_water]
+Settle and filter cloudy water first.
+Double the dose for cloudy, colored or very cold water.
+Mix; wait 30 minutes.
+If there is no slight chlorine smell, repeat the dose; wait 15 more minutes. [@epa_water]
 
-Do not use scented bleach, color-safe bleach or products with added cleaners.
-Do not guess a dose for a different concentration. [@epa_water]
+Do not use scented, color-safe or added-cleaner bleach.
+Do not guess doses for other concentrations. [@epa_water]
 
-[[VERIFY: human review of EPA dosing transcription and altitude-specific boiling guidance is required.]]
+[[VERIFY: named water-safety review of the dosing transcription, source choices and boiling guidance; EPA's cited page uses 5,000 feet while CDC's advisory page uses 6,500 feet. Resolve the altitude wording and unknown-elevation branch before release.]]

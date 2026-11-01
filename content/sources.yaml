@@ -74,3 +74,14 @@ pocketpal_local:
 fda_medicines:
   title: FDA — Safe Drug Use After a Natural Disaster
   url: https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster
+
+cdc_water_sources:
+  title: CDC — How to Find Clean Water in an Emergency
+  url: https://www.cdc.gov/water-emergency/about/how-to-find-clean-water-in-an-emergency.html
+cdc_water_advisories:
+  title: CDC — Drinking Water Advisories, An Overview
+  url: https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html
+
+cpr_adult:
+  title: MedlinePlus Medical Encyclopedia — CPR, adult and child after onset of puberty
+  url: https://medlineplus.gov/ency/article/000013.htm
