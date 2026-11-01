@@ -4906,9 +4906,9 @@
     "id": "wikivoyage_en_offline",
     "family": "generated",
     "title": "Wikivoyage, English, offline reference edition",
-    "version": "Wikivoyage 2026-09; regenerated edition",
-    "size_bytes": 205100476,
-    "sha256": "f29aaf5fb2234abb1784f42c8f696dd25e24e30fd802b5880dc2d3c678ffed92",
+    "version": "Frozen development recipe; two complete matching builds at epoch 1793404800",
+    "size_bytes": 205100489,
+    "sha256": "a684c7adb661985250bdfa4c1dfb47518406a230d279e4a7efc510eeabfab1cd",
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikivoyage contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained",
     "license_proof_url": "https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft",
@@ -4922,7 +4922,7 @@
     "inputs": [
       "wikivoyage_en_nopic"
     ],
-    "pipeline_version": "zim-offline-v1-2ba7bf014043deddbeb66775898f53b2f0e835d2d07ec21ade476059496a98ef",
+    "pipeline_version": "zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2",
     "review": "[[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]"
   },
   {

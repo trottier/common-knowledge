@@ -55348,13 +55348,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Wikivoyage, English, offline reference edition
 
 - Catalog id: `wikivoyage_en_offline`
-- Version: Wikivoyage 2026-09; regenerated edition
+- Version: Frozen development recipe; two complete matching builds at epoch 1793404800
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 205100476 bytes
-- SHA-256: `f29aaf5fb2234abb1784f42c8f696dd25e24e30fd802b5880dc2d3c678ffed92`
-- Pipeline: zim-offline-v1-2ba7bf014043deddbeb66775898f53b2f0e835d2d07ec21ade476059496a98ef; inputs: wikivoyage_en_nopic
+- Size: 205100489 bytes
+- SHA-256: `a684c7adb661985250bdfa4c1dfb47518406a230d279e4a7efc510eeabfab1cd`
+- Pipeline: zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2; inputs: wikivoyage_en_nopic
 
 ## Wikivoyage, Spanish, no pictures — phrasebook build input
 
