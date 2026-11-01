@@ -83,3 +83,28 @@ See [territory-source-coverage.md](territory-source-coverage.md) for the source
 selection correction and its effect on existing development outputs.
 The official APK also remains on the separate
 [restricted-asset distribution hold](osmand-provenance.md).
+
+## Measured development subset
+
+At epoch 1793404800, separate map conversions match for nine jurisdictions:
+American Samoa, Connecticut, D.C., Delaware, Guam, Northern Mariana Islands,
+Puerto Rico, Rhode Island and U.S. Virgin Islands. Complete generation records,
+placed payload hashes and intermediate audit hashes were checked in both outputs.
+The measured records are in
+[android-map-repeat-checkpoint.json](evidence/android-map-repeat-checkpoint.json).
+
+The four completed U.S.-parent conversions have these sizes:
+
+| Jurisdiction | OBF bytes | Total placed bytes, including ODbL source and notices |
+| --- | ---: | ---: |
+| Connecticut | 79,570,289 | 120,105,930 |
+| D.C. | 11,299,984 | 15,678,758 |
+| Delaware | 19,820,130 | 28,603,733 |
+| Rhode Island | 18,911,104 | 28,513,484 |
+
+These pairs reuse their pinned prepared sources and state extracts. They do not
+establish two clean national pipeline builds, complete 56-jurisdiction coverage,
+production capacity or phone installation/import/GPS usability. New Jersey and
+the remaining maps are still building. The application rights hold is separate;
+generated map measurements do not clear it. Final recipe freeze and named pin
+review remain required.

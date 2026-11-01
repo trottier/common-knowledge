@@ -454,9 +454,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 4008048363,
+    "sha256": "0d4df0c8583c04a53067e55a0e555a30babc3d3869eb103976a359f45b549713",
     "license": "ODbL-1.0",
     "attribution": "OpenStreetMap contributors",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -465,8 +465,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_source_us",
     "title": "Prepared roads and public places from the us parent",
     "inputs": [
@@ -829,9 +829,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 40670703,
+    "sha256": "0528660d71a86741609d73334322d1a0a4f2e8dd633fd73120ac8d37681cf2b6",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -840,8 +840,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_ct",
     "title": "Census CT road-source extract",
     "inputs": [
@@ -852,9 +852,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 120105930,
+    "sha256": "d85b4235a08ec64d6fc10725e59e9665f99bdf14ca119e95ebbf4807c1ae765a",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -863,8 +863,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_map_ct",
     "title": "OsmAnd roads-and-places map for CT",
     "inputs": [
@@ -875,9 +875,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 4394898,
+    "sha256": "ba31e6461f121c1a294288f0f352f81e0224f9294bfbc1a9816c6002b6f7f136",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -886,8 +886,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_dc",
     "title": "Census DC road-source extract",
     "inputs": [
@@ -898,9 +898,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 15678758,
+    "sha256": "4c0602920daab57bb427fe42ddff086bce6be69463e73d2efbc1f9973a9cc642",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -909,8 +909,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_map_dc",
     "title": "OsmAnd roads-and-places map for DC",
     "inputs": [
@@ -921,9 +921,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 8786160,
+    "sha256": "f018e816a3c82427e3f7d86da31a38f3df212974f6ee2e7f378f1472c4ca5a65",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -932,8 +932,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_de",
     "title": "Census DE road-source extract",
     "inputs": [
@@ -944,9 +944,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 28603733,
+    "sha256": "c5439b8e292c97fe79a908f70cb79af5d2b9f93470b4bc998eba8686e40e7846",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -955,8 +955,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_map_de",
     "title": "OsmAnd roads-and-places map for DE",
     "inputs": [
@@ -2071,9 +2071,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 58328058,
+    "sha256": "bf4d027e68a125876bcc4f3a2bad2bf94720ef83d92bb9bc2a541cfc0964a75d",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2082,8 +2082,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_nj",
     "title": "Census NJ road-source extract",
     "inputs": [
@@ -2485,9 +2485,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 9609370,
+    "sha256": "c6d61a22c8b043d1eae1fa08b05f4e75b43594f4e6ca8cd0c781a46f0cb2fadd",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2496,8 +2496,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_ri",
     "title": "Census RI road-source extract",
     "inputs": [
@@ -2508,9 +2508,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 28513484,
+    "sha256": "fac6aa5e6b0eeea5e1a2d2b689d74bff7b6ef9fb9ff3af6011e1113f38ed760c",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -2519,8 +2519,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_map_ri",
     "title": "OsmAnd roads-and-places map for RI",
     "inputs": [
