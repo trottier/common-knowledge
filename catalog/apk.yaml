@@ -310,7 +310,13 @@
       "full"
     ],
     "source_for": "vlc_android",
-    "review": "[[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]"
+    "review": "[[VERIFY: human source-pin review, complete contrib/Java/remote-client dependency source and notices, ABI toolchain/runtime source obligations, source restoration/build instructions, and exact corresponding-source closure; native publisher artifact matches and a pinned recipe subset are recorded in docs/vlc-source-closure.md]]",
+    "inputs": [
+      "vlc_libvlc_java_source",
+      "vlc_medialibrary_java_source",
+      "vlc_libvlcjni_source",
+      "vlc_medialibrary_native_source"
+    ]
   },
   {
     "id": "vlc_android_older",
@@ -353,7 +359,13 @@
       "full"
     ],
     "source_for": "vlc_android_older",
-    "review": "[[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]"
+    "review": "[[VERIFY: human source-pin review, complete contrib/Java/remote-client dependency source and notices, ABI toolchain/runtime source obligations, source restoration/build instructions, and exact corresponding-source closure; native publisher artifact matches and a pinned recipe subset are recorded in docs/vlc-source-closure.md]]",
+    "inputs": [
+      "vlc_libvlc_java_source",
+      "vlc_medialibrary_java_source",
+      "vlc_libvlcjni_source",
+      "vlc_medialibrary_native_source"
+    ]
   },
   {
     "id": "bitchat_android_source",
