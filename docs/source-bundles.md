@@ -44,3 +44,10 @@ A separate empty cache restored all 4,655 raw source items successfully. This is
 measured local packaging evidence, not a stable-hosting or release claim. The
 payload, matching catalog snapshot and source-selection exclusions still need
 human review before distribution.
+
+
+A subsequent full WikEM build used only the restored cache in a network-disabled
+Linux amd64 container. Its 4,278 articles, 6,641 redirects, 8,601,054-byte payload
+and generation manifest matched the earlier independently built archive exactly.
+Strict `zimcheck` passed. This confirms actual offline restoration for that
+snapshot, while clinical review and physical reader testing remain outstanding.
