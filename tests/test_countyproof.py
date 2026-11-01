@@ -4,7 +4,7 @@ import pytest
 from shapely import union_all
 from shapely.geometry import Polygon, box, mapping
 
-from ck.countyproof import geometry_path, sheet_plan, svg_map
+from ck.countyproof import geometry_path, sheet_plan, svg_locator, svg_map
 
 
 def policy():
@@ -41,6 +41,25 @@ def test_svg_polygon_holes_are_retained():
         [(0, 0), (10, 0), (10, 10), (0, 10)], holes=[[(2, 2), (3, 2), (3, 3), (2, 3)]]
     )
     assert geometry_path(polygon, lambda x, y: (x, y)).count(" Z") == 2
+
+
+def test_geographic_locator_names_all_sheet_footprints_without_poi_crowding():
+    county = box(0, 0, 10000, 12000)
+    data = {
+        "policy": policy(),
+        "county": mapping(county),
+        "water": [],
+        "roads": [],
+        "sheets": sheet_plan(county, policy()),
+        "settlements": [{"name": "Fixture town", "x": 5000, "y": 6000}],
+        "pois": [{"name": "Must not enter locator", "x": 4000, "y": 5000}],
+    }
+    svg, audit = svg_locator(data)
+    assert all(sheet["id"] in svg for sheet in data["sheets"])
+    assert "Fixture town" in svg
+    assert "Must not enter locator" not in svg
+    assert "<image" not in svg
+    assert audit["poi_markers"] is False
 
 
 def test_vector_svg_contains_escaped_road_text_and_no_raster_map():

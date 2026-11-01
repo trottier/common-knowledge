@@ -20,6 +20,7 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from markupsafe import Markup
 from pmtiles.reader import Reader
 from pmtiles.tile import Compression
+from pypdf import PdfReader
 from pyproj import Transformer
 from shapely import from_wkb, transform
 from shapely.geometry import Point, box, mapping, shape
@@ -580,8 +581,65 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
     }
 
 
+def svg_locator(data: dict) -> tuple[str, dict]:
+    """Geographic page selection, separate from the county's POI overview."""
+    width, height = data["policy"]["map_width_mm"], data["policy"]["map_height_mm"]
+    west = min(sheet["bounds"][0] for sheet in data["sheets"])
+    south = min(sheet["bounds"][1] for sheet in data["sheets"])
+    east = max(sheet["bounds"][2] for sheet in data["sheets"])
+    north = max(sheet["bounds"][3] for sheet in data["sheets"])
+    frame = box(west, south, east, north)
+
+    def pixel(x, y):
+        return (x - west) / (east - west) * width, (north - y) / (north - south) * height
+
+    svg = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        f'width="{width}mm" height="{height}mm">',
+        f'<rect width="{width}" height="{height}" fill="#faf8ef"/>',
+    ]
+    for water in data["water"]:
+        path = geometry_path(shape(water).intersection(frame), pixel)
+        if path:
+            svg.append(f'<path d="{path}" fill="#daeef8" fill-rule="evenodd"/>')
+    for road in data["roads"]:
+        if road["kind"] in {"motorway", "trunk", "primary", "secondary"}:
+            path = geometry_path(shape(road["geometry"]).intersection(frame), pixel)
+            svg.append(f'<path d="{path}" fill="none" stroke="#d29042" stroke-width="0.5"/>')
+    path = geometry_path(shape(data["county"]), pixel)
+    svg.append(f'<path d="{path}" fill="none" stroke="#615c54" stroke-width="0.6"/>')
+    for sheet in data["sheets"]:
+        left, bottom, right, top = sheet["bounds"]
+        x, y = pixel(left, top)
+        x2, y2 = pixel(right, bottom)
+        svg.append(
+            f'<rect x="{x:.3f}" y="{y:.3f}" width="{x2 - x:.3f}" '
+            f'height="{y2 - y:.3f}" fill="none" stroke="#2674ad" stroke-width="0.65"/>'
+        )
+        svg.append(
+            f'<text x="{x + 2:.3f}" y="{y + 7:.3f}" font-size="5.5" '
+            f'font-weight="700" fill="#155481">{sheet["id"]}</text>'
+        )
+    labels = []
+    for place in data.get("settlements", []):
+        x, y = pixel(place["x"], place["y"])
+        if 8 < x < width - 8 and 8 < y < height - 8:
+            svg.append(
+                f'<text x="{x:.3f}" y="{y:.3f}" text-anchor="middle" '
+                f'font-size="4.8" font-weight="700">{html.escape(place["name"])}</text>'
+            )
+            labels.append(place["name"])
+    svg.append("</svg>")
+    return "".join(svg), {
+        "bounds": [west, south, east, north],
+        "sheet_ids": [sheet["id"] for sheet in data["sheets"]],
+        "settlement_labels": labels,
+        "poi_markers": False,
+    }
+
+
 def html_document(
-    title: str, kind: str, pages: list, overview_svg: str, leaf: str, data: dict
+    title: str, kind: str, pages: list, overview_svg: str, locator_svg: str, leaf: str, data: dict
 ) -> str:
     env = Environment(
         loader=FileSystemLoader(Path(__file__).resolve().parents[2] / "templates"),
@@ -593,6 +651,7 @@ def html_document(
         kind=kind,
         pages=pages,
         overview_svg=Markup(overview_svg),
+        locator_svg=Markup(locator_svg),
         leaf=leaf,
         policy=data["policy"],
         zctas=data["zctas"],
@@ -641,11 +700,13 @@ def render(data: dict, output: Path) -> dict:
         data, [cx - width / 2, cy - height / 2, cx + width / 2, cy + height / 2], True
     )
     (audit / "overview.svg").write_text(overview_svg)
+    locator_svg, locator_audit = svg_locator(data)
+    (audit / "locator.svg").write_text(locator_svg)
     for filename, title, kind in [
         (leaf, "Bristol County detailed road maps", "detail"),
         ("0_OVERVIEW.pdf", "Bristol County overview and historical places", "overview"),
     ]:
-        document = html_document(title, kind, pages, overview_svg, leaf, data)
+        document = html_document(title, kind, pages, overview_svg, locator_svg, leaf, data)
         (audit / (filename + ".html")).write_text(document)
         with pdf_timestamp(policy["epoch"]):
             HTML(
@@ -658,11 +719,29 @@ def render(data: dict, output: Path) -> dict:
             )
         if (files / filename).stat().st_size > policy["pdf_max_bytes"]:
             raise ValueError("Actual PDF exceeds the provisional byte budget")
+        if kind == "detail":
+            reader = PdfReader(files / filename)
+            destinations = {}
+
+            def collect_outlines(entries, reader=reader, destinations=destinations):
+                for entry in entries:
+                    if isinstance(entry, list):
+                        collect_outlines(entry)
+                    else:
+                        destinations[entry.title] = reader.get_destination_page_number(entry) + 1
+
+            collect_outlines(reader.outline)
+            if len(reader.pages) != len(data["sheets"]) + 1 or any(
+                destinations.get("Bristol County · " + sheet["id"]) != sheet["page"]
+                for sheet in data["sheets"]
+            ):
+                raise ValueError("Actual locator/sheet pagination differs; do not adopt this proof")
     result = {
         "status": "unreviewed proof; not a complete sample",
         "producer": data["producer"],
         "policy": policy,
         "detail_pdf": leaf,
+        "locator": locator_audit,
         "sheets": sheet_audits,
         "overview": {**overview_audit, "poi_ids": [point["id"] for point in data["pois"]]},
         "road_counts": data["road_counts"],
