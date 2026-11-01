@@ -414,7 +414,7 @@
       "geofabrik_virgin_islands"
     ],
     "pipeline_version": "national-points-v1-acd0cc35897d40b2eea81b71af2ba4df8b4ae91b7664bc7806d651213e470c6d",
-    "review": "[[VERIFY: independent source pin and geographic-exception review, complete repeated generation, corrected descendant atlas/directory builds and final source freeze; positive configured OSM evidence exists in all 56 jurisdictions]]"
+    "review": "[[VERIFY: independent source pin and geographic-exception review, corrected descendant atlas/directory builds and final source freeze; two complete imports match and positive configured OSM evidence exists in all 56 jurisdictions]]"
   },
   {
     "id": "directory_ri",
@@ -485,9 +485,9 @@
   },
   {
     "family": "generated",
-    "version": "Geofabrik 2026-10-29; development epoch 1793404800",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
     "size_bytes": 401963876,
-    "sha256": "1f5aa36346d4557b83e6fe980fc5b1e420608921b9e5a6750ea66a6eb306aaca",
+    "sha256": "6cb58a0be2786f0f41ee19bd5c3ba8b01df3622e88d4a80c88f22de95b32059d",
     "license": "ODbL-1.0",
     "attribution": "OpenStreetMap contributors",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -496,8 +496,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "android-source-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7",
-    "review": "[[VERIFY: independently review measured source pin, repeat source generation, final toolchain freeze and physical map checks before release]]",
+    "pipeline_version": "android-source-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_source_oceania",
     "title": "Prepared roads and public places from the oceania parent",
     "inputs": [
@@ -644,9 +644,9 @@
   },
   {
     "family": "generated",
-    "version": "2026-10-29 source; AS/GU/MP batch; epoch 1793404800",
-    "size_bytes": 1514386,
-    "sha256": "7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 335072,
+    "sha256": "45bc9431f2cb72d98785929d8b5c0730a7471cfceb14af7fedff6fa381a02a71",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -655,8 +655,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7",
-    "review": "[[VERIFY: independently review measured Pacific batch extract pins, repeated extraction and physical map coverage before release]]",
+    "pipeline_version": "android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_as",
     "title": "Census AS road-source extract",
     "inputs": [
@@ -667,9 +667,9 @@
   },
   {
     "family": "generated",
-    "version": "Oceania 2026-10-29; OsmAnd creator pinned; epoch 1793404800",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
     "size_bytes": 855212,
-    "sha256": "e429e4539025b804c9ef6e35f63d32daf15329c0366eb5d6a807e2f9270244db",
+    "sha256": "0014a7edbc9beeceb9b537e0dc9aa0de364e03a2ea6facb6d1614ad01877458b",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -678,8 +678,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1",
-    "review": "[[VERIFY: independently review measured map pin, repeat map generation, final toolchain freeze and physical Android import/GPS checks before release]]",
+    "pipeline_version": "androidmaps-v1-1d6ce563e842aa4ee264bd0e691cbb5cdc74f9891e4fc08349df5273ce18cace",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_map_as",
     "title": "OsmAnd roads-and-places map for AS",
     "inputs": [
@@ -1058,9 +1058,9 @@
   },
   {
     "family": "generated",
-    "version": "2026-10-29 source; AS/GU/MP batch; epoch 1793404800",
-    "size_bytes": 1514386,
-    "sha256": "7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a",
+    "version": "Corrected territory-aware recipe; development epoch 1793404800",
+    "size_bytes": 877258,
+    "sha256": "2966904c5d1a533880f9307dd151ea08dcf1cab754847a45ae3150f7979a1a25",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -1069,8 +1069,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7",
-    "review": "[[VERIFY: independently review measured Pacific batch extract pins, repeated extraction and physical map coverage before release]]",
+    "pipeline_version": "android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]",
     "id": "android_extract_gu",
     "title": "Census GU road-source extract",
     "inputs": [
@@ -1083,7 +1083,7 @@
     "family": "generated",
     "version": "Oceania 2026-10-29; OsmAnd creator pinned; epoch 1793404800",
     "size_bytes": 2653279,
-    "sha256": "750dc69674ce7db45207b171d1a9e76ce8c2a82241f16326816fdba1d30c73fa",
+    "sha256": "[[VERIFY: regenerate and repeat Guam after the observed POI-ordering mismatch]]",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -1092,8 +1092,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1",
-    "review": "[[VERIFY: independently review measured map pin, repeat map generation, final toolchain freeze and physical Android import/GPS checks before release]]",
+    "pipeline_version": "[[VERIFY: production converter with recorded JVM options]]",
+    "review": "[[VERIFY: current Guam conversion failed repeat equality; do not reuse the previous map after its prepared input changed. New production conversion, human pin review and physical device checks remain]]",
     "id": "android_map_gu",
     "title": "OsmAnd roads-and-places map for GU",
     "inputs": [

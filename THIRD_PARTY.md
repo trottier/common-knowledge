@@ -40,13 +40,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census AS road-source extract
 
 - Catalog id: `android_extract_as`
-- Version: 2026-10-29 source; AS/GU/MP batch; epoch 1793404800
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: 1514386 bytes
-- SHA-256: `7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a`
-- Pipeline: android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: android_source_oceania, census_county_analysis, census_states
+- Size: 335072 bytes
+- SHA-256: `45bc9431f2cb72d98785929d8b5c0730a7471cfceb14af7fedff6fa381a02a71`
+- Pipeline: android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: android_source_oceania, census_county_analysis, census_states
 
 ## Census AZ road-source extract
 
@@ -139,13 +139,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census GU road-source extract
 
 - Catalog id: `android_extract_gu`
-- Version: 2026-10-29 source; AS/GU/MP batch; epoch 1793404800
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: 1514386 bytes
-- SHA-256: `7fde503d7b714465f9a908df5663adb6e2db97a2ec3dae15e733da152c448c7a`
-- Pipeline: android-extract-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: android_source_oceania, census_county_analysis, census_states
+- Size: 877258 bytes
+- SHA-256: `2966904c5d1a533880f9307dd151ea08dcf1cab754847a45ae3150f7979a1a25`
+- Pipeline: android-extract-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: android_source_oceania, census_county_analysis, census_states
 
 ## Census HI road-source extract
 
@@ -656,13 +656,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for AS
 
 - Catalog id: `android_map_as`
-- Version: Oceania 2026-10-29; OsmAnd creator pinned; epoch 1793404800
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
 - Size: 855212 bytes
-- SHA-256: `e429e4539025b804c9ef6e35f63d32daf15329c0366eb5d6a807e2f9270244db`
-- Pipeline: androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1; inputs: geofabrik_oceania, osmand_creator, android_extract_as
+- SHA-256: `0014a7edbc9beeceb9b537e0dc9aa0de364e03a2ea6facb6d1614ad01877458b`
+- Pipeline: androidmaps-v1-1d6ce563e842aa4ee264bd0e691cbb5cdc74f9891e4fc08349df5273ce18cace; inputs: geofabrik_oceania, osmand_creator, android_extract_as
 
 ## OsmAnd roads-and-places map for AZ
 
@@ -760,8 +760,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
 - Size: 2653279 bytes
-- SHA-256: `750dc69674ce7db45207b171d1a9e76ce8c2a82241f16326816fdba1d30c73fa`
-- Pipeline: androidmaps-v1-fee36b5ccdee03b6523c1e048f02d973e76614cd11afa6ce9828b0f147004fb1; inputs: geofabrik_oceania, osmand_creator, android_extract_gu
+- SHA-256: `[[VERIFY: regenerate and repeat Guam after the observed POI-ordering mismatch]]`
+- Pipeline: [[VERIFY: production converter with recorded JVM options]]; inputs: geofabrik_oceania, osmand_creator, android_extract_gu
 
 ## OsmAnd roads-and-places map for HI
 
@@ -1272,13 +1272,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Prepared roads and public places from the oceania parent
 
 - Catalog id: `android_source_oceania`
-- Version: Geofabrik 2026-10-29; development epoch 1793404800
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0
 - Attribution: OpenStreetMap contributors
 - License proof: https://www.openstreetmap.org/copyright
 - Size: 401963876 bytes
-- SHA-256: `1f5aa36346d4557b83e6fe980fc5b1e420608921b9e5a6750ea66a6eb306aaca`
-- Pipeline: android-source-v1-389f5a0e5af4926885dd9e1efe6f678754bd8f7401f8e9fce1da104877c171b7; inputs: geofabrik_oceania
+- SHA-256: `6cb58a0be2786f0f41ee19bd5c3ba8b01df3622e88d4a80c88f22de95b32059d`
+- Pipeline: android-source-v1-910c2721788a5c91b2e6dd549e9513a22f11141935f0bfb5d722fa0c9abf3ac0; inputs: geofabrik_oceania
 
 ## Prepared roads and public places from PR
 

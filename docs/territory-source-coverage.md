@@ -51,3 +51,11 @@ also pass map, routing, POI and timestamp inspection.
 Corrected descendant atlas/directory builds, all resulting page/grid references,
 remaining national maps, independent repeat builds and physical checks remain
 release gates. These measured development outputs do not confer human review.
+
+
+Two independent corrected point imports now match byte for byte, including all
+three payload, intermediate and generation-manifest files. Their shared
+canonical generation hash is
+`ca9a86fcb9761f7136b37d066e2877e19feff30662f05798c436f25851278a41`.
+This repeat confirms the corrected source corpus; descendant atlas/directory
+rebuilds and their physical checks remain outstanding.
