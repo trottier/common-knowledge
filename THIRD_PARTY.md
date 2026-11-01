@@ -3788,6 +3788,314 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## 12 Ways to Prepare (English)
+
+- Catalog id: `ready_12_ways_to_prepare_en`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 265666 bytes
+- SHA-256: `61df64c7b73d2a76ae7879c56c7c190e819585b955600fdc4bdc919895c451c3`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-06/ready_12-ways-to-prepare_postcard.pdf
+
+## 12 Ways to Prepare (Spanish): 12 Maneras de Prepararse
+
+- Catalog id: `ready_12_ways_to_prepare_es`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 295790 bytes
+- SHA-256: `d32a8e988c000e0e4550ff91bdc8907cca1912a4ebaa1b0abc279d3108a1d5c5`
+- Publisher file: https://www.ready.gov/sites/default/files/2020-11/ready_12-ways-to-prepare_postcard_spanish.pdf
+
+## 12 Ways to Prepare (Korean): 12 가지 대비 방법
+
+- Catalog id: `ready_12_ways_to_prepare_ko`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 449523 bytes
+- SHA-256: `fde5355dfeb65e161aaba4cf38b152682ab42c79123bcd9eb33221fd5999127d`
+- Publisher file: https://www.ready.gov/sites/default/files/2020-11/ready_12-ways-to-prepare_postcard_korean.pdf
+
+## 12 Ways to Prepare (Vietnamese): 12 Cách Để Chuẩn Bị
+
+- Catalog id: `ready_12_ways_to_prepare_vi`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 433948 bytes
+- SHA-256: `2f611002a9e015676d248b1ba5836a8227c0f634605b92c5601cc7404dc1d5a0`
+- Publisher file: https://www.ready.gov/sites/default/files/2020-11/ready_12-ways-to-prepare_postcard_vietnamese.pdf
+
+## 12 Ways to Prepare (Simplified Chinese): 12 种准备方法
+
+- Catalog id: `ready_12_ways_to_prepare_zh_hans`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 797691 bytes
+- SHA-256: `b84a791f29da15f181fce43c439d76564497c711b89e7740899dfaefe5b9944a`
+- Publisher file: https://www.ready.gov/sites/default/files/2020-11/ready_12-ways-to-prepare_postcard_chinese-sim.pdf
+
+## 12 Ways to Prepare (Traditional Chinese): 12 種準備方法
+
+- Catalog id: `ready_12_ways_to_prepare_zh_hant`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 562499 bytes
+- SHA-256: `38e01dcfc98765ffb95179f6364dab6c8a7dbb73124fb70c4a5469c46aa8fd81`
+- Publisher file: https://www.ready.gov/sites/default/files/2020-11/ready_12-ways-to-prepare_postcard_chinese-tra.pdf
+
+## Are You Ready? Guide
+
+- Catalog id: `ready_are_you_ready_en`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 4233522 bytes
+- SHA-256: `3873f8ae7528389adacab72259c37b9ae3c507bd3ae23783122e06586560040c`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide.pdf
+
+## Are You Ready? (Spanish): ¿Está preparado?
+
+- Catalog id: `ready_are_you_ready_es`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 4255969 bytes
+- SHA-256: `27694d00d62f7ca28478e4321a3ac2f5b78d263f7b03abe1502821d4f7bbbdbf`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide_spanish.pdf
+
+## Are You Ready? Korean: 준비되셨습니까?
+
+- Catalog id: `ready_are_you_ready_ko`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 20120903 bytes
+- SHA-256: `8bee67a1f75149e66b6c410a2214a4876261262bd184d7d13826e9b56dfd91cf`
+- Publisher file: https://www.ready.gov/sites/default/files/2022-06/ready_are-you-ready-guide_korean.pdf
+
+## Are You Ready? Vietnamese: Quý Vị Đã Sẵn Sàng Chưa?
+
+- Catalog id: `ready_are_you_ready_vi`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 19179101 bytes
+- SHA-256: `52acfd8d12f401e44df553385f4c7bb506ba1d27ef9d5ce3454a5383fff37faa`
+- Publisher file: https://www.ready.gov/sites/default/files/2022-06/ready_are-you-ready-guide_vietnamese.pdf
+
+## Are You Ready? Chinese (Simplified): 您做好了准备吗 ?
+
+- Catalog id: `ready_are_you_ready_zh_hans`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 21307851 bytes
+- SHA-256: `82ee7dfe6882ecd2e639816e81c88e6f201511d29c1e182f9d89cc0e81c01f8d`
+- Publisher file: https://www.ready.gov/sites/default/files/2022-06/ready_are-you-ready-guide_simplified-chinese.pdf
+
+## Are You Ready? Chinese (Traditional): 您做好準備了嗎？
+
+- Catalog id: `ready_are_you_ready_zh_hant`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 20452686 bytes
+- SHA-256: `780fcf65bd49deaa51bd829353e0527ca70ce1e207fa7a49dc520cd12cdaf590`
+- Publisher file: https://www.ready.gov/sites/default/files/2022-06/ready_are-you-ready-guide_traditional-chinese.pdf
+
+## Earthquake Info Sheet
+
+- Catalog id: `ready_earthquakes_en`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 370865 bytes
+- SHA-256: `08a970a1439b329c11cc197a976a8e77fa7ef8dd506d753dd81e750539a4b2af`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-07/ready.gov_earthquake_info-sheet.pdf
+
+## Earthquake Info Sheet Spanish
+
+- Catalog id: `ready_earthquakes_es`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 371127 bytes
+- SHA-256: `94a7907d121c61b9bb78793dac3dd980516a9009c0a3d9b185fb89db7bb442ef`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-07/ready.gov_earthquake_info-sheet_spanish.pdf
+
+## Earthquake Info Sheet Korean
+
+- Catalog id: `ready_earthquakes_ko`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 360410 bytes
+- SHA-256: `494530e3cfbe59d50d1c1efcbe9222c716b7e0c42c4c952ea976d533e5332320`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-07/ready.gov_earthquake_info-sheet_korean.pdf
+
+## Earthquake Info Sheet Vietnamese
+
+- Catalog id: `ready_earthquakes_vi`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 404627 bytes
+- SHA-256: `c69c2dcd1b14b56fe429df92da4561600d741c8246433bdc380949d3ae61ce0a`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-07/ready.gov_earthquake_info-sheet_vietnamese.pdf
+
+## Earthquake Info Sheet Simplified Chinese
+
+- Catalog id: `ready_earthquakes_zh_hans`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 413008 bytes
+- SHA-256: `16d06d14af109fa5e9b5af654e3fb35663c6d9d28473d123e47031df639fbf80`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-07/ready.gov_earthquake_info-sheet_simplified-chinese.pdf
+
+## Earthquake Info Sheet Traditional Chinese
+
+- Catalog id: `ready_earthquakes_zh_hant`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 444076 bytes
+- SHA-256: `489f15769d53fa84be7fcd2ad28eeee18cf9dda9c791738ccaa9f9a62691289a`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-07/ready.gov_earthquake_info-sheet_traditional-chinese.pdf
+
+## Emergency Supply List (Arabic)
+
+- Catalog id: `ready_emergency_supply_list_ar`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 188349 bytes
+- SHA-256: `e3957c89cd9fa7ac8894a18935b6f6e88cc2590ca4f9a338599ed9bdb00983eb`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_arabic.pdf
+
+## Emergency Supply List
+
+- Catalog id: `ready_emergency_supply_list_en`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 152185 bytes
+- SHA-256: `375f8acfeec361ecf2ee2e032178bd112ad3001035ccf5fd4e848aa9440f939c`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-02/ready_checklist.pdf
+
+## Emergency Supply List  (Spanish)
+
+- Catalog id: `ready_emergency_supply_list_es`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 579479 bytes
+- SHA-256: `d1344968e4b5dc085c75846ccbaf8b30db24658bcb072f459c782d6747db4d76`
+- Publisher file: https://www.ready.gov/sites/default/files/2020-09/emergency-supply-list_spanish.pdf
+
+## Emergency Supply List (French)
+
+- Catalog id: `ready_emergency_supply_list_fr`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 247433 bytes
+- SHA-256: `44ce7f3b7995bdce0e1f82f93595571c7286061dd7af32a0ef488a2b45d05748`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_french.pdf
+
+## Emergency Supply List (Haitian Creole)
+
+- Catalog id: `ready_emergency_supply_list_ht`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 226818 bytes
+- SHA-256: `8d48d43b6083245526f55cc78c98d65439fab11822bf80a7c895ebbbb9bc3c79`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_haitian-creole.pdf
+
+## Emergency Supply List (Korean)
+
+- Catalog id: `ready_emergency_supply_list_ko`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 1136521 bytes
+- SHA-256: `9a3533ad773d763c759513db7787148b7223e7140a3c93080019b10ae355c2a3`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-11/emergency-supply-list_korean.pdf
+
+## Emergency Supply List (Russian)
+
+- Catalog id: `ready_emergency_supply_list_ru`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 180372 bytes
+- SHA-256: `9e2613a69dc23dd677a53100c8613c857657f9351ce9c35f7c5d7e42d0d82321`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_russian.pdf
+
+## Emergency Supply List (Tagalog)
+
+- Catalog id: `ready_emergency_supply_list_tl`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 300832 bytes
+- SHA-256: `ac4a18758d8d1a2c9daea9881e1dbf3ed1715fba28df218529c95e4b119a29ce`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-11/emergency-supply-list_tagalog.pdf
+
+## Emergency Supply List (Vietnamese)
+
+- Catalog id: `ready_emergency_supply_list_vi`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 226842 bytes
+- SHA-256: `c725ab51189574bf0f919b6758cd0c70c169d96c32f5f7ece7f652dc33618512`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_vietnamese.pdf
+
+## Emergency Supply List (Simplified Chinese)
+
+- Catalog id: `ready_emergency_supply_list_zh_hans`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 203023 bytes
+- SHA-256: `12c7b43aecc5ee0247f31493708cb325af44e420bb11edea5121d295342da7a2`
+- Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_simplified-chinese.pdf
+
 ## Ready.gov guides and official translations; select individual files
 
 - Catalog id: `ready_guides`
@@ -3798,6 +4106,138 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Power Outage Info Sheet
+
+- Catalog id: `ready_power_outage_en`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 317550 bytes
+- SHA-256: `d98a6ca01ba91c8b5a6d4772ce46dec7ecc8481eab5778373b5d1b54e49f4697`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready.gov_power-outage_info-sheet.pdf
+
+## Power Outage Info Sheet Spanish
+
+- Catalog id: `ready_power_outage_es`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 326815 bytes
+- SHA-256: `85ce6aebc02aa62a278ee004a7de322093e0d7663f85f1724fcd66c0e39a2125`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready.gov_power-outage_info-sheet_spanish.pdf
+
+## Power Outage Info Sheet Korean
+
+- Catalog id: `ready_power_outage_ko`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 383346 bytes
+- SHA-256: `0bc1082a469fa70a2845bb946eeba86bd0d91ca80c48e3cf740efc603f38f4f3`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready.gov_power-outage_info-sheet_korean.pdf
+
+## Power Outage Info Sheet Vietnamese
+
+- Catalog id: `ready_power_outage_vi`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 313159 bytes
+- SHA-256: `6af7b18f7daba2f1d880d3db30c93e41287100f45dd90d6da5022361edf2e90b`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_power-outage_info-sheet_vietnamese.pdf
+
+## Power Outage Info Sheet Simplified Chinese
+
+- Catalog id: `ready_power_outage_zh_hans`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 439824 bytes
+- SHA-256: `cd8006432279b1f4cfe7a1834c8db1676bc5e8f090517256dd353ae7bf929693`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_power-outage_info-sheet_chinese-simplified.pdf
+
+## Power Outage Info Sheet Traditional Chinese
+
+- Catalog id: `ready_power_outage_zh_hant`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 481721 bytes
+- SHA-256: `a0d82af0542a5d52fdf9b209b23a2b843ab59f7c02ef3d5518d1584caf0fc2d8`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready.gov_power-outage_info-sheet_chinese-traditional.pdf
+
+## Wildfire Info Sheet
+
+- Catalog id: `ready_wildfire_en`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 455659 bytes
+- SHA-256: `5f1a733b469ad6f45584642a93152cf699d257d2db8c5f77ed78db17231412dc`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet.pdf
+
+## Wildfire Info Sheet Spanish
+
+- Catalog id: `ready_wildfire_es`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 458331 bytes
+- SHA-256: `53eaf61b516c8f81f9467617c05e265a360adc63ac6f28d120edfbf8ed3f3b1e`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet_spanish.pdf
+
+## Wildfire Info Sheet Korean
+
+- Catalog id: `ready_wildfire_ko`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 467531 bytes
+- SHA-256: `acc3ca9254e16f9c8080d075e7e9349783cbf654e1c5c0561edcaac627aedd8b`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet_korean.pdf
+
+## Wildfire Info Sheet Vietnamese
+
+- Catalog id: `ready_wildfire_vi`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 481734 bytes
+- SHA-256: `6fa90f676156106090fd3796c0cc21ce7cdc7b16f33689fe495cc2a6d2482c71`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet_vietnamese.pdf
+
+## Wildfire Info Sheet Simplified Chinese
+
+- Catalog id: `ready_wildfire_zh_hans`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 504669 bytes
+- SHA-256: `058e35c4ce3c9b89d601d4e93d3308664f488016d333ad950ec1347d028fee85`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet_simplified-chinese.pdf
+
+## Wildfire Info Sheet Traditional Chinese
+
+- Catalog id: `ready_wildfire_zh_hant`
+- Version: Publisher PDF; HTTPS snapshot 2026-11-01
+- License: LicenseRef-FEMA-Ready-Reprint
+- Attribution: Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.
+- License proof: https://www.ready.gov/publications
+- Size: 522330 bytes
+- SHA-256: `02286a57a40279ccaced925c60722cc41cc8f6d88875b0d0de5ba860f16733d5`
+- Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet_traditional-chinese.pdf
 
 ## Qwen3.5-0.8B-Base, Q4_K_M
 

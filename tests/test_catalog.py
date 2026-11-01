@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from ck.catalog import Item, load_catalog, safe_path
+from ck.catalog import Collection, Item, load_catalog, safe_path
 from ck.config import load_config
 from ck.fetch import HttpsRedirects, fetch, verify_format
 from ck.review import release_blockers, require_release_ready
@@ -94,6 +94,27 @@ def test_combined_licenses_require_every_component_to_be_redistributable():
     assert any("redistribution review" in issue for issue in candidate.blockers())
     candidate.license = "MIT AND CC-BY-NC-SA-3.0"
     assert any("written emergency-use license" in issue for issue in candidate.blockers())
+
+
+def test_ready_reprint_grant_is_scoped_to_unchanged_official_documents():
+    candidate = item_for().model_copy(
+        update={
+            "url": "https://www.ready.gov/sites/default/files/test.pdf",
+            "license": "LicenseRef-FEMA-Ready-Reprint",
+            "license_proof_url": "https://www.ready.gov/publications",
+        }
+    )
+    assert candidate.blockers(release=True) == []
+    for update in (
+        {"url": "https://example.invalid/copied.pdf"},
+        {"license_proof_url": "https://example.invalid/terms"},
+        {"family": "generated"},
+        {"placement": Collection(collection="school")},
+    ):
+        assert any(
+            "Ready reprint terms" in issue
+            for issue in candidate.model_copy(update=update).blockers()
+        )
 
 
 def test_osmand_pin_does_not_clear_restricted_assets_or_legal_review():
