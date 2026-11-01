@@ -13,8 +13,9 @@ must parse before a known alternative can satisfy the catalog policy.
 
 An unknown license cannot satisfy an operand. An unknown operand in a valid
 `OR` expression may be bypassed by a supported alternative; an unknown required
-`AND` operand blocks the expression. No `WITH` exception is approved by this
-parser, but a separate supported `OR` alternative can apply. For example,
+`AND` operand blocks the expression. The exact `Apache-2.0 WITH Swift-exception`
+pair is recognized; other exception pairs remain unsupported, but a separate
+supported `OR` alternative can apply. For example,
 `Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT` is supported through its
 unexcepted Apache or MIT alternative. The exception branch itself is unsupported.
 
@@ -39,6 +40,9 @@ application complies with all applicable terms.
 | `Unicode-3.0` | [Unicode License V3](https://www.unicode.org/license.txt): retain copyright and permission notices in the copies or associated documentation; observe restrictions on promotional use of rights-holder names. |
 | `MPL-2.0` | [Mozilla's license text](https://www.mozilla.org/en-US/MPL/2.0/), especially sections 2.1 and 3.1–3.4: preserve covered-source licensing and notices, and make covered source available when distributing executables. |
 | `LGPL-3.0-only`, `LGPL-3.0-or-later` | [GNU LGPL version 3](https://www.gnu.org/licenses/lgpl-3.0.txt) incorporates GPLv3 with additional permissions. Review source, notices, relinking, and applicable installation-information requirements. The later-version option depends on the publisher's declaration. |
+| `GPL-2.0-or-later` | [SPDX's GPLv2-or-later text and identifier](https://spdx.org/licenses/GPL-2.0-or-later.html), especially sections 1–3 and 9: retain notices and licensing, provide corresponding sources for executables, and preserve the publisher's later-version choice. Recognition does not decide which version governs a combined application. |
+| `OLDAP-2.8` | [OpenLDAP's original 2.8 license](https://www.openldap.org/software/release/license.html): retain source notices, reproduce applicable notices and disclaimer with binaries, and include the complete license document. Observe its restriction on promotional use of rights-holder names. This recognizes LMDB's declaration, not ObjectBox's separate binary terms. |
+| `Apache-2.0 WITH Swift-exception` | [Swift's original license and runtime exception](https://www.swift.org/LICENSE.txt), with the [SPDX exception identifier](https://spdx.org/licenses/Swift-exception.html): the exception adds a limited attribution permission for qualifying compiled products. The parser recognizes the exact pair without deciding whether a particular distribution qualifies. Original licenses and notice obligations remain subject to source and human review. |
 
 The 466 current Rust source declarations parse as supported expressions. All
 466 still retain their independent human review holds. Their source archives

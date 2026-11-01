@@ -1,0 +1,194 @@
+[
+  {
+    "id": "vlc_libvlc_aar",
+    "family": "binaries",
+    "title": "LibVLC 3.7.0 original publisher AAR; native provenance audit input",
+    "url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.aar",
+    "version": "3.7.0",
+    "size_bytes": 86664930,
+    "sha256": "963a121dcc2059d9bd836e1d3d609358d3aa74da42f1d6163a9830765f197af0",
+    "license": "[[VERIFY: complete bundled native-component licenses; POM declares LGPL-2.1 but is not an aggregate native license inventory]]",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.pom",
+    "placement": "hub_only",
+    "dest": "build/audit-inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.aar.sha1"
+  },
+  {
+    "id": "vlc_medialibrary_aar",
+    "family": "binaries",
+    "title": "Medialibrary 0.13.17 original publisher AAR; native provenance audit input",
+    "url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.aar",
+    "version": "0.13.17",
+    "size_bytes": 9570952,
+    "sha256": "ca4a6b6be32eb9056d85c96c1bc9259fff3b1f0e8fc1f785312afe57170eaf92",
+    "license": "[[VERIFY: complete bundled native-component licenses; POM declares LGPL-2.1 but is not an aggregate native license inventory]]",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.pom",
+    "placement": "hub_only",
+    "dest": "build/audit-inputs/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.aar.sha1"
+  },
+  {
+    "id": "vlc_libvlc_java_source",
+    "family": "docs",
+    "title": "libvlc-all 3.7.0 original publisher Java source JAR; no native sources",
+    "url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0-sources.jar",
+    "version": "3.7.0",
+    "size_bytes": 75151,
+    "sha256": "95bb03b150ca4cda5fb334b02df2e4f95c627940a1134f805161ab0146566a37",
+    "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.pom",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "inputs": [
+      "vlc_libvlcjni_source"
+    ],
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0-sources.jar.sha1"
+  },
+  {
+    "id": "vlc_medialibrary_java_source",
+    "family": "docs",
+    "title": "medialibrary-all 0.13.17 original publisher Java source JAR; no native sources",
+    "url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17-sources.jar",
+    "version": "0.13.17",
+    "size_bytes": 70963,
+    "sha256": "8c7f461b8a709752f0930610636117740777968541daaa909d1915bcd32611af",
+    "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.pom",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "inputs": [
+      "vlc_medialibrary_native_source"
+    ],
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17-sources.jar.sha1"
+  },
+  {
+    "id": "vlc_libvlcjni_source",
+    "family": "docs",
+    "title": "Exact LibVLCJNI source and 20 VLC patches selected by VLC Android 3.7.1 recipe",
+    "url": "https://code.videolan.org/api/v4/projects/videolan%2Flibvlcjni/repository/archive.tar.gz?sha=7cd0c151da4162aa3052fb6949ddab1436d8fafb",
+    "version": "7cd0c151da4162aa3052fb6949ddab1436d8fafb",
+    "size_bytes": 258849,
+    "sha256": "963c970377454f257fa26c9c4984d160eb14038be782e89e5c8193cb8b8246eb",
+    "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://code.videolan.org/videolan/libvlcjni/-/blob/7cd0c151da4162aa3052fb6949ddab1436d8fafb/README.md",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "inputs": [
+      "vlc_native_base_source"
+    ]
+  },
+  {
+    "id": "vlc_native_base_source",
+    "family": "docs",
+    "title": "Exact VLC native source base selected by LibVLCJNI recipe; contrib tarballs remain open",
+    "url": "https://code.videolan.org/api/v4/projects/videolan%2Fvlc/repository/archive.tar.gz?sha=3458be162f476ff64b639140b684efa1143ddeea",
+    "version": "3458be162f476ff64b639140b684efa1143ddeea",
+    "size_bytes": 32830436,
+    "sha256": "a166dc34fdeef0ad5dbd46ec65980d4b90f621517c5a755c63817e1f66a8d103",
+    "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://code.videolan.org/videolan/vlc/-/blob/3458be162f476ff64b639140b684efa1143ddeea/COPYING",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]"
+  },
+  {
+    "id": "vlc_medialibrary_native_source",
+    "family": "docs",
+    "title": "Exact medialibrary native source selected by VLC Android 3.7.1 recipe",
+    "url": "https://code.videolan.org/api/v4/projects/videolan%2Fmedialibrary/repository/archive.tar.gz?sha=8c56e26c625d757994cffeea84d2a0a2e6033dee",
+    "version": "8c56e26c625d757994cffeea84d2a0a2e6033dee",
+    "size_bytes": 988739,
+    "sha256": "5421341fc6554c02fdbf4c790ea5537f8df744ed82038783936eab50095a1181",
+    "license": "LGPL-2.1-or-later",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://code.videolan.org/videolan/medialibrary/-/blob/8c56e26c625d757994cffeea84d2a0a2e6033dee/COPYING",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "inputs": [
+      "vlc_libvlcpp_source",
+      "vlc_sqlite_source"
+    ]
+  },
+  {
+    "id": "vlc_libvlcpp_source",
+    "family": "docs",
+    "title": "Exact libvlcpp submodule source selected by medialibrary recipe; app patch retained separately",
+    "url": "https://code.videolan.org/api/v4/projects/videolan%2Flibvlcpp/repository/archive.tar.gz?sha=44c1f48e56a66c3f418175af1e1ef3fd1ab1b118",
+    "version": "44c1f48e56a66c3f418175af1e1ef3fd1ab1b118",
+    "size_bytes": 90070,
+    "sha256": "340419ce4a1537029c789ba9f01da149d7576b3fa39f19f3f816bfc0452685c6",
+    "license": "LGPL-2.1-or-later",
+    "attribution": "VideoLAN, VideoLabs, and original component contributors; original notices retained",
+    "license_proof_url": "https://code.videolan.org/videolan/libvlcpp/-/blob/44c1f48e56a66c3f418175af1e1ef3fd1ab1b118/COPYING",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "inputs": [
+      "vlc_native_base_source"
+    ]
+  },
+  {
+    "id": "vlc_sqlite_source",
+    "family": "docs",
+    "title": "Original SQLite source archive selected by VLC Android medialibrary recipe",
+    "url": "https://download.videolan.org/pub/contrib/sqlite/sqlite-autoconf-3460100.tar.gz",
+    "version": "sqlite-autoconf-3460100",
+    "size_bytes": 3265571,
+    "sha256": "67d3fe6d268e6eaddcae3727fce58fcc8e9c53869bdd07a0c61e38ddf2965071",
+    "license": "Public-domain-US AND [[VERIFY: bundled configure and other build-script license inventory]]",
+    "attribution": "SQLite authors; original source and bundled build-script notices retained",
+    "license_proof_url": "https://www.sqlite.org/copyright.html",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human HTTPS source pin, complete per-file license/notices, source restoration/build recipe, and exact APK correspondence review; this pinned subset does not complete VLC Android source closure]]",
+    "checksum_source_url": "https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/buildsystem/compile-medialibrary.sh"
+  }
+]

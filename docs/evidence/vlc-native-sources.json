@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "native_bindings": {
+    "all_standard_native_members_match": true,
+    "applications": [
+      {
+        "id": "vlc_android",
+        "native_members": [
+          {
+            "abi": "arm64-v8a",
+            "library": "libc++_shared.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/arm64-v8a/libc++_shared.so",
+                "sha256": "cd61762848882a16c8244c964a6f396c0caa0b440588a210ce9cc4ab0e6d9f0c",
+                "size_bytes": 1253544
+              }
+            ],
+            "path": "lib/arm64-v8a/libc++_shared.so",
+            "sha256": "cd61762848882a16c8244c964a6f396c0caa0b440588a210ce9cc4ab0e6d9f0c",
+            "size_bytes": 1253544
+          },
+          {
+            "abi": "arm64-v8a",
+            "library": "libmla.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/arm64-v8a/libmla.so",
+                "sha256": "d271097f8b4ecc3376a4a6bebf0cf3a88df4ee233a04bff5dc6641706be2fddd",
+                "size_bytes": 5304024
+              }
+            ],
+            "path": "lib/arm64-v8a/libmla.so",
+            "sha256": "d271097f8b4ecc3376a4a6bebf0cf3a88df4ee233a04bff5dc6641706be2fddd",
+            "size_bytes": 5304024
+          },
+          {
+            "abi": "arm64-v8a",
+            "library": "libvlc.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/arm64-v8a/libvlc.so",
+                "sha256": "5155c767d8d28294296f358bffb890ac537df99eb9a5cc26931bbeb08b5b2ad4",
+                "size_bytes": 42827720
+              }
+            ],
+            "path": "lib/arm64-v8a/libvlc.so",
+            "sha256": "5155c767d8d28294296f358bffb890ac537df99eb9a5cc26931bbeb08b5b2ad4",
+            "size_bytes": 42827720
+          },
+          {
+            "abi": "arm64-v8a",
+            "library": "libvlcjni.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/arm64-v8a/libvlcjni.so",
+                "sha256": "93d40e1fb2b2cefdbc1a01c3494eef11883be00cb33eaa3d29044f93742081fb",
+                "size_bytes": 94296
+              }
+            ],
+            "path": "lib/arm64-v8a/libvlcjni.so",
+            "sha256": "93d40e1fb2b2cefdbc1a01c3494eef11883be00cb33eaa3d29044f93742081fb",
+            "size_bytes": 94296
+          }
+        ],
+        "sha256": "bea9ea0cdecfd8f461ef305d2afe5d1ac1459cfb9156acce2f615788a486de74"
+      },
+      {
+        "id": "vlc_android_older",
+        "native_members": [
+          {
+            "abi": "armeabi-v7a",
+            "library": "libc++_shared.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/armeabi-v7a/libc++_shared.so",
+                "sha256": "ceaebc3acbb86a3a4b6fa15b70e846430a6fead1fd1544a28e79f0a69aec7743",
+                "size_bytes": 554808
+              }
+            ],
+            "path": "lib/armeabi-v7a/libc++_shared.so",
+            "sha256": "ceaebc3acbb86a3a4b6fa15b70e846430a6fead1fd1544a28e79f0a69aec7743",
+            "size_bytes": 554808
+          },
+          {
+            "abi": "armeabi-v7a",
+            "library": "libmla.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/armeabi-v7a/libmla.so",
+                "sha256": "ba9618b2acd249d1d2b464b3e0deaccf04c52f447ff8eea4c7ed89d85afafac9",
+                "size_bytes": 5321204
+              }
+            ],
+            "path": "lib/armeabi-v7a/libmla.so",
+            "sha256": "ba9618b2acd249d1d2b464b3e0deaccf04c52f447ff8eea4c7ed89d85afafac9",
+            "size_bytes": 5321204
+          },
+          {
+            "abi": "armeabi-v7a",
+            "library": "libvlc.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/armeabi-v7a/libvlc.so",
+                "sha256": "d7a1f4b24e12c7d3631b49940f0d5a87b34bb7deb1fdda67559fa6d9f80676eb",
+                "size_bytes": 38402400
+              }
+            ],
+            "path": "lib/armeabi-v7a/libvlc.so",
+            "sha256": "d7a1f4b24e12c7d3631b49940f0d5a87b34bb7deb1fdda67559fa6d9f80676eb",
+            "size_bytes": 38402400
+          },
+          {
+            "abi": "armeabi-v7a",
+            "library": "libvlcjni.so",
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/armeabi-v7a/libvlcjni.so",
+                "sha256": "f02995f3e5b31b27f395b3e2f22053f3f31ba345ceb3cc5843c47cf718acedd9",
+                "size_bytes": 83544
+              }
+            ],
+            "path": "lib/armeabi-v7a/libvlcjni.so",
+            "sha256": "f02995f3e5b31b27f395b3e2f22053f3f31ba345ceb3cc5843c47cf718acedd9",
+            "size_bytes": 83544
+          }
+        ],
+        "sha256": "a6a7f940e4bd190c9a70f3f0dc97c1c402c10200af20edac7a1d452b24abd8a0"
+      }
+    ],
+    "complete_application_source_closure": false,
+    "human_license_or_pin_approval": false,
+    "publisher_artifacts": {
+      "vlc_libvlc_aar": "963a121dcc2059d9bd836e1d3d609358d3aa74da42f1d6163a9830765f197af0",
+      "vlc_medialibrary_aar": "ca4a6b6be32eb9056d85c96c1bc9259fff3b1f0e8fc1f785312afe57170eaf92"
+    }
+  },
+  "recipe_inputs": {
+    "libvlcjni-source": {
+      "id": "libvlcjni-source",
+      "url": "https://code.videolan.org/api/v4/projects/videolan%2Flibvlcjni/repository/archive.tar.gz?sha=7cd0c151da4162aa3052fb6949ddab1436d8fafb",
+      "sha256": "963c970377454f257fa26c9c4984d160eb14038be782e89e5c8193cb8b8246eb",
+      "size_bytes": 258849
+    },
+    "medialibrary-source": {
+      "id": "medialibrary-source",
+      "url": "https://code.videolan.org/api/v4/projects/videolan%2Fmedialibrary/repository/archive.tar.gz?sha=8c56e26c625d757994cffeea84d2a0a2e6033dee",
+      "sha256": "5421341fc6554c02fdbf4c790ea5537f8df744ed82038783936eab50095a1181",
+      "size_bytes": 988739
+    },
+    "libvlc-all-sources.jar": {
+      "id": "libvlc-all-sources.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0-sources.jar",
+      "sha256": "95bb03b150ca4cda5fb334b02df2e4f95c627940a1134f805161ab0146566a37",
+      "size_bytes": 75151,
+      "publisher_sha1": "760140ee98ac38dedcbe124962b8a2c5c21d3754",
+      "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0-sources.jar.sha1"
+    },
+    "medialibrary-all-sources.jar": {
+      "id": "medialibrary-all-sources.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17-sources.jar",
+      "sha256": "8c7f461b8a709752f0930610636117740777968541daaa909d1915bcd32611af",
+      "size_bytes": 70963,
+      "publisher_sha1": "4622fcd3ea87cab0586888983be1671b657bf75f",
+      "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17-sources.jar.sha1"
+    },
+    "libvlcpp-source": {
+      "id": "libvlcpp-source",
+      "url": "https://code.videolan.org/api/v4/projects/videolan%2Flibvlcpp/repository/archive.tar.gz?sha=44c1f48e56a66c3f418175af1e1ef3fd1ab1b118",
+      "version": "44c1f48e56a66c3f418175af1e1ef3fd1ab1b118",
+      "size_bytes": 90070,
+      "sha256": "340419ce4a1537029c789ba9f01da149d7576b3fa39f19f3f816bfc0452685c6"
+    },
+    "libvlc-all.aar": {
+      "id": "libvlc-all.aar",
+      "url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.aar",
+      "sha256": "963a121dcc2059d9bd836e1d3d609358d3aa74da42f1d6163a9830765f197af0",
+      "size_bytes": 86664930,
+      "publisher_sha1": "2ab62e86653af46b37524ece930404a18f00773b",
+      "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.aar.sha1"
+    },
+    "vlc-core-source": {
+      "id": "vlc-core-source",
+      "url": "https://code.videolan.org/api/v4/projects/videolan%2Fvlc/repository/archive.tar.gz?sha=3458be162f476ff64b639140b684efa1143ddeea",
+      "version": "3458be162f476ff64b639140b684efa1143ddeea",
+      "size_bytes": 32830436,
+      "sha256": "a166dc34fdeef0ad5dbd46ec65980d4b90f621517c5a755c63817e1f66a8d103"
+    },
+    "sqlite-source": {
+      "id": "sqlite-source",
+      "url": "https://download.videolan.org/pub/contrib/sqlite/sqlite-autoconf-3460100.tar.gz",
+      "version": "sqlite-autoconf-3460100",
+      "size_bytes": 3265571,
+      "sha256": "67d3fe6d268e6eaddcae3727fce58fcc8e9c53869bdd07a0c61e38ddf2965071",
+      "publisher_sha512": "a5ba5af9c8d6440d39ba67e3d5903c165df3f1d111e299efbe7c1cca4876d4d5aecd722e0133670daa6eb5cbf8a85c6a3d9852ab507a393615fb5245a3e1a743",
+      "checksum_source_url": "https://code.videolan.org/videolan/vlc-android/-/blob/baeb1edae0678927ebe16d482d979e9c7e75ead6/buildsystem/compile-medialibrary.sh"
+    },
+    "medialibrary-all.aar": {
+      "id": "medialibrary-all.aar",
+      "url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.aar",
+      "sha256": "ca4a6b6be32eb9056d85c96c1bc9259fff3b1f0e8fc1f785312afe57170eaf92",
+      "size_bytes": 9570952,
+      "publisher_sha1": "b99fbe393e9fc336ab28b851ed9defad9af7cf87",
+      "checksum_source_url": "https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.aar.sha1"
+    }
+  },
+  "libvlcpp_gitlink": {
+    "url": "https://code.videolan.org/api/v4/projects/videolan%2Fmedialibrary/repository/tree?ref=8c56e26c625d757994cffeea84d2a0a2e6033dee&per_page=100",
+    "id": "44c1f48e56a66c3f418175af1e1ef3fd1ab1b118",
+    "name": "libvlcpp",
+    "type": "commit",
+    "path": "libvlcpp",
+    "mode": "160000"
+  },
+  "patch_checks": [
+    {
+      "component": "vlc_core",
+      "source_sha256": "a166dc34fdeef0ad5dbd46ec65980d4b90f621517c5a755c63817e1f66a8d103",
+      "patch_archive_sha256": "963c970377454f257fa26c9c4984d160eb14038be782e89e5c8193cb8b8246eb",
+      "patches": [
+        {
+          "path": "libvlc/patches/0001-compat-Workaround-sendmsg-bug-on-android.patch",
+          "sha256": "aa649f5f1c6a7a573619f8c59e318e924dcb31437c85ee409444dfcdd7c9b4d0"
+        },
+        {
+          "path": "libvlc/patches/0002-libvlc-events-Add-callbacks-for-record.patch",
+          "sha256": "428ec63c0ea13dea8c145e96f97a5dfbebb75cd097fb5466c769b566b8935f8f"
+        },
+        {
+          "path": "libvlc/patches/0003-network-tls-Handle-errors-from-older-kernels.patch",
+          "sha256": "1cbcc05380f482c55e4d82499f1a9de33891da4b3b9daa76236ff742a44b1a5d"
+        },
+        {
+          "path": "libvlc/patches/0004-access_output-file-Add-error-dialog-for-write-open.patch",
+          "sha256": "e58ebca9a22a17b5850b9c9ded8363102f50f22044650737bc66a22994d302a6"
+        },
+        {
+          "path": "libvlc/patches/0005-libvlc-media_player-Add-record-method.patch",
+          "sha256": "9532439d37fc474a4eda30fb215cb128999d97c308ff737ae3bd46996dd7bdbe"
+        },
+        {
+          "path": "libvlc/patches/0006-input-es_out-set-video-exclusive.patch",
+          "sha256": "32674f2f485466cabf25140b3eaee78b2bea1e194109c2d60b6f2b40026dc5fc"
+        },
+        {
+          "path": "libvlc/patches/0007-stream_ReadLine-increase-line-length-limit.patch",
+          "sha256": "964873d3e272366e259fb88ec59c8371784ae486821c208360b366277535d1e8"
+        },
+        {
+          "path": "libvlc/patches/0008-input-Extract-attachment-also-when-preparsing.patch",
+          "sha256": "98d5b78e3fd3d6bae32c7090156abec16349f82e0d5afbd8c8697e1ec26eec25"
+        },
+        {
+          "path": "libvlc/patches/0009-input-display-discoverer-preparsers-logs.patch",
+          "sha256": "4f7afff2bbe5f616ebc10dc7874eab9983884ae9918b1c90373c9d161fa3b17e"
+        },
+        {
+          "path": "libvlc/patches/0010-media_player-backport-fast-seek-argument.patch",
+          "sha256": "f504451021ea1b2c09535e626c13aff9fb8bed5a99d3d3962f855a8f70a2c001"
+        },
+        {
+          "path": "libvlc/patches/0011-audiotrack-rework-DynamicsProcessing-stop.patch",
+          "sha256": "2e09fa0222425f18285e6a048fd33b41cc3eed2cdc7b04d16a6264368b0bd8c5"
+        },
+        {
+          "path": "libvlc/patches/0012-freetype-android-process-formatted-text-nodes.patch",
+          "sha256": "bef2d8cd08ab1a972b1cf2c438a6b81e85df220fa559a04e43bd93ec45600667"
+        },
+        {
+          "path": "libvlc/patches/0013-keystore-use-the-system-keystore-from-the-first-try.patch",
+          "sha256": "7e7495fcf1829d4fb5b2791808bc8e1f7e1d5f89e7c203d24b237a5f00919f44"
+        },
+        {
+          "path": "libvlc/patches/0014-keystore-return-false-when-interrupted.patch",
+          "sha256": "d48974cf6abbdf7876685c638e54fcb61acd952e09b76b9531738a1b54de6178"
+        },
+        {
+          "path": "libvlc/patches/0015-modules-access-handle-vlc_credential_get-interruptio.patch",
+          "sha256": "ba2b342e2387cfbfe21e66d06203efb9569c020fb9a2456e008b324d7ddf60d8"
+        },
+        {
+          "path": "libvlc/patches/0016-access-add-a-cache-helper.patch",
+          "sha256": "f8965fcb08204e52c906e9b7332e318de923cd784461aee54092bba4cdad3811"
+        },
+        {
+          "path": "libvlc/patches/0017-dsm-use-the-cache-helper.patch",
+          "sha256": "1da77a3ca1b27dd9fb7e51f89a81f492943cef1ebe09f456a0c5d409b842f6fc"
+        },
+        {
+          "path": "libvlc/patches/0018-smb2-use-the-cache-helper.patch",
+          "sha256": "ab84c312bcfa306e4830e97322ac004c0d51489cc69f4f72233f13528faa54ec"
+        },
+        {
+          "path": "libvlc/patches/0019-upnp-android-implement-net-intf-priority.patch",
+          "sha256": "4f759b92ae2294bd82115b34747dc2c707563053ca4532cb020f0e4bcefbbcb9"
+        },
+        {
+          "path": "libvlc/patches/0020-upnp-add-and-use-a-callback-listener-interface.patch",
+          "sha256": "441bdb2803f2a11283b4bd86c045b828b2bbb8092a1d11f5291c9c38c7f5b8fb"
+        }
+      ],
+      "applied_without_conflicts": true,
+      "host_git_version": "git version 2.53.0",
+      "native_or_apk_build_performed": false
+    },
+    {
+      "component": "libvlcpp",
+      "source_sha256": "340419ce4a1537029c789ba9f01da149d7576b3fa39f19f3f816bfc0452685c6",
+      "patch_archive_sha256": "0ed64811b3f9c978ba40aade4286014b4b6400489f66b86d87d935f415dba394",
+      "patches": [
+        {
+          "path": "buildsystem/patches/libvlcpp/0001-MediaPlayer-always-use-set_time-set_position-fast-ar.patch",
+          "sha256": "78fe2ca4a793d64698b07ae2077fe86fd33779db17cd28ca35d630a6440d97aa"
+        }
+      ],
+      "applied_without_conflicts": true,
+      "host_git_version": "git version 2.53.0",
+      "native_or_apk_build_performed": false
+    }
+  ],
+  "source_jar_inventory": {
+    "libvlc_java_files": 40,
+    "medialibrary_java_files": 48,
+    "native_source_files": 0,
+    "standalone_license_files": 0
+  },
+  "native_engine_identifiers": {
+    "vlc_android": "3.0.23-2-228-gb0e7b54f24",
+    "vlc_android_older": "3.0.23-2-228-g281f05e7d5"
+  },
+  "short_commit_lookup_status": {
+    "b0e7b54f24": 404,
+    "281f05e7d5": 404
+  },
+  "source_scope": "Exact publisher native artifact bindings and a recipe-selected source subset; remaining contrib, Java, remote-client, runtime, build-restoration, license, and physical-device obligations stay open",
+  "complete_application_source_closure": false,
+  "human_license_or_pin_approval": false
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "kiwix_android_java_binding_source",
+    "family": "docs",
+    "title": "Java libkiwix 2.4.0; commit 40967ea319fc31beec0fb5240fb488c68e94f6f9 source archive",
+    "url": "https://codeload.github.com/kiwix/java-libkiwix/tar.gz/40967ea319fc31beec0fb5240fb488c68e94f6f9",
+    "version": "Java libkiwix 2.4.0; commit 40967ea319fc31beec0fb5240fb488c68e94f6f9",
+    "size_bytes": 1268959,
+    "sha256": "bf23722aac7a2845531fb91260664f516f10741c5e30af4cb83d87ecd4afb356",
+    "license": "GPL-3.0-or-later",
+    "attribution": "Kiwix Java binding contributors",
+    "license_proof_url": "https://github.com/kiwix/java-libkiwix/blob/40967ea319fc31beec0fb5240fb488c68e94f6f9/README.md#license",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, per-file notices, complete Maven and native dependencies, and exact build/toolchain correspondence; published AAR native bytes match selected APK, not a source rebuild]]",
+    "inputs": [
+      "kiwix_android_libkiwix_source",
+      "kiwix_android_libzim_source"
+    ]
+  },
+  {
+    "id": "kiwix_android_libkiwix_source",
+    "family": "docs",
+    "title": "C++ libkiwix 14.1.0; tag commit 0a9ba9b678f2775191234dea5567c7559176d736 source archive",
+    "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz",
+    "version": "C++ libkiwix 14.1.0; tag commit 0a9ba9b678f2775191234dea5567c7559176d736",
+    "size_bytes": 1123020,
+    "sha256": "92d7ccc76b0dbd7f5b8584daef6e44c43c4b8a3c83a1d67e2a1b9bf1eb9a5f14",
+    "license": "GPL-3.0-or-later",
+    "attribution": "Kiwix libkiwix contributors and bundled third-party authors",
+    "license_proof_url": "https://github.com/kiwix/libkiwix/blob/0a9ba9b678f2775191234dea5567c7559176d736/README.md#license",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human SHA pin, complete static dependency sources, embedded skin/script licenses and notices, native build recipe, and binary/source correspondence]]",
+    "checksum_source_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz.md5"
+  },
+  {
+    "id": "kiwix_android_libzim_source",
+    "family": "docs",
+    "title": "libzim 9.4.0; tag commit 8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e source archive",
+    "url": "https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz",
+    "version": "libzim 9.4.0; tag commit 8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e",
+    "size_bytes": 217752,
+    "sha256": "7fa374f4714b23c43afa3fb406d7e21c483d77e8218895e1408e2f037969b6ea",
+    "license": "GPL-2.0-or-later",
+    "attribution": "openZIM libzim contributors",
+    "license_proof_url": "https://github.com/openzim/libzim/blob/8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e/README.md#license",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human SHA pin, GPL-2.0-or-later policy recognition, per-file GPL versions including GPLv3-or-later headers, complete static dependency sources, native build recipe, and binary/source correspondence]]",
+    "checksum_source_url": "https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz.md5"
+  },
+  {
+    "id": "kiwix_mac_swift_system_source",
+    "family": "docs",
+    "title": "Swift System commit b083113aef646d9d35403ca17e9789b750e42d1d source archive",
+    "url": "https://codeload.github.com/apple/swift-system/tar.gz/b083113aef646d9d35403ca17e9789b750e42d1d",
+    "version": "Swift System commit b083113aef646d9d35403ca17e9789b750e42d1d",
+    "size_bytes": 136654,
+    "sha256": "983e0bc7be6b1a1d25501a694e1e5c85a42be3c5b77d0ef60888624a9f5b9016",
+    "license": "Apache-2.0 WITH Swift-exception",
+    "attribution": "Apple Inc. and Swift System project authors",
+    "license_proof_url": "https://github.com/apple/swift-system/blob/b083113aef646d9d35403ca17e9789b750e42d1d/LICENSE.txt",
+    "placement": "hub_only",
+    "dest": "build/gpl-sources/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: human source pin, Apache runtime exception and complete notices review, package graph and selected DMG correspondence; unsupported WITH expression remains policy-blocked]]"
+  }
+]
