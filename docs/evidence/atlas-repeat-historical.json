@@ -1,0 +1,752 @@
+{
+  "county_bookmarks": 3235,
+  "files": [
+    {
+      "path": "AK.pdf",
+      "sha256": "ae64536b4aeb4b14b2bf37b89df208088ec4792a6aa30e32a019a7eb14dc969c",
+      "size_bytes": 5859588
+    },
+    {
+      "path": "AL.pdf",
+      "sha256": "7f633dcb2d9a3fdcba48e1c8d22c30c2ff7ee5e2be2d9df09902ee39e85d0c25",
+      "size_bytes": 31635782
+    },
+    {
+      "path": "AR.pdf",
+      "sha256": "b645e9b5f6d00943d607b7bf7056341bb8fa42daff47a73ad0986399b4f93241",
+      "size_bytes": 29702518
+    },
+    {
+      "path": "AS.pdf",
+      "sha256": "97641951ae6dfba3837db45fe10149df55f7f09eb70461a87d2bd1f3aa814f3e",
+      "size_bytes": 647608
+    },
+    {
+      "path": "AZ.pdf",
+      "sha256": "6bb45608748e98ab0035fadde6e0c0cfceefa2bc076a2e5376bc98a4883c7d14",
+      "size_bytes": 31894772
+    },
+    {
+      "path": "CA.pdf",
+      "sha256": "ab7fa321df309738b134a531da345c163f0a5bb29b6d073729a25138018cd076",
+      "size_bytes": 138975088
+    },
+    {
+      "path": "CO.pdf",
+      "sha256": "edd19b414a40973dbacc63684bdcf232cbfdd005139241b81ed929f5e68ef5ed",
+      "size_bytes": 34341357
+    },
+    {
+      "path": "CT.pdf",
+      "sha256": "08bbfce1c0cb934ccd97592f9bd6915682421a600d0ce1842a7cac7e482a65fb",
+      "size_bytes": 17243821
+    },
+    {
+      "path": "DC.pdf",
+      "sha256": "67a7819bb09048f9f86a32f64a9ca9eda32468533df0d022ef3bb17ea5daa9bf",
+      "size_bytes": 4045276
+    },
+    {
+      "path": "DE.pdf",
+      "sha256": "1c5939756026023754b31640fa21351580b24d025a3ad8e43bd74bfce3bf559e",
+      "size_bytes": 3590010
+    },
+    {
+      "path": "FL.pdf",
+      "sha256": "4f1e94370611107d365eb229fc50439ade97b07943990dd7bb1c9170210e2ca9",
+      "size_bytes": 63194802
+    },
+    {
+      "path": "GA.pdf",
+      "sha256": "86a4ff431dbea56229ba5526e7e6a38215effb59829712b4a31893d41842584b",
+      "size_bytes": 74802542
+    },
+    {
+      "path": "GU.pdf",
+      "sha256": "ad12635e2df36566485856ddfabdf343971b3fc76d66929e3463515f9b153a3e",
+      "size_bytes": 237942
+    },
+    {
+      "path": "HI.pdf",
+      "sha256": "a5de191d99056e3bc65f7b7c7a11594a9e8d02758004a342a62299bbb725bf7f",
+      "size_bytes": 2053821
+    },
+    {
+      "path": "IA.pdf",
+      "sha256": "446bb45f592b9e9d76374a6abaceb343869336360b70f5ed8c2d86ff1d1ed77a",
+      "size_bytes": 35061848
+    },
+    {
+      "path": "ID.pdf",
+      "sha256": "965dfa5f4b35cb6dd6145c59104a5d5e3151b722d7fba1033794e29df559fce1",
+      "size_bytes": 13564836
+    },
+    {
+      "path": "IL.pdf",
+      "sha256": "12be7ceb98c5c7e0e29ba102100573a3a90ef7d1537c5072393995dfcb730dbd",
+      "size_bytes": 58037087
+    },
+    {
+      "path": "IN.pdf",
+      "sha256": "43fe39c9159b43bacd0fe851bbcf79021e5a7d8ec591623287d58665b589c295",
+      "size_bytes": 37898011
+    },
+    {
+      "path": "KS.pdf",
+      "sha256": "e44329caca0c48c440c5cdd2cfbf6f44d8b742b91406ac6810ab1a5784e3ebb9",
+      "size_bytes": 30613035
+    },
+    {
+      "path": "KY.pdf",
+      "sha256": "a35234f0993bc87309d310946e81fa274489b4aa9b3bb5c0fd8f09e9f6a95206",
+      "size_bytes": 49661057
+    },
+    {
+      "path": "LA.pdf",
+      "sha256": "d0f9fa2c15db135e5e838506e3a21502e2dcd75d2ab9e571e76f041190ca2333",
+      "size_bytes": 28511265
+    },
+    {
+      "path": "MA.pdf",
+      "sha256": "b5dbf99627f6b0d20c9ae34a48da415400d7eaf6bb04a9fa2cb870cbc071bb43",
+      "size_bytes": 31790240
+    },
+    {
+      "path": "MD.pdf",
+      "sha256": "2189ecd76f82360595d6672b058fc1e95427623286114b51ae50ea891930138e",
+      "size_bytes": 25062504
+    },
+    {
+      "path": "ME.pdf",
+      "sha256": "5cb523c25e6b35c55ed95aee65a830cb16c3257f6d1c58eee3625194852cd00f",
+      "size_bytes": 9929682
+    },
+    {
+      "path": "MI.pdf",
+      "sha256": "ce0eda6d768addc16f24cd0daf325c4b415214653e2a4ea86abf2bc50a94ec25",
+      "size_bytes": 50995429
+    },
+    {
+      "path": "MN.pdf",
+      "sha256": "6f5ba4e1dc6e6fbe3d1826b05b9809e2093418e96b940c43e4b8dc9d247ca3a8",
+      "size_bytes": 50877068
+    },
+    {
+      "path": "MO.pdf",
+      "sha256": "8fac20d2c008ae245ac887982230d258823022d061d7178217946217002bf3eb",
+      "size_bytes": 45395029
+    },
+    {
+      "path": "MP.pdf",
+      "sha256": "ff8535ac08791bd5314b8c4abbfc91f9ec7980059294e3d00393e8ec0e7fa347",
+      "size_bytes": 538079
+    },
+    {
+      "path": "MS.pdf",
+      "sha256": "40da5d8c9a89ef84445a1ef241703bfecb76036588f8338f59fd805b5e35ef3f",
+      "size_bytes": 26192897
+    },
+    {
+      "path": "MT.pdf",
+      "sha256": "c7cdc7b51398009a30fddd4866ca7692c1d39e9f5c06e19bc120d2d904878e6f",
+      "size_bytes": 12932716
+    },
+    {
+      "path": "NC.pdf",
+      "sha256": "99cbb62d63e886362669b09eb77722e5b880f0de9e08b577ec45b088533d9509",
+      "size_bytes": 58122287
+    },
+    {
+      "path": "ND.pdf",
+      "sha256": "bcd6e5c292b61ffbab500c0984c9e150c5bff969546071154635a26111f36236",
+      "size_bytes": 14922073
+    },
+    {
+      "path": "NE.pdf",
+      "sha256": "25bd7d0797ba2372cf0d901912a662a7b21a4c66ee8e66d46c4bb46a8583a56d",
+      "size_bytes": 28503412
+    },
+    {
+      "path": "NH.pdf",
+      "sha256": "7a660905f684685a1be3f553cad2fd9bc90d9bae1359e54099f58f65ab6d6d1c",
+      "size_bytes": 9727055
+    },
+    {
+      "path": "NJ.pdf",
+      "sha256": "6e0bc250d34b68d1504eac241d71c78c2961d0dd95da3eabb4085a1c7442b69b",
+      "size_bytes": 45300585
+    },
+    {
+      "path": "NM.pdf",
+      "sha256": "40c0b09550ed99203d413dfd9c19e2c6ca7bf325a100f29ebea163db79dfed29",
+      "size_bytes": 12231552
+    },
+    {
+      "path": "NV.pdf",
+      "sha256": "6bd620da1b6b2dbf830e1ae4ca3fdb042a3ec102dc9b3221a1eb21a57b29203d",
+      "size_bytes": 11342040
+    },
+    {
+      "path": "NY.pdf",
+      "sha256": "c4012437b690542069e85438b2b02d0bd87b49db35598846185932a2e286c5b7",
+      "size_bytes": 83047421
+    },
+    {
+      "path": "OH.pdf",
+      "sha256": "a929310521188738105af2f53d5a1cc57163eceed813f9f4fdcc61e0f4190f33",
+      "size_bytes": 62115743
+    },
+    {
+      "path": "OK.pdf",
+      "sha256": "0c98ce926edc2f15c575ed23e0ed706b38d0fc3473b160f878c5243dafcb1824",
+      "size_bytes": 26228266
+    },
+    {
+      "path": "OR.pdf",
+      "sha256": "84e4b9d5b593145baf42d3e462cbc21d99b72734828f97c68dd3082f3d436ab5",
+      "size_bytes": 20976743
+    },
+    {
+      "path": "PA.pdf",
+      "sha256": "efb76b4b915a317a135ccc57f66deca1d32978ff060d689619014d72bb62dc6a",
+      "size_bytes": 68907834
+    },
+    {
+      "path": "PR.pdf",
+      "sha256": "01dbee5b1c8233c1f47755fdfc66464d7d51d906082c147fa9e148563b1ac4eb",
+      "size_bytes": 45159839
+    },
+    {
+      "path": "RI.pdf",
+      "sha256": "18fcf6a969ceab3b4e4cc0c836b7a6ee1f34eeffeb4cf5819d7d71b81da6be4a",
+      "size_bytes": 5601082
+    },
+    {
+      "path": "SC.pdf",
+      "sha256": "bb9c7ac6251a15be39c8d744ff1cd28e5673b2b7efbd63b7bc7cc6212957e57d",
+      "size_bytes": 30447900
+    },
+    {
+      "path": "SD.pdf",
+      "sha256": "30e99ddcdc03bc2b4800194e9128d25f2d117105433cc5ca93f5c93c685da94b",
+      "size_bytes": 18432110
+    },
+    {
+      "path": "TN.pdf",
+      "sha256": "0be1bf937d50a4e70e0387093749c9c3abe51184d98b80a6fc5acfc4290fa41f",
+      "size_bytes": 43397898
+    },
+    {
+      "path": "TX.pdf",
+      "sha256": "88083ee5f8521431b982497f594c9e23aa651d7902c4f9dd7404ff1ba0976823",
+      "size_bytes": 160091762
+    },
+    {
+      "path": "UT.pdf",
+      "sha256": "e0c593fcfbdd95ad718e745cec33dc2bc2e2667ec1cb62e5d5923545bff81e5e",
+      "size_bytes": 13625079
+    },
+    {
+      "path": "VA.pdf",
+      "sha256": "ba7d0a443d15c3c27d109965b544edc80e7ee362f97898de00f7e8a062fe6fd9",
+      "size_bytes": 71832834
+    },
+    {
+      "path": "VI.pdf",
+      "sha256": "8373caa76bb00301729fa35a8db69e59298f1dfa188f9554d940b30fb8dc8ab1",
+      "size_bytes": 617058
+    },
+    {
+      "path": "VT.pdf",
+      "sha256": "a777a0fd92e514c709abddf3231d9c6712aeded53f1c531e18ea8d2f8de4612b",
+      "size_bytes": 6237295
+    },
+    {
+      "path": "WA.pdf",
+      "sha256": "0bb684c4d0bad45f92dbeff01b7235b32d2edc21b3e9909cbe1b7f5d27fe777b",
+      "size_bytes": 33012413
+    },
+    {
+      "path": "WI.pdf",
+      "sha256": "2c17e895e2a4b8f0670efb2fbe796fdcd34ef81df34eb8265e929494e377c0b8",
+      "size_bytes": 36063965
+    },
+    {
+      "path": "WV.pdf",
+      "sha256": "9ef17bc6981cbe2cdaa75655ebb29c010730fb591fec65fe8d82bb2dc6d0c5f4",
+      "size_bytes": 22930063
+    },
+    {
+      "path": "WY.pdf",
+      "sha256": "a8507052c9307e7e05cc50eb24d8327d8cbbb9465fdfba30cba689be789ccdfd",
+      "size_bytes": 5850174
+    }
+  ],
+  "generation_sha256": "4e32d47c79fdc8af18d5b8f91072eb5e3473fb2f14037ae79fd08a52e2b911fb",
+  "independent_builds": 2,
+  "inputs": {
+    "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+    "census_places_ak": "582c37f2fe680af15d7508e222153d5aa163867f47f2d96fbacd05695b0d985d",
+    "census_places_al": "502d0e2e0266e4e73a00582b5b82252e4484f6cac61c0dbe7df85d9f5a30a144",
+    "census_places_ar": "348061c5f3cac0d83394ac7c1cfb0bff9ba891061429aa46d8abbdec83092999",
+    "census_places_as": "fc60deea78302bcb968bf28600b77f7a98db2dfe15bee2ff00cf61ea4ffaba24",
+    "census_places_az": "7c52a87725285cd6e6655daf6cf733c37942256bc7e190ac01ddb174a0acd330",
+    "census_places_ca": "2b59dc5d54c69c7a451795401fc2a1c1c68b172f1d912d3486080e04a83e23e8",
+    "census_places_co": "e0072e2f1c049e53d598119014e6bc93f82a0a02082b3604d81b0a8c3e8b043c",
+    "census_places_ct": "5766992fb77774fd47a2b7868747b6007a5cbbdeaa04e793506aee3faa13d52e",
+    "census_places_dc": "1ac8c0230c3e656bf79d9ee3a52f4d48f97626fce5e4f6c7701bca6f948b9623",
+    "census_places_de": "638eda256e3785b8653ec776787866e6eda890a9d9bf2653c6fcc6aeba6cebb8",
+    "census_places_fl": "4394a80089284477cf79daefb754afd7e9f90683415d3398376e5c2152960876",
+    "census_places_ga": "85af23730c518c008e6869ce63dfa02d17ae61de601dd204b880ff43f5d31ff5",
+    "census_places_gu": "1047ceb9991b1ad0d65ec3e643004f6a3ee25db111dcba71e0a623b80c3eaebb",
+    "census_places_hi": "38018cb6a3e66c2f0174056903d0e8c6c2d18fa5c15b0014d059f2bead42f65b",
+    "census_places_ia": "b945d74f84c7fd20d1e77cd49522cc1ea542f16652987171b10616f15875ce21",
+    "census_places_id": "d0202acb86094eab323a1cd2deef23e12b4fa9e29d8d77bcfabb862235f847d4",
+    "census_places_il": "5c2ce6d7ca6a5045ea46563898c168a6e6b259d7ad116c6f27148ce3a40822b3",
+    "census_places_in": "2428563ed4db0a74b2041dec577e4230103329eb2875ac1827076bf477f82201",
+    "census_places_ks": "0cdaf30d567ebbb8f75421200a6e3345728313cffd791567cce308fdac047583",
+    "census_places_ky": "40d09b3263922786f5970b7e55dfb8e7b1a97c74a62efacab4e070e8738e9e64",
+    "census_places_la": "982330b7333d268b26ff60666b3ad4b683b95a1db7cef9053d39bfb580c6dcfd",
+    "census_places_ma": "950f7d0a669caf721f770d1cc58883560b1cf84f5d7be845e6e3d05a855c86fa",
+    "census_places_md": "e984dd58cc06b01363958221a661e1eef89b3daa328ace515f1daee0da4594cc",
+    "census_places_me": "2bc5461577f18dd3e89ac5d314c0ce2fc8def3de3a3f633a35423488a8aa0ce5",
+    "census_places_mi": "91cd708b8f9809a50ebed360fe7242969ba357a542481da81d9edc5821d35d3b",
+    "census_places_mn": "60d7e34ecbf7bf225b4b29d908acddcd6a9e05c39ae505cdb83791e3dfd81873",
+    "census_places_mo": "7182d92a73ef3167714d66ef192fce374636c549fb1d4e635af9580dc49cddf1",
+    "census_places_mp": "78d08e63b4cb00f441a4476af0d6361bc6d784e74919be68a3d54454343bec76",
+    "census_places_ms": "08aa0b23ab4d88f3dac2891fd82c2f6a67ea90816c14111c0147de85dae5f3e7",
+    "census_places_mt": "2a39433bd9e5a81a683e39ae9bbb914c9ce63c50a92855ddeee8c0ae02b63f74",
+    "census_places_nc": "c6b8dabd4c953bb44dd4201b34eae83dceeb880055e1c4efd00faa43c272ea79",
+    "census_places_nd": "bec89e2ff577b0717d31d58c33bcc54b36732822f6de8c32ccfd966f0527cea9",
+    "census_places_ne": "aa01fa8c3dafcea27cbe6bd009f38eb774b4c765fd2e5b81701d69a534da16e0",
+    "census_places_nh": "e5ccfa3bcca3899566dc5d4831ba3557779f53856bedffde393f824d0bcc44c7",
+    "census_places_nj": "28602a4302564a9eecf8e92f861fad6864d806581ee2ce8bea9997999f3e440e",
+    "census_places_nm": "1cbbc3121c3aeb65c2eaa4371d30ceab09a7a6f4f066beee0a9f76077c42348e",
+    "census_places_nv": "9842a490c27930be50f19cbc21b0c623f16b6d1d40f2e4cb1b0b2b5c7b2f7d83",
+    "census_places_ny": "4f667ef3a40f1569b58a37052e2464053436bd5e978b34ca333e8185a6a6808d",
+    "census_places_oh": "6c4c280e539dadc21bedda385b1c7a4b3ee24998c774d1b7e0a49e0199b272e9",
+    "census_places_ok": "e9d840ae15b4c3e194427987a31f84ed685fe9d82ac8d3349986a99b18e365cb",
+    "census_places_or": "d05814de06701cca35df9e160017cd11d5ffe43a2530a8fa7f4b3a521e9e1f0f",
+    "census_places_pa": "b9b8a25b906bc0c338cc4cfea45d8e5de12247a913cbd821b93368c55e2e9dc5",
+    "census_places_pr": "32483d1f41d3852de44afb6d91d6d89c4fa7320c6b010b3766855c013df03d47",
+    "census_places_ri": "520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429",
+    "census_places_sc": "f1a69f4a169b19ca69d09da21e157dfd6177c0959bec80352b0a7a0165885d68",
+    "census_places_sd": "050183397bec5bef01804ccd9f3ba4ec7d3f80edd27603a71160959af4fad0ef",
+    "census_places_tn": "3f6d5ae04e8f1217a7d0be244d3a841345902d9d4def83b0a07d1fc75960cc8e",
+    "census_places_tx": "5a0c4d49641f69028ee9f5c343bf09936ec00a378e5e6393115b106bab935e13",
+    "census_places_ut": "3db4d3fc1d9ca4b7c6911b01079558bb13e89703933858247f0bc4ff75d9e3d9",
+    "census_places_va": "b2ce73226f4b3a0f0a60d7116e65f468cd94a739f30c345106ff1e292c57a1f5",
+    "census_places_vi": "fa84e8bb32e91802a8268b5d3715e418a3356f7226cc2ce86ebd951593f8f4e4",
+    "census_places_vt": "6b932d7ab2aa279cac6e2ec713e0283d71f88661396df1630d85dc8eef5f58f5",
+    "census_places_wa": "b99039759e33cf931175302da80de9bd8d284c384721d52efde34dfbef2b64f5",
+    "census_places_wi": "a48a36cae9450fe11916cb94bbf1054d0ebc6c878e18de7a7e27039ad6fc5763",
+    "census_places_wv": "756188b7c2187c2e7cb43867546e406e3236df360b0baa72b17db4af0fd4ecd2",
+    "census_places_wy": "3b077402b1090f9afed9662da7f70d66b791b01f61d8ac4b7032df2293715e96",
+    "directory_points": "77154fd66db5239c8e21ded4597f2ea914def8900b29f48f31b68ce3fc453b23",
+    "noto_sans": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+    "noto_sans_arabic": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+    "noto_sans_cherokee": "865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd",
+    "noto_sans_sc": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "protomaps_us": "1c3356889dcc37845889be58ea3cb6ca279a175a792b5ed9d1167d2428c3589e"
+  },
+  "jurisdictions": 56,
+  "map_views": 4112,
+  "pipeline_version": "atlas-set-v1-a9f1237d828ef9192c95c7487ee615fb8d3e7864509cad2470b0399f2f94332a",
+  "placed_size_bytes": 1880010193,
+  "scope": "Historical 254062-place corpus only; corrected geography and full images are not certified",
+  "source_date_epoch": 1793404800,
+  "state_results": [
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 5859588,
+      "state": "AK",
+      "views": 30
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 31635782,
+      "state": "AL",
+      "views": 76
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 29702518,
+      "state": "AR",
+      "views": 79
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 647608,
+      "state": "AS",
+      "views": 5
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 31894772,
+      "state": "AZ",
+      "views": 58
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 138975088,
+      "state": "CA",
+      "views": 223
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 34341357,
+      "state": "CO",
+      "views": 85
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 17243821,
+      "state": "CT",
+      "views": 24
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 4045276,
+      "state": "DC",
+      "views": 3
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 3590010,
+      "state": "DE",
+      "views": 5
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 63194802,
+      "state": "FL",
+      "views": 119
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 74802542,
+      "state": "GA",
+      "views": 171
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 237942,
+      "state": "GU",
+      "views": 1
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 2053821,
+      "state": "HI",
+      "views": 8
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 35061848,
+      "state": "IA",
+      "views": 103
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 13564836,
+      "state": "ID",
+      "views": 48
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 58037087,
+      "state": "IL",
+      "views": 132
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 37898011,
+      "state": "IN",
+      "views": 101
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 30613035,
+      "state": "KS",
+      "views": 114
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 49661057,
+      "state": "KY",
+      "views": 123
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 28511265,
+      "state": "LA",
+      "views": 69
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 31790240,
+      "state": "MA",
+      "views": 41
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 25062504,
+      "state": "MD",
+      "views": 34
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 9929682,
+      "state": "ME",
+      "views": 21
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 50995429,
+      "state": "MI",
+      "views": 109
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 50877068,
+      "state": "MN",
+      "views": 103
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 45395029,
+      "state": "MO",
+      "views": 124
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 538079,
+      "state": "MP",
+      "views": 4
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 26192897,
+      "state": "MS",
+      "views": 84
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 12932716,
+      "state": "MT",
+      "views": 58
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 58122287,
+      "state": "NC",
+      "views": 115
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 14922073,
+      "state": "ND",
+      "views": 54
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 28503412,
+      "state": "NE",
+      "views": 98
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 9727055,
+      "state": "NH",
+      "views": 16
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 45300585,
+      "state": "NJ",
+      "views": 52
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 12231552,
+      "state": "NM",
+      "views": 39
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 11342040,
+      "state": "NV",
+      "views": 31
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 83047421,
+      "state": "NY",
+      "views": 117
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 62115743,
+      "state": "OH",
+      "views": 112
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 26228266,
+      "state": "OK",
+      "views": 84
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 20976743,
+      "state": "OR",
+      "views": 47
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 68907834,
+      "state": "PA",
+      "views": 100
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 45159839,
+      "state": "PR",
+      "views": 79
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 5601082,
+      "state": "RI",
+      "views": 8
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 30447900,
+      "state": "SC",
+      "views": 54
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 18432110,
+      "state": "SD",
+      "views": 68
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 43397898,
+      "state": "TN",
+      "views": 109
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 160091762,
+      "state": "TX",
+      "views": 354
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 13625079,
+      "state": "UT",
+      "views": 38
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 71832834,
+      "state": "VA",
+      "views": 135
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 617058,
+      "state": "VI",
+      "views": 3
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 6237295,
+      "state": "VT",
+      "views": 14
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 33012413,
+      "state": "WA",
+      "views": 68
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 36063965,
+      "state": "WI",
+      "views": 82
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 22930063,
+      "state": "WV",
+      "views": 56
+    },
+    {
+      "complete": true,
+      "repeated": true,
+      "size_bytes": 5850174,
+      "state": "WY",
+      "views": 24
+    }
+  ]
+}

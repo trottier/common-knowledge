@@ -85,5 +85,12 @@ and fails on unsupported characters. Font-aware national rendering and collectio
 set is 1,880,310,639 bytes across 56 jurisdictions. Collection verified all
 3,235 Census county bookmarks and all 254,062 place references. Its manifest
 SHA-256 is `5d76b2075df66bf6c6008f0d7f432d54a34608df36a77f4a3a4e58d37f185936`.
-These are development-epoch results; repeated native rendering/composition,
-final recipe freeze, pin review and physical phone checks remain open.
+The resident-glyph renderer's later independent national repeats match at the
+same epoch: 1,880,010,193 placed bytes and canonical generation-manifest SHA-256
+`4e32d47c79fdc8af18d5b8f91072eb5e3473fb2f14037ae79fd08a52e2b911fb`.
+All 56 jurisdiction renders and compositions, both national collections, all
+3,235 county bookmarks and 254,062 historical place references passed their
+checks. This older point corpus predates the Puerto Rico/U.S. Virgin Islands
+source repair; corrected-source atlas and directory repeats are still required.
+Final recipe freeze, pin review, full-image checks and physical phone checks
+remain open. See [reproducibility.md](reproducibility.md) and its measured receipt.

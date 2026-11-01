@@ -88,7 +88,8 @@ views, including city and dense-area insets. Their composed PDFs and complete
 generation manifests also match. At epoch `1793404800`, the PDF is 20,976,743
 bytes with SHA-256
 `84e4b9d5b593145baf42d3e462cbc21d99b72734828f97c68dd3082f3d436ab5`.
-This is a state-level repeat result; the full national rerun is still required.
+The subsequent historical national repeat is recorded below; corrected-source
+and full-image repeats are still required.
 
 Jobs now bind a hash of the production JavaScript recipe. Both the native
 renderer and PDF composer reject a different code hash. This catches a cached
@@ -110,8 +111,24 @@ This is development evidence for that older pinned sample. The first complete
 national atlas now covers all 56 Census jurisdictions with verified basemaps;
 see [national-atlas.md](national-atlas.md). The older Rhode Island atlas and
 directory samples retain `complete: false` and cannot enter assembled images.
-National repeated rendering, full-image reproducibility and phone usability
-remain unconfirmed. Changes to inputs or the pipeline require new measured pins.
+The historical national repeat now matches; corrected-source rendering,
+full-image reproducibility and phone usability remain unconfirmed. Changes to
+inputs or the pipeline require new measured pins.
+
+Two fresh native renders and PDF compositions now match for every jurisdiction
+of the historical 254,062-place snapshot. Both complete collections passed the
+county-bookmark and place-reference checks: 56 jurisdictions, 3,235 counties,
+4,112 map views and 1,880,010,193 placed bytes at epoch `1793404800`.
+The canonical generation-manifest SHA-256 is
+`4e32d47c79fdc8af18d5b8f91072eb5e3473fb2f14037ae79fd08a52e2b911fb`.
+Each collected payload was also checked against its recorded size and SHA-256.
+See [the measured receipt](evidence/atlas-repeat-historical.json).
+
+This is renderer reproducibility evidence for that exact earlier corpus. It
+does not include the later Puerto Rico and U.S. Virgin Islands source repair,
+whose corrected point snapshot contains 254,873 places. Its separate atlas and
+directory repeats remain in progress. Do not replace corrected-source catalog
+pins with these historical measurements or treat them as full-image evidence.
 
 The Android roads-and-places sample has also been built twice in separate
 Linux amd64 containers. Both runs produced the same 28,809,801-byte placed payload,
