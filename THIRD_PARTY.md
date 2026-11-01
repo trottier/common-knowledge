@@ -9809,12 +9809,45 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `kiwix_android`
 - Version: 3.14.1
-- License: GPL-3.0-or-later
-- Attribution: Kiwix Android contributors
+- License: GPL-3.0-or-later AND Apache-2.0 AND OLDAP-2.8 AND [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]
+- Attribution: Kiwix Android contributors; ObjectBox Ltd. and bundled third-party authors
 - License proof: https://github.com/kiwix/kiwix-android/blob/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21/README.md#license
 - Size: 236167297 bytes
 - SHA-256: `353e84ccda154802ed6841ad46c3140b9256c147836578817d5da8321b181ba0`
 - Publisher file: https://github.com/kiwix/kiwix-android/releases/download/v3.14.1/v3.14.1-universal-standalone.apk
+
+## Java libkiwix 2.4.0; commit 40967ea319fc31beec0fb5240fb488c68e94f6f9 source archive
+
+- Catalog id: `kiwix_android_java_binding_source`
+- Version: Java libkiwix 2.4.0; commit 40967ea319fc31beec0fb5240fb488c68e94f6f9
+- License: GPL-3.0-or-later
+- Attribution: Kiwix Java binding contributors
+- License proof: https://github.com/kiwix/java-libkiwix/blob/40967ea319fc31beec0fb5240fb488c68e94f6f9/README.md#license
+- Size: 1268959 bytes
+- SHA-256: `bf23722aac7a2845531fb91260664f516f10741c5e30af4cb83d87ecd4afb356`
+- Publisher file: https://codeload.github.com/kiwix/java-libkiwix/tar.gz/40967ea319fc31beec0fb5240fb488c68e94f6f9
+
+## C++ libkiwix 14.1.0; tag commit 0a9ba9b678f2775191234dea5567c7559176d736 source archive
+
+- Catalog id: `kiwix_android_libkiwix_source`
+- Version: C++ libkiwix 14.1.0; tag commit 0a9ba9b678f2775191234dea5567c7559176d736
+- License: GPL-3.0-or-later
+- Attribution: Kiwix libkiwix contributors and bundled third-party authors
+- License proof: https://github.com/kiwix/libkiwix/blob/0a9ba9b678f2775191234dea5567c7559176d736/README.md#license
+- Size: 1123020 bytes
+- SHA-256: `92d7ccc76b0dbd7f5b8584daef6e44c43c4b8a3c83a1d67e2a1b9bf1eb9a5f14`
+- Publisher file: https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz
+
+## libzim 9.4.0; tag commit 8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e source archive
+
+- Catalog id: `kiwix_android_libzim_source`
+- Version: libzim 9.4.0; tag commit 8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e
+- License: GPL-2.0-or-later
+- Attribution: openZIM libzim contributors
+- License proof: https://github.com/openzim/libzim/blob/8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e/README.md#license
+- Size: 217752 bytes
+- SHA-256: `7fa374f4714b23c43afa3fb406d7e21c483d77e8218895e1408e2f037969b6ea`
+- Publisher file: https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz
 
 ## Kiwix Android corresponding source candidate
 
@@ -9870,6 +9903,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 621214 bytes
 - SHA-256: `2734f7fabf7e2af6a7f6a906b4aed6d42eca79115ad44824b0845f8a2855fd4c`
 - Publisher file: https://api.github.com/repos/kiwix/kiwix-apple/tarball/1dc9c867236f0b915e9e42b46df9fe36e1b35e78
+
+## Swift System commit b083113aef646d9d35403ca17e9789b750e42d1d source archive
+
+- Catalog id: `kiwix_mac_swift_system_source`
+- Version: Swift System commit b083113aef646d9d35403ca17e9789b750e42d1d
+- License: Apache-2.0 WITH Swift-exception
+- Attribution: Apple Inc. and Swift System project authors
+- License proof: https://github.com/apple/swift-system/blob/b083113aef646d9d35403ca17e9789b750e42d1d/LICENSE.txt
+- Size: 136654 bytes
+- SHA-256: `983e0bc7be6b1a1d25501a694e1e5c85a42be3c5b77d0ef60888624a9f5b9016`
+- Publisher file: https://codeload.github.com/apple/swift-system/tar.gz/b083113aef646d9d35403ca17e9789b750e42d1d
 
 ## Kiwix desktop for windows
 

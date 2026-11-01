@@ -7,8 +7,8 @@
     "version": "3.14.1",
     "size_bytes": 236167297,
     "sha256": "353e84ccda154802ed6841ad46c3140b9256c147836578817d5da8321b181ba0",
-    "license": "GPL-3.0-or-later",
-    "attribution": "Kiwix Android contributors",
+    "license": "GPL-3.0-or-later AND Apache-2.0 AND OLDAP-2.8 AND [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]",
+    "attribution": "Kiwix Android contributors; ObjectBox Ltd. and bundled third-party authors",
     "license_proof_url": "https://github.com/kiwix/kiwix-android/blob/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21/README.md#license",
     "placement": "universal",
     "dest": "5_MEDICAL_REFERENCE/android/Kiwix.apk",
@@ -19,7 +19,8 @@
     "source_url": "https://api.github.com/repos/kiwix/kiwix-android/tarball/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21",
     "source_id": "kiwix_android_source",
     "checksum_source_url": "https://api.github.com/repos/kiwix/kiwix-android/releases/tags/v3.14.1",
-    "review": "[[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]"
+    "review": "[[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]] [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]",
+    "requires_legal": true
   },
   {
     "id": "bitchat_android",
@@ -178,7 +179,10 @@
       "full"
     ],
     "source_for": "kiwix_android",
-    "review": "[[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]"
+    "review": "[[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]",
+    "inputs": [
+      "kiwix_android_java_binding_source"
+    ]
   },
   {
     "id": "kiwix_windows_source",
@@ -238,7 +242,10 @@
       "full"
     ],
     "source_for": "kiwix_mac",
-    "review": "[[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]"
+    "review": "[[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]",
+    "inputs": [
+      "kiwix_mac_swift_system_source"
+    ]
   },
   {
     "id": "pocketpal_android",

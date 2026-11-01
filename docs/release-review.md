@@ -34,6 +34,7 @@ Catalog items explicitly requiring legal review:
 - `base_model`: Qwen3.5-2B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
 - `bitchat_android`: bitchat for Android; license `GPL-3.0-only AND [[VERIFY: exact bundled Google SDK redistribution terms and compatibility]]`; reviewer: unassigned; review date: unassigned.
 - `briar_android`: Briar for Android; license `GPL-3.0-only`; reviewer: unassigned; review date: unassigned.
+- `kiwix_android`: Kiwix for Android, universal standalone; license `GPL-3.0-or-later AND Apache-2.0 AND OLDAP-2.8 AND [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_android`: OsmAnd for Android; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_android_source`: OsmAnd 5.4.11 exact application-source archive; mixed asset licenses; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_prebuilt`: OsmAnd official state maps; verify terms and sizes; license `[[VERIFY: redistribution license]]`; reviewer: unassigned; review date: unassigned.
@@ -43,6 +44,7 @@ Catalog items explicitly requiring legal review:
 
 ## Named human content reviews
 
+- catalog/apk.yaml:22: [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
 - catalog/maps.yaml:253: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - catalog/medpdf_topics.yaml: named human medical review required
 - catalog/referencepacks.yaml:102: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
@@ -67,6 +69,7 @@ Catalog items explicitly requiring legal review:
 - content/en/start/12-warnings.md: named human review required (medical, legal, radio)
 - content/en/start/13-sources.md: named human review required (English content)
 - content/en/tags.md: named human review required (rescue, medical)
+- kiwix_android.review: [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]] [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
 - medical_phone_pdfs.review: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - pipelines/referencepacks/selection.yaml (reference_howto_1): named human source-accuracy, safety and suitability review required
 - pipelines/referencepacks/selection.yaml (reference_howto_2): named human source-accuracy, safety and suitability review required
@@ -77,7 +80,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6390)
+## Remaining VERIFY markers (6396)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -172,32 +175,34 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
 - `config/wikem-scope.yaml:2` — [[VERIFY: review publisher access-denial scope exclusions]]
+- `catalog/apk.yaml:10` — [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]
 - `catalog/apk.yaml:22` — [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]
-- `catalog/apk.yaml:32` — [[VERIFY: exact bundled Google SDK redistribution terms and compatibility]]
-- `catalog/apk.yaml:46` — [[VERIFY: human pin and per-file source/license review, bundled Google SDK term compatibility, and physical offline installation, peer communication, and no-telemetry checks; publisher SDK AAR native hashes match the APK, but device network traffic has not been measured; see docs/bitchat-maven-source-review.md and docs/bitchat-androidx-source-review.md]]
-- `catalog/apk.yaml:70` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
-- `catalog/apk.yaml:80` — [[VERIFY: exact bundled proprietary and third-party resource rights]]
-- `catalog/apk.yaml:94` — [[VERIFY: written emergency-use rights for restricted artwork and proprietary resources in this exact APK]]
-- `catalog/apk.yaml:95` — [[VERIFY: human review of computed HTTPS hash, publisher-matched signer and exact embedded source commit; close dependency sources and bundled asset permissions before any placement; physical offline map import checks remain]]
-- `catalog/apk.yaml:117` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
-- `catalog/apk.yaml:139` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
-- `catalog/apk.yaml:161` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
-- `catalog/apk.yaml:181` — [[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]
-- `catalog/apk.yaml:201` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
-- `catalog/apk.yaml:221` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
-- `catalog/apk.yaml:241` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
-- `catalog/apk.yaml:263` — [[VERIFY: review verified APK signer, bundled notices, local import flow and offline operation on a phone with at least 6 GB RAM]]
-- `catalog/apk.yaml:286` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
-- `catalog/apk.yaml:306` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
-- `catalog/apk.yaml:329` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
-- `catalog/apk.yaml:349` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
-- `catalog/apk.yaml:369` — [[VERIFY: human source pin, remaining native and SDK corresponding sources, complete per-file license/notices review, Google SDK term compatibility, and offline no-telemetry device checks; exact Arti, all 465 locked Rust registry archives, and 176 Maven/AndroidX source-JAR candidates are pinned; metadata-only source archives and native-source gaps are recorded in the evidence docs]]
-- `catalog/apk.yaml:1033` — [[VERIFY: review exact release commit and complete corresponding dependency sources]]
-- `catalog/apk.yaml:1055` — [[VERIFY: human pin and GPL source-closure review of the exact Briar submodule]]
-- `catalog/apk.yaml:1074` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
-- `catalog/apk.yaml:1093` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
-- `catalog/apk.yaml:1103` — [[VERIFY: exact bundled proprietary and third-party resource rights]]
-- `catalog/apk.yaml:1114` — [[VERIFY: source archive identifies application provenance; complete native-core and resource dependency sources and exact redistribution rights before release]]
+- `catalog/apk.yaml:22` — [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
+- `catalog/apk.yaml:33` — [[VERIFY: exact bundled Google SDK redistribution terms and compatibility]]
+- `catalog/apk.yaml:47` — [[VERIFY: human pin and per-file source/license review, bundled Google SDK term compatibility, and physical offline installation, peer communication, and no-telemetry checks; publisher SDK AAR native hashes match the APK, but device network traffic has not been measured; see docs/bitchat-maven-source-review.md and docs/bitchat-androidx-source-review.md]]
+- `catalog/apk.yaml:71` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
+- `catalog/apk.yaml:81` — [[VERIFY: exact bundled proprietary and third-party resource rights]]
+- `catalog/apk.yaml:95` — [[VERIFY: written emergency-use rights for restricted artwork and proprietary resources in this exact APK]]
+- `catalog/apk.yaml:96` — [[VERIFY: human review of computed HTTPS hash, publisher-matched signer and exact embedded source commit; close dependency sources and bundled asset permissions before any placement; physical offline map import checks remain]]
+- `catalog/apk.yaml:118` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
+- `catalog/apk.yaml:140` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
+- `catalog/apk.yaml:162` — [[VERIFY: review computed SHA-256 after publisher MD5 match; complete corresponding-source dependency closure and the offline laptop checklist]]
+- `catalog/apk.yaml:182` — [[VERIFY: review computed HTTPS archive pin and complete corresponding-source dependency closure before release]]
+- `catalog/apk.yaml:205` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
+- `catalog/apk.yaml:225` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
+- `catalog/apk.yaml:245` — [[VERIFY: review computed source archive pin and collect corresponding dependency sources before release]]
+- `catalog/apk.yaml:270` — [[VERIFY: review verified APK signer, bundled notices, local import flow and offline operation on a phone with at least 6 GB RAM]]
+- `catalog/apk.yaml:293` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
+- `catalog/apk.yaml:313` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
+- `catalog/apk.yaml:336` — [[VERIFY: complete LibVLC, medialibrary and dependency corresponding-source and license closure; physical installation and language switching checks. APK signer verified and complete file matches publisher SHA-256; retain original unsigned META-INF metadata]]
+- `catalog/apk.yaml:356` — [[VERIFY: this application archive is a source candidate; close exact bundled dependency source and notices before release]]
+- `catalog/apk.yaml:376` — [[VERIFY: human source pin, remaining native and SDK corresponding sources, complete per-file license/notices review, Google SDK term compatibility, and offline no-telemetry device checks; exact Arti, all 465 locked Rust registry archives, and 176 Maven/AndroidX source-JAR candidates are pinned; metadata-only source archives and native-source gaps are recorded in the evidence docs]]
+- `catalog/apk.yaml:1040` — [[VERIFY: review exact release commit and complete corresponding dependency sources]]
+- `catalog/apk.yaml:1062` — [[VERIFY: human pin and GPL source-closure review of the exact Briar submodule]]
+- `catalog/apk.yaml:1081` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
+- `catalog/apk.yaml:1100` — [[VERIFY: human review of verbatim publisher license bytes and source pin]]
+- `catalog/apk.yaml:1110` — [[VERIFY: exact bundled proprietary and third-party resource rights]]
+- `catalog/apk.yaml:1121` — [[VERIFY: source archive identifies application provenance; complete native-core and resource dependency sources and exact redistribution rights before release]]
 - `catalog/bitchat_androidx_audits.yaml:20` — [[VERIFY: human publisher pin, complete per-file notices, and exact native corresponding-source review; audit-only AAR is never drive content or a source-archive substitute]]
 - `catalog/bitchat_androidx_audits.yaml:40` — [[VERIFY: human publisher pin, complete per-file notices, and exact native corresponding-source review; audit-only AAR is never drive content or a source-archive substitute]]
 - `catalog/bitchat_androidx_sources.yaml:20` — [[VERIFY: human publisher source pin, per-file notices, exact binary/source correspondence, and complete build/native-source review; source JAR alone does not establish complete application corresponding source]]
@@ -1041,6 +1046,10 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/geodata.yaml:1669` — [[VERIFY: independently review computed HTTPS snapshot pin and preserve the exact full-node snapshot at an immutable URL before release]]
 - `catalog/geodata.yaml:1688` — [[VERIFY: independently review computed SHA-256 against this HTTPS download and the publisher MD5, territory coverage and final source preservation]]
 - `catalog/geodata.yaml:1707` — [[VERIFY: independently review computed SHA-256 against this HTTPS download and the publisher MD5, territory coverage and final source preservation]]
+- `catalog/kiwix_sources.yaml:19` — [[VERIFY: human source pin, per-file notices, complete Maven and native dependencies, and exact build/toolchain correspondence; published AAR native bytes match selected APK, not a source rebuild]]
+- `catalog/kiwix_sources.yaml:42` — [[VERIFY: human SHA pin, complete static dependency sources, embedded skin/script licenses and notices, native build recipe, and binary/source correspondence]]
+- `catalog/kiwix_sources.yaml:62` — [[VERIFY: human SHA pin, GPL-2.0-or-later policy recognition, per-file GPL versions including GPLv3-or-later headers, complete static dependency sources, native build recipe, and binary/source correspondence]]
+- `catalog/kiwix_sources.yaml:82` — [[VERIFY: human source pin, Apache runtime exception and complete notices review, package graph and selected DMG correspondence; unsupported WITH expression remains policy-blocked]]
 - `catalog/laptopmap.yaml:18` — [[VERIFY: independent review of downloaded SDK pins and bundled license notices]]
 - `catalog/laptopmap.yaml:36` — [[VERIFY: independent review of downloaded SDK pins and bundled license notices]]
 - `catalog/laptopmap.yaml:54` — [[VERIFY: independent review of downloaded SDK pins and bundled license notices]]
