@@ -5811,7 +5811,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/zim.yaml:4856` — [[VERIFY: redistribution license]]
 - `catalog/zim.yaml:4857` — [[VERIFY: publisher attribution]]
 - `catalog/zim.yaml:4858` — [[VERIFY: per-item publisher license proof]]
-- `catalog/zim.yaml:4884` — [[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]
+- `catalog/zim.yaml:4884` — [[VERIFY: human regenerated archive pin and license review and physical reader checklist; two frozen development builds match; original full-text index is omitted, title search retained]]
 - `catalog/zim.yaml:4926` — [[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]
 - `catalog/zim.yaml:4949` — [[VERIFY: human pin and retained nontext-license review, full repeated generation with final producer freeze and physical Kiwix checks; first complete strict-audit archive retains title search, with no full-text index]]
 - `catalog/zim.yaml:4968` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]

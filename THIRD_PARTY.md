@@ -55986,13 +55986,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## WikiMed offline reference edition with repaired links
 
 - Catalog id: `wikimed_en_offline`
-- Version: WikiMed 2026-10; regenerated edition
+- Version: Frozen development recipe; two complete matching builds at epoch 1793404800
 - License: CC-BY-SA-4.0
 - Attribution: Wikipedia contributors; original Kiwix packaging; offline regeneration Common Knowledge; original notices retained
 - License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
-- Size: 753161204 bytes
-- SHA-256: `aa2e33ea64593cedebe97ff5a0eaf580d9142101dc4fc7cc0699ffa01fc121ad`
-- Pipeline: zim-offline-v1-c8cd52a2193ab857c0b1dd9e7bcfcd3cf66935fd221cb1fcc807655dc47e67ca; inputs: wikimed_en_nopic
+- Size: 753161276 bytes
+- SHA-256: `7420c007141a58f2e549c7d2cbe41d9b9356d4dea4e229333db89e133e897355`
+- Pipeline: zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2; inputs: wikimed_en_nopic
 
 ## English Wikipedia introductions hub archive
 
