@@ -21,6 +21,7 @@ class Subtitle(Model):
     language: str
     source_id: Identifier
     stream: int = Field(default=0, ge=0)
+    time_offset_seconds: float = Field(default=0, allow_inf_nan=False)
 
 
 class Clip(Model):
@@ -40,6 +41,11 @@ class Clip(Model):
             raise ValueError("A clip cannot have duplicate language tracks")
         if self.audio_languages[0] != "en":
             raise ValueError("Imported clips must retain English original audio first")
+        if any(
+            track.source_id == self.source_id and track.time_offset_seconds
+            for track in self.subtitles
+        ):
+            raise ValueError("An embedded subtitle cannot shift its shared picture/audio input")
         return self
 
 
@@ -155,6 +161,69 @@ def packet_end(path: Path) -> float:
     return max(ends)
 
 
+def subtitle_bounds(
+    path: Path, stream: int, offset: float, media_end: float, origin: float = 0
+) -> dict:
+    """Reject missing, untimed or out-of-range captions before video encoding.
+
+    Publisher caption files sometimes retain an editor's timeline instead of
+    the downloadable clip's clock. A configured shift must be explicit; never
+    infer one or trim cues silently to make a file fit.
+    """
+    report = json.loads(
+        subprocess.run(
+            [
+                "ffprobe",
+                "-v",
+                "error",
+                "-protocol_whitelist",
+                "file,pipe",
+                "-select_streams",
+                f"s:{stream}",
+                "-show_packets",
+                "-show_entries",
+                "packet=pts_time,duration_time",
+                "-of",
+                "json",
+                str(path),
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout
+    )
+    packets = report.get("packets", [])
+    if not packets:
+        raise ValueError("Declared subtitle stream has no timed cues")
+    starts, ends = [], []
+    for packet in packets:
+        try:
+            start = float(packet["pts_time"]) + offset - origin
+            duration = float(packet["duration_time"])
+        except (KeyError, TypeError, ValueError) as error:
+            raise ValueError("Subtitle cue has no valid timing") from error
+        end = start + duration
+        if not all(math.isfinite(value) for value in (start, duration, end)) or duration <= 0:
+            raise ValueError("Subtitle cue has no valid timing")
+        # A millisecond permits only container timestamp rounding, not a
+        # clipped sentence or an unreviewed automatic alignment adjustment.
+        if start < -0.001 or end > media_end + 0.001:
+            raise ValueError(
+                "Subtitle cue is outside the original media timeline; "
+                "confirm an explicit caption offset instead of dropping cues"
+            )
+        starts.append(start)
+        ends.append(end)
+    return {
+        "stream": stream,
+        "time_offset_seconds": offset,
+        "input_origin_seconds": origin,
+        "cues": len(packets),
+        "first_seconds": min(starts),
+        "last_seconds": max(ends),
+    }
+
+
 def validate_video(
     report: dict, clip: Clip, settings: VideoSettings, codes: dict[str, str], order: list[str]
 ) -> None:
@@ -225,6 +294,22 @@ def normalize(
     embedded = {t.stream for t in clip.subtitles if t.source_id == clip.source_id}
     if embedded != set(range(len(source_subtitles))):
         raise ValueError("Declare every embedded subtitle track")
+    caption_audits = [
+        {
+            "language": track.language,
+            "source_id": track.source_id,
+            **subtitle_bounds(
+                paths[track.source_id],
+                track.stream,
+                track.time_offset_seconds,
+                source_end,
+                float(source["format"].get("start_time", 0))
+                if track.source_id == clip.source_id
+                else 0,
+            ),
+        }
+        for track in clip.subtitles
+    ]
     command = [
         "ffmpeg",
         "-v",
@@ -245,7 +330,14 @@ def normalize(
         if track.source_id == clip.source_id:
             subtitle_maps.append(f"0:s:{track.stream}")
         else:
-            command += ["-protocol_whitelist", "file,pipe", "-i", str(paths[track.source_id])]
+            command += [
+                "-protocol_whitelist",
+                "file,pipe",
+                "-itsoffset",
+                str(track.time_offset_seconds),
+                "-i",
+                str(paths[track.source_id]),
+            ]
             subtitle_maps.append(f"{next_input}:s:{track.stream}")
             next_input += 1
     command += ["-map", "0:v:0"]
@@ -321,7 +413,12 @@ def normalize(
             f"Normalized video duration changed: {source_end} to "
             f"{output['format']['duration']} seconds"
         )
-    return {"source": source, "source_media_end_seconds": source_end, "output": output}
+    return {
+        "source": source,
+        "source_media_end_seconds": source_end,
+        "subtitles": caption_audits,
+        "output": output,
+    }
 
 
 def build_video(

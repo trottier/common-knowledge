@@ -5,7 +5,7 @@ import pytest
 from pydantic import ValidationError
 
 from ck.config import read_yaml
-from ck.video import Clip, VideoSettings, normalize, probe, validate_video
+from ck.video import Clip, Subtitle, VideoSettings, normalize, probe, validate_video
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -152,4 +152,93 @@ def test_import_refuses_to_drop_undeclared_audio(source_video, tmp_path):
             {"en": "eng", "es": "spa"},
             {"en": "English", "es": "Español"},
             946684800,
+        )
+
+
+def test_out_of_range_captions_fail_before_encoding(source_video, tmp_path, monkeypatch):
+    caption = tmp_path / "editor-clock.vtt"
+    caption.write_text("WEBVTT\n\n00:27:32.417 --> 00:27:33.518\nSynthetic caption\n")
+    clip = Clip.model_validate(
+        {
+            "source_id": "fixture",
+            "filename": "01_clip.mp4",
+            "audio_languages": ["en"],
+            "subtitles": [{"language": "en", "source_id": "caption"}],
+        }
+    )
+    original_run = subprocess.run
+
+    def no_encoder(command, **kwargs):
+        if command[0] == "ffmpeg":
+            pytest.fail("Invalid source captions must fail before encoding")
+        return original_run(command, **kwargs)
+
+    monkeypatch.setattr("ck.video.subprocess.run", no_encoder)
+    settings = VideoSettings.model_validate(read_yaml(ROOT / "pipelines/video/settings.yaml"))
+    with pytest.raises(ValueError, match="outside the original media timeline"):
+        normalize(
+            clip,
+            {"fixture": source_video, "caption": caption},
+            tmp_path / "out.mp4",
+            settings,
+            {"en": "eng"},
+            {"en": "English"},
+            946684800,
+        )
+
+
+def test_explicit_caption_shift_retains_words_and_correct_timing(source_video, tmp_path):
+    caption = tmp_path / "editor-clock.srt"
+    caption.write_text("1\n00:00:10,000 --> 00:00:10,900\nOriginal caption words\n")
+    clip = Clip.model_validate(
+        {
+            "source_id": "fixture",
+            "filename": "01_clip.mp4",
+            "audio_languages": ["en"],
+            "subtitles": [{"language": "en", "source_id": "caption", "time_offset_seconds": -10}],
+        }
+    )
+    target = tmp_path / "out.mp4"
+    settings = VideoSettings.model_validate(read_yaml(ROOT / "pipelines/video/settings.yaml"))
+    report = normalize(
+        clip,
+        {"fixture": source_video, "caption": caption},
+        target,
+        settings,
+        {"en": "eng"},
+        {"en": "English"},
+        946684800,
+    )
+    assert report["subtitles"][0]["first_seconds"] == 0
+    assert report["subtitles"][0]["last_seconds"] == pytest.approx(0.9)
+    result = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(target), "-map", "0:s:0", "-f", "srt", "-"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    assert "00:00:00,000 --> 00:00:00,900" in result
+    assert "Original caption words" in result
+
+
+def test_empty_caption_stream_and_invalid_offsets_are_rejected(tmp_path):
+    from ck.video import subtitle_bounds
+
+    caption = tmp_path / "empty.vtt"
+    caption.write_text("WEBVTT\n\n")
+    with pytest.raises(ValueError, match="no timed cues"):
+        subtitle_bounds(caption, 0, 0, 1)
+    for offset in (float("inf"), float("nan")):
+        with pytest.raises(ValidationError):
+            Subtitle(language="en", source_id="caption", time_offset_seconds=offset)
+    with pytest.raises(ValidationError, match="embedded subtitle cannot shift"):
+        Clip.model_validate(
+            {
+                "source_id": "fixture",
+                "filename": "01_clip.mp4",
+                "audio_languages": ["en"],
+                "subtitles": [
+                    {"language": "en", "source_id": "fixture", "time_offset_seconds": -10}
+                ],
+            }
         )

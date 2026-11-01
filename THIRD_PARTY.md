@@ -3788,6 +3788,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
 
+## National Preparedness Month Spotlight on Earthquakes [Part 5] — original English captions
+
+- Catalog id: `usgs_earthquake_drop_caption_en`
+- Version: USGS 2023-09-20; downloaded 2026-10-31
+- License: US-PD
+- Attribution: Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.
+- License proof: https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold
+- Size: 1884 bytes
+- SHA-256: `345d59915b83cbc72f64c3b8eb329f14ee7aa49ce0f8ec1716ca9729e145ac19`
+- Publisher file: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/captions/Preparedness%20-Earthquakes%20-%20Part%205.mp4_.vtt
+
+## National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video
+
+- Catalog id: `usgs_earthquake_drop_source`
+- Version: USGS 2023-09-20; downloaded 2026-10-31
+- License: US-PD
+- Attribution: Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.
+- License proof: https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold
+- Size: 118084421 bytes
+- SHA-256: `66a95053e9cf83c36d9046c93051ac119cb8f33a9c2e0cfbc06da785205cac69`
+- Publisher file: https://usgs-ocapsv2-public-input-media.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/Preparedness%20-Earthquakes%20-%20Part%205%20%281%29.mp4
+
 ## VLC for Android 3.7.1 (arm64-v8a)
 
 - Catalog id: `vlc_android`

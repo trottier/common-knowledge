@@ -309,5 +309,41 @@
     ],
     "pipeline_version": "video-v1-2a21a0c6c9bd19741ea4d8e9d957af643885d00517283c17d9ca977b6240c759",
     "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]"
+  },
+  {
+    "id": "usgs_earthquake_drop_source",
+    "family": "video",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] \u2014 publisher video",
+    "version": "USGS 2023-09-20; downloaded 2026-10-31",
+    "url": "https://usgs-ocapsv2-public-input-media.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/Preparedness%20-Earthquakes%20-%20Part%205%20%281%29.mp4",
+    "size_bytes": 118084421,
+    "sha256": "66a95053e9cf83c36d9046c93051ac119cb8f33a9c2e0cfbc06da785205cac69",
+    "license": "US-PD",
+    "attribution": "Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.",
+    "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review this computed HTTPS publisher pin and caption alignment; original VTT uses an editor timeline outside the 50-second video and is not selected for drive placement]]"
+  },
+  {
+    "id": "usgs_earthquake_drop_caption_en",
+    "family": "docs",
+    "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] \u2014 original English captions",
+    "version": "USGS 2023-09-20; downloaded 2026-10-31",
+    "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/captions/Preparedness%20-Earthquakes%20-%20Part%205.mp4_.vtt",
+    "size_bytes": 1884,
+    "sha256": "345d59915b83cbc72f64c3b8eb329f14ee7aa49ce0f8ec1716ca9729e145ac19",
+    "license": "US-PD",
+    "attribution": "Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.",
+    "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independently review this computed HTTPS publisher pin and caption alignment; original VTT uses an editor timeline outside the 50-second video and is not selected for drive placement]]"
   }
 ]
