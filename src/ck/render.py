@@ -56,6 +56,17 @@ def content_file(path: Path) -> tuple[Header, str]:
     return Header.model_validate(yaml.safe_load(front)), body
 
 
+def citation_ids(body: str, sources: dict) -> list[str]:
+    pattern = r"\[@([a-z0-9_]+)\]"
+    if "[@" in re.sub(pattern, "", body):
+        raise ValueError("Malformed citation; use one [@source_id] reference per source")
+    citations = sorted(set(re.findall(pattern, body)))
+    missing = set(citations) - sources.keys()
+    if missing:
+        raise ValueError(f"Unknown citation ids: {', '.join(sorted(missing))}")
+    return citations
+
+
 def verify_translation_inputs(root: Path, header: Header) -> None:
     from ck.catalog import safe_path
 
@@ -174,10 +185,7 @@ def render_html(
     )
     source_file = root / "content/sources.yaml"
     sources = read_yaml(source_file) if source_file.exists() else {}
-    citations = sorted(set(re.findall(r"\[@([a-z0-9_]+)\]", body)))
-    missing = set(citations) - sources.keys()
-    if missing:
-        raise ValueError(f"Unknown citation ids: {', '.join(sorted(missing))}")
+    citations = citation_ids(body, sources)
     for citation in citations:
         target = f"#source-{citation}"
         if template != "document.html.j2":
