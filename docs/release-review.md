@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5772)
+## Remaining VERIFY markers (5787)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -210,6 +210,21 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/books.yaml:180` — [[VERIFY: human review of this HTTPS download pin, per-item public-domain statement and physical score readability; ship the original Library of Congress PDF byte-identically]]
 - `catalog/buildtools.yaml:97` — [[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]
 - `catalog/buildtools.yaml:118` — [[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]
+- `catalog/children_guides.yaml:24` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:48` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:69` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:90` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:111` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:132` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:153` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:174` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:195` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:216` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:237` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:258` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:279` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:300` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
+- `catalog/children_guides.yaml:321` — [[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]
 - `catalog/docs.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/docs.yaml:7` — [[VERIFY: publisher version]]
 - `catalog/docs.yaml:8` — [[VERIFY: exact publisher file size]]

@@ -1,0 +1,323 @@
+[
+  {
+    "id": "cdc_wrigley_58346",
+    "family": "docs",
+    "title": "Coping After a Disaster",
+    "url": "https://stacks.cdc.gov/view/cdc/58346/cdc_58346_DS1.pdf",
+    "version": "2018/07/19; CDC Stacks record 58346",
+    "size_bytes": 1974241,
+    "sha256": "88b8d50decd75418792e6253f8380166c2707127e69acc0ef16837a18d5b5c56",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/58346",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/58346",
+    "placement": {
+      "topics": [
+        "care",
+        "psychosocial"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/official/en/CDC_58346.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_58345",
+    "family": "docs",
+    "title": "Cómo sobrellevar los efectos emocionales de un desastre",
+    "url": "https://stacks.cdc.gov/view/cdc/58345/cdc_58345_DS1.pdf",
+    "version": "2018/07/19; CDC Stacks record 58345",
+    "size_bytes": 2117830,
+    "sha256": "e5769356462a4ba2023c4b616f1fdfe977f76420aef3b3f1dfd452f91eb132ff",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/58345",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/58345",
+    "placement": {
+      "topics": [
+        "care",
+        "psychosocial"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/official/es/CDC_58345.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_22436",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Earthquakes",
+    "url": "https://stacks.cdc.gov/view/cdc/22436/cdc_22436_DS1.pdf",
+    "version": "2013/12/19; CDC Stacks record 22436",
+    "size_bytes": 1674949,
+    "sha256": "b3c7d8b9ebdd29b88939362eab96e237a2fa3508d23b554b54cf003e7c767e30",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/22436",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/22436",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_22436.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_22438",
+    "family": "docs",
+    "title": "Listo Calixto se prepara para los terremotos",
+    "url": "https://stacks.cdc.gov/view/cdc/22438/cdc_22438_DS1.pdf",
+    "version": "2013/12/19; CDC Stacks record 22438",
+    "size_bytes": 1727610,
+    "sha256": "000a8a2d9665da76942bf04e327bae64db2b1a2ff6480e41a7d75b2af4b07652",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/22438",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/22438",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/es/CDC_22438.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_37673",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Extreme Heat",
+    "url": "https://stacks.cdc.gov/view/cdc/37673/cdc_37673_DS1.pdf",
+    "version": "2015/08/26; CDC Stacks record 37673",
+    "size_bytes": 2100161,
+    "sha256": "5f4ce9625892babee14e7b54df18a10ca2b39deadfddb92ee16b93a421588825",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/37673",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/37673",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_37673.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_21846",
+    "family": "docs",
+    "title": "Listo Calixto se prepara para el calor extremo",
+    "url": "https://stacks.cdc.gov/view/cdc/21846/cdc_21846_DS1.pdf",
+    "version": "2018/10/05; CDC Stacks record 21846",
+    "size_bytes": 1963339,
+    "sha256": "7bb52629c3a73bb2cba26f910eba696e002931e0515e77a348748beeaff56fa4",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/21846",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/21846",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/es/CDC_21846.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_22435",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Hurricanes",
+    "url": "https://stacks.cdc.gov/view/cdc/22435/cdc_22435_DS1.pdf",
+    "version": "2013/12/19; CDC Stacks record 22435",
+    "size_bytes": 1698707,
+    "sha256": "d1caf4c95bbb4d0e42be3c641a35c615d539d0e8c794f58326ca1c7887eecf1c",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/22435",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/22435",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_22435.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_22437",
+    "family": "docs",
+    "title": "Listo Calixto se prepara para los huracanes",
+    "url": "https://stacks.cdc.gov/view/cdc/22437/cdc_22437_DS1.pdf",
+    "version": "2013/12/19; CDC Stacks record 22437",
+    "size_bytes": 1709332,
+    "sha256": "c22cba51135e25942df3a239c7e0f7285a11658b72959efc731b10906037f379",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/22437",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/22437",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/es/CDC_22437.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_48150",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Storm & Flood Recovery",
+    "url": "https://stacks.cdc.gov/view/cdc/48150/cdc_48150_DS1.pdf",
+    "version": "2017/09/13; CDC Stacks record 48150",
+    "size_bytes": 2192788,
+    "sha256": "f964c3c620a1c1548c05c743bcf03b38c0e7d68d90152f140933580c906b6da0",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/48150",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/48150",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_48150.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_39605",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Tornadoes",
+    "url": "https://stacks.cdc.gov/view/cdc/39605/cdc_39605_DS1.pdf",
+    "version": "2013/07/03; CDC Stacks record 39605",
+    "size_bytes": 1824875,
+    "sha256": "428857dd9358238d809bf20161f2fe2387d798ec421ae02b06ce617248d8c6ed",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/39605",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/39605",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_39605.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_39608",
+    "family": "docs",
+    "title": "Listo Calixto Para Los Tornados",
+    "url": "https://stacks.cdc.gov/view/cdc/39608/cdc_39608_DS1.pdf",
+    "version": "2013/07/03; CDC Stacks record 39608",
+    "size_bytes": 1830244,
+    "sha256": "443ebbe4dd055a88bb53d8f0ef88218fb91a63e050c18024cf6e2874b975bc22",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/39608",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/39608",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/es/CDC_39608.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_118266",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Wildfires & Smoke",
+    "url": "https://stacks.cdc.gov/view/cdc/118266/cdc_118266_DS1.pdf",
+    "version": "2022/01/25; CDC Stacks record 118266",
+    "size_bytes": 5027373,
+    "sha256": "e40c455908077f99ee19aebfc0d5ea2680fbd97ae7f261a3bbb1dbd972f457a2",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/118266",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/118266",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_118266.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_118265",
+    "family": "docs",
+    "title": "Listo Calixto se prepara para los incendios forestales y el humo",
+    "url": "https://stacks.cdc.gov/view/cdc/118265/cdc_118265_DS1.pdf",
+    "version": "2022/01/25; CDC Stacks record 118265",
+    "size_bytes": 5035335,
+    "sha256": "f5eb291bb7fe8d94fd7f571926cacfa767e0fcca4446a2fc840b409fadcb0127",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/118265",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/118265",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/es/CDC_118265.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_22439",
+    "family": "docs",
+    "title": "Ready Wrigley Prepares for Winter Weather",
+    "url": "https://stacks.cdc.gov/view/cdc/22439/cdc_22439_DS1.pdf",
+    "version": "2014/01/10; CDC Stacks record 22439",
+    "size_bytes": 2028186,
+    "sha256": "1f06cd1aa2cb4c7f5d88230a786201a1fc2a0b630522c64a3583826edca85b2b",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/22439",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/22439",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/en/CDC_22439.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  },
+  {
+    "id": "cdc_wrigley_24551",
+    "family": "docs",
+    "title": "Listo Calixto se prepara para el invierno",
+    "url": "https://stacks.cdc.gov/view/cdc/24551/cdc_24551_DS1.pdf",
+    "version": "2014/07/11; CDC Stacks record 24551",
+    "size_bytes": 2117752,
+    "sha256": "e75f82800cb619f336ca12387047c80ec550894a7f07f61220b5df0179a7d65d",
+    "license": "US-PD",
+    "attribution": "Source: Centers for Disease Control and Prevention (CDC), Ready Wrigley / Listo Calixto series. Original publication and artwork credits are retained unchanged. No CDC, HHS or U.S. Government endorsement is implied. Original available free from CDC Stacks.",
+    "license_proof_url": "https://stacks.cdc.gov/view/cdc/24551",
+    "checksum_source_url": "https://stacks.cdc.gov/view/cdc/24551",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/official/es/CDC_24551.pdf",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent per-item public-domain and computed-pin review, source currency, child suitability and physical PDF readability; publisher checksum matched and original bytes retained]]"
+  }
+]
