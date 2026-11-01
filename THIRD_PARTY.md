@@ -4268,9 +4268,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
-- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
-- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
+- Size: 249547 bytes
+- SHA-256: `5ded659a2268b95d9589ddbbd97b2f9d945263442046a73fd1b3c7208dda0e30`
+- Pipeline: reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Carpentry and hand-tool references — selected phone PDFs
 
@@ -4279,9 +4279,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
-- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
-- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
+- Size: 199797 bytes
+- SHA-256: `20c1eb14ca235943efa2f53c9f11fc9cb9e0b5013d6b59ee53622dfbd7699b3b`
+- Pipeline: reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Human physiology background references — selected phone PDFs
 
@@ -4290,9 +4290,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
-- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
-- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
+- Size: 1188529 bytes
+- SHA-256: `33e4c9b3ec056f4bd1b31616e49e6cfe5398e70ab1b8e6b206315d94dd9fd512`
+- Pipeline: reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Electronics background references — selected phone PDFs
 
@@ -4301,9 +4301,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
-- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
-- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
+- Size: 509136 bytes
+- SHA-256: `a6a89725b5f83f97d4f94a8a11844f97d8b67fb4b0f149dfd713ade57280716e`
+- Pipeline: reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Qwen3.5-0.8B-Base, Q4_K_M
 

@@ -36,6 +36,13 @@ Vector output supports zoom; physical-device legibility is not established by
 these automated checks. Earlier PDF generation pins are not reused for this
 recipe.
 
+The 15 phrasebooks and four selected reference packs have now completed matching
+independent development builds with the equation renderer. Every recorded
+payload and intermediate hash was checked in both builds and the canonical
+copy: 19 generated items, containing 67 placed files per copy. The complete
+158-article medical repeat is still running. These measurements do not replace
+the named reviews or final release regeneration.
+
 Implementation references: [MathJax direct module usage](https://docs.mathjax.org/en/v3.2/server/direct.html),
 [MathML Core](https://www.w3.org/TR/mathml-core/), and the
 [publisher package metadata](https://registry.npmjs.org/mathjax-full/3.2.2).

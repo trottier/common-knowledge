@@ -47,8 +47,8 @@ produced identical PDF payloads and complete generation manifests for:
 
 These two selections contain 134 phone pages in total. Two rendered pages were
 visually inspected for layout; this is not a physical phone or technical review.
-The electronics and physiology pairs are still running. These checkpoints do
-not clear the source-currency, safety, suitability or final release-epoch gates.
+These checkpoints predate the equation renderer below. They do not clear the
+source-currency, safety, suitability or final release-epoch gates.
 
 The later source-character and markup checks found a missing penguin character
 and MathML equations that the installed PDF renderer did not lay out natively.
@@ -78,3 +78,22 @@ binds the MathJax package, Bun version, source files, settings and renderer scri
 in its provenance. Vector equations support zoom without raster degradation;
 physical readability and source-to-PDF comparison remain review tasks. The
 original medical instructions and numeric values have not been rewritten.
+
+## Equation-preserving development repeats
+
+At the same development epoch, all four packs completed independent builds in
+network-disabled Linux containers using the pinned MathJax recipe. Complete
+generation records matched. The canonical copy and both independent outputs
+were then checked against every recorded payload and intermediate hash.
+
+| Pack | Articles | Placed bytes | Canonical generation SHA-256 |
+| --- | ---: | ---: | --- |
+| Automobile maintenance | 6 | 249,547 | 5ded659a2268b95d9589ddbbd97b2f9d945263442046a73fd1b3c7208dda0e30 |
+| Carpentry and hand tools | 7 | 199,797 | 20c1eb14ca235943efa2f53c9f11fc9cb9e0b5013d6b59ee53622dfbd7699b3b |
+| Electronics background | 9 | 509,136 | a6a89725b5f83f97d4f94a8a11844f97d8b67fb4b0f149dfd713ade57280716e |
+| Physiology background | 7 | 1,188,529 | 33e4c9b3ec056f4bd1b31616e49e6cfe5398e70ab1b8e6b206315d94dd9fd512 |
+
+Recipe: `reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67`.
+A rendered electronics page was visually checked for fraction and exponent
+placement. This does not establish source accuracy, clinical suitability or
+physical phone legibility. All named review gates remain open.
