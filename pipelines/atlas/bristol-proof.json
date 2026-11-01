@@ -1,0 +1,18 @@
+{
+  "county": "44001",
+  "state": "RI",
+  "county_name": "Bristol County",
+  "epoch": 1793404800,
+  "scale_denominator": 25000,
+  "map_width_mm": 190,
+  "map_height_mm": 230,
+  "overlap_fraction": 0.1,
+  "max_pages": 64,
+  "max_source_ways": 50000,
+  "max_vertices_per_sheet": 500000,
+  "max_water_tiles": 512,
+  "max_decoded_tile_bytes": 16000000,
+  "water_zoom": 14,
+  "expected_zctas": ["02806", "02809", "02885"],
+  "status": "Unreviewed engineering trial; not a final atlas scale or phone acceptance result"
+}
