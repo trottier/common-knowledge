@@ -36,3 +36,7 @@ Publisher evidence:
 - [Official release index](https://download.osmand.net/releases/)
 - [Exact application source commit](https://github.com/osmandapp/OsmAnd/commit/13934d83aabde68e29dc35ede0575db00e2e5d77)
 - [Exact source archive](https://codeload.github.com/osmandapp/OsmAnd/tar.gz/13934d83aabde68e29dc35ede0575db00e2e5d77)
+
+The follow-up [redistribution research](osmand-redistribution-research.md) pins
+F-Droid's source graph, identifies four actual transit-logo assets in this APK,
+and records the remaining clean-build routes. It does not clear a replacement.

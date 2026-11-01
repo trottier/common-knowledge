@@ -1,0 +1,468 @@
+{
+  "apk_member_count": 16908,
+  "apk_resource_member_count": 15765,
+  "checked_on": "2026-11-01",
+  "comparison_boundary": "Four matching resources do not establish the complete publisher APK resource commit or complete corresponding source.",
+  "fdroid": {
+    "application_id": "net.osmand.plus",
+    "build_wrapper_commit": "0bcbf3d414fb47fd574be37b70697121257a952b",
+    "global_antifeatures": [
+      "NonFreeAssets",
+      "NonFreeNet"
+    ],
+    "metadata_gradle_arguments": [
+      "android",
+      "full",
+      "opengl",
+      "armv7 or x86 or arm64"
+    ],
+    "metadata_snapshot_commit": "524d813f01d1cdb54e138b1ce8195908a071c52d",
+    "moving_metadata_matched_snapshot": true,
+    "no_asset_scrub_identified": "Recipe removes selected libraries and integrations; global NonFreeAssets remains. No claim that this APK was downloaded or cleared.",
+    "per_build_antifeatures": [
+      "Tracking"
+    ],
+    "submodules": {
+      "MPAndroidChart": "a235835edb8470229b44c61536608e35f3033a28",
+      "android": "13934d83aabde68e29dc35ede0575db00e2e5d77",
+      "build": "12c921624e84acf136e06b11977116e6cfb0283a",
+      "core": "a6a8631756afa19601525a625166fef631c6e92d",
+      "core-legacy": "5a74b81f9c6f6421d9640dccd7cd7a1f3e0061a5",
+      "icu-release-50-2-1-patched-mirror": "8e3bd0ea911c6aab8b6aebd69e5208dad18a4016",
+      "resources": "7ee9bf7012b48427766afd59c5142b544f9f3214"
+    },
+    "version": "5.4.11",
+    "version_codes": [
+      541101,
+      541102,
+      541103
+    ]
+  },
+  "font_files": [
+    "assets/fonts/03_Estedad-Regular.ttf",
+    "assets/fonts/04_Estedad-Bold.ttf",
+    "assets/fonts/05_NotoSans-Regular.ttf",
+    "assets/fonts/10_NotoSans-Bold.ttf",
+    "assets/fonts/15_NotoSans-Italic.ttf",
+    "assets/fonts/20_NotoSans-BoldItalic.ttf",
+    "assets/fonts/35_NotoSansSouthAsian-Regular.ttf",
+    "assets/fonts/40_NotoSansSouthAsian-Bold.ttf",
+    "assets/fonts/45_NotoSansSoutheastAsian-Regular.ttf",
+    "assets/fonts/50_NotoSansSoutheastAsian-Bold.ttf",
+    "assets/fonts/55_NotoSansTibetan-Regular.ttf",
+    "assets/fonts/60_NotoSansTibetan-Bold.ttf",
+    "assets/fonts/65_NotoSansNastaliqUrdu-Regular.ttf",
+    "assets/fonts/DroidSansFallback.ttf"
+  ],
+  "full_resource_inventory_artifact": {
+    "method": "Visit ZIP central-directory order, select non-directory assets/ or res/ names, hash uncompressed bytes, serialize list of path/size_bytes/sha256 using Python json.dumps(sort_keys=True, indent=2), then append one newline; UTF-8.",
+    "path": "build/osmand-rights/selected-apk-resource-inventory.json",
+    "records": 15765,
+    "sha256": "76f5c83f6ae1badd5f293b550388a5fb66a3afc6db6aadef6e802a2c20864cfa",
+    "size_bytes": 2521322,
+    "status": "ignored development artifact; payload path, size, and SHA-256 for every assets/ and res/ member; not a per-file rights clearance",
+    "uncompressed_payload_bytes": 140009349
+  },
+  "license_scope_findings": {
+    "application_license": "GPLv3-or-later code; CC BY-NC-ND 4.0 UI/UX including layouts and icons; proprietary voice/artwork exceptions and third-party notices",
+    "fonts_directory_license": "Apache-2.0 text exists in the source font directory; this does not establish each bundled font license or complete notices",
+    "resources_license": "Refers back to main repository LICENSE, with an additional Flaticon CC BY 3.0 attribution",
+    "voice_scope": "Source Gradle collects only JS voice configuration files; no permission or license was inferred for every JS file",
+    "website_policy_difference": "Current osmand.net legal page describes CC BY-NC-ND 2.0 visual elements and an app-store exception for GPL code; no policy conflict was resolved by this research"
+  },
+  "ogg_files": [
+    "assets/sounds/camera_click.ogg",
+    "assets/sounds/ding.ogg",
+    "assets/sounds/direction_notification.ogg",
+    "assets/sounds/inclination_left.ogg",
+    "assets/sounds/inclination_right.ogg"
+  ],
+  "primary_file_snapshots": {
+    "fdroid-build.sh": {
+      "sha256": "0ff39071aa1add119125f09e58c06892a1d2448eebcd4b299efc38b73b738cd9",
+      "size_bytes": 1595,
+      "url": "https://gitlab.com/f-droid-mirrors/OsmAnd-submodules/-/raw/0bcbf3d414fb47fd574be37b70697121257a952b/build.sh"
+    },
+    "fdroid-metadata-pinned.yml": {
+      "sha256": "6910a7626c00b58991604dc3e67d254472e52162cc38d4064a52fd129466ecec",
+      "size_bytes": 386927,
+      "url": "https://gitlab.com/fdroid/fdroiddata/-/raw/524d813f01d1cdb54e138b1ce8195908a071c52d/metadata/net.osmand.plus.yml"
+    },
+    "fdroid-prebuild.sh": {
+      "sha256": "98f0c3e54a23a476aa1d8596b81ceb354f7e36a29c15628b55b0041fef258528",
+      "size_bytes": 26188,
+      "url": "https://gitlab.com/f-droid-mirrors/OsmAnd-submodules/-/raw/0bcbf3d414fb47fd574be37b70697121257a952b/prebuild.sh"
+    },
+    "fdroid-submodules": {
+      "sha256": "c396f9e6c3123c5faf521db329441ab8b9809ab7926bcd75966c5b59dbc52102",
+      "size_bytes": 729,
+      "url": "https://gitlab.com/f-droid-mirrors/OsmAnd-submodules/-/raw/0bcbf3d414fb47fd574be37b70697121257a952b/.gitmodules"
+    },
+    "fdroid-tree.json": {
+      "sha256": "0928eb6dd35a01d6c586a3e6ee328b5ecc3f202703b38efc4f7c81fffebcd421",
+      "size_bytes": 1697,
+      "url": "https://gitlab.com/api/v4/projects/f-droid-mirrors%2FOsmAnd-submodules/repository/tree?ref=0bcbf3d414fb47fd574be37b70697121257a952b&per_page=100"
+    },
+    "font-license": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size_bytes": 11358,
+      "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/rendering_styles/fonts/LICENSE.txt"
+    },
+    "resources-license": {
+      "sha256": "7365003ac15b3a127ffd7402894b4662d8eb27992cbd53f921690e8c7ac2ae54",
+      "size_bytes": 743,
+      "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/LICENSE"
+    },
+    "resources-tree.json": {
+      "sha256": "a68ff5d12ec59956b72fa6e809d302040a16c9d4449d030406e38da468d3dfd8",
+      "size_bytes": 13766735,
+      "url": "https://api.github.com/repos/osmandapp/OsmAnd-resources/git/trees/7ee9bf7012b48427766afd59c5142b544f9f3214?recursive=1"
+    },
+    "upstream-license": {
+      "sha256": "ec0fc88ddc80e1a7c596fc05c667328f4f13e1aa7c85d5df20db381b34521e1b",
+      "size_bytes": 18317,
+      "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd/13934d83aabde68e29dc35ede0575db00e2e5d77/LICENSE"
+    },
+    "voice-en": {
+      "sha256": "8e6a89ce7b972085a92ebd2a0d879777284d40a8ca46db161d5952a0167f2ff8",
+      "size_bytes": 23306,
+      "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/voice/en/en_tts.js"
+    },
+    "voice-readme": {
+      "sha256": "7ae494275b3a25d8ffb45f5cdd7545e922a6f61534f41cd0199106626a628b28",
+      "size_bytes": 290,
+      "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/voice/README.md"
+    }
+  },
+  "qz_decode_method": "Confirm Qt qCompress big-endian 4-byte uncompressed length, then zlib-decompress following bytes. Original APK/cache bytes unchanged.",
+  "selected_apk": {
+    "full_cached_hash_reverified": true,
+    "sha256": "04c9272e87dd20bdc0d51240b2d57660673ad21a3376f9fdbaf84dbba6d32004",
+    "size_bytes": 389255401,
+    "url": "https://download.osmand.net/releases/net.osmand-5.4.11-5411.apk"
+  },
+  "selected_application_source": {
+    "commit": "13934d83aabde68e29dc35ede0575db00e2e5d77",
+    "full_cached_hash_reverified": true,
+    "sha256": "23485013761c1cae72b3388d44e533d5040b4187891c9ced3d3903c16c69e6bd",
+    "size_bytes": 28378920
+  },
+  "source_resource_directory_counts": {
+    "anim": 22,
+    "animator": 1,
+    "color": 21,
+    "color-v21": 4,
+    "drawable": 1747,
+    "drawable-hdpi": 159,
+    "drawable-large-ldpi": 2,
+    "drawable-large-xhdpi": 1,
+    "drawable-ldpi": 2,
+    "drawable-mdpi": 160,
+    "drawable-sw600dp": 3,
+    "drawable-sw600dp-v21": 3,
+    "drawable-v21": 15,
+    "drawable-xhdpi": 165,
+    "drawable-xxhdpi": 165,
+    "drawable-xxxhdpi": 71,
+    "layout": 1029,
+    "layout-land": 33,
+    "layout-sw600dp": 1,
+    "layout-v14": 1,
+    "layout-v26": 4,
+    "menu": 15,
+    "mipmap-anydpi-v26": 3,
+    "mipmap-hdpi": 6,
+    "mipmap-mdpi": 6,
+    "mipmap-xhdpi": 6,
+    "mipmap-xxhdpi": 6,
+    "mipmap-xxxhdpi": 6,
+    "values": 15,
+    "values-af": 1,
+    "values-am": 1,
+    "values-an": 2,
+    "values-ar": 2,
+    "values-ars": 2,
+    "values-ast": 2,
+    "values-az": 2,
+    "values-b+be+Latn": 1,
+    "values-b+es+419": 1,
+    "values-b+hrx": 1,
+    "values-b+hsb": 2,
+    "values-b+kab": 2,
+    "values-b+sr+Cyrl": 2,
+    "values-b+sr+Latn": 2,
+    "values-b+yue+Hant": 1,
+    "values-ba": 1,
+    "values-bar": 2,
+    "values-be": 2,
+    "values-ber": 2,
+    "values-bg": 3,
+    "values-bn": 2,
+    "values-br": 2,
+    "values-bs": 1,
+    "values-ca": 2,
+    "values-ckb": 1,
+    "values-crh": 2,
+    "values-cs": 2,
+    "values-cy": 2,
+    "values-da": 2,
+    "values-de": 3,
+    "values-el": 2,
+    "values-en-rGB": 2,
+    "values-eo": 2,
+    "values-es": 3,
+    "values-es-rAR": 2,
+    "values-es-rUS": 2,
+    "values-et": 2,
+    "values-eu": 2,
+    "values-fa": 2,
+    "values-fi": 2,
+    "values-fr": 3,
+    "values-fur": 1,
+    "values-ga": 2,
+    "values-gd": 2,
+    "values-gl": 2,
+    "values-gn": 2,
+    "values-hi": 1,
+    "values-hr": 2,
+    "values-hu": 3,
+    "values-hy": 1,
+    "values-ia": 2,
+    "values-in": 2,
+    "values-is": 2,
+    "values-it": 2,
+    "values-iw": 3,
+    "values-ja": 3,
+    "values-ka": 2,
+    "values-km": 2,
+    "values-kn": 2,
+    "values-ko": 3,
+    "values-ku": 1,
+    "values-land": 2,
+    "values-large": 1,
+    "values-large-land": 1,
+    "values-lb": 1,
+    "values-lt": 2,
+    "values-lv": 2,
+    "values-mk": 2,
+    "values-ml": 2,
+    "values-mn": 1,
+    "values-mr": 2,
+    "values-my": 2,
+    "values-nap": 1,
+    "values-nb": 2,
+    "values-night": 2,
+    "values-nl": 3,
+    "values-nn": 2,
+    "values-oc": 2,
+    "values-or": 1,
+    "values-pa-rPK": 2,
+    "values-pl": 3,
+    "values-port": 1,
+    "values-pt": 2,
+    "values-pt-rBR": 2,
+    "values-ro": 2,
+    "values-ru": 3,
+    "values-rup": 1,
+    "values-sat": 1,
+    "values-sc": 2,
+    "values-sk": 2,
+    "values-sl": 2,
+    "values-sq": 2,
+    "values-sr": 2,
+    "values-sv": 2,
+    "values-sw600dp": 1,
+    "values-sw600dp-land": 1,
+    "values-ta": 2,
+    "values-te": 1,
+    "values-th": 1,
+    "values-tl": 1,
+    "values-tr": 2,
+    "values-tt": 1,
+    "values-tw": 2,
+    "values-tzm": 2,
+    "values-ug": 1,
+    "values-uk": 2,
+    "values-ur": 1,
+    "values-uz": 2,
+    "values-v14": 1,
+    "values-v35": 1,
+    "values-vi": 2,
+    "values-xlarge": 1,
+    "values-xlarge-land": 1,
+    "values-xlarge-port": 1,
+    "values-yue": 1,
+    "values-zh-rCN": 3,
+    "values-zh-rTW": 2,
+    "xml": 38
+  },
+  "status": "research only; no qualifying redistributable replacement established; no license or human review approval",
+  "transit_samples": [
+    {
+      "path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_brussels.svg.qz",
+      "sha256": "9f32e41582b57af07618dfe139d50a7193ba6eeab6c3f5d928aa68b0fa2eef77",
+      "size_bytes": 1103,
+      "uncompressed_sha256": "fcc1c492a71ae1490df51daea8a4f2d56ca621fbed52905c3991949256c03851",
+      "uncompressed_size_bytes": 3189
+    },
+    {
+      "path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_chicago.svg.qz",
+      "sha256": "140e90c6ace59cdca6f4ef03652cdb16f6d73c8fd5c4485593dec070b55698ec",
+      "size_bytes": 1527,
+      "uncompressed_sha256": "063adefefad78b01da59a4e104cbec6f5ad6476de87f60049e754db223489ad0",
+      "uncompressed_size_bytes": 5435
+    },
+    {
+      "path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_singapore.svg.qz",
+      "sha256": "98aba5f31746500e72bb5a51d9b35ab7ef932aa190ff8d6e0ec529cd37d17244",
+      "size_bytes": 1758,
+      "uncompressed_sha256": "e21246f387757752b3273cb74329a20c5e68eaa77042e6506c0d0b18c697ff04",
+      "uncompressed_size_bytes": 4361
+    },
+    {
+      "path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_toronto.svg.qz",
+      "sha256": "6df275c85b45a2b0017d22d8f9cdfad4067c9022db6761c29518014b68c03df9",
+      "size_bytes": 1338,
+      "uncompressed_sha256": "bf30656202ab4be085471940914ff3de1359a8582b1e60482006ace7aed4e786",
+      "uncompressed_size_bytes": 4121
+    }
+  ],
+  "transit_source_comparison": [
+    {
+      "apk_path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_brussels.svg.qz",
+      "source_variants": [
+        {
+          "matches_uncompressed_apk": false,
+          "path": "icons/svg/subway/subway_brussels.svg",
+          "sha256": "0d6cd027202193af231bf4b114b6823a6aae198d1f05ced212d5694154a3c667",
+          "size_bytes": 1626,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/icons/svg/subway/subway_brussels.svg"
+        },
+        {
+          "matches_uncompressed_apk": true,
+          "path": "rendering_styles/style-icons/map-icons-svg/c_mx_subway_brussels.svg",
+          "sha256": "fcc1c492a71ae1490df51daea8a4f2d56ca621fbed52905c3991949256c03851",
+          "size_bytes": 3189,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/rendering_styles/style-icons/map-icons-svg/c_mx_subway_brussels.svg"
+        }
+      ]
+    },
+    {
+      "apk_path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_chicago.svg.qz",
+      "source_variants": [
+        {
+          "matches_uncompressed_apk": false,
+          "path": "icons/svg/subway/subway_chicago.svg",
+          "sha256": "683f6f9ee2cdea032269c1a1e86713a49aa66fde95c084d70eed087e68dbd61f",
+          "size_bytes": 3656,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/icons/svg/subway/subway_chicago.svg"
+        },
+        {
+          "matches_uncompressed_apk": true,
+          "path": "rendering_styles/style-icons/map-icons-svg/c_mx_subway_chicago.svg",
+          "sha256": "063adefefad78b01da59a4e104cbec6f5ad6476de87f60049e754db223489ad0",
+          "size_bytes": 5435,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/rendering_styles/style-icons/map-icons-svg/c_mx_subway_chicago.svg"
+        }
+      ]
+    },
+    {
+      "apk_path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_singapore.svg.qz",
+      "source_variants": [
+        {
+          "matches_uncompressed_apk": false,
+          "path": "icons/svg/subway/subway_singapore.svg",
+          "sha256": "ce9de59fb586decd12f85ff1e5fe4a01bb3ca64c9b2c1822aae03615f5e5b0ca",
+          "size_bytes": 3265,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/icons/svg/subway/subway_singapore.svg"
+        },
+        {
+          "matches_uncompressed_apk": true,
+          "path": "rendering_styles/style-icons/map-icons-svg/c_mx_subway_singapore.svg",
+          "sha256": "e21246f387757752b3273cb74329a20c5e68eaa77042e6506c0d0b18c697ff04",
+          "size_bytes": 4361,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/rendering_styles/style-icons/map-icons-svg/c_mx_subway_singapore.svg"
+        }
+      ]
+    },
+    {
+      "apk_path": "assets/OsmAndCore_ResourcesBundle/map/icons/c_subway_toronto.svg.qz",
+      "source_variants": [
+        {
+          "matches_uncompressed_apk": false,
+          "path": "icons/svg/subway/subway_toronto.svg",
+          "sha256": "c533fd973a7e3be7c6c6309efe511d8fdfe1da05c417b963ad17e0c38498ffa2",
+          "size_bytes": 3170,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/icons/svg/subway/subway_toronto.svg"
+        },
+        {
+          "matches_uncompressed_apk": true,
+          "path": "rendering_styles/style-icons/map-icons-svg/c_mx_subway_toronto.svg",
+          "sha256": "bf30656202ab4be085471940914ff3de1359a8582b1e60482006ace7aed4e786",
+          "size_bytes": 4121,
+          "url": "https://raw.githubusercontent.com/osmandapp/OsmAnd-resources/7ee9bf7012b48427766afd59c5142b544f9f3214/rendering_styles/style-icons/map-icons-svg/c_mx_subway_toronto.svg"
+        }
+      ]
+    }
+  ],
+  "voice_files": [
+    "assets/voice/ar/ar_tts.js",
+    "assets/voice/be/be_tts.js",
+    "assets/voice/beep-complex-loud/beep-complex-loud_tts.js",
+    "assets/voice/beep-complex/beep-complex_tts.js",
+    "assets/voice/beep-minimal/beep-minimal_tts.js",
+    "assets/voice/beep-simple-loud/beep-simple-loud_tts.js",
+    "assets/voice/beep-simple/beep-simple_tts.js",
+    "assets/voice/bg/bg_tts.js",
+    "assets/voice/bs/bs_tts.js",
+    "assets/voice/ca/ca_tts.js",
+    "assets/voice/cs/cs_tts.js",
+    "assets/voice/da/da_tts.js",
+    "assets/voice/de-casual/de-casual_tts.js",
+    "assets/voice/de/de_tts.js",
+    "assets/voice/el/el_tts.js",
+    "assets/voice/en-barebones/en-barebones_tts.js",
+    "assets/voice/en-gb/en-gb_tts.js",
+    "assets/voice/en/en_tts.js",
+    "assets/voice/eo/eo_tts.js",
+    "assets/voice/es-ar/es-ar_tts.js",
+    "assets/voice/es/es_tts.js",
+    "assets/voice/et/et_tts.js",
+    "assets/voice/fa/fa_tts.js",
+    "assets/voice/fi/fi_tts.js",
+    "assets/voice/fr/fr_tts.js",
+    "assets/voice/gl/gl_tts.js",
+    "assets/voice/gn-py/gn-py_tts.js",
+    "assets/voice/he/he_tts.js",
+    "assets/voice/hi/hi_tts.js",
+    "assets/voice/hr/hr_tts.js",
+    "assets/voice/hu-formal/hu-formal_tts.js",
+    "assets/voice/hu/hu_tts.js",
+    "assets/voice/id/id_tts.js",
+    "assets/voice/it/it_tts.js",
+    "assets/voice/ja/ja_tts.js",
+    "assets/voice/ko/ko_tts.js",
+    "assets/voice/lt/lt_tts.js",
+    "assets/voice/lv/lv_tts.js",
+    "assets/voice/nb/nb_tts.js",
+    "assets/voice/nl/nl_tts.js",
+    "assets/voice/pl/pl_tts.js",
+    "assets/voice/pt-br/pt-br_tts.js",
+    "assets/voice/pt/pt_tts.js",
+    "assets/voice/ro/ro_tts.js",
+    "assets/voice/ru/ru_tts.js",
+    "assets/voice/sc/sc_tts.js",
+    "assets/voice/sk/sk_tts.js",
+    "assets/voice/sl/sl_tts.js",
+    "assets/voice/sr/sr_tts.js",
+    "assets/voice/sv/sv_tts.js",
+    "assets/voice/sw/sw_tts.js",
+    "assets/voice/ta-in/ta-in_tts.js",
+    "assets/voice/tr/tr_tts.js",
+    "assets/voice/uk/uk_tts.js",
+    "assets/voice/vi/vi_tts.js",
+    "assets/voice/zh-hk/zh-hk_tts.js",
+    "assets/voice/zh-tw/zh-tw_tts.js",
+    "assets/voice/zh/zh_tts.js"
+  ]
+}
