@@ -49,6 +49,15 @@ def fixture_item(**updates):
         ("LGPL-3.0-or-later OR MPL-2.0", True),
         ("GPL-2.0+", False),
         ("GPL-2.0+ OR MIT", True),
+        ("GPL-2.0-or-later", True),
+        ("GPL-2.0-or-later AND OLDAP-2.8", True),
+        ("Apache-2.0 WITH Swift-exception", True),
+        ("apache-2.0 WITH swift-exception", True),
+        ("GPL-3.0-only WITH Swift-exception", False),
+        ("MIT WITH Swift-exception", False),
+        ("Apache-2.0 WITH Unknown-exception", False),
+        ("Apache-2.0 WITH Swift-exception AND Unknown", False),
+        ("Apache-2.0 WITH Swift-exception OR Unknown", True),
     ],
 )
 def test_license_expression_choices_and_precedence(value, supported):
@@ -152,6 +161,8 @@ def test_grouped_ready_reprint_alternative_cannot_escape_its_original_document_s
         "(MPL-2.0 OR MIT)",
         "LGPL-3.0-only",
         "Apache-2.0 OR LGPL-3.0-or-later",
+        "GPL-2.0-or-later",
+        "Apache-2.0 WITH Swift-exception AND GPL-2.0-or-later",
     ],
 )
 def test_copyleft_app_alternatives_require_and_collect_corresponding_sources(
@@ -184,3 +195,20 @@ def test_malformed_binary_declaration_cannot_silently_skip_source_collection():
     item = fixture_item(family="binaries", license="MIT OR (GPL-3.0-only")
     with pytest.raises(ValueError):
         ships_gpl(item)
+
+
+@pytest.mark.parametrize(
+    "declaration", ["OLDAP-2.8", "GPL-2.0-or-later", "Apache-2.0 WITH Swift-exception"]
+)
+def test_recognized_source_terms_preserve_original_declarations_and_review_holds(declaration):
+    item = fixture_item(
+        license=declaration,
+        review="[[VERIFY: exact source notices and correspondence]]",
+        requires_legal=True,
+    )
+    before = item.model_dump()
+    assert parse_license_expression(declaration).supported
+    problems = item.blockers(release=True)
+    assert any("exact source notices and correspondence" in issue for issue in problems)
+    assert any("named legal sign-off" in issue for issue in problems)
+    assert item.model_dump() == before

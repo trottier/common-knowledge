@@ -21,6 +21,8 @@ SUPPORTED_LICENSES = frozenset(
         "GPL-3.0-only",
         "GPL-3.0-or-later",
         "GPL-2.0-only",
+        "GPL-2.0-or-later",
+        "OLDAP-2.8",
         "ODbL-1.0",
         "US-PD",
         "Public-domain-US",
@@ -35,6 +37,8 @@ SUPPORTED_LICENSES = frozenset(
     }
 )
 CANONICAL_IDS = {identifier.casefold(): identifier for identifier in SUPPORTED_LICENSES}
+SUPPORTED_EXCEPTIONS = frozenset({("Apache-2.0", "Swift-exception")})
+CANONICAL_EXCEPTIONS = {exception.casefold(): exception for _, exception in SUPPORTED_EXCEPTIONS}
 IDENTIFIER = re.compile(r"[A-Za-z0-9][A-Za-z0-9.-]*\+?")
 TOKEN = re.compile(r"\s+|[()/]|[A-Za-z0-9][A-Za-z0-9.-]*\+?")
 OPERATORS = {"AND", "OR", "WITH"}
@@ -82,7 +86,8 @@ class Parser:
         if token in OPERATORS or not IDENTIFIER.fullmatch(token) or (exception and "+" in token):
             raise ValueError("Expected a license or exception identifier")
         self.position += 1
-        return CANONICAL_IDS.get(token.casefold(), token)
+        identifiers = CANONICAL_EXCEPTIONS if exception else CANONICAL_IDS
+        return identifiers.get(token.casefold(), token)
 
     def primary(self, depth: int) -> LicenseExpression:
         if depth > 64:
@@ -95,10 +100,10 @@ class Parser:
         identifier = self.identifier()
         supported = identifier in SUPPORTED_LICENSES
         if self.take("WITH"):
-            self.identifier(exception=True)
-            # No exceptions are approved by this small policy parser. A separate
-            # known OR alternative may still apply after the whole string parses.
-            supported = False
+            exception = self.identifier(exception=True)
+            # Recognition applies to the exact license/exception pair only;
+            # contextual notice, source, and human-review gates remain separate.
+            supported = supported and (identifier, exception) in SUPPORTED_EXCEPTIONS
         return LicenseExpression(supported, frozenset({identifier}))
 
     def conjunction(self, depth: int) -> LicenseExpression:

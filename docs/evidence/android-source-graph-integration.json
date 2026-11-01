@@ -1,0 +1,732 @@
+{
+  "observed_utc": "2026-11-01T19:22:39.124390+00:00",
+  "app_source_packet_commits": {
+    "briar": "20f1454954e3020a72b60e055c998adb3e5d525d",
+    "vlc": "33ec2f917b9f47d5b60bb19d827c8859add2178f"
+  },
+  "verified_new_payloads": [
+    {
+      "id": "briar_dep_androidx_annotation_annotation_1_5_0",
+      "sha256": "321c0d46007a21b02c99b8b690afb9eec200c7fde0f60ab7e056c1d0c3024d42",
+      "size_bytes": 60709,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_constraintlayout_constraintlayout_2_1_4",
+      "sha256": "849b8de0b2a45df75d39cf9e4305d98ea276574c9290abfeafe9349b12275f7e",
+      "size_bytes": 273907,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_exifinterface_exifinterface_1_3_7",
+      "sha256": "04c0a6d2ff9745ab9946ebcdd2cf35889e05c79e5218e8b59a57a98a2670dc74",
+      "size_bytes": 64785,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_fragment_fragment_1_6_2",
+      "sha256": "6957c79f099d5ff9d636a5e6f0a4a7bbf18e8ddf6144789c2508a16fe8afc088",
+      "size_bytes": 194086,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_lifecycle_lifecycle_livedata_2_6_2",
+      "sha256": "5e55ddad2a4a2cf7c33650059f11274a579db92dd88a04800912d70576227f61",
+      "size_bytes": 6551,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_lifecycle_lifecycle_viewmodel_ktx_2_6_2",
+      "sha256": "dc9b84fecf2d5c7eade2d86e75a5c407c81209698e001fe822a5ed1896571d67",
+      "size_bytes": 1410,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_preference_preference_1_2_1",
+      "sha256": "e5c16f4ce8afacb66bbbb34837cc070a5c6a7ca07ae1a8ff9c4c80c8e6edbf1f",
+      "size_bytes": 114097,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_androidx_recyclerview_recyclerview_selection_1_1_0",
+      "sha256": "9cb384801e162db47f8f1b3c69fa4a1f4a41be55117aa616dd4be81784ec7d36",
+      "size_bytes": 85112,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_fasterxml_jackson_core_jackson_annotations_2_13_4",
+      "sha256": "f7957cd469e2c80f2a313d57816c9834135a5218e02eaa4d70d1a81fb49ca437",
+      "size_bytes": 80052,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_fasterxml_jackson_core_jackson_databind_2_13_4",
+      "sha256": "c1ab9263cb99f83f25cc6f7c5a1ae08cd9006946493b02e4574cdcb4da793cef",
+      "size_bytes": 1148632,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_github_bumptech_glide_glide_4_16_0",
+      "sha256": "e2ea6d3e0707682b0109375dbe2a6fe2f7247c89b7519797e94cfb00249213b7",
+      "size_bytes": 450450,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_github_chrisbanes_photoview_2_3_0",
+      "sha256": "e7a35edacabbeafb30c0f377b7a41ed2e4d96d53714096cbfaaf255459aa3426",
+      "size_bytes": 16823,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_github_kobakei_materialfabspeeddial_1_2_1",
+      "sha256": "4f8f928cbbf11796c43594fa8d0067aba49fe61fd6d47105aed7dde3ef99d36a",
+      "size_bytes": 8460,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_google_android_material_material_1_9_0",
+      "sha256": "9bc70e328bc3b3eccc6d0daee90330b3244b1a17851fcbbf2ef8784c367c7262",
+      "size_bytes": 1115899,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_google_code_findbugs_jsr305_3_0_2",
+      "sha256": "1c9e85e272d0708c6a591dc74828c71603053b48cc75ae83cce56912a2aa063b",
+      "size_bytes": 18102,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_google_dagger_dagger_2_51_1",
+      "sha256": "77e5cfde38b17973abca3f385bedf337e9f19a260665d5d8c447f34e46865cf6",
+      "size_bytes": 61204,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_google_zxing_core_3_3_3",
+      "sha256": "e646f122c7fe517f4ea2325f181985e20bff215bde566dd886035cb1b33679ac",
+      "size_bytes": 473966,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_h2database_h2_1_4_192",
+      "sha256": "1c986ddca63dc84d796fd7408b79b491660e74c621070f18a41d8f0c79e58742",
+      "size_bytes": 1243347,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_rometools_rome_1_18_0",
+      "sha256": "e6a07eed2909c3432717a63978d55a41fc030fca9db212795b2f6f1b25796c1c",
+      "size_bytes": 219300,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_squareup_okhttp3_okhttp_4_12_0",
+      "sha256": "d91a769a4140e542cddbac4e67fcf279299614e8bfd53bd23b85e60c2861341c",
+      "size_bytes": 368316,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_vanniktech_emoji_google_0_9_0",
+      "sha256": "7c92cf2440b479e6867ebda34c70cbec57c2c5b8376743b8dfee3f258a59355a",
+      "size_bytes": 52586,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_com_vanniktech_emoji_0_9_0",
+      "sha256": "cc3dca18b51617509e95979d6c2f47e7d7e2674833abd86454173b23e0ab691a",
+      "size_bytes": 57666,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_de_hdodenhof_circleimageview_3_1_0",
+      "sha256": "cf4dd292f8cd9da1e688363a4f8b7c2cb21d9ca54574ae8fc0b7a2107d4dbc84",
+      "size_bytes": 4160,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_info_guardianproject_panic_panic_1_0",
+      "sha256": "cdfd6c740c49feff058f83b84d37b7ec99108c0c4fb53ac0b7af6d150cc74874",
+      "size_bytes": 8805,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_javax_inject_javax_inject_1",
+      "sha256": "c4b87ee2911c139c3daf498a781967f1eb2e75bc1a8529a2e7b328a15d0e433e",
+      "size_bytes": 10928,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_net_i2p_crypto_eddsa_0_2_0",
+      "sha256": "d08f5baa9622aaf02216384864fbc84573012e0187dd8708a42ebc3e0a402dd4",
+      "size_bytes": 52778,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_bitlet_weupnp_0_1_4",
+      "sha256": "954023048656bed6a8fa23764e56eb360ff62eaca7881fa74985fdb38a3b7a94",
+      "size_bytes": 26652,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_bouncycastle_bcprov_jdk15to18_1_82",
+      "sha256": "49b7c4b925bafc538391952f77f8d5a1d104a22d77e527d51aafe4430cb84151",
+      "size_bytes": 4756344,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_dont_kill_me_lib_0_2_8",
+      "sha256": "a882aa49ff14902d854221ee3e19f5b4ffcba8a12291f0c57da086cf0d6cc2b6",
+      "size_bytes": 10915,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_jtorctl_0_5",
+      "sha256": "7b78a86be9a96747cc3379d3c90a756b5223409037b8eb2b402e09ce0e936e9c",
+      "size_bytes": 19651,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_null_safety_0_1",
+      "sha256": "4bcecba5c00fab033fdadc0ff343c3659f3fc0b06c839417ae82a60b9461984e",
+      "size_bytes": 3752,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_onionwrapper_android_0_1_7",
+      "sha256": "049ea14bd3329b441a3bd4ae33d67356c8ca70b5eb094e061566f0f17295c194",
+      "size_bytes": 4937,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_onionwrapper_core_0_1_7",
+      "sha256": "8c2373c4236eed070771bf30ddf37c45fcd63910796f88fbc38c78a5a10b75bd",
+      "size_bytes": 19396,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_socks_socket_0_1",
+      "sha256": "9a814a2f78f9009653229723f3cffdfb0d90a0727727723a7cc9afc16874efa3",
+      "size_bytes": 4832,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_jdom_jdom2_2_0_6_1",
+      "sha256": "45deefd1f842e35f0c1089eeecd057df632230ec6096ccc6fccfc639b95548d4",
+      "size_bytes": 488764,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_25",
+      "sha256": "2534c8908432e06de73177509903d405b55f423dd4c2f747e16b92a2162611e6",
+      "size_bytes": 580,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_25",
+      "sha256": "3cb6895054a0985bba591c165503fe4dd63a215af53263b67a071ccdc242bf6e",
+      "size_bytes": 556,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_1_9_25",
+      "sha256": "1745faecebad150a45b5ddf63b29577693a27133bb3ef2126704230af8e5ea6a",
+      "size_bytes": 605561,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_jsoup_jsoup_1_15_3",
+      "sha256": "43947de5c649f3cef70dafe92741e5e09581f607b98113244f4fae3318828262",
+      "size_bytes": 230852,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_nanohttpd_nanohttpd_2_3_1",
+      "sha256": "71b57b309dd19ca7bfceb3b0fa97ac9048ab2cb902a2607373633150f1997a67",
+      "size_bytes": 23924,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_whispersystems_curve25519_java_0_5_0",
+      "sha256": "6824b9c54c362217cac381a36aa756790aa22c16e2f8d35b1fb6422733a2412b",
+      "size_bytes": 88777,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_uk_co_samuelwall_material_tap_target_prompt_3_3_2",
+      "sha256": "ee449f7321c9744f673d0dcd4ea3966a60af8b09e9e6628125249645d5e4bd1c",
+      "size_bytes": 51284,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_tor_android_0_4_9_15_source",
+      "sha256": "89a45ef2496234eac466d594a5b1d74b9f93f4b84b5c53d4ceb67f3a0346c809",
+      "size_bytes": 71251198,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_lyrebird_android_0_6_2_source",
+      "sha256": "b4c370a58da4b4e7e69ad071d92ec2f5dd277f75980be912d02993732e60bd08",
+      "size_bytes": 8105447,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "briar_dep_org_briarproject_tor_android_0_4_9_15_binary_audit",
+      "sha256": "19960ba977b25e459bd504e0dedd363e9c117532ed4a87350261ee2194c546bd",
+      "size_bytes": 14162317,
+      "archive_format": ".zip",
+      "audit_only_binary": true
+    },
+    {
+      "id": "briar_dep_org_briarproject_lyrebird_android_0_6_2_binary_audit",
+      "sha256": "2d70a38393ee6f1760a65a33dd971210efa06b5a355ebea829196b61fd9fd11a",
+      "size_bytes": 23934542,
+      "archive_format": ".zip",
+      "audit_only_binary": true
+    },
+    {
+      "id": "vlc_libvlc_aar",
+      "sha256": "963a121dcc2059d9bd836e1d3d609358d3aa74da42f1d6163a9830765f197af0",
+      "size_bytes": 86664930,
+      "archive_format": ".zip",
+      "audit_only_binary": true
+    },
+    {
+      "id": "vlc_medialibrary_aar",
+      "sha256": "ca4a6b6be32eb9056d85c96c1bc9259fff3b1f0e8fc1f785312afe57170eaf92",
+      "size_bytes": 9570952,
+      "archive_format": ".zip",
+      "audit_only_binary": true
+    },
+    {
+      "id": "vlc_libvlc_java_source",
+      "sha256": "95bb03b150ca4cda5fb334b02df2e4f95c627940a1134f805161ab0146566a37",
+      "size_bytes": 75151,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "vlc_medialibrary_java_source",
+      "sha256": "8c7f461b8a709752f0930610636117740777968541daaa909d1915bcd32611af",
+      "size_bytes": 70963,
+      "archive_format": ".zip",
+      "audit_only_binary": false
+    },
+    {
+      "id": "vlc_libvlcjni_source",
+      "sha256": "963c970377454f257fa26c9c4984d160eb14038be782e89e5c8193cb8b8246eb",
+      "size_bytes": 258849,
+      "archive_format": ".tar.gz",
+      "audit_only_binary": false
+    },
+    {
+      "id": "vlc_native_base_source",
+      "sha256": "a166dc34fdeef0ad5dbd46ec65980d4b90f621517c5a755c63817e1f66a8d103",
+      "size_bytes": 32830436,
+      "archive_format": ".tar.gz",
+      "audit_only_binary": false
+    },
+    {
+      "id": "vlc_medialibrary_native_source",
+      "sha256": "5421341fc6554c02fdbf4c790ea5537f8df744ed82038783936eab50095a1181",
+      "size_bytes": 988739,
+      "archive_format": ".tar.gz",
+      "audit_only_binary": false
+    },
+    {
+      "id": "vlc_libvlcpp_source",
+      "sha256": "340419ce4a1537029c789ba9f01da149d7576b3fa39f19f3f816bfc0452685c6",
+      "size_bytes": 90070,
+      "archive_format": ".tar.gz",
+      "audit_only_binary": false
+    },
+    {
+      "id": "vlc_sqlite_source",
+      "sha256": "67d3fe6d268e6eaddcae3727fce58fcc8e9c53869bdd07a0c61e38ddf2965071",
+      "size_bytes": 3265571,
+      "archive_format": ".tar.gz",
+      "audit_only_binary": false
+    }
+  ],
+  "graph_source_ids": {
+    "briar_android": [
+      "briar_android_source",
+      "briar_mailbox_source",
+      "briar_dep_androidx_annotation_annotation_1_5_0",
+      "briar_dep_androidx_constraintlayout_constraintlayout_2_1_4",
+      "briar_dep_androidx_exifinterface_exifinterface_1_3_7",
+      "briar_dep_androidx_fragment_fragment_1_6_2",
+      "briar_dep_androidx_lifecycle_lifecycle_livedata_2_6_2",
+      "briar_dep_androidx_lifecycle_lifecycle_viewmodel_ktx_2_6_2",
+      "briar_dep_androidx_preference_preference_1_2_1",
+      "briar_dep_androidx_recyclerview_recyclerview_selection_1_1_0",
+      "briar_dep_com_fasterxml_jackson_core_jackson_annotations_2_13_4",
+      "briar_dep_com_fasterxml_jackson_core_jackson_databind_2_13_4",
+      "briar_dep_com_github_bumptech_glide_glide_4_16_0",
+      "briar_dep_com_github_chrisbanes_photoview_2_3_0",
+      "briar_dep_com_github_kobakei_materialfabspeeddial_1_2_1",
+      "briar_dep_com_google_android_material_material_1_9_0",
+      "briar_dep_com_google_code_findbugs_jsr305_3_0_2",
+      "briar_dep_com_google_dagger_dagger_2_51_1",
+      "briar_dep_com_google_zxing_core_3_3_3",
+      "briar_dep_com_h2database_h2_1_4_192",
+      "briar_dep_com_rometools_rome_1_18_0",
+      "briar_dep_com_squareup_okhttp3_okhttp_4_12_0",
+      "briar_dep_com_vanniktech_emoji_google_0_9_0",
+      "briar_dep_com_vanniktech_emoji_0_9_0",
+      "briar_dep_de_hdodenhof_circleimageview_3_1_0",
+      "briar_dep_info_guardianproject_panic_panic_1_0",
+      "briar_dep_javax_inject_javax_inject_1",
+      "briar_dep_net_i2p_crypto_eddsa_0_2_0",
+      "briar_dep_org_bitlet_weupnp_0_1_4",
+      "briar_dep_org_bouncycastle_bcprov_jdk15to18_1_82",
+      "briar_dep_org_briarproject_dont_kill_me_lib_0_2_8",
+      "briar_dep_org_briarproject_jtorctl_0_5",
+      "briar_dep_org_briarproject_null_safety_0_1",
+      "briar_dep_org_briarproject_onionwrapper_android_0_1_7",
+      "briar_dep_org_briarproject_onionwrapper_core_0_1_7",
+      "briar_dep_org_briarproject_socks_socket_0_1",
+      "briar_dep_org_jdom_jdom2_2_0_6_1",
+      "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_25",
+      "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_25",
+      "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_1_9_25",
+      "briar_dep_org_jsoup_jsoup_1_15_3",
+      "briar_dep_org_nanohttpd_nanohttpd_2_3_1",
+      "briar_dep_org_whispersystems_curve25519_java_0_5_0",
+      "briar_dep_uk_co_samuelwall_material_tap_target_prompt_3_3_2",
+      "briar_dep_org_briarproject_tor_android_0_4_9_15_source",
+      "briar_dep_org_briarproject_lyrebird_android_0_6_2_source"
+    ],
+    "vlc_android": [
+      "vlc_android_source",
+      "vlc_libvlc_java_source",
+      "vlc_libvlcjni_source",
+      "vlc_native_base_source",
+      "vlc_medialibrary_java_source",
+      "vlc_medialibrary_native_source",
+      "vlc_libvlcpp_source",
+      "vlc_sqlite_source"
+    ],
+    "vlc_android_older": [
+      "vlc_android_older_source",
+      "vlc_libvlc_java_source",
+      "vlc_libvlcjni_source",
+      "vlc_native_base_source",
+      "vlc_medialibrary_java_source",
+      "vlc_medialibrary_native_source",
+      "vlc_libvlcpp_source",
+      "vlc_sqlite_source"
+    ]
+  },
+  "graph_source_counts": {
+    "briar_android": 46,
+    "vlc_android": 8,
+    "vlc_android_older": 8
+  },
+  "graph_unique_payload_counts": {
+    "briar_android": 46,
+    "vlc_android": 8,
+    "vlc_android_older": 8
+  },
+  "briar_direct_inputs": [
+    "briar_mailbox_source",
+    "briar_dep_androidx_annotation_annotation_1_5_0",
+    "briar_dep_androidx_constraintlayout_constraintlayout_2_1_4",
+    "briar_dep_androidx_exifinterface_exifinterface_1_3_7",
+    "briar_dep_androidx_fragment_fragment_1_6_2",
+    "briar_dep_androidx_lifecycle_lifecycle_livedata_2_6_2",
+    "briar_dep_androidx_lifecycle_lifecycle_viewmodel_ktx_2_6_2",
+    "briar_dep_androidx_preference_preference_1_2_1",
+    "briar_dep_androidx_recyclerview_recyclerview_selection_1_1_0",
+    "briar_dep_com_fasterxml_jackson_core_jackson_annotations_2_13_4",
+    "briar_dep_com_fasterxml_jackson_core_jackson_databind_2_13_4",
+    "briar_dep_com_github_bumptech_glide_glide_4_16_0",
+    "briar_dep_com_github_chrisbanes_photoview_2_3_0",
+    "briar_dep_com_github_kobakei_materialfabspeeddial_1_2_1",
+    "briar_dep_com_google_android_material_material_1_9_0",
+    "briar_dep_com_google_code_findbugs_jsr305_3_0_2",
+    "briar_dep_com_google_dagger_dagger_2_51_1",
+    "briar_dep_com_google_zxing_core_3_3_3",
+    "briar_dep_com_h2database_h2_1_4_192",
+    "briar_dep_com_rometools_rome_1_18_0",
+    "briar_dep_com_squareup_okhttp3_okhttp_4_12_0",
+    "briar_dep_com_vanniktech_emoji_google_0_9_0",
+    "briar_dep_com_vanniktech_emoji_0_9_0",
+    "briar_dep_de_hdodenhof_circleimageview_3_1_0",
+    "briar_dep_info_guardianproject_panic_panic_1_0",
+    "briar_dep_javax_inject_javax_inject_1",
+    "briar_dep_net_i2p_crypto_eddsa_0_2_0",
+    "briar_dep_org_bitlet_weupnp_0_1_4",
+    "briar_dep_org_bouncycastle_bcprov_jdk15to18_1_82",
+    "briar_dep_org_briarproject_dont_kill_me_lib_0_2_8",
+    "briar_dep_org_briarproject_jtorctl_0_5",
+    "briar_dep_org_briarproject_null_safety_0_1",
+    "briar_dep_org_briarproject_onionwrapper_android_0_1_7",
+    "briar_dep_org_briarproject_onionwrapper_core_0_1_7",
+    "briar_dep_org_briarproject_socks_socket_0_1",
+    "briar_dep_org_jdom_jdom2_2_0_6_1",
+    "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_25",
+    "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_25",
+    "briar_dep_org_jetbrains_kotlin_kotlin_stdlib_1_9_25",
+    "briar_dep_org_jsoup_jsoup_1_15_3",
+    "briar_dep_org_nanohttpd_nanohttpd_2_3_1",
+    "briar_dep_org_whispersystems_curve25519_java_0_5_0",
+    "briar_dep_uk_co_samuelwall_material_tap_target_prompt_3_3_2",
+    "briar_dep_org_briarproject_tor_android_0_4_9_15_source",
+    "briar_dep_org_briarproject_lyrebird_android_0_6_2_source"
+  ],
+  "briar_native_bindings_rechecked": [
+    {
+      "binary_jar_path": "armeabi-v7a/libtor.so",
+      "apk_path": "lib/armeabi-v7a/libtor.so",
+      "sha256": "7dce24cf7820319e6f49473a40fe227ea744f37a91117604220d27f317c57612",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "arm64-v8a/libtor.so",
+      "apk_path": "lib/arm64-v8a/libtor.so",
+      "sha256": "483263331c7e7097e219d33cb1cb97a47cdc231119854f3519b151f10463b77b",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "x86/libtor.so",
+      "apk_path": "lib/x86/libtor.so",
+      "sha256": "ba7a50555ee5cb4d692d9d045281bf3283a52ffea7959665733cd53ab24b2b7a",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "x86_64/libtor.so",
+      "apk_path": "lib/x86_64/libtor.so",
+      "sha256": "87bfabade24c9b44113c3dc63b48af20beaf710320fea1b836e3ed18bd38489e",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "armeabi-v7a/liblyrebird.so",
+      "apk_path": "lib/armeabi-v7a/liblyrebird.so",
+      "sha256": "ec54b954399a75cddbc76862fbd887d91714531e21be03795708483809a2e7ed",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "arm64-v8a/liblyrebird.so",
+      "apk_path": "lib/arm64-v8a/liblyrebird.so",
+      "sha256": "34e258346e12648b7206941cd4af790ad61ca4c663e47426f3631ee98870dc5c",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "x86/liblyrebird.so",
+      "apk_path": "lib/x86/liblyrebird.so",
+      "sha256": "579be1f08ae4578858e9f8a915824519bb2905a0bba114b2a860daf674056446",
+      "matches_apk": true
+    },
+    {
+      "binary_jar_path": "x86_64/liblyrebird.so",
+      "apk_path": "lib/x86_64/liblyrebird.so",
+      "sha256": "fe41be88bb4683d4b74e1bc11aa3ee1aac17468e12f8532d00959edcd1cc3597",
+      "matches_apk": true
+    }
+  ],
+  "vlc_native_bindings_rechecked": {
+    "applications": [
+      {
+        "id": "vlc_android",
+        "sha256": "bea9ea0cdecfd8f461ef305d2afe5d1ac1459cfb9156acce2f615788a486de74",
+        "native_members": [
+          {
+            "abi": "arm64-v8a",
+            "library": "libc++_shared.so",
+            "path": "lib/arm64-v8a/libc++_shared.so",
+            "sha256": "cd61762848882a16c8244c964a6f396c0caa0b440588a210ce9cc4ab0e6d9f0c",
+            "size_bytes": 1253544,
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/arm64-v8a/libc++_shared.so",
+                "sha256": "cd61762848882a16c8244c964a6f396c0caa0b440588a210ce9cc4ab0e6d9f0c",
+                "size_bytes": 1253544
+              }
+            ]
+          },
+          {
+            "abi": "arm64-v8a",
+            "library": "libmla.so",
+            "path": "lib/arm64-v8a/libmla.so",
+            "sha256": "d271097f8b4ecc3376a4a6bebf0cf3a88df4ee233a04bff5dc6641706be2fddd",
+            "size_bytes": 5304024,
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/arm64-v8a/libmla.so",
+                "sha256": "d271097f8b4ecc3376a4a6bebf0cf3a88df4ee233a04bff5dc6641706be2fddd",
+                "size_bytes": 5304024
+              }
+            ]
+          },
+          {
+            "abi": "arm64-v8a",
+            "library": "libvlc.so",
+            "path": "lib/arm64-v8a/libvlc.so",
+            "sha256": "5155c767d8d28294296f358bffb890ac537df99eb9a5cc26931bbeb08b5b2ad4",
+            "size_bytes": 42827720,
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/arm64-v8a/libvlc.so",
+                "sha256": "5155c767d8d28294296f358bffb890ac537df99eb9a5cc26931bbeb08b5b2ad4",
+                "size_bytes": 42827720
+              }
+            ]
+          },
+          {
+            "abi": "arm64-v8a",
+            "library": "libvlcjni.so",
+            "path": "lib/arm64-v8a/libvlcjni.so",
+            "sha256": "93d40e1fb2b2cefdbc1a01c3494eef11883be00cb33eaa3d29044f93742081fb",
+            "size_bytes": 94296,
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/arm64-v8a/libvlcjni.so",
+                "sha256": "93d40e1fb2b2cefdbc1a01c3494eef11883be00cb33eaa3d29044f93742081fb",
+                "size_bytes": 94296
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vlc_android_older",
+        "sha256": "a6a7f940e4bd190c9a70f3f0dc97c1c402c10200af20edac7a1d452b24abd8a0",
+        "native_members": [
+          {
+            "abi": "armeabi-v7a",
+            "library": "libc++_shared.so",
+            "path": "lib/armeabi-v7a/libc++_shared.so",
+            "sha256": "ceaebc3acbb86a3a4b6fa15b70e846430a6fead1fd1544a28e79f0a69aec7743",
+            "size_bytes": 554808,
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/armeabi-v7a/libc++_shared.so",
+                "sha256": "ceaebc3acbb86a3a4b6fa15b70e846430a6fead1fd1544a28e79f0a69aec7743",
+                "size_bytes": 554808
+              }
+            ]
+          },
+          {
+            "abi": "armeabi-v7a",
+            "library": "libmla.so",
+            "path": "lib/armeabi-v7a/libmla.so",
+            "sha256": "ba9618b2acd249d1d2b464b3e0deaccf04c52f447ff8eea4c7ed89d85afafac9",
+            "size_bytes": 5321204,
+            "matches": [
+              {
+                "artifact_id": "vlc_medialibrary_aar",
+                "path": "jni/armeabi-v7a/libmla.so",
+                "sha256": "ba9618b2acd249d1d2b464b3e0deaccf04c52f447ff8eea4c7ed89d85afafac9",
+                "size_bytes": 5321204
+              }
+            ]
+          },
+          {
+            "abi": "armeabi-v7a",
+            "library": "libvlc.so",
+            "path": "lib/armeabi-v7a/libvlc.so",
+            "sha256": "d7a1f4b24e12c7d3631b49940f0d5a87b34bb7deb1fdda67559fa6d9f80676eb",
+            "size_bytes": 38402400,
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/armeabi-v7a/libvlc.so",
+                "sha256": "d7a1f4b24e12c7d3631b49940f0d5a87b34bb7deb1fdda67559fa6d9f80676eb",
+                "size_bytes": 38402400
+              }
+            ]
+          },
+          {
+            "abi": "armeabi-v7a",
+            "library": "libvlcjni.so",
+            "path": "lib/armeabi-v7a/libvlcjni.so",
+            "sha256": "f02995f3e5b31b27f395b3e2f22053f3f31ba345ceb3cc5843c47cf718acedd9",
+            "size_bytes": 83544,
+            "matches": [
+              {
+                "artifact_id": "vlc_libvlc_aar",
+                "path": "jni/armeabi-v7a/libvlcjni.so",
+                "sha256": "f02995f3e5b31b27f395b3e2f22053f3f31ba345ceb3cc5843c47cf718acedd9",
+                "size_bytes": 83544
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "publisher_artifacts": {
+      "vlc_libvlc_aar": "963a121dcc2059d9bd836e1d3d609358d3aa74da42f1d6163a9830765f197af0",
+      "vlc_medialibrary_aar": "ca4a6b6be32eb9056d85c96c1bc9259fff3b1f0e8fc1f785312afe57170eaf92"
+    },
+    "all_standard_native_members_match": true,
+    "complete_application_source_closure": false,
+    "human_license_or_pin_approval": false
+  },
+  "bitchat_direct_input_count": 642,
+  "bitchat_direct_inputs_sha256": "2a24b83eb74ead850ef83a5e6e8e2850606cc76670949c50a0618f624e7fd4e1",
+  "complete_application_source_closure": false,
+  "human_legal_or_pin_approval": false,
+  "integration_base_commit": "87fd27a97e0ab93563ceeafd051de18300bd437d",
+  "preserved_records": {
+    "bitchat_android_source": true,
+    "briar_mailbox_source": true,
+    "all_unrelated_apk_records": true
+  },
+  "audit_container": {
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "cpu_limit": 1,
+    "memory_bytes": 1073741824,
+    "network": "none"
+  },
+  "initial_inspection_base_commit": "a208a3c2cc5e0001f91dbc45fbaa6259c9144304",
+  "apk_preservation_compared_against_commit": "96d5c097d33f0c724584ae9fc76b5518a3bdcef0"
+}

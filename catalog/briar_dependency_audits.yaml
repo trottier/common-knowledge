@@ -1,0 +1,42 @@
+[
+  {
+    "id": "briar_dep_org_briarproject_tor_android_0_4_9_15_binary_audit",
+    "family": "binaries",
+    "title": "org.briarproject:tor-android:0.4.9.15 original native binary JAR for Briar byte comparison",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.jar",
+    "version": "0.4.9.15",
+    "size_bytes": 14162317,
+    "sha256": "19960ba977b25e459bd504e0dedd363e9c117532ed4a87350261ee2194c546bd",
+    "license": "BSD-3-Clause AND Apache-2.0 AND Zlib AND [[VERIFY: complete Tor bundle per-file license inventory]]",
+    "attribution": "Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/dependency-audits/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: audit-only original native binary JAR; not corresponding source and not shipped in the drive; per-file license and notice review remains open]]"
+  },
+  {
+    "id": "briar_dep_org_briarproject_lyrebird_android_0_6_2_binary_audit",
+    "family": "binaries",
+    "title": "org.briarproject:lyrebird-android:0.6.2 original native binary JAR for Briar byte comparison",
+    "url": "https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.jar",
+    "version": "0.6.2",
+    "size_bytes": 23934542,
+    "sha256": "2d70a38393ee6f1760a65a33dd971210efa06b5a355ebea829196b61fd9fd11a",
+    "license": "BSD-2-Clause AND BSD-3-Clause AND GPL-3.0-or-later AND [[VERIFY: complete Lyrebird vendored per-file license inventory]]",
+    "attribution": "Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained",
+    "license_proof_url": "https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.pom",
+    "checksum_source_url": "https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.jar.sha256",
+    "placement": "hub_only",
+    "dest": "build/dependency-audits/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: audit-only original native binary JAR; not corresponding source and not shipped in the drive; per-file license and notice review remains open]]"
+  }
+]

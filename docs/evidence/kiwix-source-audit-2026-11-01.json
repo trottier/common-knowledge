@@ -1,0 +1,1678 @@
+{
+  "format": "ck-kiwix-source-inspection-v1",
+  "observed_on": "2026-11-01",
+  "baseline_commit": "fc6c9f7",
+  "method": "Static archive inspection and byte comparison only; no app launched, no source compiled, and no human approval granted.",
+  "artifacts": [
+    {
+      "url": "https://codeload.github.com/kiwix/java-libkiwix/tar.gz/40967ea319fc31beec0fb5240fb488c68e94f6f9",
+      "size_bytes": 1268959,
+      "sha256": "bf23722aac7a2845531fb91260664f516f10741c5e30af4cb83d87ecd4afb356",
+      "commit": "40967ea319fc31beec0fb5240fb488c68e94f6f9",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "libkiwix_source",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz",
+      "resolved_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz",
+      "size_bytes": 1123020,
+      "sha256": "92d7ccc76b0dbd7f5b8584daef6e44c43c4b8a3c83a1d67e2a1b9bf1eb9a5f14",
+      "md5": "c6cecd6670e02899edacf73c7b74f2f7",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "libzim_source",
+      "url": "https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz",
+      "resolved_url": "https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz",
+      "size_bytes": 217752,
+      "sha256": "7fa374f4714b23c43afa3fb406d7e21c483d77e8218895e1408e2f037969b6ea",
+      "md5": "d7cb45cff5b8d08439f8f2502e794aae",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "swift_system_source",
+      "url": "https://codeload.github.com/apple/swift-system/tar.gz/b083113aef646d9d35403ca17e9789b750e42d1d",
+      "resolved_url": "https://codeload.github.com/apple/swift-system/tar.gz/b083113aef646d9d35403ca17e9789b750e42d1d",
+      "size_bytes": 136654,
+      "sha256": "983e0bc7be6b1a1d25501a694e1e5c85a42be3c5b77d0ef60888624a9f5b9016",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "binding_aar",
+      "url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0.aar",
+      "resolved_url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0.aar",
+      "size_bytes": 62479985,
+      "sha256": "2a857badd0a5754baadd16dbce527e69ef1a5d216f026e3732c8054836b77b63",
+      "md5": "e998802ff9a19ed063b557ff237fd705",
+      "role": "binary correspondence evidence, not source closure"
+    },
+    {
+      "id": "binding_sources",
+      "url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0-sources.jar",
+      "resolved_url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0-sources.jar",
+      "size_bytes": 50297,
+      "sha256": "2b2e9e8298c7cdd60149499b53c12c16a9d010a169b0c9a7870d7ba3bd03a4f2",
+      "md5": "f10bad08f01c5ce6ea21beeb1bd7ed49",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "libkiwix_md5",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz.md5",
+      "resolved_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix-14.1.0.tar.xz.md5",
+      "size_bytes": 56,
+      "sha256": "00c062056554abb9985f687e6f1fe951bd22b694a1216595f9f27bc5f493b7ba",
+      "md5": "64e22aa9d38701f9d2324f004bec1b1a",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "libzim_md5",
+      "url": "https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz.md5",
+      "resolved_url": "https://download.openzim.org/release/libzim/libzim-9.4.0.tar.xz.md5",
+      "size_bytes": 53,
+      "sha256": "2f339058b3b4849c936954df5f3fbccdc0f628054943f08c2b80523841666c88",
+      "md5": "dd0b74d0dbdad6fb348346ceaaf0f610",
+      "role": "original publisher bytes"
+    },
+    {
+      "id": "binding-module",
+      "url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0.module",
+      "size_bytes": 3724,
+      "sha256": "c3b16d60a450dd4c9ba683f20ebb1b7b2dfe9965fceef5788c3b598c86cc7e14",
+      "role": "publisher build metadata"
+    },
+    {
+      "id": "maven-pom",
+      "url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0.pom",
+      "size_bytes": 2162,
+      "sha256": "db22008236af68c321714dbb0c9abd72c014a4c1a7145cb94fd4797bb5f163ff",
+      "role": "publisher build metadata"
+    },
+    {
+      "id": "libkiwix_android_arm_md5",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-arm-14.1.0.tar.gz.md5",
+      "size_bytes": 68,
+      "sha256": "fa3984c7e843de93a6e9e943091edf1e76b7c55f19359b4f88ad2b14d20384a6",
+      "publisher_md5": "34aa396ebe5db11b4a96628da8076294",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libkiwix_android_arm64_md5",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-arm64-14.1.0.tar.gz.md5",
+      "size_bytes": 70,
+      "sha256": "9dfd3f545e3ca6d30f6b21628246c69051dd31b758ad73c66e134d2e06ea1374",
+      "publisher_md5": "7fabc5115327762ae1e262e47b47843a",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libkiwix_android_x86_md5",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-x86-14.1.0.tar.gz.md5",
+      "size_bytes": 68,
+      "sha256": "0939b71fe65e0e27e5aaeb6a9339c09fa7b1e7a55bc4d5d36429c27993ad7817",
+      "publisher_md5": "c9da89135d8304995c2d2c3c51a95664",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libkiwix_android_x86_64_md5",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-x86_64-14.1.0.tar.gz.md5",
+      "size_bytes": 71,
+      "sha256": "0721e7b5c316e7c3def168200a95c171a4a5ae823ce8b4ab631141b1fa16c2bd",
+      "publisher_md5": "86eff5135d8e31611fdc26858f059a1e",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libzim_android_arm_md5",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-arm-9.4.0.tar.gz.md5",
+      "size_bytes": 65,
+      "sha256": "dbeb456848c3fec734a0847643cbb67e79bdb5153267118ae19e4f44ac0ca744",
+      "publisher_md5": "f92968f74c5b5066af012178784549ef",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libzim_android_arm64_md5",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-arm64-9.4.0.tar.gz.md5",
+      "size_bytes": 67,
+      "sha256": "7269286db6431c782c816be57828f63aeaa7d525baa5cdbcb4586e7a86c6b239",
+      "publisher_md5": "c1783eb158b1790d23b894af23e5447e",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libzim_android_x86_md5",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-x86-9.4.0.tar.gz.md5",
+      "size_bytes": 65,
+      "sha256": "7b5076efe92994637033d1cc0e1a3ddd28b749197d668a5051a4c0e33ca6cb99",
+      "publisher_md5": "d748f7c84ce3ddbfaf2304f871ce7edb",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libzim_android_x86_64_md5",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-x86_64-9.4.0.tar.gz.md5",
+      "size_bytes": 68,
+      "sha256": "7384fcfd6e9e44a863fffff4e636373dedfdded996a8b7e640900aa3401159e9",
+      "publisher_md5": "9751eff8baff7494266a92ade1071a2c",
+      "role": "publisher SDK consistency checksum"
+    },
+    {
+      "id": "libkiwix_android_arm",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-arm-14.1.0.tar.gz",
+      "resolved_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-arm-14.1.0.tar.gz",
+      "size_bytes": 9983531,
+      "sha256": "5dfd4ffa546bb2521c0a813f715bdcd24f60f499b736f921af65d49133a59bdc",
+      "md5": "34aa396ebe5db11b4a96628da8076294",
+      "archive_member_count": 17,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libkiwix_android_arm64",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-arm64-14.1.0.tar.gz",
+      "resolved_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-arm64-14.1.0.tar.gz",
+      "size_bytes": 10255655,
+      "sha256": "92a272ff9e8c1b309dea80685aa51d2b10ac0736ac5e9ac26b08aac985ba4d21",
+      "md5": "7fabc5115327762ae1e262e47b47843a",
+      "archive_member_count": 17,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libkiwix_android_x86",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-x86-14.1.0.tar.gz",
+      "resolved_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-x86-14.1.0.tar.gz",
+      "size_bytes": 10482589,
+      "sha256": "127e68263deac1ea7317cfdff4a57cefb64ee8f43e4f0c4389ef8602fb79dc23",
+      "md5": "c9da89135d8304995c2d2c3c51a95664",
+      "archive_member_count": 17,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libkiwix_android_x86_64",
+      "url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-x86_64-14.1.0.tar.gz",
+      "resolved_url": "https://mirror.download.kiwix.org/release/libkiwix/libkiwix_android-x86_64-14.1.0.tar.gz",
+      "size_bytes": 10293225,
+      "sha256": "ef766e20465848a166d079d6753bbab7382598a46e989e4e270f1f1cd3de95c9",
+      "md5": "86eff5135d8e31611fdc26858f059a1e",
+      "archive_member_count": 17,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libzim_android_arm",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-arm-9.4.0.tar.gz",
+      "resolved_url": "https://download.openzim.org/release/libzim/libzim_android-arm-9.4.0.tar.gz",
+      "size_bytes": 8506568,
+      "sha256": "fa54ab9cce2cf501bb714d76c886a0364b2e0da1a61a357c8dfc00f7d30272f3",
+      "md5": "f92968f74c5b5066af012178784549ef",
+      "archive_member_count": 20,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libzim_android_arm64",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-arm64-9.4.0.tar.gz",
+      "resolved_url": "https://download.openzim.org/release/libzim/libzim_android-arm64-9.4.0.tar.gz",
+      "size_bytes": 8676846,
+      "sha256": "15fb2520c80cca03a116279a6ae6d0655f5b2a0c9e881b2ddcca5049619cd580",
+      "md5": "c1783eb158b1790d23b894af23e5447e",
+      "archive_member_count": 20,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libzim_android_x86",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-x86-9.4.0.tar.gz",
+      "resolved_url": "https://download.openzim.org/release/libzim/libzim_android-x86-9.4.0.tar.gz",
+      "size_bytes": 8950700,
+      "sha256": "2884b3bb39ceb83849e649bded03c2fbcc9c2292b176b1ac5a5f8a54ed467b74",
+      "md5": "d748f7c84ce3ddbfaf2304f871ce7edb",
+      "archive_member_count": 20,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "libzim_android_x86_64",
+      "url": "https://download.openzim.org/release/libzim/libzim_android-x86_64-9.4.0.tar.gz",
+      "resolved_url": "https://download.openzim.org/release/libzim/libzim_android-x86_64-9.4.0.tar.gz",
+      "size_bytes": 8815247,
+      "sha256": "16a2f422d1e5776c44780d435d9828676d1e75014a05d103cd3425c57af06dc6",
+      "md5": "9751eff8baff7494266a92ade1071a2c",
+      "archive_member_count": 20,
+      "source_cpp_member_count": 0,
+      "publisher_md5_matches": true,
+      "role": "publisher binary SDK evidence, not complete corresponding source"
+    },
+    {
+      "id": "objectbox_aar",
+      "url": "https://repo.maven.apache.org/maven2/io/objectbox/objectbox-android/4.1.0/objectbox-android-4.1.0.aar",
+      "size_bytes": 3399189,
+      "sha256": "4c9bdd054a9621629ea0f0289316125503e5a418f871c02df1ff000fcbed6802",
+      "role": "license/correspondence evidence only, not approved redistribution"
+    },
+    {
+      "id": "objectbox_pom",
+      "url": "https://repo.maven.apache.org/maven2/io/objectbox/objectbox-android/4.1.0/objectbox-android-4.1.0.pom",
+      "size_bytes": 2513,
+      "sha256": "5b84678bf1a21f0761d5c16dc2a45f94c9388467d5e3a41737195ff606d19d1a",
+      "role": "license/correspondence evidence only, not approved redistribution"
+    },
+    {
+      "id": "objectbox_tag",
+      "url": "https://api.github.com/repos/objectbox/objectbox-java/git/ref/tags/V4.1.0",
+      "size_bytes": 357,
+      "sha256": "bce3e808494f40c169c05dd31dbf7cbebe2d29359f3d3e92fdb293d67c8f7972",
+      "role": "license/correspondence evidence only, not approved redistribution"
+    },
+    {
+      "id": "objectbox_faq",
+      "url": "https://objectbox.io/faq/",
+      "size_bytes": 317434,
+      "sha256": "81fc31246b98e5f06e654676fee7fd5fc076619fe2358f02d591f01fa7e44507",
+      "role": "license/correspondence evidence only, not approved redistribution"
+    },
+    {
+      "id": "objectbox_binary_license",
+      "url": "https://objectbox.io/0209-ob-binary-license/",
+      "size_bytes": 171259,
+      "sha256": "7219055d633071d73fbeafc6ed939a0b50a7645ac287e138159f0ec687871221",
+      "role": "license/correspondence evidence only, not approved redistribution"
+    },
+    {
+      "id": "objectbox_pinned_readme",
+      "url": "https://raw.githubusercontent.com/objectbox/objectbox-java/a980f70766cab0549e0480b910c0ee0bc97c915e/README.md",
+      "size_bytes": 8948,
+      "sha256": "884e8b2db5809f0440f01816ef39e50747645df7d067cb3d1a838b1ef6c2a466",
+      "role": "license/correspondence evidence only, not approved redistribution"
+    },
+    {
+      "id": "desktop_index",
+      "url": "https://mirror.download.kiwix.org/release/kiwix-desktop/",
+      "size_bytes": 41970,
+      "sha256": "b55f16c2f728b0235ed9371ad79f3cc94c65e0a7ec84aff2e29d109dfcdbcd87"
+    },
+    {
+      "id": "mac_index",
+      "url": "https://mirror.download.kiwix.org/release/kiwix-macos/",
+      "size_bytes": 7032,
+      "sha256": "2ccc60b6d11380de1c9e0eabad427a072605db43546f161b5b227b0661a29f89"
+    },
+    {
+      "id": "android_release",
+      "url": "https://api.github.com/repos/kiwix/kiwix-android/releases/tags/v3.14.1",
+      "size_bytes": 11382,
+      "sha256": "71132055bf9fe24ffef8946412853ea307747f76c2c98f71635b7636c2c8bfaf"
+    },
+    {
+      "id": "binding_release",
+      "url": "https://api.github.com/repos/kiwix/java-libkiwix/releases/tags/2.4.0",
+      "size_bytes": 2618,
+      "sha256": "8241ae406293801146cc49178a39f27afae28c2f86071be5c395c0e26f1c1fc0"
+    }
+  ],
+  "selected_binaries": [
+    {
+      "reader": "android",
+      "size_bytes": 236167297,
+      "sha256": "353e84ccda154802ed6841ad46c3140b9256c147836578817d5da8321b181ba0"
+    },
+    {
+      "reader": "windows",
+      "size_bytes": 157265310,
+      "sha256": "56ad5b3a86010c2c74db63a717d087cfbdcdbe71a0d7fca0655f90ef1d80593f"
+    },
+    {
+      "reader": "linux",
+      "size_bytes": 168125632,
+      "sha256": "0319feaf1e920a9244d06f95e8710ce1632f7ac03a8499858cb8f56896051f99"
+    },
+    {
+      "reader": "mac",
+      "size_bytes": 6192645,
+      "sha256": "b3be3e988070b47dfe5a924432ef2b602cad9439d4cce61f7b9b9962ff200af4"
+    }
+  ],
+  "android_native_aar_matches": [
+    {
+      "aar_member": "jni/arm64-v8a/libc++_shared.so",
+      "apk_member": "lib/arm64-v8a/libc++_shared.so",
+      "size_bytes": 1794776,
+      "sha256": "d523468d62d9b603cb3354294d70d4b2feabf2c3f1e43b0c96c9aabf32813708",
+      "apk_size_bytes": 1794776,
+      "apk_sha256": "d523468d62d9b603cb3354294d70d4b2feabf2c3f1e43b0c96c9aabf32813708",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/arm64-v8a/libkiwix.so",
+      "apk_member": "lib/arm64-v8a/libkiwix.so",
+      "size_bytes": 28065664,
+      "sha256": "b56ef8bf8888d9df2842e069e2f4e661ff5f4f1282a9da52ba30382f62cb93c2",
+      "apk_size_bytes": 28065664,
+      "apk_sha256": "b56ef8bf8888d9df2842e069e2f4e661ff5f4f1282a9da52ba30382f62cb93c2",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/arm64-v8a/libkiwix_wrapper.so",
+      "apk_member": "lib/arm64-v8a/libkiwix_wrapper.so",
+      "size_bytes": 2111616,
+      "sha256": "53b6c86bed41ab0e873315ef59a9e065b4080f2c989460f78577934724ca56d7",
+      "apk_size_bytes": 2111616,
+      "apk_sha256": "53b6c86bed41ab0e873315ef59a9e065b4080f2c989460f78577934724ca56d7",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/arm64-v8a/libzim.so",
+      "apk_member": "lib/arm64-v8a/libzim.so",
+      "size_bytes": 21749992,
+      "sha256": "ca3d4048960fe18f6cabe0cafcb97dca27e8044c56808a1f2b23f2b3ffb6d90b",
+      "apk_size_bytes": 21749992,
+      "apk_sha256": "ca3d4048960fe18f6cabe0cafcb97dca27e8044c56808a1f2b23f2b3ffb6d90b",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/arm64-v8a/libzim_wrapper.so",
+      "apk_member": "lib/arm64-v8a/libzim_wrapper.so",
+      "size_bytes": 2675248,
+      "sha256": "2b8760cee889027b692b557abe6f6db2707635160b6dfad3c1a61b03b8177850",
+      "apk_size_bytes": 2675248,
+      "apk_sha256": "2b8760cee889027b692b557abe6f6db2707635160b6dfad3c1a61b03b8177850",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/armeabi-v7a/libc++_shared.so",
+      "apk_member": "lib/armeabi-v7a/libc++_shared.so",
+      "size_bytes": 1301936,
+      "sha256": "fd7bbe2586a529ed0eb98ca8a9d1507468173069f80e58db1c007ce874fa1588",
+      "apk_size_bytes": 1301936,
+      "apk_sha256": "fd7bbe2586a529ed0eb98ca8a9d1507468173069f80e58db1c007ce874fa1588",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/armeabi-v7a/libkiwix.so",
+      "apk_member": "lib/armeabi-v7a/libkiwix.so",
+      "size_bytes": 26170028,
+      "sha256": "3a70a771345917d41086473dea36d97a7a97a1c9ba6d89283b3e0e31f17369d0",
+      "apk_size_bytes": 26170028,
+      "apk_sha256": "3a70a771345917d41086473dea36d97a7a97a1c9ba6d89283b3e0e31f17369d0",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/armeabi-v7a/libkiwix_wrapper.so",
+      "apk_member": "lib/armeabi-v7a/libkiwix_wrapper.so",
+      "size_bytes": 1552132,
+      "sha256": "f5b397109313336507824402cd9627961a599c39172166a8f203a34b7f1ad9dd",
+      "apk_size_bytes": 1552132,
+      "apk_sha256": "f5b397109313336507824402cd9627961a599c39172166a8f203a34b7f1ad9dd",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/armeabi-v7a/libzim.so",
+      "apk_member": "lib/armeabi-v7a/libzim.so",
+      "size_bytes": 19964896,
+      "sha256": "867c07f771dd377ab044e9ee2c7c801f024a6c4fd88e268f1c2161380ea31d56",
+      "apk_size_bytes": 19964896,
+      "apk_sha256": "867c07f771dd377ab044e9ee2c7c801f024a6c4fd88e268f1c2161380ea31d56",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/armeabi-v7a/libzim_wrapper.so",
+      "apk_member": "lib/armeabi-v7a/libzim_wrapper.so",
+      "size_bytes": 2039376,
+      "sha256": "6558889d02a083de7c3080a60acaea057f64c2ee725bb59be6de91b23d3fbf8d",
+      "apk_size_bytes": 2039376,
+      "apk_sha256": "6558889d02a083de7c3080a60acaea057f64c2ee725bb59be6de91b23d3fbf8d",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86/libc++_shared.so",
+      "apk_member": "lib/x86/libc++_shared.so",
+      "size_bytes": 1581744,
+      "sha256": "9a5f8899a235d5079c3a4fc6517cf416c49f1722091411f8829fa2b2a0ce1409",
+      "apk_size_bytes": 1581744,
+      "apk_sha256": "9a5f8899a235d5079c3a4fc6517cf416c49f1722091411f8829fa2b2a0ce1409",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86/libkiwix.so",
+      "apk_member": "lib/x86/libkiwix.so",
+      "size_bytes": 26949852,
+      "sha256": "d8c9912804571a34dca0d4c9402942be05f7369b3754cc0eff3fd2d5f806f197",
+      "apk_size_bytes": 26949852,
+      "apk_sha256": "d8c9912804571a34dca0d4c9402942be05f7369b3754cc0eff3fd2d5f806f197",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86/libkiwix_wrapper.so",
+      "apk_member": "lib/x86/libkiwix_wrapper.so",
+      "size_bytes": 1599200,
+      "sha256": "92f12c7e41a359143aea37c7f2c0fe70f93496e63f154ea1574d39ce5a467ca7",
+      "apk_size_bytes": 1599200,
+      "apk_sha256": "92f12c7e41a359143aea37c7f2c0fe70f93496e63f154ea1574d39ce5a467ca7",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86/libzim.so",
+      "apk_member": "lib/x86/libzim.so",
+      "size_bytes": 20886744,
+      "sha256": "a8e4d321cee6bed97484857ab8f2a53ca992d48973921aa72c8080c34cb8ac91",
+      "apk_size_bytes": 20886744,
+      "apk_sha256": "a8e4d321cee6bed97484857ab8f2a53ca992d48973921aa72c8080c34cb8ac91",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86/libzim_wrapper.so",
+      "apk_member": "lib/x86/libzim_wrapper.so",
+      "size_bytes": 2082052,
+      "sha256": "5526c07f26ac9f36c20e349508d930aa6a31eac159104d467c315e99805a7a8b",
+      "apk_size_bytes": 2082052,
+      "apk_sha256": "5526c07f26ac9f36c20e349508d930aa6a31eac159104d467c315e99805a7a8b",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86_64/libc++_shared.so",
+      "apk_member": "lib/x86_64/libc++_shared.so",
+      "size_bytes": 1617608,
+      "sha256": "3d8817f3a50515665b9152c620dedfd8509f84b68307f5f7ef20a75d9ae08f69",
+      "apk_size_bytes": 1617608,
+      "apk_sha256": "3d8817f3a50515665b9152c620dedfd8509f84b68307f5f7ef20a75d9ae08f69",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86_64/libkiwix.so",
+      "apk_member": "lib/x86_64/libkiwix.so",
+      "size_bytes": 27632208,
+      "sha256": "6f1a04dfdabd6b0049c7e0c8cd9dac61d99f9e62e080739acb7ffeff8875640c",
+      "apk_size_bytes": 27632208,
+      "apk_sha256": "6f1a04dfdabd6b0049c7e0c8cd9dac61d99f9e62e080739acb7ffeff8875640c",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86_64/libkiwix_wrapper.so",
+      "apk_member": "lib/x86_64/libkiwix_wrapper.so",
+      "size_bytes": 1735024,
+      "sha256": "dc872a387ce8d0d13e369db126518141e1f09589c73811478fe8e04be27bcec9",
+      "apk_size_bytes": 1735024,
+      "apk_sha256": "dc872a387ce8d0d13e369db126518141e1f09589c73811478fe8e04be27bcec9",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86_64/libzim.so",
+      "apk_member": "lib/x86_64/libzim.so",
+      "size_bytes": 21506336,
+      "sha256": "54def8dd8b5b2b4f2de8664ef9d6b636a1e4c944e4e2ab77649f16f1cdeb4f6e",
+      "apk_size_bytes": 21506336,
+      "apk_sha256": "54def8dd8b5b2b4f2de8664ef9d6b636a1e4c944e4e2ab77649f16f1cdeb4f6e",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86_64/libzim_wrapper.so",
+      "apk_member": "lib/x86_64/libzim_wrapper.so",
+      "size_bytes": 2275880,
+      "sha256": "67a8e0b5a817a2bac04eb5dabf5cf4635c335f60682f50e6a6f6427a59a0a163",
+      "apk_size_bytes": 2275880,
+      "apk_sha256": "67a8e0b5a817a2bac04eb5dabf5cf4635c335f60682f50e6a6f6427a59a0a163",
+      "byte_identical": true
+    }
+  ],
+  "source_release_tag_file_matches": [
+    {
+      "repository": "kiwix/libkiwix",
+      "revision": "0a9ba9b678f2775191234dea5567c7559176d736",
+      "archive_member": "libkiwix-14.1.0/README.md",
+      "url": "https://raw.githubusercontent.com/kiwix/libkiwix/0a9ba9b678f2775191234dea5567c7559176d736/README.md",
+      "size_bytes": 8834,
+      "sha256": "5ae9ea5c771167a4c7dce641f6176ba165f734e22605a4eba6cdc9af0e6d7a68",
+      "byte_identical": true
+    },
+    {
+      "repository": "kiwix/libkiwix",
+      "revision": "0a9ba9b678f2775191234dea5567c7559176d736",
+      "archive_member": "libkiwix-14.1.0/meson.build",
+      "url": "https://raw.githubusercontent.com/kiwix/libkiwix/0a9ba9b678f2775191234dea5567c7559176d736/meson.build",
+      "size_bytes": 4159,
+      "sha256": "d40f9dfea7f1b7f3a9a74e76a6cfc9ed9a5f87edade0703f748c5c9d774f01b6",
+      "byte_identical": true
+    },
+    {
+      "repository": "kiwix/libkiwix",
+      "revision": "0a9ba9b678f2775191234dea5567c7559176d736",
+      "archive_member": "libkiwix-14.1.0/COPYING",
+      "url": "https://raw.githubusercontent.com/kiwix/libkiwix/0a9ba9b678f2775191234dea5567c7559176d736/COPYING",
+      "size_bytes": 35065,
+      "sha256": "2170baac1a469f107cca076f1471e1cdddf858ff3407ece7a1bfee989c8674d7",
+      "byte_identical": true
+    },
+    {
+      "repository": "openzim/libzim",
+      "revision": "8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e",
+      "archive_member": "libzim-9.4.0/README.md",
+      "url": "https://raw.githubusercontent.com/openzim/libzim/8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e/README.md",
+      "size_bytes": 8629,
+      "sha256": "ecf1d6ded6b09b3826cf230f1fe3e6925278fcdecc1dd1eddb56da3a04e39fd2",
+      "byte_identical": true
+    },
+    {
+      "repository": "openzim/libzim",
+      "revision": "8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e",
+      "archive_member": "libzim-9.4.0/meson.build",
+      "url": "https://raw.githubusercontent.com/openzim/libzim/8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e/meson.build",
+      "size_bytes": 3935,
+      "sha256": "0782b310f4a2a5fb508af86dce89bbbaf92d401b0e4fe88da09fbba34e872529",
+      "byte_identical": true
+    },
+    {
+      "repository": "openzim/libzim",
+      "revision": "8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e",
+      "archive_member": "libzim-9.4.0/COPYING",
+      "url": "https://raw.githubusercontent.com/openzim/libzim/8ef511ba0de6a8180d79fbc3c7edcfec4202ae5e/COPYING",
+      "size_bytes": 15132,
+      "sha256": "86dfcf55c2b28fc143f89c5bf66ada6eec8a2d1c64ea1fdf557b708c16177f37",
+      "byte_identical": true
+    }
+  ],
+  "license_file_inventories": {
+    "java": [
+      {
+        "path": "COPYING",
+        "size_bytes": 35065,
+        "sha256": "2170baac1a469f107cca076f1471e1cdddf858ff3407ece7a1bfee989c8674d7"
+      },
+      {
+        "path": "LICENSE",
+        "size_bytes": 35149,
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "libkiwix": [
+      {
+        "path": "COPYING",
+        "size_bytes": 35065,
+        "sha256": "2170baac1a469f107cca076f1471e1cdddf858ff3407ece7a1bfee989c8674d7"
+      },
+      {
+        "path": "static/skin/autoComplete/LICENSE",
+        "size_bytes": 11357,
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ],
+    "libzim": [
+      {
+        "path": "COPYING",
+        "size_bytes": 15132,
+        "sha256": "86dfcf55c2b28fc143f89c5bf66ada6eec8a2d1c64ea1fdf557b708c16177f37"
+      }
+    ]
+  },
+  "windows_member_list": [
+    "iconengines/",
+    "imageformats/",
+    "networkinformation/",
+    "platforms/",
+    "position/",
+    "resources/",
+    "styles/",
+    "tls/",
+    "translations/",
+    "aria2c.exe",
+    "d3dcompiler_47.dll",
+    "icudt74.dll",
+    "icuin74.dll",
+    "icuio74.dll",
+    "icutu74.dll",
+    "icuuc74.dll",
+    "kiwix-desktop.exe",
+    "libcrypto-3-x64.dll",
+    "libssl-3-x64.dll",
+    "opengl32sw.dll",
+    "Qt6Core.dll",
+    "Qt6Gui.dll",
+    "Qt6Network.dll",
+    "Qt6OpenGL.dll",
+    "Qt6Positioning.dll",
+    "Qt6PrintSupport.dll",
+    "Qt6Qml.dll",
+    "Qt6QmlModels.dll",
+    "Qt6Quick.dll",
+    "Qt6QuickWidgets.dll",
+    "Qt6Svg.dll",
+    "Qt6WebChannel.dll",
+    "Qt6WebEngineCore.dll",
+    "Qt6WebEngineWidgets.dll",
+    "Qt6Widgets.dll",
+    "QtWebEngineProcess.exe",
+    "testplug.dll",
+    "vc_redist.x64.exe",
+    "iconengines/qsvgicon.dll",
+    "imageformats/qgif.dll",
+    "imageformats/qico.dll",
+    "imageformats/qjpeg.dll",
+    "imageformats/qsvg.dll",
+    "networkinformation/qnetworklistmanager.dll",
+    "networkinformation/qnetworklistmanagerd.dll",
+    "platforms/qwindows.dll",
+    "position/qtposition_nmea.dll",
+    "position/qtposition_nmead.dll",
+    "position/qtposition_positionpoll.dll",
+    "position/qtposition_positionpolld.dll",
+    "position/qtposition_winrt.dll",
+    "position/qtposition_winrtd.dll",
+    "resources/icudtl.dat",
+    "resources/qtwebengine_devtools_resources.pak",
+    "resources/qtwebengine_resources.pak",
+    "resources/qtwebengine_resources_100p.pak",
+    "resources/qtwebengine_resources_200p.pak",
+    "styles/qwindowsvistastyle.dll",
+    "tls/qcertonlybackend.dll",
+    "tls/qcertonlybackendd.dll",
+    "tls/qopensslbackend.dll",
+    "tls/qopensslbackendd.dll",
+    "tls/qschannelbackend.dll",
+    "tls/qschannelbackendd.dll",
+    "translations/qtwebengine_locales/",
+    "translations/qt_ar.qm",
+    "translations/qt_bg.qm",
+    "translations/qt_ca.qm",
+    "translations/qt_cs.qm",
+    "translations/qt_da.qm",
+    "translations/qt_de.qm",
+    "translations/qt_en.qm",
+    "translations/qt_es.qm",
+    "translations/qt_fa.qm",
+    "translations/qt_fi.qm",
+    "translations/qt_fr.qm",
+    "translations/qt_gd.qm",
+    "translations/qt_he.qm",
+    "translations/qt_hr.qm",
+    "translations/qt_hu.qm",
+    "translations/qt_it.qm",
+    "translations/qt_ja.qm",
+    "translations/qt_ko.qm",
+    "translations/qt_lv.qm",
+    "translations/qt_nl.qm",
+    "translations/qt_nn.qm",
+    "translations/qt_pl.qm",
+    "translations/qt_pt_BR.qm",
+    "translations/qt_ru.qm",
+    "translations/qt_sk.qm",
+    "translations/qt_tr.qm",
+    "translations/qt_uk.qm",
+    "translations/qt_zh_CN.qm",
+    "translations/qt_zh_TW.qm",
+    "translations/qtwebengine_locales/am.pak",
+    "translations/qtwebengine_locales/ar.pak",
+    "translations/qtwebengine_locales/bg.pak",
+    "translations/qtwebengine_locales/bn.pak",
+    "translations/qtwebengine_locales/ca.pak",
+    "translations/qtwebengine_locales/cs.pak",
+    "translations/qtwebengine_locales/da.pak",
+    "translations/qtwebengine_locales/de.pak",
+    "translations/qtwebengine_locales/el.pak",
+    "translations/qtwebengine_locales/en-GB.pak",
+    "translations/qtwebengine_locales/en-US.pak",
+    "translations/qtwebengine_locales/es-419.pak",
+    "translations/qtwebengine_locales/es.pak",
+    "translations/qtwebengine_locales/et.pak",
+    "translations/qtwebengine_locales/fa.pak",
+    "translations/qtwebengine_locales/fi.pak",
+    "translations/qtwebengine_locales/fil.pak",
+    "translations/qtwebengine_locales/fr.pak",
+    "translations/qtwebengine_locales/gu.pak",
+    "translations/qtwebengine_locales/he.pak",
+    "translations/qtwebengine_locales/hi.pak",
+    "translations/qtwebengine_locales/hr.pak",
+    "translations/qtwebengine_locales/hu.pak",
+    "translations/qtwebengine_locales/id.pak",
+    "translations/qtwebengine_locales/it.pak",
+    "translations/qtwebengine_locales/ja.pak",
+    "translations/qtwebengine_locales/kn.pak",
+    "translations/qtwebengine_locales/ko.pak",
+    "translations/qtwebengine_locales/lt.pak",
+    "translations/qtwebengine_locales/lv.pak",
+    "translations/qtwebengine_locales/ml.pak",
+    "translations/qtwebengine_locales/mr.pak",
+    "translations/qtwebengine_locales/ms.pak",
+    "translations/qtwebengine_locales/nb.pak",
+    "translations/qtwebengine_locales/nl.pak",
+    "translations/qtwebengine_locales/pl.pak",
+    "translations/qtwebengine_locales/pt-BR.pak",
+    "translations/qtwebengine_locales/pt-PT.pak",
+    "translations/qtwebengine_locales/ro.pak",
+    "translations/qtwebengine_locales/ru.pak",
+    "translations/qtwebengine_locales/sk.pak",
+    "translations/qtwebengine_locales/sl.pak",
+    "translations/qtwebengine_locales/sr.pak",
+    "translations/qtwebengine_locales/sv.pak",
+    "translations/qtwebengine_locales/sw.pak",
+    "translations/qtwebengine_locales/ta.pak",
+    "translations/qtwebengine_locales/te.pak",
+    "translations/qtwebengine_locales/th.pak",
+    "translations/qtwebengine_locales/tr.pak",
+    "translations/qtwebengine_locales/uk.pak",
+    "translations/qtwebengine_locales/vi.pak",
+    "translations/qtwebengine_locales/zh-CN.pak",
+    "translations/qtwebengine_locales/zh-TW.pak"
+  ],
+  "windows_static_versions": [
+    {
+      "member": "kiwix-desktop.exe",
+      "size_bytes": 5426544,
+      "sha256": "6bd6c6af5fdfc1fd721926009495089e84c85493bc20b5e45157d97a8e70bf2a",
+      "fixed_file_info_version": "0.0.0.0"
+    },
+    {
+      "member": "Qt6Core.dll",
+      "size_bytes": 5692048,
+      "sha256": "ef9a8048a33001b552601b7e0a9a5adeecad429bbfd3281e2223656cdea692d5",
+      "fixed_file_info_version": "6.4.3.0"
+    },
+    {
+      "member": "Qt6WebEngineCore.dll",
+      "size_bytes": 133659280,
+      "sha256": "d43cffe905012d518b929c70368245e300b88480eb62f674be394162143b2605",
+      "fixed_file_info_version": "6.4.3.0"
+    },
+    {
+      "member": "libcrypto-3-x64.dll",
+      "size_bytes": 7311360,
+      "sha256": "2c00c1bac843c0e5803d48c539e2e7e411c8bc3db77ea0210cc945358fe5c90b",
+      "fixed_file_info_version": "3.6.0.0"
+    },
+    {
+      "member": "icuin74.dll",
+      "size_bytes": 3099648,
+      "sha256": "a80efbe7966ecd99a86b9f1694bad6995c8b43febc1b42fbff5a3f5e9a6e36ff",
+      "fixed_file_info_version": "74.1.0.0"
+    },
+    {
+      "member": "aria2c.exe",
+      "size_bytes": 5649408,
+      "sha256": "be2099c214f63a3cb4954b09a0becd6e2e34660b886d4c898d260febfe9d70c2",
+      "fixed_file_info_version": null
+    },
+    {
+      "member": "vc_redist.x64.exe",
+      "size_bytes": 25635768,
+      "sha256": "cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b",
+      "fixed_file_info_version": "14.44.35211.0"
+    }
+  ],
+  "selected_source_archives": [
+    {
+      "id": "kiwix_android_source",
+      "url": "https://api.github.com/repos/kiwix/kiwix-android/tarball/ecd3ca40b53c1e2429f01474bb39e42e07d1ea21",
+      "version": "3.14.1; commit ecd3ca40b53c1e2429f01474bb39e42e07d1ea21",
+      "size_bytes": 14930718,
+      "sha256": "5502c78d153abba596b2ba20326115a62d4083c1bdb8a0db85a2d40e5ff4ac86"
+    },
+    {
+      "id": "kiwix_windows_source",
+      "url": "https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop-2.5.1.tar.gz",
+      "version": "2.5.1; commit 690251263462cebd8c4c7d65f8d26cd9e787cc83",
+      "size_bytes": 685967,
+      "sha256": "30936feca234addcf7dbc58961750a0efe87023284a4a2f0fe36adeb44daaf91"
+    },
+    {
+      "id": "kiwix_linux_source",
+      "url": "https://mirror.download.kiwix.org/release/kiwix-desktop/kiwix-desktop-2.5.1.tar.gz",
+      "version": "2.5.1; commit 690251263462cebd8c4c7d65f8d26cd9e787cc83",
+      "size_bytes": 685967,
+      "sha256": "30936feca234addcf7dbc58961750a0efe87023284a4a2f0fe36adeb44daaf91"
+    },
+    {
+      "id": "kiwix_mac_source",
+      "url": "https://api.github.com/repos/kiwix/kiwix-apple/tarball/1dc9c867236f0b915e9e42b46df9fe36e1b35e78",
+      "version": "3.17.1; commit 1dc9c867236f0b915e9e42b46df9fe36e1b35e78",
+      "size_bytes": 621214,
+      "sha256": "2734f7fabf7e2af6a7f6a906b4aed6d42eca79115ad44824b0845f8a2855fd4c"
+    }
+  ],
+  "recipe_file_hashes": [
+    {
+      "source_id": "kiwix_android_source",
+      "archive_member": "kiwix-kiwix-android-ecd3ca4/buildSrc/src/main/kotlin/Versions.kt",
+      "size_bytes": 3151,
+      "sha256": "3bd4343205f61913b16c6cb172682a58009071ddf0d035fe2ddb6444f5f71d52"
+    },
+    {
+      "source_id": "kiwix_android_source",
+      "archive_member": "kiwix-kiwix-android-ecd3ca4/buildSrc/src/main/kotlin/Libs.kt",
+      "size_bytes": 11223,
+      "sha256": "dcccb1aaeba317b9396acad7b004b8b8c7b4c7158eda1c5e28823d717336aee9"
+    },
+    {
+      "source_id": "kiwix_android_source",
+      "archive_member": "kiwix-kiwix-android-ecd3ca4/core/build.gradle.kts",
+      "size_bytes": 1646,
+      "sha256": "7f0dfd06c01e78f20fdb98e688160da7dc58e5645b679e8d1a93eb8f75cd2e0c"
+    },
+    {
+      "source_id": "kiwix_android_source",
+      "archive_member": "kiwix-kiwix-android-ecd3ca4/.github/workflows/release.yml",
+      "size_bytes": 3222,
+      "sha256": "93dc322283b01be7fba6012c72d1707481f6984d1fb9755ce3d98c460cc63f5c"
+    },
+    {
+      "source_id": "kiwix_windows_source",
+      "archive_member": "kiwix-desktop-2.5.1/kiwix-desktop.pro",
+      "size_bytes": 8271,
+      "sha256": "b433d8a042c1b55dffc5d339ccdffc29f255611896c1ab360c8aeacbf237efbc"
+    },
+    {
+      "source_id": "kiwix_windows_source",
+      "archive_member": "kiwix-desktop-2.5.1/.github/workflows/ci.yml",
+      "size_bytes": 2446,
+      "sha256": "c506f492e99b5942cb837e4387c795f6b2ba0f5feb0bd42f2b0c6d84fae27828"
+    },
+    {
+      "source_id": "kiwix_windows_source",
+      "archive_member": "kiwix-desktop-2.5.1/.github/workflows/package.yml",
+      "size_bytes": 3370,
+      "sha256": "a578c0e2898eb6a1cc2fc15bd10a807d66c3b70a0240556dea008a91f94397a2"
+    },
+    {
+      "source_id": "kiwix_mac_source",
+      "archive_member": "kiwix-kiwix-apple-1dc9c86/Brewfile",
+      "size_bytes": 702,
+      "sha256": "3df0851ce386641517e20e3a198e0944828d08705e5aa5de2721e9c240bfad8d"
+    },
+    {
+      "source_id": "kiwix_mac_source",
+      "archive_member": "kiwix-kiwix-apple-1dc9c86/project.yml",
+      "size_bytes": 8343,
+      "sha256": "4c6517fe88877924019dea4c5f4d143ef8a0a1bc3bb157c425344d29fa8f1c43"
+    },
+    {
+      "source_id": "kiwix_mac_source",
+      "archive_member": "kiwix-kiwix-apple-1dc9c86/.github/actions/xcbuild/action.yml",
+      "size_bytes": 4527,
+      "sha256": "9bb34f9ec136a3332ffb2eed37df881bb4a1b1d9c960a18977ae9d6edd5b6bb6"
+    },
+    {
+      "source_id": "kiwix_mac_source",
+      "archive_member": "kiwix-kiwix-apple-1dc9c86/.github/workflows/cd.yml",
+      "size_bytes": 11845,
+      "sha256": "2ada07bfb590039078461e4795bf8cfec175c4ad90d55bb34f8a7820182e7e73"
+    },
+    {
+      "source_id": "kiwix_android_java_binding_source",
+      "archive_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/build.gradle",
+      "size_bytes": 15891,
+      "sha256": "8aafff45026b1a53e26a2ecf657560670051f2266e296de7e847d63163c0da8a"
+    },
+    {
+      "source_id": "kiwix_android_java_binding_source",
+      "archive_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/build.gradle",
+      "size_bytes": 1574,
+      "sha256": "ba163e666349a98a434b1292020e6561168a094869d7b96d7f9b4081ad7697c6"
+    },
+    {
+      "source_id": "kiwix_android_java_binding_source",
+      "archive_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/install_deps.sh",
+      "size_bytes": 799,
+      "sha256": "1b2a70f3bd1bdd908ad7242aaf5dcf2b8637fd6135b0d53168ebd559522e550b"
+    },
+    {
+      "source_id": "kiwix_android_java_binding_source",
+      "archive_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/README.md",
+      "size_bytes": 4107,
+      "sha256": "872ca08695f79d3eb7026fa1e62375ecead1a3de3bcf58f45586f548a3c82b7f"
+    }
+  ],
+  "binding_sources_jar_comparison": {
+    "unique_java_paths": 31,
+    "entries": [
+      {
+        "sources_jar_entry": 6,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Book.java",
+        "size_bytes": 1487,
+        "sha256": "dcc0b12c1189eabe7e5708183b91a036ec3e614b22c601d8d4b96c5fb9738c52",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Book.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 7,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Bookmark.java",
+        "size_bytes": 1907,
+        "sha256": "add4b06ee87aa8691a3f0504a96696bc2e854fe2f8973ae06a6383b44f017ead",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Bookmark.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 8,
+        "sources_jar_member": "main/org/kiwix/libkiwix/BookmarkMigrationResult.java",
+        "size_bytes": 915,
+        "sha256": "e4e51f840c963d8dd123623b2184476a6b3b4abbdd602fb3ea2eaa70f6e2679b",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/BookmarkMigrationResult.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 9,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Filter.java",
+        "size_bytes": 1491,
+        "sha256": "7757e6629545aaae9a79b4252b136a0b11c1d17d30e7df76edcb172dedd71fee",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Filter.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 10,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Illustration.java",
+        "size_bytes": 338,
+        "sha256": "50d983622941caea52f6ae74fc0dd7d0a0cab0d4ca046dbe09a3137a368e2989",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Illustration.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 11,
+        "sources_jar_member": "main/org/kiwix/libkiwix/JNIICU.java",
+        "size_bytes": 954,
+        "sha256": "93e0357e500e67a8f7145a58616324c743f43cf462a2103378deab1741fdfaaa",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/JNIICU.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 12,
+        "sources_jar_member": "main/org/kiwix/libkiwix/JNIKiwix.java",
+        "size_bytes": 1382,
+        "sha256": "1457175623286cd27c1eb943b677b0b0c72fd34ad408d387bb4eeeab01a1a8fd",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/JNIKiwix.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 13,
+        "sources_jar_member": "main/org/kiwix/libkiwix/JNIKiwixException.java",
+        "size_bytes": 928,
+        "sha256": "595157d62c7313719967e87a8de5e488f69705143ecd5c2fbcfd6bdd74dd64cc",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/JNIKiwixException.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 14,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Library.java",
+        "size_bytes": 2950,
+        "sha256": "0f58aab254dd4e2230da2b1f884985d823312abc4c568c81d35abaee6aecaa26",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Library.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 15,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Manager.java",
+        "size_bytes": 3096,
+        "sha256": "128f0fd03445df73df00129969532c9d52d73cc1a3f296fa2b7edc4a3e901fe6",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Manager.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 16,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Server.java",
+        "size_bytes": 1608,
+        "sha256": "70426f936b03dc1c4a71659562328cf5a3d7b53b1762150216e4b6c679d995bf",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Server.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 17,
+        "sources_jar_member": "main/org/kiwix/libkiwix/SpellingsDB.java",
+        "size_bytes": 622,
+        "sha256": "1c2f5d1ab5675a5304b106f105da2563b9ab15f31738ff2519404aa6ec9b7d5b",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/SpellingsDB.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 19,
+        "sources_jar_member": "main/org/kiwix/libzim/Archive.java",
+        "size_bytes": 5811,
+        "sha256": "4680604edcfd3910ab2672783f066803a51ecc162d4e1960e95aeb2b825d9c99",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Archive.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 20,
+        "sources_jar_member": "main/org/kiwix/libzim/Blob.java",
+        "size_bytes": 1151,
+        "sha256": "3db40eaab49d2b2e3b73a6370cbbee040169619c9dbdc59605e0a3724fef9695",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Blob.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 21,
+        "sources_jar_member": "main/org/kiwix/libzim/DirectAccessInfo.java",
+        "size_bytes": 885,
+        "sha256": "aa3dd1dd7d3467a62c3eb9dd377cf6cde248af0f7a66b047a4f46602738d023a",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/DirectAccessInfo.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 22,
+        "sources_jar_member": "main/org/kiwix/libzim/Entry.java",
+        "size_bytes": 1320,
+        "sha256": "2fb589a4610242ad821ebd0776d6bf04f3ffbb27bf8ee2151c8ec115b80d449c",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Entry.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 23,
+        "sources_jar_member": "main/org/kiwix/libzim/EntryIterator.java",
+        "size_bytes": 1400,
+        "sha256": "229a48123e3033244e94eecd68bd6607d478060249116fbabe73a8291f5b54a4",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/EntryIterator.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 24,
+        "sources_jar_member": "main/org/kiwix/libzim/EntryNotFoundException.java",
+        "size_bytes": 936,
+        "sha256": "098ecd3d5e1ed3a969a378caf7c69990be253c94859bc86ece9d5115f496927f",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/EntryNotFoundException.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 25,
+        "sources_jar_member": "main/org/kiwix/libzim/FdInput.java",
+        "size_bytes": 1054,
+        "sha256": "554f327c0efced291d64670b100dcc7869c78534d97ad97a9b5a34f5d6be2085",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/FdInput.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 26,
+        "sources_jar_member": "main/org/kiwix/libzim/IllustrationInfo.java",
+        "size_bytes": 130,
+        "sha256": "18da887f9ff1bd98a727b7fb33971c4b6d0f9e61a520d48b90977c73906612e9",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/IllustrationInfo.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 27,
+        "sources_jar_member": "main/org/kiwix/libzim/Item.java",
+        "size_bytes": 1365,
+        "sha256": "caca94924ca472d17fd332e9cf8316b279f58100889ad69226d7cf128fcff8b3",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Item.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 28,
+        "sources_jar_member": "main/org/kiwix/libzim/OpenConfig.java",
+        "size_bytes": 312,
+        "sha256": "3c480289cdb0d04f40190e8d1026a17cefedebe55bb2d745cb044483c222f4a2",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/OpenConfig.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 29,
+        "sources_jar_member": "main/org/kiwix/libzim/Query.java",
+        "size_bytes": 1302,
+        "sha256": "933ba05a5761212f5c0a038da9e9799e0f10d2b49af22f74f90dc01191312a1d",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Query.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 30,
+        "sources_jar_member": "main/org/kiwix/libzim/Search.java",
+        "size_bytes": 1213,
+        "sha256": "27cce4993911529fc1bbcd77897c4ff3e8bc453bd9ab74a6b046dad52b77dfaa",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Search.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 31,
+        "sources_jar_member": "main/org/kiwix/libzim/SearchIterator.java",
+        "size_bytes": 1550,
+        "sha256": "27458782cbea734db4cf27248bda34e522ceb14b3b3855d4f19613330d2fba4f",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SearchIterator.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 32,
+        "sources_jar_member": "main/org/kiwix/libzim/Searcher.java",
+        "size_bytes": 1881,
+        "sha256": "ae999846aa31705d9a639d899f107782ba313748648eecfc88e7f21e7b6f2f8d",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Searcher.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 33,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionItem.java",
+        "size_bytes": 1210,
+        "sha256": "a9fdb59c8cf9f7d1fa83b206feab08e099b7efeb4f9e1c76f64d4c8fd33a974f",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionItem.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 34,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionIterator.java",
+        "size_bytes": 1326,
+        "sha256": "4523f149bd6f3b253f77102f87f8827a100a313795fa40c85425ddaf0219c997",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionIterator.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 35,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionSearch.java",
+        "size_bytes": 1231,
+        "sha256": "cbc1c93179178f7375ba98d5b3b9b6710dd5c7797ea469ff4d45038bb8c6ea4e",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionSearch.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 36,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionSearcher.java",
+        "size_bytes": 1582,
+        "sha256": "38387204a7f553d1eb055aaab753f5bda6dcc844a2ae780dd019189cfec84aac",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionSearcher.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 37,
+        "sources_jar_member": "main/org/kiwix/libzim/ZimFileFormatException.java",
+        "size_bytes": 936,
+        "sha256": "8a0ce43ace67654253ff5e9e241a4ead884891190633372b9e805719db3066e0",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/ZimFileFormatException.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 38,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Book.java",
+        "size_bytes": 1487,
+        "sha256": "dcc0b12c1189eabe7e5708183b91a036ec3e614b22c601d8d4b96c5fb9738c52",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Book.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 39,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Bookmark.java",
+        "size_bytes": 1907,
+        "sha256": "add4b06ee87aa8691a3f0504a96696bc2e854fe2f8973ae06a6383b44f017ead",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Bookmark.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 40,
+        "sources_jar_member": "main/org/kiwix/libkiwix/BookmarkMigrationResult.java",
+        "size_bytes": 915,
+        "sha256": "e4e51f840c963d8dd123623b2184476a6b3b4abbdd602fb3ea2eaa70f6e2679b",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/BookmarkMigrationResult.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 41,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Filter.java",
+        "size_bytes": 1491,
+        "sha256": "7757e6629545aaae9a79b4252b136a0b11c1d17d30e7df76edcb172dedd71fee",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Filter.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 42,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Illustration.java",
+        "size_bytes": 338,
+        "sha256": "50d983622941caea52f6ae74fc0dd7d0a0cab0d4ca046dbe09a3137a368e2989",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Illustration.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 43,
+        "sources_jar_member": "main/org/kiwix/libkiwix/JNIICU.java",
+        "size_bytes": 954,
+        "sha256": "93e0357e500e67a8f7145a58616324c743f43cf462a2103378deab1741fdfaaa",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/JNIICU.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 44,
+        "sources_jar_member": "main/org/kiwix/libkiwix/JNIKiwix.java",
+        "size_bytes": 1382,
+        "sha256": "1457175623286cd27c1eb943b677b0b0c72fd34ad408d387bb4eeeab01a1a8fd",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/JNIKiwix.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 45,
+        "sources_jar_member": "main/org/kiwix/libkiwix/JNIKiwixException.java",
+        "size_bytes": 928,
+        "sha256": "595157d62c7313719967e87a8de5e488f69705143ecd5c2fbcfd6bdd74dd64cc",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/JNIKiwixException.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 46,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Library.java",
+        "size_bytes": 2950,
+        "sha256": "0f58aab254dd4e2230da2b1f884985d823312abc4c568c81d35abaee6aecaa26",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Library.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 47,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Manager.java",
+        "size_bytes": 3096,
+        "sha256": "128f0fd03445df73df00129969532c9d52d73cc1a3f296fa2b7edc4a3e901fe6",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Manager.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 48,
+        "sources_jar_member": "main/org/kiwix/libkiwix/Server.java",
+        "size_bytes": 1608,
+        "sha256": "70426f936b03dc1c4a71659562328cf5a3d7b53b1762150216e4b6c679d995bf",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/Server.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 49,
+        "sources_jar_member": "main/org/kiwix/libkiwix/SpellingsDB.java",
+        "size_bytes": 622,
+        "sha256": "1c2f5d1ab5675a5304b106f105da2563b9ab15f31738ff2519404aa6ec9b7d5b",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libkiwix/SpellingsDB.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 50,
+        "sources_jar_member": "main/org/kiwix/libzim/Archive.java",
+        "size_bytes": 5811,
+        "sha256": "4680604edcfd3910ab2672783f066803a51ecc162d4e1960e95aeb2b825d9c99",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Archive.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 51,
+        "sources_jar_member": "main/org/kiwix/libzim/Blob.java",
+        "size_bytes": 1151,
+        "sha256": "3db40eaab49d2b2e3b73a6370cbbee040169619c9dbdc59605e0a3724fef9695",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Blob.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 52,
+        "sources_jar_member": "main/org/kiwix/libzim/DirectAccessInfo.java",
+        "size_bytes": 885,
+        "sha256": "aa3dd1dd7d3467a62c3eb9dd377cf6cde248af0f7a66b047a4f46602738d023a",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/DirectAccessInfo.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 53,
+        "sources_jar_member": "main/org/kiwix/libzim/Entry.java",
+        "size_bytes": 1320,
+        "sha256": "2fb589a4610242ad821ebd0776d6bf04f3ffbb27bf8ee2151c8ec115b80d449c",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Entry.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 54,
+        "sources_jar_member": "main/org/kiwix/libzim/EntryIterator.java",
+        "size_bytes": 1400,
+        "sha256": "229a48123e3033244e94eecd68bd6607d478060249116fbabe73a8291f5b54a4",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/EntryIterator.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 55,
+        "sources_jar_member": "main/org/kiwix/libzim/EntryNotFoundException.java",
+        "size_bytes": 936,
+        "sha256": "098ecd3d5e1ed3a969a378caf7c69990be253c94859bc86ece9d5115f496927f",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/EntryNotFoundException.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 56,
+        "sources_jar_member": "main/org/kiwix/libzim/FdInput.java",
+        "size_bytes": 1054,
+        "sha256": "554f327c0efced291d64670b100dcc7869c78534d97ad97a9b5a34f5d6be2085",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/FdInput.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 57,
+        "sources_jar_member": "main/org/kiwix/libzim/IllustrationInfo.java",
+        "size_bytes": 130,
+        "sha256": "18da887f9ff1bd98a727b7fb33971c4b6d0f9e61a520d48b90977c73906612e9",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/IllustrationInfo.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 58,
+        "sources_jar_member": "main/org/kiwix/libzim/Item.java",
+        "size_bytes": 1365,
+        "sha256": "caca94924ca472d17fd332e9cf8316b279f58100889ad69226d7cf128fcff8b3",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Item.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 59,
+        "sources_jar_member": "main/org/kiwix/libzim/OpenConfig.java",
+        "size_bytes": 312,
+        "sha256": "3c480289cdb0d04f40190e8d1026a17cefedebe55bb2d745cb044483c222f4a2",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/OpenConfig.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 60,
+        "sources_jar_member": "main/org/kiwix/libzim/Query.java",
+        "size_bytes": 1302,
+        "sha256": "933ba05a5761212f5c0a038da9e9799e0f10d2b49af22f74f90dc01191312a1d",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Query.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 61,
+        "sources_jar_member": "main/org/kiwix/libzim/Search.java",
+        "size_bytes": 1213,
+        "sha256": "27cce4993911529fc1bbcd77897c4ff3e8bc453bd9ab74a6b046dad52b77dfaa",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Search.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 62,
+        "sources_jar_member": "main/org/kiwix/libzim/SearchIterator.java",
+        "size_bytes": 1550,
+        "sha256": "27458782cbea734db4cf27248bda34e522ceb14b3b3855d4f19613330d2fba4f",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SearchIterator.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 63,
+        "sources_jar_member": "main/org/kiwix/libzim/Searcher.java",
+        "size_bytes": 1881,
+        "sha256": "ae999846aa31705d9a639d899f107782ba313748648eecfc88e7f21e7b6f2f8d",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/Searcher.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 64,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionItem.java",
+        "size_bytes": 1210,
+        "sha256": "a9fdb59c8cf9f7d1fa83b206feab08e099b7efeb4f9e1c76f64d4c8fd33a974f",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionItem.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 65,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionIterator.java",
+        "size_bytes": 1326,
+        "sha256": "4523f149bd6f3b253f77102f87f8827a100a313795fa40c85425ddaf0219c997",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionIterator.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 66,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionSearch.java",
+        "size_bytes": 1231,
+        "sha256": "cbc1c93179178f7375ba98d5b3b9b6710dd5c7797ea469ff4d45038bb8c6ea4e",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionSearch.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 67,
+        "sources_jar_member": "main/org/kiwix/libzim/SuggestionSearcher.java",
+        "size_bytes": 1582,
+        "sha256": "38387204a7f553d1eb055aaab753f5bda6dcc844a2ae780dd019189cfec84aac",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/SuggestionSearcher.java",
+        "byte_identical": true
+      },
+      {
+        "sources_jar_entry": 68,
+        "sources_jar_member": "main/org/kiwix/libzim/ZimFileFormatException.java",
+        "size_bytes": 936,
+        "sha256": "8a0ce43ace67654253ff5e9e241a4ead884891190633372b9e805719db3066e0",
+        "repository_matches": 1,
+        "repository_member": "java-libkiwix-40967ea319fc31beec0fb5240fb488c68e94f6f9/lib/src/main/java/org/kiwix/libzim/ZimFileFormatException.java",
+        "byte_identical": true
+      }
+    ],
+    "note": "Publisher JAR repeats its 31 Java paths in the central directory; both entries for every path reference byte-identical repository content. No C++ source is present."
+  },
+  "maven_module_checks": [
+    {
+      "artifact_id": "binding_aar",
+      "publisher_metadata_url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0.module",
+      "sha256_matches": true,
+      "sha512_matches": true,
+      "size_matches": true
+    },
+    {
+      "artifact_id": "binding_sources",
+      "publisher_metadata_url": "https://repo.maven.apache.org/maven2/org/kiwix/libkiwix/2.4.0/libkiwix-2.4.0.module",
+      "sha256_matches": true,
+      "sha512_matches": true,
+      "size_matches": true
+    }
+  ],
+  "publisher_bundle_search": [
+    {
+      "id": "desktop_index",
+      "url": "https://mirror.download.kiwix.org/release/kiwix-desktop/",
+      "size_bytes": 41970,
+      "sha256": "b55f16c2f728b0235ed9371ad79f3cc94c65e0a7ec84aff2e29d109dfcdbcd87",
+      "selected_version_links": [
+        "kiwix-desktop-2.5.1.tar.gz",
+        "kiwix-desktop-2.5.1.tar.gz.md5",
+        "kiwix-desktop_windows_x64_2.5.1.zip",
+        "kiwix-desktop_windows_x64_2.5.1.zip.md5",
+        "kiwix-desktop_x86_64_2.5.1.appimage",
+        "kiwix-desktop_x86_64_2.5.1.appimage.md5",
+        "org.kiwix.desktop.2.5.1.flatpak",
+        "org.kiwix.desktop.2.5.1.flatpak.md5"
+      ]
+    },
+    {
+      "id": "mac_index",
+      "url": "https://mirror.download.kiwix.org/release/kiwix-macos/",
+      "size_bytes": 7032,
+      "sha256": "2ccc60b6d11380de1c9e0eabad427a072605db43546f161b5b227b0661a29f89",
+      "selected_version_links": [
+        "kiwix-macos_3.17.1.dmg",
+        "kiwix-macos_3.17.1.dmg.md5"
+      ]
+    },
+    {
+      "id": "android_release",
+      "url": "https://api.github.com/repos/kiwix/kiwix-android/releases/tags/v3.14.1",
+      "size_bytes": 11382,
+      "sha256": "71132055bf9fe24ffef8946412853ea307747f76c2c98f71635b7636c2c8bfaf",
+      "tag_name": "v3.14.1",
+      "target_commitish": "3.14.1",
+      "asset_names": [
+        "v3.14.1-arm64-v8a-standalone.apk",
+        "v3.14.1-armeabi-v7a-standalone.apk",
+        "v3.14.1-universal-standalone.apk",
+        "v3.14.1-x86-standalone.apk",
+        "v3.14.1-x86_64-standalone.apk"
+      ]
+    },
+    {
+      "id": "binding_release",
+      "url": "https://api.github.com/repos/kiwix/java-libkiwix/releases/tags/2.4.0",
+      "size_bytes": 2618,
+      "sha256": "8241ae406293801146cc49178a39f27afae28c2f86071be5c395c0e26f1c1fc0",
+      "tag_name": "2.4.0",
+      "target_commitish": "main",
+      "asset_names": []
+    }
+  ],
+  "android_sdk_native_matches": [
+    {
+      "sdk_id": "libkiwix_android_arm",
+      "sdk_member": "libkiwix_android-arm-14.1.0/lib/arm-linux-androideabi/libkiwix.so",
+      "size_bytes": 26170028,
+      "sha256": "3a70a771345917d41086473dea36d97a7a97a1c9ba6d89283b3e0e31f17369d0",
+      "apk_member": "lib/armeabi-v7a/libkiwix.so",
+      "apk_sha256": "3a70a771345917d41086473dea36d97a7a97a1c9ba6d89283b3e0e31f17369d0",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libkiwix_android_arm64",
+      "sdk_member": "libkiwix_android-arm64-14.1.0/lib/aarch64-linux-android/libkiwix.so",
+      "size_bytes": 28065664,
+      "sha256": "b56ef8bf8888d9df2842e069e2f4e661ff5f4f1282a9da52ba30382f62cb93c2",
+      "apk_member": "lib/arm64-v8a/libkiwix.so",
+      "apk_sha256": "b56ef8bf8888d9df2842e069e2f4e661ff5f4f1282a9da52ba30382f62cb93c2",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libkiwix_android_x86",
+      "sdk_member": "libkiwix_android-x86-14.1.0/lib/i686-linux-android/libkiwix.so",
+      "size_bytes": 26949852,
+      "sha256": "d8c9912804571a34dca0d4c9402942be05f7369b3754cc0eff3fd2d5f806f197",
+      "apk_member": "lib/x86/libkiwix.so",
+      "apk_sha256": "d8c9912804571a34dca0d4c9402942be05f7369b3754cc0eff3fd2d5f806f197",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libkiwix_android_x86_64",
+      "sdk_member": "libkiwix_android-x86_64-14.1.0/lib/x86_64-linux-android/libkiwix.so",
+      "size_bytes": 27632208,
+      "sha256": "6f1a04dfdabd6b0049c7e0c8cd9dac61d99f9e62e080739acb7ffeff8875640c",
+      "apk_member": "lib/x86_64/libkiwix.so",
+      "apk_sha256": "6f1a04dfdabd6b0049c7e0c8cd9dac61d99f9e62e080739acb7ffeff8875640c",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libzim_android_arm",
+      "sdk_member": "libzim_android-arm-9.4.0/lib/arm-linux-androideabi/libzim.so",
+      "size_bytes": 19964896,
+      "sha256": "867c07f771dd377ab044e9ee2c7c801f024a6c4fd88e268f1c2161380ea31d56",
+      "apk_member": "lib/armeabi-v7a/libzim.so",
+      "apk_sha256": "867c07f771dd377ab044e9ee2c7c801f024a6c4fd88e268f1c2161380ea31d56",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libzim_android_arm64",
+      "sdk_member": "libzim_android-arm64-9.4.0/lib/aarch64-linux-android/libzim.so",
+      "size_bytes": 21749992,
+      "sha256": "ca3d4048960fe18f6cabe0cafcb97dca27e8044c56808a1f2b23f2b3ffb6d90b",
+      "apk_member": "lib/arm64-v8a/libzim.so",
+      "apk_sha256": "ca3d4048960fe18f6cabe0cafcb97dca27e8044c56808a1f2b23f2b3ffb6d90b",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libzim_android_x86",
+      "sdk_member": "libzim_android-x86-9.4.0/lib/i686-linux-android/libzim.so",
+      "size_bytes": 20886744,
+      "sha256": "a8e4d321cee6bed97484857ab8f2a53ca992d48973921aa72c8080c34cb8ac91",
+      "apk_member": "lib/x86/libzim.so",
+      "apk_sha256": "a8e4d321cee6bed97484857ab8f2a53ca992d48973921aa72c8080c34cb8ac91",
+      "byte_identical": true
+    },
+    {
+      "sdk_id": "libzim_android_x86_64",
+      "sdk_member": "libzim_android-x86_64-9.4.0/lib/x86_64-linux-android/libzim.so",
+      "size_bytes": 21506336,
+      "sha256": "54def8dd8b5b2b4f2de8664ef9d6b636a1e4c944e4e2ab77649f16f1cdeb4f6e",
+      "apk_member": "lib/x86_64/libzim.so",
+      "apk_sha256": "54def8dd8b5b2b4f2de8664ef9d6b636a1e4c944e4e2ab77649f16f1cdeb4f6e",
+      "byte_identical": true
+    }
+  ],
+  "objectbox_native_matches": [
+    {
+      "aar_member": "jni/arm64-v8a/libobjectbox-jni.so",
+      "apk_member": "lib/arm64-v8a/libobjectbox-jni.so",
+      "size_bytes": 2494056,
+      "sha256": "a28f93428b08fd560828c04f684d9f8ed68026134cb21aa726480342a8fd8cc5",
+      "apk_sha256": "a28f93428b08fd560828c04f684d9f8ed68026134cb21aa726480342a8fd8cc5",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/armeabi-v7a/libobjectbox-jni.so",
+      "apk_member": "lib/armeabi-v7a/libobjectbox-jni.so",
+      "size_bytes": 1645568,
+      "sha256": "5ee42becf51cf61cf987eafacbf4d2b43ad10fd6757bbb390e51699e4f27021d",
+      "apk_sha256": "5ee42becf51cf61cf987eafacbf4d2b43ad10fd6757bbb390e51699e4f27021d",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86/libobjectbox-jni.so",
+      "apk_member": "lib/x86/libobjectbox-jni.so",
+      "size_bytes": 2611656,
+      "sha256": "0d501090aa8b3fe916a14275d1ca72afd9b08279a22fe40b89456c4343374008",
+      "apk_sha256": "0d501090aa8b3fe916a14275d1ca72afd9b08279a22fe40b89456c4343374008",
+      "byte_identical": true
+    },
+    {
+      "aar_member": "jni/x86_64/libobjectbox-jni.so",
+      "apk_member": "lib/x86_64/libobjectbox-jni.so",
+      "size_bytes": 2511928,
+      "sha256": "949b3f561f3240311b05bdbc7a2b4cb1600a6ad7287734609ee320bd52ab60b7",
+      "apk_sha256": "949b3f561f3240311b05bdbc7a2b4cb1600a6ad7287734609ee320bd52ab60b7",
+      "byte_identical": true
+    }
+  ],
+  "objectbox_license_hold": {
+    "status": "unreviewed",
+    "pom_declared_licenses": [
+      "ObjectBox Binary Licence",
+      "The Apache Software License, Version 2.0",
+      "The OpenLDAP Public License, Version 2.8, 17 August 2003"
+    ],
+    "exact_release_terms_confirmed": false,
+    "complete_native_source_obtained": false,
+    "gpl_compatibility_approved": false,
+    "no_application_network_behavior_claim": true
+  },
+  "windows_static_version_method": "Read VS_FIXEDFILEINFO fields following VS_VERSION_INFO in selected ZIP members. These file versions and hashes are static observations, not exact source/build provenance."
+}
