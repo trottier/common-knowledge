@@ -1,0 +1,130 @@
+[
+  {
+    "id": "reference_howto_1",
+    "family": "generated",
+    "title": "Automobile maintenance references — selected phone PDFs",
+    "version": "Draft selection from Wikibooks English 2026-10",
+    "size_bytes": "[[VERIFY: measure complete generated reference pack]]",
+    "sha256": "[[VERIFY: pin independently repeated generation manifest]]",
+    "license": "CC-BY-SA-4.0 AND CC0-1.0",
+    "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
+    "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+    "placement": {
+      "collection": "howto_1"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_1/phone/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikibooks_en_nopic",
+      "noto_sans",
+      "noto_sans_sc",
+      "noto_sans_tc",
+      "noto_sans_kr",
+      "noto_sans_arabic",
+      "noto_sans_devanagari",
+      "noto_sans_georgian",
+      "noto_sans_hebrew",
+      "noto_sans_symbols2"
+    ],
+    "pipeline_version": "[[VERIFY: pinned reference-pack recipe]]",
+    "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
+  },
+  {
+    "id": "reference_howto_2",
+    "family": "generated",
+    "title": "Carpentry and hand-tool references — selected phone PDFs",
+    "version": "Draft selection from Wikibooks English 2026-10",
+    "size_bytes": "[[VERIFY: measure complete generated reference pack]]",
+    "sha256": "[[VERIFY: pin independently repeated generation manifest]]",
+    "license": "CC-BY-SA-4.0 AND CC0-1.0",
+    "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
+    "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+    "placement": {
+      "collection": "howto_2"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_2/phone/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikibooks_en_nopic",
+      "noto_sans",
+      "noto_sans_sc",
+      "noto_sans_tc",
+      "noto_sans_kr",
+      "noto_sans_arabic",
+      "noto_sans_devanagari",
+      "noto_sans_georgian",
+      "noto_sans_hebrew",
+      "noto_sans_symbols2"
+    ],
+    "pipeline_version": "[[VERIFY: pinned reference-pack recipe]]",
+    "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
+  },
+  {
+    "id": "reference_repair",
+    "family": "generated",
+    "title": "Electronics background references — selected phone PDFs",
+    "version": "Draft selection from Wikibooks English 2026-10",
+    "size_bytes": "[[VERIFY: measure complete generated reference pack]]",
+    "sha256": "[[VERIFY: pin independently repeated generation manifest]]",
+    "license": "CC-BY-SA-4.0 AND CC0-1.0",
+    "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
+    "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+    "placement": {
+      "collection": "repair"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/repair/phone/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikibooks_en_nopic",
+      "noto_sans",
+      "noto_sans_sc",
+      "noto_sans_tc",
+      "noto_sans_kr",
+      "noto_sans_arabic",
+      "noto_sans_devanagari",
+      "noto_sans_georgian",
+      "noto_sans_hebrew",
+      "noto_sans_symbols2"
+    ],
+    "pipeline_version": "[[VERIFY: pinned reference-pack recipe]]",
+    "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
+  },
+  {
+    "id": "reference_med_lib",
+    "family": "generated",
+    "title": "Human physiology background references — selected phone PDFs",
+    "version": "Draft selection from Wikibooks English 2026-10",
+    "size_bytes": "[[VERIFY: measure complete generated reference pack]]",
+    "sha256": "[[VERIFY: pin independently repeated generation manifest]]",
+    "license": "CC-BY-SA-4.0 AND CC0-1.0",
+    "attribution": "Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.",
+    "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+    "placement": {
+      "collection": "med_lib"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/med_lib/phone/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikibooks_en_nopic",
+      "noto_sans",
+      "noto_sans_sc",
+      "noto_sans_tc",
+      "noto_sans_kr",
+      "noto_sans_arabic",
+      "noto_sans_devanagari",
+      "noto_sans_georgian",
+      "noto_sans_hebrew",
+      "noto_sans_symbols2"
+    ],
+    "pipeline_version": "[[VERIFY: pinned reference-pack recipe]]",
+    "review": "[[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]"
+  }
+]

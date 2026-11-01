@@ -257,6 +257,11 @@ def generated_actions(root: Path, items: dict[str, Item], identifier: str) -> li
         ]
     if identifier.startswith("phrasebook_"):
         return [{"kind": "phrasebooks", "output": "/work/phrasebooks"}]
+    if identifier.startswith("reference_"):
+        from ck.referencepacks import selections
+
+        if identifier in selections(root):
+            return [build("reference-pack", "--pack", identifier)]
     clips = read_yaml(root / "pipelines/video/clips.yaml")
     matches = [key for key, clip in clips.items() if clip["source_id"] in item.inputs]
     if len(matches) == 1:

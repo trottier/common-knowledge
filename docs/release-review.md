@@ -5,10 +5,10 @@ Regenerate with `ck review-report --output docs/release-review.md` after source 
 
 ## Implementation and build gaps
 
-- National directory, county atlas and Android map coverage remain unfinished. Rhode Island results do not establish nationwide coverage or capacity.
+- Finish corrected national atlas/directory repeats and all 56 Android maps. State or territory repeats do not establish full-image coverage or capacity.
 - FCC geographic exceptions, FEMA county-profile gaps and atlas page/grid closure require resolution and documented source coverage.
 - Topic video libraries, all eight in-depth collections, official translated guides, mesh apps and remaining catalog candidates need complete placement and review.
-- WikEM's exact current publisher archive remains unresolved. Do not silently replace the required sample archive with a different collection.
+- Preserve the exact WikEM API snapshot and regenerated archive, with independent pin, source-hosting and reader review. Do not refresh responses under existing pins.
 - Complete corresponding GPL source and dependency notices for shipped applications; a top-level repository archive alone does not establish source closure.
 - Freeze the toolchain and regenerate derived inputs before pinning final outputs. Prototype fingerprints do not establish a rebuild from the release tag.
 - Run the actual sample profile twice, then all eight full images twice. Development-image reproducibility does not establish either result.
@@ -43,6 +43,10 @@ Catalog items explicitly requiring legal review:
 
 - catalog/maps.yaml:252: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - catalog/medpdf_topics.yaml: named human medical review required
+- catalog/referencepacks.yaml:128: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:32: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:64: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:96: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - content/en/android-maps.md: named human review required (English content)
 - content/en/card.md: named human review required (radio, legal)
 - content/en/edition.yaml: named human review of English labels required
@@ -62,8 +66,16 @@ Catalog items explicitly requiring legal review:
 - content/en/start/13-sources.md: named human review required (English content)
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
+- pipelines/referencepacks/selection.yaml (reference_howto_1): named human source-accuracy, safety and suitability review required
+- pipelines/referencepacks/selection.yaml (reference_howto_2): named human source-accuracy, safety and suitability review required
+- pipelines/referencepacks/selection.yaml (reference_med_lib): named human source-accuracy, safety and suitability review required
+- pipelines/referencepacks/selection.yaml (reference_repair): named human source-accuracy, safety and suitability review required
+- reference_howto_1.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- reference_howto_2.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5758)
+## Remaining VERIFY markers (5774)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1019,6 +1031,22 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/phrasebooks.yaml:416` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/phrasebooks.yaml:448` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/phrasebooks.yaml:480` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
+- `catalog/referencepacks.yaml:7` — [[VERIFY: measure complete generated reference pack]]
+- `catalog/referencepacks.yaml:8` — [[VERIFY: pin independently repeated generation manifest]]
+- `catalog/referencepacks.yaml:31` — [[VERIFY: pinned reference-pack recipe]]
+- `catalog/referencepacks.yaml:32` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:39` — [[VERIFY: measure complete generated reference pack]]
+- `catalog/referencepacks.yaml:40` — [[VERIFY: pin independently repeated generation manifest]]
+- `catalog/referencepacks.yaml:63` — [[VERIFY: pinned reference-pack recipe]]
+- `catalog/referencepacks.yaml:64` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:71` — [[VERIFY: measure complete generated reference pack]]
+- `catalog/referencepacks.yaml:72` — [[VERIFY: pin independently repeated generation manifest]]
+- `catalog/referencepacks.yaml:95` — [[VERIFY: pinned reference-pack recipe]]
+- `catalog/referencepacks.yaml:96` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:103` — [[VERIFY: measure complete generated reference pack]]
+- `catalog/referencepacks.yaml:104` — [[VERIFY: pin independently repeated generation manifest]]
+- `catalog/referencepacks.yaml:127` — [[VERIFY: pinned reference-pack recipe]]
+- `catalog/referencepacks.yaml:128` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/video.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/video.yaml:7` — [[VERIFY: publisher version]]
 - `catalog/video.yaml:8` — [[VERIFY: exact publisher file size]]
