@@ -34,3 +34,18 @@ measured development pins replace the catalog markers.
 
 `make full` prepares the four packs through the ordinary input dependency graph.
 No imported source files, fonts, ZIMs or PDFs are committed to git.
+
+## Measured development repeats
+
+At development epoch 1793404800, separate network-disabled Linux containers
+produced identical PDF payloads and complete generation manifests for:
+
+| Pack | Articles | Placed bytes | Canonical generation SHA-256 |
+| --- | ---: | ---: | --- |
+| Automobile maintenance | 6 | 237,774 | 9dfd807496607328b1a7c13ed963445c4c70dc4c5419ff53835dc6fa393fa500 |
+| Carpentry and hand tools | 7 | 188,024 | 5ad485a9ea805fed9cf79e35038c52bd905b485f9d5dca2d51258482954bc043 |
+
+These two selections contain 134 phone pages in total. Two rendered pages were
+visually inspected for layout; this is not a physical phone or technical review.
+The electronics and physiology pairs are still running. These checkpoints do
+not clear the source-currency, safety, suitability or final release-epoch gates.
