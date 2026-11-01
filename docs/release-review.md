@@ -100,7 +100,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6329)
+## Remaining VERIFY markers (6330)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1641,6 +1641,11 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/pocketpal_sources.yaml:259` — [[VERIFY: human computed pin, target-specific Rust dependency and license closure, runtime source correspondence, and native notice review; actual binary ZIP licenses/header match upstream, not merely wrapper metadata]]
 - `catalog/pocketpal_sources.yaml:278` — [[VERIFY: human computed pin; native/runtime, bundled LLVM/component license and notice inventory, exact build/dependency closure, and binary/source correspondence; Java sources JAR is insufficient]]
 - `catalog/pocketpal_sources.yaml:297` — [[VERIFY: human computed pin; complete dependency, native/runtime, and third-party license/notice inventory; app bridge patch/source correspondence; matching allocated ELF sections do not establish identical files]]
+- `catalog/postal.yaml:15` — [[VERIFY: review the computed HTTPS source hash and Census-created data
+    classification before release; 2020 geographic intersections are not a
+    complete current USPS postal directory. Preserve every county relationship,
+    leading zeros, blank-code exclusions, and county-vintage checks. This raw
+    source is a build input only; prototype use does not approve national pins.]]
 - `catalog/referencepacks.yaml:34` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:68` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:102` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
