@@ -10014,17 +10014,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `b2043610dadc1bd1eeb7dcbb60262f278fea1f13624cd2010c8adcb3b84a438c`
 - Pipeline: directory-seed-v1-5afd0c1e1ce920a5632836ccbe6d392f56d45fc0ce5c91cb2d9abaaaed5f819e; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_ri, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
 
-## Open education collections; select individual files
-
-- Catalog id: `education`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
 ## EPA water guides and official translations; select individual files
 
 - Catalog id: `epa_guides`
@@ -10090,17 +10079,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 9869171 bytes
 - SHA-256: `5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378`
 - Publisher file: https://enterpriseefiling.fcc.gov/dataentry/api/download/dbfile/10-31-2026/facility.zip
-
-## FEMA preparedness guides; select individual files
-
-- Catalog id: `fema_guides`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
 
 ## FEMA National Risk Index v1.20 county table and hazard dictionary
 
@@ -10255,28 +10233,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 434357 bytes
 - SHA-256: `74d77384b123a6360db9ab58463cff8b38df8525fbdc6000c81ee388e1f3cf10`
 - Publisher file: https://www.gutenberg.org/ebooks/74.txt.utf-8
-
-## Redistributable how-to documents; select individual files
-
-- Catalog id: `howto_documents_1`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
-## Redistributable how-to documents; select individual files
-
-- Catalog id: `howto_documents_2`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
 
 ## National Incident Management System Incident Command System Forms Booklet, FEMA 502-2
 
@@ -11829,17 +11785,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32`
 - Publisher file: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/raw/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE
 
-## Current amateur-radio exam question pools; confirm public-domain status
-
-- Catalog id: `radio_question_pools`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
-
 ## 12 Ways to Prepare (English)
 
 - Catalog id: `ready_12_ways_to_prepare_en`
@@ -12147,17 +12092,6 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 203023 bytes
 - SHA-256: `12c7b43aecc5ee0247f31493708cb325af44e420bb11edea5121d295342da7a2`
 - Publisher file: https://www.ready.gov/sites/default/files/2021-12/ready_supply-list_simplified-chinese.pdf
-
-## Ready.gov guides and official translations; select individual files
-
-- Catalog id: `ready_guides`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
 
 ## Power Outage Info Sheet
 

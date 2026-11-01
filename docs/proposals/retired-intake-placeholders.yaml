@@ -1,0 +1,166 @@
+{
+  "scope": "Historical unpinned intake placeholders only; no publisher source, placed artifact, or review approval removed. Concrete selections remain subject to human review.",
+  "retired": [
+    {
+      "catalog_family": "docs.yaml",
+      "placeholder": {
+        "id": "fema_guides",
+        "family": "docs",
+        "title": "FEMA preparedness guides; select individual files",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": "universal",
+        "dest": "4_PHONE_PACK/official/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "ready_are_you_ready_en",
+        "ready_are_you_ready_es"
+      ],
+      "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    },
+    {
+      "catalog_family": "docs.yaml",
+      "placeholder": {
+        "id": "ready_guides",
+        "family": "docs",
+        "title": "Ready.gov guides and official translations; select individual files",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": "universal",
+        "dest": "4_PHONE_PACK/official/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "ready_emergency_supply_list_en",
+        "ready_emergency_supply_list_es"
+      ],
+      "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    },
+    {
+      "catalog_family": "docs.yaml",
+      "placeholder": {
+        "id": "radio_question_pools",
+        "family": "docs",
+        "title": "Current amateur-radio exam question pools; confirm public-domain status",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": {
+          "topics": [
+            "comms"
+          ]
+        },
+        "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "ncvec_tech",
+        "ncvec_general",
+        "ncvec_extra",
+        "ncvec_tech_diagrams",
+        "ncvec_general_diagrams",
+        "ncvec_extra_diagrams"
+      ],
+      "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    },
+    {
+      "catalog_family": "docs.yaml",
+      "placeholder": {
+        "id": "howto_documents_1",
+        "family": "docs",
+        "title": "Redistributable how-to documents; select individual files",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": {
+          "collection": "howto_1"
+        },
+        "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_1/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "reference_howto_1"
+      ],
+      "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    },
+    {
+      "catalog_family": "docs.yaml",
+      "placeholder": {
+        "id": "howto_documents_2",
+        "family": "docs",
+        "title": "Redistributable how-to documents; select individual files",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": {
+          "collection": "howto_2"
+        },
+        "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_2/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "reference_howto_2"
+      ],
+      "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    },
+    {
+      "catalog_family": "zim.yaml",
+      "placeholder": {
+        "id": "education",
+        "family": "zim",
+        "title": "Open education collections; select individual files",
+        "url": "[[VERIFY: exact publisher download URL]]",
+        "version": "[[VERIFY: publisher version]]",
+        "size_bytes": "[[VERIFY: exact publisher file size]]",
+        "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
+        "license": "[[VERIFY: redistribution license]]",
+        "attribution": "[[VERIFY: publisher attribution]]",
+        "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
+        "placement": {
+          "collection": "school"
+        },
+        "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/",
+        "profiles": [
+          "full"
+        ]
+      },
+      "concrete_replacements": [
+        "wikibooks_en_offline"
+      ],
+      "reason": "Aggregate intake placeholder replaced by individually pinned catalog entries; original review holds remain on each concrete entry."
+    }
+  ]
+}

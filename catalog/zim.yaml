@@ -4810,25 +4810,6 @@
     "requires_legal": true
   },
   {
-    "id": "education",
-    "family": "zim",
-    "title": "Open education collections; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "collection": "school"
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "wikipedia_en_text",
     "family": "zim",
     "title": "English Wikipedia text-only hub archive",

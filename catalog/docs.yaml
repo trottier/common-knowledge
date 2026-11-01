@@ -1,39 +1,5 @@
 [
   {
-    "id": "fema_guides",
-    "family": "docs",
-    "title": "FEMA preparedness guides; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "4_PHONE_PACK/official/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "ready_guides",
-    "family": "docs",
-    "title": "Ready.gov guides and official translations; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": "universal",
-    "dest": "4_PHONE_PACK/official/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "cdc_guides",
     "family": "docs",
     "title": "CDC guides and official translations; confirm per-item rights",
@@ -88,65 +54,6 @@
       ]
     },
     "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "radio_question_pools",
-    "family": "docs",
-    "title": "Current amateur-radio exam question pools; confirm public-domain status",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "comms"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "howto_documents_1",
-    "family": "docs",
-    "title": "Redistributable how-to documents; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "collection": "howto_1"
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_1/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
-    "id": "howto_documents_2",
-    "family": "docs",
-    "title": "Redistributable how-to documents; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "collection": "howto_2"
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/howto_2/",
     "profiles": [
       "full"
     ]
