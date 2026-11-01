@@ -85,9 +85,12 @@ model quality, physical devices, source completeness, and human reviews remain
 open.
 
 Those repeat results describe the earlier PocketPal-instruction recipe. The
-OfflineLLM selection changes settings, source guides, inputs, and the producer;
-its sample/full catalog pins are explicitly pending fresh measured builds.
-No new bundle or physical-device result is claimed by the adoption patch.
+OfflineLLM selection changed settings, source guides, inputs, and the producer.
+Its subsequent [fresh sample/full pairs](android-local-llm-repeat.md) now match
+at development epoch 1793404800. The refreshed sample payloads total 44,248,498
+bytes and full payloads total 44,224,664 bytes; the catalog uses their measured
+manifest hashes and recipe. Historical receipts remain intact. No physical
+device or model-quality result follows from this packaging repeat.
 
 Run `uv run pytest tests/test_llm.py` inside the pinned build container. New browser
 code uses Bun; the atlas retains its documented Node native-module ABI constraint.

@@ -183,8 +183,8 @@
     "family": "generated",
     "title": "Offline local LLM launchers, page, prompts and instructions (full)",
     "version": "0.1.0 development bundle",
-    "size_bytes": "[[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]",
-    "sha256": "[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]",
+    "size_bytes": 44224664,
+    "sha256": "8079a5377ad2744927a31126609cd8e4677a29f577cddba1fffb42ef4d31f4d5",
     "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
     "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES",
     "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
@@ -205,7 +205,7 @@
       "offlinellm_native_license",
       "qwen_full_license"
     ],
-    "pipeline_version": "[[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]",
+    "pipeline_version": "local-llm-v1-66574b8c58a01e9f04549f83477b10836ffe723426a743347785d6135e8447f2",
     "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
   },
   {
@@ -213,8 +213,8 @@
     "family": "generated",
     "title": "Offline local LLM launchers, page, prompts and instructions (sample)",
     "version": "0.1.0 development bundle",
-    "size_bytes": "[[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]",
-    "sha256": "[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]",
+    "size_bytes": 44248498,
+    "sha256": "9d4c8380a1b5059ee8853b875e42f0b7e6c80239b7c52a902525c3bd369eccd1",
     "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
     "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES",
     "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
@@ -235,7 +235,7 @@
       "qwen_sample_license",
       "sample_model"
     ],
-    "pipeline_version": "[[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]",
+    "pipeline_version": "local-llm-v1-66574b8c58a01e9f04549f83477b10836ffe723426a743347785d6135e8447f2",
     "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
   }
 ]

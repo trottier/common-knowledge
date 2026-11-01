@@ -63,18 +63,18 @@ signature report, source hashes, and the targeted test scope. No app was run.
 
 ## Fresh build handoff
 
-No replacement bundle was built for this patch, and the existing 71/54 build
-directories remain untouched. The two generated catalog entries now carry
-explicit pending size/hash/recipe markers and updated inputs. This prevents
-assembling the newly selected APK beside stale PocketPal instructions.
-The previous [repeat receipt](evidence/local-llm-repeat.json) remains historical
-evidence for its original recipe, not proof of the changed producer.
+The adoption commit initially invalidated both generated catalog pins, so its
+newly selected APK could not assemble beside stale PocketPal instructions.
+The subsequent [fresh bundle repeat](android-local-llm-repeat.md) used four new
+serial containers from that frozen commit and established complete sample/full
+A/B equality before replacing the pending size/hash/recipe markers. Both
+canonical copies passed ordinary prepared-input verification.
 
-After resources are allocated, build each profile into a **new** directory in
-the locked build environment, repeat cleanly, compare actual manifests and
-payloads, and replace the pending pins with measured results. Then regenerate
-catalog/review reports and verify preparation, assembly, Android guide links,
-and all selected inputs. Do not relabel the old bundle or reuse its hash.
+The existing 71/54 build directories and previous
+[repeat receipt](evidence/local-llm-repeat.json) remain historical evidence for
+their original recipe. New measurements use a separate receipt; no old bundle
+was relabeled. Catalog/review report refreshes, assembly, Android guide links,
+and the remaining source/device checks still need their ordinary validation.
 
 ## Remaining concrete holds
 
