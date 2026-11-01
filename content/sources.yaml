@@ -20,12 +20,25 @@ calling_911:
   title: National 911 Program — FAQ About Calling 911
   url: https://www.911.gov/calling-911/frequently-asked-questions/
 fema_utilities:
-  title: FEMA — Are You Ready? Basic Preparedness
-  url: https://www.fema.gov/pdf/areyouready/basic_preparedness.pdf
-  note: "[[VERIFY: obtain and review the full official text; direct fetch returned HTTP 403.]]"
+  title: Ready.gov — Safety Skills, Know How to Shut Off Utilities
+  url: https://www.ready.gov/safety-skills
+  note: "Full publisher page retrieved for drafting; page states last updated March 20, 2026. Named utility-safety review remains required."
+fema_ready_guide:
+  title: FEMA — Are You Ready? Guide, Inside Your Home
+  url: https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide.pdf
+  note: "PDF page 31, printed page 27. Exact original PDF is catalog item ready_are_you_ready_en."
 cdc_generator:
   title: CDC — Use a Generator Safely
   url: https://www.cdc.gov/natural-disasters/psa-toolkit/use-a-generator-safely.html
+cdc_co_basics:
+  title: CDC — Carbon Monoxide Poisoning Basics
+  url: https://www.cdc.gov/carbon-monoxide/about/
+cpsc_generator_alert:
+  title: CPSC — Portable Generator Hazards, publication 5123/102021
+  url: https://www.cpsc.gov/s3fs-public/5123_SafetyAlert_PortableGenerators_102021.pdf?Versi=
+cpsc_post_storm:
+  title: CPSC — Generator, Carbon Monoxide and Fire Hazards Ahead of Hurricane Season
+  url: https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Warns-of-Generator-Carbon-Monoxide-and-Fire-Hazards-Ahead-of-Hurricane-Season
 epa_water:
   title: EPA — Emergency Disinfection of Drinking Water
   url: https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water

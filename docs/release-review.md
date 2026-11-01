@@ -53,7 +53,7 @@ Catalog items explicitly requiring legal review:
 - content/en/local-llm.md: named human review required (English content)
 - content/en/start/01-use.md: named human review required (English content)
 - content/en/start/02-first-hour.md: named human review required (medical)
-- content/en/start/03-shutoffs.md: named human review required (rescue)
+- content/en/start/03-shutoffs.md: named human review required (rescue, medical)
 - content/en/start/04-water.md: named human review required (medical)
 - content/en/start/05-neighbors.md: named human review required (English content)
 - content/en/start/06-signals.md: named human review required (rescue)
@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5781)
+## Remaining VERIFY markers (5780)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -90,11 +90,11 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/en/start/02-first-hour.md:13` — [[VERIFY: safety reviewer must confirm this scene-safety checklist against current federal guidance.]]
 - `content/en/start/02-first-hour.md:31` — [[VERIFY: review the safe alternate-rally procedure when the default entrance is inaccessible.]]
 - `content/en/start/02-first-hour.md:37` — [[VERIFY: clinician and rescue reviewer must approve this no-response branch.]]
-- `content/en/start/03-shutoffs.md:11` — [[VERIFY: utility safety reviewer must approve a national gas shutoff procedure, including when not to shut off, safe access, valve types and when only the gas company may restore service.]]
-- `content/en/start/03-shutoffs.md:18` — [[VERIFY: confirm identification and operation of the household water shutoff; distinguish it from the utility's street valve. Include when not to turn an unfamiliar or damaged valve.]]
-- `content/en/start/03-shutoffs.md:22` — [[VERIFY: electrician must approve a no-preparation procedure with warnings about wet floors, damaged panels, gas leaks, solar systems and backup power.]]
-- `content/en/start/03-shutoffs.md:29` — [[VERIFY: add approved instructions for exhaust direction, refueling, dry placement, CO alarms and preventing backfeed.]]
-- `content/en/start/03-shutoffs.md:34` — [[VERIFY: utility and rescue reviewers must approve no-response actions; do not improvise repairs to gas or electrical systems.]]
+- `content/en/start/03-shutoffs.md:21` — [[VERIFY: utility safety reviewer must approve the outside-valve procedure, safe access and valve identification. Do not publish a universal quarter-turn instruction for every gas installation.]]
+- `content/en/start/03-shutoffs.md:30` — [[VERIFY: utility reviewer must approve safe valve identification and operation, including when a valve is unfamiliar, damaged or stuck. Add the approved procedure before release.]]
+- `content/en/start/03-shutoffs.md:41` — [[VERIFY: electrician must approve panel identification, when not to approach or operate it, and solar/battery/generator hazards. Switching off the main is not permission to open a panel or work on wiring.]]
+- `content/en/start/03-shutoffs.md:69` — [[VERIFY: named safety and clinical reviewers must approve generator placement, electrical connection, fuel handling and the poisoning-response wording.]]
+- `content/en/start/03-shutoffs.md:75` — [[VERIFY: utility, rescue and clinical reviewers must approve no-response actions and re-entry restrictions; do not improvise gas or electrical repairs or attempt an unprotected rescue.]]
 - `content/en/start/04-water.md:21` — [[VERIFY: utility and water-safety reviewers must approve safe extraction from household pipes and tap-water heaters, including power isolation, scalding and contamination precautions; do not add an untested valve procedure.]]
 - `content/en/start/04-water.md:50` — [[VERIFY: named water-safety review of the dosing transcription, source choices and boiling guidance; EPA's cited page uses 5,000 feet while CDC's advisory page uses 6,500 feet. Resolve the altitude wording and unknown-elevation branch before release.]]
 - `content/en/start/05-neighbors.md:18` — [[VERIFY: approve national guidance for an unsafe, closed or inaccessible entrance.]]
@@ -135,11 +135,11 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/es/start/02-first-hour.md:14` — [[VERIFY: una persona revisora de seguridad debe confirmar esta lista con las recomendaciones federales actuales.]]
 - `content/es/start/02-first-hour.md:32` — [[VERIFY: revisar cómo elegir un punto alternativo seguro cuando no se pueda usar la entrada prevista.]]
 - `content/es/start/02-first-hour.md:38` — [[VERIFY: una persona clínica y una de rescate deben aprobar esta alternativa sin respuesta.]]
-- `content/es/start/03-shutoffs.md:12` — [[VERIFY: una persona experta debe aprobar el procedimiento nacional de cierre del gas: cuándo no cerrarlo, acceso seguro, tipos de válvula y restablecimiento solo por personal autorizado.]]
-- `content/es/start/03-shutoffs.md:19` — [[VERIFY: confirmar cómo identificar y cerrar la llave de la vivienda, distinguirla de la válvula de la calle y cuándo no tocar una válvula desconocida o dañada.]]
-- `content/es/start/03-shutoffs.md:23` — [[VERIFY: una persona electricista debe aprobar las instrucciones y las advertencias sobre pisos mojados, tableros dañados, fugas de gas, sistemas solares y energía de respaldo.]]
-- `content/es/start/03-shutoffs.md:30` — [[VERIFY: añadir instrucciones aprobadas sobre escape, combustible, ubicación seca, alarmas de CO y prevención de retorno de electricidad a la red.]]
-- `content/es/start/03-shutoffs.md:35` — [[VERIFY: especialistas en servicios y rescate deben aprobar qué hacer sin respuesta; no improvisar reparaciones de gas o electricidad.]]
+- `content/es/start/03-shutoffs.md:22` — [[VERIFY: una persona experta debe aprobar el procedimiento de la válvula exterior, el acceso seguro y cómo identificarla. No publicar una instrucción universal de un cuarto de vuelta para todas las instalaciones de gas.]]
+- `content/es/start/03-shutoffs.md:31` — [[VERIFY: una persona experta debe aprobar cómo identificar y usar la llave, y qué hacer si es desconocida, está dañada o atascada. Añadir el procedimiento aprobado antes de publicar.]]
+- `content/es/start/03-shutoffs.md:42` — [[VERIFY: una persona electricista debe aprobar cómo identificar el tablero, cuándo no acercarse ni usarlo, y los peligros de paneles solares, baterías y generadores. Apagar el interruptor principal no autoriza abrir el tablero ni trabajar en el cableado.]]
+- `content/es/start/03-shutoffs.md:70` — [[VERIFY: especialistas en seguridad y atención clínica deben aprobar la ubicación del generador, la conexión eléctrica, el manejo del combustible y la respuesta ante una posible intoxicación.]]
+- `content/es/start/03-shutoffs.md:76` — [[VERIFY: especialistas en servicios, rescate y atención clínica deben aprobar las acciones sin respuesta y cuándo no volver a entrar; no improvisar reparaciones de gas o electricidad ni intentar un rescate sin protección.]]
 - `content/es/start/04-water.md:22` — [[VERIFY: revisión de cómo extraer agua de tuberías y calentadores, incluidos aislamiento de energía, quemaduras y contaminación; no añadir un procedimiento de válvulas sin probar.]]
 - `content/es/start/04-water.md:50` — [[VERIFY: revisión de las dosis, fuentes y hervor; EPA indica 5,000 pies y CDC 6,500 pies. Resolver la altitud y qué hacer si se desconoce antes de publicar.]]
 - `content/es/start/05-neighbors.md:19` — [[VERIFY: aprobar instrucciones nacionales para una entrada peligrosa, cerrada o inaccesible.]]
@@ -169,7 +169,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/es/tags.md:12` — [[VERIFY: confirme que esta etiqueta corresponde a la válvula identificada; no es una instrucción para cerrar todos los medidores.]]
 - `content/es/tags.md:16` — [[VERIFY: identifique la válvula del hogar antes de colocar esta etiqueta.]]
 - `content/es/tags.md:20` — [[VERIFY: identifique el interruptor principal sin abrir ni tocar un panel dañado.]]
-- `content/sources.yaml:25` — [[VERIFY: obtain and review the full official text; direct fetch returned HTTP 403.]]
 - `config/build.yaml:5` — [[VERIFY: GitHub Pages URL]]
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
