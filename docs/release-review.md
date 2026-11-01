@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 
-## Remaining VERIFY markers (5758)
+## Remaining VERIFY markers (5756)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -553,9 +553,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:1049` — [[VERIFY: measured pinned map pipeline version]]
 - `catalog/maps.yaml:1050` — [[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]
 - `catalog/maps.yaml:1073` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
-- `catalog/maps.yaml:1086` — [[VERIFY: regenerate and repeat Guam after the observed POI-ordering mismatch]]
-- `catalog/maps.yaml:1095` — [[VERIFY: production converter with recorded JVM options]]
-- `catalog/maps.yaml:1096` — [[VERIFY: current Guam conversion failed repeat equality; do not reuse the previous map after its prepared input changed. New production conversion, human pin review and physical device checks remain]]
+- `catalog/maps.yaml:1096` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
 - `catalog/maps.yaml:1107` — [[VERIFY: freeze the map recipe and build epoch]]
 - `catalog/maps.yaml:1108` — [[VERIFY: measured generated payload bytes]]
 - `catalog/maps.yaml:1109` — [[VERIFY: measured complete generation manifest SHA-256]]
@@ -696,8 +694,8 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:1730` — [[VERIFY: measured complete generation manifest SHA-256]]
 - `catalog/maps.yaml:1739` — [[VERIFY: measured pinned map pipeline version]]
 - `catalog/maps.yaml:1740` — [[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]
-- `catalog/maps.yaml:1763` — [[VERIFY: independently review measured Pacific batch extract pins, repeated extraction and physical map coverage before release]]
-- `catalog/maps.yaml:1786` — [[VERIFY: independently review measured map pin, repeat map generation, final toolchain freeze and physical Android import/GPS checks before release]]
+- `catalog/maps.yaml:1763` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
+- `catalog/maps.yaml:1786` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
 - `catalog/maps.yaml:1797` — [[VERIFY: freeze the map recipe and build epoch]]
 - `catalog/maps.yaml:1798` — [[VERIFY: measured generated payload bytes]]
 - `catalog/maps.yaml:1799` — [[VERIFY: measured complete generation manifest SHA-256]]
@@ -838,8 +836,8 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:2420` — [[VERIFY: measured complete generation manifest SHA-256]]
 - `catalog/maps.yaml:2429` — [[VERIFY: measured pinned map pipeline version]]
 - `catalog/maps.yaml:2430` — [[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]
-- `catalog/maps.yaml:2453` — [[VERIFY: independently review nonempty territory extract pins, repeat generation and final source freeze]]
-- `catalog/maps.yaml:2476` — [[VERIFY: independent map pin review, complete repeated generation, final source freeze and physical Android install/import/GPS checks; nonempty territory source and map/routing/POI indexes pass]]
+- `catalog/maps.yaml:2453` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
+- `catalog/maps.yaml:2476` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
 - `catalog/maps.yaml:2487` — [[VERIFY: freeze the map recipe and build epoch]]
 - `catalog/maps.yaml:2488` — [[VERIFY: measured generated payload bytes]]
 - `catalog/maps.yaml:2489` — [[VERIFY: measured complete generation manifest SHA-256]]
@@ -910,8 +908,8 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:2788` — [[VERIFY: measured complete generation manifest SHA-256]]
 - `catalog/maps.yaml:2797` — [[VERIFY: measured pinned map pipeline version]]
 - `catalog/maps.yaml:2798` — [[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]
-- `catalog/maps.yaml:2821` — [[VERIFY: independently review nonempty territory extract pins, repeat generation and final source freeze]]
-- `catalog/maps.yaml:2844` — [[VERIFY: independent map pin review, complete repeated generation, final source freeze and physical Android install/import/GPS checks; nonempty territory source and map/routing/POI indexes pass]]
+- `catalog/maps.yaml:2821` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
+- `catalog/maps.yaml:2844` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
 - `catalog/maps.yaml:2855` — [[VERIFY: freeze the map recipe and build epoch]]
 - `catalog/maps.yaml:2856` — [[VERIFY: measured generated payload bytes]]
 - `catalog/maps.yaml:2857` — [[VERIFY: measured complete generation manifest SHA-256]]
@@ -962,8 +960,8 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:3064` — [[VERIFY: measured complete generation manifest SHA-256]]
 - `catalog/maps.yaml:3073` — [[VERIFY: measured pinned map pipeline version]]
 - `catalog/maps.yaml:3074` — [[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]
-- `catalog/maps.yaml:3102` — [[VERIFY: independent source pin review, repeat generation and final toolchain freeze; this territory source is nonempty and reference-complete]]
-- `catalog/maps.yaml:3123` — [[VERIFY: independent source pin review, repeat generation and final toolchain freeze; this territory source is nonempty and reference-complete]]
+- `catalog/maps.yaml:3102` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
+- `catalog/maps.yaml:3123` — [[VERIFY: independent development pin review, final source freeze, complete repeat builds and physical Android install/import/GPS checks; no app rights clearance is implied]]
 - `catalog/official_guides.yaml:18` — [[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]
 - `catalog/official_guides.yaml:36` — [[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]
 - `catalog/official_guides.yaml:54` — [[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]

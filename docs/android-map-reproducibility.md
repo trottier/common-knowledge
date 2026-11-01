@@ -29,5 +29,13 @@ This setting is specific to the pinned HotSpot runtime, whose own flag is
 labelled unstable. It can increase object-hash collisions, so larger-state
 conversion performance and repeat results still need measurement. It does not
 prove deterministic insertion order in every converter path, clear app asset
-rights, certify routes or replace physical import/GPS testing. Fresh production
-Guam repeats and the remaining national maps are still being validated.
+rights, certify routes or replace physical import/GPS testing. Fresh production repeats now match for Guam, American Samoa, the Northern
+Mariana Islands, the U.S. Virgin Islands and Puerto Rico. Each pair was rebuilt
+in separate network-disabled containers from freshly prepared parent and state
+extracts under the new recipe. Their complete generation manifests and OBF
+payloads match. The five OBFs total 35,410,024 bytes; source notices and generation
+metadata are additional placed files.
+
+The U.S. parent and remaining 51 maps are still being built. These territory
+results do not establish national completion, large-state performance, final
+release-epoch reproducibility or app asset rights clearance.
