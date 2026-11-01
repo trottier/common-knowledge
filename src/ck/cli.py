@@ -18,6 +18,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     parser.add_argument("--root", type=Path, default=Path.cwd(), help="Repository root")
     commands = parser.add_subparsers(dest="command")
+    explore = commands.add_parser(
+        "explore", help="Browse an actual drive folder in a phone preview"
+    )
+    explore.add_argument("--drive", type=Path, required=True)
+    explore.add_argument("--port", type=int, default=8766)
+    explore.add_argument("--label", default="EMERGENCY")
+    explore.add_argument("--notice", default="Development preview; device tests pending.")
+    explore.add_argument("--ui-path", type=Path, help="Override the repository explorer assets")
     validate = commands.add_parser("validate", help="Validate configuration and catalog")
     validate.add_argument("--release", action="store_true")
     review = commands.add_parser("review-report", help="Inventory every remaining release gate")
@@ -307,6 +315,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         if args.command is None:
             parser.print_help()
+            return 0
+        if args.command == "explore":
+            from ck.drive_preview import serve
+
+            if not 1 <= args.port <= 65535:
+                raise ValueError("Port must be between 1 and 65535")
+            serve(
+                args.drive,
+                args.ui_path or args.root / "pipelines" / "drive_preview",
+                label=args.label,
+                port=args.port,
+                notice=args.notice,
+            )
             return 0
         from ck.config import findability, load_config
 

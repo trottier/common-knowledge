@@ -22,8 +22,9 @@ archives, apps, fonts, models and imported media. Those files do not belong in g
 
 The repository includes shared configuration, all fifteen document editions,
 source verification, capacity planning, FAT32 assembly, and pipelines for the
-atlas, public places, Android maps, reference archives, medical PDFs, local LLM,
-imported media and library collections. CI checks the development image, native
+atlas, public places, Android maps, reference archives, medical PDFs,
+imported media, and library collections. Offline AI is deferred to v0.2 and
+excluded from v0.1 content and placement. CI checks the development image, native
 atlas renderer and browser interfaces. English is a draft; Spanish and the
 thirteen quick starts are unreviewed machine translations.
 
@@ -56,6 +57,26 @@ there. Its deployment does not approve the kit or its emergency instructions.
 The complete specification and work order are in [AGENTS.md](AGENTS.md).
 [CLAUDE.md](CLAUDE.md) carries the same instructions.
 [docs/roadmap.md](docs/roadmap.md) tracks the remaining steps.
+
+## Explore a development drive
+
+The development Drive Explorer lets you browse an actual assembled folder at
+phone widths, open PDFs and videos, read text, and inspect full filenames and
+file sizes. From a local Python environment:
+
+```sh
+rtk proxy uv run ck explore --drive /path/to/assembled-drive
+```
+
+Open `http://127.0.0.1:8766/`. The explorer reads existing files without changing
+them. Apps and other programs are download-only. A partial development tree
+must carry an explicit notice, supplied with `--notice`; browsing it does not
+establish physical-phone compatibility or a completed sample build.
+
+The immediate milestone is Variant 1 and Rhode Island, with a fast English
+document and county-map preview before broader builds. PDF files have a shared,
+provisional 10 MB guardrail. The goal of loading on 95% of phones still needs
+device evidence. See [the explorer](pipelines/drive_preview/README.md).
 
 ## Design previews
 

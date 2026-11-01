@@ -10,7 +10,7 @@ GENERATED_DIR ?= $(CURDIR)/build/generated
 HOST_PYTHON ?= python3
 REPOSITORY ?= trottier/common-knowledge
 
-.PHONY: help build-container atlas-container atlas-check llm-ui-check laptop-ui-check check lint test cli package dev sample full release-assets site clean
+.PHONY: help build-container atlas-container atlas-check llm-ui-check laptop-ui-check drive-ui-check check lint test cli package dev sample full release-assets site clean
 
 help:
 	@printf '%s\n' \
@@ -19,6 +19,7 @@ help:
 	  'atlas-check      Build and test the pinned native map renderer offline' \
 	  'llm-ui-check     Test the local LLM browser interface with pinned Bun' \
 	  'laptop-ui-check  Test the offline laptop map controls with pinned Bun' \
+	  'drive-ui-check   Test the development drive explorer with pinned Bun' \
 	  'lint             Run Ruff and check formatting in the container' \
 	  'test             Run pytest in the container' \
 	  'cli              Show ck help in the container' \
@@ -46,6 +47,10 @@ llm-ui-check:
 laptop-ui-check:
 	docker run --rm --network=none --volume "$(CURDIR):/source:ro" \
 	  --workdir /source --entrypoint bun $(LLM_UI_IMAGE) test pipelines/laptopmap/model.test.js
+
+drive-ui-check:
+	docker run --rm --network=none --volume "$(CURDIR):/source:ro" \
+	  --workdir /source --entrypoint bun $(LLM_UI_IMAGE) test pipelines/drive_preview/app.test.js
 
 check: build-container
 	$(DOCKER_RUN) ruff check .

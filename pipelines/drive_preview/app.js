@@ -141,7 +141,8 @@ function start() {
     const type = fileType(entry), url = fileURL(entry.path);
     $("preview-title").textContent = entry.name;
     $("preview-type").textContent = type.name;
-    $("preview-meta").textContent = `${formatBytes(entry.size_bytes)} · ${entry.path}`;
+    const exactSize = Number.isSafeInteger(entry.size_bytes) ? ` (${entry.size_bytes.toLocaleString("en")} bytes)` : "";
+    $("preview-meta").textContent = `${formatBytes(entry.size_bytes)}${exactSize} · ${entry.path}`;
     $("download").href = url; $("download").download = entry.name;
     $("open-native").href = url;
     $("open-native").hidden = type.type === "binary";
@@ -185,7 +186,7 @@ function start() {
       if (!response.ok) throw new Error(`Drive inventory request failed (${response.status})`);
       manifest = await response.json(); entries = indexFiles(manifest.files);
       $("drive-label").textContent = manifest.label || "Common Knowledge";
-      $("drive-meta").textContent = [manifest.variant != null ? `Variant ${manifest.variant}` : null, manifest.profile ? `${manifest.profile} profile` : null].filter(Boolean).join(" · ") || "Local file inventory";
+      $("drive-meta").textContent = [manifest.variant != null ? `Variant ${manifest.variant}` : null, manifest.profile ? `${manifest.profile} profile` : null, manifest.source ? `Source ${manifest.source}` : null].filter(Boolean).join(" · ") || "Local file inventory";
       const notice = [manifest.status, ...(Array.isArray(manifest.warnings) ? manifest.warnings : [])].filter(Boolean).join(" · ");
       $("drive-notice").textContent = notice; $("drive-notice").hidden = !notice;
       if (folder && (entries.get(folder)?.kind !== "directory" || (!$("show-hidden").checked && isHidden(entries.get(folder))))) folder = "";

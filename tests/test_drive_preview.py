@@ -6,6 +6,7 @@ import threading
 from urllib.parse import quote
 
 import pytest
+
 from ck.drive_preview import DriveFolder, PreviewServer
 
 
