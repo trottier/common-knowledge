@@ -51,3 +51,13 @@ Linux amd64 container. Its 4,278 articles, 6,641 redirects, 8,601,054-byte paylo
 and generation manifest matched the earlier independently built archive exactly.
 Strict `zimcheck` passed. This confirms actual offline restoration for that
 snapshot, while clinical review and physical reader testing remain outstanding.
+
+
+After the release gate passes, `ck release-assets` includes the selected WikEM
+snapshot as `source-data-wikem.tar.gz` alongside the matching catalog lock. Its
+actual size and hash enter `release-manifest.json` and `SHA256SUMS`, and the
+ordinary under-2-GB asset limit applies. This is separate from the required GPL
+corresponding-source archives. Packaging fails if any captured input is absent
+or changed; it never refreshes API responses while packaging a release. Restore
+the matching reviewed source bundle into the release cache beforehand when the
+original captured cache is unavailable. No release has been published yet.

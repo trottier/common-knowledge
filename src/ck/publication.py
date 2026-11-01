@@ -192,6 +192,14 @@ def prepare_release(
                 if source.id != app.source_id:
                     name += "-" + source.id
                 copy(path, name + extension, "gpl-source")
+        if "wikem_en_nopic" in items and items["wikem_en_nopic"].family == "generated":
+            from ck.sourcebundle import pack_sources
+
+            name = "source-data-wikem.tar.gz"
+            bundle = pack_sources(items, ["wikem_en_nopic"], cache, stage / name, epoch)
+            if bundle["size_bytes"] >= GITHUB_ASSET_LIMIT:
+                raise ValueError(f"GitHub release asset must be under 2 GB: {name}")
+            kinds[name] = "source-data"
         write_catalog_lock(root, stage / "catalog.lock.json", epoch)
         kinds["catalog.lock.json"] = "catalog"
         files = [

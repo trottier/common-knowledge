@@ -154,7 +154,11 @@ def test_full_site_rejects_partial_or_unrepeated_builds(tmp_path):
         build_site(ROOT, [], tmp_path / "invalid", "trottier/common-knowledge", [manifest])
 
 
-def test_release_assets_bind_images_to_core_and_check_every_sidecar(tmp_path, monkeypatch):
+@pytest.mark.parametrize("include_snapshot", [False, True])
+def test_release_assets_bind_images_to_core_and_check_every_sidecar(
+    tmp_path, monkeypatch, include_snapshot
+):
+    from ck.catalog import Item
     from ck.config import load_config
     from ck.fetch import digest
 
@@ -162,7 +166,37 @@ def test_release_assets_bind_images_to_core_and_check_every_sidecar(tmp_path, mo
     config.build.source_date_epoch = 946684800
     monkeypatch.setattr("ck.publication.require_release_ready", lambda root: None)
     monkeypatch.setattr("ck.publication.load_config", lambda root: config)
-    monkeypatch.setattr("ck.publication.load_catalog", lambda *args: {})
+    items = {}
+    cache = tmp_path / "cache"
+    if include_snapshot:
+        cache.mkdir()
+        payload = cache / "fixture"
+        payload.write_bytes(b"Synthetic source snapshot; never shipped.")
+        source_checksum = digest(payload)
+        payload.rename(cache / source_checksum)
+        common = dict(
+            title="Synthetic fixture",
+            version="1",
+            size_bytes=(cache / source_checksum).stat().st_size,
+            sha256=source_checksum,
+            license="CC0-1.0",
+            attribution="Original test fixture",
+            license_proof_url="https://example.invalid/license",
+            placement="hub_only",
+            dest="build/fixture",
+            profiles=["sample"],
+        )
+        items["source"] = Item(
+            id="source", family="docs", url="https://example.invalid/source", **common
+        )
+        items["wikem_en_nopic"] = Item(
+            id="wikem_en_nopic",
+            family="generated",
+            inputs=["source"],
+            pipeline_version="fixture-v1",
+            **common,
+        )
+    monkeypatch.setattr("ck.publication.load_catalog", lambda *args: items)
     monkeypatch.setattr("ck.core.verify_core", lambda *args: None)
     core, images = tmp_path / "core", tmp_path / "images"
     core.mkdir()
@@ -204,6 +238,15 @@ def test_release_assets_bind_images_to_core_and_check_every_sidecar(tmp_path, mo
     output = tmp_path / "release"
     result = prepare_release(ROOT, core, images, tmp_path / "cache", output, 946684800, "0" * 40)
     assert sum(entry["kind"] == "dev-image" for entry in result["files"]) == 8
+    if include_snapshot:
+        from ck.sourcebundle import restore_sources
+
+        bundle = next(entry for entry in result["files"] if entry["kind"] == "source-data")
+        restored = tmp_path / "restored-sources"
+        restore_sources(
+            items, ["wikem_en_nopic"], output / bundle["name"], restored, bundle["sha256"]
+        )
+        assert (restored / source_checksum).read_bytes() == (cache / source_checksum).read_bytes()
     for line in (output / "SHA256SUMS").read_text().splitlines():
         checksum, filename = line.split("  ", 1)
         assert digest(output / filename) == checksum
