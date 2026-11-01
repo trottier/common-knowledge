@@ -1,0 +1,540 @@
+{
+  "observed_utc": "2026-11-01T20:44:48.406658+00:00",
+  "audit_image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "parser": "pypdf 6.21.4",
+  "parser_scope": "Strict PDF parse; extracted text/metadata; image enumeration; top-level dictionaries from the xref scanned for action and attachment keys. Not a complete malware or accessibility evaluation.",
+  "producer_code_unchanged": true,
+  "source_content_rewritten": false,
+  "binaries_committed": false,
+  "policy_and_item_pages": {
+    "epa_en_page": {
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water-0",
+      "resolved_url": "https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water-0",
+      "size_bytes": 54314,
+      "sha256": "2e15278eeab6f6c570b4302b9089cb04d2c9382c4e3da3867028e68bebfe56a0",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "54314",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:41:47 GMT",
+        "Strict-Transport-Security": "max-age=31536000; preload",
+        "Server": "nginx",
+        "Cache-Control": "max-age=10800, public",
+        "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+        "Content-Language": "en",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "Last-Modified": "Sun, 01 Nov 2026 14:03:38 GMT",
+        "ETag": "\"1793541818\"",
+        "X-Generator": "Drupal 10 (https://www.drupal.org)",
+        "X-Drupal-Cache": "HIT",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "Vary": "Cookie",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 23f50144cb971785705704a20a9ed06a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P12",
+        "X-Amz-Cf-Id": "qpmTMR88_oke0vr4N638AZJ991RJXz5bYTUAUYcDGDA4wjxATc912A==",
+        "Age": "180"
+      }
+    },
+    "epa_es_page": {
+      "url": "https://espanol.epa.gov/espanol/desinfeccion-de-agua-potable-en-situaciones-de-emergencia",
+      "resolved_url": "https://espanol.epa.gov/espanol/desinfeccion-de-agua-potable-en-situaciones-de-emergencia",
+      "size_bytes": 58812,
+      "sha256": "12c63b9071cdf674d41e43b5110a686918fb2da1f45b3f076cec3d0b969557f1",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "58812",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:41:47 GMT",
+        "Strict-Transport-Security": "max-age=31536000; preload",
+        "Server": "nginx",
+        "Cache-Control": "max-age=21600, public",
+        "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+        "Content-Language": "es",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "Last-Modified": "Sun, 01 Nov 2026 19:46:11 GMT",
+        "ETag": "\"1793562371\"",
+        "X-Generator": "Drupal 10 (https://www.drupal.org)",
+        "X-Drupal-Cache": "HIT",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "Vary": "Cookie",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 9677fe99f128decc9894e73038554860.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P8",
+        "X-Amz-Cf-Id": "TVDuDCth-FfuJXSR1MllFh7UrBWqe5XdyXVHgba6FCzBIwDkxsIk4Q==",
+        "Age": "180"
+      }
+    },
+    "epa_es_item_page": {
+      "url": "https://espanol.epa.gov/espanol/desinfeccion-de-agua-potable-en-situaciones-de-emergencia-junio-de-2015",
+      "resolved_url": "https://espanol.epa.gov/espanol/desinfeccion-de-agua-potable-en-situaciones-de-emergencia-junio-de-2015",
+      "size_bytes": 49318,
+      "sha256": "7bbeb29a1fab549c0ada60ac38e3e7b1769e5472ff8e91a46fce924d581c7734",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "49318",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:42:43 GMT",
+        "Strict-Transport-Security": "max-age=31536000; preload",
+        "Server": "nginx",
+        "Cache-Control": "max-age=21600, public",
+        "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+        "Content-Language": "es",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "Last-Modified": "Sun, 01 Nov 2026 20:42:42 GMT",
+        "ETag": "\"1793565762\"",
+        "X-Generator": "Drupal 10 (https://www.drupal.org)",
+        "X-Drupal-Cache": "MISS",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "Vary": "Cookie",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 ebf5f806ad5302b43d7cc44643482cfa.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P8",
+        "X-Amz-Cf-Id": "QKCCtelXd2q9t-Cu-XNXvrG0koHpznMrF9z_w_nRsa_gDbLvaDiLkw==",
+        "Age": "124"
+      }
+    },
+    "nws_brochures": {
+      "url": "https://www.weather.gov/owlie/publication_brochures",
+      "resolved_url": "https://www.weather.gov/owlie/publication_brochures",
+      "size_bytes": 53342,
+      "sha256": "2e860806e55dda8755fa51f0c9522f6b2c66e7b2328c982e5e16c2fd64d66a68",
+      "headers": {
+        "Server": "Apache",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "Content-Security-Policy": "default-src 'self'           *.weather.gov *.noaa.gov           code.jquery.com           cdn.gov.cfigroup.com           s.go-mpulse.net           *.digitalgov.gov           *.google-analytics.com           www.googletagmanager.com           *.arcgis.com *.arcgisonline.com            *.google.com           *.youtube.com *.youtube-nocookie.com           *.twitter.com *.x.com           *.facebook.com           data: * mediastream: * blob: * about: * 'unsafe-eval' 'unsafe-inline'    ",
+        "X-Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *",
+        "X-XSS-Protection": "1; mode=block",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "max-age=1",
+        "Expires": "Sun, 01 Nov 2026 20:44:48 GMT",
+        "Date": "Sun, 01 Nov 2026 20:44:47 GMT",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      }
+    },
+    "nws_nwr_page": {
+      "url": "https://www.weather.gov/nwr/allhazards",
+      "resolved_url": "https://www.weather.gov/nwr/allhazards",
+      "size_bytes": 36796,
+      "sha256": "11154b352e6293f951b8480533a84efd9c7e123801210c39ddd3fe8077506e62",
+      "headers": {
+        "Server": "Apache",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "Content-Security-Policy": "default-src 'self'           *.weather.gov *.noaa.gov           code.jquery.com           cdn.gov.cfigroup.com           s.go-mpulse.net           *.digitalgov.gov           *.google-analytics.com           www.googletagmanager.com           *.arcgis.com *.arcgisonline.com            *.google.com           *.youtube.com *.youtube-nocookie.com           *.twitter.com *.x.com           *.facebook.com           data: * mediastream: * blob: * about: * 'unsafe-eval' 'unsafe-inline'    ",
+        "X-Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *",
+        "X-XSS-Protection": "1; mode=block",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "max-age=180",
+        "Expires": "Sun, 01 Nov 2026 20:47:48 GMT",
+        "Date": "Sun, 01 Nov 2026 20:44:48 GMT",
+        "Content-Length": "36796",
+        "Connection": "close",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      }
+    },
+    "epa_disclaimers": {
+      "url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
+      "resolved_url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
+      "size_bytes": 62565,
+      "sha256": "52bf30d69908d44eeb12d9328621288b4e7da45497f27734f6b1297ef7c4c90e",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "62565",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:11:37 GMT",
+        "Strict-Transport-Security": "max-age=31536000; preload",
+        "Server": "nginx",
+        "Cache-Control": "max-age=10800, public",
+        "X-Drupal-Dynamic-Cache": "UNCACHEABLE (poor cacheability)",
+        "Content-Language": "en",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "Last-Modified": "Sun, 01 Nov 2026 13:48:07 GMT",
+        "X-Generator": "Drupal 10 (https://www.drupal.org)",
+        "X-Drupal-Cache": "HIT",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "ETag": "\"1793540887\"",
+        "Vary": "Cookie",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 1d0952b39a1f14a100a952bab10a6ade.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P12",
+        "X-Amz-Cf-Id": "445lJRaRvfezIB9wUeSOGrqzQ4bGVDb4lQp1HLD44i2OB5UwJLR9Fw==",
+        "Age": "1991"
+      }
+    },
+    "epa_rights_policy": {
+      "url": "https://www.epa.gov/system/files/documents/2023-02/posting_copyrighted_works_on_epa_website_policy.pdf",
+      "resolved_url": "https://www.epa.gov/system/files/documents/2023-02/posting_copyrighted_works_on_epa_website_policy.pdf",
+      "size_bytes": 215638,
+      "sha256": "071eaeabb3f666321c68da5bc4feeac94f5c17841544a07d23ffcf6c761e9c0d",
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "215638",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:41:48 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Server": "nginx",
+        "Cache-Control": "private",
+        "Last-Modified": "Tue, 28 Feb 2023 15:08:22 GMT",
+        "X-Drupal-Dynamic-Cache": "UNCACHEABLE (no cacheability)",
+        "Content-Language": "en",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "X-Generator": "Drupal 10 (https://www.drupal.org)",
+        "X-Drupal-Cache": "UNCACHEABLE (no cacheability)",
+        "Accept-Ranges": "bytes",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 1f6b7e33471ddf7e9e2c37866b5ca310.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P12",
+        "X-Amz-Cf-Id": "BadggrFXg-3jiulBgIL9XyFLwCeBWHHpe4pnE4p6X_BpfjLmVNkqiw==",
+        "Age": "180"
+      }
+    }
+  },
+  "pdfs": {
+    "epa_emergency_disinfection_en_2017": {
+      "url": "https://www.epa.gov/sites/default/files/2017-09/documents/emergency_disinfection_of_drinking_water_sept2017.pdf",
+      "resolved_url": "https://www.epa.gov/sites/default/files/2017-09/documents/emergency_disinfection_of_drinking_water_sept2017.pdf",
+      "size_bytes": 754723,
+      "sha256": "f404083d00decedc267bf4265eda776bb250ccfe18c1f7b19152aa006ff727c5",
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "754723",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:41:45 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Server": "nginx",
+        "Accept-Ranges": "bytes",
+        "Last-Modified": "Fri, 25 Jun 2021 13:17:09 GMT",
+        "x-amz-version-id": "G4c2d_F8dmgUx.xepICuJZqM9LrYUVA6",
+        "x-amz-server-side-encryption": "AES256",
+        "Expires": "Sun, 01 Nov 2026 21:41:45 GMT",
+        "Cache-Control": "max-age=3600",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "ETag": "\"eb294326fb0cc01a87aef42301b06c71\"",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 d17c184839dfdf966b08e3b020308166.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P12",
+        "X-Amz-Cf-Id": "K6onQqre3I-IvXzG3JHC6TwZMCVZ133Kpx-Qv-dw4awzUa-s4ThZzw==",
+        "Age": "56"
+      },
+      "page_count": 2,
+      "encrypted": false,
+      "parser_warnings": [],
+      "pdf_metadata": {
+        "/Author": "USEPA, OW",
+        "/CreationDate": "D:20170906152937-04'00'",
+        "/Creator": "Microsoft® Word 2016",
+        "/Keywords": "drinking water, epa, emergency disinfection, water",
+        "/ModDate": "D:20170906153257-04'00'",
+        "/Producer": "Microsoft® Word 2016",
+        "/Subject": "Emergency Disinfection of Drinking Water",
+        "/Title": "Emergency Disinfection of Drinking Water"
+      },
+      "page_dimensions_pt": [
+        [
+          612.0,
+          792.0
+        ],
+        [
+          612.0,
+          792.0
+        ]
+      ],
+      "extracted_text_characters_per_page": [
+        2786,
+        3650
+      ],
+      "extracted_text_sha256": "858d3524a644de2258d2c65f15ff472b4e449da3cc93e68a67db1dc7535d727e",
+      "images_per_page": [
+        4,
+        1
+      ],
+      "action_dictionary_types": {},
+      "sensitive_dictionary_keys": {},
+      "root_open_action": false,
+      "embedded_attachments": 0,
+      "red_cross_or_contractor_credit_terms": [],
+      "edition": "en",
+      "source_item_page": "https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water-0"
+    },
+    "epa_emergency_disinfection_es_2015": {
+      "url": "https://espanol.epa.gov/sites/default/files/2016-05/documents/spanish_emergency_disinfection_drinking_water_0.pdf",
+      "resolved_url": "https://espanol.epa.gov/sites/default/files/2016-05/documents/spanish_emergency_disinfection_drinking_water_0.pdf",
+      "size_bytes": 250968,
+      "sha256": "4db7899c48ae8f3e737ca85bcb797be5c5aca9355ff3a3699a776d74e9ae07d0",
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "250968",
+        "Connection": "close",
+        "Date": "Sun, 01 Nov 2026 20:41:45 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Server": "nginx",
+        "Last-Modified": "Thu, 17 Jun 2021 20:48:02 GMT",
+        "ETag": "\"f9c95908249342ba96ecff70d8b557ad\"",
+        "x-amz-server-side-encryption": "AES256",
+        "x-amz-version-id": "4D1DHSIdw96.QAF.pvaGi2HKT7c1Mvac",
+        "Accept-Ranges": "bytes",
+        "Expires": "Sun, 01 Nov 2026 21:41:45 GMT",
+        "Cache-Control": "max-age=3600",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1",
+        "Feature-Policy": "geolocation 'none';midi 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';fullscreen 'self';payment 'none'",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "block-all-mixed-content; default-src * data: 'unsafe-inline' 'unsafe-eval'; worker-src * blob: data: 'unsafe-inline' 'unsafe-eval'; child-src * blob: data: 'unsafe-inline' 'unsafe-eval'; img-src * blob: data: 'unsafe-inline' 'unsafe-eval';",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 5cf315a7bafce190fcf84f55b9019bda.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "SFO53-P8",
+        "X-Amz-Cf-Id": "4NRUmJLdohuidqvDTZjaPtTYJbgwb7mjna6OqvHbasNwrShG6cWdxA==",
+        "Age": "56"
+      },
+      "page_count": 2,
+      "encrypted": false,
+      "parser_warnings": [],
+      "pdf_metadata": {
+        "/Author": "US EPA, OW, Office of Ground Water and Drinking Water",
+        "/Comments": "",
+        "/Company": "",
+        "/Created": "D:20150616",
+        "/CreationDate": "D:20160513130043-04'00'",
+        "/Creator": "Acrobat PDFMaker 11 for Word",
+        "/Keywords": "emergency disinfection; drinking water disinfection methods, boil and disinfect water, emergecny water supply, epa 816-f-15-003",
+        "/LastSaved": "D:20160209",
+        "/ModDate": "D:20160517142405-04'00'",
+        "/Producer": "Adobe PDF Library 11.0",
+        "/SourceModified": "D:20160512183754",
+        "/Subject": "How to boil and disinfect water to kill most disease-causing microorganisms that may be present in the water after an emergecny incident.",
+        "/Title": "Emergency Disinfection of Drinking Water, June 2015"
+      },
+      "page_dimensions_pt": [
+        [
+          612.0,
+          792.0
+        ],
+        [
+          612.0,
+          792.0
+        ]
+      ],
+      "extracted_text_characters_per_page": [
+        3071,
+        4335
+      ],
+      "extracted_text_sha256": "cb2b794e63c76d18150d8b4627ce3f5e082e2e2a39a66117a142798c5d6a6832",
+      "images_per_page": [
+        4,
+        1
+      ],
+      "action_dictionary_types": {},
+      "sensitive_dictionary_keys": {},
+      "root_open_action": false,
+      "embedded_attachments": 0,
+      "red_cross_or_contractor_credit_terms": [],
+      "edition": "es",
+      "source_item_page": "https://espanol.epa.gov/espanol/desinfeccion-de-agua-potable-en-situaciones-de-emergencia-junio-de-2015"
+    },
+    "nws_thunderstorm_safety_en_2018": {
+      "url": "https://www.weather.gov/media/owlie/ThunderstormSafety-OnePager-11-29-18.pdf",
+      "resolved_url": "https://www.weather.gov/media/owlie/ThunderstormSafety-OnePager-11-29-18.pdf",
+      "size_bytes": 441317,
+      "sha256": "cd8275c7380f0341f38abc8a681c6441d0ec3bc2905480fbf2c7ec0e29802997",
+      "headers": {
+        "Server": "Apache",
+        "Last-Modified": "Tue, 05 Mar 2019 14:33:34 GMT",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "Accept-Ranges": "bytes",
+        "Content-Security-Policy": "default-src 'self'           *.weather.gov *.noaa.gov           code.jquery.com           cdn.gov.cfigroup.com           s.go-mpulse.net           *.digitalgov.gov           *.google-analytics.com           www.googletagmanager.com           *.arcgis.com *.arcgisonline.com            *.google.com           *.youtube.com *.youtube-nocookie.com           *.twitter.com *.x.com           *.facebook.com           data: * mediastream: * blob: * about: * 'unsafe-eval' 'unsafe-inline'    ",
+        "X-Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *",
+        "X-XSS-Protection": "1; mode=block",
+        "Content-Length": "441317",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/pdf",
+        "Cache-Control": "max-age=125",
+        "Expires": "Sun, 01 Nov 2026 20:44:46 GMT",
+        "Date": "Sun, 01 Nov 2026 20:42:41 GMT",
+        "Connection": "close",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      },
+      "page_count": 2,
+      "encrypted": false,
+      "parser_warnings": [
+        "Xref table not zero-indexed. ID numbers for objects will be corrected."
+      ],
+      "pdf_metadata": {
+        "/CreationDate": "D:20181129130727-05'00'",
+        "/Creator": "Adobe InDesign CC 2017 (Windows)",
+        "/ModDate": "D:20181129130729-05'00'",
+        "/Producer": "Adobe PDF Library 15.0",
+        "/Trapped": "/False"
+      },
+      "page_dimensions_pt": [
+        [
+          612.0,
+          792.0
+        ],
+        [
+          612.0,
+          792.0
+        ]
+      ],
+      "extracted_text_characters_per_page": [
+        3280,
+        2083
+      ],
+      "extracted_text_sha256": "9ca648dbbb00f1e9cdd0f31eca9bd23135ebf0acd90821237fa9a2e70ab094ca",
+      "images_per_page": [
+        2,
+        3
+      ],
+      "action_dictionary_types": {
+        "/URI": 5
+      },
+      "sensitive_dictionary_keys": {},
+      "root_open_action": false,
+      "embedded_attachments": 0,
+      "red_cross_or_contractor_credit_terms": [],
+      "edition": "en",
+      "source_item_page": "https://www.weather.gov/owlie/publication_brochures"
+    },
+    "nws_weather_radio_quadfold_en_2025": {
+      "url": "https://www.weather.gov/media/nwr/NWR_Brochure_NOAA_PA_94062.pdf",
+      "resolved_url": "https://www.weather.gov/media/nwr/NWR_Brochure_NOAA_PA_94062.pdf",
+      "size_bytes": 2674250,
+      "sha256": "f9b8751c2e9e4495c30ba367d3189a0798cf5f6765285065305d92c6317f789e",
+      "headers": {
+        "Server": "Apache",
+        "X-Powered-By": "PHP/8.0.30",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "Accept-Ranges": "bytes",
+        "Content-Security-Policy": "default-src 'self'           *.weather.gov *.noaa.gov           code.jquery.com           cdn.gov.cfigroup.com           s.go-mpulse.net           *.digitalgov.gov           *.google-analytics.com           www.googletagmanager.com           *.arcgis.com *.arcgisonline.com            *.google.com           *.youtube.com *.youtube-nocookie.com           *.twitter.com *.x.com           *.facebook.com           data: * mediastream: * blob: * about: * 'unsafe-eval' 'unsafe-inline'    ",
+        "X-Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *",
+        "X-XSS-Protection": "1; mode=block",
+        "Last-Modified": "Wed, 02 Apr 2025 18:01:06 GMT",
+        "Content-Length": "2674250",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/pdf",
+        "Cache-Control": "max-age=180",
+        "Expires": "Sun, 01 Nov 2026 20:45:41 GMT",
+        "Date": "Sun, 01 Nov 2026 20:42:41 GMT",
+        "Connection": "close",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+      },
+      "page_count": 4,
+      "encrypted": false,
+      "parser_warnings": [],
+      "pdf_metadata": {
+        "/Author": "Mohammed.Almufadhl",
+        "/CreationDate": "D:20250130163106-05'00'",
+        "/Creator": "PScript5.dll Version 5.2.2",
+        "/ModDate": "D:20250130163106-05'00'",
+        "/Producer": "Acrobat Distiller 24.0 (Windows)",
+        "/Title": "Microsoft Word - NWR_Brochure_NOAA_PA_94062_250130"
+      },
+      "page_dimensions_pt": [
+        [
+          612.0,
+          1008.0
+        ],
+        [
+          612.0,
+          1008.0
+        ],
+        [
+          612.0,
+          1008.0
+        ],
+        [
+          612.0,
+          1008.0
+        ]
+      ],
+      "extracted_text_characters_per_page": [
+        454,
+        11749,
+        11722,
+        18379
+      ],
+      "extracted_text_sha256": "4821046134d511592a73cc4c474be3fada767aff0798f8c92780363869fc8340",
+      "images_per_page": [
+        10,
+        1,
+        1,
+        0
+      ],
+      "action_dictionary_types": {},
+      "sensitive_dictionary_keys": {},
+      "root_open_action": false,
+      "embedded_attachments": 0,
+      "red_cross_or_contractor_credit_terms": [],
+      "edition": "en",
+      "source_item_page": "https://www.weather.gov/nwr/allhazards"
+    }
+  },
+  "rendered_review": {
+    "renderer": "Poppler pdftoppm, 75 dpi, all 10 pages; contact sheet viewed by agent",
+    "sheet_sha256": "6509f296642b2676c57b5280b40cf2b2d2eadd7872e6e85257f03d59af773979",
+    "physical_phone_readability_approved": false,
+    "observations": {
+      "epa": "Both editions have EPA/Office of Water authorship and publication imprints, an EPA mark, and four small instructional illustrations. No individual illustration or translation rights statement was found. No Red Cross, stock agency, or contractor credit was found in extracted text or rendered pages; absence is not rights proof.",
+      "nws_thunderstorm": "NWS/NOAA mastheads, three photographs, and an SPC risk chart. Two photo captions identify NOAA; the risk chart identifies SPC. No excluded partner or separate copyright restriction was found. The NWS collection supplies its public-domain/reprint policy. Independent authorship/credit review remains open.",
+      "nws_nwr": "Department of Commerce/NOAA/NWS imprints, national coverage map, small weather images, national station/frequency tables, and January 2025 revision/as-of text. No Red Cross mark or third-party credit/restriction found. The NWS collection supplies its public-domain/reprint policy. Independent authorship/credit review remains open."
+    }
+  },
+  "currency": {
+    "epa_english": "Publisher item page still links the September 2017 PDF; page update August 12, 2026 is not a new PDF edition.",
+    "epa_spanish": "Current Spanish article links the June 2015 PDF item page, last updated December 9, 2025. Its PDF creation in May 2016 is not the printed edition date.",
+    "epa_cross_language_difference": "Spanish table covers only 8.25% sodium hypochlorite; English table covers 6% and 8.25%. Spanish includes a paragraph excluding toilet/radiator/waterbed/pool/spa sources that is absent from the English revision. These are different editions, not verified parallel translations. No dose transcription or clinical reconciliation performed.",
+    "epa_existing_review": "Existing START water-safety review of the EPA/CDC altitude discrepancy remains untouched; intake does not resolve it.",
+    "nws_thunderstorm": "Current NWS collection links a file whose name and PDF creation identify November 29, 2018. Latest clinical/safety currency not established by a live link.",
+    "nws_nwr": "Both the current NWS collection and NWR All Hazards page link the January 2025 revision. Its station list is an historical nationwide reference, not a claim of present operation or reception."
+  },
+  "rights": {
+    "epa": "Office of Water author metadata and printed imprints establish provenance, not an explicit grant for each illustration/translation. EPA disclaimer template says it applies only when incorporated by reference; the item pages/PDFs did not incorporate a grant. EPA copyright policy recognizes contractor/grantee rights. Both candidates stay hub_only with unresolved license/proof markers and named legal sign-off required.",
+    "nws": "The exact official collection linking both PDFs states a public-domain default absent a contrary annotation and permits reprints with NWS attribution. Intact PDFs retain agency identity. Per-item review found no contrary restriction or excluded partner, but independent authorship/image-credit and safety/radio reviews remain required."
+  },
+  "unresolved": [
+    "Independent computed HTTPS pin review for all four files; no publisher SHA-256 sidecars found.",
+    "EPA per-item illustration/translation redistribution proof and named legal review before either candidate can be placed.",
+    "Named water-safety/medical review and cross-edition currency reconciliation for EPA.",
+    "Independent NWS federal authorship/image-credit, safety/radio, and source-currency review.",
+    "Physical phone and print readability; parser and raster inspection do not establish accessibility or clinical accuracy."
+  ]
+}

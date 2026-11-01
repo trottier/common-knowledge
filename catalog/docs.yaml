@@ -38,27 +38,6 @@
     ]
   },
   {
-    "id": "nws_guides",
-    "family": "docs",
-    "title": "NWS weather guides and official translations; select individual files",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "topics": [
-        "comms"
-      ]
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/{topic}/",
-    "profiles": [
-      "full"
-    ]
-  },
-  {
     "id": "iso639_2",
     "family": "docs",
     "title": "Library of Congress ISO 639-2 language codes",

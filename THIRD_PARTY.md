@@ -10036,6 +10036,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `b2043610dadc1bd1eeb7dcbb60262f278fea1f13624cd2010c8adcb3b84a438c`
 - Pipeline: directory-seed-v1-5afd0c1e1ce920a5632836ccbe6d392f56d45fc0ce5c91cb2d9abaaaed5f819e; inputs: census_county_analysis, census_states, fcc_facility_statuses, fcc_license_versions, fcc_locations, fcc_service_codes, fcc_stations, fema_risk, geofabrik_ri, imls_libraries, nces_schools, noaa_transmitters, state_emergency_agencies
 
+## Emergency Disinfection of Drinking Water
+
+- Catalog id: `epa_emergency_disinfection_en_2017`
+- Version: EPA 816-F-15-003, September 2017
+- License: [[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]
+- Attribution: U.S. Environmental Protection Agency, Office of Water; original file unchanged; no endorsement of Common Knowledge.
+- License proof: [[VERIFY: EPA per-item copyright and embedded-illustration rights proof]]
+- Size: 754723 bytes
+- SHA-256: `f404083d00decedc267bf4265eda776bb250ccfe18c1f7b19152aa006ff727c5`
+- Publisher file: https://www.epa.gov/sites/default/files/2017-09/documents/emergency_disinfection_of_drinking_water_sept2017.pdf
+
+## Desinfección de agua potable en situaciones de emergencia
+
+- Catalog id: `epa_emergency_disinfection_es_2015`
+- Version: EPA 816-F-15-003, junio de 2015
+- License: [[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]
+- Attribution: U.S. Environmental Protection Agency, Office of Water; original file unchanged; no endorsement of Common Knowledge.
+- License proof: [[VERIFY: EPA per-item copyright and embedded-illustration rights proof]]
+- Size: 250968 bytes
+- SHA-256: `4db7899c48ae8f3e737ca85bcb797be5c5aca9355ff3a3699a776d74e9ae07d0`
+- Publisher file: https://espanol.epa.gov/sites/default/files/2016-05/documents/spanish_emergency_disinfection_drinking_water_0.pdf
+
 ## EPA water guides and official translations; select individual files
 
 - Catalog id: `epa_guides`
@@ -11213,16 +11235,27 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f`
 - Publisher file: https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf
 
-## NWS weather guides and official translations; select individual files
+## Thunderstorm Safety for You and Your Family
 
-- Catalog id: `nws_guides`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Catalog id: `nws_thunderstorm_safety_en_2018`
+- Version: Publisher file 11-29-18; PDF creation November 29, 2018
+- License: US-PD
+- Attribution: U.S. Department of Commerce, NOAA, National Weather Service; original federal publication, not subject to U.S. copyright; original file unchanged; no endorsement of Common Knowledge.
+- License proof: https://www.weather.gov/owlie/publication_brochures
+- Size: 441317 bytes
+- SHA-256: `cd8275c7380f0341f38abc8a681c6441d0ec3bc2905480fbf2c7ec0e29802997`
+- Publisher file: https://www.weather.gov/media/owlie/ThunderstormSafety-OnePager-11-29-18.pdf
+
+## NOAA Weather Radio: The Voice of NOAA’s National Weather Service
+
+- Catalog id: `nws_weather_radio_quadfold_en_2025`
+- Version: NOAA/PA 94062, Rev January 2025
+- License: US-PD
+- Attribution: U.S. Department of Commerce, NOAA, National Weather Service; original federal publication, not subject to U.S. copyright; original file unchanged; no endorsement of Common Knowledge.
+- License proof: https://www.weather.gov/owlie/publication_brochures
+- Size: 2674250 bytes
+- SHA-256: `f9b8751c2e9e4495c30ba367d3189a0798cf5f6765285065305d92c6317f789e`
+- Publisher file: https://www.weather.gov/media/nwr/NWR_Brochure_NOAA_PA_94062.pdf
 
 ## OfflineLLM 5.1.4 Android, held development candidate
 

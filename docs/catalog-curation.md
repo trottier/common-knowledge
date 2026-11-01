@@ -1,6 +1,6 @@
 # Replacing intake placeholders with selected files
 
-Six original catalog records described possible groups of files rather than
+Seven original catalog records described possible groups of files rather than
 downloadable artifacts. Individually pinned selections now fill those roles.
 Keeping both made the full plan require a second, unknown-size artifact that
 had never been selected.
@@ -13,6 +13,7 @@ had never been selected.
 | `howto_documents_1` | Six automobile-maintenance articles rendered as phone PDFs. |
 | `howto_documents_2` | Seven carpentry and hand-tool articles rendered as phone PDFs. |
 | `education` | The frozen English Wikibooks school-reference archive; the existing CDC activity books also remain. |
+| `nws_guides` | The unchanged NWS thunderstorm safety guide and national Weather Radio quadfold, with explicit item-linked reprint terms and remaining independent review holds. |
 
 The exact old records and replacement identifiers are retained in
 [the research history](proposals/retired-intake-placeholders.yaml). They were
@@ -26,6 +27,9 @@ source, suitability, safety, and physical-readability reviews remain open;
 see [official guides](official-guides.md),
 [reference packs](reference-packs.md), and [reference collections](reference-collections.md).
 Other unresolved intake groups remain explicit catalog gaps.
+The EPA group remains open: its two measured PDFs stay in `hub_only` pending
+per-item illustration/translation rights and water-safety review; see
+[EPA/NWS intake](epa-nws-guides.md).
 
 This change does not resolve a capacity overflow. Any overflow still requires
 an explicit placement decision under the specification; selected content must

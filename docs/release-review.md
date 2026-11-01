@@ -34,6 +34,8 @@ Catalog items explicitly requiring legal review:
 - `base_model`: Qwen3.5-2B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
 - `bitchat_android`: bitchat for Android; license `GPL-3.0-only AND [[VERIFY: exact bundled Google SDK redistribution terms and compatibility]]`; reviewer: unassigned; review date: unassigned.
 - `briar_android`: Briar for Android; license `GPL-3.0-only`; reviewer: unassigned; review date: unassigned.
+- `epa_emergency_disinfection_en_2017`: Emergency Disinfection of Drinking Water; license `[[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]`; reviewer: unassigned; review date: unassigned.
+- `epa_emergency_disinfection_es_2015`: Desinfección de agua potable en situaciones de emergencia; license `[[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]`; reviewer: unassigned; review date: unassigned.
 - `kiwix_android`: Kiwix for Android, universal standalone; license `GPL-3.0-or-later AND Apache-2.0 AND OLDAP-2.8 AND [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_android`: OsmAnd for Android; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_android_source`: OsmAnd 5.4.11 exact application-source archive; mixed asset licenses; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
@@ -46,6 +48,10 @@ Catalog items explicitly requiring legal review:
 ## Named human content reviews
 
 - catalog/apk.yaml:22: [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
+- catalog/epa_nws_guides.yaml:18: [[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]
+- catalog/epa_nws_guides.yaml:37: [[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]
+- catalog/epa_nws_guides.yaml:56: [[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]
+- catalog/epa_nws_guides.yaml:74: [[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]
 - catalog/maps.yaml:253: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - catalog/medpdf_topics.yaml: named human medical review required
 - catalog/referencepacks.yaml:102: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
@@ -70,8 +76,12 @@ Catalog items explicitly requiring legal review:
 - content/en/start/12-warnings.md: named human review required (medical, legal, radio)
 - content/en/start/13-sources.md: named human review required (English content)
 - content/en/tags.md: named human review required (rescue, medical)
+- epa_emergency_disinfection_en_2017.review: [[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]
+- epa_emergency_disinfection_es_2015.review: [[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]
 - kiwix_android.review: [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]] [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
 - medical_phone_pdfs.review: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
+- nws_thunderstorm_safety_en_2018.review: [[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]
+- nws_weather_radio_quadfold_en_2025.review: [[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]
 - pipelines/referencepacks/selection.yaml (reference_howto_1): named human source-accuracy, safety and suitability review required
 - pipelines/referencepacks/selection.yaml (reference_howto_2): named human source-accuracy, safety and suitability review required
 - pipelines/referencepacks/selection.yaml (reference_med_lib): named human source-accuracy, safety and suitability review required
@@ -81,7 +91,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6361)
+## Remaining VERIFY markers (6362)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -960,22 +970,23 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/docs.yaml:27` — [[VERIFY: redistribution license]]
 - `catalog/docs.yaml:28` — [[VERIFY: publisher attribution]]
 - `catalog/docs.yaml:29` — [[VERIFY: per-item publisher license proof]]
-- `catalog/docs.yaml:44` — [[VERIFY: exact publisher download URL]]
-- `catalog/docs.yaml:45` — [[VERIFY: publisher version]]
-- `catalog/docs.yaml:46` — [[VERIFY: exact publisher file size]]
-- `catalog/docs.yaml:47` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/docs.yaml:48` — [[VERIFY: redistribution license]]
-- `catalog/docs.yaml:49` — [[VERIFY: publisher attribution]]
-- `catalog/docs.yaml:50` — [[VERIFY: per-item publisher license proof]]
-- `catalog/docs.yaml:69` — [[VERIFY: confirm redistribution status of the ISO language-code data]]
-- `catalog/docs.yaml:78` — [[VERIFY: review computed HTTPS input pin]]
-- `catalog/docs.yaml:101` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
-- `catalog/docs.yaml:124` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
-- `catalog/docs.yaml:147` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
-- `catalog/docs.yaml:170` — [[VERIFY: review computed HTTPS pin, per-item federal authorship and current fillable-form revisions]]
-- `catalog/docs.yaml:193` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
-- `catalog/docs.yaml:216` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
-- `catalog/docs.yaml:239` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/docs.yaml:48` — [[VERIFY: confirm redistribution status of the ISO language-code data]]
+- `catalog/docs.yaml:57` — [[VERIFY: review computed HTTPS input pin]]
+- `catalog/docs.yaml:80` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/docs.yaml:103` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/docs.yaml:126` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/docs.yaml:149` — [[VERIFY: review computed HTTPS pin, per-item federal authorship and current fillable-form revisions]]
+- `catalog/docs.yaml:172` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/docs.yaml:195` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/docs.yaml:218` — [[VERIFY: human radio and computed-pin review; confirm all figures and current errata before release]]
+- `catalog/epa_nws_guides.yaml:10` — [[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]
+- `catalog/epa_nws_guides.yaml:12` — [[VERIFY: EPA per-item copyright and embedded-illustration rights proof]]
+- `catalog/epa_nws_guides.yaml:18` — [[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]
+- `catalog/epa_nws_guides.yaml:29` — [[VERIFY: per-item EPA illustration and translation redistribution rights; federal agency authorship alone does not clear every embedded asset]]
+- `catalog/epa_nws_guides.yaml:31` — [[VERIFY: EPA per-item copyright and embedded-illustration rights proof]]
+- `catalog/epa_nws_guides.yaml:37` — [[VERIFY: independent computed HTTPS pin, EPA illustration and translation rights, source currency across the June 2015 Spanish and September 2017 English editions, and named human water-safety/medical review; retain source bytes unchanged]]
+- `catalog/epa_nws_guides.yaml:56` — [[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]
+- `catalog/epa_nws_guides.yaml:74` — [[VERIFY: independent computed HTTPS pin, per-item federal authorship and image credits, source currency, named human safety and radio review, and physical PDF readability; retain source bytes unchanged]]
 - `catalog/fonts.yaml:20` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
 - `catalog/fonts.yaml:40` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
 - `catalog/fonts.yaml:60` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
