@@ -41,7 +41,7 @@ Catalog items explicitly requiring legal review:
 
 ## Named human content reviews
 
-- catalog/maps.yaml:252: [[VERIFY: named human medical selection and content review, final source freeze and physical iPhone readability; two complete 158-article draft packs from WikiMed and WikEM have identical output bytes]]
+- catalog/maps.yaml:252: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - catalog/medpdf_topics.yaml: named human medical review required
 - content/en/android-maps.md: named human review required (English content)
 - content/en/card.md: named human review required (radio, legal)
@@ -61,9 +61,9 @@ Catalog items explicitly requiring legal review:
 - content/en/start/12-warnings.md: named human review required (medical, legal, radio)
 - content/en/start/13-sources.md: named human review required (English content)
 - content/en/tags.md: named human review required (rescue, medical)
-- medical_phone_pdfs.review: [[VERIFY: named human medical selection and content review, final source freeze and physical iPhone readability; two complete 158-article draft packs from WikiMed and WikEM have identical output bytes]]
+- medical_phone_pdfs.review: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 
-## Remaining VERIFY markers (5721)
+## Remaining VERIFY markers (5718)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -426,7 +426,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/maps.yaml:153` — [[VERIFY: exact publisher file size]]
 - `catalog/maps.yaml:154` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
 - `catalog/maps.yaml:221` — [[VERIFY: pinned pipeline implementation and output sizes]]
-- `catalog/maps.yaml:252` — [[VERIFY: named human medical selection and content review, final source freeze and physical iPhone readability; two complete 158-article draft packs from WikiMed and WikEM have identical output bytes]]
+- `catalog/maps.yaml:252` — [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - `catalog/maps.yaml:285` — [[VERIFY: human review of source pins and national FCC geographic exceptions; incomplete point seed is build-only]]
 - `catalog/maps.yaml:310` — [[VERIFY: review the local whole-source verified extraction and preserve the pinned daily planet at an immutable URL]]
 - `catalog/maps.yaml:335` — [[VERIFY: human source-pin review, geographic exception reconciliation and physical phone checks; matching Linux x86-64 atlas builds remain development-only]]
@@ -5729,7 +5729,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/wikem.yaml:88407` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
 - `catalog/wikem.yaml:88426` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
 - `catalog/wikem.yaml:88445` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
-- `catalog/zim.yaml:4695` — [[VERIFY: independently review computed publisher pins and restricted-page scope, immutable API input preservation, clinical topic selection and physical Kiwix readers; two complete offline archive builds match at development epoch 1793404800]]
+- `catalog/zim.yaml:4695` — [[VERIFY: human pin/scope review of the public snapshot and seven publisher denials, stable raw-source hosting, clinical review and physical Kiwix checks; two frozen development builds match]]
 - `catalog/zim.yaml:4733` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]
 - `catalog/zim.yaml:4739` — [[VERIFY: exact publisher download URL]]
 - `catalog/zim.yaml:4740` — [[VERIFY: publisher version]]
@@ -5784,7 +5784,4 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/zim.yaml:4926` — [[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]
 - `catalog/zim.yaml:4949` — [[VERIFY: human pin and retained nontext-license review, full repeated generation with final producer freeze and physical Kiwix checks; first complete strict-audit archive retains title search, with no full-text index]]
 - `catalog/zim.yaml:4968` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]
-- `catalog/zim.yaml:4975` — [[VERIFY: measured complete regenerated archive payload]]
-- `catalog/zim.yaml:4976` — [[VERIFY: complete generated manifest SHA-256]]
-- `catalog/zim.yaml:4990` — [[VERIFY: pinned regeneration recipe]]
-- `catalog/zim.yaml:4991` — [[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]
+- `catalog/zim.yaml:4991` — [[VERIFY: human input/output pin, retained nontext-license and educational selection review, physical Kiwix checks and final release-epoch reproduction; two strict complete development builds match; full-text index omitted, title search retained]]
