@@ -81,7 +81,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6347)
+## Remaining VERIFY markers (6357)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -176,6 +176,16 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
 - `config/wikem-scope.yaml:2` — [[VERIFY: review publisher access-denial scope exclusions]]
+- `catalog/android_gguf_candidates.yaml:23` — [[VERIFY: complete runtime license/notices and source linkage, offline network capture including delegated font/TTS services, exact local GGUF import, CK grounding/warning setup, and physical Qwen3.5 tests on Android 13+ arm64 with at least 6 GB RAM; no model-quality or release approval]]
+- `catalog/android_gguf_candidates.yaml:50` — [[VERIFY: reviewed computed app-source pin; complete runtime Maven sources/notices, exact native binary correspondence and remaining OpenMP/NDK/CMake input closure and delegated font/TTS behavior remain open; known exact submodule, release-log Khronos headers, emoji and graphics source versions are linked]]
+- `catalog/android_gguf_candidates.yaml:69` — [[VERIFY: reviewed computed source-archive pin, selected native dependency notices and exact binary correspondence; whole upstream archive includes auxiliary files not selected by the Android native build]]
+- `catalog/android_gguf_candidates.yaml:88` — [[VERIFY: reviewed computed source-archive pin and complete selected Android dependency notices; reference/build-planning input only, with no APK built or selected]]
+- `catalog/android_gguf_candidates.yaml:107` — [[VERIFY: reviewed computed original notice-text pin and final notice placement]]
+- `catalog/android_gguf_candidates.yaml:126` — [[VERIFY: reviewed computed original notice-text pin and final notice placement]]
+- `catalog/android_gguf_candidates.yaml:146` — [[VERIFY: reviewed SHA-256 pin verified against official publisher SHA-1; SDK-only build input must remain outside drive and release payloads; SDK terms and original component notices remain applicable]]
+- `catalog/android_gguf_candidates.yaml:168` — [[VERIFY: original tool-member pin review; build-only verifier, not a drive or release payload; exact tool source correspondence and bundled SDK notices remain recorded separately]]
+- `catalog/android_gguf_candidates.yaml:187` — [[VERIFY: reviewed computed source archive pin and complete per-file notices; publisher release workflow log identifies this tag, but exact compiled native source correspondence and selected CMake/toolchain remain open]]
+- `catalog/android_gguf_candidates.yaml:206` — [[VERIFY: reviewed computed source archive pin and complete per-file notices; publisher release workflow log identifies this tag, but exact compiled native source correspondence and selected CMake/toolchain remain open]]
 - `catalog/apk.yaml:10` — [[VERIFY: exact ObjectBox Binary Licence redistribution terms and whole-app GPL compatibility]]
 - `catalog/apk.yaml:22` — [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]
 - `catalog/apk.yaml:22` — [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
