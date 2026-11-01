@@ -42,6 +42,20 @@ def test_duplicate_yaml_keys_rejected(tmp_path):
         read_yaml(path)
 
 
+def test_offline_ai_is_explicitly_deferred_with_a_configured_future_allocation():
+    config = load_config(ROOT)
+    assert config.variants.offline_ai == [7, 8]
+    assert config.variants.offline_ai_enabled is False
+
+
+@pytest.mark.parametrize("allocation", [[], [7], [7, 7], [0, 8], [7, 9], [True, 8]])
+def test_invalid_future_ai_allocation_is_rejected(allocation):
+    data = deepcopy(load_config(ROOT).model_dump())
+    data["variants"]["offline_ai"] = allocation
+    with pytest.raises(ValidationError):
+        Configuration.model_validate(data)
+
+
 @pytest.mark.parametrize(
     ("k", "n", "expected"),
     [

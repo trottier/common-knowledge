@@ -10,7 +10,7 @@
     "license": "Apache-2.0",
     "attribution": "JEGLY and OfflineLLM contributors; native and dependency notices remain applicable",
     "license_proof_url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/LICENSE",
-    "placement": "universal",
+    "placement": "hub_only",
     "dest": "9_LOCAL_LLM/android/OfflineLLM.apk",
     "profiles": [
       "sample",
@@ -20,7 +20,7 @@
     "source_url": "https://codeload.github.com/jegly/OfflineLLM/tar.gz/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
     "source_id": "offlinellm_android_candidate_source",
     "checksum_source_url": "https://api.github.com/repos/jegly/OfflineLLM/releases/429819952",
-    "review": "[[VERIFY: complete runtime license/notices and source linkage, offline network capture including delegated font/TTS services, exact local GGUF import, CK grounding/warning setup, and physical Qwen3.5 tests on Android 13+ arm64 with at least 6 GB RAM; no model-quality or release approval]]"
+    "review": "[[VERIFY: complete runtime license/notices and source linkage, offline network capture including delegated font/TTS services, exact local GGUF import, CK grounding/warning setup, and physical Qwen3.5 tests on Android 13+ arm64 with at least 6 GB RAM; no model-quality or release approval]] Integration is deferred by publisher direction; future allocation and disabled state are recorded in config/variants.yaml. No current drive placement."
   },
   {
     "id": "offlinellm_android_candidate_source",

@@ -28,7 +28,7 @@ def fixture_item(identifier, size):
         attribution="Synthetic fixture",
         license_proof_url="https://example.invalid/license",
         placement="universal",
-        dest="9_LOCAL_LLM/fixture",
+        dest="9_OFFLINE_AI/fixture" if identifier == "base_model" else "7_LAPTOP/" + identifier,
         profiles=["full"],
     )
 
@@ -57,7 +57,7 @@ def test_model_size_limit_is_independent_of_parameter_basis(tmp_path):
         model_metadata(model, fixture_item("base_model", 2_500_000_001), 32768)
 
 
-def test_model_fallback_preserves_four_copies_and_every_other_item():
+def test_ai_deferral_preserves_other_items_and_future_allocation_never_expands():
     config = load_config(ROOT)
     config.build.android_maps = "roads_places"
     items = {
@@ -75,20 +75,26 @@ def test_model_fallback_preserves_four_copies_and_every_other_item():
         items[item.id] = item
     plans = plan_variants(config, items, "full", 10, 1000)
     assert all(plan.fits for plan in plans)
-    assert [plan.variant for plan in plans if "base_model" in plan.items] == [1, 3, 5, 7]
-    assert all(plan.llm_variants == [1, 3, 5, 7] for plan in plans)
+    assert all("base_model" not in plan.items for plan in plans)
+    assert all(plan.llm_variants == [] for plan in plans)
     assert all(
         {"national_atlas", "national_directory", "android_roads_places"} <= set(plan.items)
         for plan in plans
     )
-    # Larger capacity keeps eight copies. Unknown sizes cannot trigger omission.
-    assert all(
-        "base_model" in plan.items for plan in plan_variants(config, items, "full", 10, 2000)
-    )
-    items["depth_howto_2"].size_bytes = "[[VERIFY: fixture size]]"
+    config.variants.offline_ai_enabled = True
     plans = plan_variants(config, items, "full", 10, 1000)
-    assert all("base_model" in plan.items for plan in plans)
+    assert [
+        plan.variant for plan in plans if "base_model" in plan.items
+    ] == config.variants.offline_ai
+    assert all(plan.llm_variants == config.variants.offline_ai for plan in plans)
+    # Overflow fails instead of moving, expanding, or silently dropping the model.
     assert not all(plan.fits for plan in plans)
+    assert any("Overflow" in problem for problem in plans[7].blockers)
+    assert [
+        plan.variant
+        for plan in plan_variants(config, items, "full", 10, 2000)
+        if "base_model" in plan.items
+    ] == config.variants.offline_ai
 
 
 def test_start_grounding_uses_the_rendered_defaults_in_both_languages():
@@ -153,7 +159,8 @@ def test_development_android_selection_preserves_historical_sources_and_bundle_l
     items = load_catalog(ROOT)
     settings = settings_for(ROOT)
     selected = items[settings.android.apk_id]
-    assert selected.placement == "universal"
+    assert selected.placement == "hub_only"
+    assert not load_config(ROOT).variants.offline_ai_enabled
     assert selected.dest == f"9_LOCAL_LLM/android/{settings.android.apk_filename}"
     assert selected.source_id == "offlinellm_android_candidate_source"
     assert "[[VERIFY:" in selected.review

@@ -39,6 +39,10 @@ Out-of-area contact: _________________
 
 Household medications: _______________
 
+{% if not variants.offline_ai_enabled %}
+Offline AI deferred. Future drives: {{ variants.offline_ai | join(' and ') }}. [@project_spec]
+{% endif %}
+
 ## Placard
 
 OK / HELP [@project_spec]

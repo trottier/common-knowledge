@@ -3,7 +3,7 @@ title: Tarjeta del hogar
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/card.md": "9bb7cce9d5f8c8877bd4465214baf92412c5b0fa50ba42ecd03ae22ff8175554"}
+source_inputs: {"content/en/card.md": "dee068cb80e1e272983d6e28c2aa39f5ba32c6265e317f6471b9bdb5d777819f"}
 review_required: [radio, legal]
 ---
 
@@ -39,6 +39,10 @@ Punto de reunión: ___________________
 Contacto fuera del área: ______________
 
 Medicamentos del hogar: ______________
+
+{% if not variants.offline_ai_enabled %}
+IA sin conexión aplazada. Unidades futuras: {{ variants.offline_ai | join(' y ') }}. [@project_spec]
+{% endif %}
 
 ## Cartel
 

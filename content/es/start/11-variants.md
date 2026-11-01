@@ -3,7 +3,7 @@ title: ¿En qué se diferencia mi unidad?
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/11-variants.md": "9b1f4bfa8a64a5b630341c0aa681c5fd01039504cc1040e0af5f13e1ad248c0d"}
+source_inputs: {"content/en/start/11-variants.md": "1160cd0ac89421ab97b41e74dafc669ff1039a598df20b209a21885559ea98e1"}
 review_required: []
 ---
 
@@ -26,6 +26,10 @@ Contenido previsto de la colección para esta compilación:
 Este perfil de compilación no incluye archivos externos de la colección.
 {% endfor %}
 {% endfor %}
+
+{% if not variants.offline_ai_enabled %}
+La integración de la IA sin conexión está aplazada. Asignación futura: unidades {{ variants.offline_ai | join(' y ') }}. [@project_spec]
+{% endif %}
 
 ## Por qué las unidades difieren
 

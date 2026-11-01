@@ -17,7 +17,8 @@ EPOCH = 946684800
 @pytest.mark.parametrize(
     "path,allowed",
     [
-        ("9_LOCAL_LLM/Start Local LLM - Windows.bat", True),
+        ("9_OFFLINE_AI/Start Offline AI - Windows.bat", True),
+        ("9_LOCAL_LLM/Start Local LLM - Windows.bat", False),
         ("9_AI_ASSISTANT/Start AI.bat", False),
         ("6_VIDEOS_AND_IN_DEPTH/in_depth/repair/laptop/tool.exe", True),
         ("6_VIDEOS_AND_IN_DEPTH/topics/medical/tool.exe", False),

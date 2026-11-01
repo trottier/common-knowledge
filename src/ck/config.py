@@ -102,11 +102,15 @@ class Variants(Model):
     topics: dict[Identifier, Topic]
     collections: dict[Identifier, Text]
     variants: dict[int, Variant]
+    offline_ai: list[int] = Field(min_length=2, max_length=2)
+    offline_ai_enabled: bool
 
     @model_validator(mode="after")
     def check_coverage(self) -> Self:
         if set(self.variants) != set(range(1, 9)):
             raise ValueError("Exactly variants 1 through 8 are required")
+        if len(set(self.offline_ai)) != 2 or not set(self.offline_ai) <= self.variants.keys():
+            raise ValueError("Offline AI needs two distinct configured future variants")
         if len(self.topics) != 12 or len(self.collections) != 8:
             raise ValueError("Exactly 12 topics and 8 collections are required")
         topic_counts: Counter = Counter()
@@ -202,17 +206,12 @@ class LocalLLM(Model):
     runner_filename: Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9][A-Za-z0-9._-]*$")]
     model_alias: Annotated[str, StringConstraints(pattern=r"^[a-z][a-z0-9_-]*$")]
     models: dict[Literal["sample", "full"], Identifier]
-    fallback_variants: list[int] = Field(min_length=4, max_length=4)
     warning: Text
     warning_es: Text
     android: AndroidLocalLLM
 
     @model_validator(mode="after")
     def selection(self) -> Self:
-        if len(set(self.fallback_variants)) != 4 or not set(self.fallback_variants) <= set(
-            range(1, 9)
-        ):
-            raise ValueError("The local LLM fallback must name four distinct variants")
         if set(self.models) != {"sample", "full"}:
             raise ValueError("Both sample and full model selections are required")
         if (

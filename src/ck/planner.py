@@ -17,6 +17,9 @@ def placed_bytes(item: Item) -> int:
 def selected(item: Item, config: Configuration, number: int, profile: str) -> bool:
     if profile not in item.profiles or config.build.profiles[profile].third_party == "none":
         return False
+    if item.family == "llm" or item.dest.startswith(("9_LOCAL_LLM/", "9_OFFLINE_AI/")):
+        if not config.variants.offline_ai_enabled or number not in config.variants.offline_ai:
+            return False
     variant = config.variants.variants[number]
     if item.placement == "universal":
         return True
@@ -119,32 +122,15 @@ def plan_variants(
             for number, chosen in choices.items()
         }
 
-    llm_variants, llm_reason = None, None
-    if profile == "full" and config.local_llm:
-        model_id = config.local_llm.models["full"]
-        model = items.get(model_id)
-        if model and all(model in chosen for chosen in choices.values()):
-            llm_variants = sorted(choices)
-            llm_reason = "The model remains universal."
-            measured = all(
-                isinstance(item.size_bytes, int) for chosen in choices.values() for item in chosen
-            )
-            if not measured:
-                llm_reason = "Keep the model universal until every placed size is known."
-            elif any(
-                core_bytes + sum(placed_bytes(item) for item in chosen) > usable
-                for chosen in choices.values()
-            ):
-                llm_variants = sorted(config.local_llm.fallback_variants)
-                llm_reason = (
-                    "After map selection, universal placement overflows; use four variants."
-                )
-                choices = {
-                    number: [
-                        item for item in chosen if item.id != model_id or number in llm_variants
-                    ]
-                    for number, chosen in choices.items()
-                }
+    # Keep existing machine-readable keys while retiring universal/four-drive fallback.
+    llm_variants = [
+        number for number, chosen in choices.items() if any(item.family == "llm" for item in chosen)
+    ]
+    llm_reason = (
+        "Offline AI integration is deferred; no AI items are placed."
+        if not config.variants.offline_ai_enabled
+        else "Offline AI placement is limited to the configured future allocation."
+    )
 
     for number in sorted(config.variants.variants):
         chosen = choices[number]

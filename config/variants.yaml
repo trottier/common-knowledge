@@ -11,6 +11,8 @@ topics:
   welfare:      { category: civic, title: "Welfare and reunification" }
   legal:        { category: civic, title: "Legal, money and recovery" }
   psychosocial: { category: civic, title: "Psychosocial, kids and morale" }
+offline_ai: [7, 8]  # Future allocation; no current drive carries the deferred integration.
+offline_ai_enabled: false
 collections:   # in-depth knowledge, one per variant
   howto_1:    "How-to library, part 1"
   howto_2:    "How-to library, part 2"

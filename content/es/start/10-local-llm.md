@@ -1,21 +1,15 @@
 ---
-title: El LLM local
+title: IA sin conexión — futura
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/10-local-llm.md": "ab1aaa0fb742c6d4e57903088bb6785dcc0937d9c6eb3e371fad36853cc050d7"}
+source_inputs: {"content/en/start/10-local-llm.md": "ced17e5cffeb1b41e438799db7c59f2ed0034d531c0abafd83b9f4678af37d65"}
 review_required: [medical]
 ---
 
-## LLM local experimental
+## IA sin conexión — futura
 
-{{ local_llm.warning_es }} [@project_spec]
-
-El modelo y los iniciadores están en `9_LOCAL_LLM` cuando el plan los incluye.
-Use el iniciador para el sistema operativo de su computadora.
-En Android, siga la guía que está junto a la aplicación opcional. [@project_spec]
-
-No use el LLM local para adivinar una dosis, sustituir las indicaciones de un profesional de salud ni decidir si un edificio es seguro.
-Pídale que indique una sección de START y lea esa sección usted mismo. [@project_spec]
-
-[[VERIFY: añadir instrucciones exactas para iniciar y detener después de probar los programas fijados. No se afirma que el modelo esté ajustado o evaluado.]]
+{% if not variants.offline_ai_enabled %}
+La integración de la IA sin conexión está aplazada.
+Asignación futura: unidades {{ variants.offline_ai | join(' y ') }}. [@project_spec]
+{% endif %}

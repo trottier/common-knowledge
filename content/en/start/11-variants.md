@@ -24,6 +24,10 @@ No external collection files are included in this build profile.
 {% endfor %}
 {% endfor %}
 
+{% if not variants.offline_ai_enabled %}
+Offline AI integration is deferred. Future allocation: drives {{ variants.offline_ai | join(' and ') }}. [@project_spec]
+{% endif %}
+
 ## Why the drives differ
 
 Every variant has the same core plan.
