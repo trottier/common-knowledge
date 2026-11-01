@@ -3,7 +3,16 @@
 This is a development checkpoint, not release approval. v0.1.0 is incomplete.
 Regenerate with `ck review-report --output docs/release-review.md` after source changes.
 
-## Implementation and build gaps
+## Current milestone: Variant 1 and Rhode Island
+
+- Resolve the selected Variant 1 sample graph and reuse checksum-verified artifacts under their actual recipes, input pins, completeness flags, and source epochs. Keep exact missing, stale, held, and ready inventories.
+- Inspect one complete county's folder names, overview, detailed maps, and places index. Apply the configured PDF budget and measure rendering and navigation; split only where measured limits require it.
+- Build the actual browsable tree first and inspect it in the loopback Drive Explorer, including phone-width full filenames, file sizes, and native file previews. Label a partial tree incomplete and show every selected omission. The website does not certify phone or USB behavior.
+- Use the fast English/county loop before a wider render. Freeze the coherent milestone's selected inputs, code, configuration, tool image, and epoch before the required full checks and clean sample reproducibility pair.
+- Defer new image-verifier tool development during this inspection milestone. Existing checksum, manifest, reproducibility, and release gates remain in force.
+- Offline AI is a v0.2 integration on variants 7 and 8, not a current Variant 1 milestone dependency or device-check requirement. Preserve its research and historical outputs. The global catalog and VERIFY inventories below remain unchanged and include held candidates.
+
+## Later v0.1 implementation and release gaps
 
 - Finish corrected national atlas/directory repeats and all 56 Android maps. State or territory repeats do not establish full-image coverage or capacity.
 - FCC geographic exceptions, FEMA county-profile gaps and atlas page/grid closure require resolution and documented source coverage.
@@ -11,7 +20,7 @@ Regenerate with `ck review-report --output docs/release-review.md` after source 
 - Preserve the exact WikEM API snapshot and regenerated archive, with independent pin, source-hosting and reader review. Do not refresh responses under existing pins.
 - Complete corresponding GPL source and dependency notices for shipped applications; a top-level repository archive alone does not establish source closure.
 - Freeze the toolchain and regenerate derived inputs before pinning final outputs. Prototype fingerprints do not establish a rebuild from the release tag.
-- Run the actual sample profile twice, then all eight full images twice. Development-image reproducibility does not establish either result.
+- After the browsable sample and selected recipe are stable, run the actual sample profile twice, then all eight full images twice. Development-image reproducibility does not establish either result.
 - Publish only after sample/full checks, release gates and physical checks pass. No production tag, release or full-image hashes are approved by this report.
 
 ## Publisher inputs and physical checks
@@ -19,14 +28,14 @@ Regenerate with `ck review-report --output docs/release-review.md` after source 
 - Measure the usable capacity of the production USB part in bytes. The publisher's 32 GB answer is a nominal target, not that measurement.
 - Confirm release epoch, the verification site's public URL and immutable preservation of pinned inputs. Choose full-image hosting separately.
 - Follow the publisher's edition-selection policy in docs/language-selection.md and repeat the pinned ACS order audit before tagging.
-- Complete docs/phone-test-checklist.md on at least three phones and two laptop operating systems, including a USB-A-only laptop with an adapter. Check video language switching, offline apps, mapping, sharing and local LLM launchers.
+- Complete docs/phone-test-checklist.md on at least three phones and two laptop operating systems, including a USB-A-only laptop with an adapter. Check video language switching, offline apps, mapping, and sharing. Offline-AI launcher and model-loading checks belong to the separate v0.2 checklist.
 - English content, clinical protocols, legal/radio text and medical topic selection need named human reviewers. The agent cannot grant these reviews.
 
 ## Permission and legal decisions
 
 Red Cross, Stop the Bleed, Hesperian, Khan Academy and iFixit remain excluded without a written free emergency-use license from each rights holder. No request has been sent and no permission is claimed. See docs/permission-requests.md.
 
-Army publications require per-document distribution statement A verification and legal sign-off. Model and runner licenses require review, including the exact untuned/base model, quantization provenance and dependency notices. Gemma 4 E2B remains the first candidate; effective parameter counting does not waive the separate file-size or untuned-base requirements.
+Army publications require per-document distribution statement A verification and legal sign-off. For the deferred v0.2 offline AI, preserve exact model/runner license, quantization, and dependency-notice questions with their research. These do not add AI cargo or checks to the current milestone; their held catalog records remain in the unchanged global release inventory.
 
 Catalog items explicitly requiring legal review:
 
@@ -61,6 +70,7 @@ Catalog items explicitly requiring legal review:
 - content/en/android-maps.md: named human review required (English content)
 - content/en/card.md: named human review required (radio, legal)
 - content/en/edition.yaml: named human review of English labels required
+- content/en/future/10-offline-ai.md: named human review required (medical)
 - content/en/local-llm.md: named human review required (English content)
 - content/en/start/01-use.md: named human review required (English content)
 - content/en/start/02-first-hour.md: named human review required (medical)
@@ -71,7 +81,6 @@ Catalog items explicitly requiring legal review:
 - content/en/start/07-comms.md: named human review required (radio, legal)
 - content/en/start/08-maps.md: named human review required (English content)
 - content/en/start/09-medical.md: named human review required (medical)
-- content/en/start/10-local-llm.md: named human review required (medical)
 - content/en/start/11-variants.md: named human review required (English content)
 - content/en/start/12-warnings.md: named human review required (medical, legal, radio)
 - content/en/start/13-sources.md: named human review required (English content)
@@ -91,7 +100,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6331)
+## Remaining VERIFY markers (6329)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -131,7 +140,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/en/start/09-medical.md:75` — [[VERIFY: clinician must approve warming, handling, breathing checks and the no-response branch.]]
 - `content/en/start/09-medical.md:83` — [[VERIFY: clinician must approve signs of severe dehydration, small-sip guidance, infant care, a measured homemade recipe when no packets exist, and the no-response branch.]]
 - `content/en/start/09-medical.md:93` — [[VERIFY: clinician must approve life-sustaining medication decisions, emergency refill guidance and the no-response branch.]]
-- `content/en/start/10-local-llm.md:20` — [[VERIFY: insert exact launch and stop instructions after testing the pinned laptop runners and Android app. No tuning or evaluation claim is made.]]
 - `content/en/start/12-warnings.md:19` — [[VERIFY: human safety and legal review must approve these warnings and any conflict rule with current official directions.]]
 - `content/en/start/12-warnings.md:23` — [[VERIFY: legal reviewer must approve the final warnings, accessibility statement, medical limitations and distribution notice.]]
 - `content/en/start/13-sources.md:14` — [[VERIFY: confirm each cited source and its current guidance during human content review.]]
@@ -174,7 +182,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/es/start/09-medical.md:76` — [[VERIFY: aprobación clínica de calentamiento, movimiento, revisión de respiración y alternativa sin respuesta.]]
 - `content/es/start/09-medical.md:84` — [[VERIFY: aprobación clínica de señales graves, sorbos pequeños, cuidado de bebés, receta casera medida cuando no hay sobres y alternativa sin respuesta.]]
 - `content/es/start/09-medical.md:94` — [[VERIFY: aprobación clínica de decisiones sobre medicamentos vitales, reposición urgente y alternativa sin respuesta.]]
-- `content/es/start/10-local-llm.md:21` — [[VERIFY: añadir instrucciones exactas para iniciar y detener después de probar los programas fijados. No se afirma que el modelo esté ajustado o evaluado.]]
 - `content/es/start/12-warnings.md:20` — [[VERIFY: una persona responsable de seguridad y una de asuntos legales deben aprobar estas advertencias y la regla para resolver conflictos con las instrucciones oficiales actuales.]]
 - `content/es/start/12-warnings.md:24` — [[VERIFY: la persona responsable de la revisión legal debe aprobar las advertencias finales, la declaración de accesibilidad, las limitaciones médicas y el aviso de distribución.]]
 - `content/es/start/13-sources.md:15` — [[VERIFY: confirme cada fuente citada y sus recomendaciones actuales durante la revisión humana del contenido.]]
@@ -182,7 +189,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/es/tags.md:16` — [[VERIFY: identifique la válvula del hogar antes de colocar esta etiqueta.]]
 - `content/es/tags.md:20` — [[VERIFY: identifique el interruptor principal sin abrir ni tocar un panel dañado.]]
 - `config/build.yaml:6` — [[VERIFY: set at release]]
-- `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
+- `config/build.yaml:13` — [[VERIFY: measured usable bytes of the production 32 GB part]]
 - `config/wikem-scope.yaml:2` — [[VERIFY: review publisher access-denial scope exclusions]]
 - `catalog/android_gguf_candidates.yaml:23` — [[VERIFY: complete runtime license/notices and source linkage, offline network capture including delegated font/TTS services, exact local GGUF import, CK grounding/warning setup, and physical Qwen3.5 tests on Android 13+ arm64 with at least 6 GB RAM; no model-quality or release approval]]
 - `catalog/android_gguf_candidates.yaml:50` — [[VERIFY: reviewed computed app-source pin; complete runtime Maven sources/notices, exact native binary correspondence and remaining OpenMP/NDK/CMake input closure and delegated font/TTS behavior remain open; known exact submodule, release-log Khronos headers, emoji and graphics source versions are linked]]
