@@ -4929,9 +4929,9 @@
     "id": "simplewiki_en_offline",
     "family": "generated",
     "title": "Simple English Wikipedia, no pictures — offline reference edition",
-    "version": "Kiwix 2026-09; regenerated at development epoch 1793404800",
+    "version": "Frozen development recipe; two complete matching builds at epoch 1793404800",
     "size_bytes": 790886776,
-    "sha256": "31f0f5d140b4be3e9d1a1ef36af4458bf9d2a3540bd96298b452ee8b9576f6c0",
+    "sha256": "95e45905039855bea0431f7919ccd7676315e6c79b70da2cce7d806ed417c591",
     "license": "CC-BY-SA-4.0",
     "attribution": "Simple English Wikipedia contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained",
     "license_proof_url": "https://simple.wikipedia.org/wiki/Wikipedia:Copyrights",
@@ -4945,7 +4945,7 @@
     "inputs": [
       "simplewiki_en_nopic"
     ],
-    "pipeline_version": "zim-offline-v1-4fb0484a3aebba54b9aecdc78c6df34a76049b88e1b53e2073ced4bf7e96eaeb",
+    "pipeline_version": "zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2",
     "review": "[[VERIFY: human pin and retained nontext-license review, full repeated generation with final producer freeze and physical Kiwix checks; first complete strict-audit archive retains title search, with no full-text index]]"
   },
   {
