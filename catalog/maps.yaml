@@ -1151,9 +1151,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Bounded development build; fixed epoch 1793404800",
+    "size_bytes": 47811343,
+    "sha256": "c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -1162,8 +1162,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete national collection, application redistribution permission, and physical Android install/import/GPS checks]]",
     "id": "android_extract_ia",
     "title": "Census IA road-source extract",
     "inputs": [
@@ -1174,9 +1174,9 @@
   },
   {
     "family": "generated",
-    "version": "[[VERIFY: freeze the map recipe and build epoch]]",
-    "size_bytes": "[[VERIFY: measured generated payload bytes]]",
-    "sha256": "[[VERIFY: measured complete generation manifest SHA-256]]",
+    "version": "Bounded development build; fixed epoch 1793404800",
+    "size_bytes": 148543596,
+    "sha256": "404757adf369c48e33c1a589e1194049c2327133a39ce8728ffcb2da9a46080d",
     "license": "ODbL-1.0 AND US-PD",
     "attribution": "OpenStreetMap contributors; U.S. Census Bureau",
     "license_proof_url": "https://www.openstreetmap.org/copyright",
@@ -1185,8 +1185,8 @@
     "profiles": [
       "full"
     ],
-    "pipeline_version": "[[VERIFY: measured pinned map pipeline version]]",
-    "review": "[[VERIFY: human review of generated map pins and actual state coverage after repeated builds]]",
+    "pipeline_version": "android-split-v1-13d6a6219518bf0a7f8e0ab141fb33191ff774e242dbde154260bbdac575f379",
+    "review": "[[VERIFY: independent development pin review, final source freeze, complete national collection, application redistribution permission, and physical Android install/import/GPS checks]]",
     "id": "android_map_ia",
     "title": "OsmAnd roads-and-places map for IA",
     "inputs": [

@@ -27,6 +27,16 @@ sources. The 20 placed map payloads total 1,957,632,931 bytes. Their measured
 catalog pins are adopted without changing any producer file or clearing a
 review hold. California and the 35 parallel assignments remain separate.
 
+The first parallel pair, Iowa, then matched across two independent split builds:
+two OBF regions and their original filtered source, totaling 148,543,596 placed
+bytes. Its [pair receipt](evidence/android-iowa-pair.json) records all payload and
+intermediate checks. An additional
+[subset check](evidence/android-iowa-subsets.json) verifies both regions' object
+references and exact original-source object data. The checks completed in a
+network-disabled container capped at one CPU and 6 GiB. Earlier 1 GiB and 3 GiB
+audit attempts exhausted their limits; no producer output was changed. This
+brings accepted pairs to 21 jurisdictions without establishing a national set.
+
 | Worker worktree | Assigned jurisdictions |
 | --- | --- |
 | `73-android-worker` | FL, ID, KS, ME, MO, NC, NM, OH, PA, TN, VA, WV |
