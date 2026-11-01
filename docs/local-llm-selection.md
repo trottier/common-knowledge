@@ -36,7 +36,10 @@ to a temporary writable folder and leaves the model on the drive. It binds to
 127.0.0.1 with offline mode, a single inference slot and context shifting disabled.
 It opens the browser only after its own process reports readiness. The browser
 uses local assets and keeps the conversation in memory. START is included with
-every request; failed or canceled turns are not added to history.
+every request when it fits the conservative context budget. Otherwise the prompt
+contains the exact section titles, and the page tells the reader to open START
+for instructions. The full English and Spanish START text is available from
+local page links in either mode. Failed or canceled turns are not added to history.
 
 [PocketPal 1.22.0](https://github.com/a-ghorbani/pocketpal-ai/releases/tag/v1.22.0)
 is the Android candidate. The catalog pins its APK size, SHA-256, signer and MIT
@@ -66,6 +69,17 @@ Two independent full-profile bundle builds at epoch 1793401527 produced identica
 payload hashes and generation manifests: 44,039,478 bytes, manifest SHA-256
 `af99947cc4b7e49a9e9c014b3cb1fd5f680bff42fb0c1bd0baeedb238a4276eb`.
 This checks the bundle, not a complete drive image.
+
+After the Android import-guide changes, fresh sample and full bundle pairs at
+development epoch 1793404800 matched again. The
+[repeat receipt](evidence/local-llm-repeat.json) binds the exact container image,
+generation manifests, and rehashed payload and intermediate entries in both
+builds and their canonical copies. Sample payloads total 44,076,690 bytes; full
+payloads total 44,053,192 bytes. The recipe is
+`local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6`.
+The model remains a separate file. This establishes packaging reproducibility;
+model quality, physical devices, source completeness, and human reviews remain
+open.
 
 Run `uv run pytest tests/test_llm.py` inside the pinned build container. New browser
 code uses Bun; the atlas retains its documented Node native-module ABI constraint.

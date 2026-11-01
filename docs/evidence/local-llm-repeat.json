@@ -1,0 +1,902 @@
+{
+  "development_epoch": 1793404800,
+  "producer_commit": "362770c2b5247d5782753a7b7a300ac3b4b786c9",
+  "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "network": "none",
+  "cpus": 1,
+  "memory_limit": "1g",
+  "profiles": {
+    "sample": {
+      "item": "local_llm_sample",
+      "size_bytes": 44076690,
+      "sha256": "f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71",
+      "pipeline_version": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
+      "copies": [
+        {
+          "output": "build/local-llm-repeat/sample-a",
+          "verified_entries": [
+            {
+              "path": "COMO_USAR.pdf",
+              "sha256": "4387031e7a011e93901471f78d2e720b9a8b4a6d544d1ad7efb6cf478ae89c1b",
+              "size_bytes": 23174
+            },
+            {
+              "path": "COMO_USAR_print.pdf",
+              "sha256": "d54f20dc23a259cf9c2811dd328cff3efe5debe4f42ae3b94f5d30bd3de8b08b",
+              "size_bytes": 20430
+            },
+            {
+              "path": "HOW_TO.pdf",
+              "sha256": "40ee488d356ed617137cd65f1b369e8dd86eb355fd7d02061a3f3bf97d7153bc",
+              "size_bytes": 22202
+            },
+            {
+              "path": "HOW_TO_print.pdf",
+              "sha256": "a70c951ab429b5d7bfef73c1574788c840aad8c6231dbc28cb7dc6027f3be3a6",
+              "size_bytes": 19831
+            },
+            {
+              "path": "LICENSES/Apache-2.0.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "size_bytes": 11358
+            },
+            {
+              "path": "LICENSES/Original-content-CC0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "size_bytes": 7048
+            },
+            {
+              "path": "LICENSES/llamafile_license.txt",
+              "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+              "size_bytes": 583
+            },
+            {
+              "path": "LICENSES/llamafile_llama_notices.txt",
+              "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+              "size_bytes": 3463
+            },
+            {
+              "path": "LICENSES/noto_sans_license.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "size_bytes": 4396
+            },
+            {
+              "path": "LICENSES/pocketpal_license.txt",
+              "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+              "size_bytes": 1072
+            },
+            {
+              "path": "LICENSES/qwen_sample_license.txt",
+              "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+              "size_bytes": 11343
+            },
+            {
+              "path": "SOURCE.TXT",
+              "sha256": "aa7f08ef377f6347408ab51b0b231b96c39d4873de29da8eb4ac0c9d34a57736",
+              "size_bytes": 415
+            },
+            {
+              "path": "Start Local LLM - Linux.sh",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Mac.command",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Windows.bat",
+              "sha256": "c84da806749a9234de16dc42949f44e09d141302e0db7d81f8d90ec34042a69a",
+              "size_bytes": 115
+            },
+            {
+              "path": "WARNING.TXT",
+              "sha256": "b9240619b3c62df558c4ada4ead02271a8e5b8b81055194e4b429118da08019a",
+              "size_bytes": 195
+            },
+            {
+              "path": "launch.ps1",
+              "sha256": "ae7f4b735e270679ab6cba7b02f00ea7b2c707804a42ecfcfbdcbd65db8ea02a",
+              "size_bytes": 2217
+            },
+            {
+              "path": "launch.sh",
+              "sha256": "82ee49377aec70bdbbadb30988e63080347fb0c38138a134935be0431bb71473",
+              "size_bytes": 1741
+            },
+            {
+              "path": "llamafile.exe",
+              "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+              "size_bytes": 43856395
+            },
+            {
+              "path": "ui/app.js",
+              "sha256": "393b41e7ec1b49ef0523685a6c63b1b31c2cfc736553afc6675e3036727f6415",
+              "size_bytes": 4236
+            },
+            {
+              "path": "ui/index.html",
+              "sha256": "0963a90d427a3dbd94241ccfb9129c192ca30688218e8dca865c4ef11cac2f3e",
+              "size_bytes": 1332
+            },
+            {
+              "path": "ui/settings.json",
+              "sha256": "38d963519f705622aee283722d578a93802e881801c3cfb5ef5edb26e0b7a442",
+              "size_bytes": 827
+            },
+            {
+              "path": "ui/start-en.txt",
+              "sha256": "1bba3bbfd1304c6b04fac5bbf484106b42393e59034c8977e35aa4fc912148fd",
+              "size_bytes": 26146
+            },
+            {
+              "path": "ui/start-es.txt",
+              "sha256": "810f8329510b500bab83960734e1de798e3b57db1aead8b138add84c51dceda8",
+              "size_bytes": 29038
+            },
+            {
+              "path": "ui/style.css",
+              "sha256": "9485224274a031442eaf35a7f56fe2b2a31011a927d3a43bfde93a71a22e15c1",
+              "size_bytes": 689
+            },
+            {
+              "path": "ui/system-en.txt",
+              "sha256": "f831ff08e78e4d2aab29b81b0edb5655ce0cce1997d0363dee53afd162575487",
+              "size_bytes": 27036
+            },
+            {
+              "path": "ui/system-es.txt",
+              "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+              "size_bytes": 1306
+            },
+            {
+              "path": "model.json",
+              "sha256": "7d3be018c48cc67b4766e7e3637b74210642891a3a44e37692bad70b7ef41ce7",
+              "size_bytes": 860
+            }
+          ],
+          "generation_file_sha256": "ce5e7778d6ab85d74b9e48d6dea1f545234c04c952a726cc59663ee7f703b388"
+        },
+        {
+          "output": "build/local-llm-repeat/sample-b",
+          "verified_entries": [
+            {
+              "path": "COMO_USAR.pdf",
+              "sha256": "4387031e7a011e93901471f78d2e720b9a8b4a6d544d1ad7efb6cf478ae89c1b",
+              "size_bytes": 23174
+            },
+            {
+              "path": "COMO_USAR_print.pdf",
+              "sha256": "d54f20dc23a259cf9c2811dd328cff3efe5debe4f42ae3b94f5d30bd3de8b08b",
+              "size_bytes": 20430
+            },
+            {
+              "path": "HOW_TO.pdf",
+              "sha256": "40ee488d356ed617137cd65f1b369e8dd86eb355fd7d02061a3f3bf97d7153bc",
+              "size_bytes": 22202
+            },
+            {
+              "path": "HOW_TO_print.pdf",
+              "sha256": "a70c951ab429b5d7bfef73c1574788c840aad8c6231dbc28cb7dc6027f3be3a6",
+              "size_bytes": 19831
+            },
+            {
+              "path": "LICENSES/Apache-2.0.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "size_bytes": 11358
+            },
+            {
+              "path": "LICENSES/Original-content-CC0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "size_bytes": 7048
+            },
+            {
+              "path": "LICENSES/llamafile_license.txt",
+              "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+              "size_bytes": 583
+            },
+            {
+              "path": "LICENSES/llamafile_llama_notices.txt",
+              "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+              "size_bytes": 3463
+            },
+            {
+              "path": "LICENSES/noto_sans_license.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "size_bytes": 4396
+            },
+            {
+              "path": "LICENSES/pocketpal_license.txt",
+              "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+              "size_bytes": 1072
+            },
+            {
+              "path": "LICENSES/qwen_sample_license.txt",
+              "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+              "size_bytes": 11343
+            },
+            {
+              "path": "SOURCE.TXT",
+              "sha256": "aa7f08ef377f6347408ab51b0b231b96c39d4873de29da8eb4ac0c9d34a57736",
+              "size_bytes": 415
+            },
+            {
+              "path": "Start Local LLM - Linux.sh",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Mac.command",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Windows.bat",
+              "sha256": "c84da806749a9234de16dc42949f44e09d141302e0db7d81f8d90ec34042a69a",
+              "size_bytes": 115
+            },
+            {
+              "path": "WARNING.TXT",
+              "sha256": "b9240619b3c62df558c4ada4ead02271a8e5b8b81055194e4b429118da08019a",
+              "size_bytes": 195
+            },
+            {
+              "path": "launch.ps1",
+              "sha256": "ae7f4b735e270679ab6cba7b02f00ea7b2c707804a42ecfcfbdcbd65db8ea02a",
+              "size_bytes": 2217
+            },
+            {
+              "path": "launch.sh",
+              "sha256": "82ee49377aec70bdbbadb30988e63080347fb0c38138a134935be0431bb71473",
+              "size_bytes": 1741
+            },
+            {
+              "path": "llamafile.exe",
+              "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+              "size_bytes": 43856395
+            },
+            {
+              "path": "ui/app.js",
+              "sha256": "393b41e7ec1b49ef0523685a6c63b1b31c2cfc736553afc6675e3036727f6415",
+              "size_bytes": 4236
+            },
+            {
+              "path": "ui/index.html",
+              "sha256": "0963a90d427a3dbd94241ccfb9129c192ca30688218e8dca865c4ef11cac2f3e",
+              "size_bytes": 1332
+            },
+            {
+              "path": "ui/settings.json",
+              "sha256": "38d963519f705622aee283722d578a93802e881801c3cfb5ef5edb26e0b7a442",
+              "size_bytes": 827
+            },
+            {
+              "path": "ui/start-en.txt",
+              "sha256": "1bba3bbfd1304c6b04fac5bbf484106b42393e59034c8977e35aa4fc912148fd",
+              "size_bytes": 26146
+            },
+            {
+              "path": "ui/start-es.txt",
+              "sha256": "810f8329510b500bab83960734e1de798e3b57db1aead8b138add84c51dceda8",
+              "size_bytes": 29038
+            },
+            {
+              "path": "ui/style.css",
+              "sha256": "9485224274a031442eaf35a7f56fe2b2a31011a927d3a43bfde93a71a22e15c1",
+              "size_bytes": 689
+            },
+            {
+              "path": "ui/system-en.txt",
+              "sha256": "f831ff08e78e4d2aab29b81b0edb5655ce0cce1997d0363dee53afd162575487",
+              "size_bytes": 27036
+            },
+            {
+              "path": "ui/system-es.txt",
+              "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+              "size_bytes": 1306
+            },
+            {
+              "path": "model.json",
+              "sha256": "7d3be018c48cc67b4766e7e3637b74210642891a3a44e37692bad70b7ef41ce7",
+              "size_bytes": 860
+            }
+          ],
+          "generation_file_sha256": "ce5e7778d6ab85d74b9e48d6dea1f545234c04c952a726cc59663ee7f703b388"
+        },
+        {
+          "output": "build/generated/local_llm_sample",
+          "verified_entries": [
+            {
+              "path": "COMO_USAR.pdf",
+              "sha256": "4387031e7a011e93901471f78d2e720b9a8b4a6d544d1ad7efb6cf478ae89c1b",
+              "size_bytes": 23174
+            },
+            {
+              "path": "COMO_USAR_print.pdf",
+              "sha256": "d54f20dc23a259cf9c2811dd328cff3efe5debe4f42ae3b94f5d30bd3de8b08b",
+              "size_bytes": 20430
+            },
+            {
+              "path": "HOW_TO.pdf",
+              "sha256": "40ee488d356ed617137cd65f1b369e8dd86eb355fd7d02061a3f3bf97d7153bc",
+              "size_bytes": 22202
+            },
+            {
+              "path": "HOW_TO_print.pdf",
+              "sha256": "a70c951ab429b5d7bfef73c1574788c840aad8c6231dbc28cb7dc6027f3be3a6",
+              "size_bytes": 19831
+            },
+            {
+              "path": "LICENSES/Apache-2.0.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "size_bytes": 11358
+            },
+            {
+              "path": "LICENSES/Original-content-CC0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "size_bytes": 7048
+            },
+            {
+              "path": "LICENSES/llamafile_license.txt",
+              "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+              "size_bytes": 583
+            },
+            {
+              "path": "LICENSES/llamafile_llama_notices.txt",
+              "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+              "size_bytes": 3463
+            },
+            {
+              "path": "LICENSES/noto_sans_license.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "size_bytes": 4396
+            },
+            {
+              "path": "LICENSES/pocketpal_license.txt",
+              "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+              "size_bytes": 1072
+            },
+            {
+              "path": "LICENSES/qwen_sample_license.txt",
+              "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+              "size_bytes": 11343
+            },
+            {
+              "path": "SOURCE.TXT",
+              "sha256": "aa7f08ef377f6347408ab51b0b231b96c39d4873de29da8eb4ac0c9d34a57736",
+              "size_bytes": 415
+            },
+            {
+              "path": "Start Local LLM - Linux.sh",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Mac.command",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Windows.bat",
+              "sha256": "c84da806749a9234de16dc42949f44e09d141302e0db7d81f8d90ec34042a69a",
+              "size_bytes": 115
+            },
+            {
+              "path": "WARNING.TXT",
+              "sha256": "b9240619b3c62df558c4ada4ead02271a8e5b8b81055194e4b429118da08019a",
+              "size_bytes": 195
+            },
+            {
+              "path": "launch.ps1",
+              "sha256": "ae7f4b735e270679ab6cba7b02f00ea7b2c707804a42ecfcfbdcbd65db8ea02a",
+              "size_bytes": 2217
+            },
+            {
+              "path": "launch.sh",
+              "sha256": "82ee49377aec70bdbbadb30988e63080347fb0c38138a134935be0431bb71473",
+              "size_bytes": 1741
+            },
+            {
+              "path": "llamafile.exe",
+              "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+              "size_bytes": 43856395
+            },
+            {
+              "path": "ui/app.js",
+              "sha256": "393b41e7ec1b49ef0523685a6c63b1b31c2cfc736553afc6675e3036727f6415",
+              "size_bytes": 4236
+            },
+            {
+              "path": "ui/index.html",
+              "sha256": "0963a90d427a3dbd94241ccfb9129c192ca30688218e8dca865c4ef11cac2f3e",
+              "size_bytes": 1332
+            },
+            {
+              "path": "ui/settings.json",
+              "sha256": "38d963519f705622aee283722d578a93802e881801c3cfb5ef5edb26e0b7a442",
+              "size_bytes": 827
+            },
+            {
+              "path": "ui/start-en.txt",
+              "sha256": "1bba3bbfd1304c6b04fac5bbf484106b42393e59034c8977e35aa4fc912148fd",
+              "size_bytes": 26146
+            },
+            {
+              "path": "ui/start-es.txt",
+              "sha256": "810f8329510b500bab83960734e1de798e3b57db1aead8b138add84c51dceda8",
+              "size_bytes": 29038
+            },
+            {
+              "path": "ui/style.css",
+              "sha256": "9485224274a031442eaf35a7f56fe2b2a31011a927d3a43bfde93a71a22e15c1",
+              "size_bytes": 689
+            },
+            {
+              "path": "ui/system-en.txt",
+              "sha256": "f831ff08e78e4d2aab29b81b0edb5655ce0cce1997d0363dee53afd162575487",
+              "size_bytes": 27036
+            },
+            {
+              "path": "ui/system-es.txt",
+              "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+              "size_bytes": 1306
+            },
+            {
+              "path": "model.json",
+              "sha256": "7d3be018c48cc67b4766e7e3637b74210642891a3a44e37692bad70b7ef41ce7",
+              "size_bytes": 860
+            }
+          ],
+          "generation_file_sha256": "ce5e7778d6ab85d74b9e48d6dea1f545234c04c952a726cc59663ee7f703b388"
+        }
+      ]
+    },
+    "full": {
+      "item": "local_llm_full",
+      "size_bytes": 44053192,
+      "sha256": "f213ebc3e8e2075eb095160c2ff1924e5c25848885c4f6f857583f8ba4eadcc9",
+      "pipeline_version": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
+      "copies": [
+        {
+          "output": "build/local-llm-repeat/full-a",
+          "verified_entries": [
+            {
+              "path": "COMO_USAR.pdf",
+              "sha256": "4387031e7a011e93901471f78d2e720b9a8b4a6d544d1ad7efb6cf478ae89c1b",
+              "size_bytes": 23174
+            },
+            {
+              "path": "COMO_USAR_print.pdf",
+              "sha256": "d54f20dc23a259cf9c2811dd328cff3efe5debe4f42ae3b94f5d30bd3de8b08b",
+              "size_bytes": 20430
+            },
+            {
+              "path": "HOW_TO.pdf",
+              "sha256": "40ee488d356ed617137cd65f1b369e8dd86eb355fd7d02061a3f3bf97d7153bc",
+              "size_bytes": 22202
+            },
+            {
+              "path": "HOW_TO_print.pdf",
+              "sha256": "a70c951ab429b5d7bfef73c1574788c840aad8c6231dbc28cb7dc6027f3be3a6",
+              "size_bytes": 19831
+            },
+            {
+              "path": "LICENSES/Apache-2.0.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "size_bytes": 11358
+            },
+            {
+              "path": "LICENSES/Original-content-CC0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "size_bytes": 7048
+            },
+            {
+              "path": "LICENSES/llamafile_license.txt",
+              "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+              "size_bytes": 583
+            },
+            {
+              "path": "LICENSES/llamafile_llama_notices.txt",
+              "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+              "size_bytes": 3463
+            },
+            {
+              "path": "LICENSES/noto_sans_license.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "size_bytes": 4396
+            },
+            {
+              "path": "LICENSES/pocketpal_license.txt",
+              "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+              "size_bytes": 1072
+            },
+            {
+              "path": "LICENSES/qwen_full_license.txt",
+              "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+              "size_bytes": 11343
+            },
+            {
+              "path": "SOURCE.TXT",
+              "sha256": "3a0831e17988574812ec26af358b23e74225cc305f31da2a4f22a9b46fa53096",
+              "size_bytes": 407
+            },
+            {
+              "path": "Start Local LLM - Linux.sh",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Mac.command",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Windows.bat",
+              "sha256": "c84da806749a9234de16dc42949f44e09d141302e0db7d81f8d90ec34042a69a",
+              "size_bytes": 115
+            },
+            {
+              "path": "WARNING.TXT",
+              "sha256": "b9240619b3c62df558c4ada4ead02271a8e5b8b81055194e4b429118da08019a",
+              "size_bytes": 195
+            },
+            {
+              "path": "launch.ps1",
+              "sha256": "ae7f4b735e270679ab6cba7b02f00ea7b2c707804a42ecfcfbdcbd65db8ea02a",
+              "size_bytes": 2217
+            },
+            {
+              "path": "launch.sh",
+              "sha256": "82ee49377aec70bdbbadb30988e63080347fb0c38138a134935be0431bb71473",
+              "size_bytes": 1741
+            },
+            {
+              "path": "llamafile.exe",
+              "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+              "size_bytes": 43856395
+            },
+            {
+              "path": "ui/app.js",
+              "sha256": "393b41e7ec1b49ef0523685a6c63b1b31c2cfc736553afc6675e3036727f6415",
+              "size_bytes": 4236
+            },
+            {
+              "path": "ui/index.html",
+              "sha256": "0963a90d427a3dbd94241ccfb9129c192ca30688218e8dca865c4ef11cac2f3e",
+              "size_bytes": 1332
+            },
+            {
+              "path": "ui/settings.json",
+              "sha256": "ecadeb49f69b0847d335af2082ea9a9786b2f8ee1db7cebcc44d65e968d4c2f2",
+              "size_bytes": 844
+            },
+            {
+              "path": "ui/start-en.txt",
+              "sha256": "a9d465f6562bd7cd3ac8df3008b84116d0fda624b4b6772c624e091a8d25281d",
+              "size_bytes": 27320
+            },
+            {
+              "path": "ui/start-es.txt",
+              "sha256": "1379bb0d3209e4c0032ee63eabea08c2324df6ea98e30853c83da03500820309",
+              "size_bytes": 30132
+            },
+            {
+              "path": "ui/style.css",
+              "sha256": "9485224274a031442eaf35a7f56fe2b2a31011a927d3a43bfde93a71a22e15c1",
+              "size_bytes": 689
+            },
+            {
+              "path": "ui/system-en.txt",
+              "sha256": "0ada2c1a6bb6eeed853d8969fb0e2d216ea6c00e04d1707cce488c1fdedefdcf",
+              "size_bytes": 1261
+            },
+            {
+              "path": "ui/system-es.txt",
+              "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+              "size_bytes": 1306
+            },
+            {
+              "path": "model.json",
+              "sha256": "a986295b8bbb7af4fe8f16b26fc553f1cd6f1f2b875b95b6ed014d040277c832",
+              "size_bytes": 707
+            }
+          ],
+          "generation_file_sha256": "8110b056e0d8448132d43af1d5e7e72a0051b6720af5eeb024ab57820c5532eb"
+        },
+        {
+          "output": "build/local-llm-repeat/full-b",
+          "verified_entries": [
+            {
+              "path": "COMO_USAR.pdf",
+              "sha256": "4387031e7a011e93901471f78d2e720b9a8b4a6d544d1ad7efb6cf478ae89c1b",
+              "size_bytes": 23174
+            },
+            {
+              "path": "COMO_USAR_print.pdf",
+              "sha256": "d54f20dc23a259cf9c2811dd328cff3efe5debe4f42ae3b94f5d30bd3de8b08b",
+              "size_bytes": 20430
+            },
+            {
+              "path": "HOW_TO.pdf",
+              "sha256": "40ee488d356ed617137cd65f1b369e8dd86eb355fd7d02061a3f3bf97d7153bc",
+              "size_bytes": 22202
+            },
+            {
+              "path": "HOW_TO_print.pdf",
+              "sha256": "a70c951ab429b5d7bfef73c1574788c840aad8c6231dbc28cb7dc6027f3be3a6",
+              "size_bytes": 19831
+            },
+            {
+              "path": "LICENSES/Apache-2.0.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "size_bytes": 11358
+            },
+            {
+              "path": "LICENSES/Original-content-CC0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "size_bytes": 7048
+            },
+            {
+              "path": "LICENSES/llamafile_license.txt",
+              "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+              "size_bytes": 583
+            },
+            {
+              "path": "LICENSES/llamafile_llama_notices.txt",
+              "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+              "size_bytes": 3463
+            },
+            {
+              "path": "LICENSES/noto_sans_license.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "size_bytes": 4396
+            },
+            {
+              "path": "LICENSES/pocketpal_license.txt",
+              "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+              "size_bytes": 1072
+            },
+            {
+              "path": "LICENSES/qwen_full_license.txt",
+              "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+              "size_bytes": 11343
+            },
+            {
+              "path": "SOURCE.TXT",
+              "sha256": "3a0831e17988574812ec26af358b23e74225cc305f31da2a4f22a9b46fa53096",
+              "size_bytes": 407
+            },
+            {
+              "path": "Start Local LLM - Linux.sh",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Mac.command",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Windows.bat",
+              "sha256": "c84da806749a9234de16dc42949f44e09d141302e0db7d81f8d90ec34042a69a",
+              "size_bytes": 115
+            },
+            {
+              "path": "WARNING.TXT",
+              "sha256": "b9240619b3c62df558c4ada4ead02271a8e5b8b81055194e4b429118da08019a",
+              "size_bytes": 195
+            },
+            {
+              "path": "launch.ps1",
+              "sha256": "ae7f4b735e270679ab6cba7b02f00ea7b2c707804a42ecfcfbdcbd65db8ea02a",
+              "size_bytes": 2217
+            },
+            {
+              "path": "launch.sh",
+              "sha256": "82ee49377aec70bdbbadb30988e63080347fb0c38138a134935be0431bb71473",
+              "size_bytes": 1741
+            },
+            {
+              "path": "llamafile.exe",
+              "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+              "size_bytes": 43856395
+            },
+            {
+              "path": "ui/app.js",
+              "sha256": "393b41e7ec1b49ef0523685a6c63b1b31c2cfc736553afc6675e3036727f6415",
+              "size_bytes": 4236
+            },
+            {
+              "path": "ui/index.html",
+              "sha256": "0963a90d427a3dbd94241ccfb9129c192ca30688218e8dca865c4ef11cac2f3e",
+              "size_bytes": 1332
+            },
+            {
+              "path": "ui/settings.json",
+              "sha256": "ecadeb49f69b0847d335af2082ea9a9786b2f8ee1db7cebcc44d65e968d4c2f2",
+              "size_bytes": 844
+            },
+            {
+              "path": "ui/start-en.txt",
+              "sha256": "a9d465f6562bd7cd3ac8df3008b84116d0fda624b4b6772c624e091a8d25281d",
+              "size_bytes": 27320
+            },
+            {
+              "path": "ui/start-es.txt",
+              "sha256": "1379bb0d3209e4c0032ee63eabea08c2324df6ea98e30853c83da03500820309",
+              "size_bytes": 30132
+            },
+            {
+              "path": "ui/style.css",
+              "sha256": "9485224274a031442eaf35a7f56fe2b2a31011a927d3a43bfde93a71a22e15c1",
+              "size_bytes": 689
+            },
+            {
+              "path": "ui/system-en.txt",
+              "sha256": "0ada2c1a6bb6eeed853d8969fb0e2d216ea6c00e04d1707cce488c1fdedefdcf",
+              "size_bytes": 1261
+            },
+            {
+              "path": "ui/system-es.txt",
+              "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+              "size_bytes": 1306
+            },
+            {
+              "path": "model.json",
+              "sha256": "a986295b8bbb7af4fe8f16b26fc553f1cd6f1f2b875b95b6ed014d040277c832",
+              "size_bytes": 707
+            }
+          ],
+          "generation_file_sha256": "8110b056e0d8448132d43af1d5e7e72a0051b6720af5eeb024ab57820c5532eb"
+        },
+        {
+          "output": "build/generated/local_llm_full",
+          "verified_entries": [
+            {
+              "path": "COMO_USAR.pdf",
+              "sha256": "4387031e7a011e93901471f78d2e720b9a8b4a6d544d1ad7efb6cf478ae89c1b",
+              "size_bytes": 23174
+            },
+            {
+              "path": "COMO_USAR_print.pdf",
+              "sha256": "d54f20dc23a259cf9c2811dd328cff3efe5debe4f42ae3b94f5d30bd3de8b08b",
+              "size_bytes": 20430
+            },
+            {
+              "path": "HOW_TO.pdf",
+              "sha256": "40ee488d356ed617137cd65f1b369e8dd86eb355fd7d02061a3f3bf97d7153bc",
+              "size_bytes": 22202
+            },
+            {
+              "path": "HOW_TO_print.pdf",
+              "sha256": "a70c951ab429b5d7bfef73c1574788c840aad8c6231dbc28cb7dc6027f3be3a6",
+              "size_bytes": 19831
+            },
+            {
+              "path": "LICENSES/Apache-2.0.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "size_bytes": 11358
+            },
+            {
+              "path": "LICENSES/Original-content-CC0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "size_bytes": 7048
+            },
+            {
+              "path": "LICENSES/llamafile_license.txt",
+              "sha256": "df7b68d51e439946dd34ec5c9466f51659fba68940ce7c804d6079ef4fd4b13f",
+              "size_bytes": 583
+            },
+            {
+              "path": "LICENSES/llamafile_llama_notices.txt",
+              "sha256": "c75d8407561e3df0b19df27af4abd06ba2c14fec51a967654e0c62c648d6f280",
+              "size_bytes": 3463
+            },
+            {
+              "path": "LICENSES/noto_sans_license.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "size_bytes": 4396
+            },
+            {
+              "path": "LICENSES/pocketpal_license.txt",
+              "sha256": "be86ce7ef6d7ed703bff27e20aed463d76e939c41a52dd6a179d3ab9f1765d06",
+              "size_bytes": 1072
+            },
+            {
+              "path": "LICENSES/qwen_full_license.txt",
+              "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+              "size_bytes": 11343
+            },
+            {
+              "path": "SOURCE.TXT",
+              "sha256": "3a0831e17988574812ec26af358b23e74225cc305f31da2a4f22a9b46fa53096",
+              "size_bytes": 407
+            },
+            {
+              "path": "Start Local LLM - Linux.sh",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Mac.command",
+              "sha256": "f66d164d63b0918beaf4feeb5d4a459a3bd5b73111c10ff19dee401ffb41182b",
+              "size_bytes": 51
+            },
+            {
+              "path": "Start Local LLM - Windows.bat",
+              "sha256": "c84da806749a9234de16dc42949f44e09d141302e0db7d81f8d90ec34042a69a",
+              "size_bytes": 115
+            },
+            {
+              "path": "WARNING.TXT",
+              "sha256": "b9240619b3c62df558c4ada4ead02271a8e5b8b81055194e4b429118da08019a",
+              "size_bytes": 195
+            },
+            {
+              "path": "launch.ps1",
+              "sha256": "ae7f4b735e270679ab6cba7b02f00ea7b2c707804a42ecfcfbdcbd65db8ea02a",
+              "size_bytes": 2217
+            },
+            {
+              "path": "launch.sh",
+              "sha256": "82ee49377aec70bdbbadb30988e63080347fb0c38138a134935be0431bb71473",
+              "size_bytes": 1741
+            },
+            {
+              "path": "llamafile.exe",
+              "sha256": "756bf97febae557084e8ced9bde7a1cb0c7f6ce778530d582afa219406237a50",
+              "size_bytes": 43856395
+            },
+            {
+              "path": "ui/app.js",
+              "sha256": "393b41e7ec1b49ef0523685a6c63b1b31c2cfc736553afc6675e3036727f6415",
+              "size_bytes": 4236
+            },
+            {
+              "path": "ui/index.html",
+              "sha256": "0963a90d427a3dbd94241ccfb9129c192ca30688218e8dca865c4ef11cac2f3e",
+              "size_bytes": 1332
+            },
+            {
+              "path": "ui/settings.json",
+              "sha256": "ecadeb49f69b0847d335af2082ea9a9786b2f8ee1db7cebcc44d65e968d4c2f2",
+              "size_bytes": 844
+            },
+            {
+              "path": "ui/start-en.txt",
+              "sha256": "a9d465f6562bd7cd3ac8df3008b84116d0fda624b4b6772c624e091a8d25281d",
+              "size_bytes": 27320
+            },
+            {
+              "path": "ui/start-es.txt",
+              "sha256": "1379bb0d3209e4c0032ee63eabea08c2324df6ea98e30853c83da03500820309",
+              "size_bytes": 30132
+            },
+            {
+              "path": "ui/style.css",
+              "sha256": "9485224274a031442eaf35a7f56fe2b2a31011a927d3a43bfde93a71a22e15c1",
+              "size_bytes": 689
+            },
+            {
+              "path": "ui/system-en.txt",
+              "sha256": "0ada2c1a6bb6eeed853d8969fb0e2d216ea6c00e04d1707cce488c1fdedefdcf",
+              "size_bytes": 1261
+            },
+            {
+              "path": "ui/system-es.txt",
+              "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+              "size_bytes": 1306
+            },
+            {
+              "path": "model.json",
+              "sha256": "a986295b8bbb7af4fe8f16b26fc553f1cd6f1f2b875b95b6ed014d040277c832",
+              "size_bytes": 707
+            }
+          ],
+          "generation_file_sha256": "8110b056e0d8448132d43af1d5e7e72a0051b6720af5eeb024ab57820c5532eb"
+        }
+      ]
+    }
+  }
+}
