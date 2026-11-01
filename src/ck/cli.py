@@ -135,6 +135,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     medpdf.add_argument("--epoch", type=int)
     medpdf.add_argument("--limit", type=int, help="Incomplete development subset only")
     medpdf.add_argument("--jobs", type=int, default=1)
+    medpdf.add_argument("--generated", type=Path)
+    wikem = commands.add_parser("wikem", help="Build a checked offline WikEM API snapshot")
+    wikem.add_argument("--cache", type=Path, default=Path("cache"))
+    wikem.add_argument("--output", type=Path, required=True)
+    wikem.add_argument("--epoch", type=int)
     offline_zim = commands.add_parser("offline-zim", help="Regenerate an audited offline ZIM")
     offline_zim.add_argument("--item", required=True)
     offline_zim.add_argument("--cache", type=Path, default=Path("cache"))
@@ -514,6 +519,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                         epoch_for(config, args.epoch),
                         args.limit,
                         args.jobs,
+                        args.generated,
                     ),
                     indent=2,
                 )
@@ -572,6 +578,24 @@ def main(argv: Sequence[str] | None = None) -> int:
                         args.output,
                         epoch_for(config, args.epoch),
                         [state.upper() for state in args.states],
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "wikem":
+            from ck.catalog import load_catalog
+            from ck.render import epoch_for
+            from ck.wikem import build_archive
+
+            print(
+                json.dumps(
+                    build_archive(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        epoch_for(config, args.epoch),
                     ),
                     indent=2,
                 )

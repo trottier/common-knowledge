@@ -1,12 +1,14 @@
 """Catalog validation, explicit readiness checks and attribution generation."""
 
 import re
+from functools import lru_cache
 from pathlib import Path, PurePosixPath
 from typing import Annotated, Literal, Self
 
+import yaml
 from pydantic import Field, StringConstraints, model_validator
 
-from ck.config import Configuration, Identifier, Marker, Model, Text, read_yaml
+from ck.config import Configuration, Identifier, Marker, Model, Text, UniqueKeyLoader
 
 Sha256 = Annotated[str, StringConstraints(pattern=r"^[0-9a-f]{64}$")]
 Https = Annotated[str, StringConstraints(pattern=r"^https://[^\s]+$")]
@@ -145,16 +147,26 @@ class Item(Model):
         return problems
 
 
+@lru_cache(maxsize=32)
+def _parse_family(source: bytes) -> tuple[Item, ...]:
+    try:
+        data = yaml.load(source.decode("utf-8"), Loader=UniqueKeyLoader)
+    except (yaml.YAMLError, TypeError) as error:
+        raise ValueError(f"Invalid catalog YAML: {error}") from error
+    if not isinstance(data, list):
+        raise ValueError("Catalog family must be a list")
+    return tuple(Item.model_validate(raw) for raw in data)
+
+
 def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, Item]:
     result = {}
     for path in sorted((root / "catalog").glob("*.yaml")):
         if path.name == "medpdf_topics.yaml":
             continue
-        data = read_yaml(path)
-        if not isinstance(data, list):
-            raise ValueError(f"Catalog family must be a list: {path}")
-        for raw in data:
-            item = Item.model_validate(raw)
+        # Key by actual bytes, not mtimes. Return independent models so a
+        # caller's proposed pin updates cannot mutate the parsed cache.
+        for parsed in _parse_family(path.read_bytes()):
+            item = parsed.model_copy(deep=True)
             if item.id in result:
                 raise ValueError(f"Duplicate catalog id: {item.id}")
             result[item.id] = item

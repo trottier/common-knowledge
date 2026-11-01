@@ -1,5 +1,7 @@
 import hashlib
 import io
+import json
+import os
 from pathlib import Path
 
 import pytest
@@ -31,6 +33,25 @@ def item_for(data=b"fixture"):
             "profiles": ["dev"],
         }
     )
+
+
+def test_catalog_cache_observes_exact_bytes_and_cannot_be_mutated_by_callers(tmp_path):
+    directory = tmp_path / "catalog"
+    directory.mkdir()
+    source = directory / "docs.yaml"
+    value = item_for().model_dump()
+    value["title"] = "Original"
+    source.write_text(json.dumps([value]))
+    first = load_catalog(tmp_path)
+    first["fixture"].title = "Changed by caller"
+    first["fixture"].inputs.append("invalid")
+    assert load_catalog(tmp_path)["fixture"].title == "Original"
+    metadata = source.stat()
+    value["title"] = "Replaced"
+    source.write_text(json.dumps([value]))
+    os.utime(source, ns=(metadata.st_atime_ns, metadata.st_mtime_ns))
+    assert source.stat().st_size == metadata.st_size
+    assert load_catalog(tmp_path)["fixture"].title == "Replaced"
 
 
 class Response(io.BytesIO):

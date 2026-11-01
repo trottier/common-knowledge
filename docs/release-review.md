@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (1094)
+## Remaining VERIFY markers (1095)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -161,6 +161,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `config/build.yaml:5` — [[VERIFY: GitHub Pages URL]]
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
+- `config/wikem-scope.yaml:1` — [[VERIFY: review publisher access-denial scope exclusions]]
 - `catalog/apk.yaml:22` — [[VERIFY: review publisher release SHA-256 and verified signer pin; complete the Android offline-reader checklist and corresponding-source dependency closure review]]
 - `catalog/apk.yaml:46` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]
 - `catalog/apk.yaml:70` — [[VERIFY: human pin and GPL dependency-source review; physical offline installation and peer communication checks remain]]

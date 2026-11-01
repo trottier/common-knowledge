@@ -1,0 +1,21 @@
+{
+  "api_url": "https://wikem.org/w/api.php",
+  "license_url": "https://wikem.org/wiki/Creative_Commons",
+  "translation_suffixes": [
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ]
+}

@@ -211,6 +211,12 @@ def test_draft_selection_has_150_unique_articles():
     assert len({(topic.source, topic.title) for topic in selection.topics}) == 150
 
 
+def test_medical_selection_cannot_claim_review_without_a_named_reviewer_and_date():
+    data = read_yaml(ROOT / "catalog/medpdf_topics.yaml")
+    with pytest.raises(ValueError, match="named reviewer and date"):
+        Topics.model_validate({**data, "status": "reviewed"})
+
+
 def test_reference_resources_are_limited_to_cataloged_font_aliases(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     Path("font").write_bytes(b"Synthetic font resource")

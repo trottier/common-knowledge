@@ -17,13 +17,13 @@ from bs4 import BeautifulSoup
 from fontTools.ttLib import TTFont
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from markupsafe import Markup
-from pydantic import Field
+from pydantic import Field, model_validator
 from weasyprint import HTML
 
 from ck.catalog import Item
 from ck.config import Configuration, Identifier, Model, Text, read_yaml
 from ck.fetch import verify_zim
-from ck.generated import cached_input, generation_manifest
+from ck.generated import cached_input, generation_manifest, verified_generated_files
 from ck.render import OfflineFetcher, pdf_timestamp
 
 
@@ -39,11 +39,23 @@ class Topics(Model):
     reviewed_on: str | None
     topics: list[Topic] = Field(min_length=1)
 
+    @model_validator(mode="after")
+    def named_review(self):
+        if self.status == "reviewed" and not (self.reviewer and self.reviewed_on):
+            raise ValueError("Reviewed medical selections need a named reviewer and date")
+        if self.reviewed_on:
+            date.fromisoformat(self.reviewed_on)
+        return self
+
 
 def article(html: str, expected_license: str) -> dict:
     source = BeautifulSoup(html, "html.parser")
     if source.select_one('meta[property="mw:PageProp/disambiguation"]'):
         raise ValueError("Reference selection resolves to a disambiguation page")
+    if source.select_one('meta[name="ck-source-redirect"]'):
+        raise ValueError(
+            "Reference selection resolves to a source redirect; choose its canonical title"
+        )
     footer = source.select_one(".zim-footer")
     if footer is None:
         raise ValueError("Article has no publisher source/date/license footer")
@@ -256,6 +268,23 @@ def render_article(task: tuple) -> int:
     return len(rendered.pages)
 
 
+def archive_source(
+    item: Item, catalog: dict[str, Item], cache: Path, generated: Path, epoch: int
+) -> tuple[Path, dict]:
+    if item.family == "generated":
+        manifest, payloads = verified_generated_files(item, generated / item.id, catalog)
+        candidates = [path for name, path in payloads.items() if name.endswith(".zim")]
+        if manifest["source_date_epoch"] != epoch or len(candidates) != 1:
+            raise ValueError("Generated medical source needs one complete ZIM at this epoch")
+        path = candidates[0]
+        return path, verify_zim(path)
+    if item.family != "zim":
+        raise ValueError("Medical topics must refer to a pinned ZIM or generated ZIM edition")
+    source_cache = cache if (cache / item.sha256).is_file() else cache / "quarantine"
+    path = cached_input(item, source_cache)
+    return path, verify_zim(path, regeneration_only=True, allow_broken_links=True)
+
+
 def build_medpdf(
     root: Path,
     config: Configuration,
@@ -265,6 +294,7 @@ def build_medpdf(
     epoch: int,
     limit: int | None = None,
     jobs: int = 1,
+    generated: Path | None = None,
 ) -> dict:
     from libzim.reader import Archive
 
@@ -282,12 +312,9 @@ def build_medpdf(
     inputs = {topic.source for topic in topics} | font_ids
     archives, audits = {}, {}
     for identifier in sorted(inputs - font_ids):
-        item = catalog[identifier]
-        if item.family != "zim":
-            raise ValueError("Medical topics must refer to a cataloged ZIM")
-        source_cache = cache if (cache / item.sha256).is_file() else cache / "quarantine"
-        path = cached_input(item, source_cache)
-        audits[identifier] = verify_zim(path, regeneration_only=True, allow_broken_links=True)
+        path, audits[identifier] = archive_source(
+            catalog[identifier], catalog, cache, generated or root / "build/generated", epoch
+        )
         archives[identifier] = Archive(path)
     fonts = {
         f"ck-font:///{identifier}": cached_input(catalog[identifier], cache)
@@ -358,6 +385,8 @@ def build_medpdf(
         recipe = hashlib.sha256()
         for relative in (
             "src/ck/zim2pdf.py",
+            "src/ck/catalog.py",
+            "src/ck/config.py",
             "src/ck/fetch.py",
             "src/ck/render.py",
             "src/ck/generated.py",
