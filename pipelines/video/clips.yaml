@@ -26,3 +26,32 @@ simple_sketchbook:
   filename: 04_How_to_Make_a_Simple_Sketch_Book.mp4
   audio_languages: [en]
   subtitles: []
+sfgov_handwash:
+  source_id: commons_sfgov_handwash_source
+  filename: 05_Hand_Washing.mp4
+  audio_languages: [en]
+  subtitles: []
+summer_grilling:
+  source_id: navy_summer_grilling_source
+  filename: 06_Summer_Grilling_Safety.mp4
+  audio_languages: [en]
+  subtitles:
+    - language: en
+      source_id: navy_summer_grilling_caption_en
+      stream: 0
+be_prepared:
+  source_id: fema_be_prepared_source
+  filename: 07_Be_Prepared.mp4
+  audio_languages: [en]
+  subtitles:
+    - language: en
+      source_id: fema_be_prepared_caption_en
+      stream: 0
+evacuation_route:
+  source_id: fema_evacuation_route_source
+  filename: 08_Learn_Your_Evacuation_Route.mp4
+  audio_languages: [en]
+  subtitles:
+    - language: en
+      source_id: fema_evacuation_route_caption_en
+      stream: 0
