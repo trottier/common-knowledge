@@ -13,3 +13,16 @@ earthquake_drop_cover:
       source_id: usgs_earthquake_drop_caption_en
       stream: 0
       time_offset_seconds: -1652.417
+rope_middle:
+  source_id: commons_rope_middle_source
+  filename: 03_Tying_Off_Onto_the_Middle_of_a_Rope.mp4
+  audio_languages: [en]
+  subtitles:
+    - language: en
+      source_id: commons_rope_middle_caption_en
+      stream: 0
+simple_sketchbook:
+  source_id: commons_simple_sketchbook_source
+  filename: 04_How_to_Make_a_Simple_Sketch_Book.mp4
+  audio_languages: [en]
+  subtitles: []

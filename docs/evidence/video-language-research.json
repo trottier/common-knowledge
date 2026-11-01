@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-11-01",
+  "sources": {
+    "aquarius-es": {
+      "audio_language_tags": [
+        "eng"
+      ],
+      "computed_sha256": "7a8d27d71de2ad53b7cd0ab64705e6fc08bf789830a2f9c93522a7878bef94e1",
+      "download_url": "https://repository.library.noaa.gov/view/noaa/13606/noaa_13606_DS5.mp4",
+      "downloaded_on": "2026-11-01",
+      "duration_seconds": "123.343333",
+      "observation": "First 25 seconds locally recognized as English matching publisher English opening; frame at 15 seconds contains burned-in Spanish captions. No Spanish narration established.",
+      "selection_status": "research only; not in catalog or drive placement; computed pin unreviewed",
+      "size_bytes": 25605354,
+      "subtitle_stream_count": 0
+    },
+    "cdc-foods-separate-en": {
+      "audio_language_tags": [
+        "eng"
+      ],
+      "computed_sha256": "3a2b51c4f1d2e50016955e5ec5907473989e16c8756c5fde0eda997385ea43b5",
+      "download_url": "https://www.cdc.gov/wcms/video/low-res/foodsafety/2018/48214821Keep-Foods-Separate-Eng.mp4",
+      "downloaded_on": "2026-11-01",
+      "duration_seconds": "11.458333",
+      "observation": "Full audio decoded as 1,099,776 float32 samples; minimum and maximum both exactly 0.0. Silent audio cannot demonstrate narrated language switching.",
+      "selection_status": "research only; not in catalog or drive placement; computed pin unreviewed",
+      "size_bytes": 160293,
+      "subtitle_stream_count": 0
+    },
+    "tsunami-en": {
+      "audio_language_tags": [
+        "eng"
+      ],
+      "computed_sha256": "3b9e12b11b1fd3837ed067af02f7686e328dddd91ff1a5476598cf828d8d4d4c",
+      "download_url": "https://www.weather.gov/media/safety/Video/Tsunami_Fast_Draw_English_No_Captions_med.mp4",
+      "downloaded_on": "2026-11-01",
+      "duration_seconds": "106.639875",
+      "observation": "At 50 seconds, completed drawing of man beside ocean with insect above his head.",
+      "selection_status": "research only; not in catalog or drive placement; computed pin unreviewed",
+      "size_bytes": 58926389,
+      "subtitle_stream_count": 0
+    },
+    "tsunami-es": {
+      "audio_language_tags": [
+        "eng"
+      ],
+      "computed_sha256": "0e9b072f9fab79ccf01b0b6e5e021ca9c1324fcc6ed5d1dc0441a84aa0a2443c",
+      "download_url": "https://www.weather.gov/media/safety/Video/Tsunami_Fast_Draw_Spanish_No_Captions_med.mp4",
+      "downloaded_on": "2026-11-01",
+      "duration_seconds": "108.041271",
+      "observation": "At 50 seconds, a hand is still drawing man beside ocean; publisher timeline differs from English.",
+      "selection_status": "research only; not in catalog or drive placement; computed pin unreviewed",
+      "size_bytes": 60526094,
+      "subtitle_stream_count": 0
+    }
+  },
+  "status": "research near misses; no eligible synchronized English/Spanish narration pair established"
+}

@@ -49,6 +49,10 @@ physical device tests. The sample/full commands now include input-generation orc
 execution and final image reproducibility still need validation. The version identifies development work. Unconfirmed
 values remain explicit VERIFY markers, and releases fail while any remain.
 
+The [verification site](https://trottier.github.io/common-knowledge/) is online
+as a development catalog. No release files or full-image hashes are published
+there. Its deployment does not approve the kit or its emergency instructions.
+
 The complete specification and work order are in [AGENTS.md](AGENTS.md).
 [CLAUDE.md](CLAUDE.md) carries the same instructions.
 [docs/roadmap.md](docs/roadmap.md) tracks the remaining steps.

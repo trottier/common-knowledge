@@ -1,0 +1,1937 @@
+{
+  "observed_utc": "2026-11-01T18:53:25.170833+00:00",
+  "source_date_epoch": 1793404800,
+  "source_commit": "d61c247821e926bc308f29a70327b11a0c6ef950",
+  "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "checker_sha256": "3c9438defa46f1da240b999702db6a9ed18882721725aaafd27fe8635e61c722",
+  "shared_verifier_sha256": "74aa9e09fb6fdf3730d553eff63d111bd616c0a890ef6bb6360da657e3d79a04",
+  "independently_rehashed_pairs": 19,
+  "results": [
+    {
+      "state": "AK",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_ak": "dad909772298da267a29eba02dfc0dd25bf33af0feae32f020ce1831ef5c570e"
+      },
+      "sha256": "69e8fb45c6709da36881bfd9967217d6a87caee18fc46b53c8e0c5b770838166",
+      "size_bytes": 39628147,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AK",
+          "bound_files": [
+            {
+              "path": "files/AK_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "997a0a8d33f413df686e8da4e875903cf161cd79b9bd1855176b2de2c95591cf"
+            },
+            {
+              "path": "files/AK_roads_places.obf",
+              "size_bytes": 27191254,
+              "sha256": "273041502c8260fcf8ddef5dc01f064b3357e5c274d8d0a380de53cc033722ce"
+            },
+            {
+              "path": "files/data/AK_roads_places.osm.pbf",
+              "size_bytes": 12436215,
+              "sha256": "041df154222b4a6f001dc61f2d549e85668376bce35b2f0f38dcd8a07366a05b"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 77,
+              "sha256": "fe047edc87c91ecca81fbe0ccf590815f67ec6732d7f401c19159e67027e6db8"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 897,
+              "sha256": "279d50be0ec02605b4e119e299db700530c0d0f3344b05a7e249b931915d6e28"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14860,
+              "sha256": "91149bae2af010aa2e88b6d1fa2bcaf7541c61af47c7707862144f59bfbc2462"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "00e9c06f9541f6e8c23b364047e90eadf7ddb7507c3217847a9fc7a3f712d48f"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AK",
+          "bound_files": [
+            {
+              "path": "files/AK_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "997a0a8d33f413df686e8da4e875903cf161cd79b9bd1855176b2de2c95591cf"
+            },
+            {
+              "path": "files/AK_roads_places.obf",
+              "size_bytes": 27191254,
+              "sha256": "273041502c8260fcf8ddef5dc01f064b3357e5c274d8d0a380de53cc033722ce"
+            },
+            {
+              "path": "files/data/AK_roads_places.osm.pbf",
+              "size_bytes": 12436215,
+              "sha256": "041df154222b4a6f001dc61f2d549e85668376bce35b2f0f38dcd8a07366a05b"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 77,
+              "sha256": "fe047edc87c91ecca81fbe0ccf590815f67ec6732d7f401c19159e67027e6db8"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 897,
+              "sha256": "279d50be0ec02605b4e119e299db700530c0d0f3344b05a7e249b931915d6e28"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14864,
+              "sha256": "37a06a56d801964c3248e25f21e15dd8be455b7e4d6bbc4c54ad4a8d9377563f"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "98f0c9f3ceb0e9a2a75e3e113cbb75c0b32a10d397d5f523ec354de037f5a3a5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "AL",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_al": "2dfaa3edac97398194c19b275711c1f971939ee86e34c437e2bd2c1d589ebe26"
+      },
+      "sha256": "d6b29bacbfaba36ad089933e578db2b46ef923d71596f48c76451bb42af40c60",
+      "size_bytes": 187339889,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AL",
+          "bound_files": [
+            {
+              "path": "files/AL_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "f3180007f242d3a07c94b4db9c231abd78c70f9823b089c66222a69895d93a0c"
+            },
+            {
+              "path": "files/AL_roads_places.obf",
+              "size_bytes": 123331042,
+              "sha256": "92631f6230cca8e82ba3872160fdb4be0a9c6a7281c3cc55ab3e6bbdb4a01ad1"
+            },
+            {
+              "path": "files/data/AL_roads_places.osm.pbf",
+              "size_bytes": 64008169,
+              "sha256": "9ddb825e89a73e6e885f7846ce20e396f951851ff13e54bd5cfd3c5225db86c5"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "ad7a2757acc5a174bc90fc9e2baf4f516470d23115c90beb031149a860a6565e"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 891,
+              "sha256": "bdd908a43d7e57070e02dfb75a11f841cc72381a28f677d538ed23586a50f04a"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 22588,
+              "sha256": "f03f3087a55d9c0f189ac66df192d29e6ed884207aa0bb218f2f9b0cb73ec8f3"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "de3f8483e430be35c19cafc76d809b206d8de0cca209230414efe4bac09f9fe2"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AL",
+          "bound_files": [
+            {
+              "path": "files/AL_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "f3180007f242d3a07c94b4db9c231abd78c70f9823b089c66222a69895d93a0c"
+            },
+            {
+              "path": "files/AL_roads_places.obf",
+              "size_bytes": 123331042,
+              "sha256": "92631f6230cca8e82ba3872160fdb4be0a9c6a7281c3cc55ab3e6bbdb4a01ad1"
+            },
+            {
+              "path": "files/data/AL_roads_places.osm.pbf",
+              "size_bytes": 64008169,
+              "sha256": "9ddb825e89a73e6e885f7846ce20e396f951851ff13e54bd5cfd3c5225db86c5"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "ad7a2757acc5a174bc90fc9e2baf4f516470d23115c90beb031149a860a6565e"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 891,
+              "sha256": "bdd908a43d7e57070e02dfb75a11f841cc72381a28f677d538ed23586a50f04a"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 22495,
+              "sha256": "c6f8482b10f2d76aa5c5406250031829937e349d5f06dac1dd95c80e8b6a9eb6"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "389a72d32e9d2c84c00fde98324e84a85a17195b768da70902e96dba58ea211e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "AR",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_ar": "2fed41d210038f35e517ea78d55c4658c5373f0d1f0015068d9bcedbb646f652"
+      },
+      "sha256": "95efabf9915963c64ec54bb1dbb8988d952f4289b73d8d76e090ddcd1e70d5a1",
+      "size_bytes": 140803388,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AR",
+          "bound_files": [
+            {
+              "path": "files/AR_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "45be0ab01b40615ae7ca93370258cff891196b91189a444d87d3185597cff205"
+            },
+            {
+              "path": "files/AR_roads_places.obf",
+              "size_bytes": 91531735,
+              "sha256": "5beeefb5e0a46ab1b4074d2f7dcdf1f7b8d6a72c1b4a90b38d12971a3c56ec9d"
+            },
+            {
+              "path": "files/data/AR_roads_places.osm.pbf",
+              "size_bytes": 49270975,
+              "sha256": "9f13f35bf29de4e5fcc57fb5b04aa238b7edd4afbb32fd79af388fa33a59d737"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "f876919191c67cdb2d1c437924ac1f393aff1aa67c5cb7097d72eb990be2cfb5"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 896,
+              "sha256": "5d148b4fb91dd6be8b04cfcd3fb96b0212a618ea0a965af6cde95a7f2c3a20e6"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 19981,
+              "sha256": "dc410c547eae4be42304047289648481957a10fee263ba6df25c53a88a636701"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 111,
+              "sha256": "55903f5345ef6d27b21d019c22b3a3ecf5bfe19797e9e13cf7bd5a37e11800ea"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AR",
+          "bound_files": [
+            {
+              "path": "files/AR_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "45be0ab01b40615ae7ca93370258cff891196b91189a444d87d3185597cff205"
+            },
+            {
+              "path": "files/AR_roads_places.obf",
+              "size_bytes": 91531735,
+              "sha256": "5beeefb5e0a46ab1b4074d2f7dcdf1f7b8d6a72c1b4a90b38d12971a3c56ec9d"
+            },
+            {
+              "path": "files/data/AR_roads_places.osm.pbf",
+              "size_bytes": 49270975,
+              "sha256": "9f13f35bf29de4e5fcc57fb5b04aa238b7edd4afbb32fd79af388fa33a59d737"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "f876919191c67cdb2d1c437924ac1f393aff1aa67c5cb7097d72eb990be2cfb5"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 896,
+              "sha256": "5d148b4fb91dd6be8b04cfcd3fb96b0212a618ea0a965af6cde95a7f2c3a20e6"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 20174,
+              "sha256": "de21421012ee8a41a41ac566e5ad88a78c84308571cf78dee15f023edaee72f7"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 111,
+              "sha256": "4fa8d9d090d28a64ae0b87f84182f4396543ff580024eaed1f4c787095121501"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "AS",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_oceania": "c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_as": "0822962f014498d449029d7e035c5e070f38468340d1e533ce22ce7a495a8998"
+      },
+      "sha256": "03dac20bfc37aa5bf80f08b5f522a8d9ee73c5db39f603fbb3d02f1b36366bc5",
+      "size_bytes": 855212,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AS",
+          "bound_files": [
+            {
+              "path": "files/AS_SOURCE.txt",
+              "size_bytes": 694,
+              "sha256": "9798761a4f594e340c7c66b7346ec72c3ff6180ba0940b1a3c0987b32b2164ae"
+            },
+            {
+              "path": "files/AS_roads_places.obf",
+              "size_bytes": 520212,
+              "sha256": "4362699434ab6774495e4bdb5a9497547adf036171b49e6b269d6ee7bdb17f63"
+            },
+            {
+              "path": "files/data/AS_roads_places.osm.pbf",
+              "size_bytes": 334306,
+              "sha256": "86796705b12e6299e61c21c219a515f91e28ab0bdb75caeb98e9e475bf105720"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 47,
+              "sha256": "981614b67fc0e7056802ec974b199c3c5e3247968338576efec69b83c08d9a8b"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 895,
+              "sha256": "ca91f2e1082a5ac94004d3286e6be0da29d591d0f322f72849c29f9e611f9480"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 9010,
+              "sha256": "062344b6c2ab576918f578418f99fd9d2cc44d0c31e0633437d4714b7c9dcdf9"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "3b62dfa36ec7b72e518e79425d6b0a81057f880ade05f99fcfe70518c1ad2fc7"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AS",
+          "bound_files": [
+            {
+              "path": "files/AS_SOURCE.txt",
+              "size_bytes": 694,
+              "sha256": "9798761a4f594e340c7c66b7346ec72c3ff6180ba0940b1a3c0987b32b2164ae"
+            },
+            {
+              "path": "files/AS_roads_places.obf",
+              "size_bytes": 520212,
+              "sha256": "4362699434ab6774495e4bdb5a9497547adf036171b49e6b269d6ee7bdb17f63"
+            },
+            {
+              "path": "files/data/AS_roads_places.osm.pbf",
+              "size_bytes": 334306,
+              "sha256": "86796705b12e6299e61c21c219a515f91e28ab0bdb75caeb98e9e475bf105720"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 47,
+              "sha256": "981614b67fc0e7056802ec974b199c3c5e3247968338576efec69b83c08d9a8b"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 895,
+              "sha256": "ca91f2e1082a5ac94004d3286e6be0da29d591d0f322f72849c29f9e611f9480"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 9203,
+              "sha256": "c55af7d99581b930407d19a7ea077c927ecba8868f5ebd29776f8a9e215304e2"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "400d54aac8dec7dd8f1c0ded74fa4f16dbed65501e3aae3f30acc877abeac085"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "AZ",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_az": "4da5e174ad324709ebfc93b1b78676a6f4e2a3d9378f8214e59e4780ffaf2335"
+      },
+      "sha256": "0134abad36116bdc8f75508402c4bd65b568947a46b412286551227e8f7847d7",
+      "size_bytes": 284918028,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AZ",
+          "bound_files": [
+            {
+              "path": "files/AZ_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "bd0e1419769503caab422ebbf0b903d4a9f72a4674990602d8a9639e75ddd60e"
+            },
+            {
+              "path": "files/AZ_roads_places.obf",
+              "size_bytes": 192457835,
+              "sha256": "4d44b591225c0257a127548efc87446b2a33913bf3f56d2a759cad453fd052c9"
+            },
+            {
+              "path": "files/data/AZ_roads_places.osm.pbf",
+              "size_bytes": 92459515,
+              "sha256": "92a74aa0103772e61efb61f18db831213783a3e4fecdf232442121b46029318b"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 80,
+              "sha256": "ce7833c492f7bc700d9270fcc3e68709d417e2ae5d5fbc41c3057b49ea6d1b9c"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 902,
+              "sha256": "789fca95df836818a00867844ad84a7adeff2226519c2da98850501177e3eeef"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 25633,
+              "sha256": "c9f8974b1b92b3a522056934add3c569762638c167700121a86784ed316f9aef"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 111,
+              "sha256": "0527afa1bd16e004e29b69a0d512b9a905020222c34cd6f5deda3c4ea4c7eec9"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AZ",
+          "bound_files": [
+            {
+              "path": "files/AZ_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "bd0e1419769503caab422ebbf0b903d4a9f72a4674990602d8a9639e75ddd60e"
+            },
+            {
+              "path": "files/AZ_roads_places.obf",
+              "size_bytes": 192457835,
+              "sha256": "4d44b591225c0257a127548efc87446b2a33913bf3f56d2a759cad453fd052c9"
+            },
+            {
+              "path": "files/data/AZ_roads_places.osm.pbf",
+              "size_bytes": 92459515,
+              "sha256": "92a74aa0103772e61efb61f18db831213783a3e4fecdf232442121b46029318b"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 80,
+              "sha256": "ce7833c492f7bc700d9270fcc3e68709d417e2ae5d5fbc41c3057b49ea6d1b9c"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 902,
+              "sha256": "789fca95df836818a00867844ad84a7adeff2226519c2da98850501177e3eeef"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 25150,
+              "sha256": "1d91d0ccc2a36335778c91cfe08b6cee0aef6149310f8e4416b0318e207dfa00"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 111,
+              "sha256": "0923f7e28106b581238a2278729a4bb67f612c5552d1a33ae9db09b77282b550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "CT",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_ct": "0528660d71a86741609d73334322d1a0a4f2e8dd633fd73120ac8d37681cf2b6"
+      },
+      "sha256": "d85b4235a08ec64d6fc10725e59e9665f99bdf14ca119e95ebbf4807c1ae765a",
+      "size_bytes": 120105930,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/CT",
+          "bound_files": [
+            {
+              "path": "files/CT_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "b314e6731b40de9f381ba74918e1c9a9ed95e9dce35c0bfa66619dadf894b433"
+            },
+            {
+              "path": "files/CT_roads_places.obf",
+              "size_bytes": 79570289,
+              "sha256": "e8123aacf7a1d282771ed3b031f36b67479f590bfec7b4ad70a6f1b320c07e2e"
+            },
+            {
+              "path": "files/data/CT_roads_places.osm.pbf",
+              "size_bytes": 40534963,
+              "sha256": "1623c431d642b68b3f8a0c10f9c773db953f5aaf65eeec05ccb839d3fb7c6331"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "e622c62019fcc45ac48f32db01cccef8101fa3b537cfc1ec5d9f8ac8d974b411"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "6e9049b92c3578a080cda17a14277dc438743ece6abe4a393bbdbdfb32abf809"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 23981,
+              "sha256": "2d171ff4022cc098f8a2e683966aa96c4410c09a295b20d63a4292f72c023a06"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "cf4ca6686b04cbea378c382554a9565f0c2a6b92ab8a75c734a77679ccf5c8f8"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/CT",
+          "bound_files": [
+            {
+              "path": "files/CT_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "b314e6731b40de9f381ba74918e1c9a9ed95e9dce35c0bfa66619dadf894b433"
+            },
+            {
+              "path": "files/CT_roads_places.obf",
+              "size_bytes": 79570289,
+              "sha256": "e8123aacf7a1d282771ed3b031f36b67479f590bfec7b4ad70a6f1b320c07e2e"
+            },
+            {
+              "path": "files/data/CT_roads_places.osm.pbf",
+              "size_bytes": 40534963,
+              "sha256": "1623c431d642b68b3f8a0c10f9c773db953f5aaf65eeec05ccb839d3fb7c6331"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "e622c62019fcc45ac48f32db01cccef8101fa3b537cfc1ec5d9f8ac8d974b411"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "6e9049b92c3578a080cda17a14277dc438743ece6abe4a393bbdbdfb32abf809"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 21442,
+              "sha256": "550fbce9971f63827ff06b10f65394fc0ef145e40549116de9fe6e143bf7f061"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "79a4c002c527096bcd2515b2ee78318d0d44776053f1f136784ba2711d3ec5ee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "DC",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_dc": "ba31e6461f121c1a294288f0f352f81e0224f9294bfbc1a9816c6002b6f7f136"
+      },
+      "sha256": "4c0602920daab57bb427fe42ddff086bce6be69463e73d2efbc1f9973a9cc642",
+      "size_bytes": 15678758,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/DC",
+          "bound_files": [
+            {
+              "path": "files/DC_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "baa9faf40ec55a8708ab497697319edb062b29baaec871765432cca45967077a"
+            },
+            {
+              "path": "files/DC_roads_places.obf",
+              "size_bytes": 11299984,
+              "sha256": "fa550ed178168e78149f7a27ce664bc3aad82bb5f5555b6400eb32cd0d110d03"
+            },
+            {
+              "path": "files/data/DC_roads_places.osm.pbf",
+              "size_bytes": 4378096,
+              "sha256": "42374c3d5b65452698fea384fa169c970c6c0c2a88a70e1619af2d169314a6c8"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 77,
+              "sha256": "03d31144a66e4141c5dc79e0aa23ea43ee2d6e5273151853e7aab1cc7f087e11"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 887,
+              "sha256": "5c93533fd16edca9c455064f117d7f2f78ba2398edc6ab0e143e83ebea15943d"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 12857,
+              "sha256": "eb3c7db90559ff74d5834a872f260dc3d587ff1a4f82ca61310351638750ba96"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "31de6628dc51a5bfa3dd13e3c1a77430eb63305346361d1aadfb61b9f47a38fa"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/DC",
+          "bound_files": [
+            {
+              "path": "files/DC_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "baa9faf40ec55a8708ab497697319edb062b29baaec871765432cca45967077a"
+            },
+            {
+              "path": "files/DC_roads_places.obf",
+              "size_bytes": 11299984,
+              "sha256": "fa550ed178168e78149f7a27ce664bc3aad82bb5f5555b6400eb32cd0d110d03"
+            },
+            {
+              "path": "files/data/DC_roads_places.osm.pbf",
+              "size_bytes": 4378096,
+              "sha256": "42374c3d5b65452698fea384fa169c970c6c0c2a88a70e1619af2d169314a6c8"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 77,
+              "sha256": "03d31144a66e4141c5dc79e0aa23ea43ee2d6e5273151853e7aab1cc7f087e11"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 887,
+              "sha256": "5c93533fd16edca9c455064f117d7f2f78ba2398edc6ab0e143e83ebea15943d"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 12760,
+              "sha256": "5c2be504ea0f2d2e6d726c767bcdab61945ab677afe8547a94812475e59afaf7"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "fa405c641f4aaff0df053a3cf8a8405c6204b8af4687b36f19128bef323c5765"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "DE",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_de": "f018e816a3c82427e3f7d86da31a38f3df212974f6ee2e7f378f1472c4ca5a65"
+      },
+      "sha256": "c5439b8e292c97fe79a908f70cb79af5d2b9f93470b4bc998eba8686e40e7846",
+      "size_bytes": 28603733,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/DE",
+          "bound_files": [
+            {
+              "path": "files/DE_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "3f1a36fab839919e2a4a54c1572b3ca814bd25d556eca35919e8f466d6613864"
+            },
+            {
+              "path": "files/DE_roads_places.obf",
+              "size_bytes": 19820130,
+              "sha256": "7faa66e7f30a7576c0e1a1fd1f711690489f29275bfa19fb483b7695cc3bed60"
+            },
+            {
+              "path": "files/data/DE_roads_places.osm.pbf",
+              "size_bytes": 8782925,
+              "sha256": "745f73d2e9156e9b169edb79bb94f64e563ad63e55e1a68eb8c60639c0361155"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "9824653bc06754226d843f48f13c9d64bec7d48ce1bf489737efe44594a0edd9"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 891,
+              "sha256": "9592561b546965580e2952becfc88a33787484b57c3804175a442a97db6ffeed"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14906,
+              "sha256": "21e4d4737bf68e066b1955c3150894124733899744cc290a1802858e49d6acfb"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "ea51e18f6a323ab28f0e04b9e179b4dec4ada9621d22066be93c2d547bc66fcf"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/DE",
+          "bound_files": [
+            {
+              "path": "files/DE_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "3f1a36fab839919e2a4a54c1572b3ca814bd25d556eca35919e8f466d6613864"
+            },
+            {
+              "path": "files/DE_roads_places.obf",
+              "size_bytes": 19820130,
+              "sha256": "7faa66e7f30a7576c0e1a1fd1f711690489f29275bfa19fb483b7695cc3bed60"
+            },
+            {
+              "path": "files/data/DE_roads_places.osm.pbf",
+              "size_bytes": 8782925,
+              "sha256": "745f73d2e9156e9b169edb79bb94f64e563ad63e55e1a68eb8c60639c0361155"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "9824653bc06754226d843f48f13c9d64bec7d48ce1bf489737efe44594a0edd9"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 891,
+              "sha256": "9592561b546965580e2952becfc88a33787484b57c3804175a442a97db6ffeed"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 15486,
+              "sha256": "7307191fcc370f4a2e9a069e1c1344c3d5a47b3a6c2fade010c3e84d934568d7"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 111,
+              "sha256": "7a02d54a0db7bbcbe72d8c8d9f405f03e6328337e9ae8f2cba9e9434341e80d2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "GU",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_oceania": "c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_gu": "4e9fced3b4321557d376a63f3dbbf254761b3323e420606f7ae2c375a063be6e"
+      },
+      "sha256": "6b126f3cb9e74d7023cfb30756ac76e237f4945b4c08d04f2c40f9f085cd60d8",
+      "size_bytes": 2653279,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/GU",
+          "bound_files": [
+            {
+              "path": "files/GU_SOURCE.txt",
+              "size_bytes": 694,
+              "sha256": "2c4e208182d49db302cdd4f87dd2a13e1472e5c67b71ac4d5b62abf75378f876"
+            },
+            {
+              "path": "files/GU_roads_places.obf",
+              "size_bytes": 1775528,
+              "sha256": "8e8a5a557c23f6b18beccb362518224c6f1245970272a81f119d85cbe80c1ff9"
+            },
+            {
+              "path": "files/data/GU_roads_places.osm.pbf",
+              "size_bytes": 877057,
+              "sha256": "87bdeb9cff8ad2def2c321bfdeb9286687a4b4cf2c1fa064015ec44a21b7e00c"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 73,
+              "sha256": "cc3998f9d3deca68dc19f892dfe1e7d95611e90e801d47e4b7d821d5d7d2b79e"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 877,
+              "sha256": "893d96b98628dbcc0aa7847f58df893dc6d7086e738768981930cbba36ed9fb4"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 10107,
+              "sha256": "e1728d4980a0f03747db974c72497c54b2742336a0070574721256033047897b"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "9c5e430474ee103701d9abf0062e6d20a8fb78a97b85f34c2d8c427285be16d4"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/GU",
+          "bound_files": [
+            {
+              "path": "files/GU_SOURCE.txt",
+              "size_bytes": 694,
+              "sha256": "2c4e208182d49db302cdd4f87dd2a13e1472e5c67b71ac4d5b62abf75378f876"
+            },
+            {
+              "path": "files/GU_roads_places.obf",
+              "size_bytes": 1775528,
+              "sha256": "8e8a5a557c23f6b18beccb362518224c6f1245970272a81f119d85cbe80c1ff9"
+            },
+            {
+              "path": "files/data/GU_roads_places.osm.pbf",
+              "size_bytes": 877057,
+              "sha256": "87bdeb9cff8ad2def2c321bfdeb9286687a4b4cf2c1fa064015ec44a21b7e00c"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 73,
+              "sha256": "cc3998f9d3deca68dc19f892dfe1e7d95611e90e801d47e4b7d821d5d7d2b79e"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 877,
+              "sha256": "893d96b98628dbcc0aa7847f58df893dc6d7086e738768981930cbba36ed9fb4"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 10009,
+              "sha256": "45428a4f91b1b388c1636cd086972fef1a1f170f3494737d7cea893bd2794fdf"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "d6837ccc718af7e42397e3e2c4a8a79cdaaa7249fd39ff1d4d79a3cd43a804e9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "HI",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_hi": "ab38a35d6de70d024f1dc79a013c0fdd5b4a8781db0a050fda2c21eae3d01ac2"
+      },
+      "sha256": "548d7d8f2641ac600aea2e5d15452c070582b2f8b6380ad6ff4c04035d75fa6b",
+      "size_bytes": 25416656,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/HI",
+          "bound_files": [
+            {
+              "path": "files/HI_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "ddc159881ab1eed630880b57f2d6761c31b4a1e906a53c424351ad4ce3ea1fde"
+            },
+            {
+              "path": "files/HI_roads_places.obf",
+              "size_bytes": 16979585,
+              "sha256": "33aa93b893374cfbb02d1ed1a964cdf5400e824115aabc39e29d2971b1eb113a"
+            },
+            {
+              "path": "files/data/HI_roads_places.osm.pbf",
+              "size_bytes": 8436393,
+              "sha256": "64e905773d9ae0c7c375b6809dd97d5ee297d9d6720313fe2d11f28a782eccc1"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "1ae48795488e11453c7992522331346a2790b34fe68c431b09b648baa1379486"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "90eed8775866bd9565b124b2c8a73e314c6e98913bbc9e787aa2eb5bdca8ad3b"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14743,
+              "sha256": "7a803f718ec5a1627531ea72236d90c3873689460cfe667f54bd739e941a411d"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "86ccc3e094aaf8baa0c9ad8c46e7a9787055a86870c7dc660e58ec86c186971f"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/HI",
+          "bound_files": [
+            {
+              "path": "files/HI_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "ddc159881ab1eed630880b57f2d6761c31b4a1e906a53c424351ad4ce3ea1fde"
+            },
+            {
+              "path": "files/HI_roads_places.obf",
+              "size_bytes": 16979585,
+              "sha256": "33aa93b893374cfbb02d1ed1a964cdf5400e824115aabc39e29d2971b1eb113a"
+            },
+            {
+              "path": "files/data/HI_roads_places.osm.pbf",
+              "size_bytes": 8436393,
+              "sha256": "64e905773d9ae0c7c375b6809dd97d5ee297d9d6720313fe2d11f28a782eccc1"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "1ae48795488e11453c7992522331346a2790b34fe68c431b09b648baa1379486"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "90eed8775866bd9565b124b2c8a73e314c6e98913bbc9e787aa2eb5bdca8ad3b"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14744,
+              "sha256": "b964f897f92533c125dffbf8b804a370524cf0f926ed6271b6ddb92cbc716d7e"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "b33a08b3ed0e0d3e7d6ee5b42d7b7b899a7c748d127caf1a6a40ecaa5516caa5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "MA",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_ma": "583131c5874119395233bccdffa14bd43f9535d73f3b3ce5bd520f05471b67a8"
+      },
+      "sha256": "85b40e0696d97db4ad6910f4a95e97d8c5a3eb246cbc285c2eeb25ad0779f831",
+      "size_bytes": 227480218,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/MA",
+          "bound_files": [
+            {
+              "path": "files/MA_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "140d0326fadce4df640a58d754414c4096438cf071c9d72c55ab2f847d16a29d"
+            },
+            {
+              "path": "files/MA_roads_places.obf",
+              "size_bytes": 142373409,
+              "sha256": "ba634bfaaf2261c2403853eabe20570c11ceadc892e5e658de706d6c2fbcd9e5"
+            },
+            {
+              "path": "files/data/MA_roads_places.osm.pbf",
+              "size_bytes": 85106131,
+              "sha256": "261c63d5eae3614c99aebc112b9b1d14591c9d6165e08f543755ef35d80a7437"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 79,
+              "sha256": "4c095f3e7dc7bc34c16fb5b4b53c021309ff8de4d3df6cef3c827dd7e7c636ad"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 896,
+              "sha256": "3a4f3311f60be75caba474f7cd72fb438f2f0e4f9f46f815d4bd41bea7bf15c2"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 24204,
+              "sha256": "c7e8fb5c1798611bfa4deaa79e48c5ca1b9cd8894b2664bb631aa9d9e911df13"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "c7f848a3fbc783e918f61096213a278bdf678ae34095d228427301380b4801bd"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/MA",
+          "bound_files": [
+            {
+              "path": "files/MA_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "140d0326fadce4df640a58d754414c4096438cf071c9d72c55ab2f847d16a29d"
+            },
+            {
+              "path": "files/MA_roads_places.obf",
+              "size_bytes": 142373409,
+              "sha256": "ba634bfaaf2261c2403853eabe20570c11ceadc892e5e658de706d6c2fbcd9e5"
+            },
+            {
+              "path": "files/data/MA_roads_places.osm.pbf",
+              "size_bytes": 85106131,
+              "sha256": "261c63d5eae3614c99aebc112b9b1d14591c9d6165e08f543755ef35d80a7437"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 79,
+              "sha256": "4c095f3e7dc7bc34c16fb5b4b53c021309ff8de4d3df6cef3c827dd7e7c636ad"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 896,
+              "sha256": "3a4f3311f60be75caba474f7cd72fb438f2f0e4f9f46f815d4bd41bea7bf15c2"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 24109,
+              "sha256": "e17e9f7f2675604b08c473b8db6bc74cf3b264f17fdba03c9ed21f3664afc42f"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "f5866e89382dd240298e9a29f6a4061b6ab334a1ab0ac98b6bf2d6ccc12bd1fe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "MD",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_md": "8456eb101750930a74cac50df8c5e2481d20f23a579c254b908c10e79f86c517"
+      },
+      "sha256": "157f2d9720136463b64e264e578cb4f3e03d0d7f50cf2d3d15bf305414cb5570",
+      "size_bytes": 187808598,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/MD",
+          "bound_files": [
+            {
+              "path": "files/MD_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "08fcd806baba7adec11e991ce8e09e84a415f966fbd9ea3a582fa883bbd8da3a"
+            },
+            {
+              "path": "files/MD_roads_places.obf",
+              "size_bytes": 125511966,
+              "sha256": "a67a9262e5108c2ee19f9ed8580bc1fda7008256b3bf435d744efc3be9413c10"
+            },
+            {
+              "path": "files/data/MD_roads_places.osm.pbf",
+              "size_bytes": 62295954,
+              "sha256": "5af8de23c3f159d880cc65a05e0154f67178456ac31e5d5a0682d4a44806581a"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 79,
+              "sha256": "a87330de5473ff89101d6321309c6fab546d8ac5cd9917c5f7a2ffd5d63e8a96"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "68f8b0abd8028b5eb11fee020bdb22d9595943ce8edd1767c497f855de707222"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 23908,
+              "sha256": "ddd78d5286bc96bd55993b643f15fe671a9eee10f690764cab803513ffb4bb4d"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "26de70a15ac7c3ba6fb0d4f2f6fed0d53c7420a517bade4d9028114b213f9a07"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/MD",
+          "bound_files": [
+            {
+              "path": "files/MD_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "08fcd806baba7adec11e991ce8e09e84a415f966fbd9ea3a582fa883bbd8da3a"
+            },
+            {
+              "path": "files/MD_roads_places.obf",
+              "size_bytes": 125511966,
+              "sha256": "a67a9262e5108c2ee19f9ed8580bc1fda7008256b3bf435d744efc3be9413c10"
+            },
+            {
+              "path": "files/data/MD_roads_places.osm.pbf",
+              "size_bytes": 62295954,
+              "sha256": "5af8de23c3f159d880cc65a05e0154f67178456ac31e5d5a0682d4a44806581a"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 79,
+              "sha256": "a87330de5473ff89101d6321309c6fab546d8ac5cd9917c5f7a2ffd5d63e8a96"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "68f8b0abd8028b5eb11fee020bdb22d9595943ce8edd1767c497f855de707222"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 23523,
+              "sha256": "cee326cf0d747d9127e2905a0053802c8547bb6ac3f1a6486bfbc5e63fbd03a4"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "3b1f5269834c2b6b9b1e29730ef6cf6ad5b79037ebb770c010b324b342a369b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "MP",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_oceania": "c7294a94f30015b20b53a50a9d89b0f4685986cd408716f312c0e2df43cfe519",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_mp": "0d2a429f989953c243ac28468ac2f6865f2b7a7f9b9b411136ae61f4fcc29fc3"
+      },
+      "sha256": "46d3a13c6a912b3cf7080d72b820ec6143badd43c730724f45fc06d51010727a",
+      "size_bytes": 934088,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/MP",
+          "bound_files": [
+            {
+              "path": "files/MP_SOURCE.txt",
+              "size_bytes": 694,
+              "sha256": "1452253b22fd4f256fb86021a2cd77287dab82cb56ee3b0f5b72f0f720d30cc0"
+            },
+            {
+              "path": "files/MP_roads_places.obf",
+              "size_bytes": 631357,
+              "sha256": "ecfa3138b7f4458876916e0e4cf8862383717aad6987c6f61781479864afb068"
+            },
+            {
+              "path": "files/data/MP_roads_places.osm.pbf",
+              "size_bytes": 302037,
+              "sha256": "cba4875157cf9a43698cbb541266878b63e06a77a8a30e7f79db0b3b1e908af0"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 72,
+              "sha256": "d204a8af70526c2096cc12bd17bb20ae6a20f241fbc4357932f150a80eef276b"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 870,
+              "sha256": "1b76f21b6ec32fbbdf9a73473a7e900a19344c25f4410d11325d9a83fc815902"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 9313,
+              "sha256": "dcf6a89021c41ebe77e36c77dfd3463a822533c3816cdc63e0089cb647fc10dd"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "c9a799fdd8a8bca4301986e0334069e51d33e6ce59281d9a50be6dd53263e4ef"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/MP",
+          "bound_files": [
+            {
+              "path": "files/MP_SOURCE.txt",
+              "size_bytes": 694,
+              "sha256": "1452253b22fd4f256fb86021a2cd77287dab82cb56ee3b0f5b72f0f720d30cc0"
+            },
+            {
+              "path": "files/MP_roads_places.obf",
+              "size_bytes": 631357,
+              "sha256": "ecfa3138b7f4458876916e0e4cf8862383717aad6987c6f61781479864afb068"
+            },
+            {
+              "path": "files/data/MP_roads_places.osm.pbf",
+              "size_bytes": 302037,
+              "sha256": "cba4875157cf9a43698cbb541266878b63e06a77a8a30e7f79db0b3b1e908af0"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 72,
+              "sha256": "d204a8af70526c2096cc12bd17bb20ae6a20f241fbc4357932f150a80eef276b"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 870,
+              "sha256": "1b76f21b6ec32fbbdf9a73473a7e900a19344c25f4410d11325d9a83fc815902"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 9310,
+              "sha256": "29d8120ac6a6ef9031161575bd22feafeb9c2cd2c0901ee3ba8c2e53f19fe0e6"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "23b18bc1e2630cb7d17e293754b5faac320e443f186476bc29b63856ce104cf1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "NH",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_nh": "628d7720fe96878db453245d6f66274e1c55c10ff66fafa6caaf90918b261486"
+      },
+      "sha256": "b6351d71e1020cb131e8ce8f4a97263a4351f05dc813e327a2aa4ae7b33dcaa0",
+      "size_bytes": 83989078,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/NH",
+          "bound_files": [
+            {
+              "path": "files/NH_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "602f07f36f3efd6f6e947af82ba14c9d5f61e0be3bbba3b628fd7a7a71aba1e3"
+            },
+            {
+              "path": "files/NH_roads_places.obf",
+              "size_bytes": 54218530,
+              "sha256": "ba94dec733d8d0d254d0389f4e10fcf5f9996c3ab2c4e15f26719e6baf6f8639"
+            },
+            {
+              "path": "files/data/NH_roads_places.osm.pbf",
+              "size_bytes": 29769870,
+              "sha256": "e729500039d35d1c011180d3405dd56f3d2ce1d32cfd00f6276c67ec24276ea9"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "007e455eb61e2391fbc86c38f9e0d5e591b18538325561acddac1e5e91b7147d"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 895,
+              "sha256": "8cc7ebf36a45998b19cdb1509b43d3e870b4371b4dcacd6e60dfc056325fd2c5"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 17959,
+              "sha256": "c6211b35aa6ed94b2c19cd56af086775f48fbee9f7f973915501cff95976cb7f"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "01f1aa0153107e41ae70fa83726b5350e4201b704355e2ba96aa0f7fda8ce9e4"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/NH",
+          "bound_files": [
+            {
+              "path": "files/NH_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "602f07f36f3efd6f6e947af82ba14c9d5f61e0be3bbba3b628fd7a7a71aba1e3"
+            },
+            {
+              "path": "files/NH_roads_places.obf",
+              "size_bytes": 54218530,
+              "sha256": "ba94dec733d8d0d254d0389f4e10fcf5f9996c3ab2c4e15f26719e6baf6f8639"
+            },
+            {
+              "path": "files/data/NH_roads_places.osm.pbf",
+              "size_bytes": 29769870,
+              "sha256": "e729500039d35d1c011180d3405dd56f3d2ce1d32cfd00f6276c67ec24276ea9"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "007e455eb61e2391fbc86c38f9e0d5e591b18538325561acddac1e5e91b7147d"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 895,
+              "sha256": "8cc7ebf36a45998b19cdb1509b43d3e870b4371b4dcacd6e60dfc056325fd2c5"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 17863,
+              "sha256": "50539e0fa467eb643e00c0ccda457e8b87b3ec1f23c73e6461eeed3faa443e7f"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "f442a48a4c95553f30726d43d62dd5755b0e44f806016d8f7daf5945694dd532"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "NJ",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_nj": "bf4d027e68a125876bcc4f3a2bad2bf94720ef83d92bb9bc2a541cfc0964a75d"
+      },
+      "sha256": "8a0c17144bfe11aa380e87717e7f57e42a469810687c955d1a6d919a61a6ed79",
+      "size_bytes": 185240362,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/NJ",
+          "bound_files": [
+            {
+              "path": "files/NJ_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "b6485cd98daf619d968a5896f8e73df74309f7cb5a48322d07f279fed8011ed3"
+            },
+            {
+              "path": "files/NJ_roads_places.obf",
+              "size_bytes": 126935594,
+              "sha256": "046d0cde8189ae90f6e292f75fda5e97887259bd7d6c4445a84998b2decff16a"
+            },
+            {
+              "path": "files/data/NJ_roads_places.osm.pbf",
+              "size_bytes": 58304090,
+              "sha256": "3bc7ee3bc2414e09b015d7ead2b7a4b32c399cf337840e18e4cdc87f78f3e1a9"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 80,
+              "sha256": "1546f8f2c1de22ec02efa385da802e328db506623a279587dc59274f6c06178e"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 892,
+              "sha256": "8e4b93404c22edf593c8d8b4adedb0bff0ebb2712ba2d1ea85e609985f51fab1"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 23770,
+              "sha256": "42fe14212cc4d3bdd2f749fd8ab5b3cdbc05d88c01a0afda4c558d7c55fff3da"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "05afaf9cd55df2428c6401a2808e4143808ee31d9a43aa9c8f85e10f84e26e65"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/NJ",
+          "bound_files": [
+            {
+              "path": "files/NJ_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "b6485cd98daf619d968a5896f8e73df74309f7cb5a48322d07f279fed8011ed3"
+            },
+            {
+              "path": "files/NJ_roads_places.obf",
+              "size_bytes": 126935594,
+              "sha256": "046d0cde8189ae90f6e292f75fda5e97887259bd7d6c4445a84998b2decff16a"
+            },
+            {
+              "path": "files/data/NJ_roads_places.osm.pbf",
+              "size_bytes": 58304090,
+              "sha256": "3bc7ee3bc2414e09b015d7ead2b7a4b32c399cf337840e18e4cdc87f78f3e1a9"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 80,
+              "sha256": "1546f8f2c1de22ec02efa385da802e328db506623a279587dc59274f6c06178e"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 892,
+              "sha256": "8e4b93404c22edf593c8d8b4adedb0bff0ebb2712ba2d1ea85e609985f51fab1"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 23675,
+              "sha256": "62e7ca6f6fea8d5248356060ab7b444199a9bbdc0e8923e962d7d2a0f3e99fed"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "ccb6728504151de29a31e4237233858307e9481a08a99b5411521cf79fd7ae79"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "PR",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_puerto_rico": "82c3e21506394d7eb91984363b6f80835f901d90551f2a8c24210352f203621c",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_pr": "0335feebdcb105abb11c96725cc8c04504487c67bb02dea24ed96018f9545f64"
+      },
+      "sha256": "cfeef529b62e63f77afa684f1898e2396a82ceb76489eccc5675b3bedb17caf4",
+      "size_bytes": 45605792,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/PR",
+          "bound_files": [
+            {
+              "path": "files/PR_SOURCE.txt",
+              "size_bytes": 660,
+              "sha256": "9cc8b7ac8778971880bf6dd67b4f9f247d072b70f580f35efdd6a66a40016c02"
+            },
+            {
+              "path": "files/PR_roads_places.obf",
+              "size_bytes": 30670180,
+              "sha256": "1e83b9f80f8919e61274eb8f602a422a287659aacebd842550df329ab8ec837c"
+            },
+            {
+              "path": "files/data/PR_roads_places.osm.pbf",
+              "size_bytes": 14934952,
+              "sha256": "57ce26d16f6e9d26d877231ac23a1a307e221e2f3ac361ab50557e30491a1da1"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 77,
+              "sha256": "f70772d15d95a4f2ee67ede747cc1b1721e448f205382c2dd9af456e57c0b0d2"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "b1b7afb73ffa52814efd4c785819edf136c4141af1d8a7fcba47bdebe1a79abc"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 15416,
+              "sha256": "cafbe9e7a6d5637b2b92db794f98c01825ccbc92131ac36926c122abd5ccfed7"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "8fad898aa985887b9b7b4979dd24ada244ac5b80eea3f0202f39215810fd6dea"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/PR",
+          "bound_files": [
+            {
+              "path": "files/PR_SOURCE.txt",
+              "size_bytes": 660,
+              "sha256": "9cc8b7ac8778971880bf6dd67b4f9f247d072b70f580f35efdd6a66a40016c02"
+            },
+            {
+              "path": "files/PR_roads_places.obf",
+              "size_bytes": 30670180,
+              "sha256": "1e83b9f80f8919e61274eb8f602a422a287659aacebd842550df329ab8ec837c"
+            },
+            {
+              "path": "files/data/PR_roads_places.osm.pbf",
+              "size_bytes": 14934952,
+              "sha256": "57ce26d16f6e9d26d877231ac23a1a307e221e2f3ac361ab50557e30491a1da1"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 77,
+              "sha256": "f70772d15d95a4f2ee67ede747cc1b1721e448f205382c2dd9af456e57c0b0d2"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "b1b7afb73ffa52814efd4c785819edf136c4141af1d8a7fcba47bdebe1a79abc"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 15520,
+              "sha256": "7608676948bba9bef93c607ac0b4e5916461004ee59329dfcdcb9dd169415b41"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "f766c99e0bf7fa1139adef122ab62914627d7f9f47aad76e5f9bd60967a03934"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "RI",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_ri": "c6d61a22c8b043d1eae1fa08b05f4e75b43594f4e6ca8cd0c781a46f0cb2fadd"
+      },
+      "sha256": "fac6aa5e6b0eeea5e1a2d2b689d74bff7b6ef9fb9ff3af6011e1113f38ed760c",
+      "size_bytes": 28513484,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/RI",
+          "bound_files": [
+            {
+              "path": "files/RI_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "055561f42bb0d65a0514d49a75d242312db0735afb030c7c03a5c2820c6051f9"
+            },
+            {
+              "path": "files/RI_roads_places.obf",
+              "size_bytes": 18911104,
+              "sha256": "a6e52c5141c96cf32d36620ee2764f888bc418e3b5e82cfce6d0901f719905a8"
+            },
+            {
+              "path": "files/data/RI_roads_places.osm.pbf",
+              "size_bytes": 9601702,
+              "sha256": "400bc6775e1bbc3b7f86d03d6308c0ed09cf588e8a3b70622e1cc0ee6446ab0c"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "fbe1fcc1987bd8d254dfef4108aa7f79bb651b876d00f16306d35e2fb93a8455"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 885,
+              "sha256": "29635c193cbe945fe8ffd27be25257898218ba1580f4873cc20f41c43e470708"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14563,
+              "sha256": "faea7950e79126bbb68024d456c81fdaef3e71302012e23de0c3f636f4cb1811"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "3f577117c9a428b3eb29812dd0ab9540ca53c19f6038012c9dc42bd0c3d9e47a"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/RI",
+          "bound_files": [
+            {
+              "path": "files/RI_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "055561f42bb0d65a0514d49a75d242312db0735afb030c7c03a5c2820c6051f9"
+            },
+            {
+              "path": "files/RI_roads_places.obf",
+              "size_bytes": 18911104,
+              "sha256": "a6e52c5141c96cf32d36620ee2764f888bc418e3b5e82cfce6d0901f719905a8"
+            },
+            {
+              "path": "files/data/RI_roads_places.osm.pbf",
+              "size_bytes": 9601702,
+              "sha256": "400bc6775e1bbc3b7f86d03d6308c0ed09cf588e8a3b70622e1cc0ee6446ab0c"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "fbe1fcc1987bd8d254dfef4108aa7f79bb651b876d00f16306d35e2fb93a8455"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 885,
+              "sha256": "29635c193cbe945fe8ffd27be25257898218ba1580f4873cc20f41c43e470708"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 14466,
+              "sha256": "04437324f3bb4cc732696f0736464c7643818cd7b82027bbbf91e2878a70db50"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "f02df7010f8af3e68702db7156e9b4fd8cfbe6ab3dd5c03059cccecfa7a0d1a4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "VI",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_virgin_islands": "dc0ff82695dda2d00cb17ec83d25e00f8e004bc83f9ebb13dba504277d1f1ccc",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_vi": "3fa26b7dd17a7463b7f8b4c4220f3b567d6d53fdf8aaf9f1ef9ac3dc2cacac87"
+      },
+      "sha256": "cc9741ef40419960d8fb42ca63e4d84a8527c0b755464c8cdea7fb9b68956a5c",
+      "size_bytes": 2714697,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/VI",
+          "bound_files": [
+            {
+              "path": "files/VI_SOURCE.txt",
+              "size_bytes": 666,
+              "sha256": "f7383e0c8286196474a286a2c08f0cc413d1239c14313fcf423d2526561f565b"
+            },
+            {
+              "path": "files/VI_roads_places.obf",
+              "size_bytes": 1812747,
+              "sha256": "ddd2326b0b212df10382a3d835e8835cef299db3fb25ee98dc5d33bf77651273"
+            },
+            {
+              "path": "files/data/VI_roads_places.osm.pbf",
+              "size_bytes": 901284,
+              "sha256": "a23534629b29a5b6906d83af1d49432f445d8fd1b88ec3878e688a19594eb270"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 73,
+              "sha256": "1baa23ca64f0a57c930a86b7b76bd9b25fb40558c5e1b3ba868dd4e7a10784fb"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 876,
+              "sha256": "96caca3212e1b8e8f770ffdc4ff99960b620b8a35f65ea959aabcb10e417f109"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 9721,
+              "sha256": "a32561d24ce80eb75193a993ad2f49d1283b5f8c3577af30b27e9d69dd53794a"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "ff791864daa8b22f8d25756affa45928f4034cd9df44333862975d39894ddad4"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/VI",
+          "bound_files": [
+            {
+              "path": "files/VI_SOURCE.txt",
+              "size_bytes": 666,
+              "sha256": "f7383e0c8286196474a286a2c08f0cc413d1239c14313fcf423d2526561f565b"
+            },
+            {
+              "path": "files/VI_roads_places.obf",
+              "size_bytes": 1812747,
+              "sha256": "ddd2326b0b212df10382a3d835e8835cef299db3fb25ee98dc5d33bf77651273"
+            },
+            {
+              "path": "files/data/VI_roads_places.osm.pbf",
+              "size_bytes": 901284,
+              "sha256": "a23534629b29a5b6906d83af1d49432f445d8fd1b88ec3878e688a19594eb270"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 73,
+              "sha256": "1baa23ca64f0a57c930a86b7b76bd9b25fb40558c5e1b3ba868dd4e7a10784fb"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 876,
+              "sha256": "96caca3212e1b8e8f770ffdc4ff99960b620b8a35f65ea959aabcb10e417f109"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 9914,
+              "sha256": "a68747579f2bdad5c0e51d4bce6de830675c6f81760aba3ea9b3ebaa101ea555"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "ca124885fbf676611bbc0a21be344474d4bb21393df42aca1644a7fdab2d61df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "VT",
+      "complete": true,
+      "independent_conversions": 2,
+      "inputs": {
+        "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+        "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+        "android_extract_vt": "39e9899991cd7b99af6088da2cf7869e7bc501f51ba59c009a1beecee00b8071"
+      },
+      "sha256": "dc772ac312798a44c4107945d6f2ee3c77745cb6752ab0edbc3e11ddd68b9c16",
+      "size_bytes": 45532418,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "repeats": [
+        {
+          "repeat": "a",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/VT",
+          "bound_files": [
+            {
+              "path": "files/VT_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "e6aaca41f1baac2921469e97b1fd849fb558e34118f7efa5833f1d5d3280d0b8"
+            },
+            {
+              "path": "files/VT_roads_places.obf",
+              "size_bytes": 29115515,
+              "sha256": "a0d0545a5d19f532ae45f6c2b382fb06b350280c5a50c8549c58de2746bea17d"
+            },
+            {
+              "path": "files/data/VT_roads_places.osm.pbf",
+              "size_bytes": 16416225,
+              "sha256": "4e5d464ae51270300dc3352048c622ca21d02fb7d5baf19da8edfc0007e33ff3"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "60d42d9f41310de875857f75801dfe35c80d64af9f2eb42b9db44494048a3aa3"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "7c5ef0cfd9951621cb941974ba5fd0797b461bcb264e8e558dbb1a5a46b706b9"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 15826,
+              "sha256": "e41e484c8c0f26b879701b61491d2d2d15efa8a331bca06d8f2ac62d924c7e35"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "0edfd91db2b3abc229d5b9fd338f46e8f1efdf9b6d21813cec75ef684991899d"
+            }
+          ]
+        },
+        {
+          "repeat": "b",
+          "output": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/VT",
+          "bound_files": [
+            {
+              "path": "files/VT_SOURCE.txt",
+              "size_bytes": 678,
+              "sha256": "e6aaca41f1baac2921469e97b1fd849fb558e34118f7efa5833f1d5d3280d0b8"
+            },
+            {
+              "path": "files/VT_roads_places.obf",
+              "size_bytes": 29115515,
+              "sha256": "a0d0545a5d19f532ae45f6c2b382fb06b350280c5a50c8549c58de2746bea17d"
+            },
+            {
+              "path": "files/data/VT_roads_places.osm.pbf",
+              "size_bytes": 16416225,
+              "sha256": "4e5d464ae51270300dc3352048c622ca21d02fb7d5baf19da8edfc0007e33ff3"
+            },
+            {
+              "path": "filter.json",
+              "size_bytes": 78,
+              "sha256": "60d42d9f41310de875857f75801dfe35c80d64af9f2eb42b9db44494048a3aa3"
+            },
+            {
+              "path": "inspection.txt",
+              "size_bytes": 893,
+              "sha256": "7c5ef0cfd9951621cb941974ba5fd0797b461bcb264e8e558dbb1a5a46b706b9"
+            }
+          ],
+          "diagnostic_files_not_claimed_identical": [
+            {
+              "path": "creator.log",
+              "size_bytes": 15731,
+              "sha256": "0f026e30e926115a532e4627412ac4b1cabe9127f175377f657efacb9d1e6063"
+            },
+            {
+              "path": "inspection-stderr.log",
+              "size_bytes": 110,
+              "sha256": "63dc0d85b08cdfddba6ae18e3f3833a24dde572cb9bbabdcf21f34a99b9b3617"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "national_collection_complete": false,
+  "human_source_or_device_approval": false,
+  "producer_dirty_paths_at_recheck": [
+    "catalog/maps.yaml"
+  ],
+  "independently_rehashed_bound_files": 190,
+  "independently_rehashed_bytes": 3307680216
+}

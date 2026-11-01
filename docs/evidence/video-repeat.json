@@ -1,0 +1,203 @@
+{
+  "clips": {
+    "handwashing_asl": {
+      "canonical_generation_sha256": "1d9c9d612ae82fecceee8631c2fcb024d9ddf443b5648d33bf7f567319b16341",
+      "catalog_id": "cdc_handwashing_asl",
+      "equal_artifacts": [
+        "audit.json",
+        "files/01_What_You_Need_to_Know_About_Handwashing.mp4",
+        "files/01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT",
+        "generation.json"
+      ],
+      "generation": {
+        "complete": true,
+        "files": [
+          {
+            "path": "01_What_You_Need_to_Know_About_Handwashing.mp4",
+            "sha256": "80e61ceb1e03e7400360f8168c50108747217fe7c0a784bbef3262d36fbcf2db",
+            "size_bytes": 10812445
+          },
+          {
+            "path": "01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT",
+            "sha256": "8ee9f2323bc6d676f409fe8c728362b9edd56727312b39fd595a6ea3955ffd09",
+            "size_bytes": 697
+          }
+        ],
+        "inputs": {
+          "cdc_handwashing_asl_source": "7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee",
+          "iso639_2": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371"
+        },
+        "intermediates": [
+          {
+            "path": "audit.json",
+            "sha256": "d71c8a229922533a59b3214226febc15c8447fc7a3f1d52dcf7455ab53e18af6",
+            "size_bytes": 7094
+          }
+        ],
+        "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+        "source_date_epoch": 1793404800,
+        "tool_versions": "adduser\t3.134\nadwaita-icon-theme\t43-1\napksigner\t31.0.2-1\napt\t2.6.1\nat-spi2-common\t2.46.0-5\nbase-files\t12.4+deb12u15\nbase-passwd\t3.6.1\nbash\t5.2.15-2+b13\nbsdutils\t1:2.38.1-5+deb12u3\nca-certificates\t20250419~deb12u2\nca-certificates-java\t20230710~deb12u1\ncoreutils\t9.1-1\ndash\t0.5.12-2\ndebconf\t1.5.82\ndebian-archive-keyring\t2023.3+deb12u2\ndebianutils\t5.7-0.5~deb12u1\ndefault-jre\t2:1.17-74\ndefault-jre-headless\t2:1.17-74\ndiffutils\t1:3.8-4\ndosfstools\t4.2-1\ndpkg\t1.21.23\ne2fsprogs\t1.47.0-2+b2\nffmpeg\t7:5.1.9-0+deb12u1\nfindutils\t4.9.0-4\nfontconfig\t2.14.1-4\nfontconfig-config\t2.14.1-4\nfonts-dejavu-core\t2.37-6\ngcc-12-base:amd64\t12.2.0-14+deb12u1\ngpgv\t2.2.40-1.1+deb12u2\ngrep\t3.8-5\ngtk-update-icon-cache\t3.24.38-2~deb12u3\ngzip\t1.12-1\nhicolor-icon-theme\t0.17-2\nhostname\t3.23+nmu1\ninit-system-helpers\t1.65.2+deb12u1\njava-common\t0.74\nlibacl1:amd64\t2.3.1-3\nlibaom3:amd64\t3.6.0-1+deb12u3\nlibapksig-java\t31.0.2-1\nlibapt-pkg6.0:amd64\t2.6.1\nlibasound2:amd64\t1.2.8-1+b1\nlibasound2-data\t1.2.8-1\nlibass9:amd64\t1:0.17.1-1+deb12u1\nlibasyncns0:amd64\t0.8-6+b3\nlibatk1.0-0:amd64\t2.46.0-5\nlibattr1:amd64\t1:2.5.1-4\nlibaudit-common\t1:3.0.9-1\nlibaudit1:amd64\t1:3.0.9-1\nlibavahi-client3:amd64\t0.8-10+deb12u1\nlibavahi-common-data:amd64\t0.8-10+deb12u1\nlibavahi-common3:amd64\t0.8-10+deb12u1\nlibavc1394-0:amd64\t0.5.4-5\nlibavcodec59:amd64\t7:5.1.9-0+deb12u1\nlibavdevice59:amd64\t7:5.1.9-0+deb12u1\nlibavfilter8:amd64\t7:5.1.9-0+deb12u1\nlibavformat59:amd64\t7:5.1.9-0+deb12u1\nlibavutil57:amd64\t7:5.1.9-0+deb12u1\nlibblas3:amd64\t3.11.0-2\nlibblkid1:amd64\t2.38.1-5+deb12u3\nlibbluray2:amd64\t1:1.3.4-1\nlibboost-program-options1.74.0:amd64\t1.74.0+ds1-21\nlibbrotli1:amd64\t1.0.9-2+deb12u1\nlibbs2b0:amd64\t3.1.0+dfsg-7\nlibbsd0:amd64\t0.11.7-2\nlibbz2-1.0:amd64\t1.0.8-5+b1\nlibc-bin\t2.36-9+deb12u14\nlibc6:amd64\t2.36-9+deb12u14\nlibcaca0:amd64\t0.99.beta20-3+deb12u1\nlibcairo-gobject2:amd64\t1.16.0-7\nlibcairo2:amd64\t1.16.0-7\nlibcap-ng0:amd64\t0.8.3-1+b3\nlibcap2:amd64\t1:2.66-4+deb12u3+b1\nlibcdio-cdda2:amd64\t10.2+2.0.1-1\nlibcdio-paranoia2:amd64\t10.2+2.0.1-1\nlibcdio19:amd64\t2.1.0-4\nlibchafa0:amd64\t1.12.4-1+b1\nlibchromaprint1:amd64\t1.5.1-2+b1\nlibcjson1:amd64\t1.7.15-1+deb12u4\nlibcodec2-1.0:amd64\t1.0.5-1\nlibcom-err2:amd64\t1.47.0-2+b2\nlibcrypt1:amd64\t1:4.4.33-2\nlibcups2:amd64\t2.4.2-3+deb12u9\nlibdatrie1:amd64\t0.2.13-2+b1\nlibdav1d6:amd64\t1.0.0-2+deb12u1\nlibdb5.3:amd64\t5.3.28+dfsg2-1\nlibdbus-1-3:amd64\t1.14.10-1~deb12u1\nlibdc1394-25:amd64\t2.2.6-4\nlibdebconfclient0:amd64\t0.270\nlibdecor-0-0:amd64\t0.1.1-2\nlibdeflate0:amd64\t1.14-1\nlibdocopt0:amd64\t0.6.2-2.3\nlibdrm-amdgpu1:amd64\t2.4.114-1+b1\nlibdrm-common\t2.4.114-1\nlibdrm-intel1:amd64\t2.4.114-1+b1\nlibdrm-nouveau2:amd64\t2.4.114-1+b1\nlibdrm-radeon1:amd64\t2.4.114-1+b1\nlibdrm2:amd64\t2.4.114-1+b1\nlibedit2:amd64\t3.1-20221030-2\nlibelf1:amd64\t0.188-2.1\nlibepoxy0:amd64\t1.5.10-1\nlibexpat1:amd64\t2.5.0-1+deb12u5\nlibext2fs2:amd64\t1.47.0-2+b2\nlibffi8:amd64\t3.4.4-1\nlibflac12:amd64\t1.4.2+ds-2\nlibflite1:amd64\t2.2-5\nlibfontconfig1:amd64\t2.14.1-4\nlibfreetype6:amd64\t2.12.1+dfsg-5+deb12u4\nlibfribidi0:amd64\t1.0.8-2.1\nlibgbm1:amd64\t22.3.6-1+deb12u2\nlibgcc-s1:amd64\t12.2.0-14+deb12u1\nlibgcrypt20:amd64\t1.10.1-3+deb12u1\nlibgdbm6:amd64\t1.23-3\nlibgdk-pixbuf-2.0-0:amd64\t2.42.10+dfsg-1+deb12u4\nlibgdk-pixbuf2.0-common\t2.42.10+dfsg-1+deb12u4\nlibgfortran5:amd64\t12.2.0-14+deb12u1\nlibgif7:amd64\t5.2.1-2.5+deb12u1\nlibgl1:amd64\t1.6.0-1\nlibgl1-mesa-dri:amd64\t22.3.6-1+deb12u2\nlibglapi-mesa:amd64\t22.3.6-1+deb12u2\nlibglib2.0-0:amd64\t2.74.6-2+deb12u9\nlibglvnd0:amd64\t1.6.0-1\nlibglx-mesa0:amd64\t22.3.6-1+deb12u2\nlibglx0:amd64\t1.6.0-1\nlibgme0:amd64\t0.6.3-6\nlibgmp10:amd64\t2:6.2.1+dfsg1-1.1\nlibgnutls30:amd64\t3.7.9-2+deb12u7\nlibgomp1:amd64\t12.2.0-14+deb12u1\nlibgpg-error0:amd64\t1.46-1\nlibgraphite2-3:amd64\t1.3.14-1+deb12u1\nlibgsm1:amd64\t1.0.22-1\nlibgssapi-krb5-2:amd64\t1.20.1-2+deb12u5\nlibgtk2.0-0:amd64\t2.24.33-2+deb12u1\nlibgtk2.0-common\t2.24.33-2+deb12u1\nlibgumbo1:amd64\t0.10.1+dfsg-5\nlibharfbuzz-bin\t6.0.0+dfsg-3\nlibharfbuzz-subset0:amd64\t6.0.0+dfsg-3\nlibharfbuzz0b:amd64\t6.0.0+dfsg-3\nlibhogweed6:amd64\t3.8.1-2\nlibhwy1:amd64\t1.0.3-3+deb12u1\nlibicu72:amd64\t72.1-3+deb12u1\nlibidn2-0:amd64\t2.3.3-1+b1\nlibiec61883-0:amd64\t1.2.0-6+b1\nlibjack-jackd2-0:amd64\t1.9.21~dfsg-3\nlibjbig0:amd64\t2.1-6.1\nlibjpeg62-turbo:amd64\t1:2.1.5-2\nlibjxl0.7:amd64\t0.7.0-10+deb12u1\nlibk5crypto3:amd64\t1.20.1-2+deb12u5\nlibkeyutils1:amd64\t1.6.3-2\nlibkrb5-3:amd64\t1.20.1-2+deb12u5\nlibkrb5support0:amd64\t1.20.1-2+deb12u5\nliblapack3:amd64\t3.11.0-2\nliblcms2-2:amd64\t2.14-2+deb12u1\nliblerc4:amd64\t4.0.0+ds-2\nliblilv-0-0:amd64\t0.24.14-1\nlibllvm15:amd64\t1:15.0.6-4+b1\nliblz4-1:amd64\t1.9.4-1\nliblzma5:amd64\t5.4.1-1+deb12u2\nlibmagic-mgc\t1:5.44-3\nlibmagic1:amd64\t1:5.44-3\nlibmbedcrypto7:amd64\t2.28.3-1\nlibmd0:amd64\t1.0.4-2\nlibmfx1:amd64\t22.5.4-1\nlibmount1:amd64\t2.38.1-5+deb12u3\nlibmp3lame0:amd64\t3.100-6\nlibmpg123-0:amd64\t1.31.2-1+deb12u1\nlibmysofa1:amd64\t1.3.1~dfsg0-1\nlibncursesw6:amd64\t6.4-4\nlibnettle8:amd64\t3.8.1-2\nlibnorm1:amd64\t1.5.9+dfsg-2\nlibnsl2:amd64\t1.3.0-2\nlibnspr4:amd64\t2:4.35-1\nlibnss3:amd64\t2:3.87.1-1+deb12u4\nlibnuma1:amd64\t2.0.16-1\nlibogg0:amd64\t1.3.5-3\nlibopenal-data\t1:1.19.1-2\nlibopenal1:amd64\t1:1.19.1-2\nlibopenjp2-7:amd64\t2.5.0-2+deb12u3\nlibopenmpt0:amd64\t0.6.9-1\nlibopus0:amd64\t1.3.1-3\nlibp11-kit0:amd64\t0.24.1-2\nlibpam-modules:amd64\t1.5.2-6+deb12u2\nlibpam-modules-bin\t1.5.2-6+deb12u2\nlibpam-runtime\t1.5.2-6+deb12u2\nlibpam0g:amd64\t1.5.2-6+deb12u2\nlibpango-1.0-0:amd64\t1.50.12+ds-1\nlibpangocairo-1.0-0:amd64\t1.50.12+ds-1\nlibpangoft2-1.0-0:amd64\t1.50.12+ds-1\nlibpciaccess0:amd64\t0.17-2\nlibpcre2-8-0:amd64\t10.42-1+deb12u2\nlibpcsclite1:amd64\t1.9.9-2\nlibpgm-5.3-0:amd64\t5.3.128~dfsg-2\nlibpixman-1-0:amd64\t0.42.2-1\nlibplacebo208:amd64\t4.208.0-3\nlibpng16-16:amd64\t1.6.39-2+deb12u6\nlibpocketsphinx3:amd64\t0.8+5prealpha+1-15\nlibpoppler126:amd64\t22.12.0-2+deb12u3\nlibpostproc56:amd64\t7:5.1.9-0+deb12u1\nlibpulse0:amd64\t16.1+dfsg1-2+b1\nlibquadmath0:amd64\t12.2.0-14+deb12u1\nlibrabbitmq4:amd64\t0.11.0-1+deb12u3\nlibrav1e0:amd64\t0.5.1-6\nlibraw1394-11:amd64\t2.1.2-2\nlibreadline8:amd64\t8.2-1.3\nlibrist4:amd64\t0.2.7+dfsg-1\nlibrsvg2-2:amd64\t2.54.7+dfsg-1~deb12u1\nlibrubberband2:amd64\t3.1.2+dfsg0-1\nlibsamplerate0:amd64\t0.2.2-3\nlibsdl2-2.0-0:amd64\t2.26.5+dfsg-1\nlibseccomp2:amd64\t2.5.4-1+deb12u1\nlibselinux1:amd64\t3.4-1+b6\nlibsemanage-common\t3.4-1\nlibsemanage2:amd64\t3.4-1+b5\nlibsensors-config\t1:3.6.0-7.1\nlibsensors5:amd64\t1:3.6.0-7.1\nlibsepol2:amd64\t3.4-2.1\nlibserd-0-0:amd64\t0.30.16-1\nlibshine3:amd64\t3.1.1-2\nlibslang2:amd64\t2.3.3-3\nlibsmartcols1:amd64\t2.38.1-5+deb12u3\nlibsnappy1v5:amd64\t1.1.9-3\nlibsndfile1:amd64\t1.2.0-1+deb12u1\nlibsndio7.0:amd64\t1.9.0-0.3+b2\nlibsodium23:amd64\t1.0.18-1+deb12u1\nlibsord-0-0:amd64\t0.16.14+git221008-1\nlibsoxr0:amd64\t0.1.3-4\nlibspeex1:amd64\t1.2.1-2\nlibsphinxbase3:amd64\t0.8+5prealpha+1-16\nlibsqlite3-0:amd64\t3.40.1-2+deb12u2\nlibsratom-0-0:amd64\t0.6.14-1\nlibsrt1.5-gnutls:amd64\t1.5.1-1+deb12u1\nlibss2:amd64\t1.47.0-2+b2\nlibssh-gcrypt-4:amd64\t0.10.6-0+deb12u3\nlibssl3:amd64\t3.0.22-1~deb12u2\nlibstdc++6:amd64\t12.2.0-14+deb12u1\nlibsvtav1enc1:amd64\t1.4.1+dfsg-1\nlibswresample4:amd64\t7:5.1.9-0+deb12u1\nlibswscale6:amd64\t7:5.1.9-0+deb12u1\nlibsystemd0:amd64\t252.39-1~deb12u2\nlibtasn1-6:amd64\t4.19.0-2+deb12u1\nlibthai-data\t0.1.29-1\nlibthai0:amd64\t0.1.29-1\nlibtheora0:amd64\t1.1.1+dfsg.1-16.1+deb12u1\nlibtiff6:amd64\t4.5.0-6+deb12u4\nlibtinfo6:amd64\t6.4-4\nlibtirpc-common\t1.3.3+ds-1\nlibtirpc3:amd64\t1.3.3+ds-1\nlibtwolame0:amd64\t0.4.0-2\nlibudev1:amd64\t252.39-1~deb12u2\nlibudfread0:amd64\t1.1.2-1\nlibunistring2:amd64\t1.0-2\nlibusb-1.0-0:amd64\t2:1.0.26-1\nlibuuid1:amd64\t2.38.1-5+deb12u3\nlibva-drm2:amd64\t2.17.0-1\nlibva-x11-2:amd64\t2.17.0-1\nlibva2:amd64\t2.17.0-1\nlibvdpau1:amd64\t1.5-2\nlibvidstab1.1:amd64\t1.1.0-2+b1\nlibvorbis0a:amd64\t1.3.7-1\nlibvorbisenc2:amd64\t1.3.7-1\nlibvorbisfile3:amd64\t1.3.7-1\nlibvpx7:amd64\t1.12.0-1+deb12u5\nlibvulkan1:amd64\t1.3.239.0-1\nlibwayland-client0:amd64\t1.21.0-1\nlibwayland-cursor0:amd64\t1.21.0-1\nlibwayland-egl1:amd64\t1.21.0-1\nlibwayland-server0:amd64\t1.21.0-1\nlibwebp7:amd64\t1.2.4-0.2+deb12u1\nlibwebpmux3:amd64\t1.2.4-0.2+deb12u1\nlibx11-6:amd64\t2:1.8.4-2+deb12u2\nlibx11-data\t2:1.8.4-2+deb12u2\nlibx11-xcb1:amd64\t2:1.8.4-2+deb12u2\nlibx264-164:amd64\t2:0.164.3095+gitbaee400-3\nlibx265-199:amd64\t3.5-2+b1\nlibxapian30:amd64\t1.4.22-1\nlibxau6:amd64\t1:1.0.9-1\nlibxcb-dri2-0:amd64\t1.15-1\nlibxcb-dri3-0:amd64\t1.15-1\nlibxcb-glx0:amd64\t1.15-1\nlibxcb-present0:amd64\t1.15-1\nlibxcb-randr0:amd64\t1.15-1\nlibxcb-render0:amd64\t1.15-1\nlibxcb-shape0:amd64\t1.15-1\nlibxcb-shm0:amd64\t1.15-1\nlibxcb-sync1:amd64\t1.15-1\nlibxcb-xfixes0:amd64\t1.15-1\nlibxcb1:amd64\t1.15-1\nlibxcomposite1:amd64\t1:0.4.5-1\nlibxcursor1:amd64\t1:1.2.1-1\nlibxdamage1:amd64\t1:1.1.6-1\nlibxdmcp6:amd64\t1:1.1.2-3\nlibxext6:amd64\t2:1.3.4-1+b1\nlibxfixes3:amd64\t1:6.0.0-2\nlibxi6:amd64\t2:1.8-1+b1\nlibxinerama1:amd64\t2:1.1.4-3\nlibxkbcommon0:amd64\t1.5.0-1\nlibxml2:amd64\t2.9.14+dfsg-1.3~deb12u6\nlibxrandr2:amd64\t2:1.5.2-2+b1\nlibxrender1:amd64\t1:0.9.10-1.1\nlibxshmfence1:amd64\t1.3-1\nlibxss1:amd64\t1:1.2.3-1\nlibxtst6:amd64\t2:1.2.3-1.1\nlibxv1:amd64\t2:1.0.11-1.1\nlibxvidcore4:amd64\t2:1.3.7-1\nlibxxf86vm1:amd64\t1:1.1.4-1+b2\nlibxxhash0:amd64\t0.8.1-1\nlibz3-4:amd64\t4.8.12-3.1\nlibzim8:amd64\t8.1.1-0.2\nlibzimg2:amd64\t3.0.4+ds1-1\nlibzmq5:amd64\t4.3.4-6\nlibzstd1:amd64\t1.5.4+dfsg2-5\nlibzvbi-common\t0.2.41-1+deb12u1\nlibzvbi0:amd64\t0.2.41-1+deb12u1\nlogin\t1:4.13+dfsg1-1+deb12u2\nlogsave\t1.47.0-2+b2\nmawk\t1.3.4.20200120-3.1\nmount\t2.38.1-5+deb12u3\nmtools\t4.0.33-1+really4.0.32-1\nncurses-base\t6.4-4\nncurses-bin\t6.4-4\nnetbase\t6.4\nocl-icd-libopencl1:amd64\t2.3.1-1\nopenjdk-17-jre:amd64\t17.0.21+9-1~deb12u1\nopenjdk-17-jre-headless:amd64\t17.0.21+9-1~deb12u1\nopenssl\t3.0.22-1~deb12u2\nosmium-tool\t1.15.0-1\npasswd\t1:4.13+dfsg1-1+deb12u2\nperl-base\t5.36.0-7+deb12u4\npoppler-utils\t22.12.0-2+deb12u3\nreadline-common\t8.2-1.3\nsed\t4.9-1+deb12u1\nshared-mime-info\t2.2-1\nsysvinit-utils\t3.06-4\ntar\t1.34+dfsg-1.2+deb12u1\ntzdata\t2026e-0+deb12u1\nusr-is-merged\t37~deb12u1\nutil-linux\t2.38.1-5+deb12u3\nutil-linux-extra\t2.38.1-5+deb12u3\nx11-common\t1:7.7+23\nxkb-data\t2.35.1-1\nzim-tools\t3.1.3-1\nzlib1g:amd64\t1:1.2.13.dfsg-1\nzstd\t1.5.4+dfsg2-5\n1.3.11\nzim-tools 3.8.0\n\nlibzim 9.8.2\n+ libzstd 1.5.7\n+ liblzma 5.2.6\n+ libxapian 1.4.23\n+ libicu 73.2.0\n"
+      },
+      "generation_json_file_sha256": "b1382e0c9af21a2babbd0bdc12ab6721718dccf5b276987833a0458e4c26ed3d",
+      "output_duration_seconds": "138.718000",
+      "size_bytes": 10813142,
+      "source_media_end_seconds": 138.671,
+      "subtitles": [],
+      "tracks": [
+        {
+          "codec": "h264",
+          "default": 1,
+          "language": "und",
+          "type": "video"
+        },
+        {
+          "codec": "aac",
+          "default": 1,
+          "language": "eng",
+          "type": "audio"
+        }
+      ]
+    },
+    "rope_middle": {
+      "canonical_generation_sha256": "9e766ee2fbb4631a38512da6ad232f39369a619630be24f898810d521bca72e2",
+      "catalog_id": "commons_rope_middle",
+      "equal_artifacts": [
+        "audit.json",
+        "files/03_Tying_Off_Onto_the_Middle_of_a_Rope.mp4",
+        "files/03_Tying_Off_Onto_the_Middle_of_a_Rope_SOURCE.TXT",
+        "generation.json"
+      ],
+      "generation": {
+        "complete": true,
+        "files": [
+          {
+            "path": "03_Tying_Off_Onto_the_Middle_of_a_Rope.mp4",
+            "sha256": "bfc5831e36539ee56738691816a983a0922fc07a55692702f58e1d1b4326d125",
+            "size_bytes": 36677786
+          },
+          {
+            "path": "03_Tying_Off_Onto_the_Middle_of_a_Rope_SOURCE.TXT",
+            "sha256": "5727d5a54e81565057c33e889d270828fd7f2a59ce79f1bc11546bc91e681fc0",
+            "size_bytes": 1241
+          }
+        ],
+        "inputs": {
+          "commons_rope_middle_caption_en": "edf38a6d1c1ee4cb84eeeae1bc21872ac09cf3d9b4fa9e128acb1996550d497d",
+          "commons_rope_middle_source": "94fa9fff509b1d7c535309e57118a1c60ba52ab43baed63253c32d3a724d028f",
+          "iso639_2": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371"
+        },
+        "intermediates": [
+          {
+            "path": "audit.json",
+            "sha256": "99d3d8d12f581e11de88b82b02b629992fed409993d36dd11a0453f57ceb0dfd",
+            "size_bytes": 8574
+          }
+        ],
+        "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+        "source_date_epoch": 1793404800,
+        "tool_versions": "adduser\t3.134\nadwaita-icon-theme\t43-1\napksigner\t31.0.2-1\napt\t2.6.1\nat-spi2-common\t2.46.0-5\nbase-files\t12.4+deb12u15\nbase-passwd\t3.6.1\nbash\t5.2.15-2+b13\nbsdutils\t1:2.38.1-5+deb12u3\nca-certificates\t20250419~deb12u2\nca-certificates-java\t20230710~deb12u1\ncoreutils\t9.1-1\ndash\t0.5.12-2\ndebconf\t1.5.82\ndebian-archive-keyring\t2023.3+deb12u2\ndebianutils\t5.7-0.5~deb12u1\ndefault-jre\t2:1.17-74\ndefault-jre-headless\t2:1.17-74\ndiffutils\t1:3.8-4\ndosfstools\t4.2-1\ndpkg\t1.21.23\ne2fsprogs\t1.47.0-2+b2\nffmpeg\t7:5.1.9-0+deb12u1\nfindutils\t4.9.0-4\nfontconfig\t2.14.1-4\nfontconfig-config\t2.14.1-4\nfonts-dejavu-core\t2.37-6\ngcc-12-base:amd64\t12.2.0-14+deb12u1\ngpgv\t2.2.40-1.1+deb12u2\ngrep\t3.8-5\ngtk-update-icon-cache\t3.24.38-2~deb12u3\ngzip\t1.12-1\nhicolor-icon-theme\t0.17-2\nhostname\t3.23+nmu1\ninit-system-helpers\t1.65.2+deb12u1\njava-common\t0.74\nlibacl1:amd64\t2.3.1-3\nlibaom3:amd64\t3.6.0-1+deb12u3\nlibapksig-java\t31.0.2-1\nlibapt-pkg6.0:amd64\t2.6.1\nlibasound2:amd64\t1.2.8-1+b1\nlibasound2-data\t1.2.8-1\nlibass9:amd64\t1:0.17.1-1+deb12u1\nlibasyncns0:amd64\t0.8-6+b3\nlibatk1.0-0:amd64\t2.46.0-5\nlibattr1:amd64\t1:2.5.1-4\nlibaudit-common\t1:3.0.9-1\nlibaudit1:amd64\t1:3.0.9-1\nlibavahi-client3:amd64\t0.8-10+deb12u1\nlibavahi-common-data:amd64\t0.8-10+deb12u1\nlibavahi-common3:amd64\t0.8-10+deb12u1\nlibavc1394-0:amd64\t0.5.4-5\nlibavcodec59:amd64\t7:5.1.9-0+deb12u1\nlibavdevice59:amd64\t7:5.1.9-0+deb12u1\nlibavfilter8:amd64\t7:5.1.9-0+deb12u1\nlibavformat59:amd64\t7:5.1.9-0+deb12u1\nlibavutil57:amd64\t7:5.1.9-0+deb12u1\nlibblas3:amd64\t3.11.0-2\nlibblkid1:amd64\t2.38.1-5+deb12u3\nlibbluray2:amd64\t1:1.3.4-1\nlibboost-program-options1.74.0:amd64\t1.74.0+ds1-21\nlibbrotli1:amd64\t1.0.9-2+deb12u1\nlibbs2b0:amd64\t3.1.0+dfsg-7\nlibbsd0:amd64\t0.11.7-2\nlibbz2-1.0:amd64\t1.0.8-5+b1\nlibc-bin\t2.36-9+deb12u14\nlibc6:amd64\t2.36-9+deb12u14\nlibcaca0:amd64\t0.99.beta20-3+deb12u1\nlibcairo-gobject2:amd64\t1.16.0-7\nlibcairo2:amd64\t1.16.0-7\nlibcap-ng0:amd64\t0.8.3-1+b3\nlibcap2:amd64\t1:2.66-4+deb12u3+b1\nlibcdio-cdda2:amd64\t10.2+2.0.1-1\nlibcdio-paranoia2:amd64\t10.2+2.0.1-1\nlibcdio19:amd64\t2.1.0-4\nlibchafa0:amd64\t1.12.4-1+b1\nlibchromaprint1:amd64\t1.5.1-2+b1\nlibcjson1:amd64\t1.7.15-1+deb12u4\nlibcodec2-1.0:amd64\t1.0.5-1\nlibcom-err2:amd64\t1.47.0-2+b2\nlibcrypt1:amd64\t1:4.4.33-2\nlibcups2:amd64\t2.4.2-3+deb12u9\nlibdatrie1:amd64\t0.2.13-2+b1\nlibdav1d6:amd64\t1.0.0-2+deb12u1\nlibdb5.3:amd64\t5.3.28+dfsg2-1\nlibdbus-1-3:amd64\t1.14.10-1~deb12u1\nlibdc1394-25:amd64\t2.2.6-4\nlibdebconfclient0:amd64\t0.270\nlibdecor-0-0:amd64\t0.1.1-2\nlibdeflate0:amd64\t1.14-1\nlibdocopt0:amd64\t0.6.2-2.3\nlibdrm-amdgpu1:amd64\t2.4.114-1+b1\nlibdrm-common\t2.4.114-1\nlibdrm-intel1:amd64\t2.4.114-1+b1\nlibdrm-nouveau2:amd64\t2.4.114-1+b1\nlibdrm-radeon1:amd64\t2.4.114-1+b1\nlibdrm2:amd64\t2.4.114-1+b1\nlibedit2:amd64\t3.1-20221030-2\nlibelf1:amd64\t0.188-2.1\nlibepoxy0:amd64\t1.5.10-1\nlibexpat1:amd64\t2.5.0-1+deb12u5\nlibext2fs2:amd64\t1.47.0-2+b2\nlibffi8:amd64\t3.4.4-1\nlibflac12:amd64\t1.4.2+ds-2\nlibflite1:amd64\t2.2-5\nlibfontconfig1:amd64\t2.14.1-4\nlibfreetype6:amd64\t2.12.1+dfsg-5+deb12u4\nlibfribidi0:amd64\t1.0.8-2.1\nlibgbm1:amd64\t22.3.6-1+deb12u2\nlibgcc-s1:amd64\t12.2.0-14+deb12u1\nlibgcrypt20:amd64\t1.10.1-3+deb12u1\nlibgdbm6:amd64\t1.23-3\nlibgdk-pixbuf-2.0-0:amd64\t2.42.10+dfsg-1+deb12u4\nlibgdk-pixbuf2.0-common\t2.42.10+dfsg-1+deb12u4\nlibgfortran5:amd64\t12.2.0-14+deb12u1\nlibgif7:amd64\t5.2.1-2.5+deb12u1\nlibgl1:amd64\t1.6.0-1\nlibgl1-mesa-dri:amd64\t22.3.6-1+deb12u2\nlibglapi-mesa:amd64\t22.3.6-1+deb12u2\nlibglib2.0-0:amd64\t2.74.6-2+deb12u9\nlibglvnd0:amd64\t1.6.0-1\nlibglx-mesa0:amd64\t22.3.6-1+deb12u2\nlibglx0:amd64\t1.6.0-1\nlibgme0:amd64\t0.6.3-6\nlibgmp10:amd64\t2:6.2.1+dfsg1-1.1\nlibgnutls30:amd64\t3.7.9-2+deb12u7\nlibgomp1:amd64\t12.2.0-14+deb12u1\nlibgpg-error0:amd64\t1.46-1\nlibgraphite2-3:amd64\t1.3.14-1+deb12u1\nlibgsm1:amd64\t1.0.22-1\nlibgssapi-krb5-2:amd64\t1.20.1-2+deb12u5\nlibgtk2.0-0:amd64\t2.24.33-2+deb12u1\nlibgtk2.0-common\t2.24.33-2+deb12u1\nlibgumbo1:amd64\t0.10.1+dfsg-5\nlibharfbuzz-bin\t6.0.0+dfsg-3\nlibharfbuzz-subset0:amd64\t6.0.0+dfsg-3\nlibharfbuzz0b:amd64\t6.0.0+dfsg-3\nlibhogweed6:amd64\t3.8.1-2\nlibhwy1:amd64\t1.0.3-3+deb12u1\nlibicu72:amd64\t72.1-3+deb12u1\nlibidn2-0:amd64\t2.3.3-1+b1\nlibiec61883-0:amd64\t1.2.0-6+b1\nlibjack-jackd2-0:amd64\t1.9.21~dfsg-3\nlibjbig0:amd64\t2.1-6.1\nlibjpeg62-turbo:amd64\t1:2.1.5-2\nlibjxl0.7:amd64\t0.7.0-10+deb12u1\nlibk5crypto3:amd64\t1.20.1-2+deb12u5\nlibkeyutils1:amd64\t1.6.3-2\nlibkrb5-3:amd64\t1.20.1-2+deb12u5\nlibkrb5support0:amd64\t1.20.1-2+deb12u5\nliblapack3:amd64\t3.11.0-2\nliblcms2-2:amd64\t2.14-2+deb12u1\nliblerc4:amd64\t4.0.0+ds-2\nliblilv-0-0:amd64\t0.24.14-1\nlibllvm15:amd64\t1:15.0.6-4+b1\nliblz4-1:amd64\t1.9.4-1\nliblzma5:amd64\t5.4.1-1+deb12u2\nlibmagic-mgc\t1:5.44-3\nlibmagic1:amd64\t1:5.44-3\nlibmbedcrypto7:amd64\t2.28.3-1\nlibmd0:amd64\t1.0.4-2\nlibmfx1:amd64\t22.5.4-1\nlibmount1:amd64\t2.38.1-5+deb12u3\nlibmp3lame0:amd64\t3.100-6\nlibmpg123-0:amd64\t1.31.2-1+deb12u1\nlibmysofa1:amd64\t1.3.1~dfsg0-1\nlibncursesw6:amd64\t6.4-4\nlibnettle8:amd64\t3.8.1-2\nlibnorm1:amd64\t1.5.9+dfsg-2\nlibnsl2:amd64\t1.3.0-2\nlibnspr4:amd64\t2:4.35-1\nlibnss3:amd64\t2:3.87.1-1+deb12u4\nlibnuma1:amd64\t2.0.16-1\nlibogg0:amd64\t1.3.5-3\nlibopenal-data\t1:1.19.1-2\nlibopenal1:amd64\t1:1.19.1-2\nlibopenjp2-7:amd64\t2.5.0-2+deb12u3\nlibopenmpt0:amd64\t0.6.9-1\nlibopus0:amd64\t1.3.1-3\nlibp11-kit0:amd64\t0.24.1-2\nlibpam-modules:amd64\t1.5.2-6+deb12u2\nlibpam-modules-bin\t1.5.2-6+deb12u2\nlibpam-runtime\t1.5.2-6+deb12u2\nlibpam0g:amd64\t1.5.2-6+deb12u2\nlibpango-1.0-0:amd64\t1.50.12+ds-1\nlibpangocairo-1.0-0:amd64\t1.50.12+ds-1\nlibpangoft2-1.0-0:amd64\t1.50.12+ds-1\nlibpciaccess0:amd64\t0.17-2\nlibpcre2-8-0:amd64\t10.42-1+deb12u2\nlibpcsclite1:amd64\t1.9.9-2\nlibpgm-5.3-0:amd64\t5.3.128~dfsg-2\nlibpixman-1-0:amd64\t0.42.2-1\nlibplacebo208:amd64\t4.208.0-3\nlibpng16-16:amd64\t1.6.39-2+deb12u6\nlibpocketsphinx3:amd64\t0.8+5prealpha+1-15\nlibpoppler126:amd64\t22.12.0-2+deb12u3\nlibpostproc56:amd64\t7:5.1.9-0+deb12u1\nlibpulse0:amd64\t16.1+dfsg1-2+b1\nlibquadmath0:amd64\t12.2.0-14+deb12u1\nlibrabbitmq4:amd64\t0.11.0-1+deb12u3\nlibrav1e0:amd64\t0.5.1-6\nlibraw1394-11:amd64\t2.1.2-2\nlibreadline8:amd64\t8.2-1.3\nlibrist4:amd64\t0.2.7+dfsg-1\nlibrsvg2-2:amd64\t2.54.7+dfsg-1~deb12u1\nlibrubberband2:amd64\t3.1.2+dfsg0-1\nlibsamplerate0:amd64\t0.2.2-3\nlibsdl2-2.0-0:amd64\t2.26.5+dfsg-1\nlibseccomp2:amd64\t2.5.4-1+deb12u1\nlibselinux1:amd64\t3.4-1+b6\nlibsemanage-common\t3.4-1\nlibsemanage2:amd64\t3.4-1+b5\nlibsensors-config\t1:3.6.0-7.1\nlibsensors5:amd64\t1:3.6.0-7.1\nlibsepol2:amd64\t3.4-2.1\nlibserd-0-0:amd64\t0.30.16-1\nlibshine3:amd64\t3.1.1-2\nlibslang2:amd64\t2.3.3-3\nlibsmartcols1:amd64\t2.38.1-5+deb12u3\nlibsnappy1v5:amd64\t1.1.9-3\nlibsndfile1:amd64\t1.2.0-1+deb12u1\nlibsndio7.0:amd64\t1.9.0-0.3+b2\nlibsodium23:amd64\t1.0.18-1+deb12u1\nlibsord-0-0:amd64\t0.16.14+git221008-1\nlibsoxr0:amd64\t0.1.3-4\nlibspeex1:amd64\t1.2.1-2\nlibsphinxbase3:amd64\t0.8+5prealpha+1-16\nlibsqlite3-0:amd64\t3.40.1-2+deb12u2\nlibsratom-0-0:amd64\t0.6.14-1\nlibsrt1.5-gnutls:amd64\t1.5.1-1+deb12u1\nlibss2:amd64\t1.47.0-2+b2\nlibssh-gcrypt-4:amd64\t0.10.6-0+deb12u3\nlibssl3:amd64\t3.0.22-1~deb12u2\nlibstdc++6:amd64\t12.2.0-14+deb12u1\nlibsvtav1enc1:amd64\t1.4.1+dfsg-1\nlibswresample4:amd64\t7:5.1.9-0+deb12u1\nlibswscale6:amd64\t7:5.1.9-0+deb12u1\nlibsystemd0:amd64\t252.39-1~deb12u2\nlibtasn1-6:amd64\t4.19.0-2+deb12u1\nlibthai-data\t0.1.29-1\nlibthai0:amd64\t0.1.29-1\nlibtheora0:amd64\t1.1.1+dfsg.1-16.1+deb12u1\nlibtiff6:amd64\t4.5.0-6+deb12u4\nlibtinfo6:amd64\t6.4-4\nlibtirpc-common\t1.3.3+ds-1\nlibtirpc3:amd64\t1.3.3+ds-1\nlibtwolame0:amd64\t0.4.0-2\nlibudev1:amd64\t252.39-1~deb12u2\nlibudfread0:amd64\t1.1.2-1\nlibunistring2:amd64\t1.0-2\nlibusb-1.0-0:amd64\t2:1.0.26-1\nlibuuid1:amd64\t2.38.1-5+deb12u3\nlibva-drm2:amd64\t2.17.0-1\nlibva-x11-2:amd64\t2.17.0-1\nlibva2:amd64\t2.17.0-1\nlibvdpau1:amd64\t1.5-2\nlibvidstab1.1:amd64\t1.1.0-2+b1\nlibvorbis0a:amd64\t1.3.7-1\nlibvorbisenc2:amd64\t1.3.7-1\nlibvorbisfile3:amd64\t1.3.7-1\nlibvpx7:amd64\t1.12.0-1+deb12u5\nlibvulkan1:amd64\t1.3.239.0-1\nlibwayland-client0:amd64\t1.21.0-1\nlibwayland-cursor0:amd64\t1.21.0-1\nlibwayland-egl1:amd64\t1.21.0-1\nlibwayland-server0:amd64\t1.21.0-1\nlibwebp7:amd64\t1.2.4-0.2+deb12u1\nlibwebpmux3:amd64\t1.2.4-0.2+deb12u1\nlibx11-6:amd64\t2:1.8.4-2+deb12u2\nlibx11-data\t2:1.8.4-2+deb12u2\nlibx11-xcb1:amd64\t2:1.8.4-2+deb12u2\nlibx264-164:amd64\t2:0.164.3095+gitbaee400-3\nlibx265-199:amd64\t3.5-2+b1\nlibxapian30:amd64\t1.4.22-1\nlibxau6:amd64\t1:1.0.9-1\nlibxcb-dri2-0:amd64\t1.15-1\nlibxcb-dri3-0:amd64\t1.15-1\nlibxcb-glx0:amd64\t1.15-1\nlibxcb-present0:amd64\t1.15-1\nlibxcb-randr0:amd64\t1.15-1\nlibxcb-render0:amd64\t1.15-1\nlibxcb-shape0:amd64\t1.15-1\nlibxcb-shm0:amd64\t1.15-1\nlibxcb-sync1:amd64\t1.15-1\nlibxcb-xfixes0:amd64\t1.15-1\nlibxcb1:amd64\t1.15-1\nlibxcomposite1:amd64\t1:0.4.5-1\nlibxcursor1:amd64\t1:1.2.1-1\nlibxdamage1:amd64\t1:1.1.6-1\nlibxdmcp6:amd64\t1:1.1.2-3\nlibxext6:amd64\t2:1.3.4-1+b1\nlibxfixes3:amd64\t1:6.0.0-2\nlibxi6:amd64\t2:1.8-1+b1\nlibxinerama1:amd64\t2:1.1.4-3\nlibxkbcommon0:amd64\t1.5.0-1\nlibxml2:amd64\t2.9.14+dfsg-1.3~deb12u6\nlibxrandr2:amd64\t2:1.5.2-2+b1\nlibxrender1:amd64\t1:0.9.10-1.1\nlibxshmfence1:amd64\t1.3-1\nlibxss1:amd64\t1:1.2.3-1\nlibxtst6:amd64\t2:1.2.3-1.1\nlibxv1:amd64\t2:1.0.11-1.1\nlibxvidcore4:amd64\t2:1.3.7-1\nlibxxf86vm1:amd64\t1:1.1.4-1+b2\nlibxxhash0:amd64\t0.8.1-1\nlibz3-4:amd64\t4.8.12-3.1\nlibzim8:amd64\t8.1.1-0.2\nlibzimg2:amd64\t3.0.4+ds1-1\nlibzmq5:amd64\t4.3.4-6\nlibzstd1:amd64\t1.5.4+dfsg2-5\nlibzvbi-common\t0.2.41-1+deb12u1\nlibzvbi0:amd64\t0.2.41-1+deb12u1\nlogin\t1:4.13+dfsg1-1+deb12u2\nlogsave\t1.47.0-2+b2\nmawk\t1.3.4.20200120-3.1\nmount\t2.38.1-5+deb12u3\nmtools\t4.0.33-1+really4.0.32-1\nncurses-base\t6.4-4\nncurses-bin\t6.4-4\nnetbase\t6.4\nocl-icd-libopencl1:amd64\t2.3.1-1\nopenjdk-17-jre:amd64\t17.0.21+9-1~deb12u1\nopenjdk-17-jre-headless:amd64\t17.0.21+9-1~deb12u1\nopenssl\t3.0.22-1~deb12u2\nosmium-tool\t1.15.0-1\npasswd\t1:4.13+dfsg1-1+deb12u2\nperl-base\t5.36.0-7+deb12u4\npoppler-utils\t22.12.0-2+deb12u3\nreadline-common\t8.2-1.3\nsed\t4.9-1+deb12u1\nshared-mime-info\t2.2-1\nsysvinit-utils\t3.06-4\ntar\t1.34+dfsg-1.2+deb12u1\ntzdata\t2026e-0+deb12u1\nusr-is-merged\t37~deb12u1\nutil-linux\t2.38.1-5+deb12u3\nutil-linux-extra\t2.38.1-5+deb12u3\nx11-common\t1:7.7+23\nxkb-data\t2.35.1-1\nzim-tools\t3.1.3-1\nzlib1g:amd64\t1:1.2.13.dfsg-1\nzstd\t1.5.4+dfsg2-5\n1.3.11\nzim-tools 3.8.0\n\nlibzim 9.8.2\n+ libzstd 1.5.7\n+ liblzma 5.2.6\n+ libxapian 1.4.23\n+ libicu 73.2.0\n"
+      },
+      "generation_json_file_sha256": "3c49f4a12590a93a8151339fb454aec7845c6cc321cb17197416ad6b7f0063c7",
+      "output_duration_seconds": "441.257000",
+      "size_bytes": 36679027,
+      "source_media_end_seconds": 441.26099999999997,
+      "subtitles": [
+        {
+          "cues": 49,
+          "first_seconds": 0.48,
+          "input_origin_seconds": 0,
+          "language": "en",
+          "last_seconds": 440.96000000000004,
+          "source_id": "commons_rope_middle_caption_en",
+          "stream": 0,
+          "time_offset_seconds": 0
+        }
+      ],
+      "tracks": [
+        {
+          "codec": "h264",
+          "default": 1,
+          "language": "und",
+          "type": "video"
+        },
+        {
+          "codec": "aac",
+          "default": 1,
+          "language": "eng",
+          "type": "audio"
+        },
+        {
+          "codec": "mov_text",
+          "default": 1,
+          "language": "eng",
+          "type": "subtitle"
+        }
+      ]
+    },
+    "simple_sketchbook": {
+      "canonical_generation_sha256": "2a6a311743c62d3d880f03c0bf6f56e31aad264489b7b99b92563ddc3f754885",
+      "catalog_id": "commons_simple_sketchbook",
+      "equal_artifacts": [
+        "audit.json",
+        "files/04_How_to_Make_a_Simple_Sketch_Book.mp4",
+        "files/04_How_to_Make_a_Simple_Sketch_Book_SOURCE.TXT",
+        "generation.json"
+      ],
+      "generation": {
+        "complete": true,
+        "files": [
+          {
+            "path": "04_How_to_Make_a_Simple_Sketch_Book.mp4",
+            "sha256": "63405ced11982a090fc58806e83a5dd06c5c54837b3c0787a30c040896020eaa",
+            "size_bytes": 14398970
+          },
+          {
+            "path": "04_How_to_Make_a_Simple_Sketch_Book_SOURCE.TXT",
+            "sha256": "7b96015ef389c98f46f55153e3b40cea58029cf40230ee4829fa9d142b40d2ea",
+            "size_bytes": 662
+          }
+        ],
+        "inputs": {
+          "commons_simple_sketchbook_source": "7ce4727f2fb2b56e74bd7d0a3200fd9374844c2ab92ab86a1f65024f05724323",
+          "iso639_2": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371"
+        },
+        "intermediates": [
+          {
+            "path": "audit.json",
+            "sha256": "000be34e4142a7ee976db8b0cde479ec28e30ad7f4136e1e85234f88b3922e15",
+            "size_bytes": 6687
+          }
+        ],
+        "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+        "source_date_epoch": 1793404800,
+        "tool_versions": "adduser\t3.134\nadwaita-icon-theme\t43-1\napksigner\t31.0.2-1\napt\t2.6.1\nat-spi2-common\t2.46.0-5\nbase-files\t12.4+deb12u15\nbase-passwd\t3.6.1\nbash\t5.2.15-2+b13\nbsdutils\t1:2.38.1-5+deb12u3\nca-certificates\t20250419~deb12u2\nca-certificates-java\t20230710~deb12u1\ncoreutils\t9.1-1\ndash\t0.5.12-2\ndebconf\t1.5.82\ndebian-archive-keyring\t2023.3+deb12u2\ndebianutils\t5.7-0.5~deb12u1\ndefault-jre\t2:1.17-74\ndefault-jre-headless\t2:1.17-74\ndiffutils\t1:3.8-4\ndosfstools\t4.2-1\ndpkg\t1.21.23\ne2fsprogs\t1.47.0-2+b2\nffmpeg\t7:5.1.9-0+deb12u1\nfindutils\t4.9.0-4\nfontconfig\t2.14.1-4\nfontconfig-config\t2.14.1-4\nfonts-dejavu-core\t2.37-6\ngcc-12-base:amd64\t12.2.0-14+deb12u1\ngpgv\t2.2.40-1.1+deb12u2\ngrep\t3.8-5\ngtk-update-icon-cache\t3.24.38-2~deb12u3\ngzip\t1.12-1\nhicolor-icon-theme\t0.17-2\nhostname\t3.23+nmu1\ninit-system-helpers\t1.65.2+deb12u1\njava-common\t0.74\nlibacl1:amd64\t2.3.1-3\nlibaom3:amd64\t3.6.0-1+deb12u3\nlibapksig-java\t31.0.2-1\nlibapt-pkg6.0:amd64\t2.6.1\nlibasound2:amd64\t1.2.8-1+b1\nlibasound2-data\t1.2.8-1\nlibass9:amd64\t1:0.17.1-1+deb12u1\nlibasyncns0:amd64\t0.8-6+b3\nlibatk1.0-0:amd64\t2.46.0-5\nlibattr1:amd64\t1:2.5.1-4\nlibaudit-common\t1:3.0.9-1\nlibaudit1:amd64\t1:3.0.9-1\nlibavahi-client3:amd64\t0.8-10+deb12u1\nlibavahi-common-data:amd64\t0.8-10+deb12u1\nlibavahi-common3:amd64\t0.8-10+deb12u1\nlibavc1394-0:amd64\t0.5.4-5\nlibavcodec59:amd64\t7:5.1.9-0+deb12u1\nlibavdevice59:amd64\t7:5.1.9-0+deb12u1\nlibavfilter8:amd64\t7:5.1.9-0+deb12u1\nlibavformat59:amd64\t7:5.1.9-0+deb12u1\nlibavutil57:amd64\t7:5.1.9-0+deb12u1\nlibblas3:amd64\t3.11.0-2\nlibblkid1:amd64\t2.38.1-5+deb12u3\nlibbluray2:amd64\t1:1.3.4-1\nlibboost-program-options1.74.0:amd64\t1.74.0+ds1-21\nlibbrotli1:amd64\t1.0.9-2+deb12u1\nlibbs2b0:amd64\t3.1.0+dfsg-7\nlibbsd0:amd64\t0.11.7-2\nlibbz2-1.0:amd64\t1.0.8-5+b1\nlibc-bin\t2.36-9+deb12u14\nlibc6:amd64\t2.36-9+deb12u14\nlibcaca0:amd64\t0.99.beta20-3+deb12u1\nlibcairo-gobject2:amd64\t1.16.0-7\nlibcairo2:amd64\t1.16.0-7\nlibcap-ng0:amd64\t0.8.3-1+b3\nlibcap2:amd64\t1:2.66-4+deb12u3+b1\nlibcdio-cdda2:amd64\t10.2+2.0.1-1\nlibcdio-paranoia2:amd64\t10.2+2.0.1-1\nlibcdio19:amd64\t2.1.0-4\nlibchafa0:amd64\t1.12.4-1+b1\nlibchromaprint1:amd64\t1.5.1-2+b1\nlibcjson1:amd64\t1.7.15-1+deb12u4\nlibcodec2-1.0:amd64\t1.0.5-1\nlibcom-err2:amd64\t1.47.0-2+b2\nlibcrypt1:amd64\t1:4.4.33-2\nlibcups2:amd64\t2.4.2-3+deb12u9\nlibdatrie1:amd64\t0.2.13-2+b1\nlibdav1d6:amd64\t1.0.0-2+deb12u1\nlibdb5.3:amd64\t5.3.28+dfsg2-1\nlibdbus-1-3:amd64\t1.14.10-1~deb12u1\nlibdc1394-25:amd64\t2.2.6-4\nlibdebconfclient0:amd64\t0.270\nlibdecor-0-0:amd64\t0.1.1-2\nlibdeflate0:amd64\t1.14-1\nlibdocopt0:amd64\t0.6.2-2.3\nlibdrm-amdgpu1:amd64\t2.4.114-1+b1\nlibdrm-common\t2.4.114-1\nlibdrm-intel1:amd64\t2.4.114-1+b1\nlibdrm-nouveau2:amd64\t2.4.114-1+b1\nlibdrm-radeon1:amd64\t2.4.114-1+b1\nlibdrm2:amd64\t2.4.114-1+b1\nlibedit2:amd64\t3.1-20221030-2\nlibelf1:amd64\t0.188-2.1\nlibepoxy0:amd64\t1.5.10-1\nlibexpat1:amd64\t2.5.0-1+deb12u5\nlibext2fs2:amd64\t1.47.0-2+b2\nlibffi8:amd64\t3.4.4-1\nlibflac12:amd64\t1.4.2+ds-2\nlibflite1:amd64\t2.2-5\nlibfontconfig1:amd64\t2.14.1-4\nlibfreetype6:amd64\t2.12.1+dfsg-5+deb12u4\nlibfribidi0:amd64\t1.0.8-2.1\nlibgbm1:amd64\t22.3.6-1+deb12u2\nlibgcc-s1:amd64\t12.2.0-14+deb12u1\nlibgcrypt20:amd64\t1.10.1-3+deb12u1\nlibgdbm6:amd64\t1.23-3\nlibgdk-pixbuf-2.0-0:amd64\t2.42.10+dfsg-1+deb12u4\nlibgdk-pixbuf2.0-common\t2.42.10+dfsg-1+deb12u4\nlibgfortran5:amd64\t12.2.0-14+deb12u1\nlibgif7:amd64\t5.2.1-2.5+deb12u1\nlibgl1:amd64\t1.6.0-1\nlibgl1-mesa-dri:amd64\t22.3.6-1+deb12u2\nlibglapi-mesa:amd64\t22.3.6-1+deb12u2\nlibglib2.0-0:amd64\t2.74.6-2+deb12u9\nlibglvnd0:amd64\t1.6.0-1\nlibglx-mesa0:amd64\t22.3.6-1+deb12u2\nlibglx0:amd64\t1.6.0-1\nlibgme0:amd64\t0.6.3-6\nlibgmp10:amd64\t2:6.2.1+dfsg1-1.1\nlibgnutls30:amd64\t3.7.9-2+deb12u7\nlibgomp1:amd64\t12.2.0-14+deb12u1\nlibgpg-error0:amd64\t1.46-1\nlibgraphite2-3:amd64\t1.3.14-1+deb12u1\nlibgsm1:amd64\t1.0.22-1\nlibgssapi-krb5-2:amd64\t1.20.1-2+deb12u5\nlibgtk2.0-0:amd64\t2.24.33-2+deb12u1\nlibgtk2.0-common\t2.24.33-2+deb12u1\nlibgumbo1:amd64\t0.10.1+dfsg-5\nlibharfbuzz-bin\t6.0.0+dfsg-3\nlibharfbuzz-subset0:amd64\t6.0.0+dfsg-3\nlibharfbuzz0b:amd64\t6.0.0+dfsg-3\nlibhogweed6:amd64\t3.8.1-2\nlibhwy1:amd64\t1.0.3-3+deb12u1\nlibicu72:amd64\t72.1-3+deb12u1\nlibidn2-0:amd64\t2.3.3-1+b1\nlibiec61883-0:amd64\t1.2.0-6+b1\nlibjack-jackd2-0:amd64\t1.9.21~dfsg-3\nlibjbig0:amd64\t2.1-6.1\nlibjpeg62-turbo:amd64\t1:2.1.5-2\nlibjxl0.7:amd64\t0.7.0-10+deb12u1\nlibk5crypto3:amd64\t1.20.1-2+deb12u5\nlibkeyutils1:amd64\t1.6.3-2\nlibkrb5-3:amd64\t1.20.1-2+deb12u5\nlibkrb5support0:amd64\t1.20.1-2+deb12u5\nliblapack3:amd64\t3.11.0-2\nliblcms2-2:amd64\t2.14-2+deb12u1\nliblerc4:amd64\t4.0.0+ds-2\nliblilv-0-0:amd64\t0.24.14-1\nlibllvm15:amd64\t1:15.0.6-4+b1\nliblz4-1:amd64\t1.9.4-1\nliblzma5:amd64\t5.4.1-1+deb12u2\nlibmagic-mgc\t1:5.44-3\nlibmagic1:amd64\t1:5.44-3\nlibmbedcrypto7:amd64\t2.28.3-1\nlibmd0:amd64\t1.0.4-2\nlibmfx1:amd64\t22.5.4-1\nlibmount1:amd64\t2.38.1-5+deb12u3\nlibmp3lame0:amd64\t3.100-6\nlibmpg123-0:amd64\t1.31.2-1+deb12u1\nlibmysofa1:amd64\t1.3.1~dfsg0-1\nlibncursesw6:amd64\t6.4-4\nlibnettle8:amd64\t3.8.1-2\nlibnorm1:amd64\t1.5.9+dfsg-2\nlibnsl2:amd64\t1.3.0-2\nlibnspr4:amd64\t2:4.35-1\nlibnss3:amd64\t2:3.87.1-1+deb12u4\nlibnuma1:amd64\t2.0.16-1\nlibogg0:amd64\t1.3.5-3\nlibopenal-data\t1:1.19.1-2\nlibopenal1:amd64\t1:1.19.1-2\nlibopenjp2-7:amd64\t2.5.0-2+deb12u3\nlibopenmpt0:amd64\t0.6.9-1\nlibopus0:amd64\t1.3.1-3\nlibp11-kit0:amd64\t0.24.1-2\nlibpam-modules:amd64\t1.5.2-6+deb12u2\nlibpam-modules-bin\t1.5.2-6+deb12u2\nlibpam-runtime\t1.5.2-6+deb12u2\nlibpam0g:amd64\t1.5.2-6+deb12u2\nlibpango-1.0-0:amd64\t1.50.12+ds-1\nlibpangocairo-1.0-0:amd64\t1.50.12+ds-1\nlibpangoft2-1.0-0:amd64\t1.50.12+ds-1\nlibpciaccess0:amd64\t0.17-2\nlibpcre2-8-0:amd64\t10.42-1+deb12u2\nlibpcsclite1:amd64\t1.9.9-2\nlibpgm-5.3-0:amd64\t5.3.128~dfsg-2\nlibpixman-1-0:amd64\t0.42.2-1\nlibplacebo208:amd64\t4.208.0-3\nlibpng16-16:amd64\t1.6.39-2+deb12u6\nlibpocketsphinx3:amd64\t0.8+5prealpha+1-15\nlibpoppler126:amd64\t22.12.0-2+deb12u3\nlibpostproc56:amd64\t7:5.1.9-0+deb12u1\nlibpulse0:amd64\t16.1+dfsg1-2+b1\nlibquadmath0:amd64\t12.2.0-14+deb12u1\nlibrabbitmq4:amd64\t0.11.0-1+deb12u3\nlibrav1e0:amd64\t0.5.1-6\nlibraw1394-11:amd64\t2.1.2-2\nlibreadline8:amd64\t8.2-1.3\nlibrist4:amd64\t0.2.7+dfsg-1\nlibrsvg2-2:amd64\t2.54.7+dfsg-1~deb12u1\nlibrubberband2:amd64\t3.1.2+dfsg0-1\nlibsamplerate0:amd64\t0.2.2-3\nlibsdl2-2.0-0:amd64\t2.26.5+dfsg-1\nlibseccomp2:amd64\t2.5.4-1+deb12u1\nlibselinux1:amd64\t3.4-1+b6\nlibsemanage-common\t3.4-1\nlibsemanage2:amd64\t3.4-1+b5\nlibsensors-config\t1:3.6.0-7.1\nlibsensors5:amd64\t1:3.6.0-7.1\nlibsepol2:amd64\t3.4-2.1\nlibserd-0-0:amd64\t0.30.16-1\nlibshine3:amd64\t3.1.1-2\nlibslang2:amd64\t2.3.3-3\nlibsmartcols1:amd64\t2.38.1-5+deb12u3\nlibsnappy1v5:amd64\t1.1.9-3\nlibsndfile1:amd64\t1.2.0-1+deb12u1\nlibsndio7.0:amd64\t1.9.0-0.3+b2\nlibsodium23:amd64\t1.0.18-1+deb12u1\nlibsord-0-0:amd64\t0.16.14+git221008-1\nlibsoxr0:amd64\t0.1.3-4\nlibspeex1:amd64\t1.2.1-2\nlibsphinxbase3:amd64\t0.8+5prealpha+1-16\nlibsqlite3-0:amd64\t3.40.1-2+deb12u2\nlibsratom-0-0:amd64\t0.6.14-1\nlibsrt1.5-gnutls:amd64\t1.5.1-1+deb12u1\nlibss2:amd64\t1.47.0-2+b2\nlibssh-gcrypt-4:amd64\t0.10.6-0+deb12u3\nlibssl3:amd64\t3.0.22-1~deb12u2\nlibstdc++6:amd64\t12.2.0-14+deb12u1\nlibsvtav1enc1:amd64\t1.4.1+dfsg-1\nlibswresample4:amd64\t7:5.1.9-0+deb12u1\nlibswscale6:amd64\t7:5.1.9-0+deb12u1\nlibsystemd0:amd64\t252.39-1~deb12u2\nlibtasn1-6:amd64\t4.19.0-2+deb12u1\nlibthai-data\t0.1.29-1\nlibthai0:amd64\t0.1.29-1\nlibtheora0:amd64\t1.1.1+dfsg.1-16.1+deb12u1\nlibtiff6:amd64\t4.5.0-6+deb12u4\nlibtinfo6:amd64\t6.4-4\nlibtirpc-common\t1.3.3+ds-1\nlibtirpc3:amd64\t1.3.3+ds-1\nlibtwolame0:amd64\t0.4.0-2\nlibudev1:amd64\t252.39-1~deb12u2\nlibudfread0:amd64\t1.1.2-1\nlibunistring2:amd64\t1.0-2\nlibusb-1.0-0:amd64\t2:1.0.26-1\nlibuuid1:amd64\t2.38.1-5+deb12u3\nlibva-drm2:amd64\t2.17.0-1\nlibva-x11-2:amd64\t2.17.0-1\nlibva2:amd64\t2.17.0-1\nlibvdpau1:amd64\t1.5-2\nlibvidstab1.1:amd64\t1.1.0-2+b1\nlibvorbis0a:amd64\t1.3.7-1\nlibvorbisenc2:amd64\t1.3.7-1\nlibvorbisfile3:amd64\t1.3.7-1\nlibvpx7:amd64\t1.12.0-1+deb12u5\nlibvulkan1:amd64\t1.3.239.0-1\nlibwayland-client0:amd64\t1.21.0-1\nlibwayland-cursor0:amd64\t1.21.0-1\nlibwayland-egl1:amd64\t1.21.0-1\nlibwayland-server0:amd64\t1.21.0-1\nlibwebp7:amd64\t1.2.4-0.2+deb12u1\nlibwebpmux3:amd64\t1.2.4-0.2+deb12u1\nlibx11-6:amd64\t2:1.8.4-2+deb12u2\nlibx11-data\t2:1.8.4-2+deb12u2\nlibx11-xcb1:amd64\t2:1.8.4-2+deb12u2\nlibx264-164:amd64\t2:0.164.3095+gitbaee400-3\nlibx265-199:amd64\t3.5-2+b1\nlibxapian30:amd64\t1.4.22-1\nlibxau6:amd64\t1:1.0.9-1\nlibxcb-dri2-0:amd64\t1.15-1\nlibxcb-dri3-0:amd64\t1.15-1\nlibxcb-glx0:amd64\t1.15-1\nlibxcb-present0:amd64\t1.15-1\nlibxcb-randr0:amd64\t1.15-1\nlibxcb-render0:amd64\t1.15-1\nlibxcb-shape0:amd64\t1.15-1\nlibxcb-shm0:amd64\t1.15-1\nlibxcb-sync1:amd64\t1.15-1\nlibxcb-xfixes0:amd64\t1.15-1\nlibxcb1:amd64\t1.15-1\nlibxcomposite1:amd64\t1:0.4.5-1\nlibxcursor1:amd64\t1:1.2.1-1\nlibxdamage1:amd64\t1:1.1.6-1\nlibxdmcp6:amd64\t1:1.1.2-3\nlibxext6:amd64\t2:1.3.4-1+b1\nlibxfixes3:amd64\t1:6.0.0-2\nlibxi6:amd64\t2:1.8-1+b1\nlibxinerama1:amd64\t2:1.1.4-3\nlibxkbcommon0:amd64\t1.5.0-1\nlibxml2:amd64\t2.9.14+dfsg-1.3~deb12u6\nlibxrandr2:amd64\t2:1.5.2-2+b1\nlibxrender1:amd64\t1:0.9.10-1.1\nlibxshmfence1:amd64\t1.3-1\nlibxss1:amd64\t1:1.2.3-1\nlibxtst6:amd64\t2:1.2.3-1.1\nlibxv1:amd64\t2:1.0.11-1.1\nlibxvidcore4:amd64\t2:1.3.7-1\nlibxxf86vm1:amd64\t1:1.1.4-1+b2\nlibxxhash0:amd64\t0.8.1-1\nlibz3-4:amd64\t4.8.12-3.1\nlibzim8:amd64\t8.1.1-0.2\nlibzimg2:amd64\t3.0.4+ds1-1\nlibzmq5:amd64\t4.3.4-6\nlibzstd1:amd64\t1.5.4+dfsg2-5\nlibzvbi-common\t0.2.41-1+deb12u1\nlibzvbi0:amd64\t0.2.41-1+deb12u1\nlogin\t1:4.13+dfsg1-1+deb12u2\nlogsave\t1.47.0-2+b2\nmawk\t1.3.4.20200120-3.1\nmount\t2.38.1-5+deb12u3\nmtools\t4.0.33-1+really4.0.32-1\nncurses-base\t6.4-4\nncurses-bin\t6.4-4\nnetbase\t6.4\nocl-icd-libopencl1:amd64\t2.3.1-1\nopenjdk-17-jre:amd64\t17.0.21+9-1~deb12u1\nopenjdk-17-jre-headless:amd64\t17.0.21+9-1~deb12u1\nopenssl\t3.0.22-1~deb12u2\nosmium-tool\t1.15.0-1\npasswd\t1:4.13+dfsg1-1+deb12u2\nperl-base\t5.36.0-7+deb12u4\npoppler-utils\t22.12.0-2+deb12u3\nreadline-common\t8.2-1.3\nsed\t4.9-1+deb12u1\nshared-mime-info\t2.2-1\nsysvinit-utils\t3.06-4\ntar\t1.34+dfsg-1.2+deb12u1\ntzdata\t2026e-0+deb12u1\nusr-is-merged\t37~deb12u1\nutil-linux\t2.38.1-5+deb12u3\nutil-linux-extra\t2.38.1-5+deb12u3\nx11-common\t1:7.7+23\nxkb-data\t2.35.1-1\nzim-tools\t3.1.3-1\nzlib1g:amd64\t1:1.2.13.dfsg-1\nzstd\t1.5.4+dfsg2-5\n1.3.11\nzim-tools 3.8.0\n\nlibzim 9.8.2\n+ libzstd 1.5.7\n+ liblzma 5.2.6\n+ libxapian 1.4.23\n+ libicu 73.2.0\n"
+      },
+      "generation_json_file_sha256": "7ef62b00e2aaf699b8ad681eea3a542995cd8cf412a14c0c60b972704502e022",
+      "output_duration_seconds": "179.834000",
+      "size_bytes": 14399632,
+      "source_media_end_seconds": 179.832,
+      "subtitles": [],
+      "tracks": [
+        {
+          "codec": "h264",
+          "default": 1,
+          "language": "und",
+          "type": "video"
+        },
+        {
+          "codec": "aac",
+          "default": 1,
+          "language": "eng",
+          "type": "audio"
+        }
+      ]
+    }
+  },
+  "container_image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "cpu_limit": 1,
+  "memory_limit": "1 GiB",
+  "network": "disabled",
+  "platform": "linux/amd64",
+  "source_date_epoch": 1793404800,
+  "status": "development reproducibility only; human rights, suitability, pin, caption synchronization, and device playback reviews remain open"
+}

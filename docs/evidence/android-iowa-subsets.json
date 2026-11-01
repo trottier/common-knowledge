@@ -1,0 +1,38 @@
+{
+  "state": "IA",
+  "checked_against": "canonical filtered source in matched A/B output",
+  "regions": [
+    {
+      "source_path": "regions/IA_001_roads_places.osm.pbf",
+      "region_sha256": "e7f33cc3e2acb80dd57bf0cc95e9874aebe8e73ced4e74f643259f0ba6078569",
+      "reference_sha256": "0bf525eb9b3402d57b2f971ddbc72fd7704077dbec4ff2732e65b640701e160b",
+      "all_objects_and_attributes_equal": true
+    },
+    {
+      "source_path": "regions/IA_002_roads_places.osm.pbf",
+      "region_sha256": "b2273477521aec4650968dae99339d914c02cb1e4d78ee71de8a619c92610798",
+      "reference_sha256": "8761ae11c7bdf7c6a2f2e09180be67b8bb09587570002c4af4b5d1146530a145",
+      "all_objects_and_attributes_equal": true
+    }
+  ],
+  "national_collection_complete": false,
+  "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "context": "colima-common-knowledge",
+  "cpus": 1,
+  "memory_bytes": 6442450944,
+  "network": "none",
+  "earlier_audit_attempts": [
+    {
+      "limit_bytes": 1073741824,
+      "kernel_oom_time_local": "2026-11-01 11:23:00",
+      "container_id": "5401d3b0af2f6ec02b82033f91fdb3e8994119489737ab9ea8cee7befd424b2b",
+      "killed_process": "osmium"
+    },
+    {
+      "limit_bytes": 3221225472,
+      "kernel_oom_time_local": "2026-11-01 11:24:03",
+      "container_id": "f5b47b370181b9e848126a3b8341b5e423ab64aa565973014b970ed281556bc1",
+      "killed_process": "osmium"
+    }
+  ]
+}

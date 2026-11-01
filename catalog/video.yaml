@@ -293,7 +293,7 @@
     "title": "What You Need to Know About Handwashing — normalized CDC ASL video",
     "version": "CDC 2020-04-10; development conversion",
     "size_bytes": 10813142,
-    "sha256": "dda2d060c97ef12bc92d4c95adda6090e36d5a0c8bfe2bfda67105bb4c069ba8",
+    "sha256": "1d9c9d612ae82fecceee8631c2fcb024d9ddf443b5648d33bf7f567319b16341",
     "license": "US-PD AND CC0-1.0",
     "attribution": "Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.",
     "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
@@ -307,7 +307,7 @@
       "cdc_handwashing_asl_source",
       "iso639_2"
     ],
-    "pipeline_version": "video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b",
+    "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
     "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]"
   },
   {
@@ -318,7 +318,7 @@
     "url": "https://usgs-ocapsv2-public-input-media.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/video/Preparedness%20-Earthquakes%20-%20Part%205%20%281%29.mp4",
     "size_bytes": 118084421,
     "sha256": "66a95053e9cf83c36d9046c93051ac119cb8f33a9c2e0cfbc06da785205cac69",
-    "license": "US-PD",
+    "license": "US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]]",
     "attribution": "Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.",
     "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
     "placement": "hub_only",
@@ -326,7 +326,8 @@
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]"
+    "review": "[[VERIFY: named legal review of exact third-party footage rights; publisher states additional footage used with permission from Envato Elements, which is not a redistribution grant for Common Knowledge; independent source/conversion pin, content currency, caption synchronization, and physical playback review remain open]]",
+    "requires_legal": true
   },
   {
     "id": "usgs_earthquake_drop_caption_en",
@@ -350,10 +351,10 @@
     "id": "usgs_earthquake_drop_cover",
     "family": "generated",
     "title": "National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On",
-    "version": "USGS 2023-09-20; development normalization with inferred caption timeline shift",
+    "version": "USGS 2023-09-20; historical development normalization with inferred caption timeline shift; third-party footage rights held",
     "size_bytes": 4023964,
     "sha256": "1e80a8c6aad80f307d49f99ddcdb23ea7336b6b1d75b5505dd9657fb9e613049",
-    "license": "US-PD AND CC0-1.0",
+    "license": "US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]] AND CC0-1.0",
     "attribution": "Peter Pearsall, U.S. Geological Survey, Communications and Publishing. Format conversion and source notice: Common Knowledge. No agency endorsement is implied. Original English audio and publisher English captions are retained; no text overlay added.",
     "license_proof_url": "https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold",
     "placement": {
@@ -371,6 +372,114 @@
       "iso639_2"
     ],
     "pipeline_version": "video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b",
-    "review": "[[VERIFY: human source-currency, computed-pin, caption synchronization and physical playback review; English audio/subtitle tracks only, no Spanish publisher track is supplied]]"
+    "review": "[[VERIFY: named legal review of exact third-party footage rights; publisher states additional footage used with permission from Envato Elements, which is not a redistribution grant for Common Knowledge; independent source/conversion pin, content currency, caption synchronization, and physical playback review remain open]]",
+    "requires_legal": true
+  },
+  {
+    "id": "commons_rope_middle_source",
+    "family": "video",
+    "title": "Tying off onto the middle of a rope — Commons original",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Tying_off_onto_the_middle_of_a_rope.webm",
+    "version": "Commons original uploaded 2021-03-20T21:49:18Z",
+    "size_bytes": 190825781,
+    "sha256": "94fa9fff509b1d7c535309e57118a1c60ba52ab43baed63253c32d3a724d028f",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Tying off onto the middle of a rope, Slashme; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm. No creator endorsement is implied.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent HTTPS pin and per-item rights review; human knot and load-securing suitability; no approval for climbing, rescue, or towing; caption synchronization, pin, and phone playback]]"
+  },
+  {
+    "id": "commons_rope_middle",
+    "family": "generated",
+    "title": "Tying off onto the middle of a rope — normalized video",
+    "version": "Commons 2021-03-20T21:49:18Z; development normalization",
+    "size_bytes": 36679027,
+    "sha256": "9e766ee2fbb4631a38512da6ad232f39369a619630be24f898810d521bca72e2",
+    "license": "CC-BY-SA-4.0 AND CC0-1.0",
+    "attribution": "Tying off onto the middle of a rope, Slashme; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm",
+    "placement": {
+      "topics": [
+        "transport"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/transport/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "commons_rope_middle_source",
+      "iso639_2",
+      "commons_rope_middle_caption_en"
+    ],
+    "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+    "review": "[[VERIFY: human source, conversion, and knot and load-securing suitability; no approval for climbing, rescue, or towing; caption synchronization, pin, and phone playback; English only, author English subtitles retained; no Spanish track supplied]]"
+  },
+  {
+    "id": "commons_simple_sketchbook_source",
+    "family": "video",
+    "title": "How to make a simple sketch book — Commons original",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/How_to_make_a_simple_sketch_book.webm",
+    "version": "Commons original uploaded 2020-04-03T12:02:00Z",
+    "size_bytes": 221639196,
+    "sha256": "7ce4727f2fb2b56e74bd7d0a3200fd9374844c2ab92ab86a1f65024f05724323",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "How to make a simple sketch book, Barry neeson; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm. No creator endorsement is implied.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent HTTPS pin and per-item rights review; human age and supervision suitability for scissors, thumbtack, and paper-clip wire; pin and phone playback]]"
+  },
+  {
+    "id": "commons_simple_sketchbook",
+    "family": "generated",
+    "title": "How to make a simple sketch book — normalized video",
+    "version": "Commons 2020-04-03T12:02:00Z; development normalization",
+    "size_bytes": 14399632,
+    "sha256": "2a6a311743c62d3d880f03c0bf6f56e31aad264489b7b99b92563ddc3f754885",
+    "license": "CC-BY-SA-4.0 AND CC0-1.0",
+    "attribution": "How to make a simple sketch book, Barry neeson; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm",
+    "placement": {
+      "topics": [
+        "psychosocial"
+      ]
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/topics/psychosocial/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "commons_simple_sketchbook_source",
+      "iso639_2"
+    ],
+    "pipeline_version": "video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a",
+    "review": "[[VERIFY: human source, conversion, and age and supervision suitability for scissors, thumbtack, and paper-clip wire; pin and phone playback; English only, no Spanish audio or captions supplied]]"
+  },
+  {
+    "id": "commons_rope_middle_caption_en",
+    "family": "docs",
+    "title": "Tying off onto the middle of a rope — author English subtitles",
+    "url": "https://commons.wikimedia.org/w/index.php?title=TimedText:Tying_off_onto_the_middle_of_a_rope.webm.en.srt&oldid=544523334&action=raw",
+    "version": "Commons revision 544523334; Slashme; 2021-03-20T21:49:32Z",
+    "size_bytes": 5978,
+    "sha256": "edf38a6d1c1ee4cb84eeeae1bc21872ac09cf3d9b4fa9e128acb1996550d497d",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "English subtitles by Slashme, Wikimedia Commons TimedText revision 544523334. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Publisher subtitle text and cue times retained.",
+    "license_proof_url": "https://commons.wikimedia.org/wiki/TimedText:Tying_off_onto_the_middle_of_a_rope.webm.en.srt",
+    "placement": "hub_only",
+    "dest": "build/video-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent raw revision pin, caption rights, and complete caption synchronization review]]"
   }
 ]
