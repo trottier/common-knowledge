@@ -119,9 +119,11 @@ class Driver:
         else:
             raise ValueError("Unknown input workflow action: " + kind)
 
-    def prepare(self, profile, epoch=None):
-        self.ck("check-profile", "--profile", profile)
+    def prepare(self, profile, epoch=None, variants=None):
+        selection = ["--variants", *map(str, variants)] if variants is not None else []
+        self.ck("check-profile", "--profile", profile, *selection)
         args = ["prepare-plan", "--profile", profile, "--output", "/work/plan.json"]
+        args += selection
         if epoch is not None:
             args += ["--epoch", str(epoch)]
         self.ck(*args)
@@ -177,6 +179,7 @@ class Driver:
             self.ck("verify-prepared", task["id"], "--generated", "/generated", epoch=True)
         receipt = {
             "profile": profile,
+            "variants": plan["variants"],
             "source_date_epoch": self.epoch,
             "images": self.images,
             "selected": plan["selected"],
@@ -193,6 +196,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    parser.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
     parser.add_argument("--work", type=Path, required=True)
     parser.add_argument("--cache", type=Path, required=True)
     parser.add_argument("--generated", type=Path, required=True)
@@ -202,7 +206,7 @@ def main():
     args = parser.parse_args()
     Driver(
         args.root, args.work, args.cache, args.generated, args.build_image, args.atlas_image
-    ).prepare(args.profile, args.epoch)
+    ).prepare(args.profile, args.epoch, args.variants)
 
 
 if __name__ == "__main__":

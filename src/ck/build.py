@@ -17,11 +17,18 @@ from ck.render import epoch_for
 from ck.review import require_release_ready
 
 
-def check_profile(root: Path, profile: str) -> list[dict]:
+def check_profile(root: Path, profile: str, variants: list[int] | None = None) -> list[dict]:
+    from ck.preparation import selected_variants
+
     config = load_config(root)
+    numbers = selected_variants(config, variants)
     if profile == "full":
         require_release_ready(root)
-    plans = plan_variants(config, load_catalog(root, config), profile, 0)
+    plans = [
+        plan
+        for plan in plan_variants(config, load_catalog(root, config), profile, 0)
+        if plan.variant in numbers
+    ]
     blockers = sorted({problem for plan in plans for problem in plan.blockers})
     if blockers:
         raise ValueError(f"{profile} profile is not ready:\n" + "\n".join(blockers))

@@ -17,6 +17,13 @@ A host Python interpreter dispatches Docker; it does not generate shipped files.
 
 The graph is derived from the ordinary capacity planner's union across the eight
 variants, including its prebuilt-map fallback and local-LLM placement decisions.
+Pass `--variants 1` to `ck prepare-plan`, `ck check-profile`, or
+`tools/prepare_profile.py` to prepare only Variant 1's complete dependency graph.
+An omitted selector preserves the union of all eight variants. Invalid or
+duplicate variants fail, and an explicit selection preserves every selected
+item's existing review, license, and capacity gates. Full-profile release checks
+remain global. This selector does not authorize reuse, clear review holds, or
+change the image-building command's behavior.
 Dependencies precede consumers. An unknown generator, cycle or missing dependency
 fails instead of dropping an item. Core PDFs are rendered before the final
 preparation plan so actual core bytes enter the placement decision. An assumed

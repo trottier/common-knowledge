@@ -48,6 +48,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         "prepare-plan", help="Describe the complete input-generation graph"
     )
     preparation.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    preparation.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
     preparation.add_argument("--core", type=Path)
     preparation.add_argument("--epoch", type=int)
     preparation.add_argument(
@@ -291,6 +292,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     sourcecheck.add_argument("--report", type=Path)
     preflight = commands.add_parser("check-profile", help="Fail on every unresolved profile input")
     preflight.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    preflight.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
     build = commands.add_parser("build-profile", help="Build staged, verified variant images")
     build.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
     build.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
@@ -319,6 +321,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 args.profile,
                 core_size(args.core) if args.core else 0,
                 args.capacity_bytes,
+                args.variants,
             )
             plan["source_date_epoch"] = epoch_for(config, args.epoch)
             args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -447,7 +450,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             from ck.build import build_profile, check_profile
 
             if args.command == "check-profile":
-                print(json.dumps(check_profile(args.root, args.profile), indent=2))
+                print(json.dumps(check_profile(args.root, args.profile, args.variants), indent=2))
             else:
                 print(
                     json.dumps(

@@ -1,6 +1,7 @@
 """Input generation preserves dependency order, review gates and offline boundaries."""
 
 import importlib.util
+import json
 from pathlib import Path
 
 import pytest
@@ -29,6 +30,79 @@ def test_complete_catalog_has_handlers_and_dependencies_precede_consumers():
         assert "osmand_prebuilt" not in plan["selected"]
     assert {"national_atlas", "national_directory", "android_roads_places"} <= set(ordered)
     assert len([key for key in ordered if key.startswith("android_extract_")]) == 56
+
+
+def test_explicit_variant_one_keeps_its_whole_graph_without_other_variants_comms():
+    from ck.planner import plan_variants
+
+    config = load_config(ROOT)
+    items = load_catalog(ROOT, config)
+    default = preparation_plan(ROOT, "sample")
+    one = preparation_plan(ROOT, "sample", variants=[1])
+    assert default["variants"] == list(range(1, 9))
+    assert one["variants"] == [1]
+    assert one["selected"] == plan_variants(config, items, "sample", 0)[0].items
+    assert set(default["selected"]) - set(one["selected"]) == {
+        "ics_forms",
+        "ncvec_extra",
+        "ncvec_extra_diagrams",
+        "ncvec_general",
+        "ncvec_general_diagrams",
+        "ncvec_tech",
+        "ncvec_tech_diagrams",
+    }
+    assert "wikem_article_1" in one["downloads"]
+    assert "bitchat_android" in one["selected"] and "briar_android" in one["selected"]
+    assert {"atlas_ri", "directory_ri", "android_roads_places_ri"} <= {
+        task["id"] for task in one["tasks"]
+    }
+
+
+def test_prepare_plan_cli_records_an_explicit_subset_and_rejects_invalid_ids(tmp_path):
+    from ck.cli import main
+
+    output = tmp_path / "plan.json"
+    assert (
+        main(
+            [
+                "--root",
+                str(ROOT),
+                "prepare-plan",
+                "--profile",
+                "sample",
+                "--variants",
+                "1",
+                "--epoch",
+                "1793404800",
+                "--output",
+                str(output),
+            ]
+        )
+        == 0
+    )
+    assert json.loads(output.read_text())["variants"] == [1]
+    invalid = tmp_path / "invalid.json"
+    with pytest.raises(SystemExit) as error:
+        main(
+            [
+                "--root",
+                str(ROOT),
+                "prepare-plan",
+                "--profile",
+                "sample",
+                "--variants",
+                "0",
+                "--output",
+                str(invalid),
+            ]
+        )
+    assert error.value.code == 2 and not invalid.exists()
+
+
+@pytest.mark.parametrize("variants", [[], [0], [9], [1, 1], [True], [1.0]])
+def test_invalid_variant_selection_fails_before_building_a_graph(variants):
+    with pytest.raises(ValueError, match="distinct configured variants"):
+        preparation_plan(ROOT, "sample", variants=variants)
 
 
 def test_unknown_generator_and_cycles_fail_instead_of_dropping_content(monkeypatch):
@@ -153,6 +227,33 @@ def test_preflight_failure_never_starts_fetching_or_generation(tmp_path, monkeyp
     with pytest.raises(ValueError, match="Review gates remain"):
         build.prepare("full")
     assert calls == [("check-profile", "--profile", "full")]
+    assert not (build.work / "preparation.json").exists()
+
+
+def test_driver_forwards_explicit_selection_to_preflight_and_preparation(tmp_path, monkeypatch):
+    build, _ = driver(tmp_path)
+    calls = []
+
+    def stop_before_generation(*arguments, **kwargs):
+        calls.append(arguments)
+        if arguments[0] == "prepare-plan":
+            raise RuntimeError("stop after recording the selected preparation command")
+
+    monkeypatch.setattr(build, "ck", stop_before_generation)
+    with pytest.raises(RuntimeError, match="stop after recording"):
+        build.prepare("sample", 1793404800, variants=[1])
+    assert calls[0] == ("check-profile", "--profile", "sample", "--variants", "1")
+    assert calls[1] == (
+        "prepare-plan",
+        "--profile",
+        "sample",
+        "--output",
+        "/work/plan.json",
+        "--variants",
+        "1",
+        "--epoch",
+        "1793404800",
+    )
     assert not (build.work / "preparation.json").exists()
 
 
