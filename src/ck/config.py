@@ -162,6 +162,18 @@ class Profile(Model):
         return math.floor(capacity * (1 - self.reserve_fraction))
 
 
+class PDFBudget(Model):
+    """Shared byte guardrail and an unproven phone-coverage target."""
+
+    max_file_mb: int = Field(gt=0)
+    target_phone_coverage: float = Field(gt=0, le=1)
+
+    @property
+    def max_file_bytes(self) -> int:
+        """Convert decimal megabytes; this is not a rendering-memory limit."""
+        return self.max_file_mb * 1_000_000
+
+
 class Build(Model):
     version: Annotated[str, StringConstraints(pattern=r"^\d+\.\d+\.\d+$")]
     android_maps: Literal["auto", "roads_places"]
@@ -169,6 +181,7 @@ class Build(Model):
     volume_id: Annotated[str, StringConstraints(pattern=r"^[0-9A-F]{8}$")]
     site_base_url: Text
     source_date_epoch: Annotated[int, Field(ge=315532800)] | Marker
+    pdf: PDFBudget
     profiles: dict[Literal["dev", "sample", "full"], Profile]
 
     @model_validator(mode="after")

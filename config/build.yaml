@@ -4,8 +4,11 @@ volume_label: "EMERGENCY"
 volume_id: "0C0FFEE0"
 site_base_url: "https://trottier.github.io/common-knowledge/"
 source_date_epoch: "[[VERIFY: set at release]]"
+pdf:
+  max_file_mb: 10  # Provisional engineering guardrail; decimal MB, not a memory limit.
+  target_phone_coverage: 0.95  # Target only; representative device evidence is pending.
 profiles:
   dev:    { third_party: none,   image_size_mib: 256 }                # CI on every push
-  sample: { third_party: sample, image_size_mib: 4096 }               # one small state, small archives, tiny model
+  sample: { third_party: sample, image_size_mib: 4096 }               # Variant 1 and Rhode Island first
   full:   { third_party: all,    capacity_bytes: "[[VERIFY: measured usable bytes of the production 32 GB part]]",
             reserve_fraction: 0.03 }
