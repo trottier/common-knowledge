@@ -132,6 +132,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     android_map.add_argument("--epoch", type=int)
     android_map.add_argument("--prepared", type=Path)
     android_map.add_argument("--prepared-id")
+    android_map.add_argument(
+        "--split", action="store_true", help="Convert a prepared large state in bounded parts"
+    )
     android_source = commands.add_parser(
         "android-source", help="Filter a verified national OSM parent once for state map builds"
     )
@@ -703,12 +706,12 @@ def main(argv: Sequence[str] | None = None) -> int:
             return 0
         if args.command == "android-collect":
             from ck.catalog import load_catalog
-            from ck.mapextract import collect_android_maps
+            from ck.mapsplit import collect_mixed_maps
             from ck.render import epoch_for
 
             print(
                 json.dumps(
-                    collect_android_maps(
+                    collect_mixed_maps(
                         args.root,
                         load_catalog(args.root, config),
                         args.cache,
@@ -725,9 +728,16 @@ def main(argv: Sequence[str] | None = None) -> int:
             from ck.catalog import load_catalog
             from ck.render import epoch_for
 
+            builder = build_android_map
+            if args.split:
+                from ck.mapsplit import build_split_map
+
+                if not args.prepared or not args.prepared_id:
+                    raise ValueError("Split conversion requires a checked prepared state source")
+                builder = build_split_map
             print(
                 json.dumps(
-                    build_android_map(
+                    builder(
                         args.root,
                         load_catalog(args.root, config),
                         args.cache,

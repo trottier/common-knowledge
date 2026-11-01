@@ -1,21 +1,22 @@
 ---
-title: Mapas sin conexión para Android
+title: Mapas sin conexión
 status: machine
 reviewer: null
 reviewed_on: null
 source_inputs:
-  content/en/android-maps.md: abbd9380096c99ffa221aa6737b294a59856cccf653926e24904709594858218
+  content/en/android-maps.md: 5131898bb01a4fac0b817e93dde939d4f1191fa8a41281100861d0373d01dddf
 ---
 
 Abre **3_MAPS_AND_PLACES → android**.
 
 Toca **OsmAnd.apk**. Sigue las indicaciones para instalar.
-[[VERIFY: probar la instalación del APK fijado]]
 
-Abre **maps**. Abre el archivo **.obf** de tu estado con **OsmAnd**. [@osmand_import]
+Abre **maps**. Abre cada mapa **.obf** de tu estado con **OsmAnd**. [@osmand_import]
+
+Si hay una lista **PARTS**, abre todos los mapas que aparecen en ella. [@project_spec]
 
 Reinicia OsmAnd. Revisa **Menú → Mapas y recursos → Local**. [@osmand_import]
 
-[[VERIFY: probar el permiso de ubicación y el GPS sin conexión en los teléfonos indicados]]
+[[VERIFY: probar instalación, permiso de ubicación, GPS sin conexión y rutas entre partes]]
 
 Detente si la ruta es peligrosa. Usa el atlas en PDF si la aplicación falla. [@project_spec]

@@ -1,0 +1,7 @@
+# Operational bounds for the additive large-state converter. These are not
+# guarantees about the publisher's peak memory use; conversion can still fail.
+max_part_bytes: 33554432
+max_parts: 128
+max_depth: 12
+overlap_degrees: 0.001
+max_heap_mib: 3072
