@@ -14,6 +14,12 @@ retain their existing inputs and link the seven source archives transitively.
 The compiled AARs are not corresponding-source inputs and are not placed on a
 drive. No application, source-pin, license, or physical-device approval is granted.
 
+The [integration receipt](evidence/android-source-graph-integration.json) confirms
+that each APK's release-source walk now reaches eight archives, including its
+application archive. It independently rechecks all new cached payloads and
+repeats all eight native library bindings. The two APKs share the same seven
+dependency source records; the AARs remain outside both source graphs.
+
 ## Publisher bindings
 
 The selected [APK distribution directory](https://get.videolan.org/vlc-android/3.7.1/)

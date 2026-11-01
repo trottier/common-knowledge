@@ -14,9 +14,15 @@ pins commit `fbfebc4242f09e996a867de7988683628d426534`.
 The [machine-readable evidence](evidence/briar-sources.json) records source URLs,
 archive hashes, publisher checksums, POM license declarations, inherited license
 proofs, source counts, original build-file hashes, and native APK comparisons.
-The [additive linkage proposal](evidence/briar-source-links.json) preserves the
-existing Mailbox input. It excludes the two native binary audit JARs from the
-source graph. No payload is committed to Git; verified bytes are cached by SHA-256.
+The catalog now applies the [additive linkage proposal](evidence/briar-source-links.json):
+the application source has 45 direct inputs, retaining Mailbox and adding these
+44 archives. The release-source walk reaches 46 source archives including the
+application itself, and excludes both native binary audit JARs.
+The [integration receipt](evidence/android-source-graph-integration.json) records
+independent cache/archive checks and repeats all eight native APK comparisons.
+All 642 existing bitchat source inputs remain unchanged. No payload is committed
+to Git; verified bytes are cached by SHA-256. Full corresponding-source closure,
+human pin review, and legal approval remain open.
 
 ## Bounded Java source set
 

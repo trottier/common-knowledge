@@ -8529,6 +8529,512 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `23dd229a5710c31321de73e619f59915344a9e9e6bc5f01ac245c3de03777296`
 - Publisher file: https://code.briarproject.org/api/v4/projects/briar%2Fbriar/repository/archive.tar.gz?sha=fbfebc4242f09e996a867de7988683628d426534
 
+## androidx.annotation:annotation:1.5.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_annotation_annotation_1_5_0`
+- Version: 1.5.0
+- License: Apache-2.0
+- Attribution: annotation contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.5.0/annotation-1.5.0.pom
+- Size: 60709 bytes
+- SHA-256: `321c0d46007a21b02c99b8b690afb9eec200c7fde0f60ab7e056c1d0c3024d42`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/annotation/annotation/1.5.0/annotation-1.5.0-sources.jar
+
+## androidx.constraintlayout:constraintlayout:2.1.4 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_constraintlayout_constraintlayout_2_1_4`
+- Version: 2.1.4
+- License: Apache-2.0
+- Attribution: constraintlayout contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout/2.1.4/constraintlayout-2.1.4.pom
+- Size: 273907 bytes
+- SHA-256: `849b8de0b2a45df75d39cf9e4305d98ea276574c9290abfeafe9349b12275f7e`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/constraintlayout/constraintlayout/2.1.4/constraintlayout-2.1.4-sources.jar
+
+## androidx.exifinterface:exifinterface:1.3.7 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_exifinterface_exifinterface_1_3_7`
+- Version: 1.3.7
+- License: Apache-2.0
+- Attribution: exifinterface contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.3.7/exifinterface-1.3.7.pom
+- Size: 64785 bytes
+- SHA-256: `04c0a6d2ff9745ab9946ebcdd2cf35889e05c79e5218e8b59a57a98a2670dc74`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.3.7/exifinterface-1.3.7-sources.jar
+
+## androidx.fragment:fragment:1.6.2 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_fragment_fragment_1_6_2`
+- Version: 1.6.2
+- License: Apache-2.0
+- Attribution: fragment contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.6.2/fragment-1.6.2.pom
+- Size: 194086 bytes
+- SHA-256: `6957c79f099d5ff9d636a5e6f0a4a7bbf18e8ddf6144789c2508a16fe8afc088`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/fragment/fragment/1.6.2/fragment-1.6.2-sources.jar
+
+## androidx.lifecycle:lifecycle-livedata:2.6.2 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_lifecycle_lifecycle_livedata_2_6_2`
+- Version: 2.6.2
+- License: Apache-2.0
+- Attribution: lifecycle-livedata contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom
+- Size: 6551 bytes
+- SHA-256: `5e55ddad2a4a2cf7c33650059f11274a579db92dd88a04800912d70576227f61`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2-sources.jar
+
+## androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_lifecycle_lifecycle_viewmodel_ktx_2_6_2`
+- Version: 2.6.2
+- License: Apache-2.0
+- Attribution: lifecycle-viewmodel-ktx contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2.pom
+- Size: 1410 bytes
+- SHA-256: `dc9b84fecf2d5c7eade2d86e75a5c407c81209698e001fe822a5ed1896571d67`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2-sources.jar
+
+## androidx.preference:preference:1.2.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_preference_preference_1_2_1`
+- Version: 1.2.1
+- License: Apache-2.0
+- Attribution: preference contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/preference/preference/1.2.1/preference-1.2.1.pom
+- Size: 114097 bytes
+- SHA-256: `e5c16f4ce8afacb66bbbb34837cc070a5c6a7ca07ae1a8ff9c4c80c8e6edbf1f`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/preference/preference/1.2.1/preference-1.2.1-sources.jar
+
+## androidx.recyclerview:recyclerview-selection:1.1.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_androidx_recyclerview_recyclerview_selection_1_1_0`
+- Version: 1.1.0
+- License: Apache-2.0
+- Attribution: recyclerview-selection contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview-selection/1.1.0/recyclerview-selection-1.1.0.pom
+- Size: 85112 bytes
+- SHA-256: `9cb384801e162db47f8f1b3c69fa4a1f4a41be55117aa616dd4be81784ec7d36`
+- Publisher file: https://dl.google.com/dl/android/maven2/androidx/recyclerview/recyclerview-selection/1.1.0/recyclerview-selection-1.1.0-sources.jar
+
+## com.fasterxml.jackson.core:jackson-annotations:2.13.4 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_fasterxml_jackson_core_jackson_annotations_2_13_4`
+- Version: 2.13.4
+- License: Apache-2.0
+- Attribution: jackson-annotations contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.pom
+- Size: 80052 bytes
+- SHA-256: `f7957cd469e2c80f2a313d57816c9834135a5218e02eaa4d70d1a81fb49ca437`
+- Publisher file: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4-sources.jar
+
+## com.fasterxml.jackson.core:jackson-databind:2.13.4 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_fasterxml_jackson_core_jackson_databind_2_13_4`
+- Version: 2.13.4
+- License: Apache-2.0
+- Attribution: jackson-databind contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4.pom
+- Size: 1148632 bytes
+- SHA-256: `c1ab9263cb99f83f25cc6f7c5a1ae08cd9006946493b02e4574cdcb4da793cef`
+- Publisher file: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.4/jackson-databind-2.13.4-sources.jar
+
+## com.github.bumptech.glide:glide:4.16.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_github_bumptech_glide_glide_4_16_0`
+- Version: 4.16.0
+- License: [[VERIFY: publisher declares Simplified BSD and Apache-2.0; complete per-file license inventory]]
+- Attribution: glide contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/github/bumptech/glide/glide/4.16.0/glide-4.16.0.pom
+- Size: 450450 bytes
+- SHA-256: `e2ea6d3e0707682b0109375dbe2a6fe2f7247c89b7519797e94cfb00249213b7`
+- Publisher file: https://repo.maven.apache.org/maven2/com/github/bumptech/glide/glide/4.16.0/glide-4.16.0-sources.jar
+
+## com.github.chrisbanes:PhotoView:2.3.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_github_chrisbanes_photoview_2_3_0`
+- Version: 2.3.0
+- License: Apache-2.0
+- Attribution: PhotoView contributors; original source copyright and license notices retained
+- License proof: https://github.com/Baseflow/PhotoView/blob/2.3.0/LICENSE
+- Size: 16823 bytes
+- SHA-256: `e7a35edacabbeafb30c0f377b7a41ed2e4d96d53714096cbfaaf255459aa3426`
+- Publisher file: https://jitpack.io/com/github/chrisbanes/PhotoView/2.3.0/PhotoView-2.3.0-sources.jar
+
+## com.github.kobakei:MaterialFabSpeedDial:1.2.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_github_kobakei_materialfabspeeddial_1_2_1`
+- Version: 1.2.1
+- License: Apache-2.0
+- Attribution: MaterialFabSpeedDial contributors; original source copyright and license notices retained
+- License proof: https://github.com/kobakei/MaterialFabSpeedDial/blob/1.2.1/LICENSE
+- Size: 8460 bytes
+- SHA-256: `4f8f928cbbf11796c43594fa8d0067aba49fe61fd6d47105aed7dde3ef99d36a`
+- Publisher file: https://jitpack.io/com/github/kobakei/MaterialFabSpeedDial/1.2.1/MaterialFabSpeedDial-1.2.1-sources.jar
+
+## com.google.android.material:material:1.9.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_google_android_material_material_1_9_0`
+- Version: 1.9.0
+- License: Apache-2.0
+- Attribution: material contributors; original source copyright and license notices retained
+- License proof: https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.9.0/material-1.9.0.pom
+- Size: 1115899 bytes
+- SHA-256: `9bc70e328bc3b3eccc6d0daee90330b3244b1a17851fcbbf2ef8784c367c7262`
+- Publisher file: https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.9.0/material-1.9.0-sources.jar
+
+## com.google.code.findbugs:jsr305:3.0.2 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_google_code_findbugs_jsr305_3_0_2`
+- Version: 3.0.2
+- License: Apache-2.0
+- Attribution: jsr305 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+- Size: 18102 bytes
+- SHA-256: `1c9e85e272d0708c6a591dc74828c71603053b48cc75ae83cce56912a2aa063b`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar
+
+## com.google.dagger:dagger:2.51.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_google_dagger_dagger_2_51_1`
+- Version: 2.51.1
+- License: Apache-2.0
+- Attribution: dagger contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.51.1/dagger-2.51.1.pom
+- Size: 61204 bytes
+- SHA-256: `77e5cfde38b17973abca3f385bedf337e9f19a260665d5d8c447f34e46865cf6`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/dagger/dagger/2.51.1/dagger-2.51.1-sources.jar
+
+## com.google.zxing:core:3.3.3 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_google_zxing_core_3_3_3`
+- Version: 3.3.3
+- License: Apache-2.0
+- Attribution: core contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/google/zxing/zxing-parent/3.3.3/zxing-parent-3.3.3.pom
+- Size: 473966 bytes
+- SHA-256: `e646f122c7fe517f4ea2325f181985e20bff215bde566dd886035cb1b33679ac`
+- Publisher file: https://repo.maven.apache.org/maven2/com/google/zxing/core/3.3.3/core-3.3.3-sources.jar
+
+## com.h2database:h2:1.4.192 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_h2database_h2_1_4_192`
+- Version: 1.4.192
+- License: MPL-2.0 OR EPL-1.0
+- Attribution: h2 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192.pom
+- Size: 1243347 bytes
+- SHA-256: `1c986ddca63dc84d796fd7408b79b491660e74c621070f18a41d8f0c79e58742`
+- Publisher file: https://repo.maven.apache.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192-sources.jar
+
+## com.rometools:rome:1.18.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_rometools_rome_1_18_0`
+- Version: 1.18.0
+- License: Apache-2.0
+- Attribution: rome contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/rometools/rome/1.18.0/rome-1.18.0.pom
+- Size: 219300 bytes
+- SHA-256: `e6a07eed2909c3432717a63978d55a41fc030fca9db212795b2f6f1b25796c1c`
+- Publisher file: https://repo.maven.apache.org/maven2/com/rometools/rome/1.18.0/rome-1.18.0-sources.jar
+
+## com.squareup.okhttp3:okhttp:4.12.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_squareup_okhttp3_okhttp_4_12_0`
+- Version: 4.12.0
+- License: Apache-2.0
+- Attribution: okhttp contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.pom
+- Size: 368316 bytes
+- SHA-256: `d91a769a4140e542cddbac4e67fcf279299614e8bfd53bd23b85e60c2861341c`
+- Publisher file: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar
+
+## com.vanniktech:emoji:0.9.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_vanniktech_emoji_0_9_0`
+- Version: 0.9.0
+- License: Apache-2.0
+- Attribution: emoji contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/vanniktech/emoji/0.9.0/emoji-0.9.0.pom
+- Size: 57666 bytes
+- SHA-256: `cc3dca18b51617509e95979d6c2f47e7d7e2674833abd86454173b23e0ab691a`
+- Publisher file: https://repo.maven.apache.org/maven2/com/vanniktech/emoji/0.9.0/emoji-0.9.0-release-sources.jar
+
+## com.vanniktech:emoji-google:0.9.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_com_vanniktech_emoji_google_0_9_0`
+- Version: 0.9.0
+- License: Apache-2.0
+- Attribution: emoji-google contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/com/vanniktech/emoji-google/0.9.0/emoji-google-0.9.0.pom
+- Size: 52586 bytes
+- SHA-256: `7c92cf2440b479e6867ebda34c70cbec57c2c5b8376743b8dfee3f258a59355a`
+- Publisher file: https://repo.maven.apache.org/maven2/com/vanniktech/emoji-google/0.9.0/emoji-google-0.9.0-release-sources.jar
+
+## de.hdodenhof:circleimageview:3.1.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_de_hdodenhof_circleimageview_3_1_0`
+- Version: 3.1.0
+- License: Apache-2.0
+- Attribution: circleimageview contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/de/hdodenhof/circleimageview/3.1.0/circleimageview-3.1.0.pom
+- Size: 4160 bytes
+- SHA-256: `cf4dd292f8cd9da1e688363a4f8b7c2cb21d9ca54574ae8fc0b7a2107d4dbc84`
+- Publisher file: https://repo.maven.apache.org/maven2/de/hdodenhof/circleimageview/3.1.0/circleimageview-3.1.0-sources.jar
+
+## info.guardianproject.panic:panic:1.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_info_guardianproject_panic_panic_1_0`
+- Version: 1.0
+- License: LGPL-2.1-or-later
+- Attribution: panic contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/info/guardianproject/panic/panic/1.0/panic-1.0.pom
+- Size: 8805 bytes
+- SHA-256: `cdfd6c740c49feff058f83b84d37b7ec99108c0c4fb53ac0b7af6d150cc74874`
+- Publisher file: https://repo.maven.apache.org/maven2/info/guardianproject/panic/panic/1.0/panic-1.0-sources.jar
+
+## javax.inject:javax.inject:1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_javax_inject_javax_inject_1`
+- Version: 1
+- License: Apache-2.0
+- Attribution: javax.inject contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+- Size: 10928 bytes
+- SHA-256: `c4b87ee2911c139c3daf498a781967f1eb2e75bc1a8529a2e7b328a15d0e433e`
+- Publisher file: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar
+
+## net.i2p.crypto:eddsa:0.2.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_net_i2p_crypto_eddsa_0_2_0`
+- Version: 0.2.0
+- License: CC0-1.0
+- Attribution: eddsa contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.pom
+- Size: 52778 bytes
+- SHA-256: `d08f5baa9622aaf02216384864fbc84573012e0187dd8708a42ebc3e0a402dd4`
+- Publisher file: https://repo.maven.apache.org/maven2/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0-sources.jar
+
+## org.bitlet:weupnp:0.1.4 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_bitlet_weupnp_0_1_4`
+- Version: 0.1.4
+- License: LGPL-2.1-or-later
+- Attribution: weupnp contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/bitlet/weupnp/0.1.4/weupnp-0.1.4.pom
+- Size: 26652 bytes
+- SHA-256: `954023048656bed6a8fa23764e56eb360ff62eaca7881fa74985fdb38a3b7a94`
+- Publisher file: https://repo.maven.apache.org/maven2/org/bitlet/weupnp/0.1.4/weupnp-0.1.4-sources.jar
+
+## org.bouncycastle:bcprov-jdk15to18:1.82 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_bouncycastle_bcprov_jdk15to18_1_82`
+- Version: 1.82
+- License: MIT
+- Attribution: bcprov-jdk15to18 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.82/bcprov-jdk15to18-1.82.pom
+- Size: 4756344 bytes
+- SHA-256: `49b7c4b925bafc538391952f77f8d5a1d104a22d77e527d51aafe4430cb84151`
+- Publisher file: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.82/bcprov-jdk15to18-1.82-sources.jar
+
+## org.briarproject:dont-kill-me-lib:0.2.8 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_briarproject_dont_kill_me_lib_0_2_8`
+- Version: 0.2.8
+- License: [[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]
+- Attribution: dont-kill-me-lib contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/dont-kill-me-lib/0.2.8/dont-kill-me-lib-0.2.8.pom
+- Size: 10915 bytes
+- SHA-256: `a882aa49ff14902d854221ee3e19f5b4ffcba8a12291f0c57da086cf0d6cc2b6`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/dont-kill-me-lib/0.2.8/dont-kill-me-lib-0.2.8-sources.jar
+
+## org.briarproject:jtorctl:0.5 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_briarproject_jtorctl_0_5`
+- Version: 0.5
+- License: BSD-3-Clause
+- Attribution: jtorctl contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/jtorctl/0.5/jtorctl-0.5.pom
+- Size: 19651 bytes
+- SHA-256: `7b78a86be9a96747cc3379d3c90a756b5223409037b8eb2b402e09ce0e936e9c`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/jtorctl/0.5/jtorctl-0.5-sources.jar
+
+## org.briarproject:lyrebird-android:0.6.2 original native binary JAR for Briar byte comparison
+
+- Catalog id: `briar_dep_org_briarproject_lyrebird_android_0_6_2_binary_audit`
+- Version: 0.6.2
+- License: BSD-2-Clause AND BSD-3-Clause AND GPL-3.0-or-later AND [[VERIFY: complete Lyrebird vendored per-file license inventory]]
+- Attribution: Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.pom
+- Size: 23934542 bytes
+- SHA-256: `2d70a38393ee6f1760a65a33dd971210efa06b5a355ebea829196b61fd9fd11a`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.jar
+
+## org.briarproject:lyrebird-android:0.6.2 original publisher source bundle
+
+- Catalog id: `briar_dep_org_briarproject_lyrebird_android_0_6_2_source`
+- Version: 0.6.2
+- License: BSD-2-Clause AND BSD-3-Clause AND GPL-3.0-or-later AND [[VERIFY: complete Lyrebird vendored per-file license inventory]]
+- Attribution: Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2.pom
+- Size: 8105447 bytes
+- SHA-256: `b4c370a58da4b4e7e69ad071d92ec2f5dd277f75980be912d02993732e60bd08`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/lyrebird-android/0.6.2/lyrebird-android-0.6.2-sources.jar
+
+## org.briarproject:null-safety:0.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_briarproject_null_safety_0_1`
+- Version: 0.1
+- License: Apache-2.0
+- Attribution: null-safety contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/null-safety/0.1/null-safety-0.1.pom
+- Size: 3752 bytes
+- SHA-256: `4bcecba5c00fab033fdadc0ff343c3659f3fc0b06c839417ae82a60b9461984e`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/null-safety/0.1/null-safety-0.1-sources.jar
+
+## org.briarproject:onionwrapper-android:0.1.7 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_briarproject_onionwrapper_android_0_1_7`
+- Version: 0.1.7
+- License: [[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]
+- Attribution: onionwrapper-android contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-android/0.1.7/onionwrapper-android-0.1.7.pom
+- Size: 4937 bytes
+- SHA-256: `049ea14bd3329b441a3bd4ae33d67356c8ca70b5eb094e061566f0f17295c194`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-android/0.1.7/onionwrapper-android-0.1.7-sources.jar
+
+## org.briarproject:onionwrapper-core:0.1.7 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_briarproject_onionwrapper_core_0_1_7`
+- Version: 0.1.7
+- License: [[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]
+- Attribution: onionwrapper-core contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-core/0.1.7/onionwrapper-core-0.1.7.pom
+- Size: 19396 bytes
+- SHA-256: `8c2373c4236eed070771bf30ddf37c45fcd63910796f88fbc38c78a5a10b75bd`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/onionwrapper-core/0.1.7/onionwrapper-core-0.1.7-sources.jar
+
+## org.briarproject:socks-socket:0.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_briarproject_socks_socket_0_1`
+- Version: 0.1
+- License: Apache-2.0
+- Attribution: socks-socket contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/socks-socket/0.1/socks-socket-0.1.pom
+- Size: 4832 bytes
+- SHA-256: `9a814a2f78f9009653229723f3cffdfb0d90a0727727723a7cc9afc16874efa3`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/socks-socket/0.1/socks-socket-0.1-sources.jar
+
+## org.briarproject:tor-android:0.4.9.15 original native binary JAR for Briar byte comparison
+
+- Catalog id: `briar_dep_org_briarproject_tor_android_0_4_9_15_binary_audit`
+- Version: 0.4.9.15
+- License: BSD-3-Clause AND Apache-2.0 AND Zlib AND [[VERIFY: complete Tor bundle per-file license inventory]]
+- Attribution: Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.pom
+- Size: 14162317 bytes
+- SHA-256: `19960ba977b25e459bd504e0dedd363e9c117532ed4a87350261ee2194c546bd`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.jar
+
+## org.briarproject:tor-android:0.4.9.15 original publisher source bundle
+
+- Catalog id: `briar_dep_org_briarproject_tor_android_0_4_9_15_source`
+- Version: 0.4.9.15
+- License: BSD-3-Clause AND Apache-2.0 AND Zlib AND [[VERIFY: complete Tor bundle per-file license inventory]]
+- Attribution: Tor Project, Briar contributors, and bundled upstream contributors; original copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15.pom
+- Size: 71251198 bytes
+- SHA-256: `89a45ef2496234eac466d594a5b1d74b9f93f4b84b5c53d4ceb67f3a0346c809`
+- Publisher file: https://repo.maven.apache.org/maven2/org/briarproject/tor-android/0.4.9.15/tor-android-0.4.9.15-sources.jar
+
+## org.jdom:jdom2:2.0.6.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_jdom_jdom2_2_0_6_1`
+- Version: 2.0.6.1
+- License: [[VERIFY: JDOM source-header license, including binary notices and naming conditions]]
+- Attribution: jdom2 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom
+- Size: 488764 bytes
+- SHA-256: `45deefd1f842e35f0c1089eeecd057df632230ec6096ccc6fccfc639b95548d4`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1-sources.jar
+
+## org.jetbrains.kotlin:kotlin-stdlib:1.9.25 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_jetbrains_kotlin_kotlin_stdlib_1_9_25`
+- Version: 1.9.25
+- License: Apache-2.0
+- Attribution: kotlin-stdlib contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25.pom
+- Size: 605561 bytes
+- SHA-256: `1745faecebad150a45b5ddf63b29577693a27133bb3ef2126704230af8e5ea6a`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25-sources.jar
+
+## org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.25 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_25`
+- Version: 1.9.25
+- License: Apache-2.0
+- Attribution: kotlin-stdlib-jdk7 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25.pom
+- Size: 580 bytes
+- SHA-256: `2534c8908432e06de73177509903d405b55f423dd4c2f747e16b92a2162611e6`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25-sources.jar
+
+## org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.25 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_25`
+- Version: 1.9.25
+- License: Apache-2.0
+- Attribution: kotlin-stdlib-jdk8 contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25.pom
+- Size: 556 bytes
+- SHA-256: `3cb6895054a0985bba591c165503fe4dd63a215af53263b67a071ccdc242bf6e`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25-sources.jar
+
+## org.jsoup:jsoup:1.15.3 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_jsoup_jsoup_1_15_3`
+- Version: 1.15.3
+- License: MIT
+- Attribution: jsoup contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.pom
+- Size: 230852 bytes
+- SHA-256: `43947de5c649f3cef70dafe92741e5e09581f607b98113244f4fae3318828262`
+- Publisher file: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3-sources.jar
+
+## org.nanohttpd:nanohttpd:2.3.1 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_nanohttpd_nanohttpd_2_3_1`
+- Version: 2.3.1
+- License: BSD-3-Clause
+- Attribution: nanohttpd contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd-project/2.3.1/nanohttpd-project-2.3.1.pom
+- Size: 23924 bytes
+- SHA-256: `71b57b309dd19ca7bfceb3b0fa97ac9048ab2cb902a2607373633150f1997a67`
+- Publisher file: https://repo.maven.apache.org/maven2/org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1-sources.jar
+
+## org.whispersystems:curve25519-java:0.5.0 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_org_whispersystems_curve25519_java_0_5_0`
+- Version: 0.5.0
+- License: [[VERIFY: publisher GPL v3 declaration; confirm exact only-or-later grant and retained license text]]
+- Attribution: curve25519-java contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/whispersystems/curve25519-java/0.5.0/curve25519-java-0.5.0.pom
+- Size: 88777 bytes
+- SHA-256: `6824b9c54c362217cac381a36aa756790aa22c16e2f8d35b1fb6422733a2412b`
+- Publisher file: https://repo.maven.apache.org/maven2/org/whispersystems/curve25519-java/0.5.0/curve25519-java-0.5.0-sources.jar
+
+## uk.co.samuelwall:material-tap-target-prompt:3.3.2 original publisher source JAR for Briar dependency review
+
+- Catalog id: `briar_dep_uk_co_samuelwall_material_tap_target_prompt_3_3_2`
+- Version: 3.3.2
+- License: Apache-2.0
+- Attribution: material-tap-target-prompt contributors; original source copyright and license notices retained
+- License proof: https://repo.maven.apache.org/maven2/uk/co/samuelwall/material-tap-target-prompt/3.3.2/material-tap-target-prompt-3.3.2.pom
+- Size: 51284 bytes
+- SHA-256: `ee449f7321c9744f673d0dcd4ea3966a60af8b09e9e6628125249645d5e4bd1c`
+- Publisher file: https://repo.maven.apache.org/maven2/uk/co/samuelwall/material-tap-target-prompt/3.3.2/material-tap-target-prompt-3.3.2-sources.jar
+
 ## Briar pinned mailbox submodule source
 
 - Catalog id: `briar_mailbox_source`
@@ -11927,6 +12433,105 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 8103930 bytes
 - SHA-256: `0ed64811b3f9c978ba40aade4286014b4b6400489f66b86d87d935f415dba394`
 - Publisher file: https://code.videolan.org/videolan/vlc-android/-/archive/baeb1edae0678927ebe16d482d979e9c7e75ead6/vlc-android-baeb1edae0678927ebe16d482d979e9c7e75ead6.tar.gz
+
+## LibVLC 3.7.0 original publisher AAR; native provenance audit input
+
+- Catalog id: `vlc_libvlc_aar`
+- Version: 3.7.0
+- License: [[VERIFY: complete bundled native-component licenses; POM declares LGPL-2.1 but is not an aggregate native license inventory]]
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.pom
+- Size: 86664930 bytes
+- SHA-256: `963a121dcc2059d9bd836e1d3d609358d3aa74da42f1d6163a9830765f197af0`
+- Publisher file: https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.aar
+
+## libvlc-all 3.7.0 original publisher Java source JAR; no native sources
+
+- Catalog id: `vlc_libvlc_java_source`
+- Version: 3.7.0
+- License: GPL-2.0-or-later AND LGPL-2.1-or-later
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0.pom
+- Size: 75151 bytes
+- SHA-256: `95bb03b150ca4cda5fb334b02df2e4f95c627940a1134f805161ab0146566a37`
+- Publisher file: https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.0/libvlc-all-3.7.0-sources.jar
+
+## Exact LibVLCJNI source and 20 VLC patches selected by VLC Android 3.7.1 recipe
+
+- Catalog id: `vlc_libvlcjni_source`
+- Version: 7cd0c151da4162aa3052fb6949ddab1436d8fafb
+- License: GPL-2.0-or-later AND LGPL-2.1-or-later
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://code.videolan.org/videolan/libvlcjni/-/blob/7cd0c151da4162aa3052fb6949ddab1436d8fafb/README.md
+- Size: 258849 bytes
+- SHA-256: `963c970377454f257fa26c9c4984d160eb14038be782e89e5c8193cb8b8246eb`
+- Publisher file: https://code.videolan.org/api/v4/projects/videolan%2Flibvlcjni/repository/archive.tar.gz?sha=7cd0c151da4162aa3052fb6949ddab1436d8fafb
+
+## Exact libvlcpp submodule source selected by medialibrary recipe; app patch retained separately
+
+- Catalog id: `vlc_libvlcpp_source`
+- Version: 44c1f48e56a66c3f418175af1e1ef3fd1ab1b118
+- License: LGPL-2.1-or-later
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://code.videolan.org/videolan/libvlcpp/-/blob/44c1f48e56a66c3f418175af1e1ef3fd1ab1b118/COPYING
+- Size: 90070 bytes
+- SHA-256: `340419ce4a1537029c789ba9f01da149d7576b3fa39f19f3f816bfc0452685c6`
+- Publisher file: https://code.videolan.org/api/v4/projects/videolan%2Flibvlcpp/repository/archive.tar.gz?sha=44c1f48e56a66c3f418175af1e1ef3fd1ab1b118
+
+## Medialibrary 0.13.17 original publisher AAR; native provenance audit input
+
+- Catalog id: `vlc_medialibrary_aar`
+- Version: 0.13.17
+- License: [[VERIFY: complete bundled native-component licenses; POM declares LGPL-2.1 but is not an aggregate native license inventory]]
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.pom
+- Size: 9570952 bytes
+- SHA-256: `ca4a6b6be32eb9056d85c96c1bc9259fff3b1f0e8fc1f785312afe57170eaf92`
+- Publisher file: https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.aar
+
+## medialibrary-all 0.13.17 original publisher Java source JAR; no native sources
+
+- Catalog id: `vlc_medialibrary_java_source`
+- Version: 0.13.17
+- License: GPL-2.0-or-later AND LGPL-2.1-or-later
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17.pom
+- Size: 70963 bytes
+- SHA-256: `8c7f461b8a709752f0930610636117740777968541daaa909d1915bcd32611af`
+- Publisher file: https://repo.maven.apache.org/maven2/org/videolan/android/medialibrary-all/0.13.17/medialibrary-all-0.13.17-sources.jar
+
+## Exact medialibrary native source selected by VLC Android 3.7.1 recipe
+
+- Catalog id: `vlc_medialibrary_native_source`
+- Version: 8c56e26c625d757994cffeea84d2a0a2e6033dee
+- License: LGPL-2.1-or-later
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://code.videolan.org/videolan/medialibrary/-/blob/8c56e26c625d757994cffeea84d2a0a2e6033dee/COPYING
+- Size: 988739 bytes
+- SHA-256: `5421341fc6554c02fdbf4c790ea5537f8df744ed82038783936eab50095a1181`
+- Publisher file: https://code.videolan.org/api/v4/projects/videolan%2Fmedialibrary/repository/archive.tar.gz?sha=8c56e26c625d757994cffeea84d2a0a2e6033dee
+
+## Exact VLC native source base selected by LibVLCJNI recipe; contrib tarballs remain open
+
+- Catalog id: `vlc_native_base_source`
+- Version: 3458be162f476ff64b639140b684efa1143ddeea
+- License: GPL-2.0-or-later AND LGPL-2.1-or-later
+- Attribution: VideoLAN, VideoLabs, and original component contributors; original notices retained
+- License proof: https://code.videolan.org/videolan/vlc/-/blob/3458be162f476ff64b639140b684efa1143ddeea/COPYING
+- Size: 32830436 bytes
+- SHA-256: `a166dc34fdeef0ad5dbd46ec65980d4b90f621517c5a755c63817e1f66a8d103`
+- Publisher file: https://code.videolan.org/api/v4/projects/videolan%2Fvlc/repository/archive.tar.gz?sha=3458be162f476ff64b639140b684efa1143ddeea
+
+## Original SQLite source archive selected by VLC Android medialibrary recipe
+
+- Catalog id: `vlc_sqlite_source`
+- Version: sqlite-autoconf-3460100
+- License: Public-domain-US AND [[VERIFY: bundled configure and other build-script license inventory]]
+- Attribution: SQLite authors; original source and bundled build-script notices retained
+- License proof: https://www.sqlite.org/copyright.html
+- Size: 3265571 bytes
+- SHA-256: `67d3fe6d268e6eaddcae3727fce58fcc8e9c53869bdd07a0c61e38ddf2965071`
+- Publisher file: https://download.videolan.org/pub/contrib/sqlite/sqlite-autoconf-3460100.tar.gz
 
 ## WikEM article: Main Page
 
