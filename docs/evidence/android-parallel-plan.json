@@ -1,0 +1,502 @@
+{
+  "status": "in_progress",
+  "national_collection_complete": false,
+  "rights_or_device_approval": false,
+  "source_commit": "2b0ca26f1b32a00058f8b18791202ed23d793b71",
+  "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "context": "colima-common-knowledge-batch",
+  "source_date_epoch": 1793404800,
+  "controller_sha256": "74aa9e09fb6fdf3730d553eff63d111bd616c0a890ef6bb6360da657e3d79a04",
+  "expected_jurisdictions": [
+    "AK",
+    "AL",
+    "AR",
+    "AS",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "GU",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MP",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "PR",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VI",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+  ],
+  "preserved_single_map_pairs": [
+    {
+      "state": "AK",
+      "generation_manifest_sha256": "8b25b54feda307b3d73f76e6c6e6bfc7b4055d1d9f90bdc236934662ebe7cb1e",
+      "sha256": "69e8fb45c6709da36881bfd9967217d6a87caee18fc46b53c8e0c5b770838166",
+      "size_bytes": 39628147,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AK",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AK"
+      ]
+    },
+    {
+      "state": "AL",
+      "generation_manifest_sha256": "efe9eba4b565d375adcc148c721360553471ab0a22abc87cd73dcc8bd76a26ee",
+      "sha256": "d6b29bacbfaba36ad089933e578db2b46ef923d71596f48c76451bb42af40c60",
+      "size_bytes": 187339889,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AL",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AL"
+      ]
+    },
+    {
+      "state": "AR",
+      "generation_manifest_sha256": "bb5e6588935d4aacd26ceac9f4d021d862a830dd88d65ffe837dbf595b0f8b02",
+      "sha256": "95efabf9915963c64ec54bb1dbb8988d952f4289b73d8d76e090ddcd1e70d5a1",
+      "size_bytes": 140803388,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AR",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AR"
+      ]
+    },
+    {
+      "state": "AS",
+      "generation_manifest_sha256": "7f0483d76982f9d5d16c83ca1023e0cc93d77ee128b6226f9ce8436e30b79c9d",
+      "sha256": "03dac20bfc37aa5bf80f08b5f522a8d9ee73c5db39f603fbb3d02f1b36366bc5",
+      "size_bytes": 855212,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AS",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AS"
+      ]
+    },
+    {
+      "state": "AZ",
+      "generation_manifest_sha256": "d1a8b834fc6602ff01d5f6c4d2f5c89bc2019726919e72e9e8ac4db0f1a4f685",
+      "sha256": "0134abad36116bdc8f75508402c4bd65b568947a46b412286551227e8f7847d7",
+      "size_bytes": 284918028,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/AZ",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/AZ"
+      ]
+    },
+    {
+      "state": "CT",
+      "generation_manifest_sha256": "086a0eee31840003a16938434bf6f481fa73c1e8e3522173d904c1c3926ba806",
+      "sha256": "d85b4235a08ec64d6fc10725e59e9665f99bdf14ca119e95ebbf4807c1ae765a",
+      "size_bytes": 120105930,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/CT",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/CT"
+      ]
+    },
+    {
+      "state": "DC",
+      "generation_manifest_sha256": "019ccb60fd35fd281b67c9254dedd4ac29725cff98e0046baa8847270283c320",
+      "sha256": "4c0602920daab57bb427fe42ddff086bce6be69463e73d2efbc1f9973a9cc642",
+      "size_bytes": 15678758,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/DC",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/DC"
+      ]
+    },
+    {
+      "state": "DE",
+      "generation_manifest_sha256": "8faf0120ebd1f952a6e3f6409452024ef59b11ebc4530bfbf194277e190c24c9",
+      "sha256": "c5439b8e292c97fe79a908f70cb79af5d2b9f93470b4bc998eba8686e40e7846",
+      "size_bytes": 28603733,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/DE",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/DE"
+      ]
+    },
+    {
+      "state": "GU",
+      "generation_manifest_sha256": "2714cdc96620b7b74146755e02a0159848ae435f79dbebd45ba17e70058a20e3",
+      "sha256": "6b126f3cb9e74d7023cfb30756ac76e237f4945b4c08d04f2c40f9f085cd60d8",
+      "size_bytes": 2653279,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/GU",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/GU"
+      ]
+    },
+    {
+      "state": "HI",
+      "generation_manifest_sha256": "3d5f14d8fae83fe2c4b6effc6fe61a3b44214fd8f1946ccf748c31768a5dddd7",
+      "sha256": "548d7d8f2641ac600aea2e5d15452c070582b2f8b6380ad6ff4c04035d75fa6b",
+      "size_bytes": 25416656,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/HI",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/HI"
+      ]
+    },
+    {
+      "state": "MA",
+      "generation_manifest_sha256": "ff030b28d8bbb1069781ed13c823e8443cd4dad544577964de94ff0fa40b7583",
+      "sha256": "85b40e0696d97db4ad6910f4a95e97d8c5a3eb246cbc285c2eeb25ad0779f831",
+      "size_bytes": 227480218,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/MA",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/MA"
+      ]
+    },
+    {
+      "state": "MD",
+      "generation_manifest_sha256": "707eb874cddca4d126344298ec0541b0fd86d360732b249a9dd84c95a575435f",
+      "sha256": "157f2d9720136463b64e264e578cb4f3e03d0d7f50cf2d3d15bf305414cb5570",
+      "size_bytes": 187808598,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/MD",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/MD"
+      ]
+    },
+    {
+      "state": "MP",
+      "generation_manifest_sha256": "b874ed843c8efca63c266b42720c9a2553bc999e5e899bbb277eeb4f756e43b4",
+      "sha256": "46d3a13c6a912b3cf7080d72b820ec6143badd43c730724f45fc06d51010727a",
+      "size_bytes": 934088,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/MP",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/MP"
+      ]
+    },
+    {
+      "state": "NH",
+      "generation_manifest_sha256": "2a03d6f6af4185bdb5e5348a22173d6a02b378b0f12418157336043a299ca514",
+      "sha256": "b6351d71e1020cb131e8ce8f4a97263a4351f05dc813e327a2aa4ae7b33dcaa0",
+      "size_bytes": 83989078,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/NH",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/NH"
+      ]
+    },
+    {
+      "state": "NJ",
+      "generation_manifest_sha256": "e6597009e51c406858888664af76ea6caa2a914ff2c7ea97779676890fbf796a",
+      "sha256": "8a0c17144bfe11aa380e87717e7f57e42a469810687c955d1a6d919a61a6ed79",
+      "size_bytes": 185240362,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/NJ",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/NJ"
+      ]
+    },
+    {
+      "state": "PR",
+      "generation_manifest_sha256": "00ba8f67bb470f3e88ee503e6a894680bff4cfc485bbcb2b52267b440ff02ae8",
+      "sha256": "cfeef529b62e63f77afa684f1898e2396a82ceb76489eccc5675b3bedb17caf4",
+      "size_bytes": 45605792,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/PR",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/PR"
+      ]
+    },
+    {
+      "state": "RI",
+      "generation_manifest_sha256": "7021cdee92acc29bf44e81fe7e1f6218c6f52f297560d166a3be6a9edf67697c",
+      "sha256": "fac6aa5e6b0eeea5e1a2d2b689d74bff7b6ef9fb9ff3af6011e1113f38ed760c",
+      "size_bytes": 28513484,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/RI",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/RI"
+      ]
+    },
+    {
+      "state": "VI",
+      "generation_manifest_sha256": "92235e4c4ac5a597f07532b122ee7a6d4fbe859869ba84287257b193061ee3f3",
+      "sha256": "cc9741ef40419960d8fb42ca63e4d84a8527c0b755464c8cdea7fb9b68956a5c",
+      "size_bytes": 2714697,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/VI",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/VI"
+      ]
+    },
+    {
+      "state": "VT",
+      "generation_manifest_sha256": "3e978093aeda89bf9f04a2b590eda4a606416d98350637eac3e183e5783b89a4",
+      "sha256": "dc772ac312798a44c4107945d6f2ee3c77745cb6752ab0edbc3e11ddd68b9c16",
+      "size_bytes": 45532418,
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "outputs": [
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-a/VT",
+        "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-map-b/VT"
+      ]
+    }
+  ],
+  "preserved_pair_validation": "At launch, both complete metadata files matched byte for byte. This controller did not independently rehash the earlier payloads.",
+  "separately_owned": [
+    "CA",
+    "CO"
+  ],
+  "remaining_states": [
+    "FL",
+    "GA",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+  ],
+  "assignments": {
+    "73-android-worker": [
+      "FL",
+      "ID",
+      "KS",
+      "ME",
+      "MO",
+      "NC",
+      "NM",
+      "OH",
+      "PA",
+      "TN",
+      "VA",
+      "WV"
+    ],
+    "74-android-worker": [
+      "GA",
+      "IL",
+      "KY",
+      "MI",
+      "MS",
+      "ND",
+      "NV",
+      "OK",
+      "SC",
+      "TX",
+      "WA",
+      "WY"
+    ],
+    "75-android-worker": [
+      "IA",
+      "IN",
+      "LA",
+      "MN",
+      "MT",
+      "NE",
+      "NY",
+      "OR",
+      "SD",
+      "UT",
+      "WI"
+    ]
+  },
+  "source": {
+    "folder": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-source-us",
+    "sha256": "0d4df0c8583c04a53067e55a0e555a30babc3d3869eb103976a359f45b549713",
+    "size_bytes": 4008048363,
+    "pipeline_version": "android-source-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab",
+    "inputs": {
+      "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+      "osm_us_turn_58334086": "18b40711c4881d4afa7c9375f25c878d734e151c76107f4e29308f9f03fa5fb6",
+      "osm_us_turn_341068168": "75eba2d930e42b09427d45ecc5119ba13f5aaf209f9e16745ff19b9eed242c3e",
+      "osm_us_turn_341068301": "2bcb0a9023cec83e3d5a6e92ef4ed72f7be9995ab5be9cf929a8c87a4d8c9dba",
+      "osm_us_turn_480215402": "15710ebc4246901acec1bebb67a20d2b278372219b63cc959e97bb3b80ab39bf",
+      "osm_us_turn_476630370": "8cbf5c5e2366e5f1f2f385874bbfc4fc100f81350d15b79b5aaeebc539274354",
+      "osm_us_turn_1091236145": "a5967d26948b487bf730051f33732332b72499b8c6f73faad2bac3b6dd26640b",
+      "osm_us_turn_362038502": "cd06218e9c3b081e1084173f6fff0900a416e1d6a78efd7c923ea7d2725163eb",
+      "osm_us_turn_1361183566": "39d2442717c93be6b994a3ef57d9a762ebae386d6cd4c8efd18426f7bf4f4c72",
+      "osm_us_turn_1253938315": "84403cb751365882be0cfeaa767af0baf96049bc68e72838f89b3ae1b37280b5",
+      "osm_us_turn_1303990365": "691678d1816da301dea77048908b23b5a78ea681885e24356b4c89e8a0d4ddf7",
+      "osm_us_turn_1350436146": "7d0dfac50c0078db58c95ad40398c3d7852c89021f8eb6e1c75cf9b93de2ea37"
+    },
+    "bound_files": [
+      {
+        "path": "files/roads_places.osm.pbf",
+        "size_bytes": 4008048363,
+        "sha256": "d328cc04fbf845eaba2f4028bcd61d25a63601a88ddbf16acb33f65778fac972"
+      },
+      {
+        "path": "filter.json",
+        "size_bytes": 108,
+        "sha256": "48c700683e9b28b1bcd66fd2a78589b0202aa4a77bd8fb72ec5d7ed4ce0282a2"
+      }
+    ],
+    "diagnostic_files_not_claimed_identical": []
+  },
+  "maximum_simultaneous_containers": 3,
+  "cpu_limit_each": 1,
+  "memory_bytes_each": 6442450944,
+  "initial_resource_inspection": {
+    "recorded_utc": "2026-11-01T18:36:42.959837+00:00",
+    "containers": [
+      {
+        "name": "/ck-android-73-fl-extract",
+        "id": "345538a9200f4f90e7ce4c409678421239e5f5d4c59ee70fac7d746da82fd1a5",
+        "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+        "nano_cpus": 1000000000,
+        "memory_bytes": 6442450944,
+        "network_mode": "none",
+        "mounts": [
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/73-android-worker",
+            "destination": "/source",
+            "read_write": false
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/73-android-worker/build",
+            "destination": "/artifacts",
+            "read_write": true
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/cache",
+            "destination": "/cache",
+            "read_write": false
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-source-us",
+            "destination": "/prepared",
+            "read_write": false
+          }
+        ]
+      },
+      {
+        "name": "/ck-android-74-ga-extract",
+        "id": "4b8c697ca1b8acca6821955149b51b410def563ab8cdf53124b339713152335c",
+        "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+        "nano_cpus": 1000000000,
+        "memory_bytes": 6442450944,
+        "network_mode": "none",
+        "mounts": [
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-source-us",
+            "destination": "/prepared",
+            "read_write": false
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/74-android-worker",
+            "destination": "/source",
+            "read_write": false
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/74-android-worker/build",
+            "destination": "/artifacts",
+            "read_write": true
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/cache",
+            "destination": "/cache",
+            "read_write": false
+          }
+        ]
+      },
+      {
+        "name": "/ck-android-75-ia-extract",
+        "id": "5606279d94b4f3e0743586e71cf0730b4307e3e1c3dce3d22a40bff09d50cb03",
+        "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+        "nano_cpus": 1000000000,
+        "memory_bytes": 6442450944,
+        "network_mode": "none",
+        "mounts": [
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/40-android-repro/build/androidmaps/production-source-us",
+            "destination": "/prepared",
+            "read_write": false
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker",
+            "destination": "/source",
+            "read_write": false
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/75-android-worker/build",
+            "destination": "/artifacts",
+            "read_write": true
+          },
+          {
+            "source": "/Users/leotrottier/Sites/reseed/common-knowledge/cache",
+            "destination": "/cache",
+            "read_write": false
+          }
+        ]
+      }
+    ]
+  },
+  "docker_server_observation": {
+    "observed_utc": "2026-11-01T18:54:54.142525+00:00",
+    "cpus": 4,
+    "memory_bytes": 25147830272,
+    "architecture": "aarch64",
+    "producer_image_architecture": "amd64"
+  }
+}
