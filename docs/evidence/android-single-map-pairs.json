@@ -1,0 +1,1056 @@
+{
+  "development_epoch": 1793404800,
+  "source_producer_commit": "d61c247821e926bc308f29a70327b11a0c6ef950",
+  "states": {
+    "AK": {
+      "manifest_sha256": "69e8fb45c6709da36881bfd9967217d6a87caee18fc46b53c8e0c5b770838166",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 39628147,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "AK_SOURCE.txt",
+          "sha256": "997a0a8d33f413df686e8da4e875903cf161cd79b9bd1855176b2de2c95591cf",
+          "size_bytes": 678
+        },
+        {
+          "path": "AK_roads_places.obf",
+          "sha256": "273041502c8260fcf8ddef5dc01f064b3357e5c274d8d0a380de53cc033722ce",
+          "size_bytes": 27191254
+        },
+        {
+          "path": "data/AK_roads_places.osm.pbf",
+          "sha256": "041df154222b4a6f001dc61f2d549e85668376bce35b2f0f38dcd8a07366a05b",
+          "size_bytes": 12436215
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "fe047edc87c91ecca81fbe0ccf590815f67ec6732d7f401c19159e67027e6db8",
+          "size_bytes": 77
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "279d50be0ec02605b4e119e299db700530c0d0f3344b05a7e249b931915d6e28",
+          "size_bytes": 897
+        }
+      ],
+      "extract_manifest_sha256": "dad909772298da267a29eba02dfc0dd25bf33af0feae32f020ce1831ef5c570e",
+      "extract_files": [
+        {
+          "path": "AK_roads_places.osm.pbf",
+          "sha256": "2315083c337c7535e0ad1abd3d975f2adf6b13ce59d08de99c6f7303f1dc91b4",
+          "size_bytes": 12447289
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "81f89c89b4cdaaca79b013fafdb303154e6d7b393666d628d4d670b0dd0cf006",
+          "size_bytes": 181
+        }
+      ]
+    },
+    "AL": {
+      "manifest_sha256": "d6b29bacbfaba36ad089933e578db2b46ef923d71596f48c76451bb42af40c60",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 187339889,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "AL_SOURCE.txt",
+          "sha256": "f3180007f242d3a07c94b4db9c231abd78c70f9823b089c66222a69895d93a0c",
+          "size_bytes": 678
+        },
+        {
+          "path": "AL_roads_places.obf",
+          "sha256": "92631f6230cca8e82ba3872160fdb4be0a9c6a7281c3cc55ab3e6bbdb4a01ad1",
+          "size_bytes": 123331042
+        },
+        {
+          "path": "data/AL_roads_places.osm.pbf",
+          "sha256": "9ddb825e89a73e6e885f7846ce20e396f951851ff13e54bd5cfd3c5225db86c5",
+          "size_bytes": 64008169
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "ad7a2757acc5a174bc90fc9e2baf4f516470d23115c90beb031149a860a6565e",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "bdd908a43d7e57070e02dfb75a11f841cc72381a28f677d538ed23586a50f04a",
+          "size_bytes": 891
+        }
+      ],
+      "extract_manifest_sha256": "2dfaa3edac97398194c19b275711c1f971939ee86e34c437e2bd2c1d589ebe26",
+      "extract_files": [
+        {
+          "path": "AL_roads_places.osm.pbf",
+          "sha256": "49c4156d96f1d09d7c6d4a37f47d47b685eef5176b08a398f4ab0ce58b7454ed",
+          "size_bytes": 64072165
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "82d39b07b30cda30bf5151f272d502c9ef1be3f66c610fc35e4f55ec236546a3",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "AR": {
+      "manifest_sha256": "95efabf9915963c64ec54bb1dbb8988d952f4289b73d8d76e090ddcd1e70d5a1",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 140803388,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "AR_SOURCE.txt",
+          "sha256": "45be0ab01b40615ae7ca93370258cff891196b91189a444d87d3185597cff205",
+          "size_bytes": 678
+        },
+        {
+          "path": "AR_roads_places.obf",
+          "sha256": "5beeefb5e0a46ab1b4074d2f7dcdf1f7b8d6a72c1b4a90b38d12971a3c56ec9d",
+          "size_bytes": 91531735
+        },
+        {
+          "path": "data/AR_roads_places.osm.pbf",
+          "sha256": "9f13f35bf29de4e5fcc57fb5b04aa238b7edd4afbb32fd79af388fa33a59d737",
+          "size_bytes": 49270975
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "f876919191c67cdb2d1c437924ac1f393aff1aa67c5cb7097d72eb990be2cfb5",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "5d148b4fb91dd6be8b04cfcd3fb96b0212a618ea0a965af6cde95a7f2c3a20e6",
+          "size_bytes": 896
+        }
+      ],
+      "extract_manifest_sha256": "2fed41d210038f35e517ea78d55c4658c5373f0d1f0015068d9bcedbb646f652",
+      "extract_files": [
+        {
+          "path": "AR_roads_places.osm.pbf",
+          "sha256": "b607d05ab8634ae8622ef4ba16c9bec2e3a299e705a59371d2b9a06e1644e8b7",
+          "size_bytes": 49291920
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "20cf5bb120a44e212f6a08adfd6d224a1bddb979c8bc5c417a5fd7459351d7cb",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "AS": {
+      "manifest_sha256": "03dac20bfc37aa5bf80f08b5f522a8d9ee73c5db39f603fbb3d02f1b36366bc5",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 855212,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "AS_SOURCE.txt",
+          "sha256": "9798761a4f594e340c7c66b7346ec72c3ff6180ba0940b1a3c0987b32b2164ae",
+          "size_bytes": 694
+        },
+        {
+          "path": "AS_roads_places.obf",
+          "sha256": "4362699434ab6774495e4bdb5a9497547adf036171b49e6b269d6ee7bdb17f63",
+          "size_bytes": 520212
+        },
+        {
+          "path": "data/AS_roads_places.osm.pbf",
+          "sha256": "86796705b12e6299e61c21c219a515f91e28ab0bdb75caeb98e9e475bf105720",
+          "size_bytes": 334306
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "981614b67fc0e7056802ec974b199c3c5e3247968338576efec69b83c08d9a8b",
+          "size_bytes": 47
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "ca91f2e1082a5ac94004d3286e6be0da29d591d0f322f72849c29f9e611f9480",
+          "size_bytes": 895
+        }
+      ],
+      "extract_manifest_sha256": "0822962f014498d449029d7e035c5e070f38468340d1e533ce22ce7a495a8998",
+      "extract_files": [
+        {
+          "path": "AS_roads_places.osm.pbf",
+          "sha256": "60f57af94df55b03df83c89f4207d6343df803b286d2ed476fbf8c95afbf7cf8",
+          "size_bytes": 335072
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "2a4b1bfa3da28643138ee7bc4d978de781cb9305a063c77ec8e94bf2a74bd152",
+          "size_bytes": 180
+        }
+      ]
+    },
+    "AZ": {
+      "manifest_sha256": "0134abad36116bdc8f75508402c4bd65b568947a46b412286551227e8f7847d7",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 284918028,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "AZ_SOURCE.txt",
+          "sha256": "bd0e1419769503caab422ebbf0b903d4a9f72a4674990602d8a9639e75ddd60e",
+          "size_bytes": 678
+        },
+        {
+          "path": "AZ_roads_places.obf",
+          "sha256": "4d44b591225c0257a127548efc87446b2a33913bf3f56d2a759cad453fd052c9",
+          "size_bytes": 192457835
+        },
+        {
+          "path": "data/AZ_roads_places.osm.pbf",
+          "sha256": "92a74aa0103772e61efb61f18db831213783a3e4fecdf232442121b46029318b",
+          "size_bytes": 92459515
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "ce7833c492f7bc700d9270fcc3e68709d417e2ae5d5fbc41c3057b49ea6d1b9c",
+          "size_bytes": 80
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "789fca95df836818a00867844ad84a7adeff2226519c2da98850501177e3eeef",
+          "size_bytes": 902
+        }
+      ],
+      "extract_manifest_sha256": "4da5e174ad324709ebfc93b1b78676a6f4e2a3d9378f8214e59e4780ffaf2335",
+      "extract_files": [
+        {
+          "path": "AZ_roads_places.osm.pbf",
+          "sha256": "c715fb650871dfc25d714bdccd58f08b58ce928138d08a0ee1196cf372e515b9",
+          "size_bytes": 92532151
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "d8c513e52418423467d653f36cf0a4b5e8c676a4a6a160f9aec0b96cd3d3ec14",
+          "size_bytes": 184
+        }
+      ]
+    },
+    "CO": {
+      "manifest_sha256": "950dc82eb7048e95de985e5ec103a9fcb3ad620d2ce0c535c6e27616f69f4c43",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 303811176,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "CO_SOURCE.txt",
+          "sha256": "74370b1cf24500b5c8665359875b81e0a9b7f84e355f526e04462d67f131f3e7",
+          "size_bytes": 678
+        },
+        {
+          "path": "CO_roads_places.obf",
+          "sha256": "2c9e49a07a7b9dd035cab3b1e33fbbf7fb770ca49cb35df4093cf4cae8df071a",
+          "size_bytes": 199815045
+        },
+        {
+          "path": "data/CO_roads_places.osm.pbf",
+          "sha256": "124368748e0dd83c61a7fcdbff00ac49cf3268af5cdca1964f5ea31e36696145",
+          "size_bytes": 103995453
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "73867109e2509036bdecb2600b4b0860a3cf4d709f20d8e1fb59275a34067bb7",
+          "size_bytes": 80
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "11653701b4d550e13d73b54a830fb7d68f373312568b17f28cae93847fdddf2b",
+          "size_bytes": 907
+        }
+      ],
+      "extract_manifest_sha256": "6c7d5890239b7e110594ad97e08b995eef8f30ad80934d6b09480a0588a6c7bc",
+      "extract_files": [
+        {
+          "path": "CO_roads_places.osm.pbf",
+          "sha256": "b414e7fdb281b3c9a4b12c2d7035116d77a28d8b65a2195bf042e13e99b89627",
+          "size_bytes": 104109832
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "b077b7218dab5518d00ac0ff64687d83d47dc400230b1d01cc0abe8b52cc4f8f",
+          "size_bytes": 184
+        }
+      ]
+    },
+    "CT": {
+      "manifest_sha256": "d85b4235a08ec64d6fc10725e59e9665f99bdf14ca119e95ebbf4807c1ae765a",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 120105930,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "CT_SOURCE.txt",
+          "sha256": "b314e6731b40de9f381ba74918e1c9a9ed95e9dce35c0bfa66619dadf894b433",
+          "size_bytes": 678
+        },
+        {
+          "path": "CT_roads_places.obf",
+          "sha256": "e8123aacf7a1d282771ed3b031f36b67479f590bfec7b4ad70a6f1b320c07e2e",
+          "size_bytes": 79570289
+        },
+        {
+          "path": "data/CT_roads_places.osm.pbf",
+          "sha256": "1623c431d642b68b3f8a0c10f9c773db953f5aaf65eeec05ccb839d3fb7c6331",
+          "size_bytes": 40534963
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "e622c62019fcc45ac48f32db01cccef8101fa3b537cfc1ec5d9f8ac8d974b411",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "6e9049b92c3578a080cda17a14277dc438743ece6abe4a393bbdbdfb32abf809",
+          "size_bytes": 893
+        }
+      ],
+      "extract_manifest_sha256": "0528660d71a86741609d73334322d1a0a4f2e8dd633fd73120ac8d37681cf2b6",
+      "extract_files": [
+        {
+          "path": "CT_roads_places.osm.pbf",
+          "sha256": "01845c858635f4152e62413b67e4b855f3bbd2c2531731615c0f252db1bfc40e",
+          "size_bytes": 40670703
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "53d92519bb848c40f93ebe01993cb776c98f9a41b4f7f35e7c7d595607808abf",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "DC": {
+      "manifest_sha256": "4c0602920daab57bb427fe42ddff086bce6be69463e73d2efbc1f9973a9cc642",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 15678758,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "DC_SOURCE.txt",
+          "sha256": "baa9faf40ec55a8708ab497697319edb062b29baaec871765432cca45967077a",
+          "size_bytes": 678
+        },
+        {
+          "path": "DC_roads_places.obf",
+          "sha256": "fa550ed178168e78149f7a27ce664bc3aad82bb5f5555b6400eb32cd0d110d03",
+          "size_bytes": 11299984
+        },
+        {
+          "path": "data/DC_roads_places.osm.pbf",
+          "sha256": "42374c3d5b65452698fea384fa169c970c6c0c2a88a70e1619af2d169314a6c8",
+          "size_bytes": 4378096
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "03d31144a66e4141c5dc79e0aa23ea43ee2d6e5273151853e7aab1cc7f087e11",
+          "size_bytes": 77
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "5c93533fd16edca9c455064f117d7f2f78ba2398edc6ab0e143e83ebea15943d",
+          "size_bytes": 887
+        }
+      ],
+      "extract_manifest_sha256": "ba31e6461f121c1a294288f0f352f81e0224f9294bfbc1a9816c6002b6f7f136",
+      "extract_files": [
+        {
+          "path": "DC_roads_places.osm.pbf",
+          "sha256": "2824e00d846ea97d50aafb23a49d9ad78e6b1a48e4cdaefba6a327878eea10f5",
+          "size_bytes": 4394898
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "55953845dc19415a66359627474798c44de210c984b688cd3a29d8f4fc861f15",
+          "size_bytes": 180
+        }
+      ]
+    },
+    "DE": {
+      "manifest_sha256": "c5439b8e292c97fe79a908f70cb79af5d2b9f93470b4bc998eba8686e40e7846",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 28603733,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "DE_SOURCE.txt",
+          "sha256": "3f1a36fab839919e2a4a54c1572b3ca814bd25d556eca35919e8f466d6613864",
+          "size_bytes": 678
+        },
+        {
+          "path": "DE_roads_places.obf",
+          "sha256": "7faa66e7f30a7576c0e1a1fd1f711690489f29275bfa19fb483b7695cc3bed60",
+          "size_bytes": 19820130
+        },
+        {
+          "path": "data/DE_roads_places.osm.pbf",
+          "sha256": "745f73d2e9156e9b169edb79bb94f64e563ad63e55e1a68eb8c60639c0361155",
+          "size_bytes": 8782925
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "9824653bc06754226d843f48f13c9d64bec7d48ce1bf489737efe44594a0edd9",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "9592561b546965580e2952becfc88a33787484b57c3804175a442a97db6ffeed",
+          "size_bytes": 891
+        }
+      ],
+      "extract_manifest_sha256": "f018e816a3c82427e3f7d86da31a38f3df212974f6ee2e7f378f1472c4ca5a65",
+      "extract_files": [
+        {
+          "path": "DE_roads_places.osm.pbf",
+          "sha256": "f1083c7ec1223f960943086d831079b58a01cf7dd0dc60d9d8b8fa03aa6410a3",
+          "size_bytes": 8786160
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "cce9c48e3dc92dfa89d787807cf90796192a9a1acb3a6d1dbd370611cb6e338c",
+          "size_bytes": 181
+        }
+      ]
+    },
+    "GU": {
+      "manifest_sha256": "6b126f3cb9e74d7023cfb30756ac76e237f4945b4c08d04f2c40f9f085cd60d8",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 2653279,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "GU_SOURCE.txt",
+          "sha256": "2c4e208182d49db302cdd4f87dd2a13e1472e5c67b71ac4d5b62abf75378f876",
+          "size_bytes": 694
+        },
+        {
+          "path": "GU_roads_places.obf",
+          "sha256": "8e8a5a557c23f6b18beccb362518224c6f1245970272a81f119d85cbe80c1ff9",
+          "size_bytes": 1775528
+        },
+        {
+          "path": "data/GU_roads_places.osm.pbf",
+          "sha256": "87bdeb9cff8ad2def2c321bfdeb9286687a4b4cf2c1fa064015ec44a21b7e00c",
+          "size_bytes": 877057
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "cc3998f9d3deca68dc19f892dfe1e7d95611e90e801d47e4b7d821d5d7d2b79e",
+          "size_bytes": 73
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "893d96b98628dbcc0aa7847f58df893dc6d7086e738768981930cbba36ed9fb4",
+          "size_bytes": 877
+        }
+      ],
+      "extract_manifest_sha256": "4e9fced3b4321557d376a63f3dbbf254761b3323e420606f7ae2c375a063be6e",
+      "extract_files": [
+        {
+          "path": "GU_roads_places.osm.pbf",
+          "sha256": "1d42d420d95a61a9f2a93e7ccdf610bb69b7d3fec33edd178e4aa1f8f8f23af4",
+          "size_bytes": 877258
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "c82d2ec023e257c4e8b8517f2060693d406a327c3a79a67c25628157dafb2960",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "HI": {
+      "manifest_sha256": "548d7d8f2641ac600aea2e5d15452c070582b2f8b6380ad6ff4c04035d75fa6b",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 25416656,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "HI_SOURCE.txt",
+          "sha256": "ddc159881ab1eed630880b57f2d6761c31b4a1e906a53c424351ad4ce3ea1fde",
+          "size_bytes": 678
+        },
+        {
+          "path": "HI_roads_places.obf",
+          "sha256": "33aa93b893374cfbb02d1ed1a964cdf5400e824115aabc39e29d2971b1eb113a",
+          "size_bytes": 16979585
+        },
+        {
+          "path": "data/HI_roads_places.osm.pbf",
+          "sha256": "64e905773d9ae0c7c375b6809dd97d5ee297d9d6720313fe2d11f28a782eccc1",
+          "size_bytes": 8436393
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "1ae48795488e11453c7992522331346a2790b34fe68c431b09b648baa1379486",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "90eed8775866bd9565b124b2c8a73e314c6e98913bbc9e787aa2eb5bdca8ad3b",
+          "size_bytes": 893
+        }
+      ],
+      "extract_manifest_sha256": "ab38a35d6de70d024f1dc79a013c0fdd5b4a8781db0a050fda2c21eae3d01ac2",
+      "extract_files": [
+        {
+          "path": "HI_roads_places.osm.pbf",
+          "sha256": "2ec578d25b5dd6ea51f519031980bceb7ce89626eafe48417ce0e847b189109b",
+          "size_bytes": 8449673
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "907b4a68b77999398e2e66a51f17ec71f6f13e83469c615669ef4541117b9ec8",
+          "size_bytes": 181
+        }
+      ]
+    },
+    "MA": {
+      "manifest_sha256": "85b40e0696d97db4ad6910f4a95e97d8c5a3eb246cbc285c2eeb25ad0779f831",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 227480218,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "MA_SOURCE.txt",
+          "sha256": "140d0326fadce4df640a58d754414c4096438cf071c9d72c55ab2f847d16a29d",
+          "size_bytes": 678
+        },
+        {
+          "path": "MA_roads_places.obf",
+          "sha256": "ba634bfaaf2261c2403853eabe20570c11ceadc892e5e658de706d6c2fbcd9e5",
+          "size_bytes": 142373409
+        },
+        {
+          "path": "data/MA_roads_places.osm.pbf",
+          "sha256": "261c63d5eae3614c99aebc112b9b1d14591c9d6165e08f543755ef35d80a7437",
+          "size_bytes": 85106131
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "4c095f3e7dc7bc34c16fb5b4b53c021309ff8de4d3df6cef3c827dd7e7c636ad",
+          "size_bytes": 79
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "3a4f3311f60be75caba474f7cd72fb438f2f0e4f9f46f815d4bd41bea7bf15c2",
+          "size_bytes": 896
+        }
+      ],
+      "extract_manifest_sha256": "583131c5874119395233bccdffa14bd43f9535d73f3b3ce5bd520f05471b67a8",
+      "extract_files": [
+        {
+          "path": "MA_roads_places.osm.pbf",
+          "sha256": "b6f992c068e08fc1bf74aa7b9aeaf9fe49c144abcfe38b8f7d9d6987dd76934a",
+          "size_bytes": 85164177
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "cc3f07c6641df964631ec000f20628438cab1e75911f49186cc95d45b9b2e2bf",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "MD": {
+      "manifest_sha256": "157f2d9720136463b64e264e578cb4f3e03d0d7f50cf2d3d15bf305414cb5570",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 187808598,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "MD_SOURCE.txt",
+          "sha256": "08fcd806baba7adec11e991ce8e09e84a415f966fbd9ea3a582fa883bbd8da3a",
+          "size_bytes": 678
+        },
+        {
+          "path": "MD_roads_places.obf",
+          "sha256": "a67a9262e5108c2ee19f9ed8580bc1fda7008256b3bf435d744efc3be9413c10",
+          "size_bytes": 125511966
+        },
+        {
+          "path": "data/MD_roads_places.osm.pbf",
+          "sha256": "5af8de23c3f159d880cc65a05e0154f67178456ac31e5d5a0682d4a44806581a",
+          "size_bytes": 62295954
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "a87330de5473ff89101d6321309c6fab546d8ac5cd9917c5f7a2ffd5d63e8a96",
+          "size_bytes": 79
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "68f8b0abd8028b5eb11fee020bdb22d9595943ce8edd1767c497f855de707222",
+          "size_bytes": 893
+        }
+      ],
+      "extract_manifest_sha256": "8456eb101750930a74cac50df8c5e2481d20f23a579c254b908c10e79f86c517",
+      "extract_files": [
+        {
+          "path": "MD_roads_places.osm.pbf",
+          "sha256": "3131b151888467019bf0d5943c87ba0ea26ee17282f43b52c8e5fa60942048c1",
+          "size_bytes": 62391500
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "de2c175f13ec8e4ff44e21bdd4d1d38c318936b5dc97edc565e4d3134f24ce2e",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "MP": {
+      "manifest_sha256": "46d3a13c6a912b3cf7080d72b820ec6143badd43c730724f45fc06d51010727a",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 934088,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "MP_SOURCE.txt",
+          "sha256": "1452253b22fd4f256fb86021a2cd77287dab82cb56ee3b0f5b72f0f720d30cc0",
+          "size_bytes": 694
+        },
+        {
+          "path": "MP_roads_places.obf",
+          "sha256": "ecfa3138b7f4458876916e0e4cf8862383717aad6987c6f61781479864afb068",
+          "size_bytes": 631357
+        },
+        {
+          "path": "data/MP_roads_places.osm.pbf",
+          "sha256": "cba4875157cf9a43698cbb541266878b63e06a77a8a30e7f79db0b3b1e908af0",
+          "size_bytes": 302037
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "d204a8af70526c2096cc12bd17bb20ae6a20f241fbc4357932f150a80eef276b",
+          "size_bytes": 72
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "1b76f21b6ec32fbbdf9a73473a7e900a19344c25f4410d11325d9a83fc815902",
+          "size_bytes": 870
+        }
+      ],
+      "extract_manifest_sha256": "0d2a429f989953c243ac28468ac2f6865f2b7a7f9b9b411136ae61f4fcc29fc3",
+      "extract_files": [
+        {
+          "path": "MP_roads_places.osm.pbf",
+          "sha256": "605a84b91a1212717d6e2183ffa963bbd728575691b520dd8b261c07115c09c3",
+          "size_bytes": 302056
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "361d2be1d047b452d027776ce0763ee51bcee81d8dd0ffe1a888fd5740f43d80",
+          "size_bytes": 181
+        }
+      ]
+    },
+    "NH": {
+      "manifest_sha256": "b6351d71e1020cb131e8ce8f4a97263a4351f05dc813e327a2aa4ae7b33dcaa0",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 83989078,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "NH_SOURCE.txt",
+          "sha256": "602f07f36f3efd6f6e947af82ba14c9d5f61e0be3bbba3b628fd7a7a71aba1e3",
+          "size_bytes": 678
+        },
+        {
+          "path": "NH_roads_places.obf",
+          "sha256": "ba94dec733d8d0d254d0389f4e10fcf5f9996c3ab2c4e15f26719e6baf6f8639",
+          "size_bytes": 54218530
+        },
+        {
+          "path": "data/NH_roads_places.osm.pbf",
+          "sha256": "e729500039d35d1c011180d3405dd56f3d2ce1d32cfd00f6276c67ec24276ea9",
+          "size_bytes": 29769870
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "007e455eb61e2391fbc86c38f9e0d5e591b18538325561acddac1e5e91b7147d",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "8cc7ebf36a45998b19cdb1509b43d3e870b4371b4dcacd6e60dfc056325fd2c5",
+          "size_bytes": 895
+        }
+      ],
+      "extract_manifest_sha256": "628d7720fe96878db453245d6f66274e1c55c10ff66fafa6caaf90918b261486",
+      "extract_files": [
+        {
+          "path": "NH_roads_places.osm.pbf",
+          "sha256": "e4c8246d5f622b6b4ab81e69503dc0ee0d373c79b05ff0eaa987ecbba1fb0423",
+          "size_bytes": 29792233
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "ba2d5e15b189419dd3f25b43edc001706e26b34c67405cdc5b46980b533771da",
+          "size_bytes": 182
+        }
+      ]
+    },
+    "NJ": {
+      "manifest_sha256": "8a0c17144bfe11aa380e87717e7f57e42a469810687c955d1a6d919a61a6ed79",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 185240362,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "NJ_SOURCE.txt",
+          "sha256": "b6485cd98daf619d968a5896f8e73df74309f7cb5a48322d07f279fed8011ed3",
+          "size_bytes": 678
+        },
+        {
+          "path": "NJ_roads_places.obf",
+          "sha256": "046d0cde8189ae90f6e292f75fda5e97887259bd7d6c4445a84998b2decff16a",
+          "size_bytes": 126935594
+        },
+        {
+          "path": "data/NJ_roads_places.osm.pbf",
+          "sha256": "3bc7ee3bc2414e09b015d7ead2b7a4b32c399cf337840e18e4cdc87f78f3e1a9",
+          "size_bytes": 58304090
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "1546f8f2c1de22ec02efa385da802e328db506623a279587dc59274f6c06178e",
+          "size_bytes": 80
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "8e4b93404c22edf593c8d8b4adedb0bff0ebb2712ba2d1ea85e609985f51fab1",
+          "size_bytes": 892
+        }
+      ],
+      "extract_manifest_sha256": "bf4d027e68a125876bcc4f3a2bad2bf94720ef83d92bb9bc2a541cfc0964a75d",
+      "extract_files": [
+        {
+          "path": "NJ_roads_places.osm.pbf",
+          "sha256": "2f4e1805cb64ac9c638933b8e669c02b5b1fbf7d3fb3f3fe0fa10efb72ad4ad1",
+          "size_bytes": 58328058
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "073416a5614cadc0ed6c89060d282dae2cac222ae551220262ae1bed504a6dbe",
+          "size_bytes": 183
+        }
+      ]
+    },
+    "PR": {
+      "manifest_sha256": "cfeef529b62e63f77afa684f1898e2396a82ceb76489eccc5675b3bedb17caf4",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 45605792,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "PR_SOURCE.txt",
+          "sha256": "9cc8b7ac8778971880bf6dd67b4f9f247d072b70f580f35efdd6a66a40016c02",
+          "size_bytes": 660
+        },
+        {
+          "path": "PR_roads_places.obf",
+          "sha256": "1e83b9f80f8919e61274eb8f602a422a287659aacebd842550df329ab8ec837c",
+          "size_bytes": 30670180
+        },
+        {
+          "path": "data/PR_roads_places.osm.pbf",
+          "sha256": "57ce26d16f6e9d26d877231ac23a1a307e221e2f3ac361ab50557e30491a1da1",
+          "size_bytes": 14934952
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "f70772d15d95a4f2ee67ede747cc1b1721e448f205382c2dd9af456e57c0b0d2",
+          "size_bytes": 77
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "b1b7afb73ffa52814efd4c785819edf136c4141af1d8a7fcba47bdebe1a79abc",
+          "size_bytes": 893
+        }
+      ],
+      "extract_manifest_sha256": "0335feebdcb105abb11c96725cc8c04504487c67bb02dea24ed96018f9545f64",
+      "extract_files": [
+        {
+          "path": "PR_roads_places.osm.pbf",
+          "sha256": "13a94f10b19f0a88b7da54eefc2f3288da02cffc8c5bc2a1d3b75ba7ec6ed4ff",
+          "size_bytes": 14957627
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "545de68ac88dce4e0a63b67c9156d506e0d1ca719798a5b65e3ef0f28612479f",
+          "size_bytes": 190
+        }
+      ]
+    },
+    "RI": {
+      "manifest_sha256": "fac6aa5e6b0eeea5e1a2d2b689d74bff7b6ef9fb9ff3af6011e1113f38ed760c",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 28513484,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "RI_SOURCE.txt",
+          "sha256": "055561f42bb0d65a0514d49a75d242312db0735afb030c7c03a5c2820c6051f9",
+          "size_bytes": 678
+        },
+        {
+          "path": "RI_roads_places.obf",
+          "sha256": "a6e52c5141c96cf32d36620ee2764f888bc418e3b5e82cfce6d0901f719905a8",
+          "size_bytes": 18911104
+        },
+        {
+          "path": "data/RI_roads_places.osm.pbf",
+          "sha256": "400bc6775e1bbc3b7f86d03d6308c0ed09cf588e8a3b70622e1cc0ee6446ab0c",
+          "size_bytes": 9601702
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "fbe1fcc1987bd8d254dfef4108aa7f79bb651b876d00f16306d35e2fb93a8455",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "29635c193cbe945fe8ffd27be25257898218ba1580f4873cc20f41c43e470708",
+          "size_bytes": 885
+        }
+      ],
+      "extract_manifest_sha256": "c6d61a22c8b043d1eae1fa08b05f4e75b43594f4e6ca8cd0c781a46f0cb2fadd",
+      "extract_files": [
+        {
+          "path": "RI_roads_places.osm.pbf",
+          "sha256": "37222af709635c381bb5aee25790e1bbf53f40c37b5834981c430dd0d19b9d40",
+          "size_bytes": 9609370
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "813465d0b5703cc637195ba98949759c32a72c1f6369d31308ccfd2a308b16d9",
+          "size_bytes": 181
+        }
+      ]
+    },
+    "VI": {
+      "manifest_sha256": "cc9741ef40419960d8fb42ca63e4d84a8527c0b755464c8cdea7fb9b68956a5c",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 2714697,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "VI_SOURCE.txt",
+          "sha256": "f7383e0c8286196474a286a2c08f0cc413d1239c14313fcf423d2526561f565b",
+          "size_bytes": 666
+        },
+        {
+          "path": "VI_roads_places.obf",
+          "sha256": "ddd2326b0b212df10382a3d835e8835cef299db3fb25ee98dc5d33bf77651273",
+          "size_bytes": 1812747
+        },
+        {
+          "path": "data/VI_roads_places.osm.pbf",
+          "sha256": "a23534629b29a5b6906d83af1d49432f445d8fd1b88ec3878e688a19594eb270",
+          "size_bytes": 901284
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "1baa23ca64f0a57c930a86b7b76bd9b25fb40558c5e1b3ba868dd4e7a10784fb",
+          "size_bytes": 73
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "96caca3212e1b8e8f770ffdc4ff99960b620b8a35f65ea959aabcb10e417f109",
+          "size_bytes": 876
+        }
+      ],
+      "extract_manifest_sha256": "3fa26b7dd17a7463b7f8b4c4220f3b567d6d53fdf8aaf9f1ef9ac3dc2cacac87",
+      "extract_files": [
+        {
+          "path": "VI_roads_places.osm.pbf",
+          "sha256": "3cfcc952ed152e38a7048f5b9a0cfb10947cbe75d30c3408d21327decc067ec3",
+          "size_bytes": 901448
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "83b24f4bf1b1f5ee50ab3ef43f5af2e55dbbf1e8087d36af531da817cc278b13",
+          "size_bytes": 189
+        }
+      ]
+    },
+    "VT": {
+      "manifest_sha256": "dc772ac312798a44c4107945d6f2ee3c77745cb6752ab0edbc3e11ddd68b9c16",
+      "pipeline_version": "androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410",
+      "size_bytes": 45532418,
+      "verified_payload_files_both_copies": [
+        {
+          "path": "VT_SOURCE.txt",
+          "sha256": "e6aaca41f1baac2921469e97b1fd849fb558e34118f7efa5833f1d5d3280d0b8",
+          "size_bytes": 678
+        },
+        {
+          "path": "VT_roads_places.obf",
+          "sha256": "a0d0545a5d19f532ae45f6c2b382fb06b350280c5a50c8549c58de2746bea17d",
+          "size_bytes": 29115515
+        },
+        {
+          "path": "data/VT_roads_places.osm.pbf",
+          "sha256": "4e5d464ae51270300dc3352048c622ca21d02fb7d5baf19da8edfc0007e33ff3",
+          "size_bytes": 16416225
+        }
+      ],
+      "verified_intermediates_both_copies": [
+        {
+          "path": "filter.json",
+          "sha256": "60d42d9f41310de875857f75801dfe35c80d64af9f2eb42b9db44494048a3aa3",
+          "size_bytes": 78
+        },
+        {
+          "path": "inspection.txt",
+          "sha256": "7c5ef0cfd9951621cb941974ba5fd0797b461bcb264e8e558dbb1a5a46b706b9",
+          "size_bytes": 893
+        }
+      ],
+      "extract_manifest_sha256": "39e9899991cd7b99af6088da2cf7869e7bc501f51ba59c009a1beecee00b8071",
+      "extract_files": [
+        {
+          "path": "VT_roads_places.osm.pbf",
+          "sha256": "ba9f4e05614773333f862a443177cdb5f7cea3bca03c6ad34ea273ab37ffa2cc",
+          "size_bytes": 16418421
+        }
+      ],
+      "extract_intermediates": [
+        {
+          "path": "states.json",
+          "sha256": "5779807193fb2e025d85ede666e0eaa508648a0b6daa2964a3a25cdcd3b9257c",
+          "size_bytes": 182
+        }
+      ]
+    }
+  },
+  "prepared_sources": {
+    "android_source_us": {
+      "manifest_sha256": "0d4df0c8583c04a53067e55a0e555a30babc3d3869eb103976a359f45b549713",
+      "verified_files": [
+        {
+          "path": "roads_places.osm.pbf",
+          "sha256": "d328cc04fbf845eaba2f4028bcd61d25a63601a88ddbf16acb33f65778fac972",
+          "size_bytes": 4008048363
+        }
+      ],
+      "verified_intermediates": [
+        {
+          "path": "filter.json",
+          "sha256": "48c700683e9b28b1bcd66fd2a78589b0202aa4a77bd8fb72ec5d7ed4ce0282a2",
+          "size_bytes": 108
+        }
+      ]
+    },
+    "android_source_oceania": {
+      "manifest_sha256": "396f98ed31c680497002fc4f5d5a570f46c5977c94ce393e25939518d7cb4e2f",
+      "verified_files": [
+        {
+          "path": "roads_places.osm.pbf",
+          "sha256": "951916403b2a53370017d9fce1627330c30313b446049cd67f4dd462148aa267",
+          "size_bytes": 401963876
+        }
+      ],
+      "verified_intermediates": [
+        {
+          "path": "filter.json",
+          "sha256": "6f445d889b01fab8910fad2662783ee1c8dff5deb201c781b9a29b255ee59da0",
+          "size_bytes": 105
+        }
+      ]
+    },
+    "android_source_virgin_islands": {
+      "manifest_sha256": "79ef0d8c8a30ca303f7e89e16bf50f2641b8a8d3d716818eeeecd53989ce61b1",
+      "verified_files": [
+        {
+          "path": "roads_places.osm.pbf",
+          "sha256": "7300536a95f03695d792fcf731b61ed6004d09886aa479a07f885505d56809fd",
+          "size_bytes": 901429
+        }
+      ],
+      "verified_intermediates": [
+        {
+          "path": "filter.json",
+          "sha256": "35611c57748573becf7d93a78405aff40cd3816177a8e785a85b921fd03ce86c",
+          "size_bytes": 65
+        }
+      ]
+    },
+    "android_source_puerto_rico": {
+      "manifest_sha256": "45f32534206dc6fb9f761d668b158849dabe07dc01c478467ebec1abc16b9f6e",
+      "verified_files": [
+        {
+          "path": "roads_places.osm.pbf",
+          "sha256": "3d2876f2ec5012fbfdf79727e6942358cec96b82c69bcd858c70fce0ff197336",
+          "size_bytes": 14957608
+        }
+      ],
+      "verified_intermediates": [
+        {
+          "path": "filter.json",
+          "sha256": "80d8a32e99d8b30b76e1b3675b3802eb0cfd6c6916c278cc1bde56bdf400a0c1",
+          "size_bytes": 99
+        }
+      ]
+    }
+  }
+}

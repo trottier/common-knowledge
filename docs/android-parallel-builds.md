@@ -19,6 +19,14 @@ of all 19 earlier pairs, checks their complete metadata and manifest bytes for
 equality, and checks their measured values against the existing catalog pins.
 Their original producer files remain unchanged.
 
+Colorado subsequently completed both unchanged single-map builds. The
+[20-state checkpoint](evidence/android-single-map-pairs.json) rehashes every
+payload and intermediate in both copies, verifies their identical generation
+manifests, and verifies each prepared extract and all four prepared parent
+sources. The 20 placed map payloads total 1,957,632,931 bytes. Their measured
+catalog pins are adopted without changing any producer file or clearing a
+review hold. California and the 35 parallel assignments remain separate.
+
 | Worker worktree | Assigned jurisdictions |
 | --- | --- |
 | `73-android-worker` | FL, ID, KS, ME, MO, NC, NM, OH, PA, TN, VA, WV |
