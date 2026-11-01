@@ -41,6 +41,15 @@ def title_key(title: str) -> str:
     return title[:1].upper() + title[1:]
 
 
+def redirect_target(source: str) -> str:
+    # The publisher marks both #REDIRECT [[...]] and #REDIRECT: [[...]]
+    # revisions as redirects. The optional colon is not part of the title.
+    match = re.match(r"\s*#redirect\s*:?\s*\[\[([^\]]+)\]\]", source, re.I)
+    if not match:
+        raise ValueError("Unsupported WikEM redirect source syntax")
+    return match[1].split("|", 1)[0].strip()
+
+
 def load_snapshot(root: Path, items: dict[str, Item], cache: Path) -> Snapshot:
     settings = read_yaml(root / "pipelines/wikem/settings.yaml")
     api, license_url = settings["api_url"], settings["license_url"]
@@ -376,10 +385,7 @@ def build_archive(
                 revision = snapshot.revisions[page["lastrevid"]]
                 if "redirect" in page:
                     source = revision["slots"]["main"]["*"]
-                    match = re.match(r"\s*#redirect\s*\[\[([^\]]+)\]\]", source, re.I)
-                    if not match:
-                        raise ValueError("Unsupported WikEM redirect source syntax")
-                    destination = match[1].split("|", 1)[0]
+                    destination = redirect_target(source)
                     title, _, fragment = destination.partition("#")
                     link = local_link(
                         "/wiki/"

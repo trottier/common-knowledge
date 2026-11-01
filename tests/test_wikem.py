@@ -7,10 +7,33 @@ from bs4 import BeautifulSoup
 from libzim.reader import Archive
 
 from ck.catalog import Item
-from ck.wikem import Snapshot, build_archive, clean_html, load_snapshot, local_link, page_document
+from ck.wikem import (
+    Snapshot,
+    build_archive,
+    clean_html,
+    load_snapshot,
+    local_link,
+    page_document,
+    redirect_target,
+)
 from ck.zim2pdf import archive_source, article
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+@pytest.mark.parametrize(
+    "source",
+    [
+        "#REDIRECT [[Article#Section|Label]]",
+        "#Redirect:[[Article#Section|Label]]",
+        "#REDIRECT: [[Article#Section|Label]]",
+        " \n#redirect : [[ Article#Section |Label]]",
+    ],
+)
+def test_redirect_colon_forms_preserve_the_actual_target(source):
+    assert redirect_target(source) == "Article#Section"
+    with pytest.raises(ValueError, match="Unsupported"):
+        redirect_target("Ordinary article text [[Article]]")
 
 
 def pages():

@@ -83,6 +83,14 @@ def test_publisher_revision_dates_are_read_from_localized_footers():
     assert article(html, "CC-BY-SA-4.0")["modified"] == "2026-10-01"
 
 
+def test_original_cc0_navigation_does_not_obscure_the_article_license():
+    for expected in ("CC-BY-SA-4.0 AND CC0-1.0", "CC0-1.0 AND CC-BY-SA-4.0"):
+        assert article(source(), expected)["url"].endswith("oldid=123")
+    for expected in ("CC0-1.0", "Unknown AND CC-BY-SA-4.0", "CC-BY-SA-3.0 AND CC0-1.0"):
+        with pytest.raises(ValueError, match="license"):
+            article(source(), expected)
+
+
 def test_disambiguation_pages_cannot_enter_the_medical_selection():
     with pytest.raises(ValueError, match="disambiguation"):
         article(
@@ -204,11 +212,13 @@ def test_failed_format_retains_verified_bytes_and_does_not_redownload(tmp_path):
     assert len(calls) == 1
 
 
-def test_draft_selection_has_150_unique_articles():
+def test_draft_selection_has_about_150_unique_articles_from_both_references():
     selection = Topics.model_validate(read_yaml(ROOT / "catalog/medpdf_topics.yaml"))
-    assert len(selection.topics) == 150
-    assert len({topic.id for topic in selection.topics}) == 150
-    assert len({(topic.source, topic.title) for topic in selection.topics}) == 150
+    count = len(selection.topics)
+    assert count >= 150
+    assert len({topic.id for topic in selection.topics}) == count
+    assert len({(topic.source, topic.title) for topic in selection.topics}) == count
+    assert {topic.source for topic in selection.topics} == {"wikimed_en_nopic", "wikem_en_nopic"}
 
 
 def test_medical_selection_cannot_claim_review_without_a_named_reviewer_and_date():
