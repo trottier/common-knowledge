@@ -14,6 +14,7 @@ from ck.catalog import load_catalog, safe_path
 from ck.config import load_config
 from ck.fetch import digest
 from ck.generated import cached_input
+from ck.licenses import parse_license_expression
 from ck.review import require_release_ready
 
 GITHUB_ASSET_LIMIT = 2_000_000_000
@@ -67,10 +68,12 @@ def source_archive_extension(path: Path) -> str:
 
 
 def ships_gpl(item) -> bool:
+    # Keep the existing helper name, but conservatively package corresponding
+    # sources for LGPL/MPL as well as GPL, including permissive OR alternatives.
     return (
         item.family in {"apk", "binaries"}
         and item.placement != "hub_only"
-        and any(part.startswith("GPL-") for part in item.license.split(" AND "))
+        and parse_license_expression(item.license).requires_source
     )
 
 
