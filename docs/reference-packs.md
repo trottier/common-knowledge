@@ -35,7 +35,7 @@ measured development pins replace the catalog markers.
 `make full` prepares the four packs through the ordinary input dependency graph.
 No imported source files, fonts, ZIMs or PDFs are committed to git.
 
-## Measured development repeats
+## Earlier development repeats
 
 At development epoch 1793404800, separate network-disabled Linux containers
 produced identical PDF payloads and complete generation manifests for:
@@ -52,3 +52,10 @@ The physiology build failed on an unsupported source character; it did not
 publish a partial output. A separate font-fix recipe must be verified before
 that pack is pinned. These checkpoints do
 not clear the source-currency, safety, suitability or final release-epoch gates.
+
+The later physiology build stopped on the source's U+1F427 character. The
+reference pipeline now has its own font settings, including the pinned
+monochrome Noto Emoji font under OFL-1.1. The glyph is retained. This change does
+not alter the medical emergency PDF font settings. All four reference packs need
+new generation pins and repeats under this recipe; the table above records only
+the earlier recipe, not the new font binding. New outputs remain unapproved.

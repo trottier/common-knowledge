@@ -238,5 +238,23 @@
       "full"
     ],
     "review": "[[VERIFY: human review of complete publisher HTTPS font download, parsed version and computed SHA-256 pin]]"
+  },
+  {
+    "id": "noto_emoji",
+    "family": "fonts",
+    "title": "Noto Emoji — monochrome variable font, reference build input",
+    "url": "https://raw.githubusercontent.com/google/fonts/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf",
+    "version": "google/fonts commit 8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+    "size_bytes": 1982596,
+    "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+    "license": "OFL-1.1",
+    "attribution": "Copyright 2013 Google LLC. Noto Emoji, licensed under SIL Open Font License 1.1. Subset glyphs are embedded in reference PDFs.",
+    "license_proof_url": "https://raw.githubusercontent.com/google/fonts/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notoemoji/OFL.txt",
+    "placement": "hub_only",
+    "dest": "build/fonts/",
+    "profiles": [
+      "full"
+    ],
+    "review": "[[VERIFY: independent computed font pin and license review; verify subset glyph rendering on physical readers]]"
   }
 ]

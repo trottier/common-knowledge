@@ -43,10 +43,10 @@ Catalog items explicitly requiring legal review:
 
 - catalog/maps.yaml:252: [[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]
 - catalog/medpdf_topics.yaml: named human medical review required
-- catalog/referencepacks.yaml:128: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- catalog/referencepacks.yaml:32: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- catalog/referencepacks.yaml:64: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- catalog/referencepacks.yaml:96: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:132: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:33: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:66: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- catalog/referencepacks.yaml:99: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - content/en/android-maps.md: named human review required (English content)
 - content/en/card.md: named human review required (radio, legal)
 - content/en/edition.yaml: named human review of English labels required
@@ -75,7 +75,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (5779)
+## Remaining VERIFY markers (5789)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -302,6 +302,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/fonts.yaml:200` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
 - `catalog/fonts.yaml:220` — [[VERIFY: human review of font download hash pinned from publisher HTTPS file]]
 - `catalog/fonts.yaml:240` — [[VERIFY: human review of complete publisher HTTPS font download, parsed version and computed SHA-256 pin]]
+- `catalog/fonts.yaml:258` — [[VERIFY: independent computed font pin and license review; verify subset glyph rendering on physical readers]]
 - `catalog/geodata.yaml:19` — [[VERIFY: human pin review and immutable preservation of the publisher-MD5-checked extract; Pacific territories require separate source coverage]]
 - `catalog/geodata.yaml:38` — [[VERIFY: human pin review; cartographic boundaries are display-only and must not be used for county assignment or detailed insets]]
 - `catalog/geodata.yaml:57` — [[VERIFY: human review of HTTPS download, archive contents and computed SHA-256 pin]]
@@ -1044,13 +1045,22 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/phrasebooks.yaml:416` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/phrasebooks.yaml:448` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
 - `catalog/phrasebooks.yaml:480` — [[VERIFY: conversion-pin and language review, and physical phone checks. Original publisher explanations remain in en; this is not a translated START edition]]
-- `catalog/referencepacks.yaml:32` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- `catalog/referencepacks.yaml:64` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- `catalog/referencepacks.yaml:96` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
-- `catalog/referencepacks.yaml:103` — [[VERIFY: measure complete generated reference pack]]
-- `catalog/referencepacks.yaml:104` — [[VERIFY: pin independently repeated generation manifest]]
-- `catalog/referencepacks.yaml:127` — [[VERIFY: pinned reference-pack recipe]]
-- `catalog/referencepacks.yaml:128` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:7` — [[VERIFY: measure complete reference pack with verified source glyph coverage]]
+- `catalog/referencepacks.yaml:8` — [[VERIFY: pin independently repeated reference pack with emoji font]]
+- `catalog/referencepacks.yaml:32` — [[VERIFY: pinned source-complete reference recipe]]
+- `catalog/referencepacks.yaml:33` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:40` — [[VERIFY: measure complete reference pack with verified source glyph coverage]]
+- `catalog/referencepacks.yaml:41` — [[VERIFY: pin independently repeated reference pack with emoji font]]
+- `catalog/referencepacks.yaml:65` — [[VERIFY: pinned source-complete reference recipe]]
+- `catalog/referencepacks.yaml:66` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:73` — [[VERIFY: measure complete reference pack with verified source glyph coverage]]
+- `catalog/referencepacks.yaml:74` — [[VERIFY: pin independently repeated reference pack with emoji font]]
+- `catalog/referencepacks.yaml:98` — [[VERIFY: pinned source-complete reference recipe]]
+- `catalog/referencepacks.yaml:99` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/referencepacks.yaml:106` — [[VERIFY: measure complete reference pack with verified source glyph coverage]]
+- `catalog/referencepacks.yaml:107` — [[VERIFY: pin independently repeated reference pack with emoji font]]
+- `catalog/referencepacks.yaml:131` — [[VERIFY: pinned source-complete reference recipe]]
+- `catalog/referencepacks.yaml:132` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/video.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/video.yaml:7` — [[VERIFY: publisher version]]
 - `catalog/video.yaml:8` — [[VERIFY: exact publisher file size]]
