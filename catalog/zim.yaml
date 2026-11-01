@@ -58,21 +58,21 @@
   {
     "id": "simplewiki_en_nopic",
     "family": "zim",
-    "title": "Simple English Wikipedia without pictures",
-    "url": "[[VERIFY: exact publisher download URL]]",
-    "version": "[[VERIFY: publisher version]]",
-    "size_bytes": "[[VERIFY: exact publisher file size]]",
-    "sha256": "[[VERIFY: publisher SHA-256 or reviewed verified download]]",
-    "license": "[[VERIFY: redistribution license]]",
-    "attribution": "[[VERIFY: publisher attribution]]",
-    "license_proof_url": "[[VERIFY: per-item publisher license proof]]",
-    "placement": {
-      "collection": "simplewiki"
-    },
-    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/",
+    "title": "Simple English Wikipedia, no pictures \u2014 publisher build input",
+    "url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en-simple_all_nopic_2026-09.zim",
+    "version": "2026-09",
+    "size_bytes": 1094936257,
+    "sha256": "ee93790aa7907c41570b0861fa15c3645bbcf6da208fd2a426a62459231a66f4",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Simple English Wikipedia contributors; archive packaged by Kiwix",
+    "license_proof_url": "https://simple.wikipedia.org/wiki/Wikipedia:Copyrights",
+    "placement": "hub_only",
+    "dest": "build/reference-inputs/",
     "profiles": [
       "full"
-    ]
+    ],
+    "checksum_source_url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en-simple_all_nopic_2026-09.zim.meta4",
+    "review": "[[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]"
   },
   {
     "id": "wikimed_en_maxi",
@@ -285,5 +285,70 @@
     ],
     "pipeline_version": "zim-offline-v1-2ba7bf014043deddbeb66775898f53b2f0e835d2d07ec21ade476059496a98ef",
     "review": "[[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]"
+  },
+  {
+    "id": "simplewiki_en_offline",
+    "family": "generated",
+    "title": "Simple English Wikipedia, no pictures \u2014 offline reference edition",
+    "version": "2026-09; regenerated edition",
+    "size_bytes": "[[VERIFY: measured complete regenerated archive payload]]",
+    "sha256": "[[VERIFY: complete generated manifest SHA-256]]",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Simple English Wikipedia contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained",
+    "license_proof_url": "https://simple.wikipedia.org/wiki/Wikipedia:Copyrights",
+    "placement": {
+      "collection": "simplewiki"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/simplewiki/Wikipedia/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "simplewiki_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: pinned regeneration recipe]]",
+    "review": "[[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]"
+  },
+  {
+    "id": "wikibooks_en_nopic",
+    "family": "zim",
+    "title": "Wikibooks, English, no pictures \u2014 publisher build input",
+    "url": "https://download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2026-10.zim",
+    "version": "2026-10",
+    "size_bytes": 3544612812,
+    "sha256": "bda3410005656daeb523c81774e151b750cd5a8828f081ded0848cd7fdccba7c",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikibooks contributors; archive packaged by Kiwix",
+    "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+    "placement": "hub_only",
+    "dest": "build/reference-inputs/",
+    "profiles": [
+      "full"
+    ],
+    "checksum_source_url": "https://download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2026-10.zim.meta4",
+    "review": "[[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]"
+  },
+  {
+    "id": "wikibooks_en_offline",
+    "family": "generated",
+    "title": "Wikibooks, English, no pictures \u2014 offline reference edition",
+    "version": "2026-10; regenerated edition",
+    "size_bytes": "[[VERIFY: measured complete regenerated archive payload]]",
+    "sha256": "[[VERIFY: complete generated manifest SHA-256]]",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "Wikibooks contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained",
+    "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+    "placement": {
+      "collection": "school"
+    },
+    "dest": "6_VIDEOS_AND_IN_DEPTH/in_depth/school/Wikibooks/",
+    "profiles": [
+      "full"
+    ],
+    "inputs": [
+      "wikibooks_en_nopic"
+    ],
+    "pipeline_version": "[[VERIFY: pinned regeneration recipe]]",
+    "review": "[[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]"
   }
 ]

@@ -63,7 +63,7 @@ Catalog items explicitly requiring legal review:
 - content/en/tags.md: named human review required (rescue, medical)
 - medical_phone_pdfs.review: [[VERIFY: named human medical review of the 150-article selection and converted PDFs, conversion-pin review and physical iPhone checks]]
 
-## Remaining VERIFY markers (1095)
+## Remaining VERIFY markers (1098)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1097,13 +1097,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/zim.yaml:26` — [[VERIFY: publisher version]]
 - `catalog/zim.yaml:27` — [[VERIFY: exact publisher file size]]
 - `catalog/zim.yaml:28` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/zim.yaml:62` — [[VERIFY: exact publisher download URL]]
-- `catalog/zim.yaml:63` — [[VERIFY: publisher version]]
-- `catalog/zim.yaml:64` — [[VERIFY: exact publisher file size]]
-- `catalog/zim.yaml:65` — [[VERIFY: publisher SHA-256 or reviewed verified download]]
-- `catalog/zim.yaml:66` — [[VERIFY: redistribution license]]
-- `catalog/zim.yaml:67` — [[VERIFY: publisher attribution]]
-- `catalog/zim.yaml:68` — [[VERIFY: per-item publisher license proof]]
+- `catalog/zim.yaml:75` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]
 - `catalog/zim.yaml:81` — [[VERIFY: exact publisher download URL]]
 - `catalog/zim.yaml:82` — [[VERIFY: publisher version]]
 - `catalog/zim.yaml:83` — [[VERIFY: exact publisher file size]]
@@ -1162,3 +1156,12 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/zim.yaml:219` — [[VERIFY: per-item publisher license proof]]
 - `catalog/zim.yaml:245` — [[VERIFY: regenerated archive pin review, repeat full-archive reproducibility and physical reader checklist; original full-text index is omitted, title search retained]]
 - `catalog/zim.yaml:287` — [[VERIFY: regenerated archive pin and repeat whole-archive reproducibility review and physical Kiwix checks; title search retained, original full-text index omitted]]
+- `catalog/zim.yaml:294` — [[VERIFY: measured complete regenerated archive payload]]
+- `catalog/zim.yaml:295` — [[VERIFY: complete generated manifest SHA-256]]
+- `catalog/zim.yaml:309` — [[VERIFY: pinned regeneration recipe]]
+- `catalog/zim.yaml:310` — [[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]
+- `catalog/zim.yaml:329` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]
+- `catalog/zim.yaml:336` — [[VERIFY: measured complete regenerated archive payload]]
+- `catalog/zim.yaml:337` — [[VERIFY: complete generated manifest SHA-256]]
+- `catalog/zim.yaml:351` — [[VERIFY: pinned regeneration recipe]]
+- `catalog/zim.yaml:352` — [[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]

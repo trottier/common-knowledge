@@ -3557,16 +3557,27 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `99fe51dc14029f8fb69c9c90a8c59ce733488df22a2de09f4e69203bf1e9fd93`
 - Publisher file: https://huggingface.co/mradermacher/Qwen3.5-0.8B-Base-GGUF/resolve/d98ffedc21f95bcd34909d356dffa47cffcd0066/Qwen3.5-0.8B-Base.Q4_K_M.gguf
 
-## Simple English Wikipedia without pictures
+## Simple English Wikipedia, no pictures — publisher build input
 
 - Catalog id: `simplewiki_en_nopic`
-- Version: [[VERIFY: publisher version]]
-- License: [[VERIFY: redistribution license]]
-- Attribution: [[VERIFY: publisher attribution]]
-- License proof: [[VERIFY: per-item publisher license proof]]
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Publisher file: [[VERIFY: exact publisher download URL]]
+- Version: 2026-09
+- License: CC-BY-SA-4.0
+- Attribution: Simple English Wikipedia contributors; archive packaged by Kiwix
+- License proof: https://simple.wikipedia.org/wiki/Wikipedia:Copyrights
+- Size: 1094936257 bytes
+- SHA-256: `ee93790aa7907c41570b0861fa15c3645bbcf6da208fd2a426a62459231a66f4`
+- Publisher file: https://download.kiwix.org/zim/wikipedia/wikipedia_en-simple_all_nopic_2026-09.zim
+
+## Simple English Wikipedia, no pictures — offline reference edition
+
+- Catalog id: `simplewiki_en_offline`
+- Version: 2026-09; regenerated edition
+- License: CC-BY-SA-4.0
+- Attribution: Simple English Wikipedia contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained
+- License proof: https://simple.wikipedia.org/wiki/Wikipedia:Copyrights
+- Size: [[VERIFY: measured complete regenerated archive payload]] bytes
+- SHA-256: `[[VERIFY: complete generated manifest SHA-256]]`
+- Pipeline: [[VERIFY: pinned regeneration recipe]]; inputs: simplewiki_en_nopic
 
 ## USAGov state and territory emergency agency links
 
@@ -3765,6 +3776,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: [[VERIFY: exact publisher file size]] bytes
 - SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
 - Publisher file: [[VERIFY: exact publisher download URL]]
+
+## Wikibooks, English, no pictures — publisher build input
+
+- Catalog id: `wikibooks_en_nopic`
+- Version: 2026-10
+- License: CC-BY-SA-4.0
+- Attribution: Wikibooks contributors; archive packaged by Kiwix
+- License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
+- Size: 3544612812 bytes
+- SHA-256: `bda3410005656daeb523c81774e151b750cd5a8828f081ded0848cd7fdccba7c`
+- Publisher file: https://download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2026-10.zim
+
+## Wikibooks, English, no pictures — offline reference edition
+
+- Catalog id: `wikibooks_en_offline`
+- Version: 2026-10; regenerated edition
+- License: CC-BY-SA-4.0
+- Attribution: Wikibooks contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained
+- License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
+- Size: [[VERIFY: measured complete regenerated archive payload]] bytes
+- SHA-256: `[[VERIFY: complete generated manifest SHA-256]]`
+- Pipeline: [[VERIFY: pinned regeneration recipe]]; inputs: wikibooks_en_nopic
 
 ## English medical Wikipedia with pictures
 
