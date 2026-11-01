@@ -3216,6 +3216,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `d04c0ddf89387a20a9cff93b57443ce756d34529dd83dc434bde1031b128ee59`
 - Publisher file: https://github.com/maplibre/maplibre-native/releases/download/node-v6.4.1/node-v127-linux-x64-Release.tar.gz
 
+## MathJax full — pinned MathML to SVG build tool
+
+- Catalog id: `mathjax_mml_svg`
+- Version: 3.2.2
+- License: Apache-2.0
+- Attribution: MathJax Consortium and contributors. MathJax is used only during reference PDF generation; original package license and notices are retained in the build input.
+- License proof: https://registry.npmjs.org/mathjax-full/3.2.2
+- Size: 8530863 bytes
+- SHA-256: `d8f080d2e4bdfb75284aac34d5eff155002eca47798b1d4e4bde31453e653f87`
+- Publisher file: https://registry.npmjs.org/mathjax-full/-/mathjax-full-3.2.2.tgz
+
 ## Medical archives in other edition languages; select individual files
 
 - Catalog id: `medical_other_editions`
@@ -3234,9 +3245,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikipedia contributors; original article revisions and licenses in each PDF; offline layout Common Knowledge
 - License proof: https://en.wikipedia.org/wiki/Wikipedia:Copyrights
-- Size: 69972915 bytes
-- SHA-256: `7944c1711a987aaab48a8ad78cf14b640b68d91c7871a7e860224ec229fd1f74`
-- Pipeline: medpdf-v1-08573a083933a7ef3a317c5a7a4f47d852145b24fce1380d5db815ede2c61ece; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic, wikem_en_nopic
+- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
+- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
+- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tc, wikimed_en_nopic, wikem_en_nopic, mathjax_mml_svg
 
 ## National county road atlas
 
@@ -3696,9 +3707,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 222863 bytes
-- SHA-256: `0a6772d290b743ba61727b74e6d533ac48555c3ec965247b8a22a65a8dd2a3ca`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 234546 bytes
+- SHA-256: `3af1ded730034c32fb6eee6adf09dfb147546d46a8c012c18d3a003a4a34a74e`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for en: Guía de inglés
 
@@ -3707,9 +3718,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 176257 bytes
-- SHA-256: `921f35475ded90d85ac54999a775e19f6b5fa03573e9608892fdcec6d504fbf1`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_es_nopic
+- Size: 187948 bytes
+- SHA-256: `c1f3edbd680e1b8fd8e9c9e31bbee304302dd56c4487ff3829512aff1dded572`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_es_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for es: Spanish phrasebook
 
@@ -3718,9 +3729,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 340120 bytes
-- SHA-256: `9c76cd8ce68b81b369b4335cdfb8bb76957487331f22c6ee952ea8813e809155`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 351802 bytes
+- SHA-256: `3d4d54f4d02c8d58d741097074a62a679968272b26cc0d6b2deb71bb9fcfb2f0`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for fa: Persian phrasebook
 
@@ -3729,9 +3740,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 394201 bytes
-- SHA-256: `65f93372e067590da575dac2736b232b16430fe9832fe95bcacb2ec67b84134c`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 405889 bytes
+- SHA-256: `4255dd9ea0b18250976dcf76480277c8c45796b828779ed6a8129c012df58887`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for fr: French phrasebook
 
@@ -3740,9 +3751,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 457460 bytes
-- SHA-256: `fe7f5e837c94db3fc2748662de0f7e8c79c098afa11f757dcbb6b60d3b5f00ae`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 469147 bytes
+- SHA-256: `1c706fc77649ce457c1db88b10eb9a68d7caa4fdf8ecf23ad4e1119150173594`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for hi: Hindi phrasebook
 
@@ -3751,9 +3762,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 491157 bytes
-- SHA-256: `18460701046b83ad9db875c87a8395641408663327b3dea050981e32928b4f1e`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 502844 bytes
+- SHA-256: `e0f2c8a86efb93d0e4221496929155c116ae48a09a428bf8d24f84f3200b81d2`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for ht: Haitian Creole phrasebook
 
@@ -3762,9 +3773,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 62418 bytes
-- SHA-256: `02559b0c145c1a7106c6e0aa65d28fa5bfc4093e633e08d2c16c32e12a3ecf96`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 74107 bytes
+- SHA-256: `794f075b6269bceac904da3fb107448382fa1ce2e2a7e0c09103ed5b0c5820e1`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for ko: Korean phrasebook
 
@@ -3773,9 +3784,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 330113 bytes
-- SHA-256: `9738d41a6d543e4e127102c3125039962a44b7d58090279306264e62728b1d25`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 341795 bytes
+- SHA-256: `b56102e295aea0bd8795172643a53681962fd021f9dfe9419c5df44c064fb343`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for pl: Polish phrasebook
 
@@ -3784,9 +3795,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 202312 bytes
-- SHA-256: `620ed987bfc1903792ced9306e3e5eef21b1eaf473f92a6649605cb22eedecfb`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 214000 bytes
+- SHA-256: `63a42ad114bdf61f9734b266590aea4877c7598fdea5f5fa61485bbfeb8b7961`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for pt: Portuguese phrasebook
 
@@ -3795,9 +3806,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 436108 bytes
-- SHA-256: `a4e31c3ba03f29bfa5a1f6a274b1a3e847d1e75ffe56b63aa2b4474a77bd6d3a`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 447793 bytes
+- SHA-256: `64736b53730c0c29ac6a13452e29c9a907ff7a4fb80a207ce438d4a02e3045ff`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for ru: Russian phrasebook
 
@@ -3806,9 +3817,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 305831 bytes
-- SHA-256: `09c0f41352fbbdc331421fd3754856b3ffb67e2443f5dfd240389f09804b87d4`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 317520 bytes
+- SHA-256: `f5f1015fe0101c4d7a8450d819b3e6fcea338f6c941b275d7bc8c5001921a3d0`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for tl: Tagalog phrasebook
 
@@ -3817,9 +3828,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 380631 bytes
-- SHA-256: `62cc80e5aff961faa4f94bd5c7e4ce57ff2bf906496a67385cef6478484e29c9`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 392322 bytes
+- SHA-256: `d0db2744295c25eccafde3e5fff5ce263dbb7aac431a6a8cd7e0c4b7ec3de071`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for vi: Vietnamese phrasebook
 
@@ -3828,9 +3839,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 205073 bytes
-- SHA-256: `0f3dcac1bfdcef6b0b80c4d3dc9632811acad4d860b66f7b4782d699cf872adf`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 216762 bytes
+- SHA-256: `d9d27d2950eeb1f1f5983e474618ad49bd6353cfb9efaf66c2b48479c7b56691`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for zh-Hans: Chinese phrasebook
 
@@ -3839,9 +3850,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 594645 bytes
-- SHA-256: `97ef289fd248b1c03920f8fa38aa77e6504f13dc177b5cc21ae8bdcab261c3f3`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 606310 bytes
+- SHA-256: `d210491d3d4364b256df0d24b72b4d5cdcf51aaea3dc6a5433b39cba1919d88a`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## Wikivoyage phrasebook for zh-Hant: Chinese phrasebook
 
@@ -3850,9 +3861,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0
 - Attribution: Wikivoyage contributors; original revision, attribution and license in the PDF; offline layout Common Knowledge
 - License proof: https://en.wikivoyage.org/wiki/Wikivoyage:Copyleft
-- Size: 595090 bytes
-- SHA-256: `72bbbc97cfc216b0ea6e0828bd44a9e582f9de0a176d5e4e18cc45d0a6ee8048`
-- Pipeline: phrasebooks-v1-bb2075e11b239ec8ac9d5a762860937ab249c393a479073189a6965ddbcfa126; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic
+- Size: 606773 bytes
+- SHA-256: `ed358353dfe799cd8f5d15c42516c6cea7da5d4c573185072a4c2e28525fef98`
+- Pipeline: phrasebooks-v1-c9e2ed9ec4a2f66285042b0c55cc62f6cb1d1d2572b2c859b480d9706b35bd49; inputs: noto_sans, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_gurmukhi, noto_sans_hebrew, noto_sans_kr, noto_sans_sc, noto_sans_symbols2, noto_sans_tamil, noto_sans_tc, wikivoyage_en_nopic, mathjax_mml_svg
 
 ## PMTiles build CLI for Linux arm64
 
@@ -4422,9 +4433,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
-- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
+- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
+- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
+- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Carpentry and hand-tool references — selected phone PDFs
 
@@ -4433,9 +4444,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
-- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
+- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
+- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
+- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Human physiology background references — selected phone PDFs
 
@@ -4444,9 +4455,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
-- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
+- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
+- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
+- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Electronics background references — selected phone PDFs
 
@@ -4455,9 +4466,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: CC-BY-SA-4.0 AND CC0-1.0
 - Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
 - License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
-- Size: [[VERIFY: measure complete reference pack with verified source glyph coverage]] bytes
-- SHA-256: `[[VERIFY: pin independently repeated reference pack with emoji font]]`
-- Pipeline: [[VERIFY: pinned source-complete reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji
+- Size: [[VERIFY: measure complete PDFs with verified source equation rendering]] bytes
+- SHA-256: `[[VERIFY: independently repeat complete equation-preserving PDF generation]]`
+- Pipeline: [[VERIFY: current pinned MathML-to-SVG reference recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
 ## Qwen3.5-0.8B-Base, Q4_K_M
 

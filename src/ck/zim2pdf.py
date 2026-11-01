@@ -24,6 +24,7 @@ from ck.catalog import Item
 from ck.config import Configuration, Identifier, Model, Text, read_yaml
 from ck.fetch import verify_zim
 from ck.generated import cached_input, generation_manifest, verified_generated_files
+from ck.reference_math import MathRenderer, math_source_id, prepare_equations, restore_equations
 from ck.render import OfflineFetcher, pdf_timestamp
 
 
@@ -48,7 +49,7 @@ class Topics(Model):
         return self
 
 
-def article(html: str, expected_license: str) -> dict:
+def article(html: str, expected_license: str, math_renderer=None) -> dict:
     source = BeautifulSoup(html, "html.parser")
     if source.select_one('meta[property="mw:PageProp/disambiguation"]'):
         raise ValueError("Reference selection resolves to a disambiguation page")
@@ -97,6 +98,7 @@ def article(html: str, expected_license: str) -> dict:
         raise ValueError("Article main content is missing")
     for navigation in list(content.select(".navbox, .mw-editsection")):
         navigation.decompose()
+    equations = prepare_equations(source, content, math_renderer)
     # The nopic archive replaces figures with empty SVG placeholders. Preserve
     # source alt text and captions; do not imply these are usable illustrations.
     media_count = 0
@@ -204,14 +206,16 @@ def article(html: str, expected_license: str) -> dict:
         if link["href"].startswith("#") and unquote(link["href"][1:]) not in identifiers:
             del link["href"]
             broken_links += 1
+    converted, equation_audit = restore_equations(str(content), equations)
     return {
-        "html": str(content),
+        "html": converted,
         "url": origin["href"],
         "modified": modified,
         "license_url": license_link,
         "omitted_media": media_count,
         "headings": headings,
         "omitted_broken_links": broken_links,
+        "rendered_equations": equation_audit,
     }
 
 
@@ -315,9 +319,10 @@ def build_medpdf(
         raise ValueError("Medical PDF worker count must be between one and eight")
     topics = selection.topics[:limit] if limit else selection.topics
     font_ids = set(read_yaml(root / "pipelines/zim2pdf/settings.yaml")["fonts"])
-    inputs = {topic.source for topic in topics} | font_ids
+    math_id = math_source_id(root)
+    inputs = {topic.source for topic in topics} | font_ids | {math_id}
     archives, audits = {}, {}
-    for identifier in sorted(inputs - font_ids):
+    for identifier in sorted(inputs - font_ids - {math_id}):
         path, audits[identifier] = archive_source(
             catalog[identifier], catalog, cache, generated or root / "build/generated", epoch
         )
@@ -331,7 +336,10 @@ def build_medpdf(
         loader=FileSystemLoader(root / "templates"), autoescape=True, undefined=StrictUndefined
     )
     output.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-medpdf-") as temporary:
+    with (
+        tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-medpdf-") as temporary,
+        MathRenderer(root, catalog, cache) as math_renderer,
+    ):
         stage = Path(temporary)
         files = stage / "files"
         files.mkdir()
@@ -346,7 +354,7 @@ def build_medpdf(
             if item.mimetype != "text/html":
                 raise ValueError(f"Medical article is not HTML: {topic.id}")
             raw = bytes(item.content)
-            data = article(raw.decode("utf-8"), catalog[topic.source].license)
+            data = article(raw.decode("utf-8"), catalog[topic.source].license, math_renderer)
             ensure_glyphs(BeautifulSoup(data["html"], "html.parser").get_text(), coverage)
             data.update(
                 id=topic.id,
@@ -384,6 +392,7 @@ def build_medpdf(
             "Source figures are unavailable. Each PDF gives its source revision and license.\n"
             "The numbered files follow the draft selection in catalog/medpdf_topics.yaml.\n"
         )
+        (files / "00_Equation_Renderer_LICENSE.TXT").write_text(math_renderer.notice)
         (stage / "articles.json").write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
         (stage / "archive-audits.json").write_text(
             json.dumps(audits, sort_keys=True, indent=2) + "\n"
@@ -391,12 +400,16 @@ def build_medpdf(
         recipe = hashlib.sha256()
         for relative in (
             "src/ck/zim2pdf.py",
+            "src/ck/reference_math.py",
             "src/ck/catalog.py",
             "src/ck/config.py",
             "src/ck/fetch.py",
             "src/ck/render.py",
             "src/ck/generated.py",
             "templates/reference.html.j2",
+            "templates/source-math.css",
+            "pipelines/math/render.mjs",
+            "pipelines/math/settings.yaml",
             "templates/document.css",
             "catalog/medpdf_topics.yaml",
             "pipelines/zim2pdf/settings.yaml",
@@ -416,7 +429,10 @@ def build_medpdf(
             epoch=epoch,
             intermediates=["articles.json", "archive-audits.json"],
             tool_versions=(
-                Path("/opt/ck-tool-versions.txt").read_text() + "\nlibzim: " + version("libzim")
+                Path("/opt/ck-tool-versions.txt").read_text()
+                + "\nlibzim: "
+                + version("libzim")
+                + math_renderer.versions
             ),
         )
         stage.rename(output)

@@ -116,5 +116,25 @@
     ],
     "checksum_source_url": "https://download.openzim.org/release/zim-tools/zim-tools_linux-aarch64-musl-3.8.0.tar.gz.md5",
     "review": "[[VERIFY: review computed HTTPS-download SHA-256; publisher MD5 matched; build tool only, not placed on the drive]]"
+  },
+  {
+    "id": "mathjax_mml_svg",
+    "family": "binaries",
+    "title": "MathJax full — pinned MathML to SVG build tool",
+    "url": "https://registry.npmjs.org/mathjax-full/-/mathjax-full-3.2.2.tgz",
+    "version": "3.2.2",
+    "size_bytes": 8530863,
+    "sha256": "d8f080d2e4bdfb75284aac34d5eff155002eca47798b1d4e4bde31453e653f87",
+    "license": "Apache-2.0",
+    "attribution": "MathJax Consortium and contributors. MathJax is used only during reference PDF generation; original package license and notices are retained in the build input.",
+    "license_proof_url": "https://registry.npmjs.org/mathjax-full/3.2.2",
+    "checksum_source_url": "https://registry.npmjs.org/mathjax-full/3.2.2",
+    "placement": "hub_only",
+    "dest": "build/mathjax/",
+    "profiles": [
+      "sample",
+      "full"
+    ],
+    "review": "[[VERIFY: independent package pin, Apache license/font-data notice and generated equation rendering review; publisher SHA-512 integrity matched]]"
   }
 ]

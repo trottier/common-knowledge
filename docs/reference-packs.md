@@ -53,9 +53,31 @@ publish a partial output. A separate font-fix recipe must be verified before
 that pack is pinned. These checkpoints do
 not clear the source-currency, safety, suitability or final release-epoch gates.
 
-The later physiology build stopped on the source's U+1F427 character. The
-reference pipeline now has its own font settings, including the pinned
-monochrome Noto Emoji font under OFL-1.1. The glyph is retained. This change does
-not alter the medical emergency PDF font settings. All four reference packs need
-new generation pins and repeats under this recipe; the table above records only
-the earlier recipe, not the new font binding. New outputs remain unapproved.
+The later source-character and markup checks found a missing penguin character
+and MathML equations that the installed PDF renderer did not lay out natively.
+The reference font settings now include the pinned monochrome Noto Emoji font
+under OFL-1.1. Source characters are retained.
+
+The shared reference converter now uses the pinned MathJax full package to
+render original MathML as vector SVG, including fractions, accents and script
+positions. Bun runs the original publisher package offline, directly; no package
+install, source modification or runtime network access is needed. The tarball's
+published SHA-512 integrity was checked, and its SHA-256 and license proof are
+recorded in `catalog/buildtools.yaml`. The package is a build input and is never
+placed on a drive. Generated SVG must contain vector geometry without scripts,
+external resources, fallback text glyphs or renderer errors. Source figures
+remain unavailable; regenerated equations are identified separately in audits.
+
+A preflight of all 29 selected articles rendered 36 source equations with complete
+body-font coverage. A separate scan found 29 MathML equations across five
+existing medical PDFs: ectopic pregnancy, altitude sickness, sterilization,
+hypoxia and pulse oximetry. Medical references and phrasebooks use the same
+verified converter. Their generation pins are reset until complete independent
+repeats match. Named clinical and source review remains required.
+
+Each equation audit records a hash of the parsed source MathML and the generated
+SVG. Source article byte hashes and revision links remain intact. The pipeline
+binds the MathJax package, Bun version, source files, settings and renderer script
+in its provenance. Vector equations support zoom without raster degradation;
+physical readability and source-to-PDF comparison remain review tasks. The
+original medical instructions and numeric values have not been rewritten.

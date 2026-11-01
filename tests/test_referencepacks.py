@@ -69,14 +69,25 @@ def fixture_archive(monkeypatch, *, redirect=False, provenance=True):
 
 
 def pack_fixture(monkeypatch):
+    from contextlib import nullcontext
+
     from ck.config import load_config
     from ck.render import font_files
 
+    monkeypatch.setattr(
+        "ck.referencepacks.MathRenderer",
+        lambda *args: nullcontext(
+            SimpleNamespace(
+                versions="\nSynthetic unused math renderer",
+                notice="Synthetic renderer notice; never shipped",
+            )
+        ),
+    )
     catalog = load_catalog(ROOT)
     pack = selections(ROOT)["reference_med_lib"].model_copy(update={"paths": ["Synthetic"]})
     monkeypatch.setattr("ck.referencepacks.selections", lambda root: {"reference_med_lib": pack})
     monkeypatch.setattr("ck.referencepacks.read_yaml", lambda path: {"fonts": ["noto_sans"]})
-    catalog["reference_med_lib"].inputs = [pack.source, "noto_sans"]
+    catalog["reference_med_lib"].inputs = [pack.source, "noto_sans", "mathjax_mml_svg"]
     font = font_files(ROOT, load_config(ROOT).languages[0])[0]
     monkeypatch.setattr("ck.referencepacks.cached_input", lambda *args: font)
     return catalog

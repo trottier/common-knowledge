@@ -83,6 +83,32 @@ def test_publisher_revision_dates_are_read_from_localized_footers():
     assert article(html, "CC-BY-SA-4.0")["modified"] == "2026-10-01"
 
 
+def test_source_equations_need_a_verified_renderer_and_preserve_its_vector_paths():
+    html = source(
+        '<span class="mwe-math-element"><math id="ratio" alttext="2.5 / 0.05">'
+        "<mfrac><mn>2.5</mn><mn>0.05</mn></mfrac></math>"
+        '<img class="mwe-math-fallback-image-inline" src="fallback.svg" alt="Equation fallback">'
+        '</span><img src="figure.svg" alt="Other figure">'
+    )
+    with pytest.raises(ValueError, match="verified offline equation renderer"):
+        article(html, "CC-BY-SA-4.0")
+    received = []
+    svg = '<svg xmlns="http://www.w3.org/2000/svg"><path d="M0 0L10 0"/></svg>'
+
+    def render(mathml):
+        received.append(mathml)
+        return svg
+
+    data = article(html, "CC-BY-SA-4.0", render)
+    soup = BeautifulSoup(data["html"], "html.parser")
+    assert "<mfrac><mn>2.5</mn><mn>0.05</mn></mfrac>" in received[0]
+    assert soup.find(id="ratio") and soup.path["d"] == "M0 0L10 0"
+    assert not soup.find("math") and len(data["rendered_equations"]) == 1
+    assert soup.svg["aria-label"] == "2.5 / 0.05"
+    assert data["rendered_equations"][0]["replaced_math_fallbacks"] == 1
+    assert data["omitted_media"] == 1 and "Other figure" in soup.get_text()
+
+
 def test_original_cc0_navigation_does_not_obscure_the_article_license():
     for expected in ("CC-BY-SA-4.0 AND CC0-1.0", "CC0-1.0 AND CC-BY-SA-4.0"):
         assert article(source(), expected)["url"].endswith("oldid=123")

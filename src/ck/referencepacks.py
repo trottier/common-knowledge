@@ -17,6 +17,7 @@ from pydantic import Field, model_validator
 from ck.catalog import Collection, Item
 from ck.config import Identifier, Model, Text, read_yaml
 from ck.generated import cached_input, generation_manifest
+from ck.reference_math import MathRenderer, math_source_id
 from ck.zim2pdf import archive_source, article, ensure_glyphs, font_glyphs, render_article
 
 
@@ -73,7 +74,7 @@ def build_reference_pack(
     ):
         raise ValueError("Reference placement or license differs from its source selection")
     font_ids = read_yaml(root / "pipelines/referencepacks/settings.yaml")["fonts"]
-    input_ids = {pack.source, *font_ids}
+    input_ids = {pack.source, *font_ids, math_source_id(root)}
     if set(target.inputs) != input_ids:
         raise ValueError("Reference catalog inputs differ from the selection and fonts")
     if output.exists():
@@ -91,7 +92,10 @@ def build_reference_pack(
         loader=FileSystemLoader(root / "templates"), autoescape=True, undefined=StrictUndefined
     )
     output.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-reference-") as temporary:
+    with (
+        tempfile.TemporaryDirectory(dir=output.parent, prefix=".ck-reference-") as temporary,
+        MathRenderer(root, catalog, cache) as math_renderer,
+    ):
         stage = Path(temporary)
         files = stage / "files"
         files.mkdir()
@@ -104,7 +108,7 @@ def build_reference_pack(
             if source.mimetype != "text/html":
                 raise ValueError(f"Reference article is not HTML: {entry_path}")
             raw = bytes(source.content)
-            data = article(raw.decode("utf-8"), catalog[pack.source].license)
+            data = article(raw.decode("utf-8"), catalog[pack.source].license, math_renderer)
             ensure_glyphs(BeautifulSoup(data["html"], "html.parser").get_text(), covered)
             document = env.get_template("collection-reference.html.j2").render(
                 **data,
@@ -137,10 +141,12 @@ def build_reference_pack(
             "Follow START and the printed cards when guidance differs.\n"
             "Article text, source revision links and license notices are retained.\n"
             "Navigation and table layout are adapted for phones.\n\n"
+            "Source MathML equations are rendered as vector graphics by the pinned MathJax tool.\n"
         )
         (files / "00_README.TXT").write_text(
             notice + "\n".join(f"{row['file']} — {row['title']}" for row in index) + "\n"
         )
+        (files / f"00_{pack_id}_LICENSE.TXT").write_text(math_renderer.notice)
         (stage / "articles.json").write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
         (stage / "archive-audit.json").write_text(
             json.dumps(audit, sort_keys=True, indent=2) + "\n"
@@ -148,6 +154,7 @@ def build_reference_pack(
         recipe = hashlib.sha256()
         for relative in (
             "src/ck/referencepacks.py",
+            "src/ck/reference_math.py",
             "src/ck/zim2pdf.py",
             "src/ck/catalog.py",
             "src/ck/config.py",
@@ -155,6 +162,9 @@ def build_reference_pack(
             "src/ck/render.py",
             "src/ck/generated.py",
             "templates/collection-reference.html.j2",
+            "templates/source-math.css",
+            "pipelines/math/render.mjs",
+            "pipelines/math/settings.yaml",
             "templates/document.css",
             "pipelines/referencepacks/selection.yaml",
             "pipelines/referencepacks/settings.yaml",
@@ -175,7 +185,8 @@ def build_reference_pack(
             intermediates=["articles.json", "archive-audit.json"],
             tool_versions=Path("/opt/ck-tool-versions.txt").read_text()
             + "\nlibzim: "
-            + version("libzim"),
+            + version("libzim")
+            + math_renderer.versions,
         )
         stage.rename(output)
     return {**manifest, "articles": len(index)}
