@@ -1,0 +1,1062 @@
+{
+  "status": "held development candidate; no selected APK, source approval, or release claim",
+  "baseline_commit": "c2b0d0a000d8282f4ed475fd1eb37f6bea8081cd",
+  "catalog_payload_verification": [
+    {
+      "id": "offlinellm_android_candidate",
+      "sha256": "bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd",
+      "size_bytes": 51249006,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "offlinellm_android_candidate_source",
+      "sha256": "c432960243870c77920cf345c6bb31e6d984ba45b7824b6c90da00ee0f01b569",
+      "size_bytes": 9078480,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "offlinellm_llama_source",
+      "sha256": "3f23290c31f76dbe9ac19e9f35bcd2a1e11a0d5fc5085ecbea56e2538075b87e",
+      "size_bytes": 36848644,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "llama_android_reference_source",
+      "sha256": "1688a167a8edd9499cdd0c19b8bd044f0fa184b466981977bbf2222d884953a4",
+      "size_bytes": 38685236,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "offlinellm_app_license",
+      "sha256": "7fc3a8849854559c08327ab09bcbb3f4b26e00b7f43c551d212e4389b80aa3c3",
+      "size_bytes": 14417,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "offlinellm_native_license",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "size_bytes": 1078,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "android_build_tools_37_linux",
+      "sha256": "01af179347cbcd9c208b7f8171f7b21f6dd1d2f85bcd15e88caa51d5d7b86060",
+      "size_bytes": 66135704,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "android_apksigner_37_jar",
+      "sha256": "2defad215d7ff52968a409cde528cdaef7918b115e276b8e3378ca7a178e4180",
+      "size_bytes": 1181416,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "offlinellm_vulkan_headers_source",
+      "sha256": "48db7ca4b0d1a089e11098da9ceef8164d1efae6db5faa65fe8f1587f548ac08",
+      "size_bytes": 3453909,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    },
+    {
+      "id": "offlinellm_spirv_headers_source",
+      "sha256": "a9bb9c48713245eacf97cc539b6f1d45405a92d8813f8b82e635f0a085ee9898",
+      "size_bytes": 594379,
+      "placement": "hub_only",
+      "verified_cached_bytes": true
+    }
+  ],
+  "publisher_apk": {
+    "id": 694862227,
+    "tag": "v5.1.4",
+    "source_commit": "a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "url": "https://github.com/jegly/OfflineLLM/releases/download/v5.1.4/OfflineLLM-5.1.4-PQC-signed.apk",
+    "size_bytes": 51249006,
+    "sha256": "bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd",
+    "publisher_checksum_url": "https://api.github.com/repos/jegly/OfflineLLM/releases/429819952"
+  },
+  "publisher_source": {
+    "repository": "jegly/OfflineLLM",
+    "commit": "a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "url": "https://codeload.github.com/jegly/OfflineLLM/tar.gz/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760",
+    "size_bytes": 9078480,
+    "sha256": "c432960243870c77920cf345c6bb31e6d984ba45b7824b6c90da00ee0f01b569",
+    "publisher_checksum": null
+  },
+  "native_source": {
+    "repository": "ggml-org/llama.cpp",
+    "commit": "60eeeb6082c1126bb8bc72902c83123cd056811b",
+    "url": "https://codeload.github.com/ggml-org/llama.cpp/tar.gz/60eeeb6082c1126bb8bc72902c83123cd056811b",
+    "size_bytes": 36848644,
+    "sha256": "3f23290c31f76dbe9ac19e9f35bcd2a1e11a0d5fc5085ecbea56e2538075b87e",
+    "publisher_checksum": null
+  },
+  "source_file_bindings": [
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/AndroidManifest.xml",
+      "sha256": "1829eac6401768e7e299fc5b1c6a65f5a5e870b7bfa7a0b0928c6a623eab2b05",
+      "size_bytes": 1610,
+      "line_locations": {
+        "uses-permission": [
+          6,
+          9
+        ]
+      }
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/build.gradle.kts",
+      "sha256": "b76179c4ef3534b3d56d8054e568f1ac19ea5af8e2e04706641af94ed4400c94",
+      "size_bytes": 3356,
+      "line_locations": {
+        "minSdk": [
+          15
+        ],
+        "targetSdk": [
+          16
+        ],
+        "abiFilters": [
+          22
+        ]
+      }
+    },
+    {
+      "path": "app/src/main/java/com/jegly/offlineLLM/ai/ModelManager.kt",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ai/ModelManager.kt",
+      "sha256": "fc99fc56012715f8beb86e55568d21380d16147f80f0b3fee590f1dcf5d4c0be",
+      "size_bytes": 11424,
+      "line_locations": {
+        "openInputStream": [
+          95
+        ]
+      }
+    },
+    {
+      "path": "app/src/main/java/com/jegly/offlineLLM/ai/InferenceEngine.kt",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ai/InferenceEngine.kt",
+      "sha256": "ecc17716700a8a9d26fcad46be05442dae698dafdf2f4a37ed1701a2207d1778",
+      "size_bytes": 9888,
+      "line_locations": {
+        "addSystemPrompt": [
+          83
+        ]
+      }
+    },
+    {
+      "path": "app/src/main/java/com/jegly/offlineLLM/ui/screens/SettingsScreen.kt",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ui/screens/SettingsScreen.kt",
+      "sha256": "b310e303d7882476b3848720aaa6e7cf9304ed8f28dd7a633771adea18bfc8f0",
+      "size_bytes": 43149,
+      "line_locations": {
+        "Import GGUF Model": [
+          350
+        ],
+        "512f..16384f": [
+          554
+        ],
+        "Custom System Prompt": [
+          652
+        ]
+      }
+    },
+    {
+      "path": "app/src/main/java/com/jegly/offlineLLM/ui/screens/ChatViewModel.kt",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/ui/screens/ChatViewModel.kt",
+      "sha256": "42b2084b9d20f96fade5036cd2f0ffe3a4c59894dee886945637cd5c91d3e150",
+      "size_bytes": 15459,
+      "line_locations": {
+        "TtsHelper(application)": [
+          66
+        ],
+        "SystemPrompts.getPrompt": [
+          162
+        ]
+      }
+    },
+    {
+      "path": "app/src/main/java/com/jegly/offlineLLM/utils/TtsHelper.kt",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/app/src/main/java/com/jegly/offlineLLM/utils/TtsHelper.kt",
+      "sha256": "cc7224f0a23d3a368b9c2b1698336bddb07f8c4c90e198d70fd57f29a5da7465",
+      "size_bytes": 3021,
+      "line_locations": {
+        "TextToSpeech(context)": [
+          20
+        ]
+      }
+    },
+    {
+      "path": "smollm/src/main/cpp/CMakeLists.txt",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/smollm/src/main/cpp/CMakeLists.txt",
+      "sha256": "f7b9b85a6068d67d6686f08f14b3f8d8c2682f0d15f38f2d456a98cb532ba563",
+      "size_bytes": 2998,
+      "line_locations": {
+        "common": [
+          62
+        ],
+        "llama": [
+          14,
+          15,
+          16,
+          17,
+          23,
+          28,
+          33,
+          62,
+          64,
+          67
+        ]
+      }
+    },
+    {
+      "path": "smollm/src/main/cpp/LLMInference.cpp",
+      "source": "offlinellm_android_candidate_source",
+      "url": "https://raw.githubusercontent.com/jegly/OfflineLLM/a9a62d28841b8dd6fdb44e94bf4285c4b6d7a760/smollm/src/main/cpp/LLMInference.cpp",
+      "sha256": "8d67ff1d8d3d802566b5c09f7e48d3311841a3b6c89d5da367ad586fa2b23287",
+      "size_bytes": 20080,
+      "line_locations": {
+        "llama_model_load_from_file": [
+          150
+        ],
+        "context size": [
+          166,
+          384
+        ]
+      }
+    },
+    {
+      "path": "src/llama-arch.cpp",
+      "source": "offlinellm_llama_source",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/src/llama-arch.cpp",
+      "sha256": "ad71045ab4298b9200c6bf65d70c4f141771a9bd10bb39f19aba4729ad666047",
+      "size_bytes": 75553,
+      "line_locations": {
+        "\"qwen35\"": [
+          41
+        ]
+      }
+    },
+    {
+      "path": "src/llama-model.cpp",
+      "source": "offlinellm_llama_source",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/src/llama-model.cpp",
+      "sha256": "7b8f526f1c468b1541fb9427264c63d7a2a6ca2dd0b42a08f58530a90f03ddef",
+      "size_bytes": 136714,
+      "line_locations": {
+        "new llama_model_qwen35(params)": [
+          314
+        ]
+      }
+    },
+    {
+      "path": "src/models/qwen35.cpp",
+      "source": "offlinellm_llama_source",
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/60eeeb6082c1126bb8bc72902c83123cd056811b/src/models/qwen35.cpp",
+      "sha256": "b61c5813fc80c54269d45cbbdbbc34b090500e8017dc190483605b37249d007c",
+      "size_bytes": 28474,
+      "line_locations": {
+        "llama_model_qwen35": [
+          4,
+          37,
+          130,
+          137,
+          231,
+          247,
+          258,
+          339,
+          473,
+          489
+        ]
+      }
+    }
+  ],
+  "selected_models": [
+    {
+      "id": "base_model",
+      "sha256": "ab36f9a7b0194ed9a6f80eeb000dac73002bcb14d0397c11c39417b6cd814994",
+      "size_bytes": 1270808256,
+      "fields": {
+        "general.architecture": "qwen35",
+        "general.name": "Qwen Qwen3.5 2B Base",
+        "general.finetune": "Base",
+        "general.file_type": 15,
+        "qwen35.context_length": 262144
+      },
+      "chat_template_present": true,
+      "chat_template_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "id": "sample_model",
+      "sha256": "99fe51dc14029f8fb69c9c90a8c59ce733488df22a2de09f4e69203bf1e9fd93",
+      "size_bytes": 529297536,
+      "fields": {
+        "general.architecture": "qwen35",
+        "general.name": "Qwen3.5 0.8B Base",
+        "general.finetune": "Base",
+        "general.file_type": 15,
+        "qwen35.context_length": 262144
+      },
+      "chat_template_present": true,
+      "chat_template_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    }
+  ],
+  "apk_qwen35_identifier_present": true,
+  "apk_inspection": {
+    "manifest_sha256": "9679ecddcef59ebd2218c285609f983cab78a07b35849de1f85d7c64f96a04de",
+    "native_files": [
+      {
+        "path": "lib/arm64-v8a/libandroidx.graphics.path.so",
+        "size_bytes": 10096,
+        "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-base.so",
+        "size_bytes": 6611728,
+        "sha256": "a9df5becc9ab51a4e7881ec6bb3780227b1d716835aeea80332219a086be7136"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv8.0_1.so",
+        "size_bytes": 4754064,
+        "sha256": "b7b74c1435af1d54bddbd5368441feb1d9301c4b7ba4a8c24243d92d33f5b8e8"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv8.2_1.so",
+        "size_bytes": 5071352,
+        "sha256": "e7cb253d5c7134f1d19466c9c9ce632ed40ff6e4de40d50bd6276563af639242"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv8.2_2.so",
+        "size_bytes": 5038072,
+        "sha256": "ebd548d7d6de8b777611f66a0c1572b358a44595e8bd76f44632c868d7401ae4"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv8.6_1.so",
+        "size_bytes": 5150528,
+        "sha256": "ac0595c0829ffb359db62dbbb364462ad0c3f954ebf4c23ded34712aae185829"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv9.0_1.so",
+        "size_bytes": 5213608,
+        "sha256": "9fdd3f9c5533d294adb71317c514e937b570ab472c0bf97d97aecfb7bf83d17f"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv9.2_1.so",
+        "size_bytes": 5213616,
+        "sha256": "bc646ab4db8c35a07628b993ce5101bf74285f1aac65561afa7ad3e6fd2dd6ab"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-cpu-android_armv9.2_2.so",
+        "size_bytes": 5213544,
+        "sha256": "9d895d925c3185c499d8a76a85529cd7ac9c5c2a43aeb6b63b34968968f924e5"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml-vulkan.so",
+        "size_bytes": 48644208,
+        "sha256": "348ba3b44bdfdbe8128a7ae9c622299717387bf992a5e765347f0259e2f808bd"
+      },
+      {
+        "path": "lib/arm64-v8a/libggml.so",
+        "size_bytes": 613312,
+        "sha256": "a5898212381f97b0cf6d73830d36e314df2fdef74dff1d7de2c3af4c2e3f3558"
+      },
+      {
+        "path": "lib/arm64-v8a/libggufreader.so",
+        "size_bytes": 163792,
+        "sha256": "5dd9ddeb26e9974096fe2bec31b4e0725ae98ecc76520437e94a636f0418af2d"
+      },
+      {
+        "path": "lib/arm64-v8a/libllama.so",
+        "size_bytes": 41218688,
+        "sha256": "a4ba99c2b1678dc6343ac752e3caebfb4188a54d925153fba88e5601f7595365"
+      },
+      {
+        "path": "lib/arm64-v8a/libomp.so",
+        "size_bytes": 1229304,
+        "sha256": "da75dcbe6026a3e08d01bfe86860159432051b329a84deb5ee042ce9b8e1a302"
+      },
+      {
+        "path": "lib/arm64-v8a/libsmollm.so",
+        "size_bytes": 880616,
+        "sha256": "ae3be62123aa490130594c9f3eb4a7c793db5861b6c1463452b7ba529a1e4bd4"
+      }
+    ],
+    "asset_models": [],
+    "network_named_assets": [],
+    "elements": [
+      {
+        "name": "manifest",
+        "attributes": {
+          "versionCode": 50104,
+          "versionName": "5.1.4",
+          "compileSdkVersion": 37,
+          "compileSdkVersionCodename": "17",
+          "package": "com.jegly.offlineLLM",
+          "platformBuildVersionCode": 37,
+          "platformBuildVersionName": 17
+        }
+      },
+      {
+        "name": "uses-sdk",
+        "attributes": {
+          "minSdkVersion": 33,
+          "targetSdkVersion": 37
+        }
+      },
+      {
+        "name": "uses-permission",
+        "attributes": {
+          "name": "android.permission.USE_BIOMETRIC"
+        }
+      },
+      {
+        "name": "uses-permission",
+        "attributes": {
+          "name": "android.permission.READ_EXTERNAL_STORAGE",
+          "maxSdkVersion": 32
+        }
+      },
+      {
+        "name": "uses-permission",
+        "attributes": {
+          "name": "android.permission.USE_FINGERPRINT"
+        }
+      },
+      {
+        "name": "permission",
+        "attributes": {
+          "name": "com.jegly.offlineLLM.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+          "protectionLevel": 2
+        }
+      },
+      {
+        "name": "uses-permission",
+        "attributes": {
+          "name": "com.jegly.offlineLLM.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        }
+      },
+      {
+        "name": "application",
+        "attributes": {
+          "theme": 2131755285,
+          "label": 2131689502,
+          "icon": 2131623936,
+          "name": "com.jegly.offlineLLM.OfflineLLMApplication",
+          "allowBackup": false,
+          "largeHeap": true,
+          "supportsRtl": true,
+          "extractNativeLibs": true,
+          "roundIcon": 2131623937,
+          "appComponentFactory": "androidx.core.app.CoreComponentFactory",
+          "hasFragileUserData": true,
+          "memtagMode": 2
+        }
+      },
+      {
+        "name": "activity",
+        "attributes": {
+          "theme": 2131755285,
+          "name": "com.jegly.offlineLLM.MainActivity",
+          "exported": true,
+          "windowSoftInputMode": 16,
+          "filterTouchesWhenObscured": true
+        }
+      },
+      {
+        "name": "intent-filter",
+        "attributes": {}
+      },
+      {
+        "name": "action",
+        "attributes": {
+          "name": "android.intent.action.MAIN"
+        }
+      },
+      {
+        "name": "category",
+        "attributes": {
+          "name": "android.intent.category.LAUNCHER"
+        }
+      },
+      {
+        "name": "activity",
+        "attributes": {
+          "theme": 2131755273,
+          "label": 2131689539,
+          "name": "androidx.biometric.internal.ui.FingerprintDialogActivity",
+          "exported": false
+        }
+      },
+      {
+        "name": "uses-library",
+        "attributes": {
+          "name": "androidx.window.extensions",
+          "required": false
+        }
+      },
+      {
+        "name": "uses-library",
+        "attributes": {
+          "name": "androidx.window.sidecar",
+          "required": false
+        }
+      },
+      {
+        "name": "provider",
+        "attributes": {
+          "name": "androidx.startup.InitializationProvider",
+          "exported": false,
+          "authorities": "com.jegly.offlineLLM.androidx-startup"
+        }
+      },
+      {
+        "name": "meta-data",
+        "attributes": {
+          "name": "androidx.emoji2.text.EmojiCompatInitializer",
+          "value": "androidx.startup"
+        }
+      },
+      {
+        "name": "meta-data",
+        "attributes": {
+          "name": "androidx.lifecycle.ProcessLifecycleInitializer",
+          "value": "androidx.startup"
+        }
+      },
+      {
+        "name": "meta-data",
+        "attributes": {
+          "name": "androidx.profileinstaller.ProfileInstallerInitializer",
+          "value": "androidx.startup"
+        }
+      },
+      {
+        "name": "service",
+        "attributes": {
+          "name": "androidx.room.MultiInstanceInvalidationService",
+          "exported": false,
+          "directBootAware": true
+        }
+      },
+      {
+        "name": "receiver",
+        "attributes": {
+          "name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "permission": "android.permission.DUMP",
+          "enabled": true,
+          "exported": true,
+          "directBootAware": false
+        }
+      },
+      {
+        "name": "intent-filter",
+        "attributes": {}
+      },
+      {
+        "name": "action",
+        "attributes": {
+          "name": "androidx.profileinstaller.action.INSTALL_PROFILE"
+        }
+      },
+      {
+        "name": "intent-filter",
+        "attributes": {}
+      },
+      {
+        "name": "action",
+        "attributes": {
+          "name": "androidx.profileinstaller.action.SKIP_FILE"
+        }
+      },
+      {
+        "name": "intent-filter",
+        "attributes": {}
+      },
+      {
+        "name": "action",
+        "attributes": {
+          "name": "androidx.profileinstaller.action.SAVE_PROFILE"
+        }
+      },
+      {
+        "name": "intent-filter",
+        "attributes": {}
+      },
+      {
+        "name": "action",
+        "attributes": {
+          "name": "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+        }
+      }
+    ],
+    "permissions": [
+      {
+        "name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "name": "android.permission.READ_EXTERNAL_STORAGE",
+        "maxSdkVersion": 32
+      },
+      {
+        "name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "name": "com.jegly.offlineLLM.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      }
+    ],
+    "application": {
+      "theme": 2131755285,
+      "label": 2131689502,
+      "icon": 2131623936,
+      "name": "com.jegly.offlineLLM.OfflineLLMApplication",
+      "allowBackup": false,
+      "largeHeap": true,
+      "supportsRtl": true,
+      "extractNativeLibs": true,
+      "roundIcon": 2131623937,
+      "appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "hasFragileUserData": true,
+      "memtagMode": 2
+    },
+    "uses_sdk": {
+      "minSdkVersion": 33,
+      "targetSdkVersion": 37
+    },
+    "manifest": {
+      "versionCode": 50104,
+      "versionName": "5.1.4",
+      "compileSdkVersion": 37,
+      "compileSdkVersionCodename": "17",
+      "package": "com.jegly.offlineLLM",
+      "platformBuildVersionCode": 37,
+      "platformBuildVersionName": 17
+    }
+  },
+  "aapt2_cross_check": {
+    "tools": [
+      {
+        "member": "android-37.0/aapt2",
+        "size_bytes": 6274200,
+        "sha256": "0f1c0e560f99db510a76ebc99ad5c3e68438f62e8e8617018a716ca4a589a699"
+      },
+      {
+        "member": "android-37.0/lib64/libLLVM_android.so",
+        "size_bytes": 31974520,
+        "sha256": "71ceb7f382f01687edfe5929940c17b9f1a2a89647436b5f87dde9d1caf2d5ab"
+      },
+      {
+        "member": "android-37.0/lib64/libbcc.so",
+        "size_bytes": 587056,
+        "sha256": "367e2b1a9b53ffafa9256165f82a03eef8e03f411f78ac080df866ad0ee04e04"
+      },
+      {
+        "member": "android-37.0/lib64/libbcinfo.so",
+        "size_bytes": 497080,
+        "sha256": "96a71334d0c46ffac41c5f91860b4bffefc75c26fd7906529dc9a9dd09f31871"
+      },
+      {
+        "member": "android-37.0/lib64/libc++.so",
+        "size_bytes": 1545448,
+        "sha256": "9d4c9036e8eca07cb7cf161128c362e8e5550ede7cd7f99078d559c14a5fdf9a"
+      },
+      {
+        "member": "android-37.0/lib64/libc++.so.1",
+        "size_bytes": 1082624,
+        "sha256": "7eb2812ec39ab5c31f2fc9f906f412c713e76e0d07d6a6911108c7f886e24945"
+      },
+      {
+        "member": "android-37.0/lib64/libclang_android.so",
+        "size_bytes": 21203472,
+        "sha256": "ace5e0270439b642d4d32096fb461ab9c2e54139fc951ee73cf4d18548222e92"
+      }
+    ],
+    "manifest_output": {
+      "sha256": "90806b81275bd9126f4dcb381345f6fa6192a46fbaf161b80e2e16b03164121d",
+      "size_bytes": 8800
+    },
+    "permissions_match": true,
+    "internet_permission": false,
+    "emoji_initializer_present": true
+  },
+  "embedded_emoji_version": "1.4.0",
+  "delegated_service_source": {
+    "coordinate": "androidx.emoji2:emoji2:1.4.0",
+    "url": "https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.4.0/emoji2-1.4.0-sources.jar",
+    "size_bytes": 57705,
+    "sha256": "5db44eec9cee653ba403f0e88a02ce41ab6301a0b7dd7cb35fc32f9747f2228b",
+    "files": [
+      {
+        "path": "androidx/emoji2/text/EmojiCompatInitializer.java",
+        "sha256": "7ded751036ab1b2d4ab96e130466ea0165db0f1fd6e0676fd756932995bcc192"
+      },
+      {
+        "path": "androidx/emoji2/text/DefaultEmojiCompatConfig.java",
+        "sha256": "1abf2f47b9c89fe13665048344cc7f7074a40372d2a836c90f2397274e8ac292"
+      },
+      {
+        "path": "androidx/emoji2/text/FontRequestEmojiCompatConfig.java",
+        "sha256": "3278d1d3f771f834531fbdb0a5c4c6a61093f36e0aa13479b91bde2c989c9c58"
+      }
+    ]
+  },
+  "delegated_service_limits": [
+    "EmojiCompat automatic font-provider request after resume is present; separate provider traffic not captured.",
+    "TtsHelper initializes the platform TextToSpeech engine; no enforced offline voice was found.",
+    "No app was installed or run, and no external traffic measurement or zero-network claim is made."
+  ],
+  "release_workflow_inputs": {
+    "run_id": 41184355644,
+    "url": "https://github.com/jegly/OfflineLLM/actions/runs/41184355644",
+    "log_archive_sha256": "fe664a3793c557bce137a52dae4419e67a5d1c28638ebd0c4e082ed0143bfbe8",
+    "log_archive_size_bytes": 23660,
+    "matches": [
+      {
+        "log_member": "0_Build unsigned APK and draft release.txt",
+        "lines": [
+          "2026-10-31T08:39:03.1294217Z NDK 27.2.12479018, Vulkan-Headers v1.4.367, SPIRV-Headers vulkan-sdk-1.4.363.0"
+        ]
+      }
+    ]
+  },
+  "release_header_source_bindings": [
+    {
+      "repository": "KhronosGroup/Vulkan-Headers",
+      "tag": "v1.4.367",
+      "commit": "9fbc2a782ee3f8a4db64e7d991e23da75e893f44",
+      "url": "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/9fbc2a782ee3f8a4db64e7d991e23da75e893f44",
+      "sha256": "48db7ca4b0d1a089e11098da9ceef8164d1efae6db5faa65fe8f1587f548ac08",
+      "size_bytes": 3453909,
+      "publisher_tag_api_url": "https://api.github.com/repos/KhronosGroup/Vulkan-Headers/commits/v1.4.367",
+      "license_files": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "95ad366d23fadf701d355bc45fb8b82ae2d700239471d35d41286ac3b08ff903",
+          "size_bytes": 495
+        }
+      ],
+      "spdx_header_examples": {
+        "Apache-2.0": [
+          ".gitattributes",
+          ".github/dependabot.yml",
+          ".github/workflows/ci.yml",
+          ".gitignore",
+          "BUILD.gn",
+          "BUILD.md"
+        ],
+        "MIT": [
+          "CODE_OF_CONDUCT.adoc",
+          "registry/parse_dependency.py"
+        ],
+        "Apache-2.0 OR MIT": [
+          "LICENSE.md",
+          "include/vk_video/vulkan_video_codec_av1std.h",
+          "include/vk_video/vulkan_video_codec_av1std_decode.h",
+          "include/vk_video/vulkan_video_codec_av1std_encode.h",
+          "include/vk_video/vulkan_video_codec_h264std.h",
+          "include/vk_video/vulkan_video_codec_h264std_decode.h"
+        ]
+      },
+      "license_proof_url": "https://raw.githubusercontent.com/KhronosGroup/Vulkan-Headers/9fbc2a782ee3f8a4db64e7d991e23da75e893f44/LICENSE.md"
+    },
+    {
+      "repository": "KhronosGroup/SPIRV-Headers",
+      "tag": "vulkan-sdk-1.4.363.0",
+      "commit": "496543121ce6419f23d6fa5d7194ba66c36212d2",
+      "url": "https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/496543121ce6419f23d6fa5d7194ba66c36212d2",
+      "sha256": "a9bb9c48713245eacf97cc539b6f1d45405a92d8813f8b82e635f0a085ee9898",
+      "size_bytes": 594379,
+      "publisher_tag_api_url": "https://api.github.com/repos/KhronosGroup/SPIRV-Headers/commits/vulkan-sdk-1.4.363.0",
+      "license_files": [
+        {
+          "path": "LICENSE",
+          "sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+          "size_bytes": 23503
+        }
+      ],
+      "spdx_header_examples": {
+        "MIT": [
+          "BUILD.gn",
+          "CMakeLists.txt",
+          "MODULE.bazel",
+          "include/spirv/1.0/GLSL.std.450.h",
+          "include/spirv/1.0/OpenCL.std.h",
+          "include/spirv/1.1/GLSL.std.450.h"
+        ],
+        "CC-BY-4.0": [
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "README.md",
+          "SECURITY.md"
+        ],
+        "MIT\"": [
+          "include/spirv/unified1/extinst.arm.experimental-ml-operations.grammar.json",
+          "include/spirv/unified1/extinst.arm.motion-engine.100.grammar.json",
+          "include/spirv/unified1/extinst.nonsemantic.graph.debuginfo.grammar.json",
+          "include/spirv/unified1/extinst.tosa.001000.1.grammar.json"
+        ]
+      },
+      "license_proof_url": "https://raw.githubusercontent.com/KhronosGroup/SPIRV-Headers/496543121ce6419f23d6fa5d7194ba66c36212d2/LICENSE"
+    }
+  ],
+  "modern_verifier": {
+    "repository_metadata_url": "https://dl.google.com/android/repository/repository2-3.xml",
+    "repository_metadata_sha256": "fb1bd2fcd70b6116519563f1ff96cc578381e4e29237ab05ec8920f0864a7955",
+    "package": "build-tools;37.0.0",
+    "url": "https://dl.google.com/android/repository/build-tools_r37_linux.zip",
+    "size_bytes": 66135704,
+    "publisher_sha1": "70954e99f4c3d9d46ee70fa32624672fe7cd6ebe",
+    "sha256": "01af179347cbcd9c208b7f8171f7b21f6dd1d2f85bcd15e88caa51d5d7b86060",
+    "jar_member": "android-37.0/lib/apksigner.jar",
+    "jar_size_bytes": 1181416,
+    "jar_sha256": "2defad215d7ff52968a409cde528cdaef7918b115e276b8e3378ca7a178e4180"
+  },
+  "verifier_component_license_proof": {
+    "source_commit": "184702d9d18877edf9e5296c4e191cf0aa2b5fbb",
+    "url": "https://android.googlesource.com/platform/tools/apksig/+/184702d9d18877edf9e5296c4e191cf0aa2b5fbb/LICENSE?format=TEXT",
+    "sha256": "39961513f07c54e796b0fec574e8d64c75e1f0f83736061f114b6f6be1d91e6b",
+    "size_bytes": 11873,
+    "license": "Apache-2.0",
+    "exact_binary_source_correspondence_claimed": false
+  },
+  "verifier_license_scope": {
+    "whole_sdk_archive": "LicenseRef-Android-SDK",
+    "component_license": "Apache-2.0",
+    "component_proof_establishes_exact_binary_source_commit": false,
+    "build_only": true,
+    "drive_or_release_payload": false,
+    "sdk_acceptance_command_or_approval_flag": false,
+    "terms_review_held": true
+  },
+  "verification_environment": {
+    "image": "common-knowledge-build:step23-b",
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "java": "openjdk version \"17.0.21\" 2026-10-20\nOpenJDK Runtime Environment (build 17.0.21+9-1-deb12u1-Debian)\nOpenJDK 64-Bit Server VM (build 17.0.21+9-1-deb12u1-Debian, mixed mode, sharing)\n",
+    "cpus": 1,
+    "memory": "1GiB"
+  },
+  "modern_verification": {
+    "apk_sha256": "bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd",
+    "certificates": [
+      {
+        "label": "V3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647)",
+        "sha256": "fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2"
+      },
+      {
+        "label": "V3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647)",
+        "sha256": "5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6"
+      },
+      {
+        "label": "V3.0 Signer:",
+        "sha256": "98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c"
+      }
+    ],
+    "item_id": "offlinellm_android_candidate",
+    "sdk_range_override": null,
+    "signature_verified": true,
+    "source_completeness_or_release_approval": false,
+    "stderr": "",
+    "stdout": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): false\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v3.2 scheme (APK Signature Scheme v3.2): true\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate DN: CN=Jegly\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-1 digest: 9dd890dd33ec4532c2663ed25006e54f03f14b41\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate MD5 digest: d4e2aa5c7e98324a6f421aab80365406\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key algorithm: EC\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key size (bits): 384\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-256 digest: b1b0e2fde20e6374bf9efcbef594e32c5b82b173fd3fa9411bf11c88551a0a1c\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-1 digest: 44ff7a307e35d8ee62a5223bf1b5f3885aee0c74\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key MD5 digest: 79546cb9dede42d653ee91026deafb7d\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate DN: CN=Jegly\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: 5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-1 digest: f4c074e955ee8f7a64718125d0a10bf615d75e8a\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate MD5 digest: 42bc0762a7b28a7e4d73e394c183827d\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key algorithm: ML-DSA\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key size (bits): n/a\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-256 digest: aa6d6b5b96acfa1e3f52423d2081c5b097d1196503c4f68916f60d567c828bd3\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-1 digest: accbaf0380d920b20d49a71351b1684aed26fae3\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key MD5 digest: 63a9033a769e7921cc0b19d6a6776c2d\nV3.0 Signer: certificate DN: C=AU, L=Earth, O=www.jegly.xyz, OU=github.com/jegly, CN=JEGLY\nV3.0 Signer: certificate SHA-256 digest: 98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c\nV3.0 Signer: certificate SHA-1 digest: cac4215c9fdd0722ad0f0d561db543ed784f9706\nV3.0 Signer: certificate MD5 digest: 668e2cf683cc216a826c8934c0ba280c\nV3.0 Signer: key algorithm: RSA\nV3.0 Signer: key size (bits): 2048\nV3.0 Signer: public key SHA-256 digest: 24bd5f4b81977704457cb3535572c5107e0010dfec5258f7ccad7ab0e8aed3e0\nV3.0 Signer: public key SHA-1 digest: f09c51c0e5009ecbdf067984126236980ea4da0d\nV3.0 Signer: public key MD5 digest: aea0fff87f4568a070536096dc886a31\n",
+    "verifier_jar_sha256": "2defad215d7ff52968a409cde528cdaef7918b115e276b8e3378ca7a178e4180"
+  },
+  "fresh_cache_bootstrap": {
+    "original_sdk_and_apk_downloaded_by_additive_entrypoint": true,
+    "network_disabled_replay_byte_identical": true,
+    "report": {
+      "sha256": "a6700afe2cff621823e3916425e9c598db9a1e6b484b248b0f7592afc8e5cd0c",
+      "size_bytes": 4669
+    },
+    "sdk_range_override": null,
+    "private_build_cache_only": true
+  },
+  "explicit_api_receipts": [
+    {
+      "label": "version",
+      "arguments": [
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "0.9\n",
+      "stderr": ""
+    },
+    {
+      "label": "api36",
+      "arguments": [
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "--min-sdk-version",
+        "33",
+        "--max-sdk-version",
+        "36",
+        "/audit-cache/bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd"
+      ],
+      "exit_code": 0,
+      "stdout": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): false\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v3.2 scheme (APK Signature Scheme v3.2): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nV3.0 Signer: certificate DN: C=AU, L=Earth, O=www.jegly.xyz, OU=github.com/jegly, CN=JEGLY\nV3.0 Signer: certificate SHA-256 digest: 98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c\nV3.0 Signer: certificate SHA-1 digest: cac4215c9fdd0722ad0f0d561db543ed784f9706\nV3.0 Signer: certificate MD5 digest: 668e2cf683cc216a826c8934c0ba280c\nV3.0 Signer: key algorithm: RSA\nV3.0 Signer: key size (bits): 2048\nV3.0 Signer: public key SHA-256 digest: 24bd5f4b81977704457cb3535572c5107e0010dfec5258f7ccad7ab0e8aed3e0\nV3.0 Signer: public key SHA-1 digest: f09c51c0e5009ecbdf067984126236980ea4da0d\nV3.0 Signer: public key MD5 digest: aea0fff87f4568a070536096dc886a31\n",
+      "stderr": ""
+    },
+    {
+      "label": "api37",
+      "arguments": [
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "--min-sdk-version",
+        "33",
+        "--max-sdk-version",
+        "37",
+        "/audit-cache/bacb2b58a9df3ce33775591ec979163f8b147b6d532d522c9faf7f9a764606bd"
+      ],
+      "exit_code": 0,
+      "stdout": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): false\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v3.2 scheme (APK Signature Scheme v3.2): true\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate DN: CN=Jegly\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: fa8f4a07e6a4f2b7dc6e5ab31fc05592b1414ab9436d1e2e39b35ce3bb2e33a2\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-1 digest: 9dd890dd33ec4532c2663ed25006e54f03f14b41\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate MD5 digest: d4e2aa5c7e98324a6f421aab80365406\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key algorithm: EC\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key size (bits): 384\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-256 digest: b1b0e2fde20e6374bf9efcbef594e32c5b82b173fd3fa9411bf11c88551a0a1c\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-1 digest: 44ff7a307e35d8ee62a5223bf1b5f3885aee0c74\nV3.2 Hybrid Classical Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key MD5 digest: 79546cb9dede42d653ee91026deafb7d\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate DN: CN=Jegly\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: 5f99de5b3195753d4fe8ddabebd2fb27356b2109d6fbb2471fcbbdf21a9e76a6\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate SHA-1 digest: f4c074e955ee8f7a64718125d0a10bf615d75e8a\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) certificate MD5 digest: 42bc0762a7b28a7e4d73e394c183827d\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key algorithm: ML-DSA\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) key size (bits): n/a\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-256 digest: aa6d6b5b96acfa1e3f52423d2081c5b097d1196503c4f68916f60d567c828bd3\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key SHA-1 digest: accbaf0380d920b20d49a71351b1684aed26fae3\nV3.2 Hybrid PQC Signer: (minSdkVersion=36 (dev release=true), maxSdkVersion=2147483647) public key MD5 digest: 63a9033a769e7921cc0b19d6a6776c2d\nV3.0 Signer: certificate DN: C=AU, L=Earth, O=www.jegly.xyz, OU=github.com/jegly, CN=JEGLY\nV3.0 Signer: certificate SHA-256 digest: 98d324d4106a368c62729a0a24d9ac9a6b47f8ac4c6585348531f0ee4eb6a04c\nV3.0 Signer: certificate SHA-1 digest: cac4215c9fdd0722ad0f0d561db543ed784f9706\nV3.0 Signer: certificate MD5 digest: 668e2cf683cc216a826c8934c0ba280c\nV3.0 Signer: key algorithm: RSA\nV3.0 Signer: key size (bits): 2048\nV3.0 Signer: public key SHA-256 digest: 24bd5f4b81977704457cb3535572c5107e0010dfec5258f7ccad7ab0e8aed3e0\nV3.0 Signer: public key SHA-1 digest: f09c51c0e5009ecbdf067984126236980ea4da0d\nV3.0 Signer: public key MD5 digest: aea0fff87f4568a070536096dc886a31\n",
+      "stderr": ""
+    }
+  ],
+  "frozen_producer_proof": {
+    "working_recipe": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
+    "cataloged_bundles": [
+      {
+        "id": "local_llm_sample",
+        "sha256": "f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71",
+        "pipeline_version": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
+        "verified_file_count": 27,
+        "inputs_verified_against_current_catalog": true
+      },
+      {
+        "id": "local_llm_full",
+        "sha256": "f213ebc3e8e2075eb095160c2ff1924e5c25848885c4f6f857583f8ba4eadcc9",
+        "pipeline_version": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
+        "verified_file_count": 27,
+        "inputs_verified_against_current_catalog": true
+      }
+    ],
+    "original_producer_and_selected_settings_changed": false,
+    "Dockerfile_build": {
+      "sha256": "03975c96f75207a08363c413020aa9d66d273e0d07acb08a7fa43f2aad2c0b50",
+      "size_bytes": 3530
+    },
+    "uv_lock": {
+      "sha256": "be13e16abcc68ef4afd7a239adb075cdfc80986823c8e3d0221cf9878e90c360",
+      "size_bytes": 121330
+    }
+  },
+  "android_prompt_proposal": {
+    "record": {
+      "candidate_apk": "offlinellm_android_candidate",
+      "context_tokens": 16384,
+      "grounding": {
+        "en": {
+          "mode": "section_index",
+          "notice": "The local LLM is supplied only START section titles. Read START for instructions.",
+          "prompt_byte_budget": 11519,
+          "prompt_bytes": 1261,
+          "start_bytes": 26146
+        },
+        "es": {
+          "mode": "section_index",
+          "notice": "El LLM local recibe solo los títulos de START. Lea START para las instrucciones.",
+          "prompt_byte_budget": 11519,
+          "prompt_bytes": 1306,
+          "start_bytes": 29038
+        }
+      },
+      "original_bundle_modified": false,
+      "selection_or_release_approval": false,
+      "source_bundle_id": "local_llm_sample",
+      "source_bundle_sha256": "f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71"
+    },
+    "outputs": {
+      "HOW_TO_ANDROID.md": {
+        "sha256": "d282a25a16626fbad1dabd5ec19f7eb467a6f8be1a43dbe826980c6f97bbdeb9",
+        "size_bytes": 1879
+      },
+      "proposal.json": {
+        "sha256": "bf59f4b5ae00e9a66b0e8385fcffe9f9a36c7b26490f475c72bae69a21109a72",
+        "size_bytes": 803
+      },
+      "system-en.txt": {
+        "sha256": "0ada2c1a6bb6eeed853d8969fb0e2d216ea6c00e04d1707cce488c1fdedefdcf",
+        "size_bytes": 1261
+      },
+      "system-es.txt": {
+        "sha256": "be0a9f54aa412fdd464c653dc1abb5bd29ce753d3f415d28b16652492f480761",
+        "size_bytes": 1306
+      }
+    },
+    "laptop_minimum32k_unchanged": true,
+    "android16k_adoption_decision_pending": true
+  },
+  "original_wrapper_build_plan_inputs": {
+    "gradle": {
+      "version": "8.14.3",
+      "url": "https://services.gradle.org/distributions/gradle-8.14.3-bin.zip",
+      "sha256": "bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531",
+      "checksum_source_url": "https://services.gradle.org/distributions/gradle-8.14.3-bin.zip.sha256",
+      "payload_downloaded": false
+    },
+    "agp": {
+      "coordinate": "com.android.tools.build:gradle:8.13.2",
+      "pom_url": "https://dl.google.com/dl/android/maven2/com/android/tools/build/gradle/8.13.2/gradle-8.13.2.pom",
+      "pom_sha256": "fc7edba93c5b91ce7267fa7bfdc1fa49422efc633ac279a363e02eb0fd29bcad",
+      "pom_size_bytes": 11773,
+      "runtime_graph_resolved": false
+    },
+    "sdk_packages": [
+      {
+        "path": "ndk;27.3.13750724",
+        "url": "https://dl.google.com/android/repository/android-ndk-r27d-linux.zip",
+        "size_bytes": 663956036,
+        "publisher_sha1": "22105e410cf29afcf163760cc95522b9fb981121",
+        "sha256": null,
+        "payload_downloaded": false
+      },
+      {
+        "path": "platforms;android-36",
+        "url": "https://dl.google.com/android/repository/platform-36_r02.zip",
+        "size_bytes": 65878410,
+        "publisher_sha1": "2c1a80dd4d9f7d0e6dd336ec603d9b5c55a6f576",
+        "sha256": null,
+        "payload_downloaded": false
+      },
+      {
+        "path": "build-tools;36.0.0",
+        "url": "https://dl.google.com/android/repository/build-tools_r36_linux.zip",
+        "size_bytes": 63737259,
+        "publisher_sha1": "b0b6376977657e8ad9b969bacf4093601da2c6fb",
+        "sha256": null,
+        "payload_downloaded": false
+      },
+      {
+        "path": "cmake;3.31.6",
+        "url": "https://dl.google.com/android/repository/cmake-3.31.6-linux.zip",
+        "size_bytes": 30771638,
+        "publisher_sha1": "a54551dabd5daf8cc99f7f51769fd00ca759be0a",
+        "sha256": null,
+        "payload_downloaded": false
+      }
+    ],
+    "sdk_repository_url": "https://dl.google.com/android/repository/repository2-3.xml",
+    "sdk_repository_sha256": "fb1bd2fcd70b6116519563f1ff96cc578381e4e29237ab05ec8920f0864a7955"
+  },
+  "remaining_obligations": [
+    "Reviewed computed no-publisher-SHA256 source/tool pins remain held.",
+    "Complete resolved runtime Maven sources, licenses, and notice placement.",
+    "NDK/OpenMP/CMake source and binary correspondence; no native/APK build performed.",
+    "Resolve delegated Emoji/TTS behavior and verify actual offline behavior on supported physical devices.",
+    "Android13+/arm64 limits and model load/memory/grounding/warning checks; no quality evaluation claim.",
+    "Adoption must wire modern fetch verification, preserve PocketPal historical source graph, rebuild affected frozen bundles, and generate/review companion PDFs."
+  ]
+}

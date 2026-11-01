@@ -1,0 +1,11 @@
+# Review proposal only. Existing selected APKs and frozen LLM producers are unchanged.
+apk_id: offlinellm_android_candidate
+baseline_settings: pipelines/llm/settings.yaml
+context_tokens: 16384 # Exact maximum exposed by this pinned APK's Settings screen.
+gpu_acceleration: false
+on_adoption:
+  apk_dest: 9_LOCAL_LLM/android/OfflineLLM.apk
+  previous_apk_id: pocketpal_android
+  previous_placement: hub_only
+  retain_existing_review_holds: true
+  release_approved: false
