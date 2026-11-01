@@ -9,7 +9,7 @@ from pydantic import ValidationError
 
 from ck.catalog import Collection, Item
 from ck.config import LocalLLM, load_config
-from ck.llm import model_metadata, settings_for, start_text
+from ck.llm import model_metadata, settings_for, start_text, system_prompt
 from ck.planner import plan_variants
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,6 +40,7 @@ def fixture_item(identifier, size):
         {"fallback_variants": [1, 1, 3, 4]},
         {"fallback_variants": [1, 3, 5, 9]},
         {"runner_filename": "runner$(command).exe"},
+        {"context_reserve_tokens": 32768},
     ],
 )
 def test_settings_reject_unsafe_or_ambiguous_launches(change):
@@ -97,7 +98,33 @@ def test_start_grounding_uses_the_rendered_defaults_in_both_languages():
         if language == "en":
             assert config.defaults.radio.listen_window in text
         assert "12:00" in text
-        assert len(text.encode()) < config.local_llm.context_tokens - 4096
+
+
+def test_prompt_preserves_complete_short_start_and_labels_oversized_start():
+    settings = settings_for(ROOT)
+    source = "# Medical basics\nComplete synthetic protocol.\n# Communications\nRead the card.\n"
+    prompt, grounding = system_prompt(ROOT, settings, "en", source)
+    assert source in prompt and grounding["mode"] == "full"
+    assert settings.warning in prompt
+    oversized = "# Medical basics\n" + "Do not truncate this protocol. " * 2000
+    prompt, grounding = system_prompt(ROOT, settings, "es", oversized)
+    assert grounding["mode"] == "section_index"
+    assert "Medical basics" in prompt and "Do not truncate this protocol." not in prompt
+    assert "NOT supplied" in prompt and "Do not reconstruct missing instructions" in prompt
+    assert settings.warning_es in prompt and "solo los títulos" in grounding["notice"]
+    assert (
+        len(prompt.encode())
+        + settings.max_output_tokens
+        + settings.context_reserve_tokens
+        + 2 * settings.message_reserve_tokens
+        < settings.context_tokens
+    )
+
+
+def test_an_oversized_section_index_is_rejected_instead_of_truncated():
+    settings = settings_for(ROOT)
+    with pytest.raises(ValueError, match="section index exceeds"):
+        system_prompt(ROOT, settings, "en", "# " + "Huge title " * 4000)
 
 
 def make_launcher(drive: Path, settings):
@@ -118,7 +145,8 @@ def test_launcher_uses_writable_temp_and_preserves_a_read_only_drive(tmp_path):
     (drive / settings.model_filename).write_bytes(b"Synthetic model, never shipped")
     runner = drive / settings.runner_filename
     raw = (
-        '#!/bin/sh\nprintf "%s\\0" "$@" > "$CK_TEST_CAPTURE"\n'
+        '#!/bin/sh\nprintf "%s\\0" "$@" > "$CK_TEST_CAPTURE.tmp"\n'
+        'mv "$CK_TEST_CAPTURE.tmp" "$CK_TEST_CAPTURE"\n'
         f'printf "listening on http://{settings.host}:{settings.port}\\n"\n'
         "trap 'exit 0' TERM INT\nwhile :; do sleep 1; done\n"
     ).encode()

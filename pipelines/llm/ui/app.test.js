@@ -20,9 +20,9 @@ afterEach(() => {
 });
 
 let instance = 0;
-async function setup(answer) {
+async function setup(answer, systemText) {
   const elements = Object.fromEntries([
-    'conversation', 'language', 'warning', 'question', 'status', 'send', 'cancel', 'reset', 'chat',
+    'conversation', 'language', 'warning', 'grounding', 'start-source', 'question', 'status', 'send', 'cancel', 'reset', 'chat',
   ].map(id => [id, new Element()]));
   elements.language.value = 'en';
   globalThis.document = {
@@ -35,8 +35,10 @@ async function setup(answer) {
     if (url === 'settings.json') return Response.json({
       model: 'fixture', warning: 'Experimental fixture', warning_es: 'Prueba experimental',
       max_question_chars: 2000, max_output_tokens: 512, temperature: 0.2,
+      context_tokens: 32768, context_reserve_tokens: 4096, message_reserve_tokens: 128,
+      grounding: { en: { notice: 'Full START supplied' }, es: { notice: 'Solo títulos' } },
     });
-    if (url === 'system-en.txt' || url === 'system-es.txt') return new Response(`START ${url}`);
+    if (url === 'system-en.txt' || url === 'system-es.txt') return new Response(systemText ?? `START ${url}`);
     if (url !== '/v1/chat/completions') throw new Error(`Unexpected network request: ${url}`);
     return answer(options);
   };
@@ -85,6 +87,21 @@ test('a failed request does not insert a phantom turn; changing language resets 
   expect(JSON.parse(last.options.body).messages.map(message => message.content))
     .toEqual(['START system-es.txt', 'Otra pregunta']);
   expect(elements.warning.textContent).toBe('Prueba experimental');
+  expect(elements.grounding.textContent).toBe('Solo títulos');
+  expect(elements['start-source'].href).toBe('start-es.txt');
+});
+
+test('bounds UTF-8 conversation bytes before inference without losing the draft question', async () => {
+  const { elements, calls, ask } = await setup(() => {
+    throw new Error('An oversized request must never reach inference.');
+  }, 'é'.repeat(14000));
+  const question = 'á'.repeat(300);
+  await ask(question);
+  expect(calls.some(call => call.url === '/v1/chat/completions')).toBe(false);
+  expect(elements.status.textContent).toContain('conversation is too long');
+  expect(elements.question.value).toBe(question);
+  expect(elements.conversation.children).toEqual([]);
+  expect(elements.send.disabled).toBe(false);
 });
 
 test('cancel aborts inference and restores the controls without committing a turn', async () => {
