@@ -8559,8 +8559,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: Source: CDC. Format conversion and source note: Common Knowledge. No agency endorsement is implied; original available free on the CDC website.
 - License proof: https://stacks.cdc.gov/view/cdc/88655
 - Size: 10813142 bytes
-- SHA-256: `dda2d060c97ef12bc92d4c95adda6090e36d5a0c8bfe2bfda67105bb4c069ba8`
-- Pipeline: video-v1-ca4e4edd844d5131d4389113c2d4b18486887c2fbd53c90797b2761283db972b; inputs: cdc_handwashing_asl_source, iso639_2
+- SHA-256: `1d9c9d612ae82fecceee8631c2fcb024d9ddf443b5648d33bf7f567319b16341`
+- Pipeline: video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a; inputs: cdc_handwashing_asl_source, iso639_2
 
 ## What You Need to Know About Handwashing — CDC ASL video
 
@@ -9408,6 +9408,61 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 1485 bytes
 - SHA-256: `bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0`
 - Publisher file: https://www2.census.gov/geo/docs/reference/state.txt
+
+## Tying off onto the middle of a rope — normalized video
+
+- Catalog id: `commons_rope_middle`
+- Version: Commons 2021-03-20T21:49:18Z; development normalization
+- License: CC-BY-SA-4.0 AND CC0-1.0
+- Attribution: Tying off onto the middle of a rope, Slashme; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.
+- License proof: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm
+- Size: 36679027 bytes
+- SHA-256: `9e766ee2fbb4631a38512da6ad232f39369a619630be24f898810d521bca72e2`
+- Pipeline: video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a; inputs: commons_rope_middle_source, iso639_2, commons_rope_middle_caption_en
+
+## Tying off onto the middle of a rope — author English subtitles
+
+- Catalog id: `commons_rope_middle_caption_en`
+- Version: Commons revision 544523334; Slashme; 2021-03-20T21:49:32Z
+- License: CC-BY-SA-4.0
+- Attribution: English subtitles by Slashme, Wikimedia Commons TimedText revision 544523334. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Publisher subtitle text and cue times retained.
+- License proof: https://commons.wikimedia.org/wiki/TimedText:Tying_off_onto_the_middle_of_a_rope.webm.en.srt
+- Size: 5978 bytes
+- SHA-256: `edf38a6d1c1ee4cb84eeeae1bc21872ac09cf3d9b4fa9e128acb1996550d497d`
+- Publisher file: https://commons.wikimedia.org/w/index.php?title=TimedText:Tying_off_onto_the_middle_of_a_rope.webm.en.srt&oldid=544523334&action=raw
+
+## Tying off onto the middle of a rope — Commons original
+
+- Catalog id: `commons_rope_middle_source`
+- Version: Commons original uploaded 2021-03-20T21:49:18Z
+- License: CC-BY-SA-4.0
+- Attribution: Tying off onto the middle of a rope, Slashme; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm. No creator endorsement is implied.
+- License proof: https://commons.wikimedia.org/wiki/File:Tying_off_onto_the_middle_of_a_rope.webm
+- Size: 190825781 bytes
+- SHA-256: `94fa9fff509b1d7c535309e57118a1c60ba52ab43baed63253c32d3a724d028f`
+- Publisher file: https://upload.wikimedia.org/wikipedia/commons/c/c3/Tying_off_onto_the_middle_of_a_rope.webm
+
+## How to make a simple sketch book — normalized video
+
+- Catalog id: `commons_simple_sketchbook`
+- Version: Commons 2020-04-03T12:02:00Z; development normalization
+- License: CC-BY-SA-4.0 AND CC0-1.0
+- Attribution: How to make a simple sketch book, Barry neeson; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm. No creator endorsement is implied. Format conversion and source note: Common Knowledge; original English audio retained, no added text overlay.
+- License proof: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm
+- Size: 14399632 bytes
+- SHA-256: `2a6a311743c62d3d880f03c0bf6f56e31aad264489b7b99b92563ddc3f754885`
+- Pipeline: video-v1-0036a7c54e43b09e323fcee56f64beef146ee2fbb1bc8e71ed5b956df11ade5a; inputs: commons_simple_sketchbook_source, iso639_2
+
+## How to make a simple sketch book — Commons original
+
+- Catalog id: `commons_simple_sketchbook_source`
+- Version: Commons original uploaded 2020-04-03T12:02:00Z
+- License: CC-BY-SA-4.0
+- Attribution: How to make a simple sketch book, Barry neeson; own work, Wikimedia Commons. CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. Original: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm. No creator endorsement is implied.
+- License proof: https://commons.wikimedia.org/wiki/File:How_to_make_a_simple_sketch_book.webm
+- Size: 221639196 bytes
+- SHA-256: `7ce4727f2fb2b56e74bd7d0a3200fd9374844c2ab92ab86a1f65024f05724323`
+- Publisher file: https://upload.wikimedia.org/wikipedia/commons/a/ae/How_to_make_a_simple_sketch_book.webm
 
 ## Critical federal or Commons videos; select individual files
 
@@ -11766,8 +11821,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On
 
 - Catalog id: `usgs_earthquake_drop_cover`
-- Version: USGS 2023-09-20; development normalization with inferred caption timeline shift
-- License: US-PD AND CC0-1.0
+- Version: USGS 2023-09-20; historical development normalization with inferred caption timeline shift; third-party footage rights held
+- License: US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]] AND CC0-1.0
 - Attribution: Peter Pearsall, U.S. Geological Survey, Communications and Publishing. Format conversion and source notice: Common Knowledge. No agency endorsement is implied. Original English audio and publisher English captions are retained; no text overlay added.
 - License proof: https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold
 - Size: 4023964 bytes
@@ -11778,7 +11833,7 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `usgs_earthquake_drop_source`
 - Version: USGS 2023-09-20; downloaded 2026-10-31
-- License: US-PD
+- License: US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]]
 - Attribution: Peter Pearsall, U.S. Geological Survey; Communications and Publishing. No agency endorsement is implied.
 - License proof: https://www.usgs.gov/media/videos/part-five-drop-cover-and-hold
 - Size: 118084421 bytes

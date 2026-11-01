@@ -38,6 +38,8 @@ Catalog items explicitly requiring legal review:
 - `osmand_android_source`: OsmAnd 5.4.11 exact application-source archive; mixed asset licenses; license `GPL-3.0-or-later AND CC-BY-NC-ND-4.0 AND [[VERIFY: exact bundled proprietary and third-party resource rights]]`; reviewer: unassigned; review date: unassigned.
 - `osmand_prebuilt`: OsmAnd official state maps; verify terms and sizes; license `[[VERIFY: redistribution license]]`; reviewer: unassigned; review date: unassigned.
 - `sample_model`: Qwen3.5-0.8B-Base, Q4_K_M; license `Apache-2.0`; reviewer: unassigned; review date: unassigned.
+- `usgs_earthquake_drop_cover`: National Preparedness Month Spotlight on Earthquakes [Part 5] — Drop, Cover and Hold On; license `US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]] AND CC0-1.0`; reviewer: unassigned; review date: unassigned.
+- `usgs_earthquake_drop_source`: National Preparedness Month Spotlight on Earthquakes [Part 5] — publisher video; license `US-PD AND [[VERIFY: exact Envato Elements footage redistribution rights]]`; reviewer: unassigned; review date: unassigned.
 
 ## Named human content reviews
 
@@ -75,7 +77,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6384)
+## Remaining VERIFY markers (6390)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -167,7 +169,6 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `content/es/tags.md:12` — [[VERIFY: confirme que esta etiqueta corresponde a la válvula identificada; no es una instrucción para cerrar todos los medidores.]]
 - `content/es/tags.md:16` — [[VERIFY: identifique la válvula del hogar antes de colocar esta etiqueta.]]
 - `content/es/tags.md:20` — [[VERIFY: identifique el interruptor principal sin abrir ni tocar un panel dañado.]]
-- `config/build.yaml:5` — [[VERIFY: GitHub Pages URL]]
 - `config/build.yaml:6` — [[VERIFY: set at release]]
 - `config/build.yaml:10` — [[VERIFY: measured usable bytes of the production 32 GB part]]
 - `config/wikem-scope.yaml:2` — [[VERIFY: review publisher access-denial scope exclusions]]
@@ -1749,9 +1750,16 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/video.yaml:260` — [[VERIFY: per-item publisher license proof]]
 - `catalog/video.yaml:288` — [[VERIFY: review computed HTTPS WMV pin, source content currency, original English audio and normalized playback on phones]]
 - `catalog/video.yaml:311` — [[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]
-- `catalog/video.yaml:329` — [[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]
-- `catalog/video.yaml:347` — [[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]
-- `catalog/video.yaml:374` — [[VERIFY: human source-currency, computed-pin, caption synchronization and physical playback review; English audio/subtitle tracks only, no Spanish publisher track is supplied]]
+- `catalog/video.yaml:321` — [[VERIFY: exact Envato Elements footage redistribution rights]]
+- `catalog/video.yaml:329` — [[VERIFY: named legal review of exact third-party footage rights; publisher states additional footage used with permission from Envato Elements, which is not a redistribution grant for Common Knowledge; independent source/conversion pin, content currency, caption synchronization, and physical playback review remain open]]
+- `catalog/video.yaml:348` — [[VERIFY: independent computed HTTPS pin and per-item rights review; audio/word-timing research supports the declared caption timeline shift, but a human must confirm synchronization, source currency and physical playback]]
+- `catalog/video.yaml:357` — [[VERIFY: exact Envato Elements footage redistribution rights]]
+- `catalog/video.yaml:375` — [[VERIFY: named legal review of exact third-party footage rights; publisher states additional footage used with permission from Envato Elements, which is not a redistribution grant for Common Knowledge; independent source/conversion pin, content currency, caption synchronization, and physical playback review remain open]]
+- `catalog/video.yaml:394` — [[VERIFY: independent HTTPS pin and per-item rights review; human knot and load-securing suitability; no approval for climbing, rescue, or towing; caption synchronization, pin, and phone playback]]
+- `catalog/video.yaml:421` — [[VERIFY: human source, conversion, and knot and load-securing suitability; no approval for climbing, rescue, or towing; caption synchronization, pin, and phone playback; English only, author English subtitles retained; no Spanish track supplied]]
+- `catalog/video.yaml:439` — [[VERIFY: independent HTTPS pin and per-item rights review; human age and supervision suitability for scissors, thumbtack, and paper-clip wire; pin and phone playback]]
+- `catalog/video.yaml:465` — [[VERIFY: human source, conversion, and age and supervision suitability for scissors, thumbtack, and paper-clip wire; pin and phone playback; English only, no Spanish audio or captions supplied]]
+- `catalog/video.yaml:483` — [[VERIFY: independent raw revision pin, caption rights, and complete caption synchronization review]]
 - `catalog/wikem.yaml:19` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
 - `catalog/wikem.yaml:38` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
 - `catalog/wikem.yaml:57` — [[VERIFY: independently review this computed publisher API snapshot pin and preserve its exact bytes at an immutable URL before release]]
