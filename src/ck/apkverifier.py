@@ -88,6 +88,13 @@ def verifier_jar(archive: Path, item: Item, spec: dict, tool_cache: Path) -> Pat
 
 def verify_apk(item: Item, path: Path, jar: Path, spec: dict, *, java: str = "java") -> dict:
     """Use the modern tool's complete default SDK range, preserving hybrid checks."""
+    policy = spec.get("apk_policies", {}).get(item.id)
+    if (
+        not isinstance(policy, dict)
+        or not policy.get("certificate_roles")
+        or not policy.get("required_schemes")
+    ):
+        raise ValueError("Modern APK verification requires an explicit signer/scheme policy")
     if digest(jar) != spec["jar_sha256"] or jar.stat().st_size != spec["jar_size_bytes"]:
         raise ValueError("Cached apksigner JAR changed")
     if (
@@ -108,7 +115,6 @@ def verify_apk(item: Item, path: Path, jar: Path, spec: dict, *, java: str = "ja
     found = {value.lower() for _, value in certificates}
     if item.signer_cert_sha256 not in found:
         raise ValueError("Modern APK signer does not match the catalog")
-    policy = spec.get("apk_policies", {}).get(item.id, {})
     for role, expected in policy.get("certificate_roles", {}).items():
         if not any(
             label.startswith(role) and value.lower() == expected for label, value in certificates

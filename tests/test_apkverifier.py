@@ -109,6 +109,20 @@ def test_changed_tool_is_rejected_before_execution(inputs, monkeypatch):
         verify_apk(*inputs)
 
 
+@pytest.mark.parametrize("missing", ["candidate", "certificate_roles", "required_schemes"])
+def test_missing_hybrid_policy_cannot_silently_downgrade_verification(inputs, monkeypatch, missing):
+    _, _, _, spec = inputs
+    if missing == "candidate":
+        del spec["apk_policies"][missing]
+    else:
+        del spec["apk_policies"]["candidate"][missing]
+    monkeypatch.setattr(
+        "ck.apkverifier.subprocess.run", lambda *args, **kwargs: pytest.fail("executed")
+    )
+    with pytest.raises(ValueError, match="explicit signer/scheme policy"):
+        verify_apk(*inputs)
+
+
 def test_original_member_is_bounded_and_restores_a_corrupt_tool_cache(tmp_path, inputs):
     _, _, jar, spec = inputs
     payload = io.BytesIO()
