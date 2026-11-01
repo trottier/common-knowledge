@@ -67,3 +67,5 @@ tags:
   - addr:state
   - addr:postcode
 max_heap_mib: 2048
+# Pinned HotSpot mode: constant identity hashes prevent POI object-key ordering drift.
+jvm_identity_hash: 2

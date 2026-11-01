@@ -12,6 +12,7 @@ import zipfile
 from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Literal
 
 from pydantic import Field
 
@@ -29,6 +30,7 @@ class Settings(Model):
     road_node_values: list[Text]
     tags: list[Text]
     max_heap_mib: int = Field(ge=256)
+    jvm_identity_hash: Literal[2]
 
 
 def pipeline_version(root: Path) -> str:
@@ -272,6 +274,8 @@ def build_android_map(
             "-Duser.timezone=UTC",
             "-Duser.language=en",
             "-Duser.country=US",
+            "-XX:+UnlockExperimentalVMOptions",
+            f"-XX:hashCode={settings.jvm_identity_hash}",
             f"-Xmx{heap_mib}m",
             "-cp",
             str(creator / "OsmAndMapCreator.jar") + ":" + str(creator / "lib/*"),
@@ -356,6 +360,8 @@ def build_android_map(
             intermediates=["filter.json", "inspection.txt"],
             tool_versions=versions.stdout
             + versions.stderr
+            + "\nJVM options: "
+            + json.dumps(java[1 : java.index("-cp")])
             + "\nOsmAnd creator: "
             + catalog["osmand_creator"].version,
         )

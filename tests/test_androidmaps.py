@@ -229,3 +229,12 @@ def test_map_howto_has_one_page_and_machine_translation_footer(tmp_path):
             assert "Traducción automática sin revisar." in text
             html = (output / "audit" / file.with_suffix(".html").name).read_text()
             assert 'content: "Traducción automática sin revisar."' in html
+
+
+def test_map_settings_reject_a_nonreproducible_identity_hash_mode():
+    from pydantic import ValidationError
+
+    values = read_yaml(ROOT / "pipelines/androidmaps/settings.yaml")
+    values["jvm_identity_hash"] = 5
+    with pytest.raises(ValidationError):
+        Settings.model_validate(values)
