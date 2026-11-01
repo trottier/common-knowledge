@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "proposal_only": true,
+  "existing_catalog_entries_unchanged": true,
+  "companions": [
+    {
+      "proposed_id": "bitchat_notice_jni_sys_64d77b7a5f11",
+      "url": "https://codeload.github.com/jni-rs/jni-sys/tar.gz/64d77b7a5f119d7b55b4e2c169a4668067ff59e6",
+      "version": "upstream commit 64d77b7a5f119d7b55b4e2c169a4668067ff59e6",
+      "size_bytes": 15693,
+      "sha256": "c83465d1ff071e623a21c082e05673048773246a71666c99ecb934380c0ab882",
+      "repository": "https://github.com/jni-rs/jni-sys",
+      "commit": "64d77b7a5f119d7b55b4e2c169a4668067ff59e6",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/jni-rs/jni-sys/64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-APACHE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_jni_sys_macros_0_4_1": "MIT OR Apache-2.0"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_jni_sys_macros_0_4_1"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "jni-sys-64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-APACHE",
+          "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+          "size_bytes": 11358
+        },
+        {
+          "path": "jni-sys-64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-MIT",
+          "sha256": "1d85bd754b04ceec93e98e890edd1fa3c6a22e81bcb32135806beeccefa51cd1",
+          "size_bytes": 1071
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/jni-rs/jni-sys/64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-APACHE"
+    },
+    {
+      "proposed_id": "bitchat_notice_objc2_7b1abfd750a2",
+      "url": "https://codeload.github.com/madsmtm/objc2/tar.gz/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+      "version": "upstream commit 7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+      "size_bytes": 1309694,
+      "sha256": "a6685e9b30da4c2b9ed807e8344d7248447daf1d5ab5b7af4fa3755545f96a4d",
+      "repository": "https://github.com/madsmtm/objc2",
+      "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md",
+      "target_crate_license_declarations": {
+        "bitchat_rust_objc2_core_foundation_0_3_2": "Zlib OR Apache-2.0 OR MIT",
+        "bitchat_rust_objc2_io_kit_0_3_2": "Zlib OR Apache-2.0 OR MIT"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_objc2_core_foundation_0_3_2",
+          "bitchat_rust_objc2_io_kit_0_3_2"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "objc2-7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md",
+          "sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+          "size_bytes": 1339
+        },
+        {
+          "path": "objc2-7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/framework-crates/objc2-foundation/src/copying.rs",
+          "sha256": "259b22f571b54fed25f68ec5abd8eda223e7b0547a806f13ba797a0eabecd64f",
+          "size_bytes": 8610
+        },
+        {
+          "path": "objc2-7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/framework-crates/objc2-foundation/src/tests/copying.rs",
+          "sha256": "23d608079a47693a26dfc8a5cb01894ad0136a50714d46221d9380aa4a4b4423",
+          "size_bytes": 618
+        }
+      ],
+      "legal_or_per_file_questions": [
+        "Exact upstream LICENSE.md declares selectable licenses and expressly raises uncertainty about distributing Apple-SDK-derived bindings. Generated crate files absent from git remain present in the original registry archive.",
+        "Same exact upstream LICENSE.md Apple-SDK caveat as objc2-core-foundation; original generated crate files are retained in the registry archive."
+      ],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+    },
+    {
+      "proposed_id": "bitchat_notice_amplify_derive_29ca86c56316",
+      "url": "https://codeload.github.com/rust-amplify/amplify-derive/tar.gz/29ca86c56316ce683bf3827a9d245334db69ce1f",
+      "version": "upstream commit 29ca86c56316ce683bf3827a9d245334db69ce1f",
+      "size_bytes": 61336,
+      "sha256": "9692df78089a561505e0e4a5d1765a98325f68670e464e4bbee9116273e64862",
+      "repository": "https://github.com/rust-amplify/amplify-derive",
+      "commit": "29ca86c56316ce683bf3827a9d245334db69ce1f",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/rust-amplify/amplify-derive/29ca86c56316ce683bf3827a9d245334db69ce1f/LICENSE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_amplify_syn_2_0_1": "Apache-2.0"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_amplify_syn_2_0_1"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "amplify-derive-29ca86c56316ce683bf3827a9d245334db69ce1f/LICENSE",
+          "sha256": "a7173d3ff287d45cecb4f31f854259264206b152b00bf4ac6ba0445bb0e864a9",
+          "size_bytes": 11365
+        }
+      ],
+      "legal_or_per_file_questions": [
+        "Manifest declares Apache-2.0; packaged source headers retain a public-domain dedication and refer to the MIT license. Preserve all actual declarations; do not rewrite them into a single invented grant."
+      ],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "a7173d3ff287d45cecb4f31f854259264206b152b00bf4ac6ba0445bb0e864a9",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/rust-amplify/amplify-derive/29ca86c56316ce683bf3827a9d245334db69ce1f/LICENSE"
+    },
+    {
+      "proposed_id": "bitchat_notice_amplify_num_872842c3d151",
+      "url": "https://codeload.github.com/rust-amplify/amplify-num/tar.gz/872842c3d151296b18314dfa5bf86548c2ce4f29",
+      "version": "upstream commit 872842c3d151296b18314dfa5bf86548c2ce4f29",
+      "size_bytes": 93528,
+      "sha256": "7f34d823e1620ef5ffec747bd810d10b0ec991b4a287d2aefd8a8ae6c15808d1",
+      "repository": "https://github.com/rust-amplify/amplify-num",
+      "commit": "872842c3d151296b18314dfa5bf86548c2ce4f29",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/rust-amplify/amplify-num/872842c3d151296b18314dfa5bf86548c2ce4f29/LICENSE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_amplify_num_0_5_4": "Apache-2.0"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_amplify_num_0_5_4"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "amplify-num-872842c3d151296b18314dfa5bf86548c2ce4f29/LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "size_bytes": 10173
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/rust-amplify/amplify-num/872842c3d151296b18314dfa5bf86548c2ce4f29/LICENSE"
+    },
+    {
+      "proposed_id": "bitchat_notice_cookie_factory_d36b805dbd7d",
+      "url": "https://codeload.github.com/rust-bakery/cookie-factory/tar.gz/d36b805dbd7dd65f2df947235c5bcc573afe2c76",
+      "version": "upstream commit d36b805dbd7dd65f2df947235c5bcc573afe2c76",
+      "size_bytes": 21891,
+      "sha256": "974a08cc89853fe331ca62d26ac2708da61366db9015e39c61218ce582df8b8c",
+      "repository": "https://github.com/rust-bakery/cookie-factory",
+      "commit": "d36b805dbd7dd65f2df947235c5bcc573afe2c76",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/rust-bakery/cookie-factory/d36b805dbd7dd65f2df947235c5bcc573afe2c76/LICENSES/MIT.txt",
+      "target_crate_license_declarations": {
+        "bitchat_rust_cookie_factory_0_3_3": "MIT"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_cookie_factory_0_3_3"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "cookie-factory-d36b805dbd7dd65f2df947235c5bcc573afe2c76/LICENSES/MIT.txt",
+          "sha256": "d09216dc1ea5f273997667935a8d6514d80f00b89fb6954ecc3a43e0a6e360de",
+          "size_bytes": 1065
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "d09216dc1ea5f273997667935a8d6514d80f00b89fb6954ecc3a43e0a6e360de",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/rust-bakery/cookie-factory/d36b805dbd7dd65f2df947235c5bcc573afe2c76/LICENSES/MIT.txt"
+    },
+    {
+      "proposed_id": "bitchat_notice_asn1_rs_a20e5f7319c8",
+      "url": "https://codeload.github.com/rusticata/asn1-rs/tar.gz/a20e5f7319c896737ad0f2557037817b91ad854f",
+      "version": "upstream commit a20e5f7319c896737ad0f2557037817b91ad854f",
+      "size_bytes": 91914,
+      "sha256": "4d191cb8e101a853a54ce3054c2737deae7f6b853dbdb7fe372dff5d38b736c6",
+      "repository": "https://github.com/rusticata/asn1-rs",
+      "commit": "a20e5f7319c896737ad0f2557037817b91ad854f",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/rusticata/asn1-rs/a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-APACHE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_asn1_rs_impl_0_2_0": "MIT/Apache-2.0"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_asn1_rs_impl_0_2_0"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "asn1-rs-a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "size_bytes": 10847
+        },
+        {
+          "path": "asn1-rs-a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-MIT",
+          "sha256": "a5c61b93b6ee1d104af9920cf020ff3c7efe818e31fe562c72261847a728f513",
+          "size_bytes": 1060
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/rusticata/asn1-rs/a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-APACHE"
+    },
+    {
+      "proposed_id": "bitchat_notice_valuable_9efc29b6e58c",
+      "url": "https://codeload.github.com/tokio-rs/valuable/tar.gz/9efc29b6e58cef28f6566a47aa7e142a55fead77",
+      "version": "upstream commit 9efc29b6e58cef28f6566a47aa7e142a55fead77",
+      "size_bytes": 48869,
+      "sha256": "3414d7860b88c946b1ac6136bb2b9cc3055a16a2bd243d1caac2b23723e937e0",
+      "repository": "https://github.com/tokio-rs/valuable",
+      "commit": "9efc29b6e58cef28f6566a47aa7e142a55fead77",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/tokio-rs/valuable/9efc29b6e58cef28f6566a47aa7e142a55fead77/LICENSE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_valuable_0_1_1": "MIT"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_valuable_0_1_1"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "valuable-9efc29b6e58cef28f6566a47aa7e142a55fead77/LICENSE",
+          "sha256": "ed60d479b8fd1f64e9cbc3de449a16a53ac1b3d1b6aeb9bf9d190a8e93061b44",
+          "size_bytes": 1065
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "ed60d479b8fd1f64e9cbc3de449a16a53ac1b3d1b6aeb9bf9d190a8e93061b44",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/tokio-rs/valuable/9efc29b6e58cef28f6566a47aa7e142a55fead77/LICENSE"
+    },
+    {
+      "proposed_id": "bitchat_notice_anes_rs_378ac7461eca",
+      "url": "https://codeload.github.com/zrzka/anes-rs/tar.gz/378ac7461ecac29fde9e10df7b08359d1315a9ad",
+      "version": "upstream commit 378ac7461ecac29fde9e10df7b08359d1315a9ad",
+      "size_bytes": 30057,
+      "sha256": "c3a8e5a84822e2bf5c1f392b972dbe9c8cb3f2fed4d69e1942e585987671e721",
+      "repository": "https://github.com/zrzka/anes-rs",
+      "commit": "378ac7461ecac29fde9e10df7b08359d1315a9ad",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/zrzka/anes-rs/378ac7461ecac29fde9e10df7b08359d1315a9ad/LICENSE-APACHE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_anes_0_1_6": "MIT OR Apache-2.0"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_anes_0_1_6"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "anes-rs-378ac7461ecac29fde9e10df7b08359d1315a9ad/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "size_bytes": 10847
+        },
+        {
+          "path": "anes-rs-378ac7461ecac29fde9e10df7b08359d1315a9ad/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+          "size_bytes": 1023
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/zrzka/anes-rs/378ac7461ecac29fde9e10df7b08359d1315a9ad/LICENSE-APACHE"
+    },
+    {
+      "proposed_id": "bitchat_notice_rust_derive_deftly_c9cb127954b8",
+      "url": "https://gitlab.torproject.org/api/v4/projects/Diziet%2Frust-derive-deftly/repository/archive.tar.gz?sha=c9cb127954b8ab508950d917a5af9abd64763aac",
+      "version": "upstream commit c9cb127954b8ab508950d917a5af9abd64763aac",
+      "size_bytes": 278205,
+      "sha256": "bc86ab6ea8a99639421cd8a10262b44952afe5e4cb03a8a111a98e1e03d7c1d2",
+      "repository": "https://gitlab.torproject.org/Diziet/rust-derive-deftly",
+      "commit": "c9cb127954b8ab508950d917a5af9abd64763aac",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://gitlab.torproject.org/api/v4/projects/Diziet%2Frust-derive-deftly/repository/files/LICENCE/raw?ref=c9cb127954b8ab508950d917a5af9abd64763aac",
+      "target_crate_license_declarations": {
+        "bitchat_rust_derive_deftly_macros_1_6_0": "MIT"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "embedded package VCS commit",
+        "per_crate_record_ids": [
+          "bitchat_rust_derive_deftly_macros_1_6_0"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "rust-derive-deftly-c9cb127954b8ab508950d917a5af9abd64763aac-c9cb127954b8ab508950d917a5af9abd64763aac/LICENCE",
+          "sha256": "8ca14a71ccb997fcb12b610a631f51fe181d17db17b47aaeb6e3dc6cfbddce32",
+          "size_bytes": 1099
+        }
+      ],
+      "legal_or_per_file_questions": [],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "8ca14a71ccb997fcb12b610a631f51fe181d17db17b47aaeb6e3dc6cfbddce32",
+      "publisher_license_proof_resolved_url": "https://gitlab.torproject.org/api/v4/projects/Diziet%2Frust-derive-deftly/repository/files/LICENCE/raw?ref=c9cb127954b8ab508950d917a5af9abd64763aac"
+    },
+    {
+      "proposed_id": "bitchat_notice_cesu8_rs_f18962a9de51",
+      "url": "https://codeload.github.com/emk/cesu8-rs/tar.gz/f18962a9de5189f21600b7ff2898845157df4447",
+      "version": "upstream commit f18962a9de5189f21600b7ff2898845157df4447",
+      "size_bytes": 10678,
+      "sha256": "70bb02739f1827a4f936c36e0428e8337aca440891676ac2ad3593c755cc0ccf",
+      "repository": "https://github.com/emk/cesu8-rs",
+      "commit": "f18962a9de5189f21600b7ff2898845157df4447",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/emk/cesu8-rs/f18962a9de5189f21600b7ff2898845157df4447/COPYRIGHT-RUST.txt",
+      "target_crate_license_declarations": {
+        "bitchat_rust_cesu8_1_1_0": "Apache-2.0/MIT"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "publisher commit/tag metadata plus packaged-byte comparison; original package VCS proof unavailable",
+        "per_crate_record_ids": [
+          "bitchat_rust_cesu8_1_1_0"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "cesu8-rs-f18962a9de5189f21600b7ff2898845157df4447/COPYRIGHT-RUST.txt",
+          "sha256": "5ca77347e58205d3b543c04a9c5bdd11d20a9f3108a7b246640edffa999b5f35",
+          "size_bytes": 17426
+        }
+      ],
+      "legal_or_per_file_questions": [
+        "Exact matching publisher source supplies COPYRIGHT-RUST.txt, but README references LICENSE-RUST.txt and source headers reference LICENSE-APACHE/LICENSE-MIT; these full named license files are absent from both crate and companion. Provide authentic standard terms for the selected declared alternative, alongside the unchanged actual source copyright notices; do not synthesize a copyright holder or year."
+      ],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "5ca77347e58205d3b543c04a9c5bdd11d20a9f3108a7b246640edffa999b5f35",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/emk/cesu8-rs/f18962a9de5189f21600b7ff2898845157df4447/COPYRIGHT-RUST.txt"
+    },
+    {
+      "proposed_id": "bitchat_notice_winapi_rs_30ed8e3b86f4",
+      "url": "https://codeload.github.com/retep998/winapi-rs/tar.gz/30ed8e3b86f4a8a55e68865843c19800f57bcd7f",
+      "version": "upstream commit 30ed8e3b86f4a8a55e68865843c19800f57bcd7f",
+      "size_bytes": 8126583,
+      "sha256": "b87e9701d129addddde2b7fff6dfe8c29eeae254b8f467210969f31355625ced",
+      "repository": "https://github.com/retep998/winapi-rs",
+      "commit": "30ed8e3b86f4a8a55e68865843c19800f57bcd7f",
+      "publisher_checksum_url": null,
+      "pin_requires_reviewed_pull_request": true,
+      "publisher_license_proof_url": "https://raw.githubusercontent.com/retep998/winapi-rs/30ed8e3b86f4a8a55e68865843c19800f57bcd7f/LICENSE-APACHE",
+      "target_crate_license_declarations": {
+        "bitchat_rust_winapi_i686_pc_windows_gnu_0_4_0": "MIT/Apache-2.0",
+        "bitchat_rust_winapi_x86_64_pc_windows_gnu_0_4_0": "MIT/Apache-2.0"
+      },
+      "proposed_placement": "hub_only",
+      "proposed_dest": "build/gpl-sources/",
+      "correspondence_evidence": {
+        "source": "publisher commit/tag metadata plus packaged-byte comparison; original package VCS proof unavailable",
+        "per_crate_record_ids": [
+          "bitchat_rust_winapi_i686_pc_windows_gnu_0_4_0",
+          "bitchat_rust_winapi_x86_64_pc_windows_gnu_0_4_0"
+        ]
+      },
+      "notice_members": [
+        {
+          "path": "winapi-rs-30ed8e3b86f4a8a55e68865843c19800f57bcd7f/LICENSE-APACHE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+          "size_bytes": 11357
+        },
+        {
+          "path": "winapi-rs-30ed8e3b86f4a8a55e68865843c19800f57bcd7f/LICENSE-MIT",
+          "sha256": "5b19674a1db628a475850a131956ed49521b744e3dda8f5a94141f9aba681219",
+          "size_bytes": 1068
+        }
+      ],
+      "legal_or_per_file_questions": [
+        "Publisher commit matches every build/source/import-library payload. Its Cargo.toml version is 0.3.2, while the package manifest says 0.4.0; the remaining manifest fields match. No embedded package VCS proof exists. This is a source-equivalent notice companion, not an asserted release commit or reproducibility claim.",
+        "Same version-only manifest delta and source-equivalent companion qualification as i686; every build/source/import-library payload matches."
+      ],
+      "catalog_status_changed": false,
+      "publisher_license_proof_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "publisher_license_proof_resolved_url": "https://raw.githubusercontent.com/retep998/winapi-rs/30ed8e3b86f4a8a55e68865843c19800f57bcd7f/LICENSE-APACHE"
+    }
+  ],
+  "source_graph_edge_proposals": [
+    {
+      "parent_source_id": "bitchat_rust_jni_sys_macros_0_4_1",
+      "parent_source_sha256": "38c0b942f458fe50cdac086d2f946512305e5631e720728f2a61aabcd47a6264",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_jni_sys_64d77b7a5f11"
+    },
+    {
+      "parent_source_id": "bitchat_rust_objc2_core_foundation_0_3_2",
+      "parent_source_sha256": "2a180dd8642fa45cdb7dd721cd4c11b1cadd4929ce112ebd8b9f5803cc79d536",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_objc2_7b1abfd750a2"
+    },
+    {
+      "parent_source_id": "bitchat_rust_objc2_io_kit_0_3_2",
+      "parent_source_sha256": "33fafba39597d6dc1fb709123dfa8289d39406734be322956a69f0931c73bb15",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_objc2_7b1abfd750a2"
+    },
+    {
+      "parent_source_id": "bitchat_rust_amplify_syn_2_0_1",
+      "parent_source_sha256": "7736fb8d473c0d83098b5bac44df6a561e20470375cd8bcae30516dc889fd62a",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_amplify_derive_29ca86c56316"
+    },
+    {
+      "parent_source_id": "bitchat_rust_amplify_num_0_5_4",
+      "parent_source_sha256": "afed304556696656d2d71495e1e5f2c4b524a3fb6eb0f2f3778ffc482a40b8a8",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_amplify_num_872842c3d151"
+    },
+    {
+      "parent_source_id": "bitchat_rust_cookie_factory_0_3_3",
+      "parent_source_sha256": "9885fa71e26b8ab7855e2ec7cae6e9b380edff76cd052e07c683a0319d51b3a2",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_cookie_factory_d36b805dbd7d"
+    },
+    {
+      "parent_source_id": "bitchat_rust_asn1_rs_impl_0_2_0",
+      "parent_source_sha256": "7b18050c2cd6fe86c3a76584ef5e0baf286d038cda203eb6223df2cc413565f7",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_asn1_rs_a20e5f7319c8"
+    },
+    {
+      "parent_source_id": "bitchat_rust_valuable_0_1_1",
+      "parent_source_sha256": "ba73ea9cf16a25df0c8caa16c51acb937d5712a8429db78a3ee29d5dcacd3a65",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_valuable_9efc29b6e58c"
+    },
+    {
+      "parent_source_id": "bitchat_rust_anes_0_1_6",
+      "parent_source_sha256": "4b46cbb362ab8752921c97e041f5e366ee6297bd428a31275b9fcf1e380f7299",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_anes_rs_378ac7461eca"
+    },
+    {
+      "parent_source_id": "bitchat_rust_derive_deftly_macros_1_6_0",
+      "parent_source_sha256": "caef6056a5788d05d173cdc3c562ac28ae093828f851f69378b74e4e3d578e41",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_rust_derive_deftly_c9cb127954b8"
+    },
+    {
+      "parent_source_id": "bitchat_rust_cesu8_1_1_0",
+      "parent_source_sha256": "6d43a04d8753f35258c91f8ec639f792891f748a1edbd759cf1dcea3382ad83c",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_cesu8_rs_f18962a9de51"
+    },
+    {
+      "parent_source_id": "bitchat_rust_winapi_i686_pc_windows_gnu_0_4_0",
+      "parent_source_sha256": "ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_winapi_rs_30ed8e3b86f4"
+    },
+    {
+      "parent_source_id": "bitchat_rust_winapi_x86_64_pc_windows_gnu_0_4_0",
+      "parent_source_sha256": "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f",
+      "operation": "append_to_inputs_preserving_existing_inputs_after_pin_review",
+      "proposed_input_id": "bitchat_notice_winapi_rs_30ed8e3b86f4"
+    }
+  ],
+  "notice_copy_proposals": [
+    {
+      "proposed_companion_id": "bitchat_notice_jni_sys_64d77b7a5f11",
+      "archive_member": "jni-sys-64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-APACHE",
+      "original_sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "size_bytes": 11358,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/jni_sys_64d77b7a5f11/LICENSE-APACHE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_jni_sys_macros_0_4_1"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_jni_sys_64d77b7a5f11",
+      "archive_member": "jni-sys-64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-MIT",
+      "original_sha256": "1d85bd754b04ceec93e98e890edd1fa3c6a22e81bcb32135806beeccefa51cd1",
+      "size_bytes": 1071,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/jni_sys_64d77b7a5f11/LICENSE-MIT",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_jni_sys_macros_0_4_1"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_objc2_7b1abfd750a2",
+      "archive_member": "objc2-7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md",
+      "original_sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+      "size_bytes": 1339,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/objc2_7b1abfd750a2/LICENSE.md",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_objc2_core_foundation_0_3_2",
+        "bitchat_rust_objc2_io_kit_0_3_2"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_objc2_7b1abfd750a2",
+      "archive_member": "objc2-7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/framework-crates/objc2-foundation/src/copying.rs",
+      "original_sha256": "259b22f571b54fed25f68ec5abd8eda223e7b0547a806f13ba797a0eabecd64f",
+      "size_bytes": 8610,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/objc2_7b1abfd750a2/framework-crates/objc2-foundation/src/copying.rs",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_objc2_core_foundation_0_3_2",
+        "bitchat_rust_objc2_io_kit_0_3_2"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_objc2_7b1abfd750a2",
+      "archive_member": "objc2-7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/framework-crates/objc2-foundation/src/tests/copying.rs",
+      "original_sha256": "23d608079a47693a26dfc8a5cb01894ad0136a50714d46221d9380aa4a4b4423",
+      "size_bytes": 618,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/objc2_7b1abfd750a2/framework-crates/objc2-foundation/src/tests/copying.rs",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_objc2_core_foundation_0_3_2",
+        "bitchat_rust_objc2_io_kit_0_3_2"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_amplify_derive_29ca86c56316",
+      "archive_member": "amplify-derive-29ca86c56316ce683bf3827a9d245334db69ce1f/LICENSE",
+      "original_sha256": "a7173d3ff287d45cecb4f31f854259264206b152b00bf4ac6ba0445bb0e864a9",
+      "size_bytes": 11365,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/amplify_derive_29ca86c56316/LICENSE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_amplify_syn_2_0_1"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_amplify_num_872842c3d151",
+      "archive_member": "amplify-num-872842c3d151296b18314dfa5bf86548c2ce4f29/LICENSE",
+      "original_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "size_bytes": 10173,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/amplify_num_872842c3d151/LICENSE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_amplify_num_0_5_4"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_cookie_factory_d36b805dbd7d",
+      "archive_member": "cookie-factory-d36b805dbd7dd65f2df947235c5bcc573afe2c76/LICENSES/MIT.txt",
+      "original_sha256": "d09216dc1ea5f273997667935a8d6514d80f00b89fb6954ecc3a43e0a6e360de",
+      "size_bytes": 1065,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/cookie_factory_d36b805dbd7d/LICENSES/MIT.txt",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_cookie_factory_0_3_3"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_asn1_rs_a20e5f7319c8",
+      "archive_member": "asn1-rs-a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-APACHE",
+      "original_sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "size_bytes": 10847,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/asn1_rs_a20e5f7319c8/LICENSE-APACHE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_asn1_rs_impl_0_2_0"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_asn1_rs_a20e5f7319c8",
+      "archive_member": "asn1-rs-a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-MIT",
+      "original_sha256": "a5c61b93b6ee1d104af9920cf020ff3c7efe818e31fe562c72261847a728f513",
+      "size_bytes": 1060,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/asn1_rs_a20e5f7319c8/LICENSE-MIT",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_asn1_rs_impl_0_2_0"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_valuable_9efc29b6e58c",
+      "archive_member": "valuable-9efc29b6e58cef28f6566a47aa7e142a55fead77/LICENSE",
+      "original_sha256": "ed60d479b8fd1f64e9cbc3de449a16a53ac1b3d1b6aeb9bf9d190a8e93061b44",
+      "size_bytes": 1065,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/valuable_9efc29b6e58c/LICENSE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_valuable_0_1_1"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_anes_rs_378ac7461eca",
+      "archive_member": "anes-rs-378ac7461ecac29fde9e10df7b08359d1315a9ad/LICENSE-APACHE",
+      "original_sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "size_bytes": 10847,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/anes_rs_378ac7461eca/LICENSE-APACHE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_anes_0_1_6"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_anes_rs_378ac7461eca",
+      "archive_member": "anes-rs-378ac7461ecac29fde9e10df7b08359d1315a9ad/LICENSE-MIT",
+      "original_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "size_bytes": 1023,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/anes_rs_378ac7461eca/LICENSE-MIT",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_anes_0_1_6"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_rust_derive_deftly_c9cb127954b8",
+      "archive_member": "rust-derive-deftly-c9cb127954b8ab508950d917a5af9abd64763aac-c9cb127954b8ab508950d917a5af9abd64763aac/LICENCE",
+      "original_sha256": "8ca14a71ccb997fcb12b610a631f51fe181d17db17b47aaeb6e3dc6cfbddce32",
+      "size_bytes": 1099,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/rust_derive_deftly_c9cb127954b8/LICENCE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_derive_deftly_macros_1_6_0"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_cesu8_rs_f18962a9de51",
+      "archive_member": "cesu8-rs-f18962a9de5189f21600b7ff2898845157df4447/COPYRIGHT-RUST.txt",
+      "original_sha256": "5ca77347e58205d3b543c04a9c5bdd11d20a9f3108a7b246640edffa999b5f35",
+      "size_bytes": 17426,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/cesu8_rs_f18962a9de51/COPYRIGHT-RUST.txt",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_cesu8_1_1_0"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_winapi_rs_30ed8e3b86f4",
+      "archive_member": "winapi-rs-30ed8e3b86f4a8a55e68865843c19800f57bcd7f/LICENSE-APACHE",
+      "original_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "size_bytes": 11357,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/winapi_rs_30ed8e3b86f4/LICENSE-APACHE",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_winapi_i686_pc_windows_gnu_0_4_0",
+        "bitchat_rust_winapi_x86_64_pc_windows_gnu_0_4_0"
+      ]
+    },
+    {
+      "proposed_companion_id": "bitchat_notice_winapi_rs_30ed8e3b86f4",
+      "archive_member": "winapi-rs-30ed8e3b86f4a8a55e68865843c19800f57bcd7f/LICENSE-MIT",
+      "original_sha256": "5b19674a1db628a475850a131956ed49521b744e3dda8f5a94141f9aba681219",
+      "size_bytes": 1068,
+      "proposed_notice_path": "8_MESH_CHAT/LICENSES/bitchat/winapi_rs_30ed8e3b86f4/LICENSE-MIT",
+      "copy_mode": "original bytes, no edits",
+      "binds_crate_ids": [
+        "bitchat_rust_winapi_i686_pc_windows_gnu_0_4_0",
+        "bitchat_rust_winapi_x86_64_pc_windows_gnu_0_4_0"
+      ]
+    }
+  ],
+  "release_or_legal_approval": false
+}
