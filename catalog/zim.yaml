@@ -21,10 +21,10 @@
   {
     "id": "wikem_en_nopic",
     "family": "generated",
-    "title": "WikEM, English public articles \u2014 offline reference edition",
-    "version": "Publisher public API snapshot 2026-10-31; regenerated edition",
+    "title": "WikEM, English public articles — offline reference edition",
+    "version": "Frozen development recipe; two complete matching builds at epoch 1793404800",
     "size_bytes": 8601054,
-    "sha256": "e12d046fa48c16f7aa9a5cab8bfc6de2c142f62fc195820d26fab7d64fddcdd2",
+    "sha256": "d735e2f7b9278e5bd0a5d4850a9d07ab2437eb170b6c8b38553f36254951319a",
     "license": "CC-BY-SA-4.0 AND CC0-1.0",
     "attribution": "WikEM contributors; original navigation and offline adaptation Common Knowledge; source article revisions and attribution retained",
     "license_proof_url": "https://wikem.org/wiki/Creative_Commons",
@@ -4691,8 +4691,8 @@
       "wikem_article_339306",
       "wikem_article_339572"
     ],
-    "pipeline_version": "wikem-api-v1-326c128c154af3f0f431abbe6b957c38e5fa62fc90a35ffef1bc684e0f976367",
-    "review": "[[VERIFY: independently review computed publisher pins and restricted-page scope, immutable API input preservation, clinical topic selection and physical Kiwix readers; two complete offline archive builds match at development epoch 1793404800]]"
+    "pipeline_version": "wikem-api-v1-85fb6738ae9c60fbae9b88ca8c2c2293b269a3859f5ce9083da63127f2ee27f7",
+    "review": "[[VERIFY: human pin/scope review of the public snapshot and seven publisher denials, stable raw-source hosting, clinical review and physical Kiwix checks; two frozen development builds match]]"
   },
   {
     "id": "wikivoyage_en_nopic",
@@ -4971,9 +4971,9 @@
     "id": "wikibooks_en_offline",
     "family": "generated",
     "title": "Wikibooks, English, no pictures — offline reference edition",
-    "version": "2026-10; regenerated edition",
-    "size_bytes": "[[VERIFY: measured complete regenerated archive payload]]",
-    "sha256": "[[VERIFY: complete generated manifest SHA-256]]",
+    "version": "Frozen development recipe; two complete matching builds at epoch 1793404800",
+    "size_bytes": 3333493444,
+    "sha256": "380802c9641775e657d43a696041491a326b899c7bd451c73b7a85f229b9ebc1",
     "license": "CC-BY-SA-4.0",
     "attribution": "Wikibooks contributors; archive packaged by Kiwix; offline adaptation Common Knowledge; original notices retained",
     "license_proof_url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
@@ -4987,7 +4987,7 @@
     "inputs": [
       "wikibooks_en_nopic"
     ],
-    "pipeline_version": "[[VERIFY: pinned regeneration recipe]]",
-    "review": "[[VERIFY: complete offline archive audit, repeat-build equality, pin review and physical Kiwix checks]]"
+    "pipeline_version": "zim-offline-v1-50d7520562487bca9783532f4f92122fdac0618035a8b32c0616faa0404a17b2",
+    "review": "[[VERIFY: human input/output pin, retained nontext-license and educational selection review, physical Kiwix checks and final release-epoch reproduction; two strict complete development builds match; full-text index omitted, title search retained]]"
   }
 ]
