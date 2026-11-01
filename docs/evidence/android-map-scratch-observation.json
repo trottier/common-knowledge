@@ -1,0 +1,857 @@
+{
+  "observed_utc": "2026-11-01T19:38:22.845957+00:00",
+  "observation_mode": "read-only mount/proc/stat/header reads; active counters and files are non-atomic snapshots",
+  "producer_source_commit": "2b0ca26f1b32a00058f8b18791202ed23d793b71",
+  "source_date_epoch": 1793404800,
+  "runtime": {
+    "samples": [
+      {
+        "monotonic_ns": 3882530590375,
+        "java": [
+          {
+            "pid": "545",
+            "io": "rchar: 5550322922\nwchar: 1500496301\nsyscr: 1348979\nsyscw: 372325\nread_bytes: 0\nwrite_bytes: 1556480\ncancelled_write_bytes: 0\n",
+            "stat": "545 (java) S 1 1 1 0 -1 4194560 778475 879 685 14 31160 2457 3 1 20 0 15 0 348384 6316687360 715788 18446744073709551615 140737488510976 140737488974984 281474087036752 0 0 0 0 0 16800991 0 0 0 17 0 0 0 0 0 0 140737489010688 140737490079968 140738417541120 281474087038060 281474087038497 281474087038497 281474087038954 0\n",
+            "command": "/usr/bin/java -Djava.awt.headless=true -Duser.timezone=UTC -Duser.language=en -Duser.country=US -XX:+UnlockExperimentalVMOptions -XX:hashCode=2 -Xmx3072m -cp /artifacts/FL/.ck-split-map-j60n39j6/creator/OsmAndMapCreator.jar:/artifacts/FL/.ck-split-map-j60n39j6/creator/lib/* net.osmand.MainUtilities generate-obf /artifacts/FL/.ck-split-map-j60n39j6/work/FL_005_roads_places.osm.pbf --no-address --no-transport ",
+            "wait_channels": {
+              "futex_wait_queue": 14,
+              "0": 1
+            },
+            "threads": [
+              {
+                "id": "545",
+                "name": "java\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "546",
+                "name": "java\n",
+                "wait_channel": "0"
+              },
+              {
+                "id": "547",
+                "name": "VM Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "548",
+                "name": "Reference Handl\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "549",
+                "name": "Finalizer\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "550",
+                "name": "Signal Dispatch\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "551",
+                "name": "Service Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "552",
+                "name": "Monitor Deflati\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "553",
+                "name": "C2 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "554",
+                "name": "C1 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "555",
+                "name": "Sweeper thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "556",
+                "name": "Notification Th\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "557",
+                "name": "VM Periodic Tas\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "558",
+                "name": "Common-Cleaner\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "564",
+                "name": "EntityProducer\n",
+                "wait_channel": "futex_wait_queue"
+              }
+            ]
+          }
+        ],
+        "cpu": "usage_usec 2439439338\nuser_usec 2231823566\nsystem_usec 207615772\ncore_sched.force_idle_usec 0\nnr_periods 31225\nnr_throttled 12288\nthrottled_usec 619283843\nnr_bursts 0\nburst_usec 0\n",
+        "io": "253:16 rbytes=0 wbytes=269803520 rios=0 wios=497 dbytes=0 dios=0\n",
+        "io_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939048\n"
+      },
+      {
+        "monotonic_ns": 3883532864489,
+        "java": [
+          {
+            "pid": "545",
+            "io": "rchar: 5569230058\nwchar: 1505427885\nsyscr: 1353595\nsyscw: 373529\nread_bytes: 0\nwrite_bytes: 1556480\ncancelled_write_bytes: 0\n",
+            "stat": "545 (java) S 1 1 1 0 -1 4194560 778479 879 685 14 31237 2464 3 1 20 0 15 0 348384 6316687360 715820 18446744073709551615 140737488510976 140737488974984 281474087036752 0 0 0 0 0 16800991 0 0 0 17 0 0 0 0 0 0 140737489010688 140737490079968 140738417541120 281474087038060 281474087038497 281474087038497 281474087038954 0\n",
+            "command": "/usr/bin/java -Djava.awt.headless=true -Duser.timezone=UTC -Duser.language=en -Duser.country=US -XX:+UnlockExperimentalVMOptions -XX:hashCode=2 -Xmx3072m -cp /artifacts/FL/.ck-split-map-j60n39j6/creator/OsmAndMapCreator.jar:/artifacts/FL/.ck-split-map-j60n39j6/creator/lib/* net.osmand.MainUtilities generate-obf /artifacts/FL/.ck-split-map-j60n39j6/work/FL_005_roads_places.osm.pbf --no-address --no-transport ",
+            "wait_channels": {
+              "futex_wait_queue": 14,
+              "0": 1
+            },
+            "threads": [
+              {
+                "id": "545",
+                "name": "java\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "546",
+                "name": "java\n",
+                "wait_channel": "0"
+              },
+              {
+                "id": "547",
+                "name": "VM Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "548",
+                "name": "Reference Handl\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "549",
+                "name": "Finalizer\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "550",
+                "name": "Signal Dispatch\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "551",
+                "name": "Service Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "552",
+                "name": "Monitor Deflati\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "553",
+                "name": "C2 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "554",
+                "name": "C1 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "555",
+                "name": "Sweeper thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "556",
+                "name": "Notification Th\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "557",
+                "name": "VM Periodic Tas\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "558",
+                "name": "Common-Cleaner\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "564",
+                "name": "EntityProducer\n",
+                "wait_channel": "futex_wait_queue"
+              }
+            ]
+          }
+        ],
+        "cpu": "usage_usec 2440283034\nuser_usec 2232600820\nsystem_usec 207682213\ncore_sched.force_idle_usec 0\nnr_periods 31235\nnr_throttled 12292\nthrottled_usec 619375196\nnr_bursts 0\nburst_usec 0\n",
+        "io": "253:16 rbytes=0 wbytes=269803520 rios=0 wios=497 dbytes=0 dios=0\n",
+        "io_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939048\n"
+      },
+      {
+        "monotonic_ns": 3884538242554,
+        "java": [
+          {
+            "pid": "545",
+            "io": "rchar: 5577884906\nwchar: 1508590094\nsyscr: 1355708\nsyscw: 374302\nread_bytes: 0\nwrite_bytes: 1556480\ncancelled_write_bytes: 0\n",
+            "stat": "545 (java) S 1 1 1 0 -1 4194560 781776 879 685 14 31310 2470 3 1 20 0 15 0 348384 6316687360 719116 18446744073709551615 140737488510976 140737488974984 281474087036752 0 0 0 0 0 16800991 0 0 0 17 0 0 0 0 0 0 140737489010688 140737490079968 140738417541120 281474087038060 281474087038497 281474087038497 281474087038954 0\n",
+            "command": "/usr/bin/java -Djava.awt.headless=true -Duser.timezone=UTC -Duser.language=en -Duser.country=US -XX:+UnlockExperimentalVMOptions -XX:hashCode=2 -Xmx3072m -cp /artifacts/FL/.ck-split-map-j60n39j6/creator/OsmAndMapCreator.jar:/artifacts/FL/.ck-split-map-j60n39j6/creator/lib/* net.osmand.MainUtilities generate-obf /artifacts/FL/.ck-split-map-j60n39j6/work/FL_005_roads_places.osm.pbf --no-address --no-transport ",
+            "wait_channels": {
+              "futex_wait_queue": 14,
+              "0": 1
+            },
+            "threads": [
+              {
+                "id": "545",
+                "name": "java\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "546",
+                "name": "java\n",
+                "wait_channel": "0"
+              },
+              {
+                "id": "547",
+                "name": "VM Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "548",
+                "name": "Reference Handl\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "549",
+                "name": "Finalizer\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "550",
+                "name": "Signal Dispatch\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "551",
+                "name": "Service Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "552",
+                "name": "Monitor Deflati\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "553",
+                "name": "C2 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "554",
+                "name": "C1 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "555",
+                "name": "Sweeper thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "556",
+                "name": "Notification Th\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "557",
+                "name": "VM Periodic Tas\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "558",
+                "name": "Common-Cleaner\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "564",
+                "name": "EntityProducer\n",
+                "wait_channel": "futex_wait_queue"
+              }
+            ]
+          }
+        ],
+        "cpu": "usage_usec 2441073165\nuser_usec 2233328484\nsystem_usec 207744680\ncore_sched.force_idle_usec 0\nnr_periods 31245\nnr_throttled 12297\nthrottled_usec 619443215\nnr_bursts 0\nburst_usec 0\n",
+        "io": "253:16 rbytes=0 wbytes=269803520 rios=0 wios=497 dbytes=0 dios=0\n",
+        "io_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939048\n"
+      },
+      {
+        "monotonic_ns": 3885540552543,
+        "java": [
+          {
+            "pid": "545",
+            "io": "rchar: 5593736426\nwchar: 1512055310\nsyscr: 1359578\nsyscw: 375148\nread_bytes: 0\nwrite_bytes: 1556480\ncancelled_write_bytes: 0\n",
+            "stat": "545 (java) S 1 1 1 0 -1 4194560 781776 879 685 14 31393 2475 3 1 20 0 15 0 348384 6316687360 719116 18446744073709551615 140737488510976 140737488974984 281474087036752 0 0 0 0 0 16800991 0 0 0 17 0 0 0 0 0 0 140737489010688 140737490079968 140738417541120 281474087038060 281474087038497 281474087038497 281474087038954 0\n",
+            "command": "/usr/bin/java -Djava.awt.headless=true -Duser.timezone=UTC -Duser.language=en -Duser.country=US -XX:+UnlockExperimentalVMOptions -XX:hashCode=2 -Xmx3072m -cp /artifacts/FL/.ck-split-map-j60n39j6/creator/OsmAndMapCreator.jar:/artifacts/FL/.ck-split-map-j60n39j6/creator/lib/* net.osmand.MainUtilities generate-obf /artifacts/FL/.ck-split-map-j60n39j6/work/FL_005_roads_places.osm.pbf --no-address --no-transport ",
+            "wait_channels": {
+              "futex_wait_queue": 14,
+              "0": 1
+            },
+            "threads": [
+              {
+                "id": "545",
+                "name": "java\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "546",
+                "name": "java\n",
+                "wait_channel": "0"
+              },
+              {
+                "id": "547",
+                "name": "VM Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "548",
+                "name": "Reference Handl\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "549",
+                "name": "Finalizer\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "550",
+                "name": "Signal Dispatch\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "551",
+                "name": "Service Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "552",
+                "name": "Monitor Deflati\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "553",
+                "name": "C2 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "554",
+                "name": "C1 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "555",
+                "name": "Sweeper thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "556",
+                "name": "Notification Th\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "557",
+                "name": "VM Periodic Tas\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "558",
+                "name": "Common-Cleaner\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "564",
+                "name": "EntityProducer\n",
+                "wait_channel": "futex_wait_queue"
+              }
+            ]
+          }
+        ],
+        "cpu": "usage_usec 2441954950\nuser_usec 2234156696\nsystem_usec 207798254\ncore_sched.force_idle_usec 0\nnr_periods 31255\nnr_throttled 12304\nthrottled_usec 619570726\nnr_bursts 0\nburst_usec 0\n",
+        "io": "253:16 rbytes=0 wbytes=269803520 rios=0 wios=497 dbytes=0 dios=0\n",
+        "io_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939048\n"
+      },
+      {
+        "monotonic_ns": 3886542779948,
+        "java": [
+          {
+            "pid": "545",
+            "io": "rchar: 5601117418\nwchar: 1514848782\nsyscr: 1361380\nsyscw: 375830\nread_bytes: 0\nwrite_bytes: 1556480\ncancelled_write_bytes: 0\n",
+            "stat": "545 (java) S 1 1 1 0 -1 4194560 781776 879 685 14 31479 2479 3 1 20 0 15 0 348384 6316687360 719116 18446744073709551615 140737488510976 140737488974984 281474087036752 0 0 0 0 0 16800991 0 0 0 17 0 0 0 0 0 0 140737489010688 140737490079968 140738417541120 281474087038060 281474087038497 281474087038497 281474087038954 0\n",
+            "command": "/usr/bin/java -Djava.awt.headless=true -Duser.timezone=UTC -Duser.language=en -Duser.country=US -XX:+UnlockExperimentalVMOptions -XX:hashCode=2 -Xmx3072m -cp /artifacts/FL/.ck-split-map-j60n39j6/creator/OsmAndMapCreator.jar:/artifacts/FL/.ck-split-map-j60n39j6/creator/lib/* net.osmand.MainUtilities generate-obf /artifacts/FL/.ck-split-map-j60n39j6/work/FL_005_roads_places.osm.pbf --no-address --no-transport ",
+            "wait_channels": {
+              "futex_wait_queue": 14,
+              "0": 1
+            },
+            "threads": [
+              {
+                "id": "545",
+                "name": "java\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "546",
+                "name": "java\n",
+                "wait_channel": "0"
+              },
+              {
+                "id": "547",
+                "name": "VM Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "548",
+                "name": "Reference Handl\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "549",
+                "name": "Finalizer\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "550",
+                "name": "Signal Dispatch\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "551",
+                "name": "Service Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "552",
+                "name": "Monitor Deflati\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "553",
+                "name": "C2 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "554",
+                "name": "C1 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "555",
+                "name": "Sweeper thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "556",
+                "name": "Notification Th\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "557",
+                "name": "VM Periodic Tas\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "558",
+                "name": "Common-Cleaner\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "564",
+                "name": "EntityProducer\n",
+                "wait_channel": "futex_wait_queue"
+              }
+            ]
+          }
+        ],
+        "cpu": "usage_usec 2442867853\nuser_usec 2235027929\nsystem_usec 207839924\ncore_sched.force_idle_usec 0\nnr_periods 31265\nnr_throttled 12311\nthrottled_usec 619612629\nnr_bursts 0\nburst_usec 0\n",
+        "io": "253:16 rbytes=0 wbytes=269803520 rios=0 wios=497 dbytes=0 dios=0\n",
+        "io_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939048\n"
+      },
+      {
+        "monotonic_ns": 3887546752873,
+        "java": [
+          {
+            "pid": "545",
+            "io": "rchar: 5607810282\nwchar: 1518273038\nsyscr: 1363014\nsyscw: 376666\nread_bytes: 0\nwrite_bytes: 1556480\ncancelled_write_bytes: 0\n",
+            "stat": "545 (java) S 1 1 1 0 -1 4194560 781776 879 685 14 31559 2483 3 1 20 0 15 0 348384 6316687360 719116 18446744073709551615 140737488510976 140737488974984 281474087036752 0 0 0 0 0 16800991 0 0 0 17 0 0 0 0 0 0 140737489010688 140737490079968 140738417541120 281474087038060 281474087038497 281474087038497 281474087038954 0\n",
+            "command": "/usr/bin/java -Djava.awt.headless=true -Duser.timezone=UTC -Duser.language=en -Duser.country=US -XX:+UnlockExperimentalVMOptions -XX:hashCode=2 -Xmx3072m -cp /artifacts/FL/.ck-split-map-j60n39j6/creator/OsmAndMapCreator.jar:/artifacts/FL/.ck-split-map-j60n39j6/creator/lib/* net.osmand.MainUtilities generate-obf /artifacts/FL/.ck-split-map-j60n39j6/work/FL_005_roads_places.osm.pbf --no-address --no-transport ",
+            "wait_channels": {
+              "futex_wait_queue": 14,
+              "0": 1
+            },
+            "threads": [
+              {
+                "id": "545",
+                "name": "java\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "546",
+                "name": "java\n",
+                "wait_channel": "0"
+              },
+              {
+                "id": "547",
+                "name": "VM Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "548",
+                "name": "Reference Handl\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "549",
+                "name": "Finalizer\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "550",
+                "name": "Signal Dispatch\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "551",
+                "name": "Service Thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "552",
+                "name": "Monitor Deflati\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "553",
+                "name": "C2 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "554",
+                "name": "C1 CompilerThre\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "555",
+                "name": "Sweeper thread\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "556",
+                "name": "Notification Th\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "557",
+                "name": "VM Periodic Tas\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "558",
+                "name": "Common-Cleaner\n",
+                "wait_channel": "futex_wait_queue"
+              },
+              {
+                "id": "564",
+                "name": "EntityProducer\n",
+                "wait_channel": "futex_wait_queue"
+              }
+            ]
+          }
+        ],
+        "cpu": "usage_usec 2443708095\nuser_usec 2235825938\nsystem_usec 207882157\ncore_sched.force_idle_usec 0\nnr_periods 31275\nnr_throttled 12315\nthrottled_usec 619645288\nnr_bursts 0\nburst_usec 0\n",
+        "io": "253:16 rbytes=0 wbytes=269803520 rios=0 wios=497 dbytes=0 dios=0\n",
+        "io_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115118\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939051\n"
+      }
+    ],
+    "clock_ticks_per_second": 100,
+    "local_root_statvfs": {
+      "total_bytes": 67316002816,
+      "available_bytes": 60014538752
+    },
+    "mounts": [
+      "427 380 0:48 / / rw,relatime - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/39/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/37/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/32/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/31/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/24/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/22/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/17/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/16/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/10/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/work,nouserxattr",
+      "468 427 0:43 /.worktrees/73-android-worker/build /artifacts rw,relatime - virtiofs mount1 rw"
+    ]
+  },
+  "scratch_files": [
+    {
+      "worker": 73,
+      "stage": ".worktrees/73-android-worker/build/FL/.ck-split-map-j60n39j6",
+      "files": [
+        {
+          "name": "Fl_005_roads_places.poi.odb",
+          "bytes": 20692992,
+          "sqlite_header": true
+        },
+        {
+          "name": "Fl_005_roads_places.obf.rtree3",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "nodes.tmp.odb",
+          "bytes": 766726144,
+          "sqlite_header": true
+        },
+        {
+          "name": "Fl_005_roads_places.obf.rtree2",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "Fl_005_roads_places.obf.rteb",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "regions.ocbf",
+          "bytes": 7497055,
+          "sqlite_header": false
+        },
+        {
+          "name": "Fl_005_roads_places.obf.tmp",
+          "bytes": 241700864,
+          "sqlite_header": true
+        },
+        {
+          "name": "Fl_005_roads_places.obf.rtree0",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "Fl_005_roads_places.obf.rtree1",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "FL_005_roads_places.osm.pbf",
+          "bytes": 30769825,
+          "sqlite_header": false
+        },
+        {
+          "name": "Fl_005_roads_places.obf.rte",
+          "bytes": 16,
+          "sqlite_header": false
+        }
+      ]
+    },
+    {
+      "worker": 74,
+      "stage": ".worktrees/74-android-worker/build/GA/.ck-split-map-sh_4472v",
+      "files": [
+        {
+          "name": "Ga_005_roads_places.obf.tmp",
+          "bytes": 299945984,
+          "sqlite_header": true
+        },
+        {
+          "name": "Ga_005_roads_places.obf.prte",
+          "bytes": 36483236,
+          "sqlite_header": false
+        },
+        {
+          "name": "Ga_005_roads_places.obf.prtree3",
+          "bytes": 487516,
+          "sqlite_header": false
+        },
+        {
+          "name": "GA_005_roads_places.osm.pbf",
+          "bytes": 24816951,
+          "sqlite_header": false
+        },
+        {
+          "name": "Ga_005_roads_places.obf.prtree2",
+          "bytes": 10498116,
+          "sqlite_header": false
+        },
+        {
+          "name": "regions.ocbf",
+          "bytes": 7497055,
+          "sqlite_header": false
+        },
+        {
+          "name": "Ga_005_roads_places.obf.prteb",
+          "bytes": 2970052,
+          "sqlite_header": false
+        },
+        {
+          "name": "Ga_005_roads_places.poi.odb",
+          "bytes": 5554176,
+          "sqlite_header": true
+        },
+        {
+          "name": "Ga_005_roads_places.obf.prtree0",
+          "bytes": 80843084,
+          "sqlite_header": false
+        },
+        {
+          "name": "Ga_005_roads_places.obf",
+          "bytes": 51985459,
+          "sqlite_header": false
+        },
+        {
+          "name": "Ga_005_roads_places.obf.prtree1",
+          "bytes": 28766348,
+          "sqlite_header": false
+        }
+      ]
+    },
+    {
+      "worker": 75,
+      "stage": ".worktrees/75-android-worker/build/IN/.ck-split-map-3x_8qvkn",
+      "files": [
+        {
+          "name": "nodes.tmp.odb",
+          "bytes": 353521664,
+          "sqlite_header": true
+        },
+        {
+          "name": "In_001_roads_places.obf.tmp",
+          "bytes": 124715008,
+          "sqlite_header": true
+        },
+        {
+          "name": "In_001_roads_places.obf.rtree3",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "In_001_roads_places.obf.rtree2",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "regions.ocbf",
+          "bytes": 7497055,
+          "sqlite_header": false
+        },
+        {
+          "name": "In_001_roads_places.obf.rte",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "IN_001_roads_places.osm.pbf",
+          "bytes": 14965559,
+          "sqlite_header": false
+        },
+        {
+          "name": "In_001_roads_places.obf.rteb",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "In_001_roads_places.poi.odb",
+          "bytes": 5308416,
+          "sqlite_header": true
+        },
+        {
+          "name": "In_001_roads_places.obf.rtree0",
+          "bytes": 16,
+          "sqlite_header": false
+        },
+        {
+          "name": "In_001_roads_places.obf.rtree1",
+          "bytes": 16,
+          "sqlite_header": false
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "sample_wall_seconds": 5.016162498,
+    "cgroup_cpu_seconds": 4.268757,
+    "cgroup_cpu_capacity_fraction": 0.8510005410913226,
+    "quota_periods": 50,
+    "throttled_periods": 27,
+    "throttled_seconds": 0.361445,
+    "process_io_deltas": {
+      "rchar": 57487360,
+      "wchar": 17776737,
+      "syscr": 14035,
+      "syscw": 4341,
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "cancelled_write_bytes": 0
+    },
+    "io_pressure_first": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939048\n",
+    "io_pressure_last": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2115118\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1939051\n",
+    "observed_utc": "2026-11-01T19:34:09.570038+00:00",
+    "iowa_observed_elapsed_seconds": {
+      "extract": 257.834792,
+      "map-a": 1217.805489,
+      "map-b": 1286.54823
+    }
+  },
+  "observed_container": {
+    "id": "d1c99504b3cc3c2008a6e52529001c464f42eb5f131e117d55e9308430c1b089",
+    "name": "/ck-android-73-fl-map-a",
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "nano_cpus": 1000000000,
+    "memory_bytes": 6442450944,
+    "network_mode": "none",
+    "mounts": [
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/73-android-worker/build",
+        "Destination": "/artifacts",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/cache",
+        "Destination": "/cache",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/73-android-worker/build/FL/extract",
+        "Destination": "/prepared",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/leotrottier/Sites/reseed/common-knowledge/.worktrees/73-android-worker",
+        "Destination": "/source",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      }
+    ]
+  },
+  "iowa_matched_baseline": {
+    "state": "IA",
+    "sha256": "404757adf369c48e33c1a589e1194049c2327133a39ce8728ffcb2da9a46080d",
+    "size_bytes": 148543596,
+    "pipeline_version": "android-split-v1-13d6a6219518bf0a7f8e0ab141fb33191ff774e242dbde154260bbdac575f379",
+    "parts": 2,
+    "inputs": {
+      "geofabrik_us": "0b26bef4ca1dad6cd46104f3dca2e456303b3991816c2407c3b68ef77af3913e",
+      "osmand_creator": "451abf8731d3fa7895e159743c63df938b197d76741e953c41cf9c73c9a6f11c",
+      "android_extract_ia": "c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867"
+    },
+    "receipt_sha256": "54f78c7f076c9f6135bf0208e223f741c5cc560efc61e302c1ebcb8463a851df"
+  },
+  "producer_source_sha256": "ea17a28326ed47e7c4426432beb56fbfd7d425fc8eac33ee8eb92f0777fe867f",
+  "local_scratch_byte_equivalence_measured": false,
+  "local_scratch_performance_measured": false
+}
