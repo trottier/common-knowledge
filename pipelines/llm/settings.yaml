@@ -14,7 +14,6 @@ model_alias: common-knowledge-local
 models:
   sample: sample_model
   full: base_model
-fallback_variants: [1, 3, 5, 7]
 warning: "Experimental local LLM. It can be wrong. If it disagrees with a card or video, follow the card."
 warning_es: "LLM local experimental. Puede equivocarse. Si contradice una tarjeta o un video, siga la tarjeta."
 android:

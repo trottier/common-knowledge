@@ -18,6 +18,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     parser.add_argument("--root", type=Path, default=Path.cwd(), help="Repository root")
     commands = parser.add_subparsers(dest="command")
+    explore = commands.add_parser(
+        "explore", help="Browse an actual drive folder in a phone preview"
+    )
+    explore.add_argument("--drive", type=Path, required=True)
+    explore.add_argument("--port", type=int, default=8766)
+    explore.add_argument("--label", help="Display label; defaults to the configured volume label")
+    explore.add_argument("--notice", default="Development preview; device tests pending.")
+    explore.add_argument("--ui-path", type=Path, help="Override the repository explorer assets")
     validate = commands.add_parser("validate", help="Validate configuration and catalog")
     validate.add_argument("--release", action="store_true")
     review = commands.add_parser("review-report", help="Inventory every remaining release gate")
@@ -48,6 +56,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         "prepare-plan", help="Describe the complete input-generation graph"
     )
     preparation.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    preparation.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
     preparation.add_argument("--core", type=Path)
     preparation.add_argument("--epoch", type=int)
     preparation.add_argument(
@@ -291,6 +300,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     sourcecheck.add_argument("--report", type=Path)
     preflight = commands.add_parser("check-profile", help="Fail on every unresolved profile input")
     preflight.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
+    preflight.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
     build = commands.add_parser("build-profile", help="Build staged, verified variant images")
     build.add_argument("--profile", choices=["dev", "sample", "full"], required=True)
     build.add_argument("--variants", type=int, nargs="+", choices=range(1, 9))
@@ -306,6 +316,24 @@ def main(argv: Sequence[str] | None = None) -> int:
         if args.command is None:
             parser.print_help()
             return 0
+        if args.command == "explore":
+            from ck.config import read_yaml
+            from ck.drive_preview import serve
+
+            if not 1 <= args.port <= 65535:
+                raise ValueError("Port must be between 1 and 65535")
+            serve(
+                args.drive,
+                args.ui_path or args.root / "pipelines" / "drive_preview",
+                label=(
+                    args.label
+                    if args.label is not None
+                    else read_yaml(args.root / "config/build.yaml")["volume_label"]
+                ),
+                port=args.port,
+                notice=args.notice,
+            )
+            return 0
         from ck.config import findability, load_config
 
         config = load_config(args.root)
@@ -319,6 +347,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 args.profile,
                 core_size(args.core) if args.core else 0,
                 args.capacity_bytes,
+                args.variants,
             )
             plan["source_date_epoch"] = epoch_for(config, args.epoch)
             args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -447,7 +476,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             from ck.build import build_profile, check_profile
 
             if args.command == "check-profile":
-                print(json.dumps(check_profile(args.root, args.profile), indent=2))
+                print(json.dumps(check_profile(args.root, args.profile, args.variants), indent=2))
             else:
                 print(
                     json.dumps(
@@ -889,7 +918,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                         print(f"  {issue}")
                     if plan.map_path:
                         print(f"  Android maps: {plan.map_path}. {plan.map_reason}")
-                    if plan.llm_variants is not None:
+                    if plan.llm_variants:
                         print(f"  Local LLM variants: {plan.llm_variants}. {plan.llm_reason}")
                     if not plan.fits:
                         for item in plan.largest:

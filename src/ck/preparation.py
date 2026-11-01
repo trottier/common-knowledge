@@ -7,7 +7,7 @@ from typing import Annotated
 from pydantic import Field, StringConstraints
 
 from ck.catalog import Item, load_catalog
-from ck.config import Identifier, Model, load_config, read_yaml
+from ck.config import Configuration, Identifier, Model, load_config, read_yaml
 from ck.fetch import fetch, verify_zim
 from ck.generated import verified_generated_files
 from ck.planner import plan_variants
@@ -22,6 +22,20 @@ class SampleSettings(Model):
 class BuildSettings(Model):
     sample: SampleSettings
     medical_pdf_jobs: int = Field(ge=1, le=8)
+
+
+def selected_variants(config: Configuration, variants: list[int] | None = None) -> list[int]:
+    """Keep the default national union, or validate an explicit inspection subset."""
+    if variants is None:
+        return sorted(config.variants.variants)
+    if (
+        not variants
+        or any(type(number) is not int for number in variants)
+        or len(set(variants)) != len(variants)
+        or not set(variants) <= config.variants.variants.keys()
+    ):
+        raise ValueError("Choose distinct configured variants")
+    return sorted(variants)
 
 
 def generated_actions(root: Path, items: dict[str, Item], identifier: str) -> list[dict]:
@@ -275,14 +289,21 @@ def generated_actions(root: Path, items: dict[str, Item], identifier: str) -> li
 
 
 def preparation_plan(
-    root: Path, profile: str, core_bytes: int = 0, capacity_override: int | None = None
+    root: Path,
+    profile: str,
+    core_bytes: int = 0,
+    capacity_override: int | None = None,
+    variants: list[int] | None = None,
 ) -> dict:
     config = load_config(root)
     if profile not in config.build.profiles:
         raise ValueError("Unknown build profile")
+    numbers = selected_variants(config, variants)
     items = load_catalog(root, config)
     plans = plan_variants(config, items, profile, core_bytes, capacity_override)
-    selected = sorted({identifier for plan in plans for identifier in plan.items})
+    selected = sorted(
+        {identifier for plan in plans if plan.variant in numbers for identifier in plan.items}
+    )
     ordered, visiting, done = [], set(), set()
 
     def visit(identifier):
@@ -301,6 +322,7 @@ def preparation_plan(
         visit(identifier)
     return {
         "profile": profile,
+        "variants": numbers,
         "version": config.build.version,
         "capacity_assumed": capacity_override is not None,
         "selected": selected,

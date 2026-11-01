@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<meta name="dcterms.created" content="{{ timestamp }}">
+<meta name="dcterms.modified" content="{{ timestamp }}">
+<style>
+{% for font in fonts %}
+@font-face { font-family: CK{{ loop.index0 }}; src: url("{{ font.uri }}"); }
+{% endfor %}
+@page {
+  size: letter;
+  margin: 9mm 10mm 13mm;
+  @bottom-center {
+    content: "Draft prototype · historical sources · not phone-tested · " counter(page);
+    font-size: 7pt;
+  }
+}
+body, svg text { font-family: {{ families }}, sans-serif; }
+body { margin: 0; font-size: 11pt; color: #222; }
+h1 { font-size: 20pt; }
+h2 { font-size: 13pt; margin: 0 0 2mm; }
+h3 { font-size: 12pt; }
+p { margin: 2mm 0; }
+section { break-before: page; }
+section:first-child { break-before: auto; }
+svg { display: block; }
+.small { font-size: 8pt; }
+table { border-collapse: collapse; width: 100%; font-size: 9pt; }
+td, th { padding: 1.3mm; text-align: left; border-bottom: 0.2mm solid #ccc; }
+a { color: #23548a; }
+.map-title { height: 12mm; }
+.page-meta { font-size: 7pt; line-height: 1.1; }
+.locator-row { display: flex; gap: 4mm; align-items: flex-start; }
+.locator { width: 94mm; flex: none; }
+.locator svg { width: 94mm; height: auto; }
+.locator-table { width: 88mm; flex: none; table-layout: fixed; }
+</style>
+</head>
+<body>
+{% if kind == 'detail' %}
+<section>
+  <h1>Bristol County road maps</h1>
+  <p>Rhode Island · Census 2020 ZIP areas {{ zctas | join(', ') }}</p>
+  <p>Zoom and pan each map. Trial scale 1:{{ '{:,}'.format(policy.scale_denominator) }};
+  the county stays in one PDF.</p>
+  <p>Find your town on the locator. Open its blue sheet label below.
+  At the map edge, continue on the named sheet and page.</p>
+  <div class="locator-row">
+  <div class="locator">{{ locator_svg }}</div>
+  <table class="locator-table">
+    <tr><th>Sheet</th><th>Page</th></tr>
+    {% for page in pages %}
+    <tr><td><a href="#{{ page.id }}">{{ page.id }}</a></td><td>page {{ page.page }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  <h3>Read the map</h3>
+  <p>Orange: main roads. Gray: other roads. Dashed: paths, tracks, or private access.
+  A map line is not permission or confirmation that a route is open.</p>
+  <p>Grid columns A–E run left to right; rows 1–6 run top to bottom. Corner coordinates
+  are decimal degrees and degrees–minutes–seconds. The arrow indicates grid north.</p>
+  <p>County-edge overlap is for continuity. This proof only has Rhode Island source
+  data; neighboring-state navigation is not demonstrated.</p>
+  <p>POIs and the historical source list are in <strong>0_OVERVIEW.pdf</strong> in this folder.</p>
+  <p>Approximate Census ZIP areas are not a current USPS delivery directory.</p>
+  <p class="small">Development cartography proof, not a completed sample or reviewed emergency map.</p>
+</section>
+{% for page in pages %}
+<section>
+  <div class="map-title">
+    <h2 id="{{ page.id }}">Bristol County · {{ page.id }}</h2>
+    <p class="page-meta">{{ page.continuation }} · Trial
+    1:{{ '{:,}'.format(policy.scale_denominator) }}</p>
+  </div>
+  {{ page.svg }}
+  <p class="page-meta">OSM/Geofabrik 2026-10-29; Protomaps 2026-10-30.
+  © OpenStreetMap contributors, ODbL-1.0. County: Census 2025. No live closure information.</p>
+</section>
+{% endfor %}
+{% else %}
+<section>
+  <div class="map-title">
+    <h2>Bristol County · overview</h2>
+    <p class="page-meta">All {{ pois | length }} historical POIs are numbered; full names follow.
+    May help; not confirmed open.</p>
+  </div>
+  {{ overview_svg }}
+  <p class="page-meta">Detailed maps: {{ leaf }}.
+  © OpenStreetMap contributors, ODbL-1.0; Census.</p>
+</section>
+<section>
+  <h2>All {{ pois | length }} source places</h2>
+  <p>May help; not confirmed open. This reuses an explicitly incomplete historical
+  parent directory, without changing its status. It is not a new source intake.</p>
+  <table>
+    <thead><tr><th>No.</th><th>Name</th><th>Category and address</th></tr></thead>
+    <tbody>
+    {% for point in pois %}
+    <tr><td>{{ point.number }}</td><td>{{ point.name }}</td>
+    <td>{{ point.category | replace('_', ' ') }}<br>{{ point.address or 'Address not supplied' }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <h3>Sources and limits</h3>
+  <p>NCES 2024–2025; IMLS 2024; OSM 2026-10-29; FCC 2026-10-31; Census 2025.
+  The parent source omits some unconfirmed geographic records outside Rhode Island.
+  No human source or device review is implied.</p>
+  <p>ZIP labels are Census 2020 geographic approximations, not current USPS delivery
+  coverage. Use the road-map locator and corner coordinates to find an area.</p>
+</section>
+{% endif %}
+</body>
+</html>

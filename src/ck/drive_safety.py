@@ -8,7 +8,7 @@ from ck.catalog import safe_path
 
 def executable_allowed(path: str) -> bool:
     parts = safe_path(path).parts
-    if parts[0] in {"7_LAPTOP", "8_MESH_CHAT", "9_LOCAL_LLM"}:
+    if parts[0] in {"7_LAPTOP", "8_MESH_CHAT", "9_OFFLINE_AI"}:
         return True
     if any(part.casefold() == "android" for part in parts[:-1]):
         return True

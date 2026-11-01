@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%278%27%20fill%3D%27%231865c7%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2721%27%20text-anchor%3D%27middle%27%20font-family%3D%27sans-serif%27%20font-size%3D%2713%27%20font-weight%3D%27700%27%20fill%3D%27white%27%3ECK%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <title>Common Knowledge · Drive Explorer</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <svg class="symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-folder" viewBox="0 0 32 28"><path d="M2 6a3 3 0 0 1 3-3h8l3 4h11a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3Z" fill="currentColor"/><path d="M2 10h28v3H2Z" fill="#fff" opacity=".22"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 28 32"><path d="M5 2h12l7 7v19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" fill="currentColor"/><path d="M17 2v7h7M8 17h11M8 22h8" fill="none" stroke="#fff" stroke-width="1.5"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 32 32"><rect x="2" y="3" width="28" height="26" rx="6" fill="currentColor"/><path d="m13 10 10 6-10 6Z" fill="#fff"/></symbol>
+    <symbol id="icon-back" viewBox="0 0 24 24"><path d="m14 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+  <header class="site-header">
+    <div><p class="eyebrow">COMMON KNOWLEDGE</p><h1>Drive Explorer</h1></div>
+    <span class="dev-badge">Development preview</span>
+  </header>
+  <section class="preview-controls" aria-label="Preview settings">
+    <label>Preview width <select id="viewport"><option value="fluid">Full width</option><option value="360">360 px</option><option value="390" selected>390 px</option><option value="430">430 px</option><option value="768">768 px</option></select></label>
+    <label class="check-label"><input id="show-hidden" type="checkbox"> Show backup and hidden files</label>
+  </section>
+  <main id="explorer" class="explorer">
+    <header class="drive-header">
+      <div class="drive-mark" aria-hidden="true">CK</div>
+      <div class="drive-title"><h2 id="drive-label">Loading drive…</h2><p id="drive-meta">Reading the actual file inventory</p></div>
+      <button id="refresh" class="quiet-button" title="Refresh file inventory" aria-label="Refresh file inventory">↻</button>
+    </header>
+    <div id="drive-notice" class="drive-notice" hidden></div>
+    <div class="navigation">
+      <button id="back" class="icon-button" aria-label="Go to parent folder" disabled><svg><use href="#icon-back"/></svg></button>
+      <nav id="breadcrumbs" aria-label="Folder path"></nav>
+    </div>
+    <div class="folder-heading"><h3 id="folder-name">On this drive</h3><span id="item-count"></span></div>
+    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search this folder" aria-label="Search this folder" autocomplete="off"></label>
+    <div id="message" class="message" role="status">Loading files…</div>
+    <ul id="files" class="file-list" aria-label="Files and folders"></ul>
+    <footer class="drive-footer"><span id="folder-summary"></span><span>Actual files · read-only preview</span></footer>
+  </main>
+  <p class="preview-note">Generic viewport sizes. This browser preview does not certify built-in Files behavior or physical phone performance.</p>
+  <dialog id="preview" aria-labelledby="preview-title">
+    <header class="preview-header"><div><p id="preview-type" class="eyebrow"></p><h2 id="preview-title"></h2><p id="preview-meta"></p></div><button id="close-preview" class="quiet-button" aria-label="Close file preview">✕</button></header>
+    <div class="preview-actions"><a id="open-native" target="_blank" rel="noopener">Open in browser</a><a id="download">Download file</a></div>
+    <div id="preview-content" class="preview-content"></div>
+  </dialog>
+  <noscript>This local explorer needs JavaScript. The drive's original files remain available through the local server's file URLs.</noscript>
+</body>
+</html>

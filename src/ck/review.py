@@ -86,7 +86,29 @@ def write_release_review(root: Path, output: Path) -> None:
         "This is a development checkpoint, not release approval. v0.1.0 is incomplete.",
         "Regenerate with `ck review-report --output docs/release-review.md` after source changes.",
         "",
-        "## Implementation and build gaps",
+        "## Current milestone: Variant 1 and Rhode Island",
+        "",
+        "- Resolve the selected Variant 1 sample graph and reuse checksum-verified artifacts "
+        "under their actual recipes, input pins, completeness flags, and source epochs. "
+        "Keep exact missing, stale, held, and ready inventories.",
+        "- Inspect one complete county's folder names, overview, detailed maps, and places "
+        "index. Apply the configured PDF budget and measure rendering and navigation; "
+        "split only where measured limits require it.",
+        "- Build the actual browsable tree first and inspect it in the loopback Drive "
+        "Explorer, including phone-width full filenames, file sizes, and native file "
+        "previews. Label a partial tree incomplete and show every selected omission. "
+        "The website does not certify phone or USB behavior.",
+        "- Use the fast English/county loop before a wider render. Freeze the coherent "
+        "milestone's selected inputs, code, configuration, tool image, and epoch before "
+        "the required full checks and clean sample reproducibility pair.",
+        "- Defer new image-verifier tool development during this inspection milestone. "
+        "Existing checksum, manifest, reproducibility, and release gates remain in force.",
+        "- Offline AI is a v0.2 integration on variants 7 and 8, not a current Variant 1 "
+        "milestone dependency or device-check requirement. Preserve its research and "
+        "historical outputs. The global catalog and VERIFY inventories below remain "
+        "unchanged and include held candidates.",
+        "",
+        "## Later v0.1 implementation and release gaps",
         "",
         "- Finish corrected national atlas/directory repeats and all 56 Android maps. "
         "State or territory repeats do not establish full-image coverage or capacity.",
@@ -100,7 +122,8 @@ def write_release_review(root: Path, output: Path) -> None:
         "a top-level repository archive alone does not establish source closure.",
         "- Freeze the toolchain and regenerate derived inputs before pinning final outputs. "
         "Prototype fingerprints do not establish a rebuild from the release tag.",
-        "- Run the actual sample profile twice, then all eight full images twice. "
+        "- After the browsable sample and selected recipe are stable, run the actual "
+        "sample profile twice, then all eight full images twice. "
         "Development-image reproducibility does not establish either result.",
         "- Publish only after sample/full checks, release gates and physical checks pass. "
         "No production tag, release or full-image hashes are approved by this report.",
@@ -119,7 +142,8 @@ def write_release_review(root: Path, output: Path) -> None:
         ),
         "- Complete docs/phone-test-checklist.md on at least three phones and two laptop "
         "operating systems, including a USB-A-only laptop with an adapter. Check video "
-        "language switching, offline apps, mapping, sharing and local LLM launchers.",
+        "language switching, offline apps, mapping, and sharing. Offline-AI launcher "
+        "and model-loading checks belong to the separate v0.2 checklist.",
         "- English content, clinical protocols, legal/radio text and medical topic selection "
         "need named human reviewers. The agent cannot grant these reviews.",
         "",
@@ -130,10 +154,10 @@ def write_release_review(root: Path, output: Path) -> None:
         "has been sent and no permission is claimed. See docs/permission-requests.md.",
         "",
         "Army publications require per-document distribution statement A verification and "
-        "legal sign-off. Model and runner licenses require review, including the exact "
-        "untuned/base model, quantization provenance and dependency notices. Gemma 4 E2B "
-        "remains the first candidate; effective parameter counting does not waive the "
-        "separate file-size or untuned-base requirements.",
+        "legal sign-off. For the deferred v0.2 offline AI, preserve exact model/runner "
+        "license, quantization, and dependency-notice questions with their research. "
+        "These do not add AI cargo or checks to the current milestone; their held "
+        "catalog records remain in the unchanged global release inventory.",
         "",
         "Catalog items explicitly requiring legal review:",
         "",

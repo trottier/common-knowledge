@@ -17,6 +17,30 @@ def test_sample_preflight_lists_unresolved_inputs_before_writing(tmp_path):
     assert len(check_profile(ROOT, "dev")) == 8
 
 
+def test_explicit_preflight_subset_preserves_selected_gates_and_default_union(monkeypatch):
+    from ck.planner import VariantPlan
+
+    plans = [
+        VariantPlan(number, 1000, 1000, 0, 0, [], [], ["held item"] if number == 3 else [])
+        for number in range(1, 9)
+    ]
+    monkeypatch.setattr("ck.build.plan_variants", lambda *args: plans)
+    assert [row["variant"] for row in check_profile(ROOT, "dev", variants=[1])] == [1]
+    with pytest.raises(ValueError, match="held item"):
+        check_profile(ROOT, "dev", variants=[3])
+    with pytest.raises(ValueError, match="held item"):
+        check_profile(ROOT, "dev")
+
+
+def test_full_preflight_keeps_global_release_review_for_an_explicit_subset(monkeypatch):
+    def held(_root):
+        raise ValueError("global release gate")
+
+    monkeypatch.setattr("ck.build.require_release_ready", held)
+    with pytest.raises(ValueError, match="global release gate"):
+        check_profile(ROOT, "full", variants=[1])
+
+
 def test_profile_build_repeats_document_and_filesystem_builds(tmp_path, monkeypatch):
     calls = []
 

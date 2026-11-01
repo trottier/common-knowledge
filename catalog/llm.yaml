@@ -16,13 +16,13 @@
     "attribution": "Qwen Team; GGUF publisher aashish1904",
     "license_proof_url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/blob/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/LICENSE",
     "checksum_source_url": "https://huggingface.co/api/models/aashish1904/Qwen3.5-2B-Base-GGUF/revision/aad7c886aae2293597680fd68ccd59aae23dc754?blobs=true",
-    "placement": "universal",
+    "placement": "hub_only",
     "dest": "9_LOCAL_LLM/Model.gguf",
     "profiles": [
       "full"
     ],
     "requires_legal": true,
-    "review": "[[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]"
+    "review": "[[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]] Integration is deferred by publisher direction; future allocation and disabled state are recorded in config/variants.yaml. No current drive placement."
   },
   {
     "id": "sample_model",
@@ -36,13 +36,13 @@
     "attribution": "Qwen Team; GGUF publisher mradermacher",
     "license_proof_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68/LICENSE",
     "checksum_source_url": "https://huggingface.co/api/models/mradermacher/Qwen3.5-0.8B-Base-GGUF/revision/d98ffedc21f95bcd34909d356dffa47cffcd0066?blobs=true",
-    "placement": "universal",
+    "placement": "hub_only",
     "dest": "9_LOCAL_LLM/Model.gguf",
     "profiles": [
       "sample"
     ],
     "requires_legal": true,
-    "review": "[[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]]"
+    "review": "[[VERIFY: named model-license sign-off, publisher and conversion provenance review, multilingual suitability review, and offline device checks; no tuning or evaluation claim]] Integration is deferred by publisher direction; future allocation and disabled state are recorded in config/variants.yaml. No current drive placement."
   },
   {
     "id": "llamafile_runner",
@@ -188,7 +188,7 @@
     "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
     "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES",
     "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
-    "placement": "universal",
+    "placement": "hub_only",
     "dest": "9_LOCAL_LLM/",
     "profiles": [
       "full"
@@ -206,7 +206,7 @@
       "qwen_full_license"
     ],
     "pipeline_version": "[[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]",
-    "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
+    "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]] Integration is deferred by publisher direction; future allocation and disabled state are recorded in config/variants.yaml. No current drive placement."
   },
   {
     "id": "local_llm_sample",
@@ -218,7 +218,7 @@
     "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
     "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES",
     "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
-    "placement": "universal",
+    "placement": "hub_only",
     "dest": "9_LOCAL_LLM/",
     "profiles": [
       "sample"
@@ -236,6 +236,6 @@
       "sample_model"
     ],
     "pipeline_version": "[[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]",
-    "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
+    "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]] Integration is deferred by publisher direction; future allocation and disabled state are recorded in config/variants.yaml. No current drive placement."
   }
 ]
