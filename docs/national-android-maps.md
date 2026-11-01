@@ -65,8 +65,10 @@ ck android-map --state RI --osm-id geofabrik_us --cache cache \
 
 Prepared sources must match their bound state mapping, source parent, recipe
 and epoch. The map creator runs with the configured national Java heap; the
-small-state sample keeps its smaller heap. Large states still need actual
-measurements and may require splitting. The OBF must contain map, routing and
+small-state sample keeps its smaller heap. The additive
+[bounded large-state converter](large-android-maps.md) handles jurisdictions that
+exceed the single-map heap. Its actual national measurements and physical checks
+remain unfinished. The OBF set must contain map, routing and
 POI indexes and the fixed edition timestamp. Each payload includes its modified
 source database and attribution for ODbL compliance.
 

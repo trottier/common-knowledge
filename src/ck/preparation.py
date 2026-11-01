@@ -224,6 +224,11 @@ def generated_actions(root: Path, items: dict[str, Item], identifier: str) -> li
                 "/generated/" + prepared,
                 "--prepared-id",
                 prepared,
+                *(
+                    ["--split"]
+                    if (item.pipeline_version or "").startswith("android-split-v1-")
+                    else []
+                ),
             )
         ]
     if identifier == "android_roads_places_ri":

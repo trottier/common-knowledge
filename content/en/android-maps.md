@@ -8,12 +8,13 @@ reviewed_on: null
 Open **3_MAPS_AND_PLACES → android**.
 
 Tap **OsmAnd.apk**. Follow the install prompts.
-[[VERIFY: test the pinned APK installation]]
 
-Open **maps**. Open your state's **.obf** file with **OsmAnd**. [@osmand_import]
+Open **maps**. Open each **.obf** map for your state with **OsmAnd**. [@osmand_import]
+
+If a **PARTS** list is present, open every map it lists. [@project_spec]
 
 Restart OsmAnd. Check **Menu → Maps & Resources → Local**. [@osmand_import]
 
-[[VERIFY: test location permission and offline GPS on the listed phones]]
+[[VERIFY: phone-test installation, location permission, offline GPS, and routes across map parts]]
 
 Stop if a route is unsafe. Use the PDF atlas if the app fails. [@project_spec]
