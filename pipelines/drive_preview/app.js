@@ -186,7 +186,7 @@ function start() {
       if (!response.ok) throw new Error(`Drive inventory request failed (${response.status})`);
       manifest = await response.json(); entries = indexFiles(manifest.files);
       $("drive-label").textContent = manifest.label || "Common Knowledge";
-      $("drive-meta").textContent = [manifest.variant != null ? `Version ${manifest.variant}` : null, manifest.profile ? `${manifest.profile} profile` : null, manifest.source ? `Source ${manifest.source}` : null].filter(Boolean).join(" · ") || "Local file inventory";
+      $("drive-meta").textContent = [manifest.variant != null ? `Variant ${manifest.variant}` : null, manifest.profile ? `${manifest.profile} profile` : null, manifest.source ? `Source ${manifest.source}` : null].filter(Boolean).join(" · ") || "Local file inventory";
       const notice = [manifest.status, ...(Array.isArray(manifest.warnings) ? manifest.warnings : [])].filter(Boolean).join(" · ");
       $("drive-notice").textContent = notice; $("drive-notice").hidden = !notice;
       if (folder && (entries.get(folder)?.kind !== "directory" || (!$("show-hidden").checked && isHidden(entries.get(folder))))) folder = "";
