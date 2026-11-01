@@ -159,6 +159,7 @@ def test_preflight_failure_never_starts_fetching_or_generation(tmp_path, monkeyp
 @pytest.mark.parametrize("jobs", [0, 9])
 def test_workflow_worker_settings_match_the_pipeline_bounds(jobs):
     from pydantic import ValidationError
+
     from ck.config import read_yaml
     from ck.preparation import BuildSettings
 
