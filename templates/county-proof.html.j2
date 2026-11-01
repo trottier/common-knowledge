@@ -35,7 +35,7 @@ a { color: #23548a; }
 .locator-row { display: flex; gap: 4mm; align-items: flex-start; }
 .locator { width: 94mm; flex: none; }
 .locator svg { width: 94mm; height: auto; }
-.locator-table { flex: 1; }
+.locator-table { width: 88mm; flex: none; table-layout: fixed; }
 </style>
 </head>
 <body>
@@ -50,10 +50,9 @@ a { color: #23548a; }
   <div class="locator-row">
   <div class="locator">{{ locator_svg }}</div>
   <table class="locator-table">
-    <tr><th>Sheet</th><th>Page</th><th>Position</th></tr>
+    <tr><th>Sheet</th><th>Page</th></tr>
     {% for page in pages %}
-    <tr><td><a href="#{{ page.id }}">{{ page.id }}</a></td><td>page {{ page.page }}</td>
-    <td>row {{ page.row + 1 }}, column {{ page.column + 1 }}</td></tr>
+    <tr><td><a href="#{{ page.id }}">{{ page.id }}</a></td><td>page {{ page.page }}</td></tr>
     {% endfor %}
   </table>
   </div>

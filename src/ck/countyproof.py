@@ -662,6 +662,30 @@ def html_document(
     )
 
 
+def horizontal_layout(document) -> list[dict]:
+    """Inspect actual pinned-WeasyPrint layout; pagination alone misses clipped tables."""
+    checked = []
+    for number, page in enumerate(document.pages, 1):
+        for element in page._page_box.descendants():
+            tag = str(element.element_tag).rsplit("}", 1)[-1]
+            if tag not in {"svg", "table", "th", "td"}:
+                continue
+            left = element.border_box_x()
+            right = left + element.border_width()
+            checked.append(
+                {
+                    "page": number,
+                    "tag": tag,
+                    "left_px": left,
+                    "right_px": right,
+                    "page_width_px": page.width,
+                }
+            )
+            if left < -0.5 or right > page.width + 0.5:
+                raise ValueError(f"Horizontal {tag} overflow on page {number}: {left}..{right}")
+    return checked
+
+
 def render(data: dict, output: Path) -> dict:
     if output.exists():
         raise ValueError("Choose a new proof output; no overwrite")
@@ -702,6 +726,7 @@ def render(data: dict, output: Path) -> dict:
     (audit / "overview.svg").write_text(overview_svg)
     locator_svg, locator_audit = svg_locator(data)
     (audit / "locator.svg").write_text(locator_svg)
+    layout_audits = {}
     for filename, title, kind in [
         (leaf, "Bristol County detailed road maps", "detail"),
         ("0_OVERVIEW.pdf", "Bristol County overview and historical places", "overview"),
@@ -709,10 +734,12 @@ def render(data: dict, output: Path) -> dict:
         document = html_document(title, kind, pages, overview_svg, locator_svg, leaf, data)
         (audit / (filename + ".html")).write_text(document)
         with pdf_timestamp(policy["epoch"]):
-            HTML(
+            document_pdf = HTML(
                 string=document,
                 url_fetcher=OfflineFetcher([Path(font["path"]).parent for font in data["fonts"]]),
-            ).write_pdf(
+            ).render()
+            layout_audits[filename] = horizontal_layout(document_pdf)
+            document_pdf.write_pdf(
                 files / filename,
                 pdf_identifier=hashlib.sha256(document.encode()).hexdigest().encode(),
                 pdf_tags=True,
@@ -742,6 +769,7 @@ def render(data: dict, output: Path) -> dict:
         "policy": policy,
         "detail_pdf": leaf,
         "locator": locator_audit,
+        "horizontal_layout": layout_audits,
         "sheets": sheet_audits,
         "overview": {**overview_audit, "poi_ids": [point["id"] for point in data["pois"]]},
         "road_counts": data["road_counts"],
