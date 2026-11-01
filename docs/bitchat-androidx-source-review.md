@@ -41,6 +41,7 @@ The [linkage proposal](evidence/bitchat-androidx-source-links.json) lists 141
 source IDs to append to `bitchat_android_source.inputs`. It checks the parent
 source hash and preserves all existing Rust and Maven inputs. The two native
 audit AARs below must stay outside the corresponding-source graph.
+The catalog applies this proposal without linking either audit AAR.
 
 ## Native source gaps identified by exact bytes
 

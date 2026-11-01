@@ -28,6 +28,8 @@ The [linkage proposal](evidence/bitchat-maven-source-links.json) lists the 35 ID
 to append to `bitchat_android_source.inputs`, preserving existing inputs. It
 also records the expected parent archive hash. The two SDK audit inputs below
 must stay outside that corresponding-source list.
+The catalog applies this proposal alongside the existing Rust inputs and the
+[separate AndroidX source checkpoint](bitchat-androidx-source-review.md).
 
 ## Specific unresolved SDK obligations
 
@@ -60,7 +62,8 @@ used for this comparison as `hub_only` audit inputs with unresolved rights
 markers. They are not drive content or source-archive substitutes. The APK,
 its placement, and all human and legal review statuses remain unchanged.
 
-Remaining work includes AndroidX sources, native and Java build inputs and
-notices, exact binary/source correspondence, SDK term compatibility, a measured
+The application catalog records the unresolved bundled SDK terms and retains
+its named legal-review requirement. Remaining work includes native and Java
+build inputs and notices, exact binary/source correspondence, SDK term compatibility, a measured
 offline and no-telemetry device check, and named human review. The source and
 rights gates remain unresolved.
