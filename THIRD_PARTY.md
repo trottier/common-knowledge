@@ -10978,9 +10978,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
 - Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]] bytes
-- SHA-256: `[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]`
-- Pipeline: [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_full_license
+- Size: 44224664 bytes
+- SHA-256: `8079a5377ad2744927a31126609cd8e4677a29f577cddba1fffb42ef4d31f4d5`
+- Pipeline: local-llm-v1-66574b8c58a01e9f04549f83477b10836ffe723426a743347785d6135e8447f2; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_full_license
 
 ## Offline local LLM launchers, page, prompts and instructions (sample)
 
@@ -10989,9 +10989,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - License: Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1
 - Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; JEGLY and OfflineLLM contributors; ggml authors; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
-- Size: [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]] bytes
-- SHA-256: `[[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]`
-- Pipeline: [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_sample_license, sample_model
+- Size: 44248498 bytes
+- SHA-256: `9d4c8380a1b5059ee8853b875e42f0b7e6c80239b7c52a902525c3bd369eccd1`
+- Pipeline: local-llm-v1-66574b8c58a01e9f04549f83477b10836ffe723426a743347785d6135e8447f2; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, offlinellm_android_candidate, offlinellm_app_license, offlinellm_native_license, qwen_sample_license, sample_model
 
 ## MapLibre Native build addon for Linux arm64
 

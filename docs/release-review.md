@@ -91,7 +91,7 @@ Catalog items explicitly requiring legal review:
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6331)
+## Remaining VERIFY markers (6325)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1139,13 +1139,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/llm.yaml:141` — [[VERIFY: review computed license-text hash pinned from upstream HTTPS file]]
 - `catalog/llm.yaml:160` — [[VERIFY: review computed HTTPS notice-text pin]]
 - `catalog/llm.yaml:179` — [[VERIFY: review computed HTTPS notice-text pin]]
-- `catalog/llm.yaml:186` — [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]
-- `catalog/llm.yaml:187` — [[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]
-- `catalog/llm.yaml:208` — [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]
 - `catalog/llm.yaml:209` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
-- `catalog/llm.yaml:216` — [[VERIFY: measure refreshed OfflineLLM Android bundle before assembly]]
-- `catalog/llm.yaml:217` — [[VERIFY: hash refreshed OfflineLLM Android bundle before assembly]]
-- `catalog/llm.yaml:238` — [[VERIFY: record refreshed OfflineLLM Android bundle recipe before assembly]]
 - `catalog/llm.yaml:239` — [[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]
 - `catalog/maps.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/maps.yaml:7` — [[VERIFY: publisher version]]
