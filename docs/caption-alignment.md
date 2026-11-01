@@ -54,6 +54,12 @@ must be remeasured and independently repeated after the recipe change.
 
 ## Repeated development normalization
 
+This is historical engineering evidence. The current
+[USGS source page](https://www.usgs.gov/media/videos/national-preparedness-month-spotlight-earthquakes-part-5)
+identifies additional footage used with permission from Envato Elements. The
+catalog blocks the clip pending exact redistribution rights and named legal
+review; the measurements below do not establish those rights.
+
 Two separate network-disabled Linux containers produced identical payloads and
 complete generation metadata at epoch 1793404800:
 
