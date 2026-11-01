@@ -75,13 +75,27 @@ Their payloads are 1,048,997 and 1,389,195 bytes respectively. Place blocks
 render through a restricted Markdown container; imported fields cannot create
 layout containers or script elements. Each final state PDF has one county
 contents list; individual parts retain bookmarks without repeated contents
-pages. All 38 core PDFs match the prior renderer byte for byte. National
-size/hash pins remain unconfirmed until the full set builds and collects.
+pages. All 38 core PDFs match the prior renderer byte for byte.
 
 A national build exposed wrapped contents names in Alaska and Connecticut.
 The previous annotation-count check rejected those valid multi-line links.
 The regression fixture now renders a long county name, checks that all its
 clickable regions survive, and rejects a PDF whose contents links were removed.
 A failed worker also cancels queued states instead of completing the remaining
-national batch before reporting its error. The revised national build remains
-in progress; the superseded partial batch is not a complete release artifact.
+national batch before reporting its error.
+
+The revised development batch has now built and collected all 56 jurisdictions:
+112 PDFs and public source data, totaling 518,354,901 payload bytes. Collection
+verified 3,235 counties and county equivalents and all 254,062 places in its
+configured source snapshot. The generation manifest SHA-256 is
+`323f9e38162fd641ce174145dd01433008c0d9ea2073ddc194acde72d787cb5c` at
+development epoch 1793404800. A second clean national directory build remains
+pending.
+
+A subsequent Android extract check exposed a source-selection gap: Puerto Rico
+and the U.S. Virgin Islands have no OSM places in that input snapshot. Their
+federal-source places are present, but the parent U.S. extract does not establish
+their OSM coverage. Separate territory inputs and positive jurisdiction/source
+checks are being added. This measured directory is a development checkpoint;
+it must be regenerated with corrected points and atlas references before
+release. Neither it nor the superseded partial batch is a release artifact.

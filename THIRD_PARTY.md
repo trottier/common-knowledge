@@ -2955,13 +2955,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## National public places directory
 
 - Catalog id: `national_directory`
-- Version: 2026-10-31; source epoch 1793404800
+- Version: 2025 Census jurisdictions; measured development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; NCES; IMLS; FCC; FEMA; NWS; USAGov; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: exact publisher file size]] bytes
-- SHA-256: `[[VERIFY: publisher SHA-256 or reviewed verified download]]`
-- Pipeline: [[VERIFY: pinned pipeline implementation and output sizes]]; inputs: directory_points, national_atlas, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc
+- Size: 518354901 bytes
+- SHA-256: `323f9e38162fd641ce174145dd01433008c0d9ea2073ddc194acde72d787cb5c`
+- Pipeline: directory-set-v1-a5e7f5fde475d986805228f1489c370f74fc4f0e8c4909122122b561f611513a; inputs: directory_points, national_atlas, noto_sans, noto_sans_arabic, noto_sans_cherokee, noto_sans_sc
 
 ## NCES EDGE public-school locations
 
