@@ -7,35 +7,35 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census AK road-source extract
 
 - Catalog id: `android_extract_ak`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 12447289 bytes
+- SHA-256: `dad909772298da267a29eba02dfc0dd25bf33af0feae32f020ce1831ef5c570e`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census AL road-source extract
 
 - Catalog id: `android_extract_al`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 64072165 bytes
+- SHA-256: `2dfaa3edac97398194c19b275711c1f971939ee86e34c437e2bd2c1d589ebe26`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census AR road-source extract
 
 - Catalog id: `android_extract_ar`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 49291920 bytes
+- SHA-256: `2fed41d210038f35e517ea78d55c4658c5373f0d1f0015068d9bcedbb646f652`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census AS road-source extract
 
@@ -51,13 +51,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census AZ road-source extract
 
 - Catalog id: `android_extract_az`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 92532151 bytes
+- SHA-256: `4da5e174ad324709ebfc93b1b78676a6f4e2a3d9378f8214e59e4780ffaf2335`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census CA road-source extract
 
@@ -73,13 +73,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census CO road-source extract
 
 - Catalog id: `android_extract_co`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 104109832 bytes
+- SHA-256: `6c7d5890239b7e110594ad97e08b995eef8f30ad80934d6b09480a0588a6c7bc`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census CT road-source extract
 
@@ -150,24 +150,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census HI road-source extract
 
 - Catalog id: `android_extract_hi`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 8449673 bytes
+- SHA-256: `ab38a35d6de70d024f1dc79a013c0fdd5b4a8781db0a050fda2c21eae3d01ac2`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census IA road-source extract
 
 - Catalog id: `android_extract_ia`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Bounded development build; fixed epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 47811343 bytes
+- SHA-256: `c50a70c29d90b675f415a09059fa31aa143f72407f68fb0f551cb3a382c4a867`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census ID road-source extract
 
@@ -238,24 +238,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census MA road-source extract
 
 - Catalog id: `android_extract_ma`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 85164177 bytes
+- SHA-256: `583131c5874119395233bccdffa14bd43f9535d73f3b3ce5bd520f05471b67a8`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census MD road-source extract
 
 - Catalog id: `android_extract_md`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 62391500 bytes
+- SHA-256: `8456eb101750930a74cac50df8c5e2481d20f23a579c254b908c10e79f86c517`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census ME road-source extract
 
@@ -370,13 +370,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census NH road-source extract
 
 - Catalog id: `android_extract_nh`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 29792233 bytes
+- SHA-256: `628d7720fe96878db453245d6f66274e1c55c10ff66fafa6caaf90918b261486`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census NJ road-source extract
 
@@ -568,13 +568,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## Census VT road-source extract
 
 - Catalog id: `android_extract_vt`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: android_source_us, census_county_analysis, census_states
+- Size: 16418421 bytes
+- SHA-256: `39e9899991cd7b99af6088da2cf7869e7bc501f51ba59c009a1beecee00b8071`
+- Pipeline: android-extract-v1-5ad29c1f7d3c27079bd968af498f60dacb99af304ddaba7ac313549d71dbadab; inputs: android_source_us, census_county_analysis, census_states
 
 ## Census WA road-source extract
 
@@ -623,35 +623,35 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for AK
 
 - Catalog id: `android_map_ak`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ak
+- Size: 39628147 bytes
+- SHA-256: `69e8fb45c6709da36881bfd9967217d6a87caee18fc46b53c8e0c5b770838166`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_ak
 
 ## OsmAnd roads-and-places map for AL
 
 - Catalog id: `android_map_al`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_al
+- Size: 187339889 bytes
+- SHA-256: `d6b29bacbfaba36ad089933e578db2b46ef923d71596f48c76451bb42af40c60`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_al
 
 ## OsmAnd roads-and-places map for AR
 
 - Catalog id: `android_map_ar`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ar
+- Size: 140803388 bytes
+- SHA-256: `95efabf9915963c64ec54bb1dbb8988d952f4289b73d8d76e090ddcd1e70d5a1`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_ar
 
 ## OsmAnd roads-and-places map for AS
 
@@ -667,13 +667,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for AZ
 
 - Catalog id: `android_map_az`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_az
+- Size: 284918028 bytes
+- SHA-256: `0134abad36116bdc8f75508402c4bd65b568947a46b412286551227e8f7847d7`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_az
 
 ## OsmAnd roads-and-places map for CA
 
@@ -689,13 +689,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for CO
 
 - Catalog id: `android_map_co`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_co
+- Size: 303811176 bytes
+- SHA-256: `950dc82eb7048e95de985e5ec103a9fcb3ad620d2ce0c535c6e27616f69f4c43`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_co
 
 ## OsmAnd roads-and-places map for CT
 
@@ -766,13 +766,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for HI
 
 - Catalog id: `android_map_hi`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_hi
+- Size: 25416656 bytes
+- SHA-256: `548d7d8f2641ac600aea2e5d15452c070582b2f8b6380ad6ff4c04035d75fa6b`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_hi
 
 ## English and Spanish Android map import instructions
 
@@ -788,13 +788,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for IA
 
 - Catalog id: `android_map_ia`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Bounded development build; fixed epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ia
+- Size: 148543596 bytes
+- SHA-256: `404757adf369c48e33c1a589e1194049c2327133a39ce8728ffcb2da9a46080d`
+- Pipeline: android-split-v1-13d6a6219518bf0a7f8e0ab141fb33191ff774e242dbde154260bbdac575f379; inputs: geofabrik_us, osmand_creator, android_extract_ia
 
 ## OsmAnd roads-and-places map for ID
 
@@ -865,24 +865,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for MA
 
 - Catalog id: `android_map_ma`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_ma
+- Size: 227480218 bytes
+- SHA-256: `85b40e0696d97db4ad6910f4a95e97d8c5a3eb246cbc285c2eeb25ad0779f831`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_ma
 
 ## OsmAnd roads-and-places map for MD
 
 - Catalog id: `android_map_md`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_md
+- Size: 187808598 bytes
+- SHA-256: `157f2d9720136463b64e264e578cb4f3e03d0d7f50cf2d3d15bf305414cb5570`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_md
 
 ## OsmAnd roads-and-places map for ME
 
@@ -997,24 +997,24 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for NH
 
 - Catalog id: `android_map_nh`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nh
+- Size: 83989078 bytes
+- SHA-256: `b6351d71e1020cb131e8ce8f4a97263a4351f05dc813e327a2aa4ae7b33dcaa0`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_nh
 
 ## OsmAnd roads-and-places map for NJ
 
 - Catalog id: `android_map_nj`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_nj
+- Size: 185240362 bytes
+- SHA-256: `8a0c17144bfe11aa380e87717e7f57e42a469810687c955d1a6d919a61a6ed79`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_nj
 
 ## OsmAnd roads-and-places map for NM
 
@@ -1195,13 +1195,13 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 ## OsmAnd roads-and-places map for VT
 
 - Catalog id: `android_map_vt`
-- Version: [[VERIFY: freeze the map recipe and build epoch]]
+- Version: Corrected territory-aware recipe; development epoch 1793404800
 - License: ODbL-1.0 AND US-PD
 - Attribution: OpenStreetMap contributors; U.S. Census Bureau
 - License proof: https://www.openstreetmap.org/copyright
-- Size: [[VERIFY: measured generated payload bytes]] bytes
-- SHA-256: `[[VERIFY: measured complete generation manifest SHA-256]]`
-- Pipeline: [[VERIFY: measured pinned map pipeline version]]; inputs: geofabrik_us, osmand_creator, android_extract_vt
+- Size: 45532418 bytes
+- SHA-256: `dc772ac312798a44c4107945d6f2ee3c77745cb6752ab0edbc3e11ddd68b9c16`
+- Pipeline: androidmaps-v1-47395e5fdc1a28be8324f12c7f5fb8ec6d7d85ab2c8be28446f1e72602590410; inputs: geofabrik_us, osmand_creator, android_extract_vt
 
 ## OsmAnd roads-and-places map for WA
 
@@ -10341,8 +10341,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
 - Size: 44053192 bytes
-- SHA-256: `7d884919272b976ee5fd78eb4702a2715da89f27a49422c6d6874462be3d48ef`
-- Pipeline: local-llm-v1-4a2707af6e3265b282f9408ffbef47c80a293cd15d095aecd6e62927289fbeec; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
+- SHA-256: `f213ebc3e8e2075eb095160c2ff1924e5c25848885c4f6f857583f8ba4eadcc9`
+- Pipeline: local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6; inputs: base_model, llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_full_license
 
 ## Offline local LLM launchers, page, prompts and instructions (sample)
 
@@ -10352,8 +10352,8 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Attribution: Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES
 - License proof: https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md
 - Size: 44076690 bytes
-- SHA-256: `25f7453a4dd06ec38d1a60a06091f55ed9eed0d46cda11bd13123ef36510c26c`
-- Pipeline: local-llm-v1-4a2707af6e3265b282f9408ffbef47c80a293cd15d095aecd6e62927289fbeec; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
+- SHA-256: `f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71`
+- Pipeline: local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6; inputs: llamafile_license, llamafile_llama_notices, llamafile_runner, noto_sans, noto_sans_license, pocketpal_license, qwen_sample_license, sample_model
 
 ## MapLibre Native build addon for Linux arm64
 

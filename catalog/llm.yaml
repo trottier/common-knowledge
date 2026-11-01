@@ -184,7 +184,7 @@
     "title": "Offline local LLM launchers, page, prompts and instructions (full)",
     "version": "0.1.0 development bundle",
     "size_bytes": 44053192,
-    "sha256": "7d884919272b976ee5fd78eb4702a2715da89f27a49422c6d6874462be3d48ef",
+    "sha256": "f213ebc3e8e2075eb095160c2ff1924e5c25848885c4f6f857583f8ba4eadcc9",
     "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
     "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES",
     "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
@@ -203,7 +203,7 @@
       "pocketpal_license",
       "qwen_full_license"
     ],
-    "pipeline_version": "local-llm-v1-4a2707af6e3265b282f9408ffbef47c80a293cd15d095aecd6e62927289fbeec",
+    "pipeline_version": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
     "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
   },
   {
@@ -212,7 +212,7 @@
     "title": "Offline local LLM launchers, page, prompts and instructions (sample)",
     "version": "0.1.0 development bundle",
     "size_bytes": 44076690,
-    "sha256": "25f7453a4dd06ec38d1a60a06091f55ed9eed0d46cda11bd13123ef36510c26c",
+    "sha256": "f30bebe6c0dc825a9b6bbab8c37c2d4898febfd4cac93a363a330ad97b24ff71",
     "license": "Apache-2.0 AND MIT AND CC0-1.0 AND OFL-1.1",
     "attribution": "Common Knowledge; Mozilla and llamafile contributors; Qwen Team; Asghar Ghorbani; Noto Project Authors; original notices in LICENSES",
     "license_proof_url": "https://github.com/trottier/common-knowledge/blob/work/12-local-llm/docs/local-llm-selection.md",
@@ -231,7 +231,7 @@
       "qwen_sample_license",
       "sample_model"
     ],
-    "pipeline_version": "local-llm-v1-4a2707af6e3265b282f9408ffbef47c80a293cd15d095aecd6e62927289fbeec",
+    "pipeline_version": "local-llm-v1-cc421817dc563d81834f1b34f7df357c753dd0f989ae3ed4e300a296899b69f6",
     "review": "[[VERIFY: complete third-party runtime and APK notice inventory, generated-pin review and physical laptop and Android offline checklist]]"
   }
 ]
