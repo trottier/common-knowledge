@@ -4239,6 +4239,50 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `02286a57a40279ccaced925c60722cc41cc8f6d88875b0d0de5ba860f16733d5`
 - Publisher file: https://www.ready.gov/sites/default/files/2024-08/ready-gov_wildfire_info-sheet_traditional-chinese.pdf
 
+## Automobile maintenance references — selected phone PDFs
+
+- Catalog id: `reference_howto_1`
+- Version: Draft selection from Wikibooks English 2026-10
+- License: CC-BY-SA-4.0 AND CC0-1.0
+- Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
+- License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
+- Size: [[VERIFY: measure complete generated reference pack]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
+- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+
+## Carpentry and hand-tool references — selected phone PDFs
+
+- Catalog id: `reference_howto_2`
+- Version: Draft selection from Wikibooks English 2026-10
+- License: CC-BY-SA-4.0 AND CC0-1.0
+- Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
+- License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
+- Size: [[VERIFY: measure complete generated reference pack]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
+- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+
+## Human physiology background references — selected phone PDFs
+
+- Catalog id: `reference_med_lib`
+- Version: Draft selection from Wikibooks English 2026-10
+- License: CC-BY-SA-4.0 AND CC0-1.0
+- Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
+- License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
+- Size: [[VERIFY: measure complete generated reference pack]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
+- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+
+## Electronics background references — selected phone PDFs
+
+- Catalog id: `reference_repair`
+- Version: Draft selection from Wikibooks English 2026-10
+- License: CC-BY-SA-4.0 AND CC0-1.0
+- Attribution: Original articles: Wikibooks contributors. Phone layout and source notices: Common Knowledge. Each article retains its source revision and CC BY-SA attribution. Figures are unavailable.
+- License proof: https://en.wikibooks.org/wiki/Wikibooks:Copyrights
+- Size: [[VERIFY: measure complete generated reference pack]] bytes
+- SHA-256: `[[VERIFY: pin independently repeated generation manifest]]`
+- Pipeline: [[VERIFY: pinned reference-pack recipe]]; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2
+
 ## Qwen3.5-0.8B-Base, Q4_K_M
 
 - Catalog id: `sample_model`

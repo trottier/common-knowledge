@@ -167,6 +167,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     medpdf.add_argument("--limit", type=int, help="Incomplete development subset only")
     medpdf.add_argument("--jobs", type=int, default=1)
     medpdf.add_argument("--generated", type=Path)
+    reference = commands.add_parser(
+        "reference-pack", help="Render selected attributed book articles"
+    )
+    reference.add_argument("--pack", required=True)
+    reference.add_argument("--output", type=Path, required=True)
+    reference.add_argument("--cache", type=Path, default=Path("cache"))
+    reference.add_argument("--epoch", type=int)
     wikem = commands.add_parser("wikem", help="Build a checked offline WikEM API snapshot")
     wikem.add_argument("--cache", type=Path, default=Path("cache"))
     wikem.add_argument("--output", type=Path, required=True)
@@ -572,6 +579,25 @@ def main(argv: Sequence[str] | None = None) -> int:
                         args.output,
                         args.clip,
                         epoch_for(config, args.epoch),
+                    ),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command == "reference-pack":
+            from ck.catalog import load_catalog
+            from ck.referencepacks import build_reference_pack
+            from ck.render import epoch_for
+
+            print(
+                json.dumps(
+                    build_reference_pack(
+                        args.root,
+                        load_catalog(args.root, config),
+                        args.cache,
+                        args.output,
+                        epoch_for(config, args.epoch),
+                        args.pack,
                     ),
                     indent=2,
                 )

@@ -53,6 +53,15 @@ def release_blockers(root: Path) -> list[str]:
             problems.append(
                 "content/en/edition.yaml: named human review of English labels required"
             )
+    if (root / "pipelines/referencepacks/selection.yaml").exists():
+        from ck.referencepacks import selections
+
+        for identifier, pack in selections(root).items():
+            if pack.status != "reviewed" or not pack.reviewer or not pack.reviewed_on:
+                problems.append(
+                    f"pipelines/referencepacks/selection.yaml ({identifier}): "
+                    "named human source-accuracy, safety and suitability review required"
+                )
     return sorted(set(problems))
 
 
@@ -74,14 +83,14 @@ def write_release_review(root: Path, output: Path) -> None:
         "",
         "## Implementation and build gaps",
         "",
-        "- National directory, county atlas and Android map coverage remain unfinished. "
-        "Rhode Island results do not establish nationwide coverage or capacity.",
+        "- Finish corrected national atlas/directory repeats and all 56 Android maps. "
+        "State or territory repeats do not establish full-image coverage or capacity.",
         "- FCC geographic exceptions, FEMA county-profile gaps and atlas page/grid closure "
         "require resolution and documented source coverage.",
         "- Topic video libraries, all eight in-depth collections, official translated guides, "
         "mesh apps and remaining catalog candidates need complete placement and review.",
-        "- WikEM's exact current publisher archive remains unresolved. Do not silently "
-        "replace the required sample archive with a different collection.",
+        "- Preserve the exact WikEM API snapshot and regenerated archive, with independent "
+        "pin, source-hosting and reader review. Do not refresh responses under existing pins.",
         "- Complete corresponding GPL source and dependency notices for shipped applications; "
         "a top-level repository archive alone does not establish source closure.",
         "- Freeze the toolchain and regenerate derived inputs before pinning final outputs. "
