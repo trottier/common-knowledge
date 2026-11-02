@@ -38,3 +38,19 @@ parent writable. The prepared input is the original
 no basemap, PBF, or places mounts are needed. Keep the updated full county PDFs
 local while selecting a few representative inspection pages separately. This
 recomposition does not establish an independent repeat or physical-phone result.
+
+For a tiny hosted example, run `tools/prepare_mobile_examples.py` inside the
+same pinned container with `--prepared` pointing to the recomposed map output,
+`--prototype-sha256` set to the actual `prototype.json` hash, `--cache /cache`,
+`--output` a fresh examples directory, and `--receipt` a new external JSON path.
+Keep source and cache mounts read-only and networking disabled. The helper
+renders the overview's first section and street sheets I04 and I24 from the
+authenticated cached HTML/vectors. Fonts are verified and subset only for these
+pages; extracting PDF pages directly can retain the full atlas's shared
+resources. Samples retain attribution, the ZIP approximation caveat, original
+atlas page numbers, and a note that continuations are in the full atlas. Links
+to omitted pages are removed. The full county files remain unchanged locally.
+
+Export that small folder with `ck export-preview` for hosting. Do not deploy the
+full local Variant 1 tree or the build receipts. The examples are unreviewed
+development files and do not establish complete coverage or phone acceptance.

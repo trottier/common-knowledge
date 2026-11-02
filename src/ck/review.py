@@ -37,7 +37,7 @@ def release_blockers(root: Path) -> list[str]:
     problems.extend(
         upstream_blockers(
             items.values(),
-            getattr(config.build, "upstream_min_age_days", "[[VERIFY: set by maintainers]]"),
+            config.build.upstream_min_age_days,
         )
     )
     source_file = root / "content/sources.yaml"
