@@ -132,3 +132,59 @@ def test_collision_and_missing_label_audits_are_identical(font_path):
         actual = street_labels(*args, reserved=[(0, 0, 100, 100)], geometry_cache=cache)
     assert actual == expected and actual[1]["missing_labels"]
     assert actual[1]["unnamed_source_way_ids"] == [4]
+
+
+@pytest.mark.parametrize("flag", [None, False, True])
+def test_render_owns_context_and_binds_effective_flag_without_relabeling_preparation(
+    tmp_path, monkeypatch, flag
+):
+    from ck import countyproof
+
+    data = {**scene(), "producer": {"version": "original-preparation"}, "policy": {}}
+    if flag is not None:
+        data["policy"]["cache_source_geometries"] = flag
+    observed = []
+
+    def fake_render(root, actual, output, cache):
+        if flag:
+            cache.shape(actual["roads"][0]["geometry"])
+            assert cache.size == 1
+        else:
+            assert cache is None
+        observed.append(cache)
+        output.mkdir()
+        return {"producer": actual["producer"], "policy": actual["policy"]}
+
+    monkeypatch.setattr(countyproof, "_render", fake_render)
+    result = countyproof.render(ROOT, data, tmp_path / "out")
+    assert result["producer"] == {"version": "original-preparation"}
+    assert result["render_recipe"]["cache_source_geometries"] is bool(flag)
+    if flag:
+        assert observed[0].size == observed[0].capacity == 0
+
+
+def test_failed_render_releases_its_owned_context(tmp_path, monkeypatch):
+    from ck import countyproof
+
+    data = {**scene(), "policy": {"cache_source_geometries": True}}
+    observed = []
+
+    def failure(root, actual, output, cache):
+        cache.shape(actual["roads"][0]["geometry"])
+        observed.append(cache)
+        raise ValueError("Incomplete labels fixture")
+
+    monkeypatch.setattr(countyproof, "_render", failure)
+    with pytest.raises(ValueError, match="Incomplete labels"):
+        countyproof.render(ROOT, data, tmp_path / "out")
+    assert observed[0].size == observed[0].capacity == 0
+
+
+@pytest.mark.parametrize("flag", ["false", 0, 1, None])
+def test_render_rejects_ambiguous_cache_flags_before_output(tmp_path, flag):
+    from ck.countyproof import render
+
+    output = tmp_path / "out"
+    with pytest.raises(ValueError, match="explicit boolean"):
+        render(ROOT, {"policy": {"cache_source_geometries": flag}}, output)
+    assert not output.exists()

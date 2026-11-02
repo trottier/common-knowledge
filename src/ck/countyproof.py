@@ -8,8 +8,10 @@ import json
 import math
 import resource
 import time
+from contextlib import nullcontext
 from datetime import UTC, datetime
 from decimal import Decimal
+from functools import partial
 from pathlib import Path
 
 import geopandas as gpd
@@ -874,6 +876,45 @@ def horizontal_layout(document) -> list[dict]:
 
 
 def render(root: Path, data: dict, output: Path) -> dict:
+    """Own an explicitly enabled source cache for exactly this scene render."""
+    from ck.streetlabels import SceneGeometryCache
+
+    enabled = data["policy"].get("cache_source_geometries", False)
+    if type(enabled) is not bool:
+        raise ValueError("cache_source_geometries must be an explicit boolean")
+    context = SceneGeometryCache(data) if enabled else nullcontext(None)
+    with context as geometry_cache:
+        result = _render(root, data, output, geometry_cache)
+    binding = {
+        "cache_source_geometries": enabled,
+        "preparation_producer": data["producer"],
+        "policy": data["policy"],
+        "source_files": {
+            name: sha(root / name)
+            for name in (
+                "src/ck/countyproof.py",
+                "src/ck/streetlabels.py",
+                "src/ck/streetcoverage.py",
+                "src/ck/render.py",
+                "src/ck/geo.py",
+                "src/ck/geofonts.py",
+                "templates/county-proof.html.j2",
+                "pyproject.toml",
+                "uv.lock",
+                "Dockerfile.build",
+            )
+        },
+    }
+    encoded = json.dumps(binding, sort_keys=True, separators=(",", ":")).encode()
+    result["render_recipe"] = {
+        "version": "county-scene-render-v1-" + hashlib.sha256(encoded).hexdigest(),
+        **binding,
+    }
+    (output / "prototype.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
+    return result
+
+
+def _render(root: Path, data: dict, output: Path, geometry_cache) -> dict:
     from ck.streetcoverage import complete_detail_sheets
 
     if output.exists():
@@ -889,7 +930,10 @@ def render(root: Path, data: dict, output: Path) -> dict:
     audit = output / "audit"
     audit.mkdir()
     policy = data["policy"]
-    rendered_sheets, street_coverage = complete_detail_sheets(data, svg_map)
+    make_svg = (
+        partial(svg_map, geometry_cache=geometry_cache) if geometry_cache is not None else svg_map
+    )
+    rendered_sheets, street_coverage = complete_detail_sheets(data, make_svg)
     by_id = {sheet["id"]: sheet for sheet, _, _ in rendered_sheets}
     road_names = {road["id"]: road["name"] for road in data["roads"]}
     sheet_audits, pages = [], []
@@ -925,7 +969,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
     )
     height = width * policy["map_height_mm"] / policy["map_width_mm"]
     cx, cy = (left + right) / 2, (bottom + top) / 2
-    overview_svg, overview_audit = svg_map(
+    overview_svg, overview_audit = make_svg(
         data, [cx - width / 2, cy - height / 2, cx + width / 2, cy + height / 2], True
     )
     (audit / "overview.svg").write_text(overview_svg)

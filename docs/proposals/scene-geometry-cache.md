@@ -23,8 +23,13 @@ sheet bounds still compute their own intersections.
 Normal and exceptional context exit clear both cached Shapely objects and source
 references. The closed cache cannot be reused. There is no module/global cache,
 and no cache object or Shapely geometry is added to the scene, SVG audit, or
-generated receipts. The existing rendering entry points do not enable it
-automatically; a caller must opt in explicitly and own the scene lifetime.
+generated receipts. Low-level functions do not enable it automatically. The full
+`render` entry point accepts an explicit boolean `policy.cache_source_geometries:
+true` and owns the context across that one render, including exceptional exits.
+Missing or false leaves caching disabled; other types are rejected. Existing
+policy files are unchanged. A separate render binding records the effective
+flag, actual rendering source hashes, policy, and original preparation producer;
+historical preparation recipes are preserved.
 
 Regression checks compare complete SVG strings and complete audit dictionaries,
 including source order, unnamed roads, disconnected same-name streets, water,
