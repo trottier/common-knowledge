@@ -1,4 +1,4 @@
-"""Bounded Bristol vector-PDF experiment; does not adopt historical catalog pins."""
+"""Bounded county/area vector-PDF experiments; never adopt historical catalog pins."""
 
 import csv
 import gzip
@@ -26,7 +26,7 @@ from shapely import from_wkb, transform
 from shapely.geometry import Point, box, mapping, shape
 from weasyprint import HTML
 
-from ck.catalog import load_catalog
+from ck.catalog import load_catalog, safe_path
 from ck.config import load_config, read_yaml
 from ck.directory import excluded
 from ck.generated import cached_input, verified_generated_files
@@ -40,13 +40,15 @@ def sha(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def producer_recipe(root: Path) -> dict:
+def producer_recipe(root: Path, policy_path: Path | None = None) -> dict:
+    policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
+    selected_policy = policy_path.resolve().relative_to(root.resolve()).as_posix()
     paths = [
         "src/ck/countyproof.py",
         "src/ck/streetlabels.py",
         "src/ck/streetcoverage.py",
         "tools/prototype_county_map.py",
-        "pipelines/atlas/bristol-proof.json",
+        selected_policy,
         "templates/county-proof.html.j2",
         "src/ck/render.py",
         "src/ck/geo.py",
@@ -67,6 +69,46 @@ def producer_recipe(root: Path) -> dict:
         json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
     return {"version": "county-vector-proof-v1-" + digest, "source_files": hashes}
+
+
+def area_geometry(county, features: list[dict], policy: dict):
+    """Use the whole county unless an explicitly named, bounded trial scope is selected."""
+    from shapely import union_all
+
+    selected = policy.get("scope_zctas")
+    if selected is None:
+        return county, {"kind": "county", "whole_county": True}
+    if (
+        not selected
+        or sorted(set(selected)) != selected
+        or selected != policy["expected_zctas"]
+        or not policy.get("area_name")
+    ):
+        raise ValueError("Area trial needs an explicit name and unique verified ZIP-area scope")
+    by_code = {feature["properties"]["GEOID"]: feature for feature in features}
+    if len(by_code) != len(features) or not set(selected) <= by_code.keys():
+        raise ValueError("Selected ZIP-area scope is absent or duplicated in pinned geometry")
+    geometry = county.intersection(
+        union_all([shape(by_code[code]["geometry"]) for code in selected])
+    )
+    if geometry.is_empty or not geometry.is_valid or geometry.area <= 0:
+        raise ValueError("Selected ZIP-area scope does not intersect the county")
+    return geometry, {
+        "kind": "county_intersection_with_2020_zctas",
+        "whole_county": False,
+        "zctas": selected,
+    }
+
+
+def output_names(policy: dict, codes: list[str]) -> tuple[Path, str, str]:
+    name = policy.get("area_name", policy["county_name"])
+    for component in [name, policy["county_name"], policy["state"]]:
+        if len(safe_path(component).parts) != 1:
+            raise ValueError("Map names must be single FAT-safe folder or leaf components")
+    leaf = name + " " + ",".join(codes) + ".pdf"
+    folder = safe_path("3_MAPS_AND_PLACES/" + policy["state"] + "/" + policy["county_name"])
+    safe_path(str(folder / leaf))
+    return Path(folder), leaf, name
 
 
 def check_intermediates(folder: Path, metadata: dict) -> None:
@@ -278,25 +320,34 @@ def prepare(
                 if row["GEOID_COUNTY_20"] == policy["county"] and row["GEOID_ZCTA5_20"]
             }
         )
+    if policy.get("scope_zctas") is not None:
+        if not set(policy["scope_zctas"]) <= set(codes):
+            raise ValueError("Selected ZIP-area scope has no verified county relationship")
+        codes = policy["scope_zctas"]
     if codes != policy["expected_zctas"]:
         raise ValueError("Actual county ZIP-area list differs from naming fixture")
     zip_geometry_item = items[policy["zcta_geometry_id"]]
     zip_geometry_path = cached_input(zip_geometry_item, cache)
     zip_features = json.loads(zip_geometry_path.read_text())["features"]
-    if sorted(feature["properties"]["GEOID"] for feature in zip_features) != codes:
+    if sorted(feature["properties"]["GEOID"] for feature in zip_features) != policy.get(
+        "geometry_expected_zctas", codes
+    ):
         raise ValueError("ZIP geometry and county relationship codes differ")
     county = gpd.read_file(
         f"/vsizip/{{{raw['census_county_analysis']}}}", where=f"GEOID='{policy['county']}'"
     ).to_crs(4326)
-    if len(county) != 1 or county.iloc[0]["NAME"] + " County" != policy["county_name"]:
+    if len(county) != 1 or county.iloc[0]["NAMELSAD"] != policy["county_name"]:
         raise ValueError("Expected exactly the named county")
+    selected_county, coverage_scope = area_geometry(county.geometry.iloc[0], zip_features, policy)
     crs = county.estimate_utm_crs()
     forward = Transformer.from_crs(4326, crs, always_xy=True)
     backward = Transformer.from_crs(crs, 4326, always_xy=True)
-    geometry = transform(county.geometry.iloc[0], forward.transform, interleaved=False)
+    geometry = transform(selected_county, forward.transform, interleaved=False)
     zip_areas = []
     for feature in sorted(zip_features, key=lambda feature: feature["properties"]["GEOID"]):
         properties = feature["properties"]
+        if properties["GEOID"] not in codes:
+            continue
         area = shape(feature["geometry"])
         interior = Point(float(properties["INTPTLON"]), float(properties["INTPTLAT"]))
         if not area.is_valid or area.is_empty or not area.covers(interior):
@@ -324,9 +375,16 @@ def prepare(
         basemap_files["RI.pmtiles"], extent, backward.transform, forward.transform, policy
     )
     source = json.loads(point_files["RI_SOURCE_DATA.json"].read_text())
-    pois = [point for point in source["places"] if point["county"] == policy["county"]]
-    if len(pois) != 33 or len({point["id"] for point in pois}) != len(pois):
-        raise ValueError("Bristol proof expects all 33 unique historical POIs")
+    pois = [
+        dict(point)
+        for point in source["places"]
+        if point["county"] == policy["county"]
+        and selected_county.covers(Point(point["longitude"], point["latitude"]))
+    ]
+    if len({point["id"] for point in pois}) != len(pois):
+        raise ValueError("Historical source contains duplicate selected public-place IDs")
+    if "expected_poi_count" in policy and len(pois) != policy["expected_poi_count"]:
+        raise ValueError("Actual selected public-place count differs from the frozen scope")
     for index, point in enumerate(pois, 1):
         point["number"] = index
         point["x"], point["y"] = forward.transform(point["longitude"], point["latitude"])
@@ -357,6 +415,7 @@ def prepare(
         "policy": policy,
         "inputs": inputs,
         "county": mapping(geometry),
+        "coverage_scope": coverage_scope,
         "crs": crs.to_string(),
         "sheets": sheets,
         "roads": roads,
@@ -696,6 +755,7 @@ def html_document(
         locator_svg=Markup(locator_svg),
         leaf=leaf,
         policy=data["policy"],
+        area_name=data["policy"].get("area_name", data["policy"]["county_name"]),
         zctas=data["zctas"],
         pois=data["pois"],
         timestamp=datetime.fromtimestamp(data["policy"]["epoch"], UTC).isoformat(),
@@ -734,12 +794,12 @@ def render(root: Path, data: dict, output: Path) -> dict:
     if output.exists():
         raise ValueError("Choose a new proof output; no overwrite")
     output.mkdir(parents=True)
-    files = output / "3_MAPS_AND_PLACES" / "RI" / "Bristol County"
+    folder, leaf, area_name = output_names(data["policy"], data["zctas"])
+    files = output / folder
     files.mkdir(parents=True)
     audit = output / "audit"
     audit.mkdir()
     policy = data["policy"]
-    leaf = "Bristol County " + ",".join(data["zctas"]) + ".pdf"
     rendered_sheets, street_coverage = complete_detail_sheets(data, svg_map)
     by_id = {sheet["id"]: sheet for sheet, _, _ in rendered_sheets}
     road_names = {road["id"]: road["name"] for road in data["roads"]}
@@ -784,8 +844,8 @@ def render(root: Path, data: dict, output: Path) -> dict:
     (audit / "locator.svg").write_text(locator_svg)
     layout_audits = {}
     for filename, title, kind in [
-        (leaf, "Bristol County detailed road maps", "detail"),
-        ("0_OVERVIEW.pdf", "Bristol County overview and historical places", "overview"),
+        (leaf, area_name + " detailed road maps", "detail"),
+        ("0_OVERVIEW.pdf", area_name + " overview and historical places", "overview"),
     ]:
         document = html_document(root, title, kind, pages, overview_svg, locator_svg, leaf, data)
         (audit / (filename + ".html")).write_text(document)
@@ -818,7 +878,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
                 len(reader.pages) < len(pages) + 1
                 or len(reader.pages) > policy["max_pages"]
                 or any(
-                    destinations.get("Bristol County · " + sheet["id"]) != sheet["page"]
+                    destinations.get(area_name + " · " + sheet["id"]) != sheet["page"]
                     for sheet in pages
                 )
             ):
@@ -827,6 +887,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
         "status": "unreviewed proof; not a complete sample",
         "producer": data["producer"],
         "policy": policy,
+        "coverage_scope": data.get("coverage_scope", {"kind": "county", "whole_county": True}),
         "detail_pdf": leaf,
         "locator": locator_audit,
         "horizontal_layout": layout_audits,
@@ -863,9 +924,12 @@ def run(
     zip_source: Path,
     output: Path,
     pdf_budget_config: Path,
+    policy_path: Path | None = None,
+    counts_only: bool = False,
 ) -> None:
     started = time.monotonic()
-    policy = read_yaml(root / "pipelines/atlas/bristol-proof.json")
+    policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
+    policy = read_yaml(policy_path)
     budget = read_yaml(pdf_budget_config)["pdf"]
     maximum = Decimal(str(budget["max_file_mb"])) * 1_000_000
     if not maximum.is_finite() or maximum <= 0 or maximum != int(maximum):
@@ -874,7 +938,7 @@ def run(
     policy["pdf_budget_source_sha256"] = sha(pdf_budget_config)
     policy["pdf_budget"] = budget
     data = prepare(root, cache, basemap, points, zip_source, policy)
-    data["producer"] = producer_recipe(root)
+    data["producer"] = producer_recipe(root, policy_path)
     output.parent.mkdir(parents=True, exist_ok=True)
     (output.parent / (output.name + "-counts.json")).write_text(
         json.dumps(
@@ -884,11 +948,22 @@ def run(
                 "pois": len(data["pois"]),
                 "water": data["water_audit"],
                 "crs": data["crs"],
+                "coverage_scope": data["coverage_scope"],
+                "zctas": data["zctas"],
+                "selected_area_m2": shape(data["county"]).area,
+                "named_source_ways": sum(bool(road["name"]) for road in data["roads"]),
+                "distinct_source_names": len(
+                    {road["name"] for road in data["roads"] if road["name"]}
+                ),
+                "settlements": data["settlements"],
             },
             indent=2,
         )
         + "\n"
     )
+    if counts_only:
+        print("Preflight counts only; no PDFs rendered and no complete-county claim")
+        return
     result = render(root, data, output)
     result["elapsed_seconds"] = time.monotonic() - started
     result["peak_rss_kib"] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss

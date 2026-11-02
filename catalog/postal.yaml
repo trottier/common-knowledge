@@ -39,3 +39,27 @@
     is a prototype build input, not selected national cargo. No requested geometry
     simplification, quantization, or precision reduction; TIGERweb detailed geometry
     is not a survey or a claim of full TIGER/Line vertex identity.]]
+
+- id: census_zcta_ri_bench_2020
+  family: geodata
+  title: Census 2020 ZCTAs 02892 and 02903, bounded Rhode Island benchmark geometry
+  url: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702903%27%2C%2702892%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson
+  version: January 1, 2020 geography; HTTPS query captured 2026-11-02 UTC
+  size_bytes: 133681
+  sha256: 15a1e41af65d9e0bb0d83c1e56bbea49df5ee3110ad3e505b05c2c8ffea6274f
+  release_date: '[[VERIFY: exact original publication date of the selected Census 2020 layer; capture date is not release date]]'
+  release_date_source_url: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84?f=pjson
+  license: US-PD
+  attribution: U.S. Census Bureau, Census 2020 TIGERweb ZCTAs 02892 and 02903
+  license_proof_url: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf
+  placement: hub_only
+  dest: build/postal/
+  profiles: [sample]
+  review: >-
+    [[VERIFY: review computed HTTPS source hash, Census-created data classification,
+    API attribution terms, source currency, map overlay, and applicable upstream
+    age/advisory gate before release. Additive subset of the already selected
+    January 1, 2020 layer, not a new upstream vintage. Two geometry features only;
+    not current USPS delivery boundaries or an exhaustive postal directory.
+    No requested geometry simplification, quantization, or precision reduction.
+    Prototype build input only, not selected national cargo or an approved release.]]

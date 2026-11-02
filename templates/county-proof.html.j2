@@ -48,8 +48,9 @@ a { color: #23548a; }
 <body>
 {% if kind == 'detail' %}
 <section>
-  <h1>Bristol County road maps</h1>
-  <p>Rhode Island</p>
+  <h1>{{ area_name }} road maps</h1>
+  <p>{{ policy.state }} · {{ policy.county_name }}</p>
+  {% if policy.scope_zctas is defined %}<p>This area map covers ZIP areas {{ zctas | join(', ') }} within this county.</p>{% endif %}
   <p>Zoom and pan each map.</p>
   <p>Find your town on the locator. Open its blue sheet label below.
   At the map edge, continue on the named sheet and page.</p>
@@ -74,7 +75,7 @@ a { color: #23548a; }
     <p>Preview; source, safety, and phone review remain outstanding.
     Every selected street with a source name has a label. Some source roads are unnamed.</p>
     <p>Base scale 1:{{ '{:,}'.format(policy.scale_denominator) }} is an engineering trial.
-    County-edge overlap uses Rhode Island source data; neighboring-state navigation is not demonstrated.</p>
+    County-edge overlap uses {{ policy.state }} source data; neighboring-state navigation is not demonstrated.</p>
     <p>Census 2020 ZIP areas {{ zctas | join(', ') }} are statistical approximations,
     not current USPS delivery boundaries.</p>
   </aside>
@@ -82,7 +83,7 @@ a { color: #23548a; }
 {% for page in pages %}
 <section>
   <div class="map-title">
-    <h2 id="{{ page.id }}">Bristol County · {{ page.id }}</h2>
+    <h2 id="{{ page.id }}">{{ area_name }} · {{ page.id }}</h2>
     <p class="page-meta">{{ page.continuation }} · Scale
     1:{{ '{:,.0f}'.format(page.effective_scale_denominator) }}</p>
   </div>
@@ -107,7 +108,7 @@ a { color: #23548a; }
 {% else %}
 <section>
   <div class="map-title">
-    <h2>Bristol County overview</h2>
+    <h2>{{ area_name }} overview</h2>
     <p class="source-line">Colored boundaries: 2020 Census ZIP areas {{ zctas | join(', ') }}.</p>
   </div>
   {{ overview_svg }}
