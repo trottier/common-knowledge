@@ -3,9 +3,12 @@ title: Tarjeta del hogar
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/card.md": "753fe62e67699ca013d79c12997f0f7e9e1ea6623ff8e341a4be4153389e831b"}
+source_inputs: {"content/en/card.md": "a34b2fab3f7d2b4efe19326aea66874d38eed1b0d5fcd2c458e3a7f8b04d08e5"}
 review_required: [radio, legal]
 ---
+
+
+{{ defaults.plan_is_fixed }} [@project_spec]
 
 ## Punto de reunión
 

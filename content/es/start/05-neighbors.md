@@ -3,9 +3,12 @@ title: Reunirse con los vecinos
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/05-neighbors.md": "383c9184c671a5b2b25d4bdae0b98471953151546fa39f1df716a6a55337a001"}
+source_inputs: {"content/en/start/05-neighbors.md": "b91583a7b0f22c4c7bdfd310835fadb589a08192a6b5c19ee15c3dcdec2a939c"}
 review_required: []
 ---
+
+
+{{ defaults.plan_is_fixed }} [@project_spec]
 
 ## Encuentre el punto de reunión
 

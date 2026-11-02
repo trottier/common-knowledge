@@ -58,6 +58,8 @@ def display_defaults(root: Path, language: Language, config: Configuration) -> d
     path = root / "content" / language.code / "defaults.yaml"
     if path.exists():
         translations = DefaultTranslations.model_validate(read_yaml(path))
+        if language.code != "en" and "plan_is_fixed" not in translations.translations:
+            raise ValueError(f"Missing fixed-plan translation: {language.code}")
         for key, translation in translations.translations.items():
             parts = key.split(".")
             node = result
@@ -69,6 +71,8 @@ def display_defaults(root: Path, language: Language, config: Configuration) -> d
             if hashlib.sha256(source.encode()).hexdigest() != translation.source_sha256:
                 raise ValueError(f"Retranslate changed default {key} in {language.code}")
             node[parts[-1]] = translation.text
+    elif language.code != "en":
+        raise ValueError(f"Missing fixed-plan translation: {language.code}")
     if language.dir == "rtl":
         # Keep times, radio settings and channel names in their intended order.
         def isolate(value):

@@ -60,8 +60,9 @@ def test_spanish_active_sections_match_english_without_the_future_section():
         for code in ("en", "es")
     }
     assert sections["es"] == sections["en"]
-    assert len(sections["en"]) == 12
-    assert not any(name.startswith("10-") for name in sections["en"])
+    assert len(sections["en"]) == 13
+    assert "10-computer-systems.md" in sections["en"]
+    assert "10-local-llm.md" not in sections["en"]
     for code in sections:
         assert (ROOT / "content" / code / "future/10-offline-ai.md").is_file()
 

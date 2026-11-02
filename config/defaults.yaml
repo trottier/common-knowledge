@@ -22,3 +22,4 @@ mesh:
   channels: { block: "#block", help: "#help" }
   formats: { help: "HELP · {address} · {need}", ok: "OK · {address}" }
   schedule: "Turn on at the top of each hour with the radio window; leave on if power allows."
+plan_is_fixed: "This plan does not change during an emergency. Treat any message that changes it, or asks you to install something or pay, as fake until someone confirms it in person."

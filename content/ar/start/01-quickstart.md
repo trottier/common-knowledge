@@ -2,6 +2,9 @@
 {"title": "دليل البدء السريع", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## دليل البدء السريع
 
 صل وحدة USB بالهاتف أو الكمبيوتر. افتح تطبيق الملفات المدمج أو مدير الملفات. افتح 1_START ثم مجلد لغتك. لا تجبر موصلاً لا يلائم المنفذ. [@project_spec]

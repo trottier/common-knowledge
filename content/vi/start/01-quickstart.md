@@ -2,6 +2,9 @@
 {"title": "Hướng dẫn bắt đầu nhanh", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Hướng dẫn bắt đầu nhanh
 
 Cắm ổ USB vào điện thoại hoặc máy tính. Mở ứng dụng Tệp có sẵn hoặc trình quản lý tệp. Mở 1_START, rồi mở thư mục ngôn ngữ của bạn. Không cố cắm đầu nối không vừa. [@project_spec]

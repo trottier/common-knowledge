@@ -2,6 +2,9 @@
 {"title": "快速入门", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## 快速入门
 
 将此盘连接到手机或电脑。打开手机自带的“文件”应用或电脑的文件管理器。打开 1_START，再打开您的语言文件夹。不要强插不匹配的接口。 [@project_spec]

@@ -14,6 +14,10 @@
     "radio.listen_window": {
       "source_sha256": "e01f6996b027707c66a8d1fed8b64d349b753383705f69f8bde8a0fa845f4a2e",
       "text": "每小時開始的前五分鐘"
+    },
+    "plan_is_fixed": {
+      "source_sha256": "d1a4ffa349590419eb92fea76e1df1c759a46f673e8ad4728bab280e74c1bb89",
+      "text": "本計畫在緊急情況期間不會改變。凡是更改本計畫，或要求您安裝軟體或付款的訊息，在有人當面確認之前，都應視為虛假訊息。"
     }
   }
 }

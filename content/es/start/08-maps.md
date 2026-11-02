@@ -3,7 +3,7 @@ title: Mapas y lugares
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/08-maps.md": "fd2bbf304093d989fd792879e32d93931299e5148c1f4cde025fc9c62d4e74df"}
+source_inputs: {"content/en/start/08-maps.md": "2fffb1013f905708a800f69c564e9f9914c0792b3d6956e7e798e6587b13b0f5"}
 review_required: []
 ---
 
@@ -12,12 +12,21 @@ review_required: []
 En iPhone, abra Brújula para ver su ubicación actual, cuando esté disponible. [@apple_compass]
 [[VERIFY: probar la presentación en grados, minutos y segundos y los permisos de ubicación en iPhone actuales.]]
 
-Busque su estado y condado en `3_MAPS_AND_PLACES/atlas`.
+Busque su estado y condado en `3_MAPS_AND_PLACES`.
 Compare la latitud y longitud con las etiquetas de la cuadrícula.
 Use la página y casilla del directorio para encontrar un lugar. [@project_spec]
 
 Una entrada del directorio no garantiza que el lugar esté abierto.
 Cada página indica que podría ayudar, pero no se ha confirmado que esté abierto. [@project_spec]
+
+## Si el GPS falla o no está disponible
+
+Las señales GPS pueden bloquearse o falsificarse. [@gps_interference]
+Compare la posición del teléfono con las señales de las calles y el índice de lugares. [@project_spec]
+Si no coinciden, deje de confiar en la posición del teléfono y compruebe las señales. [@project_spec]
+Use la brújula integrada en la unidad para orientar el mapa. [@project_spec]
+No siga el punto de ubicación por una ruta peligrosa o cerrada. [@project_spec]
+[[VERIFY: probar la orientación de mapas en papel/PDF con la brújula de la unidad, el norte verdadero/de cuadrícula/magnético y las instrucciones seguras cuando las señales y el GPS no coincidan.]]
 
 ## Mapa de Android
 

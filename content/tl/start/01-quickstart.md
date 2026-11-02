@@ -2,6 +2,9 @@
 {"title": "Mabilis na panimula", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Mabilis na panimula
 
 Ikabit ang USB sa telepono o computer. Buksan ang built-in na Files app o file manager. Buksan ang 1_START, saka ang folder ng iyong wika. Huwag piliting ikabit ang konektor na hindi kasya. [@project_spec]

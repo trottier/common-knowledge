@@ -30,6 +30,10 @@
     "mesh.schedule": {
       "source_sha256": "01894ce0525d160b5da6d5e15c6c7bfe84b49e981fa57d0e6cb0abd638123268",
       "text": "Enciéndala al empezar cada hora, junto con la escucha de radio; déjela encendida si la batería lo permite."
+    },
+    "plan_is_fixed": {
+      "source_sha256": "d1a4ffa349590419eb92fea76e1df1c759a46f673e8ad4728bab280e74c1bb89",
+      "text": "Este plan no cambia durante una emergencia. Trate como falso cualquier mensaje que lo cambie o que le pida instalar algo o pagar, hasta que alguien lo confirme en persona."
     }
   }
 }

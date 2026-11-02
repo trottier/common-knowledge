@@ -14,6 +14,10 @@
     "radio.listen_window": {
       "source_sha256": "e01f6996b027707c66a8d1fed8b64d349b753383705f69f8bde8a0fa845f4a2e",
       "text": "매시 시작 후 처음 5분"
+    },
+    "plan_is_fixed": {
+      "source_sha256": "d1a4ffa349590419eb92fea76e1df1c759a46f673e8ad4728bab280e74c1bb89",
+      "text": "이 계획은 비상 상황 중에 바뀌지 않습니다. 이 계획을 바꾸거나 무언가를 설치하거나 돈을 내라고 하는 메시지는 누군가 직접 만나 확인해 줄 때까지 가짜로 여기세요."
     }
   }
 }

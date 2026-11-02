@@ -6,6 +6,24 @@ reviewed_on: null
 review_required: [radio, legal]
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
+## Spot fake messages
+
+Official alerts can arrive through Wireless Emergency Alerts, NOAA Weather Radio, and radio or TV broadcasts. [@fema_alert_channels]
+A message in mesh chat is not a verified official alert. [@project_spec]
+Confirm a message that sends you somewhere new in person at the next meeting. [@project_spec]
+Do not wait for a meeting if you face immediate danger; move to safety. [@project_spec]
+[[VERIFY: human emergency-management review of urgent alert, evacuation, and in-person confirmation guidance.]]
+
+Do not install anything or pay just because a message says to. [@fbi_verify_contacts]
+A familiar voice can be copied. [@ftc_voice_scams]
+Call back using a number you already know, if service works. [@ftc_voice_scams]
+Agree on a private family code word when you can meet. [@fbi_verify_contacts]
+Do not share it on a public channel or treat it as a guarantee. [@project_spec]
+No code word or advance setup is needed to use this drive. [@project_spec]
+
 ## Radio
 
 Use a certified {{ defaults.radio.service }} radio on channel {{ defaults.radio.channel }}.

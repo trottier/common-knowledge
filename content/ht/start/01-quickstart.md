@@ -2,6 +2,9 @@
 {"title": "Gid pou kòmanse vit", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Gid pou kòmanse vit
 
 Konekte kle USB a ak telefòn ou oswa òdinatè a. Louvri aplikasyon Fichye ki deja sou aparèy la. Louvri 1_START, apre sa katab lang ou a. Pa fòse yon konektè ki pa antre. [@project_spec]

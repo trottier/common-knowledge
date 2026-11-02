@@ -28,7 +28,7 @@ def test_variant_guide_uses_the_planners_profile_selection():
 def test_all_original_citations_resolve_and_review_status_is_explicit():
     sources = read_yaml(ROOT / "content/sources.yaml")
     sections = sorted((ROOT / "content/en/start").glob("*.md"))
-    assert len(sections) == 12
+    assert len(sections) == 13
     for path in (ROOT / "content").rglob("*.md"):
         header, body = content_file(path)
         if header.status == "reviewed":

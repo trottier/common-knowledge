@@ -14,6 +14,10 @@
     "radio.listen_window": {
       "source_sha256": "e01f6996b027707c66a8d1fed8b64d349b753383705f69f8bde8a0fa845f4a2e",
       "text": "每小时开始的前五分钟"
+    },
+    "plan_is_fixed": {
+      "source_sha256": "d1a4ffa349590419eb92fea76e1df1c759a46f673e8ad4728bab280e74c1bb89",
+      "text": "本计划在紧急情况期间不会改变。凡是更改本计划，或要求您安装软件或付款的消息，在有人当面确认之前，都应视为虚假消息。"
     }
   }
 }

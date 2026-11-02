@@ -64,8 +64,9 @@ def test_current_core_omits_future_section_and_absent_feature_notices(monkeypatc
         source_dir = ROOT / "content" / code
         bundle = tmp_path / code / "START.md"
         sections = sorted((source_dir / "start").glob("*.md"))
-        assert len(sections) == 12
-        assert not any(path.name.startswith("10-") for path in sections)
+        assert len(sections) == 13
+        assert any(path.name == "10-computer-systems.md" for path in sections)
+        assert not any(path.name == "10-local-llm.md" for path in sections)
         bundle_sections(sections, bundle)
         for source in (bundle, source_dir / "start/11-variants.md", source_dir / "card.md"):
             html = render_html(
