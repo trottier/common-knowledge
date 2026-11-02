@@ -6,7 +6,7 @@ import json
 import time
 from pathlib import Path
 
-from shapely.geometry import shape
+from shapely.geometry import mapping, shape
 
 from ck.countyparts import plan_county_parts
 from ck.countyproof import producer_recipe, render
@@ -48,7 +48,36 @@ def main():
         return {"kind": "unknown", "pages": None, "bytes": None}
 
     started = time.monotonic()
-    plan = plan_county_parts(data, evaluate, limits)
+    try:
+        plan = plan_county_parts(data, evaluate, limits)
+    except ValueError as error:
+        if not str(error).startswith("County partition has missing, extra, or overlapping area:"):
+            raise
+        # A partial source-backed ZIP leaf remains useful while the full union audit is held.
+        parts = []
+        source_zips = sorted(data["zip_areas"], key=lambda row: row["code"])
+        clipped = {row["code"]: county.intersection(shape(row["geometry"])) for row in source_zips}
+        for index, row in enumerate(source_zips, 1):
+            geometry = clipped[row["code"]]
+            parts.append(
+                {
+                    "id": f"P{index:02}",
+                    "geometry": mapping(geometry),
+                    "source_focus_zcta": row["code"],
+                    "zctas": [
+                        code
+                        for code, area in clipped.items()
+                        if area.intersection(geometry).area > 0
+                    ],
+                }
+            )
+        plan = {
+            "status": "PARTIAL ZIP candidates only; whole-county partition audit FAILED",
+            "whole_county_coverage_verified": False,
+            "partition_failure": str(error),
+            "parts": parts,
+            "limits": limits,
+        }
     candidates = []
     for part in plan["parts"]:
         if args.part_id and part["id"] != args.part_id:

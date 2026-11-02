@@ -190,7 +190,10 @@ def plan_county_parts(data, evaluate, limits):
     missing_area, extra_area = county.difference(combined).area, combined.difference(county).area
     overlap_area = sum(g.area for g in geometries) - combined.area
     if max(missing_area, extra_area, overlap_area) > tolerance:
-        raise ValueError("County partition has missing, extra, or overlapping area")
+        raise ValueError(
+            "County partition has missing, extra, or overlapping area: "
+            f"missing_m2={missing_area}, extra_m2={extra_area}, overlap_m2={overlap_area}"
+        )
     roads = {row["id"]: row for row in data["roads"]}
     if len(roads) != len(data["roads"]):
         raise ValueError("Duplicate source way ID")
