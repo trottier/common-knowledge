@@ -1,0 +1,847 @@
+{
+  "scope": "Unreviewed Bristol County diagnostic proof, adopted byte-identically into an incomplete Variant 1 sample preview; not a release, independent repeat pair, or physical-phone result.",
+  "source_commit": "39868af6712d6d4d591fc29e9f516d2e36d255c7",
+  "source_url": "https://github.com/trottier/common-knowledge/tree/39868af6712d6d4d591fc29e9f516d2e36d255c7",
+  "producer": {
+    "version": "county-vector-proof-v1-f693885d04972939780f72882afcfd15b42d2ad4a032fde0c0926a547cafbd36",
+    "source_files": {
+      "Dockerfile.build": "03975c96f75207a08363c413020aa9d66d273e0d07acb08a7fa43f2aad2c0b50",
+      "config/debian.sources": "23df8a5e1b28f06b6a2bc174bea45efaa6817ca10ff5b96efcb58ad887beed1b",
+      "pipelines/androidmaps/settings.yaml": "7f8dd98b60b23b113ff5385b5b26f8aed2f4ca68877bbd25b7c249415cb076dd",
+      "pipelines/atlas/bristol-proof.json": "607fd449569ee1bf34ff04be6e883012cf19ec4796763bfdf2436ef9a0bbe09d",
+      "pipelines/geodata-fonts.yaml": "d31123ab0bbb39a45f2ea765c6a335fc65c6f8303d9007b00e9c37a3aeb006de",
+      "pyproject.toml": "cea8c0adc7eb365039f322e77e3fe8dd2941d4c8718d5c57458c75c34af1df58",
+      "src/ck/catalog.py": "3d925a65cf9f3dff4649d03a0c66f8e889c66491d54a1d2150785857beca3298",
+      "src/ck/config.py": "6fc0683d4d9de8301f927d044db4514b1bc4c8d7341ef2e7a78e76b97430d92b",
+      "src/ck/countyproof.py": "22b55e42220455aa5cd182b83cf0a00f5b19439cc8df44a11374b9a9a95db3a3",
+      "src/ck/directory.py": "bafb2a94ff732329fa3cc257cd1d467a7503bcb5ab445485e6f3e0a470bcfc58",
+      "src/ck/generated.py": "894de7ad2a2a2b1ad1650cafe7d12292f86f11481eab6eee3ba0c1c9b57b529e",
+      "src/ck/geo.py": "7f576aa7cc1edbabb98c790d1befea08555ad0577961beb2c1a193bf3d13840a",
+      "src/ck/geofonts.py": "01287a48491b512196371bb82887b3f6b89e37709abc8fa43a3641dc128a1e70",
+      "src/ck/render.py": "46ede91bc0eecec7c214c5e6eb4e0b001f3a28f8ab02720c31def1e9441cf7f4",
+      "src/ck/streetcoverage.py": "13c2a9f4a3318fb1714559eba26d70936279be7b00b943135b92f06b4d6f05a1",
+      "src/ck/streetlabels.py": "1ea0ada5f0ce6c3dc21bac339b5fbbfb28aa5534c410b3265f24227c3b72c8bd",
+      "templates/county-proof.html.j2": "4ab724c361b5bacffb40790f2884e4117bd39e1150a1626afbb7cac5bda164ae",
+      "tools/prototype_county_map.py": "64346c8555fe615f6eee3e4463c9cc3ce85bd4f3652153d78f2237d001a8d40d",
+      "uv.lock": "be13e16abcc68ef4afd7a239adb075cdfc80986823c8e3d0221cf9878e90c360"
+    }
+  },
+  "source_date_epoch": 1793404800,
+  "policy": {
+    "county": "44001",
+    "state": "RI",
+    "county_name": "Bristol County",
+    "epoch": 1793404800,
+    "scale_denominator": 25000,
+    "map_width_mm": 190,
+    "map_height_mm": 230,
+    "overlap_fraction": 0.1,
+    "max_pages": 64,
+    "max_source_ways": 50000,
+    "max_vertices_per_sheet": 500000,
+    "max_water_tiles": 512,
+    "max_decoded_tile_bytes": 16000000,
+    "water_zoom": 14,
+    "expected_zctas": [
+      "02806",
+      "02809",
+      "02885"
+    ],
+    "status": "Unreviewed engineering trial; not a final atlas scale or phone acceptance result",
+    "street_labels": {
+      "font_sizes_mm": [
+        1.6,
+        1.3,
+        1.1,
+        0.9
+      ],
+      "padding_mm": 0.12,
+      "halo_mm": 0.16,
+      "collision_cell_mm": 4,
+      "anchor_fractions": [
+        0.5,
+        0.25,
+        0.75,
+        0.125,
+        0.875
+      ],
+      "offsets_mm": [
+        -0.8,
+        0.8,
+        -1.8,
+        1.8,
+        -3,
+        3,
+        -5,
+        5
+      ]
+    },
+    "overview_road_classes": [
+      "motorway",
+      "trunk",
+      "primary",
+      "secondary"
+    ],
+    "zcta_geometry_id": "census_zcta_bristol_2020",
+    "zcta_colors": [
+      "#7852a9",
+      "#07856b",
+      "#c17a09"
+    ],
+    "max_inset_depth": 5,
+    "scale_bar_max_width_mm": 40,
+    "pdf_max_bytes": 10000000,
+    "pdf_budget_source_sha256": "d2c306ef770f9bf9a7501bea7e1fd0a41ee35540b9822138cb476e3159b433c7",
+    "pdf_budget": {
+      "max_file_mb": 10,
+      "target_phone_coverage": 0.95
+    }
+  },
+  "input_pins": {
+    "census_county_analysis": {
+      "sha256": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+      "size_bytes": 83989800,
+      "version": "2025"
+    },
+    "geofabrik_ri": {
+      "sha256": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+      "size_bytes": 52514407,
+      "version": "2026-10-29"
+    },
+    "census_zcta_county_2020": {
+      "sha256": "3ed41278d637dc249e0323306f68be8a6c234e3090f4de88ef328dee71aeaaaf",
+      "size_bytes": 6821287,
+      "version": "2020 Census; publisher Last-Modified 2021-12-09"
+    },
+    "census_zcta_bristol_2020": {
+      "sha256": "278db2981af844412c7c5668aa11251be0babd8c4a82940d0d916336815725ee",
+      "size_bytes": 16717,
+      "version": "January 1, 2020 geography; HTTPS query captured 2026-11-01"
+    }
+  },
+  "font_pins": [
+    {
+      "id": "noto_sans",
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d"
+    },
+    {
+      "id": "noto_sans_arabic",
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e"
+    },
+    {
+      "id": "noto_sans_sc",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    },
+    {
+      "id": "noto_sans_cherokee",
+      "sha256": "865d9e644f5011f2020a10325b7242f85c9c8ef0edece00e5ed743e5dfb275fd"
+    }
+  ],
+  "historical_basemap": {
+    "manifest": {
+      "complete": true,
+      "files": [
+        {
+          "path": "RI.pmtiles",
+          "sha256": "fcc0eeba4cac17df3d63e0bbcd3aee55a0bc9239ff7b62c65c8fe39b0313a1e0",
+          "size_bytes": 43538640
+        }
+      ],
+      "inputs": {
+        "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+        "census_places_ri": "520647e2008a90b0f8f68ec9eefb40f929b77debc5561db3132ed3decb8d3429",
+        "directory_seed_ri": "b2043610dadc1bd1eeb7dcbb60262f278fea1f13624cd2010c8adcb3b84a438c",
+        "pmtiles_x64": "3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f",
+        "protomaps_planet": "6956cdf4b143984a31e060faaa32848c74a71903135b5a7f8989c218ece8795d"
+      },
+      "intermediates": [
+        {
+          "path": "source.json",
+          "sha256": "ac464ce2a9cc295295f09fb71994c1daa00399e3b6ca9cfa08f791eb8bdef9e6",
+          "size_bytes": 1196
+        },
+        {
+          "path": "region.geojson",
+          "sha256": "dfaa859fa65e7c4b58d44e1e5ccb4987a9d69570c88896612f4dc8f5a1a01426",
+          "size_bytes": 628
+        }
+      ],
+      "pipeline_version": "pmtiles-extract-v1-3ab704a99a2d2b095bd227e9f295ec662bb09ad3405a8cc32d377089d1c84d22",
+      "source_date_epoch": 1793404800
+    },
+    "raw_manifest_sha256": "0ecbbe81118e1d543edf18bcd6869fb61e8643c42939a9181b666f34478297af"
+  },
+  "historical_points": {
+    "manifest": {
+      "complete": false,
+      "files": [
+        {
+          "path": "RI_SOURCE_DATA.json",
+          "sha256": "ecdb22c249a458e59623921b5c8068441e65e3ce1145e4db23119d47a0895dc0",
+          "size_bytes": 326180
+        },
+        {
+          "path": "RI_phone.pdf",
+          "sha256": "f91b1c69cd7dfa755a5d9548981e784caba2f506d2465bcaa03c37840643d375",
+          "size_bytes": 893118
+        },
+        {
+          "path": "RI_print.pdf",
+          "sha256": "6d58b323ccccf3f633741d2dcc82f244d7e11147f1faef9336622676bd584054",
+          "size_bytes": 590347
+        }
+      ],
+      "inputs": {
+        "atlas_ri": "22950893ed875d8ceefca48309890a212e5d683c7cb8cd83457caecb91843d7e",
+        "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+        "census_states": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0",
+        "fcc_facility_statuses": "630651fea8a0fa0ea9e7a1582452076f8401b0dbca7ce8b0e0b0c1b1875915af",
+        "fcc_license_versions": "5a650c26f48ab250b64800ebc1f5772915959f3cccbf544fad6c794e935f48c3",
+        "fcc_locations": "5f3e77ad951caca6b38b939b65b4d5248dff28de2613b2d2826c65158d4d3637",
+        "fcc_service_codes": "347688dc1b76559622ccad04c97686733b697c0ae3f2fe18befca03ed65d8df0",
+        "fcc_stations": "5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378",
+        "fema_risk": "b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072",
+        "geofabrik_ri": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+        "imls_libraries": "6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7",
+        "nces_schools": "9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288",
+        "noaa_transmitters": "e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22",
+        "noto_sans": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+        "state_emergency_agencies": "494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808"
+      },
+      "intermediates": [
+        {
+          "path": "places.json",
+          "sha256": "2fb6cd099366591681f5bcc5397c7ba190cf29046eb1c287db3f91e70249b95e",
+          "size_bytes": 456180
+        },
+        {
+          "path": "atlas-index.json",
+          "sha256": "b53e62dd77c96f8919ab5721ec6baa35a72ce9a30be1f6064fa6de639c95cf3c",
+          "size_bytes": 41806
+        }
+      ],
+      "pipeline_version": "directory-v1-b5709c934c9f4e450f8cc950dc47b147fe909b17bafcb0b55ab0648dd14c5aef",
+      "source_date_epoch": 1793404800
+    },
+    "source_payload_sha256": "ecdb22c249a458e59623921b5c8068441e65e3ce1145e4db23119d47a0895dc0",
+    "complete": false
+  },
+  "proof_summary": {
+    "files": [
+      {
+        "path": "3_MAPS_AND_PLACES/RI/Bristol County/0_OVERVIEW.pdf",
+        "sha256": "00a555678e71deca5ad05a046f1d4246db37ea96b1b8b7b4b4235d3b413b5503",
+        "size_bytes": 466979,
+        "pages": 3,
+        "dates": {
+          "/CreationDate": "D:20261031000000+00'00",
+          "/ModDate": "D:20261031000000+00'00"
+        }
+      },
+      {
+        "path": "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County 02806,02809,02885.pdf",
+        "sha256": "423a2dc1fdc0a7b03107642138957167c0ec78b943dc409d7554f71515cde747",
+        "size_bytes": 6371165,
+        "pages": 46,
+        "dates": {
+          "/CreationDate": "D:20261031000000+00'00",
+          "/ModDate": "D:20261031000000+00'00"
+        }
+      }
+    ],
+    "map_sheet_count": 43,
+    "base_sheet_count": 9,
+    "inset_count": 34,
+    "map_pages": [
+      2,
+      44
+    ],
+    "index_pages": [
+      45,
+      46
+    ],
+    "overview_pages": 3,
+    "source_named_way_count": 2344,
+    "distinct_source_names": 1510,
+    "missing_way_ids": [],
+    "missing_actual_svg_names": [],
+    "missing_whole_pdf_names": [],
+    "actual_sheet_outline_targets_match": true,
+    "scale_bars": [
+      {
+        "sheet": "R1C1",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R1C2",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R1C3",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R2C1",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R2C2",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R2C3",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R3C1",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R3C2",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "R3C3",
+        "metres": 1000,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I01",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I02",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I03",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I04",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I05",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I06",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I07",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I08",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I09",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I10",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I11",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I12",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I13",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I14",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I15",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I16",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I17",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I18",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I19",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I20",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I21",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I22",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I23",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I24",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I25",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I26",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I27",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I28",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I29",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I30",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I31",
+        "metres": 200,
+        "width_mm": 32.0
+      },
+      {
+        "sheet": "I32",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I33",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "I34",
+        "metres": 500,
+        "width_mm": 40.0
+      },
+      {
+        "sheet": "overview",
+        "metres": 2000,
+        "width_mm": 28.29094207574753
+      }
+    ],
+    "all_44_actual_svg_scale_paths_at_most_mm": 40,
+    "all_A_B_street_label_placements_and_sheet_bounds_and_pages_identical": true,
+    "overview_zctas": [
+      "02806",
+      "02809",
+      "02885"
+    ],
+    "historical_poi_count": 33
+  },
+  "producer_resources": {
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "cpu": 1,
+    "memory_bytes": 4294967296,
+    "memory_swap_bytes": 4294967296,
+    "network": "none",
+    "source_and_cache_read_only": true,
+    "container": "ck117-streets-zip-b",
+    "exit_code": 0,
+    "elapsed_seconds": 175.183984168998,
+    "peak_rss_kib": 941688,
+    "cgroup": {
+      "memory.peak": "1064169472\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    }
+  },
+  "read_only_audit_resources": {
+    "cpu": 1,
+    "memory_bytes": 536870912,
+    "memory_swap_bytes": 536870912,
+    "network": "none",
+    "artifact_mounts_read_only": true,
+    "exit_code": 0,
+    "cgroup": {
+      "memory.peak": "217960448\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    }
+  },
+  "extraction_limitations": {
+    "whole_pdf_text_alone_is_not_map_region_coverage_proof": true,
+    "cropped_poppler_layout": "Rotated labels were split/reordered; consecutive-string misses were not treated as absent map labels.",
+    "pypdf_positional_visitor": "Nested SVG/Form transforms sometimes supplied SVG-local rather than final page coordinates; the attempted positional filter was not accepted as map-region absence evidence.",
+    "accepted_evidence": "All 1510 names in actual map SVG text nodes; all 1510 in whole PDF text; empty expected-way omissions; actual map crops; final B placements identical to visually inspected diagnostic A."
+  },
+  "visual_examples": [
+    {
+      "street": "Woburn Street",
+      "page": 14,
+      "sheet": "I04",
+      "evidence": "Actual final B native Chrome PDF at six times fit in 390 CSS pixel viewport, plus diagnostic A decoder crop."
+    },
+    {
+      "street": "Sloop Lane",
+      "page": 34,
+      "sheet": "I24",
+      "evidence": "Actual diagnostic A map-region decoder crop at six times 390px fit; final B label placement, sheet bounds, and page unchanged. Not separately browser-inspected."
+    },
+    {
+      "area": "overview",
+      "evidence": "Final B native Chrome shows distinct 2020 Census ZCTA outlines and 02806, 02809, and 02885 labels."
+    },
+    {
+      "area": "corrected scale bar",
+      "sheet": "I15",
+      "page": 25,
+      "depth": 2,
+      "evidence": "Final B bounded actual PDF crop shows a 200 m bar contained in its reserved region."
+    }
+  ],
+  "browser_receipt": {
+    "local_path": ".worktrees/109-drive-explorer/build/final-live-streets-zip-smoke/report.json",
+    "sha256": "41c9efb2953e0244f8ac8548d3e40fb98c591ca14075cff4f388ed7fd2a2539a",
+    "original_report": {
+      "scope": "Actual current DriveExplorer and native desktop Chrome PDF at390CSS pixels; not physical-phone evidence",
+      "errors": [],
+      "external_http": [],
+      "checks": [
+        "actualfolderclickpath",
+        "fullZIPfilenamewrap",
+        "ZIP02809search",
+        "exact6,371,165-byte detail and466,979-byte overview",
+        "native46pagePDFpage14zoom6xfit",
+        "native3pageoverview",
+        "BacktoRI"
+      ],
+      "inventory": {
+        "label": "EMERGENCY",
+        "variant": 1,
+        "profile": "sample",
+        "root": "/",
+        "status": "Incomplete development preview: English core, all source-named streets in the Bristol map extent, and Census ZIP-area overview. See README.TXT for missing cargo; phone tests pending.",
+        "source": "core 89b27ce; map 39868af",
+        "files": [
+          {
+            "path": "1_START",
+            "name": "1_START",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "1_START/English",
+            "name": "English",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "1_START/English/01_START_phone.pdf",
+            "name": "01_START_phone.pdf",
+            "kind": "file",
+            "size_bytes": 133130,
+            "hidden": false
+          },
+          {
+            "path": "1_START/English/01_START_print.pdf",
+            "name": "01_START_print.pdf",
+            "kind": "file",
+            "size_bytes": 96610,
+            "hidden": false
+          },
+          {
+            "path": "1_START/English/04_VARIANTS_phone.pdf",
+            "name": "04_VARIANTS_phone.pdf",
+            "kind": "file",
+            "size_bytes": 27264,
+            "hidden": false
+          },
+          {
+            "path": "1_START/English/04_VARIANTS_print.pdf",
+            "name": "04_VARIANTS_print.pdf",
+            "kind": "file",
+            "size_bytes": 23178,
+            "hidden": false
+          },
+          {
+            "path": "3_MAPS_AND_PLACES",
+            "name": "3_MAPS_AND_PLACES",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "3_MAPS_AND_PLACES/RI",
+            "name": "RI",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "3_MAPS_AND_PLACES/RI/Bristol County",
+            "name": "Bristol County",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "3_MAPS_AND_PLACES/RI/Bristol County/0_OVERVIEW.pdf",
+            "name": "0_OVERVIEW.pdf",
+            "kind": "file",
+            "size_bytes": 466979,
+            "hidden": false
+          },
+          {
+            "path": "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County 02806,02809,02885.pdf",
+            "name": "Bristol County 02806,02809,02885.pdf",
+            "kind": "file",
+            "size_bytes": 6371165,
+            "hidden": false
+          },
+          {
+            "path": "4_PHONE_PACK",
+            "name": "4_PHONE_PACK",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "4_PHONE_PACK/English",
+            "name": "English",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "4_PHONE_PACK/English/01_START_phone.pdf",
+            "name": "01_START_phone.pdf",
+            "kind": "file",
+            "size_bytes": 133130,
+            "hidden": false
+          },
+          {
+            "path": "4_PHONE_PACK/English/02_CARD.pdf",
+            "name": "02_CARD.pdf",
+            "kind": "file",
+            "size_bytes": 19464,
+            "hidden": false
+          },
+          {
+            "path": "4_PHONE_PACK/English/03_TAGS.pdf",
+            "name": "03_TAGS.pdf",
+            "kind": "file",
+            "size_bytes": 13471,
+            "hidden": false
+          },
+          {
+            "path": "4_PHONE_PACK/English/04_VARIANTS_phone.pdf",
+            "name": "04_VARIANTS_phone.pdf",
+            "kind": "file",
+            "size_bytes": 27264,
+            "hidden": false
+          },
+          {
+            "path": "7_LAPTOP",
+            "name": "7_LAPTOP",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "7_LAPTOP/English",
+            "name": "English",
+            "kind": "directory",
+            "size_bytes": null,
+            "hidden": false
+          },
+          {
+            "path": "7_LAPTOP/English/01_START.html",
+            "name": "01_START.html",
+            "kind": "file",
+            "size_bytes": 43661,
+            "hidden": false
+          },
+          {
+            "path": "README.TXT",
+            "name": "README.TXT",
+            "kind": "file",
+            "size_bytes": 4489,
+            "hidden": false
+          },
+          {
+            "path": "VERIFY.TXT",
+            "name": "VERIFY.TXT",
+            "kind": "file",
+            "size_bytes": 174,
+            "hidden": false
+          }
+        ]
+      },
+      "reader_meta": "Variant 1 · sample profile · Source core 89b27ce; map 39868af",
+      "filenames": [
+        "0_OVERVIEW.pdf",
+        "Bristol County 02806,02809,02885.pdf"
+      ],
+      "filename_geometry": {
+        "text": "Bristol County 02806,02809,02885.pdf",
+        "width": 275,
+        "scroll_width": 275,
+        "font": "16px"
+      },
+      "detail_caption": "6.4 MB (6,371,165 bytes) · 3_MAPS_AND_PLACES/RI/Bristol County/Bristol County 02806,02809,02885.pdf",
+      "detail_pages": 46,
+      "zoom": {
+        "fit": 0.423728813559322,
+        "target": 2.542372881355932
+      },
+      "street_position": {
+        "actual_zoom": 2.542372881355932,
+        "page": 14,
+        "position": {
+          "x": 955.6779661016949,
+          "y": 35840.03389830508
+        }
+      },
+      "overview_caption": "467 KB (466,979 bytes) · 3_MAPS_AND_PLACES/RI/Bristol County/0_OVERVIEW.pdf",
+      "overview_pages": 3,
+      "passed": true,
+      "legacy_ri_redirect": {
+        "url": "http://127.0.0.1:8765/atlas-pdfs/RI.pdf",
+        "status": 302,
+        "location": "http://127.0.0.1:8766/#path=3_MAPS_AND_PLACES%2FRI",
+        "followed_url": "http://127.0.0.1:8766/#path=3_MAPS_AND_PLACES%2FRI"
+      },
+      "visual_inspection": {
+        "overview": "Page1 visibly renders three distinct ZIP-area polygons and02806,02885,02809 labels. Page2 retains incomplete historical source-place warning.",
+        "detail_page14": "Native PDF at6x fit visibly renders Woburn Street, Waltham Street, Rosita Avenue, Ansonia Avenue, Vernon Avenue, Hilltop Street, Malden Street, Woodbine Street, Sampson Street, and Dewolf Avenue.",
+        "scope": "DesktopChrome390CSS px; no physical phone acceptance, source/human review status unchanged."
+      }
+    },
+    "screenshot_refs": [
+      {
+        "local_path": ".worktrees/109-drive-explorer/build/final-live-streets-zip-smoke/detail-page14-Woburn-Street-six-times-fit-390.png",
+        "sha256": "fc3452df1626af70137da2cf3387d67eba8df127de7ae04fb49ac8c457f9a108",
+        "size_bytes": 102457
+      },
+      {
+        "local_path": ".worktrees/109-drive-explorer/build/final-live-streets-zip-smoke/overview-ZIP-polygons-390.png",
+        "sha256": "9028e8d9e3c72238fbeb0c968c5c5fe650c0a6510dc8a945492fb9dafca4dcc6",
+        "size_bytes": 184293
+      }
+    ]
+  },
+  "artifact_receipt_refs": [
+    {
+      "local_path": ".worktrees/117-map-readability-integration/build/bristol-streets-zip-b/prototype.json",
+      "sha256": "5d540e7671abd58a359a5c645b0f6c439a4f31dc9ddd6f1d0edc19ad492518fd",
+      "size_bytes": 4520154
+    },
+    {
+      "local_path": ".worktrees/115-zcta-geometry/build/bristol-artifact-audit/final-b-inspection.json",
+      "sha256": "2a53b0b2bed0f9f03a2b866eda01283ab109f5b5da8c97d46e1b8fe3e1893da9",
+      "size_bytes": 7004
+    },
+    {
+      "local_path": ".worktrees/115-zcta-geometry/build/bristol-artifact-audit/svg-and-visual-summary.json",
+      "sha256": "33e4f80ca9be691bf9d2ecb2e7b4571960754cfbc1e2138d832a4b91219fea09",
+      "size_bytes": 6000
+    },
+    {
+      "local_path": ".worktrees/115-zcta-geometry/build/bristol-artifact-audit/final-b-scale-bar.png",
+      "sha256": "fe02eefb208ed89f6a49cd82742835d51cf20130961c0447f1d79f220f758456",
+      "size_bytes": 14096
+    },
+    {
+      "local_path": "build/current-builds/variant-1-preview-v3.provenance.json",
+      "sha256": "943fe5e65b38ce9cbac7a157dfc0b5b7efe2d3ed6786cec34627dfa94ff71f4e",
+      "size_bytes": 188387
+    }
+  ],
+  "preview": {
+    "local_path": "build/current-builds/variant-1-preview-v3",
+    "complete": false,
+    "physical_phone_acceptance": false,
+    "component_epochs": {
+      "english_core": 946684800,
+      "bristol_map_proof": 1793404800
+    },
+    "single_epoch_image": false,
+    "core_content_commit": "89b27ce",
+    "map_files_independently_rehashed_equal_to_final_B": true
+  },
+  "diagnostic_A": {
+    "source_commit": "20e5afbec8f5ad54dd8f85f6306402b961378b86",
+    "status": "Held diagnostic with fixed 500 m inset scale bar exceeding its reserved width. Not adopted and not a reproducibility attempt.",
+    "not_same_recipe_as_B": true
+  },
+  "remaining_holds": [
+    "Named human source, cartographic, rights, safety, and physical-device review unchanged.",
+    "Historical parent directory remains complete:false; all33selectedhistoricalBristolpoints retained.",
+    "Only Bristol County proof, not a complete Rhode Island sample or national atlas.",
+    "2020 Census ZCTAs are statistical approximations, not current USPS delivery boundaries.",
+    "10 MB is a provisional file guardrail; no95%phone coverage claim.",
+    "Partial preview combines differing component epochs and is not a single-epoch image.",
+    "No clean independent same-recipe B repeat has been run.",
+    "No PDFs, source cargo, fonts, or screenshots committed by this evidence packet."
+  ]
+}
