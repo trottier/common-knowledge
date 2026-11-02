@@ -295,6 +295,17 @@ def water_polygons(source: Path, extent, inverse, project, policy: dict) -> tupl
 def prepare(
     root: Path, cache: Path, basemap: Path, points: Path, zip_source: Path, policy: dict
 ) -> dict:
+    county_id = policy.get("county", "")
+    if (
+        policy.get("state") != "RI"
+        or not isinstance(county_id, str)
+        or len(county_id) != 5
+        or not county_id.isdecimal()
+        or not county_id.startswith("44")
+    ):
+        raise ValueError(
+            "This county proof currently admits the pinned Rhode Island source set only"
+        )
     items = load_catalog(root, load_config(root))
     ids = ["census_county_analysis", "geofabrik_ri"]
     raw = {key: cached_input(items[key], cache) for key in ids}

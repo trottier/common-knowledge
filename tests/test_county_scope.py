@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from shapely.geometry import box, mapping
 
-from ck.countyproof import area_geometry, output_names, producer_recipe
+from ck.countyproof import area_geometry, output_names, prepare, producer_recipe
 
 
 def feature(code, geometry):
@@ -49,6 +49,12 @@ def test_area_leaf_stays_in_readable_county_folder_and_preserves_zip_gaps():
         output_names({**policy, "area_name": "Extra/folder"}, ["02903"])
     with pytest.raises(ValueError, match="FAT-safe"):
         output_names(policy, [f"{number:05}" for number in range(100)])
+
+
+@pytest.mark.parametrize("state,county", [("CA", "06081"), ("RI", "06081"), ("RI", "44bad")])
+def test_other_state_or_bad_county_cannot_use_ri_sources(tmp_path, state, county):
+    with pytest.raises(ValueError, match="Rhode Island source set only"):
+        prepare(*(tmp_path for _ in range(5)), {"state": state, "county": county})
 
 
 def test_recipe_binds_selected_policy_and_ignores_unselected_county_config(tmp_path):
