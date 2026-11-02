@@ -14,11 +14,12 @@ li { margin-block-end: 0.35em; }
 /* Keep a list's following source-reference paragraph with its final item. */
 main ul { break-after: avoid; }
 a { color: #123f65; text-decoration: underline; }
+main a[href^="#source-"] { font-size: 8pt; line-height: 1; vertical-align: super; color: #666; }
 nav { break-after: page; }
 nav ol { padding-inline-start: 1.5em; }
 .draft { border: 2pt solid #222; padding: 0.3em; font-weight: bold; }
 .verify { background: #fff096; color: #111; }
-.sources { break-before: page; }
+.sources { break-before: page; font-size: 8pt; line-height: 1.4; color: #666; }
 .sources p { overflow-wrap: anywhere; }
 table { border-collapse: collapse; width: 100%; }
 td, th { border: 1px solid #333; padding: 0.2em; }

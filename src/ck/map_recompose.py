@@ -304,7 +304,9 @@ def recompose(root: Path, prepared: Path, output: Path) -> dict:
         (leaf, "Bristol County road maps", "detail"),
         ("0_OVERVIEW.pdf", "Bristol County overview and public places", "overview"),
     ]:
-        document = html_document(title, kind, pages, svgs["overview"], svgs["locator"], leaf, data)
+        document = html_document(
+            root, title, kind, pages, svgs["overview"], svgs["locator"], leaf, data
+        )
         (audit / (filename + ".html")).write_text(document)
         with pdf_timestamp(data["policy"]["epoch"]):
             rendered = HTML(

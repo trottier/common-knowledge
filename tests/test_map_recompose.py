@@ -278,3 +278,13 @@ def test_unrelated_build_config_does_not_invalidate_recomposition(fixture_proof)
     second = recompose(root, prepared, root / "second")
     assert first["producer"]["version"] == second["producer"]["version"]
     assert first["files"] == second["files"]
+
+
+def test_recomposition_uses_the_explicit_roots_template(fixture_proof):
+    root, prepared, _ = fixture_proof
+    template = root / "templates/county-proof.html.j2"
+    template.write_text(template.read_text() + "\n<!-- explicit build-root template -->\n")
+    output = root / "output"
+    recompose(root, prepared, output)
+    document = (output / "audit/0_OVERVIEW.pdf.html").read_text()
+    assert "<!-- explicit build-root template -->" in document

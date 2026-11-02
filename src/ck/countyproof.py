@@ -674,10 +674,17 @@ def svg_locator(data: dict) -> tuple[str, dict]:
 
 
 def html_document(
-    title: str, kind: str, pages: list, overview_svg: str, locator_svg: str, leaf: str, data: dict
+    root: Path,
+    title: str,
+    kind: str,
+    pages: list,
+    overview_svg: str,
+    locator_svg: str,
+    leaf: str,
+    data: dict,
 ) -> str:
     env = Environment(
-        loader=FileSystemLoader(Path(__file__).resolve().parents[2] / "templates"),
+        loader=FileSystemLoader(root / "templates"),
         undefined=StrictUndefined,
         autoescape=True,
     )
@@ -721,7 +728,7 @@ def horizontal_layout(document) -> list[dict]:
     return checked
 
 
-def render(data: dict, output: Path) -> dict:
+def render(root: Path, data: dict, output: Path) -> dict:
     from ck.streetcoverage import complete_detail_sheets
 
     if output.exists():
@@ -780,7 +787,7 @@ def render(data: dict, output: Path) -> dict:
         (leaf, "Bristol County detailed road maps", "detail"),
         ("0_OVERVIEW.pdf", "Bristol County overview and historical places", "overview"),
     ]:
-        document = html_document(title, kind, pages, overview_svg, locator_svg, leaf, data)
+        document = html_document(root, title, kind, pages, overview_svg, locator_svg, leaf, data)
         (audit / (filename + ".html")).write_text(document)
         with pdf_timestamp(policy["epoch"]):
             document_pdf = HTML(
@@ -882,7 +889,7 @@ def run(
         )
         + "\n"
     )
-    result = render(data, output)
+    result = render(root, data, output)
     result["elapsed_seconds"] = time.monotonic() - started
     result["peak_rss_kib"] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     result["cgroup"] = {
