@@ -1,0 +1,9 @@
+{
+  "status": "New explicit numerical run tolerance; original0.01m2attempt retained",
+  "max_parts": 32,
+  "max_depth": 8,
+  "max_evaluations": 256,
+  "max_candidate_sheets": 512,
+  "coverage_tolerance_m2": 1.0,
+  "numerical_evidence_sha256": "79fed79a101c66e23f263469dde07c26c96e2b6743844121072eca5e06531fce"
+}
