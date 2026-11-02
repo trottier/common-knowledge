@@ -28,6 +28,7 @@ SUPPORTED_LICENSES = frozenset(
         "US-PD",
         "Public-domain-US",
         "LicenseRef-FEMA-Ready-Reprint",
+        "LicenseRef-ISO639-Code-Use",
         "CC-BY-NC-SA-3.0",
         "Unlicense",
         "Zlib",

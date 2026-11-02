@@ -45,9 +45,9 @@
     "version": "HTTPS snapshot 2026-10-31",
     "size_bytes": 16010,
     "sha256": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371",
-    "license": "[[VERIFY: confirm redistribution status of the ISO language-code data]]",
-    "attribution": "Library of Congress, ISO 639-2 Registration Authority",
-    "license_proof_url": "https://www.loc.gov/standards/iso639-2/",
+    "license": "LicenseRef-ISO639-Code-Use",
+    "attribution": "Library of Congress, ISO 639-2 Registration Authority. ISO permits free-of-charge use of language identifiers. Build input only: the table and its language-name lists are not redistributed; only identifiers are used in video track tags.",
+    "license_proof_url": "https://www.iso.org/iso-639-language-code",
     "placement": "hub_only",
     "dest": "build/video/",
     "profiles": [

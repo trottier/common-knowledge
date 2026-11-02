@@ -138,6 +138,21 @@ class Item(Model):
             requires_source = False
         if not supported:
             problems.append(f"{self.id}: license needs redistribution review: {self.license}")
+        if "LicenseRef-ISO639-Code-Use" in licenses:
+            # ISO permits using the identifiers. This does not license shipping
+            # the downloaded table, names, standard text, or a derived database.
+            if (
+                self.id != "iso639_2"
+                or self.family != "docs"
+                or self.url != "https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt"
+                or self.license_proof_url != "https://www.iso.org/iso-639-language-code"
+                or self.placement != "hub_only"
+                or self.dest != "build/video/"
+            ):
+                problems.append(
+                    f"{self.id}: ISO code-use grant permits only the unshipped "
+                    "language-tag build input; raw-table redistribution is unconfirmed"
+                )
         if "LicenseRef-FEMA-Ready-Reprint" in licenses:
             # Ready permits unchanged reproduction, without an endorsement claim.
             # This is a limited grant, not a public-domain or open-content claim.

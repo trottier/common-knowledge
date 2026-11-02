@@ -10403,9 +10403,9 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 
 - Catalog id: `iso639_2`
 - Version: HTTPS snapshot 2026-10-31
-- License: [[VERIFY: confirm redistribution status of the ISO language-code data]]
-- Attribution: Library of Congress, ISO 639-2 Registration Authority
-- License proof: https://www.loc.gov/standards/iso639-2/
+- License: LicenseRef-ISO639-Code-Use
+- Attribution: Library of Congress, ISO 639-2 Registration Authority. ISO permits free-of-charge use of language identifiers. Build input only: the table and its language-name lists are not redistributed; only identifiers are used in video track tags.
+- License proof: https://www.iso.org/iso-639-language-code
 - Size: 16010 bytes
 - SHA-256: `42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371`
 - Publisher file: https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt

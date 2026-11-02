@@ -144,6 +144,36 @@ def test_named_legal_and_verify_proof_holds_survive_supported_expressions():
     assert any("named legal sign-off" in issue for issue in problems)
 
 
+def test_iso_code_use_is_limited_to_an_unshipped_language_tag_input():
+    item = fixture_item(
+        id="iso639_2",
+        url="https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt",
+        license="LicenseRef-ISO639-Code-Use",
+        license_proof_url="https://www.iso.org/iso-639-language-code",
+        placement="hub_only",
+        dest="build/video/",
+    )
+    assert item.blockers() == []
+    for changes in (
+        {"placement": "universal"},
+        {"dest": "4_PHONE_PACK/codes.txt"},
+        {"family": "generated"},
+        {"id": "another_table"},
+        {"url": "https://example.invalid/codes.txt"},
+        {"license_proof_url": "https://example.invalid/permission"},
+    ):
+        assert any(
+            "raw-table redistribution is unconfirmed" in issue
+            for issue in item.model_copy(update=changes).blockers()
+        )
+    item.license = "MIT OR LicenseRef-ISO639-Code-Use"
+    item.placement = "universal"
+    assert any("ISO code-use grant" in issue for issue in item.blockers())
+    item.placement = "hub_only"
+    item.review = "[[VERIFY: independent input pin review]]"
+    assert any("independent input pin review" in issue for issue in item.blockers())
+
+
 def test_grouped_ready_reprint_alternative_cannot_escape_its_original_document_scope():
     item = fixture_item(license="(MIT OR LicenseRef-FEMA-Ready-Reprint)")
     assert any("Ready reprint terms" in issue for issue in item.blockers())
