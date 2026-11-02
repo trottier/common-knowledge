@@ -12,7 +12,8 @@ The source manifest, every indexed file, producer dependencies, actual font pins
 requested tool image, tool versions, epoch, and PDF hash are recorded.
 
 Only actual PDF, MP4, and APK paths outside BACKUP are listed. The index excludes
-itself and other formats. Full paths remain readable; internal folder links and
+itself and other formats. Each parent folder is shown once, followed by exact filenames and sizes.
+The heading plus filename gives the readable full path; internal folder links and
 bookmarks navigate the index without depending on cross-file PDF support.
 Keep existing source and license notices when sharing referenced folders.
 
