@@ -35,3 +35,20 @@ def test_inventory_uses_actual_files_excludes_duplicates_and_rejects_changes(tmp
         index.inventory(tmp_path, expected)
     with pytest.raises(ValueError, match="Original drive manifest"):
         index.inventory(tmp_path, "0" * 64)
+
+
+def test_optional_formats_are_indexed_and_companion_source_stays_with_folders(
+    tmp_path,
+):
+    for name in [
+        "5_MEDICAL_REFERENCE/book.zim",
+        "3_MAPS_AND_PLACES/map.obf",
+        "3_MAPS_AND_PLACES/source.osm.pbf",
+        "3_MAPS_AND_PLACES/SOURCE.TXT",
+    ]:
+        path = tmp_path / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"synthetic")
+    rows = index.inventory(tmp_path, write_manifest(tmp_path))
+    assert {row["format"] for row in rows} == {"ZIM", "OBF"}
+    assert all((tmp_path / row["path"]).is_file() for row in rows)

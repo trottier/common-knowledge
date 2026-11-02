@@ -113,3 +113,33 @@ def test_existing_output_and_its_content_are_never_replaced(inputs):
     with pytest.raises(ValueError, match="no overwrite"):
         tool.attach(**inputs)
     assert marker.read_text() == "keep"
+
+
+def test_new_optional_format_policy_matches_index_and_preserves_companions(inputs):
+    from tools.build_copy_index import inventory
+
+    for name in [
+        "5_MEDICAL_REFERENCE/book.zim",
+        "3_MAPS_AND_PLACES/map.obf",
+        "3_MAPS_AND_PLACES/source.osm.pbf",
+        "3_MAPS_AND_PLACES/SOURCE.TXT",
+    ]:
+        path = inputs["base"] / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"synthetic")
+    manifest = write_manifest(inputs["base"])
+    metadata = json.loads(inputs["receipt"].read_text())
+    metadata["source_manifest_sha256"] = manifest
+    metadata["indexed_files"] = inventory(inputs["base"], manifest)
+    inputs["receipt"].write_text(json.dumps(metadata))
+    inputs["receipt_sha256"] = digest(inputs["receipt"])
+    inputs["base_provenance"].write_text(
+        json.dumps({"manifest_sha256": manifest, "status": "draft"})
+    )
+    inputs["base_provenance_sha256"] = digest(inputs["base_provenance"])
+    result = tool.attach(**inputs)
+    assert len(metadata["indexed_files"]) == 3
+    for name in ["3_MAPS_AND_PLACES/source.osm.pbf", "3_MAPS_AND_PLACES/SOURCE.TXT"]:
+        assert (inputs["output"] / name).read_bytes() == (inputs["base"] / name).read_bytes()
+    check_manifest(inputs["output"])
+    assert result["normal_assembly_gates_changed"] is False

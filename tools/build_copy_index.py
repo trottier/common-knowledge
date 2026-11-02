@@ -20,7 +20,7 @@ from ck.geofonts import require_glyphs
 from ck.render import OfflineFetcher, pdf_timestamp
 
 INDEX_PATH = "4_PHONE_PACK/0_WHAT_TO_COPY.pdf"
-FORMAT_SUFFIXES = {".pdf", ".mp4", ".apk"}
+FORMAT_SUFFIXES = {".pdf", ".mp4", ".apk", ".zim", ".obf"}
 
 
 def inventory(drive: Path, manifest_sha256: str) -> list[dict]:
@@ -180,7 +180,7 @@ def build_index(
             "exclusions": [
                 "BACKUP duplicates",
                 "copy index itself",
-                "formats other than PDF/MP4/APK",
+                "formats other than PDF/MP4/APK/ZIM/OBF",
             ],
             "limitations": (
                 "Actual partial-tree inventory only; not all formats, a complete sample, "

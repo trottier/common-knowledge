@@ -62,6 +62,8 @@ def attach(
             ".pdf",
             ".mp4",
             ".apk",
+            ".zim",
+            ".obf",
         }:
             selected[relative] = {"sha256": digest(path), "size_bytes": path.stat().st_size}
     expected = {
