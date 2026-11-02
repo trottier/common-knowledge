@@ -18,6 +18,6 @@
     "profiles": [
       "sample"
     ],
-    "review": "[[VERIFY: human source-pin and ODbL source-offer review; one bounded full-source cache build; original source and release/security holds remain. Real selected-area equality comparisons are recorded separately before reuse. Build input only, not national cargo or physical-phone acceptance.]]"
+    "review": "[[VERIFY: human source-pin and ODbL source-offer review; one bounded full-source cache build. Kent and Providence selected IDs, names, attributes, geometry, ordering, and counts match direct inputs exactly, including installed-wheel admission. Original source and release/security holds remain. Build input only, not a national or physical-phone acceptance claim.]]"
   }
 ]

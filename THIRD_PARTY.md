@@ -12566,6 +12566,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `a6a89725b5f83f97d4f94a8a11844f97d8b67fb4b0f149dfd713ade57280716e`
 - Pipeline: reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
 
+## Rhode Island projected road and settlement preparation cache
+
+- Catalog id: `road_cache_ri`
+- Version: Geofabrik 2026-10-29 source; development spatial cache
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; extract by Geofabrik; original preparation pipeline Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 37613568 bytes
+- SHA-256: `9e5a66a1d13527c7095611a588e728e4dce03cb6c127c6334a878f41b2aa38a7`
+- Pipeline: state-road-cache-v1-c45b34efe8fc0fe5bdb835501febbdfe906fb143869a078629ae9422874a7a30; inputs: geofabrik_ri
+
 ## Qwen3.5-0.8B-Base, Q4_K_M
 
 - Catalog id: `sample_model`

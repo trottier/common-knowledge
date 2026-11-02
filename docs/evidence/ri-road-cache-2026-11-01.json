@@ -1,0 +1,348 @@
+{
+  "scope": "Single real Rhode Island cache build and bounded exact viewport comparisons, not a real-cache A/B pair, national atlas/fit claim, or rights/release/physical-phone approval.",
+  "cache_producer_commit": "9f60acd1640ea897dd39fe551b84ddcca87107b8",
+  "consumer_pin_commit": "1a842fdfb169aa39ece2a0a854bcf1818e1368fa",
+  "planned_part_commit": "c02fd66035974222ad7aa6003620b8c89a99828e",
+  "canonical_generation_sha256": "9e5a66a1d13527c7095611a588e728e4dce03cb6c127c6334a878f41b2aa38a7",
+  "raw_generation_sha256": "4e89a899a61d9027149bc7e2bda79fcfd9a46799cf28b77b42aae3354feca13f",
+  "generation": {
+    "complete": true,
+    "files": [
+      {
+        "path": "roads.sqlite",
+        "sha256": "a05af9259ce6ae17fe186f58a1f67a83e124c216e91afb9c3868410ffb9a7198",
+        "size_bytes": 37613568
+      }
+    ],
+    "inputs": {
+      "geofabrik_ri": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162"
+    },
+    "intermediates": [
+      {
+        "path": "binding.json",
+        "sha256": "36357a4bbb1fc664254f4dfb579cf06d390b7e67746180acf18def04c2420d00",
+        "size_bytes": 2557
+      },
+      {
+        "path": "source-counts.json",
+        "sha256": "8a0109ecff2a0bd3220ff8b68f0d9e64780c1efd1e00266f87a37d3348ea997c",
+        "size_bytes": 545
+      }
+    ],
+    "pipeline_version": "state-road-cache-v1-c45b34efe8fc0fe5bdb835501febbdfe906fb143869a078629ae9422874a7a30",
+    "source_date_epoch": 1793404800
+  },
+  "binding": {
+    "algorithm": "state-road-cache-v1",
+    "allowed_highways": [
+      "bridleway",
+      "cycleway",
+      "footway",
+      "living_street",
+      "motorway",
+      "motorway_link",
+      "path",
+      "pedestrian",
+      "primary",
+      "primary_link",
+      "residential",
+      "road",
+      "secondary",
+      "secondary_link",
+      "service",
+      "steps",
+      "tertiary",
+      "tertiary_link",
+      "track",
+      "trunk",
+      "trunk_link",
+      "unclassified"
+    ],
+    "allowed_places": [
+      "city",
+      "hamlet",
+      "suburb",
+      "town",
+      "village"
+    ],
+    "crs": "EPSG:32619",
+    "excluded_function_sha256": "7a3acc5f2378572ab0de579dc1cc65b9f5a4c9f2769f17c6ac88d18094793b29",
+    "excluded_tags": {
+      "communication": null,
+      "industrial": [
+        "gas",
+        "oil",
+        "power",
+        "wastewater",
+        "water"
+      ],
+      "man_made": [
+        "communications_tower",
+        "pipeline",
+        "pumping_station",
+        "reservoir_covered",
+        "wastewater_plant",
+        "water_tower",
+        "water_works",
+        "works"
+      ],
+      "office": [
+        "telecommunication"
+      ],
+      "pipeline": null,
+      "power": null,
+      "telecom": null,
+      "waterway": [
+        "dam",
+        "weir"
+      ]
+    },
+    "source": {
+      "attribution": "© OpenStreetMap contributors; extract by Geofabrik",
+      "id": "geofabrik_ri",
+      "license": "ODbL-1.0",
+      "license_proof_url": "https://download.geofabrik.de/north-america/us/rhode-island.html",
+      "sha256": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+      "size_bytes": 52514407,
+      "url": "https://download.geofabrik.de/north-america/us/rhode-island-261029.osm.pbf",
+      "version": "2026-10-29"
+    },
+    "source_files": {
+      "Dockerfile.build": "03975c96f75207a08363c413020aa9d66d273e0d07acb08a7fa43f2aad2c0b50",
+      "config/debian.sources": "23df8a5e1b28f06b6a2bc174bea45efaa6817ca10ff5b96efcb58ad887beed1b",
+      "pyproject.toml": "cea8c0adc7eb365039f322e77e3fe8dd2941d4c8718d5c57458c75c34af1df58",
+      "src/ck/generated.py": "894de7ad2a2a2b1ad1650cafe7d12292f86f11481eab6eee3ba0c1c9b57b529e",
+      "src/ck/roadcache.py": "590136320a4323e2b31e5dc1cc53e88702043bffc1036718a4d1e7550696aa58",
+      "src/ck/roadsource.py": "cf49fc89b2879dd967d1b3202ce9d0ec30e5d7f900d000bbf53d275d4ad75f3f",
+      "tools/prepare_road_cache.py": "e0e0ca0a15ff13f3ccc7fabccd5714e9b7df792ce92acf51d0126e027b26388b",
+      "uv.lock": "be13e16abcc68ef4afd7a239adb075cdfc80986823c8e3d0221cf9878e90c360"
+    },
+    "tools": {
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "python": "3.12.16",
+      "shapely": "2.2.0",
+      "sqlite": "3.40.1"
+    }
+  },
+  "counts": {
+    "place_count": 109,
+    "road_classes": {
+      "bridleway": 63,
+      "cycleway": 586,
+      "footway": 24173,
+      "living_street": 5,
+      "motorway": 1186,
+      "motorway_link": 1067,
+      "path": 6152,
+      "pedestrian": 193,
+      "primary": 2929,
+      "primary_link": 317,
+      "residential": 24494,
+      "secondary": 2146,
+      "secondary_link": 111,
+      "service": 64346,
+      "steps": 629,
+      "tertiary": 2463,
+      "tertiary_link": 32,
+      "track": 993,
+      "trunk": 367,
+      "trunk_link": 193,
+      "unclassified": 1397
+    },
+    "road_count": 133842
+  },
+  "build_execution": {
+    "started_utc": "2026-11-02T03:44:55.979433+00:00",
+    "finished_utc": "2026-11-02T03:47:12.637820+00:00",
+    "wall_seconds": 136.6570947500004,
+    "exit_code": 0,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-02T03:44:56.145940247Z",
+      "FinishedAt": "2026-11-02T03:47:12.610602938Z"
+    },
+    "host_config": {
+      "NanoCpus": 1000000000,
+      "Memory": 4294967296,
+      "MemorySwap": 4294967296,
+      "NetworkMode": "none"
+    },
+    "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52"
+  },
+  "build_final_resources": {
+    "actual_child_exit_code": 0,
+    "wall_seconds": 136.2222849999962,
+    "peak_child_rss_kib": 464012,
+    "cgroup": {
+      "memory.peak": "479199232\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    }
+  },
+  "kent_exact_comparison": {
+    "scope": "Exact cached road/place selection equals frozen152 direct Kent scene; no PDF rerender or new source intake.",
+    "cache_producer_source_commit": "9f60acd",
+    "consumer_source_commit": "1a842fd",
+    "original_scene_sha256": "7776b9f8f617f713a583d5089bd316dab08c7fbb657ce1c2633f0db6f4d3790a",
+    "original_scene_source_commit": "998a84be45ec95506de261020acfb6798838fcc5",
+    "query_with_full_cache_admission_seconds": 1.7332765810060664,
+    "source_way_count": 30519,
+    "named_way_count": 9512,
+    "distinct_source_names": 5298,
+    "settlement_count": 18,
+    "all_ids_names_attributes_geometry_order_and_counts_equal": true,
+    "canonical_field_sha256": {
+      "roads": "6395bf1ee0becaee3f4e40acd93630b322a679995d78e7fb2a393e6eaf49f83f",
+      "settlements": "5635043c81a47e807777c380b0866db69fea3e77a5458e8fe2aef2c4222a3577",
+      "road_counts": "e88e60424ed4ff5cf50e51696d61f531230818e856202dace97c603a9a21968a"
+    },
+    "cache_manifest_canonical_sha256": "9e5a66a1d13527c7095611a588e728e4dce03cb6c127c6334a878f41b2aa38a7",
+    "cached_rows_file_sha256": "05e0875915783999e82d142ca772f063f86dcc839225b83556cf636a11e8b584",
+    "crs": "EPSG:32619",
+    "epoch": 1793404800,
+    "selected_way_guard": 50000,
+    "peak_rss_kib": 519244,
+    "cgroup": {
+      "memory.peak": "544755712\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    }
+  },
+  "providence_matched_comparison": {
+    "scope": "Matched exact Providence viewport and old565direct extractor versus verified spatial-cache reuse, same1CPU/pinnedimage. Singlecomparison, not cold-device or national speedclaim.",
+    "historical_direct_source_commit": "565be7cad29780bea0313e20f578037dffa90b3f",
+    "historical_source_file_sha256": "097b4b2ce24632cd538317b5da8aead3beab27139c38055ac4ff79808bd224dc",
+    "cache_consumer_source_commit": "1a842fd",
+    "direct_pbf_seconds": 108.90902652400109,
+    "cache_admission_and_query_seconds": 0.7826046189948102,
+    "observed_ratio_this_comparison": 139.16225879663932,
+    "all_ids_names_geometry_attributes_order_counts_equal": true,
+    "canonical_result_sha256": "4cdbe1cf49de7b4eec6d8208c02d3e4683ed88e902244e7318758f2c0128515d",
+    "source_way_count": 12901,
+    "named_way_count": 2328,
+    "distinct_names": 947,
+    "selected_way_guard": 50000,
+    "peak_rss_kib": 527380,
+    "cgroup": {
+      "memory.peak": "496832512\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    }
+  },
+  "installed_wheel_kent_comparison": {
+    "scope": "Exact cached road/place selection equals frozen152 direct Kent scene; no PDF rerender or new source intake.",
+    "cache_producer_source_commit": "9f60acd",
+    "consumer_source_commit": "c02fd66",
+    "original_scene_sha256": "7776b9f8f617f713a583d5089bd316dab08c7fbb657ce1c2633f0db6f4d3790a",
+    "original_scene_source_commit": "998a84be45ec95506de261020acfb6798838fcc5",
+    "query_with_full_cache_admission_seconds": 1.6712820440006908,
+    "source_way_count": 30519,
+    "named_way_count": 9512,
+    "distinct_source_names": 5298,
+    "settlement_count": 18,
+    "all_ids_names_attributes_geometry_order_and_counts_equal": true,
+    "canonical_field_sha256": {
+      "roads": "6395bf1ee0becaee3f4e40acd93630b322a679995d78e7fb2a393e6eaf49f83f",
+      "settlements": "5635043c81a47e807777c380b0866db69fea3e77a5458e8fe2aef2c4222a3577",
+      "road_counts": "e88e60424ed4ff5cf50e51696d61f531230818e856202dace97c603a9a21968a"
+    },
+    "cache_manifest_canonical_sha256": "9e5a66a1d13527c7095611a588e728e4dce03cb6c127c6334a878f41b2aa38a7",
+    "cached_rows_file_sha256": "05e0875915783999e82d142ca772f063f86dcc839225b83556cf636a11e8b584",
+    "crs": "EPSG:32619",
+    "epoch": 1793404800,
+    "selected_way_guard": 50000,
+    "peak_rss_kib": 519508,
+    "cgroup": {
+      "memory.peak": "549285888\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    }
+  },
+  "focused_checks": {
+    "passed": 70,
+    "seconds": 9.11,
+    "ruff_passed": true,
+    "tiny_fixture_cache_repeat_bytes_identical": true
+  },
+  "retained_cache_review": "[[VERIFY: human source-pin and ODbL source-offer review; one bounded full-source cache build. Kent and Providence selected IDs, names, attributes, geometry, ordering, and counts match direct inputs exactly, including installed-wheel admission. Original source and release/security holds remain. Build input only, not a national or physical-phone acceptance claim.]]",
+  "remaining_limits": [
+    "One full cache build, without a second clean real-cache repeat.",
+    "Selected-area equality is not proof of a national source/geometry implementation.",
+    "Measured query speed excludes PDF rendering and device/USB performance.",
+    "County grouping, complete rendered coverage, total atlas capacity, and human/source/release gates remain separate.",
+    "Root integration authenticates a whole plan before passing planned_part; the part geometry/metadata are also bound in the county producer fingerprint."
+  ],
+  "comparison_containers": {
+    "ck146-kent-equality-a": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-02T03:49:12.165826933Z",
+        "FinishedAt": "2026-11-02T03:49:29.149995314Z"
+      },
+      "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "cpu_nano": 1000000000,
+      "memory_bytes": 4294967296,
+      "memory_plus_swap_bytes": 4294967296,
+      "network": "none"
+    },
+    "ck146-providence-comparison-a": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-02T03:54:27.720641547Z",
+        "FinishedAt": "2026-11-02T03:56:30.94114493Z"
+      },
+      "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "cpu_nano": 1000000000,
+      "memory_bytes": 4294967296,
+      "memory_plus_swap_bytes": 4294967296,
+      "network": "none"
+    },
+    "ck146-installed-cache-a": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-02T04:07:14.796387873Z",
+        "FinishedAt": "2026-11-02T04:07:32.168789515Z"
+      },
+      "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "cpu_nano": 1000000000,
+      "memory_bytes": 2147483648,
+      "memory_plus_swap_bytes": 2147483648,
+      "network": "none"
+    }
+  },
+  "installed_wheel": {
+    "size_bytes": 207485,
+    "sha256": "06ca89c05284704fd5392200445197117cd38b6a44a3a4b722c21138085a27f3",
+    "imported_module": "/output/installed/ck/roadcache.py",
+    "offline_local_wheel_only": true
+  }
+}
