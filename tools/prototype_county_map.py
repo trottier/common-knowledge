@@ -9,6 +9,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 for name in ["root", "cache", "basemap", "points", "zip-source", "output", "pdf-budget-config"]:
     parser.add_argument("--" + name, type=Path, required=True)
 parser.add_argument("--policy", type=Path)
+parser.add_argument("--road-cache", type=Path)
 parser.add_argument("--counts-only", action="store_true")
 args = parser.parse_args()
 run(
@@ -21,4 +22,5 @@ run(
     args.pdf_budget_config,
     args.policy,
     args.counts_only,
+    args.road_cache,
 )

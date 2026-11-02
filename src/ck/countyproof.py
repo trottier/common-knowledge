@@ -8,27 +8,24 @@ import json
 import math
 import resource
 import time
-from collections import Counter
 from datetime import UTC, datetime
 from decimal import Decimal
 from pathlib import Path
 
 import geopandas as gpd
 import mapbox_vector_tile
-import osmium
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from markupsafe import Markup
 from pmtiles.reader import Reader
 from pmtiles.tile import Compression
 from pypdf import PdfReader
 from pyproj import Transformer
-from shapely import from_wkb, transform
+from shapely import transform
 from shapely.geometry import Point, box, mapping, shape
 from weasyprint import HTML
 
 from ck.catalog import load_catalog, safe_path
 from ck.config import load_config, read_yaml
-from ck.directory import excluded
 from ck.generated import cached_input, verified_generated_files
 from ck.geo import dms
 from ck.geofonts import font_records, require_glyphs
@@ -47,6 +44,8 @@ def producer_recipe(root: Path, policy_path: Path | None = None) -> dict:
         "src/ck/countyproof.py",
         "src/ck/streetlabels.py",
         "src/ck/streetcoverage.py",
+        "src/ck/roadsource.py",
+        "src/ck/roadcache.py",
         "tools/prototype_county_map.py",
         selected_policy,
         "templates/county-proof.html.j2",
@@ -173,56 +172,10 @@ def sheet_plan(geometry, policy: dict) -> list[dict]:
     return result
 
 
-def read_roads(
-    source: Path, project, extent, allowed: set[str], maximum: int
-) -> tuple[list, list, dict]:
-    roads, settlements = [], []
-    counts = Counter()
-    factory = osmium.geom.WKBFactory()
+def read_roads(source: Path, project, extent, allowed: set[str], maximum: int):
+    from ck.roadsource import select_source
 
-    class Handler(osmium.SimpleHandler):
-        def node(self, node):
-            tags = dict(node.tags)
-            if tags.get("place") not in {
-                "city",
-                "town",
-                "village",
-                "hamlet",
-                "suburb",
-            } or not tags.get("name"):
-                return
-            x, y = project(node.location.lon, node.location.lat)
-            if extent.covers(Point(x, y)):
-                settlements.append({"name": tags["name"], "x": x, "y": y, "id": f"n{node.id}"})
-
-        def way(self, way):
-            tags = dict(way.tags)
-            if tags.get("highway") not in allowed or excluded(tags):
-                return
-            line = transform(from_wkb(factory.create_linestring(way)), project, interleaved=False)
-            clipped = line.intersection(extent)
-            if clipped.is_empty:
-                return
-            if len(roads) >= maximum:
-                raise ValueError("Prototype source-way guard reached; no ways silently dropped")
-            roads.append(
-                {
-                    "id": way.id,
-                    "kind": tags["highway"],
-                    "name": tags.get("name", ""),
-                    "ref": tags.get("ref", ""),
-                    "access": tags.get("access", ""),
-                    "geometry": mapping(clipped),
-                }
-            )
-            counts[tags["highway"]] += 1
-
-    Handler().apply_file(osmium.io.File(str(source), "pbf"), locations=True, idx="flex_mem")
-    return (
-        sorted(roads, key=lambda entry: entry["id"]),
-        sorted(settlements, key=lambda x: x["id"]),
-        dict(sorted(counts.items())),
-    )
+    return select_source(source, project, extent, allowed, maximum)
 
 
 def water_polygons(source: Path, extent, inverse, project, policy: dict) -> tuple[list, dict]:
@@ -293,7 +246,13 @@ def water_polygons(source: Path, extent, inverse, project, policy: dict) -> tupl
 
 
 def prepare(
-    root: Path, cache: Path, basemap: Path, points: Path, zip_source: Path, policy: dict
+    root: Path,
+    cache: Path,
+    basemap: Path,
+    points: Path,
+    zip_source: Path,
+    policy: dict,
+    road_cache: Path | None = None,
 ) -> dict:
     county_id = policy.get("county", "")
     if (
@@ -308,7 +267,9 @@ def prepare(
         )
     items = load_catalog(root, load_config(root))
     ids = ["census_county_analysis", "geofabrik_ri"]
-    raw = {key: cached_input(items[key], cache) for key in ids}
+    raw = {"census_county_analysis": cached_input(items["census_county_analysis"], cache)}
+    if road_cache is None:
+        raw["geofabrik_ri"] = cached_input(items["geofabrik_ri"], cache)
     basemap_meta, basemap_files = verified_generated_files(items["protomaps_ri"], basemap, items)
     points_meta, point_files = verified_generated_files(
         items["directory_ri"], points, items, allow_incomplete=True
@@ -375,13 +336,28 @@ def prepare(
 
     extent = union_all([box(*sheet["bounds"]) for sheet in sheets])
     road_policy = read_yaml(root / "pipelines/androidmaps/settings.yaml")
-    roads, settlements, road_counts = read_roads(
-        raw["geofabrik_ri"],
-        forward.transform,
-        extent,
-        set(road_policy["road_values"]),
-        policy["max_source_ways"],
-    )
+    road_cache_audit = None
+    if road_cache is None:
+        roads, settlements, road_counts = read_roads(
+            raw["geofabrik_ri"],
+            forward.transform,
+            extent,
+            set(road_policy["road_values"]),
+            policy["max_source_ways"],
+        )
+    else:
+        from ck.roadcache import read_cached_roads
+
+        roads, settlements, road_counts, road_cache_audit = read_cached_roads(
+            root,
+            items,
+            road_cache,
+            extent,
+            set(road_policy["road_values"]),
+            crs.to_string(),
+            policy["max_source_ways"],
+            policy["epoch"],
+        )
     water, water_audit = water_polygons(
         basemap_files["RI.pmtiles"], extent, backward.transform, forward.transform, policy
     )
@@ -445,6 +421,7 @@ def prepare(
             "complete": points_meta["complete"],
         },
         "road_counts": road_counts,
+        "road_cache": road_cache_audit,
         "zip_source_sha256": sha(zip_source),
         "zctas": codes,
         "zip_areas": zip_areas,
@@ -918,6 +895,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
         "street_name_coverage": street_coverage,
         "overview": {**overview_audit, "poi_ids": [point["id"] for point in data["pois"]]},
         "road_counts": data["road_counts"],
+        "road_cache": data.get("road_cache"),
         "water_audit": data["water_audit"],
         "inputs": data["inputs"],
         "fonts": data["fonts"],
@@ -949,6 +927,7 @@ def run(
     pdf_budget_config: Path,
     policy_path: Path | None = None,
     counts_only: bool = False,
+    road_cache: Path | None = None,
 ) -> None:
     started = time.monotonic()
     policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
@@ -960,7 +939,7 @@ def run(
     policy["pdf_max_bytes"] = int(maximum)
     policy["pdf_budget_source_sha256"] = sha(pdf_budget_config)
     policy["pdf_budget"] = budget
-    data = prepare(root, cache, basemap, points, zip_source, policy)
+    data = prepare(root, cache, basemap, points, zip_source, policy, road_cache)
     prepared_seconds = time.monotonic() - started
     data["producer"] = producer_recipe(root, policy_path)
     output.parent.mkdir(parents=True, exist_ok=True)
