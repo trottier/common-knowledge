@@ -86,6 +86,9 @@ class Item(Model):
     placement: Literal["universal", "hub_only"] | Topics | Collection
     dest: Text
     profiles: list[ProfileName] = Field(min_length=1)
+    language: (
+        Annotated[str, StringConstraints(pattern=r"^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$")] | None
+    ) = None
     inputs: list[Identifier] = Field(default_factory=list)
     pipeline_version: Text | None = None
     signer_cert_sha256: Sha256 | Marker | None = None
@@ -106,6 +109,8 @@ class Item(Model):
     @model_validator(mode="after")
     def structure(self) -> Self:
         safe_path(self.dest.rstrip("/"))
+        if "{edition}" in self.dest and self.language is None:
+            raise ValueError("Edition destinations require a language code")
         if self.family == "generated":
             if self.url is not None or not self.inputs or self.pipeline_version is None:
                 raise ValueError("Generated items need inputs and pipeline_version, not a URL")
@@ -202,6 +207,10 @@ def load_catalog(root: Path, config: Configuration | None = None) -> dict[str, I
             if source.source_for != item.id or source.url != item.source_url:
                 raise ValueError(f"{item.id}: source archive is not explicitly tied to this app")
         if config:
+            if item.language is not None and item.language not in {
+                language.code for language in config.languages
+            }:
+                raise ValueError(f"{item.id}: unknown language edition: {item.language}")
             if isinstance(item.placement, Topics):
                 if not set(item.placement.topics) <= config.variants.topics.keys():
                     raise ValueError(f"{item.id}: unknown topic placement")

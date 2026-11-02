@@ -1,0 +1,1792 @@
+{
+  "scope": "Single full cache-only batch; not a clean repeat or medical/rights/phone approval.",
+  "source_commit": "d1fc1b042dbc4a73475c1ae33ee85dabb1e62ffa",
+  "new_recipe": "medical-cache-reframe-v1-e0eb9ad77c9dd41e0a91983d988619f22b18378780e7a161b0ffd689b49e25dd",
+  "canonical_generation_sha256": "3e07e53d0f1a9f6a78f72097d910d3c91c90cba59c1bb79790830218cdce394c",
+  "raw_generation_sha256": "0bdf296400e91679e2604ebb041553a839485b845c603f5ab79f918d11115ab5",
+  "raw_recomposition_sha256": "b0ccd979d52b41d54f4f83da4e3b94b0b339ea377fc3790ab4aae88678557541",
+  "complete": true,
+  "pdf_count": 158,
+  "all_expected_paths_present": true,
+  "original_order_preserved": true,
+  "every_clinical_main_bytes_unchanged": true,
+  "every_payload_intermediate_rehashed": true,
+  "all_new_pdf_ids_match_html": true,
+  "all_dates_match_epoch": true,
+  "source_license_links_retained_every_pdf": true,
+  "license_readme_archive_audits_byte_identical": true,
+  "all_fonts_preserved": true,
+  "all_pdfs_within_budget": true,
+  "total_pages": 15621,
+  "original_total_pages": 15786,
+  "pdf_bytes": 70234927,
+  "payload_bytes": 70247020,
+  "elapsed_seconds": 801.5779522249977,
+  "peak_rss_kib": 846872,
+  "parent_peak_rss_kib": 846872,
+  "worker_peak_rss_kib": 822088,
+  "producer_cgroup": {
+    "memory.peak": "2069475328\n",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "original_review_holds": "[[VERIFY: named human medical selection and content review, physical iPhone readability and final release-epoch reproduction; two frozen 158-article packs from WikiMed and WikEM match byte for byte]]",
+  "input_review_holds": {
+    "mathjax_mml_svg": {
+      "license": "Apache-2.0",
+      "license_proof_url": "https://registry.npmjs.org/mathjax-full/3.2.2",
+      "review": "[[VERIFY: independent package pin, Apache license/font-data notice and generated equation rendering review; publisher SHA-512 integrity matched]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosans/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_arabic": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansarabic/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_devanagari": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansdevanagari/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_georgian": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosansgeorgian/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_hebrew": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanshebrew/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_kr": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanskr/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_sc": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssc/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_symbols2": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanssymbols2/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "noto_sans_tc": {
+      "license": "OFL-1.1",
+      "license_proof_url": "https://github.com/google/fonts/blob/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/notosanstc/OFL.txt",
+      "review": "[[VERIFY: human review of font download hash pinned from publisher HTTPS file]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "wikem_en_nopic": {
+      "license": "CC-BY-SA-4.0 AND CC0-1.0",
+      "license_proof_url": "https://wikem.org/wiki/Creative_Commons",
+      "review": "[[VERIFY: human pin/scope review of the public snapshot and seven publisher denials, stable raw-source hosting, clinical review and physical Kiwix checks; two frozen development builds match]]",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    },
+    "wikimed_en_nopic": {
+      "license": "CC-BY-SA-4.0",
+      "license_proof_url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+      "review": "Source input only. Three malformed internal links are repaired during regeneration. Do not place this publisher file on the drive.",
+      "requires_legal": false,
+      "legal_reviewer": null,
+      "legal_reviewed_on": null
+    }
+  },
+  "archive_accessed": false,
+  "validated_articles": [
+    {
+      "id": "cardiopulmonary_resuscitation",
+      "filename": "001_cardiopulmonary_resuscitation.pdf",
+      "pages": 252,
+      "original_pages": 253,
+      "size_bytes": 897285,
+      "sha256": "5a1782cf0bd8aaa976d7086b38bdda12953221704addadb014e0631d9cdedbda",
+      "clinical_main_sha256": "f2bf3872c7f75caead3fbc5a3a50f76e5ab90a99cff9623df8e8f97442188bc3",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "bleeding",
+      "filename": "002_bleeding.pdf",
+      "pages": 36,
+      "original_pages": 36,
+      "size_bytes": 135021,
+      "sha256": "c27f9b8e2c4ff092c2c858e157413fb35424f6ceb7ff1bf7d2bb9fec6753739b",
+      "clinical_main_sha256": "69288fec79df0185edea6a373b05448e22737f1447cfd3b2f27623176b0c7002",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "tourniquet",
+      "filename": "003_tourniquet.pdf",
+      "pages": 67,
+      "original_pages": 68,
+      "size_bytes": 315340,
+      "sha256": "26f520cb110be282c2951649791cf798bbde5c8c841420619cba202b215c9064",
+      "clinical_main_sha256": "5c5ce73d89b8fcc60c73264faa0bf75ea560f9a2b4557efda62136a78251c3e9",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "shock_circulatory",
+      "filename": "004_shock_circulatory.pdf",
+      "pages": 77,
+      "original_pages": 79,
+      "size_bytes": 330345,
+      "sha256": "44dc59d5b88618aa67327667059da894afae08f4ccb3bf6b84244ace5c5b0f39",
+      "clinical_main_sha256": "f7c1abb546011911d9547056d793e065ac3519e28660bcb51da3e9272db651b5",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "recovery_position",
+      "filename": "005_recovery_position.pdf",
+      "pages": 14,
+      "original_pages": 15,
+      "size_bytes": 63415,
+      "sha256": "c668e00d02760b577a8f506e16001970c217171cfdfee30ce268c3f144bb3938",
+      "clinical_main_sha256": "51e63e256962ff4ce0840b64d0787bb89ff280db3f4e42408668ca6ade9178fd",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "burn",
+      "filename": "006_burn.pdf",
+      "pages": 113,
+      "original_pages": 114,
+      "size_bytes": 575329,
+      "sha256": "f651ae36e66a5338ef6c80fb6acb1de2fdd15c25280fe3df24f225095ea8b1da",
+      "clinical_main_sha256": "7f8da2fcc4edd029d17ed3e3f458fb4bc3be097b78b2d887995ff7f847436dcd",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "heat_stroke",
+      "filename": "007_heat_stroke.pdf",
+      "pages": 44,
+      "original_pages": 45,
+      "size_bytes": 203294,
+      "sha256": "2e780a93f304c7d199e8e6e3e34cb25dfb2f1bf3e47b8d530eb3b7f566d7fd55",
+      "clinical_main_sha256": "be5c6354cc37d13f94770ef84a73b0b210d1d9254fb37c07d013781cfd6f3a05",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "heat_exhaustion",
+      "filename": "008_heat_exhaustion.pdf",
+      "pages": 53,
+      "original_pages": 54,
+      "size_bytes": 234843,
+      "sha256": "5e6a1be3ea886fecf6b2b3ab35637daa1227eb5ef8905babb16bc37051fbdfd4",
+      "clinical_main_sha256": "6420dbacd8f1e703f78683071840ef9e5b217b32883c3d5017797802506a7424",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hypothermia",
+      "filename": "009_hypothermia.pdf",
+      "pages": 94,
+      "original_pages": 95,
+      "size_bytes": 430148,
+      "sha256": "ae85b80eb57a2085c4c140b509242629811c2b297c379bfa9d11688fb73706fa",
+      "clinical_main_sha256": "4b92bd5d5fd6ed88419bd62ab21fbf063897b5df1878df212b042014b10153dd",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "frostbite",
+      "filename": "010_frostbite.pdf",
+      "pages": 55,
+      "original_pages": 56,
+      "size_bytes": 259206,
+      "sha256": "2eb0a8e39e13e7ec72e0d452602aaa6b90816e7aa6a42277e72dd7ad7e262420",
+      "clinical_main_sha256": "18cd1c10aa5f7dde33c75fe66a952d7512959864d9628b45a066d8c7cb2a2929",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "dehydration",
+      "filename": "011_dehydration.pdf",
+      "pages": 46,
+      "original_pages": 46,
+      "size_bytes": 225845,
+      "sha256": "2261323368a22a734bb86df5aa529740b667be7d4f85412c186ca3c91d8c6249",
+      "clinical_main_sha256": "292bd6f5535c049f4014a11618268ba865f2e672f1b94d3248ce8b5441ffc6b4",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "oral_rehydration_therapy",
+      "filename": "012_oral_rehydration_therapy.pdf",
+      "pages": 71,
+      "original_pages": 72,
+      "size_bytes": 289554,
+      "sha256": "80a447cc47e7f7f66a0f7ea8de139013d6445b889c6ba88cae1becf4c71ecfa5",
+      "clinical_main_sha256": "55d3128829af371c24f3b059606286070ed938b542b01b3748361bfc2891f91f",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "diarrhea",
+      "filename": "013_diarrhea.pdf",
+      "pages": 115,
+      "original_pages": 116,
+      "size_bytes": 555276,
+      "sha256": "fa9269970a095f7744c22052d7805b14043eef409c4b0c642c9445799bc93599",
+      "clinical_main_sha256": "cf4b5d719f7b3dc5a17dbb89197e420027c5dbaa5a8cfd0bd21ec1a3c2c9334b",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "vomiting",
+      "filename": "014_vomiting.pdf",
+      "pages": 63,
+      "original_pages": 65,
+      "size_bytes": 285124,
+      "sha256": "1642198f2d1bfce108a8bbddc579f285948c6227b82968f0ef583756c78d6fa8",
+      "clinical_main_sha256": "74f9d7f249ac57e35345eb164fe40e585ec647609dc4dc3762f48bb447bf9fd0",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "foodborne_illness",
+      "filename": "015_foodborne_illness.pdf",
+      "pages": 142,
+      "original_pages": 143,
+      "size_bytes": 546492,
+      "sha256": "8c7e91e89699d2894bbf47a42b3575fd4c24316a9cffd9b24495c6eece75eeea",
+      "clinical_main_sha256": "d76bc81114905a729fa1b17b0b9182446f17e318a60d6b54588329c1a300ab05",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "choking",
+      "filename": "016_choking.pdf",
+      "pages": 113,
+      "original_pages": 114,
+      "size_bytes": 405411,
+      "sha256": "5418aba490531bf104437f85d0ff5019bcd5bc2bd26d514b045a56e3a498e69b",
+      "clinical_main_sha256": "40dada2f2325bea439dde8043403646ae8f6937cc36ee59adf1be251c7a9f4bf",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "drowning",
+      "filename": "017_drowning.pdf",
+      "pages": 164,
+      "original_pages": 165,
+      "size_bytes": 683545,
+      "sha256": "617cbef35fee1a2807340944912e4f8bb46f5e891c6a41d1ab7e1966888c5a46",
+      "clinical_main_sha256": "30708060df76ceb7cc081055f4da10bb7a7d5fb50daf23f862e3e0265b48ddf2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "anaphylaxis",
+      "filename": "018_anaphylaxis.pdf",
+      "pages": 91,
+      "original_pages": 91,
+      "size_bytes": 478694,
+      "sha256": "e58c4498044bdf86a9bda1b1370cb33236899acfa011c1750cde674740950c1f",
+      "clinical_main_sha256": "54c3a88f93241dc69a95712da700a497efca45b9170202c803e1aa9a8f55b170",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "asthma",
+      "filename": "019_asthma.pdf",
+      "pages": 120,
+      "original_pages": 121,
+      "size_bytes": 554859,
+      "sha256": "062eb3831657899f6643c01d7ca86e896130ef6a139dd1a29e5f50dbe7f3c886",
+      "clinical_main_sha256": "8c25a7830607ce7d719e62a1da2acf507e44e79e6e435805974921c6ef5b3db5",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "heart_attack",
+      "filename": "020_heart_attack.pdf",
+      "pages": 161,
+      "original_pages": 163,
+      "size_bytes": 806597,
+      "sha256": "67c0da7dc70c6dcfd1cb851f3ed636f111f3262d1564c6baf529709d2088a63e",
+      "clinical_main_sha256": "db8e166bf765e29e6f81f918dfc45e51ee1eeeb10283b988edfb94b9524337ef",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "stroke",
+      "filename": "021_stroke.pdf",
+      "pages": 247,
+      "original_pages": 248,
+      "size_bytes": 1135547,
+      "sha256": "9649371223891d61c8771ae51cf6d12ae41f5fdde759580e412269cf71ea834d",
+      "clinical_main_sha256": "746d416f560685c984eaf489efdd8b3609142955035246733a8fe60eb49b0f99",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "seizure",
+      "filename": "022_seizure.pdf",
+      "pages": 97,
+      "original_pages": 98,
+      "size_bytes": 455441,
+      "sha256": "6b9907e874ec8d643d4b6bce5953c1766641e09b59e23eece46f1e8890fa755f",
+      "clinical_main_sha256": "48aef18bf97c54862a481ce489fe9e4d2e44eb309388f4713dbcd88fb0519115",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "status_epilepticus",
+      "filename": "023_status_epilepticus.pdf",
+      "pages": 48,
+      "original_pages": 48,
+      "size_bytes": 222002,
+      "sha256": "9e359730568cf401d19a7f73d5c0bfa5a2b0f1332a8323d0fbd68d503abc09ad",
+      "clinical_main_sha256": "be80480ac5fa55b8ce8683644b34ce1259a6caa911d9d8ef9386a45851a3394e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hypoglycemia",
+      "filename": "024_hypoglycemia.pdf",
+      "pages": 84,
+      "original_pages": 85,
+      "size_bytes": 515644,
+      "sha256": "c5dedcc8688e4c48e2486ccad2b9c32ecb1628cc2ebb7929a3d88f751fc35ade",
+      "clinical_main_sha256": "e5379061aa6eeb041b10e90968fff510e4ee6d24650a4d6b00492156e996d8aa",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hyperglycemia",
+      "filename": "025_hyperglycemia.pdf",
+      "pages": 70,
+      "original_pages": 71,
+      "size_bytes": 321583,
+      "sha256": "181688029d52f97b0fbc8cc57df20f1c2efdc297cdb302362dc7b2bc4265559c",
+      "clinical_main_sha256": "de42e451e8e22ccf5aa81fd24ae67700d6cb1ff6023a290ef6722cb8ee436295",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "diabetic_ketoacidosis",
+      "filename": "026_diabetic_ketoacidosis.pdf",
+      "pages": 62,
+      "original_pages": 63,
+      "size_bytes": 304828,
+      "sha256": "75edff0bfdfaf6f148eac422d621345d538dedb9d69759bce1f5ef104fa27e25",
+      "clinical_main_sha256": "42164a02d8f23080b45025d4f998675d758653ac6ec538b164c41401b30243e2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "diabetes_mellitus",
+      "filename": "027_diabetes_mellitus.pdf",
+      "pages": 192,
+      "original_pages": 193,
+      "size_bytes": 912110,
+      "sha256": "83a81270cc030358bd84133e4ecb4b8269bea07e10bf8037c58bcdc92872f5f2",
+      "clinical_main_sha256": "1c5da89c90b55a607722fc7d08a628dc087b610b046059e0d0b244f75968e94b",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "insulin",
+      "filename": "028_insulin.pdf",
+      "pages": 190,
+      "original_pages": 194,
+      "size_bytes": 802735,
+      "sha256": "ce563cbadb3e20042be8f568e0a03f753815754bc8acef8cc0b1e4f09f2321f1",
+      "clinical_main_sha256": "ff14bdd8e72fd47ca9201728c86cbaa03dc6109cc21a5f58d205041730c48119",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "chest_pain",
+      "filename": "029_chest_pain.pdf",
+      "pages": 109,
+      "original_pages": 110,
+      "size_bytes": 438101,
+      "sha256": "171cf90b09a715d01d7a57c15a95b8ee3a1d03f228467a4549a0b55ba6e9f819",
+      "clinical_main_sha256": "e58a0698cef3630c13773d4503398327c349adcc9ee4fd5a7d03e4e3615e7dcb",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "shortness_of_breath",
+      "filename": "030_shortness_of_breath.pdf",
+      "pages": 74,
+      "original_pages": 75,
+      "size_bytes": 374727,
+      "sha256": "11443d02788b76ae7194baa1380077056fcc7379821fa90b91b521ae87187dd9",
+      "clinical_main_sha256": "b1342807f1b52ec8c5750e023a8a37b47ed3b10876be411fab84018f1217a445",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "abdominal_pain",
+      "filename": "031_abdominal_pain.pdf",
+      "pages": 75,
+      "original_pages": 76,
+      "size_bytes": 290295,
+      "sha256": "e5285ed28fabc2b6f9341ca31937e0a1f9e5953edb4a084b64b56846ca63abf4",
+      "clinical_main_sha256": "bb0ce8e931a5afd2ed4eea9ba492ef6b2173486b7f51d5ec7f29ea52f6f45ed4",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "fever",
+      "filename": "032_fever.pdf",
+      "pages": 114,
+      "original_pages": 114,
+      "size_bytes": 607527,
+      "sha256": "35783ddf281bf86d86b3049204722d4fc28f83f57fe9d2494c896e3c6e92d972",
+      "clinical_main_sha256": "e65aacd44e0ab532fa1e7478d6f69f04db414819ce4ce45f16d94da6dd419960",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "headache",
+      "filename": "033_headache.pdf",
+      "pages": 122,
+      "original_pages": 123,
+      "size_bytes": 495320,
+      "sha256": "0a5340b0b3ff1e3dd142d5d76a8a6131f9053844c25a2ddb59b50d13993980f0",
+      "clinical_main_sha256": "675107d25ecb45697b70b187cd8c6be1faf2cb060107c691ab25dae11e1e147d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "altered_level_of_consciousness",
+      "filename": "034_altered_level_of_consciousness.pdf",
+      "pages": 27,
+      "original_pages": 27,
+      "size_bytes": 133773,
+      "sha256": "815e8a63bbf7c3c7a7a25a61bcca8448f43667ab1ce24cad17b05ace0f79c1cf",
+      "clinical_main_sha256": "e8d76ea826db46ad1bc28f8a4c05b31fc2235c6083de6319b986baf2441225cb",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "syncope",
+      "filename": "035_syncope.pdf",
+      "pages": 80,
+      "original_pages": 80,
+      "size_bytes": 364557,
+      "sha256": "be271c1262094886c3efdd3f327adc9cad6575c08dabfded193cb00c49bad1b3",
+      "clinical_main_sha256": "fc2565bea051cabbdbb18c9ca7f36c61c83bd7d5831c299d319a854a7031c3b6",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "poisoning",
+      "filename": "036_poisoning.pdf",
+      "pages": 24,
+      "original_pages": 24,
+      "size_bytes": 119389,
+      "sha256": "f4b06d1ba67df31083dbeda65ccc008534e3e7af11a197fea94cc0a72b1fd0cd",
+      "clinical_main_sha256": "d4e248de30b02fce7aa14c471504b2b7d1c43bdf8eb63a36f7f6f198888fb342",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "carbon_monoxide_poisoning",
+      "filename": "037_carbon_monoxide_poisoning.pdf",
+      "pages": 143,
+      "original_pages": 144,
+      "size_bytes": 671202,
+      "sha256": "8bac3e9147859261e801cfd50fde438ce8747ce916cf1df2bc40d9c97eadaecd",
+      "clinical_main_sha256": "925a6ce45f4cf3ff64fe0f33069b5e269378d24ebb07ffd832a1efa878d0ea73",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "alcohol_intoxication",
+      "filename": "038_alcohol_intoxication.pdf",
+      "pages": 65,
+      "original_pages": 66,
+      "size_bytes": 299503,
+      "sha256": "4ae68584c5ac18ed6c44e694352da51b6a132fd4b5bd3685a04c51aa12b55950",
+      "clinical_main_sha256": "b668c9427e8b684f53522f9d0facccc221a7b48c0309197ca8cf7444e75597f2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "opioid_overdose",
+      "filename": "039_opioid_overdose.pdf",
+      "pages": 77,
+      "original_pages": 78,
+      "size_bytes": 367481,
+      "sha256": "decbb787577cd71358597a3a770b1346560baf94198f0d519546ad45e1c38b24",
+      "clinical_main_sha256": "64ecdd66d6dfd07e7f0a07e5c69abb580db5e718ac755df4bcc22815ad0a3fe2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "naloxone",
+      "filename": "040_naloxone.pdf",
+      "pages": 122,
+      "original_pages": 123,
+      "size_bytes": 572958,
+      "sha256": "38d22a0817d116e41e64eb9f32d5e6192e25975652bad54377e8a86b973a09b7",
+      "clinical_main_sha256": "67b05a2d3c7523547aff0a9459a7e33ce3da6655f61cc0f8d36a2431fffc59a9",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "snakebite",
+      "filename": "041_snakebite.pdf",
+      "pages": 116,
+      "original_pages": 118,
+      "size_bytes": 536428,
+      "sha256": "29c23dce6bc4b3f5579e8e4f497ee7f9c84e30b36dcd444fbf8e165a66746922",
+      "clinical_main_sha256": "d080b85e3e1e300686e94fce97aae9266683d54ce716d7bebd6bf0e214c20acf",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "spider_bite",
+      "filename": "042_spider_bite.pdf",
+      "pages": 50,
+      "original_pages": 51,
+      "size_bytes": 237664,
+      "sha256": "e03909af957fd9acb583ebb24d7384c635963999149e9384ae3623efb20920d7",
+      "clinical_main_sha256": "2b0c1f6cd41059299fd7ad56f0d1e12373793008851160a8f959930b94704cf4",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "tick_bite",
+      "filename": "043_tick_bite.pdf",
+      "pages": 49,
+      "original_pages": 49,
+      "size_bytes": 216803,
+      "sha256": "a9dd48004ac60640b6f5d26ffe0dfa93e9f41c2af26f8f60cf26ed29f096c57e",
+      "clinical_main_sha256": "20b8a5498e3f27ccfde8c3ce94903b61a6a489d11a507c5ecd28cabc53313b53",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "rabies",
+      "filename": "044_rabies.pdf",
+      "pages": 124,
+      "original_pages": 125,
+      "size_bytes": 588838,
+      "sha256": "f77ca34581abf9eefd5d4da830c65c6bb40886cca032317e24fb13ee9bdb407e",
+      "clinical_main_sha256": "7e557ea02b0f3256e242763e52d346be3388848993b6a2644e3a7baeff9c6f4a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "tetanus",
+      "filename": "045_tetanus.pdf",
+      "pages": 71,
+      "original_pages": 72,
+      "size_bytes": 313462,
+      "sha256": "28705406a8ca3041bb881fe4d3c9502405d923e9994bc41cbe935797c56245f5",
+      "clinical_main_sha256": "98f62ba8931b6be1f5e298b5125f946a8a573845a8bcdf2dfa931d541baee89c",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wound",
+      "filename": "046_wound.pdf",
+      "pages": 74,
+      "original_pages": 75,
+      "size_bytes": 289975,
+      "sha256": "288ec46204a0f5c178436f66834e7adefa5b89b0039b7de874dc792f79c8e0e4",
+      "clinical_main_sha256": "9117108d06637678f9f5e896c6e4948a1f38c3569e06ecb619d31d3ce92223ee",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "sterilization",
+      "filename": "047_sterilization.pdf",
+      "pages": 85,
+      "original_pages": 86,
+      "size_bytes": 349227,
+      "sha256": "6cf1611b1a7da74eb6004da2e11a4364ae1b2aec1afcb160be6c9c2fe1ff0c37",
+      "clinical_main_sha256": "e8bf35f5200f46b6fb4f4f7d6cb295298779d2af42d811816864ee1895be066e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "puncture_wound",
+      "filename": "048_puncture_wound.pdf",
+      "pages": 30,
+      "original_pages": 30,
+      "size_bytes": 140680,
+      "sha256": "43ec7615a1c3c49cc423872d878e66209788d1c9d92c395583c1c16c425274c2",
+      "clinical_main_sha256": "36394164d5b10a5a6b5f8b126310506ac3a5bbdba11a9166957579df547646ea",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "crush_injury",
+      "filename": "049_crush_injury.pdf",
+      "pages": 10,
+      "original_pages": 11,
+      "size_bytes": 58293,
+      "sha256": "af607d98f9d08877a4a4eee70d69c3f0026787b95c772ac9647de8ddc660c052",
+      "clinical_main_sha256": "fbb0dab145542a7f4ad80eb0b43cb864dde64a537d303afa31d5a28be11be13e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "compartment_syndrome",
+      "filename": "050_compartment_syndrome.pdf",
+      "pages": 63,
+      "original_pages": 65,
+      "size_bytes": 375382,
+      "sha256": "80fc6078debc951eaab821d62c21766753cece3aa618ec8be1775ed243124933",
+      "clinical_main_sha256": "7a0087c17e93f03c5ac97b605ddcd746086a392d8902fc3cec22400800b6a0c3",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "rhabdomyolysis",
+      "filename": "051_rhabdomyolysis.pdf",
+      "pages": 69,
+      "original_pages": 71,
+      "size_bytes": 357031,
+      "sha256": "6c4209f2d1b5f8682afb3db94fcceebcea63388ad6951d7a2f0da9b028aab8c3",
+      "clinical_main_sha256": "f6efca0c19e2e422a4579c0cbb671e1ed86eb45bd14147969a49d657fc5a883d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "bone_fracture",
+      "filename": "052_bone_fracture.pdf",
+      "pages": 81,
+      "original_pages": 84,
+      "size_bytes": 301048,
+      "sha256": "c604170b7b7fa753746ac6429d61ce2d5b08aec7d1dceec7ed725c743f61ce26",
+      "clinical_main_sha256": "565f951ae2d3c369687dc45b2078c376cc94f376d1c0456c358b9a1e9723886a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "sprain",
+      "filename": "053_sprain.pdf",
+      "pages": 42,
+      "original_pages": 43,
+      "size_bytes": 188900,
+      "sha256": "d3ed2e1ff0e36ddc6084c3c9e6be143e1133b42381b796d12580cf905efe71a8",
+      "clinical_main_sha256": "e64edabceefa5cb6ded61844624cec2e500b2e27d313d70a9521db0540de34bd",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "splint_medicine",
+      "filename": "054_splint_medicine.pdf",
+      "pages": 16,
+      "original_pages": 17,
+      "size_bytes": 71607,
+      "sha256": "79a916e56d064da0130aebf3376b9223b94afecff279ccb2b5c11e34caea3927",
+      "clinical_main_sha256": "91bf35cab6111fc4824de440b44d25eb35d637d0f75ea940c064bc7ec382ea43",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "head_injury",
+      "filename": "055_head_injury.pdf",
+      "pages": 67,
+      "original_pages": 68,
+      "size_bytes": 245071,
+      "sha256": "d3ed74b64f4b541507f197182b6118ea5bde67c3e5c645051e06a1cccd2116b7",
+      "clinical_main_sha256": "fb7430bd40b5c8204289d978347d15e4f79c2c4ca9d60115897b1ab1f49c624c",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "concussion",
+      "filename": "056_concussion.pdf",
+      "pages": 151,
+      "original_pages": 152,
+      "size_bytes": 736244,
+      "sha256": "e534ac20b2ecf568ccdaa1ab3513ab0b17b11989b36fe5e1e626a2cd492374df",
+      "clinical_main_sha256": "ea219a04734d1fd685431abaa9a40edea69f65d82d0d32397f9849968a1ee5ff",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "traumatic_brain_injury",
+      "filename": "057_traumatic_brain_injury.pdf",
+      "pages": 190,
+      "original_pages": 192,
+      "size_bytes": 936409,
+      "sha256": "5915bce4af986e74a7de19adf71e5c09873875caab7d4aed090414433bf1e29d",
+      "clinical_main_sha256": "00f7f75153b58589984987d6d37657df2d506a5664e79395e3925500f776a77d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "spinal_cord_injury",
+      "filename": "058_spinal_cord_injury.pdf",
+      "pages": 170,
+      "original_pages": 172,
+      "size_bytes": 779528,
+      "sha256": "18ccc3c6e131cd0f06e9b28c608a223d77554c8d39ca6111b1a9d9ca41b513a2",
+      "clinical_main_sha256": "adcadc5c91a5fe70419ebffe3af904448db3afc33760461dcc6e4fc15e89848d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "chest_injury",
+      "filename": "059_chest_injury.pdf",
+      "pages": 10,
+      "original_pages": 11,
+      "size_bytes": 54704,
+      "sha256": "259598f934605fef95e110734013742673ade68da10efdf56aa132fc8e81ff6a",
+      "clinical_main_sha256": "fc9512f77a1661df82af9d751ba3bdfea593bded3cc1f13bf3ad6c528f208175",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pneumothorax",
+      "filename": "060_pneumothorax.pdf",
+      "pages": 94,
+      "original_pages": 95,
+      "size_bytes": 443597,
+      "sha256": "4f0cf327ae5e54d1386a50a8b6a48cd786908a26b637b34fceba8668a111e8cc",
+      "clinical_main_sha256": "8a88b4d7c728f33979069a7d67ce37ed221fdfc7ce2a76269598aa255a3cc3d5",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "abdominal_trauma",
+      "filename": "061_abdominal_trauma.pdf",
+      "pages": 33,
+      "original_pages": 34,
+      "size_bytes": 170843,
+      "sha256": "4a711a8778e39162bf83ad9f1b954689149dd3b35fcd47789d148d75add7b6e3",
+      "clinical_main_sha256": "dcc45225f9f796f56627f7f54c61f1c52b78f3f40fa9df82c37c5a04d897386f",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pelvic_fracture",
+      "filename": "062_pelvic_fracture.pdf",
+      "pages": 33,
+      "original_pages": 33,
+      "size_bytes": 149822,
+      "sha256": "93eb1afb2e030134d5aa0ee009f40b0aba1cb9e3ba971a02ac1b81e1356cc283",
+      "clinical_main_sha256": "667554ee4bb69f9c221e14400c2cb21d2a005533a855f2719ba8f66ebda288cd",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "eye_injury",
+      "filename": "063_eye_injury.pdf",
+      "pages": 20,
+      "original_pages": 21,
+      "size_bytes": 83837,
+      "sha256": "01fb3b589b91d6bbe0bef09f4e6520569d6c172ae8551363f729ff5f848d5f3f",
+      "clinical_main_sha256": "93ec64e5def69b51b6b9cb8ea313cfeb7cc36b37962d83fc63471fbb162c527a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "chemical_burn",
+      "filename": "064_chemical_burn.pdf",
+      "pages": 12,
+      "original_pages": 14,
+      "size_bytes": 50522,
+      "sha256": "3bb975402b1db194ffc6ea75fb8c6ef0803c9ca86268de304699752f9b668a8a",
+      "clinical_main_sha256": "27b4645c0e929eed983cab9329862891874d3f9d91bc051529f95fa4f96bd462",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "electrical_injury",
+      "filename": "065_electrical_injury.pdf",
+      "pages": 73,
+      "original_pages": 74,
+      "size_bytes": 281378,
+      "sha256": "31cfb340fd4bc94aeb6765b33b4de0e499cb72f0dff16505f6b35f53bf10b04d",
+      "clinical_main_sha256": "46f8bbcf43e60a5c765589c484bb2ceaca4f42d98994826e33324e18c715dd85",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "radiation_sickness",
+      "filename": "066_radiation_sickness.pdf",
+      "pages": 121,
+      "original_pages": 122,
+      "size_bytes": 440871,
+      "sha256": "bd54140c0712603a935c61230dca927c8a132f99850d9e105f26f097d1da9263",
+      "clinical_main_sha256": "3c4b91087b9c9b5b40ec06a2e7e53256dd489864cc7f2384565548158dc91694",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "altitude_sickness",
+      "filename": "067_altitude_sickness.pdf",
+      "pages": 71,
+      "original_pages": 72,
+      "size_bytes": 353907,
+      "sha256": "ba562bf3a6faa24496f3cccccc210fac9ef56cf46052f78173509f2621c4fee6",
+      "clinical_main_sha256": "13a380b60b8965a9938898c03c5726890137f932f21e6389396972071ff7b246",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "motion_sickness",
+      "filename": "068_motion_sickness.pdf",
+      "pages": 74,
+      "original_pages": 75,
+      "size_bytes": 331623,
+      "sha256": "d48eeacafc2506900d38094df58535356c4a9e426c38afb5edad788b00c3503a",
+      "clinical_main_sha256": "32f16b40089abab51cea36400e0639abaff3e9c5abd4d6ef9458deb92f5d439b",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "infection",
+      "filename": "069_infection.pdf",
+      "pages": 165,
+      "original_pages": 168,
+      "size_bytes": 616481,
+      "sha256": "b50f2779ce19b38113d8e933130171a9f1c2c4fe0dc11ef9e2611f332288e2a0",
+      "clinical_main_sha256": "306ef73ce0add490a5da7f2fee89356c0d1c8c95fa766b0a9016a4f718af2f73",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "sepsis",
+      "filename": "070_sepsis.pdf",
+      "pages": 172,
+      "original_pages": 173,
+      "size_bytes": 806124,
+      "sha256": "f316cbf18e42392b9d5821cbc075860f71fbb6a4af23858a288c7b401bb35f63",
+      "clinical_main_sha256": "65856a0baac783672488185948af83c298718584a64037989869f3135b4a36f3",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "cellulitis",
+      "filename": "071_cellulitis.pdf",
+      "pages": 43,
+      "original_pages": 44,
+      "size_bytes": 214305,
+      "sha256": "584f29cc078efb1bf6331363f63d335b908ebff9a430b44e9b752aa80374f96f",
+      "clinical_main_sha256": "f4e9915ef6e89858887e5c7e13ee8357544ef774ae3e29675da07808f0e89412",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "abscess",
+      "filename": "072_abscess.pdf",
+      "pages": 49,
+      "original_pages": 50,
+      "size_bytes": 238706,
+      "sha256": "fd89793edf7487ae26ed4259d7219f6be0d265253bdf22e30e45a9fcfd91d1e2",
+      "clinical_main_sha256": "aa93093e8c1e7fc1da3ac6ee9dd97ef6ff30174ac16073dd131b327b9ed153da",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pneumonia",
+      "filename": "073_pneumonia.pdf",
+      "pages": 168,
+      "original_pages": 171,
+      "size_bytes": 843876,
+      "sha256": "8d9a2281a1013b49af2edb95caea5c867a3f888a63507be11abde43115e46caf",
+      "clinical_main_sha256": "33b5be47c547267eb51f0dff190c3b6cf080a864aa5ce73bf23a8854941f3db9",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "influenza",
+      "filename": "074_influenza.pdf",
+      "pages": 153,
+      "original_pages": 155,
+      "size_bytes": 734353,
+      "sha256": "33cd55f83782427d25c0a3edc3c7cacea0f67569b045e98094969f6f2c484349",
+      "clinical_main_sha256": "bd9b391e00bae167ff0964fb13508a0be4d4d8db172dfa26ef8fd74b72828c38",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "covid_19",
+      "filename": "075_covid_19.pdf",
+      "pages": 419,
+      "original_pages": 421,
+      "size_bytes": 2023720,
+      "sha256": "6ed0a31a50d4c8ea723c92edfc78dbf1c952a5d10647ab1464a0443a6f841304",
+      "clinical_main_sha256": "2b5ded2eff3c8cfc2a5d81233d37b4d5f65afd150cbf48b32e7016622ab8222f",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "tuberculosis",
+      "filename": "076_tuberculosis.pdf",
+      "pages": 206,
+      "original_pages": 209,
+      "size_bytes": 1017153,
+      "sha256": "e80bcd215eba420944c8f5db366fa4461a7cbe6df8cba513f7980bcac5acb8f5",
+      "clinical_main_sha256": "23584676e97b0ee1ebc2f1b6f60584cc4008b1b09479a846daf4e4305c811495",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "meningitis",
+      "filename": "077_meningitis.pdf",
+      "pages": 121,
+      "original_pages": 121,
+      "size_bytes": 580757,
+      "sha256": "b3b89cd170a316369954e9cd8b8f5b8505a6148442b8f93d0c8d18f61e5c2cbb",
+      "clinical_main_sha256": "b1f149b6ae7bfd37707969ad244141a6d29db6b9814f95f6c89667c2287ba0ae",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "urinary_tract_infection",
+      "filename": "078_urinary_tract_infection.pdf",
+      "pages": 95,
+      "original_pages": 96,
+      "size_bytes": 500930,
+      "sha256": "997359f75259362d6505842b723afcc7cebd97304ba74633fd06898ebd9beef9",
+      "clinical_main_sha256": "60798a09f7f9b0289061a9689aae90b3e83b4463d36bc33a51c37f48735d95ee",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "kidney_stone",
+      "filename": "079_kidney_stone.pdf",
+      "pages": 173,
+      "original_pages": 176,
+      "size_bytes": 749960,
+      "sha256": "886e6ac4d9d1e65640b60e879ee333dd5f2159acc1723f88b4b715cc3d8d62a2",
+      "clinical_main_sha256": "e98d22783be89dbcd4f3171950ef9b7be385c08fbad3b0385bbf293f3b1e7de7",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "appendicitis",
+      "filename": "080_appendicitis.pdf",
+      "pages": 122,
+      "original_pages": 125,
+      "size_bytes": 522525,
+      "sha256": "d67a3034c69bb141b43580f99b9427401cab4e9b4695a51a146a532733d33bbf",
+      "clinical_main_sha256": "cbebf5947939912d1762aa54f5fff426782987b95ddf64073730733db6cb5055",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "gastroenteritis",
+      "filename": "081_gastroenteritis.pdf",
+      "pages": 81,
+      "original_pages": 83,
+      "size_bytes": 454773,
+      "sha256": "69779d8724340fd43cd3168d62fcc8d75d11ce0832cff515f29749120d251ba3",
+      "clinical_main_sha256": "e51d8f415b0fc6789a3a5b2e9115680b44ba696941c2516a4f943a9347d2f39d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "cholera",
+      "filename": "082_cholera.pdf",
+      "pages": 157,
+      "original_pages": 158,
+      "size_bytes": 717615,
+      "sha256": "768c421768d60f2db34af9cfab5c36584ef335c1b1681de7b16e1130e0df21d0",
+      "clinical_main_sha256": "31243f7686a0b5d80ee29fe31aa828a5f484248afa44bbb46399241a3336ff05",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "dysentery",
+      "filename": "083_dysentery.pdf",
+      "pages": 52,
+      "original_pages": 52,
+      "size_bytes": 241527,
+      "sha256": "55224c4a9b01716ad9aa7176e2bdf16fe05238cdc9938e85b7df200fc994f26d",
+      "clinical_main_sha256": "3300f927b61d3fe8524d658fcb9d50bcb15655d55606403ec9c8a11a2f0c22ce",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hepatitis_a",
+      "filename": "084_hepatitis_a.pdf",
+      "pages": 72,
+      "original_pages": 72,
+      "size_bytes": 340249,
+      "sha256": "d873b561ef531489e6dd16bec3d8f3b195c21743737486b72422f5871d4f1405",
+      "clinical_main_sha256": "69dcdb1d15987671069e00d40a9dcb9b4ae5f953b819b1b8b7039711be279bb4",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "typhoid_fever",
+      "filename": "085_typhoid_fever.pdf",
+      "pages": 126,
+      "original_pages": 126,
+      "size_bytes": 597094,
+      "sha256": "dd2d0ec7c4eeb6eea3d81fbe36ea1e470ba547bfab864566c77b9b1a9c774b17",
+      "clinical_main_sha256": "459d53b474284a1d6af7108ec4fa179e74d3b03e24d74a11c00251c11955223a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "measles",
+      "filename": "086_measles.pdf",
+      "pages": 148,
+      "original_pages": 150,
+      "size_bytes": 712944,
+      "sha256": "c96f31352517dca2e6a24468a2ff83445b38148a7419a259c7a0618ca3f3a5e6",
+      "clinical_main_sha256": "ebc69ccaef8d8f8c1f5ba0087e2487254e1df5e6ad185404efecf681bba49c4e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "chickenpox",
+      "filename": "087_chickenpox.pdf",
+      "pages": 78,
+      "original_pages": 79,
+      "size_bytes": 378163,
+      "sha256": "aa4de011fff388c2ceb6a8768c76f1e2c86efc5e06f50efc5999279fd3ac48bc",
+      "clinical_main_sha256": "228464f81f81c751fc67b60377317d719f330a5dd974043b56254a983dc9fba8",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "scabies",
+      "filename": "088_scabies.pdf",
+      "pages": 84,
+      "original_pages": 86,
+      "size_bytes": 422985,
+      "sha256": "7f5ac50a229ecdafaaae30ec7306285affdc1104d1951fd70f0dfca01629fe22",
+      "clinical_main_sha256": "02cc1cc0c49451784ecec2e8d9c1cb236f71ac74e02a4293682c841260b05bd7",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pediculosis",
+      "filename": "089_pediculosis.pdf",
+      "pages": 27,
+      "original_pages": 28,
+      "size_bytes": 136415,
+      "sha256": "c58a19151dc7139e91402dafcb4cbbb5a2e83677f2bc42a215b0491a3418ca8e",
+      "clinical_main_sha256": "11deec988e88cb70aa39ef8cff83da315bd87b71707d4681c54c4fed635fb83a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "conjunctivitis",
+      "filename": "090_conjunctivitis.pdf",
+      "pages": 55,
+      "original_pages": 56,
+      "size_bytes": 264007,
+      "sha256": "7c47bbcd304a809880ba2e6a7fd9463df00a0b2082a8338da3560ffc2f0ec2fa",
+      "clinical_main_sha256": "5a9b2b8a6807026d15b6983809b20eed123f7a55e01b55a8683ed197eac4b8cb",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "otitis_media",
+      "filename": "091_otitis_media.pdf",
+      "pages": 91,
+      "original_pages": 92,
+      "size_bytes": 434567,
+      "sha256": "39dcfb3688b53c2530c6aa06dc3a1ba05e079e10f4d0875922829513133f82d2",
+      "clinical_main_sha256": "6cad314f74d4b3924f3e95ab5968907c725cc3b657fdd66c20266b421d735e4e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "otitis_externa",
+      "filename": "092_otitis_externa.pdf",
+      "pages": 47,
+      "original_pages": 48,
+      "size_bytes": 195963,
+      "sha256": "ef61cce4b3dfaf26ce89c1e77693ec341d138a4b3800e7bb65ac57c30501b6b2",
+      "clinical_main_sha256": "52fb1e16f3a4d187b6bba6010e49d0f9af74d1119e8873c207f381f787bc44f2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "dental_abscess",
+      "filename": "093_dental_abscess.pdf",
+      "pages": 21,
+      "original_pages": 22,
+      "size_bytes": 85204,
+      "sha256": "721677f872672fb618718998b24f3c0c3b6df3d5a0b1e78d51cce55f7ebe5f5d",
+      "clinical_main_sha256": "f7ecffc634e859b26611ef863f46fe24a3429d9e890d1a283427156c645552ef",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "toothache",
+      "filename": "094_toothache.pdf",
+      "pages": 131,
+      "original_pages": 132,
+      "size_bytes": 530839,
+      "sha256": "c0d4e4659ac4241ab3ca229759048f19373acc18849a1cb19d8d92c46590179f",
+      "clinical_main_sha256": "4f6c0206b860c2c1d5a26e32fee467c8f1cd17eb65fdbd8d4462909ffd3ceff8",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "nosebleed",
+      "filename": "095_nosebleed.pdf",
+      "pages": 49,
+      "original_pages": 49,
+      "size_bytes": 235297,
+      "sha256": "26b828688a6b5026236d3161326b3e4d6a32b192e16c66dbbc539fc2898b5d53",
+      "clinical_main_sha256": "a4d948f8e3e2cdc8a523b2e13ae42af1d51e543ca950b48fbcea209e1e38f82b",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "sore_throat",
+      "filename": "096_sore_throat.pdf",
+      "pages": 22,
+      "original_pages": 22,
+      "size_bytes": 121474,
+      "sha256": "381d7d800a52cbd37e203fdc3cb5231d817a3f19386c45359ff9e282a519e2f6",
+      "clinical_main_sha256": "8b76ed9bd09faa761606641ac6c74751ecd10b3d9e9b1671605db10c051c061a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "allergic_rhinitis",
+      "filename": "097_allergic_rhinitis.pdf",
+      "pages": 79,
+      "original_pages": 80,
+      "size_bytes": 356751,
+      "sha256": "2e2e592080d93e6934cfd70ff7cec95276600e5db1429fce3a18af0f4dd59bf7",
+      "clinical_main_sha256": "de6b3bcde58162670ee3c0dd72d1de1161df57247db236ebbebacfe4429c6303",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "urticaria",
+      "filename": "098_urticaria.pdf",
+      "pages": 75,
+      "original_pages": 75,
+      "size_bytes": 319894,
+      "sha256": "6c03105c4683dee63d2459aeb19a970eeee2c45a498fa1a0eed9452c2e388917",
+      "clinical_main_sha256": "390580119d917de128e85f8b8f1c282a0f6c021a246b110a4018d73a4d0ef507",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "contact_dermatitis",
+      "filename": "099_contact_dermatitis.pdf",
+      "pages": 43,
+      "original_pages": 43,
+      "size_bytes": 202779,
+      "sha256": "b859d5da5d7394c4080021213a3f5677f272f73d5032e28e4f6727dccdf36e10",
+      "clinical_main_sha256": "1ca2c1e6e311bf273152160f83c8062942e39e40743d4ddb1eb25e3c1951faab",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "sunburn",
+      "filename": "100_sunburn.pdf",
+      "pages": 74,
+      "original_pages": 75,
+      "size_bytes": 323600,
+      "sha256": "a41d68ed8a1d15d0d694a28e339fa8e9406266e47427f34acf15cb7722cf5432",
+      "clinical_main_sha256": "30de3e34b7443b5285f5346b22224b030aca5f15fb49dfbe0c46ce69b4a8993d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "blister",
+      "filename": "101_blister.pdf",
+      "pages": 23,
+      "original_pages": 23,
+      "size_bytes": 95380,
+      "sha256": "cd15d0005ecd357cabd39a6cb38052bf81e165dc69da17e9b44a6916f4a04f03",
+      "clinical_main_sha256": "be9072343d3f92c2f29631e59bd3563b803525fa1890f503f1edebdfcf3bdf86",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pressure_ulcer",
+      "filename": "102_pressure_ulcer.pdf",
+      "pages": 94,
+      "original_pages": 94,
+      "size_bytes": 418835,
+      "sha256": "3e9d01a733238ca66d4fd2d1737dd63885d1a98c316449c0be1779ec2cf957c1",
+      "clinical_main_sha256": "f0fc8e108c0d8602d81ccd1bb83cc493d8d20491b85d3b70a4667cce6d8404a7",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "diaper_dermatitis",
+      "filename": "103_diaper_dermatitis.pdf",
+      "pages": 32,
+      "original_pages": 32,
+      "size_bytes": 153003,
+      "sha256": "d53952aebedc5dd8c0c69f7b83f073593146513cd71eff41951f83184aa47a4e",
+      "clinical_main_sha256": "8c77b47a5510a41287ad19eb48af8472c1a81a4a12a69e57ad2fcf4f979954a2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "trench_foot",
+      "filename": "104_trench_foot.pdf",
+      "pages": 20,
+      "original_pages": 21,
+      "size_bytes": 116941,
+      "sha256": "02bcb33f123360a762a7f23753ff3a8d74e04aafa024d8efd8f9efbf16c166ed",
+      "clinical_main_sha256": "1f6d01e29c4761cbc8f90785409ef0e61c6fc88558399e47e8682ef251fc079a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "malnutrition",
+      "filename": "105_malnutrition.pdf",
+      "pages": 240,
+      "original_pages": 244,
+      "size_bytes": 978700,
+      "sha256": "336dece75de48bfa916d7959a3c1c69b084d6013dc18d4f112fb3ff256486e74",
+      "clinical_main_sha256": "5f5cd3e5fce29d8e8fe584d827dcee76d737436500e6944cf89f10042532b972",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "breastfeeding",
+      "filename": "106_breastfeeding.pdf",
+      "pages": 320,
+      "original_pages": 323,
+      "size_bytes": 1494450,
+      "sha256": "3bce4cdbed6bc412fbedbddd3f32a8a8991d3329d132e4e3bdc13675ddf06ee1",
+      "clinical_main_sha256": "0ac0effc4c865c96501c2dba078e245986f6f8a43f843a5f8f979de861206588",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "infant_formula",
+      "filename": "107_infant_formula.pdf",
+      "pages": 152,
+      "original_pages": 154,
+      "size_bytes": 646983,
+      "sha256": "7038eaf24d48a0aafe1e94e24a67110c0189991cb0c7463135d669e0c44f9b74",
+      "clinical_main_sha256": "fc7fac1fef1f66be18de2286a9f67219b54757df184fe9bc8a546a65a4703929",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "childbirth",
+      "filename": "108_childbirth.pdf",
+      "pages": 207,
+      "original_pages": 207,
+      "size_bytes": 859123,
+      "sha256": "cdc3bfbfccf80d087efb74c5e1f6ce85c4e6e74bcbde5605c4310886f6cce29d",
+      "clinical_main_sha256": "b5648b307483a9927236c3e12fd136c48d0a0928f4f97466a0f9155e9fa37f10",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "postpartum_bleeding",
+      "filename": "109_postpartum_bleeding.pdf",
+      "pages": 68,
+      "original_pages": 68,
+      "size_bytes": 325550,
+      "sha256": "b97f4b068b95a4a64b113525ebcbe0552e43e1bf9cdb1cb7ce2ad7b0af424b1e",
+      "clinical_main_sha256": "7dc5033024f3fd2511633344ebc93c0c8e500e35baab66a02beea0bf795b17e2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pre_eclampsia",
+      "filename": "110_pre_eclampsia.pdf",
+      "pages": 134,
+      "original_pages": 134,
+      "size_bytes": 624772,
+      "sha256": "b6ca0cce33f5ef126bcf0cb7168aec7c5f4bd2940daa65e424b48a9a2e070f45",
+      "clinical_main_sha256": "19a1c98fa86d12799b2bb4c062d32d4982b2ad8c2e9aa7c6432b6f0b6f65aae6",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "ectopic_pregnancy",
+      "filename": "111_ectopic_pregnancy.pdf",
+      "pages": 108,
+      "original_pages": 110,
+      "size_bytes": 482171,
+      "sha256": "db99e593dca82f22891784d8eeb8a7aa93ed5e88155967d75deab7b8972e4fce",
+      "clinical_main_sha256": "60cd49b92eceb8fe298c284212a1033b42dde1bb023c05e10352066e1c637580",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "miscarriage",
+      "filename": "112_miscarriage.pdf",
+      "pages": 149,
+      "original_pages": 150,
+      "size_bytes": 752035,
+      "sha256": "2f63d3fa4e5ec8f42e26d0adf57cddfa81f1750f3bf654f8801e29bbb4ad7ada",
+      "clinical_main_sha256": "35a06cafb17b21497d4799736ad20fd29fb552a4f982bec0b2f8fb551507d48a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "neonatal_resuscitation",
+      "filename": "113_neonatal_resuscitation.pdf",
+      "pages": 25,
+      "original_pages": 27,
+      "size_bytes": 118568,
+      "sha256": "b9e7ae8b6529f3f1283f5cd04cba950e414d10295eec6d1041a50e7173a65b00",
+      "clinical_main_sha256": "6a9452f75bb619e15cae2106962798f0f43a341a2ee8d8ce3112202bedc39dd9",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "child_abuse",
+      "filename": "114_child_abuse.pdf",
+      "pages": 260,
+      "original_pages": 263,
+      "size_bytes": 1105881,
+      "sha256": "fde9074280253287bec01c63d7fd455ae4aef4fcf64305e12f6788e4e063ff09",
+      "clinical_main_sha256": "c4c4b34050dbf005f676a6a503a7d121c75221c8829325c4246d8cc05790a101",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "domestic_violence",
+      "filename": "115_domestic_violence.pdf",
+      "pages": 412,
+      "original_pages": 415,
+      "size_bytes": 1693283,
+      "sha256": "9fe5d3be16e3d6737da20ed929cf10a4d652125e86b4490ab3253305e0ac89f1",
+      "clinical_main_sha256": "b79bc4ea595ae062a83db7af1aaa09aedd4d5501188ce30ca2601cbefe47e8d1",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "psychological_trauma",
+      "filename": "116_psychological_trauma.pdf",
+      "pages": 111,
+      "original_pages": 112,
+      "size_bytes": 450005,
+      "sha256": "4e1de734601fd23193531741b2c82430eb91bf31df14a5fd4a8977f2623514d6",
+      "clinical_main_sha256": "18f0d35fb6197b50da63d7cb37ceb44b27654bed4d1635f7edec32ebae845eb7",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "acute_stress_disorder",
+      "filename": "117_acute_stress_disorder.pdf",
+      "pages": 45,
+      "original_pages": 45,
+      "size_bytes": 169161,
+      "sha256": "79ea437c4c57fae59fb538d6168d033114f088517b80e7e5084c44da07849075",
+      "clinical_main_sha256": "b5b215e89a9d38ee1aa298ab0d02ed768b83ffed9f5726ec651c68c5841d37a0",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "post_traumatic_stress_disorder",
+      "filename": "118_post_traumatic_stress_disorder.pdf",
+      "pages": 295,
+      "original_pages": 295,
+      "size_bytes": 1348476,
+      "sha256": "19472cfe311e89b5d52aeaa5e82d5c26080e60e966e4a8c895fa531b9c74cb5a",
+      "clinical_main_sha256": "90feac428f82856d7dd337c46d7409d560cdaa5fd849832bd2bd1c46d38143c7",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "suicide_prevention",
+      "filename": "119_suicide_prevention.pdf",
+      "pages": 126,
+      "original_pages": 127,
+      "size_bytes": 508109,
+      "sha256": "f885e9681fcf66f3756514dc06c97b9b139b0896da26e6fd38cb89269449b95a",
+      "clinical_main_sha256": "efab6cae30ae068996771bfc248ba34fb3685cc0c984ccf63a500732f79ac69d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "panic_attack",
+      "filename": "120_panic_attack.pdf",
+      "pages": 88,
+      "original_pages": 89,
+      "size_bytes": 396936,
+      "sha256": "71bbd328f8188fc528d150575b84f8bdb3b015944ed4a853c6f4cbdf3fe021f2",
+      "clinical_main_sha256": "017bdc49b33dc4ac6019a8eff3a7f433f15b79d7801aeccf122de7abef89268d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "psychosis",
+      "filename": "121_psychosis.pdf",
+      "pages": 208,
+      "original_pages": 209,
+      "size_bytes": 917231,
+      "sha256": "836b85c08de9cef758ac27bf085da44dbd988e0582ae1ab72c781853a8441690",
+      "clinical_main_sha256": "03c88691b2d13780325b2b61393ae1e7f9af9a360fe351036fb7af535c98f783",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "delirium",
+      "filename": "122_delirium.pdf",
+      "pages": 136,
+      "original_pages": 136,
+      "size_bytes": 616450,
+      "sha256": "ff022e83c17cfe2eb6ba28df9cd672f5880514e0703b50ba2566e17c3fe9cd59",
+      "clinical_main_sha256": "80450f9b6bdd15cfa4ab0dfe6278481d0b2b933bd301519fd2310db8f62aad83",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "dementia",
+      "filename": "123_dementia.pdf",
+      "pages": 249,
+      "original_pages": 251,
+      "size_bytes": 1206682,
+      "sha256": "f1e4b784e7103854eecc2e361a9679fb5bebe31a7ca414d9d6073517d128c196",
+      "clinical_main_sha256": "923e870d4318f5112db057d631e6564e23d45c41cdf92210ba9a6d4a09e8c134",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "epilepsy",
+      "filename": "124_epilepsy.pdf",
+      "pages": 216,
+      "original_pages": 217,
+      "size_bytes": 1027018,
+      "sha256": "2f450a55979d27007ab011dbdbed245281210db1920342add16c703e40909882",
+      "clinical_main_sha256": "aad5c62a820fbb1bb0c961cfd1b255512f644a10c1657c9df2dfafbb9483e0e3",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hypertension",
+      "filename": "125_hypertension.pdf",
+      "pages": 190,
+      "original_pages": 190,
+      "size_bytes": 897680,
+      "sha256": "3d9de749477ec50df7cdf1a0b4a5701f3962a53e5e387859f71b985884d72820",
+      "clinical_main_sha256": "678e79e7086b2f39e11b90ed0860c7080be4695b969edaba9b951f80b39417ea",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "heart_failure",
+      "filename": "126_heart_failure.pdf",
+      "pages": 182,
+      "original_pages": 184,
+      "size_bytes": 834434,
+      "sha256": "7306eadeceaea2c07d8c69e1340ea315fd10078165a882f959d24af1f835c7a9",
+      "clinical_main_sha256": "d9fb465770b5911fc0e53ed9a151f97704b4a2f2a4732cb28403f95b6ff23194",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "chronic_obstructive_pulmonary_disease",
+      "filename": "127_chronic_obstructive_pulmonary_disease.pdf",
+      "pages": 266,
+      "original_pages": 269,
+      "size_bytes": 1340952,
+      "sha256": "893c491e9fd9642bc0dd1e86b7fddeba1e3fdc203d586af67506047c48edd949",
+      "clinical_main_sha256": "c066691d005612ac0fb23c5dea95bb79140b3b1d5b7f9adb09d4ce3dd516c40e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "oxygen_therapy",
+      "filename": "128_oxygen_therapy.pdf",
+      "pages": 89,
+      "original_pages": 89,
+      "size_bytes": 387530,
+      "sha256": "3bff1a9813d9c24cb382a20e80996f63beca0ed7f4f8e5ef288f9ff457698f52",
+      "clinical_main_sha256": "96e7fa1b8e47fdc37e4aa110d0b9be8dcf038adbe0e5e4303e409844b3688f70",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "renal_failure",
+      "filename": "129_renal_failure.pdf",
+      "pages": 57,
+      "original_pages": 58,
+      "size_bytes": 288366,
+      "sha256": "8683b377c6dd97046b88c69bbf36d0302430868763dea22820ff0309fb1576e5",
+      "clinical_main_sha256": "b5c2ef2d20b13b31e6e13f2268be80538ec157b6580f818f94ffbd75b67d2675",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pain_management",
+      "filename": "130_pain_management.pdf",
+      "pages": 127,
+      "original_pages": 127,
+      "size_bytes": 530160,
+      "sha256": "18feeac6eb50fed92beff67b41f8c13b0c401f747e99dc4f55d290ba7e6f11b8",
+      "clinical_main_sha256": "abfe0127950e22336b316aa84b6812e03e0b3e6355623dea89c8348f26771c4c",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "palliative_care",
+      "filename": "131_palliative_care.pdf",
+      "pages": 159,
+      "original_pages": 159,
+      "size_bytes": 670835,
+      "sha256": "70660b14852d638ec74e5bf758f835aeecb6e99d1c002ebe35207f25a19903e0",
+      "clinical_main_sha256": "94e038e44c371fc7e32abf5cd81be6fbfe8cbcbfcdae1c5c79232593b4a238f2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "triage",
+      "filename": "132_triage.pdf",
+      "pages": 143,
+      "original_pages": 146,
+      "size_bytes": 573435,
+      "sha256": "e0c099d51b9edb23e3788b416da02268e8a81c69dc951b578e0eaa15f974fbfd",
+      "clinical_main_sha256": "9100e95911f23a06f991014e6b9c4b5cbf1778121eb355e4c78ae2499f3675bf",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "first_aid",
+      "filename": "133_first_aid.pdf",
+      "pages": 73,
+      "original_pages": 74,
+      "size_bytes": 241862,
+      "sha256": "2b03913f76c756efb61f1ba189315a1b8fb517560caac2b2f7d723e8c6f52bbd",
+      "clinical_main_sha256": "388d8c48496036f6cd4af449aaa1f10f87489d5f97c0039e1797f727a0016305",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "emergency_medical_services",
+      "filename": "134_emergency_medical_services.pdf",
+      "pages": 123,
+      "original_pages": 125,
+      "size_bytes": 465666,
+      "sha256": "f5b1781cb2516402f86ea897378d4c69dd345081e807cfeff714f7229caccf55",
+      "clinical_main_sha256": "047af6ff0e372f0574672a4734449fb17a122697a44b2e45021c94a81211b330",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "basic_life_support",
+      "filename": "135_basic_life_support.pdf",
+      "pages": 38,
+      "original_pages": 39,
+      "size_bytes": 146022,
+      "sha256": "f44dc0bd888585a27080f87d7ec7e224a6735872f9fe98b794ccb5283ba84e18",
+      "clinical_main_sha256": "9cc0d82655e11cac3953dd0d0b2433537fd333ccfcb5c279bf5d5f57aa8aac32",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "automated_external_defibrillator",
+      "filename": "136_automated_external_defibrillator.pdf",
+      "pages": 43,
+      "original_pages": 43,
+      "size_bytes": 161900,
+      "sha256": "d82c58da18718f02a8fec6d9763a30a8fcfea1bdd688f7a03fdb4ef1008cdbea",
+      "clinical_main_sha256": "fae507f505ac135ed4908e33708b68a1f577d07762bc92580f1c62d779e9adb3",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "infection_prevention_and_control",
+      "filename": "137_infection_prevention_and_control.pdf",
+      "pages": 62,
+      "original_pages": 62,
+      "size_bytes": 221124,
+      "sha256": "59d09f7eb85d0d9d9d09aca30dbaaffaf6101d83169e30548dc904423676d3ed",
+      "clinical_main_sha256": "6a32356c2faf561aae5c5da2de6d17a0e302eb77485f0bb0e9a3b359bd06129d",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hand_washing",
+      "filename": "138_hand_washing.pdf",
+      "pages": 101,
+      "original_pages": 101,
+      "size_bytes": 440708,
+      "sha256": "e566e130bb7f7f2908259828e3c9fea721d970c8a9af3d42ef81e8df50c0f282",
+      "clinical_main_sha256": "8ff158db9e00a0f367766edd0cbacd6714adfd9226c240af76b898e54959a909",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "sanitation",
+      "filename": "139_sanitation.pdf",
+      "pages": 91,
+      "original_pages": 93,
+      "size_bytes": 345784,
+      "sha256": "7f35d6774f1d9bb73eb81d503923d1855d376b3f387a5cb1c424467d57ef63d5",
+      "clinical_main_sha256": "9b96e4c1fc12bd244ecd3c3c40993f9e93853a6fe1be39d437bc09dcebd51a45",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "menstrual_hygiene_management",
+      "filename": "140_menstrual_hygiene_management.pdf",
+      "pages": 72,
+      "original_pages": 72,
+      "size_bytes": 322992,
+      "sha256": "b1c0344488b53d27c8545e1e77bccd4710e877f6dc1d02a106e0c4ff88fc432e",
+      "clinical_main_sha256": "c8e9da568db366bf0032bd126dd111ce97055b43d20b10ed977418a3b8c914b4",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "urinary_catheterization",
+      "filename": "141_urinary_catheterization.pdf",
+      "pages": 23,
+      "original_pages": 24,
+      "size_bytes": 93971,
+      "sha256": "c50b8d7eeac29c662d3ff0f9b12ed439994fdeaddd7df5783cd5eacdf6610afc",
+      "clinical_main_sha256": "a70e096d509bd0692bacc2012f33d4041f2909143e2325d2351c9275f347bdfb",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "colostomy",
+      "filename": "142_colostomy.pdf",
+      "pages": 21,
+      "original_pages": 22,
+      "size_bytes": 94246,
+      "sha256": "7ca50dc31568e1bfd5645058f3a643d1a3eaa65bb0bb2f0774c39b8838d6758d",
+      "clinical_main_sha256": "7702710c66b5288335db6654495ef207dbd0e46d29310a28c7c2773cb18bd020",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "stoma_medicine",
+      "filename": "143_stoma_medicine.pdf",
+      "pages": 10,
+      "original_pages": 11,
+      "size_bytes": 47483,
+      "sha256": "2c441649a9bcbd5b2d12c78932a6c6097e8590c01bd0825488e43300382e2c32",
+      "clinical_main_sha256": "50c79ddfd1eb8f9cb09caad39dc920eab740cbe29460aa2376721d09548c132e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hypoxia_medicine",
+      "filename": "144_hypoxia_medicine.pdf",
+      "pages": 152,
+      "original_pages": 152,
+      "size_bytes": 654013,
+      "sha256": "9e072fe3971779f0caabc955e16caaab4264c8e9ab6819671f706c66f5d5d75e",
+      "clinical_main_sha256": "0d05b7129c0b957d12d1479bfd36bd17e9d0c48673b16cba0ebc9ab914288bc9",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hyponatremia",
+      "filename": "145_hyponatremia.pdf",
+      "pages": 58,
+      "original_pages": 59,
+      "size_bytes": 279931,
+      "sha256": "f7bd26f4afcf61b788f512afb059cbad350b49db51fcb78798ae66790ea4f53d",
+      "clinical_main_sha256": "e4a5e97de1133cf1f9a500c8bb236ca9fb4e1856772a641944deac010da9f86a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hypernatremia",
+      "filename": "146_hypernatremia.pdf",
+      "pages": 25,
+      "original_pages": 25,
+      "size_bytes": 128379,
+      "sha256": "5e731adf4aced0532a449205a0ee19a1489c63f9b711bbc4a6a1f5ed6485bf5e",
+      "clinical_main_sha256": "55c4409732ec5c47dde91ffc307dbfffded3225e3e9fd8cab2b9a555e2815e16",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hypokalemia",
+      "filename": "147_hypokalemia.pdf",
+      "pages": 53,
+      "original_pages": 54,
+      "size_bytes": 238667,
+      "sha256": "bc574224b768bccb0644819e55a1340a9b9a1e72b19489acd9d9bfe5c34e37dc",
+      "clinical_main_sha256": "baf3f7725956d1f06aa2aa31c6ea5e7a9d10ad4a6fff734f6fe99940be1a0751",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "hyperkalemia",
+      "filename": "148_hyperkalemia.pdf",
+      "pages": 68,
+      "original_pages": 68,
+      "size_bytes": 313870,
+      "sha256": "cb50ce30002fae7bbe74d15a3023e973150d11c0aab236052e87addca828d0bc",
+      "clinical_main_sha256": "c58e20ca370845e32da353790297c81daee4ff3f1df2a3c636b64501bb667b60",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "pulse_oximetry",
+      "filename": "149_pulse_oximetry.pdf",
+      "pages": 79,
+      "original_pages": 79,
+      "size_bytes": 348909,
+      "sha256": "2c3ce4413305bae7c7164884dbabea9806f8b19be0eb4acf23aa99ba24b6be50",
+      "clinical_main_sha256": "d935aeeb9994b10fa555f0fec4042f9468dee6c4f761c0a67848c8ab9cd0b367",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "vital_signs",
+      "filename": "150_vital_signs.pdf",
+      "pages": 45,
+      "original_pages": 45,
+      "size_bytes": 180709,
+      "sha256": "16885c09bf58755ec332602f5774d5730c6973b4eadd63632a866bce040cc56b",
+      "clinical_main_sha256": "2bac68670e89bd3cf993434761f8d197920aa0c8e73f965b119051c59f13851c",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_burns",
+      "filename": "151_wikem_burns.pdf",
+      "pages": 50,
+      "original_pages": 52,
+      "size_bytes": 157337,
+      "sha256": "76304f4b6f64c37251b0900ee6f58cc92181288e8e05aba95bf48e53a4048394",
+      "clinical_main_sha256": "faf722dcbab3a3e19ba58730b91fd89a2aa4152a38a34e88719f75e7dbbb5092",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_heat_stroke",
+      "filename": "152_wikem_heat_stroke.pdf",
+      "pages": 20,
+      "original_pages": 21,
+      "size_bytes": 73716,
+      "sha256": "6b1d6db5c3f7fdc24d408f424be701ee6a59573b14620253d222fe2f5b319b5f",
+      "clinical_main_sha256": "9e4688b4d6e55f913290d4f883a0ba99668ced737173b49405e6a4aed749a10e",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_anaphylaxis",
+      "filename": "153_wikem_anaphylaxis.pdf",
+      "pages": 17,
+      "original_pages": 17,
+      "size_bytes": 61148,
+      "sha256": "6ac77bb7f39a6f501c06ae27b8937361c611a695c960674d10658c881d27ec1a",
+      "clinical_main_sha256": "239c3db6177c2e2fe6ae30b11efe6cde52577777a4293d2ed13bc95fd8905495",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_epistaxis",
+      "filename": "154_wikem_epistaxis.pdf",
+      "pages": 22,
+      "original_pages": 23,
+      "size_bytes": 81111,
+      "sha256": "0c87f1066ed95f454a768b5ba403e5da55b71885da926f7d0ff4244ca80cc73c",
+      "clinical_main_sha256": "b4318e267a8f186655b8e86cd4e6acf092e82fceda7213aa2a0e004509da3433",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_laceration_repair",
+      "filename": "155_wikem_laceration_repair.pdf",
+      "pages": 46,
+      "original_pages": 47,
+      "size_bytes": 122646,
+      "sha256": "e2082d0e250dd7a5b5dc39858def03d5490075a051f2db4883f148b24a344c14",
+      "clinical_main_sha256": "591619b48dd04eab612fe82abeaea3b035a542ae903850f4630b541c96b764b2",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_dehydration",
+      "filename": "156_wikem_dehydration.pdf",
+      "pages": 11,
+      "original_pages": 11,
+      "size_bytes": 44537,
+      "sha256": "dbdb7dccb9ce7b7ccab8b20e1e008a5934d7cdb611ef4ac83761c342daee6e4e",
+      "clinical_main_sha256": "5897a3139c0c583602697d204d17fac195b797cb1ec0f5c524056aaac2d63f7a",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_seizure",
+      "filename": "157_wikem_seizure.pdf",
+      "pages": 35,
+      "original_pages": 36,
+      "size_bytes": 124324,
+      "sha256": "7b671c162c4ce20c1a22045be0fcf87e92ce7dcce4bb88f04b7b9e4ca73ae51f",
+      "clinical_main_sha256": "2a90c44e49dedde0addde9c6c840f0210e45adb0ca40c444066a5d25a06bd142",
+      "source_license_links_retained": true
+    },
+    {
+      "id": "wikem_accidental_hypothermia",
+      "filename": "158_wikem_accidental_hypothermia.pdf",
+      "pages": 42,
+      "original_pages": 43,
+      "size_bytes": 129667,
+      "sha256": "82a5738db3a32d657e27e9e66512826f1c6f654b819eb639b8fe5f81bcef52c0",
+      "clinical_main_sha256": "87c2aa224b8d7bb175c58e711f58c6710cec528e1f1f133908bf5b8e197c9bb9",
+      "source_license_links_retained": true
+    }
+  ],
+  "audit_cgroup": {
+    "memory.peak": "556662784\n",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "producer_execution": {
+    "started_utc": "2026-11-02T02:14:03.254772+00:00",
+    "finished_utc": "2026-11-02T02:27:29.347865+00:00",
+    "wall_seconds": 806.090027416998,
+    "exit_code": 0,
+    "container_exit_code": 0,
+    "oom_killed": false,
+    "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "cpus": 2.0,
+    "memory_bytes": 4294967296,
+    "memory_swap_bytes": 4294967296,
+    "network": "none"
+  },
+  "audit_execution": {
+    "started_utc": "2026-11-02T02:27:43.770384+00:00",
+    "finished_utc": "2026-11-02T02:30:28.981631+00:00",
+    "wall_seconds": 165.21051274999627,
+    "exit_code": 0,
+    "host_config": {
+      "NanoCpus": 1000000000,
+      "Memory": 1073741824,
+      "MemorySwap": 1073741824,
+      "NetworkMode": "none"
+    },
+    "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52"
+  },
+  "all_nine_font_cache_inputs_independently_rehashed": true,
+  "source_and_input_review_holds_match_frozen_catalog": true,
+  "source_date_epoch": 1793404800,
+  "largest_pdf_bytes": 2023720,
+  "original_parent_canonical_sha256": "cdff7b842c7580f45454fc19752d7117f1b52b17813938b0911cd2055bb5a375",
+  "original_parent_raw_receipt_sha256": "3b5eb04f714dc4d50d5837a0701c6d7931797ed7d9bca28760529dc830dab902",
+  "original_parent_recipe": "medpdf-v1-1ce9b2273f78a1ccfde201172e9159e86bfdae1af4943dbbc182a469c31181a4",
+  "independent_auditor_sha256": "1ea67e7176eddccfe8a5e08addf90c04a8890fbec6f6e47f684cd389f66fbc66",
+  "focused_tests": {
+    "passed": 41,
+    "seconds": 19.02,
+    "ruff_passed": true,
+    "serial_parallel_tiny_fixture_pdf_bytes_equal": true
+  },
+  "real_serial_parallel_spotcheck": [
+    {
+      "file": "049_crush_injury.pdf",
+      "same_bytes_as_c10_serial_trial": true,
+      "sha256": "af607d98f9d08877a4a4eee70d69c3f0026787b95c772ac9647de8ddc660c052"
+    },
+    {
+      "file": "001_cardiopulmonary_resuscitation.pdf",
+      "same_bytes_as_c10_serial_trial": true,
+      "sha256": "5a1782cf0bd8aaa976d7086b38bdda12953221704addadb014e0631d9cdedbda"
+    }
+  ],
+  "native_desktop_browser_spotcheck": {
+    "scope": "Actual new full-batch PDFs in native desktopChrome390px; local loopback only, not phone/USB acceptance",
+    "errors": [],
+    "external_http": [],
+    "files": [
+      {
+        "name": "full-a",
+        "pages": 10,
+        "pdf_sha256": "af607d98f9d08877a4a4eee70d69c3f0026787b95c772ac9647de8ddc660c052",
+        "first_page_png": "native-full-a-first-page-390.png"
+      },
+      {
+        "name": "full-a-wikem",
+        "pages": 50,
+        "pdf_sha256": "76304f4b6f64c37251b0900ee6f58cc92181288e8e05aba95bf48e53a4048394",
+        "first_page_png": "native-full-a-wikem-first-page-390.png",
+        "source_notes_png": "native-full-a-wikem-source-notes-390.png"
+      }
+    ],
+    "passed": true
+  },
+  "release_status": "Held development proof. Technical completeness is not medical, rights, source, physical-device, or release approval. Historical parent review text is preserved as historical evidence; this new batch is not a clean A/B repeat."
+}

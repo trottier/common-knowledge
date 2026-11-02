@@ -6,9 +6,11 @@ import re
 import resource
 import shutil
 import time
+from concurrent.futures import ProcessPoolExecutor
 from datetime import UTC, datetime
 from decimal import Decimal
 from importlib.metadata import version
+from multiprocessing import get_context
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
@@ -115,10 +117,20 @@ def admit_medical(root: Path, prepared: Path, cache: Path) -> tuple[dict, list, 
     return metadata, rows, documents, {"fonts": fonts, "provenance": provenance}
 
 
+def render_cached_task(task: tuple) -> dict:
+    """One isolated renderer owns one unique output and its timestamp scope."""
+    pages = render_article(task[:4])
+    if task[1].stat().st_size > task[4]:
+        raise ValueError("Reframed reference exceeds the shared PDF byte budget")
+    return {"pages": pages, "peak_rss_kib": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
+
+
 def recompose_medical(
-    root: Path, prepared: Path, cache: Path, output: Path, topics: list[str] | None
+    root: Path, prepared: Path, cache: Path, output: Path, topics: list[str] | None, jobs: int = 1
 ) -> dict:
     started = time.monotonic()
+    if type(jobs) is not int or jobs not in (1, 2):
+        raise ValueError("Cached medical framing permits one or two workers")
     if output.exists():
         raise ValueError("Choose a fresh cached-reference output; no overwrite")
     if output.resolve().is_relative_to(prepared.resolve()) or prepared.resolve().is_relative_to(
@@ -174,7 +186,7 @@ def recompose_medical(
     files, audit = output / "files", output / "audit"
     files.mkdir(parents=True)
     audit.mkdir()
-    rendered_rows, render_audits = [], []
+    rendered_rows, render_audits, tasks = [], [], []
     epoch = original["source_date_epoch"]
     for row in rows:
         if row["id"] not in requested:
@@ -194,17 +206,14 @@ def recompose_medical(
             raise ValueError("Clinical main-body bytes changed during reframing")
         target = files / cached["filename"]
         aliases = {"ck-font:///" + key: admitted["fonts"][key] for key in cached["aliases"]}
-        pages = render_article((document, target, aliases, epoch))
-        if target.stat().st_size > int(maximum):
-            raise ValueError("Reframed reference exceeds the shared PDF byte budget")
+        tasks.append((document, target, aliases, epoch, int(maximum)))
         (audit / target.with_suffix(".html").name).write_text(document)
-        rendered_rows.append({**row, "pages": pages})
+        rendered_rows.append(dict(row))
         render_audits.append(
             {
                 "id": row["id"],
                 "filename": target.name,
                 "original_pages": row["pages"],
-                "pages": pages,
                 "original_html_sha256": hashlib.sha256(cached["html"].encode()).hexdigest(),
                 "clinical_main_sha256": hashlib.sha256(body.encode()).hexdigest(),
                 "new_clinical_main_sha256": hashlib.sha256(
@@ -213,6 +222,19 @@ def recompose_medical(
                 "clinical_main_bytes_unchanged": True,
             }
         )
+    if jobs == 1:
+        results = list(map(render_cached_task, tasks))
+    else:
+        with ProcessPoolExecutor(
+            max_workers=jobs, mp_context=get_context("spawn"), max_tasks_per_child=1
+        ) as pool:
+            try:
+                results = list(pool.map(render_cached_task, tasks, chunksize=1))
+            except BaseException:
+                pool.shutdown(wait=True, cancel_futures=True)
+                raise
+    for row, audit_row, result in zip(rendered_rows, render_audits, results, strict=True):
+        row["pages"] = audit_row["pages"] = result["pages"]
     for name in ("README.TXT", "00_Equation_Renderer_LICENSE.TXT"):
         shutil.copyfile(contained_file(prepared, "files/" + name), files / name)
     shutil.copyfile(contained_file(prepared, "archive-audits.json"), output / "archive-audits.json")
@@ -227,7 +249,14 @@ def recompose_medical(
         "medical_review_status": "Unreviewed; all original human, rights, and source holds remain.",
         "original_pack_unchanged": True,
         "elapsed_seconds": time.monotonic() - started,
-        "peak_rss_kib": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        "jobs": jobs,
+        "worker_max_tasks": 1 if jobs == 2 else None,
+        "parent_peak_rss_kib": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        "worker_peak_rss_kib": max(result["peak_rss_kib"] for result in results),
+        "peak_rss_kib": max(
+            resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+            max(result["peak_rss_kib"] for result in results),
+        ),
         "cgroup": {
             name: Path("/sys/fs/cgroup", name).read_text()
             for name in ["memory.peak", "memory.events"]

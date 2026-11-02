@@ -207,3 +207,23 @@ def test_cache_reframe_rejects_output_containment(cached_fixture):
     root, prepared, cache, _ = cached_fixture
     with pytest.raises(ValueError, match="contain"):
         recompose_medical(root, prepared, cache, prepared / "child", ["fixture_a"])
+
+
+@pytest.mark.parametrize("jobs", [0, 3, True])
+def test_cached_worker_budget_rejects_invalid_counts(tmp_path, jobs):
+    with pytest.raises(ValueError, match="one or two"):
+        recompose_medical(tmp_path, tmp_path, tmp_path, tmp_path / "output", None, jobs=jobs)
+
+
+def test_two_spawn_workers_preserve_pdf_bytes_and_receipt_order(cached_fixture):
+    root, prepared, cache, _ = cached_fixture
+    first = recompose_medical(root, prepared, cache, root / "serial", None, jobs=1)
+    second = recompose_medical(root, prepared, cache, root / "parallel", None, jobs=2)
+    assert first["pipeline_version"] == second["pipeline_version"]
+    assert [row["id"] for row in second["recomposition"]["articles"]] == ["fixture_a", "fixture_b"]
+    assert second["recomposition"]["jobs"] == 2
+    for name in ("001_fixture_a.pdf", "002_fixture_b.pdf"):
+        assert (root / "serial/files" / name).read_bytes() == (
+            root / "parallel/files" / name
+        ).read_bytes()
+    assert json.loads((root / "parallel/generation.json").read_text())["complete"] is True

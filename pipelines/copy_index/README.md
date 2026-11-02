@@ -11,11 +11,12 @@ mounts, using `--root`, `--drive`, `--cache`, `--output`, `--manifest-sha256`,
 The source manifest, every indexed file, producer dependencies, actual font pins,
 requested tool image, tool versions, epoch, and PDF hash are recorded.
 
-Only actual PDF, MP4, and APK paths outside BACKUP are listed. The index excludes
+Only actual PDF, MP4, APK, ZIM, and OBF paths outside BACKUP are listed. The index excludes
 itself and other formats. Each parent folder is shown once, followed by exact filenames and sizes.
 The heading plus filename gives the readable full path; internal folder links and
 bookmarks navigate the index without depending on cross-file PDF support.
-Keep existing source and license notices when sharing referenced folders.
+Keep existing source and license notices when sharing referenced folders,
+including the companion PBF source when copying map-data folders.
 
 The phone layout is 90×160 mm with 12 pt body text and one column. Its byte cap comes
 from build configuration. Rendering and browser checks support development

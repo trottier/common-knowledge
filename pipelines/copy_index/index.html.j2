@@ -10,10 +10,10 @@ section{break-before:page}.file-group{break-before:auto}.entry{break-inside:avoi
 </style></head><body>
 <h1>Copy files to your phone</h1>
 <p>Open <strong>4_PHONE_PACK</strong> for phone PDFs.</p>
-<p>Copy a file or folder to your phone. Keep source notices and license files when sharing folders.</p>
+<p>Copy a file or folder to your phone. Keep source notices and license files when sharing folders. Copy map-data folders with their PBF source and required notices.</p>
 <p>Open the copy in your phone’s file viewer. Test it with networking off.</p>
 <p>Find each file’s folder, full name, and size below. Each folder heading and filename form its full path.</p>
-<p class="fineprint">Draft navigation for the actual incomplete inspection tree. Content reviews and physical-phone checks remain pending. This index lists PDF, MP4, and APK files only; it excludes BACKUP copies and itself.</p>
+<p class="fineprint">Draft navigation for the actual incomplete inspection tree. Content reviews and physical-phone checks remain pending. This index lists PDF, MP4, APK, ZIM, and OBF files only; it excludes BACKUP copies and itself.</p>
 <section><h2>Language folders</h2><p>Look inside 1_START for these actual folders:</p><ul class="editions">{% for language in languages %}<li><bdi lang="{{ language.code }}" style="font-family:{{ font_families[language.font] }}">{{ language.name }}</bdi></li>{% endfor %}</ul></section>
 <section><h2>Find a folder</h2><p>{{ file_count }} actual files are listed.</p>{% for group in groups %}<p class="folder"><a href="#{{ group.id }}">{{ group.folder }}</a></p>{% endfor %}</section>
 {% for group in groups %}<section class="file-group" id="{{ group.id }}"><h2 class="folder">{{ group.folder }}</h2>

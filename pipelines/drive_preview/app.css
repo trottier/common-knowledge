@@ -218,6 +218,7 @@ color:#718198;
 text-align:center;
 line-height:1.7}
 .message[hidden]{display:none}
+.folder-hint{display:block;font-size:13px;line-height:1.4;color:#526276;margin:3px 0}
 .drive-notice{font-size:10px;
 line-height:1.6;
 background:#f7f8fa;
