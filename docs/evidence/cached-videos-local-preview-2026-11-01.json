@@ -1,0 +1,265 @@
+{
+  "purpose": "Two existing cached videos added to an incomplete local Variant 1 inspection clone; no normal assembly, rights, or release gate changed.",
+  "checked_on": "2026-11-01",
+  "build_image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "admission_source_commit": "1c5d40416b4bd87a491aa90de2b98456c955bc54",
+  "historical_video_producer_commit": "0b553e1b158af4d6c820941aaf203ed7ce138ef6",
+  "iso_build_use_grant_commit": "5248d8494c18e8850a7552ea66038060d84e8c75",
+  "original_epoch": 1793404800,
+  "actual_final_checks": {
+    "manifest_sha256": "250df6dfe7f637aa4aa5073f85da33bb41803cc1c9b81e5d9b08aaa674760a44",
+    "provenance_sha256": "2e060be688533a03370c62a9adf3d029782705040e5beeddc0c7eccd5751b54e",
+    "files": 501,
+    "bytes": 949338438,
+    "pdfs": 435,
+    "mp4s": 2,
+    "changed_base_files": [
+      "4_PHONE_PACK/0_WHAT_TO_COPY.pdf",
+      "BACKUP/4_PHONE_PACK/0_WHAT_TO_COPY.pdf",
+      "README.TXT",
+      "VERIFY.TXT"
+    ],
+    "added_payloads": [
+      "2_VIDEOS/01_What_You_Need_to_Know_About_Handwashing.mp4",
+      "2_VIDEOS/01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT",
+      "6_VIDEOS_AND_IN_DEPTH/topics/convening/07_Be_Prepared.mp4",
+      "6_VIDEOS_AND_IN_DEPTH/topics/convening/07_Be_Prepared_SOURCE.TXT"
+    ],
+    "all_final_files_match_manifest": true,
+    "base_manifest_sha256": "b8846295d3a6d9bacab993b833cbbc4a3d6044b9511c72d74b391d4d94c08612",
+    "all_backup_bytes_match": true,
+    "index_pages": 53,
+    "indexed_files": 306,
+    "index_receipt_sha256": "aead74322c7f7fad250ca8ba54085f9ae5e9a644d726516c31622bb46d824d97",
+    "index_pdf_sha256": "c0914438cd0d45dc8e2dd57d5a9fdddfaf056193309cbe40df96306819618f7b",
+    "source_commit": "1c5d40416b4bd87a491aa90de2b98456c955bc54",
+    "historical_video_source_commit": "0b553e1b158af4d6c820941aaf203ed7ce138ef6"
+  },
+  "historical_components": [
+    {
+      "id": "cdc_handwashing_asl",
+      "catalog_manifest_sha256": "ee6a3834141810c6da1fca55d45dc1bbdfefa72bb83dcdf18d14b6a32910a2e5",
+      "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+      "complete": true,
+      "source_date_epoch": 1793404800,
+      "original_generation_file_sha256": "4a8622bb745092d1dafeb576b40f716a67b47f0059cc6d2c4a1bca7ebfd92a49",
+      "files": [
+        {
+          "path": "01_What_You_Need_to_Know_About_Handwashing.mp4",
+          "sha256": "b94089bc5b55632ae59307436fa894fbac04f83d7b27dfa60f951634696b8529",
+          "size_bytes": 10812408
+        },
+        {
+          "path": "01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT",
+          "sha256": "8ee9f2323bc6d676f409fe8c728362b9edd56727312b39fd595a6ea3955ffd09",
+          "size_bytes": 697
+        }
+      ],
+      "destination_paths": [
+        "2_VIDEOS/01_What_You_Need_to_Know_About_Handwashing.mp4",
+        "2_VIDEOS/01_What_You_Need_to_Know_About_Handwashing_SOURCE.TXT"
+      ],
+      "actual_streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "language": "und",
+          "default": 1
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "language": "eng",
+          "default": 1
+        }
+      ],
+      "duration_seconds": "138.718000",
+      "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]",
+      "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655"
+    },
+    {
+      "id": "fema_be_prepared",
+      "catalog_manifest_sha256": "4e6a9cdf69f55fa80d64ae23a837bf262f54c273c8838b174f94844557d6bab1",
+      "pipeline_version": "video-v1-732f268daa5c33b7db6d9a2c5164b2ed94e03d79adef3babc332196e0d64c4d5",
+      "complete": true,
+      "source_date_epoch": 1793404800,
+      "original_generation_file_sha256": "3fa1aa353eeed2f253daffb86bfe2f9aef1b62b8d854ae592841a8f6b4f45c15",
+      "files": [
+        {
+          "path": "07_Be_Prepared.mp4",
+          "sha256": "327217aa125620a3748d409fda4f6eb9f71c1dfcb6950270b0ab93cca64bcc90",
+          "size_bytes": 2699910
+        },
+        {
+          "path": "07_Be_Prepared_SOURCE.TXT",
+          "sha256": "55e781a8cabb2ca4e995a21b0294162a15eb9d0c9466c8ca87ce380edac9e356",
+          "size_bytes": 1207
+        }
+      ],
+      "destination_paths": [
+        "6_VIDEOS_AND_IN_DEPTH/topics/convening/07_Be_Prepared.mp4",
+        "6_VIDEOS_AND_IN_DEPTH/topics/convening/07_Be_Prepared_SOURCE.TXT"
+      ],
+      "actual_streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "language": "und",
+          "default": 1
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "language": "eng",
+          "default": 1
+        },
+        {
+          "type": "subtitle",
+          "codec": "mov_text",
+          "language": "eng",
+          "default": 1
+        }
+      ],
+      "duration_seconds": "31.867000",
+      "review": "[[VERIFY: human preparedness, alert-availability, and national-default compatibility review; this optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback; normalized pin review; no Spanish audio track supplied]]",
+      "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared"
+    }
+  ],
+  "source_closure": {
+    "fema_be_prepared": {
+      "sha256": "4e6a9cdf69f55fa80d64ae23a837bf262f54c273c8838b174f94844557d6bab1",
+      "size_bytes": 2701117,
+      "license": "US-PD AND CC0-1.0",
+      "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared",
+      "review": "[[VERIFY: human preparedness, alert-availability, and national-default compatibility review; this optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback; normalized pin review; no Spanish audio track supplied]]",
+      "redistribution_scope": "Only the generated MP4 and SOURCE.TXT files listed above"
+    },
+    "fema_be_prepared_caption_en": {
+      "sha256": "1ee0a43e53de792c5ff708bf170ffb1258760256b16da44a2c235ba5b87f29be",
+      "size_bytes": 806,
+      "license": "US-PD",
+      "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared",
+      "review": "[[VERIFY: independent publisher-caption pin, component rights, transcription accuracy, and full synchronization review; original cue text and timing retained]]",
+      "redistribution_scope": "Cached build input only; original input bytes are not in the preview"
+    },
+    "iso639_2": {
+      "sha256": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371",
+      "size_bytes": 16010,
+      "license": "LicenseRef-ISO639-Code-Use",
+      "license_proof_url": "https://www.iso.org/iso-639-language-code",
+      "review": "[[VERIFY: review computed HTTPS input pin]]",
+      "redistribution_scope": "Cached build input only; original input bytes are not in the preview"
+    },
+    "fema_be_prepared_source": {
+      "sha256": "09f41117d8f1f3cd188c2bdcaeb0ca2eab89d9421fef86500f943a40207bb0e3",
+      "size_bytes": 10810878,
+      "license": "US-PD",
+      "license_proof_url": "https://www.dvidshub.net/video/858801/fema-psa-prepared",
+      "review": "[[VERIFY: human preparedness, alert-availability, and national-default compatibility review; this optional pre-event advice is not a prerequisite to using the drive; per-item component-rights and computed source-pin review; publisher-caption accuracy and synchronization; physical phone playback]]",
+      "redistribution_scope": "Cached build input only; original input bytes are not in the preview"
+    },
+    "cdc_handwashing_asl": {
+      "sha256": "ee6a3834141810c6da1fca55d45dc1bbdfefa72bb83dcdf18d14b6a32910a2e5",
+      "size_bytes": 10813105,
+      "license": "US-PD AND CC0-1.0",
+      "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
+      "review": "[[VERIFY: human source-currency and conversion-pin review and phone playback; original English audio only, no publisher subtitle files supplied]]",
+      "redistribution_scope": "Only the generated MP4 and SOURCE.TXT files listed above"
+    },
+    "cdc_handwashing_asl_source": {
+      "sha256": "7b8984686e7eb80fa7d6269acb2d8635f672ea39c82ab1ab718fd618daa165ee",
+      "size_bytes": 11559997,
+      "license": "US-PD",
+      "license_proof_url": "https://stacks.cdc.gov/view/cdc/88655",
+      "review": "[[VERIFY: review computed HTTPS WMV pin, source content currency, original English audio and normalized playback on phones]]",
+      "redistribution_scope": "Cached build input only; original input bytes are not in the preview"
+    }
+  },
+  "scope": "CDC is sample/full universal; FEMA is a full-profile convening supplement. Normal sample selection is unchanged.",
+  "pending": [
+    "Human video safety and currency review",
+    "Computed source and normalized pin review",
+    "FEMA caption accuracy and synchronization review",
+    "Physical phone playback",
+    "Spanish audio unavailable for both clips; no language switching claim",
+    "Other missing topic libraries, reader apps, mesh apps, wider maps, and remaining selected cargo"
+  ],
+  "receipts": {
+    "build/video-admission-149/preflight.json": "0bdff4c6db0e0568354de954e711e1b628cec39d7ce628e84c1194c9cf643cc7",
+    "build/video-admission-149/final-check.json": "5a94ce17805d2cb94a2bb00cdec99d7f1ebe0c00f3f76a0701941d78d5167509",
+    "build/video-admission-149/assemble.log": "8314a83e25d842caa8e4ab55ee0ca00866866fe9f47786374d9ac06ea03d50e3",
+    "build/video-admission-149/browser-qa/report.json": "b255aa43d6305f2dea2931e05b73143ad5165e652306b83e425399459a4046e1",
+    "build/video-admission-149/browser-qa/cdc-folder-390.png": "fa8046ad2eb3c2009c49c322a5131db55df25531a7594b8cd88ca795202dced9",
+    "build/video-admission-149/browser-qa/cdc-playing-390.png": "e3dae58fab70f9fd15edbaca81294a2f6d7bfce17eed425251fd1a44e856312e",
+    "build/video-admission-149/browser-qa/fema-folder-390.png": "f3fc9349d9bec8a2bd9e00058e5981b31a200561f7c0565802543ec4930c990f",
+    "build/video-admission-149/browser-qa/fema-playing-390.png": "6cd9828708f62b2faee1ecfea1e0aa8f90266927435f71c070a472d3f33b310b",
+    "build/video-admission-149/browser-qa/updated-copy-index-native-390.png": "3ff1e7706b0d65805fae68a89c9e6b6dec9966ccd1bdb15335a6bb4253eb0c42"
+  },
+  "browser_check": {
+    "scope": "Actual local v12 at390px in desktop Chrome; not physical-phone or audio/subtitle switching acceptance",
+    "passed": true,
+    "viewport": {
+      "width": 390,
+      "height": 1000
+    },
+    "videos": [
+      {
+        "id": "cdc",
+        "name": "01_What_You_Need_to_Know_About_Handwashing.mp4",
+        "caption": "10.8 MB (10,812,408 bytes) · 2_VIDEOS/01_What_You_Need_to_Know_About_Handwashing.mp4",
+        "time": 1.511336,
+        "duration": 138.717,
+        "width": 480,
+        "height": 854,
+        "controls": true,
+        "error": null,
+        "ready": 4,
+        "paused": false
+      },
+      {
+        "id": "fema",
+        "name": "07_Be_Prepared.mp4",
+        "caption": "2.7 MB (2,699,910 bytes) · 6_VIDEOS_AND_IN_DEPTH/topics/convening/07_Be_Prepared.mp4",
+        "time": 1.52089,
+        "duration": 31.866667,
+        "width": 480,
+        "height": 854,
+        "controls": true,
+        "error": null,
+        "ready": 4,
+        "paused": false
+      }
+    ],
+    "media_http": [
+      {
+        "url": "http://127.0.0.1:8766/files/2_VIDEOS/01_What_You_Need_to_Know_About_Handwashing.mp4",
+        "status": 206,
+        "content_range": "bytes 0-10812407/10812408"
+      },
+      {
+        "url": "http://127.0.0.1:8766/files/6_VIDEOS_AND_IN_DEPTH/topics/convening/07_Be_Prepared.mp4",
+        "status": 206,
+        "content_range": "bytes 0-2699909/2699910"
+      }
+    ],
+    "console_or_script_errors": [],
+    "http_failures": [],
+    "external_http": [],
+    "index_caption": "126.4 KB (126,407 bytes) · 4_PHONE_PACK/0_WHAT_TO_COPY.pdf",
+    "map_finder_first": "0_FIND_A_MAP.pdf",
+    "screenshots": [
+      "cdc-folder-390",
+      "cdc-playing-390",
+      "fema-folder-390",
+      "fema-playing-390",
+      "updated-copy-index-native-390"
+    ],
+    "observations": [
+      "Both native videos advanced beyond1.5seconds with actual480x854 frames, visible playback controls, and correct full filenames/byte captions.",
+      "CDC original picture and ASL presenter visibly render; publisher original title text was retained, not newly burned in.",
+      "FEMA original picture and English caption visibly render. Spanish audio is absent; no language-switching acceptance claimed.",
+      "Fresh53-page copy index visibly opens in native PDF viewer at390px.",
+      "Actual0_ map finder remains first in Maps."
+    ]
+  }
+}
