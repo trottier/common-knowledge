@@ -101,7 +101,13 @@ def fixture_proof(tmp_path, pinned_font):
         "status": "Unreviewed fixture",
         "detail_pdf": leaf,
         "producer": {"version": "fixture", "source_files": {}},
-        "policy": {"epoch": 1793404800, "scale_denominator": 25000, "max_pages": 64},
+        "policy": {
+            "epoch": 1793404800,
+            "scale_denominator": 25000,
+            "max_pages": 64,
+            "county_name": "Bristol County",
+            "state": "RI",
+        },
         "fonts": [pinned_font],
         "zctas": ["fixture"],
         "sheets": [

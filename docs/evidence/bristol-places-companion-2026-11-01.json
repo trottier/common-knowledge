@@ -1,0 +1,160 @@
+{
+  "scope": "Separate local Bristol companion proof; not yet admitted to the live tree or catalog and not a completed sample/release.",
+  "checked_on": "2026-11-01",
+  "producer_commit": "3ad74520156563b207fb7de96ace7095bf555be7",
+  "producer_recipe": "county-places-proof-v1-852b5d2f7505ee54935041e89f6d9174087e79f4f2e3cb4fd1ad074d945395f8",
+  "tool_image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "source_epoch": 1793404800,
+  "complete": false,
+  "map_proof_sha256": "f566164454b8761608567c0667c0bd8f792b72d8691a9b3aba2fc8b07eb5cd4b",
+  "map_source_commit": "80bb9009039cb3741c3938bc609bcdc19d9c3ff0",
+  "historical_directory_generation": {
+    "complete": false,
+    "files": [
+      {
+        "path": "RI_SOURCE_DATA.json",
+        "sha256": "ecdb22c249a458e59623921b5c8068441e65e3ce1145e4db23119d47a0895dc0",
+        "size_bytes": 326180
+      },
+      {
+        "path": "RI_phone.pdf",
+        "sha256": "f91b1c69cd7dfa755a5d9548981e784caba2f506d2465bcaa03c37840643d375",
+        "size_bytes": 893118
+      },
+      {
+        "path": "RI_print.pdf",
+        "sha256": "6d58b323ccccf3f633741d2dcc82f244d7e11147f1faef9336622676bd584054",
+        "size_bytes": 590347
+      }
+    ],
+    "inputs": {
+      "atlas_ri": "22950893ed875d8ceefca48309890a212e5d683c7cb8cd83457caecb91843d7e",
+      "census_county_analysis": "9c6e9d9076abce2670d1de255de3710c35ecca00a7005d88e012dec52d95f763",
+      "census_states": "bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0",
+      "fcc_facility_statuses": "630651fea8a0fa0ea9e7a1582452076f8401b0dbca7ce8b0e0b0c1b1875915af",
+      "fcc_license_versions": "5a650c26f48ab250b64800ebc1f5772915959f3cccbf544fad6c794e935f48c3",
+      "fcc_locations": "5f3e77ad951caca6b38b939b65b4d5248dff28de2613b2d2826c65158d4d3637",
+      "fcc_service_codes": "347688dc1b76559622ccad04c97686733b697c0ae3f2fe18befca03ed65d8df0",
+      "fcc_stations": "5970edcf0dcd9fd62d749c8f2c3b176678352b506139f9e0a78d3395c6f60378",
+      "fema_risk": "b99dae90a317b16630d7f9b1faa4a2784d5ca458761c1d3ab9646f046df9d072",
+      "geofabrik_ri": "ec302fd655282f09bc5ec3b65e7c43e407fded3c04110aac04c2c9b3dce32162",
+      "imls_libraries": "6aad0913b6630879f0f859e4b54cd062b3c6e9853218153ca5e4aa2d678a11e7",
+      "nces_schools": "9dc51ecd5cdf6e38bdb679f7ac95e2bf73ee3fb48718b8612cf830800cffb288",
+      "noaa_transmitters": "e0c818a47d40a90ed867d2261b8a05db2d264012f89127b49d6269fe8a36bc22",
+      "noto_sans": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "state_emergency_agencies": "494a832729d826d64502beba7306308c828b96ca69e2346647cfbc17834bd808"
+    },
+    "intermediates": [
+      {
+        "path": "places.json",
+        "sha256": "2fb6cd099366591681f5bcc5397c7ba190cf29046eb1c287db3f91e70249b95e",
+        "size_bytes": 456180
+      },
+      {
+        "path": "atlas-index.json",
+        "sha256": "b53e62dd77c96f8919ab5721ec6baa35a72ce9a30be1f6064fa6de639c95cf3c",
+        "size_bytes": 41806
+      }
+    ],
+    "pipeline_version": "directory-v1-b5709c934c9f4e450f8cc950dc47b147fe909b17bafcb0b55ab0648dd14c5aef",
+    "source_date_epoch": 1793404800
+  },
+  "historical_source_sha256": "ecdb22c249a458e59623921b5c8068441e65e3ce1145e4db23119d47a0895dc0",
+  "source_input_path": ".worktrees/15-national/build/directory/RI-final-atlas-a",
+  "output_path": "build/county-places-155/bristol-b",
+  "receipt_sha256": "47e5e0ad23359a245b42aa69b9a44e2c3973a96f13e0859f9e366c978abeff0c",
+  "files": [
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County - Places.pdf",
+      "sha256": "3a50bbdef12116273d8f77badfff48afce5206977079513f6d7c2626e2c6b346",
+      "size_bytes": 38487
+    },
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Bristol County/SOURCE/Bristol County SOURCE_DATA.json",
+      "sha256": "578cdcb3bc196c6fe241f8a346c898d5ab6fe8dcdd285fc5510a87be31d702d8",
+      "size_bytes": 13404
+    },
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Bristol County/SOURCE.TXT",
+      "sha256": "f5a96075df7b26a0881159c6bec5a26f1b740357e517226ba266cf1c6bbbc981",
+      "size_bytes": 813
+    }
+  ],
+  "page_count": 15,
+  "place_count": 33,
+  "font_pins": [
+    {
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "size_bytes": 2049096
+    }
+  ],
+  "checks": {
+    "all_output_hashes_and_sizes": true,
+    "all33_numbered_names_coordinates_references_in_pdf_text": true,
+    "overview_point_numbers_match_exact_order": true,
+    "actual_detail_pdf_pages_resolve_sheet_labels": true,
+    "county_source_offer_contains_only33_original_county44001_records": true,
+    "source_offer_retains_original_place_fields_and_used_source_dates": true,
+    "original_private_tags_checked_by_existing_exclusion_policy": true,
+    "whole_state_source_not_in_final_packet": true,
+    "actual_390px_native_pdf_visual_check": true,
+    "opening_warning_and_broadcast_access_caution_visible": true,
+    "final_source_notes_share_page_with_place33": true,
+    "embedded_subset_fonts": true,
+    "tagged_pdf": true,
+    "page_size_mm": [
+      90,
+      160
+    ]
+  },
+  "tests": "14 focused tests passed; Ruff passed. No dependency or frozen producer changes.",
+  "browser_check": {
+    "scope": "Bristol B actual native PDF at390px, desktop Chrome only; not phone acceptance",
+    "errors": [],
+    "external_http": [],
+    "pages": [
+      {
+        "index": 0,
+        "zoom": 1,
+        "page_count": 15,
+        "screenshot": "opening-390.png"
+      },
+      {
+        "index": 1,
+        "zoom": 1,
+        "page_count": 15,
+        "screenshot": "first-records-390.png"
+      },
+      {
+        "index": 14,
+        "zoom": 1,
+        "page_count": 15,
+        "screenshot": "last-place-source-notes-390.png"
+      }
+    ],
+    "passed": true
+  },
+  "historical_A": {
+    "producer_commit": "58bb9d4",
+    "receipt_sha256": "dd5de90239c2135c29bcc821cc4b7608f16586895fb36d24a1567a541dbedf73",
+    "pdf": {
+      "path": "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County - Places.pdf",
+      "sha256": "0deb6da0f80c0bb5e2d8a7dbe1598c538d1b583fc4f543d6bf62fd56793211d0",
+      "size_bytes": 38482
+    },
+    "status": "Held diagnostic only; included the authenticated whole-state source offer and was never admitted. Replaced by B county-only derived offer; not relabeled."
+  },
+  "pending": [
+    "Source/currency and safety review",
+    "Completeness and missing-address/name source gaps",
+    "Physical-phone acceptance",
+    "Root-coordinated adoption and regenerated actual-tree navigation/indexes"
+  ],
+  "receipts": {
+    "build/county-places-155/bristol-b.log": "0b7172a8aad032418dc63f9635ce8fb0df17b73d04552b8266343733d89e5bb3",
+    "build/county-places-155/native-qa/report.json": "fef77beaafbd588dc24b4e7a677c9030434848db67322d798f17be6044c01b28",
+    "build/county-places-155/native-qa/opening-390.png": "85127e491d1933f7a09b74ae4887ca175354f7b9176d3f77df81bccbd54d1c4d",
+    "build/county-places-155/native-qa/first-records-390.png": "e90cde3a57221e279490759338eb6e48d77384ed3fe29ed5abed40befddab9c8",
+    "build/county-places-155/native-qa/last-place-source-notes-390.png": "a5a5abaf1b28959d44655beffeda729b7b917d521a135c16d53adab0a8d221af"
+  }
+}

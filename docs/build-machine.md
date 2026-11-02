@@ -51,10 +51,16 @@ raw downloads in `cache/<sha256>` and each generated item in
 checks those files against the catalog; copying an old prototype directory is
 not sufficient when its pipeline fingerprint has changed.
 
-`make sample` builds variants 1 and 3 twice. Each pass renders a fresh core and
+`make sample` prepares only Variant 1's selected graph and builds it twice.
+Use `make sample SAMPLE_VARIANTS='1 3'` when deliberately extending the sample,
+or list all eight numbers for an all-variant sample. The same selector controls
+preparation and assembly, so a single-variant run does not fetch another
+variant's topics or collection. Each pass renders a fresh core and
 assembles a fresh filesystem tree. Both raw image hashes, compressed hashes and
 manifest hashes must agree before `build/sample/build-manifest.json` is written.
-The workflow's preflight runs on a hosted runner; the larger build uses a Linux
+The sample workflow is on demand while this milestone is incomplete; it has no
+nightly schedule. Its preflight also selects Variant 1 and runs on a hosted
+runner; the larger build uses a Linux
 x86-64 runner labeled `common-knowledge`. No such runner is currently registered.
 Set the repository variable `CK_DATA_ROOT` to its prepared data directory, or use
 the default `/var/lib/common-knowledge`. The workflow does not install a runner

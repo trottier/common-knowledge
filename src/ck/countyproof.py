@@ -1,4 +1,4 @@
-"""Bounded Bristol vector-PDF experiment; does not adopt historical catalog pins."""
+"""Bounded county/area vector-PDF experiments; never adopt historical catalog pins."""
 
 import csv
 import gzip
@@ -8,27 +8,26 @@ import json
 import math
 import resource
 import time
-from collections import Counter
+from contextlib import nullcontext
 from datetime import UTC, datetime
 from decimal import Decimal
+from functools import partial
 from pathlib import Path
 
 import geopandas as gpd
 import mapbox_vector_tile
-import osmium
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from markupsafe import Markup
 from pmtiles.reader import Reader
 from pmtiles.tile import Compression
 from pypdf import PdfReader
 from pyproj import Transformer
-from shapely import from_wkb, transform
+from shapely import transform
 from shapely.geometry import Point, box, mapping, shape
 from weasyprint import HTML
 
-from ck.catalog import load_catalog
+from ck.catalog import load_catalog, safe_path
 from ck.config import load_config, read_yaml
-from ck.directory import excluded
 from ck.generated import cached_input, verified_generated_files
 from ck.geo import dms
 from ck.geofonts import font_records, require_glyphs
@@ -40,13 +39,19 @@ def sha(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def producer_recipe(root: Path) -> dict:
+def producer_recipe(
+    root: Path, policy_path: Path | None = None, planned_part: dict | None = None
+) -> dict:
+    policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
+    selected_policy = policy_path.resolve().relative_to(root.resolve()).as_posix()
     paths = [
         "src/ck/countyproof.py",
         "src/ck/streetlabels.py",
         "src/ck/streetcoverage.py",
+        "src/ck/roadsource.py",
+        "src/ck/roadcache.py",
         "tools/prototype_county_map.py",
-        "pipelines/atlas/bristol-proof.json",
+        selected_policy,
         "templates/county-proof.html.j2",
         "src/ck/render.py",
         "src/ck/geo.py",
@@ -63,10 +68,77 @@ def producer_recipe(root: Path) -> dict:
         "config/debian.sources",
     ]
     hashes = {name: sha(root / name) for name in sorted(paths)}
+    inputs = (
+        hashes if planned_part is None else {"source_files": hashes, "planned_part": planned_part}
+    )
     digest = hashlib.sha256(
-        json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()
+        json.dumps(inputs, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
-    return {"version": "county-vector-proof-v1-" + digest, "source_files": hashes}
+    return {
+        "version": "county-vector-proof-v1-" + digest,
+        "source_files": hashes,
+        "planned_part": planned_part,
+    }
+
+
+def planned_geometry(county, crs: str, county_id: str, part: dict):
+    """The caller authenticates its whole-plan SHA; bind and validate the actual part too."""
+    if part.get("county") != county_id or part.get("crs") != crs:
+        raise ValueError("Planned part county or projected CRS differs")
+    checksum = part.get("plan_sha256", "")
+    if len(checksum) != 64 or any(char not in "0123456789abcdef" for char in checksum):
+        raise ValueError("Planned part needs its authenticated whole-plan SHA-256")
+    if not part.get("id") or not part.get("area_name"):
+        raise ValueError("Planned part needs its stable ID and readable area name")
+    geometry = shape(part["geometry"])
+    if geometry.is_empty or not geometry.is_valid or geometry.area <= 0:
+        raise ValueError("Planned part geometry is invalid or empty")
+    if geometry.difference(county).area > 0.01:
+        raise ValueError("Planned part exceeds its county")
+    geometry = geometry.intersection(county)
+    if geometry.is_empty or geometry.area <= 0:
+        raise ValueError("Planned part does not cover county area")
+    return geometry
+
+
+def area_geometry(county, features: list[dict], policy: dict):
+    """Use the whole county unless an explicitly named, bounded trial scope is selected."""
+    from shapely import union_all
+
+    selected = policy.get("scope_zctas")
+    if selected is None:
+        return county, {"kind": "county", "whole_county": True}
+    if (
+        not selected
+        or sorted(set(selected)) != selected
+        or selected != policy["expected_zctas"]
+        or not policy.get("area_name")
+    ):
+        raise ValueError("Area trial needs an explicit name and unique verified ZIP-area scope")
+    by_code = {feature["properties"]["GEOID"]: feature for feature in features}
+    if len(by_code) != len(features) or not set(selected) <= by_code.keys():
+        raise ValueError("Selected ZIP-area scope is absent or duplicated in pinned geometry")
+    geometry = county.intersection(
+        union_all([shape(by_code[code]["geometry"]) for code in selected])
+    )
+    if geometry.is_empty or not geometry.is_valid or geometry.area <= 0:
+        raise ValueError("Selected ZIP-area scope does not intersect the county")
+    return geometry, {
+        "kind": "county_intersection_with_2020_zctas",
+        "whole_county": False,
+        "zctas": selected,
+    }
+
+
+def output_names(policy: dict, codes: list[str]) -> tuple[Path, str, str]:
+    name = policy.get("area_name", policy["county_name"])
+    for component in [name, policy["county_name"], policy["state"]]:
+        if len(safe_path(component).parts) != 1:
+            raise ValueError("Map names must be single FAT-safe folder or leaf components")
+    leaf = name + (" " + ",".join(codes) if codes else "") + ".pdf"
+    folder = safe_path("3_MAPS_AND_PLACES/" + policy["state"] + "/" + policy["county_name"])
+    safe_path(str(folder / leaf))
+    return Path(folder), leaf, name
 
 
 def check_intermediates(folder: Path, metadata: dict) -> None:
@@ -89,8 +161,11 @@ def sheet_plan(geometry, policy: dict) -> list[dict]:
     left, bottom, right, top = geometry.bounds
     columns = max(1, math.ceil(max(0, right - left - width) / step_x) + 1)
     rows = max(1, math.ceil(max(0, top - bottom - height) / step_y) + 1)
-    if columns * rows > policy["max_pages"] - 1:
-        raise ValueError("Prototype exceeds its explicit sheet guard; no coverage dropped")
+    if (
+        policy.get("max_candidate_cells") is not None
+        and columns * rows > policy["max_candidate_cells"]
+    ):
+        raise ValueError("Candidate-cell work limit exceeded; no coverage dropped")
     left -= (width + (columns - 1) * step_x - (right - left)) / 2
     top += (height + (rows - 1) * step_y - (top - bottom)) / 2
     result = []
@@ -103,6 +178,10 @@ def sheet_plan(geometry, policy: dict) -> list[dict]:
                 top - row * step_y,
             ]
             if geometry.intersects(box(*bounds)):
+                if len(result) >= policy["max_pages"] - 1:
+                    raise ValueError(
+                        "Prototype exceeds its explicit sheet guard; no coverage dropped"
+                    )
                 result.append(
                     {
                         "id": f"R{row + 1}C{column + 1}",
@@ -131,56 +210,10 @@ def sheet_plan(geometry, policy: dict) -> list[dict]:
     return result
 
 
-def read_roads(
-    source: Path, project, extent, allowed: set[str], maximum: int
-) -> tuple[list, list, dict]:
-    roads, settlements = [], []
-    counts = Counter()
-    factory = osmium.geom.WKBFactory()
+def read_roads(source: Path, project, extent, allowed: set[str], maximum: int):
+    from ck.roadsource import select_source
 
-    class Handler(osmium.SimpleHandler):
-        def node(self, node):
-            tags = dict(node.tags)
-            if tags.get("place") not in {
-                "city",
-                "town",
-                "village",
-                "hamlet",
-                "suburb",
-            } or not tags.get("name"):
-                return
-            x, y = project(node.location.lon, node.location.lat)
-            if extent.covers(Point(x, y)):
-                settlements.append({"name": tags["name"], "x": x, "y": y, "id": f"n{node.id}"})
-
-        def way(self, way):
-            tags = dict(way.tags)
-            if tags.get("highway") not in allowed or excluded(tags):
-                return
-            line = transform(from_wkb(factory.create_linestring(way)), project, interleaved=False)
-            clipped = line.intersection(extent)
-            if clipped.is_empty:
-                return
-            if len(roads) >= maximum:
-                raise ValueError("Prototype source-way guard reached; no ways silently dropped")
-            roads.append(
-                {
-                    "id": way.id,
-                    "kind": tags["highway"],
-                    "name": tags.get("name", ""),
-                    "ref": tags.get("ref", ""),
-                    "access": tags.get("access", ""),
-                    "geometry": mapping(clipped),
-                }
-            )
-            counts[tags["highway"]] += 1
-
-    Handler().apply_file(osmium.io.File(str(source), "pbf"), locations=True, idx="flex_mem")
-    return (
-        sorted(roads, key=lambda entry: entry["id"]),
-        sorted(settlements, key=lambda x: x["id"]),
-        dict(sorted(counts.items())),
-    )
+    return select_source(source, project, extent, allowed, maximum)
 
 
 def water_polygons(source: Path, extent, inverse, project, policy: dict) -> tuple[list, dict]:
@@ -251,11 +284,32 @@ def water_polygons(source: Path, extent, inverse, project, policy: dict) -> tupl
 
 
 def prepare(
-    root: Path, cache: Path, basemap: Path, points: Path, zip_source: Path, policy: dict
+    root: Path,
+    cache: Path,
+    basemap: Path,
+    points: Path,
+    zip_source: Path,
+    policy: dict,
+    road_cache: Path | None = None,
+    planned_part: dict | None = None,
 ) -> dict:
+    policy = dict(policy)
+    county_id = policy.get("county", "")
+    if (
+        policy.get("state") != "RI"
+        or not isinstance(county_id, str)
+        or len(county_id) != 5
+        or not county_id.isdecimal()
+        or not county_id.startswith("44")
+    ):
+        raise ValueError(
+            "This county proof currently admits the pinned Rhode Island source set only"
+        )
     items = load_catalog(root, load_config(root))
     ids = ["census_county_analysis", "geofabrik_ri"]
-    raw = {key: cached_input(items[key], cache) for key in ids}
+    raw = {"census_county_analysis": cached_input(items["census_county_analysis"], cache)}
+    if road_cache is None:
+        raw["geofabrik_ri"] = cached_input(items["geofabrik_ri"], cache)
     basemap_meta, basemap_files = verified_generated_files(items["protomaps_ri"], basemap, items)
     points_meta, point_files = verified_generated_files(
         items["directory_ri"], points, items, allow_incomplete=True
@@ -278,34 +332,72 @@ def prepare(
                 if row["GEOID_COUNTY_20"] == policy["county"] and row["GEOID_ZCTA5_20"]
             }
         )
+    if policy.get("scope_zctas") is not None:
+        if not set(policy["scope_zctas"]) <= set(codes):
+            raise ValueError("Selected ZIP-area scope has no verified county relationship")
+        codes = policy["scope_zctas"]
     if codes != policy["expected_zctas"]:
         raise ValueError("Actual county ZIP-area list differs from naming fixture")
     zip_geometry_item = items[policy["zcta_geometry_id"]]
     zip_geometry_path = cached_input(zip_geometry_item, cache)
     zip_features = json.loads(zip_geometry_path.read_text())["features"]
-    if sorted(feature["properties"]["GEOID"] for feature in zip_features) != codes:
+    if sorted(feature["properties"]["GEOID"] for feature in zip_features) != policy.get(
+        "geometry_expected_zctas", codes
+    ):
         raise ValueError("ZIP geometry and county relationship codes differ")
     county = gpd.read_file(
         f"/vsizip/{{{raw['census_county_analysis']}}}", where=f"GEOID='{policy['county']}'"
     ).to_crs(4326)
-    if len(county) != 1 or county.iloc[0]["NAME"] + " County" != policy["county_name"]:
+    if len(county) != 1 or county.iloc[0]["NAMELSAD"] != policy["county_name"]:
         raise ValueError("Expected exactly the named county")
+    selected_county, coverage_scope = area_geometry(county.geometry.iloc[0], zip_features, policy)
     crs = county.estimate_utm_crs()
     forward = Transformer.from_crs(4326, crs, always_xy=True)
     backward = Transformer.from_crs(crs, 4326, always_xy=True)
-    geometry = transform(county.geometry.iloc[0], forward.transform, interleaved=False)
+    geometry = transform(selected_county, forward.transform, interleaved=False)
+    full_county = transform(county.geometry.iloc[0], forward.transform, interleaved=False)
+    if planned_part is not None:
+        if policy.get("scope_zctas") is not None:
+            raise ValueError("Planned parts require a county policy, not a separate ZIP-area scope")
+        geometry = planned_geometry(full_county, crs.to_string(), policy["county"], planned_part)
+        actual_codes = sorted(
+            feature["properties"]["GEOID"]
+            for feature in zip_features
+            if feature["properties"]["GEOID"] in codes
+            and transform(shape(feature["geometry"]), forward.transform, interleaved=False)
+            .intersection(geometry)
+            .area
+            > 0.01
+        )
+        if planned_part.get("zctas") != actual_codes:
+            raise ValueError("Planned part ZIP labels differ from its actual pinned intersections")
+        codes = actual_codes
+        policy["area_name"] = planned_part["area_name"]
+        coverage_scope = {
+            "kind": "authenticated_county_plan_part",
+            "whole_county": geometry.symmetric_difference(full_county).area <= 0.01,
+            "part_id": planned_part["id"],
+            "plan_sha256": planned_part["plan_sha256"],
+            "zctas": codes,
+        }
     zip_areas = []
     for feature in sorted(zip_features, key=lambda feature: feature["properties"]["GEOID"]):
         properties = feature["properties"]
+        if properties["GEOID"] not in codes:
+            continue
         area = shape(feature["geometry"])
         interior = Point(float(properties["INTPTLON"]), float(properties["INTPTLAT"]))
         if not area.is_valid or area.is_empty or not area.covers(interior):
             raise ValueError("Invalid ZIP area or Census interior point")
+        projected_area = transform(area, forward.transform, interleaved=False)
+        label_point = Point(*forward.transform(interior.x, interior.y))
+        if planned_part is not None and not geometry.covers(label_point):
+            label_point = projected_area.intersection(geometry).representative_point()
         zip_areas.append(
             {
                 "code": properties["GEOID"],
-                "geometry": mapping(transform(area, forward.transform, interleaved=False)),
-                "label_point": list(forward.transform(interior.x, interior.y)),
+                "geometry": mapping(projected_area),
+                "label_point": [label_point.x, label_point.y],
             }
         )
     sheets = sheet_plan(geometry, policy)
@@ -313,20 +405,59 @@ def prepare(
 
     extent = union_all([box(*sheet["bounds"]) for sheet in sheets])
     road_policy = read_yaml(root / "pipelines/androidmaps/settings.yaml")
-    roads, settlements, road_counts = read_roads(
-        raw["geofabrik_ri"],
-        forward.transform,
-        extent,
-        set(road_policy["road_values"]),
-        policy["max_source_ways"],
-    )
+    road_cache_audit = None
+    if road_cache is None:
+        roads, settlements, road_counts = read_roads(
+            raw["geofabrik_ri"],
+            forward.transform,
+            extent,
+            set(road_policy["road_values"]),
+            policy["max_source_ways"],
+        )
+    else:
+        from ck.roadcache import read_cached_roads
+
+        roads, settlements, road_counts, road_cache_audit = read_cached_roads(
+            root,
+            items,
+            road_cache,
+            extent,
+            set(road_policy["road_values"]),
+            crs.to_string(),
+            policy["max_source_ways"],
+            policy["epoch"],
+        )
     water, water_audit = water_polygons(
         basemap_files["RI.pmtiles"], extent, backward.transform, forward.transform, policy
     )
     source = json.loads(point_files["RI_SOURCE_DATA.json"].read_text())
-    pois = [point for point in source["places"] if point["county"] == policy["county"]]
-    if len(pois) != 33 or len({point["id"] for point in pois}) != len(pois):
-        raise ValueError("Bristol proof expects all 33 unique historical POIs")
+    county_pois = [
+        dict(point)
+        for point in source["places"]
+        if point["county"] == policy["county"]
+        and selected_county.covers(Point(point["longitude"], point["latitude"]))
+    ]
+    if planned_part is not None and "expected_poi_count" in policy:
+        if len(county_pois) != policy["expected_poi_count"]:
+            raise ValueError("Actual county public-place count differs from the frozen scope")
+    pois = (
+        county_pois
+        if planned_part is None
+        else [
+            point
+            for point in county_pois
+            if geometry.covers(Point(*forward.transform(point["longitude"], point["latitude"])))
+        ]
+    )
+    if len({point["id"] for point in pois}) != len(pois):
+        raise ValueError("Historical source contains duplicate selected public-place IDs")
+    expected_pois = (
+        policy.get("expected_poi_count")
+        if planned_part is None
+        else planned_part.get("expected_poi_count")
+    )
+    if expected_pois is not None and len(pois) != expected_pois:
+        raise ValueError("Actual selected public-place count differs from the frozen scope")
     for index, point in enumerate(pois, 1):
         point["number"] = index
         point["x"], point["y"] = forward.transform(point["longitude"], point["latitude"])
@@ -357,6 +488,8 @@ def prepare(
         "policy": policy,
         "inputs": inputs,
         "county": mapping(geometry),
+        "coverage_scope": coverage_scope,
+        "planned_part": planned_part,
         "crs": crs.to_string(),
         "sheets": sheets,
         "roads": roads,
@@ -375,6 +508,7 @@ def prepare(
             "complete": points_meta["complete"],
         },
         "road_counts": road_counts,
+        "road_cache": road_cache_audit,
         "zip_source_sha256": sha(zip_source),
         "zctas": codes,
         "zip_areas": zip_areas,
@@ -444,12 +578,15 @@ def zip_overlay(data: dict, frame, pixel):
     return "".join(areas), "".join(labels), reserved
 
 
-def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict]:
+def svg_map(
+    data: dict, bounds: list, overview: bool = False, *, geometry_cache=None
+) -> tuple[str, dict]:
     from ck.streetlabels import street_labels
 
     width, height = data["policy"]["map_width_mm"], data["policy"]["map_height_mm"]
     west, south, east, north = bounds
     frame = box(*bounds)
+    source_shape = geometry_cache.shape if geometry_cache is not None else shape
 
     def pixel(x, y):
         return (x - west) / (east - west) * width, (north - y) / (north - south) * height
@@ -463,7 +600,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
     ]
     vertex_count = 0
     for entry in data["water"]:
-        geometry = shape(entry).intersection(frame)
+        geometry = source_shape(entry).intersection(frame)
         path = geometry_path(geometry, pixel)
         if path:
             svg.append(f'<path d="{path}" fill="#daeef8" fill-rule="evenodd"/>')
@@ -482,7 +619,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         "unclassified": 6,
     }
     for road in data["roads"]:
-        clipped = shape(road["geometry"]).intersection(frame)
+        clipped = source_shape(road["geometry"]).intersection(frame)
         segments = list(lines(clipped))
         if not segments:
             continue
@@ -536,6 +673,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
             *zip_reserved,
             *town_reserved,
         ],
+        geometry_cache=geometry_cache,
     )
     placed = label_audit["placed_labels"]
     settlement_labels = []
@@ -673,6 +811,13 @@ def svg_locator(data: dict) -> tuple[str, dict]:
     }
 
 
+def overview_name(policy: dict) -> str:
+    name = policy.get("overview_filename", "0_OVERVIEW.pdf")
+    if not isinstance(name, str) or len(safe_path(name).parts) != 1 or not name.endswith(".pdf"):
+        raise ValueError("Overview filename must be one FAT-safe PDF basename")
+    return name
+
+
 def html_document(
     root: Path,
     title: str,
@@ -695,7 +840,9 @@ def html_document(
         overview_svg=Markup(overview_svg),
         locator_svg=Markup(locator_svg),
         leaf=leaf,
+        overview_filename=overview_name(data["policy"]),
         policy=data["policy"],
+        area_name=data["policy"].get("area_name", data["policy"]["county_name"]),
         zctas=data["zctas"],
         pois=data["pois"],
         timestamp=datetime.fromtimestamp(data["policy"]["epoch"], UTC).isoformat(),
@@ -729,18 +876,64 @@ def horizontal_layout(document) -> list[dict]:
 
 
 def render(root: Path, data: dict, output: Path) -> dict:
+    """Own an explicitly enabled source cache for exactly this scene render."""
+    from ck.streetlabels import SceneGeometryCache
+
+    enabled = data["policy"].get("cache_source_geometries", False)
+    if type(enabled) is not bool:
+        raise ValueError("cache_source_geometries must be an explicit boolean")
+    context = SceneGeometryCache(data) if enabled else nullcontext(None)
+    with context as geometry_cache:
+        result = _render(root, data, output, geometry_cache)
+    binding = {
+        "cache_source_geometries": enabled,
+        "preparation_producer": data["producer"],
+        "policy": data["policy"],
+        "source_files": {
+            name: sha(root / name)
+            for name in (
+                "src/ck/countyproof.py",
+                "src/ck/streetlabels.py",
+                "src/ck/streetcoverage.py",
+                "src/ck/render.py",
+                "src/ck/geo.py",
+                "src/ck/geofonts.py",
+                "templates/county-proof.html.j2",
+                "pyproject.toml",
+                "uv.lock",
+                "Dockerfile.build",
+            )
+        },
+    }
+    encoded = json.dumps(binding, sort_keys=True, separators=(",", ":")).encode()
+    result["render_recipe"] = {
+        "version": "county-scene-render-v1-" + hashlib.sha256(encoded).hexdigest(),
+        **binding,
+    }
+    (output / "prototype.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
+    return result
+
+
+def _render(root: Path, data: dict, output: Path, geometry_cache) -> dict:
     from ck.streetcoverage import complete_detail_sheets
 
     if output.exists():
         raise ValueError("Choose a new proof output; no overwrite")
     output.mkdir(parents=True)
-    files = output / "3_MAPS_AND_PLACES" / "RI" / "Bristol County"
+    folder, leaf, area_name = output_names(data["policy"], data["zctas"])
+    overview_filename = overview_name(data["policy"])
+    if overview_filename == leaf:
+        raise ValueError("Overview and detail filenames must differ")
+    safe_path(str(folder / overview_filename))
+    files = output / folder
     files.mkdir(parents=True)
     audit = output / "audit"
     audit.mkdir()
     policy = data["policy"]
-    leaf = "Bristol County " + ",".join(data["zctas"]) + ".pdf"
-    rendered_sheets, street_coverage = complete_detail_sheets(data, svg_map)
+    make_svg = (
+        partial(svg_map, geometry_cache=geometry_cache) if geometry_cache is not None else svg_map
+    )
+    rendered_sheets, street_coverage = complete_detail_sheets(data, make_svg)
     by_id = {sheet["id"]: sheet for sheet, _, _ in rendered_sheets}
     road_names = {road["id"]: road["name"] for road in data["roads"]}
     sheet_audits, pages = [], []
@@ -776,7 +969,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
     )
     height = width * policy["map_height_mm"] / policy["map_width_mm"]
     cx, cy = (left + right) / 2, (bottom + top) / 2
-    overview_svg, overview_audit = svg_map(
+    overview_svg, overview_audit = make_svg(
         data, [cx - width / 2, cy - height / 2, cx + width / 2, cy + height / 2], True
     )
     (audit / "overview.svg").write_text(overview_svg)
@@ -784,8 +977,8 @@ def render(root: Path, data: dict, output: Path) -> dict:
     (audit / "locator.svg").write_text(locator_svg)
     layout_audits = {}
     for filename, title, kind in [
-        (leaf, "Bristol County detailed road maps", "detail"),
-        ("0_OVERVIEW.pdf", "Bristol County overview and historical places", "overview"),
+        (leaf, area_name + " detailed road maps", "detail"),
+        (overview_filename, area_name + " overview and historical places", "overview"),
     ]:
         document = html_document(root, title, kind, pages, overview_svg, locator_svg, leaf, data)
         (audit / (filename + ".html")).write_text(document)
@@ -818,7 +1011,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
                 len(reader.pages) < len(pages) + 1
                 or len(reader.pages) > policy["max_pages"]
                 or any(
-                    destinations.get("Bristol County · " + sheet["id"]) != sheet["page"]
+                    destinations.get(area_name + " · " + sheet["id"]) != sheet["page"]
                     for sheet in pages
                 )
             ):
@@ -827,6 +1020,8 @@ def render(root: Path, data: dict, output: Path) -> dict:
         "status": "unreviewed proof; not a complete sample",
         "producer": data["producer"],
         "policy": policy,
+        "coverage_scope": data.get("coverage_scope", {"kind": "county", "whole_county": True}),
+        "planned_part": data.get("planned_part"),
         "detail_pdf": leaf,
         "locator": locator_audit,
         "horizontal_layout": layout_audits,
@@ -834,6 +1029,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
         "street_name_coverage": street_coverage,
         "overview": {**overview_audit, "poi_ids": [point["id"] for point in data["pois"]]},
         "road_counts": data["road_counts"],
+        "road_cache": data.get("road_cache"),
         "water_audit": data["water_audit"],
         "inputs": data["inputs"],
         "fonts": data["fonts"],
@@ -863,9 +1059,14 @@ def run(
     zip_source: Path,
     output: Path,
     pdf_budget_config: Path,
+    policy_path: Path | None = None,
+    counts_only: bool = False,
+    road_cache: Path | None = None,
+    planned_part: dict | None = None,
 ) -> None:
     started = time.monotonic()
-    policy = read_yaml(root / "pipelines/atlas/bristol-proof.json")
+    policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
+    policy = read_yaml(policy_path)
     budget = read_yaml(pdf_budget_config)["pdf"]
     maximum = Decimal(str(budget["max_file_mb"])) * 1_000_000
     if not maximum.is_finite() or maximum <= 0 or maximum != int(maximum):
@@ -873,8 +1074,9 @@ def run(
     policy["pdf_max_bytes"] = int(maximum)
     policy["pdf_budget_source_sha256"] = sha(pdf_budget_config)
     policy["pdf_budget"] = budget
-    data = prepare(root, cache, basemap, points, zip_source, policy)
-    data["producer"] = producer_recipe(root)
+    data = prepare(root, cache, basemap, points, zip_source, policy, road_cache, planned_part)
+    prepared_seconds = time.monotonic() - started
+    data["producer"] = producer_recipe(root, policy_path, planned_part)
     output.parent.mkdir(parents=True, exist_ok=True)
     (output.parent / (output.name + "-counts.json")).write_text(
         json.dumps(
@@ -884,12 +1086,29 @@ def run(
                 "pois": len(data["pois"]),
                 "water": data["water_audit"],
                 "crs": data["crs"],
+                "coverage_scope": data["coverage_scope"],
+                "zctas": data["zctas"],
+                "selected_area_m2": shape(data["county"]).area,
+                "named_source_ways": sum(bool(road["name"]) for road in data["roads"]),
+                "distinct_source_names": len(
+                    {road["name"] for road in data["roads"] if road["name"]}
+                ),
+                "settlements": data["settlements"],
+                "prepare_seconds": prepared_seconds,
             },
             indent=2,
         )
         + "\n"
     )
+    if counts_only:
+        print("Preflight counts only; no PDFs rendered and no complete-county claim")
+        return
+    render_started = time.monotonic()
     result = render(root, data, output)
+    result["stage_timings"] = {
+        "prepare_seconds": prepared_seconds,
+        "render_seconds": time.monotonic() - render_started,
+    }
     result["elapsed_seconds"] = time.monotonic() - started
     result["peak_rss_kib"] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     result["cgroup"] = {

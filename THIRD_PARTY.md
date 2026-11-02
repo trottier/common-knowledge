@@ -9959,6 +9959,28 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `3ed41278d637dc249e0323306f68be8a6c234e3090f4de88ef328dee71aeaaaf`
 - Publisher file: https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt
 
+## Census 2020 ZCTA geometries for all Rhode Island county relationships
+
+- Catalog id: `census_zcta_ri_2020`
+- Version: January 1, 2020 geography; HTTPS query captured 2026-11-02 UTC
+- License: US-PD
+- Attribution: U.S. Census Bureau, Census 2020 TIGERweb ZCTA polygons selected by every nonblank Rhode Island county relationship in the pinned 2020 national relationship table. Source geometries include useful cross-county and cross-state context.
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf
+- Size: 3199400 bytes
+- SHA-256: `0cb5da6daa245f4f71d4ec13e65e006bc938ca1fe231575b1f2084de3e3c5792`
+- Publisher file: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702802%27%2C%2702804%27%2C%2702806%27%2C%2702807%27%2C%2702808%27%2C%2702809%27%2C%2702812%27%2C%2702813%27%2C%2702814%27%2C%2702815%27%2C%2702816%27%2C%2702817%27%2C%2702818%27%2C%2702822%27%2C%2702823%27%2C%2702824%27%2C%2702825%27%2C%2702826%27%2C%2702827%27%2C%2702828%27%2C%2702829%27%2C%2702830%27%2C%2702831%27%2C%2702832%27%2C%2702833%27%2C%2702835%27%2C%2702836%27%2C%2702837%27%2C%2702838%27%2C%2702839%27%2C%2702840%27%2C%2702841%27%2C%2702842%27%2C%2702852%27%2C%2702857%27%2C%2702858%27%2C%2702859%27%2C%2702860%27%2C%2702861%27%2C%2702863%27%2C%2702864%27%2C%2702865%27%2C%2702871%27%2C%2702872%27%2C%2702873%27%2C%2702874%27%2C%2702875%27%2C%2702876%27%2C%2702878%27%2C%2702879%27%2C%2702881%27%2C%2702882%27%2C%2702885%27%2C%2702886%27%2C%2702888%27%2C%2702889%27%2C%2702891%27%2C%2702892%27%2C%2702893%27%2C%2702894%27%2C%2702895%27%2C%2702896%27%2C%2702898%27%2C%2702903%27%2C%2702904%27%2C%2702905%27%2C%2702906%27%2C%2702907%27%2C%2702908%27%2C%2702909%27%2C%2702910%27%2C%2702911%27%2C%2702912%27%2C%2702914%27%2C%2702915%27%2C%2702916%27%2C%2702917%27%2C%2702918%27%2C%2702919%27%2C%2702920%27%2C%2702921%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson
+
+## Census 2020 ZCTAs 02892 and 02903, bounded Rhode Island benchmark geometry
+
+- Catalog id: `census_zcta_ri_bench_2020`
+- Version: January 1, 2020 geography; HTTPS query captured 2026-11-02 UTC
+- License: US-PD
+- Attribution: U.S. Census Bureau, Census 2020 TIGERweb ZCTAs 02892 and 02903
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf
+- Size: 133681 bytes
+- SHA-256: `15a1e41af65d9e0bb0d83c1e56bbea49df5ee3110ad3e505b05c2c8ffea6274f`
+- Publisher file: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702903%27%2C%2702892%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson
+
 ## Tying off onto the middle of a rope — normalized video
 
 - Catalog id: `commons_rope_middle`
@@ -12543,6 +12565,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - Size: 509136 bytes
 - SHA-256: `a6a89725b5f83f97d4f94a8a11844f97d8b67fb4b0f149dfd713ade57280716e`
 - Pipeline: reference-pack-v1-4baab6635d5504539909a0d1054ea0d68ce2b9d09fdeb378cb35b456a3b4fb67; inputs: wikibooks_en_nopic, noto_sans, noto_sans_sc, noto_sans_tc, noto_sans_kr, noto_sans_arabic, noto_sans_devanagari, noto_sans_georgian, noto_sans_hebrew, noto_sans_symbols2, noto_emoji, mathjax_mml_svg
+
+## Rhode Island projected road and settlement preparation cache
+
+- Catalog id: `road_cache_ri`
+- Version: Geofabrik 2026-10-29 source; development spatial cache
+- License: ODbL-1.0
+- Attribution: OpenStreetMap contributors; extract by Geofabrik; original preparation pipeline Common Knowledge
+- License proof: https://www.openstreetmap.org/copyright
+- Size: 37613568 bytes
+- SHA-256: `9e5a66a1d13527c7095611a588e728e4dce03cb6c127c6334a878f41b2aa38a7`
+- Pipeline: state-road-cache-v1-c45b34efe8fc0fe5bdb835501febbdfe906fb143869a078629ae9422874a7a30; inputs: geofabrik_ri
 
 ## Qwen3.5-0.8B-Base, Q4_K_M
 

@@ -17,9 +17,9 @@
       "CLAUDE.md",
       "AGENTS.current.md"
     ],
-    "sha256": "0fc38af1c2b9492e56be8e4f2ae5f87c6754fad534eaea52187c02b9fa8f6e61",
+    "sha256": "edfbff7dfb36e37a3a56b56f8285aeac1a57d5a828ecd5af67c5cb0c7e24d1a4",
     "diff_from_publisher": "AGENTS.current.diff",
-    "diff_sha256": "4822660a1315e91e4e754b34e480282c4583016ae9ae9e71f5448db701c113af"
+    "diff_sha256": "2ea11697d3c9263d254fe268a6ac8dbc7d44faa3b628c7719c0210d9e88e7f6f"
   },
   "preserved_decisions": [
     "offline_ai_enabled exists only in config/variants.yaml; v0.1 omits AI",
@@ -36,7 +36,9 @@
     "test installed-wheel runtime resource paths in the intended pinned container as well as source imports",
     "keep opening warning conditions and trailing citations with their supported phone-page passages",
     "render hosted map samples from authenticated cached vectors and subset verified fonts; do not assume page extraction removes shared resources",
-    "group copy-index filenames and sizes beneath a shared parent heading; retain the complete declared inventory"
+    "group copy-index filenames and sizes beneath a shared parent heading; retain the complete declared inventory",
+    "profile representative work before new language or GPU paths; benchmark the existing native-architecture pinned container and preserve canonical release gates",
+    "keep partial area maps and uniquely named area overviews in the county folder; reserve0_OVERVIEW for fullcounty navigation and avoid technical frame IDs in filenames"
   ],
   "status": "Instruction update only. Historical artifacts retain their original document hashes, producer recipes, input pins, and review status. No human approval, signing, manufacturing authorization, or physical-device acceptance is established.",
   "history": [
@@ -80,6 +82,51 @@
           "Bun by default for new compatible JS tooling, RTK every shell command"
         ],
         "status": "Policy adoption only; no new security implementation, human approval, signing, manufacturing authorization, or physical-device acceptance is established."
+      }
+    },
+    {
+      "event": "Prior installed-package, layout, and hosted-sample workflow identity; retain for historical artifacts",
+      "record": {
+        "publisher_input": {
+          "file": "AGENTS (6).md",
+          "sha256": "1221be09f93c0e8e265f3008f12f72efb43acadce9f8ba3e147664ff5c6b7a69"
+        },
+        "publisher_supplied_diff": {
+          "file": "AGENTS.md (4).diff",
+          "sha256": "0d47a0c0c0ca5b736d8b7a0f4046df365f28e087ae4ee03ead0bcf726ff7266b"
+        },
+        "repository_base": {
+          "commit": "875512ea1fa96d8a64a9b855be7a85a8135f7419",
+          "agents_sha256": "11e982b316dbd91fd41998064cac70a6125f5f8924672b2829cfd0ea87825ca2"
+        },
+        "adopted": {
+          "files": [
+            "AGENTS.md",
+            "CLAUDE.md",
+            "AGENTS.current.md"
+          ],
+          "sha256": "0fc38af1c2b9492e56be8e4f2ae5f87c6754fad534eaea52187c02b9fa8f6e61",
+          "diff_from_publisher": "AGENTS.current.diff",
+          "diff_sha256": "4822660a1315e91e4e754b34e480282c4583016ae9ae9e71f5448db701c113af"
+        },
+        "preserved_decisions": [
+          "offline_ai_enabled exists only in config/variants.yaml; v0.1 omits AI",
+          "variant and other variants terminology",
+          "fast English/single-county loop and deferred new image-verifier development",
+          "all named source-way street coverage, ZIP-area overview, and POI index closure",
+          "split only when measured limits require it",
+          "Census language selection exception, nominal32GB capacity clarification, and manifest self-hash exception"
+        ],
+        "latest_user_rules": [
+          "quiet provenance/build/AI process fine print distinct from practical instructions",
+          "host only representative samples while local Variant1 tree expands",
+          "Bun by default for new compatible JS tooling, RTK every shell command",
+          "test installed-wheel runtime resource paths in the intended pinned container as well as source imports",
+          "keep opening warning conditions and trailing citations with their supported phone-page passages",
+          "render hosted map samples from authenticated cached vectors and subset verified fonts; do not assume page extraction removes shared resources",
+          "group copy-index filenames and sizes beneath a shared parent heading; retain the complete declared inventory"
+        ],
+        "status": "Instruction update only. Historical artifacts retain their original document hashes, producer recipes, input pins, and review status. No human approval, signing, manufacturing authorization, or physical-device acceptance is established."
       }
     }
   ]

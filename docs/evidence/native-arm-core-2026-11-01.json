@@ -1,0 +1,1004 @@
+{
+  "scope": "Two fresh all15-edition core builds with one frozen source, fixed URI paths, same font bytes and PDF epoch, and no source/default/release changes. Benchmark outputs only.",
+  "checked_on": "2026-11-01",
+  "source_commit": "3a2beff730fffda0e46e9185118f951c2214acca",
+  "source_snapshot": ".worktrees/137-preview-source-final (detached)",
+  "actual_source_import": "/source/src/ck/__init__.py",
+  "images": {
+    "amd64": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "arm64": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec"
+  },
+  "conditions": {
+    "docker_context": "colima-common-knowledge-maps",
+    "serial_order": [
+      "amd64",
+      "arm64"
+    ],
+    "cpus": 1,
+    "memory_gib": 3,
+    "network": "none",
+    "source_path": "/source",
+    "cache_path": "/cache",
+    "output_path": "/output",
+    "profile": "sample",
+    "epoch": 1793404800,
+    "pythonhashseed": "0",
+    "locale": "C.UTF-8",
+    "timezone": "UTC",
+    "offline_ai_enabled": false
+  },
+  "languages": [
+    "en",
+    "es",
+    "zh-Hans",
+    "zh-Hant",
+    "vi",
+    "ko",
+    "tl",
+    "ar",
+    "ht",
+    "ru",
+    "pt",
+    "fr",
+    "fa",
+    "pl",
+    "hi"
+  ],
+  "font_pins": [
+    {
+      "id": "noto_sans",
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+      "size_bytes": 2049096,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_arabic",
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+      "size_bytes": 844676,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_devanagari",
+      "sha256": "14ec4af41f27482216d1c2229f417ff9b1425e1babb014e57d1d40d03229853e",
+      "size_bytes": 641944,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_kr",
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+      "size_bytes": 10414588,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_sc",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "size_bytes": 17772300,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "noto_sans_tc",
+      "sha256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f",
+      "size_bytes": 11941968,
+      "license": "OFL-1.1"
+    }
+  ],
+  "source_files": {
+    "src/ck/core.py": "fdf3436c00a878124328a83a69c8194ec826fb32ba0bc6b9dd834ab527d77cb5",
+    "src/ck/render.py": "46ede91bc0eecec7c214c5e6eb4e0b001f3a28f8ab02720c31def1e9441cf7f4",
+    "templates/document.html.j2": "8b62d95de34fa9417b117493a7cd3ad75f6e53f790d46d71c1b21ce4ce9fae1d",
+    "templates/document.css": "f42a91c9cb2526948beb1a5fd37f31c8f9bc812432c5cd1de38a8b77a17f8826",
+    "config/languages.yaml": "0ef6dcef6913652584a50099871d6543b7d70d0647e137f55cb5b8d3ddee3deb",
+    "config/variants.yaml": "b19cd62f433b35f58546e45cade3e0131bcfaced473ff8faa9103fd57b65589f",
+    "catalog/fonts.yaml": "aec8d1ebc69b6be8f30d944e2a985b522ab7ad23e513bd0e0784846d51a12058",
+    "pyproject.toml": "cea8c0adc7eb365039f322e77e3fe8dd2941d4c8718d5c57458c75c34af1df58",
+    "uv.lock": "be13e16abcc68ef4afd7a239adb075cdfc80986823c8e3d0221cf9878e90c360",
+    "Dockerfile.build": "03975c96f75207a08363c413020aa9d66d273e0d07acb08a7fa43f2aad2c0b50"
+  },
+  "source_recipe_sha256": "9a349050852064572b4efcd296db26b5c98979aa73f5f73d8462b969945137ae",
+  "common_core_manifest_sha256": "593b9dad005714e2767efe582a1e5d7b52fa61db33ed9f347c0abedd9040949f",
+  "different_files": [],
+  "pdf_bytes_equal": true,
+  "html_bytes_equal": true,
+  "page_bookmark_language_text_metadata_equal": true,
+  "rtl_shape_results_equal": true,
+  "counts": {
+    "pdfs": 38,
+    "htmls": 38,
+    "pages": 317,
+    "bookmarks": 602,
+    "tagged_pdfs": 38,
+    "pdf_bytes": 1503670
+  },
+  "runs": [
+    {
+      "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "wall_seconds": 51.71294243399461,
+      "cpu_seconds": 50.410206918,
+      "peak_rss_kib": 376496,
+      "cgroup": {
+        "memory.peak": "370651136\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+      }
+    },
+    {
+      "image_id": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec",
+      "wall_seconds": 31.534791139005392,
+      "cpu_seconds": 28.668901364,
+      "peak_rss_kib": 341240,
+      "cgroup": {
+        "memory.peak": "331296768\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+      }
+    }
+  ],
+  "observed_wall_ratio": 1.639869508126561,
+  "actual_python_builds": {
+    "amd64": "3.12.16 (main, Oct 28 2026, 02:01:35) [GCC 12.2.0]",
+    "arm64": "3.12.16 (main, Oct 28 2026, 02:07:42) [GCC 12.2.0]"
+  },
+  "runtime_versions": {
+    "weasyprint": "70.0",
+    "fonttools": "4.68.0",
+    "pydyf": "0.13.0",
+    "hb_shape": "hb-shape (HarfBuzz) 6.0.0\nAvailable shapers: graphite2,ot,fallback\n"
+  },
+  "all_python_package_versions_equal": true,
+  "rtl_results": [
+    {
+      "language": "ar",
+      "known_string": "مرحبا بالعالم",
+      "shaped_glyphs": [
+        {
+          "g": 77,
+          "cl": 12,
+          "dx": 0,
+          "dy": 0,
+          "ax": 562,
+          "ay": 0
+        },
+        {
+          "g": 72,
+          "cl": 11,
+          "dx": 0,
+          "dy": 0,
+          "ax": 260,
+          "ay": 0
+        },
+        {
+          "g": 9,
+          "cl": 10,
+          "dx": 0,
+          "dy": 0,
+          "ax": 291,
+          "ay": 0
+        },
+        {
+          "g": 48,
+          "cl": 9,
+          "dx": 0,
+          "dy": 0,
+          "ax": 521,
+          "ay": 0
+        },
+        {
+          "g": 72,
+          "cl": 8,
+          "dx": 0,
+          "dy": 0,
+          "ax": 260,
+          "ay": 0
+        },
+        {
+          "g": 9,
+          "cl": 7,
+          "dx": 0,
+          "dy": 0,
+          "ax": 291,
+          "ay": 0
+        },
+        {
+          "g": 317,
+          "cl": 6,
+          "dx": 31,
+          "dy": -3,
+          "ax": 0,
+          "ay": 0
+        },
+        {
+          "g": 19,
+          "cl": 6,
+          "dx": 0,
+          "dy": 0,
+          "ax": 269,
+          "ay": 0
+        },
+        {
+          "g": 3,
+          "cl": 5,
+          "dx": 0,
+          "dy": 0,
+          "ax": 260,
+          "ay": 0
+        },
+        {
+          "g": 9,
+          "cl": 4,
+          "dx": 0,
+          "dy": 0,
+          "ax": 291,
+          "ay": 0
+        },
+        {
+          "g": 317,
+          "cl": 3,
+          "dx": 94,
+          "dy": -3,
+          "ax": 0,
+          "ay": 0
+        },
+        {
+          "g": 16,
+          "cl": 3,
+          "dx": 0,
+          "dy": 0,
+          "ax": 343,
+          "ay": 0
+        },
+        {
+          "g": 27,
+          "cl": 2,
+          "dx": 0,
+          "dy": 0,
+          "ax": 589,
+          "ay": 0
+        },
+        {
+          "g": 31,
+          "cl": 1,
+          "dx": -40,
+          "dy": 0,
+          "ax": 356,
+          "ay": 0
+        },
+        {
+          "g": 79,
+          "cl": 0,
+          "dx": 0,
+          "dy": 0,
+          "ax": 525,
+          "ay": 0
+        }
+      ],
+      "nonzero_contextual_shaping": true,
+      "actual_phone_and_print_html_dir_rtl": true,
+      "actual_pdf_language_and_arabic_script_text": true
+    },
+    {
+      "language": "fa",
+      "known_string": "سلام دنیا",
+      "shaped_glyphs": [
+        {
+          "g": 9,
+          "cl": 8,
+          "dx": 0,
+          "dy": 0,
+          "ax": 291,
+          "ay": 0
+        },
+        {
+          "g": 319,
+          "cl": 7,
+          "dx": 39,
+          "dy": -5,
+          "ax": 0,
+          "ay": 0
+        },
+        {
+          "g": 18,
+          "cl": 7,
+          "dx": 0,
+          "dy": 0,
+          "ax": 373,
+          "ay": 0
+        },
+        {
+          "g": 283,
+          "cl": 6,
+          "dx": 52,
+          "dy": -59,
+          "ax": 0,
+          "ay": 0
+        },
+        {
+          "g": 19,
+          "cl": 6,
+          "dx": 0,
+          "dy": 0,
+          "ax": 269,
+          "ay": 0
+        },
+        {
+          "g": 28,
+          "cl": 5,
+          "dx": 0,
+          "dy": 0,
+          "ax": 477,
+          "ay": 0
+        },
+        {
+          "g": 3,
+          "cl": 4,
+          "dx": 0,
+          "dy": 0,
+          "ax": 260,
+          "ay": 0
+        },
+        {
+          "g": 74,
+          "cl": 3,
+          "dx": 0,
+          "dy": 0,
+          "ax": 484,
+          "ay": 0
+        },
+        {
+          "g": 11,
+          "cl": 2,
+          "dx": 0,
+          "dy": 0,
+          "ax": 379,
+          "ay": 0
+        },
+        {
+          "g": 71,
+          "cl": 1,
+          "dx": 0,
+          "dy": 0,
+          "ax": 220,
+          "ay": 0
+        },
+        {
+          "g": 37,
+          "cl": 0,
+          "dx": 0,
+          "dy": 0,
+          "ax": 784,
+          "ay": 0
+        }
+      ],
+      "nonzero_contextual_shaping": true,
+      "actual_phone_and_print_html_dir_rtl": true,
+      "actual_pdf_language_and_arabic_script_text": true
+    }
+  ],
+  "pdf_checks": [
+    {
+      "path": "ar/01_START_phone.pdf",
+      "sha256": "b90ac42c79ad715deeb1cd102b111dc3ec6a35d902ef16366a353eddddfefb7b",
+      "size_bytes": 31562,
+      "pages": 5,
+      "language": "ar",
+      "tagged": true,
+      "text_sha256": "4c3778c67369fbc61a02ca7b2d21178b620610b165d629641ddf5a03de9dc9a8",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "a0b48a4980b8acd284955284adb71257c9861539eafc5d8790550311dbf411f6"
+    },
+    {
+      "path": "ar/01_START_print.pdf",
+      "sha256": "4585f161ac139006d11fc7c3c6190e0a26391868d2e39b44980608b648deadfd",
+      "size_bytes": 28816,
+      "pages": 3,
+      "language": "ar",
+      "tagged": true,
+      "text_sha256": "a3159c97360f2226e8f730efe9691c4a4a7bd9e7a9aafa958c1d5978a9066955",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "165f581601a148c310fe02af60c07e37978bf7700d75734c906d9d7fb62610f0"
+    },
+    {
+      "path": "en/01_START_phone.pdf",
+      "sha256": "d967fc4d1aca9c40b68d919175f0bd798d6c2be6dca1ec16b323c438b7f38790",
+      "size_bytes": 151941,
+      "pages": 59,
+      "language": "en",
+      "tagged": true,
+      "text_sha256": "6b0a97e8497fe449659a37f58e5e24ea7ddc73c9ebefbfd1d45577d464536a28",
+      "bookmark_count": 74,
+      "bookmarks_sha256": "0be252820d350ef9104f866d103cbb0facf0fdb33fb8df63106a13ad2397ae3a"
+    },
+    {
+      "path": "en/01_START_print.pdf",
+      "sha256": "f90bad750d4b3719d2a3da22feeaa050b546323bd393ef214d073ec5db552813",
+      "size_bytes": 109292,
+      "pages": 20,
+      "language": "en",
+      "tagged": true,
+      "text_sha256": "0d4ff29c9bef9c650da3b5391b182b05f522cabe050d9e4f9b3c37e4f386b2c9",
+      "bookmark_count": 74,
+      "bookmarks_sha256": "d4d830bc6b11e0c123525452a134f37100e5dcc9780a8dd15502f9c7e35618ef"
+    },
+    {
+      "path": "en/02_CARD.pdf",
+      "sha256": "1eb5cdffe7941012a8b95bc2ee7b442b1fbc843584b0f2d42a18c375edfce0e5",
+      "size_bytes": 19765,
+      "pages": 2,
+      "language": "en",
+      "tagged": true,
+      "text_sha256": "513d74a7db0fc50a71434278d06d7a8cb1b59436706e618074c488feee3d7c3e",
+      "bookmark_count": 7,
+      "bookmarks_sha256": "2a7c565f4d417a560f37b340224da897ab06a8b85d6ae088a03a66f0ee2a7df3"
+    },
+    {
+      "path": "en/03_TAGS.pdf",
+      "sha256": "14abea5106be483a1f5dc45b30f9c2cc6a4d2d0a671b6823938c6f757ccce3f3",
+      "size_bytes": 13483,
+      "pages": 1,
+      "language": "en",
+      "tagged": true,
+      "text_sha256": "98da343953008b76b7a9be129a339d18d9cdf54d1296912052e5f1dd23267b58",
+      "bookmark_count": 5,
+      "bookmarks_sha256": "dc52888dcd6be1f0824e729afc65aaf9c3e63af47ddcad18a5b80ab4c20fabd1"
+    },
+    {
+      "path": "en/04_VARIANTS_phone.pdf",
+      "sha256": "070df68b37c107758e48620e36937a8cc37355ae019b30e9005ee7689ecf61ab",
+      "size_bytes": 27286,
+      "pages": 10,
+      "language": "en",
+      "tagged": true,
+      "text_sha256": "4411ab51f489a6b32d469a2ad1686de52c1c7a46d15bbe7ced1aac72f62c86ee",
+      "bookmark_count": 12,
+      "bookmarks_sha256": "fe1aac0421da94de5b004c9e09a2eaf2b6ec22099a4fea8ed6ee14e5f71dab8d"
+    },
+    {
+      "path": "en/04_VARIANTS_print.pdf",
+      "sha256": "d4294bbf7aba11dee4d9d8c674d9fe1cd20b44ab8b14172b7a6e43f028c7ce6f",
+      "size_bytes": 23207,
+      "pages": 5,
+      "language": "en",
+      "tagged": true,
+      "text_sha256": "0b82ee4f1afbeff985f5f8276aa9409c6c4b805ee505976802b3f4bdb5da3830",
+      "bookmark_count": 12,
+      "bookmarks_sha256": "eb0285eb649549cc93a137b888981fe9c5521d4f231c57017dccee3288c950c5"
+    },
+    {
+      "path": "es/01_START_phone.pdf",
+      "sha256": "3b14c7c360185beff4ba2443e93e932e939162a8f6a0b4eb5c13af364a2091f7",
+      "size_bytes": 168694,
+      "pages": 65,
+      "language": "es",
+      "tagged": true,
+      "text_sha256": "2273f806ddf5e0b1b35ea17e3abf46bd45ec5719ba20b1a25d5655f8166957c8",
+      "bookmark_count": 74,
+      "bookmarks_sha256": "aabaea0dbbd1226ffc84b141a70c21e6e0261f2352c4da82d6c8be77548f2304"
+    },
+    {
+      "path": "es/01_START_print.pdf",
+      "sha256": "69272a6d5be273ae0e4f4dbeddba4e6e95918bc1e499c4d5b319a5d37344ef61",
+      "size_bytes": 116037,
+      "pages": 21,
+      "language": "es",
+      "tagged": true,
+      "text_sha256": "f8d569ff7009d0052a237cf883dd56fcc3d06e39c39078bdd16bf6f442f8a21f",
+      "bookmark_count": 74,
+      "bookmarks_sha256": "63ccbdfb884f0fdd9563056e7c20818d421689dd944669e7c1ae6c905b1c43c8"
+    },
+    {
+      "path": "es/02_CARD.pdf",
+      "sha256": "379f849cff0ece4df0a19c3d311923a9fdfddff99ba557b3525d984944bed579",
+      "size_bytes": 20385,
+      "pages": 2,
+      "language": "es",
+      "tagged": true,
+      "text_sha256": "ebc5a8962a7cb3ecf6c8901956ed2b890f2c67e487f853066da100f5fd2ef770",
+      "bookmark_count": 7,
+      "bookmarks_sha256": "9d0af566d53da99dfc42bb2287df0f1571e37f5bd027cee1cb68f3d7244da6de"
+    },
+    {
+      "path": "es/03_TAGS.pdf",
+      "sha256": "374cf25e4eb8916da606ca164f3cc0f3568ad578c8dccb52eafa8b3a13d9abf1",
+      "size_bytes": 14081,
+      "pages": 1,
+      "language": "es",
+      "tagged": true,
+      "text_sha256": "795ee9afed9db08ff43825d072c35c1896c73896009931b0335fbe092ff7b2c7",
+      "bookmark_count": 5,
+      "bookmarks_sha256": "ac5ace963969ca6ec1986d0ec52e99edb8c9da35a0b2f0a187727803ae8ea492"
+    },
+    {
+      "path": "es/04_VARIANTS_phone.pdf",
+      "sha256": "ff309c908595e33b2d242403a1ba917028e759f9fba310f912346713176c916b",
+      "size_bytes": 30133,
+      "pages": 11,
+      "language": "es",
+      "tagged": true,
+      "text_sha256": "8888bd3ad19268efa4238c45e90f633615cebadca37eb9e28d52eda1e5281af7",
+      "bookmark_count": 12,
+      "bookmarks_sha256": "572bc3f88de1fbef411e7dd8345de6d1f63384f0dc76435a5dddf151deb20ab3"
+    },
+    {
+      "path": "es/04_VARIANTS_print.pdf",
+      "sha256": "e9a020e9205574dde95b95648eb68cc864468c5a64fedf199c7647fbf3798283",
+      "size_bytes": 24269,
+      "pages": 5,
+      "language": "es",
+      "tagged": true,
+      "text_sha256": "8029035910742842f023e0e4b47f6167f7bdc1f385703676103e0cb05f9e2b0f",
+      "bookmark_count": 12,
+      "bookmarks_sha256": "ef5829278f70f273cbb9cb63153cdae7c79581b7f9f2d0b00d566715d6a28330"
+    },
+    {
+      "path": "fa/01_START_phone.pdf",
+      "sha256": "d4b4ddce8f7120b2bbe1ebceafdea8eb07d414714be0ed903a4330aefe54281b",
+      "size_bytes": 31680,
+      "pages": 5,
+      "language": "fa",
+      "tagged": true,
+      "text_sha256": "2e74a42b73673d7b193afe6a4b545988365bad5678a607b0275713e50d3b5882",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "d4b3b03a7154b6721402af0ae18a5c2d7efb10b92c392f9ce8c00c9d6d2eed98"
+    },
+    {
+      "path": "fa/01_START_print.pdf",
+      "sha256": "32e281d4693d7e5d930f887623fb9e6b6ea7d169cc8016337b0d025d8dda7c2a",
+      "size_bytes": 28866,
+      "pages": 3,
+      "language": "fa",
+      "tagged": true,
+      "text_sha256": "8997a3f47c6923c3071844b6df2f6746e8fc3e3d90bbf1f931eeb00f7b7b5b92",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "8b7c2ed851251e96ceb8a73cc160d23b6852b4d881da334b84aad872a73610de"
+    },
+    {
+      "path": "fr/01_START_phone.pdf",
+      "sha256": "1301c7e4fc951a95d06c8c5a21da1b106e447573d803781fdd4919699de1d8f3",
+      "size_bytes": 21165,
+      "pages": 6,
+      "language": "fr",
+      "tagged": true,
+      "text_sha256": "5504c3c1ebf1111dad0e2f300192ed2471d5e7ec32ae3d2e414ca40f4a711786",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "088402b8efd0595a4267d11d6c50d8841b9c41325f9131087c4ee414be749ca9"
+    },
+    {
+      "path": "fr/01_START_print.pdf",
+      "sha256": "5a5916c363eaae028df1156ceb7cce693c7cc38e767da8b38a992b9a017b6251",
+      "size_bytes": 19312,
+      "pages": 4,
+      "language": "fr",
+      "tagged": true,
+      "text_sha256": "38e5b9f97366ebf6c7fe534a9625b89d1d7c77a24153daf12d33f0e6c9cffbb4",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "71135002b7eb5edcf9bb1028e07322f5dd632c037a6f113d4b0115e04d0fd4ff"
+    },
+    {
+      "path": "hi/01_START_phone.pdf",
+      "sha256": "444d69565345ee08ba1516b3a5267e664bdd98b6143f054b9f597241e3fc4eb9",
+      "size_bytes": 30050,
+      "pages": 5,
+      "language": "hi",
+      "tagged": true,
+      "text_sha256": "f38255337f237edddc1a93c35eb0b944e167f6304a07c48e6d98f888f05526ff",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "58038367c13b1c62cd39778644028837cecaf1e83194749842e8500403d1d5e6"
+    },
+    {
+      "path": "hi/01_START_print.pdf",
+      "sha256": "a36de5bd3d14b5b46965209e188ba0a49d685b53f4fbb70a16b76f4a772b9e1f",
+      "size_bytes": 28077,
+      "pages": 3,
+      "language": "hi",
+      "tagged": true,
+      "text_sha256": "994f3baa4f111073168e3255a0779a6d86b93b171fd7ca37f8dbe0c9da6b162f",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "d3d61a301e094cf1481377241c34bf0d81c3368b16038cbdfc70e3ca6b1c6da1"
+    },
+    {
+      "path": "ht/01_START_phone.pdf",
+      "sha256": "2afeca4feb5ed10f31ba9e962f84f47e587507ac7e44016357525c64212d6ad5",
+      "size_bytes": 19955,
+      "pages": 5,
+      "language": "ht",
+      "tagged": true,
+      "text_sha256": "83b69a4bc017b557e2be09a13e5ffd19a9fcda7176abdb134c717764ee1e3081",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "4ccad0472b80ace4672efb8e29ad5150b1e2f876a4b05fd328d0df77978728d1"
+    },
+    {
+      "path": "ht/01_START_print.pdf",
+      "sha256": "ad17a00b02afeddb77f018f2b04b7e84710be230bc68f1a660594e65d3ac2f27",
+      "size_bytes": 18116,
+      "pages": 3,
+      "language": "ht",
+      "tagged": true,
+      "text_sha256": "fca0b4fa972e39f54cfb238c5eff2cae8f1530f958db9dedcd0e29de358a03a5",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "7ae950a84de43cdfc40339c31de26876d0dc90adbccd53814e38ad2eb3973ab4"
+    },
+    {
+      "path": "ko/01_START_phone.pdf",
+      "sha256": "157cc437c75e5b2906c9be4f6f242100867aec21880e21e5a66b9a4dfb1bc74a",
+      "size_bytes": 37226,
+      "pages": 5,
+      "language": "ko",
+      "tagged": true,
+      "text_sha256": "4cebba94205ae36bd688cc403a26b3c7d2b7d9a7591b8ae3e4d3da9d2a74546e",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "6f3d0e7d5bdc2f32a9cf59f057cd50f643084efc2a3680b3b1b0d2103c9b4d95"
+    },
+    {
+      "path": "ko/01_START_print.pdf",
+      "sha256": "d8c430a010f6bc396730b89bc3b02c12a09d5cdbf42c3c1db45cfaa53187bf14",
+      "size_bytes": 35462,
+      "pages": 3,
+      "language": "ko",
+      "tagged": true,
+      "text_sha256": "27de38a169ae4d7d02b5646aca70a6a121626ea45b18c0b166153ea6410c16da",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "ebe19bf21722f87957c2f00fe218a1e8d0b58b79cce8d2739f57d4a8b8e56804"
+    },
+    {
+      "path": "pl/01_START_phone.pdf",
+      "sha256": "ba17fc079c2a1b9ee575e1ba2d2e7938f9d7ca826fabe214daa4c9a79a09f05b",
+      "size_bytes": 22035,
+      "pages": 6,
+      "language": "pl",
+      "tagged": true,
+      "text_sha256": "cbdb887248372885d2c5d0f5680f65a7dbfbca81702525ea057a14c11287c678",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "3b29863f19a95f79b46f6a67ca456c7a2de80818bec95ebb45dd79e283b85dd8"
+    },
+    {
+      "path": "pl/01_START_print.pdf",
+      "sha256": "3dc04202218614861317b651159141c6bb996714de72e35fbfcb3919beb0bd75",
+      "size_bytes": 20144,
+      "pages": 4,
+      "language": "pl",
+      "tagged": true,
+      "text_sha256": "1874d889497b9cd7d84ae8ee55bae246eaf1946a86a651e1633069b377b5f93b",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "635ee2e3fe9b12e08b9335f26fdc0dde6d850b72ab62f5486c33eafc12d8a3b8"
+    },
+    {
+      "path": "pt/01_START_phone.pdf",
+      "sha256": "dbc6c1edaa43dae9c0d470ad1ad95ef3d44ba952a8dc93fb20e3eafaeddf83e3",
+      "size_bytes": 20724,
+      "pages": 5,
+      "language": "pt",
+      "tagged": true,
+      "text_sha256": "d1ba831135010fb08d7dab5f820be63ac01aa43a7f92d12a2f338f54f1f6a282",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "f604fce4eab20720681a15fc8e347d16cc599a5db68520f23c0df001892c8ec4"
+    },
+    {
+      "path": "pt/01_START_print.pdf",
+      "sha256": "9550f43c108939312d921501c35bde5325e5c6ca0655da375ac8e5dec4a25143",
+      "size_bytes": 19454,
+      "pages": 4,
+      "language": "pt",
+      "tagged": true,
+      "text_sha256": "6fc3a48d2adf49422bbad53def546394d17c0e82e7b3518b32c5e31b8203fad6",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "d25a820a1cbbd57eb946e4f34b91d73ad8bb6963b543a25b03560cd219f22f67"
+    },
+    {
+      "path": "ru/01_START_phone.pdf",
+      "sha256": "627846cd70e407de7d68fa481b1fe5e16a09a52322663c4c3f1309ae65cf05eb",
+      "size_bytes": 24648,
+      "pages": 6,
+      "language": "ru",
+      "tagged": true,
+      "text_sha256": "628aea80ac0e8a825af34bce5e57e6ba8eee4be1e29d7cf23c81ed42f9652f16",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "58296defd390614e6cbae96c6fd32fcf093f6c4ae8deebb696a0d3485f08695d"
+    },
+    {
+      "path": "ru/01_START_print.pdf",
+      "sha256": "c7751682b10d23d5929cf01e7dc9b8866ea5c81afcf93904992cac1dc8384404",
+      "size_bytes": 22792,
+      "pages": 4,
+      "language": "ru",
+      "tagged": true,
+      "text_sha256": "9d34a293c09d22b680ac5e8a7d0b1a71b25b7520c2801c386902ef264fd90781",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "2ae14f047b63a7367856a39b34fc150be8ca16b55253a0bbbd5c49f1e9a7d681"
+    },
+    {
+      "path": "tl/01_START_phone.pdf",
+      "sha256": "82d1b28052c991c66a419fd302e870a460f51c75c45b3aa4e5b0719b76f09c16",
+      "size_bytes": 20321,
+      "pages": 6,
+      "language": "tl",
+      "tagged": true,
+      "text_sha256": "bce0be7dcee9868331571d34a3c7f056b79d999b8b08d6548f885b8147560945",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "1da156cdae4dc529d0ba6db4be20860f2b9de770744871c71276aee8da924622"
+    },
+    {
+      "path": "tl/01_START_print.pdf",
+      "sha256": "86395edd8e9a019d73915d8350913faca6c145cad47fb4b686777e10bf80e825",
+      "size_bytes": 18455,
+      "pages": 4,
+      "language": "tl",
+      "tagged": true,
+      "text_sha256": "dde2723ac3aaa10678c2c65597f8eae5d33cedcc0c286b402901af7a9af479e7",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "1a3eba2be80f15faddac79d28cd885c489c863f460907bc449ff4a001ac77546"
+    },
+    {
+      "path": "vi/01_START_phone.pdf",
+      "sha256": "afc1a056a1004534d9d5f422bcbc76d221979764712e7b7ba92606ff958242ac",
+      "size_bytes": 25029,
+      "pages": 6,
+      "language": "vi",
+      "tagged": true,
+      "text_sha256": "0606e4be5cac99404b5b8b16abd5e36da99671d74557c23752445a8cc73bc4d3",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "8b922a6b3f5c0bcd8d410f348dcd11035c5b21f0e73fc34f96456dc6fa5c1fbc"
+    },
+    {
+      "path": "vi/01_START_print.pdf",
+      "sha256": "4720ff24f2aea2ab9b980eccff878c70be14ebe10964ed2e3d73ccb89ddb04ef",
+      "size_bytes": 23147,
+      "pages": 4,
+      "language": "vi",
+      "tagged": true,
+      "text_sha256": "27b349526e4b36aecff0d5fb78d911ce0af81a9a99eaaae22d8414de380375e3",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "995b718365cfbbcf77a853b70d3921bd8d792754828ea8a05e6aafdad109da7b"
+    },
+    {
+      "path": "zh-Hans/01_START_phone.pdf",
+      "sha256": "c536cd356352acfba3a82b93f412e2246a9db0d453b4fced8638ee8cadc4005a",
+      "size_bytes": 56832,
+      "pages": 5,
+      "language": "zh-Hans",
+      "tagged": true,
+      "text_sha256": "01ff7f5ae9fdf067eb500dadd1b9d8f3ea96e50ff8213b1c4fbbb78b1bd2ec1b",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "bbf42b1dc47c334680d637445ed0b785dc3d5b4b7aca56803fbba4c4b37f74bf"
+    },
+    {
+      "path": "zh-Hans/01_START_print.pdf",
+      "sha256": "24264f694791deeb1f60918d1d6624f08c1bea44f2db26b919cbcb033271057c",
+      "size_bytes": 55342,
+      "pages": 3,
+      "language": "zh-Hans",
+      "tagged": true,
+      "text_sha256": "ba761e52099a078e89ad445fccf8d0dcf8207262bfcbf0eff91608155d52cebf",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "85ff04c749e5b186570fb12cd592c045065a4c6f6848551fb25b76831cbcd061"
+    },
+    {
+      "path": "zh-Hant/01_START_phone.pdf",
+      "sha256": "ec250ce24628cdd3a29c441faf4ef09604099ed1f0b7a94a33700f302bb10d48",
+      "size_bytes": 63718,
+      "pages": 5,
+      "language": "zh-Hant",
+      "tagged": true,
+      "text_sha256": "fdeb7132a17a75589fc9cb0ad08d384ad52b2ef54423047153cddaf433e4c8e2",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "bff7521f3a4671cd2bd9ce687484b631f931113b77c61cb9eaa15b19e583d647"
+    },
+    {
+      "path": "zh-Hant/01_START_print.pdf",
+      "sha256": "5e399a1c403cff992e5897d4760a22505bd3f229f35d4fe4b4bcfb3030506ee6",
+      "size_bytes": 62169,
+      "pages": 3,
+      "language": "zh-Hant",
+      "tagged": true,
+      "text_sha256": "253c8de30d5b0c53870a446e9ecaa89b0ef90d768974d108b8296a3c42289c57",
+      "bookmark_count": 9,
+      "bookmarks_sha256": "8ecf3abda11accf1b8509849459ccf016aadb50c9864ca23ab8641996537db86"
+    }
+  ],
+  "html_files": [
+    {
+      "path": "ar/01_START_phone.html",
+      "size_bytes": 6808,
+      "sha256": "4d540566ff39e81f241814f8a586e25be6c25c6e6129ba3833995c3df53ba725"
+    },
+    {
+      "path": "ar/01_START_print.html",
+      "size_bytes": 6804,
+      "sha256": "60b3920dcb019ffdead34c7c81ac2a7b6b411845e66d9b8d5de7ed061d067a09"
+    },
+    {
+      "path": "en/01_START_phone.html",
+      "size_bytes": 52697,
+      "sha256": "2fc22835c04c6b17c41d7fb96f4dfa072449a2dd73024d8ceb624efc11a0bd96"
+    },
+    {
+      "path": "en/01_START_print.html",
+      "size_bytes": 52693,
+      "sha256": "727b7d0871cc20d708a10960a753e6f37707f5969bcfe632225e118562083569"
+    },
+    {
+      "path": "en/02_CARD.html",
+      "size_bytes": 16367,
+      "sha256": "d45267dfa5302c02ea8f116966800b3e8342b1d4bc6cd69014b6ff5ea1027823"
+    },
+    {
+      "path": "en/03_TAGS.html",
+      "size_bytes": 1718,
+      "sha256": "7b259769b0acaf9fc3a9e5db15ea2ead086dd0b1a629064d14de50c3a35860b3"
+    },
+    {
+      "path": "en/04_VARIANTS_phone.html",
+      "size_bytes": 8482,
+      "sha256": "52b7350d7981078cea71f84d6dead6bd55022328bc421614237c0331ec5b5735"
+    },
+    {
+      "path": "en/04_VARIANTS_print.html",
+      "size_bytes": 8478,
+      "sha256": "3fc6417743da9db1c072558125a287f53847f81745e7fe86bb29e0894ea96a64"
+    },
+    {
+      "path": "es/01_START_phone.html",
+      "size_bytes": 56816,
+      "sha256": "dcf0b276764e69f28880a49e4f6fd85e858bf7601ba093c5d83d24ff8b1c14d0"
+    },
+    {
+      "path": "es/01_START_print.html",
+      "size_bytes": 56812,
+      "sha256": "c68e4f0e628c00f61601735499be7d83d1eb221d936a9af3475a60643d320b2a"
+    },
+    {
+      "path": "es/02_CARD.html",
+      "size_bytes": 16652,
+      "sha256": "5e9f5d0b00863b177fe6ade3d8251050fc838d8f6b6cd022ffb01bf0d45c81c8"
+    },
+    {
+      "path": "es/03_TAGS.html",
+      "size_bytes": 1865,
+      "sha256": "dc9519841371d8d2e8a4cd6b72e2150543482475dcf809f1755e9e0c70d263ff"
+    },
+    {
+      "path": "es/04_VARIANTS_phone.html",
+      "size_bytes": 9310,
+      "sha256": "796472642af0ed62d11d470ae9f2ae66fb7b6e31e8401fbe332dec8a903663e0"
+    },
+    {
+      "path": "es/04_VARIANTS_print.html",
+      "size_bytes": 9306,
+      "sha256": "163cb3d9bcb99d100c8e74f8935b1a55fa5acd4589c2463c972ee0ee1d4c824f"
+    },
+    {
+      "path": "fa/01_START_phone.html",
+      "size_bytes": 7048,
+      "sha256": "552ebe8f63493557d8264fdf9cd58a981d33dc0119df2c579700d3916a5945db"
+    },
+    {
+      "path": "fa/01_START_print.html",
+      "size_bytes": 7044,
+      "sha256": "b5c619416bd85f9cd935c9f7ef068d62087261a6da39f9d26e3635ab10de2865"
+    },
+    {
+      "path": "fr/01_START_phone.html",
+      "size_bytes": 6242,
+      "sha256": "5682e037f532773ec1353ef684bc9f68eed4ddab44e6c12cc65966f29cb3b114"
+    },
+    {
+      "path": "fr/01_START_print.html",
+      "size_bytes": 6238,
+      "sha256": "63ae82c5d4928ced9d26101e2b3338da6ccdb2134501ce49137b067c8e1256de"
+    },
+    {
+      "path": "hi/01_START_phone.html",
+      "size_bytes": 8284,
+      "sha256": "50e259e0533a1eb84947aba21e69c10e29be89b75d86bbf21ae3c75baf8709b4"
+    },
+    {
+      "path": "hi/01_START_print.html",
+      "size_bytes": 8280,
+      "sha256": "ce5218be162d02251c5b1403edfc4ab6ca1e4d6a7f673b451cb4cacf8a90947f"
+    },
+    {
+      "path": "ht/01_START_phone.html",
+      "size_bytes": 5998,
+      "sha256": "3fc8ee09a6b771465ff8f50a21e5a862fe32c548f3940a7507f29b0f1b3dd104"
+    },
+    {
+      "path": "ht/01_START_print.html",
+      "size_bytes": 5994,
+      "sha256": "b25b78de7ee54a8656f9af066b972a64b9d3eb2bc40d6002eae5643e0eb1a2bd"
+    },
+    {
+      "path": "ko/01_START_phone.html",
+      "size_bytes": 6379,
+      "sha256": "8b228686e6b983f2e77d6eaa32fc5f9ee6fc8b1c3691b0a7960acce7cea86ff3"
+    },
+    {
+      "path": "ko/01_START_print.html",
+      "size_bytes": 6375,
+      "sha256": "35ba1fe6bdb82a72b7aec586e20d70154d17c78d1aee21a7afb7f532f40bb46f"
+    },
+    {
+      "path": "pl/01_START_phone.html",
+      "size_bytes": 6220,
+      "sha256": "163dc26dcfbd32bcc3c7dbfc006bd393ee4b6897477b37c2a7a6a99500551391"
+    },
+    {
+      "path": "pl/01_START_print.html",
+      "size_bytes": 6216,
+      "sha256": "d0b9910baa7a315e46dc2185cf0a8a068eb7bf7f26a38013ead286c5eb59694f"
+    },
+    {
+      "path": "pt/01_START_phone.html",
+      "size_bytes": 6086,
+      "sha256": "d6fdaff284753b7cdbca4f2eb54b77a361a564e24c09b01998e6879ed37ec83a"
+    },
+    {
+      "path": "pt/01_START_print.html",
+      "size_bytes": 6082,
+      "sha256": "8eeb4fe420484eec8be55ac9d82ffb11f8df613ff6fad9ed3f73ef86554055cf"
+    },
+    {
+      "path": "ru/01_START_phone.html",
+      "size_bytes": 7152,
+      "sha256": "cd57bd679b6623ccc7a7c7ef95dfcbfc06d0675f6c7fc6ee204f35349c5bd43a"
+    },
+    {
+      "path": "ru/01_START_print.html",
+      "size_bytes": 7148,
+      "sha256": "29d871b841e1f39bd4c804c308362dddab362c879a77acb548ffd8683d840cf0"
+    },
+    {
+      "path": "tl/01_START_phone.html",
+      "size_bytes": 6156,
+      "sha256": "b5f22b52ee3afb2c78c71c31aeaa1f0757fe1fc581bc0c65f14e2efcf7a08de4"
+    },
+    {
+      "path": "tl/01_START_print.html",
+      "size_bytes": 6152,
+      "sha256": "39068f161b4a5df3644efc342a1011cd9f620143505be50014e973858bc430a2"
+    },
+    {
+      "path": "vi/01_START_phone.html",
+      "size_bytes": 6393,
+      "sha256": "1d654a628ed03fac5074ff4c41769edc5004563d4bf28ed15704a29b80ea65c4"
+    },
+    {
+      "path": "vi/01_START_print.html",
+      "size_bytes": 6389,
+      "sha256": "64541839df3b5e580e0c79018a681ee0b8f8e8e3ec5c174c2ce338121ace8d22"
+    },
+    {
+      "path": "zh-Hans/01_START_phone.html",
+      "size_bytes": 6052,
+      "sha256": "11633432f338df8f0b519e190f07dcfe11f8a16bdd4f5e5c4e470d94a126b821"
+    },
+    {
+      "path": "zh-Hans/01_START_print.html",
+      "size_bytes": 6048,
+      "sha256": "7e781cc45fc6610dd21a97354332b130c88b0ce358df1bf9058a53cee3a4c503"
+    },
+    {
+      "path": "zh-Hant/01_START_phone.html",
+      "size_bytes": 6070,
+      "sha256": "5cf206131068e28111b6c96a52d6d89ba347124aaba1bace6385ac18555b0e1e"
+    },
+    {
+      "path": "zh-Hant/01_START_print.html",
+      "size_bytes": 6066,
+      "sha256": "4c751da2836de87ece9b25bf6a91ee3146320d0ad0dc2730bf67cbb185504a65"
+    }
+  ],
+  "limitations": [
+    "One serial pair; order, OS caches, and shared-host/VM load can affect timings. No statistical, national, or whole-build speed guarantee.",
+    "Uses exactly frozen137source3a2beff, not historical payloads or a different production core source. The later active source is not relabeled.",
+    "Filesystem mtimes are not compared; PDF timestamps and source epoch are fixed. Assembly/image reproducibility is outside this experiment.",
+    "Exact equality on this multilingual core and the earlier017-page map leaf does not establish equivalence for every future dataset or pipeline.",
+    "Arabic/Persian contextual glyph checks, RTL HTML/PDF metadata, fonts, and equality do not establish physical-phone acceptance or translation review.",
+    "All draft/machine statuses and human/release holds remain unchanged; no artifact admission or default release-platform change."
+  ],
+  "receipts": {
+    "build/native-core-164/summary.json": "dffdfcafeb6bb5ee4dc81e572a7f0d144607e55922b9c26995233b176d606b67",
+    "build/native-core-164/preflight.json": "f2125901509f3972831cf1e1ffccc0de2960e5d92a2e643539556fa2ef12a708",
+    "build/native-core-164/run_core.py": "b3d8d2d266804a7fb6980e901b4b024701c93843bbd64165bc2308934a4f244f",
+    "build/native-core-164/controller.py": "18886309a8018dcc2223212118b26adbe2b2b2d314c191a42339edb9a4d3cf77",
+    "build/native-core-164/amd64/receipt.json": "6ce9abe9be76607e0b879894e5d2f654143c9aefd5c1e7ef56e900ed8396ad60",
+    "build/native-core-164/arm64/receipt.json": "2dbb4d81b81e92163ad751d3a46fa36fac8acf2314fd95eb6b98f4cb279f3042",
+    "build/native-core-164/amd64/execution.log": "214bb3a8e8698733bd144fa39129216e9b9ea6c8cb698eef9ecc06d05956dfc0",
+    "build/native-core-164/arm64/execution.log": "88ddbc447e2c3a1570e746d22532c97d827696da55b847c9f0ab85fe3e630da4"
+  }
+}

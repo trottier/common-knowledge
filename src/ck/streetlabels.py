@@ -10,6 +10,54 @@ from shapely import line_merge, transform, union_all
 from shapely.geometry import Polygon, box, shape
 
 
+class SceneGeometryCache:
+    """Optional cache for immutable source geometries during one prepared-scene render.
+
+    Use a fresh context for each scene. Membership is bounded to that scene's road
+    and water geometry dictionaries; foreign geometries are rejected. Keep this
+    object outside scene/audit data, and do not mutate geometry mappings while open.
+    """
+
+    def __init__(self, scene: dict):
+        self._sources = {
+            id(geometry): geometry
+            for geometry in [*(road["geometry"] for road in scene["roads"]), *scene["water"]]
+        }
+        self._geometries = {}
+        self._active = False
+        self._closed = False
+
+    @property
+    def capacity(self) -> int:
+        return len(self._sources)
+
+    @property
+    def size(self) -> int:
+        return len(self._geometries)
+
+    def __enter__(self):
+        if self._active or self._closed:
+            raise RuntimeError("Use a fresh geometry-cache context for each scene")
+        self._active = True
+        return self
+
+    def shape(self, geometry):
+        if not self._active:
+            raise RuntimeError("Geometry cache is outside its scene context")
+        key = id(geometry)
+        if key not in self._sources or self._sources[key] is not geometry:
+            raise ValueError("Geometry does not belong to this prepared scene")
+        if key not in self._geometries:
+            self._geometries[key] = shape(geometry)
+        return self._geometries[key]
+
+    def __exit__(self, *_):
+        self._geometries.clear()
+        self._sources.clear()
+        self._active = False
+        self._closed = True
+
+
 def nonempty_lines(geometry):
     if geometry.is_empty:
         return
@@ -21,12 +69,13 @@ def nonempty_lines(geometry):
             yield from nonempty_lines(part)
 
 
-def street_components(roads, bounds, width, height):
+def street_components(roads, bounds, width, height, *, geometry_cache=None):
     """Join actual connected same-name segments; keep disconnected streets separate."""
     west, south, east, north = bounds
     frame = box(*bounds)
     groups = defaultdict(list)
     source_ids, unnamed_ids = [], []
+    source_shape = geometry_cache.shape if geometry_cache is not None else shape
     ranks = {
         name: rank
         for rank, name in enumerate(
@@ -38,7 +87,7 @@ def street_components(roads, bounds, width, height):
         return (x - west) / (east - west) * width, (north - y) / (north - south) * height
 
     for road in roads:
-        parts = list(nonempty_lines(shape(road["geometry"]).intersection(frame)))
+        parts = list(nonempty_lines(source_shape(road["geometry"]).intersection(frame)))
         if not parts:
             continue
         source_ids.append(road["id"])
@@ -88,9 +137,13 @@ def street_components(roads, bounds, width, height):
     return components, source_ids, unnamed_ids
 
 
-def street_labels(roads, bounds, width, height, font_path: Path, policy: dict, reserved=()):
+def street_labels(
+    roads, bounds, width, height, font_path: Path, policy: dict, reserved=(), *, geometry_cache=None
+):
     """Never require a full street name to fit one short OSM way."""
-    components, source_ids, unnamed_ids = street_components(roads, bounds, width, height)
+    components, source_ids, unnamed_ids = street_components(
+        roads, bounds, width, height, geometry_cache=geometry_cache
+    )
     with TTFont(font_path) as font:
         cmap = font.getBestCmap()
         advances = {chr(code): font["hmtx"][glyph][0] for code, glyph in cmap.items()}

@@ -1,0 +1,149 @@
+{
+  "status": "Verified incomplete local inspection tree; no release or physical-device approval",
+  "source_commit": "9c1ffac",
+  "epoch": 1793404800,
+  "tree": "build/current-builds/variant-1-preview-v17",
+  "manifest_sha256": "8af3976174e2b7506544957b73a3782d39ba7e3114026fee4deb75eab1882a8a",
+  "provenance_sha256": "1b1c52716b087d00acda2ab1fb639cbd94d0c60a1abd471fbbe0b90c627fabb1",
+  "files": 516,
+  "size_bytes": 980666365,
+  "pdf_copies": 448,
+  "largest_pdf_bytes": 9549250,
+  "checks": {
+    "all_manifest_payloads": true,
+    "all_START_phone_backups_identical": true,
+    "county_map_index_exact": true,
+    "indexed_file_hashes": true,
+    "all_pdf_files_under_10_MB": true,
+    "bristol_county_records": 33,
+    "kent_flat_readable_files": 12,
+    "base_manifest_and_provenance_unchanged": true,
+    "normal_assembly_gates_changed": false
+  },
+  "index_receipts": {
+    "final-map-finder-v15": {
+      "receipt_sha256": "c51d0aeea3347e407b35e50dd3d7276f0bf657fa014d90e3d55b2d84715bab35",
+      "pages": 4,
+      "indexed_count": 15,
+      "pdf": {
+        "sha256": "78706da3caf5d9a9604bdebacb59f0c44cd63517e897de1159ad0bfef0408360",
+        "size_bytes": 20175
+      }
+    },
+    "final-copy-index-v16": {
+      "receipt_sha256": "b3bf6b03bf9da00eb056a70bf2d49d4b991e1d499e04c5aeb0b07a3bdddf8d26",
+      "pages": 55,
+      "indexed_count": 319,
+      "pdf": {
+        "path": "0_WHAT_TO_COPY.pdf",
+        "sha256": "ed3fcf3be16d40b27cbeb08e9f4af41090e416364c94425368d2857548cc536a",
+        "size_bytes": 129304
+      }
+    }
+  },
+  "proof_receipts": [
+    {
+      "kind": "county_places",
+      "receipt_sha256": "47e5e0ad23359a245b42aa69b9a44e2c3973a96f13e0859f9e366c978abeff0c"
+    },
+    {
+      "kind": "partial_county_map",
+      "receipt_sha256": "ca15dda50c3f94af8101c0d1ece324511ea7c6ca19b9ae52d7111439d54cde02",
+      "prototype_sha256": "ae5581757c4b6fac3eda7efcf229dd9c92ef1184c41a3c11104a72a29294295f"
+    },
+    {
+      "kind": "partial_county_map",
+      "receipt_sha256": "d5f003eba8952b32f90bd8b2ccb6690af5261ce60972077e9d3f344761768e49",
+      "prototype_sha256": "c5ba467e4f22bc32abcc2f2566d6d46da28df736e70d2c7899f588a6b61b7855"
+    },
+    {
+      "kind": "partial_county_map",
+      "receipt_sha256": "34b03344cc218f116c51bf32d119338d891caa88c03e1709e6a5cd455273b991",
+      "prototype_sha256": "4a0a8bf40d772be89e333de07e767b98842b5f70ab8fc3b1d2f84277821803ff"
+    },
+    {
+      "kind": "partial_county_map",
+      "receipt_sha256": "4a2a3180a0f2f71303c9b83bbd3fd318036b3860b4951638e19b622effe20092",
+      "prototype_sha256": "3df71c46dfbe552f6f14f9da0c3382c028e9f0cf2c87c96e453561f8eb236251"
+    },
+    {
+      "kind": "partial_county_map",
+      "receipt_sha256": "a5094244bf76383140a59bc3e1826a7721539dc204c9b445fb507d1a4486373a",
+      "prototype_sha256": "6a6d7b6e0efb937bee3846adba3a84381295036db766f38f5c2f89c66a854ef3"
+    },
+    {
+      "kind": "partial_county_map",
+      "receipt_sha256": "4666e1c167171fe7428f65cce9e6efb4ca8d896ef4ebf74d103e68c4d0d1b9f9",
+      "prototype_sha256": "13e2a9f19cff640dae991a3db39e8580cc4f918695541e44ebf6830789daf86b"
+    }
+  ],
+  "execution": {
+    "v15-native-a": {
+      "context": "colima-common-knowledge-maps",
+      "wall_seconds": 55.527736125004594,
+      "image": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec",
+      "host_config": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "source_commit": "9c1ffac"
+    },
+    "v16-render-a": {
+      "context": "colima-common-knowledge-batch",
+      "wall_seconds": 8.03391279099742,
+      "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "host_config": {
+        "NanoCpus": 1000000000,
+        "Memory": 3221225472,
+        "MemorySwap": 3221225472,
+        "NetworkMode": "none"
+      },
+      "source_commit": "9c1ffac"
+    },
+    "v16-attach-native-a": {
+      "context": "colima-common-knowledge-maps",
+      "wall_seconds": 14.527441167010693,
+      "image": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec",
+      "host_config": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "source_commit": "9c1ffac"
+    },
+    "v17-render-a": {
+      "context": "colima-common-knowledge-batch",
+      "wall_seconds": 21.748620124999434,
+      "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "host_config": {
+        "NanoCpus": 1000000000,
+        "Memory": 3221225472,
+        "MemorySwap": 3221225472,
+        "NetworkMode": "none"
+      },
+      "source_commit": "9c1ffac"
+    },
+    "v17-attach-native-a": {
+      "context": "colima-common-knowledge-maps",
+      "wall_seconds": 15.533767874992918,
+      "image": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec",
+      "host_config": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "source_commit": "9c1ffac"
+    }
+  },
+  "limitations": [
+    "Kent is partial; selected ZIP areas and the northern part of 02889 only.",
+    "Original source, clinical, legal, release-date, and physical-device review holds remain.",
+    "No maps were regenerated and no reproducibility claim is made.",
+    "v13/v14 retain the historical technical-name selection; final selection is v15-v17."
+  ],
+  "verification_method": "Independent host SHA-256 inventory, receipt, ancestry, index, and backup checks after bounded container exit; no browser or physical-device claim."
+}

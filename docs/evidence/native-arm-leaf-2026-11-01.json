@@ -1,0 +1,327 @@
+{
+  "scope": "Same-wheel, same-source, same-scene 02827 rendering comparison across the pinned emulated amd64 and experimentally built native arm64 Linux images. No default platform or release change.",
+  "checked_on": "2026-11-01",
+  "source_commit": "c4f1249",
+  "source_snapshot": ".worktrees/162-cache-compare-source (detached)",
+  "scene_sha256": "623a80d5c3cdaa83805e30c936815fa8ec9fcd237e67779b32b877e8d39d1048",
+  "wheel_sha256": "1705990c34ef84160c3a0d021ca5239d32b67e5530d7322e846fe9c1fa5eed48",
+  "images": {
+    "amd64": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+    "arm64": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec"
+  },
+  "common_runtime_versions": {
+    "shapely": "2.2.0",
+    "geos": "3.14.1",
+    "pyproj": "3.8.0",
+    "proj": "9.8.1",
+    "weasyprint": "70.0",
+    "fonttools": "4.68.0",
+    "pydyf": "0.13.0"
+  },
+  "actual_python_builds": {
+    "amd64": "3.12.16 (main, Oct 28 2026, 02:01:35) [GCC 12.2.0]",
+    "arm64": "3.12.16 (main, Oct 28 2026, 02:07:42) [GCC 12.2.0]"
+  },
+  "python_distribution_versions_equal": true,
+  "python_distributions": {
+    "common-knowledge": "0.1.0",
+    "pyphen": "0.18.1",
+    "beautifulsoup4": "4.15.0",
+    "Pygments": "2.21.0",
+    "ruff": "0.17.3",
+    "pydantic_core": "2.50.2",
+    "pyproj": "3.8.0",
+    "fonttools": "4.68.0",
+    "zopfli": "0.4.3",
+    "et_xmlfile": "2.0.0",
+    "weasyprint": "70.0",
+    "soupsieve": "3.0.4",
+    "pytest": "9.2.0",
+    "annotated-types": "0.8.0",
+    "idna": "3.20",
+    "brotli": "1.2.1",
+    "libzim": "4.0.0",
+    "webencodings": "0.6.1",
+    "mapbox-vector-tile": "2.2.0",
+    "typing-inspection": "0.4.4",
+    "pyogrio": "0.13.0",
+    "charset-normalizer": "3.5.2",
+    "tqdm": "4.70.1",
+    "gguf": "0.19.0",
+    "mdurl": "0.1.2",
+    "tinycss2": "1.5.1",
+    "geopandas": "1.2.0",
+    "typing_extensions": "4.16.0",
+    "cssselect2": "0.10.1",
+    "packaging": "26.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pydantic": "2.14.2",
+    "PyYAML": "6.0.3",
+    "protobuf": "6.33.6",
+    "pypdf": "6.21.4",
+    "pluggy": "1.7.0",
+    "pyclipper": "1.4.0",
+    "urllib3": "2.8.0",
+    "Jinja2": "3.1.6",
+    "blake3": "1.0.11",
+    "osmium": "4.3.2",
+    "python-dateutil": "3.0.0",
+    "openpyxl": "3.1.5",
+    "cffi": "2.1.1",
+    "tinyhtml5": "2.1.0",
+    "shapely": "2.2.0",
+    "pydyf": "0.13.0",
+    "six": "1.17.0",
+    "pillow": "13.0.0",
+    "iniconfig": "2.3.1",
+    "requests": "2.34.2",
+    "pmtiles": "3.8.1",
+    "tzdata": "2026.6",
+    "pycparser": "3.12",
+    "certifi": "2026.10.23",
+    "segno": "1.6.6",
+    "mdit-py-plugins": "0.6.1",
+    "MarkupSafe": "3.0.4",
+    "markdown-it-py": "4.2.0"
+  },
+  "system_package_version_differences_after_arch_suffix_normalization": {
+    "libdrm-intel1": {
+      "amd64": "2.4.114-1+b1",
+      "arm64": null
+    },
+    "libmfx1": {
+      "amd64": "22.5.4-1",
+      "arm64": null
+    },
+    "libpciaccess0": {
+      "amd64": "0.17-2",
+      "arm64": null
+    },
+    "libquadmath0": {
+      "amd64": "12.2.0-14+deb12u1",
+      "arm64": null
+    }
+  },
+  "resource_conditions": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "network": "none",
+    "docker_context": "colima-common-knowledge-maps"
+  },
+  "runs": [
+    {
+      "image_id": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+      "flag": false,
+      "actual_import": "/output/installed/ck/__init__.py",
+      "wall_seconds": 8.878875377995428,
+      "cpu_seconds": 8.79454228,
+      "peak_rss_kib": 329420,
+      "cache_events": [],
+      "cgroup": {
+        "memory.peak": "397287424\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+      }
+    },
+    {
+      "image_id": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec",
+      "flag": false,
+      "actual_import": "/output/installed/ck/__init__.py",
+      "wall_seconds": 4.416131860998576,
+      "cpu_seconds": 4.35146999,
+      "peak_rss_kib": 282512,
+      "cache_events": [],
+      "cgroup": {
+        "memory.peak": "310231040\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+      }
+    },
+    {
+      "image_id": "sha256:b4e663e6847dfc2f904376b9108cfd8e26e01d96f3345f744d9f98a5a01db0ec",
+      "flag": true,
+      "actual_import": "/output/installed/ck/__init__.py",
+      "wall_seconds": 3.995510500004457,
+      "cpu_seconds": 3.941063141,
+      "peak_rss_kib": 283740,
+      "cache_events": [
+        {
+          "setup_seconds": 0.00040703199920244515,
+          "entries_before_exit": 2163,
+          "capacity": 2163,
+          "entries_after_exit": 0,
+          "source_references_after_exit": 0
+        }
+      ],
+      "cgroup": {
+        "memory.peak": "311279616\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+      }
+    }
+  ],
+  "observed_amd64_to_native_off_ratio": 2.010554860557931,
+  "observed_amd64_off_to_native_on_ratio": 2.2222130008131686,
+  "observed_native_cache_wall_reduction_fraction": 0.09524655835322082,
+  "cross_architecture_payloads_exact": true,
+  "cross_architecture_different_files": [],
+  "cross_architecture_metadata_differences": [],
+  "native_cache_payloads_exact": true,
+  "native_cache_expected_metadata_differences": [
+    {
+      "path": "/policy/cache_source_geometries",
+      "left": false,
+      "right": true
+    },
+    {
+      "path": "/render_recipe/version",
+      "left": "county-scene-render-v1-6892d12abc35445b8e1da6b1274b691e6450d1854ad07d1d92ab04c80252dcf1",
+      "right": "county-scene-render-v1-e2706b37778c2fe42647680ccd28367efb15f32c73df226210ba360779656b53"
+    },
+    {
+      "path": "/render_recipe/cache_source_geometries",
+      "left": false,
+      "right": true
+    },
+    {
+      "path": "/render_recipe/policy/cache_source_geometries",
+      "left": false,
+      "right": true
+    }
+  ],
+  "actual_pdf_files": [
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827 - Overview.pdf",
+      "sha256": "33cda6cf36216e78e2d41c8d78369c5149e4bedbedda502fac0da7ad3ca7f6be",
+      "size_bytes": 217378,
+      "pages": 2
+    },
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827.pdf",
+      "sha256": "cd23a5475935a803acf6811c08ff6a34436d30b060a34f30cb7d8f0089388703",
+      "size_bytes": 832754,
+      "pages": 15
+    }
+  ],
+  "total_pages": 17,
+  "all_rendered_assets": [
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827 - Overview.pdf",
+      "sha256": "33cda6cf36216e78e2d41c8d78369c5149e4bedbedda502fac0da7ad3ca7f6be",
+      "size_bytes": 217378
+    },
+    {
+      "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827.pdf",
+      "sha256": "cd23a5475935a803acf6811c08ff6a34436d30b060a34f30cb7d8f0089388703",
+      "size_bytes": 832754
+    },
+    {
+      "path": "audit/I01.svg",
+      "sha256": "ed3b5dbab54502fce07c031aa4c2879c062c25f458a9718b9bc0fee30bf93f56",
+      "size_bytes": 47636
+    },
+    {
+      "path": "audit/I02.svg",
+      "sha256": "182edc9323bdd1b55845e9300324ff159587b8fa4d7ad61ebabdc3c482ec1764",
+      "size_bytes": 35061
+    },
+    {
+      "path": "audit/I03.svg",
+      "sha256": "7d141a88d4dd2da38455717f5303b8b8abd8493bd0d1f031792fa963e367662a",
+      "size_bytes": 19310
+    },
+    {
+      "path": "audit/I04.svg",
+      "sha256": "11ecb00ca41ce19f78bcba6ed3fed2f0ec4f975686ca3cf66ca8cc2f5e2a7028",
+      "size_bytes": 8831
+    },
+    {
+      "path": "audit/I05.svg",
+      "sha256": "196107fc90545bec1708f0308b63f7d4d330b3b1b3b0a0637b1c5514e30a70b1",
+      "size_bytes": 52716
+    },
+    {
+      "path": "audit/Kent County area 02827 - Overview.pdf.html",
+      "sha256": "cf38374ee6bea4208f3d4b0c15770f5885bab7c5e0277ebfd0f8b26b76e3afb3",
+      "size_bytes": 591632
+    },
+    {
+      "path": "audit/Kent County area 02827.pdf.html",
+      "sha256": "b4d05f89b0d60bc8a3e19822a5f6f9f0f145e25acc040b5b137c634af26fa130",
+      "size_bytes": 1357732
+    },
+    {
+      "path": "audit/R1C1.svg",
+      "sha256": "fb8b06321ebcf940896dcfb886729d496f8a04e2e7bef14eb72cacf6baca4266",
+      "size_bytes": 98827
+    },
+    {
+      "path": "audit/R1C2.svg",
+      "sha256": "6e93e6ee39a23eba11701609542afa6def17fb7e551d1e1ff1520fb9b96908c2",
+      "size_bytes": 77736
+    },
+    {
+      "path": "audit/R1C3.svg",
+      "sha256": "db199aba29201121c408e64c9b43fe7862f2d20a5e5cdc0c9d80eb3f00212c26",
+      "size_bytes": 113926
+    },
+    {
+      "path": "audit/R2C1.svg",
+      "sha256": "c443014349e4afde65296d44e4046059bede08253f5926e368cfcaef3f42735f",
+      "size_bytes": 95050
+    },
+    {
+      "path": "audit/R2C2.svg",
+      "sha256": "e0b799bbe44c8162cc96ba32e971bd4aad5d1a4b94daf2efd8a63f99d1b41081",
+      "size_bytes": 147563
+    },
+    {
+      "path": "audit/R2C3.svg",
+      "sha256": "69eede1e89a8342b97b7abe3a6dcba6536fe250fdb661db386e9049bb1c646fc",
+      "size_bytes": 232924
+    },
+    {
+      "path": "audit/R3C1.svg",
+      "sha256": "5f638a459538e02edca82e3bdfa8ac45b5c5789a3c225f44f5cd14357a99eeac",
+      "size_bytes": 111919
+    },
+    {
+      "path": "audit/R3C2.svg",
+      "sha256": "2ab0962eda133a41b96d9e88ea486f026223fce9f66a0f5fa6b824990d754d0c",
+      "size_bytes": 152598
+    },
+    {
+      "path": "audit/locator.svg",
+      "sha256": "4139918fe98b892fd1b493acb82c08efa3d865e149314558ac1c7aa5cce5a934",
+      "size_bytes": 153634
+    },
+    {
+      "path": "audit/overview.svg",
+      "sha256": "fddecae6f7f39ce1d13f6306f3ea9043730f71b4283d3f8f6aebf3c3265fbc48",
+      "size_bytes": 588191
+    }
+  ],
+  "named_source_ways": 405,
+  "missing_way_ids": [],
+  "root_native_build_receipt": "build/native-arm-161/attempt-b; separate source/build evidence owned by root",
+  "limits": [
+    "One sequential amd64-off/arm64-off/arm64-on pair; this is a development comparison, not a statistical or national/full-build speedup.",
+    "Measured render-only from the existing authenticated prepared scene; extraction/preparation, downloads, and image build time are excluded.",
+    "Order, warmed OS file caches, shared VM load, and compiled architecture can affect timing.",
+    "Raw code, fonts, geometry, Python distribution versions, input scene, wheel, quota, hash seed, locale, timezone, and source epoch are held fixed.",
+    "The two Python builds have the same version/compiler but distinct architecture build timestamps; architecture-specific system packages are recorded.",
+    "All coverage/review/partial-scope holds remain. No output was admitted by this experiment; no new upstream version, Rust kernel, GPU path, or default release-platform change."
+  ],
+  "receipts": {
+    "build/map-native-compare-162/summary.json": "0946eb51e35b18c5f14929fa03723cedc7fcf65a7f1203a57f5e73e5cbcb46de",
+    "build/map-native-compare-162/input-pins.json": "045440eac72e6844d33fe33a8281c094861650c33f67d9ecd3f0fe1eac69f921",
+    "build/map-native-compare-162/run_leaf.py": "e0906d9f83253dc5877fb474fc2d81b9a630f89f2117f8386131169b3c39d75e",
+    "build/map-native-compare-162/controller.py": "9852d5d8b33a3de18d4e006e8fb9108e7eda0672bc940d606a1c63f9ad9a997f",
+    "build/map-native-compare-162/amd64-off/receipt.json": "4c759d943aafc9171db2c7145530c7c9681c08aac609d8026fb58ef50b1464b1",
+    "build/map-native-compare-162/arm64-off/receipt.json": "1a51767608a78fa2d90e2812a66b73e5b9fbcf73ff9bc6af1b110d16e17dcee5",
+    "build/map-native-compare-162/arm64-on/receipt.json": "5e970ffe28c68d345536fa0215925c8f94e939d2a618e5b82fe65467776c4b92",
+    "build/map-native-compare-162/amd64-off/execution.log": "9f1cd36522568e211055f5c2ab66d950e76f07a8e5236529ea73f1a6f8f60339",
+    "build/map-native-compare-162/arm64-off/execution.log": "195a3f6e6d767ab1c8fa23f862b3cab3ea545d24be01377c56e4591192e0c6ab",
+    "build/map-native-compare-162/arm64-on/execution.log": "86825cb4dfe8ff6907de9e5121ef76774443857bbedb21ec8b9f2f4c30f033dc",
+    "build/map-native-compare-162/amd64-off-vs-arm64-off.json": "ce59acdf7cf44304afd90b871356ba78ede5934114c2e5592bb302c8e0d7f1e5",
+    "build/map-native-compare-162/arm64-off-vs-arm64-on.json": "a907e2e4d78071794a515ce1279b12cf724eb42525e3ecfbe2eec6a77b5cfedd"
+  }
+}

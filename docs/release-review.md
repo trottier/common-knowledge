@@ -68,6 +68,16 @@ Catalog items explicitly requiring legal review:
 
 Two cached videos are now available in the incomplete Variant 1 local inspection tree. ISO permits use of its language identifiers, which clears that narrow unshipped build-input use; the downloaded table is not redistributed. Existing video-specific source, safety, caption, and physical playback reviews remain open. The upstream waiting period remains TBD, as the publisher requested; no new upstream release is selected. See `docs/proposals/iso-language-tag-use.md`.
 
+## Local map development checkpoint
+
+The verified v17 local inspection tree has 516 files, 448 PDF copies, and six partial Kent area pairs, plus the Bristol phone places companion. All PDFs fit the provisional 10 MB budget; original recipes, input hashes, source incompleteness, and review holds remain recorded. Complete Kent navigation and its county-wide reference table remain in progress. This does not establish national coverage, a completed sample image, or physical-phone acceptance.
+
+The native ARM container built from the same pinned inputs passes 101 focused map/preparation tests. Map comparisons and core comparisons covering all 15 editions, using identical inputs, produced identical files; native map rendering plus the explicit scene cache and native core rendering were faster in those measured cases. Default cache behavior and the canonical release platform are unchanged. See the native-arm and scene-geometry-cache evidence files.
+
+## Rhode Island postal geometry expansion
+
+The same Census January 1, 2020 layer now has a pinned, unmodified 81-feature query covering every nonblank ZCTA relationship for the five Rhode Island counties. The 83 county/code relationships all have positive-area intersections with the selected county geometry; cross-county relationships are retained. This is build input coverage, not finished maps or a current USPS directory. Original publication date, computed-pin/data review, applicable advisory evidence, and the upstream waiting period remain unresolved. See `docs/evidence/ri-zcta-geometry-2026-11-02.json`.
+
 ## Named human content reviews
 
 - catalog/apk.yaml:22: [[VERIFY: named human review of ObjectBox native runtime rights, complete Flatbuffers and LMDB notices, whole-app GPL compatibility, and exact corresponding native sources; see docs/kiwix-source-closure.md]]
@@ -115,7 +125,7 @@ Two cached videos are now available in the incomplete Variant 1 local inspection
 - reference_med_lib.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - reference_repair.review: [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 
-## Remaining VERIFY markers (6341)
+## Remaining VERIFY markers (6346)
 
 Every marker in content/, config/ and catalog/ is listed below. Candidate and hub-only entries also remain subject to the release gate.
 
@@ -1678,10 +1688,27 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
     is a prototype build input, not selected national cargo. No requested geometry
     simplification, quantization, or precision reduction; TIGERweb detailed geometry
     is not a survey or a claim of full TIGER/Line vertex identity.]]
+- `catalog/postal.yaml:50` — [[VERIFY: exact original publication date of the selected Census 2020 layer; capture date is not release date]]
+- `catalog/postal.yaml:59` — [[VERIFY: review computed HTTPS source hash, Census-created data classification,
+    API attribution terms, source currency, map overlay, and applicable upstream
+    age/advisory gate before release. Additive subset of the already selected
+    January 1, 2020 layer, not a new upstream vintage. Two geometry features only;
+    not current USPS delivery boundaries or an exhaustive postal directory.
+    No requested geometry simplification, quantization, or precision reduction.
+    Prototype build input only, not selected national cargo or an approved release.]]
+- `catalog/postal.yaml:74` — [[VERIFY: exact original publication date of the selected Census 2020 layer; capture
+    date is not release date]]
+- `catalog/postal.yaml:86` — [[VERIFY: review computed HTTPS source hash, Census-created data classification, API attribution
+    terms, source currency, map overlay, and applicable upstream age/advisory gate before release. Additive
+    subset of the already selected January 1, 2020 layer, not a new upstream vintage. All 81 relationship-selected
+    geometry features for Rhode Island counties; not current USPS delivery boundaries, an exhaustive postal
+    directory, national geometry, or a completed county map. No requested geometry simplification, quantization,
+    or precision reduction. Build input only, not selected drive cargo or approved release.]]
 - `catalog/referencepacks.yaml:34` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:68` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:102` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
 - `catalog/referencepacks.yaml:136` — [[VERIFY: named human source-accuracy, selection, safety and suitability review; image omissions, source/pin/license review, complete repeat builds and physical phone readability checks]]
+- `catalog/roadcache.yaml:21` — [[VERIFY: human source-pin and ODbL source-offer review; one bounded full-source cache build. Kent and Providence selected IDs, names, attributes, geometry, ordering, and counts match direct inputs exactly, including installed-wheel admission. Original source and release/security holds remain. Build input only, not a national or physical-phone acceptance claim.]]
 - `catalog/video.yaml:6` — [[VERIFY: exact publisher download URL]]
 - `catalog/video.yaml:7` — [[VERIFY: publisher version]]
 - `catalog/video.yaml:8` — [[VERIFY: exact publisher file size]]
