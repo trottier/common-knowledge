@@ -99,7 +99,11 @@ export function folderEntries(entries, folder, query = "", showHidden = false) {
   return [...entries.values()].filter(entry => {
     const parent = entry.path.includes("/") ? entry.path.slice(0, entry.path.lastIndexOf("/")) : "";
     return parent === folder && (showHidden || !isHidden(entry)) && entry.name.normalize("NFKD").toLocaleLowerCase().includes(needle);
-  }).sort((a, b) => (a.kind !== b.kind ? (a.kind === "directory" ? -1 : 1) : a.name.localeCompare(b.name, "en", {numeric: true})));
+  }).sort((a, b) => {
+    const rank = entry => entry.kind === "file" && /^0{1,2}_.*\.pdf$/iu.test(entry.name)
+      ? 0 : entry.kind === "directory" ? 1 : 2;
+    return rank(a) - rank(b) || a.name.localeCompare(b.name, "en", {numeric: true});
+  });
 }
 
 function start() {

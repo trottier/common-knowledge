@@ -21,7 +21,30 @@ supplement notices, and checks the configured PDF byte cap. Existing core copyin
 provides local laptop HTML with its documented font-reference cleanup.
 
 `BACKUP` contains copies of START and the entire present phone pack. The manifest
-covers every other tree file; its own hash is recorded outside the tree. No
-copy-ready PDF index is invented when no generator is available. README lists
+covers every other tree file; its own hash is recorded outside the tree. README lists
 actual entry points and missing cargo; technical provenance stays in VERIFY and
 the external receipt. The normal assembler and release gates are unchanged.
+
+Additional cached cargo, short guides, and medical framing proofs have separate
+admission helpers. They authenticate the existing tree and each added component,
+preserve historical recipes and review holds, and write fresh output folders.
+The medical framing helper compares every clinical body against its authenticated
+parent; it does not approve the medical instructions.
+
+`tools/build_map_finder.py` indexes county PDFs actually present in the tree.
+`tools/build_copy_index.py` lists the actual shareable files and sizes, grouped
+by folder. Attach these PDFs with `tools/attach_copy_index.py` against the exact
+source manifest. Regenerate the copying index after changing its indexed cargo;
+do not reuse an old index as if it described a new tree.
+
+Open a finished tree with the existing CLI:
+
+```sh
+rtk proxy ck --root . explore --drive /absolute/path/to/inspection-tree --port 8766
+```
+
+The local explorer is at `http://127.0.0.1:8766/`. Numbered entry PDFs appear
+before folders, so “Find a map,” “What to copy,” and short medical guides stay
+easy to find. Optional reference and map data explain which reader they require
+and remain inert in the website. Keep the incomplete status and missing cargo
+visible. Publish only the separately exported representative hosted examples.
