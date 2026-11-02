@@ -212,6 +212,7 @@ def assemble_preview(
                     "Common Knowledge — development inspection only",
                     "Variant: 1",
                     "Profile: local inspection (core rendered with sample profile)",
+                    f"Source: core {core_source}; map {map_source}",
                     f"Core source: {core_source}",
                     f"Map source: {map_source}",
                     "Supplement sources: historical matching49a artifacts; see external provenance",
