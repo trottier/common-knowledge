@@ -81,8 +81,13 @@ The immediate milestone is Variant 1 and Rhode Island, with a fast English
 document and county-map preview before broader builds. PDF files have a shared,
 provisional 10 MB guardrail. The goal of loading on 95% of phones still needs
 device evidence. See [the explorer](pipelines/drive_preview/README.md).
-The [county map proof](docs/county-map-proof.md) documents the current folder
-layout, verified ZIP labels, and bounded vector renderer.
+The [county map proof](docs/county-map-proof.md) documents the folder layout and
+bounded vector renderer. Every source-named street, including local streets,
+must be labeled when zoomed; linked enlarged sheets remain inside the county
+PDF when needed. The overview must show verified Census ZIP-area geography
+and labels, rather than filename codes alone. The first all-street render is
+held for a scale-bar correction; the corrected repeat remains pending. No final
+map measurements or phone-compatibility claim are made here.
 
 ## Design previews
 

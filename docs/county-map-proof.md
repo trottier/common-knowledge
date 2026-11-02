@@ -13,16 +13,33 @@ detailed, multipage PDF per county, with a separate overview:
 
 The detailed PDF contains a geographic sheet locator, clickable page references,
 overlapping road sheets, continuation references, coordinates, a grid, a scale
-bar, and vector roads and text. The overview carries the historical public-place
-markers and an index. ZIP labels come from the pinned Census 2020 ZCTA/county
-relationship file; they are geographic approximations, not a current USPS
-delivery list. The three verified codes are distinct, so the filename keeps
-their gaps rather than inventing a continuous range.
+bar, and vector roads and text. The Bristol trial starts with nine base sheets
+and adds larger-scale street sheets as needed inside the same county PDF. The
+number of insets is an output of coverage checks, not a fixed page count. Each
+inset records its effective scale, parent sheet, and return reference; an index
+links to the enlarged sheets.
+
+Every street named in the selected source must be labeled, including local
+streets. Short OSM segments and collisions cannot silently remove names. The
+coverage target uses all named source-way IDs and their associated names, so
+disconnected streets sharing a name still require coverage. Unresolved coverage,
+page limits, or the configured per-file byte cap fail the build. Source roads
+without names remain explicitly unnamed; no street names are invented.
+
+The overview carries historical public-place markers and an index, plus verified
+ZIP-area polygons and code labels. The code list comes from the pinned Census
+2020 ZCTA/county relationship file, and the plotted areas use pinned Census
+geometry checked against those codes. Filename codes alone are insufficient.
+These 2020 Census geographic approximations are not a current USPS delivery
+directory. The three verified codes are distinct, so the filename keeps their
+gaps rather than inventing a continuous range.
 
 The trial scale, overlap, and resource guards live in
 `pipelines/atlas/bristol-proof.json`. The per-file byte guard comes only from
-`pdf.max_file_mb` in `config/build.yaml`. Neither this trial scale nor its Linux
-rendering measurements establish suitability for every county or phone.
+`pdf.max_file_mb` in `config/build.yaml`, currently 10 decimal MB. Read that
+configuration value instead of repeating the limit in generators. Neither this
+trial scale nor its Linux rendering measurements establish suitability for every
+county or phone.
 
 Run the tool inside the pinned build environment, with the verified cache and
 prepared inputs mounted read-only. Select a new, empty output path:
@@ -41,8 +58,18 @@ rtk proxy uv run python tools/prototype_county_map.py \
 The producer verifies the selected input files and historical manifests before
 rendering. It preserves the historical directory's incomplete status, rejects
 county coverage gaps, checks actual page references and bookmarks, and rejects
-off-page tables or SVG map frames. `prototype.json` records input hashes,
+off-page tables or SVG map frames. Tests also cover named-way association,
+short and segmented local streets, disconnected equal-name roads, unnamed roads,
+inset limits, and ZIP-area geometry. Inspect the actual map labels and scale
+bars: a street name found only in an index or heading does not establish that
+the map labels it. `prototype.json` records input hashes,
 producer files, policy, output sizes, hashes, and measured resource use.
+
+The first all-street render (A) is held because its fixed scale bar did not
+remain within the reserved space on enlarged sheets. It is historical evidence,
+not a final artifact. The corrected B repeat is pending; its actual PDFs,
+coverage, pagination, scale bars, and byte limits must pass inspection before
+adoption. No final B measurements are claimed here.
 
 This is an unreviewed development proof, not a complete sample or a new national
 atlas pin. Its historical directory has 33 county entries; that does not
