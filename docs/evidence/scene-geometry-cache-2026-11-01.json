@@ -1,0 +1,251 @@
+{
+  "scope": "Optional explicit source-geometry cache; no default/config change, no active producer edit, and no profiling artifact admitted to the live tree.",
+  "checked_on": "2026-11-01",
+  "base_commit": "1a1035bd3fa506fb18ddd0e2ea6c3f0656307d9d",
+  "implementation_commits": [
+    "7487808",
+    "c4f1249"
+  ],
+  "image": "sha256:c9792c3f92d4c2bb4a532aab4b5528e7aa9998d1314fcf47a16d72353cd28d52",
+  "container_limits": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "network": "none"
+  },
+  "tests": {
+    "source_focused": 52,
+    "installed_wheel_focused": 52,
+    "ruff": "pass",
+    "wheel_built_offline": true,
+    "installed_import_verified": true
+  },
+  "render_opt_in": "policy.cache_source_geometries must be a boolean; omitted/false keeps caching off. A render-owned context clears all cached objects on normal or exceptional exit.",
+  "same_source_leaf_comparison": {
+    "status": "Same-source installed-wheel02827 flag-only development comparison; no production artifact adoption",
+    "source_commit": "c4f1249",
+    "source_files": {
+      "src/ck/countyproof.py": "be04beeba860ecda826dfd4f048c60f5a0c01fbbdc1d4b6446cbefd590b88a6d",
+      "src/ck/streetlabels.py": "4faec7f4a9998e683b5ed4c9498eeeca93e9611f90e56dc32ac3184a1e46fb3f",
+      "src/ck/streetcoverage.py": "13c2a9f4a3318fb1714559eba26d70936279be7b00b943135b92f06b4d6f05a1",
+      "templates/county-proof.html.j2": "924a867e9dca4bc5bb33e3259cf2328d4afedfd4783f2dda491e99009040e2c9"
+    },
+    "scene_sha256": "623a80d5c3cdaa83805e30c936815fa8ec9fcd237e67779b32b877e8d39d1048",
+    "parent_receipt_sha256": "ca15dda50c3f94af8101c0d1ece324511ea7c6ca19b9ae52d7111439d54cde02",
+    "historical_parent_prototype_sha256": "ae5581757c4b6fac3eda7efcf229dd9c92ef1184c41a3c11104a72a29294295f",
+    "runs": [
+      {
+        "flag": false,
+        "wall_seconds": 8.775241367999115,
+        "cpu_seconds": 8.700638084,
+        "cumulative_peak_rss_kib": 330088
+      },
+      {
+        "flag": true,
+        "wall_seconds": 7.828090235001582,
+        "cpu_seconds": 7.755099208999999,
+        "cumulative_peak_rss_kib": 336448
+      }
+    ],
+    "cold_scene_cache_lifecycle": {
+      "setup_seconds": 0.0005814169999212027,
+      "entries_before_exit": 2163,
+      "capacity": 2163,
+      "entries_after_exit": 0,
+      "source_references_after_exit": 0
+    },
+    "all_rendered_svg_html_pdf_bytes_identical": true,
+    "all_coverage_sheet_and_layout_audits_identical": true,
+    "historical_preparation_producer_unchanged": true,
+    "render_recipe_versions": [
+      "county-scene-render-v1-6892d12abc35445b8e1da6b1274b691e6450d1854ad07d1d92ab04c80252dcf1",
+      "county-scene-render-v1-e2706b37778c2fe42647680ccd28367efb15f32c73df226210ba360779656b53"
+    ],
+    "assets": [
+      {
+        "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827 - Overview.pdf",
+        "sha256": "33cda6cf36216e78e2d41c8d78369c5149e4bedbedda502fac0da7ad3ca7f6be",
+        "size_bytes": 217378
+      },
+      {
+        "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827.pdf",
+        "sha256": "cd23a5475935a803acf6811c08ff6a34436d30b060a34f30cb7d8f0089388703",
+        "size_bytes": 832754
+      },
+      {
+        "path": "audit/I01.svg",
+        "sha256": "ed3b5dbab54502fce07c031aa4c2879c062c25f458a9718b9bc0fee30bf93f56",
+        "size_bytes": 47636
+      },
+      {
+        "path": "audit/I02.svg",
+        "sha256": "182edc9323bdd1b55845e9300324ff159587b8fa4d7ad61ebabdc3c482ec1764",
+        "size_bytes": 35061
+      },
+      {
+        "path": "audit/I03.svg",
+        "sha256": "7d141a88d4dd2da38455717f5303b8b8abd8493bd0d1f031792fa963e367662a",
+        "size_bytes": 19310
+      },
+      {
+        "path": "audit/I04.svg",
+        "sha256": "11ecb00ca41ce19f78bcba6ed3fed2f0ec4f975686ca3cf66ca8cc2f5e2a7028",
+        "size_bytes": 8831
+      },
+      {
+        "path": "audit/I05.svg",
+        "sha256": "196107fc90545bec1708f0308b63f7d4d330b3b1b3b0a0637b1c5514e30a70b1",
+        "size_bytes": 52716
+      },
+      {
+        "path": "audit/Kent County area 02827 - Overview.pdf.html",
+        "sha256": "cf38374ee6bea4208f3d4b0c15770f5885bab7c5e0277ebfd0f8b26b76e3afb3",
+        "size_bytes": 591632
+      },
+      {
+        "path": "audit/Kent County area 02827.pdf.html",
+        "sha256": "b4d05f89b0d60bc8a3e19822a5f6f9f0f145e25acc040b5b137c634af26fa130",
+        "size_bytes": 1357732
+      },
+      {
+        "path": "audit/R1C1.svg",
+        "sha256": "fb8b06321ebcf940896dcfb886729d496f8a04e2e7bef14eb72cacf6baca4266",
+        "size_bytes": 98827
+      },
+      {
+        "path": "audit/R1C2.svg",
+        "sha256": "6e93e6ee39a23eba11701609542afa6def17fb7e551d1e1ff1520fb9b96908c2",
+        "size_bytes": 77736
+      },
+      {
+        "path": "audit/R1C3.svg",
+        "sha256": "db199aba29201121c408e64c9b43fe7862f2d20a5e5cdc0c9d80eb3f00212c26",
+        "size_bytes": 113926
+      },
+      {
+        "path": "audit/R2C1.svg",
+        "sha256": "c443014349e4afde65296d44e4046059bede08253f5926e368cfcaef3f42735f",
+        "size_bytes": 95050
+      },
+      {
+        "path": "audit/R2C2.svg",
+        "sha256": "e0b799bbe44c8162cc96ba32e971bd4aad5d1a4b94daf2efd8a63f99d1b41081",
+        "size_bytes": 147563
+      },
+      {
+        "path": "audit/R2C3.svg",
+        "sha256": "69eede1e89a8342b97b7abe3a6dcba6536fe250fdb661db386e9049bb1c646fc",
+        "size_bytes": 232924
+      },
+      {
+        "path": "audit/R3C1.svg",
+        "sha256": "5f638a459538e02edca82e3bdfa8ac45b5c5789a3c225f44f5cd14357a99eeac",
+        "size_bytes": 111919
+      },
+      {
+        "path": "audit/R3C2.svg",
+        "sha256": "2ab0962eda133a41b96d9e88ea486f026223fce9f66a0f5fa6b824990d754d0c",
+        "size_bytes": 152598
+      },
+      {
+        "path": "audit/locator.svg",
+        "sha256": "4139918fe98b892fd1b493acb82c08efa3d865e149314558ac1c7aa5cce5a934",
+        "size_bytes": 153634
+      },
+      {
+        "path": "audit/overview.svg",
+        "sha256": "fddecae6f7f39ce1d13f6306f3ea9043730f71b4283d3f8f6aebf3c3265fbc48",
+        "size_bytes": 588191
+      }
+    ],
+    "pdfs": [
+      {
+        "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827 - Overview.pdf",
+        "sha256": "33cda6cf36216e78e2d41c8d78369c5149e4bedbedda502fac0da7ad3ca7f6be",
+        "size_bytes": 217378
+      },
+      {
+        "path": "3_MAPS_AND_PLACES/RI/Kent County/Kent County area 02827.pdf",
+        "sha256": "cd23a5475935a803acf6811c08ff6a34436d30b060a34f30cb7d8f0089388703",
+        "size_bytes": 832754
+      }
+    ],
+    "sheets": 13,
+    "named_ways": 405,
+    "missing_way_ids": [],
+    "coverage_scope": {
+      "kind": "authenticated_parent_county_part",
+      "whole_county": false,
+      "part_id": "P04",
+      "zctas": [
+        "02827"
+      ]
+    },
+    "timing_limitations": "One serial false/true pair; fonts/OS caches/order/VM load may affect timings. Cold geometry context includes setup; not a full county/national or device-performance claim."
+  },
+  "one_dense_sheet_installed_api_proof": {
+    "status": "Installed-wheel single-sheet diagnostic; no production artifact adopted",
+    "source_commit": "7487808",
+    "prepared_sha256": "7776b9f8f617f713a583d5089bd316dab08c7fbb657ce1c2633f0db6f4d3790a",
+    "source_files": {
+      "src/ck/countyproof.py": "9696dd23c4ca5b06852b6928ed9a7d003fd550d66a16d22c04419877f9fe5502",
+      "src/ck/streetlabels.py": "4faec7f4a9998e683b5ed4c9498eeeca93e9611f90e56dc32ac3184a1e46fb3f"
+    },
+    "actual_package": "/output/installed/ck/__init__.py",
+    "runs": {
+      "default": {
+        "wall_seconds": 4.463889142003609,
+        "cpu_seconds": 4.4530147300000005,
+        "svg_sha256": "33d28a7a5a3f6eb7053e08dd1e130b16c554ff6579e006f5dcc8d17024a71ef5",
+        "audit_sha256": "d81542afe2b60215b13210353aa52efa81b32bf662ae0c90004cacaa42943c18"
+      },
+      "cold_cache": {
+        "wall_seconds": 4.1165962209997815,
+        "cpu_seconds": 4.0989958600000005,
+        "svg_sha256": "33d28a7a5a3f6eb7053e08dd1e130b16c554ff6579e006f5dcc8d17024a71ef5",
+        "audit_sha256": "d81542afe2b60215b13210353aa52efa81b32bf662ae0c90004cacaa42943c18"
+      },
+      "warm_cache": {
+        "wall_seconds": 3.4607170759991277,
+        "cpu_seconds": 3.4501024420000004,
+        "svg_sha256": "33d28a7a5a3f6eb7053e08dd1e130b16c554ff6579e006f5dcc8d17024a71ef5",
+        "audit_sha256": "d81542afe2b60215b13210353aa52efa81b32bf662ae0c90004cacaa42943c18"
+      }
+    },
+    "input_source_order_sha256": "396b9b48a07383de2b207b05a70874a78fadd43ff195a3389cb2a6c2a37af620",
+    "cache_setup_wall_seconds": 0.014590112004952971,
+    "peak_cache_entries": 31017,
+    "cache_capacity": 31017,
+    "cache_entries_after_exit": 0,
+    "source_references_after_exit": 0,
+    "all_svg_and_full_audits_exactly_equal": true,
+    "actual_sheet": {
+      "ways": 4106,
+      "labels": 574,
+      "missing_labels": 249
+    },
+    "peak_rss_kib": 309548,
+    "wheel_files": [
+      {
+        "path": "common_knowledge-0.1.0-py3-none-any.whl",
+        "sha256": "6928e45c14aae1bb4fdca373b3834413f0aa0fb04e7a56ed9305845b54a688ea",
+        "size_bytes": 212941
+      }
+    ]
+  },
+  "observed_leaf_wall_reduction_fraction": 0.10793448217293844,
+  "important_limits": [
+    "This is one serial false/true pair on one partial county leaf, not a statistical benchmark or whole-county/national speedup.",
+    "OS/font caches, order, and shared VM load may affect timing; cold geometry context setup is included.",
+    "The prepared scene retains partial county scope, original dates, review holds, and original preparation identity.",
+    "Default rendering and collision/coverage logic are unchanged; render metadata now separately binds the effective cache flag, actual source files, policy, and preparation producer.",
+    "No Shapely objects are serialized into scenes, audits, or receipts. Geometry dictionaries must remain immutable during the context.",
+    "No Rust, GPU, Metal, new dependencies, or upstream version changes."
+  ],
+  "receipts": {
+    "build/scene-cache-160/installed.log": "1806d039fe4932c8605c31c5d7d8a55b2bf7c793755d92baf23dab3791514658",
+    "build/scene-cache-160/installed-comparison.json": "dec397f0d1b4c68e21cedf059fe1c70140575a551d412529c474cc92c5a9c47b",
+    "build/scene-cache-160/leaf-pair.log": "4f2c5594767f7770db071361d95ed665efcbee8bc2cae6806c561ddbcaa517c6",
+    "build/scene-cache-160/leaf-pair/comparison.json": "6d8acb1c4d917a93d5d52b21021279f2b5537af4e036c7c9d8a1bee79265655b",
+    "build/scene-cache-160/final-wheels/common_knowledge-0.1.0-py3-none-any.whl": "1705990c34ef84160c3a0d021ca5239d32b67e5530d7322e846fe9c1fa5eed48"
+  }
+}

@@ -36,3 +36,14 @@ including source order, unnamed roads, disconnected same-name streets, water,
 and unplaceable labels. They also check bounded foreign-input rejection,
 exception cleanup, object release, and fresh-scene behavior. This optimization
 does not clear missing labels, change review status, or establish phone acceptance.
+
+The same-source installed-wheel 02827 comparison rendered 13 detail sheets and
+two PDFs with caching disabled and enabled. Every SVG, HTML file, PDF byte, and
+coverage/layout audit matched. It retained 405 named source ways with none
+missing, and retained partial-county status. Render-only wall time was 8.78 s
+without caching and 7.83 s with a fresh scene cache; setup took 0.00058 s, and
+all 2,163 cache entries/source references were released after completion. This
+single serial pair is development evidence, not a statistical or full-build
+speedup claim. Both source and installed-wheel focused suites passed 52 tests.
+[Exact evidence](../evidence/scene-geometry-cache-2026-11-01.json) retains the
+original scene, renderer, wheel, payload, and external receipt hashes.
