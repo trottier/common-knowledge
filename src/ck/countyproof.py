@@ -938,6 +938,7 @@ def run(
     policy["pdf_budget_source_sha256"] = sha(pdf_budget_config)
     policy["pdf_budget"] = budget
     data = prepare(root, cache, basemap, points, zip_source, policy)
+    prepared_seconds = time.monotonic() - started
     data["producer"] = producer_recipe(root, policy_path)
     output.parent.mkdir(parents=True, exist_ok=True)
     (output.parent / (output.name + "-counts.json")).write_text(
@@ -956,6 +957,7 @@ def run(
                     {road["name"] for road in data["roads"] if road["name"]}
                 ),
                 "settlements": data["settlements"],
+                "prepare_seconds": prepared_seconds,
             },
             indent=2,
         )
@@ -964,7 +966,12 @@ def run(
     if counts_only:
         print("Preflight counts only; no PDFs rendered and no complete-county claim")
         return
+    render_started = time.monotonic()
     result = render(root, data, output)
+    result["stage_timings"] = {
+        "prepare_seconds": prepared_seconds,
+        "render_seconds": time.monotonic() - render_started,
+    }
     result["elapsed_seconds"] = time.monotonic() - started
     result["peak_rss_kib"] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     result["cgroup"] = {

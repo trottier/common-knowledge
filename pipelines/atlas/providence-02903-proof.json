@@ -66,5 +66,6 @@
   "geometry_expected_zctas": [
     "02892",
     "02903"
-  ]
+  ],
+  "expected_poi_count": 26
 }

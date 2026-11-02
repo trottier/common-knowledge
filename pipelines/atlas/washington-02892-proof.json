@@ -59,12 +59,13 @@
   ],
   "max_inset_depth": 5,
   "scale_bar_max_width_mm": 40,
-  "area_name": "Washington County area",
+  "area_name": "West Kingston area",
   "scope_zctas": [
     "02892"
   ],
   "geometry_expected_zctas": [
     "02892",
     "02903"
-  ]
+  ],
+  "expected_poi_count": 3
 }
