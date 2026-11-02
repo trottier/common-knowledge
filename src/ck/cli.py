@@ -26,6 +26,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     explore.add_argument("--label", help="Display label; defaults to the configured volume label")
     explore.add_argument("--notice", default="Development preview; device tests pending.")
     explore.add_argument("--ui-path", type=Path, help="Override the repository explorer assets")
+    export = commands.add_parser("export-preview", help="Export an actual drive for static hosting")
+    export.add_argument("--drive", type=Path, required=True)
+    export.add_argument("--output", type=Path, required=True)
+    export.add_argument("--label", help="Display label; defaults to the configured volume label")
+    export.add_argument("--notice", default="Incomplete development preview; device tests pending.")
+    export.add_argument("--ui-path", type=Path)
     validate = commands.add_parser("validate", help="Validate configuration and catalog")
     validate.add_argument("--release", action="store_true")
     review = commands.add_parser("review-report", help="Inventory every remaining release gate")
@@ -315,6 +321,25 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         if args.command is None:
             parser.print_help()
+            return 0
+        if args.command == "export-preview":
+            from ck.config import read_yaml
+            from ck.drive_export import export_preview
+
+            print(
+                json.dumps(
+                    export_preview(
+                        args.drive,
+                        args.ui_path or args.root / "pipelines/drive_preview",
+                        args.output,
+                        label=args.label
+                        if args.label is not None
+                        else read_yaml(args.root / "config/build.yaml")["volume_label"],
+                        notice=args.notice,
+                    ),
+                    indent=2,
+                )
+            )
             return 0
         if args.command == "explore":
             from ck.config import read_yaml

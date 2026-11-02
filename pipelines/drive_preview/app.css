@@ -220,9 +220,9 @@ line-height:1.7}
 .message[hidden]{display:none}
 .drive-notice{font-size:10px;
 line-height:1.6;
-background:#fff8e8;
-border-bottom:1px solid #f2e6c7;
-color:#796132;
+background:#f7f8fa;
+border-bottom:1px solid #e8ecf1;
+color:#657286;
 padding:10px 19px;
 overflow-wrap:anywhere}
 button:focus-visible,a:focus-visible{outline:2px solid #2276dc;
