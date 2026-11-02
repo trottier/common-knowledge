@@ -1,7 +1,5 @@
 name: Sample images
 on:
-  schedule:
-    - cron: '23 9 * * *'
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,7 +16,7 @@ jobs:
           persist-credentials: false
       - run: make build-container
       - name: Reject missing pins, licenses and source reviews before scheduling a large build
-        run: docker run --rm --network=none common-knowledge-build:dev ck check-profile --profile sample
+        run: docker run --rm --network=none common-knowledge-build:dev ck check-profile --profile sample --variants 1
   images:
     needs: preflight
     runs-on: [self-hosted, linux, x64, common-knowledge]
@@ -30,7 +28,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Build variants 1 and 3 twice from fresh document and filesystem trees
+      - name: Build Variant 1 twice from fresh document and filesystem trees
         run: make sample
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:

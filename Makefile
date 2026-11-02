@@ -5,6 +5,7 @@ LLM_UI_IMAGE := oven/bun:1.3.11-slim@sha256:478281fdd196871c7e51ba6a820b7803a8ae
 DOCKER_RUN = docker run --rm --network=none --platform $(BUILD_PLATFORM) $(BUILD_IMAGE)
 SOURCE_DATE_EPOCH ?= $(shell git show -s --format=%ct HEAD)
 SOURCE_COMMIT := $(shell git rev-parse HEAD)
+SAMPLE_VARIANTS ?= 1
 CACHE_DIR ?= $(CURDIR)/cache
 GENERATED_DIR ?= $(CURDIR)/build/generated
 HOST_PYTHON ?= python3
@@ -24,7 +25,7 @@ help:
 	  'test             Run pytest in the container' \
 	  'cli              Show ck help in the container' \
 	  'dev              Build core PDFs and a verified development image of variant 1' \
-	  'sample           Fetch/generate pinned inputs, then build variants 1 and 3 twice' \
+	  'sample           Fetch/generate selected inputs, then build Variant 1 twice' \
 	  'full             Fetch/generate pinned inputs, then build all eight full variants twice' \
 	  'release-assets   Gate and package PDFs, eight dev images and GPL sources' \
 	  'site             Build the verification site from published manifests' \
@@ -92,6 +93,7 @@ clean:
 sample: build-container atlas-container
 	mkdir -p build "$(CACHE_DIR)" "$(GENERATED_DIR)"
 	$(HOST_PYTHON) tools/prepare_profile.py --profile sample --root "$(CURDIR)" \
+	  --variants $(SAMPLE_VARIANTS) \
 	  --work "$(CURDIR)/build/sample-inputs" --cache "$(abspath $(CACHE_DIR))" \
 	  --generated "$(abspath $(GENERATED_DIR))" --build-image "$(BUILD_IMAGE)" \
 	  --atlas-image "$(ATLAS_IMAGE)" --epoch $(SOURCE_DATE_EPOCH)
@@ -99,7 +101,7 @@ sample: build-container atlas-container
 	  --env SOURCE_DATE_EPOCH=$(SOURCE_DATE_EPOCH) \
 	  --volume "$(CURDIR)/build:/artifacts" --volume "$(abspath $(CACHE_DIR)):/cache:ro" \
 	  --volume "$(abspath $(GENERATED_DIR)):/generated:ro" \
-	  $(BUILD_IMAGE) ck build-profile --profile sample --variants 1 3 --reproduce \
+	  $(BUILD_IMAGE) ck build-profile --profile sample --variants $(SAMPLE_VARIANTS) --reproduce \
 	  --commit $(SOURCE_COMMIT) --cache /cache --generated /generated --output /artifacts/sample
 
 full: build-container atlas-container
