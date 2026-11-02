@@ -8,8 +8,8 @@
     "sha256": "0d47a0c0c0ca5b736d8b7a0f4046df365f28e087ae4ee03ead0bcf726ff7266b"
   },
   "repository_base": {
-    "commit": "586fcdf",
-    "agents_sha256": "cbbe5c3fe8bbaac228b9d426f97368a68f68642a302dc4d1abe861c0a96056bb"
+    "commit": "875512ea1fa96d8a64a9b855be7a85a8135f7419",
+    "agents_sha256": "11e982b316dbd91fd41998064cac70a6125f5f8924672b2829cfd0ea87825ca2"
   },
   "adopted": {
     "files": [
@@ -17,9 +17,9 @@
       "CLAUDE.md",
       "AGENTS.current.md"
     ],
-    "sha256": "11e982b316dbd91fd41998064cac70a6125f5f8924672b2829cfd0ea87825ca2",
+    "sha256": "0fc38af1c2b9492e56be8e4f2ae5f87c6754fad534eaea52187c02b9fa8f6e61",
     "diff_from_publisher": "AGENTS.current.diff",
-    "diff_sha256": "157ddb9322e1204bbcc7413ba369f2ffdc5d3d86e7be4a314bf32dbe8f4f2895"
+    "diff_sha256": "4822660a1315e91e4e754b34e480282c4583016ae9ae9e71f5448db701c113af"
   },
   "preserved_decisions": [
     "offline_ai_enabled exists only in config/variants.yaml; v0.1 omits AI",
@@ -32,7 +32,55 @@
   "latest_user_rules": [
     "quiet provenance/build/AI process fine print distinct from practical instructions",
     "host only representative samples while local Variant1 tree expands",
-    "Bun by default for new compatible JS tooling, RTK every shell command"
+    "Bun by default for new compatible JS tooling, RTK every shell command",
+    "test installed-wheel runtime resource paths in the intended pinned container as well as source imports",
+    "keep opening warning conditions and trailing citations with their supported phone-page passages",
+    "render hosted map samples from authenticated cached vectors and subset verified fonts; do not assume page extraction removes shared resources",
+    "group copy-index filenames and sizes beneath a shared parent heading; retain the complete declared inventory"
   ],
-  "status": "Policy adoption only; no new security implementation, human approval, signing, manufacturing authorization, or physical-device acceptance is established."
+  "status": "Instruction update only. Historical artifacts retain their original document hashes, producer recipes, input pins, and review status. No human approval, signing, manufacturing authorization, or physical-device acceptance is established.",
+  "history": [
+    {
+      "event": "Initial repository adoption; preserve this document/diff identity for historical artifacts",
+      "adoption_commit": "8c417b78c511b6870877fe3bb50c52e32591d8b8",
+      "record": {
+        "publisher_input": {
+          "file": "AGENTS (6).md",
+          "sha256": "1221be09f93c0e8e265f3008f12f72efb43acadce9f8ba3e147664ff5c6b7a69"
+        },
+        "publisher_supplied_diff": {
+          "file": "AGENTS.md (4).diff",
+          "sha256": "0d47a0c0c0ca5b736d8b7a0f4046df365f28e087ae4ee03ead0bcf726ff7266b"
+        },
+        "repository_base": {
+          "commit": "586fcdf",
+          "agents_sha256": "cbbe5c3fe8bbaac228b9d426f97368a68f68642a302dc4d1abe861c0a96056bb"
+        },
+        "adopted": {
+          "files": [
+            "AGENTS.md",
+            "CLAUDE.md",
+            "AGENTS.current.md"
+          ],
+          "sha256": "11e982b316dbd91fd41998064cac70a6125f5f8924672b2829cfd0ea87825ca2",
+          "diff_from_publisher": "AGENTS.current.diff",
+          "diff_sha256": "157ddb9322e1204bbcc7413ba369f2ffdc5d3d86e7be4a314bf32dbe8f4f2895"
+        },
+        "preserved_decisions": [
+          "offline_ai_enabled exists only in config/variants.yaml; v0.1 omits AI",
+          "variant and other variants terminology",
+          "fast English/single-county loop and deferred new image-verifier development",
+          "all named source-way street coverage, ZIP-area overview, and POI index closure",
+          "split only when measured limits require it",
+          "Census language selection exception, nominal32GB capacity clarification, and manifest self-hash exception"
+        ],
+        "latest_user_rules": [
+          "quiet provenance/build/AI process fine print distinct from practical instructions",
+          "host only representative samples while local Variant1 tree expands",
+          "Bun by default for new compatible JS tooling, RTK every shell command"
+        ],
+        "status": "Policy adoption only; no new security implementation, human approval, signing, manufacturing authorization, or physical-device acceptance is established."
+      }
+    }
+  ]
 }
