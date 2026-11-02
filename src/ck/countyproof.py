@@ -576,12 +576,15 @@ def zip_overlay(data: dict, frame, pixel):
     return "".join(areas), "".join(labels), reserved
 
 
-def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict]:
+def svg_map(
+    data: dict, bounds: list, overview: bool = False, *, geometry_cache=None
+) -> tuple[str, dict]:
     from ck.streetlabels import street_labels
 
     width, height = data["policy"]["map_width_mm"], data["policy"]["map_height_mm"]
     west, south, east, north = bounds
     frame = box(*bounds)
+    source_shape = geometry_cache.shape if geometry_cache is not None else shape
 
     def pixel(x, y):
         return (x - west) / (east - west) * width, (north - y) / (north - south) * height
@@ -595,7 +598,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
     ]
     vertex_count = 0
     for entry in data["water"]:
-        geometry = shape(entry).intersection(frame)
+        geometry = source_shape(entry).intersection(frame)
         path = geometry_path(geometry, pixel)
         if path:
             svg.append(f'<path d="{path}" fill="#daeef8" fill-rule="evenodd"/>')
@@ -614,7 +617,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         "unclassified": 6,
     }
     for road in data["roads"]:
-        clipped = shape(road["geometry"]).intersection(frame)
+        clipped = source_shape(road["geometry"]).intersection(frame)
         segments = list(lines(clipped))
         if not segments:
             continue
@@ -668,6 +671,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
             *zip_reserved,
             *town_reserved,
         ],
+        geometry_cache=geometry_cache,
     )
     placed = label_audit["placed_labels"]
     settlement_labels = []
