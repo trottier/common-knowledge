@@ -9959,6 +9959,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `3ed41278d637dc249e0323306f68be8a6c234e3090f4de88ef328dee71aeaaaf`
 - Publisher file: https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt
 
+## Census 2020 ZCTAs 02892 and 02903, bounded Rhode Island benchmark geometry
+
+- Catalog id: `census_zcta_ri_bench_2020`
+- Version: January 1, 2020 geography; HTTPS query captured 2026-11-02 UTC
+- License: US-PD
+- Attribution: U.S. Census Bureau, Census 2020 TIGERweb ZCTAs 02892 and 02903
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf
+- Size: 133681 bytes
+- SHA-256: `15a1e41af65d9e0bb0d83c1e56bbea49df5ee3110ad3e505b05c2c8ffea6274f`
+- Publisher file: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702903%27%2C%2702892%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson
+
 ## Tying off onto the middle of a rope — normalized video
 
 - Catalog id: `commons_rope_middle`
