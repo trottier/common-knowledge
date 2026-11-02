@@ -55,6 +55,25 @@ def test_numbering_and_missing_addresses_are_not_guessed():
     assert places[1].address == ""
 
 
+def test_source_offer_excludes_outside_county_records_and_preserves_original_fields():
+    proof, public, original = fixtures()
+    public.update(
+        attribution="Original attribution",
+        license_notice="ODbL-1.0",
+        license_url="https://opendatacommons.org/licenses/odbl/1-0/",
+        source_versions={"fixture": "original date", "unused": "unrelated"},
+    )
+    public["places"].append({**place(99).model_dump(exclude={"tags"}), "county": "44003"})
+    original["places"].append({**place(99).model_dump(), "county": "44003"})
+    places = tool.selected_places(proof, public, original)
+    offer = tool.county_source_offer(public, places, "original-input-hash")
+    assert len(offer["places"]) == 33
+    assert all(row["county"] == "44001" for row in offer["places"])
+    assert offer["source_versions"] == {"fixture": "original date"}
+    assert offer["places"] == public["places"][:33]
+    assert offer["license_notice"] == public["license_notice"]
+
+
 @pytest.mark.parametrize(
     "mutation", ["reorder", "missing", "duplicate", "sensitive", "changed", "another-county"]
 )

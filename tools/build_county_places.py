@@ -11,7 +11,6 @@ from pypdf import PdfReader
 from pyproj import Transformer
 from weasyprint import HTML
 
-from ck.assemble import copy_exact
 from ck.config import load_config, read_yaml
 from ck.directory import Place, plain
 from ck.fetch import digest
@@ -20,7 +19,7 @@ from ck.render import OfflineFetcher, font_files, pdf_timestamp, render_html
 from tools.assemble_inspection_preview import confined_file
 
 TARGET = "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County - Places.pdf"
-SOURCE = "SOURCE/RI_SOURCE_DATA.json"
+SOURCE = "SOURCE/Bristol County SOURCE_DATA.json"
 
 
 def selected_places(proof, public, original):
@@ -103,17 +102,6 @@ def authenticate(proof_dir, proof_sha256, directory):
         raise ValueError("Original source data differs")
     public = json.loads(source.read_text())
     original = json.loads(confined_file(directory, "places.json").read_text())
-    # The unchanged source JSON includes the whole historical state, so validate all
-    # its original records before retaining that file as the public source offer.
-    all_original = {row["id"]: Place.model_validate(row) for row in original["places"]}
-    if len(all_original) != len(original["places"]) or len(public["places"]) != len(all_original):
-        raise ValueError("Whole historical source membership differs")
-    for row in public["places"]:
-        if (
-            row["id"] not in all_original
-            or all_original[row["id"]].model_dump(exclude={"tags"}) != row
-        ):
-            raise ValueError("Whole historical source record differs")
     places = selected_places(proof, public, original)
     refs = point_references(proof, places)
     detail = next(row for row in proof["files"] if Path(row["path"]).name == proof["detail_pdf"])
@@ -178,11 +166,31 @@ def body_text(proof, places, refs):
         "and physical-phone review remain open.",
         "",
         "> © OpenStreetMap contributors; NCES; IMLS; FCC. OpenStreetMap data: ODbL-1.0. "
-        "Original source data and its license notice are in SOURCE/RI_SOURCE_DATA.json. "
+        "County source data and its license notice are in SOURCE/Bristol County SOURCE_DATA.json. "
         "Keep SOURCE and SOURCE.TXT with this PDF when sharing.",
         "",
     ]
     return "\n".join(body)
+
+
+def county_source_offer(public, places, source_sha256):
+    """Publish only the allowed county records, with exact source versions and obligations."""
+    if len(places) != 33 or any(place.county != "44001" for place in places):
+        raise ValueError("Source offer must contain only the 33 checked Bristol records")
+    return {
+        "status": "Incomplete historical county extract; no new source records or human approval",
+        "attribution": public["attribution"],
+        "license_notice": public["license_notice"],
+        "license_url": public["license_url"],
+        "original_historical_source_sha256": source_sha256,
+        "source_versions": {
+            key: public["source_versions"][key] for key in sorted({p.source_id for p in places})
+        },
+        "derivation": "Select the 33 county 44001 records in authenticated overview order; "
+        "validate their original tags against the directory exclusions; omit all other counties, "
+        "county profiles, and unrelated records. Retain original place fields and source dates.",
+        "places": [place.model_dump(exclude={"tags"}) for place in places],
+    }
 
 
 def build(*, root, cache, proof_dir, proof_sha256, directory, output, tool_image):
@@ -245,16 +253,26 @@ def build(*, root, cache, proof_dir, proof_sha256, directory, output, tool_image
     ):
         raise ValueError("A numbered place did not survive rendering")
     source_target = pdf.parent / SOURCE
-    copy_exact(source, source_target, digest(source))
+    source_target.parent.mkdir()
+    source_target.write_text(
+        json.dumps(
+            county_source_offer(json.loads(source.read_text()), places, digest(source)),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n"
+    )
     notice = pdf.parent / "SOURCE.TXT"
     original_attribution = json.loads(source.read_text())["attribution"]
     notice.write_text(
         "Bristol County public places — incomplete local draft\n" + original_attribution + ".\n"
         "OpenStreetMap data: Open Database License 1.0 (ODbL-1.0).\n"
         "https://opendatacommons.org/licenses/odbl/1-0/\n"
-        "Original historical public data, including its source versions and license notice:\n"
-        "SOURCE/RI_SOURCE_DATA.json (unchanged original bytes).\n"
-        "Only the 33 Bristol County records are presented in the companion PDF.\n"
+        "County-only source data, original source dates, and license notice:\n"
+        "SOURCE/Bristol County SOURCE_DATA.json\n"
+        "Pinned derivation: retain the 33 original Bristol County records in overview order,\n"
+        "check original tags against directory exclusions, and omit all other counties.\n"
+        "Original full-state source remains an external authenticated build input.\n"
         "Their numbers match 0_OVERVIEW.pdf. No new source records were added.\n"
         "Map references are calculated from the authenticated current detail sheet bounds.\n"
         "Source, safety, completeness, and physical-phone review remain open.\n"
