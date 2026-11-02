@@ -65,11 +65,10 @@ bars: a street name found only in an index or heading does not establish that
 the map labels it. `prototype.json` records input hashes,
 producer files, policy, output sizes, hashes, and measured resource use.
 
-The first all-street render (A) is held because its fixed scale bar did not
-remain within the reserved space on enlarged sheets. It is historical evidence,
-not a final artifact. The corrected B repeat is pending; its actual PDFs,
-coverage, pagination, scale bars, and byte limits must pass inspection before
-adoption. No final B measurements are claimed here.
+Each sheet computes its scale bar from its actual projected extent. The ruler
+uses a suitable distance and stays inside its reserved label-free space at
+every inset depth. Inspect the actual PDFs, labels, pagination, scale bars, and
+byte limits before adoption; a successful generation exit alone is insufficient.
 
 This is an unreviewed development proof, not a complete sample or a new national
 atlas pin. Its historical directory has 33 county entries; that does not
