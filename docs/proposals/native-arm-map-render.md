@@ -26,3 +26,19 @@ county or pipeline. Preserve the canonical amd64 recipes and old artifacts,
 and keep the native image an explicit development choice until broader frozen
 comparisons pass. This experiment changes no release platform or default flag.
 It measures CPU-native rendering and caching; no GPU or Rust path was added.
+
+A broader fresh core pair used frozen source 137 at 3a2beff with AI disabled,
+all 15 editions, six identical pinned fonts, fixed `/source`, `/cache`, and
+`/output` paths, and epoch 1793404800. Both 1 CPU/3 GiB builds ran serially with
+networking disabled. Every output file matched: 38 PDFs, 38 HTML files, their
+manifests, and bundles. The PDFs contain 317 pages and 602 bookmarks; all are
+tagged. Page/bookmark/language/text metadata and Arabic/Persian contextual
+HarfBuzz glyph results match. Their actual phone and print HTML is RTL, and
+the PDFs retain the expected language and Arabic-script text.
+
+Observed CLI core-build time was 51.71 s on emulated amd64 and 31.53 s on native
+ARM (about 1.64× for this single pair). This remains benchmark-only output; it
+does not change human review, translation, physical-device, image-reproducibility,
+or default release-platform gates. [Multilingual evidence](../evidence/native-arm-core-2026-11-01.json)
+retains the exact source, fonts, payload hashes, page/bookmark checks, environment,
+and raw receipt bindings.
