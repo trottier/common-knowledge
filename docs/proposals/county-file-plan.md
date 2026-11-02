@@ -21,7 +21,9 @@ After a trigger, the planner considers clipped source ZIP areas and the entire
 county remainder, including islands, water, and gaps. Oversized atoms are
 bisected geographically within explicit depth/work limits. A deterministic
 greedy pass merges neighboring entries in geographic order when their combined
-budget permits. This is not an optimal minimum-file solver. The result checks
+budget permits. This is not an optimal minimum-file solver.
+After a confirmed county failure, an unknown combined budget cannot justify
+merging the natural ZIP/remainder groups again. The result checks
 missing/extra/overlapping area and all supplied county-intersecting way IDs.
 Unnamed ways remain explicit. Context ways outside the county are separately
 reported; their absence from county ownership is not permission to omit visible

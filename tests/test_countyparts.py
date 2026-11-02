@@ -141,6 +141,25 @@ def test_intersecting_sheet_guard_does_not_reject_empty_rectangle_cells():
     assert len(plan_county_parts(data, unknown, limits())["parts"]) == 1
 
 
+def test_unknown_merge_cannot_reconstitute_a_county_with_an_actual_page_failure():
+    data = fixture()
+    county = shape(data["county"])
+
+    def measured_whole_only(geometry, codes):
+        if geometry.equals(county):
+            return {
+                "kind": "measured",
+                "page_limit_exceeded": True,
+                "evidence": "Synthetic actual whole-county label cap",
+            }
+        return unknown(geometry, codes)
+
+    result = plan_county_parts(data, measured_whole_only, limits())
+    assert len(result["parts"]) == 3
+    assert all(part["budget"]["kind"] == "unknown" for part in result["parts"])
+    assert union_all([shape(part["geometry"]) for part in result["parts"]]).equals(county)
+
+
 @pytest.mark.parametrize(
     "change,match",
     [

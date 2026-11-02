@@ -176,7 +176,11 @@ def plan_county_parts(data, evaluate, limits):
             atoms, key=lambda g: (g.bounds[0], -g.bounds[3], normalize(g).wkb_hex)
         ):
             merged = geometries[-1].union(geometry) if geometries else geometry
-            if geometries and not budget(merged)["cap_failures"]:
+            if (
+                geometries
+                and budget(merged)["kind"] != "unknown"
+                and not budget(merged)["cap_failures"]
+            ):
                 geometries[-1] = merged
             else:
                 geometries.append(geometry)
