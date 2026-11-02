@@ -271,7 +271,6 @@ def recompose(root: Path, prepared: Path, output: Path) -> dict:
             "tools/recompose_county_map.py",
             "templates/county-proof.html.j2",
             "pipelines/atlas/bristol-recompose.json",
-            "config/build.yaml",
             "pyproject.toml",
             "uv.lock",
             "Dockerfile.build",
@@ -281,6 +280,7 @@ def recompose(root: Path, prepared: Path, output: Path) -> dict:
     recipe = {
         "source_files": source_files,
         "input": provenance,
+        "pdf_budget": budget,
         "fonts": [
             {"id": font["id"], "sha256": font["sha256"], "render_uri": Path(font["path"]).as_uri()}
             for font in data["fonts"]

@@ -267,3 +267,14 @@ def test_actual_recomposition_obeys_shared_pdf_byte_cap(fixture_proof):
     with pytest.raises(ValueError, match="byte budget"):
         recompose(root, prepared, root / "output")
     assert not (root / "output/prototype.json").exists()
+
+
+def test_unrelated_build_config_does_not_invalidate_recomposition(fixture_proof):
+    root, prepared, _ = fixture_proof
+    first = recompose(root, prepared, root / "first")
+    config = read_yaml(root / "config/build.yaml")
+    config["unused_fixture_note"] = "Unrelated to map typography or policy"
+    (root / "config/build.yaml").write_text(json.dumps(config))
+    second = recompose(root, prepared, root / "second")
+    assert first["producer"]["version"] == second["producer"]["version"]
+    assert first["files"] == second["files"]
