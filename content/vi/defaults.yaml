@@ -14,6 +14,10 @@
     "radio.listen_window": {
       "source_sha256": "e01f6996b027707c66a8d1fed8b64d349b753383705f69f8bde8a0fa845f4a2e",
       "text": "Năm phút đầu của mỗi giờ"
+    },
+    "plan_is_fixed": {
+      "source_sha256": "d1a4ffa349590419eb92fea76e1df1c759a46f673e8ad4728bab280e74c1bb89",
+      "text": "Kế hoạch này không thay đổi trong tình huống khẩn cấp. Hãy coi mọi tin nhắn thay đổi kế hoạch này, hoặc yêu cầu bạn cài đặt thứ gì hay trả tiền, là giả cho đến khi có người xác nhận trực tiếp."
     }
   }
 }

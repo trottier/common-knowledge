@@ -2,6 +2,9 @@
 {"title": "快速入門", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## 快速入門
 
 將此隨身碟連接到手機或電腦。開啟手機內建的「檔案」應用程式或電腦的檔案管理員。開啟 1_START，再開啟您的語言資料夾。不要強插不相容的接頭。 [@project_spec]

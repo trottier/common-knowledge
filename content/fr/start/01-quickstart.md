@@ -2,6 +2,9 @@
 {"title": "Guide de démarrage rapide", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Guide de démarrage rapide
 
 Branchez la clé USB au téléphone ou à l’ordinateur. Ouvrez l’application Fichiers intégrée ou le gestionnaire de fichiers. Ouvrez 1_START, puis le dossier de votre langue. Ne forcez pas un connecteur qui ne convient pas. [@project_spec]

@@ -408,6 +408,7 @@ def build_medpdf(
             "src/ck/generated.py",
             "templates/reference.html.j2",
             "templates/source-math.css",
+            "templates/reference-notes.css",
             "pipelines/math/render.mjs",
             "pipelines/math/settings.yaml",
             "templates/document.css",

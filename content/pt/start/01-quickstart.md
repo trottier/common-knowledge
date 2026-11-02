@@ -2,6 +2,9 @@
 {"title": "Guia rápido", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Guia rápido
 
 Conecte a unidade USB ao telefone ou computador. Abra o aplicativo de arquivos integrado ou o gerenciador de arquivos. Abra 1_START e a pasta do seu idioma. Não force um conector que não encaixa. [@project_spec]

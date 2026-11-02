@@ -84,13 +84,19 @@ Rules for the current build machine and agent setup live in `AGENTS.local.md`, w
 - **Keep rights and release gates precise.** Development text may retain visible draft/VERIFY markers. This does not waive unknown rights, excluded licenses, missing permissions, corrupt inputs, or unsafe output. Distinguish a documented build-only use grant from permission to redistribute the original input. Never invent a broader license. Named human review, source-release obligations, and publication gates remain in force for release.
 - **Do not hide blockers.** If a complete sample cannot be assembled, produce an explicitly incomplete local inspection preview and an exact blocker inventory. Do not call it a completed sample, publish it as a release, or silently omit selected cargo. Any preview-only behavior must be explicit and must not weaken normal full/release checks.
 - **Test at the right stage.** Use a fast English, single-county loop for map, folder, and core-layout changes, with the relevant focused checks. Inspect that result in Drive Explorer before an all-edition render or a wider map run. Freeze the coherent milestone's selected inputs, producers, configuration, environment, and epoch before full CI, required language/RTL checks, and reproducibility checks. Keep one active milestone integration PR at a time. Build a browsable tree before a disk image; defer expensive compression and national repeats until the layout and inputs are stable. Existing CI triggers and full/release gates remain in force.
+- **Test installed packages too.** Validate affected runtime paths through the installed wheel in the intended pinned container as well as through source imports. When a function accepts a project root, resolve its project templates and resources from that explicit root. Do not infer a repository checkout from a package's `__file__`: installed packages live under site-packages, and source-only tests can miss that difference.
+- **Inspect complete reading units.** Keep an opening warning and its qualifying conditions together on the phone page. Inspect the actual rendered passage, including the following page, rather than checking only that its words exist in the PDF. Keep a trailing source citation with the sentence, list, or table passage it supports; avoid citation-only pages. Adjust grouping and spacing without dropping conditions or shrinking practical instructions below their required type size.
 - **Keep verification work scoped.** Defer new image-verifier tool development during the current Drive Explorer milestone. Keep existing checksum, manifest, input-verification, reproducibility, verification-site, and release checks; this deferral does not waive them or turn a browser preview into verification of an image.
 - **Persist within scope.** Continue useful authorized work until the milestone is complete or actually blocked. Keep `docs/release-review.md` current; it is a handoff, not an excuse to stop while automatable milestone work remains. Do not invent human approvals or contact rights holders without explicit authorization.
-- **Tooling.** Use Python 3.12 and `uv`. Preserve existing runtimes, lockfiles, and test frameworks; document concrete compatibility exceptions such as the native MapLibre Node ABI.
+- **Tooling.** Prefix every shell command with `rtk`, as instructed in `@/Users/leotrottier/.codex/RTK.md`. Use Python 3.12 and `uv`. Use Bun for new compatible JavaScript and TypeScript dependencies (`bun install`), scripts (`bun run`), executables (`bunx`), and tests (`bun test`). This is not authorization for a broad migration: preserve existing runtimes, test frameworks, deployment contracts, and lockfiles. Use npm, npx, yarn, pnpm, or direct Node only for a concrete compatibility constraint and explain the exception; the existing native MapLibre Node ABI is one example.
 
-### 3.2 Local Drive Explorer
+### 3.2 Drive Explorer: local tree and hosted samples
 
-Drive Explorer is a development inspection website over a real built folder tree. Bind its server to loopback, and keep file access read-only and confined to the selected preview root. Resolve paths safely, reject traversal and escapes through symlinks, and expose only intended preview files. It does not replace the drive's ordinary Files-app interface.
+Drive Explorer is a development inspection website over a real built folder tree. Bind the local inspection server to loopback, and keep file access read-only and confined to the selected preview root. Resolve paths safely, reject traversal and escapes through symlinks, and expose only intended preview files. It does not replace the drive's ordinary Files-app interface.
+
+- **Hosted scope.** Publish only a few explicitly selected, representative samples for phone downloads and browser testing. Continue expanding the actual local Variant 1 tree; do not mirror every local artifact or mistake the hosted subset for the integrated sample. Export only actual, rights-cleared bytes with safe same-origin file/download routes; programs and active documents stay inert. Preserve original filenames, sizes, source provenance, draft status, and selected omissions. Hosted testing does not establish offline USB or physical-phone acceptance.
+
+- **Make hosted samples small from authenticated inputs.** For representative map samples, render the selected authenticated cached vector sections and subset the verified fonts rather than assuming PDF-page extraction discards unused shared resources. Check the resulting file's actual content and bytes. Preserve the selected source bounds/pages, attribution, input hashes, and producer recipe; an extracted or rerendered sample does not become a complete map or a new version of its original artifact.
 
 - Browse actual folders with breadcrumbs, clear sort order, complete filenames, and file sizes. Phone-size presets must let a reviewer inspect long locality/ZIP filenames without losing their full text; preserve verified ZIP gaps and ranges exactly. Show human-readable sizes and make exact byte counts available.
 - Open PDFs with the browser's native PDF viewer, videos with native playback controls, and text as inert escaped text. Use the actual files, rather than fabricated pages, invented metadata, or screenshots standing in for missing cargo. Unknown formats remain clearly identified files.
@@ -190,7 +196,10 @@ mesh:
   channels: { block: "#block", help: "#help" }
   formats: { help: "HELP · {address} · {need}", ok: "OK · {address}" }
   schedule: "Turn on at the top of each hour with the radio window; leave on if power allows."
+plan_is_fixed: "This plan does not change during an emergency. Treat any message that changes it, or asks you to install something or pay, as fake until someone confirms it in person."
 ```
+
+`plan_is_fixed` is the defense against fake messages, including deepfaked officials: because the defaults can never change, a message that tries to change them is false by definition. It prints on the card front and opens START sections 5 and 7.
 
 ### `config/variants.yaml`
 
@@ -263,6 +272,7 @@ volume_label: "EMERGENCY"
 volume_id: "0C0FFEE0"
 site_base_url: "https://trottier.github.io/common-knowledge/"
 source_date_epoch: "[[VERIFY: set at release]]"
+upstream_min_age_days: "[[VERIFY: set by maintainers]]"
 pdf:
   max_file_mb: 10          # provisional engineering guardrail; MB = 1,000,000 bytes
   target_phone_coverage: 0.95
@@ -299,6 +309,7 @@ Rules:
 - Take URLs, versions, sizes, and checksums **only** from the publisher's official pages or checksum files. Where a publisher gives no checksum, download over HTTPS, verify (signer certificate for APKs, `zimcheck` for ZIMs), and pin the hash in a reviewed pull request.
 - APK entries add `signer_cert_sha256` and `source_url`. The release attaches the exact corresponding source archive for every GPL app.
 - `license_proof_url` points to the page that states the license. Items without one cannot be placed.
+- **Waiting period for upstream releases.** Pin a new upstream version (app, archive, library, or base image) only after it has been public for at least `build.yaml: upstream_min_age_days` with no open security advisory. Record the release date in the entry. This guards against a compromised upstream, as in the 2024 xz backdoor.
 - Generated items (atlas, directory, Android map files, medical PDFs) record their **input** items and pipeline version instead of a download URL.
 
 ### Candidate items for v0.1
@@ -363,12 +374,14 @@ It prints a per-variant table and **fails** if any variant overflows, naming the
 - Test older and low-memory handsets as well as current phones, using their built-in Files/PDF viewers and real USB access. Record device, OS, viewer, file, file MB, test procedure, results, and measurement limitations. A few passing devices do not prove 95% installed-base coverage. Any numerical coverage claim needs dated, representative evidence and a documented denominator.
 - Apply the PDF budget to every shipped PDF, including overviews, directories, imported documents, and copy indexes. Split or regenerate through a pinned, license-permitted pipeline when necessary; do not silently blur maps, omit content, alter third-party originals, or ship an oversized file without resolving the budget. Android `.obf`, ZIM, and laptop tile files have separate format-specific budgets.
 - Ordinary instructions remain readable without zoom. Maps are deliberately designed for pinch-zoom and panning; preserve crisp road geometry, road names, route shields, and navigation context at the intended detail scale. Test this behavior rather than assuming it from DPI or file size.
+- **Keep copy indexes concise.** Group actual files under their common parent folder, show that folder once as a heading, then list each exact filename and size. The heading plus filename gives the readable full path; do not repeat that filename inside a full path on every row. Use contents links and bookmarks for the actual folder groups. Keep the required readable type and one-column layout, preserve every file in the index's declared scope, and record exact file hashes and exclusions separately. Compact the navigation without inventing entries, silently omitting files, or imposing an arbitrary page-count target.
 
 ### 9.1 Core documents (START, card, tags)
 
 - Markdown → HTML (Jinja2 templates) → PDF with WeasyPrint.
 - **Phone PDF:** 90 mm × 160 mm pages, base type at least 12 pt, one column, tappable contents page, PDF bookmarks for every heading. **Print PDF:** US Letter.
-- **Card:** half-letter, two-sided, attached to the drive. The front holds the rally rule, meeting times, convener rule, radio channel, mesh channels, write-in blanks (rally point, out-of-area contact, household medications), and three QR codes (videos page, state emergency agencies page, verification page). The back is a large OK/HELP placard and four pictures showing how to open the drive on an iPhone and on an Android phone. The rally-point blank carries the hint "e.g., your building's front entrance" for apartment dwellers. The back also carries one line listing what is on every drive, generated from `variants.yaml` and the plan so it stays accurate, for example: "On every drive: playbooks in 15 languages · how-to videos · maps of every state and territory · medical reference · mesh chat apps. Plus one numbered collection: compare numbers with neighbors." From v0.2 the line adds: "Drives 7 and 8 also include an offline AI assistant; trade with a neighbor if you'd rather not have one."
+- **Card:** half-letter, two-sided, attached to the drive. The front holds the rally rule, meeting times, convener rule, radio channel, mesh channels, the `plan_is_fixed` line, write-in blanks (rally point, out-of-area contact, household medications), and three QR codes (videos page, state emergency agencies page, verification page). The back is a large OK/HELP placard and four pictures showing how to open the drive on an iPhone and on an Android phone. The rally-point blank carries the hint "e.g., your building's front entrance" for apartment dwellers. The back also carries one line listing what is on every drive, generated from `variants.yaml` and the plan so it stays accurate, for example: "On every drive: playbooks in 15 languages · how-to videos · maps of every state and territory · medical reference · mesh chat apps. Plus one numbered collection: compare numbers with neighbors." From v0.2 the line adds: "Drives 7 and 8 also include an offline AI assistant; trade with a neighbor if you'd rather not have one."
+- **Printed manifest hashes.** The printed card carries, in small type, the SHA-256 of each variant's `MANIFEST.SHA256` (eight lines, labeled by drive number), so anyone with a laptop can check a drive with no website: hash `MANIFEST.SHA256`, compare it with the card, then run `shasum -a 256 -c MANIFEST.SHA256` (Mac, Linux) or `7_LAPTOP/CHECK_DRIVE.bat` on Windows. The verification site may be down or impersonated during a cyber incident; the card cannot be. The copy of the card stored on the drive omits these hashes, because the card PDF is itself covered by the manifest, and says where to find them.
 - **Tags:** US Letter label sheet: GAS — ¼ TURN — WRENCH HERE; WATER MAIN; MAIN BREAKER; MEDS IN FRIDGE.
 - The card line and every inventory describe what the build actually contains; never mention the offline AI in a build that lacks it.
 - The "How is my drive different?" page is generated from `variants.yaml` and the plan. It first lists what each variant holds (its three topics, its in-depth knowledge collection, and, from v0.2, the offline AI on variants 7 and 8), then explains why drives differ: complementary content gives neighbors a reason to find each other and keeps the cost per drive down.
@@ -380,15 +393,16 @@ It prints a per-variant table and **fails** if any variant overflows, naming the
 2. The first hour.
 3. Shutoffs (gas and when not to, water main, main breaker), plus generator carbon monoxide safety.
 4. Water: hidden sources, and disinfection with EPA dosing quoted and cited.
-5. Meeting your neighbors: rally rule, times, convener rule, the 15-minute meeting script.
+5. Meeting your neighbors: rally rule, times, convener rule, the 15-minute meeting script. Opens with `plan_is_fixed`.
 6. Signals: OK/HELP placard, door check marks.
-7. Communications: FRS channel 3, the bitchat channels, text rather than call, NOAA Weather Radio, satellite SOS, licensing notes.
-8. Maps: finding yourself on the atlas with the iPhone Compass app (it shows degrees, minutes, seconds), the Android map app, the laptop map.
+7. Communications: FRS channel 3, the bitchat channels, text rather than call, NOAA Weather Radio, satellite SOS, and licensing notes. Opens with `plan_is_fixed`. **Spotting fake messages:** real alerts come through Wireless Emergency Alerts, NOAA Weather Radio, and broadcast stations; mesh chat messages are unverified; confirm anything that sends you somewhere new at the next meeting; agree on a family code word to defeat voice-clone calls; never install anything or pay because a message says to.
+8. Maps: finding yourself on the atlas with the iPhone Compass app (it shows degrees, minutes, and seconds), the Android map app, and the laptop map. **Without GPS:** GPS can be jammed or spoofed, so cross-check the phone's position against street signs and the place index; if they disagree, trust the signs. Orient the map with the compass built into the drive.
 9. Medical basics, each with a "no help is coming" branch: bleeding control, hands-only CPR, recovery position, burns, heat illness, hypothermia, oral rehydration, medication continuity.
-10. The offline AI (from v0.2): which drives carry it (7 and 8), what it is, how to start it, and why the printed cards win when they disagree. On other variants this section says only that drives 7 and 8 carry it. v0.1 omits this section.
-11. How is my drive different?
-12. Warnings and use.
-13. Sources.
+10. When computer systems fail: payments, pharmacies, hospitals, and 911 dispatch can go down nationwide at once. Keep some cash in small bills; keep paper copies of medication lists and key documents; ask a pharmacist about emergency refills [[VERIFY: state emergency-refill rules, cited per state]]; expect hospitals and 911 to be slower while they run on paper. Plan to be on your own for longer than in a local disaster.
+11. The offline AI (from v0.2): which drives carry it (7 and 8), what it is, how to start it, and why the printed cards win when they disagree. On other variants this section says only that drives 7 and 8 carry it. v0.1 omits this section.
+12. How is my drive different?
+13. Warnings and use, including how to check this drive against the hashes printed on the card.
+14. Sources.
 
 ### 9.2 Language editions
 
@@ -487,6 +501,7 @@ It prints a per-variant table and **fails** if any variant overflows, naming the
 
 - **Naming.** In all user-facing text, call the model the "offline AI"; never "LLM" or "language model".
 - **Plain language.** Short sentences, one action per line, imperative mood, roughly 6th-grade reading level. Use the Oxford comma.
+- **Practical instructions first.** Keep source citations, provenance, build details, source commits, and AI/process commentary in quiet fine print or a clearly separated details area. Distinguish these from the actions a person needs to take. Keep useful safety instructions, their conditions, essential warnings, and draft/incomplete status in readable normal text; do not hide them as implementation chatter. Quiet citations still stay with the passage they support. In v0.1, omit offline-AI sections and inventory mentions as required above.
 - **When not to.** Every action states when not to do it.
 - **No help is coming.** Every medical and rescue protocol ends with a branch for when 911 does not answer.
 - **Sources.** Every factual claim cites a source id from `content/sources.yaml`. Prefer primary U.S. federal sources. Federal text is public domain; images on federal sites may not be.
@@ -542,9 +557,11 @@ File names must be FAT-safe: none of `\ / : * ? " < > |`, path length under 200 
 
 - **`ci.yml`** (every push and pull request): ruff, pytest, `dev` profile build of all PDFs and variant 1, and an RTL rendering test. Upload artifacts.
 - **`sample.yml`** (on demand first; schedule only when the selected sample is stable): prepare one small state's county maps, directory, Android map, WikEM, and selected apps for Variant 1. Do not fetch AI dependencies in v0.1. First prove Variant 1's browsable tree, phone UX, image, and reproducibility pair; extend to Variant 3 and broader CI coverage afterward. Full release checks remain global.
+- **Two-person signing.** A release that can go to manufacturing needs signatures on `SHA256SUMS` from at least two independent maintainers holding hardware keys, so one compromised account or agent cannot ship an image. The agent never holds a signing key.
+- **Independent rebuilds.** Before manufacturing, at least two outside groups rebuild each full image from the tagged commit and publish matching hashes. Mismatches block the release.
 - **`release.yml`** (tag `v*`): fail on any VERIFY marker or unreviewed medical, legal, or radio content. Publish to the GitHub Release: the PDFs, `dev`-profile images, the catalog lock, `SHA256SUMS`, and GPL source archives. Each file must be under 2 GB.
 - **Full images** are built from the tagged commit on the build machine with `make full`. They are too large for GitHub Releases. Publish their hashes on the Pages site; hosting (object storage, BitTorrent with web seeds, or both) is a human decision [[VERIFY: hosting choice]]. Because every input is pinned, anyone can rebuild and check the hashes.
-- **`pages.yml`:** the verification site, with every image hash, how to check with `sha256sum`, `shasum -a 256`, or `certutil -hashfile`, the catalog with licenses and attributions, and links to the PDFs.
+- **`pages.yml`:** the verification site, with every image hash, every manifest hash (matching the printed card), how to check with `sha256sum`, `shasum -a 256`, or `certutil -hashfile`, the catalog with licenses and attributions, and links to the PDFs.
 
 ## 14. Tests (minimum)
 
@@ -562,6 +579,8 @@ File names must be FAT-safe: none of `\ / : * ? " < > |`, path length under 200 
 - File names are FAT-safe; no executables outside allowed folders; no `autorun.inf`.
 - Drive Explorer lists actual files, preserves full locality/ZIP filenames and sizes at phone widths, previews PDF/video/text without executing binaries, rejects paths outside its preview root, and clearly labels incomplete development trees. Its tests do not count as physical-phone acceptance.
 - The manifest matches the image; the reproducibility test passes in `sample`.
+- The print card's manifest hashes match the built manifests; the on-drive card omits them; `plan_is_fixed` appears verbatim on the card and in START sections 5 and 7 in every edition.
+- Catalog entries record release dates, and none is newer than `upstream_min_age_days` at release.
 
 ## 15. Manual phone and laptop checklist (`docs/phone-test-checklist.md`)
 

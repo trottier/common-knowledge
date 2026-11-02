@@ -8,6 +8,29 @@ export function cleanPath(value) {
 export function fileURL(path) {
   return "/files/" + cleanPath(path).split("/").map(encodeURIComponent).join("/");
 }
+export function safeURL(value, base = globalThis.document?.baseURI || "http://localhost/") {
+  if (typeof value !== "string" || !value || value !== value.trim() || /^[a-z][a-z0-9+.-]*:/i.test(value) || value.startsWith("//") || /[\\\u0000-\u0020\u007f]/u.test(value)) throw new Error("Unsafe preview URL");
+  if (new URL(value, base).origin !== new URL(base).origin) throw new Error("Unsafe preview URL");
+  return value;
+}
+export function entryURLs(entry) {
+  const url = entry.url === undefined ? fileURL(entry.path) : safeURL(entry.url);
+  return {url, download: entry.download_url === undefined ? url : safeURL(entry.download_url)};
+}
+export function manifestURL(value) {
+  return value == null ? "/api/drive" : safeURL(value);
+}
+export function downloadEntries(downloads, entries) {
+  if (downloads === undefined) return [];
+  if (!Array.isArray(downloads)) throw new Error("Invalid map download list");
+  const seen = new Set();
+  return downloads.map(raw => {
+    const path = cleanPath(typeof raw === "string" ? raw : raw?.path);
+    const entry = entries.get(path);
+    if (!entry || entry.kind !== "file" || fileType(entry).type !== "pdf" || isHidden(entry) || !Number.isSafeInteger(entry.size_bytes) || entry.size_bytes < 0 || seen.has(path)) throw new Error("Map download must identify an actual visible PDF");
+    seen.add(path); return entry;
+  });
+}
 export function isHidden(entry) {
   return Boolean(entry.hidden) || entry.path.split("/").some(part => part.toUpperCase() === "BACKUP" || part.startsWith("."));
 }
@@ -33,6 +56,7 @@ export function indexFiles(files) {
     if (!path) continue;
     if (!["directory", "file"].includes(raw.kind)) throw new Error(`Unknown entry kind: ${raw.kind}`);
     const kind = raw.kind;
+    entryURLs({...raw, path});
     if (entries.has(path)) throw new Error(`Duplicate inventory path: ${path}`);
     entries.set(path, {...raw, path, name: path.split("/").pop(), kind});
   }
@@ -138,12 +162,12 @@ function start() {
   async function openFile(entry) {
     closeFile();
     const token = previewToken;
-    const type = fileType(entry), url = fileURL(entry.path);
+    const type = fileType(entry), {url, download} = entryURLs(entry);
     $("preview-title").textContent = entry.name;
     $("preview-type").textContent = type.name;
     const exactSize = Number.isSafeInteger(entry.size_bytes) ? ` (${entry.size_bytes.toLocaleString("en")} bytes)` : "";
     $("preview-meta").textContent = `${formatBytes(entry.size_bytes)}${exactSize} · ${entry.path}`;
-    $("download").href = url; $("download").download = entry.name;
+    $("download").href = download; $("download").download = entry.name;
     $("open-native").href = url;
     $("open-native").hidden = type.type === "binary";
     dialog.showModal();
@@ -182,9 +206,20 @@ function start() {
     closeFile();
     showMessage("Reading file inventory…");
     try {
-      const response = await fetch("/api/drive", {cache: "no-store"});
+      const response = await fetch(manifestURL(document.querySelector('meta[name="ck-drive-manifest"]')?.content), {cache: "no-store"});
       if (!response.ok) throw new Error(`Drive inventory request failed (${response.status})`);
       manifest = await response.json(); entries = indexFiles(manifest.files);
+      const downloads = downloadEntries(manifest.downloads, entries);
+      $("map-downloads").replaceChildren();
+      for (const entry of downloads) {
+        const item = node("li", "map-download"), {url, download} = entryURLs(entry);
+        item.append(node("strong", null, entry.name), node("span", "map-size", `${formatBytes(entry.size_bytes)} (${entry.size_bytes.toLocaleString("en")} bytes)`));
+        const links = node("div", "map-links");
+        const open = node("a", null, "Open map"); open.href = url; open.target = "_blank"; open.rel = "noopener";
+        const save = node("a", null, "Download PDF"); save.href = download; save.download = entry.name;
+        links.append(open, save); item.append(links); $("map-downloads").append(item);
+      }
+      $("mobile-downloads").hidden = !downloads.length;
       $("drive-label").textContent = manifest.label || "Common Knowledge";
       $("drive-meta").textContent = [manifest.variant != null ? `Variant ${manifest.variant}` : null, manifest.profile ? `${manifest.profile} profile` : null, manifest.source ? `Source ${manifest.source}` : null].filter(Boolean).join(" · ") || "Local file inventory";
       const notice = [manifest.status, ...(Array.isArray(manifest.warnings) ? manifest.warnings : [])].filter(Boolean).join(" · ");
@@ -192,6 +227,7 @@ function start() {
       if (folder && (entries.get(folder)?.kind !== "directory" || (!$("show-hidden").checked && isHidden(entries.get(folder))))) folder = "";
       render();
     } catch (error) {
+      $("mobile-downloads").hidden = true; $("map-downloads").replaceChildren();
       $("files").replaceChildren(); $("drive-label").textContent = "Drive unavailable";
       $("drive-meta").textContent = "Refresh after the local server is ready";
       showMessage(error.message);

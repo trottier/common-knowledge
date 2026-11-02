@@ -2,6 +2,9 @@
 {"title": "빠른 시작 안내", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## 빠른 시작 안내
 
 USB 드라이브를 휴대전화나 컴퓨터에 연결하세요. 기본 파일 앱이나 파일 관리자를 여세요. 1_START를 열고 사용 언어 폴더를 여세요. 맞지 않는 연결 단자를 억지로 끼우지 마세요. [@project_spec]

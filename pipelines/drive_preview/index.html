@@ -6,8 +6,8 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%278%27%20fill%3D%27%231865c7%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2721%27%20text-anchor%3D%27middle%27%20font-family%3D%27sans-serif%27%20font-size%3D%2713%27%20font-weight%3D%27700%27%20fill%3D%27white%27%3ECK%3C%2Ftext%3E%3C%2Fsvg%3E">
   <title>Common Knowledge · Drive Explorer</title>
-  <link rel="stylesheet" href="/static/app.css">
-  <script type="module" src="/static/app.js"></script>
+  <link rel="stylesheet" href="./static/app.css">
+  <script type="module" src="./static/app.js"></script>
 </head>
 <body>
   <svg class="symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -24,13 +24,18 @@
     <label>Preview width <select id="viewport"><option value="fluid">Full width</option><option value="360">360 px</option><option value="390" selected>390 px</option><option value="430">430 px</option><option value="768">768 px</option></select></label>
     <label class="check-label"><input id="show-hidden" type="checkbox"> Show backup and hidden files</label>
   </section>
+  <section id="mobile-downloads" class="mobile-downloads" aria-labelledby="mobile-download-title" hidden>
+    <h2 id="mobile-download-title">Test a map on your phone</h2>
+    <p>Download a PDF, then open it from your phone’s Files app. Turn off networking and test zooming, panning, and moving between pages. This is an unreviewed development preview.</p>
+    <ul id="map-downloads"></ul>
+  </section>
   <main id="explorer" class="explorer">
     <header class="drive-header">
       <div class="drive-mark" aria-hidden="true">CK</div>
       <div class="drive-title"><h2 id="drive-label">Loading drive…</h2><p id="drive-meta">Reading the actual file inventory</p></div>
       <button id="refresh" class="quiet-button" title="Refresh file inventory" aria-label="Refresh file inventory">↻</button>
     </header>
-    <div id="drive-notice" class="drive-notice" hidden></div>
+    <aside id="drive-notice" class="drive-notice" aria-label="Development notes" hidden></aside>
     <div class="navigation">
       <button id="back" class="icon-button" aria-label="Go to parent folder" disabled><svg><use href="#icon-back"/></svg></button>
       <nav id="breadcrumbs" aria-label="Folder path"></nav>

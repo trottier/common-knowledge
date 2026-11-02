@@ -2,6 +2,9 @@
 {"title": "Skrócona instrukcja", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Skrócona instrukcja
 
 Podłącz pamięć USB do telefonu lub komputera. Otwórz wbudowaną aplikację Pliki lub menedżer plików. Otwórz 1_START i folder swojego języka. Nie wciskaj na siłę niepasującego złącza. [@project_spec]

@@ -3,9 +3,27 @@ title: Comunicaciones
 status: machine
 reviewer: null
 reviewed_on: null
-source_inputs: {"content/en/start/07-comms.md": "c764aa1a61fd6e3b180685154b6f02fde9cc73789cd791a8c505027e3634a4fb"}
+source_inputs: {"content/en/start/07-comms.md": "9b3e2f16311e4730a4d9e159196efc7ce44492c0b45abfae8abe08b4c778ed7c"}
 review_required: [radio, legal]
 ---
+
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
+## Detecte mensajes falsos
+
+Los avisos oficiales pueden llegar por Wireless Emergency Alerts, NOAA Weather Radio y emisiones de radio o televisión. [@fema_alert_channels]
+Un mensaje en el chat de malla no es un aviso oficial verificado. [@project_spec]
+Confirme en persona, en la próxima reunión, un mensaje que le envíe a un lugar nuevo. [@project_spec]
+No espere a la reunión si corre peligro inmediato; póngase a salvo. [@project_spec]
+[[VERIFY: revisión por especialistas en emergencias de las instrucciones sobre avisos urgentes, evacuación y confirmación en persona.]]
+
+No instale nada ni pague solo porque lo diga un mensaje. [@fbi_verify_contacts]
+Una voz conocida puede ser copiada. [@ftc_voice_scams]
+Si el servicio funciona, vuelva a llamar a un número que ya conozca. [@ftc_voice_scams]
+Acuerde una palabra clave familiar privada cuando puedan reunirse. [@fbi_verify_contacts]
+No la comparta en un canal público ni la considere una garantía. [@project_spec]
+No hace falta una palabra clave ni preparación previa para usar esta unidad. [@project_spec]
 
 ## Radio
 

@@ -13,23 +13,28 @@ td, th { overflow-wrap: anywhere; vertical-align: top; }
 pre { white-space: pre-wrap; }
 .omitted-figure { font-style: italic; }
 {% include "source-math.css" %}
+{% include "reference-notes.css" %}
 .source-table { border-top: 2pt solid #555; margin-block: 1em; }
 .source-cell { border-left: 1pt solid #888; padding-left: .3em; margin-bottom: .7em; }
 .mw-editsection { display: none; }
 </style></head><body>
 <h1>{{ title }}</h1>
-{% if pack.status != "reviewed" %}<p class="draft">DRAFT REFERENCE — source accuracy and suitability review pending</p>{% endif %}
+{% if pack.status != "reviewed" %}<p class="review-notice">Unreviewed {% if pack.collection == 'med_lib' %}medical {% endif %}reference.</p>{% endif %}
 <p>{{ pack.title }}. Follow START and the printed cards when guidance differs.</p><p>Source figures are unavailable. Essential information may be missing. Use this as background reference, with training and illustrated instructions.</p>
-<p>Article last edited: {{ modified }}. Archive: {{ source_version }}.</p>
-<p>Source: <a href="{{ url }}">{{ title }}</a>, contributors to the original article.
-<a href="{{ license_url }}">Creative Commons Attribution-ShareAlike</a>.
-Formatting and offline navigation adapted by Common Knowledge.</p>
 <nav aria-label="Contents"><h2>Contents</h2><ol>
 {% for heading in headings %}<li><a href="#{{ heading.id }}">{{ heading.title }}</a></li>{% endfor %}
 </ol></nav>
 <main>{{ body }}</main>
 {% if pack.collection == "med_lib" %}<h2>If 911 does not answer</h2>
 <p>Open START → Medical basics. Follow its instructions and printed cards while seeking trained help. These physiology articles do not replace clinical instructions.</p>{% endif %}
+<aside class="publication-notes">
+<h2>Publication and source notes</h2>
+{% if pack.status != "reviewed" %}<p>Source accuracy and suitability review pending.</p>{% endif %}
+<p>Article last edited: {{ modified }}. Archive: {{ source_version }}.</p>
+<p>Source: <a href="{{ url }}">{{ title }}</a>, contributors to the original article.
+<a href="{{ license_url }}">Creative Commons Attribution-ShareAlike</a>.
+Formatting and offline navigation adapted by Common Knowledge.</p>
 <p>Original article and contributors: <a href="{{ url }}">{{ url }}</a>.
 This converted article is available under <a href="{{ license_url }}">{{ license_url }}</a>.</p>
+</aside>
 </body></html>

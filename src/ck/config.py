@@ -86,6 +86,7 @@ class Defaults(Model):
     convener: Convener
     radio: Radio
     mesh: Mesh
+    plan_is_fixed: Text
 
 
 class Topic(Model):
@@ -181,6 +182,7 @@ class Build(Model):
     volume_id: Annotated[str, StringConstraints(pattern=r"^[0-9A-F]{8}$")]
     site_base_url: Text
     source_date_epoch: Annotated[int, Field(ge=315532800)] | Marker
+    upstream_min_age_days: Annotated[int, Field(ge=0)] | Marker
     pdf: PDFBudget
     profiles: dict[Literal["dev", "sample", "full"], Profile]
 

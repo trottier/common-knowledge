@@ -4,6 +4,7 @@ volume_label: "EMERGENCY"
 volume_id: "0C0FFEE0"
 site_base_url: "https://trottier.github.io/common-knowledge/"
 source_date_epoch: "[[VERIFY: set at release]]"
+upstream_min_age_days: "[[VERIFY: set by maintainers]]"
 pdf:
   max_file_mb: 10  # Provisional engineering guardrail; decimal MB, not a memory limit.
   target_phone_coverage: 0.95  # Target only; representative device evidence is pending.

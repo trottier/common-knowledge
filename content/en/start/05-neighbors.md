@@ -6,6 +6,9 @@ reviewed_on: null
 review_required: []
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Find the rally point
 
 Follow the first rule that applies, in this order: [@project_spec]

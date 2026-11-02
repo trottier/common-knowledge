@@ -1,0 +1,6 @@
+.review-notice { border-left: 2pt solid #555; padding-left: .5em; font-weight: 600; }
+.publication-notes { font-size: 8pt; line-height: 1.4; color: #555; border-top: 1pt solid #aaa; padding-top: .5em; margin-top: 1em; }
+.publication-notes h2 { font-size: 8pt; }
+.publication-notes p { margin-block: .4em; }
+.omitted-figure { font-size: 8pt; color: #555; }
+.source-table > p:first-child { font-size: 8pt; color: #555; }

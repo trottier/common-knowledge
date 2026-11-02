@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What to copy to your phone</title>
+<meta name="dcterms.created" content="{{ timestamp }}"><meta name="dcterms.modified" content="{{ timestamp }}">
+<style>
+{% for font in fonts %}@font-face{font-family:CopyFont{{ loop.index }};src:url("{{ font.path.as_uri() }}")} {% endfor %}
+@page{size:90mm 160mm;margin:9mm 8mm 12mm;@bottom-center{content:"Draft navigation · " counter(page);font-size:8pt;color:#657080}}
+body{font-family:{% for font in fonts %}CopyFont{{ loop.index }}{% if not loop.last %},{% endif %}{% endfor %};font-size:12pt;line-height:1.35;color:#172536}
+h1{font-size:20pt;line-height:1.15;margin:0 0 12pt}h2{font-size:16pt;line-height:1.2;break-after:avoid}p{margin:0 0 10pt}
+section{break-before:page}.file-group{break-before:auto}.entry{break-inside:avoid;margin:0 0 8pt}.filename{font-weight:bold;margin:0 0 4pt}.path{overflow-wrap:anywhere}.size{margin:4pt 0}.fineprint{font-size:8pt;color:#637183}.folder{overflow-wrap:anywhere}a{color:#185eb7}li{margin:0 0 6pt}.editions{padding-left:15pt}.editions li{margin-bottom:2pt}
+</style></head><body>
+<h1>Copy files to your phone</h1>
+<p>Open <strong>4_PHONE_PACK</strong> for phone PDFs.</p>
+<p>Copy a file or folder to your phone. Keep source notices and license files when sharing folders.</p>
+<p>Open the copy in your phone’s file viewer. Test it with networking off.</p>
+<p>Find each file’s folder, full name, and size below. Each folder heading and filename form its full path.</p>
+<p class="fineprint">Draft navigation for the actual incomplete inspection tree. Content reviews and physical-phone checks remain pending. This index lists PDF, MP4, and APK files only; it excludes BACKUP copies and itself.</p>
+<section><h2>Language folders</h2><p>Look inside 1_START for these actual folders:</p><ul class="editions">{% for language in languages %}<li><bdi lang="{{ language.code }}" style="font-family:{{ font_families[language.font] }}">{{ language.name }}</bdi></li>{% endfor %}</ul></section>
+<section><h2>Find a folder</h2><p>{{ file_count }} actual files are listed.</p>{% for group in groups %}<p class="folder"><a href="#{{ group.id }}">{{ group.folder }}</a></p>{% endfor %}</section>
+{% for group in groups %}<section class="file-group" id="{{ group.id }}"><h2 class="folder">{{ group.folder }}</h2>
+{% for entry in group.files %}<article class="entry"><p class="filename path">{{ entry.name }}</p><p class="size">{{ entry.decimal_mb }} MB · {{ "{:,}".format(entry.size_bytes) }} bytes</p></article>{% endfor %}
+</section>{% endfor %}
+</body></html>

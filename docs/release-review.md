@@ -12,6 +12,16 @@ Regenerate with `ck review-report --output docs/release-review.md` after source 
 - Defer new image-verifier tool development during this inspection milestone. Existing checksum, manifest, reproducibility, and release gates remain in force.
 - Offline AI is a v0.2 integration on variants 7 and 8, not a current Variant 1 milestone dependency or device-check requirement. Preserve its research and historical outputs. The global catalog and VERIFY inventories below remain unchanged and include held candidates.
 
+## Newly adopted security requirements
+
+The publisher's `AGENTS (6).md` adds requirements; adopting the instructions does not establish their implementation or grant release approval. Its exact input hash and retained workflow decisions are recorded in `docs/evidence/agents-policy-adoption-2026-11-01.json`.
+
+- The fixed-plan default, card/START displays, fake-message guidance, GPS cross-check guidance, and computer-outage section are implemented as drafts; 38 PDFs have been rendered for all 15 editions. Their source, translation, clinical, legal, radio, and physical-readability reviews remain open. State-specific emergency-refill rules remain unconfirmed until cited and reviewed.
+- Implement and verify the separate manufacturing print-card pass: eight labeled final manifest hashes, an on-drive card without those hashes, matching verification-site values, and the Windows check helper. Keep the existing manifest self-hash exception; no card may contain a fabricated or provisional release hash.
+- Maintainers must choose `upstream_min_age_days` and record actual publisher release dates and security-advisory evidence. The configuration/schema and fail-closed release-age/advisory gates are implemented; advisory evidence must be checked on the current UTC validation date. No existing catalog entry is promoted to a confirmed date or security clearance. Runtime libraries, base images, and CI pins outside the catalog still need the policy's maintainer review.
+- Manufacturing release still requires signatures from two independent maintainers using hardware keys and matching full-image rebuilds from two outside groups. No agent holds a signing key, no such signatures or outside rebuilds are established here, and no outreach is authorized by this report.
+- Keep practical instructions prominent. Put provenance/build/process details in distinct fine print without concealing safety warnings or incomplete/draft status. Host only representative test samples while the local Variant 1 tree expands; neither the hosted subset nor a browser smoke check establishes an integrated sample or physical-phone acceptance.
+
 ## Later v0.1 implementation and release gaps
 
 - Finish corrected national atlas/directory repeats and all 56 Android maps. State or territory repeats do not establish full-image coverage or capacity.

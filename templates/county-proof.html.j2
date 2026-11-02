@@ -13,9 +13,13 @@
   size: letter;
   margin: 9mm 10mm 13mm;
   @bottom-center {
-    content: "Draft prototype · historical sources · not phone-tested · " counter(page);
+    content: "Preview · page " counter(page);
     font-size: 7pt;
+    color: #777;
   }
+  {% if kind == 'overview' %}
+  @bottom-left { content: "May help; not confirmed open."; font-size: 7pt; color: #666; }
+  {% endif %}
 }
 body, svg text { font-family: {{ families }}, sans-serif; }
 body { margin: 0; font-size: 11pt; color: #222; }
@@ -27,6 +31,9 @@ section { break-before: page; }
 section:first-child { break-before: auto; }
 svg { display: block; }
 .small { font-size: 8pt; }
+.source-notes { font-size: 8pt; color: #666; border-top: 0.2mm solid #bbb; padding-top: 2mm; margin-top: 3mm; }
+.source-notes p { margin: 1mm 0; }
+.source-line { font-size: 7pt; color: #666; }
 table { border-collapse: collapse; width: 100%; font-size: 9pt; }
 td, th { padding: 1.3mm; text-align: left; border-bottom: 0.2mm solid #ccc; }
 a { color: #23548a; }
@@ -42,13 +49,11 @@ a { color: #23548a; }
 {% if kind == 'detail' %}
 <section>
   <h1>Bristol County road maps</h1>
-  <p>Rhode Island · Census 2020 ZIP areas {{ zctas | join(', ') }}</p>
-  <p>Zoom and pan each map. Trial scale 1:{{ '{:,}'.format(policy.scale_denominator) }};
-  the county stays in one PDF.</p>
+  <p>Rhode Island</p>
+  <p>Zoom and pan each map.</p>
   <p>Find your town on the locator. Open its blue sheet label below.
   At the map edge, continue on the named sheet and page.</p>
-  <p>Every street named in the source has a label in this PDF.
-  Enlarged street sheets follow the main sheets. Their index is at the end.</p>
+  <p>Enlarged street sheets follow the main sheets. Their index is at the end.</p>
   <div class="locator-row">
   <div class="locator">{{ locator_svg }}</div>
   <table class="locator-table">
@@ -63,22 +68,26 @@ a { color: #23548a; }
   A map line is not permission or confirmation that a route is open.</p>
   <p>Grid columns A–E run left to right; rows 1–6 run top to bottom. Corner coordinates
   are decimal degrees and degrees–minutes–seconds. The arrow indicates grid north.</p>
-  <p>County-edge overlap is for continuity. This proof only has Rhode Island source
-  data; neighboring-state navigation is not demonstrated.</p>
-  <p>POIs and the historical source list are in <strong>0_OVERVIEW.pdf</strong> in this folder.</p>
-  <p>Approximate Census ZIP areas are not a current USPS delivery directory.</p>
-  <p class="small">Some roads have no name in the source. No street names were invented.</p>
-  <p class="small">Development cartography proof, not a completed sample or reviewed emergency map.</p>
+  <p>Public places are in <strong>0_OVERVIEW.pdf</strong> in this folder.</p>
+  <aside class="source-notes">
+    <strong>Publication and source notes</strong>
+    <p>Preview; source, safety, and phone review remain outstanding.
+    Every selected street with a source name has a label. Some source roads are unnamed.</p>
+    <p>Base scale 1:{{ '{:,}'.format(policy.scale_denominator) }} is an engineering trial.
+    County-edge overlap uses Rhode Island source data; neighboring-state navigation is not demonstrated.</p>
+    <p>Census 2020 ZIP areas {{ zctas | join(', ') }} are statistical approximations,
+    not current USPS delivery boundaries.</p>
+  </aside>
 </section>
 {% for page in pages %}
 <section>
   <div class="map-title">
     <h2 id="{{ page.id }}">Bristol County · {{ page.id }}</h2>
-    <p class="page-meta">{{ page.continuation }} · Trial
+    <p class="page-meta">{{ page.continuation }} · Scale
     1:{{ '{:,.0f}'.format(page.effective_scale_denominator) }}</p>
   </div>
   {{ page.svg }}
-  <p class="page-meta">OSM/Geofabrik 2026-10-29; Protomaps 2026-10-30.
+  <p class="source-line">OSM/Geofabrik 2026-10-29; Protomaps 2026-10-30.
   © OpenStreetMap contributors, ODbL-1.0. County: Census 2025. No live closure information.</p>
 </section>
 {% endfor %}
@@ -98,20 +107,17 @@ a { color: #23548a; }
 {% else %}
 <section>
   <div class="map-title">
-    <h2>Bristol County · ZIP areas and overview</h2>
-    <p class="page-meta">Colored boundaries and labels: 2020 Census ZCTAs {{ zctas | join(', ') }}.
-    Approximate ZIP areas; not current USPS delivery boundaries.</p>
+    <h2>Bristol County overview</h2>
+    <p class="source-line">Colored boundaries: 2020 Census ZIP areas {{ zctas | join(', ') }}.</p>
   </div>
   {{ overview_svg }}
-  <p class="page-meta">Detailed maps: {{ leaf }}.
+  <p class="source-line">Detailed maps: {{ leaf }}.
   © OpenStreetMap contributors, ODbL-1.0; Census.</p>
-  <p class="page-meta">All {{ pois | length }} historical public places are numbered; names follow.
-  May help; not confirmed open.</p>
+  <p class="source-line">Places are numbered; see Public places. May help; not confirmed open.</p>
 </section>
 <section>
-  <h2>All {{ pois | length }} source places</h2>
-  <p>May help; not confirmed open. This reuses an explicitly incomplete historical
-  parent directory, without changing its status. It is not a new source intake.</p>
+  <h2>Public places</h2>
+  <p class="small">May help; not confirmed open.</p>
   <table>
     <thead><tr><th>No.</th><th>Name</th><th>Category and address</th></tr></thead>
     <tbody>
@@ -121,12 +127,14 @@ a { color: #23548a; }
     {% endfor %}
     </tbody>
   </table>
-  <h3>Sources and limits</h3>
+  <aside class="source-notes">
+  <strong>Publication and source notes</strong>
   <p>NCES 2024–2025; IMLS 2024; OSM 2026-10-29; FCC 2026-10-31; Census 2025.
-  The parent source omits some unconfirmed geographic records outside Rhode Island.
-  No human source or device review is implied.</p>
-  <p>ZIP labels are Census 2020 geographic approximations, not current USPS delivery
-  coverage. Use the road-map locator and corner coordinates to find an area.</p>
+  The reused parent directory remains incomplete; this rendering adds no new source records.
+  Source, safety, and phone review remain outstanding.</p>
+  <p>ZIP areas are Census 2020 geographic approximations, not current USPS delivery
+  coverage. No live opening or closure information is supplied.</p>
+  </aside>
 </section>
 {% endif %}
 </body>

@@ -2,6 +2,9 @@
 {"title": "راهنمای شروع سریع", "status": "machine", "reviewer": null, "reviewed_on": null, "review_required": []}
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## راهنمای شروع سریع
 
 حافظهٔ USB را به تلفن یا رایانه وصل کنید. برنامهٔ داخلی فایل‌ها یا مدیر فایل را باز کنید. وارد 1_START و سپس پوشهٔ زبان خود شوید. رابطی را که اندازه نیست با فشار وارد نکنید. [@project_spec]

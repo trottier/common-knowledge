@@ -110,3 +110,34 @@ cdc_water_advisories:
 cpr_adult:
   title: MedlinePlus Medical Encyclopedia — CPR, adult and child after onset of puberty
   url: https://medlineplus.gov/ency/article/000013.htm
+
+ftc_voice_scams:
+  title: FTC — Scammers use AI to enhance their family emergency schemes
+  url: https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes
+  note: "Agency article supports independent verification through a known contact number; public comments are not used as guidance."
+fbi_verify_contacts:
+  title: FBI — Senior U.S. Officials Continue To Be Impersonated in Malicious Messaging Campaign
+  url: https://www.fbi.gov/investigate/cyber/alerts/2025/senior-us-officials-continue-to-be-impersonated-in-malicious-messaging-campaign
+  note: "Agency guidance supports independent identity checks, avoiding unverified downloads, and a private family word or phrase."
+fema_alert_channels:
+  title: FEMA — Response and Recovery Federal Interagency Operational Plan, April 2025
+  url: https://www.fema.gov/sites/default/files/documents/fema_rd_response-recovery-fiop-npb-042025.pdf
+  note: "Annex K describes IPAWS, Wireless Emergency Alerts, broadcast EAS, and NWS dissemination. Primary indexed text was checked; direct publisher fetch returned HTTP 403. Human source review remains required."
+gps_interference:
+  title: GPS.gov — Spectrum and Interference Issues
+  url: https://www.gps.gov/spectrum-interference-issues
+  note: "Supports radio interference, jamming, and spoofing risks; household map cross-check procedure remains a draft publisher instruction."
+cdc_emergency_paperwork:
+  title: CDC — Prepare Your Health, Paperwork
+  url: https://www.cdc.gov/prepare-your-health/take-action/paperwork.html
+hhs_cyber_disruption:
+  title: HHS OCR — Cyberattack on Change Healthcare, March 13, 2024
+  url: https://www.hhs.gov/sites/default/files/cyberattack-change-healthcare.pdf
+  note: "Documents nationwide disruption to health-care and billing systems; does not establish that every service or 911 center fails simultaneously."
+hhs_cyber_patientcare:
+  title: HHS — Protecting Critical Infrastructure from Cyberattacks, testimony
+  url: https://www.hhs.gov/about/agencies/asl/testimony/2023/05/2023/protecting-critical-infrastructure-from-cyberattacks.html
+cisa_911_disruptions:
+  title: CISA SAFECOM — Considerations for Cyber Disruptions in an Evolving 911 Environment, April 2023
+  url: https://www.911.gov/assets/23_0331_s_n_ng911wg_consideration_cyber_disruptions_911_environment_508C-1.pdf
+  note: "Page 1 describes call backlogs, delayed response, manual mode, and alternate centers."

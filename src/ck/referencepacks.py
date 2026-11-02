@@ -163,6 +163,7 @@ def build_reference_pack(
             "src/ck/generated.py",
             "templates/collection-reference.html.j2",
             "templates/source-math.css",
+            "templates/reference-notes.css",
             "pipelines/math/render.mjs",
             "pipelines/math/settings.yaml",
             "templates/document.css",

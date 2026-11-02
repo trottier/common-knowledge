@@ -6,6 +6,9 @@ reviewed_on: null
 review_required: [radio, legal]
 ---
 
+
+{{ defaults.plan_is_fixed }} [@project_spec]
+
 ## Rally point
 
 {% for rule in defaults.rally_point.rule %}
