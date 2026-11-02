@@ -39,6 +39,10 @@ peak memory, output size, body identity, and first-page readability before a
 
 `tools/recompose_medical_references.py` takes `--root`, `--prepared`, `--cache`,
 `--output`, and explicit repeated `--topic` values, or the deliberate `--all` mode.
+`--jobs 1|2` controls only rendering. Two workers use separate spawned processes,
+one document per worker lifetime; admission happens once, and the parent writes
+results in original topic order. Focused fixtures compare actual PDF bytes from
+both worker counts. Timing telemetry is not a clean-pack reproducibility claim.
 It verifies the existing generated catalog receipt, original PDF/HTML association,
 intermediates, and font pins. It reuses exact clinical main-body bytes, cached
 vector equations, original body styles, metadata, source links, and epoch.
