@@ -143,3 +143,58 @@ def test_new_optional_format_policy_matches_index_and_preserves_companions(input
         assert (inputs["output"] / name).read_bytes() == (inputs["base"] / name).read_bytes()
     check_manifest(inputs["output"])
     assert result["normal_assembly_gates_changed"] is False
+
+
+def map_receipt(inputs):
+    names = [
+        "3_MAPS_AND_PLACES/RI/Bristol County/0_OVERVIEW.pdf",
+        "3_MAPS_AND_PLACES/RI/Bristol County/Bristol County.pdf",
+    ]
+    for name in names:
+        pdf(inputs["base"] / name)
+    manifest = write_manifest(inputs["base"])
+    metadata = json.loads(inputs["receipt"].read_text())
+    metadata["target_path"] = tool.MAP_INDEX_PATH
+    metadata["source_manifest_sha256"] = manifest
+    metadata["indexed_maps"] = [
+        {
+            "path": name,
+            "sha256": digest(inputs["base"] / name),
+            "size_bytes": (inputs["base"] / name).stat().st_size,
+        }
+        for name in names
+    ]
+    del metadata["indexed_files"]
+    inputs["receipt"].write_text(json.dumps(metadata))
+    inputs["receipt_sha256"] = digest(inputs["receipt"])
+    inputs["base_provenance"].write_text(
+        json.dumps({"manifest_sha256": manifest, "status": "draft"})
+    )
+    inputs["base_provenance_sha256"] = digest(inputs["base_provenance"])
+    return metadata
+
+
+def test_exact_map_finder_target_is_admitted_without_a_map_backup(inputs):
+    map_receipt(inputs)
+    result = tool.attach(**inputs)
+    assert (inputs["output"] / tool.MAP_INDEX_PATH).read_bytes() == inputs["index"].read_bytes()
+    assert not (inputs["output"] / "BACKUP" / tool.MAP_INDEX_PATH).exists()
+    assert result["index_kind"] == "map_finder"
+    check_manifest(inputs["output"])
+
+
+@pytest.mark.parametrize("kind", ["target", "orphan", "collision"])
+def test_map_finder_cannot_become_an_arbitrary_overlay(inputs, kind):
+    metadata = map_receipt(inputs)
+    if kind == "target":
+        metadata["target_path"] = "7_LAPTOP/anything.pdf"
+    elif kind == "orphan":
+        metadata["indexed_maps"][0]["path"] = "3_MAPS_AND_PLACES/RI/missing/none.pdf"
+    else:
+        pdf(inputs["base"] / tool.MAP_INDEX_PATH)
+        metadata["source_manifest_sha256"] = write_manifest(inputs["base"])
+    inputs["receipt"].write_text(json.dumps(metadata))
+    inputs["receipt_sha256"] = digest(inputs["receipt"])
+    with pytest.raises(ValueError):
+        tool.attach(**inputs)
+    assert not inputs["output"].exists()

@@ -13,6 +13,7 @@ from ck.drive_safety import validate_tree
 from ck.fetch import digest
 
 INDEX_PATH = "4_PHONE_PACK/0_WHAT_TO_COPY.pdf"
+MAP_INDEX_PATH = "3_MAPS_AND_PLACES/0_FIND_A_MAP.pdf"
 
 
 def attach(
@@ -42,8 +43,13 @@ def attach(
     source_manifest = digest(base / "MANIFEST.SHA256")
     if metadata["source_manifest_sha256"] != source_manifest:
         raise ValueError("Index belongs to another base manifest")
-    if metadata["target_path"] != INDEX_PATH:
+    target = metadata["target_path"]
+    if target not in {INDEX_PATH, MAP_INDEX_PATH}:
         raise ValueError("Unexpected index target")
+    is_copy = target == INDEX_PATH
+    inventory_key = "indexed_files" if is_copy else "indexed_maps"
+    if not isinstance(metadata.get(inventory_key), list):
+        raise ValueError("Index receipt lacks the target-specific inventory")
     if (
         index.is_symlink()
         or index.stat().st_size != metadata["pdf"]["size_bytes"]
@@ -56,21 +62,31 @@ def attach(
     selected = {}
     for path in originals:
         relative = path.relative_to(base).as_posix()
-        if relative in {INDEX_PATH, "BACKUP/" + INDEX_PATH}:
-            raise ValueError("Base already contains a copy index; no overwrite")
-        if relative.split("/")[0].casefold() != "backup" and path.suffix.lower() in {
-            ".pdf",
-            ".mp4",
-            ".apk",
-            ".zim",
-            ".obf",
-        }:
+        if relative in {target, "BACKUP/" + target}:
+            raise ValueError("Base already contains the target index; no overwrite")
+        if not is_copy and relative in {INDEX_PATH, "BACKUP/" + INDEX_PATH}:
+            raise ValueError("Attach the map finder before generating the copy index")
+        parts = path.relative_to(base).parts
+        eligible = (
+            (
+                parts[0].casefold() != "backup"
+                and path.suffix.lower() in {".pdf", ".mp4", ".apk", ".zim", ".obf"}
+            )
+            if is_copy
+            else (
+                len(parts) == 4
+                and parts[0] == "3_MAPS_AND_PLACES"
+                and parts[1].casefold() != "android"
+                and path.suffix.lower() == ".pdf"
+            )
+        )
+        if eligible:
             selected[relative] = {"sha256": digest(path), "size_bytes": path.stat().st_size}
     expected = {
         row["path"]: {"sha256": row["sha256"], "size_bytes": row["size_bytes"]}
-        for row in metadata["indexed_files"]
+        for row in metadata[inventory_key]
     }
-    if len(expected) != len(metadata["indexed_files"]) or selected != expected:
+    if len(expected) != len(metadata[inventory_key]) or selected != expected:
         raise ValueError("Index inventory differs from actual eligible base files")
     ancestor = None
     if base_provenance is not None or base_provenance_sha256 is not None:
@@ -91,7 +107,7 @@ def attach(
             relative = source.relative_to(base)
             if relative.as_posix() != "MANIFEST.SHA256":
                 copy_exact(source, tree / relative, source_pins[relative.as_posix()])
-        for relative in (INDEX_PATH, "BACKUP/" + INDEX_PATH):
+        for relative in (target, "BACKUP/" + target) if is_copy else (target,):
             copy_exact(index, tree / relative, metadata["pdf"]["sha256"])
         checksum = write_manifest(tree)
         check_manifest(tree)
@@ -101,6 +117,8 @@ def attach(
         files = validate_tree(tree)
         result = {
             "status": "Incomplete local inspection with draft index; no release approval",
+            "target_path": target,
+            "index_kind": "copy" if is_copy else "map_finder",
             "base_manifest_sha256": source_manifest,
             "base_provenance": ancestor,
             "index_receipt_sha256": receipt_sha256,
