@@ -19,6 +19,10 @@ def policy():
         "overlap_fraction": 0.1,
         "max_pages": 64,
         "max_vertices_per_sheet": 100,
+        "scale_bar_max_width_mm": 40,
+        "street_labels": read_yaml(
+            Path(__file__).resolve().parents[1] / "pipelines/atlas/bristol-proof.json"
+        )["street_labels"],
     }
 
 

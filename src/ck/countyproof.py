@@ -43,6 +43,8 @@ def sha(path: Path) -> str:
 def producer_recipe(root: Path) -> dict:
     paths = [
         "src/ck/countyproof.py",
+        "src/ck/streetlabels.py",
+        "src/ck/streetcoverage.py",
         "tools/prototype_county_map.py",
         "pipelines/atlas/bristol-proof.json",
         "templates/county-proof.html.j2",
@@ -278,6 +280,11 @@ def prepare(
         )
     if codes != policy["expected_zctas"]:
         raise ValueError("Actual county ZIP-area list differs from naming fixture")
+    zip_geometry_item = items[policy["zcta_geometry_id"]]
+    zip_geometry_path = cached_input(zip_geometry_item, cache)
+    zip_features = json.loads(zip_geometry_path.read_text())["features"]
+    if sorted(feature["properties"]["GEOID"] for feature in zip_features) != codes:
+        raise ValueError("ZIP geometry and county relationship codes differ")
     county = gpd.read_file(
         f"/vsizip/{{{raw['census_county_analysis']}}}", where=f"GEOID='{policy['county']}'"
     ).to_crs(4326)
@@ -287,6 +294,20 @@ def prepare(
     forward = Transformer.from_crs(4326, crs, always_xy=True)
     backward = Transformer.from_crs(crs, 4326, always_xy=True)
     geometry = transform(county.geometry.iloc[0], forward.transform, interleaved=False)
+    zip_areas = []
+    for feature in sorted(zip_features, key=lambda feature: feature["properties"]["GEOID"]):
+        properties = feature["properties"]
+        area = shape(feature["geometry"])
+        interior = Point(float(properties["INTPTLON"]), float(properties["INTPTLAT"]))
+        if not area.is_valid or area.is_empty or not area.covers(interior):
+            raise ValueError("Invalid ZIP area or Census interior point")
+        zip_areas.append(
+            {
+                "code": properties["GEOID"],
+                "geometry": mapping(transform(area, forward.transform, interleaved=False)),
+                "label_point": list(forward.transform(interior.x, interior.y)),
+            }
+        )
     sheets = sheet_plan(geometry, policy)
     from shapely import union_all
 
@@ -327,6 +348,11 @@ def prepare(
         "size_bytes": zip_item.size_bytes,
         "version": zip_item.version,
     }
+    inputs[zip_geometry_item.id] = {
+        "sha256": zip_geometry_item.sha256,
+        "size_bytes": zip_geometry_item.size_bytes,
+        "version": zip_geometry_item.version,
+    }
     return {
         "policy": policy,
         "inputs": inputs,
@@ -351,10 +377,13 @@ def prepare(
         "road_counts": road_counts,
         "zip_source_sha256": sha(zip_source),
         "zctas": codes,
+        "zip_areas": zip_areas,
     }
 
 
 def lines(geometry):
+    if geometry.is_empty:
+        return
     if geometry.geom_type == "LineString":
         yield geometry
     elif hasattr(geometry, "geoms"):
@@ -383,12 +412,40 @@ def geometry_path(geometry, pixel) -> str:
     return " ".join(geometry_path(part, pixel) for part in getattr(geometry, "geoms", []))
 
 
-def label_width(text: str, size: float, advances: dict, units: int) -> float:
-    return sum(advances.get(character, units * 0.6) for character in text) / units * size
+def scale_bar_geometry(world_width: float, width_mm: float, maximum_mm: float):
+    if world_width <= 0 or not 0 < maximum_mm < width_mm - 16:
+        raise ValueError("Invalid scale bar extent or reserved width")
+    target = world_width * maximum_mm / width_mm
+    magnitude = 10 ** math.floor(math.log10(target))
+    metres = max(value * magnitude for value in (1, 2, 5) if value * magnitude <= target)
+    return metres, metres / world_width * width_mm
+
+
+def zip_overlay(data: dict, frame, pixel):
+    areas, labels, reserved = [], [], []
+    for index, area in enumerate(data.get("zip_areas", [])):
+        color = data["policy"]["zcta_colors"][index % len(data["policy"]["zcta_colors"])]
+        path = geometry_path(shape(area["geometry"]).intersection(frame), pixel)
+        areas.append(
+            f'<path d="{path}" fill="{color}" fill-opacity="0.12" '
+            f'stroke="{color}" stroke-width="0.55" fill-rule="evenodd"/>'
+        )
+        x, y = pixel(*area["label_point"])
+        label_y = y - 5
+        reserved.append((x - 10, label_y - 4, x + 10, label_y + 4))
+        labels.append(
+            f'<path d="M{x:.3f},{y:.3f} V{label_y:.3f}" stroke="{color}" '
+            'stroke-width="0.35"/>'
+            f'<rect x="{x - 9:.3f}" y="{label_y - 3.8:.3f}" width="18" height="7.6" '
+            f'rx="1" fill="white" stroke="{color}" stroke-width="0.55"/>'
+            f'<text x="{x:.3f}" y="{label_y + 1.6:.3f}" text-anchor="middle" '
+            f'font-size="4.8" font-weight="700" fill="{color}">{area["code"]}</text>'
+        )
+    return "".join(areas), "".join(labels), reserved
 
 
 def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict]:
-    from fontTools.ttLib import TTFont
+    from ck.streetlabels import street_labels
 
     width, height = data["policy"]["map_width_mm"], data["policy"]["map_height_mm"]
     west, south, east, north = bounds
@@ -397,10 +454,6 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
     def pixel(x, y):
         return (x - west) / (east - west) * width, (north - y) / (north - south) * height
 
-    with TTFont(data["fonts"][0]["path"]) as font:
-        cmap = font.getBestCmap()
-        advances = {chr(code): font["hmtx"][glyph][0] for code, glyph in cmap.items()}
-        units = font["head"].unitsPerEm
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}mm" height="{height}mm" '
         f'viewBox="0 0 {width} {height}">',
@@ -414,7 +467,11 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         path = geometry_path(geometry, pixel)
         if path:
             svg.append(f'<path d="{path}" fill="#daeef8" fill-rule="evenodd"/>')
-    road_features, candidates = [], []
+    zip_shapes, zip_labels, zip_reserved = (
+        zip_overlay(data, frame, pixel) if overview else ("", "", [])
+    )
+    svg.append(zip_shapes)
+    road_features = []
     ranking = {
         "motorway": 0,
         "trunk": 1,
@@ -448,63 +505,39 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
             f'<path d="{geometry_path(clipped, pixel)}" fill="none" stroke="{stroke}" '
             f'stroke-width="{line_width}"{dash}/>'
         )
-        if road["name"] and not overview:
-            longest = max(segments, key=lambda segment: segment.length)
-            candidates.append((priority, -longest.length, road["id"], road["name"], longest))
     county_path = geometry_path(shape(data["county"]).intersection(frame), pixel)
     svg.append(
         f'<path d="{county_path}" fill="none" stroke="#625f55" '
         'stroke-width="0.25" stroke-dasharray="1.5,1"/>'
     )
-    placed, omitted, boxes, used_names = [], Counter(), [], set()
-    for _rank, _length, identifier, name, line in sorted(candidates):
-        if name in used_names:
-            omitted["same_name_on_sheet"] += 1
-            continue
-        size = 2.5
-        text_width = label_width(name, size, advances, units)
-        if line.length / (east - west) * width < text_width + 1:
-            omitted["segment_too_short"] += 1
-            continue
-        middle = line.interpolate(0.5, normalized=True)
-        before, after = (
-            line.interpolate(0.42, normalized=True),
-            line.interpolate(0.58, normalized=True),
-        )
-        x, y = pixel(middle.x, middle.y)
-        a, b = pixel(before.x, before.y), pixel(after.x, after.y)
-        angle = math.degrees(math.atan2(b[1] - a[1], b[0] - a[0]))
-        if angle > 90:
-            angle -= 180
-        if angle < -90:
-            angle += 180
-        half_x = abs(math.cos(math.radians(angle))) * text_width / 2 + size
-        half_y = abs(math.sin(math.radians(angle))) * text_width / 2 + size
-        rectangle = (x - half_x, y - half_y, x + half_x, y + half_y)
-        if (
-            rectangle[0] < 1
-            or rectangle[1] < 1
-            or rectangle[2] > width - 1
-            or rectangle[3] > height - 1
-            or any(
-                not (
-                    rectangle[2] < old[0]
-                    or rectangle[0] > old[2]
-                    or rectangle[3] < old[1]
-                    or rectangle[1] > old[3]
-                )
-                for old in boxes
-            )
-        ):
-            omitted["collision_or_edge"] += 1
-            continue
-        boxes.append(rectangle)
-        used_names.add(name)
-        placed.append({"source_way": identifier, "name": name, "x_mm": x, "y_mm": y})
-        svg.append(
-            f'<text x="{x:.3f}" y="{y - 0.5:.3f}" text-anchor="middle" font-size="{size}" '
-            f'transform="rotate({angle:.2f} {x:.3f} {y:.3f})">{html.escape(name)}</text>'
-        )
+    label_roads = data["roads"]
+    if overview:
+        label_roads = [
+            road for road in label_roads if road["kind"] in data["policy"]["overview_road_classes"]
+        ]
+    town_reserved = []
+    for place in data.get("settlements", []):
+        x, y = pixel(place["x"], place["y"])
+        if 5 <= x <= width - 5 and 10 <= y <= height - 10:
+            half_width = len(place["name"]) * 3.5 * 0.35 + 1
+            town_reserved.append((x - half_width, y - 4, x + half_width, y + 1))
+    label_svg, label_audit = street_labels(
+        label_roads,
+        bounds,
+        width,
+        height,
+        Path(data["fonts"][0]["path"]),
+        data["policy"]["street_labels"],
+        [
+            (0, 0, width, 9),
+            (0, 9, 4, height),
+            (6, height - 16, 14 + data["policy"]["scale_bar_max_width_mm"], height),
+            (174, 12, 189, 28),
+            *zip_reserved,
+            *town_reserved,
+        ],
+    )
+    placed = label_audit["placed_labels"]
     settlement_labels = []
     for place in data.get("settlements", []):
         x, y = pixel(place["x"], place["y"])
@@ -557,27 +590,29 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         )
     for row in range(6):
         svg.append(f'<text x="1" y="{height * (row + 0.5) / 6}" font-size="2.6">{row + 1}</text>')
-    metres = 1000 if east - west > 4000 else 500
-    mm = metres / (east - west) * width
+    metres, mm = scale_bar_geometry(east - west, width, data["policy"]["scale_bar_max_width_mm"])
     svg.append(
         f'<rect x="6" y="{height - 14}" width="{mm + 4}" height="8" fill="white"/>'
         f'<path d="M8,{height - 11} h{mm}" stroke="black" stroke-width="0.6"/>'
-        f'<text x="8" y="{height - 7}" font-size="2.6">{metres} m</text>'
+        f'<text x="8" y="{height - 7}" font-size="2.6">{metres:g} m</text>'
     )
     svg.append(
         '<path d="M180,20 L178,25 L180,23 L182,25 Z" fill="black"/>'
         '<text x="177" y="18" font-size="2.5">Grid N</text>'
     )
+    svg.append('<g clip-path="url(#frame)">' + label_svg + zip_labels + "</g>")
     svg.append("</svg>")
     return "".join(svg), {
         "road_source_ids": road_features,
         "road_vertices": vertex_count,
         "placed_labels": placed,
         "settlement_labels": settlement_labels,
-        "omitted_label_candidates": dict(omitted),
+        "street_name_coverage": label_audit,
         "coordinate_labels": coordinates,
         "grid_columns": "ABCDE",
         "grid_rows": [1, 2, 3, 4, 5, 6],
+        "scale_bar": {"metres": metres, "width_mm": mm},
+        "zip_area_labels": [area["code"] for area in data.get("zip_areas", [])] if overview else [],
     }
 
 
@@ -687,6 +722,8 @@ def horizontal_layout(document) -> list[dict]:
 
 
 def render(data: dict, output: Path) -> dict:
+    from ck.streetcoverage import complete_detail_sheets
+
     if output.exists():
         raise ValueError("Choose a new proof output; no overwrite")
     output.mkdir(parents=True)
@@ -696,20 +733,32 @@ def render(data: dict, output: Path) -> dict:
     audit.mkdir()
     policy = data["policy"]
     leaf = "Bristol County " + ",".join(data["zctas"]) + ".pdf"
-    by_id = {sheet["id"]: sheet for sheet in data["sheets"]}
+    rendered_sheets, street_coverage = complete_detail_sheets(data, svg_map)
+    by_id = {sheet["id"]: sheet for sheet, _, _ in rendered_sheets}
+    road_names = {road["id"]: road["name"] for road in data["roads"]}
     sheet_audits, pages = [], []
-    for sheet in data["sheets"]:
-        svg, measured = svg_map(data, sheet["bounds"])
+    for sheet, svg, measured in rendered_sheets:
         (audit / (sheet["id"] + ".svg")).write_text(svg)
         neighbors = "; ".join(
             f"{direction}: {identifier}, page {by_id[identifier]['page']}"
             for direction, identifier in sheet["neighbors"].items()
         )
+        children = [child for child, _, _ in rendered_sheets if child.get("parent") == sheet["id"]]
+        if children:
+            neighbors += "; enlarged streets: " + (
+                ", ".join(f"{child['id']} p{child['page']}" for child in children)
+                if len(children) <= 5
+                else "see the index at the end"
+            )
+        target_name = road_names.get(sheet.get("target_way_id"), "")
+        if target_name:
+            neighbors = f"Enlarged streets near {target_name}; " + neighbors
         pages.append(
             {
                 **sheet,
                 "svg": Markup(svg),
                 "continuation": neighbors or "County edge: use the locator",
+                "target_name": target_name,
             }
         )
         sheet_audits.append({**sheet, **measured, "pdf": leaf})
@@ -758,9 +807,13 @@ def render(data: dict, output: Path) -> dict:
                         destinations[entry.title] = reader.get_destination_page_number(entry) + 1
 
             collect_outlines(reader.outline)
-            if len(reader.pages) != len(data["sheets"]) + 1 or any(
-                destinations.get("Bristol County · " + sheet["id"]) != sheet["page"]
-                for sheet in data["sheets"]
+            if (
+                len(reader.pages) < len(pages) + 1
+                or len(reader.pages) > policy["max_pages"]
+                or any(
+                    destinations.get("Bristol County · " + sheet["id"]) != sheet["page"]
+                    for sheet in pages
+                )
             ):
                 raise ValueError("Actual locator/sheet pagination differs; do not adopt this proof")
     result = {
@@ -771,6 +824,7 @@ def render(data: dict, output: Path) -> dict:
         "locator": locator_audit,
         "horizontal_layout": layout_audits,
         "sheets": sheet_audits,
+        "street_name_coverage": street_coverage,
         "overview": {**overview_audit, "poi_ids": [point["id"] for point in data["pois"]]},
         "road_counts": data["road_counts"],
         "water_audit": data["water_audit"],

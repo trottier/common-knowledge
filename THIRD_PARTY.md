@@ -9937,6 +9937,17 @@ VERIFY entries are candidates and cannot be placed until confirmed.
 - SHA-256: `bea4e03f71a1fa0045ae732aabad11fa541e5932b071c2369bb0d325e8cba5a0`
 - Publisher file: https://www2.census.gov/geo/docs/reference/state.txt
 
+## Census 2020 Bristol County ZCTA geometry, bounded TIGERweb query
+
+- Catalog id: `census_zcta_bristol_2020`
+- Version: January 1, 2020 geography; HTTPS query captured 2026-11-01
+- License: US-PD
+- Attribution: U.S. Census Bureau, Census 2020 TIGERweb ZCTAs 02806, 02809, and 02885
+- License proof: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf
+- Size: 16717 bytes
+- SHA-256: `278db2981af844412c7c5668aa11251be0babd8c4a82940d0d916336815725ee`
+- Publisher file: https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/84/query?where=ZCTA5+IN+%28%2702806%27%2C%2702809%27%2C%2702885%27%29&outFields=GEOID%2CZCTA5%2CNAME%2CAREALAND%2CAREAWATER%2CINTPTLAT%2CINTPTLON%2CCENTLAT%2CCENTLON&returnGeometry=true&outSR=4326&orderByFields=ZCTA5&f=geojson
+
 ## Census 2020 ZIP Code Tabulation Area to county geographic relationships
 
 - Catalog id: `census_zcta_county_2020`

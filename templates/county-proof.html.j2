@@ -47,11 +47,13 @@ a { color: #23548a; }
   the county stays in one PDF.</p>
   <p>Find your town on the locator. Open its blue sheet label below.
   At the map edge, continue on the named sheet and page.</p>
+  <p>Every street named in the source has a label in this PDF.
+  Enlarged street sheets follow the main sheets. Their index is at the end.</p>
   <div class="locator-row">
   <div class="locator">{{ locator_svg }}</div>
   <table class="locator-table">
     <tr><th>Sheet</th><th>Page</th></tr>
-    {% for page in pages %}
+    {% for page in pages if page.parent is not defined %}
     <tr><td><a href="#{{ page.id }}">{{ page.id }}</a></td><td>page {{ page.page }}</td></tr>
     {% endfor %}
   </table>
@@ -65,6 +67,7 @@ a { color: #23548a; }
   data; neighboring-state navigation is not demonstrated.</p>
   <p>POIs and the historical source list are in <strong>0_OVERVIEW.pdf</strong> in this folder.</p>
   <p>Approximate Census ZIP areas are not a current USPS delivery directory.</p>
+  <p class="small">Some roads have no name in the source. No street names were invented.</p>
   <p class="small">Development cartography proof, not a completed sample or reviewed emergency map.</p>
 </section>
 {% for page in pages %}
@@ -72,23 +75,38 @@ a { color: #23548a; }
   <div class="map-title">
     <h2 id="{{ page.id }}">Bristol County · {{ page.id }}</h2>
     <p class="page-meta">{{ page.continuation }} · Trial
-    1:{{ '{:,}'.format(policy.scale_denominator) }}</p>
+    1:{{ '{:,.0f}'.format(page.effective_scale_denominator) }}</p>
   </div>
   {{ page.svg }}
   <p class="page-meta">OSM/Geofabrik 2026-10-29; Protomaps 2026-10-30.
   © OpenStreetMap contributors, ODbL-1.0. County: Census 2025. No live closure information.</p>
 </section>
 {% endfor %}
+<section>
+  <h2>Enlarged street sheets</h2>
+  <p>Open the sheet for your street. Parent is the county map sheet shown on the locator.</p>
+  <table>
+    <thead><tr><th>Nearby street</th><th>Sheet and page</th><th>Parent</th></tr></thead>
+    <tbody>
+    {% for page in pages if page.parent is defined %}
+    <tr><td>{{ page.target_name }}</td><td><a href="#{{ page.id }}">{{ page.id }} · page {{ page.page }}</a></td>
+    <td>{{ page.parent }} · page {{ page.parent_page }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
 {% else %}
 <section>
   <div class="map-title">
-    <h2>Bristol County · overview</h2>
-    <p class="page-meta">All {{ pois | length }} historical POIs are numbered; full names follow.
-    May help; not confirmed open.</p>
+    <h2>Bristol County · ZIP areas and overview</h2>
+    <p class="page-meta">Colored boundaries and labels: 2020 Census ZCTAs {{ zctas | join(', ') }}.
+    Approximate ZIP areas; not current USPS delivery boundaries.</p>
   </div>
   {{ overview_svg }}
   <p class="page-meta">Detailed maps: {{ leaf }}.
   © OpenStreetMap contributors, ODbL-1.0; Census.</p>
+  <p class="page-meta">All {{ pois | length }} historical public places are numbered; names follow.
+  May help; not confirmed open.</p>
 </section>
 <section>
   <h2>All {{ pois | length }} source places</h2>

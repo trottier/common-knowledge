@@ -13,6 +13,52 @@
   "max_water_tiles": 512,
   "max_decoded_tile_bytes": 16000000,
   "water_zoom": 14,
-  "expected_zctas": ["02806", "02809", "02885"],
-  "status": "Unreviewed engineering trial; not a final atlas scale or phone acceptance result"
+  "expected_zctas": [
+    "02806",
+    "02809",
+    "02885"
+  ],
+  "status": "Unreviewed engineering trial; not a final atlas scale or phone acceptance result",
+  "street_labels": {
+    "font_sizes_mm": [
+      1.6,
+      1.3,
+      1.1,
+      0.9
+    ],
+    "padding_mm": 0.12,
+    "halo_mm": 0.16,
+    "collision_cell_mm": 4,
+    "anchor_fractions": [
+      0.5,
+      0.25,
+      0.75,
+      0.125,
+      0.875
+    ],
+    "offsets_mm": [
+      -0.8,
+      0.8,
+      -1.8,
+      1.8,
+      -3,
+      3,
+      -5,
+      5
+    ]
+  },
+  "overview_road_classes": [
+    "motorway",
+    "trunk",
+    "primary",
+    "secondary"
+  ],
+  "zcta_geometry_id": "census_zcta_bristol_2020",
+  "zcta_colors": [
+    "#7852a9",
+    "#07856b",
+    "#c17a09"
+  ],
+  "max_inset_depth": 5,
+  "scale_bar_max_width_mm": 40
 }
