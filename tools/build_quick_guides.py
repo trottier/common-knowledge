@@ -90,8 +90,10 @@ def build_guides(root: Path, cache: Path, output: Path, epoch: int, source_commi
                 pages = []
                 for n, page in enumerate(reader.pages, 1):
                     text = page.extract_text()
-                    if footer and " ".join(footer.split()) not in " ".join(text.split()):
-                        raise ValueError("Original translation footer missing from a page")
+                    if footer and "".join(footer.split()) not in "".join(text.split()):
+                        raise ValueError(
+                            f"Original translation footer missing: {language.code}/{section} page{n}"
+                        )
                     pages.append(
                         {
                             "page": n,
@@ -120,8 +122,15 @@ def build_guides(root: Path, cache: Path, output: Path, epoch: int, source_commi
                     "pages": pages,
                     "destinations": [],
                 }
-                for prefix in ("1_START", "4_PHONE_PACK"):
-                    relative = f"{prefix}/{language.name}/{FOLDERS[language.code]}/{name}"
+                destinations = [
+                    f"{prefix}/{language.name}/{FOLDERS[language.code]}/{name}"
+                    for prefix in ("1_START", "4_PHONE_PACK")
+                ]
+                if section == "09-medical.md":
+                    destinations.append(
+                        "5_MEDICAL_REFERENCE/" + filename(0, header.title + " - " + language.name)
+                    )
+                for relative in destinations:
                     safe_path(relative)
                     target = stage / "files" / relative
                     target.parent.mkdir(parents=True, exist_ok=True)
