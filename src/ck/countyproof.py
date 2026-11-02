@@ -743,6 +743,13 @@ def svg_locator(data: dict) -> tuple[str, dict]:
     }
 
 
+def overview_name(policy: dict) -> str:
+    name = policy.get("overview_filename", "0_OVERVIEW.pdf")
+    if not isinstance(name, str) or len(safe_path(name).parts) != 1 or not name.endswith(".pdf"):
+        raise ValueError("Overview filename must be one FAT-safe PDF basename")
+    return name
+
+
 def html_document(
     root: Path,
     title: str,
@@ -765,6 +772,7 @@ def html_document(
         overview_svg=Markup(overview_svg),
         locator_svg=Markup(locator_svg),
         leaf=leaf,
+        overview_filename=overview_name(data["policy"]),
         policy=data["policy"],
         area_name=data["policy"].get("area_name", data["policy"]["county_name"]),
         zctas=data["zctas"],
@@ -806,6 +814,10 @@ def render(root: Path, data: dict, output: Path) -> dict:
         raise ValueError("Choose a new proof output; no overwrite")
     output.mkdir(parents=True)
     folder, leaf, area_name = output_names(data["policy"], data["zctas"])
+    overview_filename = overview_name(data["policy"])
+    if overview_filename == leaf:
+        raise ValueError("Overview and detail filenames must differ")
+    safe_path(str(folder / overview_filename))
     files = output / folder
     files.mkdir(parents=True)
     audit = output / "audit"
@@ -856,7 +868,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
     layout_audits = {}
     for filename, title, kind in [
         (leaf, area_name + " detailed road maps", "detail"),
-        ("0_OVERVIEW.pdf", area_name + " overview and historical places", "overview"),
+        (overview_filename, area_name + " overview and historical places", "overview"),
     ]:
         document = html_document(root, title, kind, pages, overview_svg, locator_svg, leaf, data)
         (audit / (filename + ".html")).write_text(document)

@@ -4,7 +4,38 @@ from pathlib import Path
 import pytest
 from shapely.geometry import box, mapping
 
-from ck.countyproof import area_geometry, output_names, prepare, producer_recipe
+from ck.countyproof import (
+    area_geometry,
+    html_document,
+    output_names,
+    overview_name,
+    prepare,
+    producer_recipe,
+)
+
+
+@pytest.mark.parametrize(
+    "name", ["../outside.pdf", "extra/Overview.pdf", "Overview.txt", "a:b.pdf"]
+)
+def test_area_overview_cannot_escape_the_county_or_become_a_non_pdf(name):
+    with pytest.raises(ValueError):
+        overview_name({"overview_filename": name})
+
+
+def test_printed_area_overview_reference_matches_the_actual_filename():
+    root = Path(__file__).resolve().parents[1]
+    policy = {
+        "county_name": "Synthetic county",
+        "state": "RI",
+        "epoch": 0,
+        "scale_denominator": 25000,
+    }
+    data = {"policy": policy, "zctas": [], "pois": [], "fonts": []}
+    assert overview_name(policy) == "0_OVERVIEW.pdf"
+    for name in ("0_OVERVIEW.pdf", "Synthetic area 00000 - Overview.pdf"):
+        policy["overview_filename"] = name
+        document = html_document(root, "Fixture", "detail", [], "", "", "Fixture.pdf", data)
+        assert f"<strong>{name}</strong>" in document
 
 
 def feature(code, geometry):
