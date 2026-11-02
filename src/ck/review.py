@@ -27,11 +27,19 @@ def markers(root: Path) -> list[dict]:
 
 
 def release_blockers(root: Path) -> list[str]:
+    from ck.upstream import upstream_blockers
+
     config = load_config(root)
     items = load_catalog(root, config)
     problems = [f"{item['path']}:{item['line']}: {item['marker']}" for item in markers(root)]
     for item in items.values():
         problems.extend(item.blockers(release=True))
+    problems.extend(
+        upstream_blockers(
+            items.values(),
+            getattr(config.build, "upstream_min_age_days", "[[VERIFY: set by maintainers]]"),
+        )
+    )
     source_file = root / "content/sources.yaml"
     sources = read_yaml(source_file) if source_file.exists() else {}
     for path in sorted((root / "content").rglob("*.md")):

@@ -1,12 +1,13 @@
 """Catalog validation, explicit readiness checks and attribution generation."""
 
 import re
+from datetime import date
 from functools import lru_cache
 from pathlib import Path, PurePosixPath
 from typing import Annotated, Literal, Self
 
 import yaml
-from pydantic import Field, StringConstraints, model_validator
+from pydantic import BeforeValidator, Field, StringConstraints, model_validator
 
 from ck.config import Configuration, Identifier, Marker, Model, Text, UniqueKeyLoader
 from ck.licenses import parse_license_expression
@@ -14,6 +15,13 @@ from ck.licenses import parse_license_expression
 Sha256 = Annotated[str, StringConstraints(pattern=r"^[0-9a-f]{64}$")]
 Https = Annotated[str, StringConstraints(pattern=r"^https://[^\s]+$")]
 ProfileName = Literal["dev", "sample", "full"]
+
+
+def _recorded_date(value):
+    return date.fromisoformat(value) if isinstance(value, str) else value
+
+
+RecordedDate = Annotated[date, BeforeValidator(_recorded_date)]
 
 
 def safe_path(value: str) -> PurePosixPath:
@@ -43,6 +51,13 @@ class Topics(Model):
 
 class Collection(Model):
     collection: Identifier
+
+
+class AdvisoryCheck(Model):
+    checked_on: RecordedDate
+    status: Literal["clear", "open", "unreviewed"]
+    source_urls: list[Https] = Field(min_length=1)
+    advisory_urls: list[Https] = Field(default_factory=list)
 
 
 class Item(Model):
@@ -84,6 +99,9 @@ class Item(Model):
     permission_proof_url: Https | Marker | None = None
     legal_reviewer: Text | None = None
     legal_reviewed_on: Text | None = None
+    release_date: RecordedDate | Marker | None = None
+    release_date_source_url: Https | Marker | None = None
+    security_advisories: AdvisoryCheck | None = None
 
     @model_validator(mode="after")
     def structure(self) -> Self:
