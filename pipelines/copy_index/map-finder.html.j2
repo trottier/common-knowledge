@@ -8,10 +8,11 @@ h1{font-size:20pt;line-height:1.15}h2{font-size:15pt;break-after:avoid}p{margin:
 li{margin-bottom:8pt;break-inside:avoid}.path{overflow-wrap:anywhere}.notes{font-size:8pt;color:#666}
 </style></head><body>
 <h1>Find a map</h1>
-<ol><li>Open your state’s folder.</li><li>Open your county’s folder.</li><li>Open <b>0_OVERVIEW.pdf</b> to see ZIP areas.</li><li>Open the detailed map. Pinch to zoom, and move around the page.</li></ol>
+<ol><li>Open your state’s folder.</li><li>Open your county’s folder.</li><li>If you see <b>0_OVERVIEW.pdf</b>, open it to find ZIP areas.</li><li>Open the detailed map. Pinch to zoom, and move around the page.</li></ol>
 <p>The PDF maps open directly. The <b>android</b> folder holds optional map data for a separate app.</p>
-<p lang="es">Abra la carpeta de su estado y luego la de su condado. Abra <b>0_OVERVIEW.pdf</b> para ver las áreas de códigos postales. Amplíe el mapa detallado con los dedos.</p>
-<p class="notes">Spanish navigation text is an unreviewed machine translation. These are the maps actually present in this incomplete preview. Use the folder paths below; local links vary between phone viewers.</p>
+<p lang="es">Abra la carpeta de su estado y luego la de su condado. Si ve <b>0_OVERVIEW.pdf</b>, ábralo para encontrar las áreas de códigos postales. Amplíe el mapa detallado con los dedos.</p>
+<p>Some county folders have only an area sample so far. Check the area named in the file.</p>
+<p class="notes">Spanish navigation text is an unreviewed machine translation. These are the map and places PDFs actually present in this incomplete preview. Use the folder paths below; local links vary between phone viewers.</p>
 {% for (state, county), files in groups.items() %}
 <h2>{{ state }} / {{ county }}</h2><p class="path">3_MAPS_AND_PLACES/{{ state }}/{{ county }}/</p>
 <ul>{% for file in files %}<li class="path">{{ file.name }}</li>{% endfor %}</ul>
