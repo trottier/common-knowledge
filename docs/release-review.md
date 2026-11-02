@@ -6470,3 +6470,7 @@ Every marker in content/, config/ and catalog/ is listed below. Candidate and hu
 - `catalog/zim.yaml:4930` — [[VERIFY: human pin and retained nontext-license review, full repeated generation with final producer freeze and physical Kiwix checks; first complete strict-audit archive retains title search, with no full-text index]]
 - `catalog/zim.yaml:4949` — [[VERIFY: complete offline audit, retained non-text resource license checks, regenerated edition and physical reader checks; this publisher input is not placed on a drive]]
 - `catalog/zim.yaml:4972` — [[VERIFY: human input/output pin, retained nontext-license and educational selection review, physical Kiwix checks and final release-epoch reproduction; two strict complete development builds match; full-text index omitted, title search retained]]
+
+## Rhode Island postal geometry expansion
+
+The same Census January 1, 2020 layer now has a pinned, unmodified 81-feature query covering every nonblank ZCTA relationship for the five Rhode Island counties. The 83 county/code relationships all have positive-area intersections with the selected county geometry; cross-county relationships are retained. This is build input coverage, not finished maps or a current USPS directory. Original publication date, computed-pin/data review, applicable advisory evidence, and the upstream waiting period remain unresolved. See `docs/evidence/ri-zcta-geometry-2026-11-02.json`.
