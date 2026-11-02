@@ -43,9 +43,12 @@ def test_separate_references_become_real_source_links(tmp_path):
 
 @pytest.mark.parametrize("reference", ["[@unknown_source]", "[@one; @two]"])
 def test_release_and_review_inventory_check_translated_citations(tmp_path, monkeypatch, reference):
+    from types import SimpleNamespace
+
     from ck import review
 
-    monkeypatch.setattr(review, "load_config", lambda root: None)
+    policy = SimpleNamespace(build=SimpleNamespace(upstream_min_age_days=0))
+    monkeypatch.setattr(review, "load_config", lambda root: policy)
     monkeypatch.setattr(review, "load_catalog", lambda root, config: {})
     source = tmp_path / "content/es/start/fixture.md"
     source.parent.mkdir(parents=True)

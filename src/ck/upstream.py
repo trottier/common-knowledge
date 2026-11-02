@@ -37,6 +37,10 @@ def upstream_blockers(
             continue
         if check.status != "clear" or check.advisory_urls:
             problems.append(prefix + "security advisories are open or unreviewed")
+        if check.checked_on < today:
+            problems.append(
+                prefix + "security advisories need a check on the release validation date"
+            )
         if check.checked_on > today or (
             isinstance(item.release_date, date)
             and (check.checked_on - item.release_date).days < minimum_age_days

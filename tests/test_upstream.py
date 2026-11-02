@@ -84,7 +84,9 @@ def test_advisory_check_must_follow_release_and_not_be_in_future(checked_on):
             "source_urls": ["https://example.invalid/security"],
         }
     )
-    assert "date is invalid" in upstream_blockers([record], 0, as_of=TODAY)[0]
+    assert any(
+        "date is invalid" in problem for problem in upstream_blockers([record], 0, as_of=TODAY)
+    )
 
 
 def test_an_early_advisory_check_does_not_cover_the_waiting_period():
@@ -95,7 +97,21 @@ def test_an_early_advisory_check_does_not_cover_the_waiting_period():
             "source_urls": ["https://example.invalid/security"],
         }
     )
-    assert "date is invalid" in upstream_blockers([record], 31, as_of=TODAY)[0]
+    assert any(
+        "date is invalid" in problem for problem in upstream_blockers([record], 31, as_of=TODAY)
+    )
+
+
+def test_historical_clear_status_does_not_establish_current_advisory_status():
+    record = item(
+        release_date="2020-01-01",
+        security_advisories={
+            "checked_on": "2020-02-01",
+            "status": "clear",
+            "source_urls": ["https://example.invalid/security"],
+        },
+    )
+    assert "release validation date" in upstream_blockers([record], 31, as_of=TODAY)[0]
 
 
 def test_generated_outputs_use_their_input_dates_and_historical_drafts_remain_valid():

@@ -103,6 +103,24 @@ def test_fixed_plan_stays_on_the_two_sided_card_front(code, tmp_path):
     assert "OK" in pages[1].extract_text() and "HELP" in pages[1].extract_text()
 
 
+@pytest.mark.parametrize("code", ["en", "es"])
+def test_each_start_fixed_plan_paragraph_fits_on_one_phone_page(code, tmp_path):
+    from pypdf import PdfReader
+
+    from ck.core import bundle_sections
+    from ck.render import render_pdf
+
+    config = load_config(ROOT)
+    language = next(language for language in config.languages if language.code == code)
+    source = tmp_path / "START.md"
+    bundle_sections(sorted((ROOT / "content" / code / "start").glob("*.md")), source)
+    target = tmp_path / "START.pdf"
+    render_pdf(ROOT, config, source, language, "phone", target, 1793404800, profile="sample")
+    statement = "".join(display_defaults(ROOT, language, config)["plan_is_fixed"].split())
+    pages = ["".join(page.extract_text().split()) for page in PdfReader(target).pages]
+    assert sum(statement in page for page in pages) >= 2
+
+
 def test_new_outage_guidance_keeps_reviews_citations_and_translation_provenance():
     sources = read_yaml(ROOT / "content/sources.yaml")
     for code, status in (("en", "draft"), ("es", "machine")):

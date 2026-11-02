@@ -19,6 +19,12 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def replace_once(text, old, new):
+    if text.count(old) != 1:
+        raise ValueError("Expected unique sample text: " + old)
+    return text.replace(old, new, 1)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prepared", type=Path, required=True)
@@ -35,8 +41,12 @@ def main():
         raise ValueError("Prepared map receipt checksum mismatch")
     if output.exists():
         raise ValueError("Use a fresh examples folder")
-    if args.receipt.exists() or args.receipt.resolve().is_relative_to(prepared):
-        raise ValueError("Choose a new receipt outside the prepared maps")
+    if (
+        args.receipt.exists()
+        or args.receipt.resolve().is_relative_to(prepared)
+        or args.receipt.resolve().is_relative_to(output)
+    ):
+        raise ValueError("Choose a new receipt outside the prepared maps and examples")
     receipt = json.loads((prepared / "prototype.json").read_text())
     if "recomposition" not in receipt:
         raise ValueError("Expected this project's recomposed Bristol County map proof")
@@ -56,12 +66,13 @@ def main():
         source = prepared / safe_path(original["path"])
         if source.is_symlink() or not source.resolve().is_relative_to(prepared):
             raise ValueError("Map source must stay inside the prepared proof")
-        assert source.stat().st_size == original["size_bytes"]
-        assert sha(source) == original["sha256"]
+        if source.stat().st_size != original["size_bytes"] or sha(source) != original["sha256"]:
+            raise ValueError("Prepared map bytes differ from its pinned receipt")
         reader = PdfReader(source)
         html_path = prepared / "audit" / (filename + ".html")
         html = html_path.read_text()
-        assert reader.trailer["/ID"][0].original_bytes.decode() == sha(html_path)
+        if reader.trailer["/ID"][0].original_bytes.decode() != sha(html_path):
+            raise ValueError("Cached map HTML does not match its PDF identifier")
         sections = re.findall(r"<section\b[^>]*>[\s\S]*?</section>", html)
         selected = []
         extra_styles = []
@@ -71,21 +82,22 @@ def main():
             section = section.replace("<section", f'<section style="page:{page_name}"', 1)
             section = re.sub(r"<a\b[^>]*>([\s\S]*?)</a>", r"\1", section)
             if filename == "0_OVERVIEW.pdf":
-                section = (
-                    section.replace(
+                for old, new in [
+                    (
                         "Colored boundaries: 2020 Census ZIP areas 02806, 02809, 02885.",
                         "Colored boundaries: 2020 Census ZIP areas 02806, 02809, 02885. "
                         "Approximate areas, not a current USPS delivery directory.",
-                    )
-                    .replace(
+                    ),
+                    (
                         "Detailed maps: Bristol County 02806,02809,02885.pdf.",
                         "Selected map samples; the full county atlas is kept in the local build.",
-                    )
-                    .replace(
+                    ),
+                    (
                         "Places are numbered; see Public places.",
                         "Numbered place listings are in the full local atlas.",
-                    )
-                )
+                    ),
+                ]:
+                    section = replace_once(section, old, new)
             selected.append(section)
             extra_styles.append(
                 f"@page {page_name} {{ @bottom-center {{ "
@@ -99,7 +111,8 @@ def main():
                 pdf_identifier=hashlib.sha256(html.encode()).hexdigest().encode(), pdf_tags=True
             )
         excerpt = PdfReader(io.BytesIO(rendered))
-        assert len(excerpt.pages) == len(pages)
+        if len(excerpt.pages) != len(pages):
+            raise ValueError("Selected map sections no longer fit their expected pages")
         writer = PdfWriter()
         for index, number in enumerate(pages):
             writer.add_page(excerpt.pages[index], excluded_keys=["/Annots"])
@@ -119,14 +132,19 @@ def main():
         if destination.stat().st_size > receipt["policy"]["pdf_max_bytes"]:
             raise ValueError("Map sample exceeds the prepared proof's PDF budget")
         result = PdfReader(destination)
-        assert len(result.pages) == len(pages)
-        assert all("/Annots" not in page for page in result.pages)
+        if len(result.pages) != len(pages) or any("/Annots" in page for page in result.pages):
+            raise ValueError("Sample pages or removed links changed")
         text = "\n".join(page.extract_text() for page in result.pages)
-        assert "OpenStreetMap" in text
+        if "OpenStreetMap" not in text:
+            raise ValueError("Sample is missing map attribution")
         if len(pages) == 2:
-            assert "Woburn Street" in text and "Sloop Lane" in text
+            if "Woburn Street" not in text or "Sloop Lane" not in text:
+                raise ValueError("Expected sample street names are missing")
         else:
-            assert all(code in text for code in ["02806", "02809", "02885"])
+            if not all(code in text for code in ["02806", "02809", "02885"]):
+                raise ValueError("Expected ZIP labels are missing")
+            if "Approximate areas" not in text or "USPS delivery directory" not in text:
+                raise ValueError("Standalone ZIP approximation caveat is missing")
         records.append(
             {
                 "path": directory + name,

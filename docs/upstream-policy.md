@@ -9,7 +9,9 @@ Before pinning a new upstream version, record `release_date` (an ISO date) and
 `release_date_source_url` from its publisher, wait the configured period, and
 inspect the publisher's security advisories. Record the actual check in
 `security_advisories`, with `checked_on`, `status`, `source_urls`, and any open
-`advisory_urls`. The check must follow the waiting period. Open advisories and
+`advisory_urls`. The check must follow the waiting period and be dated on the
+current UTC release-validation date; an old clear status does not establish
+that no advisory is open now. Open advisories and
 unreviewed or missing evidence block release. The command does not perform a
 network search or grant a security review merely because a hash is pinned.
 
