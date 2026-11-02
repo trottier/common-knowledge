@@ -39,8 +39,23 @@ export function fileType(entry) {
   const ext = entry.name.split(".").pop().toLowerCase();
   if (ext === "pdf") return {name: "PDF document", type: "pdf", icon: "file"};
   if (ext === "mp4") return {name: "MP4 video", type: "video", icon: "play"};
+  if (ext === "zim") return {name: "Offline reference archive · Kiwix", type: "binary", icon: "file"};
+  if (ext === "obf") return {name: "Android offline map · OsmAnd", type: "binary", icon: "file"};
+  if (ext === "pbf") return {name: "Map source data", type: "binary", icon: "file"};
   if (["txt", "md", "yaml", "yml", "json", "csv", "sha256", "log"].includes(ext)) return {name: "Text document", type: "text", icon: "file"};
   return {name: ext === "apk" ? "Android app · APK" : ext.toUpperCase() + " file", type: "binary", icon: "file"};
+}
+export function folderHint(path) {
+  return ({
+    "1_START": "Start here. Choose your language.",
+    "2_VIDEOS": "Watch practical how-to guides.",
+    "3_MAPS_AND_PLACES": "Find your area and open a map.",
+    "4_PHONE_PACK": "Files to copy to your phone.",
+    "5_MEDICAL_REFERENCE": "Medical basics and longer reference articles.",
+    "6_VIDEOS_AND_IN_DEPTH": "This drive’s extra guides and collections.",
+    "7_LAPTOP": "Files for a computer.",
+    "8_MESH_CHAT": "Optional Android chat apps.",
+  })[path] || "";
 }
 export function formatBytes(bytes) {
   if (!Number.isSafeInteger(bytes) || bytes < 0) return "Size unavailable";
@@ -135,6 +150,8 @@ function start() {
       svg.append(use);
       const copy = node("span", "file-copy");
       copy.append(node("span", "file-name", entry.name));
+      const hint = entry.kind === "directory" ? folderHint(entry.path) : "";
+      if (hint) copy.append(node("span", "folder-hint", hint));
       let description = type.name;
       if (entry.kind === "directory") {
         const count = folderEntries(entries, entry.path, "", $("show-hidden").checked).length;
@@ -198,7 +215,13 @@ function start() {
         if (token === previewToken) pre.textContent = new TextDecoder().decode(data);
       } catch (error) { if (token === previewToken && error.name !== "AbortError") pre.textContent = error.message; }
     } else {
-      $("preview-content").append(node("p", "binary-info", "This file has no browser preview. Download it to use it with a compatible app or device. Programs and Android apps are never started by this explorer."));
+      const extension = entry.name.split(".").pop().toLowerCase();
+      const hint = {
+        zim: "This reference archive opens with Kiwix on Android or a computer. It cannot be opened in this website.",
+        obf: "This offline map is for OsmAnd on Android. Use the PDF maps if you do not have that app.",
+        pbf: "This is map source data retained for licensing and rebuilding. Use the PDF maps for reading.",
+      }[extension];
+      $("preview-content").append(node("p", "binary-info", hint || "This file has no browser preview. Download it to use it with a compatible app or device. Programs and Android apps are never started by this explorer."));
     }
   }
   async function refresh() {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { safeURL, entryURLs, manifestURL, downloadEntries, cleanPath, fileURL, fileType, folderEntries, formatBytes, indexFiles, isHidden } from "./app.js";
+import { folderHint, safeURL, entryURLs, manifestURL, downloadEntries, cleanPath, fileURL, fileType, folderEntries, formatBytes, indexFiles, isHidden } from "./app.js";
 
 describe("real inventory navigation", () => {
   const files = [
@@ -45,6 +45,15 @@ test("only supported inert previews are classified; programs stay binary", () =>
   expect(fileType({name: "x.MP4", kind: "file"}).type).toBe("video");
   expect(fileType({name: "README.TXT", kind: "file"}).type).toBe("text");
   for (const name of ["app.apk", "program.exe", "launch.command", "index.html", "script.js"]) expect(fileType({name, kind: "file"}).type).toBe("binary");
+});
+test("reference and map data explain their reader while remaining download-only", () => {
+  for (const [name, reader] of [["reference.ZIM", "Kiwix"], ["RI.obf", "OsmAnd"], ["RI.pbf", "source data"]]) {
+    expect(fileType({name, kind:"file"}).type).toBe("binary");
+    expect(fileType({name, kind:"file"}).name).toContain(reader);
+  }
+  expect(folderHint("1_START")).toContain("Choose your language");
+  expect(folderHint("4_PHONE_PACK")).toContain("copy to your phone");
+  expect(folderHint("3_MAPS_AND_PLACES/RI")).toBe("");
 });
 test("sizes remain actual decimal bytes, including empty and unavailable files", () => {
   expect(formatBytes(0)).toBe("0 B");
