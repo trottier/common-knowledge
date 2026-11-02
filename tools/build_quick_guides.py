@@ -92,7 +92,7 @@ def build_guides(root: Path, cache: Path, output: Path, epoch: int, source_commi
                     text = page.extract_text()
                     if footer and "".join(footer.split()) not in "".join(text.split()):
                         raise ValueError(
-                            f"Original translation footer missing: {language.code}/{section} page{n}"
+                            f"Translation footer missing: {language.code}/{section} page{n}"
                         )
                     pages.append(
                         {
