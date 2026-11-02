@@ -76,8 +76,9 @@ a { color: #23548a; }
     Every selected street with a source name has a label. Some source roads are unnamed.</p>
     <p>Base scale 1:{{ '{:,}'.format(policy.scale_denominator) }} is an engineering trial.
     County-edge overlap uses {{ policy.state }} source data; neighboring-state navigation is not demonstrated.</p>
-    <p>Census 2020 ZIP areas {{ zctas | join(', ') }} are statistical approximations,
-    not current USPS delivery boundaries.</p>
+    <p>{% if zctas %}Census 2020 ZIP areas {{ zctas | join(', ') }} are statistical approximations,
+    not current USPS delivery boundaries.{% else %}This part includes county area outside the pinned
+    Census 2020 ZIP polygons. Those polygons are not current USPS delivery boundaries.{% endif %}</p>
   </aside>
 </section>
 {% for page in pages %}
@@ -109,7 +110,8 @@ a { color: #23548a; }
 <section>
   <div class="map-title">
     <h2>{{ area_name }} overview</h2>
-    <p class="source-line">Colored boundaries: 2020 Census ZIP areas {{ zctas | join(', ') }}.</p>
+    <p class="source-line">{% if zctas %}Colored boundaries: 2020 Census ZIP areas {{ zctas | join(', ') }}.
+    {% else %}County area outside the pinned Census 2020 ZIP polygons.{% endif %}</p>
   </div>
   {{ overview_svg }}
   <p class="source-line">Detailed maps: {{ leaf }}.

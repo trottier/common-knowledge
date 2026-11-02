@@ -2,15 +2,17 @@ import json
 from pathlib import Path
 
 import pytest
-from shapely.geometry import box, mapping
+from shapely.geometry import MultiPolygon, box, mapping
 
 from ck.countyproof import (
     area_geometry,
     html_document,
     output_names,
     overview_name,
+    planned_geometry,
     prepare,
     producer_recipe,
+    sheet_plan,
 )
 
 
@@ -74,6 +76,7 @@ def test_area_leaf_stays_in_readable_county_folder_and_preserves_zip_gaps():
     assert folder.as_posix() == "3_MAPS_AND_PLACES/RI/Providence County"
     assert leaf == "Providence area 02903,02906.pdf"
     assert name == "Providence area"
+    assert output_names(policy, [])[1] == "Providence area.pdf"
     with pytest.raises(ValueError, match="FAT-safe"):
         output_names({**policy, "area_name": "Unsafe: area"}, ["02903"])
     with pytest.raises(ValueError, match="single FAT-safe"):
@@ -104,3 +107,45 @@ def test_recipe_binds_selected_policy_and_ignores_unselected_county_config(tmp_p
     config["max_pages"] += 1
     (tmp_path / selected).write_text(json.dumps(config))
     assert producer_recipe(tmp_path, tmp_path / selected)["version"] != initial["version"]
+
+
+def test_sparse_county_grid_counts_actual_intersecting_sheets_without_raising_cap():
+    policy = {
+        "map_width_mm": 190,
+        "map_height_mm": 230,
+        "scale_denominator": 25000,
+        "overlap_fraction": 0.1,
+        "max_pages": 3,
+    }
+    county = MultiPolygon([box(0, 0, 10, 10), box(50000, 0, 50010, 10)])
+    assert len(sheet_plan(county, policy)) == 2
+    with pytest.raises(ValueError, match="sheet guard"):
+        sheet_plan(county, {**policy, "max_pages": 2})
+    with pytest.raises(ValueError, match="Candidate-cell"):
+        sheet_plan(county, {**policy, "max_candidate_cells": 1})
+
+
+def test_projected_plan_part_retains_residual_without_invented_zip_and_binds_geometry():
+    part = {
+        "id": "P01",
+        "area_name": "County other area",
+        "county": "44003",
+        "crs": "EPSG:32619",
+        "geometry": mapping(box(0, 0, 5, 5)),
+        "zctas": [],
+        "plan_sha256": "a" * 64,
+    }
+    assert planned_geometry(box(0, 0, 10, 10), "EPSG:32619", "44003", part).equals(box(0, 0, 5, 5))
+    root = Path(__file__).resolve().parents[1]
+    first = producer_recipe(root, planned_part=part)
+    assert (
+        producer_recipe(root, planned_part={**part, "geometry": mapping(box(0, 0, 6, 5))}) != first
+    )
+    for replacement in (
+        {"county": "44007"},
+        {"crs": "EPSG:4326"},
+        {"plan_sha256": "unverified"},
+        {"geometry": mapping(box(0, 0, 20, 20))},
+    ):
+        with pytest.raises(ValueError):
+            planned_geometry(box(0, 0, 10, 10), "EPSG:32619", "44003", {**part, **replacement})

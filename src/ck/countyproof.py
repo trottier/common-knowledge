@@ -37,7 +37,9 @@ def sha(path: Path) -> str:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def producer_recipe(root: Path, policy_path: Path | None = None) -> dict:
+def producer_recipe(
+    root: Path, policy_path: Path | None = None, planned_part: dict | None = None
+) -> dict:
     policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
     selected_policy = policy_path.resolve().relative_to(root.resolve()).as_posix()
     paths = [
@@ -64,10 +66,37 @@ def producer_recipe(root: Path, policy_path: Path | None = None) -> dict:
         "config/debian.sources",
     ]
     hashes = {name: sha(root / name) for name in sorted(paths)}
+    inputs = (
+        hashes if planned_part is None else {"source_files": hashes, "planned_part": planned_part}
+    )
     digest = hashlib.sha256(
-        json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()
+        json.dumps(inputs, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
-    return {"version": "county-vector-proof-v1-" + digest, "source_files": hashes}
+    return {
+        "version": "county-vector-proof-v1-" + digest,
+        "source_files": hashes,
+        "planned_part": planned_part,
+    }
+
+
+def planned_geometry(county, crs: str, county_id: str, part: dict):
+    """The caller authenticates its whole-plan SHA; bind and validate the actual part too."""
+    if part.get("county") != county_id or part.get("crs") != crs:
+        raise ValueError("Planned part county or projected CRS differs")
+    checksum = part.get("plan_sha256", "")
+    if len(checksum) != 64 or any(char not in "0123456789abcdef" for char in checksum):
+        raise ValueError("Planned part needs its authenticated whole-plan SHA-256")
+    if not part.get("id") or not part.get("area_name"):
+        raise ValueError("Planned part needs its stable ID and readable area name")
+    geometry = shape(part["geometry"])
+    if geometry.is_empty or not geometry.is_valid or geometry.area <= 0:
+        raise ValueError("Planned part geometry is invalid or empty")
+    if geometry.difference(county).area > 0.01:
+        raise ValueError("Planned part exceeds its county")
+    geometry = geometry.intersection(county)
+    if geometry.is_empty or geometry.area <= 0:
+        raise ValueError("Planned part does not cover county area")
+    return geometry
 
 
 def area_geometry(county, features: list[dict], policy: dict):
@@ -104,7 +133,7 @@ def output_names(policy: dict, codes: list[str]) -> tuple[Path, str, str]:
     for component in [name, policy["county_name"], policy["state"]]:
         if len(safe_path(component).parts) != 1:
             raise ValueError("Map names must be single FAT-safe folder or leaf components")
-    leaf = name + " " + ",".join(codes) + ".pdf"
+    leaf = name + (" " + ",".join(codes) if codes else "") + ".pdf"
     folder = safe_path("3_MAPS_AND_PLACES/" + policy["state"] + "/" + policy["county_name"])
     safe_path(str(folder / leaf))
     return Path(folder), leaf, name
@@ -130,8 +159,11 @@ def sheet_plan(geometry, policy: dict) -> list[dict]:
     left, bottom, right, top = geometry.bounds
     columns = max(1, math.ceil(max(0, right - left - width) / step_x) + 1)
     rows = max(1, math.ceil(max(0, top - bottom - height) / step_y) + 1)
-    if columns * rows > policy["max_pages"] - 1:
-        raise ValueError("Prototype exceeds its explicit sheet guard; no coverage dropped")
+    if (
+        policy.get("max_candidate_cells") is not None
+        and columns * rows > policy["max_candidate_cells"]
+    ):
+        raise ValueError("Candidate-cell work limit exceeded; no coverage dropped")
     left -= (width + (columns - 1) * step_x - (right - left)) / 2
     top += (height + (rows - 1) * step_y - (top - bottom)) / 2
     result = []
@@ -144,6 +176,10 @@ def sheet_plan(geometry, policy: dict) -> list[dict]:
                 top - row * step_y,
             ]
             if geometry.intersects(box(*bounds)):
+                if len(result) >= policy["max_pages"] - 1:
+                    raise ValueError(
+                        "Prototype exceeds its explicit sheet guard; no coverage dropped"
+                    )
                 result.append(
                     {
                         "id": f"R{row + 1}C{column + 1}",
@@ -253,7 +289,9 @@ def prepare(
     zip_source: Path,
     policy: dict,
     road_cache: Path | None = None,
+    planned_part: dict | None = None,
 ) -> dict:
+    policy = dict(policy)
     county_id = policy.get("county", "")
     if (
         policy.get("state") != "RI"
@@ -315,6 +353,31 @@ def prepare(
     forward = Transformer.from_crs(4326, crs, always_xy=True)
     backward = Transformer.from_crs(crs, 4326, always_xy=True)
     geometry = transform(selected_county, forward.transform, interleaved=False)
+    full_county = transform(county.geometry.iloc[0], forward.transform, interleaved=False)
+    if planned_part is not None:
+        if policy.get("scope_zctas") is not None:
+            raise ValueError("Planned parts require a county policy, not a separate ZIP-area scope")
+        geometry = planned_geometry(full_county, crs.to_string(), policy["county"], planned_part)
+        actual_codes = sorted(
+            feature["properties"]["GEOID"]
+            for feature in zip_features
+            if feature["properties"]["GEOID"] in codes
+            and transform(shape(feature["geometry"]), forward.transform, interleaved=False)
+            .intersection(geometry)
+            .area
+            > 0.01
+        )
+        if planned_part.get("zctas") != actual_codes:
+            raise ValueError("Planned part ZIP labels differ from its actual pinned intersections")
+        codes = actual_codes
+        policy["area_name"] = planned_part["area_name"]
+        coverage_scope = {
+            "kind": "authenticated_county_plan_part",
+            "whole_county": geometry.symmetric_difference(full_county).area <= 0.01,
+            "part_id": planned_part["id"],
+            "plan_sha256": planned_part["plan_sha256"],
+            "zctas": codes,
+        }
     zip_areas = []
     for feature in sorted(zip_features, key=lambda feature: feature["properties"]["GEOID"]):
         properties = feature["properties"]
@@ -324,11 +387,15 @@ def prepare(
         interior = Point(float(properties["INTPTLON"]), float(properties["INTPTLAT"]))
         if not area.is_valid or area.is_empty or not area.covers(interior):
             raise ValueError("Invalid ZIP area or Census interior point")
+        projected_area = transform(area, forward.transform, interleaved=False)
+        label_point = Point(*forward.transform(interior.x, interior.y))
+        if planned_part is not None and not geometry.covers(label_point):
+            label_point = projected_area.intersection(geometry).representative_point()
         zip_areas.append(
             {
                 "code": properties["GEOID"],
-                "geometry": mapping(transform(area, forward.transform, interleaved=False)),
-                "label_point": list(forward.transform(interior.x, interior.y)),
+                "geometry": mapping(projected_area),
+                "label_point": [label_point.x, label_point.y],
             }
         )
     sheets = sheet_plan(geometry, policy)
@@ -362,15 +429,32 @@ def prepare(
         basemap_files["RI.pmtiles"], extent, backward.transform, forward.transform, policy
     )
     source = json.loads(point_files["RI_SOURCE_DATA.json"].read_text())
-    pois = [
+    county_pois = [
         dict(point)
         for point in source["places"]
         if point["county"] == policy["county"]
         and selected_county.covers(Point(point["longitude"], point["latitude"]))
     ]
+    if planned_part is not None and "expected_poi_count" in policy:
+        if len(county_pois) != policy["expected_poi_count"]:
+            raise ValueError("Actual county public-place count differs from the frozen scope")
+    pois = (
+        county_pois
+        if planned_part is None
+        else [
+            point
+            for point in county_pois
+            if geometry.covers(Point(*forward.transform(point["longitude"], point["latitude"])))
+        ]
+    )
     if len({point["id"] for point in pois}) != len(pois):
         raise ValueError("Historical source contains duplicate selected public-place IDs")
-    if "expected_poi_count" in policy and len(pois) != policy["expected_poi_count"]:
+    expected_pois = (
+        policy.get("expected_poi_count")
+        if planned_part is None
+        else planned_part.get("expected_poi_count")
+    )
+    if expected_pois is not None and len(pois) != expected_pois:
         raise ValueError("Actual selected public-place count differs from the frozen scope")
     for index, point in enumerate(pois, 1):
         point["number"] = index
@@ -403,6 +487,7 @@ def prepare(
         "inputs": inputs,
         "county": mapping(geometry),
         "coverage_scope": coverage_scope,
+        "planned_part": planned_part,
         "crs": crs.to_string(),
         "sheets": sheets,
         "roads": roads,
@@ -888,6 +973,7 @@ def render(root: Path, data: dict, output: Path) -> dict:
         "producer": data["producer"],
         "policy": policy,
         "coverage_scope": data.get("coverage_scope", {"kind": "county", "whole_county": True}),
+        "planned_part": data.get("planned_part"),
         "detail_pdf": leaf,
         "locator": locator_audit,
         "horizontal_layout": layout_audits,
@@ -928,6 +1014,7 @@ def run(
     policy_path: Path | None = None,
     counts_only: bool = False,
     road_cache: Path | None = None,
+    planned_part: dict | None = None,
 ) -> None:
     started = time.monotonic()
     policy_path = policy_path or root / "pipelines/atlas/bristol-proof.json"
@@ -939,9 +1026,9 @@ def run(
     policy["pdf_max_bytes"] = int(maximum)
     policy["pdf_budget_source_sha256"] = sha(pdf_budget_config)
     policy["pdf_budget"] = budget
-    data = prepare(root, cache, basemap, points, zip_source, policy, road_cache)
+    data = prepare(root, cache, basemap, points, zip_source, policy, road_cache, planned_part)
     prepared_seconds = time.monotonic() - started
-    data["producer"] = producer_recipe(root, policy_path)
+    data["producer"] = producer_recipe(root, policy_path, planned_part)
     output.parent.mkdir(parents=True, exist_ok=True)
     (output.parent / (output.name + "-counts.json")).write_text(
         json.dumps(
