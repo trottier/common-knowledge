@@ -59,5 +59,6 @@
     "#07856b",
     "#c17a09"
   ],
-  "max_inset_depth": 5
+  "max_inset_depth": 5,
+  "scale_bar_max_width_mm": 40
 }

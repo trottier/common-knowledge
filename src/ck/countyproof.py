@@ -412,8 +412,13 @@ def geometry_path(geometry, pixel) -> str:
     return " ".join(geometry_path(part, pixel) for part in getattr(geometry, "geoms", []))
 
 
-def label_width(text: str, size: float, advances: dict, units: int) -> float:
-    return sum(advances.get(character, units * 0.6) for character in text) / units * size
+def scale_bar_geometry(world_width: float, width_mm: float, maximum_mm: float):
+    if world_width <= 0 or not 0 < maximum_mm < width_mm - 16:
+        raise ValueError("Invalid scale bar extent or reserved width")
+    target = world_width * maximum_mm / width_mm
+    magnitude = 10 ** math.floor(math.log10(target))
+    metres = max(value * magnitude for value in (1, 2, 5) if value * magnitude <= target)
+    return metres, metres / world_width * width_mm
 
 
 def zip_overlay(data: dict, frame, pixel):
@@ -466,7 +471,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         zip_overlay(data, frame, pixel) if overview else ("", "", [])
     )
     svg.append(zip_shapes)
-    road_features, candidates = [], []
+    road_features = []
     ranking = {
         "motorway": 0,
         "trunk": 1,
@@ -500,9 +505,6 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
             f'<path d="{geometry_path(clipped, pixel)}" fill="none" stroke="{stroke}" '
             f'stroke-width="{line_width}"{dash}/>'
         )
-        if road["name"] and not overview:
-            longest = max(segments, key=lambda segment: segment.length)
-            candidates.append((priority, -longest.length, road["id"], road["name"], longest))
     county_path = geometry_path(shape(data["county"]).intersection(frame), pixel)
     svg.append(
         f'<path d="{county_path}" fill="none" stroke="#625f55" '
@@ -529,7 +531,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         [
             (0, 0, width, 9),
             (0, 9, 4, height),
-            (6, height - 16, 54, height),
+            (6, height - 16, 14 + data["policy"]["scale_bar_max_width_mm"], height),
             (174, 12, 189, 28),
             *zip_reserved,
             *town_reserved,
@@ -588,12 +590,11 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         )
     for row in range(6):
         svg.append(f'<text x="1" y="{height * (row + 0.5) / 6}" font-size="2.6">{row + 1}</text>')
-    metres = 1000 if east - west > 4000 else 500
-    mm = metres / (east - west) * width
+    metres, mm = scale_bar_geometry(east - west, width, data["policy"]["scale_bar_max_width_mm"])
     svg.append(
         f'<rect x="6" y="{height - 14}" width="{mm + 4}" height="8" fill="white"/>'
         f'<path d="M8,{height - 11} h{mm}" stroke="black" stroke-width="0.6"/>'
-        f'<text x="8" y="{height - 7}" font-size="2.6">{metres} m</text>'
+        f'<text x="8" y="{height - 7}" font-size="2.6">{metres:g} m</text>'
     )
     svg.append(
         '<path d="M180,20 L178,25 L180,23 L182,25 Z" fill="black"/>'
@@ -610,6 +611,7 @@ def svg_map(data: dict, bounds: list, overview: bool = False) -> tuple[str, dict
         "coordinate_labels": coordinates,
         "grid_columns": "ABCDE",
         "grid_rows": [1, 2, 3, 4, 5, 6],
+        "scale_bar": {"metres": metres, "width_mm": mm},
         "zip_area_labels": [area["code"] for area in data.get("zip_areas", [])] if overview else [],
     }
 
