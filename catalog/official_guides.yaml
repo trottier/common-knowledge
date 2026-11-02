@@ -11,11 +11,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/vi/ready_supply-list_vietnamese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "vi"
   },
   {
     "id": "ready_emergency_supply_list_zh_hans",
@@ -29,11 +30,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hans/ready_supply-list_simplified-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hans"
   },
   {
     "id": "ready_emergency_supply_list_ru",
@@ -47,11 +49,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ru/ready_supply-list_russian.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ru"
   },
   {
     "id": "ready_emergency_supply_list_ht",
@@ -65,11 +68,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ht/ready_supply-list_haitian-creole.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ht"
   },
   {
     "id": "ready_emergency_supply_list_fr",
@@ -83,11 +87,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/fr/ready_supply-list_french.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "fr"
   },
   {
     "id": "ready_emergency_supply_list_ar",
@@ -101,11 +106,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ar/ready_supply-list_arabic.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ar"
   },
   {
     "id": "ready_emergency_supply_list_es",
@@ -119,11 +125,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/es/emergency-supply-list_spanish.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "es"
   },
   {
     "id": "ready_emergency_supply_list_tl",
@@ -137,11 +144,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/tl/emergency-supply-list_tagalog.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "tl"
   },
   {
     "id": "ready_emergency_supply_list_ko",
@@ -155,11 +163,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ko/emergency-supply-list_korean.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ko"
   },
   {
     "id": "ready_emergency_supply_list_en",
@@ -173,11 +182,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/en/ready_checklist.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Emergency Supply List - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "en"
   },
   {
     "id": "ready_are_you_ready_vi",
@@ -191,11 +201,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/vi/ready_are-you-ready-guide_vietnamese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Are You Ready Guide - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "vi"
   },
   {
     "id": "ready_are_you_ready_zh_hant",
@@ -209,11 +220,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hant/ready_are-you-ready-guide_traditional-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Are You Ready Guide - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hant"
   },
   {
     "id": "ready_are_you_ready_zh_hans",
@@ -227,11 +239,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hans/ready_are-you-ready-guide_simplified-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Are You Ready Guide - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hans"
   },
   {
     "id": "ready_are_you_ready_ko",
@@ -245,11 +258,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ko/ready_are-you-ready-guide_korean.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Are You Ready Guide - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ko"
   },
   {
     "id": "ready_are_you_ready_es",
@@ -263,11 +277,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/es/are-you-ready-guide_spanish.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Are You Ready Guide - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "es"
   },
   {
     "id": "ready_are_you_ready_en",
@@ -281,11 +296,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/en/are-you-ready-guide.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Are You Ready Guide - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "en"
   },
   {
     "id": "ready_12_ways_to_prepare_en",
@@ -299,11 +315,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/en/ready_12-ways-to-prepare_postcard.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - 12 Ways to Prepare - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "en"
   },
   {
     "id": "ready_12_ways_to_prepare_vi",
@@ -317,11 +334,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/vi/ready_12-ways-to-prepare_postcard_vietnamese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - 12 Ways to Prepare - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "vi"
   },
   {
     "id": "ready_12_ways_to_prepare_ko",
@@ -335,11 +353,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ko/ready_12-ways-to-prepare_postcard_korean.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - 12 Ways to Prepare - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ko"
   },
   {
     "id": "ready_12_ways_to_prepare_zh_hant",
@@ -353,11 +372,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hant/ready_12-ways-to-prepare_postcard_chinese-tra.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - 12 Ways to Prepare - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hant"
   },
   {
     "id": "ready_12_ways_to_prepare_zh_hans",
@@ -371,11 +391,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hans/ready_12-ways-to-prepare_postcard_chinese-sim.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - 12 Ways to Prepare - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hans"
   },
   {
     "id": "ready_12_ways_to_prepare_es",
@@ -389,11 +410,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/es/ready_12-ways-to-prepare_postcard_spanish.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - 12 Ways to Prepare - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "es"
   },
   {
     "id": "ready_earthquakes_vi",
@@ -407,11 +429,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/vi/ready.gov_earthquake_info-sheet_vietnamese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Earthquake Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "vi"
   },
   {
     "id": "ready_earthquakes_zh_hant",
@@ -425,11 +448,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hant/ready.gov_earthquake_info-sheet_traditional-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Earthquake Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hant"
   },
   {
     "id": "ready_earthquakes_zh_hans",
@@ -443,11 +467,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hans/ready.gov_earthquake_info-sheet_simplified-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Earthquake Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hans"
   },
   {
     "id": "ready_earthquakes_ko",
@@ -461,11 +486,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ko/ready.gov_earthquake_info-sheet_korean.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Earthquake Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ko"
   },
   {
     "id": "ready_earthquakes_es",
@@ -479,11 +505,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/es/ready.gov_earthquake_info-sheet_spanish.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Earthquake Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "es"
   },
   {
     "id": "ready_earthquakes_en",
@@ -497,11 +524,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/en/ready.gov_earthquake_info-sheet.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Earthquake Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "en"
   },
   {
     "id": "ready_power_outage_vi",
@@ -515,11 +543,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/vi/ready-gov_power-outage_info-sheet_vietnamese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Power Outage Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "vi"
   },
   {
     "id": "ready_power_outage_zh_hans",
@@ -533,11 +562,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hans/ready-gov_power-outage_info-sheet_chinese-simplified.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Power Outage Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hans"
   },
   {
     "id": "ready_power_outage_ko",
@@ -551,11 +581,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ko/ready.gov_power-outage_info-sheet_korean.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Power Outage Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ko"
   },
   {
     "id": "ready_power_outage_zh_hant",
@@ -569,11 +600,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hant/ready.gov_power-outage_info-sheet_chinese-traditional.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Power Outage Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hant"
   },
   {
     "id": "ready_power_outage_es",
@@ -587,11 +619,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/es/ready.gov_power-outage_info-sheet_spanish.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Power Outage Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "es"
   },
   {
     "id": "ready_power_outage_en",
@@ -605,11 +638,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/en/ready.gov_power-outage_info-sheet.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Power Outage Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "en"
   },
   {
     "id": "ready_wildfire_en",
@@ -623,11 +657,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/en/ready-gov_wildfire_info-sheet.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Wildfire Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "en"
   },
   {
     "id": "ready_wildfire_ko",
@@ -641,11 +676,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/ko/ready-gov_wildfire_info-sheet_korean.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Wildfire Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "ko"
   },
   {
     "id": "ready_wildfire_zh_hans",
@@ -659,11 +695,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hans/ready-gov_wildfire_info-sheet_simplified-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Wildfire Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hans"
   },
   {
     "id": "ready_wildfire_es",
@@ -677,11 +714,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/es/ready-gov_wildfire_info-sheet_spanish.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Wildfire Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "es"
   },
   {
     "id": "ready_wildfire_zh_hant",
@@ -695,11 +733,12 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/zh-Hant/ready-gov_wildfire_info-sheet_traditional-chinese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Wildfire Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "zh-Hant"
   },
   {
     "id": "ready_wildfire_vi",
@@ -713,10 +752,11 @@
     "attribution": "Federal Emergency Management Agency (FEMA), Ready.gov. Reproduced unchanged under the Ready Campaign reprint terms. No FEMA or U.S. Government endorsement is implied. Original publication available free at Ready.gov.",
     "license_proof_url": "https://www.ready.gov/publications",
     "placement": "universal",
-    "dest": "4_PHONE_PACK/official/vi/ready-gov_wildfire_info-sheet_vietnamese.pdf",
+    "dest": "4_PHONE_PACK/{edition}/Official guides/FEMA - Wildfire Info Sheet - {edition}.pdf",
     "profiles": [
       "full"
     ],
-    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]"
+    "review": "[[VERIFY: independent review of computed HTTPS pin, publisher reprint terms and source currency; official translation is not a reviewed Common Knowledge translation]]",
+    "language": "vi"
   }
 ]

@@ -34,6 +34,11 @@ def core_size(core: Path) -> int:
 
 def destination(item: Item, config: Configuration, number: int) -> str:
     dest = item.dest
+    if "{edition}" in dest:
+        editions = {language.code: language.name for language in config.languages}
+        if item.language not in editions:
+            raise ValueError(f"{item.id}: unknown language edition: {item.language}")
+        dest = dest.replace("{edition}", editions[item.language])
     if "{topic}" in dest:
         if not isinstance(item.placement, Topics):
             raise ValueError(f"{item.id}: topic destination requires topic placement")
@@ -41,6 +46,7 @@ def destination(item: Item, config: Configuration, number: int) -> str:
         if not choices:
             raise ValueError(f"{item.id}: no matching topic")
         dest = dest.replace("{topic}", choices[0])
+    safe_path(dest.rstrip("/"))
     return dest
 
 
