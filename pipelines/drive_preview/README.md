@@ -30,3 +30,8 @@ and videos use native controls.
 
 Run the focused navigation checks with
 `rtk proxy bun test pipelines/drive_preview/app.test.js`.
+
+
+Static development exports may add `<meta name="ck-drive-manifest" content="drive.json">` to the page. Without it, the existing `/api/drive` contract remains unchanged. Assets resolve relative to the page. Inventory entries may set `url` and `download_url` to same-origin relative or root paths; omitted values retain the local file route. Exporters can give inert files a `.download` transport suffix without changing their inventory names.
+
+An optional `downloads` array contains inventory path strings or `{ "path": "..." }` objects. Each must identify an actual, visible PDF with a known byte size. The mobile test section uses its original inventory name, size, open URL, and download URL. Attachment headers and original-byte copying belong to the exporter/host. This section supports physical-device testing; it does not certify phone performance or approve the development content.

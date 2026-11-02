@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { cleanPath, fileURL, fileType, folderEntries, formatBytes, indexFiles, isHidden } from "./app.js";
+import { safeURL, entryURLs, manifestURL, downloadEntries, cleanPath, fileURL, fileType, folderEntries, formatBytes, indexFiles, isHidden } from "./app.js";
 
 describe("real inventory navigation", () => {
   const files = [
@@ -52,4 +52,25 @@ test("sizes remain actual decimal bytes, including empty and unavailable files",
   expect(formatBytes(10_000_000)).toBe("10 MB");
   expect(formatBytes(null)).toBe("Size unavailable");
   expect(formatBytes(-1)).toBe("Size unavailable");
+});
+
+test("hosted and local URL contracts preserve transport names and reject external execution", () => {
+  expect(manifestURL(null)).toBe("/api/drive");
+  expect(manifestURL("drive.json")).toBe("drive.json");
+  const entry = {path:"folder/index.html", url:"files/folder/index.html.download", download_url:"downloads/folder/index.html.download"};
+  expect(entryURLs(entry)).toEqual({url:entry.url, download:entry.download_url});
+  expect(entryURLs({path:"a.pdf"})).toEqual({url:"/files/a.pdf", download:"/files/a.pdf"});
+  for(const bad of ["https://example.com/a", "http://localhost/a", "javascript:alert(1)", "data:text/html,test", "//evil.test/a", "/\\evil.test/a", "\\evil.test/a", " a.pdf", "a\n.pdf", ""]) {
+    expect(() => safeURL(bad)).toThrow("Unsafe");
+    expect(() => indexFiles([{path:"a.pdf",kind:"file",url:bad}])).toThrow();
+    expect(() => entryURLs({path:"a.pdf",download_url:bad})).toThrow();
+  }
+  expect(new URL(safeURL("files/a%20b.pdf"),"https://preview.test/nested/").pathname).toBe("/nested/files/a%20b.pdf");
+});
+test("download cards resolve only actual visible PDFs and actual inventory sizes", () => {
+ const entries=indexFiles([{path:"map.pdf",kind:"file",size_bytes:123},{path:"app.apk",kind:"file",size_bytes:20},{path:"BACKUP/map.pdf",kind:"file",size_bytes:10}]);
+ expect(downloadEntries([{path:"map.pdf",size_bytes:999}],entries)[0].size_bytes).toBe(123);
+ expect(downloadEntries(undefined,entries)).toEqual([]);
+ for(const values of [[{path:"missing.pdf"}], ["app.apk"], ["BACKUP/map.pdf"], ["map.pdf","map.pdf"]]) expect(()=>downloadEntries(values,entries)).toThrow();
+ expect(()=>downloadEntries({},entries)).toThrow();
 });
