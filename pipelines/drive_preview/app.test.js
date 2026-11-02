@@ -83,3 +83,28 @@ test("download cards resolve only actual visible PDFs and actual inventory sizes
  for(const values of [[{path:"missing.pdf"}], ["app.apk"], ["BACKUP/map.pdf"], ["map.pdf","map.pdf"]]) expect(()=>downloadEntries(values,entries)).toThrow();
  expect(()=>downloadEntries({},entries)).toThrow();
 });
+
+
+test("actual numbered entry PDFs precede folders while ordinary files retain folder-first ordering", () => {
+  const entries = indexFiles([
+    {path:"3_MAPS_AND_PLACES/android",kind:"directory"},
+    {path:"3_MAPS_AND_PLACES/RI",kind:"directory"},
+    {path:"3_MAPS_AND_PLACES/0_FIND_A_MAP.pdf",kind:"file"},
+    {path:"3_MAPS_AND_PLACES/01_ordinary.pdf",kind:"file"},
+    {path:"4_PHONE_PACK/English",kind:"directory"},
+    {path:"4_PHONE_PACK/0_WHAT_TO_COPY.PDF",kind:"file"},
+    {path:"5_MEDICAL_REFERENCE/pdf",kind:"directory"},
+    {path:"5_MEDICAL_REFERENCE/00_Medical basics - English.pdf",kind:"file"},
+    {path:"5_MEDICAL_REFERENCE/00_Primeros auxilios básicos - Español.pdf",kind:"file"},
+    {path:"5_MEDICAL_REFERENCE/WikiMed.zim",kind:"file"},
+    {path:"5_MEDICAL_REFERENCE/00_source.txt",kind:"file"},
+  ]);
+  expect(folderEntries(entries,"3_MAPS_AND_PLACES").map(e=>e.name)).toEqual([
+    "0_FIND_A_MAP.pdf","android","RI","01_ordinary.pdf"]);
+  expect(folderEntries(entries,"4_PHONE_PACK").map(e=>e.name)).toEqual([
+    "0_WHAT_TO_COPY.PDF","English"]);
+  expect(folderEntries(entries,"5_MEDICAL_REFERENCE").map(e=>e.name)).toEqual([
+    "00_Medical basics - English.pdf","00_Primeros auxilios básicos - Español.pdf",
+    "pdf","00_source.txt","WikiMed.zim"]);
+  expect(folderEntries(entries,"3_MAPS_AND_PLACES","ordinary").map(e=>e.name)).toEqual(["01_ordinary.pdf"]);
+});
